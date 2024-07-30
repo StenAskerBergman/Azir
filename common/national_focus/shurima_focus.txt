@@ -3733,17 +3733,24 @@ focus_tree = {
 						}
 					}
 				}
-				SHU = {
-					owns_state = 4
-					owns_state = 152
-					owns_state = 153
-					owns_state = 848
+				NAZ = {
+					all_core_state = {
+						is_owned_by = ROOT
+					}
 				}
 			}
 		}
 		completion_reward = {
-			
+			every_other_country = {
+			limit = {
+				OR = {
+					original_tag = NAZ
+				}
+			}
+			country_event = useful-events-quarior-anschluss.1
+			}
 		}
+		will_lead_to_war_with = NAZ
 	}	
 
 	# Puppet Nazumah 
@@ -4261,7 +4268,7 @@ focus_tree = {
 		id = SHU_lion_riders
 		icon = GFX_focus_lion_riders
 		x = 0
-		y = 2 # it is only for test
+		y = 2
 		relative_position_id = SHU_shuriman_legions
 		cost = 5
 		prerequisite = {focus = SHU_shuriman_legions}
