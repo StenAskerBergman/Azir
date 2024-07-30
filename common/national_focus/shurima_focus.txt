@@ -16,13 +16,13 @@ focus_tree = {
 	
 	# Shared Focus
 	# shared_focus = SHU_XER
-
+	
 	default = no
 	reset_on_civilwar = no
 	initial_show_position = {
-	focus = SHU_imperial_courts
+		focus = SHU_imperial_courts
 	}
-
+	
 	# Imperial Courts
 	focus = {
 		id = SHU_imperial_courts
@@ -40,7 +40,7 @@ focus_tree = {
 			focus = SHU_empress
 		}
 	}
-
+	
 	# Economic Revival
 	focus = {
 		id = SHU_economic_revival
@@ -51,13 +51,13 @@ focus_tree = {
 		
 		
 		ai_will_do = {
-            factor = 10
-        }
+			factor = 10
+		}
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Sun Disc Restorations
 	focus = {
 		id = SHU_sun_disc_restorations
@@ -81,9 +81,9 @@ focus_tree = {
 		}
 	}
 	
-
-
-
+	
+	
+	
 	# Our Leader - Event: shurima.1
 	focus = {
 		id = SHU_our_leader
@@ -91,7 +91,7 @@ focus_tree = {
 		x = 0 
 		y = 1
 		relative_position_id = SHU_sundisc_has_risen
-
+		
 		cost = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -106,7 +106,7 @@ focus_tree = {
 			EventType_event = { id = shurima.1 }
 		}	
 	}
-
+	
 	# Emperor
 	focus = {
 		id = SHU_emperor
@@ -155,12 +155,12 @@ focus_tree = {
 			hidden_trigger = { always = no }
 		}
 	}
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
 	# Imperial Law
 	focus = {
 		id = SHU_imperial_law
@@ -192,7 +192,7 @@ focus_tree = {
 	#		focus = SHU_imperial_state
 	#	}
 	#}
-
+	
 	# NEW: Public Order 
 	focus = {
 		id = SHU_public_order # MK.1 SHU_imperial_order
@@ -231,7 +231,7 @@ focus_tree = {
 			focus = SHU_tribe_law
 			# focus = SHU_nazumahs_pride
 		}
-
+		
 		# prerequisite = {
 		# 	focus = SHU_annex_nazumah
 		# 	focus = SHU_puppet_nazumah
@@ -239,7 +239,7 @@ focus_tree = {
 		# 	focus = SHU_nazumahs_pride
 		# }
 	}
-
+	
 	# Question of Nazumah
 	focus = {
 		id = SHU_question_of_nazumah
@@ -255,8 +255,8 @@ focus_tree = {
 		prerequisite = {
 			# focus = SHU_question_of_slavery
 		}
-
-
+		
+		
 		# prerequisite = {
 		# 	focus = SHU_annex_nazumah
 		# 	focus = SHU_puppet_nazumah
@@ -283,7 +283,7 @@ focus_tree = {
 			focus = SHU_rebirth_legions
 		}
 	}
-
+	
 	# Defensive Lines
 	focus = {
 		id = SHU_defensive_lines
@@ -306,7 +306,7 @@ focus_tree = {
 			add_ideas = shuriman_defense_bonus
 		}
 	}
-
+	
 	# Storm Nerimazeth
 	focus = {
 		id = SHU_storm_nerimazeth
@@ -322,50 +322,50 @@ focus_tree = {
 			focus = SHU_plan_frontlines
 		}
 		completion_reward = {
-        create_wargoal = {
-            type = wargoal_annexation
-            target = XER
-            generator = { type = annex_everything target = XER }
-            focus = SHU_storm_nerimazeth
-        }
-        effect = {
-            set_country_flag = offensive_war_bonus
-            add_timed_modifier = {
-                modifier = {
-                    name = "Temporary Offensive War Bonus"
-                    duration = 365
-                    attack = 0.15
-                    breakthrough = 0.15
-                    planning_speed = 0.25
-                }
-            }
-			# Add any additional effects here if needed
-        }
-        custom_effect_tooltip = "Temporary Offensive War Bonus: Increases Attack by 15%, Breakthrough by 15%, and Planning Speed by 25% for one year."
-		
-		
-        remove_effect = {
-            remove_country_flag = offensive_war_bonus
-            if = {
-                limit = {
-                    NOT = { has_country_flag = won_offensive_war }
-                }
-                add_timed_modifier = {
-                    modifier = {
-                        name = "Failed Offensive War Debuff"
-                        duration = 365
-                        attack = -0.1
-                        defense = -0.1
-                        planning_speed = -0.2
-                    }
-                }
-                # Add any additional removal effects here if needed
-				
+			create_wargoal = {
+				type = wargoal_annexation
+				target = XER
+				generator = { type = annex_everything target = XER }
+				focus = SHU_storm_nerimazeth
+			}
+			effect = {
+				set_country_flag = offensive_war_bonus
+				add_timed_modifier = {
+					modifier = {
+						name = "Temporary Offensive War Bonus"
+						duration = 365
+						attack = 0.15
+						breakthrough = 0.15
+						planning_speed = 0.25
+					}
+				}
+				# Add any additional effects here if needed
+			}
+			custom_effect_tooltip = "Temporary Offensive War Bonus: Increases Attack by 15%, Breakthrough by 15%, and Planning Speed by 25% for one year."
+			
+			
+			remove_effect = {
+				remove_country_flag = offensive_war_bonus
+				if = {
+					limit = {
+						NOT = { has_country_flag = won_offensive_war }
+					}
+					add_timed_modifier = {
+						modifier = {
+							name = "Failed Offensive War Debuff"
+							duration = 365
+							attack = -0.1
+							defense = -0.1
+							planning_speed = -0.2
+						}
+					}
+					# Add any additional removal effects here if needed
+					
 				}
 			}
 		}
 	}
-
+	
 	# Arm the Defenders!
 	focus = {
 		id = SHU_arm_the_defenders
@@ -424,7 +424,7 @@ focus_tree = {
 			# add_ideas = war_economy
 		}
 	}
-
+	
 	
 	# Shuriman Navy 
 	
@@ -436,41 +436,41 @@ focus_tree = {
 	# 	y = 1
 	# 	relative_position_id = SHU_shuriman_legions
 	# 	cost = 5
-		
+	
 	# 	prerequisite ={
 	# 		focus = SHU_shuriman_legions
 	# 	}
-
+	
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}
-
+	
 	# 	available = {
 	# 		# Condition to ensure the player controls at least one coastal state
 	# 		OR = {
 	# 			# Northern Coast
 	# 			114 = { is_controlled_by = ROOT } # Kalamandian
 	# 			107 = { is_controlled_by = ROOT } # Nashramae
-				
+	
 	# 			# Aurma
 	# 			110 = { is_controlled_by = ROOT } # Northern Island 
-				
+	
 	# 			# Noxian colony
 	# 			103 = { is_controlled_by = ROOT } #Northn Eastern 
 	# 			101 = { is_controlled_by = ROOT } #North West A
 	# 			100 = { is_controlled_by = ROOT } # Northern Island 
 	# 			99 = { is_controlled_by = ROOT } #North West B
-				
+	
 	# 			# Western Coast 
 	# 			118 = { is_controlled_by = ROOT } # Crystal Scar
 	# 			119 = { is_controlled_by = ROOT } # Nazumah Coast
 	# 			120 = { is_controlled_by = ROOT } # Marai Coast
-				
+	
 	# 			#Sourthern Coast
 	# 			122 = { is_controlled_by = ROOT } # Marai Coast
 	# 			126 = { is_controlled_by = ROOT } # Marai Coast
 	# 			127 = { is_controlled_by = ROOT } # Marai Coast
-				
+	
 	# 			# Void Coastline
 	# 			91 = { is_controlled_by = ROOT } # Void Coast
 	# 			92 = { is_controlled_by = ROOT } # Void Coast
@@ -480,11 +480,11 @@ focus_tree = {
 	# 			96 = { is_controlled_by = ROOT } # Void Coast
 	# 			97 = { is_controlled_by = ROOT } # Void Coast
 	# 			98 = { is_controlled_by = ROOT } # Void Coast
-
+	
 	# 			# Add all other coastal state IDs that can have dockyards
 	# 		}
 	# 	}
-
+	
 	# 	completion_reward = {
 	# 		# Add dockyards to all valid coastal states
 	# 		if = {
@@ -520,8 +520,8 @@ focus_tree = {
 	# 		# Repeat for all other coastal state IDs that can have dockyards
 	# 	}
 	# }
-
-
+	
+	
 	# # Rebuilding Our Fleet
 	# focus = {
 	# 	id = SHU_rebuilding_our_fleet
@@ -530,41 +530,41 @@ focus_tree = {
 	# 	y = 1
 	# 	relative_position_id = SHU_rebuilding_our_harbours
 	# 	cost = 5
-
+	
 	# 	prerequisite = {
 	# 		focus = SHU_rebuilding_our_harbours
 	# 	}
-
+	
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}
-
+	
 	# 	available = {
 	# 		# Condition to ensure the player controls at least one coastal state
 	# 		OR = {
 	# 			# Northern Coast
 	# 			114 = { is_controlled_by = ROOT } # Kalamandian
 	# 			107 = { is_controlled_by = ROOT } # Nashramae
-				
+	
 	# 			# Aurma
 	# 			110 = { is_controlled_by = ROOT } # Northern Island 
-				
+	
 	# 			# Noxian colony
 	# 			103 = { is_controlled_by = ROOT } #Northn Eastern 
 	# 			101 = { is_controlled_by = ROOT } #North West A
 	# 			100 = { is_controlled_by = ROOT } # Northern Island 
 	# 			99 = { is_controlled_by = ROOT } #North West B
-				
+	
 	# 			# Western Coast 
 	# 			118 = { is_controlled_by = ROOT } # Crystal Scar
 	# 			119 = { is_controlled_by = ROOT } # Nazumah Coast
 	# 			120 = { is_controlled_by = ROOT } # Marai Coast
-				
+	
 	# 			#Sourthern Coast
 	# 			122 = { is_controlled_by = ROOT } # Marai Coast
 	# 			126 = { is_controlled_by = ROOT } # Marai Coast
 	# 			127 = { is_controlled_by = ROOT } # Marai Coast
-				
+	
 	# 			# Void Coastline
 	# 			91 = { is_controlled_by = ROOT } # Void Coast
 	# 			92 = { is_controlled_by = ROOT } # Void Coast
@@ -574,11 +574,11 @@ focus_tree = {
 	# 			96 = { is_controlled_by = ROOT } # Void Coast
 	# 			97 = { is_controlled_by = ROOT } # Void Coast
 	# 			98 = { is_controlled_by = ROOT } # Void Coast
-
+	
 	# 			# Add all other coastal state IDs that can have dockyards
 	# 		}
 	# 	}
-
+	
 	# 	completion_reward = {
 	# 		# Add dockyards to all valid coastal states
 	# 		if = {
@@ -614,7 +614,7 @@ focus_tree = {
 	# 		# Repeat for all other coastal state IDs that can have dockyards
 	# 	}
 	# }
-
+	
 	# # Fleet
 	# focus = {
 	# 	id = SHU_fleet
@@ -630,26 +630,26 @@ focus_tree = {
 	#
 	# 	}
 	# }
-
+	
 	# # Merchant Fleet
 	# focus = {
 	# 	id = SHU_merchant_fleet
 	# 	icon = GFX_goal_fleet # GFX_focus_generic_merchant_fleet 
 	# 	# icon = GFX_focus_POL_develop_polish_shipbuilding 
 	# 	# icon = GFX_focus_generic_navy_battleship2 
-
+	
 	# 	x=1
 	# 	y=1
 	# 	relative_position_id = SHU_rebuilding_our_fleet
 	# 	prerequisite = {
 	# 		focus = SHU_rebuilding_our_fleet
 	# 	}
-
+	
 	# 	completion_reward ={
-
+	
 	# 	}
 	# }
-
+	
 	# # Rebuild Armory
 	# focus = {
 	# 	id = SHU_rebuild_armory # green
@@ -683,7 +683,7 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	# # Refilling Armory
 	# focus = {
 	# 	id = SHU_refilling_armory
@@ -717,7 +717,7 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	# # Shuriman Armor
 	# focus = {
 	# 	id = SHU_shuriman_armor
@@ -751,7 +751,7 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	# # Expanding Armory 
 	# focus = {
 	# 	id = SHU_expand_armory
@@ -785,7 +785,7 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	# # Shuriman Military - SHU_shuriman_military / SHU_military_complex
 	# 	focus = {
 	# 	id = SHU_military_complex 
@@ -832,7 +832,7 @@ focus_tree = {
 	# 		focus = SHU_expand_armory
 	# 	}
 	# }
-
+	
 	# # Focus Tank Industry
 	# Focus = {
 	# 	id = SHU_tank_industry
@@ -844,7 +844,7 @@ focus_tree = {
 	# 		focus = SHU_expand_armory
 	# 	}
 	# }
-
+	
 	# Nazuman: Hunters for hire
 	focus = {
 		id = SHU_hunters_for_hire
@@ -860,21 +860,53 @@ focus_tree = {
 			focus = SHU_annex_nazumah
 			focus = SHU_puppet_nazumah 
 		}
-
+		
+		bypass = {
+			ROOT = {
+				has_character = VOI_Kassadin
+			}
+		}
+		
+		available = {
+			VOI = {
+				has_character = VOI_Kassadin
+			}
+		}
+		
 		completion_reward = {
 			# Enables us to hire hunters against void
-			recruit_character = kassadin
+			VOI = {
+				VOI_Kassadin = {
+					set_nationality = ROOT
+				}
+			}
+			
+			if = {
+				limit = { 
+					ROOT = {
+						has_character = VOI_Kassadin
+					}
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = VOI_Kassadin
+			}
+			else = {
+				custom_effect_tooltip = available_political_advisor
+				custom_effect_tooltip = "Kassadin"
+			}
+			
+			
 		}
 	}
-
 	
-#   ██████╗ ██╗  ██╗  █████╗  ██╗  ██╗ ██╗  ██╗  █████╗  ██╗     
-#  ██╔════╝ ██║  ██║ ██╔══██╗ ██║ ██╔╝ ██║ ██╔╝ ██╔══██╗ ██║     
-#  ╚█████╗  ███████║ ███████║ █████═╝  █████═╝  ███████║ ██║     
-#   ╚═══██╗ ██╔══██║ ██╔══██║ ██╔═██╗  ██╔═██╗  ██╔══██║ ██║     
-#  ██████╔╝ ██║  ██║ ██║  ██║ ██║ ╚██╗ ██║ ╚██╗ ██║  ██║ ███████╗
-#  ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝
-
+	
+	#   ██████╗ ██╗  ██╗  █████╗  ██╗  ██╗ ██╗  ██╗  █████╗  ██╗     
+	#  ██╔════╝ ██║  ██║ ██╔══██╗ ██║ ██╔╝ ██║ ██╔╝ ██╔══██╗ ██║     
+	#  ╚█████╗  ███████║ ███████║ █████═╝  █████═╝  ███████║ ██║     
+	#   ╚═══██╗ ██╔══██║ ██╔══██║ ██╔═██╗  ██╔═██╗  ██╔══██║ ██║     
+	#  ██████╔╝ ██║  ██║ ██║  ██║ ██║ ╚██╗ ██║ ╚██╗ ██║  ██║ ███████╗
+	#  ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝
+	
 	# Lectures in Shakkal: Void lectures -> Attack Bonus against the void
 	focus = {
 		id = SHU_lectures_in_shakkal
@@ -890,10 +922,10 @@ focus_tree = {
 			focus = SHU_great_crusade
 			focus = SHU_diplomacy_approach 
 		}
-
+		
 		completion_reward = {
 			# Enables us to fight better against void
-
+			
 		}
 	}
 	
@@ -917,10 +949,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			# Enables us to fight better against void
-
+			
 		}
 	}
-
+	
 	# Nomadic Library -> hidden bookss
 	focus = {
 		id = SHU_nomadic_library
@@ -935,12 +967,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_allies
 		}
-
+		
 		completion_reward = {
 			# Gives us another book for nasus! 
 		}
 	}
-
+	
 	# Shakkal Lecture -> One Time Buff Against Them?
 	focus = {
 		id = SHU_shakkal_lecture
@@ -955,13 +987,13 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_shakkal_region
 		}
-
+		
 		completion_reward = {
 			# Enables us to fight better against void
-
+			
 		}
 	}
-
+	
 	# Subjugate the locals
 	focus = {
 		id = SHU_subjugate_the_locals
@@ -1001,7 +1033,7 @@ focus_tree = {
 			add_ideas = shuriman_recognition
 		}
 	}
-
+	
 	# Shuriman pride
 	focus = {
 		id = SHU_marai_marines # SHU_shuriman_recognition
@@ -1012,20 +1044,20 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-
+		
 		prerequisite = {
 			focus = SHU_puppet_nazumah
 			focus = SHU_nazumah_alliance
 		}
-
-
+		
+		
 		completion_reward = {
 			add_ideas = marai_marines # shuriman_respect # shuriman_recognition
 			# add_naval_company
 			# Hire Nami
 		}
 	}
-
+	
 	# Shuriman pride
 	focus = {
 		id = SHU_nazumahs_pride # SHU_the_plot_of_nazumahs # SHU_shuriman_recognition
@@ -1036,22 +1068,22 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-
+		
 		mutually_exclusive = {
 			focus = SHU_subjugate_the_locals
 			focus = SHU_nazumahs_pride
 		}
-
+		
 		prerequisite = {
 			focus = SHU_puppet_nazumah
 			focus = SHU_nazumah_alliance
 		}
-
+		
 		completion_reward = {
 			add_ideas = shuriman_respect # shuriman_recognition
 		}
 	}
-
+	
 	# In the Hawks Eyes	 
 	focus = {
 		id = SHU_in_the_hawks_eyes
@@ -1067,10 +1099,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Subjugation 
 	focus = {
 		id = SHU_subjugation_tactics
@@ -1083,10 +1115,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Diplomacy	 
 	focus = {
 		id = SHU_diplomacy_approach
@@ -1099,10 +1131,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Allies	 
 	focus = {
 		id = SHU_allies
@@ -1115,10 +1147,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Great Crusade
 	focus = {
 		id = SHU_great_crusade
@@ -1131,10 +1163,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Remove The Savages
 	focus = {
 		id = SHU_remove_the_savages
@@ -1148,10 +1180,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Regional Investment
 	focus = {
 		id = SHU_regional_investment
@@ -1165,10 +1197,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Shakkal Region
 	focus = {
 		id = SHU_shakkal_region 
@@ -1184,7 +1216,7 @@ focus_tree = {
 			
 		}
 	}
-
+	
 	# Recover Our Sand
 	focus = {
 		id = SHU_recover_our_sand
@@ -1204,7 +1236,7 @@ focus_tree = {
 			
 		}
 	}
-
+	
 	# Work Camps
 	focus = {
 		id = SHU_work_camps
@@ -1219,10 +1251,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Force + Takeover Marai / Aurma / Resettlement
 	focus = {
 		id = SHU_marai_dockyards
@@ -1237,10 +1269,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# # Force + Takeover Marai / Aurma / Resettlement
 	# focus = {
 	# 	id = SHU_reward_marai
@@ -1253,22 +1285,22 @@ focus_tree = {
 	# 		# focus = SHU_annex_nazumah
 	# 		focus = SHU_marai_dockyards
 	# 	}
-		
+	
 	# 	completion_reward = {
-
+	
 	# 	}
 	# }
-
-
-#   ██████╗ ████████╗  █████╗  ██████╗  ████████╗
-#  ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ╚══██╔══╝
-#  ╚█████╗     ██║    ███████║ ██████╔╝    ██║   
-#   ╚═══██╗    ██║    ██╔══██║ ██╔══██╗    ██║   
-#  ██████╔╝    ██║    ██║  ██║ ██║  ██║    ██║   
-#  ╚═════╝     ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝   
-
-
-
+	
+	
+	#   ██████╗ ████████╗  █████╗  ██████╗  ████████╗
+	#  ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ╚══██╔══╝
+	#  ╚█████╗     ██║    ███████║ ██████╔╝    ██║   
+	#   ╚═══██╗    ██║    ██╔══██║ ██╔══██╗    ██║   
+	#  ██████╔╝    ██║    ██║  ██║ ██║  ██║    ██║   
+	#  ╚═════╝     ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝   
+	
+	
+	
 	# Long Time, No See/ An Old Friends / Our True Enemy / 
 	focus = {
 		id = SHU_the_neighbours # SHU_old_friends
@@ -1285,15 +1317,15 @@ focus_tree = {
 			set_country_flag = shuriman_expansion_plan
 		}
 	}
-
-
-#  ███╗   ███╗██╗███╗  ██╗ █████╗ ██████╗  ██████╗
-#  ████╗ ████║██║████╗ ██║██╔══██╗██╔══██╗██╔════╝
-#  ██╔████╔██║██║██╔██╗██║██║  ██║██████╔╝╚█████╗ 
-#  ██║╚██╔╝██║██║██║╚████║██║  ██║██╔══██╗ ╚═══██╗
-#  ██║ ╚═╝ ██║██║██║ ╚███║╚█████╔╝██║  ██║██████╔╝
-#  ╚═╝     ╚═╝╚═╝╚═╝  ╚══╝ ╚════╝ ╚═╝  ╚═╝╚═════╝ 
-
+	
+	
+	#  ███╗   ███╗██╗███╗  ██╗ █████╗ ██████╗  ██████╗
+	#  ████╗ ████║██║████╗ ██║██╔══██╗██╔══██╗██╔════╝
+	#  ██╔████╔██║██║██╔██╗██║██║  ██║██████╔╝╚█████╗ 
+	#  ██║╚██╔╝██║██║██║╚████║██║  ██║██╔══██╗ ╚═══██╗
+	#  ██║ ╚═╝ ██║██║██║ ╚███║╚█████╔╝██║  ██║██████╔╝
+	#  ╚═╝     ╚═╝╚═╝╚═╝  ╚══╝ ╚════╝ ╚═╝  ╚═╝╚═════╝ 
+	
 	# focus = {
 	# 	id = SHU_Minors 
 	# 	icon = GFX_goal_unknown 
@@ -1305,15 +1337,15 @@ focus_tree = {
 	# 		focus = SHU_the_neighbours
 	# 	}
 	# }
-
-
-# ███╗   ███╗ █████╗      ██╗ █████╗ ██████╗  ██████╗
-# ████╗ ████║██╔══██╗     ██║██╔══██╗██╔══██╗██╔════╝
-# ██╔████╔██║███████║     ██║██║  ██║██████╔╝╚█████╗ 
-# ██║╚██╔╝██║██╔══██║██╗  ██║██║  ██║██╔══██╗ ╚═══██╗
-# ██║ ╚═╝ ██║██║  ██║╚█████╔╝╚█████╔╝██║  ██║██████╔╝
-# ╚═╝     ╚═╝╚═╝  ╚═╝ ╚════╝  ╚════╝ ╚═╝  ╚═╝╚═════╝ 
-
+	
+	
+	# ███╗   ███╗ █████╗      ██╗ █████╗ ██████╗  ██████╗
+	# ████╗ ████║██╔══██╗     ██║██╔══██╗██╔══██╗██╔════╝
+	# ██╔████╔██║███████║     ██║██║  ██║██████╔╝╚█████╗ 
+	# ██║╚██╔╝██║██╔══██║██╗  ██║██║  ██║██╔══██╗ ╚═══██╗
+	# ██║ ╚═╝ ██║██║  ██║╚█████╔╝╚█████╔╝██║  ██║██████╔╝
+	# ╚═╝     ╚═╝╚═╝  ╚═╝ ╚════╝  ╚════╝ ╚═╝  ╚═╝╚═════╝ 
+	
 	# focus = {
 	# 	id = SHU_Major 
 	# 	icon = GFX_focus_wonderweapons # GFX_goal_unknown 
@@ -1325,14 +1357,14 @@ focus_tree = {
 	# 		focus = SHU_the_neighbours
 	# 	}
 	# }
-
-
-#  ████████╗  █████╗  ██████╗   ██████╗   █████╗  ███╗  ██╗
-#  ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ██╔════╝  ██╔══██╗ ████╗ ██║
-#     ██║    ███████║ ██████╔╝ ██║  ██╗  ██║  ██║ ██╔██╗██║
-#     ██║    ██╔══██║ ██╔══██╗ ██║  ╚██╗ ██║  ██║ ██║╚████║
-#     ██║    ██║  ██║ ██║  ██║ ╚██████╔╝ ╚█████╔╝ ██║ ╚███║
-#     ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝  ╚═════╝   ╚════╝  ╚═╝  ╚══╝
+	
+	
+	#  ████████╗  █████╗  ██████╗   ██████╗   █████╗  ███╗  ██╗
+	#  ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ██╔════╝  ██╔══██╗ ████╗ ██║
+	#     ██║    ███████║ ██████╔╝ ██║  ██╗  ██║  ██║ ██╔██╗██║
+	#     ██║    ██╔══██║ ██╔══██╗ ██║  ╚██╗ ██║  ██║ ██║╚████║
+	#     ██║    ██║  ██║ ██║  ██║ ╚██████╔╝ ╚█████╔╝ ██║ ╚███║
+	#     ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝  ╚═════╝   ╚════╝  ╚═╝  ╚══╝
 	
 	# Targon Start Line
 	focus = {
@@ -1348,12 +1380,12 @@ focus_tree = {
 				has_country_flag = shuriman_expansion_plan
 			}
 		}
-
+		
 		prerequisite = {
 			# # focus = SHU_Major
 		}
 	}
-
+	
 	# Targon AA Line
 	focus = {
 		id = SHU_annex_targon
@@ -1368,7 +1400,7 @@ focus_tree = {
 			focus = SHU_fate_of_targon
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ba_targon
 		icon = GFX_goal_unknown
@@ -1379,7 +1411,7 @@ focus_tree = {
 			focus = SHU_annex_targon
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ca_targon
 		icon = GFX_goal_unknown
@@ -1391,7 +1423,7 @@ focus_tree = {
 		}
 	}
 	# Middle Row
-
+	
 	# Rich Mountains
 	focus = {
 		id = SHU_rich_mountains_gold
@@ -1404,11 +1436,11 @@ focus_tree = {
 			focus = SHU_puppet_or_ally_targon
 		}
 		completion_reward = {
-
-
+			
+			
 		}
 	}
-
+	
 	# Rich lands 2
 	focus = {
 		id = SHU_rich_mountains_dia
@@ -1426,11 +1458,11 @@ focus_tree = {
 			focus = SHU_puppet_or_ally_targon
 		}
 		completion_reward = {
-
-
+			
+			
 		}
 	}
-
+	
 	# Targon AB Line
 	focus = {
 		id = SHU_puppet_or_ally_targon
@@ -1445,7 +1477,7 @@ focus_tree = {
 			focus = SHU_fate_of_targon
 		}
 	}
-
+	
 	# Shuriman Agreement
 	focus = {
 		id = SHU_shuriman_argreement_targon
@@ -1457,7 +1489,7 @@ focus_tree = {
 			focus = SHU_puppet_or_ally_targon
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cb_targon
 		icon = GFX_goal_unknown
@@ -1468,19 +1500,19 @@ focus_tree = {
 			focus = SHU_shuriman_argreement_targon
 		}
 	}
-
-
-
-
 	
-#  ██╗   ██╗  ██╗  ████████╗   █████╗    ██╗     
-#  ██║   ╚██╗██╔╝  ╚══██╔══╝  ██╔══██╗   ██║     
-#  ██║    ╚███╔╝      ██║     ██║  ██║   ██║     
-#  ██║    ██╔██╗      ██║     ███████║   ██║     
-#  ██║   ██╔╝╚██╗     ██║     ██╔══██║   ██║     
-#  ██║   ██║  ██║     ██║     ██║  ██║   ███████╗
-#  ╚═╝   ╚═╝  ╚═╝     ╚═╝     ╚═╝  ╚═╝   ╚══════╝
-
+	
+	
+	
+	
+	#  ██╗   ██╗  ██╗  ████████╗   █████╗    ██╗     
+	#  ██║   ╚██╗██╔╝  ╚══██╔══╝  ██╔══██╗   ██║     
+	#  ██║    ╚███╔╝      ██║     ██║  ██║   ██║     
+	#  ██║    ██╔██╗      ██║     ███████║   ██║     
+	#  ██║   ██╔╝╚██╗     ██║     ██╔══██║   ██║     
+	#  ██║   ██║  ██║     ██║     ██║  ██║   ███████╗
+	#  ╚═╝   ╚═╝  ╚═╝     ╚═╝     ╚═╝  ╚═╝   ╚══════╝
+	
 	# Ixtal Starter Line
 	focus = {
 		id = SHU_fate_of_ixtal
@@ -1493,7 +1525,7 @@ focus_tree = {
 			# # focus = SHU_Major
 		}
 	}
-
+	
 	# Ixtal AA Line
 	focus = {
 		id = SHU_annex_ixtal
@@ -1508,7 +1540,7 @@ focus_tree = {
 			focus = SHU_fate_of_ixtal
 		}
 	}
-
+	
 	focus = {
 		id = SHU_jungle_machine
 		icon = GFX_goal_unknown
@@ -1519,7 +1551,7 @@ focus_tree = {
 			focus = SHU_annex_ixtal
 		}
 	}
-
+	
 	focus = {
 		id = SHU_jungle_adventure
 		icon = GFX_goal_reform_socialist_army
@@ -1530,9 +1562,9 @@ focus_tree = {
 			focus = SHU_jungle_machine
 		}
 	}
-
+	
 	# Middle Row
-
+	
 	# Rich lands 1
 	focus = {
 		id = SHU_rich_lands_gold
@@ -1545,11 +1577,11 @@ focus_tree = {
 			focus = SHU_annex_ixtal
 		}
 		completion_reward = {
-
-
+			
+			
 		}
 	}
-
+	
 	# Rich lands 2
 	focus = {
 		id = SHU_rich_lands_dia
@@ -1567,12 +1599,12 @@ focus_tree = {
 			focus = SHU_annex_ixtal
 		}
 		completion_reward = {
-
-
+			
+			
 		}
 	}
-
-
+	
+	
 	# Ixtal Puppet or Ally Line
 	focus = {
 		id = SHU_puppet_or_ally_ixtal
@@ -1587,7 +1619,7 @@ focus_tree = {
 			focus = SHU_fate_of_ixtal
 		}
 	}
-
+	
 	# Shuriman Pact
 	focus = {
 		id = SHU_shuriman_pact_ixtal
@@ -1599,7 +1631,7 @@ focus_tree = {
 			focus = SHU_puppet_or_ally_ixtal
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cb_ixtal
 		icon = GFX_goal_unknown
@@ -1610,17 +1642,17 @@ focus_tree = {
 			focus = SHU_shuriman_pact_ixtal
 		}
 	}
-
-
-
 	
-#  ███╗  ██╗  █████╗  ██╗  ██╗ ██╗  ██████╗  ███╗  ██╗
-#  ████╗ ██║ ██╔══██╗ ╚██╗██╔╝ ██║ ██╔═══██╗ ████╗ ██║
-#  ██╔██╗██║ ██║  ██║  ╚███╔╝  ██║ ██║   ██║ ██╔██╗██║
-#  ██║╚████║ ██║  ██║  ██╔██╗  ██║ ████████║ ██║╚████║
-#  ██║ ╚███║ ██║  ██║ ██╔╝╚██╗ ██║ ██╔═══██║ ██║ ╚███║
-#  ██║   ██║ ╚█████╔╝ ██║  ██║ ██║ ██║   ██║ ██║   ██║
-
+	
+	
+	
+	#  ███╗  ██╗  █████╗  ██╗  ██╗ ██╗  ██████╗  ███╗  ██╗
+	#  ████╗ ██║ ██╔══██╗ ╚██╗██╔╝ ██║ ██╔═══██╗ ████╗ ██║
+	#  ██╔██╗██║ ██║  ██║  ╚███╔╝  ██║ ██║   ██║ ██╔██╗██║
+	#  ██║╚████║ ██║  ██║  ██╔██╗  ██║ ████████║ ██║╚████║
+	#  ██║ ╚███║ ██║  ██║ ██╔╝╚██╗ ██║ ██╔═══██║ ██║ ╚███║
+	#  ██║   ██║ ╚█████╔╝ ██║  ██║ ██║ ██║   ██║ ██║   ██║
+	
 	# Noxian Start
 	focus = {
 		id = SHU_example_noxian_start
@@ -1633,7 +1665,7 @@ focus_tree = {
 			# focus = SHU_Major
 		}
 	}
-
+	
 	# Noxian AA Line
 	focus = {
 		id = SHU_example_aa_noxian
@@ -1648,7 +1680,7 @@ focus_tree = {
 			focus = SHU_example_noxian_start
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ba_noxian
 		icon = GFX_goal_unknown
@@ -1659,7 +1691,7 @@ focus_tree = {
 			focus = SHU_example_aa_noxian
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ca_noxian
 		icon = GFX_goal_unknown
@@ -1670,7 +1702,7 @@ focus_tree = {
 			focus = SHU_example_ba_noxian
 		}
 	}
-
+	
 	# Noxian AB Line
 	focus = {
 		id = SHU_example_ab_noxian
@@ -1685,7 +1717,7 @@ focus_tree = {
 			focus = SHU_example_noxian_start
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bb_noxian
 		icon = GFX_goal_unknown
@@ -1696,7 +1728,7 @@ focus_tree = {
 			focus = SHU_example_ab_noxian
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cb_noxian
 		icon = GFX_goal_unknown
@@ -1707,8 +1739,8 @@ focus_tree = {
 			focus = SHU_example_bb_noxian
 		}
 	}
-
-
+	
+	
 	# Noxian AC Line
 	focus = {
 		id = SHU_example_ac_noxian # 
@@ -1730,7 +1762,7 @@ focus_tree = {
 			focus = SHU_example_noxian_start
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bc_noxian
 		icon = GFX_goal_unknown
@@ -1741,7 +1773,7 @@ focus_tree = {
 			focus = SHU_example_ac_noxian
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cc_noxian
 		icon = GFX_goal_unknown
@@ -1752,15 +1784,15 @@ focus_tree = {
 			focus = SHU_example_bc_noxian
 		}
 	}
-
-
-#  ██╗  █████╗  ███╗  ██╗ ██╗  █████╗ 
-#  ██║ ██╔══██╗ ████╗ ██║ ██║ ██╔══██╗
-#  ██║ ██║  ██║ ██╔██╗██║ ██║ ███████║
-#  ██║ ██║  ██║ ██║╚████║ ██║ ██╔══██║
-#  ██║ ╚█████╔╝ ██║ ╚███║ ██║ ██║  ██║
-#  ╚═╝  ╚════╝  ╚═╝  ╚══╝ ╚═╝ ╚═╝  ╚═╝
-
+	
+	
+	#  ██╗  █████╗  ███╗  ██╗ ██╗  █████╗ 
+	#  ██║ ██╔══██╗ ████╗ ██║ ██║ ██╔══██╗
+	#  ██║ ██║  ██║ ██╔██╗██║ ██║ ███████║
+	#  ██║ ██║  ██║ ██║╚████║ ██║ ██╔══██║
+	#  ██║ ╚█████╔╝ ██║ ╚███║ ██║ ██║  ██║
+	#  ╚═╝  ╚════╝  ╚═╝  ╚══╝ ╚═╝ ╚═╝  ╚═╝
+	
 	# ionia Starter Line
 	focus = {
 		id =  SHU_example_ionian_start
@@ -1769,12 +1801,12 @@ focus_tree = {
 		y=0
 		cost = 3
 		relative_position_id = SHU_example_noxian_start
-
+		
 		prerequisite = {
 			# focus = SHU_Major
 		}
 	}
-
+	
 	# ionia AA Line: Subjugate
 	focus = {
 		id = SHU_example_aa_ionian
@@ -1790,7 +1822,7 @@ focus_tree = {
 			focus =  SHU_example_ionian_start
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ba_ionian
 		icon = GFX_goal_unknown
@@ -1801,7 +1833,7 @@ focus_tree = {
 			focus = SHU_example_aa_ionian
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ca_ionian
 		icon = GFX_goal_unknown
@@ -1812,7 +1844,7 @@ focus_tree = {
 			focus = SHU_example_ba_ionian
 		}
 	}
-
+	
 	# ionia AB Line: Annex
 	focus = {
 		id = SHU_example_ab_ionian
@@ -1823,10 +1855,10 @@ focus_tree = {
 		prerequisite = {
 			focus =  SHU_example_ionian_start			
 			# focus = SHU_starter_ionian_piltover
-
+			
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bb_ionian
 		icon = GFX_goal_unknown
@@ -1837,7 +1869,7 @@ focus_tree = {
 			focus = SHU_example_ab_ionian
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cb_ionian
 		icon = GFX_goal_unknown
@@ -1848,7 +1880,7 @@ focus_tree = {
 			focus = SHU_example_bb_ionian
 		}
 	}
-
+	
 	# ionia Ac Line: Ally 
 	focus = {
 		id = SHU_example_ac_ionian
@@ -1859,9 +1891,9 @@ focus_tree = {
 		prerequisite = {
 			focus =  SHU_example_ionian_start			
 			# focus = SHU_starter_ionian_piltover
-
+			
 		}
-
+		
 		available = { 
 			# Condition:
 			# Sivir is leader
@@ -1869,7 +1901,7 @@ focus_tree = {
 			# They likes & they at war with noxus
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bc_ionian
 		icon = GFX_goal_unknown
@@ -1880,7 +1912,7 @@ focus_tree = {
 			focus = SHU_example_ac_ionian
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cc_ionian
 		icon = GFX_goal_unknown
@@ -1891,24 +1923,24 @@ focus_tree = {
 			focus = SHU_example_bc_ionian
 		}
 	}
-
-
-# ██████╗ ██╗██╗      ██████╗ ███████╗ ██╗       ██╗ █████╗ ████████╗███████╗██████╗ 
-# ██╔══██╗██║██║     ██╔════╝ ██╔════╝ ██║  ██╗  ██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
-# ██████╦╝██║██║     ██║  ██╗ █████╗   ╚██╗████╗██╔╝███████║   ██║   █████╗  ██████╔╝
-# ██╔══██╗██║██║     ██║  ╚██╗██╔══╝    ████╔═████║ ██╔══██║   ██║   ██╔══╝  ██╔══██╗
-# ██████╦╝██║███████╗╚██████╔╝███████╗  ╚██╔╝ ╚██╔╝ ██║  ██║   ██║   ███████╗██║  ██║
-# ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-
+	
+	
+	# ██████╗ ██╗██╗      ██████╗ ███████╗ ██╗       ██╗ █████╗ ████████╗███████╗██████╗ 
+	# ██╔══██╗██║██║     ██╔════╝ ██╔════╝ ██║  ██╗  ██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
+	# ██████╦╝██║██║     ██║  ██╗ █████╗   ╚██╗████╗██╔╝███████║   ██║   █████╗  ██████╔╝
+	# ██╔══██╗██║██║     ██║  ╚██╗██╔══╝    ████╔═████║ ██╔══██║   ██║   ██╔══╝  ██╔══██╗
+	# ██████╦╝██║███████╗╚██████╔╝███████╗  ╚██╔╝ ╚██╔╝ ██║  ██║   ██║   ███████╗██║  ██║
+	# ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+	
 	# It's been a long time since the empire was back
 	# We dont know everything and learning what we don't 
 	# know is a part of returning to our real position in 
 	# the world, hence we must uncover what lies at this 
 	# junction some call "Bilge Water"
-
+	
 	# Option to help the Buhuru Become the Controllers of
 	# the area
-
+	
 	# bilge_water Starter Line
 	focus = {
 		id = SHU_scout_remote_islands
@@ -1922,7 +1954,7 @@ focus_tree = {
 			# # focus = SHU_Minors
 		}
 	}
-
+	
 	# bilge_water AA Line
 	focus = {
 		id = SHU_pirate_hunt
@@ -1939,7 +1971,7 @@ focus_tree = {
 			focus = SHU_scout_remote_islands
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ba_bilge_water
 		icon = GFX_goal_unknown
@@ -1950,7 +1982,7 @@ focus_tree = {
 			focus = SHU_pirate_hunt
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ca_bilge_water
 		icon = GFX_goal_unknown
@@ -1961,7 +1993,7 @@ focus_tree = {
 			focus = SHU_example_ba_bilge_water
 		}
 	}
-
+	
 	# bilge_water AB Line
 	focus = {
 		id = SHU_pirate_alliance
@@ -1978,7 +2010,7 @@ focus_tree = {
 			focus = SHU_autonomus_state
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bb_bilge_water
 		icon = GFX_goal_unknown
@@ -1989,7 +2021,7 @@ focus_tree = {
 			focus = SHU_pirate_alliance
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cb_bilge_water
 		icon = GFX_goal_unknown
@@ -2000,13 +2032,13 @@ focus_tree = {
 			focus = SHU_example_bb_bilge_water
 		}
 	}
-
-# ████████╗ █████╗ ████████╗ █████╗ ██╗        ██╗       ██╗ █████╗ ██████╗ 
-# ╚══██╔══╝██╔══██╗╚══██╔══╝██╔══██╗██║        ██║  ██╗  ██║██╔══██╗██╔══██╗
-#    ██║   ██║  ██║   ██║   ███████║██║        ╚██╗████╗██╔╝███████║██████╔╝
-#    ██║   ██║  ██║   ██║   ██╔══██║██║         ████╔═████║ ██╔══██║██╔══██╗
-#    ██║   ╚█████╔╝   ██║   ██║  ██║███████╗    ╚██╔╝ ╚██╔╝ ██║  ██║██║  ██║
-#    ╚═╝    ╚════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝     ╚═╝   ╚═╝  ╚═╝  ╚═╝╚═╝  ╚═╝
+	
+	# ████████╗ █████╗ ████████╗ █████╗ ██╗        ██╗       ██╗ █████╗ ██████╗ 
+	# ╚══██╔══╝██╔══██╗╚══██╔══╝██╔══██╗██║        ██║  ██╗  ██║██╔══██╗██╔══██╗
+	#    ██║   ██║  ██║   ██║   ███████║██║        ╚██╗████╗██╔╝███████║██████╔╝
+	#    ██║   ██║  ██║   ██║   ██╔══██║██║         ████╔═████║ ██╔══██║██╔══██╗
+	#    ██║   ╚█████╔╝   ██║   ██║  ██║███████╗    ╚██╔╝ ╚██╔╝ ██║  ██║██║  ██║
+	#    ╚═╝    ╚════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝     ╚═╝   ╚═╝  ╚═╝  ╚═╝╚═╝  ╚═╝
 	focus = {
 		id = SHU_total_war
 		icon = GFX_focus_wonderweapons # GFX_goal_unknown 
@@ -2019,13 +2051,13 @@ focus_tree = {
 		}
 	}
 	
-#   █████╗  ██╗   ██╗ ██████╗  ███╗   ███╗  █████╗ 
-#  ██╔══██╗ ██║   ██║ ██╔══██╗ ████╗ ████║ ██╔══██╗
-#  ███████║ ██║   ██║ ██████╔╝ ██╔████╔██║ ███████║
-#  ██╔══██║ ██║   ██║ ██╔══██╗ ██║╚██╔╝██║ ██╔══██║
-#  ██║  ██║ ╚██████╔╝ ██║  ██║ ██║ ╚═╝ ██║ ██║  ██║
-#  ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝
-
+	#   █████╗  ██╗   ██╗ ██████╗  ███╗   ███╗  █████╗ 
+	#  ██╔══██╗ ██║   ██║ ██╔══██╗ ████╗ ████║ ██╔══██╗
+	#  ███████║ ██║   ██║ ██████╔╝ ██╔████╔██║ ███████║
+	#  ██╔══██║ ██║   ██║ ██╔══██╗ ██║╚██╔╝██║ ██╔══██║
+	#  ██║  ██║ ╚██████╔╝ ██║  ██║ ██║ ╚═╝ ██║ ██║  ██║
+	#  ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝
+	
 	# Aurma Start Line 
 	focus = {
 		id = SHU_rule_aurma
@@ -2041,7 +2073,7 @@ focus_tree = {
 			
 		}
 	}
-
+	
 	focus = {
 		id = SHU_approach_aurma
 		icon = GFX_goal_unknown
@@ -2075,7 +2107,7 @@ focus_tree = {
 			focus = SHU_rule_aurma
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ba_aurma
 		icon = GFX_goal_unknown
@@ -2086,7 +2118,7 @@ focus_tree = {
 			focus = SHU_potential_alliance
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_ca_aurma
 		icon = GFX_goal_unknown
@@ -2097,7 +2129,7 @@ focus_tree = {
 			focus = SHU_example_ba_aurma
 		}
 	}
-
+	
 	# Aurma AB Line: Puppet Aurma
 	focus = {
 		id = SHU_independant_republic
@@ -2114,7 +2146,7 @@ focus_tree = {
 			focus = SHU_rule_aurma
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bb_aurma
 		icon = GFX_goal_unknown
@@ -2125,7 +2157,7 @@ focus_tree = {
 			focus = SHU_independant_republic
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cb_aurma
 		icon = GFX_goal_unknown
@@ -2153,11 +2185,11 @@ focus_tree = {
 		}
 		available = {
 			
-
-
+			
+			
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bc_aurma
 		icon = GFX_goal_unknown
@@ -2168,7 +2200,7 @@ focus_tree = {
 			focus = SHU_autonomus_state
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cc_aurma
 		icon = GFX_goal_unknown
@@ -2179,7 +2211,7 @@ focus_tree = {
 			focus = SHU_example_bc_aurma
 		}
 	}
-
+	
 	# Annex Aurma Line - Local Control is required! 
 	# Plus we need their knowledge of shipbuilding! 
 	
@@ -2198,11 +2230,11 @@ focus_tree = {
 		}
 		available = {
 			
-
-
+			
+			
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_bd_aurma
 		icon = GFX_goal_unknown
@@ -2213,7 +2245,7 @@ focus_tree = {
 			focus = SHU_shuriman_ship_builders
 		}
 	}
-
+	
 	focus = {
 		id = SHU_example_cd_aurma
 		icon = GFX_goal_unknown
@@ -2224,15 +2256,15 @@ focus_tree = {
 			focus = SHU_example_bd_aurma
 		}
 	}
-
 	
-#  █████╗ ██████╗ ██╗   ██╗ ██████╗████████╗ █████╗ ██╗        ██████╗ █████╗  █████╗ ██████╗ 
-# ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔══██╗██║       ██╔════╝██╔══██╗██╔══██╗██╔══██╗
-# ██║  ╚═╝██████╔╝ ╚████╔╝ ╚█████╗    ██║   ███████║██║       ╚█████╗ ██║  ╚═╝███████║██████╔╝
-# ██║  ██╗██╔══██╗  ╚██╔╝   ╚═══██╗   ██║   ██╔══██║██║        ╚═══██╗██║  ██╗██╔══██║██╔══██╗
-# ╚█████╔╝██║  ██║   ██║   ██████╔╝   ██║   ██║  ██║███████╗  ██████╔╝╚█████╔╝██║  ██║██║  ██║
-#  ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝  ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-
+	
+	#  █████╗ ██████╗ ██╗   ██╗ ██████╗████████╗ █████╗ ██╗        ██████╗ █████╗  █████╗ ██████╗ 
+	# ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔══██╗██║       ██╔════╝██╔══██╗██╔══██╗██╔══██╗
+	# ██║  ╚═╝██████╔╝ ╚████╔╝ ╚█████╗    ██║   ███████║██║       ╚█████╗ ██║  ╚═╝███████║██████╔╝
+	# ██║  ██╗██╔══██╗  ╚██╔╝   ╚═══██╗   ██║   ██╔══██║██║        ╚═══██╗██║  ██╗██╔══██║██╔══██╗
+	# ╚█████╔╝██║  ██║   ██║   ██████╔╝   ██║   ██║  ██║███████╗  ██████╔╝╚█████╔╝██║  ██║██║  ██║
+	#  ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝  ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+	
 	# crystal_scar Starter Line
 	focus = {
 		id = SHU_starter_crystal_scar
@@ -2249,7 +2281,7 @@ focus_tree = {
 					tooltip = "Has Taliyah"
 					has_character = SHU_taliyah	
 				}
-
+				
 				SHU = {
 					tooltip = "Has Natinalized Hexcore"
 					has_country_flag = has_nationalized_hexcore
@@ -2257,7 +2289,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	# crystal_scar A Line
 	focus = {
 		id = SHU_overseer_taliyah
@@ -2265,13 +2297,13 @@ focus_tree = {
 		x=0
 		y=1
 		relative_position_id = SHU_starter_crystal_scar
-
+		
 		prerequisite = {
 			focus = SHU_starter_crystal_scar
 			# focus = SHU_starter_zaun_crystal_scar
 		}
 	}
-
+	
 	# crystal_scar A Line
 	focus = {
 		id = SHU_taliyahs_supervision
@@ -2279,13 +2311,13 @@ focus_tree = {
 		x=0
 		y=1
 		relative_position_id = SHU_overseer_taliyah
-
+		
 		prerequisite = {
 			focus = SHU_overseer_taliyah
 			# focus = SHU_starter_zaun_crystal_scar
 		}
 	}
-
+	
 	
 	# crystal_scar b Line
 	focus = {
@@ -2294,7 +2326,7 @@ focus_tree = {
 		x=0
 		y=1
 		relative_position_id = SHU_taliyahs_supervision
-
+		
 		prerequisite = {
 			focus = SHU_taliyahs_supervision
 		}
@@ -2314,14 +2346,14 @@ focus_tree = {
 			focus = SHU_our_crystal_scar
 		}
 	}
-
-#  ██████╗  ██╗ ██╗     ████████╗  █████╗  ██╗   ██╗ ███████╗ ██████╗ 
-#  ██╔══██╗ ██║ ██║     ╚══██╔══╝ ██╔══██╗ ██║   ██║ ██╔════╝ ██╔══██╗
-#  ██████╔╝ ██║ ██║        ██║    ██║  ██║ ╚██╗ ██╔╝ █████╗   ██████╔╝
-#  ██╔═══╝  ██║ ██║        ██║    ██║  ██║  ╚████╔╝  ██╔══╝   ██╔══██╗
-#  ██║      ██║ ███████╗   ██║    ╚█████╔╝   ╚██╔╝   ███████╗ ██║  ██║
-#  ╚═╝      ╚═╝ ╚══════╝   ╚═╝     ╚════╝     ╚═╝    ╚══════╝ ╚═╝  ╚═╝
-		
+	
+	#  ██████╗  ██╗ ██╗     ████████╗  █████╗  ██╗   ██╗ ███████╗ ██████╗ 
+	#  ██╔══██╗ ██║ ██║     ╚══██╔══╝ ██╔══██╗ ██║   ██║ ██╔════╝ ██╔══██╗
+	#  ██████╔╝ ██║ ██║        ██║    ██║  ██║ ╚██╗ ██╔╝ █████╗   ██████╔╝
+	#  ██╔═══╝  ██║ ██║        ██║    ██║  ██║  ╚████╔╝  ██╔══╝   ██╔══██╗
+	#  ██║      ██║ ███████╗   ██║    ╚█████╔╝   ╚██╔╝   ███████╗ ██║  ██║
+	#  ╚═╝      ╚═╝ ╚══════╝   ╚═╝     ╚════╝     ╚═╝    ╚══════╝ ╚═╝  ╚═╝
+	
 	# Piltover Starter Line
 	focus = {
 		id = SHU_approach_piltover
@@ -2333,7 +2365,7 @@ focus_tree = {
 			# focus = SHU_Minors
 		}
 	}
-
+	
 	# Piltover AA Line
 	focus = {
 		id = SHU_annex_piltover
@@ -2349,7 +2381,7 @@ focus_tree = {
 			focus = SHU_approach_zaun
 		}
 	}
-
+	
 	focus = {
 		id = SHU_deep_pockets_piltover
 		icon = GFX_goal_unknown
@@ -2360,7 +2392,7 @@ focus_tree = {
 			focus = SHU_hostile_takeover
 		}
 	}
-
+	
 	focus = {
 		id = SHU_mutal_assurance
 		icon = GFX_goal_unknown
@@ -2389,7 +2421,7 @@ focus_tree = {
 			focus = SHU_approach_piltover
 		}
 	}
-
+	
 	focus = {
 		id = SHU_brain_gain
 		icon = GFX_goal_unknown
@@ -2400,7 +2432,7 @@ focus_tree = {
 			focus = SHU_annex_piltover
 		}
 	}
-
+	
 	focus = {
 		id = SHU_new_management_piltover
 		icon = GFX_goal_unknown
@@ -2412,17 +2444,17 @@ focus_tree = {
 		}
 	}
 	
-
-
 	
 	
-#  ███████╗  █████╗  ██╗   ██╗ ███╗  ██╗
-#  ╚════██║ ██╔══██╗ ██║   ██║ ████╗ ██║
-#    ███╔═╝ ███████║ ██║   ██║ ██╔██╗██║
-#  ██╔══╝   ██╔══██║ ██║   ██║ ██║╚████║
-#  ███████╗ ██║  ██║ ╚██████╔╝ ██║ ╚███║
-#  ╚══════╝ ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚══╝
-
+	
+	
+	#  ███████╗  █████╗  ██╗   ██╗ ███╗  ██╗
+	#  ╚════██║ ██╔══██╗ ██║   ██║ ████╗ ██║
+	#    ███╔═╝ ███████║ ██║   ██║ ██╔██╗██║
+	#  ██╔══╝   ██╔══██║ ██║   ██║ ██║╚████║
+	#  ███████╗ ██║  ██║ ╚██████╔╝ ██║ ╚███║
+	#  ╚══════╝ ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚══╝
+	
 	# Zaun Starter Line
 	focus = {
 		id = SHU_approach_zaun
@@ -2431,12 +2463,12 @@ focus_tree = {
 		y=0
 		cost = 3
 		relative_position_id = SHU_approach_piltover
-
+		
 		prerequisite = {
 			# focus = SHU_Minors
 		}
 	}
-
+	
 	# Zaun AA Line: Create a Puppet by Aiding Silco Take over Zaun
 	focus = {
 		id = SHU_silco_plan
@@ -2455,7 +2487,7 @@ focus_tree = {
 			focus = SHU_approach_zaun
 		}
 	}
-
+	
 	# Further Funding
 	focus = {
 		id = SHU_futher_funding
@@ -2467,7 +2499,7 @@ focus_tree = {
 			focus = SHU_silco_plan
 		}
 	}
-
+	
 	# Shadow Plan
 	focus = {
 		id = SHU_shadow_plan
@@ -2479,7 +2511,7 @@ focus_tree = {
 			focus = SHU_futher_funding
 		}
 	}
-
+	
 	# Shadow Deal
 	focus = {
 		id = SHU_shadow_deal
@@ -2495,7 +2527,7 @@ focus_tree = {
 			focus = SHU_shadow_plan
 		}
 	}
-
+	
 	# Zaun Annex Line
 	focus = {
 		id = SHU_annex_zaun
@@ -2506,10 +2538,10 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_approach_zaun			
 			focus = SHU_approach_piltover
-
+			
 		}
 	}
-
+	
 	focus = {
 		id = SHU_chemical_warefare
 		icon = GFX_goal_unknown
@@ -2520,7 +2552,7 @@ focus_tree = {
 			focus = SHU_annex_zaun
 		}
 	}
-
+	
 	focus = {
 		id = SHU_new_management_zaun
 		icon = GFX_goal_unknown
@@ -2531,7 +2563,7 @@ focus_tree = {
 			focus = SHU_chemical_warefare
 		}
 	}
-
+	
 	# # Kalamandia 1
 	# focus = {
 	# 	id = SHU_kalamandia_diplomacy
@@ -2539,10 +2571,10 @@ focus_tree = {
 	# 	y = 0 
 	# 	relative_position_id = SHU_approach_zaun
 	# 	prerequisite = {
-			
+	
 	# 	}
 	# }
-
+	
 	# # Kalamandia 2
 	# focus = {
 	# 	id = SHU_kalamandia_aggression
@@ -2584,11 +2616,11 @@ focus_tree = {
 	# 	y=1
 	# 	cost = 3
 	# 	relative_position_id = SHU_Minors
-
+	
 	# 	available = {
-
+	
 	# 	}
-
+	
 	# 	prerequisite = {
 	# 		# focus = SHU_Minors
 	# 	}
@@ -2605,11 +2637,11 @@ focus_tree = {
 	# 	y=1
 	# 	cost = 3
 	# 	relative_position_id = SHU_Minors
-
+	
 	# 	available = {
-
+	
 	# 	}
-
+	
 	# 	prerequisite = {
 	# 		# focus = SHU_Minors
 	# 	}
@@ -2630,7 +2662,7 @@ focus_tree = {
 	# 		focus = SHU_question_of_slavery
 	# 	}
 	# }
-
+	
 	# # SHURIMA BOW DEEP?
 	# focus = {
 	# 	id = SHU_shurima_bow_deep
@@ -2646,8 +2678,8 @@ focus_tree = {
 	# 		focus = SHU_question_of_slavery
 	# 	}
 	# }
-
-
+	
+	
 	# Sun Service
 	# focus = {
 	# 	id = SHU_sun_service
@@ -2678,8 +2710,8 @@ focus_tree = {
 	# 		focus = SHU_question_of_slavery
 	# 	}
 	# }
-
-
+	
+	
 	# Open Metal Mines
 	focus = {
 		id = SHU_open_metal_mines
@@ -2695,7 +2727,7 @@ focus_tree = {
 			focus = SHU_start_the_mines
 		}
 	}
-
+	
 	# Open Crystal Mines
 	focus = {
 		id = SHU_open_crystal_mines
@@ -2725,7 +2757,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_trade_guild
 		}		
-			
+		
 		prerequisite = {
 			focus = SHU_craft_guild
 		}
@@ -2745,7 +2777,7 @@ focus_tree = {
 			focus = SHU_open_gold_mines
 		}
 	}
-
+	
 	# Gold Reserves
 	focus = {
 		id = SHU_gold_reserve
@@ -2761,12 +2793,12 @@ focus_tree = {
 			# Has completed 
 			# focus = SHU_gold_refinement
 		}
-
+		
 		prerequisite = {
-        	focus = SHU_shuriman_guilds
+			focus = SHU_shuriman_guilds
 		}
 	}
-
+	
 	# Expand the Mines
 	focus = {
 		id = SHU_start_the_mines # OLD: SHU_expand_hex_mines 
@@ -2784,7 +2816,7 @@ focus_tree = {
 			# Remove Brazil No Resources Debuff
 		}
 	}
-
+	
 	# # Rebuild Trade Routes
 	# focus = {
 	# 	id = SHU_rebuild_trade_routes
@@ -2793,18 +2825,18 @@ focus_tree = {
 	# 	y = 1
 	# 	relative_position_id = SHU_rebuild_armory
 	# 	cost = 5
-
+	
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}
-
+	
 	# 	prerequisite = {
 	# 		focus = SHU_shuriman_legions
 	# 	}
 	# 	available = {
 	# 		# Add any conditions for the focus to be available here
 	# 	}
-
+	
 	# 	completion_reward = {
 	# 		131 = {
 	# 			add_building_construction = {
@@ -2864,7 +2896,7 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	# # Its time we start rebuilding our fleets to their former glory!
 	# focus = {
 	# 	id = SHU_rebuilding_our_armada
@@ -2878,14 +2910,14 @@ focus_tree = {
 	# 		focus = SHU_rebuilding_our_fleet
 	# 	}
 	# 	available = {
-
+	
 	# 	}
 	# 	completion_reward = {
-
-			
+	
+	
 	# 	}
 	# }
-
+	
 	# # Rebuild Trade Hubs
 	# focus = {
 	# 	id = SHU_rebuild_trade_hubs
@@ -2900,11 +2932,11 @@ focus_tree = {
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}
-
+	
 	# 	available = {
 	# 		# Add any conditions for the focus to be available here
 	# 	}
-
+	
 	# 	completion_reward = {
 	# 		131 = {
 	# 			add_building_construction = {
@@ -2964,7 +2996,7 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	# OLD: Nationalize The Mines!
 	# NEW: Nationalize Hexore!  
 	focus = {
@@ -2982,7 +3014,7 @@ focus_tree = {
 			#focus = SHU_open_crystal_mines
 			# focus = SHU_open_gold_mines
 		}
-
+		
 		completion_reward = {
 			custom_effect_tooltip = has_nationalized_hexcore_tt
 			set_country_flag = has_nationalized_hexcore
@@ -3008,7 +3040,7 @@ focus_tree = {
 			custom_effect_tooltip = SHU_Restoring_Shuriman_Economy_TT
 		}
 	}
-
+	
 	# Safer Mines! - Now a Shared Focus!
 	# focus = {
 	# 	id = SHU_safermines
@@ -3026,17 +3058,17 @@ focus_tree = {
 	# 	}
 	# 	completion_reward = {
 	# 		limit = { has_resources_amount = { resource = oil amount > 19 } }
-
+	
 	# 		add_resource = {
 	# 			type = oil
 	# 			amount = 24
 	# 		}
 	# 	}
 	# }
-  	
+	
 	# SHU_literacy_programs - illiteracy
 	
-
+	
 	# Land Prospect
 	focus = {
 		id = SHU_land_prospect
@@ -3052,7 +3084,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-
+			
 		}
 	}
 	
@@ -3148,7 +3180,7 @@ focus_tree = {
 			stability_factor = 0.1
 		}
 	}
-
+	
 	focus = {
 		id = SHU_workers_rights
 		icon = GFX_goal_generic_consumer_goods
@@ -3158,16 +3190,16 @@ focus_tree = {
 		relative_position_id = SHU_war_guild
 		
 		cost = 5
-
+		
 		bypass = { has_completed_focus = SHU_emperor }
-
+		
 		# Old 
 		#prerequisite = {
 		#	focus = SHU_tribe_unity
 		# 	focus = SHU_war_guild
 		# }
 		# prerequisite = {
-
+		
 		# New
 		prerequisite = {
 			focus = SHU_war_guild
@@ -3181,7 +3213,7 @@ focus_tree = {
 			focus = SHU_gold_reserve
 		}
 	}
-
+	
 	# OLD: Royal High Courts 
 	# NEW: Republican Purge 
 	# NEW: The Imperial Dream
@@ -3230,12 +3262,12 @@ focus_tree = {
 			focus = SHU_sun_disc_restorations
 		}
 	}
-
+	
 	# Replant The Basin!
 	focus = {
 		id = SHU_replant_the_basin
 		icon = {
-        	trigger = { has_country_leader = { character = SHU_azir ruling_only = only } } # Condition Example: has_government = democratic 
+			trigger = { has_country_leader = { character = SHU_azir ruling_only = only } } # Condition Example: has_government = democratic 
 			value = GFX_SHU_replant_the_basin_green
 		}
 		icon = {
@@ -3246,37 +3278,37 @@ focus_tree = {
 			trigger = { NOT = {  has_country_leader = { character = SHU_azir ruling_only = only }}} # Condition Example: has_government = democratic 
 			value = GFX_SHU_replant_the_basin
 		}
-
+		
 		dynamic = yes
 		x = 1 # 13
 		y = 1 
 		relative_position_id = SHU_return_of_the_amulet
 		
 		cost = 5
-
+		
 		ai_will_do = {
 			factor = 1
 		}
-
+		
 		prerequisite = {
 			focus = SHU_return_of_the_amulet
 		}
 		prerequisite = {
 			focus = SHU_shrines_of_shurima
 		}
-
+		
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-
+		
 		completion_reward = {
 			improve_development = {
 				state = ROOT
 				value = 5
 			}
-    	}
+		}
 	}
-
+	
 	focus ={ 
 		id = SHU_no_more_hunger
 		icon = GFX_goal_farm_boom
@@ -3287,10 +3319,10 @@ focus_tree = {
 			focus = SHU_shrines_of_shurima
 		}
 		complete_effect = {
-
+			
 		}
 	}
-
+	
 	# focus ={ 
 	# 	id = SHU_irigation_system
 	# 	icon = GFX_SHU_diverse_farmland
@@ -3301,10 +3333,10 @@ focus_tree = {
 	# 		focus = SHU_shrines_of_shurima
 	# 	}
 	# 	complete_effect = {
-
+	
 	# 	}
 	# }
-
+	
 	focus = { 
 		id = SHU_diverse_farmland
 		icon = GFX_SHU_diverse_farmland
@@ -3315,10 +3347,10 @@ focus_tree = {
 			focus = SHU_shrines_of_shurima
 		}
 		complete_effect = {
-
+			
 		}
 	}
-
+	
 	# Shuriman Guilds
 	focus = {
 		id = SHU_shuriman_guilds
@@ -3342,7 +3374,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	# War Guild
 	focus = {
 		id = SHU_war_guild
@@ -3356,18 +3388,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_shuriman_guilds
 		}
-
+		
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-
+		
 		completion_reward = {
 			every_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-
+				
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -3377,7 +3409,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	# Craft Guild
 	focus = {
 		id = SHU_craft_guild
@@ -3393,7 +3425,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 	}
-
+	
 	# Trade Guild
 	focus = {
 		id = SHU_trade_guild 
@@ -3409,7 +3441,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 	}
-
+	
 	# Sun Disc, Has Risen!
 	focus = {
 		id = SHU_sundisc_has_risen
@@ -3427,7 +3459,7 @@ focus_tree = {
 				not = { has_war_with = XER }
 			}
 		}
-			
+		
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -3445,7 +3477,7 @@ focus_tree = {
 		x = 4 
 		y = 1
 		relative_position_id = SHU_empress
-
+		
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -3457,7 +3489,7 @@ focus_tree = {
 			add_ideas = tribal_council
 		}
 	}
-
+	
 	# Tribe Law
 	focus = {
 		id = SHU_tribe_law
@@ -3476,7 +3508,7 @@ focus_tree = {
 			add_ideas = tribe_law
 		}
 	}
-
+	
 	# Tribal Legal Recognition
 	focus = {
 		id = SHU_tribal_recognition
@@ -3495,7 +3527,7 @@ focus_tree = {
 			add_ideas = tribal_recognition
 		}
 	}
-
+	
 	# Tribal Respect
 	focus = {
 		id = SHU_tribal_respect
@@ -3534,10 +3566,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = tribal_family
-
+			
 			# Play Event for Shurima -> adds tribal_ties idea to shurima
 			ROOT = { country_event = { id = shurima.55 days = 100 } }
-
+			
 			NAZ = {
 				add_ideas = tribal_family
 			}
@@ -3546,7 +3578,7 @@ focus_tree = {
 			FROM = { country_event = { id = shurima.55 days = 100 } }
 		}
 	}
-
+	
 	# Work Unions
 	focus = {
 		id = SHU_work_unions
@@ -3561,10 +3593,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Help Nami
 	focus = {
 		id = SHU_moonstone
@@ -3579,10 +3611,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
+	
 	# Marai / Aurma / Resettlement
 	focus = {
 		id = SHU_marai_dockyards_company
@@ -3597,11 +3629,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
+			
 		}
 	}
-
-
+	
+	
 	# # Aurma Resettlement
 	# focus = {
 	# 	id = SHU_reform_marai
@@ -3614,12 +3646,12 @@ focus_tree = {
 	# 		# focus = SHU_annex_nazumah
 	# 		focus = SHU_marai_dockyards_company
 	# 	}
-		
+	
 	# 	completion_reward = {
-
+	
 	# 	}
 	# }
-
+	
 	# Imperial Efforts
 	focus = {
 		id = SHU_imperial_efforts #SHU_imperial_efforts #SHU_military_court
@@ -3635,7 +3667,7 @@ focus_tree = {
 			focus = SHU_ascended_god_warriors_council
 		}
 	}
-
+	
 	# Ascended Council
 	focus = {
 		id = SHU_ascended_god_warriors_council
@@ -3652,7 +3684,7 @@ focus_tree = {
 			focus = SHU_emperor
 		}
 	}
-
+	
 	# Military Law
 	focus = {
 		id = SHU_military_law
@@ -3681,7 +3713,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	# Military Court
 	focus = {
 		id = SHU_military_court #SHU_imperial_efforts
@@ -3697,7 +3729,7 @@ focus_tree = {
 			focus = SHU_shuriman_recognition
 		}
 	}
-
+	
 	
 	# Annex Nazumah
 	focus = {
@@ -3716,7 +3748,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_question_of_nazumah
 		}
-
+		
 		mutually_exclusive = {
 			focus = SHU_puppet_nazumah
 			focus = SHU_nazumah_alliance
@@ -3741,18 +3773,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			every_other_country = {
-			limit = {
-				OR = {
-					original_tag = NAZ
-				}
-			}
-			country_event = useful-events-quarior-anschluss.1
+			NAZ = {
+				country_event = useful-events-quarior-anschluss.1
 			}
 		}
 		will_lead_to_war_with = NAZ
 	}	
-
+	
 	# Puppet Nazumah 
 	focus = {
 		id = SHU_puppet_nazumah
@@ -3772,7 +3799,7 @@ focus_tree = {
 		# prerequisite = {
 		# 	focus = SHU_public_order
 		# }
-
+		
 		bypass = {
 			OR = {
 				NAZ = {
@@ -3787,7 +3814,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		
 		available = {
 			OR = {
 				NAZ = {
@@ -3802,14 +3829,22 @@ focus_tree = {
 				}
 			}
 		}
-
+		
 		mutually_exclusive = {
 			focus = SHU_annex_nazumah
 			focus = SHU_nazumah_alliance
 		}
 		completion_reward = {
 			custom_effect_tooltip = SHU_puppet_nazumah_tt
+			NAZ = {
+				country_event = {
+					id = NSB_soviet_foreign_politics_events.200
+					days = 5
+					random_days = 3
+				}
+			}
 		}
+		will_lead_to_war_with = NAZ
 	}
 	
 	# Invest in Nazumah 
@@ -3838,7 +3873,7 @@ focus_tree = {
 	# 		# NAZ = { add_opinion_modifier = { target = ROOT modifier = tribal_brother } } # Works
 	# 	}
 	# }
-
+	
 	# # Self Governed 
 	# focus = {
 	# 	id = SHU_nazumah_self_govern
@@ -3856,7 +3891,7 @@ focus_tree = {
 	# 		focus = SHU_nazumahs_pride
 	# 	}
 	# }
-
+	
 	# focus = {
 	# 	id = SHU_nazumah_investments
 	# 	icon = GFX_goal_generic_construct_civilian  
@@ -3864,13 +3899,13 @@ focus_tree = {
 	# 	y = 1
 	# 	cost = 5
 	# 	relative_position_id = SHU_nazumahs_pride
-		
+	
 	# 	prerequisite = {
 	# 		focus = SHU_puppet_nazumah
 	# 		focus = SHU_annex_nazumah
 	# 		focus = SHU_puppet_pride
 	# 	}
-
+	
 	# 	completion_reward = {
 	# 		NAZ = {add_offsite_building = { type = industrial_complex level = 2 }}
 	# 	}
@@ -3886,19 +3921,59 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_question_of_nazumah # focus = SHU_military_law # focus = SHU_question_of_slavery
 		}
-
+		
 		mutually_exclusive = {
 			# focus = SHU_nazumahs_pride
 			focus = SHU_puppet_nazumah
 			# focus = SHU_nazumah_alliance
 			focus = SHU_annex_nazumah
 		}
+		
+		bypass = {
+			is_in_faction_with = NAZ
+		}
+		
+		available = {
+			is_faction_leader = yes
+			NAZ = {
+				exists = yes
+				is_in_faction = no
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		
+		completion_reward = {
+			NAZ = {
+				if = {
+					limit = {
+						NOT = {
+							is_in_faction_with = ROOT
+						}
+					}
+					
+					if = {
+						limit = {
+							ROOT = {
+								is_in_faction = yes
+								is_faction_leader = yes
+							}
+						}
+						country_event = generic.5
+					}
+					else = {
+						custom_effect_tooltip = invite_to_faction_tt
+					}
+				}
+			}
+		}
 	}
-
+	
 	## RESEARCH PART - RESEARCH START
-
+	
 	# Row 1
-
+	
 	# School of Nasus ( Requires Nasus )
 	focus = {
 		id = SHU_school_of_nasus
@@ -3906,13 +3981,13 @@ focus_tree = {
 		x = -2 #26 # 18
 		y = 0
 		relative_position_id = SHU_shuriman_university
-
+		
 		cost = 5
-
+		
 		ai_will_do = {
 			factor = 4
 		}
-
+		
 		visible = {
 			IF = { 
 				tag = SHU
@@ -3930,7 +4005,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		
 		bypass = {
 			IF = { 
 				tag = XER
@@ -3939,12 +4014,12 @@ focus_tree = {
 					has_character = SHU_nasus 
 				} 
 			} 
-				
+			
 		}
-	
-	
-	
-
+		
+		
+		
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -3959,28 +4034,28 @@ focus_tree = {
 	}
 	
 	# Row 1
-
+	
 	# Shuriman University - SHU_shuriman_university
 	focus = {
 		id = SHU_shuriman_university 
 		icon = GFX_focus_research 
 		x = 35 # 18
 		y = 0
-
+		
 		cost = 5
-
+		
 		ai_will_do = {
 			factor = 4
 		}
-
+		
 		available = {
-
+			
 		}
-
+		
 		bypass = {
-
+			
 		}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -4005,15 +4080,15 @@ focus_tree = {
 		x = 2 # 30 # 18
 		y = 0
 		relative_position_id = SHU_shuriman_university
-
+		
 		cost = 5
-
+		
 		ai_will_do = { factor = 4 }
-
+		
 		available = {}
-
+		
 		bypass = {}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -4028,9 +4103,9 @@ focus_tree = {
 			add_ideas = SHU_Officer_School
 		}
 	}
-
+	
 	# Row 2
-
+	
 	# Library of Nasus - Great Library of Nasus
 	focus = {
 		id = SHU_library_of_nasus # SHU_great_library_of_nasus
@@ -4038,11 +4113,11 @@ focus_tree = {
 		x = -2 #26 # 18
 		y = 1
 		relative_position_id = SHU_shuriman_university
-
+		
 		cost = 5
-
+		
 		ai_will_do = { factor = 4 }
-
+		
 		available = {
 			IF = {
 				tag = SHU  # If your Shurima 
@@ -4053,7 +4128,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		
 		bypass = {
 			IF = { 
 				tag = XER
@@ -4062,7 +4137,7 @@ focus_tree = {
 					has_character = SHU_nasus 
 				} 
 			} 
-				
+			
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4081,7 +4156,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
+	
 	# Row 2
 	
 	# Great Library Of Shuriman - SHU_rebuild_great_library  
@@ -4091,19 +4166,19 @@ focus_tree = {
 		x = 0 # 18
 		y = 1
 		relative_position_id = SHU_shuriman_university
-
+		
 		cost = 5
-
+		
 		ai_will_do = {
 			factor = 4
 		}
-
+		
 		available = {
 		}
-
+		
 		bypass = {
 		}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -4122,9 +4197,9 @@ focus_tree = {
 			add_ideas = SHU_rebuild_library_idea
 		}
 	}
-
+	
 	# Row 2
-
+	
 	# Shuriman War Academy
 	focus = {
 		id = SHU_war_academy  
@@ -4132,15 +4207,15 @@ focus_tree = {
 		x = 2 #30 #18
 		y = 1
 		relative_position_id = SHU_shuriman_university
-
+		
 		cost = 5
-
+		
 		ai_will_do = { factor = 4 }
-
+		
 		available = {}
-
+		
 		bypass = {}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -4160,9 +4235,9 @@ focus_tree = {
 			add_ideas = SHU_War_Academy
 		}
 	}
-
+	
 	# row 3
-
+	
 	# Restore Great Library Of Shuriman - Requires Nasus
 	focus = {
 		id = SHU_restore_great_library 
@@ -4171,19 +4246,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = SHU_rebuild_library
 		cost = 5
-
+		
 		ai_will_do = {
 			factor = 4
 		}
-
+		
 		available = {
-
+			
 		}
-
+		
 		bypass = {
 			not = { has_character = SHU_nasus }
 		}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -4199,9 +4274,9 @@ focus_tree = {
 			
 		}
 	}
-
+	
 	## ARMY PART - ARMY START 
-
+	
 	# SHU_rebirth_legions
 	focus = {
 		id = SHU_rebirth_legions
@@ -4213,9 +4288,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-
+		
 		available = {
-
+			
 			custom_tooltip_trigger = { 
 				
 				OR = {
@@ -4226,18 +4301,18 @@ focus_tree = {
 							any_neighbor_state = {
 								state = 121
 								# controller = {
-									owner = {
-										original_tag = NAZ
-									}
+								owner = {
+									original_tag = NAZ
 								}
 							}
-							
 						}
 						
-						OR = {
-							ROOT = {
-								tag = SHU
-								has_idea = Shurima_fractured
+					}
+					
+					OR = {
+						ROOT = {
+							tag = SHU
+							has_idea = Shurima_fractured
 						}	
 					}
 				}
@@ -4246,10 +4321,10 @@ focus_tree = {
 		completion_reward = { 
 			SHU_increase_unity = yes 
 			custom_effect_tooltip = SHU_rebirth_legions_tooltip
-
+			
 			# Should also fire event to indicate that 
 			# people are joining the shuriman forces.
-
+			
 			set_division_template_lock = {
 				division_template = "Shuriman Infantry"
 				is_locked = no
@@ -4262,7 +4337,7 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	# Lion Division
 	focus = {
 		id = SHU_lion_riders
@@ -4273,7 +4348,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = {focus = SHU_shuriman_legions}
 		completion_reward = {
-
+			
 		}
 	}
 	# # Army Expansion
@@ -4286,7 +4361,7 @@ focus_tree = {
 	# 	cost = 5
 	# 	prerequisite = {}
 	# 	completion_reward = {
-
+	
 	# 	}
 	# }
 }
