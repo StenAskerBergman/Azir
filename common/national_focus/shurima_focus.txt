@@ -4261,7 +4261,7 @@ focus_tree = {
 		id = SHU_lion_riders
 		icon = GFX_focus_lion_riders
 		x = 0
-		y = 1
+		y = 2 # it is only for test
 		relative_position_id = SHU_shuriman_legions
 		cost = 5
 		prerequisite = {focus = SHU_shuriman_legions}
