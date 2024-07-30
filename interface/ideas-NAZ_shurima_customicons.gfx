@@ -1,0 +1,7 @@
+spriteTypes = { 
+	##Icon For: Exotic Materials
+	SpriteType = { 
+		name = "GFX_idea_NAZ_exotic_materials"
+		texturefile = "gfx/interface/ideas/nazumah-ideas/NAZ_exotic_materials.dds"
+	}
+}

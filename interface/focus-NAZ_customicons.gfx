@@ -1,0 +1,98 @@
+spriteTypes = {
+    
+    # NOTE: Remember to include Focus after GFX icon name!
+    # NOTE: Remember kids, Icon and Picture doesn't mean the same thing (FUCK OFF)
+
+
+    SpriteType = {
+        name = "NAZ_Big_Game_Big_Guns"
+        texturefile = "gfx/interface/goals/NAZ/NAZ_Big_Game_Big_Guns.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_City_On_Water"
+        texturefile = "gfx/interface/goals/NAZ/NAZ_City_On_Water.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_Big_Game"
+        texturefile = "gfx/interface/goals/NAZ/GFX_focus_NAZ_Big_Game.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_Big_Game"
+        texturefile = "gfx/interface/goals/NAZ/GFX_focus_NAZ_Big_Game.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_national_pride"
+        texturefile = "gfx/interface/goals/NAZ/GFX_focus_NAZ_national_pride.dds"
+    }
+
+    SpriteType = {
+        name = "GFZ_focus_NAZ_Declare_Independance"
+        texturefile = "gfx/interface/goals/NAZ/GFZ_focus_NAZ_Declare_Independance.dds"
+    }
+
+    SpriteType = {
+        name = "GFZ_focus_NAZ_suns_shadow"
+        texturefile = "gfx/interface/goals/NAZ/GFZ_focus_NAZ_suns_shadow.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_invite_nearby_settlers"
+        texturefile = "gfx/interface/goals/NAZ/focus_NAZ_invite_nearby_settlers.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_tribal_traditions"
+        texturefile = "gfx/interface/goals/NAZ/focus_NAZ_tribal_traditions.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_portrait_tope_small"
+        texturefile = "gfx/characters/NAZ/GFX_portrait_tope_small.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_portrait_ksante_small_b"
+        texturefile = "gfx/characters/NAZ/GFX_portrait_ksante_small_b.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_NAZ_friend_or_foe"
+        texturefile = "gfx/interface/goals/NAZ/NAZ_friend_or_foe.dds"
+    }
+    
+    SpriteType = {
+		name = "GFX_focus_NAZ_friend_or_foe_shine"
+		texturefile = "gfx/interface/goals/NAZ/NAZ_friend_or_foe.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/NAZ/NAZ_friend_or_foe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/NAZ/NAZ_friend_or_foe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+    
+}

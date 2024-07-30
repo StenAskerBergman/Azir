@@ -1,0 +1,126 @@
+add_namespace = icathia
+
+# Recovery of the Prince
+# VOI_Ixtal_Recovery_event 
+country_event = {
+    id = icathia.1
+    title = icathia.1.t
+    desc = icathia.1.desc 
+    picture =  GFX_report_event_soviet_invasion_map # GFX_evt_Picture # VOI_Ixtal_Recovery
+    is_triggered_only = yes
+    
+    option = {
+        name = icathia.1.a
+        # add_political_power = -100
+        custom_effect_tooltip = icathia.1.a.tt
+    }
+
+    option = {
+        name = icathia.1.b
+        # add_political_power = 100
+        custom_effect_tooltip = icathia.1.b.tt
+    }
+
+    option = {
+        name = icathia.1.c
+        # add_political_power = 100
+        custom_effect_tooltip = icathia.1.c.tt
+    }
+}
+
+# The Remnants of a Void World
+country_event = {
+    id = icathia.2
+    title = icathia.2.t
+    desc = icathia.2.desc 
+    picture = GFX_report_event_soviet_invasion_map # Placeholder for the appropriate graphic
+
+    is_triggered_only = yes
+    
+	trigger = { day = 1 }
+    immediate = {
+        # Actions to be executed when the event is triggered
+    }
+
+    option = {
+        name = icathia.2.a
+        # Resist the Void's Corruption
+        custom_effect_tooltip = icathia.2.a.tt
+        # Add your specific effects here
+    }
+
+    option = {
+        name = icathia.2.b
+        # Succumb to the Void's Influence
+        custom_effect_tooltip = icathia.2.b.tt
+        # Add your specific effects here
+    }
+
+    option = {
+        name = icathia.2.c
+        # Embrace the Traditionalist Path
+        custom_effect_tooltip = icathia.2.c.tt
+        # Add your specific effects here
+    }
+
+    option = {
+        name = icathia.2.d
+        # Support the Reformists
+        custom_effect_tooltip = icathia.2.d.tt
+        # Add your specific effects here
+    }
+}
+
+country_event = {
+	id = icathia.3
+
+	trigger = {
+		NOT = { has_global_flag = icathian_civil_war }
+	}
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			50 = { # Malzahar makes inflammatory speech
+				activate_mission = VOI_malzahar_speech_mission
+				modifier = {
+					factor = 0
+					has_country_flag = VOI_malzahar_imprisoned
+				}
+				modifier = {
+					factor = 0
+					has_decision = VOI_malzahar_imprison
+				}
+			}
+            50 = { # Zilean makes inflammatory speech
+				activate_mission = VOI_zilean_speech_mission
+				modifier = {
+					factor = 0
+					has_country_flag = VOI_zilean_imprisoned
+				}
+				modifier = {
+					factor = 0
+					has_decision = VOI_zilean_imprision
+				}
+			}
+			# 15 = { # Nationalists conduct political assassination
+			# 	activate_mission = SPR_political_assassination_mission
+			# }
+			# 20 = { # Nationalists obtain general's loyalty
+			# 	activate_mission = SPR_sway_leader_loyalty_mission
+			# 	modifier = {
+			# 		factor = 0
+			# 		any_unit_leader = {
+			# 			has_unit_leader_flag = SPA_swayed_leader_loyalty_flag
+			# 		}
+			# 	}
+			# }
+			# 30 = { # Nationalists suppress the leftist strikes
+			# 	activate_mission = SPR_suppress_the_strikes_mission
+			# }
+		}
+	}
+}

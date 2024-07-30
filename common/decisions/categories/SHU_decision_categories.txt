@@ -1,0 +1,66 @@
+SHU_main_cat = {
+	icon = GFX_shurima_red_icon_category
+	priority = 98
+	
+	allowed = {
+		original_tag = SHU
+	}
+
+	# This will pop up once void appear	
+
+}
+
+SHU_nasus_category = {
+	icon = FX_shurima_blue_icon_category
+
+	priority = 85
+	
+	allowed = {
+		original_tag = SHU
+		has_character = SHU_nasus
+		has_completed_focus = SHU_restore_great_library
+	}
+
+	# This will pop up once void appear	
+
+}
+
+SHU_improve_the_god_warriors_influence = { # TAG_improve_the_void_influence # TAG_improve_the_void_spirit 
+	priority = 90
+	icon = GFX_shurima_red_icon_category
+	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = SHU
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		# CONDITIONS listed here
+		# has_completed_focus = 
+	}
+	
+	# When is this decision AVAILABLE (When you can select it in the Decision Tab)
+	available = {
+		# CONDITIONS listed here
+		
+	}
+			
+	# If you can select it ONCE or MULTIPLE TIMES (Put either "yes" or "no" here)
+	fire_only_once = no
+}
+
+SHU_void_cat = {
+	icon = GFX_void_purple_icon_category
+	picture = GFX_decision_cat_picture_SHU_xersai
+	priority = 80
+	
+	allowed = {
+		original_tag = SHU
+	}
+
+	# This will pop up once void appear	
+
+}

@@ -1,0 +1,15 @@
+
+spriteTypes = {	
+    
+    # modifier resistance buffed
+	spriteType = {
+		name = "GFX_modifier_resistance_buffed"
+		texturefile = "gfx/interface/modifiers/modifier_resistance_buffed.dds"
+	}
+    
+    # modifier void attack
+	spriteType = {
+		name = "GFX_modifier_void_attack"
+		texturefile = "gfx/interface/modifiers/modifier_void_attack.dds"
+	}
+}

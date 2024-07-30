@@ -1,0 +1,42 @@
+
+state={
+	id=152
+	name="STATE_152"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 8
+ rubber = 10
+ #steel = 3
+ #oil = 7
+ #chromium = 3
+ aluminium = 5
+ }
+ history = {
+ owner = TAR
+ add_core_of = TAR
+ victory_points = {
+ 9383 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   #dockyard = 0
+   #9521 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		471 1672 1892 2557 3544 4326 5432 9337 9380 9383 9389 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1726481
+        state_category = town
+}

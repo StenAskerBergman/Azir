@@ -1,0 +1,79 @@
+spriteTypes = { 
+	##Icon For: Shuriman Shame
+	SpriteType = { 
+		name = "GFX_idea_SHU_shuriman_shame-1752"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_shame-1752.dds"
+	}
+
+	##Icon For: Shuriman Pride
+	SpriteType = { 
+		name = "GFX_idea_SHU_shuriman_pride-1756"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_pride-1756.dds"
+	}
+
+	##Icon For: Lawless Slavery
+	SpriteType = { 
+		name = "GFX_idea_SHU_lawless_slavery-1506"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_lawless_slavery-1506.dds"
+	}
+
+	##Icon For: Shurima Broken
+	SpriteType = { 
+		name = "GFX_idea_SHU_shurima_broken-1239"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shurima_broken.dds"
+	}
+
+	##Icon For: Shurima Fractured
+	SpriteType = { 
+		name = "GFX_idea_SHU_shurima_fractured-1238"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shurima_fractured.dds"
+	}
+
+	##Icon For: Shurima Scattered
+	SpriteType = { 
+		name = "GFX_idea_SHU_shurima_scattered-1240"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shurima_scattered.dds"
+	}
+
+	##Icon For: Shurima Apart
+	SpriteType = { 
+		name = "GFX_idea_SHU_shurima_apart-1241"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shurima_apart.dds"
+	}
+
+	##Icon For: Shurima United!
+	SpriteType = { 
+		name = "GFX_idea_SHU_shurima_united-1242"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shurima_united.dds"
+	}
+
+	##Icon For: The Great Fall
+	SpriteType = { 
+		name = "GFX_idea_SHU_the_great_fall-1237"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_the_great_fall-1237.dds"
+	}
+
+	##Icon For: Shuriman Guilt
+	SpriteType = { 
+		name = "GFX_idea_SHU_shuriman_guilt-1753"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_guilt-1753.dds"
+	}
+
+	##Icon For: Shuriman Hybris
+	SpriteType = { 
+		name = "GFX_idea_SHU_shuriman_hybris-1754"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_hybris-1754.dds"
+	}
+
+	##Icon For: Shuriman Struggle
+	SpriteType = { 
+		name = "GFX_idea_SHU_shuriman_struggle-1755"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_struggle-1755.dds"
+	}
+
+	##Icon For: Hex Crystal Sovereignty
+	SpriteType = { 
+		name = "GFX_idea_SHU_hex_crystal_sovereignty-1452"
+		texturefile = "gfx/interface/ideas/shurima-ideas/SHU_hex_crystal_sovereignty-1452.dds"
+	}
+}

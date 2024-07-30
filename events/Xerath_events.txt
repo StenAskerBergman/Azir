@@ -1,0 +1,133 @@
+﻿###########################
+# Xerath's Faction Events
+###########################
+
+add_namespace = xerath
+
+# Focus - Specific
+country_event = {
+	id = xerath.2
+	title = "Power Play"
+	desc = "Placeholder text, Main Msg -> Pick Your Leader"
+	picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+	fire_only_once = no
+	
+	trigger ={
+		# Origin Country
+		tag = XER
+	}
+
+	# Xerath
+	option = {
+		name = "Make Xerath Leader"
+		# custom_effect_tooltip = "Make Xerath Leader"
+		# retire = XER_renekton
+		# unlock_national_focus = XER_Xerath_Conquest #
+        complete_national_focus = XER_Xerath_Conquest        
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.15
+		}
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			tag = XER
+		}
+		effects ={
+			
+		}
+		
+	}
+
+	# Renekton Option
+	option = {
+		name = "Make Renekton Leader"
+		retire_country_leader = yes
+		set_politics = { ruling_party = fascism }	
+		unlock_national_focus = XER_Renekton_Conquest    
+        # complete_national_focus = XER_Renekton_Conquest        	
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.25
+		}
+		
+		ai_chance = {
+			base = 5
+		}
+		trigger = {
+			has_character = XER_renekton
+		}
+		set_cosmetic_tag = XER_renekon
+		effect = {
+			
+			hidden_effect = {
+				# Add hidden effects here if necessary
+			}
+		}
+	}
+}
+# Event - Specific
+
+# Shuriman Great War 
+country_event = {
+	id = xerath.1
+	title = "Final Struggle" # shurima.azir.1.t
+	desc = "We Embark On Our Final Struggle Towards a world of Total Enlightenment!" # shurima.azir.1.d
+	picture = GFX_report_event_empty_throne
+	effect_tooltip = "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!"
+    
+    # trigger = { always = yes }
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    # mean_time_to_happen = { days = 1 }
+
+	trigger = {
+        country_exists = SHU
+
+		NOT ={ xer_at_war_with_shu = true}
+		NOT ={ has_country_flag = xer_at_war_with_shu }
+
+		SHU = {
+			has_war_with = XER
+		}
+		
+		XER = {
+			has_war_with = SHU
+			has_offensive_war_with = SHU
+		}
+	}
+
+    immediate = {
+        create_wargoal = {
+            target = SHU
+            attacker = XER
+            type = annex_everything
+        }
+
+        declare_war_on = {
+        target = SHU
+        type = annex_everything
+        }
+    }
+
+
+	option = { # Breaking point!
+		name = "Let us Begin!"
+        xer_at_war_with_shu = true
+        ai_chance = { factor = 100 }
+		news_event = { id = shuriman_rnews.5 days = 1 }
+        set_country_flag = xer_at_war_with_shu
+
+	}
+}
+
+# Other - Random
+
+
+# Q: Can I change fonts on events? or txt color?
+# Q: What does +/n+ Do? And What '' `` ¨¨¨ sign looks best ingame? 
+# "We will Begin Our Final" +/n+"'Liberation' of Shurima "+/n+" ¨Liberation¨ of Shurima"

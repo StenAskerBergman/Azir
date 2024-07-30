@@ -1,0 +1,69 @@
+# This only tells the game that you have NATIONAL SPIRITs stored here
+ideas = {
+	country = {
+	
+		### EXPLANATORY IDEA
+		AFK_explanatoryidea_I = {
+			picture = GFX_thisgfxiswrong
+			
+			# If CONDITIONS in "available" are not satisfied, this IDEA will be REMOVED
+			available = {
+				# CONDITIONS listed here
+			
+			}
+			
+			# This stays always the same
+			removal_cost = -1
+
+			# MODIFIERS that this IDEA gives
+			modifier = {
+				# MODIFIERS listed here
+				
+			}
+			
+			
+			
+			### OTHER POSSIBLE THINGS (not often used, but will list it here - if you want to use them, just copy them to the EXEMPLARY IDEA bellow)
+			# TARGETED MODIFIERS that this IDEA provides
+			targeted_modifier = {
+				tag = AFK 
+				
+				# TARGETED MODIFIERS listed here
+				
+			}
+			
+			# What happens when you GET this IDEA
+			on_add = {
+				# EFFECTS listed here
+				
+			}
+			# What happens when you LOOSE/REMOVE this IDEA
+			on_remove = {
+				# EFFECTS listed here
+				
+			}
+			
+			# Rules you must follow when you have this IDEA (for example can't declare war, can't join factions, etc)
+			rule = {
+				# RULES listed here
+			}
+		}
+		
+		
+		
+		### EXEMPLARY IDEA
+		AFK_exemplaryidea_I = {
+			picture = GFX_thisgfxiswrong
+			
+			available = {
+				
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+	}
+}

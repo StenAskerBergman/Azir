@@ -1,0 +1,20 @@
+on_actions = {
+	# Runeterra 
+	on_startup = {
+		effect = {
+			 
+			# On Start
+			VOI = { # icathian 
+
+				# Remove void_army before the game starts 
+				remove_ideas = void_army
+
+				add_political_power = 28
+				# id = void_army_removal # StartUpWar.1
+				random_events = {
+					100 = icathia.3
+				}
+			}
+		}
+	}
+}

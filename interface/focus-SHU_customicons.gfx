@@ -1,0 +1,1318 @@
+spriteTypes = { 	
+	
+	##Icon For: focus god warriors - focus_god_warriors
+	SpriteType = {
+		name = "GFX_focus_god_warriors"
+		texturefile = "gfx/interface/goals/SHU/focus_god_warriors.dds"
+	}
+	
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_focus_god_warriors_shine"
+		texturefile = "gfx/interface/goals/SHU/focus_god_warriors.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/focus_god_warriors.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/focus_god_warriors.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+
+	SpiriteType = {
+		name ="GFX_focus_SHU_shurima_bow"
+		texturefile ="gfx/interface/goals/SHU/GFX_focus_SHU_shurima_bow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_SHU_republic_future_a"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_republic_future_a.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_SHU_republic_future_b"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_republic_future_b.dds"
+	}
+
+# Below  was Written in extension by Sten's :) 
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_emergency_powers.dds"
+		texturefile = "gfx/interface/goals/SHU/GFX_r56_goal_AUS_emergency_powers.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_ascended_council.dds"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_ascended_council.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_child_enslavement_bill"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_child_enslavement_bill.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_diverse_farmland"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_diverse_farmland.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_emperor"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_emperor.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_empress"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_empress.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_courts"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_courts.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_law"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_law.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_order"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_order.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_nationalize_the_mines"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_nationalize_the_mines.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_national_defense_state"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_national_defense_state.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_plan_frontlines"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_plan_frontlines.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_question_of_slavery"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_question_of_slavery.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_replant_the_basin"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_replant_the_basin.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_replant_the_basin_blue"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_replant_the_basin_blue.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_replant_the_basin_green"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_replant_the_basin_green.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_royal_high_courts"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_royal_high_courts.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_slaver_rights_act"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_slaver_rights_act.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_slave_rights_act"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_slave_rights_act.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribal_recognition"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribal_recognition.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribal_respect"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribal_respect.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribal_unity"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribal_unity.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribe_council"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribe_council.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribe_law"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribe_law.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_Goal_BUL_Brannik"
+		texturefile = "gfx/interface/goals/SHU/Goal_BUL_Brannik.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_goal_BUL_CoA"
+		texturefile = "gfx/interface/goals/SHU/goal_BUL_CoA.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_JAP_manchu_special_focus"
+		texturefile = "gfx/interface/goals/SHU/JAP_manchu_special_focus.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_demand_slovenia"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_demand_slovenia.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_demand_sudtirol"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_demand_sudtirol.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_demand_trieste"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_demand_trieste.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_emergency_powers"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_emergency_powers.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_flag_austria"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_flag_austria.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_form_holy_roman_empire"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_form_holy_roman_empire.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_our_fate_is_our_own"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_our_fate_is_our_own.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_rearm_the_bundesheer"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_rearm_the_bundesheer.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_secret_rearmament"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_secret_rearmament.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_aluminium"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_aluminium.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_copper"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_copper.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_gold_extraction"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_gold_extraction.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_military_agreement_germany"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_military_agreement_germany.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_Steel"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_Steel.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_trade_pact"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_trade_pact.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_tungsten"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_tungsten.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_union_agreement"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_union_agreement.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_COG_Jungle_Diamond_Mine"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_COG_Jungle_Diamond_Mine.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_COG_Jungle_Gold_Mine"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_COG_Jungle_Gold_Mine.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_COG_Jungle_Railroad"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_COG_Jungle_Railroad.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_COG_Rubber_Farming"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_COG_Rubber_Farming.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_CUB_sugar_money"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_CUB_sugar_money.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_european_african_diplomacy"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_european_african_diplomacy.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_all_resource"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_all_resource.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_banking_legislation"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_banking_legislation.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_large_fleet"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_large_fleet.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_military_funding"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_funding.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_military_government"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_government.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_mining_iron"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_mining_iron.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_mountain_warfare"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_mountain_warfare.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_mountain_warfare2"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_mountain_warfare2.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_multiple_ships"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_multiple_ships.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_GER_open_the_german_political_sphere"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_GER_open_the_german_political_sphere.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_GER_restore_weimar"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_GER_restore_weimar.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_HOL_ditch_gold_standard"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_HOL_ditch_gold_standard.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_HOL_east_indies"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_HOL_east_indies.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_alliance_ENG"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_alliance_ENG.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_alliance_USA"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_alliance_USA.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_army_expansion"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_army_expansion.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_attack_manchukuo"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_attack_manchukuo.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_attack_the_philippines"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_attack_the_philippines.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_bomber"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_bomber.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_co_prosperity_sphere"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_co_prosperity_sphere.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_defence"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_defence.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_flag_army"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_flag_army.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_sakura_infantry"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_sakura_infantry.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_samurai"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_samurai.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_showa_constitution"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_showa_constitution.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_the_unthinkable_option"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_the_unthinkable_option.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_JAP_tides"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_JAP_tides.dds"
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_JAP_manchu_army"
+		texturefile = "gfx/interface/goals/SHU/r56_JAP_manchu_army.dds"
+	}
+
+	# Above was write in extension by Sten's :) 
+
+	##Icon For: Shuriman Central Trade Bank
+	SpriteType = { 
+		name = "GFX_r56_goal_generic_banking_legislation" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_banking_legislation.dds"
+	}
+	##Icon For: Metal Refinement
+	SpriteType = { 
+		name = "GFX_r56_goal_generic_mining_iron" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_mining_iron.dds"
+	}
+	##Icon For: Gold Reserves - Gold Standard
+	SpriteType = { 
+		name = "GFX_r56_goal_HOL_ditch_gold_standard" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_HOL_ditch_gold_standard.dds"
+	}
+	##Icon For: Gold Refinement
+	SpriteType = { 
+		name = "GFX_r56_goal_BEL_gold_extraction" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_gold_extraction.dds"
+	}
+	##Icon For: Mining Gold
+	SpriteType = {
+		name = "GFX_r56_goal_COG_Jungle_Gold_Mine" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_COG_Jungle_Gold_Mine.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_goal_generic_military_research" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+	}
+	
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_military_research1" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_generic_military_research2" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_replant_the_basin" # rt56 placeholder 
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_replant_the_basin.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_r56_goal_AUS_emergency_powers" # placeholder
+		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_emergency_powers.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribe_law"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribe_law.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribal_recognition"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribal_recognition.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribal_unity"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribal_unity.dds"
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_tribe_council"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_tribe_council.dds"
+	}
+
+	##Icon Shine For: Shurima Bow
+	SpriteType = {
+		name = "GFX_focus_SHU_shurima_bow"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_shurima_bow.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_shurima_bow.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_shurima_bow.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_courts"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_courts.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_courts_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_courts.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_imperial_courts.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_imperial_courts.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_emperor"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_emperor.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_emperor_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_emperor.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_emperor.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_emperor.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_empress"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_empress.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_empress_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_empress.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_empress.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_empress.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_law"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_law.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_law_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_law.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_imperial_law.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_imperial_law.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_question_of_slavery"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_question_of_slavery.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_question_of_slavery_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_question_of_slavery.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_question_of_slavery.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_question_of_slavery.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_plan_frontlines"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_plan_frontlines.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_plan_frontlines_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_plan_frontlines.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_plan_frontlines.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_plan_frontlines.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_child_enslavement_bill"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_child_enslavement_bill.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_child_enslavement_bill_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_child_enslavement_bill.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_child_enslavement_bill.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_child_enslavement_bill.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_nationalize_the_mines"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_nationalize_the_mines.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_nationalize_the_mines_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_nationalize_the_mines.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_nationalize_the_mines.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_nationalize_the_mines.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_shurima_stand"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_shurima_stand.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_shurima_stand_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_shurima_stand.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_shurima_stand.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_shurima_stand.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_slave_rights_act"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_slave_rights_act.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_slave_rights_act_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_slave_rights_act.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_slave_rights_act.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_slave_rights_act.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_slaver_rights_act"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_slaver_rights_act.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_slaver_rights_act_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_slaver_rights_act.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_slaver_rights_act.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_slaver_rights_act.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_order"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_order.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_imperial_order_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_imperial_order.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_imperial_order.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_imperial_order.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_ascended_council"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_ascended_council.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_ascended_council_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_ascended_council.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_ascended_council.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_ascended_council.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon For: 
+	SpriteType = {
+		name = "GFX_SHU_royal_high_courts"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_royal_high_courts.dds"
+	}
+	##Icon Shine For: 
+	SpriteType = {
+		name = "GFX_SHU_royal_high_courts_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_SHU_royal_high_courts.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_royal_high_courts.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_SHU_royal_high_courts.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+}

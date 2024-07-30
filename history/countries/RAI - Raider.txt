@@ -1,0 +1,62 @@
+capital = 139
+oob = "RAI"
+
+set_research_slots = 4
+set_stability = 0.65
+set_war_support = 0.75
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+create_country_leader = {
+	name = "Daeron"
+	desc = "Currently raiding traders!"
+	picture = "gfx/leaders/WRL/portrait_wrl_daeron_large.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		Dictator
+	}
+}
+
+set_convoys = 0
+set_politics = {
+    ruling_party = fascism
+    last_election = "989.9.07"
+    election_frequency = 72
+    elections_allowed = no
+}
+
+set_popularities = {
+    fascism = 100
+    chiefdom = 0
+    desolation = 0
+    royalist = 0
+    theocracy = 0
+    oligarchy = 0
+    absolutists = 0
+    mages = 0
+    neutrality = 0
+    democratic = 0
+}
+
+add_ideas = {
+	Lawless_slavery
+	#The_great_fall
+	#Shuriman_shame
+	#Shurima_broken
+	#al_rashid_dynasty
+}

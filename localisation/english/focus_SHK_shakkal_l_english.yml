@@ -1,0 +1,246 @@
+﻿l_english:
+  RAI_rise_of_the_shuriman_raiders: "Rise of the Shuriman Raiders"
+  RAI_rise_of_the_shuriman_raiders_desc: "The Shuriman Raiders rise to prominence, gaining political power."
+
+  RAI_desert_wanderers: "Desert Wanderers"
+  RAI_desert_wanderers_desc: "Training our forces to effectively navigate and fight in desert environments."
+
+  RAI_lore_keepers: "Lore Keepers"
+  RAI_lore_keepers_desc: "Preserving ancient knowledge to enhance our research capabilities."
+
+  RAI_cultural_exchange: "Cultural Exchange"
+  RAI_cultural_exchange_desc: "Establishing cultural ties to improve trade and diplomatic relations."
+
+  RAI_blood_and_sand: "Blood and Sand"
+  RAI_blood_and_sand_desc: "Training fighters to thrive in the harsh desert, improving their combat effectiveness."
+
+  RAI_horse_lords: "Horse Lords"
+  RAI_horse_lords_desc: "Focusing on cavalry tactics and breeding superior warhorses to enhance mobility and attack."
+
+  RAI_dune_fighters: "Dune Fighters"
+  RAI_dune_fighters_desc: "Specializing in desert warfare, providing bonuses in desert terrains."
+
+  RAI_oasis_control: "Oasis Control"
+  RAI_oasis_control_desc: "Securing and developing oases to boost local infrastructure and resource production."
+
+  RAI_sand_scouts: "Sand Scouts"
+  RAI_sand_scouts_desc: "Training scouts to navigate the desert and gather intelligence effectively."
+
+  RAI_survival_training: "Survival Training"
+  RAI_survival_training_desc: "Enhancing the survivability of our troops in harsh conditions."
+
+  RAI_plunder_and_pillage: "Plunder and Pillage"
+  RAI_plunder_and_pillage_desc: "Focusing on raiding enemy settlements to gain resources from conquests."
+
+  RAI_ruthless_tactics: "Ruthless Tactics"
+  RAI_ruthless_tactics_desc: "Employing fearsome strategies to increase the effectiveness of surprise attacks."
+
+  RAI_loyal_to_the_clan: "Loyal to the Clan"
+  RAI_loyal_to_the_clan_desc: "Fostering strong internal loyalty to reduce the risk of dissent."
+
+  RAI_treaty_with_outlaws: "Treaty with Outlaws"
+  RAI_treaty_with_outlaws_desc: "Forming alliances with other outlaw groups to expand influence and gain military support."
+
+  RAI_nomadic_coalition: "Nomadic Coalition"
+  RAI_nomadic_coalition_desc: "Uniting various nomadic tribes to enhance manpower and resources."
+
+  RAI_expansion_of_territory: "Expansion of Territory"
+  RAI_expansion_of_territory_desc: "Conquering and settling new lands to increase territorial control and resources."
+
+  SHK_new_leadership: "New Leadership"
+  SHK_new_leadership_desc: "Choose the direction for the new leadership among the raiders."
+
+  SHK_the_sadists: "The Sadists"
+  SHK_the_sadists_desc: "Focus on ruthless and fear-driven control."
+
+  SHK_the_eggheads: "The Eggheads"
+  SHK_the_eggheads_desc: "Emphasize strategy, intelligence, and technology."
+
+  SHK_the_grunts: "The Grunts"
+  SHK_the_grunts_desc: "Build on brute strength and military discipline."
+
+  SHK_the_boss: "The Boss"
+  SHK_the_boss_desc: "Establish a charismatic and unifying leader."
+
+  SHK_preparing_for_total_war: "Preparing for Total War"
+  SHK_preparing_for_total_war_desc: "Prepare for large-scale conflict."
+
+  SHK_draconian_recovery: "Draconian Recovery Methods"
+  SHK_draconian_recovery_desc: "Use harsh measures to recover and maintain order."
+
+  SHK_critical_thinking: "Critical Thinking"
+  SHK_critical_thinking_desc: "Encourage innovation and strategic planning."
+
+  SHK_the_master_plan: "The Master Plan"
+  SHK_the_master_plan_desc: "Develop a comprehensive strategy for dominance."
+
+  SHK_gangland_diplomacy: "Gangland Diplomacy"
+  SHK_gangland_diplomacy_desc: "Use brute force for diplomatic gains."
+
+  SHK_everyone_works: "Everyone Works"
+  SHK_everyone_works_desc: "Enforce mandatory military and labor service."
+
+  SHK_dont_question_the_boss: "Don’t Question the Boss"
+  SHK_dont_question_the_boss_desc: "Solidify the authority of the leader."
+
+  SHK_iron_grip: "The Iron Grip"
+  SHK_iron_grip_desc: "Enforce strict control over the population."
+
+  SHK_rise_of_the_shuriman_raiders: "Rise of the Shuriman Raiders"
+  SHK_rise_of_the_shuriman_raiders_desc: "Unite the raiders under one banner for increased power and cohesion."
+
+  SHK_desert_wanderers: "Desert Wanderers"
+  SHK_desert_wanderers_desc: "Train our people to be self-sufficient and skilled in desert navigation."
+
+  SHK_lore_keepers: "Lore Keepers"
+  SHK_lore_keepers_desc: "Preserve the knowledge and traditions of our ancestors."
+
+  SHK_cultural_exchange: "Cultural Exchange"
+  SHK_cultural_exchange_desc: "Establish relationships with neighboring cultures to enrich our own."
+
+  SHK_blood_and_sand: "Blood and Sand"
+  SHK_blood_and_sand_desc: "Harness the harsh desert environment to harden our fighters."
+
+  SHK_horse_lords: "Horse Lords"
+  SHK_horse_lords_desc: "Emphasize cavalry tactics and the breeding of superior warhorses."
+
+  SHK_dune_fighters: "Dune Fighters"
+  SHK_dune_fighters_desc: "Specialize our troops in desert warfare tactics."
+
+  SHK_oasis_control: "Oasis Control"
+  SHK_oasis_control_desc: "Secure vital water sources to ensure the sustainability of our people."
+
+  SHK_sand_scouts: "Sand Scouts"
+  SHK_sand_scouts_desc: "Deploy highly trained scouts to gather intelligence and navigate the desert."
+
+  SHK_survival_training: "Survival Training"
+  SHK_survival_training_desc: "Prepare our forces with rigorous survival training programs."
+
+  SHK_plunder_and_pillage: "Plunder and Pillage"
+  SHK_plunder_and_pillage_desc: "Engage in raids to acquire resources and weaken our enemies."
+
+  SHK_ruthless_tactics: "Ruthless Tactics"
+  SHK_ruthless_tactics_desc: "Adopt brutal tactics to intimidate and demoralize our foes."
+
+  SHK_loyal_to_the_clan: "Loyal to the Clan"
+  SHK_loyal_to_the_clan_desc: "Foster a strong sense of loyalty and unity within our ranks."
+
+  SHK_treaty_with_outlaws: "Treaty with Outlaws"
+  SHK_treaty_with_outlaws_desc: "Negotiate with outlaw groups to secure their cooperation."
+
+  SHK_nomadic_coalition: "Nomadic Coalition"
+  SHK_nomadic_coalition_desc: "Unite the various nomadic tribes under a single banner."
+
+  SHK_expansion_of_territory: "Expansion of Territory"
+  SHK_expansion_of_territory_desc: "Expand our territory through conquest and settlement."
+
+
+  SHK_reject_our_ways: "Reject Our Ways"
+  SHK_reject_our_ways_desc: "Choosing to abandon our traditional ways for new opportunities."
+
+  SHK_reject_their_rules: "Reject Their Rules"
+  SHK_reject_their_rules_desc: "Refusing to comply with external powers, striving for independence."
+
+  SHK_constant_resistance: "Constant Resistance"
+  SHK_constant_resistance_desc: "Maintaining persistent resistance against our oppressors."
+
+  SHK_icathian_ties: "Icathian Ties"
+  SHK_icathian_ties_desc: "Strengthening our ties with Icathia for mutual benefit."
+
+  SHK_icathian_heritage: "Icathian Lineage"
+  SHK_icathian_heritage_desc: "Reconnecting with our Icathian heritage to strengthen our identity."
+
+  SHK_foreign_trade: "Foreign Trade"
+  SHK_foreign_trade_desc: "Expanding trade relations with foreign entities to boost our economy."
+
+  SHK_foreign_support: "Foreign Support"
+  SHK_foreign_support_desc: "Securing aid and support from foreign allies."
+
+  SHK_embrace_new_ways: "Embrace New Ways"
+  SHK_embrace_new_ways_desc: "Adopting new practices and innovations to advance our society."
+
+  SHK_icathia_ancestors: "Icathia Ancestors"
+  SHK_icathia_ancestors_desc: "Honoring our Icathian ancestors and their legacy."
+
+
+  SHK_kill_burn_destroy: "Kill, Burn, Destroy"
+  SHK_kill_burn_destroy_desc: "Adopting a scorched earth policy to annihilate our enemies."
+
+  SHK_protect_shield_guard: "Protect, Shield, Guard"
+  SHK_protect_shield_guard_desc: "Focusing on defense and protection of our people and lands."
+
+  SHK_rebuild: "Rebuild"
+  SHK_rebuild_desc: "Reconstructing and revitalizing our infrastructure and communities."
+
+  SHK_resemble: "Resemble"
+  SHK_resemble_desc: "Aligning our policies and structures with successful models."
+
+  SHK_recreate: "Recreate"
+  SHK_recreate_desc: "Creating new institutions and systems for a stronger future."
+
+  SHK_shakkal_republic: "Shakkal Republic"
+  SHK_shakkal_republic_desc: "Establishing a republic to represent and govern the Shakkal people."
+
+  SHK_greater_shakkal: "Greater Shakkal"
+  SHK_greater_shakkal_desc: "Expanding the Shakkal territory to its greatest extent."
+
+  SHK_icathia_alliance: "Icathia Alliance"
+  SHK_icathia_alliance_desc: "Forming a strategic alliance with Icathia for mutual benefit."
+
+  SHK_icathia_reborn: "Icathia Reborn"
+  SHK_icathia_reborn_desc: "Reviving the ancient glory of Icathia through a new era of prosperity."
+
+  SHK_ancestral_lineage: "Ancestral Lineage"
+  SHK_ancestral_lineage_desc: "Preserving the lineage and traditions of our ancestors."
+
+  SHK_sand_storm: "Sand Storm"
+  SHK_sand_storm_desc: "Unleashing the fury of the desert on our enemies."
+
+  SHK_the_bell_tolls: "The Bell Tolls"
+  SHK_the_bell_tolls_desc: "Marking the time for a significant change in our history."
+
+  SHK_desert_dream: "Desert Dream"
+  SHK_desert_dream_desc: "Realizing the vision of a prosperous desert nation."
+
+  SHK_greater_ambitious: "Greater Ambitions"
+  SHK_greater_ambitious_desc: "Pursuing ambitious goals to expand our influence."
+
+  SHK_greater_dreams: "Greater Dreams"
+  SHK_greater_dreams_desc: "Chasing grand dreams for the future of our nation."
+
+  SHK_our_legacy: "Our Legacy"
+  SHK_our_legacy_desc: "Honoring and preserving the legacy of our ancestors."
+
+  SHK_graveyard_of_empires: "Graveyard of Empires"
+  SHK_graveyard_of_empires_desc: "Turning our land into a graveyard for invading empires."
+
+  SHK_our_destiny: "Our Destiny"
+  SHK_our_destiny_desc: "Fulfilling the destiny of our nation and people."
+
+  SHK_return_to_traditions: "Return to Traditions"
+  SHK_return_to_traditions_desc: "Reviving and preserving our ancient traditions."
+
+  SHK_our_ancestors: "Our Ancestors"
+  SHK_our_ancestors_desc: "Honoring our ancestors and their legacy."
+
+  SHK_icathian_lineage: "Icathian Lineage"
+  SHK_icathian_lineage_desc: "Celebrating our lineage and connection to Icathia."
+
+  SHK_settle_down: "Settle Down"
+  SHK_settle_down_desc: "Transitioning from a nomadic lifestyle to permanent settlements."
+
+  SHK_our_lands: "Our Lands"
+  SHK_our_lands_desc: "Reclaiming and securing our ancestral lands."
+
+  SHK_our_coast: "Our Coast"
+  SHK_our_coast_desc: "Expanding our control to coastal regions for strategic advantage."
+
+  SHK_our_sea: "Our Sea"
+  SHK_our_sea_desc: "Establishing dominance over the surrounding seas."
+
+  SHK_our_share: "Our Share"
+  SHK_our_share_desc: "Claiming our rightful share of resources and territories."
+
+ # Works 
+
+  # Below is mostly Duplicates, can't be bothered to check of all of them atm

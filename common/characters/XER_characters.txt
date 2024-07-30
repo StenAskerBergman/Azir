@@ -1,0 +1,91 @@
+characters={
+
+# Xerath - Status: 50%
+    # Leader: DONE
+    # Commander: TODO 
+    
+	XER_xerath = {
+	name = "Xerath"
+	gender = male
+    portraits={
+
+		civilian={
+			large="GFX_portrait_xer_xerath_large"
+			# small=GFX_portrait_PRC_mao_zedong_small
+		}
+		army={
+			large="GFX_portrait_xer_xerath_large"
+			# small=GFX_portrait_PRC_mao_zedong_small
+		}
+
+    }
+	country_leader = {
+        desc = "POLITICS_XERATH_DESC"
+        ideology = arcanum # mages
+        traits = { Hedonist Dictator Fascist_Populist }
+        #expire = "1943.1.1.1"
+    }
+	field_marshal = {
+		traits={ trait_cautious infantry_officer organizer }
+		# character = XER_xerath_token
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 5
+		}
+	}
+
+# Renekton - Status: 30%
+    # Leader: DONE
+    # Advisor: TODO 
+    # Commander: TODO 
+    
+	XER_renekton = {
+	name = "Renekton"
+	gender = male
+	portraits = {
+   	 civilian = {
+         large = "GFX_portrait_xer_renekton_large"
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_RENEKTON_DESC"
+			ideology = rexism # conservatism fascist 
+			traits = { Fascist_Militarist Dictator }
+			#expire = "1943.1.1.1"
+	}
+	corps_commander={
+        traits={ trait_cautious defensive_doctrine }
+        skill=4
+        attack_skill=2
+        defense_skill=4
+        planning_skill=3
+        logistics_skill=4
+        legacy_id=-1
+    }
+    }
+
+    
+# Nasus - Status: 30%
+    # Leader: DONE
+    # Advisor: TODO 
+    # Commander: TODO 
+    # Easter Egg: TODO
+    
+	XER_nasus = {
+	name = "Nasus"
+	gender = male
+	portraits = {
+   	 civilian = {
+         large = "GFX_portrait_xer_nasus_large"
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_NASUS_DESC"
+			ideology = rexism # conservatism fascist 
+			traits = { Fascist_Militarist }
+			#expire = "1943.1.1.1"
+		}
+    }
+}

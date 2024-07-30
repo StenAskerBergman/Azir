@@ -1,0 +1,274 @@
+﻿l_english:
+ ruthless_hunter: "Ruthless Hunter"
+ ruthless_hunter_desc: "Rek'Sai is a ferocious predator from the Void, known for her ruthless hunting skills."
+ 
+ supreme_hunter: "Supreme Hunter"
+ supreme_hunter_desc: "Rek'Sai's hunting prowess is unmatched, making her a supreme hunter in the battlefield."
+ 
+ scavenger: "Scavenger"
+ scavenger_desc: "Rek'Sai excels in scavenging resources and using them to her advantage."
+
+ adaptable: "Adaptable"
+ adaptable_desc: "Rek'Sai is highly adaptable, able to adjust to any situation with ease."
+
+ hunter: "Hunter"
+ hunter_desc: "Rek'Sai is a master hunter, able to track and eliminate targets efficiently."
+
+ evolution_master: "Evolution Master"
+ evolution_master_desc: "Kha'Zix thrives on evolution, adapting and growing stronger with each encounter."
+
+ guerilla_warfare: "Guerilla Warfare"
+ guerilla_warfare_desc: "Kha'Zix excels in guerilla warfare, using hit-and-run tactics to outmaneuver his enemies."
+
+ adaptive_strategist: "Adaptive Strategist"
+ adaptive_strategist_desc: "Kha'Zix is an adaptive strategist, always evolving his tactics to stay ahead."
+
+ guerilla: "Guerilla"
+ guerilla_desc: "Kha'Zix is a master of guerilla tactics, striking from the shadows and disappearing without a trace."
+
+ void_empress: "Void Empress"
+ void_empress_desc: "Bel'Veth is the Empress of the Void, wielding supreme control over her minions and the battlefield."
+
+ mind_control: "Mind Control"
+ mind_control_desc: "Bel'Veth has the ability to control minds, bending others to her will."
+
+ void_tactician: "Void Tactician"
+ void_tactician_desc: "Bel'Veth is a brilliant tactician, able to devise complex strategies to dominate her enemies."
+
+ supreme_commander: "Supreme Commander"
+ supreme_commander_desc: "Bel'Veth commands her forces with unparalleled skill, leading them to victory."
+
+ devourer_of_worlds: "Devourer of Worlds"
+ devourer_of_worlds_desc: "Cho'Gath is a monstrous being, consuming everything in his path."
+
+ brute_force: "Brute Force"
+ brute_force_desc: "Cho'Gath uses brute force to overpower his enemies, crushing them with sheer strength."
+
+ fearsome: "Fearsome"
+ fearsome_desc: "Cho'Gath's presence on the battlefield strikes fear into the hearts of his enemies."
+
+ artillery_expert: "Artillery Expert"
+ artillery_expert_desc: "Kog'Maw is a living artillery unit, specializing in long-range explosive attacks."
+
+ explosive_growth: "Explosive Growth"
+ explosive_growth_desc: "Kog'Maw's attacks grow more powerful and explosive over time, devastating his enemies."
+ 
+ Zileans_Zeal: "Zileans Zeal Provides us the vision we need to focus on what matters!"
+ Zileans_Zeal_TT: "Adds §OZileans Zeal§!"
+
+ Chronoshift: "Chronoshift"
+ Chronoshift_desc: "Zileans Chronoshift will give our students a unfair advantage!"
+ Chronoshift_TT: "Adds §YChronoshift§!, This will Jump Start our journey towards Hextech!" 
+
+####################################################################
+####################################################################
+########################## ICATHIAN FOCUS ##########################
+####################################################################
+####################################################################
+
+ # VOI_ Name: "Focus Title"
+ # VOI_ Name _TT: "Focus Tool Tip"
+ # VOI_ Name _desc: "Focus Description"
+
+ VOI_Mage_King: "Mage King"
+ VOI_Mage_King_desc: "Its time we recover our bloodlines, the last royal bloodlines appears to still exists in Ixtal... Yun tal appears unaware of his families secret heritage, we must do a swift recover!"
+
+ VOI_law_university: "Open University"
+ VOI_law_university_desc: "We must give our citizen the chance to read and study, we can never forget our past mistakes it's vital that our people grow and learn! \n\n Right now we are behind and we have alot to catch up!"
+
+ Icathian_agriculture_desc: "The agricultural capabilities of Icathia are essentially nonexistent due to its current state. The land is a desolate wasteland, heavily influenced by the catastrophic release of the Void. This devastation left the region barren and uninhabitable, making traditional farming and agriculture impossible. The soil is likely contaminated, and the environment is hostile, with remnants of the Void posing continual threats to any attempts at cultivation or habitation."
+
+ Icathian_wasteland: "The current state of Icathia is one of desolation and ruin. After its catastrophic fall, triggered by the release of the Void to counter Shurima's Ascended Host, the region became a barren wasteland. The land is now largely uninhabitable, marked by the remnants of ancient battles and the pervasive influence of the Void."
+
+ # 
+ VOI_pacify_our_neightbours: "Reshape Our Image"
+ VOI_pacify_our_neightbours_decs: "It's time we reshape our image to the world so people understand icathia is safe again!"
+
+ VOI_pacify_the_countryside: "Pacify the Countryside" # Remove all the remenents of a resistance - Wipe out any and all inhabitants
+ VOI_pacify_the_countryside_desc: "It's time we resmove all the remenents of a resistance! Let's wipe out any and all inhabitants"
+ VOI_pacify_the_countryside_effect_tooltip: "Let's wipe out any and all inhabitants"
+ 
+ VOI_Shadow_War: "Shadow War"
+ VOI_Shadow_War_desc: "Its time we start preparing for the coming cleansing..."
+
+ VOI_void_containment: "Void Containment"
+ VOI_void_containment_desc: "The primary challenge is to handle the threat of the Void. The release of the Void was the event that led to Icathia's downfall, and remnants of this otherworldly force still pose a significant danger"
+
+ VOI_assertiveness: "Assertiveness" # Make a powerful Ally and Join their faction!
+ VOI_assertiveness_desc: "By asserting our strength and forming powerful alliances, we will secure a position of influence in the global arena. Through diplomatic and military cooperation, we aim to join a formidable faction that will ensure our nation's security and prosperity."
+
+ VOI_obedience: "Obedience" # Accept our current cards, become a obedient vassel state 
+ VOI_obedience_desc: "In these turbulent times, our best course of action is to accept our current circumstances and pledge our loyalty to a stronger power. By becoming a dutiful vassal state, we will gain protection and stability, allowing our nation to recover and thrive under the guidance of our benefactors."
+
+ VOI_revive_the_grand_wizard_council: "Revive the Grand Wizard Council"
+ VOI_revive_the_grand_wizard_council_desc: "It's about time we start taking the threat magic poses more seriously..."
+
+ VOI_The_Man_Without_a_Weapon: "The Man Without a Weapon" # Recover Jax
+ VOI_The_Man_Without_a_Weapon_desc: "In times of great despair, a leader emerges, one who can resist the Void without the need for arms."
+
+ VOI_Zilean: "Contact Zilean"
+ VOI_Zilean_desc: "Let's Contact Zilean and hope is join our cause against the void!"
+
+ VOI_The_Man_Without_A_Daughter: "Talk to a Father"  # Talk to Kassadin - Hire Kassadin
+ VOI_The_Man_Without_A_Daughter_desc: "We need to hire Kassadin before it's too late!"
+
+ VOI_Resistance_Fighters: "Resistance Fighters"
+ VOI_Resistance_Fighters_desc: "Train elite units to fight against the corrupting influence of the Void, ensuring our sovereignty."
+
+
+ VOI_Ancient_Icathian_Knowledge: "Ancient Icathian Knowledge"
+ VOI_Ancient_Icathian_Knowledge_desc: "Uncover the lost secrets of Icathia to use against the Void's encroachment."
+
+ VOI_Cleanse_the_Corruption: "Cleanse the Corruption"
+ VOI_Cleanse_the_Corruption_desc: "It's time to rid our lands of the Void's corruption once and for all, restoring purity and order."
+
+ VOI_Restoration_of_Icathia: "Restoration of Icathia"
+ VOI_Restoration_of_Icathia_desc: "Rebuild the ancient city of Icathia, turning it into a bastion against the darkness of the Void."
+
+ VOI_Resist_the_Void: "Resist the Void"
+ VOI_Resist_the_Void_desc: "The Void is a threat to our very existence. We must resist its influence and protect our people from its corruption."
+
+ VOI_Seek_the_Ancient_Tombs: "Seek the Ancient Tombs"
+ VOI_Seek_the_Ancient_Tombs_desc: "Explore ancient burial sites to uncover artifacts that could bolster our knowledge and power."
+
+ VOI_Uncover_Lost_Secrets: "Uncover Lost Secrets"
+ VOI_Uncover_Lost_Secrets_desc: "Delve deeper into the hidden knowledge of the past to find tools that can protect us from the Void."
+
+ # VOI_ Name: "Focus Title"
+ # VOI_ Name _TT: "Focus Tool Tip"
+ # VOI_ Name _desc: "Focus Description"
+
+####################################################################
+####################################################################
+##########################  VOID ¤ FOCUS  ##########################
+####################################################################
+####################################################################
+
+ # VOI_ Name: "Focus Title"
+ # VOI_ Name _TT: "Focus Tool Tip"
+ # VOI_ Name _desc: "Focus Description"
+
+ 
+ # VOI_Apex_Hunter - Cat vs Bug
+ VOI_Apex_Hunter: "Focus Title"
+ VOI_Apex_Hunter_TT: "Unlocks Apex " # Unlock: Cat_vs_Bug_Category
+ VOI_Apex_Hunter_desc: "Our Forces are Struggling! Our united are suppose to be fearless monsters, but as of recent the our hunters have become pray to the jungles of shurima! In these places the hunters are the apex of danger... It's time we show them what a true §1Apex Hunter§! look like!"
+
+ VOI_Expand_the_Horde: "Expand the Horde"
+ VOI_Expand_the_Horde_desc: "Increase our military might by integrating Void creatures into our armies."
+
+ VOI_Void_Invasion: "Void Invasion"
+ VOI_Void_Invasion_desc: "Prepare for a massive offensive, utilizing the powers of the Void to conquer and subjugate."
+
+ VOI_Shifting_Sands: "Shifting Sands"
+ VOI_Shifting_Sands_TT: "Shifting Sands"
+ VOI_Shifting_Sands_desc: "We must summon §1Rek'sai§!, and with her §Ochildren...§!\n\nTogather they can extend our reach across the entire §YSai Desert§! \n\nRecruit §1Rek'sai§! & §O Xer'sai§! to spread §RTerror§!!"
+
+ # First Draft 
+ # VOI_Shifting_Sands_desc: "We must summon Rek'sai, with her we can extend our reach across the entire deserts, using her children as a testing ground for our new Void-powered technologies..."
+
+
+ VOI_Subjugate_the_Resisters: "Subjugate the Resisters"
+ VOI_Subjugate_the_Resisters_desc: "Crush all opposition to our rule, showing no mercy to those who fear the Void's gift."
+
+ # Not Used
+ VOI_Domination_of_Shifting_Sands: "Domination of Shifting Sands"
+ VOI_Domination_of_Shifting_Sands_desc: "Extend our reach across the deserts, using them as a testing ground for our new Void-powered technologies."
+
+ VOI_The_Voids_Influence: "The Void's Influence"
+ VOI_The_Voids_Influence_desc: "The mysterious and terrifying force of the Void begins to seep into our nation, influencing our culture, military, and science. How will we harness this dark power?"
+
+ VOI_Crushed_Resistance: "Crushed Resistance"
+ VOI_Crushed_Resistance_desc: "The Resistance Movement is stunned that so many of our followers blindly trust Malzahar knowing our history with the void, thereby leaving our nation for a better life..." 
+
+ VOI_Embrace_the_Void: "Embrace the Void"
+ VOI_Embrace_the_Void_desc: "By embracing the Void, we can harness its destructive power to enhance our military capabilities and intimidate our enemies."
+
+
+ VOI_Void_Prophet: "Void Prophet"
+ VOI_Void_Prophet_desc: "A prophet arises, claiming to understand the will of the Void. Whether a madman or a visionary, his influence cannot be ignored."
+
+ VOI_Voidborn_Soldiers: "Voidborn Soldiers"
+ VOI_Voidborn_Soldiers_desc: "Harness the essence of the Void to transform our soldiers into fearsome warriors unmatched on any battlefield."
+
+ VOI_Void_Rituals: "Void Rituals"
+ VOI_Void_Rituals_desc: "Perform ancient rituals to deepen our understanding and control of the Void's mysterious energies."
+
+ VOI_Spread_the_Void: "Spread the Void"
+ VOI_Spread_the_Void_desc: "It is time to expand the influence of the Void beyond our borders, spreading fear and chaos among our enemies."
+
+ VOI_Void_Empowerment: "Void Empowerment"
+ VOI_Void_Empowerment_desc: "Empower our nation through the Void, enhancing our political structure and military prowess through its dark energies."
+
+ VOI_Rift_Rapture: "Rift Rapture"
+ VOI_Rift_Rapture_desc: "It's About time we re-open our way in... \n\nFor our armies, our knowledge, and our Queen..." 
+
+ VOI_Her_Arrival: "Her Arrival"
+ VOI_Her_Arrival_desc: "Belveth our Queen will soon arrive... Our army must match her expectations"
+
+ VOI_Our_Queen: "Our Queen"
+ VOI_Our_Queen_desc: "Belveth, Our Queen is here!"
+
+ # VOI_ Name: "Focus Title"
+ # VOI_ Name _TT: "Focus Tool Tip"
+ # VOI_ Name _desc: "Focus Description"
+
+ VOI_Our_War: "Our War"
+ VOI_Our_War_TT: "For Our Final Endevour has begun..."
+ VOI_Our_War_desc: "For Our Final Endevour can begin..."
+
+ # VOI_ Name: "Focus Title"
+ # VOI_ Name _TT: "Focus Tool Tip"
+ # VOI_ Name _desc: "Focus Description"
+
+################################### EVENT \n                     \n      §H§!
+
+ # Name. 1: "Event Title"
+ # Name. 1.TT: "Event Tool Tip"
+ # Name. 1.desc: "Event Description"
+
+ icathia.1.t: "Our Last Hope!"
+ icathia.1.desc: "Its time we recover our bloodlines, the last royal bloodlines appears to still exist... Axamuk-Lupé blood line, and in it a young prince exists in Ixtal... \nBoth the Ixtalian forces and himself are unaware of his families secret heritage, so before ixtal can act we must secure him!\n\nHis, current name he goes by is Milio. \n\nWe must recover Milio at any cost! He is our only hope to unite and restore icathian people!"
+
+ icathia.1.a: "Recovering Prince Axamuk Ilio is vital!"
+ icathia.1.b: "Recovering Prince Axamuk Ilio can wait!"
+ icathia.1.c: "Urgently Recover our Prince Axamuk Ilio!"
+#
+# icathia.1.a: "We must Recover Prince Axamuk Ilio!"
+
+
+ # icathia.1.a.tt: "Recovering Milio As Prince can be done via §OAgency§!, §CDiplomatic Request§!, or Via §GOperations§!!"
+ icathia.1.a.tt: "Recovering Milio as Prince can be done via \n§OAgency§!, §CDiplomacy§!, or §GOperations§!, but be \nAware that time is of the essence! \n\nEventually his past will be §ODiscovered§!! \n\nAnd someone like §GIxtal§!, §YRaiders§! or §RWorse§! will \nfind out his§4 heritage§! And act on it, before us!"
+
+ icathia.1.b.tt: "The longer we take on recovering our long lost Prince Milio from §GIxtal Empire§! lands. \n\nThe §RBigger§! the odds are of him getting §Odiscovered§! \n\nOnce he gets discovered the §RHigher§! odds are that we loose him or worse that §GIxtal§! or §4his Grandmother§! \n\nGets to him before we are able to get to him."
+
+ icathia.1.c.tt: "The longer we take on recovering our long lost Prince Milio from §GIxtal Empire§! lands. \n\nThe §RBigger§! the odds are of him getting §ODiscovered§! \n\nOnce §ODiscovered§! someone else can get to him before us! Someone like §GIxtal§!, §YRaiders§!, or §RWorse...§!"
+
+
+ VOI_Ixtal_Recovery_description: "Its time we recover our bloodlines, the last royal bloodlines appears to still exist... Lupé blood line, and in it a young prince exists in Ixtal... unaware of his families secret heritage. His, current name he goes by is Milio. \n We must recover Milio, he is our last hope to restore icathian rule! go! Get Prince Axamuk Ilio to take our current throne!"
+
+
+ icathia.2.t: "The Remnants of a Void World"
+ icathia.2.desc: "Many signs left by the Void are remnants in Icathia. The echoes of the dead still linger in the streets and ruins of our land. Our defiance stood tall but fell short of delivering the justice we needed...\n\nAs Icathia descended into decades of war and chaos, we are now left torn and divided. The Void's influence has split us into those who resist its corruption and those who succumb to it, traditionalists yearning for a past they believe was glorious, and reformists who argue there were no glory days under Azir's brutal oppression. The few days of independence we had were soaked in blood, and now Jax, a traditionalist, blames the Void's devastation on Zilean and the mages. Survivors focus on rebuilding, while opportunists exploit the chaos. Even our beliefs are fractured, with some turning to ancient religions or new cults, and others relying on science and pragmatism.\n\nMeanwhile, the Void itself is not unified. Bel'Veth, the Empress of the Void, seeks to reshape it, clashing with the ancient Watchers who wish to end all things. This internal conflict within the Void adds another layer of complexity to our struggle.\n\nWe have been licking our wounds for too long. It is time to pick up the pieces of our ruined lands and move forward...\n\nThere hasn't been any real pressure to do so until now, but a war rages on our doorstep. It is high time we gather our strength and determine our path forward."
+
+ icathia.2.a: "Resist the Void's Corruption"
+ icathia.2.a.tt: "We will gather our strength and resist the Void's influence, fighting for a future free from its corruption."
+
+ icathia.2.b: "Succumb to the Void's Influence"
+ icathia.2.b.tt: "We will allow the Void's influence to take hold, seeking power through its dark gifts."
+
+ icathia.2.c: "Embrace the Traditionalist Path"
+ icathia.2.c.tt: "We will follow the traditionalist vision of restoring Icathia to its perceived former glory."
+
+ icathia.2.d: "Support the Reformists"
+ icathia.2.d.tt: "We will back the reformist agenda, arguing that new paths must be forged for Icathia's future."
+
+
+
+################################### OTHER\n                     \n      §H§!
+
+ VOI_990_DESC: "Escaping the domination of Shurima, Icathia's founders sought to create a realm free from oppression. However, their defiance against the Ascended led to their downfall as they unleashed the Void, a malevolent force that consumed the land.\n\nNow, Icathia is a nation of contrasts and conflicts. \n\nTraditionalists long for the days before the Void, blaming the calamity on reckless mages like Zilean. Reformists argue that Icathia never knew true freedom under Azir's brutal regime, believing that the path forward lies in new ideas and alliances.\n\nAs war looms on the horizon and the Void's influence grows, Icathia must choose its path: Resist the Void's corruption, Embrace its dark gifts, or Find a new way forward amidst the ruins of its past."
+
+ # ICA_990_DESC: "Escaping the domination of Shurima, Icathia's founders sought to create a realm free from oppression. However, their defiance against the Ascended led to their downfall as they unleashed the Void, a malevolent force that consumed the land. Now, Icathia is a nation of contrasts and conflicts.\n\nTraditionalists long for the days before the Void, blaming the calamity on reckless mages like Zilean.\n\nReformists argue that Icathia never knew true freedom under Azir's brutal regime, believing that the path forward lies in new ideas and alliances.\n\nAs war looms on the horizon and the Void's influence grows, Icathia must choose its path: §1resist the Void's corruption§!, §2embrace its dark gifts§!, or §Ofind a new way forward amidst the ruins of its past.§!"
+
+

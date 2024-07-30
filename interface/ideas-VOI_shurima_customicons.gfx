@@ -1,0 +1,25 @@
+spriteTypes = { 
+
+    # Example 
+	##Icon For: Shuriman Shame
+	# SpriteType = { 
+	# 	# name = "GFX_idea_SHU_shuriman_shame-1752"
+	# 	# texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_shame-1752.dds"
+	# }
+    
+	##Icon For: Shuriman Shame
+	SpriteType = { 
+		name = "GFX_goals_expand_the_horde"
+		texturefile = "gfx/interface/goals/VOI/expand_the_horde.dds"
+	}
+    
+	SpriteType = {
+		name = "GFX_idea_abandonment"
+		texturefile = "gfx/interface/ideas/void-ideas/abandonment.dds"
+	}
+    
+	SpriteType = {
+		name = "GFX_idea_empty_desert"
+		texturefile = "gfx/interface/ideas/empty_desert.dds"
+	}
+}

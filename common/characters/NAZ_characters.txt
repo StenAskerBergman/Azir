@@ -1,0 +1,73 @@
+characters = {
+
+    # Ksante / K'sante - Status: 30%
+    
+    NAZ_ksante = {
+        name = "K'sante"
+        gender = male
+        portraits = {
+            civilian = {
+                large = GFX_portrait_naz_ksante_large
+                small = GFX_portrait_ksante_small
+            }
+            army={
+    			large = GFX_portrait_naz_ksante_large
+		    }
+        }	
+        country_leader = {
+            desc = "POLITICS_KSANTE_DESC"
+            ideology = hunters
+            traits = { Pride_Of_Nazumah }
+            #expire = "1943.1.1.1"
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = Ksante_Token
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            allowed = { original_tag = SHU }
+            traits = { silent_workhorse great_hunter }
+        }
+    }
+
+    # Tribal Elder Council - Status: 0%
+    NAZ_Tribal_Elder_Council = {
+        name = "Tribal Elder Council"
+        gender = undefined
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_naz_tribal_elder_council_large"
+                small = "GFX_portrait_naz_tribal_elder_council_small"
+
+            }
+        }   
+        country_leader = {
+            desc = "POLITICS_TRIBAL_ELDER_COUNCIL_DESC"
+            ideology = elders
+            traits = { Trusted }
+            #expire = "1943.1.1.1"
+            #allowed = { tag = NAZ }
+        }
+    }
+
+    NAZ_tope = {
+        name = "Tope",
+        gender = male
+        portraits = {
+            civilian = {
+                small = GFX_portrait_tope_small
+            }
+        },
+        advisor = {
+            slot = political_advisor,
+            idea_token = Tope_Token,
+            can_be_fired = yes,
+            ledger = civilian,
+            cost = 150,
+            allowed = { original_tag = SHU },
+            traits = { strategic_mind }
+        }
+    }
+
+}

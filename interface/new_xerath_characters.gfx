@@ -1,0 +1,68 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Animated 
+
+#	frameAnimatedSpriteType = {
+#		name = "GFX_portrait_shu_azir_large"
+#		texturefile = "gfx/leaders/SHU/portrait_shu_azir_anim.dds"
+#		noOfFrames = 83
+#		animation_rate_fps = 21
+#		looping = yes
+#		play_on_show = yes
+#	}
+
+# Larger 
+	
+	# Xerath
+	SpriteType = {
+		name = "GFX_portrait_xer_xerath_large"
+		texturefile = "gfx/leaders/xer/portrait_xer_xerath_large.dds"
+	}
+
+	# Renekton
+	SpriteType = {
+		name = "GFX_portrait_xer_renekton_large"
+		texturefile = "gfx/leaders/xer/portrait_xer_renekton_large.dds"
+	}	
+	
+	# Nasus
+	SpriteType = {
+		name = "GFX_portrait_xer_nasus_large"
+		texturefile = "gfx/leaders/xer/portrait_xer_nasus_large.dds"
+	}
+
+#	# Xerath / SHU
+#	SpriteType = {
+#		name = "GFX_portrait_shu_xerath_large"
+#		texturefile = "gfx/characters/SHU/portrait_shu_xerath_large.dds"
+#	}
+	
+#	# Renekton / SHU
+#	SpriteType = {
+#		name = "GFX_portrait_shu_renekton_large"
+#		texturefile = "gfx/characters/SHU/portrait_shu_renekton_large.dds"
+#	}
+
+# Smaller 
+
+	# Xerath
+	SpriteType = {
+		name = "GFX_portrait_shu_renekton_small"
+		texturefile = "gfx/characters/SHU/portrait_renekton_small.dds"
+	}
+
+	# Renekton
+	SpriteType = {
+		name = "GFX_portrait_shu_renekton_small"
+		texturefile = "gfx/characters/SHU/portrait_renekton_small.dds"
+	}
+
+	# Nasus
+	SpriteType = {
+		name = "GFX_portrait_shu_nasus_small"
+		texturefile = "gfx/characters/SHU/portrait_nasus_small.dds"
+	}
+
+}

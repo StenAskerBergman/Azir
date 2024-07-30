@@ -1,0 +1,590 @@
+characters = {
+
+  # SUPER IMPORTANT NOTE:
+  # Don't forget to recruit characters in the country file or they won't show up
+
+
+    #################################
+    #################################
+    ####                         ####
+    ####     Void Characters     ####
+    ####                         ####
+    #################################
+    #################################
+    
+    # Malzahar - Status: 0%
+        # Leader: DONE
+        # Advisor: TODO 
+        # Commander: TODO 
+    
+	VOI_Malzahar = {
+    name = VOI_MALZAHAR_NAME # "Malzahar"
+    gender = male
+    portraits = {
+        civilian = {
+            large = GFX_portrait_voi_malzahar_large
+            small = GFX_portrait_voi_malzahar_small
+            }
+        army = {
+            large = GFX_portrait_voi_malzahar_large
+            small = GFX_portrait_voi_malzahar_small
+        }
+    }
+    allowed_civil_war = {
+        VOI_char_cw_desolate = yes
+    }
+    country_leader = {
+            desc = POLITICS_MALZAHAR_DESC
+            ideology = oblivion # Desolate - desolation
+            traits = { 
+                # politicalPuppeteer 
+                prophetvoid 
+                # visions 
+            }
+            do_effect = {
+                NOT = {
+                    has_completed_focus = VOI_Resist_the_Void
+                }
+                
+                NOT = {
+                    has_country_leader = {
+                        ruling_only = yes
+                        character = VOI_Jax
+                    }
+                }
+            } 
+            #expire = "1943.1.1.1"
+    }
+    advisor = {
+        slot = theorist # political_advisor
+        idea_token = VOI_Malzahar
+        ledger = army
+        cost = 0
+        traits = { military_theorist really_good_boss Ambusher visions }      # Unspecified cost defaults to 150.
+    }
+    field_marshal = {
+        traits={ harsh_leader adaptable engineer_officer organizer }
+        skill=4
+        attack_skill=2
+        defense_skill=4
+        planning_skill=3
+        logistics_skill=4
+        legacy_id=-1
+        }
+    }
+
+    VOI_Belveth = {
+        name = VOI_BELVETH_NAME # "Bel'Veth"
+        gender = female
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_belveth_large"
+                small = "GFX_portrait_voi_belveth_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = yes
+		}
+        country_leader = {
+            ideology = Desolate
+            desc = "POLITICS_BELVETH_DESC"
+            traits = { void_empress }
+            id=-1
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = VOI_Belveth
+            ledger = government
+            traits = { void_empress mind_control } # Lore: Empress of the Void with mind control abilities
+            cost = 0
+        }
+        corps_commander = {
+            traits = { void_tactician supreme_commander }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+
+    VOI_Reksai = {
+        name = VOI_REKSAI_NAME # "Rek'Sai"
+        gender = female
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_reksai_large"
+                small = "GFX_portrait_voi_reksai_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = yes
+		}
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor
+            idea_token = VOI_Reksai
+            ledger = government # ledger = army
+            traits = { scavenger supreme_hunter ruthless_hunter } # Lore: Master of ambush and hunting
+            cost = 0
+        }
+        corps_commander = {
+            traits = { adaptable hunter }
+            skill = 3
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+    VOI_Khazix = {
+        name = VOI_KHAZIX_NAME # "Kha'Zix"
+        gender = undefined
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_khazix_large"
+                small = "GFX_portrait_voi_khazix_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = yes
+		}
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor
+            idea_token = VOI_Khazix
+            ledger = government # ledger = army
+            traits = { guerilla_warfare adaptive_strategist evolution_master } # Lore: Evolution and adaptability - maybe? strategic_mind
+            cost = 0
+        }
+        corps_commander = {
+            traits = { guerilla adaptive_strategist illusive_gentleman war_industrialist }
+            skill = 4
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+            legacy_id = -1
+        }
+    }
+
+    VOI_Chogath = {
+        name = VOI_CHOGATH_NAME # "Cho'Gath"
+        gender = male
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_chogath_large"
+                small = "GFX_portrait_voi_chogath_small"
+            }
+            army = {
+                large = "GFX_portrait_voi_chogath_large"
+                small = "GFX_portrait_voi_chogath_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = yes
+		}
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = theorist #military_advisor #political_advisor #army_chief
+            idea_token = VOI_Chogath_theorist
+            ledger = government # ledger = army
+            traits = { devourer brute_force devourer_of_worlds } # Lore: Devourer of worlds and brute force
+            cost = 0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor #political_advisor #chief_of_army
+            idea_token = VOI_Chogath
+            ledger = government # ledger = army
+            traits = { devourer brute_force devourer_of_worlds } # Lore: Devourer of worlds and brute force
+            cost = 0
+        }
+        corps_commander = {
+            traits = { brute_force fearsome devourer_of_worlds }
+            skill = 4
+            attack_skill = 5
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+            legacy_id = -1
+        }
+    }
+
+    VOI_Kogmaw = {
+        name = VOI_KOGMAW_NAME # "Kog'Maw"
+        gender = undefined
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_kogmaw_large"
+                small = "GFX_portrait_voi_kogmaw_small"
+            }            
+            army = {
+                large = "GFX_portrait_voi_kogmaw_large"
+                small = "GFX_portrait_voi_kogmaw_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = yes
+		}
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor
+            idea_token = VOI_Kogmaw
+            ledger = government # ledger = army
+            traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
+            cost = 0
+        }
+        advisor = {
+            slot = army_chief #military_advisor
+            idea_token = VOI_Kogmaw
+            ledger = government # ledger = army
+            traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
+            cost = 0
+        }
+        corps_commander = {
+            traits = { artillery_expert explosive_growth }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+    # Vel'Koz
+    VOI_Velkoz = {
+        name = VOI_VELKOS_NAME # "Vel'Koz"
+        gender = undefined
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_velkos_large"
+                small = "GFX_portrait_voi_velkos_small"
+            }            
+            army = {
+                large = "GFX_portrait_voi_velkos_large"
+                small = "GFX_portrait_voi_velkos_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = yes
+		}
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor
+            idea_token = VOI_velkos
+            ledger = government # ledger = army
+            traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
+            cost = 0
+        }
+        advisor = {
+            slot = army_chief #military_advisor
+            idea_token = VOI_velkos
+            ledger = army #ledger = government  
+            traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
+            cost = 0
+        }
+        corps_commander = {
+            traits = { artillery_expert explosive_growth }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+
+    #################################
+    #################################
+    ####                         ####
+    ####   Icathia Characters    ####
+    ####                         ####
+    #################################
+    #################################
+
+    VOI_Jax = {
+        name = VOI_JAX_NAME # "Jax"
+        gender = male
+        portraits = {
+        civilian = {
+            large = "GFX_portrait_voi_jax_large"
+            small = "GFX_portrait_voi_jax_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = no
+		}
+        country_leader = {
+                desc = POLITICS_JAX_DESC
+                ideology = kohari
+                traits = { MasterOfArms }
+                #expire = "1943.1.1.1"
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = VOI_Jax
+            ledger = army
+            cost = 150
+            traits = { military_theorist really_good_boss Ambusher }      # Unspecified cost defaults to 150.
+        }
+        corps_commander = {
+        traits={ adaptable engineer_officer Ambusher }
+        skill=5
+        attack_skill=5
+        defense_skill=5
+        planning_skill=5
+        logistics_skill=5
+        legacy_id=-1
+        }
+    }
+
+    VOI_Zilean = {
+        name = VOI_ZILEAN_NAME # "Zilean" portrait_jax_small.dds
+        gender = male
+        portraits = {
+        civilian = {
+            large = "GFX_portrait_voi_zilean_large"
+            small = "GFX_portrait_voi_zilean_small"
+            }
+        }
+        allowed_civil_war = {
+			VOI_char_cw_desolate = no
+		}
+        country_leader = {
+                desc = "POLITICS_ZILEAN_DESC"
+                ideology = kohari
+                traits = { MasterOfArms }
+                #expire = "1943.1.1.1"
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = VOI_Zilean
+            ledger = army
+            cost = 150
+            traits = { military_theorist really_good_boss Ambusher }      # Unspecified cost defaults to 150.
+        }
+        corps_commander = {
+        traits={ adaptable engineer_officer }
+        skill=5
+        attack_skill=5
+        defense_skill=5
+        planning_skill=5
+        logistics_skill=5
+        legacy_id=-1
+        }
+    }
+
+
+    VOI_Kaisa = {
+        name = VOI_KAISA_NAME # "Kai'Sa"
+        gender = female
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_kaisa_large"
+                small = "GFX_portrait_voi_kaisa_small"
+            }
+        }
+        allowed_civil_war = {
+            VOI_char_cw_desolate = yes
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor
+            idea_token = VOI_kaisa
+            ledger = government # ledger = army
+            traits = { void_sentinel evolution_hunter } # Lore: Void Hunter and evolved sentinel
+            cost = 0
+        }
+        corps_commander = {
+            traits = { adaptive_strategist void_sentinel }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+    VOI_Kassadin = {
+        name = VOI_KASSADIN_NAME # "Kassadin"
+        gender = male
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_voi_kassadin_large"
+                small = "GFX_portrait_voi_kassadin_small"
+            }
+            army = {
+                large = "GFX_portrait_voi_kassadin_large"
+                small = "GFX_portrait_voi_kassadin_small"
+            }
+        }
+        allowed_civil_war = {
+            VOI_char_cw_desolate = yes
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor #military_advisor
+            idea_token = VOI_Kassadin
+            ledger = government # ledger = army
+            traits = { void_walker void_resistance } # Lore: Void walker and resistance leader
+            cost = 0
+        }
+        corps_commander = {
+            traits = { guerilla adaptive_strategist void_walker }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+    
+    VOI_Milio = {
+        name = VOI_MILIO_NAME # "Milio"
+        gender = male
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_milio_large"
+                small = "GFX_portrait_milio_small"
+            }
+        }
+        allowed_civil_war = {
+            VOI_char_cw_desolate = no
+        }
+        country_leader = {
+            desc = "POLITICS_MILIO_DESC"
+            ideology = kohari
+            traits = { master_of_arms }
+            #expire = "1943.1.1.1"
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = VOI_Milio
+            ledger = army
+            cost = 150
+            traits = { military_theorist really_good_boss ambusher } # Unspecified cost defaults to 150.
+        }
+        corps_commander = {
+            traits = { adaptable engineer_officer ambusher }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            legacy_id = -1
+        }
+    }
+
+    VOI_jaximus_a = {
+        name = VOI_JAXIMUS_A_NAME # "Jaximus A"
+        gender = male
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_a_jaximus_large"
+                small = "GFX_portrait_a_jaximus_small"
+            }
+        }
+        allowed_civil_war = {
+            VOI_char_cw_desolate = no
+        }
+        country_leader = {
+            desc = "POLITICS_JAXIMUS_A_DESC"
+            ideology = kohari
+            traits = { master_of_arms }
+            #expire = "1943.1.1.1"
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = VOI_jaximus_a
+            ledger = army
+            cost = 150
+            traits = { military_theorist really_good_boss ambusher } # Unspecified cost defaults to 150.
+        }
+        corps_commander = {
+            traits = { adaptable engineer_officer ambusher }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            legacy_id = -1
+        }
+    }
+
+    VOI_jaximus_b = {
+        name = VOI_JAXIMUS_B_NAME # "Jaximus B"
+        gender = male
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_b_jaximus_large"
+                small = "GFX_portrait_b_jaximus_small"
+            }
+        }
+        allowed_civil_war = {
+            VOI_char_cw_desolate = no
+        }
+        country_leader = {
+            desc = "POLITICS_JAXIMUS_B_DESC"
+            ideology = kohari
+            traits = { master_of_arms }
+            #expire = "1943.1.1.1"
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = VOI_jaximus_b
+            ledger = army
+            cost = 150
+            traits = { military_theorist really_good_boss ambusher } # Unspecified cost defaults to 150.
+        }
+        corps_commander = {
+            traits = { adaptable engineer_officer ambusher }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            legacy_id = -1
+        }
+    }
+}

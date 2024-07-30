@@ -1,0 +1,86 @@
+spriteTypes = {
+    
+    # Note:
+    # Ideology icons are defined as sprites in any /Hearts of Iron IV/interface/*.gfx file, 
+    # with the name of the sprite determining when it will be used.
+    
+    # Note: 
+    # Replace with the correct file if 'unknown.dds' is not the intended icon
+    
+    # Theocracy icons
+    spriteType = {
+        name = "GFX_ideology_theocracy_group"
+        texturefile = "gfx/interface/ideologies/unknown.dds" #theocracy.dds"
+    }
+
+    # Oligarchy icons
+    spriteType = {
+        name = "GFX_ideology_oligarchy_group"
+        texturefile = "gfx/interface/ideologies/oligarchy_group.dds" #oligarchy.dds"
+    }
+
+    # Absolutism icons
+    spriteType = {
+        name = "GFX_ideology_absolutism_group"
+        texturefile = "gfx/interface/ideologies/absolutists_group.dds"
+    }
+
+    # Absolutist icons
+    spriteType = {
+        name = "GFX_ideology_absolutists_group"
+        texturefile = "gfx/interface/ideologies/absolutists_group.dds"
+    }
+
+    # Chiefdom icons
+    spriteType = {
+        name = "GFX_ideology_chiefdom_group"
+        texturefile = "gfx/interface/ideologies/chiefdom_group.dds"
+    }
+
+    # Desolation icons
+    spriteType = {
+        name = "GFX_ideology_desolation_group"
+        texturefile = "gfx/interface/ideologies/unknown.dds" 
+    }
+
+    # Mages icons
+    spriteType = {
+        name = "GFX_ideology_mages_group"
+        texturefile = "gfx/interface/ideologies/mages_group.dds"
+    }
+
+    # Royalism icons
+    spriteType = {
+        name = "GFX_ideology_royalism_group"
+        texturefile = "gfx/interface/ideologies/royalty_group.dds"
+    }
+
+    # Democratic icons
+    spriteType = {
+        name = "GFX_ideology_democratic_group"
+        texturefile = "gfx/interface/ideologies/democratic_group.dds"
+    }
+
+    # Communism icons
+    spriteType = {
+        name = "GFX_ideology_communism_group"
+        texturefile = "gfx/interface/ideologies/communism_group.dds"
+    }
+
+    # Fascism icons
+    spriteType = {
+        name = "GFX_ideology_fascism_group"
+        texturefile = "gfx/interface/ideologies/fascism_group.dds"
+    }
+
+    # Neutrality icons
+    spriteType = {
+        name = "GFX_ideology_neutrality_group"
+        texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+    }
+
+    # Make sure to close each spriteType block with a comma, except for the last one.
+    # Additional ideology sprites can be added here following the same structure...
+
+}
+

@@ -1,0 +1,60 @@
+division_template = {
+ name = "City Guards"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+
+ }
+}
+division_template = {
+ name = "Vanguard"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  cavalry = { x = 1 y = 2 }
+  cavalry = { x = 2 y = 0 }
+
+ }
+}
+division_template = {
+  name = "Scouts Brigade"
+
+  regiments = {
+    cavalry = { x = 0 y = 0 }
+    cavalry = { x = 0 y = 1 }
+    cavalry = { x = 1 y = 0 }
+    cavalry = { x = 1 y = 1 }
+
+  }
+}
+
+units = {
+ division = { # In City - Nashramae
+  name = "Nashramae Guards"
+  location = 8527
+  division_template = "City Guards"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = { # Northern Territory - Region
+  name = "Border Brigade"
+  location = 2952
+  division_template = "Scouts Brigade"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+  division = { #Northern Territory - Region
+  name = "Border Brigade"
+  location = 8486
+  division_template = "Scouts Brigade"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+}

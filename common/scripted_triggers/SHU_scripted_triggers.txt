@@ -1,0 +1,145 @@
+# Original: is_literally_china
+
+# SRC: SHU_scripted_triggers.txt
+
+is_literally_shurima = { 
+	OR = {
+		original_tag = SHU
+		original_tag = XER
+		original_tag = SHK
+		original_tag = NAZ
+		original_tag = TAR
+		original_tag = CRY
+		original_tag = KAL
+		original_tag = NAS
+    AND =  {
+      original_tag = VOI
+      ruling_party = { NOT = desolation } 
+    }
+	}
+}
+
+is_shurima = { 
+	OR = {
+		original_tag = SHU
+		original_tag = XER
+		original_tag = SHK
+		original_tag = NAZ
+		original_tag = CRY
+		original_tag = KAL
+		original_tag = NAS
+	}
+}
+
+is_shuriman_warlord = {
+	OR = {		
+		original_tag = SHK
+		original_tag = NAS
+		original_tag = KAL
+    # ? Not Sure here 
+		# original_tag = XER 
+	}
+}
+
+is_shuriman_major = {
+	OR = {		
+		original_tag = XER
+		original_tag = IXT
+		original_tag = TAR
+		original_tag = SHU 
+    # ? Not Sure here, what do we do with the colonies?     
+    # original_tag = NOX 
+	}
+}
+
+# Original: is_state_japan_wants 
+
+is_xerath_states = {
+	 OR = {
+    state = 105 # Great Western Sai
+    state = 114 # Kalamandi Pass
+    state = 115 # Upper Targonian Range
+    state = 117 # Outer Targonian Cliffs
+    state = 119 # Southern Advance
+    state = 134 # River Renek  
+    state = 135 # Scorched Ruins
+    state = 136 # Endless Plain
+    state = 137 # Dormun  
+    state = 138 # Skallashi
+    state = 139 # The Sun's Extent
+    state = 140 # River Faraj  
+	}
+}
+
+is_nazumah_states = {
+  OR = {
+    state = 116 # Lower Targonian Range.txt  
+    state = 119 # Southern Advance.txt  
+    state = 120 # Marai Coastline.txt  
+    state = 121 # Zoantha Cascade.txt  
+    state = 122 # Cape of the Marai.txt  
+    state = 123 # Zirima.txt  
+  }
+}
+
+is_shakkal_states = {
+  OR = {
+    state = 124 # Lesser Shuriman Hills
+    state = 125 # Valley of Song
+    state = 126 # Southern Territory
+    state = 127 # Desolation Bay
+    state = 128 # Desolate Wastes
+  }
+}
+
+is_targon_states = {
+  OR = {
+    state = 124 # Lesser Shuriman Hills
+    state = 125 # Valley of Song
+    state = 126 # Southern Territory
+    state = 127 # Desolation Bay
+    state = 128 # Desolate Wastes
+  }
+}
+
+is_ixtal_states = {
+  OR = {
+    state = 124 # Lesser Shuriman Hills
+    state = 125 # Valley of Song
+    state = 126 # Southern Territory
+    state = 127 # Desolation Bay
+    state = 128 # Desolate Wastes
+  }
+}
+
+is_void_states = {
+  OR = {
+    state = 91 # The Rupture.txt
+    state = 92 # Cape of Icathia.txt
+    state = 93 # Icathia.txt
+    state = 94 # Corrupted Hills.txt
+    state = 95 # Icathian Wastes.txt
+    state = 96 # The Barren Plains.txt
+    state = 97 # Ancient Graveyard.txt
+    state = 98 # Abandoned Border Territory.txt
+  }
+}
+
+is_city_states = {
+	 OR = {
+		state = 107 # Nashmere
+    state = 114 # Kalamandi Pass
+    state = 118 # Crystal Scar
+	}
+}
+
+is_colony_states = {
+	 OR = {
+		state = 99 # Bel'zun
+		state = 100 # Desert Port Village + Island
+		state = 101 # Desert Keep
+		state = 102 # Outer Shuriman Colony
+		state = 103 # Sai Hold
+	}
+}
+

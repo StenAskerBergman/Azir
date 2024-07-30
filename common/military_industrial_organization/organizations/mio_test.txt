@@ -1,0 +1,58 @@
+<MIO Name> = {
+	# Optional Localization Key
+	name = LOC_infernal_mio_tanks
+	icon = GFX_key
+
+	equipment_type = { <equipment type> <equipment type> }
+	research_categories = { <research type> <research type> }
+
+	# Mandatory. In Country Scope.
+	allowed = <condition>
+	# Optional. In MIO Scope. FROM = country.
+	visible = <condition>
+	# Optional. In MIO Scope. FROM = country.
+	available = <condition>
+
+	# Additional Events if desired
+#	on_design_team_assigned_to_tech = { ... }
+#	on_design_team_assigned_to_variant = { ... }
+#	on_industrial_manufacturer_assigned = { ... }
+#	on_tech_research_cancelled = { ... }
+#	on_tech_research_completed = { ... }
+#	on_industrial_manufacturer_unassigned = { ... }
+
+	# Bonus to assigned research
+	research_bonus = 0.2
+	# How many tasks can the MIO perform simultaneously?
+	task_capacity = 999
+
+	# Provide custom AI weights to help the AI choose the right MIO
+#	ai_will_do = {
+#		...
+#	}
+
+	# As many headers as desired.
+	tree_header_text = {
+		text = "Label1" # Either plain text or localization key
+		x = 0 # Just where on the header bar is the label placed. 0 = Leftmost, 9 = Rightmost
+	}
+	tree_header_text = {
+		text = "Label2"
+		x = 2
+	}
+	tree_header_text = {
+		text = "Label3"
+		x = 4
+	}
+	tree_header_text = {
+		text = "LabelN"
+		x = 8
+	}
+
+	initial_trait = <initial trait>
+
+	trait = <trait>
+	trait = <trait>
+	trait = <trait>
+	# ... as many more as needed
+}

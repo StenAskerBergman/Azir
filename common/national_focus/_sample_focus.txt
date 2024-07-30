@@ -1,0 +1,1167 @@
+focus_tree = {
+    id = sample_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRY
+		}
+	}
+
+	default = no
+    continuous_focus_position = { x = 5500 y = 5500 }
+
+    # Row 1
+    focus = {
+        id = AAA
+        icon = GFX_goal_imperial_machine
+        x = 0
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAB
+        icon = GFX_goal_Fix_Shitty_Rails
+        x = 4
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAC
+        icon = GFX_goal_new_coin
+        x = 8
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAD
+        icon = GFX_goal_big_bull
+        x = 12
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAE
+        icon = GFX_goal_machine
+        x = 16
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAF
+        icon = GFX_goal_red_star_dove
+        x = 20
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAG
+        icon = GFX_goal_void_spread
+        x = 24
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAH
+        icon = GFX_goal_dockyard
+        x = 28
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAI
+        icon = GFX_goal_big_invasion
+        x = 32
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAJ
+        icon = GFX_goal_generic_imprison_people
+        x = 36
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAK
+        icon = GFX_goal_irrigation_system
+        x = 40
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAL
+        icon = GFX_goal_Fight_for_Freedom
+        x = 44
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAM
+        icon = GFX_goal_major_battleship
+        x = 48
+        y = 0
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    # END
+
+    # Row 2
+    focus = {
+        id = AAN
+        icon = GFX_focus_PurpleIndustry
+        x = 0
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAO
+        icon = GFX_goal_graveyard
+        x = 4
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAP
+        icon = GFX_goal_economic_control
+        x = 8
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAQ
+        icon = GFX_goal_demacian_agenda
+        x = 12
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAR
+        icon = GFX_goal_generic_investigation
+        x = 16
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAS
+        icon = GFX_goal_naval_officer
+        x = 20
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAT
+        icon = GFX_goal_red_star_gold_wreath
+        x = 24
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAU
+        icon = GFX_goal_generic_tech_sharing
+        x = 28
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAV
+        icon = GFX_goals_heavy_forge_industry
+        x = 32
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAW
+        icon = GFX_goal_jungle_forces
+        x = 36
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAX
+        icon = GFX_goal_generic_stable_government
+        x = 40
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = AAY
+        icon = GFX_goal_clear_boundaries
+        x = 44
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = AAZ
+        icon = GFX_goal_brain
+        x = 48
+        y = 1
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    # END
+
+    # Row 3
+    focus = {
+        id = ABA
+        icon = GFX_goal_government_icon
+        x = 0
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABB
+        icon = GFX_goal_Jungle_Gold_Mine
+        x = 4
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABC
+        icon = GFX_goal_generic_election
+        x = 8
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABD
+        icon = GFX_goal_rice_bowl
+        x = 12
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABE
+        icon = GFX_goal_naval_fleet2
+        x = 16
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABF
+        icon = GFX_goal_generic_controlled_board
+        x = 20
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABG
+        icon = GFX_goal_generic_stable_government
+        x = 24
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABH
+        icon = GFX_goal_island_deal
+        x = 28
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABI
+        icon = GFX_goal_dream_fleet
+        x = 32
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABJ
+        icon = GFX_goal_forced_dig
+        x = 36
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABK
+        icon = GFX_goal_reform_socialist_army
+        x = 40
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABL
+        icon = GFX_goal_nuclear
+        x = 44
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABM
+        icon = GFX_goal_invite_governors
+        x = 48
+        y = 2
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    # Row 4
+    focus = {
+        id = ABN
+        icon = GFX_goal_draw_line
+        x = 0
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABO
+        icon = GFX_goal_faith_and_state
+        x = 4
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABP
+        icon = GFX_goal_tank_plan
+        x = 8
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABQ
+        icon = GFX_goal_great_riders
+        x = 12
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABR
+        icon = GFX_goal_bomber
+        x = 16
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABS
+        icon = GFX_goal_flames_of_rebellion
+        x = 20
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABT
+        icon = GFX_goal_exotic_jungle_trade
+        x = 24
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABU
+        icon = GFX_goals_icathia
+        x = 28
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABV
+        icon = GFX_goal_royal_navy
+        x = 32
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABW
+        icon = GFX_goal_JAP_WAY
+        x = 36
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABX
+        icon = GFX_goal_noxian_pact
+        x = 40
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+    
+    focus = {
+        id = ABY
+        icon = GFX_goal_smugglers
+        x = 44
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ABZ
+        icon = GFX_goal_local_subjugation
+        x = 48
+        y = 3
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    # Row 5
+    focus = {
+        id = ACA
+        icon = GFX_goal_monarchy
+        x = 0
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACB
+        icon = GFX_goal_planet
+        x = 4
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACC
+        icon = GFX_goal_economic_expansion
+        x = 8
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACD
+        icon = GFX_goal_no_economy
+        x = 12
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACE
+        icon = GFX_goal_foreign_diplomacy
+        x = 16
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACF
+        icon = GFX_goal_generic_army_tanks2
+        x = 20
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACG
+        icon = GFX_goal_fleet
+        x = 24
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACH
+        icon = GFX_goal_constitutional_guarantees
+        x = 28
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACI
+        icon = GFX_goal_great_riders
+        x = 32
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACJ
+        icon = GFX_goal_purge_the_enemy2
+        x = 36
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACK
+        icon = GFX_goal_crush_monarchy
+        x = 40
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACL
+        icon = GFX_goal_noxus_star
+        x = 44
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACM
+        icon = GFX_goal_food_banks
+        x = 48
+        y = 4
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    # Row 6
+    focus = {
+        id = ACN
+        icon = GFX_goal_jungle_pay
+        x = 0
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACO
+        icon = GFX_goal_nomad_hunters
+        x = 4
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACP
+        icon = GFX_goal_generic_army_tanks3
+        x = 8
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACQ
+        icon = GFX_goal_imperial_legacy
+        x = 12
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACR
+        icon = GFX_goal_marine_wave3
+        x = 16
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACS
+        icon = GFX_goal_clear_boundaries
+        x = 20
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACT
+        icon = GFX_goal_Jungle_Gold_Mine
+        x = 24
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACU
+        icon = GFX_goal_electronics
+        x = 28
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACV
+        icon = GFX_goal_Jungle_Diamond_Mine
+        x = 32
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACW
+        icon = GFX_goal_new_deal
+        x = 36
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACX
+        icon = GFX_goal_military_science
+        x = 40
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACY
+        icon = GFX_goal_generic_communism_construction
+        x = 44
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ACZ
+        icon = GFX_goal_our_cuts
+        x = 48
+        y = 5
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    # Row 7
+    focus = {
+        id = ADA
+        icon = GFX_goal_silk_trade
+        x = 0
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADB
+        icon = GFX_goal_rocket
+        x = 4
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADC
+        icon = GFX_goal_generic_heavy_tank
+        x = 8
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADD
+        icon = GFX_goal_bird_industry
+        x = 12
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADE
+        icon = GFX_goal_engineer_academy
+        x = 16
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADF
+        icon = GFX_goal_books
+        x = 20
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADG
+        icon = GFX_goal_royal_marines
+        x = 24
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADH
+        icon = GFX_goal_spies
+        x = 28
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADI
+        icon = GFX_goal_exotic_jungle_trade
+        x = 32
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADJ
+        icon = GFX_goal_death_skulls
+        x = 36
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADK
+        icon = GFX_goal_celebrations3
+        x = 40
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADL
+        icon = GFX_goal_healing
+        x = 44
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADM
+        icon = GFX_goal_white_star
+        x = 48
+        y = 6
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    # Row 8
+    focus = {
+        id = ADN
+        icon = GFX_goals_sakura_tree
+        x = 0
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADO
+        icon = GFX_goal_naval_officer
+        x = 4
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADP
+        icon = GFX_goal_Fix_Shitty_Rails
+        x = 8
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADQ
+        icon = GFX_goal_factory_complex
+        x = 12
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADR
+        icon = GFX_goal_construction
+        x = 16
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADS
+        icon = GFX_goal_step_on_skull
+        x = 20
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADT
+        icon = GFX_goal_manage_industries
+        x = 24
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADU
+        icon = GFX_goal_bird
+        x = 28
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADV
+        icon = GFX_goal_nationalist_credibility
+        x = 32
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADW
+        icon = GFX_goal_loyal_people
+        x = 36
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADX
+        icon = GFX_goal_generic_tackle_corruption
+        x = 40
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADY
+        icon = GFX_goal_crush_opposition
+        x = 44
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+
+    focus = {
+        id = ADZ
+        icon = GFX_goal_further_oil
+        x = 48
+        y = 7
+        cost = 10
+        available = {
+            always = yes
+        }
+    }
+}

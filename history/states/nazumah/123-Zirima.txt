@@ -1,0 +1,44 @@
+
+state={
+	id=123
+	name="STATE_123"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 12
+ rubber = 6
+ #steel = 5
+ #oil = 5
+ #chromium = 3
+ #aluminium = 5
+ }
+ history = {
+ owner = NAZ
+ add_core_of = NAZ  # Should be added, After a Event 
+ add_core_of = SHU  # Should be added, After a Event 
+ add_core_of = XER  # Should be added, After a Event  
+ victory_points = {
+ 5288 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 0
+   #dockyard = 0
+   #9801 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		107 225 834 1045 1164 1271 1352 1421 1496 1622 1883 1995 2164 2381 2467 2611 2802 3336 3636 4156 4331 4644 4922 5043 5145 5259 5288 5722 9574 9597 9614 9633 9651 9661 9677 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=972152
+        state_category = town
+}

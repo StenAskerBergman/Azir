@@ -1,0 +1,91 @@
+spriteTypes = {
+    # Desert Wanderers
+    SpriteType = {
+        name = "GFX_idea_desert_wanderers"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/desert_wanderers.dds"
+    }
+
+    # Lore Keepers
+    SpriteType = {
+        name = "GFX_idea_lore_keepers"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/lore_keepers.dds"
+    }
+
+    # Cultural Exchange
+    SpriteType = {
+        name = "GFX_idea_cultural_exchange"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/cultural_exchange.dds"
+    }
+
+    # Blood and Sand
+    SpriteType = {
+        name = "GFX_idea_blood_and_sand"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/blood_and_sand.dds"
+    }
+
+    # Horse Lords
+    SpriteType = {
+        name = "GFX_idea_horse_lords"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/horse_lords.dds"
+    }
+
+    # Dune Fighters
+    SpriteType = {
+        name = "GFX_idea_dune_fighters"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/dune_fighters.dds"
+    }
+
+    # Oasis Control
+    SpriteType = {
+        name = "GFX_idea_oasis_control"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/oasis_control.dds"
+    }
+
+    # Sand Scouts
+    SpriteType = {
+        name = "GFX_idea_sand_scouts"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/sand_scouts.dds"
+    }
+
+    # Survival Training
+    SpriteType = {
+        name = "GFX_idea_survival_training"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/survival_training.dds"
+    }
+
+    # Plunder and Pillage
+    SpriteType = {
+        name = "GFX_idea_plunder_and_pillage"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/plunder_and_pillage.dds"
+    }
+
+    # Ruthless Tactics
+    SpriteType = {
+        name = "GFX_idea_ruthless_tactics"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/ruthless_tactics.dds"
+    }
+
+    # Loyal to the Clan
+    SpriteType = {
+        name = "GFX_idea_loyal_to_the_clan"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/loyal_to_the_clan.dds"
+    }
+
+    # Treaty with Outlaws
+    SpriteType = {
+        name = "GFX_idea_treaty_with_outlaws"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/treaty_with_outlaws.dds"
+    }
+
+    # Nomadic Coalition
+    SpriteType = {
+        name = "GFX_idea_nomadic_coalition"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/nomadic_coalition.dds"
+    }
+
+    # Expansion of Territory
+    SpriteType = {
+        name = "GFX_idea_expansion_of_territory"
+        texturefile = "gfx/interface/ideas/shakkal-ideas/expansion_of_territory.dds"
+    }
+}

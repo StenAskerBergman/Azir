@@ -1,0 +1,45 @@
+
+state={
+	id=125
+	name="STATE_125"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 12
+ rubber = 5
+ #steel = 5
+ oil = 2
+ #chromium = 3
+ #aluminium = 5
+ }
+ history = {
+ owner = SHK
+ # add_core_of = SHU  # Should be added, After a Event 
+ # add_core_of = XER  # Should be added, After a Event 
+ add_core_of = SHK  # Should be added, After a Event 
+ # add_core_of = RAI  # Should be added, After a Event 
+ victory_points = {
+ 9594 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   #dockyard = 0
+   #9801 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		12 89 167 201 670 793 910 2279 2433 2522 2619 2712 2945 2957 3057 3772 3863 4547 4560 4890 4934 5181 5412 5424 5648 9548 9551 9560 9583 9594 9595 9604 9605 9625 9627 9631 9641 9644 9650 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=978283
+        state_category = town
+}

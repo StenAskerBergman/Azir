@@ -1,0 +1,282 @@
+spriteTypes = { #TODO: Add Icon Shine Later 
+
+	##Icon For: 
+
+	SpriteType = {
+		name = "GFX_AUR_aurman_sailors"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_sailors.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_ocean_masters"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_ocean_masters.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_pirate_question"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_pirate_question.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AUR_navigational_diplomacy"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_navigational_diplomacy.dds"
+	}
+	
+	SpriteType = {
+    name = "GFX_AUR_national_identity"
+    texturefile = "gfx/interface/goals/AUR/GFX_AUR_national_identity.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_maritime_heritage"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_maritime_heritage.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_ocean_stewardship"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_ocean_stewardship.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_maritime_mastery"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_maritime_mastery.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_noxian_trade"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_noxian_trade.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_family_ties"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_family_ties.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_our_sea"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_our_sea.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_piltover_trade"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_piltover_trade.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_clan_medarda"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_clan_medarda.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_blood_is_thicker_than_water"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_blood_is_thicker_than_water.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_boats_run_on_water_not_blood"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_boats_run_on_water_not_blood.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_waves_of_resilience"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_waves_of_resilience.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_sea_of_profit"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_of_profit.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_shuriman_threat"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_shuriman_threat.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_shifting_currents"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_shifting_currents.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_uncertain_waters"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_uncertain_waters.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_aurman_pirates"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_pirates.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_calm_sea"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_calm_sea.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_lurking_threats"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_lurking_threats.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_aurman_privateer"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_privateer.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_aurman_navy"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_navy.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_naval_linage"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_naval_linage.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_coastal_raid_parties"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_coastal_raid_parties.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_end_to_era"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_end_to_era.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_new_era"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_new_era.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_naval_outposts"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_naval_outposts.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_pirate_bay"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_pirate_bay.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_warm_sea"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_warm_sea.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_cold_sea"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_cold_sea.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_sea_of_blood"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_of_blood.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_island_stewardship"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_island_stewardship.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_island_ownership"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_island_ownership.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_sea_of_thiefs"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_of_thiefs.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_tight_crews"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_tight_crews.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_oceanic_outreach"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_oceanic_outreach.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_shallow_water_supremacy"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_shallow_water_supremacy.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_sea_of_iron"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_of_iron.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_sea_maps"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_warships"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_warships.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_freljordian_boarding_parties"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_freljordian_boarding_parties.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_chaotic_sea"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_chaotic_sea.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_strait_question"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_strait_question.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_deep_water_supremacy"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_deep_water_supremacy.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_water_tyrant"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_water_tyrant.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_AUR_targonian_nav"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_targonian_nav.dds"
+	}  
+
+	
+	# GFX_AUR_sea_maps.dds shine version
+	SpriteType = {
+		name = "GFX_AUR_sea_maps_shine"
+		texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+}

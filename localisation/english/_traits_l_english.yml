@@ -1,0 +1,188 @@
+﻿l_english:
+ # Shurima Patch 1.2 
+
+ # Void Traits
+ 
+ # Shakkal Traits
+ 
+ # Marai Traits
+
+ # Noxus Patch 1.1
+
+ # Bla blah blah - Tons of Traits!
+
+ # Demcia Patch 1.0  
+ merceneryCataloger: "Mercenery Cataloger" #Karl
+ enragedMinotaur: "Enraged Minotaur" #Aurok
+ tactician: "Tactician" #Beryn
+ disciplined: "Disciplined" #Faris
+ crimsonEndulger: "Crimson Endulger" #Kye
+ draconic_Trainer: "Draconic Trainer" #Air1
+ steel_Admiralty: "Steel Admiralty" #Navy2
+ effective_Screener: "Effective Screener" #Navy1
+ noxian_recruiter: "Noxian Recruiter" #Aelana
+ masterTactician: "Master Tactician" #Swain
+ experiencedGeneral: "Experienced General" #Vessi
+ bloodHosts: "Blood Hosts" #Esslanger
+ naval_focused: "Naval Focused" #Noradi
+ flexible_tactician: "Flexible Tactician" #Erath
+ deceiver: "Deceiver" #Leblanc
+ crimsonLord: "Crimson Lord" #Vladimir
+ deviousCharmer: "Devious Charmer" #Broadmane
+ talentSearcher: "Talent Searcher" #Telsi
+ greatReckoner: "Great Reckoner" #Draven
+
+ politicalPuppeteer: "Political Puppeteer" #Eldred
+ reformedMage: "Reformed Mage" #wisteria
+ unsureLeader: "Unsure Leader" #new leilane
+ empoweredKing: "Empowered King" #new J3
+
+ seneschal: "Seneschal" #xinzhao
+ mageseeker_influencer: "Mageseeker Influencer" #hesbeth advisor
+ devoted_propagandist: "Devoted Propagandist" #Janan
+ antagonizer: "Antagonizer" #Gregem
+ staunch_traditionalist: "Staunch Traditionalist" #Tianna
+ defensive_focused: "Defensive Focused" #Ronan
+ well_rounded: "Well Rounded" #Finn
+ offensive_focused: "Offensive Focused" #Blair
+ drill_sergeant: "Drill Sergeant" #Drill serg
+ cohesive_general: "Cohesive General" #Drill serg
+ amphibious_assaulter: "Amphibious Assaulter" #Drill serg
+ coordinated_admiralty: "Coordinated Admiralty" #Drill serg
+ elevated_trainers: "Elevated Trainers" #Drill serg
+ elusive_raptors: "Elusive Raptors" #Drill serg
+ duelist: "Duelist" #Drill serg
+ brothers_in_arms: "Brothers In Arms" #Drill serg
+ combat_cook: "Combat Cook" #Drill serg
+ relentless_attacker: "Relentless Attacker" #Drill serg
+ devout_defender: "Devout Defender" #Drill serg
+ 
+ breaker_of_tradition: "Breaker Of Tradition" #Drill serg
+ natural_leader: "Natural Leader" #Drill serg
+ outspoken_motivator: "Outspoken Motivator" #Drill serg
+ mage_supremacist: "Mage Supremacist" #Drill serg
+ combat_seeker: "Combat Seeker" #Drill serg
+ revenge_seeker: "Revenge Seeker" #Drill serg
+ defensive_turtler: "Defensive Turtler" #Drill serg
+ untrained_fighter: "Untrained Fighter" #Drill serg
+ magic_focused: "Magic Focused" #Drill serg
+ guerilla_fighter: "Guerilla Fighter" #Drill serg
+ training_reformist: "Training Reformist" #Kara
+
+ the_unshackled: "The Unshackled" #Sylas
+ exemplar: "The Exemplar of Demacia" #J4
+ influenceableKing: "Influenceable King" #J3
+ bountyhunter: "The Bounty Hunter" #Miss Fortune
+ noxgeneral: "Noxian Grand General" #Swain
+ chainwarden: "The Chain Warden" #Thresh
+ bladedancer: "The Blade Dancer" #Irelia
+ empresselements: "Empress of the Elements" #Qiyana
+ prophetvoid: "Prophet of the Void" #Malzahar
+ emperorsands: "Emperor of the Sands" #Azir
+ radiantdawn: "The Radiant Dawn" #Leona
+ outdatedBureau: "Outdated Bureaucracy" #The Council
+ houndunderground: "Hound of the Underground" #Vander
+ relentlessStorm: "The Relentless Storm" #Volibear
+ frostarcher: "The Frost Archer" #Ashe
+ furynorth: "Fury of the North" #Sejuani
+ icewitch: "The Ice Witch" #Lissandra
+
+ # Old
+ cc_leader: "General"
+ fm_leader: "Field Marshal"
+ navy_leader: "Admiral"
+ operative_skill_1: "Recruit"
+ operative_skill_2: "Agent"
+ communist_revolutionary: "Communist Revolutionary"
+ communist_revolutionary_desc: "§LA supporter of the international revolution hoping to aid the country's, and eventually the world's, transition to a communist society.§!"
+ democratic_reformer: "Democratic Reformer"
+ democratic_reformer_desc: "§LA firm believer in the people's right to rule themselves, this politician sees empowering them as the first priority and aims for the country to be ruled with their mandate.§!"
+ fascist_demagogue: "Fascist Demagogue"
+ fascist_demagogue_desc: "§LDriven by a will to unite the people under a strong state, this politician emphasizes nationalist and militarist rhetoric.§!"
+ staunch_monarchist: "Staunch Monarchist"
+ staunch_monarchist_desc: "§LThis politician believes that a hereditary ruler serves as a powerful icon to unite the country.§!"
+ Ascended_trait_name: "Ascended"
+ God_Warrior_Ascended_trait_name: "Ascended God Warrior"
+ Loyal_Xerath: "Xerath Follower"
+ Loyal_Renekton: "Renekton Bandit"
+ Loyal_Azir: "Azir Loyalist"
+ Loyal_Sivir: "Sivir Loyalist"
+  
+ ideological_crusader: "Ideological Crusader"
+ shadow_of_calles: "Shadow of Calles"
+ social_reformer: "Social Reformer"
+ red_army_organizer: "Red Army Organizer"
+ ambitious_union_boss: "Ambitious Union Boss"
+ syncretic_revanchist: "Syncretic Revanchist"
+ popular_figurehead: "Popular Figurehead"
+ silent_workhorse: "Silent Workhorse"
+ compassionate_gentleman: "Compassionate Gentleman"
+ economist: "Economist"
+ editor: "Editor"
+ reluctant_interventionist: "Reluctant Interventionist"
+ tenacious_negotiator: "Tenacious Negotiator"
+ retired_officer: "Retired Officer"
+ eager_collaborator: "Eager Collaborator"
+ duke_of_orleans: "Duke of Orléans"
+ count_of_paris: "Count of Paris"
+ reluctant_veteran: "Reluctant Veteran"
+ proletariat_internationalist: "Proletariat Internationalist"
+ hawk: "Hawk"
+ emergency_powers: "Emergency Powers"
+ technocrat: "Technocrat"
+ national_integralist: "National Integralist"
+ american_caesar: "American Caesar"
+ great_architect: "Great Architect"
+ constitutional_monarch: "Constitutional Monarch"
+ constitutional_monarch_minor: "Constitutional Monarch"
+ prince_of_terror: "Prince of Terror"
+ backroom_backstabber: "Backroom Backstabber"
+ smooth_talking_charmer: "Smooth-Talking Charmer"
+ fortification_engineer: "Fortification Engineer"
+ war_industrialist: "War Industrialist"
+ captain_of_industry: "Captain of Industry"
+ famous_aviator: "Famous Aviator"
+ financial_expert: "Financial Expert"
+ armaments_organizer: "Armaments Organizer"
+ quartermaster_general: "Quartermaster General"
+ rocket_scientist: "Rocket Scientist"
+ nuclear_scientist: "Nuclear Scientist"
+ propaganda_bungler: "Propaganda Bungler"
+ silent_mule: "Silent Mule"
+ baron_of_terror: "Baron of Terror"
+ compassionate_commoner: "Compassionate Commoner"
+ backroom_windbag: "Backroom Windbag"
+ smooth_talking_con_man: "Smooth-Talking Con-Man"
+ ideological_groupie: "Ideological Groupie"
+ fortification_armchair_general: "Fortification Armchair General"
+ war_profiteer: "War Profiteer"
+ lieutenant_of_industry: "Lieutenant of Industry"
+ finance_graduate: "Finance Graduate"
+ armaments_aficionado: "Armaments Aficionado"
+ quartermaster_trainee: "Quartermaster Trainee"
+ little_rocket_man: "Little Rocket Man"
+ nuclear_enthusiast: "Nuclear Enthusiast"
+ blitzkrieg_theorist: "Blitzkrieg Theorist"
+ council_of_theorists: "Council of Theorists"
+ military_theorist: "Military Theorist"
+ air_warfare_theorist: "Air Warfare Theorist"
+ dive_bomber: "Dive Bomber"
+ victory_through_airpower: "Victory Through Airpower"
+ close_air_support_proponent: "Close Air Support Proponent"
+ assault_avaition: "Assault Aviation"
+ naval_theorist: "Naval Theorist"
+ naval_aviation_pioneer: "Naval Aviation Pioneer"
+ grand_fleet_proponent: "Grand Fleet Proponent"
+ submarine_specialist: "Submarine Specialist"
+ tank_manufacturer: "Tank Designer"
+ artillery_manufacturer: "Artillery Designer"
+ infantry_equipment_manufacturer: "Infantry Equipment Designer"
+ support_equipment_manufacturer: "Support Equipment Designer"
+ motorized_equipment_manufacturer: "Motorized Equipment Designer"
+ naval_manufacturer: "Ship Designer"
+ industrial_concern: "Industrial Concern"
+ railway_company: "Railway Company"
+ construction_company: "Construction Company"
+ electronics_concern: "Electronics Concern"
+ electronics_developer: "Electronics Developer"
+

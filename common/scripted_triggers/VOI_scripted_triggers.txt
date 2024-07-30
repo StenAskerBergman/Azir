@@ -1,0 +1,4 @@
+
+VOI_char_cw_desolate = { # Any Desolate -> Void
+	has_government = Desolate 
+}

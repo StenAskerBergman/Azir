@@ -1,0 +1,207 @@
+spriteTypes = {
+
+    # NOTE: Remember to include Focus after GFX icon name!
+
+    spriteType = {
+        name = "GFX_focus_all_resource"
+        texturefile = "gfx/interface/goals/generic/GFX_all_resource.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_counter_insurgency"
+        texturefile = "gfx/interface/goals/generic/GFX_counter_insurgency.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_diplomatic_trade_deal"
+        texturefile = "gfx/interface/goals/generic/GFX_diplomatic_trade_deal.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_documentation1"
+        texturefile = "gfx/interface/goals/generic/GFX_documentation1.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_documentation2"
+        texturefile = "gfx/interface/goals/generic/GFX_documentation2.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_female_soldiers"
+        texturefile = "gfx/interface/goals/generic/GFX_female_soldiers.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_capital"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_capital.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_colonialist_crusade2"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_colonialist_crusade2.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_deal_with_right"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_deal_with_right.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_empty_coffers"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_empty_coffers.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_generic_air_defense"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_generic_air_defense.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_generic_self_management"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_generic_self_management.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_generic_tank_destroyer"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_generic_tank_destroyer.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_heavy_tanks"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_heavy_tanks.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_on_target"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_on_target.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_focus_research2"
+        texturefile = "gfx/interface/goals/generic/GFX_focus_research2.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_foreign_cities"
+        texturefile = "gfx/interface/goals/generic/GFX_foreign_cities.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_Agarian_Soldiers"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Agarian_Soldiers.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_agency"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_agency.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_agrarian_reform"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_agrarian_reform.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_agricultural_aid"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_agricultural_aid.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_agriculture"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_agriculture.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_agriculture2"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_agriculture2.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_Air_Fuel"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Air_Fuel.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_air_red"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_air_red.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_allowance"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_allowance.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_aluminium"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_aluminium.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_American_Armor"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_American_Armor.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_angry_jaguar"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_angry_jaguar.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_another_book"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_another_book.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_anti_air"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_anti_air.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_anti_tank"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_anti_tank.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_army_guy"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_army_guy.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_army_guy_2"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_army_guy_2.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_army_guy_3"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_army_guy_3.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_army_locked"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_army_locked.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_army_officers"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_army_officers.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_army_rangers"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_army_rangers.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_art_propaganda"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_art_propaganda.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_artillery_line"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_artillery_line.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_Artillery_Tactics"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Artillery_Tactics.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_attack_bear"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_attack_bear.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_Automobile_Production"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Automobile_Production.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_Bamboo"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Bamboo.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_bananas"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_bananas.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_bank_loans"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_bank_loans.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_bank_loans2"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_bank_loans2.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_banking"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_banking.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_basic_oil"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_basic_oil.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_goal_Battleship_Investments"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Battleship_Investments.dds"
+    }
+}
+
+}

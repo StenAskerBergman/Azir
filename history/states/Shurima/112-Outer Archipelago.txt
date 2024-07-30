@@ -1,0 +1,42 @@
+
+state={
+	id=112
+	name="STATE_112"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 5
+ #rubber = 10
+ steel = 8
+ oil = 8
+ #chromium = 3
+ #aluminium = 4
+ }
+ history = {
+ owner = CQI
+ add_core_of = CQI
+ victory_points = {
+ 3758 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 2
+   dockyard = 0
+   2436 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		69 1692 1859 2200 2436 2594 2851 3547 3564 3623 3758 4607 4650 5233 5380 8637 8639 8651 8658 8667 8670 8685 8725 8766 8789 8795 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=991289
+        state_category = town
+}

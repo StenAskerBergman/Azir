@@ -1,0 +1,364 @@
+ideas = {
+
+	country = {
+
+		Voidborn_Army = {
+			picture = FRA_army_of_aggression_focus 
+			add_army_experience = 20
+            add_special_forces = 3
+			has_country_flag = Voidborn_Army
+		}
+
+		VOI_abandonment = {
+			picture = GFX_idea_abandonment
+			research_speed_factor = -0.50
+			local_manpower = -0.50
+			local_factories = -0.45
+			consumer_goods_factor = 0.50
+
+			# cancel = {
+			# 	NOT = {
+			# 		has_country_flag = VOI_abandonment
+			# 	}
+			# }
+		}
+
+		Void_Threats = {
+			picture = Unknown_picture
+			
+			construction_speed = -0.50
+						
+			cancel = {
+				NOT = {
+					has_country_flag = VOI_abandonment
+				}
+			}
+		}
+
+		No_Void_Threats = {
+			picture = Unknown_picture
+
+		}
+
+		Active_Void_Threats = {
+			picture = Unknown_picture
+		}
+
+		# ---------------------
+		# The Icathian Economy void_threat
+		# ---------------------
+		
+		void_influence = {
+			
+			picture = FRA_army_of_aggression_focus
+			
+			allowed = {
+				original_tag = VOI
+			}
+			
+			allowed_civil_war = {
+				controls_province = 2883
+			}
+			
+			cancel = {
+				NOT = {
+					controls_province = 2883
+				}
+			}
+			
+			removal_cost = -1
+
+			rule = {
+				can_join_opposite_factions = no
+			}
+			
+			modifier = {
+				weekly_manpower = 10000
+				army_attack_factor = 0.30
+				supply_node_range = -0.15
+			}
+		}
+		 
+		crushed_void_resistance = {
+			name = VOI_Crushed_Resistance
+			picture = SPR_crush_the_revolution
+			desc = VOI_Crushed_Resistance_desc
+			allowed = {
+				tag = VOI
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+
+				add_popularity = {
+					ideology = desolation
+					popularity = -0.5
+				}
+				#mageseeker_influence_gain = -0.03 # mage_drift = -0.03
+				#mageseeker_influence_loss = -0.03
+			}
+
+		}
+		
+		# ---------------------
+		# The Icathian Economy
+		# ---------------------
+		
+		Icathia_Ruins = {
+			picture = SHU_shurima_broken-1239
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}	
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 1.5
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.5
+			}
+		}
+
+		Icathian_Miracle = {
+			picture = generic_morale_bonus
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.5
+				political_power_cost = -1
+				# local_resources_factor = 0.00
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 1
+			}
+		}
+		
+		# -------------------
+		# The Void Resistance 
+		# -------------------
+		
+		void_resistance = {
+			picture = chi_war_of_resistance
+			allowed = {
+				tag = VOI
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		void_resistance2 = {
+			picture = chi_war_of_resistance2
+			allowed = {
+				tag = VOI
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		void_resistance3 = {
+			picture = chi_war_of_resistance3
+			allowed = {
+				tag = VOI
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+		
+		# -------------------
+		# The Void Army Buff 
+		# -------------------
+		
+		Kohir = {
+			picture = generic_reserve_divisions
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		Mage_King = {
+			picture = SHU_shuriman_pride-1756
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			on_add = {
+				add_political_power = 100
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+		
+		# -----------------
+		# Icathian In Ruins
+		# -----------------
+
+		Barren_wasteland = {}
+
+		Icathian_agriculture = {
+			picture = raj_risk_of_famine
+		}
+
+		Icathian_wasteland = {
+			picture = isolation
+		}
+
+		# -----------------
+		# Restoring Icathia
+		# -----------------
+		
+		Hex_crystal_sovereignty = {
+			picture = SHU_hex_crystal_sovereignty-1452
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.2
+			}
+		}
+
+		# The_great_fall = {
+		# 	picture = SHU_the_great_fall-1237
+		# 	allowed = {
+		# 		original_tag = SHU
+		# 	}
+		# 	available = {
+				
+		# 	}
+		# 	cancel = {
+				
+		# 	}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+		# 	removal_cost = -1
+		# 	modifier = {
+		# 	}
+		# }
+
+		# Lawless_slavery = {
+		# 	picture = SHU_lawless_slavery-1506
+		# 	allowed = { original_tag = SHU }
+		# 	available = {}
+		# 	cancel = {}
+		# 	allowed_civil_war = { always = yes }
+		# 	removal_cost = -1
+		# 	modifier = {}
+		# }
+
+		# shuriman_defense_bonus = {
+		# 	name = "Shuriman Shieldwall" 
+		# 	picture = ARG_military_government
+		# 	custom_effect_tooltip = "By Azir's Command we will hold this line! \n 10% bonus defense" 
+		# 	modifier = { army_defence = 0.10 }
+		# }
+		
+		# Offensive_War_Bonus = {'
+		
+		# }
+	
+		# Rebuilding_Ourselves = {}
+		# Rebuilding_Our_Armory = {
+		# 	picture = SOV_third_five_year_plan_military
+		# 	custom_trigger_tooltip = "It's Time To Rebuild Our Great Armory!"
+
+		# 	modifier = { production_speed_arms_factory_factor = 0.25}
+		# }
+	}
+
+
+	mobilization_laws = {
+	}
+	economy = {
+	}
+	political_advisor = {
+	}
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	industrial_concern = {
+	}
+	theorist = {
+	}
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+}

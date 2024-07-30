@@ -1,0 +1,11 @@
+
+
+NAZ_upgrade_main_city = {
+    IF = {
+        limit = { state = 133 }
+        add_victory_points = {
+            province = 2028
+            value = 2
+        }
+    }
+}

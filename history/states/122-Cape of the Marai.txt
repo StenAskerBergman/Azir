@@ -1,0 +1,48 @@
+
+state={
+	id=122
+	name="STATE_122"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 12
+ #rubber = 8
+ #steel = 5
+ #oil = 5
+ #chromium = 3
+ #aluminium = 5
+ }
+ history = {
+ owner = NAZ
+ add_core_of = NAZ  # Should be added, After a Event 
+ add_core_of = SHU  # Should be added, After a Event 
+ add_core_of = XER  # Should be added, After a Event 
+ 
+ # Rare Marai Core
+ add_core_of = MAR
+  
+ victory_points = {
+ 5291 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   dockyard = 0
+   9801 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		916 1150 1268 1299 1606 1744 1808 2168 2252 2301 2494 2584 4189 4976 5232 5291 5385 5413 5428 5642 9751 9765 9768 9770 9773 9782 9785 9786 9789 9793 9794 9797 9801 9802 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1092812
+        state_category = town
+}

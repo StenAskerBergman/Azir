@@ -1,0 +1,48 @@
+on_actions = {
+	# Runeterra 
+	on_startup = {
+		effect = {
+
+			# What if I set it before the war?
+
+			# Works :)
+
+			SHU = { 
+				set_province_controller = 9442
+				set_province_controller = 9470
+				set_province_controller = 9453
+				set_province_controller = 1093
+				set_province_controller = 1721
+				set_province_controller = 5579
+			}
+			 
+			XER = { # The Shuriman War
+
+				declare_war_on = { 
+					
+					id = StartUpWar.1
+
+					# Issue:
+					# Still move's soldiers out 
+					# of position into exile, sad!
+					
+					title = "Shuriman Civil War" 
+					target = SHU
+					type = annex_everything
+					
+				}
+				#SHU = { # Might need this to fix the war name / title 
+				#	load_oob = defend_ourselves
+				#}
+
+				# Events Outcomes
+				country_event = xerath.1
+				
+				# Not Sure we need to show this! # for XER & SHU 
+				# but I think its already solve, it misses them
+				news_event = { id = shuriman_rnews.5 days = 2 } 
+			
+			}
+		}
+	}
+}

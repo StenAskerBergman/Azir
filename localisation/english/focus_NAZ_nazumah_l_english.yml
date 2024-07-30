@@ -1,0 +1,334 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ ##### LEADERS
+ 
+ trait_great_hunter: "Great Hunter"
+ father_of_the_empire: "Father of the Empire"
+ pride_of_nazumah: "Pride of Nazumah"
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+ 
+ 
+################################### FOCUSES                     \n      §H§!
+
+ # Tooltip and Ideas
+ NAZ_improved_warrior_tradition_idea: "Improved Warrior Guild"
+ NAZ_improved_warrior_tradition_idea_desc: "Our warriors have honed their skills to perfection, becoming even deadlier on the battlefield."
+
+ NAZ_basic_armed_forces: "Foundation of Armed Forces"
+ NAZ_basic_armed_forces_desc: "This focus represents the initial steps in formalizing our military structure, laying the groundwork for a capable and adaptable armed force."
+
+  # "Warrior Tradition"
+ NAZ_warrior_tradition: "Tribal Traditions"  
+ NAZ_warrior_tradition_desc: "Our heritage is rich with traditions of warfare and bravery. By harnessing this, we can bolster our military prowess and instill pride among our troops."
+
+ NAZ_strengthen_the_hunters: "Strengthen the Hunters"
+ NAZ_strengthen_the_hunters_desc: "By focusing on advanced training and tactical doctrines, we can enhance the capabilities of our warriors significantly."
+
+ NAZ_universal_conscription: "Universal Conscription"
+ NAZ_universal_conscription_desc: "Every citizen a soldier; this policy will ensure that our nation can call upon every able-bodied person in times of need, significantly bolstering our manpower."
+
+ NAZ_develop_special_units: "Develop Special Units"
+ NAZ_develop_special_units_desc: "Specialized units can undertake missions that regular troops cannot, providing us with a crucial edge in unconventional and high-stakes scenarios."
+
+ NAZ_modernize_warfare: "Modernize Warfare"
+ NAZ_modernize_warfare_desc: "Modern warfare requires modern solutions. This focus will allow us to adopt the latest military technologies and strategies."
+
+ NAZ_nations_best: "The Nation's Best" 
+ NAZ_nations_best_desc: "Highlighting and rewarding our most distinguished warriors will inspire others and create heroes for our people to admire."
+
+ NAZ_utilize_our_strengths: "Utilize Our Strengths"
+ NAZ_utilize_our_strengths_desc: "Every region has its strengths. By identifying and leveraging these, we can enhance our overall military effectiveness."
+
+ NAZ_reform_the_conscription: "Reform Conscription"
+ NAZ_reform_the_conscription_desc: "Reforming our conscription laws will make our forces more resilient and prepared, boosting public support for our military efforts."
+
+ NAZ_eyes_on_the_imperialists: "Eyes on the Imperialists"
+ NAZ_eyes_on_the_imperialists_desc: "By studying the imperialists, we can learn their tactics and strategies, allowing us to reduce the costs of our own military doctrines."
+
+ NAZ_encourage_local_arms_production: "Encourage Local Arms Production"
+ NAZ_encourage_local_arms_production_desc: "A self-sufficient military is a secure one. Encouraging local arms production will reduce our dependency on foreign arms."
+
+ NAZ_metal_beasts: "Metal Beasts"
+ NAZ_metal_beasts_desc: "The development of armored units will play a pivotal role in modernizing our forces, providing us with powerful tools on the battlefield."
+
+ NAZ_the_roars_of_thunder: "The Roars of Thunder"
+ NAZ_the_roars_of_thunder_desc: "Artillery has always been the king of battle. Enhancing our artillery capabilities will ensure that our forces can unleash devastating barrages against our foes."
+
+ NAZ_develop_indigenous_models: "Develop Indigenous Models"
+ NAZ_develop_indigenous_models_desc: "Developing our own military hardware will free us from foreign dependencies and foster a sense of pride in our technological achievements."
+
+ NAZ_the_steel_lions: "The Steel Lions"
+ NAZ_the_steel_lions_desc: "The Steel Lions will be the spearhead of our armored forces, equipped with the latest in tank warfare technology."
+
+ NAZ_warfare_from_afar: "Warfare from Afar"
+ NAZ_warfare_from_afar_desc: "Enhancing our long-range capabilities will allow us to engage the enemy at a distance, reducing risks to our forces."
+
+ NAZ_modern_infantry: "Modern Infantry"
+ NAZ_modern_infantry_desc: "The backbone of any army is its infantry. This focus will modernize our foot soldiers, equipping them with the latest gear and training."
+
+ NAZ_pacify_the_countryside: "Pacify the Countryside"
+ NAZ_pacify_the_countryside_desc: "To solidify our control over Nazumah, we must pacify the unruly elements within our borders, ensuring stability and security for our developmental plans."
+
+ NAZ_army_modernization: "Army Modernization"
+ NAZ_army_modernization_desc: "Our military requires modernization to meet the challenges of the modern world. This focus will boost our army's capabilities significantly."
+
+ NAZ_mukden_military_academy: "Establish Military Academy"
+ NAZ_mukden_military_academy_desc: "A modern army needs a modern military academy. By establishing a top-tier military education facility, we can ensure our officers are among the best trained in the world."
+
+ NAZ_invite_foreign_investment: "Invite Foreign Investment"
+ NAZ_invite_foreign_investment_desc: "By inviting foreign settlers and investors, we can boost our economy and improve our industrial capabilities significantly."
+
+ # Updated Focus Names
+ NAZ_develop_capitalstate: "Develop Capital State"
+ NAZ_develop_capitalstate_desc: "Enhance the infrastructure and industry in the capital state to serve as a model for the rest of the nation."
+
+ NAZ_the_state_bank_of_nazumah: "The State Bank of Nazumah"
+ NAZ_the_state_bank_of_nazumah_desc: "Establish a state bank to manage and grow the nation's financial resources efficiently."
+
+ NAZ_pave_the_roads: "Pave the Roads"
+ NAZ_pave_the_roads_desc: "Improve the transportation network by paving roads across the nation."
+
+ NAZ_the_steam_locomotive: "The Steam Locomotive"
+ NAZ_the_steam_locomotive_desc: "Introduce steam locomotives to revolutionize transport and trade across the nation."
+
+ NAZ_the_nazuman_regional_development_fund: "The Regional Development Fund"
+ NAZ_the_nazuman_regional_development_fund_desc: "Create a fund to support regional development projects, boosting local economies."
+
+ NAZ_exploit_national_resources: "Exploit National Resources"
+ NAZ_exploit_national_resources_desc: "Harness the natural resources of the nation to fuel economic growth and industrialization."
+
+ NAZ_promote_local_crafts: "Promote Local Crafts"
+ NAZ_promote_local_crafts_desc: "Encourage the growth of local crafts and industries to build a self-sufficient economy."
+
+ NAZ_the_nazuman_industrial_fund: "The Industrial Fund"
+ NAZ_the_nazuman_industrial_fund_desc: "Establish a fund to promote the development of industrial capabilities within the nation."
+
+ NAZ_use_the_natural_harbors: "Use the Natural Harbors"
+ NAZ_use_the_natural_harbors_desc: "Develop the nation's natural harbors to enhance trade and naval capabilities."
+
+ NAZ_the_capital_city_airport: "The Capital City Airport"
+ NAZ_the_capital_city_airport_desc: "Build a modern airport in the capital city to improve connectivity and logistics."
+
+ NAZ_a_steamboat_fleet: "A Steamboat Fleet"
+ NAZ_a_steamboat_fleet_desc: "Establish a fleet of steamboats to bolster maritime trade and defense."
+
+ NAZ_improved_irrigation_systems: "Improved Irrigation Systems"
+ NAZ_improved_irrigation_systems_desc: "Implement advanced irrigation systems to boost agricultural productivity and sustainability."
+
+ NAZ_the_nazuman_air_fleet: "The Air Fleet"
+ NAZ_the_nazuman_air_fleet_desc: "Develop a powerful air fleet to secure the skies and support ground operations."
+
+ NAZ_state-funded_projects: "State-Funded Projects"
+ NAZ_state-funded_projects_desc: "Launch a series of state-funded projects to drive economic and industrial growth."
+
+ NAZ_the_grand_university_of_capital: "The Grand University of the Capital"
+ NAZ_the_grand_university_of_capital_desc: "Establish a prestigious university in the capital to foster education and innovation."
+
+ NAZ_Friend_or_Foe: "Friend or Foe"
+ NAZ_Friend_or_Foe_desc: "Determine the nation's stance towards neighboring countries, shaping foreign policy and alliances."
+
+ NAZ_Friend_of_Shurima: "Friend of Shurima"
+ NAZ_Friend_of_Shurima_desc: "Forge a strong alliance with Shurima, enhancing diplomatic and economic ties."
+
+ NAZ_Recognize_Azirs_Sovereignty: "Recognize Azir's Sovereignty"
+ NAZ_Recognize_Azirs_Sovereignty_desc: "Acknowledge the sovereignty of Azir's rule, strengthening diplomatic relations with Shurima."
+
+ NAZ_Economic_Alliance: "§R Red Alliance§!"
+ NAZ_Economic_Alliance_desc: "Form an economic alliance to boost trade and industrial cooperation with Shurima."
+
+ NAZ_Foe_of_Shurima: "Foe of Shurima"
+ NAZ_Foe_of_Shurima_desc: "Take a stance against Shurima, preparing for potential conflicts and asserting independence."
+
+ NAZ_Declare_Independence: "Declare Independence"
+ NAZ_Declare_Independence_desc: "Proclaim the nation's independence, breaking free from external influences and control."
+
+ NAZ_Fortify_the_Borders: "Fortify the Borders"
+ NAZ_Fortify_the_Borders_desc: "We must Strengthen the nation's borders to protect against external threats and invasions. Preparation is the key to good Defences!  \n \n §R Builds Forts on all the border provinces§! "
+
+ NAZ_Independent_Economy: "Independent Economy"
+ NAZ_Independent_Economy_desc: "Build a self-sustaining economy, reducing reliance on foreign resources and markets."
+
+ NAZ_National_Pride: "National Pride"
+ NAZ_National_Pride_desc: "Foster a sense of national pride and unity, boosting stability and public morale."
+
+ NAZ_War_Preparations: "War Preparations"
+ NAZ_War_Preparations_desc: "Prepare the nation for potential conflicts, enhancing military readiness and capabilities."
+
+ NAZ_hunters_path: "Hunter's Path"
+ NAZ_hunters_path_desc: "Embrace the path of the hunter, focusing on survival, agility, and tactical prowess."
+
+ NAZ_royal_subject: "Royal Subject"
+ NAZ_royal_subject_desc: "Acknowledge the nation's status as a royal subject, navigating the complexities of sovereignty and loyalty."
+
+ NAZ_political_equals: "Political Equals"
+ NAZ_political_equals_desc: "Strive for political equality, fostering a sense of justice and fairness within the nation."
+
+ NAZ_the_capital_railroad: "The Capital Railroad"
+ NAZ_the_capital_railroad_desc: "Construct a railroad connecting the capital with neighboring regions, enhancing transport and trade."
+
+ NAZ_invite_foreign_settlers: "Invite Foreign Settlers"
+ NAZ_invite_foreign_settlers_desc: "Encourage foreign settlers to contribute to the nation's growth and development."
+
+ NAZ_countryleader: "Country Leader"
+ NAZ_countryleader_desc: "Recognize the nation's leader, guiding the country towards a prosperous future."
+
+ NAZ_securing_the_future: "Securing the Future"
+ NAZ_securing_the_future_desc: "Take measures to secure the nation's future, focusing on stability, growth, and independence."
+
+ NAZ_improving_the_educational_system: "Improving the Educational System"
+ NAZ_improving_the_educational_system_desc: "Enhance the educational system to foster innovation, knowledge, and progress."
+
+ NAZ_construct_great_monuments: "Construct Great Monuments"
+ NAZ_construct_great_monuments_desc: "Build grand monuments to commemorate the nation's achievements and inspire future generations."
+
+ NAZ_the_nazuman_volunteer_force: "The Volunteer Force"
+ NAZ_the_nazuman_volunteer_force_desc: "Establish a volunteer force to support the nation's military efforts."
+
+ NAZ_military_cooperation: "Military Cooperation"
+ NAZ_military_cooperation_desc: "Enhance military cooperation with allies, sharing resources and strategies."
+
+ NAZ_that_which_is_rightfully_ours: "That Which Is Rightfully Ours"
+ NAZ_that_which_is_rightfully_ours_desc: "Claim what is rightfully ours, asserting the nation's sovereignty and territorial rights."
+
+ NAZ_commandos: "Commandos"
+ NAZ_commandos_desc: "Develop elite commando units to undertake high-risk missions and operations."
+
+ NAZ_a_jagged_alliance: "A Jagged Alliance"
+ NAZ_a_jagged_alliance_desc: "Forge alliances with like-minded nations, strengthening diplomatic and military ties."
+
+ NAZ_observe_and_learn: "Observe and Learn"
+ NAZ_observe_and_learn_desc: "Study the strategies and tactics of other nations to improve our own military doctrines."
+
+ NAZ_foreign_investors: "Foreign Investors"
+ NAZ_foreign_investors_desc: "Attract foreign investors to boost the nation's economy and industrial capabilities."
+
+ NAZ_research_exchange_programs: "Research Exchange Programs"
+ NAZ_research_exchange_programs_desc: "Establish research exchange programs to share knowledge and foster innovation."
+
+ NAZ_foreign_trained_officials: "Foreign Trained Officials"
+ NAZ_foreign_trained_officials_desc: "Train officials abroad to bring back valuable knowledge and skills."
+
+ NAZ_nazuman_loyalist_advisors: "Loyalist Advisors"
+ NAZ_nazuman_loyalist_advisors_desc: "Appoint loyalist advisors to ensure the nation's stability and alignment with its values."
+
+ NAZ_lay_claim_to_the_lowlands: "Lay Claim to the Lowlands"
+ NAZ_lay_claim_to_the_lowlands_desc: "Assert the nation's claim to the lowlands, preparing for potential conflicts to secure the territory."
+
+ NAZ_push_for_the_highlands: "Push for the Highlands"
+ NAZ_push_for_the_highlands_desc: "Strive to secure the highlands, strengthening the nation's strategic position."
+
+ NAZ_secure_the_shakkal: "Secure the Shakkal"
+ NAZ_secure_the_shakkal_desc: "Take measures to secure the Shakkal region, ensuring the nation's control and stability."
+
+ NAZ_rallying_the_nazuman_people: "Rallying the People"
+ NAZ_rallying_the_nazuman_people_desc: "Mobilize the nation's people, fostering unity and determination to achieve common goals."
+
+ NAZ_the_capital_school_of_technology: "The Capital School of Technology"
+ NAZ_the_capital_school_of_technology_desc: "Establish a school of technology in the capital to drive innovation and technological advancement."
+
+ NAZ_promote_nazumah_nationalism: "Promote Nationalism"
+ NAZ_promote_nazumah_nationalism_desc: "Foster a sense of nationalism to strengthen the nation's identity and unity."
+
+ NAZ_crowning_of_the_hunter: "Crowning of the Hunter"
+ NAZ_crowning_of_the_hunter_desc: "Recognize the nation's leader as the great hunter, symbolizing the nation's strength and resilience."
+
+ NAZ_proclaim_Kingdom_of_Nazumah: "Proclaim Kingdom of Shurima"
+ NAZ_proclaim_Kingdom_of_Nazumah_desc: "Declare the formation of the Empire of Shurima, uniting the region under a single banner."
+
+ NAZ_Big_Game: "Big Game"
+ NAZ_Big_Game_desc: "Prepare for the big game, enhancing military capabilities and readiness for major conflicts."
+
+ NAZ_Test_Focus: "Test Focus"
+ NAZ_Test_Focus_desc: "A test focus to ensure functionality and performance of the focus tree."
+ 
+ azirs_rule_accepted: "Azirs Rule Recognized"
+ azirs_reign_recognized: "Azirs Reign Recognized"
+ sivirs_sovereignty_recognized: "Sivirs Sovereignty Recognized"
+
+
+ NAZ_Imperial_Alliance: "§G Imperial Alliance§!"
+ NAZ_Imperial_Alliance_desc: "Forge a strong alliance with the Imperial forces, leveraging our resources and strategic position to strengthen our nation's influence and security. This alliance will bring economic benefits and enhance our industrial capabilities."
+
+ NAZ_Republican_Alliance: "§C Republican Alliance§!"
+ NAZ_Republican_Alliance_desc: "Form a republican alliance that supports our vision of sovereignty and mutual cooperation. By recognizing Sivir's sovereignty, we aim to build a coalition that values democratic principles and economic collaboration, leading to increased prosperity and stability."
+
+ NAZ_Recognize_Sivirs_Sovereignty: "Recognize Sivir's Sovereignty"
+ NAZ_Recognize_Sivirs_Sovereignty_desc: "Recognizing Sivir's sovereignty will align us with republican ideals and strengthen our ties with democratic nations. This move will increase our political influence and open avenues for economic and military cooperation with like-minded allies."
+
+ NAZ_Common_Cause: "Common Cause"
+ NAZ_Common_Cause_desc: "Unite with Shurima in a common cause to oppose the oppressive regimes. This focus will enhance our political power and improve relations with other nations opposing Azir's rule, creating a powerful coalition to fight for freedom and justice."
+
+ NAZ_Military_Cooperation: "Military Cooperation"
+ NAZ_Military_Cooperation_desc: "Enhance military cooperation with Shurima, sharing technology and strategies."
+
+ NAZ_Air_Force: "Air Force"
+ NAZ_Air_Force_desc: "Air Force Description"
+
+ NAZ_Navy_Cooperation: "Naval Force"
+ NAZ_Navy_Cooperation_desc: "Navy Force Description"
+
+ NAZ_collective_farms: "Collective farms"
+ NAZ_collective_farms_desc: "Collective Farms Description"
+
+
+
+
+
+################################### IDEAS                       \n      §H§!
+ 
+
+ 
+################################### DECISIONS                   \n      §H§! 
+ 
+ 
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ afk_tag.1000000.t: ""
+ afk_tag.1000000.d: ""
+ afk_tag.1000000.a: ""
+ afk_tag.1000000.b: ""
+ afk_tag.1000000.c: ""
+ 
+################################### OTHER\n                     \n      §H§!
+
+ NAZ_KSANTE_NAME: "K'sante"
+ NAZ_KSANTE_DESC: "The Indomitable Warden of Nazumah /n Ksante was a revered guardian of Nazumah in an ancient era, a steadfast figure who was on the brink of an extraordinary destiny. His determination saw him confront and overcome unimaginable challenges, but now, centuries later, he has emerged as a formidable Ascended being of incredible might. With his city revitalized from the ruins, Ksante strives to reinstate Ixtal to its past splendor."
+
+ # Bro What? NAZ_KSANTE_DESC: "The Indomitable Warden of Ixtal /n Ksante was a revered guardian of Ixtal in an ancient era, a steadfast figure who was on the brink of an extraordinary destiny. His determination saw him confront and overcome unimaginable challenges, but now, centuries later, he has emerged as a formidable Ascended being of incredible might. With his ancient city revitalized from the ruins, Ksante strives to reinstate Ixtal to its past splendor."
+
+ NAZ_990_DESC:"Escaping Ascended wrath, Nazumah's founders carved out a stronghold amidst Shurima, subduing the land's monsters. Their prosperity, drawn from the sale of rare monster hides, faces a new threat: the return of the god-like Ascended. Will their defiance endure?"
+
+ NAZ_990_DESC_SHORT:"Escaping the Darkin's wrath, Nazumah's founders carved out a stronghold amidst Shurima, subduing the land's monsters. Their prosperity, drawn from the sale of rare monster hides, faces a new threat: the return of the god-like Ascended. Will their defiance endure?"
+
+ NAZUMAH_990_DESC_LONG:"In the midst of the Great Darkin War, Nazumah's forebears ventured through the Shuriman sands, fleeing the Ascended's oppression. Their journey led to a rare oasis, teeming with life yet infested with formidable beasts. The settlers waged a fierce battle to claim this vital resource, eventually erecting a community upon its shores. For half a millennium, Nazumah flourished, harnessing the creatures' exotic materials to forge superior weaponry and construct robust defenses. In stark contrast to the wider realm of Shurima, Nazumah staunchly denies Azir's sovereignty and any Ascended's dominion. As they stand at the crossroads of tradition and external pressures, one wonders, what destiny awaits Nazumah in the face of these looming threats?"
+
+
+ NAZUMAH_990_DESC_ORIGINAL:"During the Great Darkin War, the founders of Nazumah traveled southward through the Shuriman Desert to escape the tyranny of the Ascended. They would eventually find an oasis, the only water source for miles, but it was plagued by monsters who depended on it for survival. After a long and hard fought struggle, they claimed the oasis as their own and built a society around it. /n For the following 500 years, this society would end up thriving on hunting the giant monsters for their rare materials to improve their weapons and infrastructure. /n Unlike the rest of Shurima Crest icon Shurima, Nazumah rejects the rule of Azir Azir and any other ascended who would try to lay claim to their home." rewrite this to 241 and end on a question of their fate, similar to this for example:  "Demacia is a kingdom on the western coast of Valoran and prides itself with its small but elite military. Yet political strife and a potential mage uprising aim to destabilize the great nation. How will Demacia survive these great struggles?"
+
+ 
+ 

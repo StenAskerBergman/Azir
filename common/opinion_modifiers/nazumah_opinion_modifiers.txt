@@ -1,0 +1,89 @@
+opinion_modifiers = {
+
+    # enemy_of_my_enemy_is_my_friend
+ enemy_of_my_enemy_is_my_friend = {
+     desc ="Enemy of my enemy is my friend"
+     value = 15
+ }
+ Future_Allies = {
+    value = 55
+ }
+ 
+ tribal_brother = {
+    value = 55
+ }
+
+ tribal_sister = {
+    value = 55
+ }
+ 
+ tribal_brothers = {
+    value = 55
+ }
+
+ tribal_sisters = {
+    value = 55
+ }
+ 
+ tribal_family = {
+    value = 25
+ }
+
+ Future_Enemies = {
+    value = -55
+ }
+
+ Adversaries = {
+     value = -15
+ }
+        
+ NAZ_shuriman_cooperation = {
+     value = 50
+     months = 24
+ }
+
+ NAZ_cultural_exchange = {
+     value = 30
+     months = 12
+ }
+
+ NAZ_trade_agreement = {
+     value = 20
+     years = 2
+ }
+
+ NAZ_military_support = {
+     value = 40
+     years = 3
+ }
+
+ NAZ_diplomatic_tensions = {
+     value = -30
+     months = 18
+ }
+
+ NAZ_border_incidents = {
+     value = -50
+     months = 12
+ }
+
+ NAZ_technological_collaboration = {
+     value = 35
+     years = 2
+ }
+
+ NAZ_respected_leader = {
+     value = 25
+     years = 3
+ }
+
+ NAZ_unrest = {
+     value = -40
+     months = 6
+ }
+
+ NAZ_economic_aid = {
+     value = 30
+     years = 1
+ }
+}

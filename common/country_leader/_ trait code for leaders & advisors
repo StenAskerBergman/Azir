@@ -1,0 +1,20 @@
+leader_traits = {
+	
+	TAG_country_leader_T = {
+		# If the AI will pick this trait for newly created Country Leaders
+		random = no
+		
+		# MODIFIERS will be listed here
+		
+	}
+	
+	TAG_advisor_T = {
+		# If the AI will pick this trait for newly created Country Leaders
+		random = no
+		# Picture of this trait
+		sprite = 13
+		
+		# MODIFIERS will be listed here
+		
+	}
+}

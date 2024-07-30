@@ -1,0 +1,59 @@
+capital = 139
+oob = "JGL"
+
+set_research_slots = 4
+set_stability = 0.65
+set_war_support = 0.75
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+create_country_leader = {
+	name = "Ira"
+	desc = "Currently at Blue"
+	picture = "gfx/leaders/JGL/portrait_jgl_ira_large.dds"
+	#expire = ""
+	ideology = arcanum
+	traits = {
+		Dictator
+	}
+}
+
+set_convoys = 0
+set_politics = {
+	ruling_party = mages # arcanum
+	last_election = "989.9.07"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	mages = 55
+	fascism = 10
+	desolation = 0
+	theocracy = 10
+	oligarchy = 5
+	absolutists = 5
+	chiefdom = 15
+	royalist = 0
+}
+
+add_ideas = {
+	Lawless_slavery
+	#The_great_fall
+	#Shuriman_shame
+	#Shurima_broken
+	#al_rashid_dynasty
+}

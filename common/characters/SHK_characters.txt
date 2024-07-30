@@ -1,0 +1,207 @@
+characters = {
+    
+    # All character must get recruited in the history file or they won't show up ingame
+    # recruit_character = my_character
+    
+    my_character_1 = {
+        name = SHK_RAIDER_ONE_NAME
+        desc = SHK_RAIDER_ONE_DESC
+        portraits = {
+        civilian = {
+            small = GFX_portrait_shadow_raider_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ONE
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_ONE_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_2 = {
+        name = SHK_RAIDER_TWO_NAME
+        desc = SHK_RAIDER_TWO_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_desert_raider_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = TWO
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_TWO_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_3 = {
+        name = SHK_RAIDER_THREE_NAME
+        desc = SHK_RAIDER_THREE_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_marauder_leader_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = THREE
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_THREE_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_4 = {
+        name = SHK_RAIDER_FOUR_NAME
+        desc = SHK_RAIDER_FOUR_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_wasteland_warrior_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = FOUR
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_FOUR_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_5 = {
+        name = SHK_RAIDER_FIVE_NAME
+        desc = SHK_RAIDER_FIVE_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_savage_chieftain_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = FIVE
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_FIVE_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_6 = {
+        name = SHK_RAIDER_SIX_NAME
+        desc = SHK_RAIDER_SIX_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_ruthless_pillager_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = SIX
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_SIX_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_7 = {
+        name = SHK_RAIDER_SEVEN_NAME
+        desc = SHK_RAIDER_SEVEN_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_warband_commander_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = SEVEN
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_SEVEN_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_8 = {
+        name = SHK_RAIDER_EIGHT_NAME
+        desc = SHK_RAIDER_EIGHT_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_night_stalker_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = EIGHT
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_EIGHT_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_9 = {
+        name = SHK_RAIDER_NINE_NAME
+        desc = SHK_RAIDER_NINE_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_fierce_plunderer_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = NINE
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_NINE_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+    my_character_10 = {
+        name = SHK_RAIDER_TEN_NAME
+        desc = SHK_RAIDER_TEN_DESC
+        portraits = {
+            civilian = {
+                small = GFX_portrait_ironclad_raider_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = TEN
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            custom_effect_tooltip = SHK_RAIDER_TEN_DESC
+            allowed = { original_tag = SHK }
+            traits = { popular_figurehead }
+        }
+    }
+
+}
+

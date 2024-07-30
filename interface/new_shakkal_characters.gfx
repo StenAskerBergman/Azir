@@ -1,0 +1,86 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Larger 
+	
+	# Rasha
+	SpriteType = {
+		name = "GFX_portrait_shk_rasha_large"
+		texturefile = "gfx/leaders/SHK/portrait_shk_rasha_large.dds"
+	}
+
+	# Vuati
+	SpriteType = {
+		name = "GFX_portrait_shk_vuati_large"
+		texturefile = "gfx/leaders/SHK/portrait_shk_vuati_large.dds"
+	}
+
+# Smaller 
+
+	# Generic Raiders Portaits 
+	
+	# First Generic Raider - Shadow Advisors
+	SpriteType = {
+		name = "GFX_portrait_shadow_raider_small"
+		texturefile = "gfx/characters/SHK/portrait_shadow_raider_small.dds"
+	}
+
+	# Second Generic Raider - Desert Raider
+	SpriteType = {
+		name = "GFX_portrait_desert_raider_small"
+		texturefile = "gfx/characters/SHK/portrait_desert_raider_small.dds"
+	}
+
+	# Third Generic Raider - Marauder Leader
+	SpriteType = {
+		name = "GFX_portrait_marauder_leader_small"
+		texturefile = "gfx/characters/SHK/portrait_marauder_leader_small.dds"
+	}
+
+	# Fourth Generic Raider - Wasteland Warrior
+	SpriteType = {
+		name = "GFX_portrait_wasteland_warrior_small"
+		texturefile = "gfx/characters/SHK/portrait_wasteland_warrior_small.dds"
+	}
+
+	# Fifth Generic Raider - Savage Chieftain
+	SpriteType = {
+		name = "GFX_portrait_savage_chieftain_small"
+		texturefile = "gfx/characters/SHK/portrait_savage_chieftain_small.dds"
+	}
+
+	# Sixth Generic Raider - Ruthless Pillager
+	SpriteType = {
+		name = "GFX_portrait_ruthless_pillager_small"
+		texturefile = "gfx/characters/SHK/portrait_ruthless_pillager_small.dds"
+	}
+
+	# Seventh Generic Raider - Warband Commander
+	SpriteType = {
+		name = "GFX_portrait_warband_commander_small"
+		texturefile = "gfx/characters/SHK/portrait_warband_commander_small.dds"
+	}
+
+	# Eighth Generic Raider - Night Stalker
+	SpriteType = {
+		name = "GFX_portrait_night_stalker_small"
+		texturefile = "gfx/characters/SHK/portrait_night_stalker_small.dds"
+	}
+
+	# Ninth Generic Raider - Fierce Plunderer
+	SpriteType = {
+		name = "GFX_portrait_fierce_plunderer_small"
+		texturefile = "gfx/characters/SHK/portrait_fierce_plunderer_small.dds"
+	}
+
+	# Tenth Generic Raider - Ironclad Raider
+	SpriteType = {
+		name = "GFX_portrait_ironclad_raider_small"
+		texturefile = "gfx/characters/SHK/portrait_ironclad_raider_small.dds"
+	}
+
+	
+
+	#TODO: Add More!
+}

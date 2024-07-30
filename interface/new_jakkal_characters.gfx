@@ -1,0 +1,16 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Larger 
+	
+	# Rasha
+	SpriteType = {
+		name = "GFX_portrait_jgl_name_large"
+		texturefile = "gfx/leaders/jgl/portrait_jgl_name_large.dds"
+	}
+
+# Smaller 
+
+	# None
+}

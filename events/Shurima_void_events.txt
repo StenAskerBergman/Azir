@@ -1,0 +1,289 @@
+# shurima Demons Events
+country_event = {
+	id = shurima.3
+	title = shurima.3.t
+	desc = shurima.3.d
+	
+	is_triggered_only = yes
+	
+	option = { #We must stay vigilant...
+		name = shurima.3.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.01
+	}
+}
+#void gone event
+country_event = {
+	id = shurima.8
+	title = shurima.8.t
+	desc = shurima.8.d
+	picture = GFX_report_event_demons_gone
+
+	is_triggered_only = yes
+	
+	option = { #Good riddance...
+		name = shurima.8.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_country_flag = DuneBreaker
+			}
+			remove_ideas = evelynnidea
+		}else_if = {
+			limit = {
+				has_country_flag = DuneSwallower
+			}
+			remove_ideas = fiddleidea
+		}else_if = {
+			limit = {
+				has_country_flag = XersaiCaller
+			}
+			remove_ideas = nocturneidea
+		}else = {
+
+		}
+		add_stability = 0.1
+		clr_country_flag = DuneBreaker
+		clr_country_flag = DuneSwallower
+		clr_country_flag = XersaiCaller
+		clr_country_flag = voids
+		clr_country_flag = found_demons
+		set_country_flag = xersaiGone
+	}
+}
+# Void Weekly Bad Events
+country_event = {
+	id = shurima.10
+	title = shurima.10.t
+	desc = shurima.10.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		random_controlled_state = {
+			limit = {
+				NOT = { has_dynamic_modifier = {
+    					modifier = demon_attack
+				} }
+			}
+            			add_dynamic_modifier = { 
+					modifier = demon_attack 
+				}
+       		 }
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = shurima.11
+	title = shurima.11.t
+	desc = shurima.11.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonAddDays
+		if = {
+					limit = {
+						has_country_flag = DuneBreaker
+					}
+					add_days_mission_timeout  = {
+   				 	mission = evelynnFound
+   				 	days = 30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = DuneSwallower
+					}
+					add_days_mission_timeout  = {
+   				 	mission = fiddleFound
+   				 	days = 30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = XersaiCaller
+					}
+					add_days_mission_timeout  = {
+   				 	mission = nocturneFound
+   				 	days = 30
+					}
+				}else = {
+
+				}
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = shurima.12
+	title = shurima.12.t
+	desc = shurima.12.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonManpowerAtt
+			every_controlled_state = {
+				limit = {
+				has_dynamic_modifier = {
+    					modifier = demon_attack
+				}
+				}
+				add_manpower = -20000	
+			}
+
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = shurima.13
+	title = shurima.13.t
+	desc = shurima.13.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonInfraAtt
+		every_controlled_state = {
+			limit = {
+			has_dynamic_modifier = {
+    				modifier = demon_attack
+			}
+			}
+			damage_building = {
+   			 type = infrastructure
+    			damage = 0.15
+			}
+			damage_building = {
+   			 type = arms_factory
+    			damage = 0.15
+			}
+			damage_building = {
+   			 type = industrial_complex
+    			damage = 0.15
+			}
+		}
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+#Hidden Demon Events
+country_event = {
+	id = shurima.9
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = { 
+		clr_country_flag = xersaiGone
+	}
+}
+country_event = {
+	id = shurima.7
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = { 
+		if = {
+			limit = {
+			 NOT = { has_country_flag = DuneBreaker }
+       			 NOT = { has_country_flag = XersaiCaller }
+       			 NOT = { has_country_flag = DuneSwallower }
+			 NOT = { has_country_flag = xersaiGone }
+			}
+			random_list = {
+						33 = {
+							country_event = {
+							id = shurima.4
+							days = 1
+							}
+						}
+						33 = {
+							country_event = {
+							id = shurima.5
+							days = 1
+							}
+						}
+						34 = {
+							country_event = {
+							id = shurima.6
+							days = 1
+							}
+						}
+					}
+		}
+	}
+}
+#These will all be named like Demons Found!
+country_event = {
+	id = shurima.4
+	title = shurima.4.t
+	desc = shurima.4.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = shurima.4.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = DuneBreaker }
+       			 NOT = { has_country_flag = XersaiCaller }
+       			 NOT = { has_country_flag = DuneSwallower }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }
+		add_ideas = evelynnidea
+		set_country_flag = DuneBreaker
+		activate_mission = evelynnFound
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = evelynnFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}

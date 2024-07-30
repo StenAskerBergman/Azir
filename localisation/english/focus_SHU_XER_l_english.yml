@@ -1,0 +1,122 @@
+﻿l_english:
+ 
+# War Time Focus \n      §H§!
+
+  SHU_XER_WAR: "SHU XER WAR"
+  SHU_XER_WAR_desc: "Description of SHU XER WAR."
+
+  XER_WAR_ONE: "XER WAR ONE"
+  XER_WAR_ONE_desc: "Description of XER WAR ONE."
+
+  XER_WAR_TWO: "XER WAR TWO"
+  XER_WAR_TWO_desc: "Description of XER WAR TWO."
+
+  XER_WAR_KAL: "XER WAR KAL"
+  XER_WAR_KAL_desc: "Description of XER WAR KAL."
+
+  XER_WAR_CRY: "XER WAR CRY"
+  XER_WAR_CRY_desc: "Description of XER WAR CRY."
+
+  XER_WAR_TAR: "XER WAR TAR"
+  XER_WAR_TAR_desc: "Description of XER WAR TAR."
+
+  XER_WAR_GWS: "XER WAR GWS"
+  XER_WAR_GWS_desc: "Description of XER WAR GWS."
+
+  XER_WAR_NAZ: "XER WAR NAZ"
+  XER_WAR_NAZ_desc: "Description of XER WAR NAZ."
+
+  XER_WAR_VOI: "XER WAR VOI"
+  XER_WAR_VOI_desc: "Description of XER WAR VOI."
+
+  XER_WAR_NAS: "XER WAR NAS"
+  XER_WAR_NAS_desc: "Description of XER WAR NAS."
+
+  XER_WAR_NOX: "XER WAR NOX"
+  XER_WAR_NOX_desc: "Description of XER WAR NOX."
+
+  XER_WAR_DEM: "XER WAR DEM"
+  XER_WAR_DEM_desc: "Description of XER WAR DEM."
+
+  XER_WAR_ZAU: "XER WAR ZAU"
+  XER_WAR_ZAU_desc: "Description of XER WAR ZAU."
+
+  XER_WAR_PIL: "XER WAR PIL"
+  XER_WAR_PIL_desc: "Description of XER WAR PIL."
+
+  XER_WAR_AVA: "XER WAR AVA"
+  XER_WAR_AVA_desc: "Description of XER WAR AVA."
+
+  XER_WAR_STO: "XER WAR STO"
+  XER_WAR_STO_desc: "Description of XER WAR STO."
+
+  XER_WAR_WIN: "XER WAR WIN"
+  XER_WAR_WIN_desc: "Description of XER WAR WIN."
+
+  XER_WAR_URS: "XER WAR URS"
+  XER_WAR_URS_desc: "Description of XER WAR URS."
+
+  XER_WAR_FRO: "XER WAR FRO"
+  XER_WAR_FRO_desc: "Description of XER WAR FRO."
+
+  XER_WAR_GES: "XER WAR GES"
+  XER_WAR_GES_desc: "Description of XER WAR GES."
+
+  XER_WAR_SHK: "XER WAR SHK"
+  XER_WAR_SHK_desc: "Description of XER WAR SHK."
+
+  XER_WAR_IXT: "XER WAR IXT"
+  XER_WAR_IXT_desc: "Description of XER WAR IXT."
+
+  XER_WAR_AUR: "XER WAR AUR"
+  XER_WAR_AUR_desc: "Description of XER WAR AUR."
+
+  XER_WAR_MAR: "XER WAR MAR"
+  XER_WAR_MAR_desc: "Description of XER WAR MAR."
+
+  XER_WAR_BLG: "XER WAR BLG"
+  XER_WAR_BLG_desc: "Description of XER WAR BLG."
+
+  XER_WAR_ION: "XER WAR ION"
+  XER_WAR_ION_desc: "Description of XER WAR ION."
+
+
+# Industrial Focuses
+
+  SHU_XER: "SHU XER"
+  SHU_XER_desc: "Description of SHU XER."
+
+  SHU_XER_ECO: "SHU XER ECO"
+  SHU_XER_ECO_desc: "Description of SHU XER ECO."
+
+  SHU_XER_MIL: "SHU XER MIL"
+  SHU_XER_MIL_desc: "Description of SHU XER MIL."
+
+  SHU_XER_INFA: "SHU XER INFA"
+  SHU_XER_INFA_desc: "Description of SHU XER INFA."
+
+  SHU_XER_MINE: "SHU XER MINE"
+  SHU_XER_MINE_desc: "Description of SHU XER MINE."
+
+  SHU_XER_FOOD: "SHU XER FOOD"
+  SHU_XER_FOOD_desc: "Description of SHU XER FOOD."
+
+  SHU_XER_ANIM: "SHU XER ANIM"
+  SHU_XER_ANIM_desc: "Description of SHU XER ANIM."
+
+  SHU_XER_GROW: "SHU XER GROW"
+  SHU_XER_GROW_desc: "Description of SHU XER GROW."
+
+  SHU_XER_CROP: "SHU XER CROP"
+  SHU_XER_CROP_desc: "Description of SHU XER CROP."
+
+  SHU_XER_AGRI: "SHU XER AGRI"
+  SHU_XER_AGRI_desc: "Description of SHU XER AGRI."
+
+  SHU_XER_WATR: "SHU XER WATR"
+  SHU_XER_WATR_desc: "Description of SHU XER WATR."
+
+  SHU_XER_ORE: "SHU XER ORE"
+  SHU_XER_ORE_desc: "Description of SHU XER ORE."
+
+

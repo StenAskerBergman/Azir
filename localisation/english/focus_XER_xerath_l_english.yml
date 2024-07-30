@@ -1,0 +1,152 @@
+﻿l_english:
+################################### TRAITS           \n   §H§!
+ ##### LEADERS
+ 
+ trait_great_hunter:"Great Hunter"
+ father_of_the_empire:"Father of the Empire"
+ pride_of_nazumah:"Pride of Nazumah"
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+################################### OPINION MODIFIERS      \n   §H§!
+ 
+ 
+ 
+################################### FOCUSES           \n   §H§!
+
+XER_Power_Play: "Power Play"
+XER_Power_Play_desc: "Xerath, the manipulative master of arcane forces, and Renekton, the primal warrior consumed by rage. Their clash shapes the fate of empires, as §2Xerath§! schemes for godhood while §RRenekton§! seeks vengeance and redemption. Whose path will decide the fate of their empire?" 
+# What lies ahead for the fate of their allegiances, as Xerath plots for godhood and Renekton yearns for vengeance and redemption?" 
+
+XER_Power_Struggle: "Power Struggle"
+XER_Power_Struggle_desc: "Azir's ascendance poses a greater threat than Noxus, leading them to entertain the idea of leveraging the Noxian colonies against their royal nemesis. But in this delicate dance of power, trust is scarce and betrayal lurks in every shadow. But who will lead such a Coalition?"
+
+XER_Foreign_Interference: "Foreign Interference"
+XER_Foreign_Interference_desc: "In the heart of Shurima, we face foreign adversaries. As we navigate the intricate web of alliances and conflicts, we must decide whether to confront these external threats directly or manipulate them from the shadows to safeguard our own powers and autonomy."
+
+XER_Internal_Support: "Internal Support" # Improve relationship with all factions against Azir
+XER_Internal_Support_desc: "In the depths of Shurima, we seek to forge alliances with all factions aligned against the looming threat of Azir. By strengthening these bonds, we enhance our collective power and resilience against the common enemy."
+
+XER_Xerath_Conquest: "Xerath Conquest" # Xerath is in power, Renekton is gone/dead
+XER_Xerath_Conquest_desc: "In the wake of our triumph, Xerath ascends to uncontested power, while Renekton lies defeated. With our dominance secured, we pave the path for our grand vision, unbound by rivalries or dissent."
+
+XER_Renekton_Conquest: "Renekton Conquest" # Renekton is in power, Xerath is gone/dead
+XER_Renekton_Conquest_desc: "As Renekton seizes control, Xerath's influence wanes into obscurity. Under the banner of our rule, Shurima bends to our will, and our legacy is etched in the annals of history."
+
+XER_Noxian_Coalition: "Noxian Coalition" # Auto Finished Based on Prior focus + Events
+XER_Noxian_Coalition_desc: "In alignment with Noxus, our coalition stands as a bastion of strength against external threats. Through shared interests and mutual support, we forge an unbreakable bond that shapes the fate of Shurima."
+
+XER_Noxian_Relationship: "Noxian Relationship" # Improve the Noxian Relationship
+XER_Noxian_Relationship_desc: "As we nurture our ties with Noxus, a powerful alliance emerges, bolstering our influence and securing our position in the shifting sands of Shurima."
+
+XER_Noxian_Autonomy: "Noxian Autonomy" # Gain Independence, as a Noxian Satellite
+XER_Noxian_Autonomy_desc: "By embracing our role as a Noxian satellite, we secure our autonomy while reaping the benefits of allegiance to a formidable empire. Through collaboration and strategic partnership, we pave the path to prosperity."
+
+XER_Noxian_Independence: "Noxian Independence" # Regain Independence from Noxus
+XER_Noxian_Independence_desc: "In our quest for independence, we cast off the shackles of Noxian influence, reclaiming our sovereignty and charting our own destiny amidst the sands of Shurima."
+
+XER_Power_Reborn: "Power Reborn" # Xerath attempts to become a god, will take time!
+XER_Power_Reborn_desc: "As we embark on the path to ascension, Xerath's ambition knows no bounds. Through patient scheming and unparalleled power, we lay the foundation for our divine ascent, shaping the future of Shurima."
+
+XER_Shadow_Pact: "Shadow Pact" # They can now rejoin if the other haven't killed or cured them
+XER_Shadow_Pact_desc: "In the shadows, a pact is forged between erstwhile enemies. Should one fall, the other stands ready to extend a hand, offering redemption or ruin in equal measure."
+
+XER_Cruelty_Pact: "Cruelty Pact" # Renekton's Pact with any raider nation to find his brother
+XER_Cruelty_Pact_desc: "In his quest to find his brother, Renekton forges a pact with raider nations, promising bloodshed and plunder in exchange for aid. With cruelty as their currency, they march forth into the unknown."
+
+XER_Brutal_Slavery: "Brutal Slavery" # Make your empire a slave state (at a great cost!)
+XER_Brutal_Slavery_desc: "Amidst the screams of the enslaved, our empire rises as a bastion of brutal dominance. Yet, in our pursuit of power, we sow the seeds of our own destruction, for tyranny knows no bounds."
+
+XER_Brutal_Dominance: "Brutal Dominance" # Over whoever is in the Shuriman Peninsula
+XER_Brutal_Dominance_desc: "With unyielding brutality, we subjugate all who dare to oppose us, bending the Shuriman Peninsula to our will. Through fear and force, our dominance is absolute."
+
+XER_Total_War: "Total War" # Total war against whoever stands up to you
+XER_Total_War_desc: "In the crucible of total war, we unleash our fury upon all who dare to oppose us. With relentless aggression, we crush our enemies beneath the weight of our unstoppable might."
+
+XER_Ruthless_Cruelty: "Ruthless Cruelty" # Renekton is in power, Xerath is gone/dead
+XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist, and mercy is but a distant memory. As Xerath fades into obscurity, Shurima trembles beneath the weight of unbridled brutality."
+
+XER_Dawg_Pack: "Dawg Pack" # Easter Egg: If Renekton is in power, his brother Nasus can Join!
+XER_Dawg_Pack_desc: "In a rare display of unity, Renekton and his brother Nasus form a formidable alliance, known as the Dawg Pack. Together, they bring the fury of the desert to bear against all who oppose them."
+
+XER_Endless_Rage: "Endless Rage" # Renekton is in power, Xerath is gone/dead
+XER_Endless_Rage_desc: "Driven by endless rage, Renekton's wrath knows no bounds as he seeks vengeance upon his enemies. With Xerath's demise, Shurima is consumed by the fires of his fury."
+
+XER_Collective_Punishment: "Collective Punishment"
+XER_Collective_Punishment_desc: "As we mete out collective punishment, our enemies tremble beneath the weight of our retribution. Through merciless justice, we forge a legacy of fear that echoes across the sands of Shurima."
+
+XER_Colonial_Identity: "Colonial Identity"
+XER_Colonial_Identity_desc: "Embracing our colonial identity, we lay claim to distant lands and untapped resources, expanding our influence beyond the borders of Shurima. Through colonization, we shape the destiny of nations."
+
+XER_Noxian_War_Economy: "Noxian War Economy"
+XER_Noxian_War_Economy_desc: "Amidst the chaos of war, we harness the power of Noxian industry to fuel our conquests. Through the war economy, we emerge as a formidable force, reshaping the balance of power in Shurima."
+
+XER_Colonial_Investments: "Colonial Investments"
+XER_Colonial_Investments_desc: "With strategic investments in colonial ventures, we secure our foothold in distant lands, laying the foundation for future expansion and prosperity. Through wise stewardship, we build an empire that spans the breadth of the known world."
+
+XER_Colonial_Pact: "Colonial Pact"
+XER_Colonial_Pact_desc: "In alliance with colonial powers, we forge a pact that secures our interests in distant lands. Through collaboration and mutual support, we emerge as a dominant force in the age of exploration."
+
+XER_Power_Pact: "Power Pact"
+XER_Power_Pact_desc: "Through the power pact, we solidify our alliances with like-minded nations, pooling our strength and resources in pursuit of shared goals. United in purpose, we stand as an unstoppable force in the shifting sands of Shurima."
+
+XER_Blood_Pact: "Blood Pact"
+XER_Blood_Pact_desc: "In a pact sealed in blood, we bind ourselves to our allies with unbreakable bonds of loyalty and kinship. Through sacrifice and solidarity, we forge a brotherhood that transcends the trials of war and time."
+
+XER_one: "One"
+XER_one_desc: "Description of One."
+
+XER_two: "Two"
+XER_two_desc: "Description of Two."
+
+XER_three: "Three"
+XER_three_desc: "Description of Three."
+
+
+
+################################### IDEAS            \n   §H§!
+ 
+
+ 
+################################### DECISIONS          \n   §H§! 
+ 
+ 
+ 
+################################### EVENTS           \n   §H§!
+ 
+afk_tag.1000000.t: ""
+afk_tag.1000000.d: ""
+afk_tag.1000000.a: ""
+afk_tag.1000000.b: ""
+afk_tag.1000000.c: ""
+
+################################### OTHER\n           \n   §H§!
+
+TAG_NAME_NAME: "NAME"
+TAG_NAME_DESC: "Description."
+
+XER_990_DESC: "Xerath's Order, a coalition of heretics and mages bound by the allure of power, emerges as a formidable force in the shifting sands of Shurima. With Xerath's insatiable thirst for dominance at its helm, the Order seeks to forge alliances with former adversaries of Azir, marshaling dark forces to challenge the Emperor Ascendant. Will the flames of rebellion ignite a new era under Xerath's banner, or will the price of conquest consume both friend and foe alike?"
+
+
+ 
+ 

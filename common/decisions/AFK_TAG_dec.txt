@@ -1,0 +1,178 @@
+### DECISIONS (Video n. X on YouTube "Narzgel". If you need any advice, check the UMC Discord)
+# For Decisions I use shortcut "dec"
+
+### SOME NOTES
+# Filling "allowed" with TAG (making that decision only available for country you want) will reduce lag
+
+# CATEGORY of the decisions - DEC listed under this will fall to the same slot in the game.
+# - You MUST create CATEGORY in: YOURMOD/common/decisions/categories
+AFK__cat = {
+
+	### EXPLANATORY DECISIONS (You can delete them and use the ones bellow if you don't want my notes there :-))
+	
+	# This DEC gives you EFFECT as soon as you select it
+	AFK_EXPL_selectable_dec = {
+
+		icon = generic_decision
+		
+		# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+		allowed = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# When is this decision VISIBLE (when you can see it in the Decision Tab)
+		visible = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# When is this decision AVAILABLE (When you can select it in the Decision Tab)
+		available = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# If you can select it ONCE or MULTIPLE TIMES (Put either "yes" or "no" here)
+		fire_only_once = yes
+
+		# How much POLITICAL POWER it cost to select this DEC
+		cost = 25
+
+		# You get this when you select this DECISION
+		complete_effect = {
+			# EFFECTS listed here
+			
+		}
+		
+		# How likely is AI to select this DEC
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# This DEC will give you something right after you select it (if you will fill it), run for 120 days and then give you something again 
+	AFK_takestime_dec = {
+
+		icon = generic_decision
+
+		# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+		allowed = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# When is this decision VISIBLE (when you can see it in the Decision Tab)
+		visible = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# When is this decision AVAILABLE (When you can select it in the Decision Tab)
+		available = {
+			# CONDITIONS listed here
+			
+		}
+	
+		# If you can select it ONCE or MULTIPLE TIMES (Put either "yes" or "no" here)
+		fire_only_once = no
+		# For how long will this DEC run
+		days_remove = 120
+		# How long will it take untill this DEC is visible and available again (you can delete this, if you want it to be selectable right away)
+		days_re_enable = 100
+		
+		# How much POLITICAL POWER it cost to select this DEC
+		cost = 25
+		
+		# You get this when you select this DECISION
+		complete_effect = {
+			# EFFECTS listed here
+			
+		}
+		
+		# You get this DURING duration of this DECISION (here for 120 days)
+		modifier = {
+			# MODIFIERS listed here
+			
+		}
+		
+		# You get this when this DECISION is FINISHED (here after 120 days)
+		remove_effect = {
+			# EFFECTS listed here
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### EXEMPLARY DECISION
+	AFK_EXMP_selectable_dec = {
+
+		icon = generic_decision
+
+		allowed = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		available = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	AFK_EXMP_takestime_dec = {
+
+		icon = generic_decision
+
+		allowed = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		available = {
+			
+		}
+	
+		fire_only_once = no
+		days_remove = 120
+		days_re_enable = 0
+		
+		cost = 25
+
+		complete_effect = {
+			
+		}
+
+		modifier = {
+			
+		}
+
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,60 @@
+shared_focus = {
+	id = SHU_XER_MAIN
+	icon = GFX_focus_ARG_defense_and_democracy
+	# prerequisite = { focus = }
+	# mutually_exclusive = { focus =  }
+	x = 6
+	y = 0
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+
+	available = {
+		NOT = {
+			tag = SHU 
+            tag = XER
+		}
+	}
+	
+	allow_branch = {
+		NOT = {
+			tag = SHU 
+            tag = XER
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}

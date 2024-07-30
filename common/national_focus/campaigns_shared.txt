@@ -1,0 +1,1223 @@
+﻿
+### CAMPAIGN - SHARED WAR FOCUSES ### 
+
+	### AZIR / NAZUMAH / MAJOR WAR CAMPAIGN 
+	shared_focus = {
+		id = SHU_XER_WAR
+		icon = GFX_goal_generic_territory_or_war
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				tag = NAZ  
+			}
+		}
+		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				tag = XER  
+			}
+		}
+		
+		relative_position_id = SHU_XER
+		
+
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	### XERATH / RENEKTON / MAJOR WAR CAMPAIGN 
+	shared_focus = {
+		id = XER_WAR_ONE
+		icon = goal_generic_territory_or_war
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				tag = XER
+			}
+		}
+		
+		relative_position_id = SHU_XER
+		
+		
+		cost = 10
+
+		available = {
+			NOT ={ 
+				trigger ={
+					tag = SHU
+				}
+			}
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## TWO
+	shared_focus = {
+		id = XER_WAR_TWO
+		icon = goal_generic_territory_or_war
+		prerequisite = { focus = SHU_XER_WAR }
+		
+		x = 0
+		y = 0
+		offset = {
+			x=0
+			y=1
+			trigger = {
+				tag = XER
+			}
+		}
+		
+		relative_position_id = SHU_XER_WAR
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V KAL
+	shared_focus = {
+		id = XER_WAR_KAL
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = -3
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TWO
+
+		
+		prerequisite = { focus = XER_WAR_TWO }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V CRY
+	shared_focus = {
+		id = XER_WAR_CRY
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_KAL
+
+		
+		prerequisite = { focus = XER_WAR_KAL }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	## XER V TAR
+	shared_focus = {
+		id = XER_WAR_TAR
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_CRY
+
+		
+		prerequisite = { focus = XER_WAR_CRY }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V GWS
+	shared_focus = {
+		id = XER_WAR_GWS
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = -1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TWO
+
+		
+		prerequisite = { focus = XER_WAR_TWO }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V NAZUMAH
+	shared_focus = {
+		id = XER_WAR_NAZ
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_GWS
+
+		
+		prerequisite = { focus = XER_WAR_GWS }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V VOI
+	shared_focus = {
+		id = XER_WAR_VOI
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_NAZ
+
+		
+		prerequisite = { focus = XER_WAR_NAZ}
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V NAS
+	shared_focus = {
+		id = XER_WAR_NAS
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 3
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TAR
+
+		
+		prerequisite = { focus = XER_WAR_VOI }
+		prerequisite = { focus = XER_WAR_IXT }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V NOX
+	shared_focus = {
+		id = XER_WAR_NOX
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TAR
+
+		
+		prerequisite = { focus = XER_WAR_TAR }
+		prerequisite = { focus = XER_WAR_VOI }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	## XER V DEM
+	shared_focus = {
+		id = XER_WAR_DEM
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_NOX
+
+		
+		prerequisite = { focus = XER_WAR_NOX }
+		prerequisite = { focus = XER_WAR_NAS }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		
+	## XER V ZAU
+	shared_focus = {
+		id = XER_WAR_ZAU
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_NAS
+
+		
+		prerequisite = { focus = XER_WAR_ION }
+		prerequisite = { focus = XER_WAR_NAS }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+			
+	## XER V PIL
+	shared_focus = {
+		id = XER_WAR_PIL
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_ZAU
+
+		
+		prerequisite = { focus = XER_WAR_ZAU}
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# PIL
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V AVA
+	shared_focus = {
+		id = XER_WAR_AVA
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 2
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_NOX
+
+		
+		prerequisite = { focus = XER_WAR_DEM }
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		## XER V PIL
+	shared_focus = {
+		id = XER_WAR_STO
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_DEM
+
+		
+		prerequisite = { focus = XER_WAR_DEM }
+		prerequisite = { focus = XER_WAR_ZAU }
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# Sto
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V AVA
+	shared_focus = {
+		id = XER_WAR_AVA
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 0
+			y = 2
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_NOX
+
+		
+		prerequisite = { focus = XER_WAR_DEM }
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V WIN
+	shared_focus = {
+		id = XER_WAR_WIN
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_URS
+
+		
+		prerequisite = { focus = XER_WAR_FRO}
+		prerequisite = { focus = XER_WAR_URS}
+
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V URS
+	shared_focus = {
+		id = XER_WAR_URS
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_AVA
+
+		prerequisite = { focus = XER_WAR_AVA}
+		prerequisite = { focus = XER_WAR_STO}
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		
+	## XER V FRO
+	shared_focus = {
+		id = XER_WAR_FRO
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_STO
+
+		
+		prerequisite = { focus = XER_WAR_STO }
+		prerequisite = { focus = XER_WAR_PIL }
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# DEM
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V GES
+	shared_focus = {
+		id = XER_WAR_GES
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TWO
+
+		
+		prerequisite = { focus = XER_WAR_TWO }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V SHK
+	shared_focus = {
+		id = XER_WAR_SHK
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_GES
+
+		
+		prerequisite = { focus = XER_WAR_GES }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XER V IXTAL
+	shared_focus = {
+		id = XER_WAR_IXT
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 1
+			y = 3
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TWO
+
+		
+		prerequisite = { 
+			focus = XER_WAR_SHK
+		}
+
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	
+	
+	## XER V AUR
+	shared_focus = {
+		id = XER_WAR_AUR
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 3
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_TWO
+
+		
+		prerequisite = { 
+			focus = XER_WAR_TWO
+		 }
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	## XER V MAR
+	shared_focus = {
+		id = XER_WAR_MAR
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_AUR
+
+		
+		prerequisite = { 
+			focus = XER_WAR_AUR
+		}
+		
+		cost = 10
+
+		available = {
+			if ={
+				trigger = {
+					country_exists = MAR
+				}
+
+			}
+		}
+
+		bypass = {
+			NOT ={
+				trigger = {
+					country_exists = MAR
+				}
+
+			}
+		}
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V BLG
+	shared_focus = {
+		id = XER_WAR_BLG
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_MAR
+
+		
+		prerequisite = { 
+			focus = XER_WAR_MAR
+		}
+
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	## XER V ION
+	shared_focus = {
+		id = XER_WAR_ION
+		icon = goal_generic_territory_or_war
+
+		
+		x = 0
+		y = 0
+
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		offset = {
+			y = 0
+			x = 0
+			trigger = {
+				tag = SHU
+			}
+		}
+
+		relative_position_id = XER_WAR_IXT
+
+		# Post War Ixtal
+		prerequisite = { focus = XER_WAR_IXT }
+		# Post War Bilgewater
+		prerequisite = { focus = XER_WAR_BLG }		
+	
+
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			# WARGOAL against tag = ION - Ionia
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+# shared_focus = {
+# 	id = SHU_
+# 	icon = GFX_
+# 	prerequisite = { focus = }
+# 	mutually_exclusive = { focus =  }
+# 	x = -3
+# 	y = 0
+#	offset = {
+#		x = -6
+#		y = 0
+#		trigger = {
+#			tag = PRC # EXAMPLE
+#		}
+#	}
+#	offset = {
+#		x = -16
+#		y = 0
+#		trigger = {
+#			tag = MAN # EXAMPLE
+#		}
+#	}
+# 	relative_position_id = 
+# 	cost = 10
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# 	available = {
+# 	}
+# 	bypass = {
+# 	}
+# 	cancel_if_invalid = yes
+# 	continue_if_invalid = no
+# 	available_if_capitulated = no
+# 	complete_tooltip = {
+# 	}
+# 	completion_reward = {
+# 	}
+# }

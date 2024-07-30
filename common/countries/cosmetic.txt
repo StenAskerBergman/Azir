@@ -1,0 +1,5 @@
+XER_renekon = {
+    color = rgb { 100 15 15 }
+    # color = rgb { 128 128 128 }
+    color_ui = rgb { 115 115 115 }
+}

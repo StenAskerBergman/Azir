@@ -1,0 +1,380 @@
+# For Decisions and Categories
+spriteTypes = {	
+
+    # Special 
+    # Shuriman Decisions Voidling Reports
+	spriteType = {
+		name = "GFX_decision_cat_picture_xersai"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_SHU_xersai.dds"
+    }	
+
+    # Dune Swallower
+    spriteType = {
+		name = "GFX_decision_DuneSwallower_icon"
+		texturefile = "gfx/interface/decisions/decision_DuneSwallower.dds"
+	}
+
+    # Dune Breaker
+    spriteType = {
+		name = "GFX_decision_DuneBreaker_icon"
+		texturefile = "gfx/interface/decisions/decision_DuneBreaker.dds"
+	}
+
+    # Dune Callers
+    spriteType = {
+		name = "GFX_decision_XersaiCallers_icon"
+		texturefile = "gfx/interface/decisions/decision_XersaiCallers.dds"
+	}
+
+    # modifier resistance buffed
+	spriteType = {
+        name = "GFX_modifier_rebel_buffed"
+		texturefile = "gfx/interface/modifiers/modifier_resistance_buffed.dds"
+	}
+    
+    # Special 
+    # modifier void attack
+	spriteType = {
+		name = "GFX_modifier_demons_attack"
+		texturefile = "gfx/interface/modifiers/modifier_void_attack.dds"
+	}
+
+    # Generic 
+
+    # Buhru Icon
+    spriteType = {
+        name = "GFX_buhru_icon_category"
+        texturefile = "gfx/interface/decisions/buhru_icon_category.dds"
+    }
+
+    # Bush Icon
+    spriteType = {
+        name = "GFX_bush_icon_category"
+        texturefile = "gfx/interface/decisions/bush_icon_category.dds"
+    }
+
+    # Cat Blue Shurima Icon
+    spriteType = {
+        name = "GFX_cat_blue_shurima_icon_category"
+        texturefile = "gfx/interface/decisions/cat_blue_shurima_category.dds"
+    }
+
+    # Cat Debug Icon
+    spriteType = {
+        name = "GFX_cat_debug_icon_category"
+        texturefile = "gfx/interface/decisions/cat_debug_category.dds"
+    }
+
+    # Cat Red Shurima Icon
+    spriteType = {
+        name = "GFX_cat_red_shurima_icon_category"
+        texturefile = "gfx/interface/decisions/cat_red_shurima_category.dds"
+    }
+
+    # Cat vs Bug Icon
+    spriteType = {
+        name = "GFX_cat_vs_bug_icon_category"
+        texturefile = "gfx/interface/decisions/cat_vs_bug_category.dds"
+    }
+
+    # Decision Cat Picture MRE Peace Sample
+    spriteType = {
+        name = "GFX_decision_cat_picture_MRE_peace_sample"
+        texturefile = "gfx/interface/decisions/decision_cat_picture_MRE_peace_sample.dds"
+    }
+
+    # Decision Cat Picture DEM Demons
+    spriteType = {
+        name = "GFX_decision_cat_picture_DEM_demons"
+        texturefile = "gfx/interface/decisions/decision_cat_picture_DEM_demons.dds"
+    }
+
+    # Decision Cat Picture NOX Trifarix
+    spriteType = {
+        name = "GFX_decision_cat_picture_NOX_trifarix"
+        texturefile = "gfx/interface/decisions/decision_cat_picture_NOX_trifarix.dds"
+    }
+
+    # Decision DuneBreaker
+    spriteType = {
+        name = "GFX_decision_DuneBreaker"
+        texturefile = "gfx/interface/decisions/decision_DuneBreaker.dds"
+    }
+
+    # Decision XersaiCaller
+    spriteType = {
+        name = "GFX_decision_XersaiCaller"
+        texturefile = "gfx/interface/decisions/decision_XersaiCaller.dds"
+    }
+
+    # Demacia Blue Icon
+    spriteType = {
+        name = "GFX_demacia_blue_icon_category"
+        texturefile = "gfx/interface/decisions/demacia_blue_icon_category.dds"
+    }
+
+    # Demacia Red Icon
+    spriteType = {
+        name = "GFX_demacia_red_icon_category"
+        texturefile = "gfx/interface/decisions/demacia_red_icon_category.dds"
+    }
+
+    # Dragon Blue Icon
+    spriteType = {
+        name = "GFX_dragon_blue_icon_category"
+        texturefile = "gfx/interface/decisions/dragon_blue_icon_category.dds"
+    }
+
+    # Dragon Red Icon
+    spriteType = {
+        name = "GFX_dragon_red_icon_category"
+        texturefile = "gfx/interface/decisions/dragon_red_icon_category.dds"
+    }
+
+    # Freljord Blue Black Icon
+    spriteType = {
+        name = "GFX_freljord_blue_black_icon_category"
+        texturefile = "gfx/interface/decisions/freljord_blue_black_icon_category.dds"
+    }
+
+    # Freljord Blue Icon
+    spriteType = {
+        name = "GFX_freljord_blue_icon_category"
+        texturefile = "gfx/interface/decisions/freljord_blue_icon_category.dds"
+    }
+
+    # Freljord Red Black Icon
+    spriteType = {
+        name = "GFX_freljord_red_black_icon_category"
+        texturefile = "gfx/interface/decisions/freljord_red_black_icon_category.dds"
+    }
+
+    # Freljord Red Icon
+    spriteType = {
+        name = "GFX_freljord_red_icon_category"
+        texturefile = "gfx/interface/decisions/freljord_red_icon_category.dds"
+    }
+
+    # Hunter Icon
+    spriteType = {
+        name = "GFX_hunter_icon_category"
+        texturefile = "gfx/interface/decisions/hunter_icon_category.dds"
+    }
+
+    # Icathia Blue Icon
+    spriteType = {
+        name = "GFX_icathia_blue_icon_category"
+        texturefile = "gfx/interface/decisions/icathia_blue_icon_category.dds"
+    }
+
+    # Icathia Red Icon
+    spriteType = {
+        name = "GFX_icathia_red_icon_category"
+        texturefile = "gfx/interface/decisions/icathia_red_icon_category.dds"
+    }
+
+    # Ionia Blue Icon
+    spriteType = {
+        name = "GFX_ionia_blue_icon_category"
+        texturefile = "gfx/interface/decisions/ionia_blue_icon_category.dds"
+    }
+
+    # Ionia Red Icon
+    spriteType = {
+        name = "GFX_ionia_red_icon_category"
+        texturefile = "gfx/interface/decisions/ionia_red_icon_category.dds"
+    }
+
+    # Ionia Teal Icon
+    spriteType = {
+        name = "GFX_ionia_teal_icon_category"
+        texturefile = "gfx/interface/decisions/ionia_teal_icon_category.dds"
+    }
+
+	# Ixtal Blue Icon
+    spriteType = {
+        name = "GFX_ixtal_blue_icon_category"
+        texturefile = "gfx/interface/decisions/ixtal_blue_icon_category.dds"
+    }
+
+    # Ixtal Green Icon
+    spriteType = {
+        name = "GFX_ixtal_green_icon_category"
+        texturefile = "gfx/interface/decisions/ixtal_green_icon_category.dds"
+    }
+
+    # Ixtal Purple Icon
+    spriteType = {
+        name = "GFX_ixtal_purple_icon_category"
+        texturefile = "gfx/interface/decisions/ixtal_purple_icon_category.dds"
+    }
+
+    # Ixtal Red Icon
+    spriteType = {
+        name = "GFX_ixtal_red_icon_category"
+        texturefile = "gfx/interface/decisions/ixtal_red_icon_category.dds"
+    }
+
+    # Ixtal Teal Icon
+    spriteType = {
+        name = "GFX_ixtal_teal_icon_category"
+        texturefile = "gfx/interface/decisions/ixtal_teal_icon_category.dds"
+    }
+
+    # Lunari Icon
+    spriteType = {
+        name = "GFX_lunari_icon_category"
+        texturefile = "gfx/interface/decisions/lunari_icon_category.dds"
+    }
+
+    # Noxus Black Icon
+    spriteType = {
+        name = "GFX_noxus_black_icon_category"
+        texturefile = "gfx/interface/decisions/noxus_black_icon_category.dds"
+    }
+
+    # Noxus Blue Black 2 Icon
+    spriteType = {
+        name = "GFX_noxus_blue_black_2_icon_category"
+        texturefile = "gfx/interface/decisions/noxus_blue_black_2_icon_category.dds"
+    }
+
+    # Noxus Red 2 Icon
+    spriteType = {
+        name = "GFX_noxus_red_2_icon_category"
+        texturefile = "gfx/interface/decisions/noxus_red_2_icon_category.dds"
+    }
+
+    # Noxus Red Icon
+    spriteType = {
+        name = "GFX_noxus_red_icon_category"
+        texturefile = "gfx/interface/decisions/noxus_red_icon_category.dds"
+    }
+
+    # Piltover Blue Icon
+    spriteType = {
+        name = "GFX_piltover_blue_icon_category"
+        texturefile = "gfx/interface/decisions/piltover_blue_icon_category.dds"
+    }
+
+    # Piltover Red Icon
+    spriteType = {
+        name = "GFX_piltover_red_icon_category"
+        texturefile = "gfx/interface/decisions/piltover_red_icon_category.dds"
+    }
+
+    # Pirate Blue Icon
+    spriteType = {
+        name = "GFX_pirate_blue_icon_category"
+        texturefile = "gfx/interface/decisions/pirate_blue_icon_category.dds"
+    }
+
+    # Pirate Red Black Icon
+    spriteType = {
+        name = "GFX_pirate_red_black_icon_category"
+        texturefile = "gfx/interface/decisions/pirate_red_black_icon_category.dds"
+    }
+
+    # Rakkor Icon
+    spriteType = {
+        name = "GFX_rakkor_icon_category"
+        texturefile = "gfx/interface/decisions/rakkor_icon_category.dds"
+    }
+
+    # Rengar Icon
+    spriteType = {
+        name = "GFX_rengar_icon_category"
+        texturefile = "gfx/interface/decisions/rengar_icon_category.dds"
+    }
+
+    # Shurima Black Icon
+    spriteType = {
+        name = "GFX_shurima_black_icon_category"
+        texturefile = "gfx/interface/decisions/shurima_black_icon_category.dds"
+    }
+
+    # Shurima Blue Icon
+    spriteType = {
+        name = "GFX_shurima_blue_icon_category"
+        texturefile = "gfx/interface/decisions/shurima_blue_icon_category.dds"
+    }
+
+    # Shurima Golden Icon
+    spriteType = {
+        name = "GFX_shurima_golden_icon_category"
+        texturefile = "gfx/interface/decisions/shurima_golden_icon_category.dds"
+    }
+
+    # Shurima Red Icon
+    spriteType = {
+        name = "GFX_shurima_red_icon_category"
+        texturefile = "gfx/interface/decisions/shurima_red_icon_category.dds"
+    }
+
+    # Solari Icon
+    spriteType = {
+        name = "GFX_solari_icon_category"
+        texturefile = "gfx/interface/decisions/solari_icon_category.dds"
+    }
+
+    # Spirit Demonology 01
+    spriteType = {
+        name = "GFX_spirit_demonology_01"
+        texturefile = "gfx/interface/decisions/spirit_demonology_01.dds"
+    }
+
+    # Spirit Demonology 02
+    spriteType = {
+        name = "GFX_spirit_demonology_02"
+        texturefile = "gfx/interface/decisions/spirit_demonology_02.dds"
+    }
+
+    # Targon Blue Icon
+    spriteType = {
+        name = "GFX_targon_blue_icon_category"
+        texturefile = "gfx/interface/decisions/targon_blue_icon_category.dds"
+    }
+
+    # Targon Red Icon
+    spriteType = {
+        name = "GFX_targon_red_icon_category"
+        texturefile = "gfx/interface/decisions/targon_red_icon_category.dds"
+    }
+
+    # Void Blue Icon
+    spriteType = {
+        name = "GFX_void_blue_icon_category"
+        texturefile = "gfx/interface/decisions/void_blue_icon_category.dds"
+    }
+
+    # Void Purple Icon
+    spriteType = {
+        name = "GFX_void_purple_icon_category"
+        texturefile = "gfx/interface/decisions/void_purple_icon_category.dds"
+    }
+
+    # Void Red Icon
+    spriteType = {
+        name = "GFX_void_red_icon_category"
+        texturefile = "gfx/interface/decisions/void_red_icon_category.dds"
+    }
+
+    # Yordle Icon
+    spriteType = {
+        name = "GFX_yordle_icon_category"
+        texturefile = "gfx/interface/decisions/yordle_icon_category.dds"
+    }
+
+    # Zaun Blue Icon
+    spriteType = {
+        name = "GFX_zaun_blue_icon_category"
+        texturefile = "gfx/interface/decisions/zaun_blue_icon_category.dds"
+    }
+
+    # Zaun Red Icon
+    spriteType = {
+        name = "GFX_zaun_red_icon_category"
+        texturefile = "gfx/interface/decisions/zaun_red_icon_category.dds"
+    }
+}
+

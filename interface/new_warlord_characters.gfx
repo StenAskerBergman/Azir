@@ -1,0 +1,16 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Larger 
+	
+	# Rasha
+	SpriteType = {
+		name = "GFX_portrait_wrl_daeron_large"
+		texturefile = "gfx/leaders/wrl/portrait_wrl_daeron_large.dds"
+	}
+
+# Smaller 
+
+	# None
+}

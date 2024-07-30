@@ -1,0 +1,46 @@
+
+state={
+	id=104
+	name="STATE_104"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 3
+ #rubber = 5
+ #steel = 4
+ #oil = 3
+ chromium = 2
+ #aluminium = 7
+ }
+ history = {
+ owner = GES # SHU
+ add_core_of = SHU
+ add_core_of = XER
+ add_core_of = GES # After Raid Brother Expansion 
+# add_core_of = GWS # Should be added, After a Event  
+# add_core_of = GDS # Event Req. 
+ victory_points = {
+ 3071 10
+ }
+  buildings = {
+   infrastructure = 1
+   arms_factory = 0
+   industrial_complex = 0
+   #dockyard = 0
+   #635 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		45 61 120 160 230 275 317 332 371 377 386 396 424 426 437 451 520 525 535 566 567 579 667 700 768 787 826 830 859 902 945 995 1000 1029 1047 1066 1087 1089 1117 1248 1330 1355 1418 1432 1451 1467 1478 1597 1628 1647 1697 1699 1726 1790 1871 1979 2033 2063 2067 2086 2114 2286 2321 2370 2379 2419 2486 2493 2539 2630 2674 2742 2787 3005 3062 3071 3087 3102 3182 3314 3353 3438 3469 3489 3490 3527 3541 3627 3733 3782 3820 3912 3985 3990 4227 4432 4684 4777 4789 4938 5174 5199 5209 5229 5335 5358 5372 5519 5522 5732 8497 8581 8582 8590 8594 8612 8618 8622 8629 8636 8660 8668 8673 8686 8695 8705 8732 8734 8735 8738 8750 8779 8783 8797 8799 8825 8827 8841 8852 8856 8869 8903 8910 8929 8968 9028 9047 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=791278
+        state_category = town
+}

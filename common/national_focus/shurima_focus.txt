@@ -1,0 +1,4285 @@
+﻿
+focus_tree = {
+	id = shurima_focus
+	continuous_focus_position = {
+		x = 3950
+		y = 20
+	}
+	country = {
+		factor = 0
+		modifier = {
+			add = 22
+			tag = SHU
+			# original_tag = SHU
+		}
+	}
+	
+	# Shared Focus
+	# shared_focus = SHU_XER
+
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = {
+	focus = SHU_imperial_courts
+	}
+
+	# Imperial Courts
+	focus = {
+		id = SHU_imperial_courts
+		icon = GFX_SHU_imperial_courts
+		x = 1 
+		y = 1
+		relative_position_id = SHU_emperor
+		
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_emperor
+			focus = SHU_empress
+		}
+	}
+
+	# Economic Revival
+	focus = {
+		id = SHU_economic_revival
+		icon = GFX_goal_generic_construction
+		cost = 5
+		x = 29 # 14
+		y = 0
+		
+		
+		ai_will_do = {
+            factor = 10
+        }
+		completion_reward = {
+
+		}
+	}
+
+	# Sun Disc Restorations
+	focus = {
+		id = SHU_sun_disc_restorations
+		icon = GFX_focus_TUR_the_sun_language_theory
+		x = 0  #x = 22 # 14
+		y = 1  #y = 1
+		relative_position_id = SHU_economic_revival
+		
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		# prerequisite = {
+		# 	focus = SHU_sundisc_has_risen
+		# }
+		prerequisite = {
+			focus = SHU_economic_revival
+		}
+		ai_will_do = {
+			factor = 8.50
+		}
+	}
+	
+
+
+
+	# Our Leader - Event: shurima.1
+	focus = {
+		id = SHU_our_leader
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0 
+		y = 1
+		relative_position_id = SHU_sundisc_has_risen
+
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_sundisc_has_risen
+		}
+		completion_reward = {
+			
+			country_event = shurima.1
+			
+			EventType_event = { id = shurima.1 }
+		}	
+	}
+
+	# Emperor
+	focus = {
+		id = SHU_emperor
+		icon = GFX_SHU_emperor
+		x = -1 
+		y = 1
+		relative_position_id = SHU_our_leader
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_our_leader
+		}
+		mutually_exclusive = {
+			focus = SHU_empress
+		}
+		available = {
+			custom_trigger_tooltip = unlock_by_event_tt
+			hidden_trigger = { always = no }
+		}
+		completion_reward = {
+			set_country_flag = SHU_emperor_focus_completed
+		}
+	}
+	
+	# Empress
+	focus = {
+		id = SHU_empress
+		icon = GFX_SHU_empress  # GFX_focus_SOV_zemsky_sobor # GFX_focus_SOV_zemsky_sobor
+		x = 1 
+		y = 1
+		relative_position_id = SHU_our_leader
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_our_leader
+		}
+		mutually_exclusive = {
+			focus = SHU_emperor
+		}
+		available = {
+			custom_trigger_tooltip = unlock_by_event_tt
+			hidden_trigger = { always = no }
+		}
+	}
+
+
+
+
+
+
+	# Imperial Law
+	focus = {
+		id = SHU_imperial_law
+		icon = GFX_SHU_imperial_law
+		x = -1
+		y = 1
+		relative_position_id = SHU_imperial_courts
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_imperial_courts
+			focus = SHU_republican_future
+		}
+	}
+	
+	# OLD: Imperial Order
+	#focus = {
+	#	id = SHU_imperial_order
+	#	icon = GFX_SHU_imperial_order
+	#	x = 15 # 13 7
+	#	y = 4
+	#	cost = 5
+	#	search_filters = {
+	#		FOCUS_FILTER_STABILITY
+	#	}
+	#	prerequisite = {
+	#		focus = SHU_imperial_courts
+	#		focus = SHU_imperial_state
+	#	}
+	#}
+
+	# NEW: Public Order 
+	focus = {
+		id = SHU_public_order # MK.1 SHU_imperial_order
+		icon = GFX_goal_generic_stable_government #GFX_SHU_public_order
+		x = -1 
+		y = 1
+		relative_position_id = SHU_republican_future 
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_imperial_courts
+			focus = SHU_imperial_state
+		}
+	}
+	# Question of Slavery
+	focus = {
+		id = SHU_question_of_slavery
+		icon = GFX_SHU_question_of_slavery
+		x = 0 # 8
+		y = 2
+		cost = 5
+		relative_position_id = SHU_imperial_courts
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		
+		prerequisite = {
+			focus = SHU_military_law
+			focus = SHU_public_order
+		}
+		
+		prerequisite = {
+			focus = SHU_imperial_law
+			focus = SHU_tribe_law
+			# focus = SHU_nazumahs_pride
+		}
+
+		# prerequisite = {
+		# 	focus = SHU_annex_nazumah
+		# 	focus = SHU_puppet_nazumah
+		# 	focus = SHU_nazumah_alliance
+		# 	focus = SHU_nazumahs_pride
+		# }
+	}
+
+	# Question of Nazumah
+	focus = {
+		id = SHU_question_of_nazumah
+		icon = GFX_focus_generic_strike_at_democracy1 #GFX_SHU_question_of_nazumah
+		x = 0 # 8
+		y = 2
+		cost = 5
+		relative_position_id = SHU_question_of_slavery
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		
+		prerequisite = {
+			# focus = SHU_question_of_slavery
+		}
+
+
+		# prerequisite = {
+		# 	focus = SHU_annex_nazumah
+		# 	focus = SHU_puppet_nazumah
+		# 	focus = SHU_nazumah_alliance
+		# 	focus = SHU_nazumahs_pride
+		# }
+	}
+	# Plan Frontlines
+	focus = {
+		id = SHU_plan_frontlines
+		icon = GFX_SHU_plan_frontlines
+		x = -1 
+		y = 1
+		relative_position_id = SHU_rebirth_legions
+		
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		# prerequisite = {
+		# 	focus = SHU_sundisc_has_risen
+		# }
+		prerequisite = {
+			focus = SHU_rebirth_legions
+		}
+	}
+
+	# Defensive Lines
+	focus = {
+		id = SHU_defensive_lines
+		icon = GFX_focus_chi_whampoa_military_academy
+		x = 1 
+		y = 1
+		relative_position_id = SHU_rebirth_legions
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		# prerequisite = {
+		# 	focus = SHU_sundisc_has_risen
+		# }
+		prerequisite = {
+			focus = SHU_rebirth_legions
+		}
+		completion_reward = {
+			
+			add_ideas = shuriman_defense_bonus
+		}
+	}
+
+	# Storm Nerimazeth
+	focus = {
+		id = SHU_storm_nerimazeth
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		relative_position_id = SHU_plan_frontlines
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = {
+			focus = SHU_plan_frontlines
+		}
+		completion_reward = {
+        create_wargoal = {
+            type = wargoal_annexation
+            target = XER
+            generator = { type = annex_everything target = XER }
+            focus = SHU_storm_nerimazeth
+        }
+        effect = {
+            set_country_flag = offensive_war_bonus
+            add_timed_modifier = {
+                modifier = {
+                    name = "Temporary Offensive War Bonus"
+                    duration = 365
+                    attack = 0.15
+                    breakthrough = 0.15
+                    planning_speed = 0.25
+                }
+            }
+			# Add any additional effects here if needed
+        }
+        custom_effect_tooltip = "Temporary Offensive War Bonus: Increases Attack by 15%, Breakthrough by 15%, and Planning Speed by 25% for one year."
+		
+		
+        remove_effect = {
+            remove_country_flag = offensive_war_bonus
+            if = {
+                limit = {
+                    NOT = { has_country_flag = won_offensive_war }
+                }
+                add_timed_modifier = {
+                    modifier = {
+                        name = "Failed Offensive War Debuff"
+                        duration = 365
+                        attack = -0.1
+                        defense = -0.1
+                        planning_speed = -0.2
+                    }
+                }
+                # Add any additional removal effects here if needed
+				
+				}
+			}
+		}
+	}
+
+	# Arm the Defenders!
+	focus = {
+		id = SHU_arm_the_defenders
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		relative_position_id = SHU_defensive_lines
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_defensive_lines
+		}
+		completion_reward = {
+			effect = { 
+				custom_effect_tooltip = arm_shurima
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1500
+					producer = SHU
+				}
+				
+				# add_equipment_production = {
+				# 	equipment = {
+				# 		type = infantry_equipment
+				# 	}
+				# 	requested_factories = 1
+				# 	progress = 0.95
+				# 	amount = 1
+				# }
+			}
+		}
+	}
+	
+	# Shuriman Legion
+	focus = {
+		id = SHU_shuriman_legions # ? blue
+		icon = GFX_focus_secret_rearmament
+		x = 1 
+		y = 1
+		relative_position_id = SHU_storm_nerimazeth
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = {
+			focus = SHU_arm_the_defenders
+			focus = SHU_storm_nerimazeth
+		}
+		hidden_effect = {
+			add_ideas = war_economy 
+		}
+		completion_reward = {
+			custom_effect_tooltip = change_law_to_war_economy
+			# add_ideas = war_economy
+		}
+	}
+
+	
+	# Shuriman Navy 
+	
+	# # Rebuilding Our Dockyards - SHU_rebuilding_our_dockyards
+	# focus = {
+	# 	id = SHU_rebuilding_our_harbours
+	# 	icon = GFX_goal_generic_construct_naval_dockyard # doesn't exit -> GFX_goal_generic_construct_dockyard 
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = SHU_shuriman_legions
+	# 	cost = 5
+		
+	# 	prerequisite ={
+	# 		focus = SHU_shuriman_legions
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	available = {
+	# 		# Condition to ensure the player controls at least one coastal state
+	# 		OR = {
+	# 			# Northern Coast
+	# 			114 = { is_controlled_by = ROOT } # Kalamandian
+	# 			107 = { is_controlled_by = ROOT } # Nashramae
+				
+	# 			# Aurma
+	# 			110 = { is_controlled_by = ROOT } # Northern Island 
+				
+	# 			# Noxian colony
+	# 			103 = { is_controlled_by = ROOT } #Northn Eastern 
+	# 			101 = { is_controlled_by = ROOT } #North West A
+	# 			100 = { is_controlled_by = ROOT } # Northern Island 
+	# 			99 = { is_controlled_by = ROOT } #North West B
+				
+	# 			# Western Coast 
+	# 			118 = { is_controlled_by = ROOT } # Crystal Scar
+	# 			119 = { is_controlled_by = ROOT } # Nazumah Coast
+	# 			120 = { is_controlled_by = ROOT } # Marai Coast
+				
+	# 			#Sourthern Coast
+	# 			122 = { is_controlled_by = ROOT } # Marai Coast
+	# 			126 = { is_controlled_by = ROOT } # Marai Coast
+	# 			127 = { is_controlled_by = ROOT } # Marai Coast
+				
+	# 			# Void Coastline
+	# 			91 = { is_controlled_by = ROOT } # Void Coast
+	# 			92 = { is_controlled_by = ROOT } # Void Coast
+	# 			93 = { is_controlled_by = ROOT } # Void Coast
+	# 			94 = { is_controlled_by = ROOT } # Void Coast
+	# 			95 = { is_controlled_by = ROOT } # Void Coast
+	# 			96 = { is_controlled_by = ROOT } # Void Coast
+	# 			97 = { is_controlled_by = ROOT } # Void Coast
+	# 			98 = { is_controlled_by = ROOT } # Void Coast
+
+	# 			# Add all other coastal state IDs that can have dockyards
+	# 		}
+	# 	}
+
+	# 	completion_reward = {
+	# 		# Add dockyards to all valid coastal states
+	# 		if = {
+	# 			limit = { is_controlled_by = ROOT }
+	# 			1 = {
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { is_controlled_by = ROOT }
+	# 			2 = {
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { is_controlled_by = ROOT }
+	# 			3 = {
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		# Repeat for all other coastal state IDs that can have dockyards
+	# 	}
+	# }
+
+
+	# # Rebuilding Our Fleet
+	# focus = {
+	# 	id = SHU_rebuilding_our_fleet
+	# 	icon = GFX_focus_generic_refit_civilian_ships # GFX_goal_generic_construct_naval_dockyard # doesn't exit -> GFX_goal_generic_construct_dockyard 
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = SHU_rebuilding_our_harbours
+	# 	cost = 5
+
+	# 	prerequisite = {
+	# 		focus = SHU_rebuilding_our_harbours
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	available = {
+	# 		# Condition to ensure the player controls at least one coastal state
+	# 		OR = {
+	# 			# Northern Coast
+	# 			114 = { is_controlled_by = ROOT } # Kalamandian
+	# 			107 = { is_controlled_by = ROOT } # Nashramae
+				
+	# 			# Aurma
+	# 			110 = { is_controlled_by = ROOT } # Northern Island 
+				
+	# 			# Noxian colony
+	# 			103 = { is_controlled_by = ROOT } #Northn Eastern 
+	# 			101 = { is_controlled_by = ROOT } #North West A
+	# 			100 = { is_controlled_by = ROOT } # Northern Island 
+	# 			99 = { is_controlled_by = ROOT } #North West B
+				
+	# 			# Western Coast 
+	# 			118 = { is_controlled_by = ROOT } # Crystal Scar
+	# 			119 = { is_controlled_by = ROOT } # Nazumah Coast
+	# 			120 = { is_controlled_by = ROOT } # Marai Coast
+				
+	# 			#Sourthern Coast
+	# 			122 = { is_controlled_by = ROOT } # Marai Coast
+	# 			126 = { is_controlled_by = ROOT } # Marai Coast
+	# 			127 = { is_controlled_by = ROOT } # Marai Coast
+				
+	# 			# Void Coastline
+	# 			91 = { is_controlled_by = ROOT } # Void Coast
+	# 			92 = { is_controlled_by = ROOT } # Void Coast
+	# 			93 = { is_controlled_by = ROOT } # Void Coast
+	# 			94 = { is_controlled_by = ROOT } # Void Coast
+	# 			95 = { is_controlled_by = ROOT } # Void Coast
+	# 			96 = { is_controlled_by = ROOT } # Void Coast
+	# 			97 = { is_controlled_by = ROOT } # Void Coast
+	# 			98 = { is_controlled_by = ROOT } # Void Coast
+
+	# 			# Add all other coastal state IDs that can have dockyards
+	# 		}
+	# 	}
+
+	# 	completion_reward = {
+	# 		# Add dockyards to all valid coastal states
+	# 		if = {
+	# 			limit = { is_controlled_by = ROOT }
+	# 			1 = {
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { is_controlled_by = ROOT }
+	# 			2 = {
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { is_controlled_by = ROOT }
+	# 			3 = {
+	# 				add_building_construction = {
+	# 					type = dockyard
+	# 					level = 1
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}
+	# 		# Repeat for all other coastal state IDs that can have dockyards
+	# 	}
+	# }
+
+	# # Fleet
+	# focus = {
+	# 	id = SHU_fleet
+	# 	icon = GFX_focus_generic_merchant_fleet # GFX_focus_POL_develop_polish_shipbuilding
+	# 	x=2
+	# 	y=1
+	# 	relative_position_id = SHU_rebuilding_our_fleet
+	# 	prerequisite = {
+	# 		focus = SHU_rebuilding_our_fleet
+	# 	}
+	#
+	# 	completion_reward ={
+	#
+	# 	}
+	# }
+
+	# # Merchant Fleet
+	# focus = {
+	# 	id = SHU_merchant_fleet
+	# 	icon = GFX_goal_fleet # GFX_focus_generic_merchant_fleet 
+	# 	# icon = GFX_focus_POL_develop_polish_shipbuilding 
+	# 	# icon = GFX_focus_generic_navy_battleship2 
+
+	# 	x=1
+	# 	y=1
+	# 	relative_position_id = SHU_rebuilding_our_fleet
+	# 	prerequisite = {
+	# 		focus = SHU_rebuilding_our_fleet
+	# 	}
+
+	# 	completion_reward ={
+
+	# 	}
+	# }
+
+	# # Rebuild Armory
+	# focus = {
+	# 	id = SHU_rebuild_armory # green
+	# 	icon = GFX_goal_generic_construct_mil_factory
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = SHU_shuriman_legions # ? blue
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_INDUSTRY
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_shuriman_legions # ? blue
+	# 	}
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = arms_factory
+	# 					size > 0
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+	# 		}
+	# 	}
+	# }
+
+	# # Refilling Armory
+	# focus = {
+	# 	id = SHU_refilling_armory
+	# 	icon = GFX_goal_generic_construct_mil_factory
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = SHU_rebuild_armory # green
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_INDUSTRY
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_rebuild_armory # green
+	# 	}
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = arms_factory
+	# 					size > 0
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+	# 		}
+	# 	}
+	# }
+
+	# # Shuriman Armor
+	# focus = {
+	# 	id = SHU_shuriman_armor
+	# 	icon = GFX_goal_generic_construct_mil_factory
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = SHU_refilling_armory # green
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_INDUSTRY
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_refilling_armory # green
+	# 	}
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = arms_factory
+	# 					size > 0
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+	# 		}
+	# 	}
+	# }
+
+	# # Expanding Armory 
+	# focus = {
+	# 	id = SHU_expand_armory
+	# 	icon = GFX_goal_generic_army_tanks2
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SHU_shuriman_armor
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_INDUSTRY
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_shuriman_armor
+	# 	}
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = arms_factory
+	# 					size > 0
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+	# 		}
+	# 	}
+	# }
+
+	# # Shuriman Military - SHU_shuriman_military / SHU_military_complex
+	# 	focus = {
+	# 	id = SHU_military_complex 
+	# 	icon = GFX_goal_factory_complex
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = SHU_refilling_armory
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_INDUSTRY
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_refilling_armory
+	# 		focus = SHU_rebuild_trade_routes
+	# 	}
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				free_building_slots = {
+	# 					building = arms_factory
+	# 					size > 0
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+	# 		}
+	# 	}
+	# }
+	
+	# # Focus Aircraft Industry
+	# Focus = {
+	# 	id = SHU_aircraft_industry
+	# 	icon = GFX_focus_generic_aircraft_production
+	# 	x=-1
+	# 	y=1
+	# 	relative_position_id = SHU_expand_armory
+	# 	prerequisite = {
+	# 		focus = SHU_expand_armory
+	# 	}
+	# }
+
+	# # Focus Tank Industry
+	# Focus = {
+	# 	id = SHU_tank_industry
+	# 	icon = GFX_focus_generic_tank_production
+	# 	x=1
+	# 	y=1
+	# 	relative_position_id = SHU_expand_armory
+	# 	prerequisite = {
+	# 		focus = SHU_expand_armory
+	# 	}
+	# }
+
+	# Nazuman: Hunters for hire
+	focus = {
+		id = SHU_hunters_for_hire
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 1
+		relative_position_id = SHU_annex_nazumah
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_annex_nazumah
+			focus = SHU_puppet_nazumah 
+		}
+
+		completion_reward = {
+			# Enables us to hire hunters against void
+			recruit_character = kassadin
+		}
+	}
+
+	
+#   ██████╗ ██╗  ██╗  █████╗  ██╗  ██╗ ██╗  ██╗  █████╗  ██╗     
+#  ██╔════╝ ██║  ██║ ██╔══██╗ ██║ ██╔╝ ██║ ██╔╝ ██╔══██╗ ██║     
+#  ╚█████╗  ███████║ ███████║ █████═╝  █████═╝  ███████║ ██║     
+#   ╚═══██╗ ██╔══██║ ██╔══██║ ██╔═██╗  ██╔═██╗  ██╔══██║ ██║     
+#  ██████╔╝ ██║  ██║ ██║  ██║ ██║ ╚██╗ ██║ ╚██╗ ██║  ██║ ███████╗
+#  ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝
+
+	# Lectures in Shakkal: Void lectures -> Attack Bonus against the void
+	focus = {
+		id = SHU_lectures_in_shakkal
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 1
+		relative_position_id = SHU_great_crusade
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_great_crusade
+			focus = SHU_diplomacy_approach 
+		}
+
+		completion_reward = {
+			# Enables us to fight better against void
+
+		}
+	}
+	
+	# Shakkal Deal - Shakkal Plea Deal
+	focus = {
+		id = SHU_shakkal_deal
+		icon = GFX_goal_generic_neutrality_focus 
+		x = -1
+		y = 1
+		relative_position_id = SHU_allies
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_lectures_in_shakkal  
+		}
+		prerequisite = {
+			# focus = SHU_diplomacy_approach
+			focus = SHU_allies 
+		}
+		completion_reward = {
+			# Enables us to fight better against void
+
+		}
+	}
+
+	# Nomadic Library -> hidden bookss
+	focus = {
+		id = SHU_nomadic_library
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 1
+		relative_position_id = SHU_allies
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_allies
+		}
+
+		completion_reward = {
+			# Gives us another book for nasus! 
+		}
+	}
+
+	# Shakkal Lecture -> One Time Buff Against Them?
+	focus = {
+		id = SHU_shakkal_lecture
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+		relative_position_id = SHU_shakkal_region
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_shakkal_region
+		}
+
+		completion_reward = {
+			# Enables us to fight better against void
+
+		}
+	}
+
+	# Subjugate the locals
+	focus = {
+		id = SHU_subjugate_the_locals
+		icon = GFX_goal_local_subjugation
+		x=2
+		y=0
+		cost = 5
+		relative_position_id = SHU_hunters_for_hire
+		prerequisite = {
+			focus = SHU_annex_nazumah
+			focus = SHU_puppet_nazumah
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	# Shuriman Recognition
+	focus = {
+		id = SHU_shuriman_recognition
+		icon = GFX_SHU_tribal_respect # GFX_focus_ETH_empower_the_ras # GFX_SHU_tribal_respect
+		x = 1 
+		y = 1
+		relative_position_id = SHU_imperial_efforts
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_imperial_efforts
+		}
+		prerequisite = {
+			focus = SHU_military_law
+		}
+		completion_reward = {
+			add_ideas = shuriman_recognition
+		}
+	}
+
+	# Shuriman pride
+	focus = {
+		id = SHU_marai_marines # SHU_shuriman_recognition
+		icon = GFX_focus_generic_coastal_fort # GFX_SHU_tribal_respect
+		x=0
+		y=1
+		relative_position_id = SHU_nazumah_alliance
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+
+		prerequisite = {
+			focus = SHU_puppet_nazumah
+			focus = SHU_nazumah_alliance
+		}
+
+
+		completion_reward = {
+			add_ideas = marai_marines # shuriman_respect # shuriman_recognition
+			# add_naval_company
+			# Hire Nami
+		}
+	}
+
+	# Shuriman pride
+	focus = {
+		id = SHU_nazumahs_pride # SHU_the_plot_of_nazumahs # SHU_shuriman_recognition
+		icon = GFX_goal_tribal_handshake # GFX_goal_tfv_strengthen_commonwealth_ties # GFX_SHU_tribal_respect
+		x=1
+		y=2
+		relative_position_id = SHU_question_of_nazumah
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+
+		mutually_exclusive = {
+			focus = SHU_subjugate_the_locals
+			focus = SHU_nazumahs_pride
+		}
+
+		prerequisite = {
+			focus = SHU_puppet_nazumah
+			focus = SHU_nazumah_alliance
+		}
+
+		completion_reward = {
+			add_ideas = shuriman_respect # shuriman_recognition
+		}
+	}
+
+	# In the Hawks Eyes	 
+	focus = {
+		id = SHU_in_the_hawks_eyes
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x=-1
+		y=1
+		relative_position_id = SHU_nazumahs_pride
+		prerequisite = {
+			focus = SHU_hunters_for_hire
+			focus = SHU_nazumahs_pride
+			focus = SHU_marai_marines
+			focus = SHU_subjugate_the_locals
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Subjugation 
+	focus = {
+		id = SHU_subjugation_tactics
+		icon = GFX_goal_purge_the_enemy
+		x=-2
+		y=1
+		relative_position_id = SHU_in_the_hawks_eyes
+		prerequisite = {
+			focus = SHU_in_the_hawks_eyes
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Diplomacy	 
+	focus = {
+		id = SHU_diplomacy_approach
+		icon = GFX_goal_generic_improve_relations
+		x=2
+		y=1
+		relative_position_id = SHU_in_the_hawks_eyes
+		prerequisite = {
+			focus = SHU_in_the_hawks_eyes
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Allies	 
+	focus = {
+		id = SHU_allies
+		icon = GFX_goal_anschluss
+		x=1
+		y=1
+		relative_position_id = SHU_diplomacy_approach
+		prerequisite = {
+			focus = SHU_diplomacy_approach
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Great Crusade
+	focus = {
+		id = SHU_great_crusade
+		icon = GFX_focus_POL_sanation_right
+		x=0
+		y=1
+		relative_position_id = SHU_in_the_hawks_eyes
+		prerequisite = {
+			focus = SHU_in_the_hawks_eyes
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Remove The Savages
+	focus = {
+		id = SHU_remove_the_savages
+		icon = GFX_goal_purge_the_enemy2
+		x=1
+		y=1
+		relative_position_id = SHU_subjugation_tactics
+		prerequisite = {
+			focus = SHU_subjugation_tactics
+			focus = SHU_great_crusade
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Regional Investment
+	focus = {
+		id = SHU_regional_investment
+		icon = GFX_goal_anschluss
+		x=-1
+		y=1
+		relative_position_id = SHU_remove_the_savages
+		prerequisite = {
+			focus = SHU_remove_the_savages
+			focus = SHU_shakkal_region
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Shakkal Region
+	focus = {
+		id = SHU_shakkal_region 
+		icon = GFX_goal_draw_line
+		x=-1
+		y=1
+		relative_position_id = SHU_subjugation_tactics
+		prerequisite = {
+			focus = SHU_subjugation_tactics
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	# Recover Our Sand
+	focus = {
+		id = SHU_recover_our_sand
+		icon = GFX_goal_generic_alliance
+		x=0
+		y=2
+		relative_position_id = SHU_great_crusade
+		prerequisite = {
+			focus = SHU_great_crusade
+		}
+		prerequisite = {
+			focus = SHU_remove_the_savages
+			focus = SHU_lectures_in_shakkal
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	# Work Camps
+	focus = {
+		id = SHU_work_camps
+		icon = GFX_focus_ITA_generic_fascist_workers
+		x=0
+		y=1
+		relative_position_id = SHU_military_court
+		prerequisite = {
+			focus = SHU_military_court
+			#focus = SHU_remove_the_savages
+			#focus = SHU_shakkal_region
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Force + Takeover Marai / Aurma / Resettlement
+	focus = {
+		id = SHU_marai_dockyards
+		icon = GFX_focus_generic_annex_country
+		x=-2
+		y=1
+		relative_position_id = SHU_annex_nazumah
+		prerequisite = {
+			focus = SHU_work_camps
+			focus = SHU_annex_nazumah
+			#focus = SHU_shakkal_region
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# # Force + Takeover Marai / Aurma / Resettlement
+	# focus = {
+	# 	id = SHU_reward_marai
+	# 	icon = GFX_goal_generic_naval
+	# 	x=0
+	# 	y=1
+	# 	relative_position_id = SHU_marai_dockyards
+	# 	prerequisite = {
+	# 		# focus = SHU_marai_dockyards
+	# 		# focus = SHU_annex_nazumah
+	# 		focus = SHU_marai_dockyards
+	# 	}
+		
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+
+#   ██████╗ ████████╗  █████╗  ██████╗  ████████╗
+#  ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ╚══██╔══╝
+#  ╚█████╗     ██║    ███████║ ██████╔╝    ██║   
+#   ╚═══██╗    ██║    ██╔══██║ ██╔══██╗    ██║   
+#  ██████╔╝    ██║    ██║  ██║ ██║  ██║    ██║   
+#  ╚═════╝     ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝   
+
+
+
+	# Long Time, No See/ An Old Friends / Our True Enemy / 
+	focus = {
+		id = SHU_the_neighbours # SHU_old_friends
+		icon = GFX_goal_generic_secret_weapon # GFX_goal_unknown
+		x=0 
+		y=1
+		relative_position_id = SHU_recover_our_sand
+		prerequisite = {
+			focus = SHU_recover_our_sand
+			focus = SHU_nomadic_library
+			focus = SHU_shakkal_lecture
+		}
+		completion_reward = {
+			set_country_flag = shuriman_expansion_plan
+		}
+	}
+
+
+#  ███╗   ███╗██╗███╗  ██╗ █████╗ ██████╗  ██████╗
+#  ████╗ ████║██║████╗ ██║██╔══██╗██╔══██╗██╔════╝
+#  ██╔████╔██║██║██╔██╗██║██║  ██║██████╔╝╚█████╗ 
+#  ██║╚██╔╝██║██║██║╚████║██║  ██║██╔══██╗ ╚═══██╗
+#  ██║ ╚═╝ ██║██║██║ ╚███║╚█████╔╝██║  ██║██████╔╝
+#  ╚═╝     ╚═╝╚═╝╚═╝  ╚══╝ ╚════╝ ╚═╝  ╚═╝╚═════╝ 
+
+	# focus = {
+	# 	id = SHU_Minors 
+	# 	icon = GFX_goal_unknown 
+	# 	x=-2 
+	# 	y=1
+	# 	cost = 3
+	# 	relative_position_id = SHU_the_neighbours
+	# 	prerequisite = {
+	# 		focus = SHU_the_neighbours
+	# 	}
+	# }
+
+
+# ███╗   ███╗ █████╗      ██╗ █████╗ ██████╗  ██████╗
+# ████╗ ████║██╔══██╗     ██║██╔══██╗██╔══██╗██╔════╝
+# ██╔████╔██║███████║     ██║██║  ██║██████╔╝╚█████╗ 
+# ██║╚██╔╝██║██╔══██║██╗  ██║██║  ██║██╔══██╗ ╚═══██╗
+# ██║ ╚═╝ ██║██║  ██║╚█████╔╝╚█████╔╝██║  ██║██████╔╝
+# ╚═╝     ╚═╝╚═╝  ╚═╝ ╚════╝  ╚════╝ ╚═╝  ╚═╝╚═════╝ 
+
+	# focus = {
+	# 	id = SHU_Major 
+	# 	icon = GFX_focus_wonderweapons # GFX_goal_unknown 
+	# 	x=2 
+	# 	y=1
+	# 	cost = 3
+	# 	relative_position_id = SHU_the_neighbours
+	# 	prerequisite = {
+	# 		focus = SHU_the_neighbours
+	# 	}
+	# }
+
+
+#  ████████╗  █████╗  ██████╗   ██████╗   █████╗  ███╗  ██╗
+#  ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ██╔════╝  ██╔══██╗ ████╗ ██║
+#     ██║    ███████║ ██████╔╝ ██║  ██╗  ██║  ██║ ██╔██╗██║
+#     ██║    ██╔══██║ ██╔══██╗ ██║  ╚██╗ ██║  ██║ ██║╚████║
+#     ██║    ██║  ██║ ██║  ██║ ╚██████╔╝ ╚█████╔╝ ██║ ╚███║
+#     ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝  ╚═════╝   ╚════╝  ╚═╝  ╚══╝
+	
+	# Targon Start Line
+	focus = {
+		id = SHU_fate_of_targon
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x=3
+		y=1
+		cost = 3
+		relative_position_id = SHU_the_neighbours
+		
+		available = {
+			if = {
+				has_country_flag = shuriman_expansion_plan
+			}
+		}
+
+		prerequisite = {
+			# # focus = SHU_Major
+		}
+	}
+
+	# Targon AA Line
+	focus = {
+		id = SHU_annex_targon
+		icon = GFX_focus_generic_total_war
+		x=-2
+		y=1
+		relative_position_id = SHU_fate_of_targon
+		mutually_exclusive = {
+			focus = SHU_puppet_or_ally_targon 
+		}
+		prerequisite = {
+			focus = SHU_fate_of_targon
+		}
+	}
+
+	focus = {
+		id = SHU_example_ba_targon
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_annex_targon
+		prerequisite = {
+			focus = SHU_annex_targon
+		}
+	}
+
+	focus = {
+		id = SHU_example_ca_targon
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ba_targon
+		prerequisite = {
+			focus = SHU_example_ba_targon
+		}
+	}
+	# Middle Row
+
+	# Rich Mountains
+	focus = {
+		id = SHU_rich_mountains_gold
+		icon = GFX_r56_goal_COG_Jungle_Diamond_Mine
+		x=2
+		y=1
+		relative_position_id = SHU_annex_targon
+		prerequisite = {
+			focus = SHU_annex_targon
+			focus = SHU_puppet_or_ally_targon
+		}
+		completion_reward = {
+
+
+		}
+	}
+
+	# Rich lands 2
+	focus = {
+		id = SHU_rich_mountains_dia
+		icon = GFX_r56_goal_BEL_gold_extraction
+		x=0
+		y=1
+		relative_position_id = SHU_rich_mountains_gold
+		prerequisite = {
+			focus = SHU_annex_targon
+			focus = SHU_rich_mountains_gold
+			
+		}
+		prerequisite = {
+			focus = SHU_rich_mountains_gold
+			focus = SHU_puppet_or_ally_targon
+		}
+		completion_reward = {
+
+
+		}
+	}
+
+	# Targon AB Line
+	focus = {
+		id = SHU_puppet_or_ally_targon
+		icon = GFX_focus_SMB_a_land_of_mountains
+		x=2
+		y=1
+		relative_position_id = SHU_fate_of_targon
+		mutually_exclusive = {
+			focus = SHU_annex_targon 
+		}
+		prerequisite = {
+			focus = SHU_fate_of_targon
+		}
+	}
+
+	# Shuriman Agreement
+	focus = {
+		id = SHU_shuriman_argreement_targon
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_puppet_or_ally_targon
+		prerequisite = {
+			focus = SHU_puppet_or_ally_targon
+		}
+	}
+
+	focus = {
+		id = SHU_example_cb_targon
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_shuriman_argreement_targon
+		prerequisite = {
+			focus = SHU_shuriman_argreement_targon
+		}
+	}
+
+
+
+
+	
+#  ██╗   ██╗  ██╗  ████████╗   █████╗    ██╗     
+#  ██║   ╚██╗██╔╝  ╚══██╔══╝  ██╔══██╗   ██║     
+#  ██║    ╚███╔╝      ██║     ██║  ██║   ██║     
+#  ██║    ██╔██╗      ██║     ███████║   ██║     
+#  ██║   ██╔╝╚██╗     ██║     ██╔══██║   ██║     
+#  ██║   ██║  ██║     ██║     ██║  ██║   ███████╗
+#  ╚═╝   ╚═╝  ╚═╝     ╚═╝     ╚═╝  ╚═╝   ╚══════╝
+
+	# Ixtal Starter Line
+	focus = {
+		id = SHU_fate_of_ixtal
+		icon = GFX_focus_por_luso_tropicalism
+		x=-3
+		y=1
+		cost = 3
+		relative_position_id = SHU_the_neighbours
+		prerequisite = {
+			# # focus = SHU_Major
+		}
+	}
+
+	# Ixtal AA Line
+	focus = {
+		id = SHU_annex_ixtal
+		icon = GFX_focus_generic_total_war
+		x=-2
+		y=1
+		relative_position_id = SHU_fate_of_ixtal
+		mutually_exclusive = {
+			focus = SHU_puppet_or_ally_ixtal
+		}
+		prerequisite = {
+			focus = SHU_fate_of_ixtal
+		}
+	}
+
+	focus = {
+		id = SHU_jungle_machine
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_annex_ixtal
+		prerequisite = {
+			focus = SHU_annex_ixtal
+		}
+	}
+
+	focus = {
+		id = SHU_jungle_adventure
+		icon = GFX_goal_reform_socialist_army
+		x=0
+		y=1
+		relative_position_id = SHU_jungle_machine
+		prerequisite = {
+			focus = SHU_jungle_machine
+		}
+	}
+
+	# Middle Row
+
+	# Rich lands 1
+	focus = {
+		id = SHU_rich_lands_gold
+		icon = GFX_goal_Jungle_Gold_Mine
+		x=0
+		y=2
+		relative_position_id = SHU_fate_of_ixtal
+		prerequisite = {
+			focus = SHU_puppet_or_ally_ixtal
+			focus = SHU_annex_ixtal
+		}
+		completion_reward = {
+
+
+		}
+	}
+
+	# Rich lands 2
+	focus = {
+		id = SHU_rich_lands_dia
+		icon = GFX_goal_Jungle_Diamond_Mine
+		x=0
+		y=1
+		relative_position_id = SHU_rich_lands_gold
+		prerequisite = {
+			focus = SHU_puppet_or_ally_ixtal
+			focus = SHU_rich_lands_gold
+			
+		}
+		prerequisite = {
+			focus = SHU_rich_lands_gold
+			focus = SHU_annex_ixtal
+		}
+		completion_reward = {
+
+
+		}
+	}
+
+
+	# Ixtal Puppet or Ally Line
+	focus = {
+		id = SHU_puppet_or_ally_ixtal
+		icon = GFX_goal_unknown
+		x=2
+		y=1
+		relative_position_id = SHU_fate_of_ixtal
+		mutually_exclusive = {
+			focus = SHU_annex_ixtal
+		}
+		prerequisite = {
+			focus = SHU_fate_of_ixtal
+		}
+	}
+
+	# Shuriman Pact
+	focus = {
+		id = SHU_shuriman_pact_ixtal
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_puppet_or_ally_ixtal
+		prerequisite = {
+			focus = SHU_puppet_or_ally_ixtal
+		}
+	}
+
+	focus = {
+		id = SHU_example_cb_ixtal
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_shuriman_pact_ixtal
+		prerequisite = {
+			focus = SHU_shuriman_pact_ixtal
+		}
+	}
+
+
+
+	
+#  ███╗  ██╗  █████╗  ██╗  ██╗ ██╗  ██████╗  ███╗  ██╗
+#  ████╗ ██║ ██╔══██╗ ╚██╗██╔╝ ██║ ██╔═══██╗ ████╗ ██║
+#  ██╔██╗██║ ██║  ██║  ╚███╔╝  ██║ ██║   ██║ ██╔██╗██║
+#  ██║╚████║ ██║  ██║  ██╔██╗  ██║ ████████║ ██║╚████║
+#  ██║ ╚███║ ██║  ██║ ██╔╝╚██╗ ██║ ██╔═══██║ ██║ ╚███║
+#  ██║   ██║ ╚█████╔╝ ██║  ██║ ██║ ██║   ██║ ██║   ██║
+
+	# Noxian Start
+	focus = {
+		id = SHU_example_noxian_start
+		icon = GFX_goal_unknown
+		x=1
+		y=2
+		cost = 3
+		relative_position_id = SHU_shadow_plan
+		prerequisite = {
+			# focus = SHU_Major
+		}
+	}
+
+	# Noxian AA Line
+	focus = {
+		id = SHU_example_aa_noxian
+		icon = GFX_goal_unknown
+		x=-2
+		y=1
+		relative_position_id = SHU_example_noxian_start
+		mutually_exclusive = {
+			focus = SHU_example_ab_noxian 
+		}
+		prerequisite = {
+			focus = SHU_example_noxian_start
+		}
+	}
+
+	focus = {
+		id = SHU_example_ba_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_aa_noxian
+		prerequisite = {
+			focus = SHU_example_aa_noxian
+		}
+	}
+
+	focus = {
+		id = SHU_example_ca_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ba_noxian
+		prerequisite = {
+			focus = SHU_example_ba_noxian
+		}
+	}
+
+	# Noxian AB Line
+	focus = {
+		id = SHU_example_ab_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_noxian_start
+		mutually_exclusive = {
+			focus = SHU_example_aa_noxian 
+		}
+		prerequisite = {
+			focus = SHU_example_noxian_start
+		}
+	}
+
+	focus = {
+		id = SHU_example_bb_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ab_noxian
+		prerequisite = {
+			focus = SHU_example_ab_noxian
+		}
+	}
+
+	focus = {
+		id = SHU_example_cb_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bb_noxian
+		prerequisite = {
+			focus = SHU_example_bb_noxian
+		}
+	}
+
+
+	# Noxian AC Line
+	focus = {
+		id = SHU_example_ac_noxian # 
+		icon = GFX_goal_unknown
+		x=2
+		y=1
+		relative_position_id = SHU_example_noxian_start
+		mutually_exclusive = {
+			
+			# Noxian
+			focus = SHU_example_aa_noxian 
+			focus = SHU_example_ab_noxian 
+			# Ionian
+			focus = SHU_example_aa_ionian 
+			focus = SHU_example_ab_ionian 
+		}
+		prerequisite = {			
+			focus = SHU_total_war
+			focus = SHU_example_noxian_start
+		}
+	}
+
+	focus = {
+		id = SHU_example_bc_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ac_noxian
+		prerequisite = {
+			focus = SHU_example_ac_noxian
+		}
+	}
+
+	focus = {
+		id = SHU_example_cc_noxian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bc_noxian
+		prerequisite = {
+			focus = SHU_example_bc_noxian
+		}
+	}
+
+
+#  ██╗  █████╗  ███╗  ██╗ ██╗  █████╗ 
+#  ██║ ██╔══██╗ ████╗ ██║ ██║ ██╔══██╗
+#  ██║ ██║  ██║ ██╔██╗██║ ██║ ███████║
+#  ██║ ██║  ██║ ██║╚████║ ██║ ██╔══██║
+#  ██║ ╚█████╔╝ ██║ ╚███║ ██║ ██║  ██║
+#  ╚═╝  ╚════╝  ╚═╝  ╚══╝ ╚═╝ ╚═╝  ╚═╝
+
+	# ionia Starter Line
+	focus = {
+		id =  SHU_example_ionian_start
+		icon = GFX_goal_unknown
+		x=6
+		y=0
+		cost = 3
+		relative_position_id = SHU_example_noxian_start
+
+		prerequisite = {
+			# focus = SHU_Major
+		}
+	}
+
+	# ionia AA Line: Subjugate
+	focus = {
+		id = SHU_example_aa_ionian
+		icon = GFX_goal_unknown
+		x=-2
+		y=1
+		relative_position_id =  SHU_example_ionian_start
+		mutually_exclusive = {
+			focus = SHU_example_ab_ionian
+		}
+		prerequisite = {			
+			focus = SHU_total_war
+			focus =  SHU_example_ionian_start
+		}
+	}
+
+	focus = {
+		id = SHU_example_ba_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_aa_ionian
+		prerequisite = {
+			focus = SHU_example_aa_ionian
+		}
+	}
+
+	focus = {
+		id = SHU_example_ca_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ba_ionian
+		prerequisite = {
+			focus = SHU_example_ba_ionian
+		}
+	}
+
+	# ionia AB Line: Annex
+	focus = {
+		id = SHU_example_ab_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id =  SHU_example_ionian_start
+		prerequisite = {
+			focus =  SHU_example_ionian_start			
+			# focus = SHU_starter_ionian_piltover
+
+		}
+	}
+
+	focus = {
+		id = SHU_example_bb_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ab_ionian
+		prerequisite = {
+			focus = SHU_example_ab_ionian
+		}
+	}
+
+	focus = {
+		id = SHU_example_cb_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bb_ionian
+		prerequisite = {
+			focus = SHU_example_bb_ionian
+		}
+	}
+
+	# ionia Ac Line: Ally 
+	focus = {
+		id = SHU_example_ac_ionian
+		icon = GFX_goal_unknown
+		x=2
+		y=1
+		relative_position_id =  SHU_example_ionian_start
+		prerequisite = {
+			focus =  SHU_example_ionian_start			
+			# focus = SHU_starter_ionian_piltover
+
+		}
+
+		available = { 
+			# Condition:
+			# Sivir is leader
+			# Both at War with noxus
+			# They likes & they at war with noxus
+		}
+	}
+
+	focus = {
+		id = SHU_example_bc_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ac_ionian
+		prerequisite = {
+			focus = SHU_example_ac_ionian
+		}
+	}
+
+	focus = {
+		id = SHU_example_cc_ionian
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bc_ionian
+		prerequisite = {
+			focus = SHU_example_bc_ionian
+		}
+	}
+
+
+# ██████╗ ██╗██╗      ██████╗ ███████╗ ██╗       ██╗ █████╗ ████████╗███████╗██████╗ 
+# ██╔══██╗██║██║     ██╔════╝ ██╔════╝ ██║  ██╗  ██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
+# ██████╦╝██║██║     ██║  ██╗ █████╗   ╚██╗████╗██╔╝███████║   ██║   █████╗  ██████╔╝
+# ██╔══██╗██║██║     ██║  ╚██╗██╔══╝    ████╔═████║ ██╔══██║   ██║   ██╔══╝  ██╔══██╗
+# ██████╦╝██║███████╗╚██████╔╝███████╗  ╚██╔╝ ╚██╔╝ ██║  ██║   ██║   ███████╗██║  ██║
+# ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+
+	# It's been a long time since the empire was back
+	# We dont know everything and learning what we don't 
+	# know is a part of returning to our real position in 
+	# the world, hence we must uncover what lies at this 
+	# junction some call "Bilge Water"
+
+	# Option to help the Buhuru Become the Controllers of
+	# the area
+
+	# bilge_water Starter Line
+	focus = {
+		id = SHU_scout_remote_islands
+		icon = GFX_goal_unknown
+		x=-8
+		y=0
+		cost = 3
+		relative_position_id = SHU_rule_aurma
+		mutually_exclusive = {focus = SHU_approach_aurma}
+		prerequisite = {
+			# # focus = SHU_Minors
+		}
+	}
+
+	# bilge_water AA Line
+	focus = {
+		id = SHU_pirate_hunt
+		icon = GFX_goal_unknown
+		x=-1
+		y=1
+		relative_position_id = SHU_scout_remote_islands
+		mutually_exclusive = {
+			focus = SHU_pirate_alliance
+			focus = SHU_independant_republic 
+			focus = SHU_autonomus_state
+		}
+		prerequisite = {
+			focus = SHU_scout_remote_islands
+		}
+	}
+
+	focus = {
+		id = SHU_example_ba_bilge_water
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_pirate_hunt
+		prerequisite = {
+			focus = SHU_pirate_hunt
+		}
+	}
+
+	focus = {
+		id = SHU_example_ca_bilge_water
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ba_bilge_water
+		prerequisite = {
+			focus = SHU_example_ba_bilge_water
+		}
+	}
+
+	# bilge_water AB Line
+	focus = {
+		id = SHU_pirate_alliance
+		icon = GFX_goal_unknown
+		x=1
+		y=1
+		relative_position_id = SHU_scout_remote_islands
+		prerequisite = {
+			focus = SHU_scout_remote_islands			
+		}
+		mutually_exclusive = {
+			focus = SHU_pirate_hunt
+			focus = SHU_potential_alliance 
+			focus = SHU_autonomus_state
+		}
+	}
+
+	focus = {
+		id = SHU_example_bb_bilge_water
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_pirate_alliance
+		prerequisite = {
+			focus = SHU_pirate_alliance
+		}
+	}
+
+	focus = {
+		id = SHU_example_cb_bilge_water
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bb_bilge_water
+		prerequisite = {
+			focus = SHU_example_bb_bilge_water
+		}
+	}
+
+# ████████╗ █████╗ ████████╗ █████╗ ██╗        ██╗       ██╗ █████╗ ██████╗ 
+# ╚══██╔══╝██╔══██╗╚══██╔══╝██╔══██╗██║        ██║  ██╗  ██║██╔══██╗██╔══██╗
+#    ██║   ██║  ██║   ██║   ███████║██║        ╚██╗████╗██╔╝███████║██████╔╝
+#    ██║   ██║  ██║   ██║   ██╔══██║██║         ████╔═████║ ██╔══██║██╔══██╗
+#    ██║   ╚█████╔╝   ██║   ██║  ██║███████╗    ╚██╔╝ ╚██╔╝ ██║  ██║██║  ██║
+#    ╚═╝    ╚════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝     ╚═╝   ╚═╝  ╚═╝  ╚═╝╚═╝  ╚═╝
+	focus = {
+		id = SHU_total_war
+		icon = GFX_focus_wonderweapons # GFX_goal_unknown 
+		x=3
+		y=0
+		cost = 3
+		relative_position_id = SHU_example_noxian_start
+		prerequisite = {
+			# focus = SHU_the_neighbours
+		}
+	}
+	
+#   █████╗  ██╗   ██╗ ██████╗  ███╗   ███╗  █████╗ 
+#  ██╔══██╗ ██║   ██║ ██╔══██╗ ████╗ ████║ ██╔══██╗
+#  ███████║ ██║   ██║ ██████╔╝ ██╔████╔██║ ███████║
+#  ██╔══██║ ██║   ██║ ██╔══██╗ ██║╚██╔╝██║ ██╔══██║
+#  ██║  ██║ ╚██████╔╝ ██║  ██║ ██║ ╚═╝ ██║ ██║  ██║
+#  ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝
+
+	# Aurma Start Line 
+	focus = {
+		id = SHU_rule_aurma
+		icon = GFX_goal_unknown
+		x=5
+		y=2
+		cost = 3
+		relative_position_id = SHU_example_cc_noxian
+		prerequisite = {
+			# # focus = SHU_Minors
+		}
+		available = {
+			
+		}
+	}
+
+	focus = {
+		id = SHU_approach_aurma
+		icon = GFX_goal_unknown
+		x=-4
+		y=0
+		cost = 3
+		relative_position_id = SHU_rule_aurma
+		prerequisite = {
+			# # focus = SHU_Minors
+		}
+		available = {
+			
+		}
+	}
+	
+	# Aurma AA Line: Respect Soverignty 
+	focus = {
+		id = SHU_potential_alliance # SHU_respect_soverignty_aurma
+		icon = GFX_goal_unknown
+		x=-1
+		y=1
+		relative_position_id = SHU_approach_aurma
+		mutually_exclusive = {
+			focus = SHU_pirate_alliance
+			focus = SHU_shuriman_ship_builders 
+			focus = SHU_independant_republic 
+			focus = SHU_autonomus_state
+		}
+		prerequisite = {
+			focus = SHU_approach_aurma
+			focus = SHU_rule_aurma
+		}
+	}
+
+	focus = {
+		id = SHU_example_ba_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_potential_alliance
+		prerequisite = {
+			focus = SHU_potential_alliance
+		}
+	}
+
+	focus = {
+		id = SHU_example_ca_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_ba_aurma
+		prerequisite = {
+			focus = SHU_example_ba_aurma
+		}
+	}
+
+	# Aurma AB Line: Puppet Aurma
+	focus = {
+		id = SHU_independant_republic
+		icon = GFX_goal_unknown
+		x=1
+		y=1
+		relative_position_id = SHU_approach_aurma
+		mutually_exclusive = {
+			focus = SHU_potential_alliance
+			focus = SHU_autonomus_state
+		}
+		prerequisite = {
+			focus = SHU_approach_aurma
+			focus = SHU_rule_aurma
+		}
+	}
+
+	focus = {
+		id = SHU_example_bb_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_independant_republic
+		prerequisite = {
+			focus = SHU_independant_republic
+		}
+	}
+
+	focus = {
+		id = SHU_example_cb_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bb_aurma
+		prerequisite = {
+			focus = SHU_example_bb_aurma
+		}
+	}
+	
+	# Aurma (Super) Puppet Soverignty Line
+	focus = {
+		id = SHU_autonomus_state
+		icon = GFX_goal_unknown
+		x=-1
+		y=1
+		relative_position_id = SHU_rule_aurma
+		mutually_exclusive = {
+			focus = SHU_potential_alliance
+			focus = SHU_independant_republic
+		}
+		prerequisite = {
+			focus = SHU_rule_aurma
+		}
+		available = {
+			
+
+
+		}
+	}
+
+	focus = {
+		id = SHU_example_bc_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_autonomus_state
+		prerequisite = {
+			focus = SHU_autonomus_state
+		}
+	}
+
+	focus = {
+		id = SHU_example_cc_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bc_aurma
+		prerequisite = {
+			focus = SHU_example_bc_aurma
+		}
+	}
+
+	# Annex Aurma Line - Local Control is required! 
+	# Plus we need their knowledge of shipbuilding! 
+	
+	focus = {
+		id = SHU_shuriman_ship_builders
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x=1
+		y=1
+		relative_position_id = SHU_rule_aurma
+		mutually_exclusive = {
+			focus = SHU_potential_alliance
+			focus = SHU_independant_republic
+		}
+		prerequisite = {
+			focus = SHU_rule_aurma
+		}
+		available = {
+			
+
+
+		}
+	}
+
+	focus = {
+		id = SHU_example_bd_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_shuriman_ship_builders
+		prerequisite = {
+			focus = SHU_shuriman_ship_builders
+		}
+	}
+
+	focus = {
+		id = SHU_example_cd_aurma
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_example_bd_aurma
+		prerequisite = {
+			focus = SHU_example_bd_aurma
+		}
+	}
+
+	
+#  █████╗ ██████╗ ██╗   ██╗ ██████╗████████╗ █████╗ ██╗        ██████╗ █████╗  █████╗ ██████╗ 
+# ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔══██╗██║       ██╔════╝██╔══██╗██╔══██╗██╔══██╗
+# ██║  ╚═╝██████╔╝ ╚████╔╝ ╚█████╗    ██║   ███████║██║       ╚█████╗ ██║  ╚═╝███████║██████╔╝
+# ██║  ██╗██╔══██╗  ╚██╔╝   ╚═══██╗   ██║   ██╔══██║██║        ╚═══██╗██║  ██╗██╔══██║██╔══██╗
+# ╚█████╔╝██║  ██║   ██║   ██████╔╝   ██║   ██║  ██║███████╗  ██████╔╝╚█████╔╝██║  ██║██║  ██║
+#  ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝  ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+
+	# crystal_scar Starter Line
+	focus = {
+		id = SHU_starter_crystal_scar
+		icon = GFX_goal_unknown
+		x=3
+		y=0
+		relative_position_id = SHU_approach_zaun
+		prerequisite = {
+			# focus = SHU_Minors
+		}
+		available = {
+			if ={
+				SHU = {
+					tooltip = "Has Taliyah"
+					has_character = SHU_taliyah	
+				}
+
+				SHU = {
+					tooltip = "Has Natinalized Hexcore"
+					has_country_flag = has_nationalized_hexcore
+				}
+			}
+		}
+	}
+
+	# crystal_scar A Line
+	focus = {
+		id = SHU_overseer_taliyah
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_starter_crystal_scar
+
+		prerequisite = {
+			focus = SHU_starter_crystal_scar
+			# focus = SHU_starter_zaun_crystal_scar
+		}
+	}
+
+	# crystal_scar A Line
+	focus = {
+		id = SHU_taliyahs_supervision
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_overseer_taliyah
+
+		prerequisite = {
+			focus = SHU_overseer_taliyah
+			# focus = SHU_starter_zaun_crystal_scar
+		}
+	}
+
+	
+	# crystal_scar b Line
+	focus = {
+		id = SHU_our_crystal_scar
+		icon = GFX_goal_our_cuts
+		x=0
+		y=1
+		relative_position_id = SHU_taliyahs_supervision
+
+		prerequisite = {
+			focus = SHU_taliyahs_supervision
+		}
+	}
+	# crystal_scar c Line
+	focus = {
+		id = SHU_develop_crystal_scar
+		icon = GFX_goal_our_cuts
+		x=0
+		y=1
+		relative_position_id = SHU_our_crystal_scar
+		mutually_exclusive = {
+			focus = SHU_mutal_assurance
+			focus = SHU_shadow_deal #SHU_taliyahs_supervision
+		}
+		prerequisite = {
+			focus = SHU_our_crystal_scar
+		}
+	}
+
+#  ██████╗  ██╗ ██╗     ████████╗  █████╗  ██╗   ██╗ ███████╗ ██████╗ 
+#  ██╔══██╗ ██║ ██║     ╚══██╔══╝ ██╔══██╗ ██║   ██║ ██╔════╝ ██╔══██╗
+#  ██████╔╝ ██║ ██║        ██║    ██║  ██║ ╚██╗ ██╔╝ █████╗   ██████╔╝
+#  ██╔═══╝  ██║ ██║        ██║    ██║  ██║  ╚████╔╝  ██╔══╝   ██╔══██╗
+#  ██║      ██║ ███████╗   ██║    ╚█████╔╝   ╚██╔╝   ███████╗ ██║  ██║
+#  ╚═╝      ╚═╝ ╚══════╝   ╚═╝     ╚════╝     ╚═╝    ╚══════╝ ╚═╝  ╚═╝
+		
+	# Piltover Starter Line
+	focus = {
+		id = SHU_approach_piltover
+		icon = GFX_goal_unknown
+		x=4
+		y=2
+		relative_position_id = SHU_example_cb_ixtal
+		prerequisite = {
+			# focus = SHU_Minors
+		}
+	}
+
+	# Piltover AA Line
+	focus = {
+		id = SHU_annex_piltover
+		icon = GFX_goal_unknown
+		x=-1
+		y=1
+		relative_position_id = SHU_approach_piltover
+		mutually_exclusive = {
+			focus = SHU_hostile_takeover 
+		}
+		prerequisite = {
+			focus = SHU_approach_piltover
+			focus = SHU_approach_zaun
+		}
+	}
+
+	focus = {
+		id = SHU_deep_pockets_piltover
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_hostile_takeover
+		prerequisite = {
+			focus = SHU_hostile_takeover
+		}
+	}
+
+	focus = {
+		id = SHU_mutal_assurance
+		icon = GFX_goal_unknown
+		x=0
+		y=2
+		relative_position_id = SHU_deep_pockets_piltover
+		mutually_exclusive = {
+			focus = SHU_develop_crystal_scar
+		}
+		prerequisite = {
+			focus = SHU_deep_pockets_piltover
+		}
+	}
+	
+	# Piltover AB Line
+	focus = {
+		id = SHU_hostile_takeover
+		icon = GFX_goal_unknown
+		x=1
+		y=1
+		relative_position_id = SHU_approach_piltover
+		mutually_exclusive = {
+			focus = SHU_annex_piltover
+		}
+		prerequisite = {
+			focus = SHU_approach_piltover
+		}
+	}
+
+	focus = {
+		id = SHU_brain_gain
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_annex_piltover
+		prerequisite = {
+			focus = SHU_annex_piltover
+		}
+	}
+
+	focus = {
+		id = SHU_new_management_piltover
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_brain_gain
+		prerequisite = {
+			focus = SHU_brain_gain
+		}
+	}
+	
+
+
+	
+	
+#  ███████╗  █████╗  ██╗   ██╗ ███╗  ██╗
+#  ╚════██║ ██╔══██╗ ██║   ██║ ████╗ ██║
+#    ███╔═╝ ███████║ ██║   ██║ ██╔██╗██║
+#  ██╔══╝   ██╔══██║ ██║   ██║ ██║╚████║
+#  ███████╗ ██║  ██║ ╚██████╔╝ ██║ ╚███║
+#  ╚══════╝ ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚══╝
+
+	# Zaun Starter Line
+	focus = {
+		id = SHU_approach_zaun
+		icon = GFX_goal_unknown
+		x=-6
+		y=0
+		cost = 3
+		relative_position_id = SHU_approach_piltover
+
+		prerequisite = {
+			# focus = SHU_Minors
+		}
+	}
+
+	# Zaun AA Line: Create a Puppet by Aiding Silco Take over Zaun
+	focus = {
+		id = SHU_silco_plan
+		icon = GFX_goal_flames_of_rebellion
+		x=-1
+		y=1
+		relative_position_id = SHU_approach_zaun
+		mutually_exclusive = {
+			focus = SHU_annex_zaun
+		}
+		available = {
+			NOT = { ZAU = { has_country_leader = ZAU_silco } }
+			# Maybe Fire a event/eventchain to make silco leader
+		}
+		prerequisite = {
+			focus = SHU_approach_zaun
+		}
+	}
+
+	# Further Funding
+	focus = {
+		id = SHU_futher_funding
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_silco_plan
+		prerequisite = {
+			focus = SHU_silco_plan
+		}
+	}
+
+	# Shadow Plan
+	focus = {
+		id = SHU_shadow_plan
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_futher_funding
+		prerequisite = {
+			focus = SHU_futher_funding
+		}
+	}
+
+	# Shadow Deal
+	focus = {
+		id = SHU_shadow_deal
+		icon = GFX_goal_smugglers
+		x=0
+		y=1
+		relative_position_id = SHU_shadow_plan
+		mutually_exclusive = {
+			focus = SHU_develop_crystal_scar
+			focus = SHU_mutual_assurance_piltover
+		}
+		prerequisite = {
+			focus = SHU_shadow_plan
+		}
+	}
+
+	# Zaun Annex Line
+	focus = {
+		id = SHU_annex_zaun
+		icon = GFX_focus_generic_total_war
+		x=1
+		y=1
+		relative_position_id = SHU_approach_zaun
+		prerequisite = {
+			focus = SHU_approach_zaun			
+			focus = SHU_approach_piltover
+
+		}
+	}
+
+	focus = {
+		id = SHU_chemical_warefare
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_annex_zaun
+		prerequisite = {
+			focus = SHU_annex_zaun
+		}
+	}
+
+	focus = {
+		id = SHU_new_management_zaun
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = SHU_chemical_warefare
+		prerequisite = {
+			focus = SHU_chemical_warefare
+		}
+	}
+
+	# # Kalamandia 1
+	# focus = {
+	# 	id = SHU_kalamandia_diplomacy
+	# 	x = -3
+	# 	y = 0 
+	# 	relative_position_id = SHU_approach_zaun
+	# 	prerequisite = {
+			
+	# 	}
+	# }
+
+	# # Kalamandia 2
+	# focus = {
+	# 	id = SHU_kalamandia_aggression
+	# 	x = 0
+	# 	y = 1 
+	# 	relative_position_id = SHU_kalamandia_diplomacy
+	# 	prerequisite = {
+	# 		focus = SHU_kalamandia_diplomacy
+	# 	}
+	# }
+	# # Kalamandia 3
+	# focus = {
+	# 	id = SHU_kalamandia_subjugation
+	# 	x = 0
+	# 	y = 1 
+	# 	relative_position_id = SHU_kalamandia_aggression
+	# 	prerequisite = {
+	# 		focus = SHU_kalamandia_aggression
+	# 	}
+	# }
+	# # Kalamandia 4
+	# focus = {
+	# 	id = SHU_kalamandia_subjugation
+	# 	x = 0
+	# 	y = 1 
+	# 	relative_position_id = SHU_kalamandia_aggression
+	# 	prerequisite = {
+	# 		focus = SHU_kalamandia_aggression
+	# 	}
+	# }
+	######################################
+	# Option for Azir to Attack both
+	######################################
+	# # Zaun & Piltover Starter Line
+	# focus = {
+	# 	id = SHU_starter_zaun_piltover
+	# 	icon = GFX_goal_unknown
+	# 	x=-4
+	# 	y=1
+	# 	cost = 3
+	# 	relative_position_id = SHU_Minors
+
+	# 	available = {
+
+	# 	}
+
+	# 	prerequisite = {
+	# 		# focus = SHU_Minors
+	# 	}
+	# }
+	
+	################################################
+	# Option for Sivir to join One Attacked by Noxus
+	################################################
+	# # Zaun & Piltover Starter Line
+	# focus = {
+	# 	id = SHU_starter_zaun_piltover
+	# 	icon = GFX_goal_unknown
+	# 	x=-4
+	# 	y=1
+	# 	cost = 3
+	# 	relative_position_id = SHU_Minors
+
+	# 	available = {
+
+	# 	}
+
+	# 	prerequisite = {
+	# 		# focus = SHU_Minors
+	# 	}
+	# }
+	
+	# # SHURIMA STAND TALL!
+	# focus = {
+	# 	id = SHU_shurima_stand_tall
+	# 	icon = GFX_focus_BUL_condemn_macedonian_organizations
+	# 	x = 1 # 2
+	# 	y = 1
+	# 	relative_position_id = SHU_question_of_slavery
+	# 	search_filters = {
+	# 		FOCUS_FILTER_STABILITY
+	# 	}
+	# 	prerequisite = {
+	# 		# focus = SHU_refilling_armory
+	# 		focus = SHU_question_of_slavery
+	# 	}
+	# }
+
+	# # SHURIMA BOW DEEP?
+	# focus = {
+	# 	id = SHU_shurima_bow_deep
+	# 	icon = GFX_focus_SHU_shurima_bow
+	# 	x = -1 # 2
+	# 	y = 1
+	# 	relative_position_id = SHU_question_of_slavery
+	# 	search_filters = {
+	# 		FOCUS_FILTER_STABILITY
+	# 	}
+	# 	prerequisite = {
+	# 		# focus = SHU_refilling_armory
+	# 		focus = SHU_question_of_slavery
+	# 	}
+	# }
+
+
+	# Sun Service
+	# focus = {
+	# 	id = SHU_sun_service
+	# 	icon = GFX_focus_ger_return_of_the_kaiser
+	# 	x = 14 # 8
+	# 	y = 7
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_POLITICAL
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_child_enslavement_bill 
+	# 		focus = SHU_slave_rights_act 
+	# 		focus = SHU_slaver_rights_act 
+	# 	}
+	# }
+	# Child Enslavement Bill
+	# focus = {
+	# 	id = SHU_child_enslavement_bill
+	# 	icon = GFX_SHU_child_enslavement_bill
+	# 	x = 14 # 8
+	# 	y = 6
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_POLITICAL
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_question_of_slavery
+	# 	}
+	# }
+
+
+	# Open Metal Mines
+	focus = {
+		id = SHU_open_metal_mines
+		icon = GFX_r56_goal_generic_mining_iron
+		x = 0 # 18
+		y = 1
+		cost = 5
+		relative_position_id = SHU_start_the_mines
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_start_the_mines
+		}
+	}
+
+	# Open Crystal Mines
+	focus = {
+		id = SHU_open_crystal_mines
+		icon = GFX_SHU_nationalize_the_mines # GFX_focus_usa_reestablish_the_gold_standard
+		x = 0 # 22 
+		y = 1
+		relative_position_id = SHU_land_prospect
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_land_prospect
+		} 
+	}
+	# Gold Trade 
+	focus = {
+		id = SHU_gold_trade
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = -2 # 18
+		y = 0
+		relative_position_id = SHU_gold_reserve
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		
+		prerequisite = {
+			focus = SHU_trade_guild
+		}		
+			
+		prerequisite = {
+			focus = SHU_craft_guild
+		}
+	}
+	# Gold Refinement
+	focus = {
+		id = SHU_gold_refinement  
+		icon = GFX_r56_goal_BEL_gold_extraction
+		x = 0 # 22 
+		y = 1
+		cost = 6 
+		relative_position_id = SHU_open_gold_mines
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_open_gold_mines
+		}
+	}
+
+	# Gold Reserves
+	focus = {
+		id = SHU_gold_reserve
+		icon = GFX_r56_goal_HOL_ditch_gold_standard
+		x = 1 # 18
+		y = 1
+		cost = 5 
+		relative_position_id = SHU_trade_guild
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			# Has completed 
+			# focus = SHU_gold_refinement
+		}
+
+		prerequisite = {
+        	focus = SHU_shuriman_guilds
+		}
+	}
+
+	# Expand the Mines
+	focus = {
+		id = SHU_start_the_mines # OLD: SHU_expand_hex_mines 
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 0 # 18
+		y = 1
+		relative_position_id = SHU_workers_rights
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			# focus = SHU_land_prospect
+		}
+		completion_reward = {
+			# Remove Brazil No Resources Debuff
+		}
+	}
+
+	# # Rebuild Trade Routes
+	# focus = {
+	# 	id = SHU_rebuild_trade_routes
+	# 	icon = GFX_goal_generic_construct_infrastructure
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = SHU_rebuild_armory
+	# 	cost = 5
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	prerequisite = {
+	# 		focus = SHU_shuriman_legions
+	# 	}
+	# 	available = {
+	# 		# Add any conditions for the focus to be available here
+	# 	}
+
+	# 	completion_reward = {
+	# 		131 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		130 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		132 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		143 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		145 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		147 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		146 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		144 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# # Its time we start rebuilding our fleets to their former glory!
+	# focus = {
+	# 	id = SHU_rebuilding_our_armada
+	# 	icon = GFX_goal_status_of_admirality
+	# 	x=1
+	# 	y=1
+	# 	relative_position_id = SHU_rebuild_trade_routes
+	# 	cost = 5
+	# 	prerequisite = {
+	# 		focus = SHU_rebuild_trade_routes
+	# 		focus = SHU_rebuilding_our_fleet
+	# 	}
+	# 	available = {
+
+	# 	}
+	# 	completion_reward = {
+
+			
+	# 	}
+	# }
+
+	# # Rebuild Trade Hubs
+	# focus = {
+	# 	id = SHU_rebuild_trade_hubs
+	# 	icon = GFX_goal_Fix_Shitty_Rails # GFX_goal_generic_cavalry # GFX_goal_construction2
+	# 	x = 0
+	# 	y = 2
+	# 	cost = 5
+	# 	relative_position_id = SHU_rebuild_trade_routes
+	# 	prerequisite = {
+	# 		focus = SHU_rebuild_trade_routes
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	available = {
+	# 		# Add any conditions for the focus to be available here
+	# 	}
+
+	# 	completion_reward = {
+	# 		131 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		130 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		132 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		143 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		145 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		147 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		146 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		144 = {
+	# 			add_building_construction = {
+	# 				type = infrastructure
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# OLD: Nationalize The Mines!
+	# NEW: Nationalize Hexore!  
+	focus = {
+		id = SHU_nationalize_hexore
+		icon = GFX_SHU_nationalize_the_mines
+		x = 0 #26 # 18
+		y = 2
+		cost = 5
+		relative_position_id = SHU_start_the_mines
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_open_metal_mines
+			#focus = SHU_open_crystal_mines
+			# focus = SHU_open_gold_mines
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = has_nationalized_hexcore_tt
+			set_country_flag = has_nationalized_hexcore
+		}
+	}
+	
+	focus = {
+		id = SHU_Restoring_Shuriman_Economy
+		icon = GFX_goal_generic_production2 #GFX_Goal_Unknown_Generic
+		x = 0
+		y = 1
+		relative_position_id = SHU_nationalize_hexore
+		prerequisite = {
+			focus = SHU_open_crystal_mines
+		}  
+		prerequisite = {
+			focus = SHU_nationalize_hexore
+		}  
+		prerequisite = {
+			focus = SHU_gold_refinement
+		}  
+		complete_effect = {
+			custom_effect_tooltip = SHU_Restoring_Shuriman_Economy_TT
+		}
+	}
+
+	# Safer Mines! - Now a Shared Focus!
+	# focus = {
+	# 	id = SHU_safermines
+	# 	icon = GFX_focus_AST_rats_tobruk
+	# 	x = 27 # 18
+	# 	y = 7
+	# 	search_filters = {
+	# 		FOCUS_FILTER_INDUSTRY
+	# 	}
+	# 	prerequisite = {
+	# 		# focus = SHU_nationalize_the_mines
+	# 		# focus = SHU_nationalize_hexore
+	# 		# focus = SHU_gold_refinement
+	# 		focus = SHU_gold_reserves
+	# 	}
+	# 	completion_reward = {
+	# 		limit = { has_resources_amount = { resource = oil amount > 19 } }
+
+	# 		add_resource = {
+	# 			type = oil
+	# 			amount = 24
+	# 		}
+	# 	}
+	# }
+  	
+	# SHU_literacy_programs - illiteracy
+	
+
+	# Land Prospect
+	focus = {
+		id = SHU_land_prospect
+		icon = GFX_focus_research
+		x = -2 # 18
+		y = 1
+		cost = 15
+		relative_position_id = SHU_start_the_mines
+		prerequisite = {
+			focus = SHU_start_the_mines
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	# Open Gold Mines
+	focus = {
+		id = SHU_open_gold_mines
+		icon = GFX_r56_goal_COG_Jungle_Gold_Mine 
+		x = 2 # 22 
+		y = 1
+		relative_position_id = SHU_start_the_mines
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = {
+			focus = SHU_start_the_mines
+		}
+	}
+	# Shurima Arise!
+	# focus = {
+	# 	id = SHU_shurima_arise
+	# 	icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+	# 	x = 12 # 6
+	# 	y = 8
+	# 	cost = 5
+	# 	prerequisite = {
+	# 		focus = SHU_sun_service
+	# 	}
+	# 	search_filters = {
+	# 		FOCUS_FILTER_POLITICAL
+	# 	}
+	# }
+	
+	# National Defense State - Shurima Stand!
+	# focus = {
+	# 	id = SHU_national_defense_state
+	# 	icon = GFX_SHU_national_defense_state
+	# 	x = 16 # 10
+	# 	y = 8
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_POLITICAL
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_sun_service
+	# 	}
+	# }
+	# # Slave Rights Act
+	# focus = {
+	# 	id = SHU_slave_rights_act
+	# 	icon = GFX_SHU_slave_rights_act
+	# 	x = 12 # 6
+	# 	y = 6
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_POLITICAL
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_question_of_slavery
+	# 	}
+	# }
+	# # Slaver Rights Act 
+	# focus = {
+	# 	id = SHU_slaver_rights_act 
+	# 	icon = GFX_SHU_slaver_rights_act
+	# 	x = 16 # 10
+	# 	y = 6
+	# 	cost = 5
+	# 	search_filters = {
+	# 		FOCUS_FILTER_POLITICAL
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_question_of_slavery
+	# 	}
+	# }
+	# OLD: Ascended Council 
+	# NEW: Republican Future 
+	focus = {
+		id = SHU_republican_future # MK.1 SHU_ascended_council
+		icon = GFX_focus_SHU_republic_future_b # GFX_goal_unknown GFX_focus_EST_republican_defence_league GFX_focus_SOV_transcaucasian_republic
+		x = 1 
+		y = 1
+		relative_position_id = SHU_empress
+		
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_empress
+		}
+		completion_reward = {
+			stability_factor = 0.1
+		}
+	}
+
+	focus = {
+		id = SHU_workers_rights
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = SHU_tribe_unity
+		x = 2 
+		y = 1
+		relative_position_id = SHU_war_guild
+		
+		cost = 5
+
+		bypass = { has_completed_focus = SHU_emperor }
+
+		# Old 
+		#prerequisite = {
+		#	focus = SHU_tribe_unity
+		# 	focus = SHU_war_guild
+		# }
+		# prerequisite = {
+
+		# New
+		prerequisite = {
+			focus = SHU_war_guild
+		}
+		
+		prerequisite = {
+			focus = SHU_gold_trade
+		}
+		
+		prerequisite = {
+			focus = SHU_gold_reserve
+		}
+	}
+
+	# OLD: Royal High Courts 
+	# NEW: Republican Purge 
+	# NEW: The Imperial Dream
+	focus = {
+		id = SHU_imperial_state # MK.2 SHU_imperial_dream # MK.1 SHU_royal_high_courts
+		icon = GFX_focus_SHU_republic_future_a  # MK.2 SHU_republican_purge
+		x = -1 
+		y = 1
+		relative_position_id = SHU_emperor
+		
+		cost = 5 
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_emperor
+		}
+	}
+	# Return of the Amulet 
+	focus = {
+		id = SHU_return_of_the_amulet
+		icon = GFX_focus_BUL_found_the_brannik
+		x = -1 # 13
+		y = 1 
+		relative_position_id = SHU_sun_disc_restorations
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_sun_disc_restorations
+		}
+	}
+	# Shrines of Shurima
+	focus = {
+		id = SHU_shrines_of_shurima
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = 1 # 13
+		y = 1 
+		relative_position_id = SHU_sun_disc_restorations
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_sun_disc_restorations
+		}
+	}
+
+	# Replant The Basin!
+	focus = {
+		id = SHU_replant_the_basin
+		icon = {
+        	trigger = { has_country_leader = { character = SHU_azir ruling_only = only } } # Condition Example: has_government = democratic 
+			value = GFX_SHU_replant_the_basin_green
+		}
+		icon = {
+			trigger = { has_country_leader = { character = SHU_sivir ruling_only = only } } # Condition Example: has_government = democratic 
+			value = GFX_SHU_replant_the_basin_blue
+		}
+		icon = {
+			trigger = { NOT = {  has_country_leader = { character = SHU_azir ruling_only = only }}} # Condition Example: has_government = democratic 
+			value = GFX_SHU_replant_the_basin
+		}
+
+		dynamic = yes
+		x = 1 # 13
+		y = 1 
+		relative_position_id = SHU_return_of_the_amulet
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = SHU_return_of_the_amulet
+		}
+		prerequisite = {
+			focus = SHU_shrines_of_shurima
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+
+		completion_reward = {
+			improve_development = {
+				state = ROOT
+				value = 5
+			}
+    	}
+	}
+
+	focus ={ 
+		id = SHU_no_more_hunger
+		icon = GFX_goal_farm_boom
+		x=-3
+		y=1
+		relative_position_id = SHU_shrines_of_shurima
+		prerequisite = {
+			focus = SHU_shrines_of_shurima
+		}
+		complete_effect = {
+
+		}
+	}
+
+	# focus ={ 
+	# 	id = SHU_irigation_system
+	# 	icon = GFX_SHU_diverse_farmland
+	# 	x=-3
+	# 	y=1
+	# 	relative_position_id = SHU_shrines_of_shurima
+	# 	prerequisite = {
+	# 		focus = SHU_shrines_of_shurima
+	# 	}
+	# 	complete_effect = {
+
+	# 	}
+	# }
+
+	focus = { 
+		id = SHU_diverse_farmland
+		icon = GFX_SHU_diverse_farmland
+		x=1
+		y=1
+		relative_position_id = SHU_shrines_of_shurima
+		prerequisite = {
+			focus = SHU_shrines_of_shurima
+		}
+		complete_effect = {
+
+		}
+	}
+
+	# Shuriman Guilds
+	focus = {
+		id = SHU_shuriman_guilds
+		icon = GFX_focus_generic_agricultural_subsidies #GFX_goal_gold_reserve #GFX_goal_unknown
+		x = 0 # 13
+		y = 1 
+		relative_position_id = SHU_replant_the_basin
+		
+		cost = 5
+		# prerequisite = {
+		# 	focus = SHU_replant_the_basin
+		# }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	# War Guild
+	focus = {
+		id = SHU_war_guild
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2 # 14
+		y = 2
+		cost = 5
+		
+		relative_position_id = SHU_shuriman_guilds
+		
+		prerequisite = {
+			focus = SHU_shuriman_guilds
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# Craft Guild
+	focus = {
+		id = SHU_craft_guild
+		icon = GFX_goal_generic_construct_civ_factory #GFX_goal_unknown
+		x = -1 # 13
+		y = 1 
+		relative_position_id = SHU_shuriman_guilds
+		cost = 5
+		prerequisite = {
+			focus = SHU_shuriman_guilds
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	# Trade Guild
+	focus = {
+		id = SHU_trade_guild 
+		icon = GFX_r56_goal_generic_banking_legislation # GFX_focus_usa_reestablish_the_gold_standard #GFX_goal_unknown
+		x = 1 # 13
+		y = 1 
+		relative_position_id = SHU_shuriman_guilds
+		cost = 5
+		prerequisite = {
+			focus = SHU_shuriman_guilds
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	# Sun Disc, Has Risen!
+	focus = {
+		id = SHU_sundisc_has_risen
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		x = 17 # 8
+		y = 0
+		cost = 5
+		available = {
+			has_war_with = XER
+		}
+		bypass = { 
+			AND = { 
+				# Bc: You don't want this to trigger day 1
+				hidden_trigger = { date > 990.1.5 } # date > 1941.6.22
+				not = { has_war_with = XER }
+			}
+		}
+			
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_national_unity = 0.05
+			news_event = { id = shuriman_rnews.7 days = 1 }
+		}
+	}
+	
+	# Tribe Council
+	focus = {
+		id = SHU_tribe_council
+		icon = GFX_SHU_tribe_council
+		x = 4 
+		y = 1
+		relative_position_id = SHU_empress
+
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_empress
+		}
+		completion_reward = {
+			add_ideas = tribal_council
+		}
+	}
+
+	# Tribe Law
+	focus = {
+		id = SHU_tribe_law
+		icon = GFX_SHU_tribal_recognition
+		x = -1 
+		y = 1
+		relative_position_id = SHU_tribe_council
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_tribe_council
+		}
+		completion_reward = {
+			add_ideas = tribe_law
+		}
+	}
+
+	# Tribal Legal Recognition
+	focus = {
+		id = SHU_tribal_recognition
+		icon = GFX_SHU_tribal_recognition
+		x = 1 
+		y = 1
+		relative_position_id = SHU_tribe_council
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_tribe_council
+		}
+		completion_reward = {
+			add_ideas = tribal_recognition
+		}
+	}
+
+	# Tribal Respect
+	focus = {
+		id = SHU_tribal_respect
+		icon = GFX_SHU_tribal_respect
+		x = 1 
+		y = 1
+		relative_position_id = SHU_tribe_law
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_tribe_law
+		}
+		prerequisite = {
+			focus = SHU_tribal_recognition
+		}
+		completion_reward = {
+			add_ideas = tribal_respect
+		}
+	}
+	
+	# Tribe Unity
+	focus = {
+		id = SHU_tribe_unity
+		icon = GFX_goal_molotov_ribbentrop_pact #GFX_goal_anschluss #GFX_focus_ITA_subdue_the_sentinels # GFX_goal_unknown
+		x = 0 
+		y = 1
+		relative_position_id = SHU_tribal_respect
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {
+			focus = SHU_tribal_respect
+		}
+		completion_reward = {
+			add_ideas = tribal_family
+
+			# Play Event for Shurima -> adds tribal_ties idea to shurima
+			ROOT = { country_event = { id = shurima.55 days = 100 } }
+
+			NAZ = {
+				add_ideas = tribal_family
+			}
+			
+			# Just Play Event for Nazumah 
+			FROM = { country_event = { id = shurima.55 days = 100 } }
+		}
+	}
+
+	# Work Unions
+	focus = {
+		id = SHU_work_unions
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x=0
+		y=1
+		relative_position_id = SHU_tribe_unity
+		prerequisite = {
+			focus = SHU_tribe_unity
+			#focus = SHU_remove_the_savages
+			#focus = SHU_shakkal_region
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Help Nami
+	focus = {
+		id = SHU_moonstone
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x=0
+		y=1
+		relative_position_id = SHU_work_unions
+		prerequisite = {
+			focus = SHU_work_unions
+			#focus = SHU_remove_the_savages
+			#focus = SHU_shakkal_region
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	# Marai / Aurma / Resettlement
+	focus = {
+		id = SHU_marai_dockyards_company
+		icon = GFX_goal_dockyard
+		x=2
+		y=1
+		relative_position_id = SHU_nazumah_alliance
+		prerequisite = {
+			focus = SHU_nazumah_alliance
+			focus = SHU_moonstone
+			#focus = SHU_shakkal_region
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+
+	# # Aurma Resettlement
+	# focus = {
+	# 	id = SHU_reform_marai
+	# 	icon = GFX_goal_dockyard
+	# 	x=0
+	# 	y=1
+	# 	relative_position_id = SHU_marai_dockyards_company
+	# 	prerequisite = {
+	# 		# focus = SHU_marai_dockyards
+	# 		# focus = SHU_annex_nazumah
+	# 		focus = SHU_marai_dockyards_company
+	# 	}
+		
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# Imperial Efforts
+	focus = {
+		id = SHU_imperial_efforts #SHU_imperial_efforts #SHU_military_court
+		icon = GFX_r56_goal_AUS_emergency_powers
+		x = -1
+		y = 1
+		relative_position_id = SHU_ascended_god_warriors_council
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_ascended_god_warriors_council
+		}
+	}
+
+	# Ascended Council
+	focus = {
+		id = SHU_ascended_god_warriors_council
+		icon = GFX_focus_god_warriors
+		x = -4 
+		y = 1
+		relative_position_id = SHU_emperor
+		
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_emperor
+		}
+	}
+
+	# Military Law
+	focus = {
+		id = SHU_military_law
+		icon = GFX_goal_generic_axis_build_infantry # Focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		relative_position_id = SHU_ascended_god_warriors_council  
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			#focus = SHU_military_court 
+			focus = SHU_ascended_god_warriors_council
+		}
+		completion_reward ={
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = { 
+					name = "S.S.S." 
+					icon = "GFX_intelligence_agency_logo_prc" 
+				}
+			}
+		}
+	}
+
+	# Military Court
+	focus = {
+		id = SHU_military_court #SHU_imperial_efforts
+		icon = GFX_r56_goal_AUS_emergency_powers
+		x = 0
+		y = 1
+		relative_position_id = SHU_shuriman_recognition
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_shuriman_recognition
+		}
+	}
+
+	
+	# Annex Nazumah
+	focus = {
+		id = SHU_annex_nazumah
+		icon = GFX_focus_generic_total_war 
+		# GFX_goal_generic_territory_or_war 
+		# GFX_goal_generic_axis_build_infantry 
+		# Focus_generic_improve_the_administration
+		x = -3
+		y = 1
+		cost = 5
+		relative_position_id = SHU_question_of_nazumah
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_question_of_nazumah
+		}
+
+		mutually_exclusive = {
+			focus = SHU_puppet_nazumah
+			focus = SHU_nazumah_alliance
+		}
+		bypass = {
+			OR = {
+				NAZ = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = SHU }
+						}
+					}
+				}
+				SHU = {
+					owns_state = 4
+					owns_state = 152
+					owns_state = 153
+					owns_state = 848
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+	}	
+
+	# Puppet Nazumah 
+	focus = {
+		id = SHU_puppet_nazumah
+		icon = GFX_focus_CZE_german_puppet # GFX_goal_tfv_saf_anti_colonialist_crusade # GFX_goal_generic_axis_build_infantry # Focus_generic_improve_the_administration
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SHU_question_of_nazumah
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = {
+			focus = SHU_question_of_nazumah
+			# focus = SHU_imperial_law
+			# focus = SHU_military_law
+		}
+		# prerequisite = {
+		# 	focus = SHU_public_order
+		# }
+
+		bypass = {
+			OR = {
+				NAZ = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = SHU }
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				NAZ = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = SHU }
+						}
+					}
+				}
+			}
+		}
+
+		mutually_exclusive = {
+			focus = SHU_annex_nazumah
+			focus = SHU_nazumah_alliance
+		}
+		completion_reward = {
+			custom_effect_tooltip = SHU_puppet_nazumah_tt
+		}
+	}
+	
+	# Invest in Nazumah 
+	# focus = {
+	# 	id = SHU_invest_in_nazumah 
+	# 	icon = GFX_goal_generic_construction # GFX_goal_generic_construct_civilian  
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SHU_nazumah_alliance
+	# 	cost = 5
+	# 	# mutually_exclusive = {
+	# 	# 	focus = SHU_nazumah_self_govern
+	# 	# }
+	# 	bypass = {
+	# 		NAZ = {
+	# 			num_of_factories > 30
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = SHU_nazumah_alliance
+	# 		focus = SHU_shurima_pride
+	# 		focus = SHU_puppet_nazumah
+	# 	}
+	# 	completion_reward = {
+	# 		NAZ = { add_offsite_building = { type = industrial_complex level = 4 } }
+	# 		# NAZ = { add_opinion_modifier = { target = ROOT modifier = tribal_brother } } # Works
+	# 	}
+	# }
+
+	# # Self Governed 
+	# focus = {
+	# 	id = SHU_nazumah_self_govern
+	# 	icon = GFX_focus_generic_self_management  
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 5
+	# 	# mutually_exclusive = {
+	# 	# 	focus = SHU_invest_in_nazumah
+	# 	# }
+	# 	relative_position_id = SHU_annex_nazumah
+	# 	prerequisite = {
+	# 		focus = SHU_puppet_nazumah
+	# 		focus = SHU_annex_nazumah
+	# 		focus = SHU_nazumahs_pride
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = SHU_nazumah_investments
+	# 	icon = GFX_goal_generic_construct_civilian  
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 5
+	# 	relative_position_id = SHU_nazumahs_pride
+		
+	# 	prerequisite = {
+	# 		focus = SHU_puppet_nazumah
+	# 		focus = SHU_annex_nazumah
+	# 		focus = SHU_puppet_pride
+	# 	}
+
+	# 	completion_reward = {
+	# 		NAZ = {add_offsite_building = { type = industrial_complex level = 2 }}
+	# 	}
+	# }
+	
+	focus = {
+		id = SHU_nazumah_alliance
+		icon = GFX_goal_generic_improve_relations
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = SHU_question_of_nazumah
+		prerequisite = {
+			focus = SHU_question_of_nazumah # focus = SHU_military_law # focus = SHU_question_of_slavery
+		}
+
+		mutually_exclusive = {
+			# focus = SHU_nazumahs_pride
+			focus = SHU_puppet_nazumah
+			# focus = SHU_nazumah_alliance
+			focus = SHU_annex_nazumah
+		}
+	}
+
+	## RESEARCH PART - RESEARCH START
+
+	# Row 1
+
+	# School of Nasus ( Requires Nasus )
+	focus = {
+		id = SHU_school_of_nasus
+		icon = GFX_focus_generic_socialist_science # GFX_focus_research
+		x = -2 #26 # 18
+		y = 0
+		relative_position_id = SHU_shuriman_university
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		visible = {
+			IF = { 
+				tag = SHU
+			}
+		}
+		
+		
+		available = {
+			IF = {
+				tag = SHU  # If your Shurima 
+				AND = {
+					SHU_nasus = { is_advisor = yes }		# If Nasus Hired
+					SHU = { has_character = SHU_nasus } 	# If Nasus is not lost
+					available = SHU_nasus 					# If Nasus is not lost
+				}
+			}
+		}
+
+		bypass = {
+			IF = { 
+				tag = XER
+				XER = { 
+					XER_nasus = { is_advisor = yes } 
+					has_character = SHU_nasus 
+				} 
+			} 
+				
+		}
+	
+	
+	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = SHU_shuriman_university 
+			focus = SHU_officer_school
+		} 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	# Row 1
+
+	# Shuriman University - SHU_shuriman_university
+	focus = {
+		id = SHU_shuriman_university 
+		icon = GFX_focus_research 
+		x = 35 # 18
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = SHU_school_of_nasus 
+			focus = SHU_officer_school 
+		} 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = SHU_shuriman_university_idea
+		}
+	}
+	
+	# Row 1
+	# OLD: SHU_military_academy  
+	
+	# military academy - Great Shuriman Military Academy
+	focus = {
+		id = SHU_officer_school 
+		icon = GFX_goal_generic_military_research
+		x = 2 # 30 # 18
+		y = 0
+		relative_position_id = SHU_shuriman_university
+
+		cost = 5
+
+		ai_will_do = { factor = 4 }
+
+		available = {}
+
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		prerequisite = {}
+		mutually_exclusive = { 
+			focus = SHU_shuriman_university 
+			focus = SHU_school_of_nasus 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = SHU_Officer_School
+		}
+	}
+
+	# Row 2
+
+	# Library of Nasus - Great Library of Nasus
+	focus = {
+		id = SHU_library_of_nasus # SHU_great_library_of_nasus
+		icon = GFX_focus_generic_socialist_science # GFX_focus_research
+		x = -2 #26 # 18
+		y = 1
+		relative_position_id = SHU_shuriman_university
+
+		cost = 5
+
+		ai_will_do = { factor = 4 }
+
+		available = {
+			IF = {
+				tag = SHU  # If your Shurima 
+				AND = {
+					SHU_nasus = { is_advisor = yes }		# If Nasus Hired
+					SHU = { has_character = SHU_nasus } 	# If Nasus is not lost
+					available = SHU_nasus 					# If Nasus is not lost
+				}
+			}
+		}
+
+		bypass = {
+			IF = { 
+				tag = XER
+				XER = { 
+					XER_nasus = { is_advisor = yes } 
+					has_character = SHU_nasus 
+				} 
+			} 
+				
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SHU_school_of_nasus 
+			focus = SHU_shuriman_university
+			focus = SHU_officer_school
+		}
+		mutually_exclusive = { 
+			focus = SHU_rebuild_library 
+			focus = SHU_war_academy 
+		} 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# Row 2
+	
+	# Great Library Of Shuriman - SHU_rebuild_great_library  
+	focus = {
+		id = SHU_rebuild_library # SHU_library_of_shurima  
+		icon = GFX_goal_generic_scientific_exchange 
+		x = 0 # 18
+		y = 1
+		relative_position_id = SHU_shuriman_university
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SHU_school_of_nasus
+			focus = SHU_shuriman_university
+			focus = SHU_officer_school
+		}
+		mutually_exclusive = { 
+			focus = SHU_library_of_nasus 
+			focus = SHU_war_academy 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = SHU_rebuild_library_idea
+		}
+	}
+
+	# Row 2
+
+	# Shuriman War Academy
+	focus = {
+		id = SHU_war_academy  
+		icon = GFX_goal_generic_military_research 
+		x = 2 #30 #18
+		y = 1
+		relative_position_id = SHU_shuriman_university
+
+		cost = 5
+
+		ai_will_do = { factor = 4 }
+
+		available = {}
+
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SHU_school_of_nasus 
+			focus = SHU_shuriman_university
+			focus = SHU_officer_school
+		}
+		mutually_exclusive = { 
+			focus = SHU_rebuild_library 
+			focus = SHU_library_of_nasus 
+			# focus = SHU_officer_school ->
+		} 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = SHU_War_Academy
+		}
+	}
+
+	# row 3
+
+	# Restore Great Library Of Shuriman - Requires Nasus
+	focus = {
+		id = SHU_restore_great_library 
+		icon = GFX_goal_books #GFX_focus_research 
+		x = 0 # 18
+		y = 1
+		relative_position_id = SHU_rebuild_library
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			not = { has_character = SHU_nasus }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SHU_library_of_nasus 
+			focus = SHU_rebuild_library 
+			focus = SHU_war_academy
+		} 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+			unlock_decision_category_tooltip = SHU_nasus_category
+			
+		}
+	}
+
+	## ARMY PART - ARMY START 
+
+	# SHU_rebirth_legions
+	focus = {
+		id = SHU_rebirth_legions
+		icon = NAZ_shuriman_lion_riders # GFX_goal_generic_axis_build_infantry
+		x = -12 #7
+		y = 0
+		relative_position_id = SHU_sundisc_has_risen
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+
+		available = {
+
+			custom_tooltip_trigger = { 
+				
+				OR = {
+					
+					OR = {
+						
+						any_controlled_state = {
+							any_neighbor_state = {
+								state = 121
+								# controller = {
+									owner = {
+										original_tag = NAZ
+									}
+								}
+							}
+							
+						}
+						
+						OR = {
+							ROOT = {
+								tag = SHU
+								has_idea = Shurima_fractured
+						}	
+					}
+				}
+			}
+		}
+		completion_reward = { 
+			SHU_increase_unity = yes 
+			custom_effect_tooltip = SHU_rebirth_legions_tooltip
+
+			# Should also fire event to indicate that 
+			# people are joining the shuriman forces.
+
+			set_division_template_lock = {
+				division_template = "Shuriman Infantry"
+				is_locked = no
+			}
+			effect = {
+				add_timed_unit_leader_trait = {
+					trait = recent_slumber
+					days = 100
+				}
+			}
+		}
+	}
+
+	# Lion Division
+	focus = {
+		id = SHU_lion_riders
+		icon = GFX_focus_lion_riders
+		x = 0
+		y = 1
+		relative_position_id = SHU_shuriman_legions
+		cost = 5
+		prerequisite = {focus = SHU_shuriman_legions}
+		completion_reward = {
+
+		}
+	}
+	# # Army Expansion
+	# focus = {
+	# 	id = SHU_army_recruitment
+	# 	icon = GFX_focus_POL_sanation_right
+	# 	x = 5
+	# 	y = 0
+	# 	relative_position_id = SHU_rebirth_legions
+	# 	cost = 5
+	# 	prerequisite = {}
+	# 	completion_reward = {
+
+	# 	}
+	# }
+}

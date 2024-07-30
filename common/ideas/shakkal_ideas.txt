@@ -1,0 +1,137 @@
+ideas = {
+
+	country = {
+        desert_wanderers_idea = {
+            picture = desert_wanderers
+            allowed = { tag = SHK }
+            modifier = {
+                division_attack_on_core_factor = 0.10
+            }
+        }
+
+        lore_keepers_idea = {
+            picture = lore_keepers
+            allowed = { tag = SHK }
+            modifier = {
+                research_speed = 0.05
+            }
+        }
+
+        cultural_exchange_idea = {
+            picture = cultural_exchange
+            allowed = { tag = SHK }
+            modifier = {
+                trade_opinion_factor = 0.10
+            }
+        }
+
+        blood_and_sand_idea = {
+            picture = blood_and_sand
+            allowed = { tag = SHK }
+            modifier = {
+                division_attack_on_core_factor = 0.05
+            }
+        }
+        
+        horse_lords_idea = {
+            picture = horse_lords
+            allowed = { tag = SHK }
+            modifier = {
+                cavalry_attack = 0.10
+                cavalry_defense = 0.10
+            }
+        }
+
+        dune_fighters_idea = {
+            picture = dune_fighters
+            allowed = { tag = SHK }
+            modifier = {
+                desert_attack = 0.10
+                desert_defense = 0.10
+            }
+        }
+
+        oasis_control_idea = {
+            picture = oasis_control
+            allowed = { tag = SHK }
+            modifier = {
+                supply_consumption_factor = -0.10
+            }
+        }
+
+        sand_scouts_idea = {
+            picture = sand_scouts
+            allowed = { tag = SHK }
+            modifier = {
+                reconnaissance = 0.10
+            }
+        }
+
+        survival_training_idea = {
+            picture = survival_training
+            allowed = { tag = SHK }
+            modifier = {
+                attrition = -0.10
+            }
+        }
+
+        plunder_and_pillage_idea = {
+            picture = plunder_and_pillage
+            allowed = { tag = SHK }
+            modifier = {
+                division_attack_on_core_factor = 0.10
+            }
+        }
+
+        ruthless_tactics_idea = {
+            picture = ruthless_tactics
+            allowed = { tag = SHK }
+            modifier = {
+                division_attack = 0.05
+                division_defense = 0.05
+            }
+        }
+
+        loyal_to_the_clan_idea = {
+            picture = loyal_to_the_clan
+            allowed = { tag = SHK }
+            modifier = {
+                division_defense = 0.10
+                division_organization = 0.05
+            }
+        }
+
+        treaty_with_outlaws_idea = {
+            picture = treaty_with_outlaws
+            allowed = { tag = SHK }
+            modifier = {
+                political_power_gain = 0.05
+            }
+        }
+
+        nomadic_coalition_idea = {
+            picture = nomadic_coalition
+            allowed = { tag = SHK }
+            modifier = {
+                division_attack_on_core_factor = 0.05
+                division_defense_on_core_factor = 0.05
+            }
+        }
+
+        expansion_of_territory_idea = {
+            picture = expansion_of_territory
+            allowed = { tag = SHK }
+            modifier = {
+                justify_war_goal_time = -0.10
+            }
+        }
+
+        True_Enemy = {
+            picture = unknown
+            allowed = { tag = SHK }
+            modifier = {
+                add_attack= 0.05
+            }
+        }
+    }        
+}

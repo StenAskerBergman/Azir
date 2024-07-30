@@ -1,0 +1,13 @@
+﻿###########################
+# Aurma Events
+###########################
+
+add_namespace = aurma
+# add_namespace = nazumah.tribe
+# add_namespace = nazumah.council
+# add_namespace = nazumah.hunters
+
+# Focus - Specific
+# Pick a Leader Event
+
+# Other - Random

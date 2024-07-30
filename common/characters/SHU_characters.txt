@@ -1,0 +1,302 @@
+characters = {
+
+# Azir - Status: 60% DONE 
+    # Leader: DONE
+    # Advisor: SEMI 
+    # Commander: TODO 
+    
+    SHU_azir = {
+    name = SHU_AZIR_NAME # "Azir"
+    gender = male
+    portraits = {
+        civilian = {
+            large = GFX_portrait_shu_azir_large
+            small = GFX_portrait_shu_azir_small
+        }
+    }
+    country_leader = {
+            desc = SHU_AZIR_DESC
+            ideology = shurimanEmperor
+            traits = { 
+                emperorsands Hawk
+            }
+            do_effect = {
+                NOT = {
+                    has_completed_focus = SHU_empress # Sivir_Takes_Over
+                }
+                
+                NOT = {
+                    has_country_leader = {
+                        ruling_only = yes
+                        character = SHU_sivir
+                    }
+                }
+            } 
+            #expire = "1943.1.1.1"
+    }
+    advisor = {
+        available = {
+            has_civil_war = no
+                if = {
+                    # has_completed_focus = Sivir_Takes_Over
+                    NOT = {
+                        has_country_leader = {
+                            ruling_only = yes
+                            character = SHU_azir
+                        }
+                    }
+                }
+            }
+
+        ai_will_do = {
+            factor = 1.0
+        }
+        slot = political_advisor
+        idea_token = Azir
+        can_be_fired = yes
+        ledger = civilian
+        cost = 150
+        allowed = { original_tag = SHU }
+        traits = { emperorsands }
+    }
+    field_marshal = {
+        traits = {  war_hero trait_cautious inflexible_strategist brilliant_strategist defensive_doctrine }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 4
+        legacy_id = -1
+    }
+}
+    
+# Nasus - Status: 30%
+    # Leader: DONE
+    # Advisor: TODO 
+    # Commander: TODO 
+    
+	SHU_nasus = {
+        name = SHU_NASUS_NAME # "Nasus"
+        portraits = {
+        civilian = {
+            large = "GFX_portrait_shu_nasus_large"
+            small = "GFX_portrait_shu_nasus_small"
+            }
+        }
+        country_leader = {
+                desc = "POLITICS_NASUS_DESC"
+                ideology = shurimanEmperor
+                traits = { politicalPuppeteer }
+                #expire = "1943.1.1.1"
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = SHU_nasus
+            ledger = army
+            
+            traits = { military_theorist really_good_boss librarian }      # Unspecified cost defaults to 150.
+        }
+        corps_commander = {
+        traits = {  trait_cautious war_hero engineer_officer }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 4
+        legacy_id = -1
+    }
+}
+
+# Sivir - Status: 30%
+    # Leader: TODO < DOING
+    # Advisor: DONE 
+    # Commander: TODO 
+    
+    SHU_sivir = {
+    name = SHU_SIVIR_NAME # "Sivir"
+    gender = female
+    portraits = {
+    civilian = {
+        large = "GFX_portrait_shu_sivir_large"
+        small = "GFX_portrait_shu_sivir_small"
+        }
+    }
+    country_leader = {
+            desc = SHU_SIVIR_DESC
+            ideology = shurimanEmperor
+            traits = { 
+                empress 
+                battle_mistress_of_shurima 
+            }
+            
+            # Trivia. 
+            # Based on the timeline of events, Sivir is possibly in her late 26s- early 31s.
+            # I think however due to her age, at the timeline of 990 she is 24, mean avg. is 26.
+            # Fictious: Sivir, Naturally dies at 82 years old - but leaves power 2 years early '
+            # Sivir FN. Death Date: 1045.1.1
+            
+            expires = { 1043.1.1 }
+    }
+    advisor = {
+        available = {
+            NOT = {
+                has_country_leader = {
+                    ruling_only = yes
+                    character = SHU_sivir
+                }
+            }
+        }
+            slot = political_advisor
+            idea_token = Sivir
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            allowed = { original_tag = SHU }
+            traits = { silent_workhorse }
+        }
+        corps_commander = {
+        traits = {  armor_officer cavalry_officer defensive_doctrine infantry_officer}
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 4
+        legacy_id = -1
+        }
+	}
+
+    # Taliyah - Status: 30%
+    # Leader: TODO
+    # Advisor: DONE 
+    # Commander: TODO 
+        
+	SHU_taliyah = {
+        name = "Taliyah"
+        desc = SHU_TALIYAH_DESC
+    portraits = {
+    civilian = {
+        large = GFX_portrait_shu_taliyah_large
+        small = GFX_portrait_shu_taliyah_small
+        }
+    }
+    advisor = {
+        slot = political_advisor
+        idea_token = Taliyah
+        can_be_fired = yes
+        ledger = civilian
+        cost = 150
+        custom_effect_tooltip = SHU_TALIYAH_DESC
+        allowed = { original_tag = SHU }
+        traits = { popular_figurehead }
+        }
+        corps_commander = {
+        traits = {  trait_cautious engineer_officer defensive_doctrine infantry_officer}
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 4
+        legacy_id = -1
+        }
+    }
+
+# Renekton - Status: 30%
+    # Leader: DONE
+    # Advisor: TODO 
+    # Commander: TODO 
+    
+	SHU_renekton = {
+	name = "Renekton"
+	portraits = {
+   	 civilian = {
+         large = "GFX_portrait_shu_renekton"
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_RENEKTON_DESC"
+			ideology = conservatism
+			traits = { Fascist_Militarist }
+			#expire = "1943.1.1.1"
+		}
+    }
+
+# Ksante - Status: 30%
+    # Advisor: TODO 
+    # Commander: TODO 
+    
+	SHU_ksante = {
+	name = SHU_NAME_KSANTE
+	portraits = {
+   	    civilian = {
+            large = GFX_portrait_naz_ksante_large
+            small = GFX_portrait_ksante_small
+        }
+        army = {
+            large = GFX_portrait_naz_ksante_large
+            small = GFX_portrait_ksante_small
+        }
+	}
+    advisor = {
+        slot = political_advisor
+        idea_token = Ksante
+        can_be_fired = yes
+        ledger = civilian
+        cost = 150
+        allowed = { original_tag = SHU }
+        traits = { silent_workhorse irregulars_officer }
+        }
+    }
+
+    
+# Nami - Status: 30%
+    # Advisor: TODO 
+    # Commander: TODO 
+    
+	SHU_nami = {
+	name = SHU_NAME_NAMI
+	portraits = {
+   	    civilian = {
+            large = GFX_portrait_nami_large
+            small = GFX_portrait_nami_small
+        }
+        army = {
+            large = GFX_portrait_nami_large
+            small = GFX_portrait_nami_small
+        }
+	}
+    advisor = {
+        visible = {
+            OR = {
+                has_completed_focus = NOR_prince_olavs_inspiration
+                has_completed_focus = NOR_prince_olav_to_navy_staff
+            }
+        }
+        slot = political_advisor
+        idea_token = Ksante
+        can_be_fired = yes
+        ledger = civilian
+        cost = 150
+        allowed = { original_tag = SHU }
+        traits = { silent_workhorse irregulars_officer }
+    }
+    navy_leader={
+        visible = {
+            OR = {
+                has_completed_focus = NOR_prince_olavs_inspiration
+                has_completed_focus = NOR_prince_olav_to_navy_staff
+            }
+        }
+        traits={ navy_media_personality bold blockade_runner }
+        skill=5
+        attack_skill=6
+        defense_skill=3
+        maneuvering_skill=3
+        coordination_skill=5
+        legacy_id=-1
+        
+    }
+    }
+}

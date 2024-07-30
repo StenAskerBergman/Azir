@@ -1,0 +1,114 @@
+capital = 91
+
+oob = "VOI"
+
+set_research_slots = 0
+set_stability = 0.35
+set_war_support = 0.0
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+set_country_flag = VOI_abandonment
+set_country_flag = VOI_northern_void_threat
+set_country_flag = VOI_eastern_void_threat
+set_country_flag = VOI_western_void_threat
+
+add_ideas = {
+	# Economic 
+	abandonment
+	
+	# Political
+	VOI_abandonment
+	
+	Void_Threats
+	# add_ideas = VOI_Void_Threat 
+	# add_ideas = 
+
+}
+set_politics = {
+	ruling_party = desolation
+	last_election = "986.6.07"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 50
+	theocracy = 0
+	oligarchy = 0
+	absolutists = 0
+	chiefdom = 0
+	mages = 30
+	royalist = 20
+}
+# First person in the list is the leader at the start! 
+recruit_character = VOI_Malzahar
+
+# political_advisor
+recruit_character = VOI_Reksai
+recruit_character = VOI_Khazix
+recruit_character = VOI_Chogath
+recruit_character = VOI_Kogmaw
+recruit_character = VOI_Belveth
+
+recruit_character = VOI_Zilean
+recruit_character = VOI_Jax
+
+recruit_character = VOI_Kaisa
+recruit_character = VOI_Kassadin
+
+
+set_convoys = 3
+
+# create_country_leader = {
+# 	name = "Malzahar"
+# 	desc = "POLITICS_MALZAHAR_DESC"
+# 	picture = "gfx/leaders/Void/malzahar.dds"
+# 	#expire = ""
+# 	ideology = oblivion
+# 	traits = {
+# 		prophetvoid
+# 	}
+# }
+# create_country_leader = {
+# 	name = "Malzahar"
+# 	desc = "POLITICS_MALZAHAR_DESC"
+# 	picture = "gfx/leaders/Void/malzahar.dds"
+# 	#expire = ""
+# 	ideology = conservatism
+# 	traits = {
+# 		prophetvoid
+# 	}
+# }
+# create_country_leader = {
+# 	name = "Malzahar"
+# 	desc = "POLITICS_MALZAHAR_DESC"
+# 	picture = "gfx/leaders/Void/malzahar.dds"
+# 	#expire = ""
+# 	ideology = centrism
+# 	traits = {
+# 		prophetvoid
+# 	}
+# }
+# create_country_leader = {
+# 	name = "Malzahar"
+# 	desc = "POLITICS_MALZAHAR_DESC"
+# 	picture = "gfx/leaders/Void/malzahar.dds"
+# 	#expire = ""
+# 	ideology = rexism
+# 	traits = {
+# 		prophetvoid
+# 	}
+# }

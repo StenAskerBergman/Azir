@@ -1,0 +1,45 @@
+spriteTypes = {
+	
+### GLOBAL ####
+
+	spriteType = { 
+		# Name
+		name = "GFX_news_event_shurima_war" 
+		# Path
+		texturefile = "gfx/event_pictures/news_event_shuriman_war.dds"
+	}
+
+### REPORT ####
+
+	# Shurima War
+	spriteType = {
+		name = "GFX_report_event_shurima_war"
+		texturefile = "gfx/event_pictures/report_event_shurima_war.dds"
+	}
+
+	# Shurima Broken
+	spriteType = {
+		name = "GFX_report_event_shurima_broken"
+		texturefile = "gfx/event_pictures/report_event_shurima_broken.dds"
+	}
+
+    # Sun Disc Risen Event Picture
+    spriteType = {
+        name = "GFX_news_event_sundisc_risen"
+        texturefile = "gfx/event_pictures/news_event_sundisc_risen.dds"
+    }
+
+    # Xerath Sun Disc Event Picture
+    spriteType = {
+        name = "GFX_news_event_xerath_sundisc"
+        texturefile = "gfx/event_pictures/news_event_xerath_sundisc.dds"
+    }
+
+### SHU ####
+	
+	spriteType = {
+		name = "GFX_report_event_empty_throne"
+		texturefile = "gfx/event_pictures/report_event_shurima_empty_throne.dds"
+	}
+
+}

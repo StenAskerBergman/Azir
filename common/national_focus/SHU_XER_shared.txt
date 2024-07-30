@@ -1,0 +1,1189 @@
+﻿
+shared_focus = {
+	id = SHU_XER
+	icon = GFX_focus_ARG_defense_and_democracy
+	# prerequisite = { focus = }
+	# mutually_exclusive = { focus =  }
+	x = 0
+	y = 0
+	offset = {
+		x = 17
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_ECO
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER }
+	mutually_exclusive = { focus = SHU_XER_MIL  }
+	x = -1
+	y = 1
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = SHU_XER_MIL
+	icon = GFX_goal_generic_construct_mil_factory # GFX_goal_unknown
+	prerequisite = { focus = SHU_XER }
+	mutually_exclusive = { focus = SHU_XER_ECO }
+	x = 1
+	y = 1
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_INFA
+	icon = GFX_focus_ETH_peacekeeping_forces #GFX_goal_unknown
+	prerequisite = { 
+		focus = SHU_XER_ECO
+		focus = SHU_XER_MIL
+	}
+	# mutually_exclusive = { focus = SHU_XER_MIL  }
+	x = 0
+	y = 2
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+
+shared_focus = {
+	id = SHU_XER_MINE
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_ECO }
+	# mutually_exclusive = { focus =  }
+	x = -2
+	y = 2
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_FOOD
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_MIL }
+	# mutually_exclusive = { focus =  }
+	x = 2
+	y = 2
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_ANIM
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_FOOD }
+	# mutually_exclusive = { focus =  }
+	x = 2
+	y = 4
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_GROW
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_FOOD }
+	# mutually_exclusive = { focus =  }
+	x = 3
+	y = 3
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_CROP
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_GROW }
+	# mutually_exclusive = { focus =  }
+	x = 3
+	y = 5
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_AGRI
+	icon = GFX_goal_unknown
+
+	prerequisite = { focus = SHU_XER_GROW }
+
+	# mutually_exclusive = { focus =  }
+	x = 4
+	y = 4
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_WATR
+	icon = GFX_goal_unknown
+
+	prerequisite = { focus = SHU_XER_CROP focus = SHU_XER_ANIM focus = SHU_XER_RADI }
+
+	# mutually_exclusive = { focus =  }
+	x = 2
+	y = 6
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		NOT = {
+			tag = SHU 
+		}
+	}
+	
+	allow_branch = {
+		NOT = {
+			tag = SHU 
+		}
+	}
+	
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_ORE
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_MINE }
+	# mutually_exclusive = { focus =  }
+	x = -3
+	y = 3
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+# Safer Mines!
+shared_focus = {
+	id = SHU_safermines
+	icon = GFX_focus_generic_mining_industry 
+	x = -4 # 27 # 18
+	y = 4 # 7
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	prerequisite = {
+		focus = SHU_XER_ORE
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	# Have Taliyah Recruited 
+	available = {
+		if = {
+			 has_character = SHU_taliyah
+			 OR
+			 has_character = XER_taliyah
+			 OR
+			 has_character = NAZ_taliyah
+		}
+	}
+	
+	allow_branch = {
+		NOT = {
+			tag = SHU 
+		}
+	}
+
+	cost = 10
+
+	completion_reward = {
+		limit = { has_resources_amount = { resource = oil amount > 19 } }
+
+		add_resource = {
+			type = oil
+			amount = 24
+		}
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_HEXT
+	icon = GFX_goal_unknown
+	prerequisite = { 
+		focus = SHU_XER_MINE  
+	}
+	# mutually_exclusive = { focus =  }
+	x = -2
+	y = 4
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+
+shared_focus = {
+	id = SHU_XER_HEXF
+	icon = GFX_goal_unknown
+	prerequisite = { 
+		focus = SHU_XER_ORE 
+	}
+	prerequisite = { 
+	#	focus = SHU_XER_HEXT
+	}
+
+	# mutually_exclusive = { focus =  }
+	x = -3
+	y = 5
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_FIRE
+	icon = GFX_focus_SWE_revoke_militia_law # GFX_goal_unknown
+	prerequisite = { 
+		focus = SHU_XER_HEXF 
+		focus = SHU_XER_HEXT
+		focus = SHU_XER_HUB
+	}
+	prerequisite = { 
+	#	focus = SHU_XER_HEXT
+	}
+
+	# mutually_exclusive = { focus =  }
+	x = -2
+	y = 6
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		NOT = {
+			tag = SHU 
+		}
+		NOT = {
+			AND = { 
+				tag = XER
+				has_country_leader = XER_Xerath
+			}
+		}	
+	}
+	
+	allow_branch = {
+		NOT = {
+			tag = SHU 
+		}
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_SHIP
+	icon = GFX_focus_ITA_milizia_marittima_di_artiglieria
+	prerequisite = { focus = SHU_XER_ECO }
+	# mutually_exclusive = { focus =  }
+	x = -1
+	y = 3
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_TECH
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_ECO }
+	# mutually_exclusive = { focus =  }
+	x = 1
+	y = 3
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_INFB
+	icon = GFX_focus_generic_military_mission # GFX_goal_unknown
+	prerequisite = { 
+		focus = SHU_XER_INFA
+	}
+	# mutually_exclusive = { focus = SHU_XER_MIL  }
+	x = 0
+	y = 4
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SHU_XER_HUB
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_SHIP }
+	prerequisite = { focus = SHU_XER_INFB }
+
+	# mutually_exclusive = { focus = SHU_XER_MIL  }
+	x = -1
+	y = 5
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+
+shared_focus = {
+	id = SHU_XER_RADI
+	icon = GFX_goal_unknown
+	prerequisite = { focus = SHU_XER_ECO }
+	prerequisite = { focus = SHU_XER_INFB }
+	# mutually_exclusive = { focus =  }
+	x = 1
+	y = 5
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			tag = XER
+		}
+		
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			 tag = SHU 
+		}
+	}
+	relative_position_id = SHU_XER
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	completion_reward = {
+
+	}
+}
+
+### SHARED WAR FOCUSES
+
+
+
+# shared_focus = {
+# 	id = SHU_
+# 	icon = GFX_
+# 	prerequisite = { focus = }
+# 	mutually_exclusive = { focus =  }
+# 	x = -3
+# 	y = 0
+#	offset = {
+#		x = -6
+#		y = 0
+#		trigger = {
+#			tag = PRC # EXAMPLE
+#		}
+#	}
+#	offset = {
+#		x = -16
+#		y = 0
+#		trigger = {
+#			tag = MAN # EXAMPLE
+#		}
+#	}
+# 	relative_position_id = 
+# 	cost = 10
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# 	available = {
+# 	}
+# 	bypass = {
+# 	}
+# 	cancel_if_invalid = yes
+# 	continue_if_invalid = no
+# 	available_if_capitulated = no
+# 	complete_tooltip = {
+# 	}
+# 	completion_reward = {
+# 	}
+# }

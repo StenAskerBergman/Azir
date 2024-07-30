@@ -1,0 +1,299 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Larger 
+
+	# Jaximus A
+	SpriteType = {
+		name = "GFX_portrait_a_jaximus_large"
+		texturefile = "gfx/leaders/VOI/portrait_a_jaximus_large.dds"
+	}
+
+	# Jaximus B
+	SpriteType = {
+		name = "GFX_portrait_b_jaximus_large"
+		texturefile = "gfx/leaders/VOI/portrait_b_jaximus_large.dds"
+	}
+
+	# Nameless Tag
+	SpriteType = {
+		name = "GFX_portrait_tag_nameless_large"
+		texturefile = "gfx/leaders/VOI/portrait_tag_nameless_large.dds"
+	}
+
+	# Belveth
+	SpriteType = {
+		name = "GFX_portrait_voi_belveth_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_belveth_large.dds"
+	}
+
+	# Belveth Trueform
+	SpriteType = {
+		name = "GFX_portrait_voi_belveth_trueform_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_belveth_trueform_large.dds"
+	}
+
+	# Belveth Trueform 2
+	SpriteType = {
+		name = "GFX_portrait_voi_belveth_trueform2_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_belveth_trueform2_large.dds"
+	}
+
+	# Cho'Gath
+	SpriteType = {
+		name = "GFX_portrait_voi_chogath_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_chogath_large.dds"
+	}
+
+	# Jax
+	SpriteType = {
+		name = "GFX_portrait_voi_jax_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_jax_large.dds"
+	}
+
+	# Kai'Sa
+	SpriteType = {
+		name = "GFX_portrait_voi_kaisa_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_kaisa_large.dds"
+	}
+
+	# Kassadin
+	SpriteType = {
+		name = "GFX_portrait_voi_kassadin_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_kassadin_large.dds"
+	}
+
+	# Kha'Zix
+	SpriteType = {
+		name = "GFX_portrait_voi_khazix_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_khazix_large.dds"
+	}
+
+	# Kog'Maw
+	SpriteType = {
+		name = "GFX_portrait_voi_kogmaw_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_kogmaw_large.dds"
+	}
+
+	# Old Jax
+	SpriteType = {
+		name = "GFX_portrait_voi_old_jax_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_old_jax_large.dds"
+	}
+
+	# Op Jax
+	SpriteType = {
+		name = "GFX_portrait_voi_op_jax_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_op_jax_large.dds"
+	}
+
+	# Op Zilean
+	SpriteType = {
+		name = "GFX_portrait_voi_op_zilean_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_op_zilean_large.dds"
+	}
+
+	# Rek'Sai
+	SpriteType = {
+		name = "GFX_portrait_voi_reksai_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_reksai_large.dds"
+	}
+
+	# Vel'Koz
+	SpriteType = {
+		name = "GFX_portrait_voi_velkoz_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_velkoz_large.dds"
+	}
+
+	# Zilean
+	SpriteType = {
+		name = "GFX_portrait_voi_zilean_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_zilean_large.dds"
+	}
+
+	# Malzahar 
+	SpriteType = {
+		name = "GFX_portrait_voi_malzahar_large"
+		texturefile = "gfx/leaders/Void/malzahar.dds"
+	}
+
+	# Belveth
+	SpriteType = {
+		name = "GFX_portrait_voi_belveth_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_belveth_large.dds"
+	}
+
+	# Belveth Trueform
+	SpriteType = {
+		name = "GFX_portrait_voi_belveth_trueform_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_belveth_trueform_large.dds"
+	}
+
+	# Belveth Trueform 2
+	SpriteType = {
+		name = "GFX_portrait_voi_belveth_trueform2_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_belveth_trueform2_large.dds"
+	}
+
+	# Cho'Gath
+	SpriteType = {
+		name = "GFX_portrait_voi_chogath_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_chogath_large.dds"
+	}
+
+	# Kai'Sa
+	SpriteType = {
+		name = "GFX_portrait_voi_kaisa_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_kaisa_large.dds"
+	}
+
+	# Kassadin
+	SpriteType = {
+		name = "GFX_portrait_voi_kassadin_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_kassadin_large.dds"
+	}
+
+	# Kha'Zix
+	SpriteType = {
+		name = "GFX_portrait_voi_khazix_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_khazix_large.dds"
+	}
+
+	# Kog'Maw
+	SpriteType = {
+		name = "GFX_portrait_voi_kogmaw_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_kogmaw_large.dds"
+	}
+
+	# Rek'Sai
+	SpriteType = {
+		name = "GFX_portrait_voi_reksai_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_reksai_large.dds"
+	}
+
+	# Vel'Koz
+	SpriteType = {
+		name = "GFX_portrait_voi_velkoz_large"
+		texturefile = "gfx/leaders/VOI/portrait_voi_velkoz_large.dds"
+	} 
+
+# Smaller 
+
+	# Advisors
+	 
+		SpriteType = {
+			name = "GFX_portrait_voi_malzahar_small"
+			texturefile = "gfx/leaders/VOI/portrait_malzahar_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_belveth_small"
+			texturefile = "gfx/characters/VOI/portrait_belveth_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_belveth1_small"
+			texturefile = "gfx/characters/VOI/portrait_belveth1_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_belveth2_small"
+			texturefile = "gfx/characters/VOI/portrait_belveth2_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_belveth3_small"
+			texturefile = "gfx/characters/VOI/portrait_belveth3_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_chogath_small"
+			texturefile = "gfx/characters/VOI/portrait_chogath_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_chogath_1_small"
+			texturefile = "gfx/characters/VOI/portrait_chogath_1_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_kaisa_small"
+			texturefile = "gfx/characters/VOI/portrait_kaisa_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_kaisa1_small"
+			texturefile = "gfx/characters/VOI/portrait_kaisa1_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_kassadin_small"
+			texturefile = "gfx/characters/VOI/portrait_kassadin_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_kassadin_1_small"
+			texturefile = "gfx/characters/VOI/portrait_kassadin_1_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_khazix_small"
+			texturefile = "gfx/characters/VOI/portrait_khazix_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_khazix2_small"
+			texturefile = "gfx/characters/VOI/portrait_khazix2_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_khazix3_small"
+			texturefile = "gfx/characters/VOI/portrait_khazix3_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_kogmaw_small"
+			texturefile = "gfx/characters/VOI/portrait_kogmaw_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_kogmaw_1_small"
+			texturefile = "gfx/characters/VOI/portrait_kogmaw_1_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_malzahar_small"
+			texturefile = "gfx/characters/VOI/portrait_malzahar_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_malzahar_1_small"
+			texturefile = "gfx/characters/VOI/portrait_malzahar_1_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_malzahar_2_small"
+			texturefile = "gfx/characters/VOI/portrait_malzahar_2_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_malzahar_3_small"
+			texturefile = "gfx/characters/VOI/portrait_malzahar_3_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_reksai_small"
+			texturefile = "gfx/characters/VOI/portrait_reksai_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_velkoz_small"
+			texturefile = "gfx/characters/VOI/portrait_velkoz_small.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_portrait_voi_velkoz1_small"
+			texturefile = "gfx/characters/VOI/portrait_velkoz1_small.dds"
+		}
+}

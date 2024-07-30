@@ -1,0 +1,89 @@
+
+----------------------------------------------------------------------------------------------------------------------
+# How To Add New Country! 
+----------------------------------------------------------------------------------------------------------------------
+# 1. Add the Commons Files!
+    
+    A >    / common / countries / name.txt    
+
+    # AND Insert the Country to the Color File
+
+    B >   / common / countries / color.txt
+
+    # AND Insert the Country Tag into the Country_Tag List
+
+    C >   / common / Country_tags / templete_countries.txt - or - 66056_countries.txt   # ps: I always forget this!
+
+# Done! with the Common folders files! 
+----------------------------------------------------------------------------------------------------------------------
+# 2. Add the History Files!
+
+#       A. Add "tag - countries" file to:  / history / countries / TAG - country 
+#       Note: This is where the "placeholder" leader goes! 
+
+#       B. Add states core / ctrl, references
+#       Note: Add the core refernece and the State files!
+
+# Done! with the History folders files! 
+----------------------------------------------------------------------------------------------------------------------
+# 3. Add the gfx Files! > FLAGS, PORTRAITS
+
+#       A. Add Portait_Country_Name_Sername.dds into:
+
+            # Decent
+            >   / gfx / leaders / tag / Portait_Country_Name_Sername.dds 
+
+            # Flawless
+            >   / gfx / leaders / tag / Portait_Country_Name_Sername_large.dds
+
+#       Important: 
+#       1. leader Images Always Goes Here!
+#       2. large at the end, enables large portait mode when referenced
+
+#       Character
+#       B. Repeat step above but without large and in the characters folder 
+
+#       Flags
+#       C. Add Flag files by the size, while using the name convention "tag.tga" across all flags
+ 
+            # Large 
+            >   / gfx / flags / TAG.tga  <-  Large Flags Folder
+
+            # Medium 
+            >   / gfx / flags / medium / TAG.tga  <-  Medium Flags Folder
+
+            # Small 
+            >   / gfx / flags / small / TAG.tga  <-  Small Flags Folder
+
+#       Important: 
+#       1. Wrong formate won't load! 
+#       2. New flags don't override old ones! 
+----------------------------------------------------------------------------------------------------------------------
+# 4. Add Localisation 
+
+> duhh
+
+----------------------------------------------------------------------------------------------------------------------
+# 5. Add Custom Focus GFX
+
+#           A. Add a GFX File into the Interface folder, like this: 
+
+#           >     interface/focus-AUR_customicons.gfx
+
+#           B. Add GFX code into the file, like this:
+
+            spriteTypes = {
+                ##Icon For: 
+                SpriteType = {
+                    name = "GFX_TAG_name"
+                    texturefile = "gfx/interface/goals/GFX_TAG_name.dds"
+                }
+                # Add Icon Shine Later ^^ 
+
+                SpriteType = { 
+                    # Same as before ...
+                }
+            }
+
+# Don't forget all Focuses Require 2 image! One for not shining and one for shining! 
+----------------------------------------------------------------------------------------------------------------------

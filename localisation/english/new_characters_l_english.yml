@@ -1,0 +1,114 @@
+﻿l_english:
+ SHK_RAIDER_ONE_NAME: "Shadow Raider"
+ SHK_RAIDER_ONE_DESC: "A mysterious and elusive raider known for his stealth and cunning tactics."
+
+ SHK_RAIDER_TWO_NAME: "Desert Raider"
+ SHK_RAIDER_TWO_DESC: "A fierce warrior who thrives in the harsh desert environment, leading his band of marauders."
+
+ SHK_RAIDER_THREE_NAME: "Marauder Leader"
+ SHK_RAIDER_THREE_DESC: "A ruthless and charismatic leader who commands a large group of raiders."
+
+ SHK_RAIDER_FOUR_NAME: "Wasteland Warrior"
+ SHK_RAIDER_FOUR_DESC: "A hardened fighter who has survived countless battles in the wastelands."
+
+ SHK_RAIDER_FIVE_NAME: "Savage Chieftain"
+ SHK_RAIDER_FIVE_DESC: "A brutal and merciless chieftain who rules his raiders with an iron fist."
+
+ SHK_RAIDER_SIX_NAME: "Ruthless Pillager"
+ SHK_RAIDER_SIX_DESC: "A fearsome raider known for his relentless and aggressive pillaging tactics."
+
+ SHK_RAIDER_SEVEN_NAME: "Warband Commander"
+ SHK_RAIDER_SEVEN_DESC: "An experienced commander who leads his warband with tactical precision and ruthless efficiency."
+
+ SHK_RAIDER_EIGHT_NAME: "Night Stalker"
+ SHK_RAIDER_EIGHT_DESC: "A raider who strikes under the cover of darkness, instilling fear in the hearts of his enemies."
+
+ SHK_RAIDER_NINE_NAME: "Fierce Plunderer"
+ SHK_RAIDER_NINE_DESC: "A notorious plunderer known for his ferocity and unquenchable thirst for loot."
+
+ SHK_RAIDER_TEN_NAME: "Ironclad Raider"
+ SHK_RAIDER_TEN_DESC: "A heavily armored raider who is nearly invincible in combat, leading his troops with unmatched strength."
+
+ # The Void Cast  
+ # VOI_REKSAI_NAME: "Rek'Sai"
+ # POLITICS_REKSAI_DESC: "Rek'Sai is a ferocious predator from the Void, renowned for her mastery of ambush and hunting."
+ 
+ VOI_KHAZIX_NAME: "Kha'Zix"
+ POLITICS_KHAZIX_DESC: "Kha'Zix is the Voidreaver, known for his evolution and adaptability in combat."
+ 
+ # VOI_BELVETH_NAME: "Bel'Veth"
+ # POLITICS_BELVETH_DESC: "Bel'Veth is the Empress of the Void, wielding mind control and supreme tactical abilities."
+ 
+ VOI_CHOGATH_NAME: "Cho'Gath"
+ POLITICS_CHOGATH_DESC: "Cho'Gath is the Terror of the Void, a massive creature known for his brute force and insatiable hunger."
+ 
+ # VOI_CHOGATH_NAME: "Cho'Gath"
+ # POLITICS_CHOGATH_DESC: "The Terror of the Void, a monstrous creature of insatiable hunger."
+
+ # VOI_KOGMAW_NAME: "Kog'Maw"
+ # POLITICS_KOGMAW_DESC: "The Mouth of the Abyss, spreading Void corruption wherever he goes."
+
+ VOI_KOGMAW_NAME: "Kog'Maw"
+ POLITICS_KOGMAW_DESC: "Kog'Maw is a living artillery unit from the Void, specializing in explosive attacks and artillery expertise."
+ 
+ VOI_VELKOS_NAME: "Vel'Koz"
+ POLITICS_VELKOS_DESC: "Vel'Koz is a Voidborn unit, his reason for existing is to accept, consume, and learn all the information about Runeterra necessary enough to aid for the eventual return of the Watchers."
+
+ # VOI_VELKOS_NAME: "Vel'Koz"
+ # POLITICS_VELKOS_DESC: "The Eye of the Void, seeking knowledge through disintegration."
+
+ VOI_MALZAHAR_NAME: "Malzahar"
+ POLITICS_MALZAHAR_DESC: "The Void Prophet, guiding his followers towards oblivion."
+
+ VOI_BELVETH_NAME: "Bel'Veth"
+ POLITICS_BELVETH_DESC: "The Empress of the Void, seeking to consume all."
+
+ VOI_REKSAI_NAME: "Rek'Sai"
+ POLITICS_REKSAI_DESC: "The Void Burrower, emerging to devastate her enemies."
+
+ VOI_KAISA_NAME: "Kai'Sa"
+ POLITICS_KAISA_DESC: "The Daughter of the Void, surviving and thriving against all odds."
+
+ VOI_KASSADIN_NAME: "Kassadin"
+ POLITICS_KASSADIN_DESC: "The Void Walker, resisting the Void's encroachment."
+
+ VOI_JAXIMUS_A_NAME: "Jaximus A"
+ POLITICS_JAXIMUS_A_DESC: "The Grandmaster at Arms, an indomitable fighter."
+
+ VOI_JAXIMUS_B_NAME: "Jaximus B"
+ POLITICS_JAXIMUS_B_DESC: "The Grandmaster at Arms, wielding his weapon with unmatched skill."
+
+ VOI_JAX_NAME: "Jax"
+ POLITICS_JAX_DESC: "The Grandmaster at Arms, challenging the strongest warriors."
+
+ VOI_ZILEAN_NAME: "Zilean"
+ POLITICS_ZILEAN_DESC: "The Chronokeeper, manipulating time to achieve his goals."
+
+ # VOI_MALZAHAR_NAME: "Malzahar"
+ # POLITICS_MALZAHAR_DESC: "" Already written
+
+ # Advisor Traits
+ ruthless_hunter: "Ruthless Hunter"
+ supreme_hunter: "Supreme Hunter"
+ scavenger: "Scavenger"
+ evolution_master: "Evolution Master"
+ guerilla_warfare: "Guerilla Warfare"
+ adaptive_strategist: "Adaptive Strategist"
+ void_empress: "Void Empress"
+ mind_control: "Mind Control"
+ devourer_of_worlds: "Devourer of Worlds"
+ brute_force: "Brute Force"
+ artillery_expert: "Artillery Expert"
+ explosive_growth: "Explosive Growth"
+
+ # Character Race
+ human: "Human"
+ mortal: "Mortal" 
+ vastayan: "Vastayan"
+ aquatic_vastayan: "Aquatic Vastayan"
+ void_creature: "Void Creature"
+ voidborn: "Voidborn"
+
+ # Unique
+ amphibious: "Amphibious"
+ amphibious_desc: "Able to live both on §Gland§! and in §Bwater§!."

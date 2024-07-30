@@ -1,0 +1,122 @@
+VOI_void_threat_category = { # VOI_improve_the_void_influence # VOI_improve_the_void_spirit 
+	priority = 90
+	icon = GFX_void_purple_icon_category
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		tag = VOI
+	}
+	
+}
+
+VOI_WAR_category = {
+	priority = 100
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = VOI
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		has_completed_focus = VOI_Embrace_the_Void	
+	}
+
+}
+
+VOI_void_influence_category = { # VOI_improve_the_void_influence # VOI_improve_the_void_spirit 
+	priority = 90
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = VOI
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		has_completed_focus = VOI_Embrace_the_Void	
+	}
+
+	
+}
+
+VOI_icathian_subjugation_category = {
+	priority = 50
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = VOI
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		# has_completed_focus = VOI_Resist_the_Void
+		has_country_flag = resisted_the_void
+	}
+}
+
+VOI_weaponizing_xersai = { 
+	priority = 50
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = VOI
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		has_completed_focus = VOI_Embrace_the_Void
+		not = { has_country_flag = resisted_the_void }
+		has_country_flag = weaponizing_xersai
+	}
+}
+
+VOI_resistance_category = {
+	priority = 50
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = VOI
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		# has_completed_focus = VOI_Resist_the_Void
+		has_country_flag = resisted_the_void
+	}
+}
+
+VOI_void_containment_category = {
+	priority = 50
+	icon = GFX_decision_category_ICE_the_viking_spirit
+	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
+
+	# For which country this DEC is available - only checked AT THE GAME START, so use only country TAG here
+	allowed = {
+		# CONDITIONS listed here
+		original_tag = VOI
+	}
+	
+	# When is this decision VISIBLE (when you can see it in the Decision Tab)
+	visible = {
+		has_completed_focus = VOI_void_containment
+		has = { has_country_flag = resisted_the_void }
+		has_country_flag = VOI_void_containment_started
+	}
+}
+

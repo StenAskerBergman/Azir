@@ -1,0 +1,684 @@
+﻿focus_tree = {
+	id = aurma # File name is just plain "aurma" now
+	default = no
+	continuous_focus_position = { x = 150 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUR
+		}
+	}
+	#National Identity
+	focus = {
+		id = AUR_national_identity
+		icon = GFX_goal_unknown
+		x = 9
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Maritime Heritage
+	focus = {
+		id = AUR_maritime_heritage
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_aurman_navy}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Ocean Stewardship
+	focus = {
+		id = AUR_ocean_stewardship
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 5		
+		prerequisite = { focus = AUR_maritime_mastery }
+		prerequisite = { focus = AUR_our_sea }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Maritime Mastery
+	focus = {
+		id = AUR_maritime_mastery
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		cost = 5
+		prerequisite = { focus = AUR_maritime_heritage }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Aurman sailors
+	focus = {
+		id = AUR_aurman_sailors
+		icon = GFX_goal_unknown # GFX_AUR_aurman_sailors 
+		x = 10
+		y = 2
+		cost = 5
+		prerequisite = { focus = AUR_naval_linage }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Noxian Trade
+	focus = {
+		id = AUR_noxian_trade
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = AUR_navigational_diplomacy }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Family ties
+	focus = {
+		id = AUR_family_ties
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_noxian_trade }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Our Sea
+	focus = {
+		id = AUR_our_sea
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 5
+		prerequisite = { focus = AUR_chaotic_sea }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Piltover Trade
+	focus = {
+		id = AUR_piltover_trade
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		prerequisite = { focus = AUR_navigational_diplomacy }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Clan Medarda
+	focus = {
+		id = AUR_clan_medarda
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_piltover_trade }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	# mutually exclusive 
+	#Blood is thicker than water
+	focus = {
+		id = AUR_blood_is_thicker_than_water
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		mutually_exclusive = { focus = AUR_boats_run_on_water_not_blood }
+		prerequisite = { focus = AUR_family_ties}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	
+	# mutually exclusive 
+	#Boats Run on Water, Not Blood  
+	focus = {
+		id = AUR_boats_run_on_water_not_blood 
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		cost = 5
+		mutually_exclusive = { focus = AUR_blood_is_thicker_than_water }
+		prerequisite = { focus = AUR_clan_medarda }
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+	}
+
+	#Waves of Resilience
+	focus = {
+		id = AUR_waves_of_resilience
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 5
+		prerequisite = { focus = AUR_shifting_currents }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Sea of Profit
+	focus = {
+		id = AUR_sea_of_profit
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 5
+		mutually_exclusive = { focus = AUR_sea_of_blood }
+		prerequisite = { focus = AUR_overclass_society }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Pirate Question
+	focus = {
+		id = AUR_pirate_question
+		icon = GFX_AUR_pirate_question
+		x = 14
+		y = 1
+		cost = 5
+		# Causes Event
+		prerequisite = { focus = AUR_uncertain_waters }
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#Shuriman Threat
+	focus = {
+		id = AUR_shuriman_threat
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 5
+		prerequisite = { focus = AUR_lurking_threats }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Shifting Currents
+	focus = {
+		id = AUR_shifting_currents
+		icon = GFX_focus_generic_refit_civilian_ships #GFX_goal_unknown
+		x = 5
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Uncertain Waters
+	focus = {
+		id = AUR_uncertain_waters
+		icon = GFX_goal_unknown
+		x = 14
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Aurman Pirates
+	focus = {
+		id = AUR_aurman_pirates
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 1
+		prerequisite = { focus = AUR_pirate_question }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Calm Sea
+	focus = {
+		id = AUR_calm_sea
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 5
+		prerequisite = { focus = AUR_waves_of_resilience }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Lurking Threats
+	focus = {
+		id = AUR_lurking_threats
+		icon = GFX_goal_unknown
+		x = 10
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_aurman_sailors } # Don't get confuse sailor with sailors *important* - 30 minute loss
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Aurman Privateer
+	focus = {
+		id = AUR_aurman_privateer
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 5
+		prerequisite = { focus = AUR_pirate_question }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Aurman Navy
+	focus = {
+		id = AUR_aurman_navy
+		icon = GFX_goal_unknown
+		x = 8
+		y = 2
+		cost = 5
+		prerequisite = { focus = AUR_naval_linage }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Naval Linage
+	focus = {
+		id = AUR_naval_linage
+		icon = GFX_goal_unknown
+		x = 9
+		y = 1
+		prerequisite = { focus = AUR_national_identity }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Coastal Raid Parties
+	focus = {
+		id = AUR_coastal_raid_parties
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		cost = 5
+		prerequisite = { 
+			focus = AUR_new_era  
+			focus = AUR_end_to_era 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Overclass Society
+	focus = {
+	id = AUR_overclass_society
+	icon = GFX_goal_unknown
+	x = 1
+	y = 5
+	cost = 5 
+	prerequisite = {  # New prerequisite
+		focus = AUR_boats_run_on_water_not_blood
+		focus = AUR_blood_is_thicker_than_water
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	}
+
+
+	#End to Era
+	focus = {
+		id = AUR_end_to_era
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_aurman_privateer }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#New Era
+	focus = {
+		id = AUR_new_era
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_aurman_pirates }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Naval Outposts
+	focus = {
+		id = AUR_naval_outposts
+		icon = GFX_goal_unknown
+		x = 12
+		y = 4
+		cost = 5
+		prerequisite = { focus = AUR_end_to_era }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Pirate Bay
+	focus = {
+		id = AUR_pirate_bay
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 5
+		prerequisite = { focus = AUR_new_era }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Warm Sea
+	focus = {
+		id = AUR_warm_sea
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = { focus = AUR_waves_of_resilience }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Cold Sea
+	focus = {
+		id = AUR_cold_sea
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 5
+		prerequisite = { focus = AUR_warm_sea }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Sea of Blood
+	focus = {
+		id = AUR_sea_of_blood
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		cost = 1
+		mutually_exclusive = { focus = AUR_sea_of_profit }
+		prerequisite = { focus = AUR_overclass_society }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Island Stewardship
+	focus = {
+		id = AUR_island_stewardship
+		icon = GFX_goal_unknown
+		x = 0
+		y = 8
+		cost = 5		
+		prerequisite = { focus = AUR_sea_of_blood }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	# Island Ownership
+	focus = {
+		id = AUR_island_ownership
+		icon = GFX_goal_unknown
+		x = 2
+		y = 8
+		cost = 5		
+		prerequisite = { focus = AUR_sea_of_profit }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	
+	#Sea of Thiefs
+	focus = {
+		id = AUR_sea_of_thiefs
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 5
+		prerequisite = { focus = AUR_deep_water_supremacy }
+		mutually_exclusive = { focus = AUR_sea_of_iron }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Tight Crews
+	focus = {
+		id = AUR_tight_crews
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 5
+		prerequisite = { focus = AUR_our_sea }
+		prerequisite = { focus = AUR_strait_question }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Oceanic Outreach
+	focus = {
+		id = AUR_oceanic_outreach
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 5
+		prerequisite = { 
+			focus = AUR_naval_outposts 
+			focus = AUR_coastal_raid_parties
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Shallow Water Supremacy
+	focus = {
+		id = AUR_shallow_water_supremacy
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		prerequisite = { focus = AUR_oceanic_outreach }
+		prerequisite = { focus = AUR_warships }
+		prerequisite = { focus = AUR_targonian_nav} # OLD: AUR_targonian_navigators 
+		prerequisite = { focus = AUR_freljordian_boarding_parties }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Sea of Iron
+	focus = {
+		id = AUR_sea_of_iron
+		icon = GFX_goal_unknown
+		x = 13
+		y = 7
+		cost = 5
+		prerequisite = { focus = AUR_shallow_water_supremacy }
+		mutually_exclusive = { focus = AUR_sea_of_thiefs }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Navigational Diplomacy
+	focus = {
+		id = AUR_navigational_diplomacy
+		icon = GFX_AUR_navigational_diplomacy
+		x = 1
+		y = 1
+		cost = 1
+		prerequisite = { focus = AUR_sea_maps }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Sea Maps
+	focus = {
+		id = AUR_sea_maps
+		icon = GFX_AUR_sea_maps #GFX_goal_unknown
+		x = 1
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Warships
+	focus = {
+		id = AUR_warships
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		prerequisite = { focus = AUR_naval_outposts }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Freljordian Boarding Parties
+	focus = {
+		id = AUR_freljordian_boarding_parties
+		icon = GFX_goal_unknown
+		x = 17
+		y = 5
+		cost = 5
+		prerequisite = { focus = AUR_pirate_bay }
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#Chaotic Sea
+	focus = {
+		id = AUR_chaotic_sea
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 1
+		prerequisite = { focus = AUR_calm_sea }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Strait Question
+	focus = {
+		id = AUR_strait_question
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 5
+		prerequisite = { focus = AUR_cold_sea }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Deep Water Supremacy
+	focus = {
+		id = AUR_deep_water_supremacy
+		icon = GFX_goal_unknown
+		x = 15
+		y = 6
+		prerequisite = { focus = AUR_freljordian_boarding_parties }
+		prerequisite = { focus = AUR_targonian_nav} # OLD: AUR_targonian_navigators 
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Open Water Tyrant
+	focus = {
+		id = AUR_water_tyrant
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = AUR_sea_of_iron
+			focus = AUR_sea_of_thiefs
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Targonian Navigators
+	focus = {
+		id = AUR_targonian_nav # OLD: AUR_targonian_navigators
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 1
+		prerequisite = { 
+			focus = AUR_coastal_raid_parties
+			focus = AUR_pirate_bay
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Ocean Masters
+	focus = {
+		id = AUR_ocean_masters
+		icon = GFX_AUR_ocean_masters
+		x = 9
+		y = 5
+		cost = 1
+		prerequisite = { focus = AUR_shuriman_threat }		
+		prerequisite = {	focus = AUR_maritime_mastery } 
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+}

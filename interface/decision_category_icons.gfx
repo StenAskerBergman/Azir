@@ -1,0 +1,31 @@
+spriteTypes = {
+	
+### GLOBAL ####
+
+	spriteType = { 
+		# Name
+		name = "GFX_news_event_shurima_war" 
+		# Path
+		texturefile = "gfx/event_pictures/news_event_shuriman_war.dds"
+	}
+
+### REPORT ####
+
+	spriteType = {
+		name = "GFX_report_event_shurima_war"
+		texturefile = "gfx/event_pictures/report_event_shurima_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_shurima_broken"
+		texturefile = "gfx/event_pictures/report_event_shurima_broken.dds"
+	}
+	
+### SHU ####
+	
+	spriteType = {
+		name = "GFX_report_event_empty_throne"
+		texturefile = "gfx/event_pictures/report_event_shurima_empty_throne.dds"
+	}
+
+}

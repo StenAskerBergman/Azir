@@ -1,0 +1,60 @@
+division_template = {
+ name = "City Guards"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+
+ }
+}
+division_template = {
+ name = "Vanguard"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  cavalry = { x = 1 y = 2 }
+  cavalry = { x = 2 y = 0 }
+
+ }
+}
+division_template = {
+  name = "Scouts Brigade"
+
+  regiments = {
+    cavalry = { x = 0 y = 0 }
+    cavalry = { x = 0 y = 1 }
+    cavalry = { x = 1 y = 0 }
+    cavalry = { x = 1 y = 1 }
+
+  }
+}
+
+units = {
+ division = { # In City
+  name = "City Guards"
+  location = 8604
+  division_template = "City Guards"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = { # Kalamandi Pass - Region
+  name = "Scouts Brigade"
+  location = 4699
+  division_template = "Scouts Brigade"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+  division = { # Kalamandi Pass - Region
+  name = "Scouts Brigade"
+  location = 5387
+  division_template = "Scouts Brigade"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+}

@@ -1,0 +1,45 @@
+ideas = {
+    tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	
+        marai_shipyard = {
+
+            picture = generic_naval_manufacturer_3
+            
+            allowed = {
+                OR = {
+                    is_literally_shurima = yes
+                    tag = AUR
+                    tag = IXT
+                }
+                has_dlc = "Waking the Tiger"
+            }
+
+            available = {
+                or = {
+                    controls_state = 120 
+                    owns_province = 4444
+                }
+            }
+            
+
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+            
+            # riverine warfare weak on open waters
+                        
+            traits = { raiding_fleet_naval_manufacturer }
+            
+        }
+
+    }
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	industrial_concern = {
+	}
+
+}

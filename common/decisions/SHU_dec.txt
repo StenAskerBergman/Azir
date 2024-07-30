@@ -1,0 +1,477 @@
+SHU_main_cat = {
+
+	# In Xerath War
+	
+	SHU_azir_speech = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = SHU
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SHU_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			NOT = { has_global_flag = Shuriman_civil_war }
+		}
+
+		complete_effect = {
+			set_country_flag = SHU_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = SHU_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SHU_inevitable_civil_war_in_progress_flag
+			if = {
+				limit = {
+					NOT = { has_country_flag = SHU_primo_de_rivera_first_speech }
+				}
+				set_country_flag = SHU_primo_de_rivera_first_speech
+			}
+		}
+	}
+
+	SHU_sivir_speech = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = SHU
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SHU_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			NOT = { has_global_flag = Shuriman_civil_war }
+		}
+
+		complete_effect = {
+			set_country_flag = SHU_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = SHU_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SHU_inevitable_civil_war_in_progress_flag
+			if = {
+				limit = {
+					NOT = { has_country_flag = SHU_primo_de_rivera_first_speech }
+				}
+				set_country_flag = SHU_primo_de_rivera_first_speech
+			}
+		}
+	}
+}
+
+SHU_nasus_category = {
+	
+	SHU_restore_great_library_dec ={
+
+		visible = {
+			has_character = SHU_nasus
+		}
+
+		allow = {
+			has_character = SHU_nasus
+		}
+		
+		cost = 250
+
+		complete_effect = {
+			add_ideas = SHU_restore_great_library
+		}
+	} 
+	
+}
+
+SHU_improve_the_god_warriors_influence = { 
+### Ascendant Supremacy - Ultimate power from Shurima
+    ascendant_supremacy = {
+        picture = GFX_idea_generic_aggression
+        available = {
+            has_country_flag = ascension_ritual
+        }
+        removal_cost = -1
+        modifier = {
+            division_attack = 0.2
+            Stability = 0.1
+        }
+    }
+}
+
+
+
+SHU_void_cat = {
+	
+    # Xer'Sai 
+
+	DuneBreakerFound = { 
+
+		##DuneBreaker - Evelynn
+
+		days_mission_timeout = 180
+		icon = DuneBreaker_icon
+		fire_only_once = no
+		allowed = { always = no }	
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			every_controlled_state = {
+				remove_dynamic_modifier = { modifier = void_attack }
+			}
+				country_event = {
+					id = shurima.38
+					days = 1
+				}
+				country_event = {
+					id = shurima.310 # Demacia.9 is suppose to be here, btw
+					days = 40
+				}
+			
+		}
+	}
+	DuneSwallowerFound = { 
+
+		##DuneSwallower - Fiddle (sometimes noctrune I fked up)
+
+		days_mission_timeout = 180
+		icon = XersaiCaller_icon
+		fire_only_once = no
+		allowed = { always = no }	
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			every_controlled_state = {
+				remove_dynamic_modifier = { modifier = void_attack }
+			}
+				country_event = {
+					id = shurima.38
+					days = 1
+				}
+				country_event = {
+					id = shurima.39
+					days = 40
+				}
+			
+		}
+	}
+	XersaiCaller = { 
+
+		##DuneSwallower - XersaiCaller (sometimes DuneSwallower - I fked up)
+
+		days_mission_timeout = 180
+		icon = DuneSwallower_icon
+		fire_only_once = no
+		allowed = { always = no }
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			every_controlled_state = {
+				remove_dynamic_modifier = { modifier = void_attack }
+			}
+			
+				country_event = {
+					id = shurima.38
+					days = 1
+				}
+				country_event = {
+					id = shurima.39
+					days = 40
+				}
+			
+		}
+	}
+	investigate_void = { 
+			available = {
+       			 NOT = { has_country_flag = DuneBreaker }
+       			 NOT = { has_country_flag = DuneSwallower }
+       			 NOT = { has_country_flag = XersaiCaller }
+				 NOT = { has_country_flag = found_void }
+    			}
+	
+			days_remove = 5
+			fire_only_once = no
+
+			cost = 10
+
+			remove_effect = {
+				if = {
+					limit = {
+						has_country_flag = void
+					}
+					set_country_flag = found_void
+					random_list = {
+						33 = {
+							country_event = {
+							id = shurima.34
+							days = 1
+							}
+						}
+						33 = {
+							country_event = {
+							id = shurima.35
+							days = 1
+							}
+						}
+						34 = {
+							country_event = {
+							id = shurima.36
+							days = 1
+							}
+						}
+					}
+				}else = {
+					country_event = {
+						id = shurima.33
+						days = 1
+					}
+				}
+			}
+	}
+	martial_law = { 
+			available = {
+			has_country_flag = found_void
+			 	any_controlled_state = {
+					has_dynamic_modifier = {
+    						modifier = void_attack
+					}
+					#FIX THIS ASAP
+					has_ROOT_at_least_1_div_in_current_state_scope = yes	
+				}
+    			}
+			icon = generic_prepare_civil_war
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 0
+
+			complete_effect = {
+				add_manpower = -10000
+				if = {
+					limit = {
+						has_country_flag = DuneBreaker
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneBreakerFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = XersaiCaller
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneSwallowerFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = DuneSwallower
+					}
+					add_days_mission_timeout  = {
+   				 	mission = XersaiCaller
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+	prepare_a_defense = { 
+			available = {
+			has_country_flag = found_void
+				has_equipment = {
+   				 infantry_equipment_1 > 499
+				}
+    			}
+			icon = generic_industry
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 25
+
+			complete_effect = {
+					add_equipment_to_stockpile = {
+    						type = infantry_equipment
+   						 amount = -500
+   						 producer = SHU
+					}
+				if = {
+					limit = {
+						has_country_flag = DuneBreaker
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneBreakerFound
+   				 	days = -30
+					}
+
+				}else_if = {
+					limit = {
+						has_country_flag = XersaiCaller
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneSwallowerFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = DuneSwallower
+					}
+					add_days_mission_timeout  = {
+   				 	mission = XersaiCaller
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+	relocate_resources = { 
+			available = {
+			has_country_flag = found_void
+				
+    			}
+	
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 50
+
+			complete_effect = {
+				if = {
+					limit = {
+						has_country_flag = DuneBreaker
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneBreakerFound
+   				 	days = -30
+					}
+
+				}else_if = {
+					limit = {
+						has_country_flag = XersaiCaller
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneSwallowerFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = DuneSwallower
+					}
+					add_days_mission_timeout  = {
+   				 	mission = XersaiCaller
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+	request_night_hunter = { 
+			visible = {
+			has_country_flag = vayne	
+			}
+			available = {
+			has_country_flag = found_void	
+    			}
+	
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 0
+
+			complete_effect = {
+				if = {
+					limit = {
+						has_country_flag = DuneBreaker
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneBreakerFound
+   				 	days = -30
+					}
+
+				}else_if = {
+					limit = {
+						has_country_flag = XersaiCaller
+					}
+					add_days_mission_timeout  = {
+   				 	mission = DuneSwallowerFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = DuneSwallower
+					}
+					add_days_mission_timeout  = {
+   				 	mission = XersaiCaller
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+}
+

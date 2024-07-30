@@ -1,0 +1,385 @@
+# SRC: SHU_scripted_effects.txt / INSPIRED BY MEXICO 
+
+# ---------------------
+# Mending Fragmentation
+# ---------------------
+
+	# Shurima Broken -> Fractured
+	# Shurima Fractured -> Scattered
+	# Shurima Scattered -> Apart
+	# Shurima Apart -> United 
+
+SHU_increase_unity = {
+    if = {
+        limit = { has_idea = Shurima_broken }
+        swap_ideas = {
+            remove_idea = Shurima_broken
+            add_idea = Shurima_fractured
+        }
+    }
+    else_if = {
+        limit = { has_idea = Shurima_fractured }
+        swap_ideas = {
+            remove_idea = Shurima_fractured
+            add_idea = Shurima_scattered
+        }
+    }
+    else_if = {
+        limit = { has_idea = Shurima_scattered }
+        swap_ideas = {
+            remove_idea = Shurima_scattered
+            add_idea = Shurima_apart
+        }
+    }
+    else_if = {
+        limit = { has_idea = Shurima_apart }
+        swap_ideas = {
+            remove_idea = Shurima_apart
+            add_idea = Shurima_united
+        }
+    }
+}
+
+SHU_decrease_unity = {
+    if = {
+        limit = { has_idea = Shurima_united }
+        swap_ideas = {
+            remove_idea = Shurima_united
+            add_idea = Shurima_apart
+        }
+    }
+    else_if = {
+        limit = { has_idea = Shurima_apart }
+        swap_ideas = {
+            remove_idea = Shurima_apart
+            add_idea = Shurima_scattered
+        }
+    }
+    else_if = {
+        limit = { has_idea = Shurima_scattered }
+        swap_ideas = {
+            remove_idea = Shurima_scattered
+            add_idea = Shurima_fractured
+        }
+    }
+    else_if = {
+        limit = { has_idea = Shurima_fractured }
+        swap_ideas = {
+            remove_idea = Shurima_fractured
+            add_idea = Shurima_broken
+        }
+    }
+}
+
+SHU_remove_unity = {
+    if = {
+        limit = { has_idea = Shurima_broken }
+        remove_ideas = Shurima_broken
+    }
+    else_if = {
+        limit = { has_idea = Shurima_fractured }
+        remove_ideas = Shurima_fractured
+    }
+    else_if = {
+        limit = { has_idea = Shurima_scattered }
+        remove_ideas = Shurima_scattered
+    }
+    else_if = {
+        limit = { has_idea = Shurima_apart }
+        remove_ideas = Shurima_apart
+    }
+    else_if = {
+        limit = { has_idea = Shurima_united }
+        remove_ideas = Shurima_united
+    }
+}
+
+# ------------------------------
+# Restoring The Shuriman Pride 
+# ------------------------------
+
+    # Shurima shame -> guilt 
+	# Shurima guilt -> hybris 
+	# Shurima hybris -> struggle
+	# Shurima struggle -> pride 
+
+    SHU_increase_pride = {
+        if = {
+            limit = { has_idea = Shuriman_shame }
+            swap_ideas = {
+                remove_idea = Shuriman_shame
+                add_idea = Shuriman_guilt
+            }
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_guilt }
+            swap_ideas = {
+                remove_idea = Shuriman_guilt
+                add_idea = Shuriman_hybris
+            }
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_hybris }
+            swap_ideas = {
+                remove_idea = Shuriman_hybris
+                add_idea = Shuriman_struggle
+            }
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_struggle }
+            swap_ideas = {
+                remove_idea = Shuriman_struggle
+                add_idea = Shuriman_pride
+            }
+        }
+    }
+
+    SHU_decrease_pride = {
+        if = {
+            limit = { has_idea = Shuriman_pride }
+            swap_ideas = {
+                remove_idea = Shuriman_pride
+                add_idea = Shuriman_struggle
+            }
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_struggle }
+            swap_ideas = {
+                remove_idea = Shuriman_struggle
+                add_idea = Shuriman_hybris
+            }
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_hybris }
+            swap_ideas = {
+                remove_idea = Shuriman_hybris
+                add_idea = Shuriman_guilt
+            }
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_guilt }
+            swap_ideas = {
+                remove_idea = Shuriman_guilt
+                add_idea = Shuriman_shame
+            }
+        }
+    }
+
+    SHU_remove_pride = {
+        if = {
+            limit = { has_idea = Shuriman_shame }
+            remove_ideas = Shuriman_shame
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_guilt }
+            remove_ideas = Shuriman_guilt
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_hybris }
+            remove_ideas = Shuriman_hybris
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_struggle }
+            remove_ideas = Shuriman_struggle
+        }
+        else_if = {
+            limit = { has_idea = Shuriman_pride }
+            remove_ideas = Shuriman_pride
+        }
+    }
+    # Shuriman Pride States
+        # Shuriman_shame 
+        # Shuriman_guilt 
+        # Shuriman_hybris
+        # Shuriman_struggle 
+        # Shuriman_pride 
+
+    # Special case:
+        # Nazumah can Remove > Shuriman_shame
+        # Nazumah can Loose > Shuriman_shame
+
+    NAZ_remove_shame = {
+        if = {
+            limit = { has_idea = Shuriman_shame }
+            remove_ideas = Shuriman_shame
+        }
+    }
+
+    SHU_remove_shame_from_nazumah = {
+        if = {
+            limit = { has_country_flag = nazumah_buff }
+            remove_ideas = Shuriman_shame
+            remove_country_flag = nazumah_buff
+        }
+    }
+
+# ------------------------------
+# Restoring Shurima Bonuses
+# ------------------------------
+
+# ignorance unawareness inexperience poor 
+# unenlightenment inability incapability
+# powerlessness disqualification failure
+# frailty impotence inadequacy inaptitude
+# feeble weak impotent paralyzed passive 
+# vulnerable lack shortcoming unfit
+
+# general common extensive universal global
+
+# rampant   uncontrolled  unrestrained    
+# unchecked   unbridled   widespread
+
+    # Widespread Illiteracy
+    # Ineffective Bureaucracy
+    # 
+    # Shuriman Illiteracy
+    # Shuriman Incompetance
+    # Shuriman Army Incompetance
+    # Shuriman Industry Incompetance
+    
+    # Shuriman Brilliance
+    # Shuriman University
+    
+    # Republican
+    # University Programs
+
+    # Imperial 
+    # University Subjects 
+
+    # Federalists
+    # University Collectives
+
+# ------------------------------
+# Restoring Shurima Sovereignty
+# ------------------------------
+
+    # The Great Fall -> The Great Rise 
+    # Colonial Victim -> Colonial Revenge
+    # Colonial Victim -> Sneering Imperialist
+    # Colonial Victim -> Fight the Powers
+    
+    # Colonial Interferance -> Foreign Interferance 
+    # Foreign Interferance -> Enternalize Interferance
+
+    # Colonial Mine Control -> Foreign Mine Control 
+    # Foreign Mine Control -> Nationalize Resource Rights   
+    
+    # Bitter Loosers -> Vicious Return -> Victorious Victors
+
+# ------------------------------
+# Question of Slavery 
+# ------------------------------
+
+    # Republican Ending
+        # Lawless Slavery -> Partial Slavery -> Ending Slavery -> Era Of Freedom 
+
+    # Imperial Ending
+        # Lawless Slavery -> Legal Slavery -> Sun Service -> True Servitude
+
+    # Demonic Endings
+        # Lawless Slavery -> Total Slave State -> Eternal Servitude
+
+    # TODO: Think about this later, for now keep it easy
+
+        # Lawless Slavery   ->    Broken Slavery  ( End )
+        # Lawless Slavery   ->    Lawfull Slavery 
+        # Lawfull Slavery   ->    Stable Slavery
+
+        # Stable Slavery    ->    Reduced Slavery 
+        # Stable Slavery    ->    Ban Slavery 
+        # Stable Slavery    ->    Illegal Slavery 
+
+        # Stable Slavery    ->    State Servitude   ->    Sun Service  
+        # Stable Slavery    ->    Gulag Service    ->    Sun Service
+        # Stable Slavery    ->    State Servitude
+
+
+    # Lawless Slavery   ->    Legalized Slavery  
+
+    # Bad Endings
+    # Legalized Slavery -> State Servitude
+
+
+# ------------------------------
+# Laws of Slavery & Prisons  
+# ------------------------------
+
+# TODO: Complex Slave Law System
+
+# Default States
+    
+    # Slave Law
+        # Legal Slavery
+        # Illegal Slavery 
+        # Banned Slavery 
+    
+    # Slave Rights
+        # Heavy Rights
+        # Bare Rights
+        # No Rights
+        
+    # Slave Types
+        # Companion Slavery 
+        # Child Slavery
+        # Full Slavery
+        # Female Only
+        # Male Only
+
+    # Slave State
+        # Semi Slave State
+        # Total Slave State
+
+# ------------------------------
+# Laws of Slavery & Prisons 
+# ------------------------------
+
+    # Prison Systems
+        # Dockyard Camps
+        # Worker Camps
+        # Train Camps
+        # Mine Camps
+        
+    # Slavery Systems
+        # Private Slavery
+        # State Slavery
+        # Banned Slavery
+        
+# ------------------------------
+# Promote / Demote Society Value 
+# ------------------------------
+
+    # Culture Values
+        # Promote Subservitude
+        # Promote Independance
+        # Promote Collectivism
+        # Promote Idealism
+        # Promote Diversity
+        # Promote Dependancies
+        
+        # Demote Individual Righs
+        # Demote Civil Liberaties
+        # Demote Press Rights / Freedoms
+        # Demote Civil Expendature
+        
+    # Civil Rights
+        
+        # Equity        
+        # Equality 
+        # 
+        # Traditional Roles
+        # Minority Vote
+        
+        
+        
+    # Civil Finacial 
+    
+        # Promote Big Buiness
+        # Promote Small Buisness
+        # Promote Subsidies
+        # Promote Harmoney
+        # Promote 
+        # Farmers Rights
+
+# ------------------------------
+# Question of Acendancy 
+# ------------------------------

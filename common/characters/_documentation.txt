@@ -1,0 +1,81 @@
+# Character database
+#
+# Historical characters are listed within the `characters` root property. E.g.
+# 
+# characters = {
+#     # characters go here
+# }
+#
+# The following definition is supported inside:
+#
+# character = {
+# }
+
+
+
+# Leaving the roles here for reference, but it seems the game can't handle both roles in a single character. 
+#		corps_commander = {
+#			visible = {
+#				has_completed_focus = NOR_appoint_prince_olav_to_army_staff
+#			}
+#			traits = { trait_mountaineer winter_specialist media_personality }
+#			skill = 5
+#			attack_skill = 5
+#			defense_skill = 3
+#			planning_skill = 4
+#			logistics_skill = 4
+#			legacy_id = -1 
+#
+#		}
+#		navy_leader={
+#			visible = {
+#				OR = {
+#					has_completed_focus = NOR_prince_olavs_inspiration
+#					has_completed_focus = NOR_prince_olav_to_navy_staff
+#				}
+#			}
+#			traits={ navy_media_personality bold blockade_runner }
+#			skill=5
+#			attack_skill=6
+#			defense_skill=3
+#			maneuvering_skill=3
+#			coordination_skill=5
+#			legacy_id=-1
+#			
+#		}
+
+
+
+#################################
+#################################
+####                         ####
+####     Country Leaders     ####
+####                         ####
+#################################
+#################################
+
+#################################
+#################################
+####                         ####
+####   Political Advisors    ####
+####                         ####
+#################################
+#################################
+
+#################################
+#################################
+####                         ####
+####      UNIT LEADERS       ####
+####                         ####
+#################################
+#################################
+
+
+#################################
+#################################
+####                         ####
+####      ARMY ADVISORS      ####
+####                         ####
+#################################
+#################################
+	

@@ -1,0 +1,106 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+aurma_shipyard = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+
+	allowed = {
+        AND = { 
+            controls_state = 110  # controlled_province = 5071s
+		    OR = {
+			    is_literally_shurima = yes
+                is_country_freljord = yes
+				tag = AUR
+                tag = IXT
+				tag = NOX
+				tag = PIL
+            }
+	    	has_dlc = "Waking the Tiger"
+        } 
+	}
+	available = {
+		owner = { controls_state = 110 }
+	}
+}
+
+marai_shipyard = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+
+	allowed = {
+		    OR = {
+			    is_literally_shurima = yes
+                tag = AUR
+                tag = IXT
+            }
+	    	has_dlc = "Waking the Tiger"
+        
+	}
+	available = {
+		owner = { controls_state = 120 } # controlled_province = 4444
+	}
+}
+
+
+marai_dockyards = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+
+	allowed = {
+        AND = { 
+            controls_state = 120  # controlled_province = 4444
+		    OR = {
+			    is_literally_shurima = yes
+                tag = AUR
+                tag = IXT
+            }
+	    	has_dlc = "Waking the Tiger"
+        } 
+	}
+	available = {
+		owner = { controls_state = 120 }
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################

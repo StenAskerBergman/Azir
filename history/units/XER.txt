@@ -1,0 +1,244 @@
+division_template = {
+ name = "Arcane Followers"
+ template_counter = 4 # Blitz Icon 
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+units = {
+#  division = {
+#   name = "Light Soldier"
+#   location = 703
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Light Soldier"
+#   location = 9001
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Light Soldier"
+#   location = 674
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Light Soldier"
+#   location = 3281
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+  division = {
+  name = "Light Soldier"
+  location = 5552
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 5552
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 5552
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9502
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9464
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9459
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9437
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9441
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 5127
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 1494
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9339
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9308
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 4228
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+  division = {
+  name = "Light Soldier"
+  location = 9324
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+}
+#   division = {
+#   name = "Light Soldier"
+#   location = 5015
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 5586
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 2991
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 2997
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 9052
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 5518
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 2224
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 5277
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 46
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 1700
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 2324
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 1100
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 1635
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+#   division = {
+#   name = "Light Soldier"
+#   location = 51
+#   division_template = "Arcane Followers"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+# }
+}

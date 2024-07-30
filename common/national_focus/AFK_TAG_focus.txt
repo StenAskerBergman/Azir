@@ -1,0 +1,180 @@
+### FOCUSES (See MODDING TUTORIAL video n. 2 "Focuses, Command & Scopes" on YouTube "Narzgel". If you need any advice, check the UMC Discord)
+# AFK = reserved space for the TAG of your nation
+
+##### FOCUS TREE
+# In this first part you only need to change "id" (to your unique ID of your FOCUS TREE) and "tag = " in the "modifier" part.
+focus_tree = {
+	# ID of the whole FOCUS TREE
+	id = AFK_focus
+	
+	# If Generic nations (those without focus tree) will try to use this FOCUS TREE
+	default = no
+	
+	# How likely is country to use this FOCUS TREE
+	country = {
+		factor = 0
+		
+		# Adding TAG of the country you want (for example GER for Germany) will make that country to use this FOCUS TREE
+		modifier = {
+			add = 50
+			tag = AFK
+		}
+	}
+	
+	# CONTINUOUS FOCUS position (X = left / right, Y = up / down)
+	continuous_focus_position = { x = 25 y = 680 }	
+	
+	##### INDIVIDUAL FOCUSES
+	
+	### EXPLANATORY DECISIONS (You can delete them and use the ones bellow if you don't want my notes there :-))
+	focus = {
+		# ID of the FOCUS (must be always unique!)
+		id = AFK_EXPL_one
+		# ICON of the focus
+		icon = GFX_thisgfxiswrong
+		
+		# POSITIONING (X = left / right, Y = up / down)
+		x = 0
+		y = 0
+		
+		# How many days will it take to complete this FOCUS. This COST is multiplied by 7, so COST 10 = 70 days
+		cost = 10
+		
+		# When is this focus AVAILABLE - what conditions you must satisfy in order to select this FOCUS
+		available = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# You get this when you complete this FOCUS
+		completion_reward = {
+			# EFFECTS listed here
+			
+			
+		}
+		
+		# How likely is AI to select this FOCUS
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		# ID of the FOCUS (must be always unique!)
+		id = AFK_EXPL_two
+		# ICON of the focus
+		icon = GFX_thisgfxiswrong
+		# To what FOCUS is this FOCUS linked to (which focus must be completed before this one)
+		prerequisite = { focus = AFK_EXPL_one }
+		# With which FOCUS is this FOCUS mutually exclusive with (you can only complete one of these focuses. MUST BE LISTED in BOTH of the FOCUSes!)
+		mutually_exclusive = {  }
+		
+		# POSITIONING (X = left / right, Y = up / down)
+		x = 0
+		y = 1
+		# RELATIVE POSITIONG - Position you set up in x/y will be also based on the position of the focus you list here. SUPER USEFUL! (You can then move big parts of the FOCUS TREE for example)
+		relative_position_id = AFK_EXPL_one
+		
+		# How many days will it take to complete this FOCUS. This COST is multiplied by 7, so COST 10 = 70 days
+		cost = 10
+		
+		# When is this focus AVAILABLE - what conditions you must satisfy in order to select this FOCUS
+		available = {
+			# CONDITIONS listed here
+			
+		}
+		
+		# You get this when you complete this FOCUS
+		completion_reward = {
+			# EFFECTS listed here
+			
+			
+			
+			##### LISTED BELLOW are some things that you can use here. It might save you some time if you need them
+			### IF / ELSE_IF / ELSE
+			# IF - EFFECTS here will happens only if CONDITIONS in LIMIT are satisfied
+			IF = {
+				LIMIT = {
+					# CONDITIONS listed here
+					
+				}
+				
+				# EFFECTS listed here
+				
+			}
+			# ELSE_IF - EFFECTS here will happen only if the CONDITIONS in IF are not satisfied and if conditions listed here in LIMIT are satisifed
+			ELSE_IF = {
+				LIMIT = {
+					# CONDITIONS listed here
+					
+				}
+				
+				# EFFECTS listed here
+				
+			}
+			# ELSE - EFFECTS here will happen only if the CONDITIONS in IF and ELSE_IF are not satisfied
+			ELSE = {
+				# EFFECTS listed here
+				
+			}
+		}
+		
+		# How likely is AI to select this FOCUS
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	
+	
+	### EXEMPLARY FOCUSES
+	focus = {
+		id = AFK_one
+		icon = GFX_thisgfxiswrong
+		
+		x = 0
+		y = 0
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = AFK_two
+		icon = GFX_thisgfxiswrong
+		prerequisite = { focus = AFK_one }
+		
+		x = 0
+		y = 1
+		relative_position_id = AFK_one
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

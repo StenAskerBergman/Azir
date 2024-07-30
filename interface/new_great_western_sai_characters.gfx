@@ -1,0 +1,17 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Larger 
+	
+	# Rasha
+	SpriteType = {
+		name = "GFX_portrait_gws_nafir_large"
+		texturefile = "gfx/leaders/GWS/portrait_gws_nafir_large.dds"
+
+	}
+
+# Smaller 
+
+	# None
+}

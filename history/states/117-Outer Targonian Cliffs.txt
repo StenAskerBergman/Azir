@@ -1,0 +1,45 @@
+
+state={
+	id=117
+	name="STATE_117"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 9
+ rubber = 6
+ steel = 5
+ oil = 6
+ #chromium = 3
+ #aluminium = 4
+ }
+ history = {
+ owner = XER
+ add_core_of = SHU
+ add_core_of = XER 
+ add_core_of = TAR
+
+ #victory_points = {
+ #266 10
+ #}
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 0
+   #dockyard = 0
+   #1503 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		286 412 674 1316 2933 3069 3284 4008 4297 4402 4660 4709 5042 5078 5354 5407 5741 8884 8932 8933 8954 8973 9005 9081 9139 9240 9409 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=976451
+        state_category = town
+}

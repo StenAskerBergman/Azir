@@ -1,0 +1,236 @@
+ideas = {
+
+	country = {
+			
+	}
+
+
+	mobilization_laws = {
+	}
+    
+	economy = {
+        law = yes
+        use_list_view = yes
+
+        abandonment = {
+            allowed = {
+                always = no
+            }
+			
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_expected_value = 0.75
+                production_speed_industrial_complex_factor = -0.75
+                production_speed_arms_factory_factor = -0.75
+                production_speed_dockyard_factor = -0.75
+                conversion_cost_civ_to_mil_factor = 0.75
+                conversion_cost_mil_to_civ_factor = 0.75
+                generate_wargoal_tension = 1.00
+                join_faction_tension = 1
+                lend_lease_tension = 0.75
+                send_volunteers_tension = 0.72
+                guarantee_tension = 1
+                max_fuel_factor = -0.95
+                fuel_gain_factor = -0.9
+                agency_upgrade_time = 2.0
+            }
+
+            allowed_to_remove = {
+                IF = {
+                    limit = {
+                        original_tag = SHU
+                    }
+                    OR = {
+                        has_war_support > 0.5
+                        has_stability > 0.5
+                        has_completed_focus = SHU_Restoring_Shuriman_Economy
+						has_completed_focus = SHU_Restoring_Icathian_Economy
+                    }
+                }
+                ELSE = {
+                    OR = {
+                        has_war_support > 0.5
+                        has_war = yes
+                    }
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+		
+        empty_desert = {
+            allowed = {
+                always = no
+            }
+			
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_expected_value = 0.5
+                production_speed_industrial_complex_factor = -0.5
+                production_speed_arms_factory_factor = -0.5
+                production_speed_dockyard_factor = -0.5
+                conversion_cost_civ_to_mil_factor = 0.5
+                conversion_cost_mil_to_civ_factor = 0.5
+                join_faction_tension = 0.5
+                lend_lease_tension = 0.5
+                send_volunteers_tension = 0.25
+
+                max_fuel_factor = -0.5
+                fuel_gain_factor = -0.5
+                agency_upgrade_time = 1.2
+            }
+
+            allowed_to_remove = {
+                IF = {
+                    limit = {
+                        original_tag = SHU
+                    }
+                    OR = {
+                        has_war_support > 0.5
+                        has_stability > 0.5
+						has_completed_focus = SHU_economic_revival
+                        has_completed_focus = SHU_Restoring_Shuriman_Economy
+						has_completed_focus = SHU_Restoring_Icathian_Economy
+                    }
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        destroyed_sun_disc = {
+            allowed = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_expected_value = 0.75
+                production_speed_industrial_complex_factor = -0.75
+                production_speed_arms_factory_factor = -0.75
+                production_speed_dockyard_factor = -0.75
+                conversion_cost_civ_to_mil_factor = 0.75
+                conversion_cost_mil_to_civ_factor = 0.75
+                generate_wargoal_tension = 1.00
+                join_faction_tension = 1
+                lend_lease_tension = 0.75
+                send_volunteers_tension = 0.72
+                guarantee_tension = 1
+                max_fuel_factor = -0.95
+                fuel_gain_factor = -0.9
+                agency_upgrade_time = 2.0
+            }
+
+            allowed_to_remove = {
+                IF = {
+                    limit = {
+                        tag = ROOT
+                    }
+                    OR = {
+                        has_country_flag = has_amulet
+                    }
+                }
+                ELSE = {
+                    OR = {
+                        # Allied Country has Amulet
+                        # Root in faction = { has_country_flag = has_amulett }
+                        # Root ask FROM to activate amulet
+                        # Event 
+                    }
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+		
+        forgotten_sun_disc = {
+            allowed = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_expected_value = 0.5
+                production_speed_industrial_complex_factor = -0.5
+                production_speed_arms_factory_factor = -0.5
+                production_speed_dockyard_factor = -0.5
+                conversion_cost_civ_to_mil_factor = 0.5
+                conversion_cost_mil_to_civ_factor = 0.5
+                join_faction_tension = 0.5
+                lend_lease_tension = 0.5
+                send_volunteers_tension = 0.25
+
+                max_fuel_factor = -0.5
+                fuel_gain_factor = -0.5
+                agency_upgrade_time = 1.2
+            }
+
+            allowed_to_remove = {
+                IF = {
+                    limit = {
+                        original_tag = SHU
+                        # original_tag = XER
+                        # original_tag = NAZ
+                        
+                    }
+                    OR = {
+                        has_war_support > 0.5
+                        has_stability > 0.5
+						has_completed_focus = SHU_economic_revival
+                        has_completed_focus = SHU_Restoring_Shuriman_Economy
+						has_completed_focus = SHU_Restoring_Icathian_Economy
+                    }
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+		
+		Restored_Sun_Dics = {
+            allowed = {
+                always = no
+            }
+		}
+
+		Deactived_Sun_Disc = {
+            allowed = {
+                always = no
+            }
+		}
+
+		
+        Activated_Sun_Disc = {
+            allowed = {
+                always = no
+            }
+		}
+
+    }
+	political_advisor = {
+	}
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	industrial_concern = {
+	}
+	theorist = {
+	}
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+}

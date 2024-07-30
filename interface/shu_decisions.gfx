@@ -1,0 +1,39 @@
+
+spriteTypes = {	
+    
+    # Shuriman Decisions Voidling Reports
+	spriteType = {
+		name = "GFX_decision_cat_picture_SHU_xersai"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_SHU_xersai.dds"
+    }	
+
+    # Dune Swallower
+    spriteType = {
+		name = "GFX_decision_DuneSwallower_icon"
+		texturefile = "gfx/interface/decisions/decision_DuneSwallower.dds"
+	}
+
+    # Dune Breaker
+    spriteType = {
+		name = "GFX_decision_DuneBreaker_icon"
+		texturefile = "gfx/interface/decisions/decision_DuneBreaker.dds"
+	}
+
+    # Dune Callers
+    spriteType = {
+		name = "GFX_decision_XersaiCallers_icon"
+		texturefile = "gfx/interface/decisions/decision_XersaiCallers.dds"
+	}
+
+    # modifier resistance buffed
+	spriteType = {
+		name = "GFX_modifier_rebel_buffed"
+		texturefile = "gfx/interface/modifiers/modifier_resistance_buffed.dds"
+	}
+    
+    # modifier void attack
+	spriteType = {
+		name = "GFX_modifier_demons_attack"
+		texturefile = "gfx/interface/modifiers/modifier_void_attack.dds"
+	}
+}

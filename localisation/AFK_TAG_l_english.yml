@@ -1,0 +1,76 @@
+﻿l_english:
+################################### TRAITS                      \n      §H§!
+ #####
+ 
+ ##### ADVISORS
+ 
+ ##### ARMY CHIEF
+ 
+ ##### NAVY CHIEF
+ 
+ ##### AIR CHIEF
+ 
+ ##### HIGH COMMAND
+ 
+ ##### ARMOR DESIGNER
+ 
+ ##### AIRCRAFT DESIGNER
+ 
+ ##### SHIP DESIGNER
+ 
+ ##### MATERIAL DESIGNER
+ 
+ ##### INDUSTRIAL CONCERN
+ 
+ ##### THEORIST
+ 
+################################### OPINION MODIFIERS           \n      §H§!
+ 
+ 
+ 
+ 
+################################### FOCUSES                     \n      §H§!
+ 
+ 
+ 
+ 
+################################### IDEAS                       \n      §H§!
+ 
+ 
+ 
+ 
+################################### DECISIONS                   \n      §H§! 
+ 
+ 
+ 
+ 
+################################### EVENTS                      \n      §H§!
+ 
+ 
+ 
+ 
+ afk_tag.1000000.t:0 ""
+ afk_tag.1000000.d:0 ""
+ afk_tag.1000000.a:0 ""
+ afk_tag.1000000.b:0 ""
+ afk_tag.1000000.c:0 ""
+ 
+################################### OTHER\n                     \n      §H§!
+
+ DOM_CHARACTER_XERATH:0 "Xerath"
+ DOM_XERATH_DESC:0 "The Magus Ascendant /n Xerath is an Ascended Magus of ancient Shurima Crest icon Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven insane with power, he now seeks to take what he believes is rightfully his and replace the upstart civilizations of the world with one fashioned in his image."
+ 
+ HAI_CHARACTER_TALIYAH:0 "Taliyah"
+ HAI_TALIYAH_DESC:0 "Taliyah of the Nasaaj, The Stoneweaver /n Taliyah is a nomadic mage from Shurima Crest icon Shurima, torn between teenage wonder and adult responsibility. She has crossed nearly all of Valoran on a journey to learn the true nature of her growing powers, though more recently she has returned to protect her tribe. Some have mistaken her compassion for weakness and paid the ultimate price—for beneath Taliyah's youthful demeanor is a will strong enough to move mountains, and a spirit fierce enough to make the earth itself tremble."
+  
+ CUB_CHARACTER_AZIR:0 "Azir"
+ CUB_AZIR_DESC:0 "The Acended Emperor of Shurima /n Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended being of immense power. With his buried city risen from the sand, Azir seeks to restore Shurima to its former glory."
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

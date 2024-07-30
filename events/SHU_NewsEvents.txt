@@ -1,0 +1,362 @@
+﻿###########################
+# Shuriman Expansion Pack
+# Runeterra - News Events
+###########################
+
+add_namespace = shuriman_rnews
+
+# The Rise of the Sun Disc
+news_event = {
+    id = shuriman_rnews.7
+    title = shuriman_rnews.7.t
+    desc = shuriman_rnews.7.d
+    picture = GFX_news_event_sundisc_risen
+
+	major = yes
+    is_triggered_only = yes
+    
+    fire_only_once = yes
+
+    trigger = {
+        NOT = { TAG = XER }
+    }
+    
+    option = {
+        name = shuriman_rnews.7.a
+        ai_chance = { factor = 100 }
+        trigger = {
+            NOT = { TAG = SHU }
+        }
+    }
+
+    option = {
+        name = shuriman_rnews.7.b
+        ai_chance = { factor = 100 }
+        trigger = {
+            TAG = SHU
+        }
+    }
+}
+
+
+# Shuriman Great War - News: Xerath vs Shurima
+news_event = {
+	id = shuriman_rnews.5 
+	title = "Shuriman Great War" 
+	desc = "War has broken out between Xerath and Azir, the two demi gods will now send shuriman back into another era of tornment! Who will win come out on top remains to be seen!" 
+	picture = GFX_report_event_shurima_war
+	
+	mtth = { days = 1 }
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		
+		SHU = {
+			has_war_with = XER
+		}
+	
+		XER = {
+			has_war_with = SHU
+			has_offensive_war_with = SHU
+		}
+	}
+
+	option = {
+		name = "Another war over sand..." # news.2.a		
+		trigger = {
+			NOT = {
+				TAG = XER
+				TAG = SHU
+			} 
+		}
+	}
+	option = {
+		name = "Its Time..." # news.2.b
+		trigger = { TAG = XER }
+	}
+	option = {
+		name = "There can be Only One!" # news.2.c
+		trigger = { TAG = SHU }
+	}
+}
+
+
+# Shuriman Great War - News: Noxus vs Shurima
+news_event = {
+	id = shuriman_rnews.51 
+	title = "Shuriman Great War" 
+	desc = "War has broken out between Noxians and Azir, the two factions will now send the world back into another era of tornment! Who will win come out on top remains uncertain!" 
+	picture = GFX_report_event_shurima_war
+	
+	mtth = { days = 1 }
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		
+		SHU = {
+			has_war_with = NOX
+		}
+	
+		NOX = {
+			has_war_with = SHU
+			has_offensive_war_with = SHU
+		}
+	}
+
+	option = {
+		name = "Another war over sand..." # news.2.a		
+		trigger = {
+			NOT = {
+				TAG = XER
+				TAG = SHU
+			} 
+		}
+	}
+	option = {
+		name = "Its Time..." # news.2.b
+		trigger = { TAG = XER }
+	}
+	option = {
+		name = "There can be Only One!" # news.2.c
+		trigger = { TAG = SHU }
+	}
+}
+
+news_event = {
+	id = shuriman_rnews.6
+	title = shuriman_rnews.6.t
+	desc = shuriman_rnews.6.d
+	picture = GFX_report_event_shurima_war
+	
+		fire_only_once = yes
+	is_triggered_only = yes
+
+	# trigger = { }
+
+}
+
+
+
+
+# Canals - Suez Canal Blown
+news_event = {
+	id = shuriman_rnews.40
+	title = shuriman_rnews.40.t
+	desc = {
+		text = shuriman_rnews.40.desc_eng
+		trigger = {
+			FROM = {
+				has_country_flag = destroy_sun_disc
+				owns_state = 446
+				#owns_state = 453
+			}
+		}
+	}
+	desc = {
+		text = shuriman_rnews.40.desc_not_eng
+		trigger = {
+			FROM = {
+				OR = {
+					NOT = {	has_country_flag = destroy_sun_disc }
+					NOT = {
+						owns_state = 446
+						#owns_state = 453
+					}
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = shuriman_rnews.40.a
+		trigger = {
+			NOT = { has_country_flag = destroy_sun_disc }
+			owns_state = 446
+			#owns_state = 453
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = shuriman_rnews.40.b
+		trigger = {
+			has_country_flag = destroy_sun_disc
+			owns_state = 446
+			#owns_state = 453
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+		clr_country_flag = destroy_sun_disc
+	}
+	option = {
+		name = shuriman_rnews.40.c
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 446
+				#owns_state = 453
+				has_country_flag = destroy_sun_disc
+			}
+		}
+	}
+	option = {
+		name = shuriman_rnews.40.d
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 446
+				#owns_state = 453
+			}
+			has_country_flag = destroy_sun_disc
+		}
+		clr_country_flag = destroy_sun_disc
+	}
+	option = {
+		name = shuriman_rnews.40.e
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 446
+				#owns_state = 453
+				NOT = { has_country_flag = destroy_sun_disc }
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = destroy_sun_disc
+			}
+			NOT = { has_country_flag = destroy_sun_disc }
+		}
+	}
+	option = {
+		name = shuriman_rnews.40.f
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 446
+				#owns_state = 453
+				has_country_flag = destroy_sun_disc
+			}
+			NOT = { has_country_flag = destroy_sun_disc }
+		}
+	}
+	option = {
+		name = shuriman_rnews.40.g
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_country_flag = destroy_sun_disc
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 446
+				#owns_state = 453
+				NOT = { has_country_flag = destroy_sun_disc }
+			}
+			NOT = { has_country_flag = destroy_sun_disc }
+		}
+	}
+	option = {
+		name = shuriman_rnews.40.h
+		trigger = {
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					has_country_flag = destroy_sun_disc
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					owns_state = 446
+					#owns_state = 453
+					has_country_flag = destroy_sun_disc
+				}
+			}
+			NOT = { has_country_flag = destroy_sun_disc }
+		}
+	}
+}
+
+# Canals - Suez Canal Rebuilt
+news_event = {
+	id = shuriman_rnews.42
+	title = shuriman_rnews.42.t
+	desc = shuriman_rnews.42.desc
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = shuriman_rnews.42.a
+		trigger = {
+			original_tag = ENG
+			has_country_flag = restore_sun_disc
+		}
+		clr_country_flag = restore_sun_disc
+	}
+	option = {
+		name = shuriman_rnews.42.b
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_country_flag = restore_sun_disc
+		}
+		clr_country_flag = restore_sun_disc
+	}
+	option = {
+		name = shuriman_rnews.42.c
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = restore_sun_disc
+			}
+			NOT = { has_country_flag = restore_sun_disc }
+		}
+	}
+	option = {
+		name = shuriman_rnews.42.d
+		trigger = {
+			any_other_country = {
+				has_war_with = ROOT
+				has_country_flag = restore_sun_disc
+			}
+			NOT = { has_country_flag = restore_sun_disc }
+		}
+	}
+	option = {
+		name = shuriman_rnews.42.e
+		trigger = {
+			NOT = { has_country_flag = restore_sun_disc }
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					has_country_flag = restore_sun_disc
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_with = ROOT
+					has_country_flag = restore_sun_disc
+				}
+			}
+		}
+	}
+}

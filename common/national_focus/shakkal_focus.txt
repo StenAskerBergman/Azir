@@ -1,0 +1,944 @@
+focus_tree = {
+    id = shakkal_focus
+    continuous_focus_position = { x = 150 y = 1000 } # y = 600 }
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SHK 
+        }
+    }
+
+    default = no
+
+    # New Leadership
+    focus = {
+        id = SHK_new_leadership
+        icon = GFX_focus_generic_political_pressure
+        x = 4
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = SHK_the_sadists
+        relative_position_id = SHK_new_leadership
+        icon = GFX_focus_generic_tanks
+        x = -3
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_new_leadership }
+        completion_reward = {
+            division_attack_on_core_factor = 0.10
+            add_stability = -0.05
+        }
+    }
+    # TODO: I don't like the name, not cannon 
+    # Tinkers, Looters, Prospectors, Salvagers 
+    focus = {
+        id = SHK_the_eggheads
+        relative_position_id = SHK_new_leadership
+        icon = GFX_focus_generic_science
+        x = -1
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_new_leadership }
+        completion_reward = {
+            research_speed = 0.10
+            planning_speed = 0.05
+        }
+    }
+
+    focus = {
+        id = SHK_the_grunts
+        relative_position_id = SHK_new_leadership
+        icon = GFX_focus_generic_army_training
+        x = 1
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_new_leadership }
+        completion_reward = {
+            division_defense_factor = 0.10
+            training_time_factor = -0.05
+        }
+    }
+
+    focus = {
+        id = SHK_the_boss
+        relative_position_id = SHK_new_leadership
+        icon = GFX_focus_generic_political_pressure
+        x = 3
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_new_leadership }
+        completion_reward = {
+            add_stability = 0.15
+            add_war_support = 0.10
+        }
+    }
+
+    focus = {
+        id = SHK_preparing_for_total_war
+        relative_position_id = SHK_the_sadists
+        icon = GFX_focus_generic_war_propaganda
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_the_sadists }
+        completion_reward = {
+            add_war_support = 0.10
+            add_recruitable_population_factor = 0.05
+        }
+    }
+
+    focus = {
+        id = SHK_draconian_recovery
+        relative_position_id = SHK_preparing_for_total_war
+        icon = GFX_focus_generic_production
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_preparing_for_total_war }
+        completion_reward = {
+            factory_output_factor = 0.20
+            add_stability = -0.10
+        }
+    }
+
+    focus = {
+        id = SHK_critical_thinking
+        relative_position_id = SHK_the_eggheads
+        icon = GFX_focus_generic_science
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_the_eggheads }
+        completion_reward = {
+            research_speed_factor = 0.10
+            planning_speed_factor = 0.05
+        }
+    }
+
+    focus = {
+        id = SHK_the_master_plan
+        relative_position_id = SHK_critical_thinking
+        icon = GFX_focus_generic_strategy
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_critical_thinking }
+        completion_reward = {
+            planning_speed_factor = 0.10
+            organization_factor = 0.10
+        }
+    }
+
+    focus = {
+        id = SHK_gangland_diplomacy
+        relative_position_id = SHK_the_grunts
+        icon = GFX_focus_generic_diplomacy
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_the_grunts }
+        completion_reward = {
+            infantry_equipment_production_factor = 0.10
+            political_power_gain = 0.05
+        }
+    }
+
+    focus = {
+        id = SHK_everyone_works
+        relative_position_id = SHK_gangland_diplomacy
+        icon = GFX_focus_generic_allies_build
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_gangland_diplomacy }
+        completion_reward = {
+            production_efficiency_factor = 0.10
+            add_recruitable_population_factor = 0.05
+        }
+    }
+
+    focus = {
+        id = SHK_dont_question_the_boss
+        relative_position_id = SHK_the_boss
+        icon = GFX_focus_generic_political_pressure
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_the_boss }
+        completion_reward = {
+            add_stability = 0.20
+            political_power_gain = 0.10
+        }
+    }
+
+    focus = {
+        id = SHK_iron_grip
+        relative_position_id = SHK_dont_question_the_boss
+        icon = GFX_focus_generic_authoritarian
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = SHK_dont_question_the_boss }
+        completion_reward = {
+            add_war_support = 0.10
+            add_stability = 0.10
+        }
+    }
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+	# Shared Focus
+	shared_focus = RAI_rise_of_the_shuriman_raiders # raider_focus_shared
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # new branch
+    # prerequisite = { focus = SHK_ }
+    focus = {
+        id = SHK_reject_our_ways
+        icon = GFX_focus_generic_expansion
+        x = 6
+        y = 0
+		offset = { # Mostly so I can view this tree in the extension
+			y = 0
+			x = 5
+			trigger = {
+				tag = SHU
+			}
+		}
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        mutually_exclusive = {focus = SHK_reject_their_rules }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_reject_their_rules
+        icon = GFX_focus_generic_expansion
+        x = 2
+        y = 0
+        relative_position_id = SHK_reject_our_ways
+        mutually_exclusive = {focus = SHK_reject_our_ways }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_constant_resistance
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_reject_their_rules
+        prerequisite = { focus = SHK_reject_their_rules }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_icathian_ties
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_icathian_heritage
+        prerequisite = { focus = SHK_icathian_heritage }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_ancestral_lineage
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_return_to_traditions
+        prerequisite = { focus = SHK_return_to_traditions }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_foreign_trade
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 2
+        relative_position_id = SHK_constant_resistance
+        prerequisite = { focus = SHK_constant_resistance }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_icathian_heritage
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 2
+        relative_position_id = SHK_foreign_trade
+        prerequisite = { focus = SHK_foreign_trade }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_embrace_new_ways
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_reject_our_ways
+        prerequisite = { focus = SHK_reject_our_ways }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_settle_down
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 2
+        relative_position_id = SHK_embrace_new_ways
+        prerequisite = { focus = SHK_embrace_new_ways }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_return_to_traditions
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 2
+        relative_position_id = SHK_settle_down
+        prerequisite = { focus = SHK_settle_down }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_our_lands
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_reject_our_ways
+        prerequisite = { focus = SHK_reject_our_ways focus = SHK_reject_their_rules }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_our_coast
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 1
+        relative_position_id = SHK_our_lands
+        prerequisite = { focus = SHK_our_lands }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_our_sea
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 1
+        relative_position_id = SHK_our_coast
+        prerequisite = { focus = SHK_our_coast }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_our_share
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 1
+        relative_position_id = SHK_our_sea
+        prerequisite = { focus = SHK_our_sea }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_our_ancestors
+        icon = GFX_focus_generic_expansion
+        x = 0
+        y = 1
+        relative_position_id = SHK_our_share
+        prerequisite = { focus = SHK_our_share }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_kill_burn_destroy
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_our_ancestors
+        prerequisite = { focus = SHK_reject_their_rules  focus = SHK_our_ancestors   }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_protect_shield_guard
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_our_ancestors
+        prerequisite = { focus = SHK_reject_our_ways  focus = SHK_our_ancestors   }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_rebuild
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_protect_shield_guard
+        prerequisite = { 
+            focus = SHK_protect_shield_guard 
+            focus = SHK_ancestral_lineage
+            # focus = SHK_kill_burn_destroy 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_resemble
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_protect_shield_guard
+        prerequisite = { 
+            focus = SHK_protect_shield_guard 
+            focus = SHK_kill_burn_destroy 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_recreate
+        icon = GFX_focus_generic_expansion
+        x = 3
+        y = 1
+        relative_position_id = SHK_protect_shield_guard
+        prerequisite = { 
+            # focus = SHK_protect_shield_guard 
+            focus = SHK_icathian_ties
+            focus = SHK_kill_burn_destroy 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_shakkal_republic
+        icon = GFX_focus_generic_expansion
+        x = -3
+        y = 1
+        relative_position_id = SHK_recreate
+        prerequisite = { 
+            focus = SHK_rebuild 
+            focus = SHK_resemble 
+        }
+        prerequisite = {  
+            focus = SHK_protect_shield_guard 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+        mutually_exclusive = {
+            focus = SHK_greater_shakkal
+            focus = SHK_icathia_alliance
+            focus = SHK_icathia_reborn
+        }
+    }
+
+    focus = {
+        id = SHK_greater_shakkal
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_rebuild
+        prerequisite = { focus = SHK_rebuild }
+        prerequisite = { focus = SHK_ancestral_lineage}
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+        mutually_exclusive = {
+            focus = SHK_shakkal_republic
+            focus = SHK_icathia_alliance
+            focus = SHK_icathia_reborn
+        }
+    }
+
+    focus = {
+        id = SHK_icathia_alliance
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_recreate
+        prerequisite = { focus = SHK_recreate }
+        prerequisite = { focus = SHK_icathian_ties }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+        mutually_exclusive = {
+            focus = SHK_shakkal_republic
+            focus = SHK_greater_shakkal
+            focus = SHK_icathia_reborn
+        }
+    }
+
+    focus = {
+        id = SHK_icathia_reborn 
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_recreate
+        prerequisite = { 
+            focus = SHK_recreate 
+            focus = SHK_resemble 
+        }
+        prerequisite = {  
+            focus = SHK_kill_burn_destroy 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+        mutually_exclusive = {
+            focus = SHK_shakkal_republic
+            focus = SHK_greater_shakkal
+            focus = SHK_icathia_alliance
+        }
+    }
+    
+    # final focus
+
+    focus = {
+        id = SHK_desert_dream
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_icathia_reborn
+        prerequisite = { 
+            focus = SHK_icathia_reborn 
+            focus = SHK_icathia_alliance
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_sand_storm
+        icon = GFX_focus_generic_expansion
+        x = -1
+        y = 1
+        relative_position_id = SHK_shakkal_republic
+        prerequisite = { 
+            focus = SHK_icathia_reborn 
+            focus = SHK_greater_shakkal
+            focus = SHK_shakkal_republic
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_greater_ambitious
+        icon = GFX_focus_generic_expansion
+        x = -2
+        y = 0
+        relative_position_id = SHK_greater_dreams
+        prerequisite = { 
+            focus = SHK_sand_storm 
+        }
+        mutually_exclusive = {
+            focus = SHK_greater_dreams
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_greater_dreams
+        icon = GFX_focus_generic_expansion
+        x = 3
+        y = 1
+        relative_position_id = SHK_sand_storm
+        prerequisite = { 
+            focus = SHK_desert_dream 
+            focus = SHK_sand_storm
+        }
+        mutually_exclusive = {
+            focus = SHK_greater_ambitious
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_the_bell_tolls
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 1
+        relative_position_id = SHK_shakkal_republic
+        available = { 
+            SHK = { has_idea = True_Enemy }
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    focus = {
+        id = SHK_graveyard_of_empires
+        icon = GFX_focus_generic_expansion
+        x = 1
+        y = 3
+        relative_position_id = SHK_shakkal_republic
+        prerequisite = { 
+            focus = SHK_greater_dreams 
+            focus = SHK_greater_ambitious
+        }
+        prerequisite = { 
+            focus = SHK_the_bell_tolls 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    # Right Wing 
+    #TODO: SHK_our_right / SHK_our_turn  
+    focus = {
+        id = SHK_our_legacy # SHK_our_legacy
+        icon = GFX_focus_generic_expansion
+        x = -2
+        y = 1
+        relative_position_id = SHK_greater_ambitious
+        prerequisite = { 
+            focus = SHK_greater_ambitious
+        }
+        prerequisite = { 
+            focus = SHK_our_time 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+    # Left Wing 
+
+    #TODO: SHK_our_time
+    
+    focus = {
+        id = SHK_our_destiny
+        icon = GFX_focus_generic_expansion
+        x = 2
+        y = 1
+        relative_position_id = SHK_greater_dreams
+        prerequisite = { 
+            focus = SHK_greater_dreams
+        }
+        prerequisite = { 
+            focus = SHK_our_time 
+        }
+        completion_reward = {
+            # add_ideas = expansion_of_territory_idea
+        }
+    }
+
+
+    # A option should exist that lets the Shakkal reject all 
+    # and join their jungle brothers in the struggle for the
+    # shuriman right to independance / autonomy
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    # # New Wing 
+
+    # focus = {
+    #     id = SHK_rise_of_the_shuriman_raiders
+    #     icon = GFX_focus_generic_political_pressure
+    #     x = 12
+    #     y = 0
+    #     cost = 10
+    #     completion_reward = {
+    #         add_political_power = 50
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_desert_wanderers
+    #     icon = GFX_focus_generic_rangers
+    #     x = 0
+    #     y = 1
+    #     cost = 10
+    #     prerequisite = { focus = SHK_rise_of_the_shuriman_raiders }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = desert_wanderers_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_lore_keepers
+    #     icon = GFX_focus_generic_research
+    #     x = -2
+    #     y = 1
+    #     cost = 10
+    #     prerequisite = { focus = SHK_rise_of_the_shuriman_raiders }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = lore_keepers_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_cultural_exchange
+    #     icon = GFX_focus_generic_trade
+    #     x = 2
+    #     y = 1
+    #     cost = 10
+    #     prerequisite = { focus = SHK_rise_of_the_shuriman_raiders }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = cultural_exchange_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_blood_and_sand
+    #     icon = GFX_focus_generic_military_training
+    #     x = 0
+    #     y = 2
+    #     cost = 10
+    #     prerequisite = { focus = SHK_desert_wanderers }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = blood_and_sand_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_horse_lords
+    #     icon = GFX_focus_generic_cavalry
+    #     x = -2
+    #     y = 2
+    #     cost = 10
+    #     prerequisite = { focus = SHK_lore_keepers }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = horse_lords_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_dune_fighters
+    #     icon = GFX_focus_generic_desert_war
+    #     x = 2
+    #     y = 2
+    #     cost = 10
+    #     prerequisite = { focus = SHK_cultural_exchange }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = dune_fighters_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_oasis_control
+    #     icon = GFX_focus_generic_oasis
+    #     x = 0
+    #     y = 3
+    #     cost = 10
+    #     prerequisite = { focus = SHK_blood_and_sand }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = oasis_control_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_sand_scouts
+    #     icon = GFX_focus_generic_scouts
+    #     x = -2
+    #     y = 3
+    #     cost = 10
+    #     prerequisite = { focus = SHK_horse_lords }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = sand_scouts_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_survival_training
+    #     icon = GFX_focus_generic_survival_training
+    #     x = 2
+    #     y = 3
+    #     cost = 10
+    #     prerequisite = { focus = SHK_dune_fighters }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = survival_training_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_plunder_and_pillage
+    #     icon = GFX_focus_generic_raiding
+    #     x = 0
+    #     y = 4
+    #     cost = 10
+    #     prerequisite = { focus = SHK_oasis_control }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = plunder_and_pillage_idea
+    #         add_war_support = 0.05
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_ruthless_tactics
+    #     icon = GFX_focus_generic_ruthless_tactics
+    #     x = -2
+    #     y = 4
+    #     cost = 10
+    #     prerequisite = { focus = SHK_sand_scouts }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = ruthless_tactics_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_loyal_to_the_clan
+    #     icon = GFX_focus_generic_loyalty
+    #     x = 2
+    #     y = 4
+    #     cost = 10
+    #     prerequisite = { focus = SHK_survival_training }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = loyal_to_the_clan_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_treaty_with_outlaws
+    #     icon = GFX_focus_generic_diplomacy
+    #     x = 0
+    #     y = 5
+    #     cost = 10
+    #     prerequisite = { focus = SHK_plunder_and_pillage }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = treaty_with_outlaws_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_nomadic_coalition
+    #     icon = GFX_focus_generic_alliance
+    #     x = -2
+    #     y = 5
+    #     cost = 10
+    #     prerequisite = { focus = SHK_ruthless_tactics }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = nomadic_coalition_idea
+    #     }
+    # }
+
+    # focus = {
+    #     id = SHK_expansion_of_territory
+    #     icon = GFX_focus_generic_expansion
+    #     x = 2
+    #     y = 5
+    #     cost = 10
+    #     prerequisite = { focus = SHK_loyal_to_the_clan }
+    #     relative_position_id = SHK_rise_of_the_shuriman_raiders
+    #     completion_reward = {
+    #         add_ideas = expansion_of_territory_idea
+    #     }
+    # }

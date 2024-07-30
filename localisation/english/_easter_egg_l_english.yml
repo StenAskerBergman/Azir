@@ -1,0 +1,90 @@
+﻿l_english:
+ 
+####################################################################
+####################################################################
+#######################  EASTER  EGG  FOCUS  #######################
+####################################################################
+####################################################################
+
+#########################  XERATH ¤ FOCUS  #########################
+ # XER_ Name: "Focus Title"
+ # XER_ Name _TT: "Focus Tool Tip"
+ # XER_ Name _desc: "Focus Description"
+
+ # REK_ Name: "Focus Title"
+ # REK_ Name _TT: "Focus Tool Tip"
+ # REK_ Name _desc: "Focus Description"
+
+ # Nasus Pack 
+ # DOG_ Name: "Focus Title"
+ # DOG_ Name _TT: "Focus Tool Tip"
+ # DOG_ Name _desc: "Focus Description"
+
+ 
+##########################  VOID ¤ FOCUS  ##########################
+ # VOI_ Name: "Focus Title"
+ # VOI_ Name _TT: "Focus Tool Tip"
+ # VOI_ Name _desc: "Focus Description"
+
+#####################  IXTAL / YUNTAL ¤ FOCUS  #####################
+ # IXT_ Name: "Focus Title"
+ # IXT_ Name _TT: "Focus Tool Tip"
+ # IXT_ Name _desc: "Focus Description"
+
+####################################################################
+#######################  EASTER  EGG  OTHER  #######################
+####################################################################
+
+
+####################################################################
+###################### EASTER EGGS ¤ CATEGORY ######################
+####################################################################
+
+ # VOI_Apex_Hunter - Cat vs Bug
+
+ # Conditions: If the hunters and predators find themselves 
+ # on opposing teams and the required conditions are met:
+    # -> Rengar has five trophies trophies
+    # -> Kha'Zix is level 16 + has evolved three abilities
+    # -> The contenders are both alive at the same time
+
+ 
+ # Cat vs Bug - Ultimate Hunter
+ Cat_vs_Bug_Category: "THE HUNT IS ON!"
+ Cat_vs_Bug_Category_desc: "The Big Game is about to begin between Rengar & Kha'zix but more lurk in the shadows, I wonder who will win?"
+
+  # Ixtal / Cat   
+ cat_vs_bug_category: "THE HUNT IS ON!"
+ cat_vs_bug_category_desc: "This twisted monster has evaded me for too long. I will have his head!"
+
+  # Void / Bug
+ bug_vs_cat_category: "THE HUNT IS ON!"
+ bug_vs_cat_category_desc: "I have grown and adapted since I took his eye. I will feast on lion!"
+ 
+
+ # Nazumah / Hunter?
+ big_hunt_category: "THE HUNT IS ON!"
+ big_hunt_category_desc: "Pride is the biggest Monster of them All! I will protect my people!" 
+
+####################################################################
+###################### EASTER EGGS ¤ DECISION ######################
+####################################################################
+
+####################################################################
+ # Don't recall why I put this here... Was some reason...
+ # VOI_Apex_Hunter - Cat vs Bug
+ # VOI_Apex_Hunter: "Focus Title"
+ # VOI_Apex_Hunter_TT: "Unlocks Apex " # Unlock: Cat_vs_Bug_Category
+ # VOI_Apex_Hunter_desc: "Our Forces are Struggling! Our united are suppose to be fearless monsters, but as of recent the our hunters have become pray to the jungles of shurima! In these places the hunters are the apex of danger... It's time we show them what a true §1Apex Hunter§! look like!"
+
+
+ 
+####################################################################
+####################################################################
+#######################  EASTER  EGG  EVENT  #######################
+####################################################################
+####################################################################
+
+ # Name. 1: "Event Title"
+ # Name. 1.TT: "Event Tool Tip"
+ # Name. 1.desc: "Event Description"

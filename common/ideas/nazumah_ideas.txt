@@ -1,0 +1,435 @@
+ideas = {
+
+	country = {
+		
+		# ----------------------
+		# Exotic Trade Materials
+		# ----------------------
+		
+		NAZ_Exotic_materials = {
+			picture = NAZ_exotic_materials
+			desc =  NAZ_Exotic_materials_desc
+			allowed = {
+				original_tag = NAZ
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power = 1
+				local_resources_factor = 0.2
+				trade_opinion_factor = 0.2
+			}
+		}
+
+		NAZ_education_idea = {
+			picture = generic_research_bonus
+			allowed = {
+				original_tag = NAZ
+				has_dlc = "By Blood Alone"
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		NAZ_volunteers_idea = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				original_tag = NAZ
+				has_dlc = "By Blood Alone"
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteer_divisions_required = -0.75
+				send_volunteer_size = 5
+				send_volunteers_tension = -0.25
+			}
+		}
+
+		NAZ_state_funded_projects_idea = {
+			picture = generic_exploit_mines
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		NAZ_rightfully_ours_idea = {
+			picture = generic_war_preparation
+			allowed = {
+				original_tag = NAZ
+				has_dlc = "By Blood Alone"
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.25
+			}
+		}
+
+		NAZ_improved_irregulars_idea = {
+			picture = HUN_secret_rearmament
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.15
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.1
+			}
+		}
+
+		NAZ_our_finest_idea = {
+			picture = YUG_federal_defense_council
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		NAZ_our_strength_fighting_idea = {
+			picture = MEX_politicised_army_2
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+
+		NAZ_our_strength_production_idea = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		NAZ_our_strength_research_idea = {
+			picture = SOV_atomic_bomb_project
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		NAZ_state_bank_idea = {
+			picture = generic_goods_red_bonus
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		NAZ_rallying_the_people_idea = {
+			picture = generic_reserve_divisions
+			allowed = {
+				original_tag = NAZ
+				has_dlc = "By Blood Alone"
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.25
+			}
+		}
+
+		NAZ_jagged_alliance_idea = {
+			picture = generic_deal_with_the_devil2
+			allowed = {
+				original_tag = NAZ
+				has_dlc = "By Blood Alone"
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				join_faction_tension = -0.3
+			}
+		}
+
+		NAZ_improved_warrior_tradition_idea = {
+			picture = GFX_goal_generic_ranger_training
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				modifier_army_sub_unit_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_infantry_defence_factor = 0.1
+			}
+		}
+
+		NAZ_promote_countryadjective_nationalism = {
+			picture = GFX_focus_ETH_freedom_at_gunpoint
+			allowed = {
+				original_tag = NAZ
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support = 0.1
+				political_power = 100
+				autonomy_gain = 0.5
+			}
+		}
+
+		NAZ_foreign_trained_officials = {
+			picture = GFX_focus_generic_military_mission
+			allowed = {
+				original_tag = NAZ
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power = 250
+			}
+		}
+
+		NAZ_countryadjective_loyalist_advisors = {
+			picture = GFX_focus_ETH_empower_the_ras
+			allowed = {
+				original_tag = NAZ
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 0.75
+			}
+		}
+
+		NAZ_promote_local_crafts = {
+			picture = GFX_focus_generic_treaty
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				support_tech_bonus = 0.5
+			}
+		}
+
+		NAZ_the_adjective_industrial_fund = {
+			picture = GFX_goal_generic_construct_civ_factory
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		NAZ_the_adjective_air_fleet = {
+			picture = GFX_goal_generic_air_fighter
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.1
+				air_defense_factor = 0.1
+			}
+		}
+
+		NAZ_metal_beasts = {
+			picture = GFX_goal_generic_army_tanks
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				armor_attack_factor = 0.1
+				armor_defense_factor = 0.1
+			}
+		}
+
+		NAZ_develop_hunter_guilds = {
+			picture = GFX_goal_generic_army_doctrines
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				land_doctrine_research_speed = 0.1
+			}
+		}
+
+		NAZ_promote_industry = {
+			picture = GFX_focus_generic_industry
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		NAZ_the_adjective_regional_development_fund = {
+			picture = GFX_focus_generic_concessions
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				building_speed_factor = 0.15
+			}
+		}
+
+		NAZ_the_adjective_air_fleet_idea = {
+			picture = GFX_goal_generic_air_fighter
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.1
+				air_defense_factor = 0.1
+			}
+		}
+
+		NAZ_a_steamboat_fleet = {
+			picture = GFX_focus_generic_destroyer
+			allowed = {
+				original_tag = NAZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				naval_attack_factor = 0.1
+				naval_defense_factor = 0.1
+			}
+		}
+	}
+
+	mobilization_laws = {
+	}
+	economy = {
+	}
+	political_advisor = {
+	}
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	industrial_concern = {
+	}
+	theorist = {
+	}
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+}

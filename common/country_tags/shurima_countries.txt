@@ -1,0 +1,15 @@
+NAZ = "countries/Nazumah.txt"
+XER = "countries/Xerath.txt"
+RAI = "countries/Raiders.txt"
+SHK = "countries/Shakkal.txt"
+GWS = "countries/GreatWesternSai.txt"
+GES = "countries/GreatEasternSai.txt"
+GSD = "countries/GreatSaiDesert.txt"
+MAR = "countries/Marai.txt"
+JGL = "countries/Jakkal.txt"
+WRL = "countries/Warlord.txt"
+NAS = "countries/Nashramae.txt"
+CRY = "countries/CrystalScar.txt" 
+# SRL = "countries/Slaver.txt"
+
+

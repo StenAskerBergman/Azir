@@ -1,0 +1,60 @@
+capital = 107
+oob = "NAS" 
+# Nashramae
+set_research_slots = 4
+set_stability = 0.65
+set_war_support = 0.75
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+create_country_leader = {
+	name = "Akshan"
+	desc = "In the event of my death, I appoint Akshan as my successor, to inherit my weapon and keep Shurima protected from the forces of undeath. May you one day find us, - Shadya"
+	picture = "gfx/leaders/NAS/portrait_nas_akshan_large.dds"
+	#expire = ""
+	ideology = shurimanEmperor
+	traits = {
+		# Dictator
+	}
+}
+
+set_convoys = 0
+set_politics = {
+	ruling_party = absolutists # shurimanEmperor
+	last_election = "989.9.07"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	mages = 5
+	fascism = 10
+	desolation = 0
+	theocracy = 10
+	oligarchy = 5
+	absolutists = 55
+	chiefdom = 15
+	royalist = 0
+}
+
+add_ideas = {
+	#Lawless_slavery
+	#Noxian Influence # Yet to be written
+	#The_great_fall
+	#Shuriman_shame
+	#Shurima_broken
+	#al_rashid_dynasty
+}

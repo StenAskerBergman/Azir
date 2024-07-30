@@ -1,0 +1,42 @@
+
+state={
+	id=147
+	name="STATE_147"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 4
+ #rubber = 9
+ steel = 6
+ oil = 7
+ #chromium = 3
+ #aluminium = 6
+ }
+ history = {
+ owner = SHU
+ add_core_of = SHU
+ victory_points = {
+ 2452 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 2
+   #dockyard = 0
+   #5013 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		1701 2452 3886 5246 9086 9093 9108 9132 9133 9151 9159 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2259224
+        state_category = town
+}

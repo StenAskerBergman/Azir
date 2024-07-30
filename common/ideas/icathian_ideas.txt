@@ -1,0 +1,73 @@
+ideas = {
+	
+	country = {
+
+		# ---------------------
+		#   The Zilean Zeal
+		# ---------------------
+		
+		Zileans_Zeal = {
+			research_speed_factor = 0.1
+		}
+
+		Time_Warp = {
+			research_speed_factor = 0.1
+		}
+		
+		Rewind = {
+			research_speed_factor = 0.1
+		}
+		
+		Chronoshift = {
+			research_speed_factor = 0.1
+		}
+
+		VOI_settlers = {
+			picture = generic_production_bonus
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				original_tag = VOI
+			}
+			
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.10
+			}
+
+		}
+
+		VOI_grand_wizard_council_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				political_power_factor = 0.1
+				max_planning = 0.1
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+				land_doctrine_cost_factor = -0.05
+				air_doctrine_cost_factor = -0.05
+				naval_doctrine_cost_factor = -0.05
+			}
+		}
+	}
+	
+}

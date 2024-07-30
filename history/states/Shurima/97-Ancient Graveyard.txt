@@ -1,0 +1,42 @@
+
+state={
+	id=97
+	name="STATE_97"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 2
+ rubber = 6
+ #steel = 5
+ #oil = 6
+ #chromium = 12
+ #aluminium = 7
+ }
+ history = {
+ owner = VOI
+ add_core_of = VOI
+ victory_points = {
+ 2983 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   dockyard = 0
+   2421 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		983 1030 2421 2983 3063 3098 4832 5117 9549 9562 9566 9572 9576 9582 9585 9590 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1402722
+        state_category = town
+}

@@ -1,0 +1,12 @@
+leader_traits = {
+
+	Ruthless = {
+        random = no        
+        war_support_factor = 0.2
+    }
+
+	Ambitious = {
+        random = no        
+        war_support_factor = 0.2
+    }
+}

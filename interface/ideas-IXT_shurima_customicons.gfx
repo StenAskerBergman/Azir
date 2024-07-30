@@ -1,0 +1,10 @@
+spriteTypes = { 
+
+    # Example 
+	##Icon For: Shuriman Shame
+	# SpriteType = { 
+	# 	# name = "GFX_idea_SHU_shuriman_shame-1752"
+	# 	# texturefile = "gfx/interface/ideas/shurima-ideas/SHU_shuriman_shame-1752.dds"
+	# }
+    
+} 

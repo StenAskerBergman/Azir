@@ -1,0 +1,139 @@
+division_template = {
+ name = "Void Creature"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Voidling"
+  location = 2883
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 9511
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 3988
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 9629
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 4757
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 1618
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 9713
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 4610
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 3550
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 4693
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 9753
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 2635
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 9805
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Voidling"
+  location = 9795
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "X-Mitter"
+  location = 3545
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Chopan"
+  location = 3120
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+ division = {
+  name = "Mato"
+  location = 2437
+  division_template = "Void Creature"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.85
+ }
+}

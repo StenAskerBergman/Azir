@@ -1,0 +1,208 @@
+
+    shared_focus = {
+        id = RAI_rise_of_the_shuriman_raiders
+        icon = GFX_focus_generic_political_pressure
+        x = 12
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    shared_focus = {
+        id = RAI_desert_wanderers
+        icon = GFX_focus_generic_rangers
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = RAI_rise_of_the_shuriman_raiders }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = desert_wanderers_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_lore_keepers
+        icon = GFX_focus_generic_research
+        x = -2
+        y = 1
+        cost = 10
+        prerequisite = { focus = RAI_rise_of_the_shuriman_raiders }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = lore_keepers_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_cultural_exchange
+        icon = GFX_focus_generic_trade
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = RAI_rise_of_the_shuriman_raiders }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = cultural_exchange_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_blood_and_sand
+        icon = GFX_focus_generic_military_training
+        x = 0
+        y = 2
+        cost = 10
+        prerequisite = { focus = RAI_desert_wanderers }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = blood_and_sand_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_horse_lords
+        icon = GFX_focus_generic_cavalry
+        x = -2
+        y = 2
+        cost = 10
+        prerequisite = { focus = RAI_lore_keepers }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = horse_lords_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_dune_fighters
+        icon = GFX_focus_generic_desert_war
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = RAI_cultural_exchange }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = dune_fighters_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_oasis_control
+        icon = GFX_focus_generic_oasis
+        x = 0
+        y = 3
+        cost = 10
+        prerequisite = { focus = RAI_blood_and_sand }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = oasis_control_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_sand_scouts
+        icon = GFX_focus_generic_scouts
+        x = -2
+        y = 3
+        cost = 10
+        prerequisite = { focus = RAI_horse_lords }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = sand_scouts_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_survival_training
+        icon = GFX_focus_generic_survival_training
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = RAI_dune_fighters }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = survival_training_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_plunder_and_pillage
+        icon = GFX_focus_generic_raiding
+        x = 0
+        y = 4
+        cost = 10
+        prerequisite = { focus = RAI_oasis_control }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = plunder_and_pillage_idea
+            add_war_support = 0.05
+        }
+    }
+
+    shared_focus = {
+        id = RAI_ruthless_tactics
+        icon = GFX_focus_generic_ruthless_tactics
+        x = -2
+        y = 4
+        cost = 10
+        prerequisite = { focus = RAI_sand_scouts }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = ruthless_tactics_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_loyal_to_the_clan
+        icon = GFX_focus_generic_loyalty
+        x = 2
+        y = 4
+        cost = 10
+        prerequisite = { focus = RAI_survival_training }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = loyal_to_the_clan_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_treaty_with_outlaws
+        icon = GFX_focus_generic_diplomacy
+        x = 0
+        y = 5
+        cost = 10
+        prerequisite = { focus = RAI_plunder_and_pillage }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = treaty_with_outlaws_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_nomadic_coalition
+        icon = GFX_focus_generic_alliance
+        x = -2
+        y = 5
+        cost = 10
+        prerequisite = { focus = RAI_ruthless_tactics }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = nomadic_coalition_idea
+        }
+    }
+
+    shared_focus = {
+        id = RAI_expansion_of_territory
+        icon = GFX_focus_generic_expansion
+        x = 2
+        y = 5
+        cost = 10
+        prerequisite = { focus = RAI_loyal_to_the_clan }
+        relative_position_id = RAI_rise_of_the_shuriman_raiders
+        completion_reward = {
+            add_ideas = expansion_of_territory_idea
+        }
+    }
+

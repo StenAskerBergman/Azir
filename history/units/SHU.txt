@@ -1,0 +1,613 @@
+division_template = {
+ name = "Shuriman Infantry"
+ is_locked = yes
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+ }
+ support = {
+  artillery = { x = 0 y = 0 }
+ }
+}
+
+division_template = {
+ name = "Sand Soldier"
+ division_cap = 24
+ is_locked = yes
+ # Might be 20 and not 21 if its a array index - Nets
+ # IT WAS I'M A GENIUS - Nets
+ template_counter = 20 # Eagle Icon 
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+ }
+}
+
+units = {
+ division = {
+  name = "Risen Soldier"
+  location = 9119
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 9266 # near vekura (9120)
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+
+ division = {
+  name = "Risen Soldier"
+  location = 5579
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 9225
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 703
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 674
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+
+ division = {
+  name = "Risen Soldier"
+  location = 9086
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 9159
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 9108
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 4886
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 1663
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 9453
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 659
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 1721 # 2490
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 2452 # 5246 
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 659 # 397
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Risen Soldier"
+  location = 9442 # 9055
+  division_template = "Sand Soldier"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+}
+
+#  division = {
+#   name = "Risen Soldier"
+#   location = 3952
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+
+# More than 24
+#   division = {
+#   name = "Risen Soldier"
+#   location = 123 # 9055
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Risen Soldier"
+#   location = 1933 # 9055
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Risen Soldier"
+#   location = 5573 # 9055
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Risen Soldier"
+#   location = 768 # 9055
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#   division = {
+#   name = "Risen Soldier"
+#   location = 9086 # 9055
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+
+
+# Old Removed Units
+
+# division = {
+#  name = "Risen Soldier"
+#  location = 8604
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 8551
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 2410
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1827
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 8674
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 3654
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+
+# division = {
+#  name = "Risen Soldier"
+#  location = 9119
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 5573
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1093  
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = { # Targonian Border inside of Crystal Scar
+# name = "Risen Soldier"
+# location = 8951
+# division_template = "Sand Soldier"
+# start_experience_factor = 0.1
+# start_equipment_factor = 0.90
+#}
+# division = {
+# name = "Risen Soldier"
+# location = 981
+# division_template = "Sand Soldier"
+# start_experience_factor = 0.1
+# start_equipment_factor = 0.90
+#}
+#division = { # Warlord
+# name = "Risen Soldier"
+# location = 1962
+# division_template = "Sand Soldier"
+# start_experience_factor = 0.1
+# start_equipment_factor = 0.90
+#}
+#division = { # Water's Reach
+#division = { # Water's Reach
+# name = "Risen Soldier"
+# location = 9255
+# division_template = "Sand Soldier"
+# start_experience_factor = 0.1
+# start_equipment_factor = 0.90
+#}
+#division = { # Water's Reach
+# name = "Risen Soldier"
+# location = 9194
+# division_template = "Sand Soldier"
+# start_experience_factor = 0.1
+# start_equipment_factor = 0.90
+#}
+# division = {
+#  name = "Risen Soldier"
+#  location = 8991
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 8924
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9130
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1231
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9175
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9165
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9108
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 4228
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1494
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 5579
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9332
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 2490
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 4376
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 397
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9055
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = { # Great Western Sai
+#  name = "Risen Soldier"
+#  location = 3567
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9347
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9426
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1312
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9609
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 2622
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 5145
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 9683
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1606
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1150
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 1818
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Nazumah, Zoantha
+# division = {
+#  name = "Risen Soldier"
+#  location = 9559
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = {
+#  name = "Risen Soldier"
+#  location = 5332
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# division = { # Icathian Border 
+#  name = "Risen Soldier"
+#  location = 9426
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Akkal City
+#  division = {
+#  name = "Risen Soldier"
+#  location = 9540
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Akkal Region
+#  division = {
+#  name = "Risen Soldier"
+#  location = 5761
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Xolan
+# division = {
+#  name = "Risen Soldier"
+#  location = 1881
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Northern Icathia Border 
+# division = {
+#  name = "Risen Soldier"
+#  location = 1312
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Desolate Harbor
+# division = {
+#  name = "Risen Soldier"
+#  location = 9609
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+# Southern Mid Coastline
+# division = {
+#  name = "Risen Soldier"
+#  location = 2622
+#  division_template = "Sand Soldier"
+#  start_experience_factor = 0.1
+#  start_equipment_factor = 0.90
+# }
+
+
+
+
+#Too much!
+
+
+
+
+
+
+#   division = {
+#   name = "Risen Soldier"
+#   location = 8779 
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#  division = {
+#   name = "Risen Soldier"
+#   location = 8929
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#  division = {
+#   name = "Risen Soldier"
+#   location = 1087 # 566
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#  division = {
+#   name = "Risen Soldier"
+#   location = 8841
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#  division = {
+#   name = "Risen Soldier"
+#   location = 902
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }
+#  division = {
+#   name = "Risen Soldier"
+#   location = 8650
+#   division_template = "Sand Soldier"
+#   start_experience_factor = 0.1
+#   start_equipment_factor = 0.90
+#  }

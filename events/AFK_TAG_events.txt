@@ -1,0 +1,199 @@
+	# NAMESPACE - This ALWAYS have to be set up before your EVENTS. So if you events will be "afk_tag.XXX" (XXX representing numbers) your namespace must be "afk_tag"
+	add_namespace = afk_tag
+	
+	### TEMPLATE EVENTS
+	# These 3 EVENTS are set up the way that some country is supposed to get event "afk_tag.10000" (for example from your FOCUS) and then YOU get response from them
+	
+	country_event = {
+		# ID of the EVENT - its mainly determined by the NUMBER, so only change that when you are creating new EVENTS
+		id = afk_tag.10000
+		# TITLE of the EVENT - you use this in LOCALISTION
+		title = afk_tag.10000.t
+		# DESCRIPTION of the EVENT - you use this in LOCALISTION
+		desc = afk_tag.10000.d
+		# PICTURE of the EVENT
+		picture = GFX_this_gfx_is_wrong
+		
+		### CONDITIONS how this EVENT will be TRIGGERED
+		# Triggered only through COMMAND (for example from Focus, Decision or other Event)
+		is_triggered_only = yes
+		
+		# Triggered automaticaly / randomly during the game
+		is_triggered_only = no
+
+		# If this event will trigger multiple times
+		fire_only_once = no
+		
+		# How many DAYS approximately will take this event to trigger, if the CONDITIONS in TRIGGER below are satisfied
+		mean_time_to_happen = {
+			days = 10
+		}
+		# CONDITIONS that must be satisfied in order for this EVENT to trigger
+		trigger = {
+		# Putting TAG here is almost always a must - that way the event will only trigger for that nation (and not for all nations)
+		tag = AFK
+		
+		
+		# OPTION A of the EVENT - you can add up to 4 OPTIONS into one event
+		option = {
+			# NAME (TEXT) on this OPTION - you use this in LOCALISTION
+			name = afk_tag.10000.a
+			# AI CHANCE to choose this OPTION
+			ai_chance = {
+				base = 5
+			}
+			# When is this OPTION VISIBLE - what conditions you must satisfy in order be able to see this OPTION
+			trigger = {
+				# CONDITIONS listed here
+				
+			}
+			
+			# EFFECTS listed here
+			
+			##### LISTED BELLOW are some things that you can use here. It might save you some time if you need them
+			# RESPONSE to FROM (to the nation that gave you this EVENT) - For example if you as GER give this event to POL, you as GER will get the response
+			FROM = {
+				# EFFECT TOOLTIP - What you put here will only SHOW in the game, but it will do nothing else
+				# - you need to put the EFFECTS without the EFFECT TOOLTIP in to the "afk_tag.10001" EVENT
+				effect_tooltip = {
+					# EFFECTS listed here - Usually the effects of the "afk_tag.10001" EVENT
+					
+					
+				}
+				# EVENT that FROM is suppose to get
+				country_event = afk_tag.10001
+			}
+		}
+		
+		option = {
+			name = afk_tag.10000.b
+			ai_chance = {
+				base = 0
+			}
+			
+			
+			
+			FROM = {
+				effect_tooltip = {
+				
+				}
+				country_event = afk_tag.10002
+			}
+		}
+	}
+	
+	country_event = {
+		id = afk_tag.10001
+		title = afk_tag.10001.t
+		desc = afk_tag.10001.d
+		picture = GFX_thisgfxiswrong
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = afk_tag.10001.a
+			ai_chance = {
+				base = 5
+			}
+			
+			
+		}
+	}
+	
+	country_event = {
+		id = afk_tag.10002
+		title = afk_tag.10002.t
+		desc = afk_tag.10002.d
+		picture = GFX_thisgfxiswrong
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = afk_tag.10002.a
+			ai_chance = {
+				base = 5
+			}
+			
+			
+		}
+	}
+	
+	
+	
+	### TEMPLATE EVENTS
+	country_event = {
+		id = afk_tag.50000
+		title = afk_tag.50000.t
+		desc = afk_tag.50000.d
+		picture = GFX_thisgfxiswrong
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = afk_tag.50000.a
+			ai_chance = {
+				base = 5
+			}
+			
+			
+			
+			FROM = {
+				effect_tooltip = {
+				
+				}
+				country_event = afk_tag.50001
+			}
+		}
+		
+		option = {
+			name = afk_tag.50000.b
+			ai_chance = {
+				base = 0
+			}
+			
+			
+			
+			FROM = {
+				effect_tooltip = {
+				
+				}
+				country_event = afk_tag.50002
+			}
+		}
+	}
+	
+	country_event = {
+		id = afk_tag.50001
+		title = afk_tag.50001.t
+		desc = afk_tag.50001.d
+		picture = GFX_thisgfxiswrong
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = afk_tag.50001.a
+			ai_chance = {
+				base = 5
+			}
+			
+			
+		}
+	}
+	
+	country_event = {
+		id = afk_tag.50002
+		title = afk_tag.50002.t
+		desc = afk_tag.50002.d
+		picture = GFX_thisgfxiswrong
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = afk_tag.50002.a
+			ai_chance = {
+				base = 5
+			}
+			
+			
+		}
+	}

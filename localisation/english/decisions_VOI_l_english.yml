@@ -1,0 +1,64 @@
+﻿l_english: 
+ icathia.3: "Inflammatory Speech"
+ VOI_northern_void_threat: "Void creatures roam the North."
+ VOI_eastern_void_threat: "Void creatures roam the East."
+ VOI_western_void_threat: "Void creatures roam the West."
+ VOI_void_threat_decision_silence_m: "We must Silence Malzahar!"
+ VOI_void_threat_decision_silence_z: "We must Silence Zilean!"
+
+ VOI_void_threat_decision_exterminate: "Exterminate Northern Void Creatures!"
+ VOI_hunt_down_northern_void_threat: "Hunt Down Northern Void Creatures!"
+ VOI_hunt_down_northern_void_threat_tt: "Removes northern Void Creatures.\n"
+
+ # Void Scar's? - _icon_category.dds - Remnants of a Void World 
+ # "Unlocks §YDealing with the Void Threats§!" 
+ VOI_void_threat_category_f: "Unlocks §YDealing with the Void Threats§!" 
+ VOI_void_threat_category: "Remnants of the Void World" 
+ VOI_void_threat_category_desc: "Many signs left by the Void are remnants in Icathia. The echoes of the dead still linger in the streets and ruins of our land. Our defiance stood tall but fell short of delivering the justice we needed...\n\nAs Icathia descended into decades of war and chaos, we are now left torn and divided. The Void's influence has split us into those who resist its corruption and those who embraced or succumb to it, traditionalists yearning for the past and reformists seeking new paths. \n\nSurvivors focus on rebuilding, while opportunists exploit the chaos. Even our beliefs are fractured, with some turning to ancient religions or new cults, and others relying on science and pragmatism.\n\nWe have been licking our wounds for too long. It is time to pick up the pieces of our ruined lands and move forward...\n\nThere hasn't been any real pressure to do so until now, but a war rages on our doorstep. It is high time we gather our strength and determine our path forward.\n\n§YWhat should we do?§!\n "
+
+ # Meanwhile, the Void itself is not unified. Bel'Veth, the Empress of the Void, seeks to reshape it, clashing with the ancient Watchers who wish to end all things. This internal conflict within the Void adds another layer of complexity to our struggle.\n\n
+
+ VOI_void_resistance_category: "Void Resistance"
+ VOI_void_resistance_category_desc: "Stand firm against the encroaching influence of the Void, fortifying our resolve and protecting our nation from its corrupting grasp."
+
+ VOI_improve_the_void_influence_category: "Void Influence"
+ VOI_improve_the_void_influence_category_desc: "Harness the mysterious and formidable power of the Void to influence our strategies and decisions."
+
+################################### CATEGORY \n                     \n      §H§!
+
+ VOI_improve_the_void_influence: "Improve Void Influence"
+ VOI_improve_the_void_influence_desc: "Delve deeper into the enigmatic energies of the Void, enhancing our capabilities and unlocking new potentials."
+
+ VOI_improve_the_void_spirit: "Improve Void Spirit"
+ VOI_improve_the_void_spirit_desc: "Strengthen our connection to the Void Spirit, drawing on its otherworldly power to fortify our nation and its people."
+
+ VOI_void_influence_decision: "Embrace the Void"
+ VOI_void_influence_decision_desc: "By embracing the Void, we tap into its boundless power. Our military might is enhanced, and our research efforts become more efficient."
+
+ VOI_void_resistance_decision: "Resist the Void"
+ VOI_void_resistance_decision_desc: "Resisting the corrupting influence of the Void strengthens our resolve, if we survived gods we can survive this!"
+ VOI_void_resistance_decision_btn: "For Icathia!"
+
+ VOI_void_supremacy_decision: "Void Supremacy"
+ VOI_void_supremacy_decision_desc: "Through the ultimate ascension ritual, we achieve Void Supremacy, significantly boosting our powers..."
+
+################################### TOOLTIP \n                     \n      §H§!
+
+ VOI_void_influence_decision_tooltip: "Embrace the Void and enhance our military capabilities and research efficiency."
+ VOI_void_resistance_decision_tooltip: "Resist the Void's influence, increasing political power gain and stability."
+ VOI_void_supremacy_decision_tooltip: "Attain Void Supremacy, greatly improving our military strength and national unity."
+
+################################### REMOVE\n                     \n      §H§!
+
+ VOI_void_influence: "Embrace the Void"
+ VOI_void_influence_removed: "Void Influence Removed"
+
+ VOI_void_resistance: "Resist the Void"
+ VOI_void_resistance_removed: "Void Resistance Removed"
+
+ VOI_void_supremacy: "Void Supremacy"
+ VOI_void_supremacy_removed: "Void Supremacy Removed"
+
+
+################################### OTHER\n                     \n      §H§!
+

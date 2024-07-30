@@ -1,0 +1,42 @@
+state={
+	id=110
+	name="STATE_110"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+#oil is coal
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 8
+ rubber = 4
+ steel = 12
+ #oil = 8
+ #chromium = 12
+ #aluminium = 16
+ }
+ history = {
+ owner = AUR
+ add_core_of = AUR
+ victory_points = {
+ 5071 30
+ }
+  buildings = {
+   infrastructure = 3
+   arms_factory = 1
+   industrial_complex = 2
+   dockyard = 1
+   5071 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		686 1405 1783 2241 2533 2552 2777 3682 4090 4330 4979 5071 5724 8401 8409 8433 8443 8454 8461 8472 8484 8506 8526 8542 8559 8561 8571 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2312851
+        state_category = large_town
+}

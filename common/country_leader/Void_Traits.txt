@@ -1,0 +1,133 @@
+leader_traits = {
+
+    # Rek'Sai Traits
+    ruthless_hunter = {
+        random = no
+        sprite = 13
+        army_experience_gain_factor = 0.1
+        army_attack_factor = 0.05
+        army_defence_factor = 0.05
+    }
+
+    supreme_hunter = {
+        random = no
+        sprite = 13
+        army_attack_factor = 0.05
+        army_defence_factor = 0.02
+        army_speed_factor = 0.05
+    }
+
+    scavenger = {
+        random = no
+        sprite = 13
+        equipment_capture_factor = 0.1
+    }
+
+    adaptable = {
+        random = no
+        sprite = 13
+        army_defence_factor = 0.05
+        weather_impact = -0.1
+    }
+
+    hunter = {
+        random = no
+        sprite = 13
+        army_attack_factor = 0.05
+        recon_factor = 0.1
+    }
+
+    # Kha'Zix Traits
+    evolution_master = {
+        random = no
+        sprite = 13
+        army_attack_factor = 0.05
+        army_speed_factor = 0.05
+    }
+
+    guerilla_warfare = {
+        random = no
+        sprite = 13
+        land_night_attack = 0.1
+        army_org = 0.05
+    }
+
+    adaptive_strategist = {
+        random = no
+        sprite = 13
+        army_morale = 0.1
+        army_attack_factor = 0.05
+    }
+
+    guerilla = {
+        random = no
+        sprite = 13
+        land_night_attack = 0.1
+        dig_in_speed_factor = 0.2
+    }
+
+    # Bel'Veth Traits
+    void_empress = {
+        random = no
+        sprite = 13
+        stability_factor = 0.2
+    }
+
+    mind_control = {
+        random = no
+        sprite = 13
+        political_power_gain = 0.1
+        justify_war_goal_time = -0.1
+    }
+
+    void_tactician = {
+        random = no
+        sprite = 13
+        planning_speed = 0.1
+        max_planning = 0.05
+    }
+
+    supreme_commander = {
+        random = no
+        sprite = 13
+        experience_gain_factor = 0.1
+        army_attack_factor = 0.05
+        army_defence_factor = 0.05
+    }
+
+    # Cho'Gath Traits
+    devourer_of_worlds = {
+        random = no
+        sprite = 13
+        army_attack_factor = 0.1
+        army_defence_factor = 0.1
+    }
+
+    brute_force = {
+        random = no
+        sprite = 13
+        breakthrough = 0.1
+    }
+
+    fearsome = {
+        random = no
+        sprite = 13
+        enemy_army_attack_factor = -0.05
+        stability_factor = -0.1
+    }
+
+    # Kog'Maw Traits
+    artillery_expert = {
+        random = no
+        sprite = 13
+        army_artillery_attack_factor = 0.1
+        soft_attack = 0.05
+    }
+
+    explosive_growth = {
+        random = no
+        sprite = 13
+        soft_attack = 0.05
+        breakthrough = 0.05
+    }
+}

@@ -1,0 +1,86 @@
+﻿l_english:
+ shurima.1.t: "Empty Shurima Throne"
+ shurima.1.d: "The once-mighty Shurima Empire now stands at a crossroads, its throne vacant and its future uncertain. Will the legendary warrior Sivir rise to claim the throne, or will the resurrected Emperor Azir return to lead the empire to its former glory? The destiny of Shurima hangs in the balance, and the world watches with bated breath to see who will emerge as the rightful ruler of this ancient civilization."
+
+ # Tribal Relations Event 
+ shurima.55.t: "Nazumah and Shurima: Closer Ties"
+ shurima.55.d: "Nazumah and Shurima have the opportunity to strengthen their ties, bringing closer cooperation and mutual benefits. Will they accept this offer?"
+
+ shurima.55.a: "Accept Closer Ties"
+ shurima.55.a.tt: "Shurima accepts closer ties with Nazumah, gaining the tribal ties benefits."
+
+ shurima.55.g: "Reject Closer Ties"
+ shurima.55.g.tt: "Shurima rejects closer ties with Nazumah."
+
+ shurima.56.t: "Nazumah and Shurima: Closer Ties Response"
+ shurima.56.d: "Shurima has proposed closer ties with Nazumah. How will Nazumah respond?"
+
+ shurima.56.a: "Accept Closer Ties"
+ shurima.56.a.tt: "Nazumah accepts closer ties with Shurima, gaining the tribal family benefits."
+
+ shurima.56.c: "Reject Closer Ties"
+ shurima.56.c.tt: "Nazumah rejects closer ties with Shurima."
+
+ shurima.57.t: "Nazumah and Shurima: Mutual Benefits"
+ shurima.57.d: "Both Nazumah and Shurima have accepted closer ties, resulting in mutual benefits for both nations."
+
+ shurima.57.a: "A New Era of Cooperation"
+ shurima.57.a.tt: "Both Nazumah and Shurima gain stability and war support as a result of their closer ties."
+
+
+ # Pick Leader Event 
+ shurima.1.pick_leader.option_azir: "Azir will lead us!"
+ shurima.1.pick_leader.tooltip_azir: "Azir remains as our true Leader!"
+
+ shurima.1.pick_leader.option_sivir: "Sivir will lead us!"
+ shurima.1.pick_leader.tooltip_sivir: "Sivir becomes the new Country Leader!"
+
+ shurima.2.t: "Shurima Broken" 
+ shurima.2.desc: "Shurima is broken! We must restore the empire!"
+
+ shurima.3.t: "Recovering Our Lands!"
+ shurima.3.desc: "One piece at the time, our empire rebuilds itself!"
+
+ shurima.4.t: "Recovering Our Lands!"
+ shurima.4.desc: "One piece at the time, our empire rebuilds itself!"
+
+ shurima.5.t: "Recovering Our Lands!"
+ shurima.5.desc: "One piece at the time, our empire rebuilds itself!"
+
+ shurima.6.t: "Recovering Our Lands!"
+ shurima.6.desc: "One piece at the time, our empire rebuilds itself!"
+
+ shurima.2.a: "Victory!"
+
+ # Xer'sai Related Events
+ shurima.33.t: "No Voidlings Found"
+ shurima.33.d: "After thorough investigations into out countryside, our reports have come up empty on any possible Xer'sai incursions."
+ shurima.33.a: "We must stay vigilant..."
+
+ shurima.34.t: "Voidling Found!"
+ shurima.34.d: "Reports are coming through that there is a Xer'sai ravaging our countryside! While they might not stay for long, they will certainly bring many hardships for our locals."
+ shurima.34.a: "We must beat back this evil!"
+
+ shurima.35.t: "Voidling Found!"
+ shurima.35.d: "Reports are coming through that there is a Xer'sai ravaging our countryside! While they might not stay for long, they will certainly bring many hardships for our locals."
+ shurima.35.a: "We must beat back this evil!"
+
+ shurima.36.t: "Voidling Found!"
+ shurima.36.d: "Reports are coming through that there is a Xer'sai ravaging our countryside! While they might not stay for long, they will certainly bring many hardships for our locals."
+ shurima.36.a: "We must beat back this evil!"
+
+ shurima.38.t: "The Voidling Leaves"
+ shurima.38.d: "Whether through local resistance or its own satiation, the Xer'sai that has been terrorizing our populace has left us, for now."
+ shurima.38.a: "Good Riddance..."
+
+ shurima.310.t: "The Voidling Spreads"
+ shurima.310.d: "The Xer'sai has spread its influence across our great nation and is making thousands more live in fear."
+
+ shurima.311.t: "The Voidling Lingers"
+ shurima.311.d: "The Xer'sai seeks to settle in as we continue to combat its reign of terror."
+
+ shurima.312.t: "The Voidling Strikes"
+ shurima.312.d: "The Xer'sai lashes out at Demacian locals, killing and injuring many in its wake."
+ 
+ shurima.313.t: "The Voidling Terrorizes"
+ shurima.313.d: "The Xer'sai attacks our local infrastructure and inhibits many from being able to work."

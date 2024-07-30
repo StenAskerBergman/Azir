@@ -1,0 +1,38 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE "SCALE" OUTPUT NOT LARGE FILE OMFG
+
+# Animated 
+
+	# frameAnimatedSpriteType = {
+	# 	name = "GFX_portrait_shu_azir_large"
+	# 	texturefile = "gfx/leaders/SHU/portrait_shu_azir_anim.dds"
+	# 	noOfFrames = 83
+	# 	animation_rate_fps = 21
+	# 	looping = yes
+	# 	play_on_show = yes
+	# }
+
+# Large
+
+ 	# Ksante / K'sante
+	SpriteType = {
+		name = "GFX_portrait_naz_ksante_large"
+		texturefile = "gfx/leaders/NAZ/portrait_naz_ksante_large.dds"
+	}	
+
+ 	# Tribal Council
+	SpriteType = {
+		name = "GFX_portrait_NAZ_tribal_council_large"
+		texturefile = "gfx/leaders/NAZ/portrait_naz_ksante_large.dds"
+	}	
+
+# Small 
+
+	# Ksante / K'sante
+	SpriteType = {
+		name = "GFX_portrait_naz_ksante_small"
+		texturefile = "gfx/characters/SHU/portrait_ksante_small.dds"
+	}
+
+}

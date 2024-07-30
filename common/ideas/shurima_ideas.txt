@@ -1,0 +1,618 @@
+ideas = {
+
+	country = {
+		
+		# ----------------------------
+		# Targon Support - Sider Idea
+		# ----------------------------
+		
+		solari_supporter = {
+			picture = tur_tuz_golu_training_facility
+			# Support Leona - Solari are the true rulers! Long Live the Sun! Long Live Her Warmth! 
+		} 
+
+		lunari_supporter = {
+			picture = tur_sub_zero_survival_training
+			# Support Diana - Lunari are the true rulers! Long Live the Nightsky! Long Live the Moon!
+		} 
+
+		rakkor_supporter = {
+			picture = generic_pp_unity_bonus
+			# Support Their Collaboration! Long Live Mount Targon! May we rule Shurima for a Decades to come!  
+		} 
+		
+
+		# ----------------
+		# Production Bonus
+		# ----------------
+		
+		central_management = {
+			picture = generic_central_management
+		}
+
+		local_management = {
+			picture = generic_local_self_management
+		}
+				
+		recyclement = {
+			picture = generic_flexible_foreign_policy2
+		}
+
+		refurbishment ={ 
+			picture = generic_flexible_foreign_policy
+		}
+
+		# ----------------
+		#  United Railway
+		# ----------------
+
+		united_railway = {
+			picture = generic_train_tracks
+			
+		} 
+
+		famine = {
+			picture = raj_risk_of_famine
+			construction_factor = 0.50
+		}
+
+		starvation = {
+			picture = generic_agrarian_society
+			construction_factor = 0.25
+		}
+		
+		# --------------
+		#  Weaker Navy
+		# --------------
+			weaker_navy = {
+				picture = generic_coastal_defense_ships2
+			}
+		# --------------
+		#  Better Navy
+		# --------------
+			better_navy = {
+				picture = generic_coastal_defense_ships
+			}
+
+		# ----------------
+		#  Shurima Armada
+		# ----------------
+			shuriman_armada = {
+				picture = generic_navy_bonus
+			}
+		
+		# ----------------------------------
+		# Shuriman Targonian Aurman Nazuman
+		# ----------------------------------
+
+			# Strongest Navy Buff in the Whole Game
+
+			ascended_armada = {
+				picture = generic_navy_carrier_bonus
+			}
+		
+		# ----------------------------------
+		# Shuriman Targonian Aurman Nazuman 
+		# Contiental Hexcore Trade Agreement 
+		# ----------------------------------
+
+			armada_on_conquest = {
+				picture = liberty_ships_focus
+			}
+
+		# -------------
+		# Marai Marines
+		# -------------
+		
+		marai_marines = {
+			picture = generic_coastal_navy
+			naval_invasion_prep_speed = 10
+			naval_invasion_capacity = 5
+			amphibious_invasion = 0.5
+			amphibious_invasion_defence = 0.5
+			invasion_preparation = 0.3
+		}
+		
+		# ---------------
+		# Marai Dockyards
+		# ---------------
+		
+		marai_dockyards_idea = {
+			picture = generic_coastal_navy 
+			# boosts naval construction factor by 0.25
+		}
+
+		nazuman_dockyards = {
+			picture = escort_effort_focus
+		}
+
+		# ----------------
+		# Aurman Dockyards
+		# ----------------
+
+		aurman_dockyards_idea = {
+			picture = generic_the_london_naval_treaty 
+			# boosts naval construction factor by 0.15
+		}
+
+		aurman_arriving_idea ={ 
+			picture = eng_preparing_the_second_front
+		 }
+
+		# ---------------------
+		# Targonian Air Support
+		# ---------------------
+		
+		# Rakkor Support Version
+		SHU_targonian_air_support = {
+			picture = generic_air_bonus
+			# Boost Cas Damage
+			# Boost Night / Day time efficiency
+			# Boost Airplane Range
+		}
+
+		# Lunari Support Version
+		SHU_lunari_air_support = {
+			picture = generic_air_bonus
+			# Boost Cas Damage
+			# Boost night time efficiency
+			# Boost Airplane Agility
+		}
+
+		# Solari Support Version
+		SHU_solari_air_support = {
+			picture = generic_air_bonus
+			# Boost Cas Damage
+			# Boost day time efficiency
+			# Boost Airplane Defence
+		}
+
+		# ----------------------
+		# Mending the Tribal Gap
+		# ----------------------
+		
+		tribal_council = {
+
+		}
+		
+		tribal_recognition = {
+
+		}
+		
+		tribe_law = {
+
+		}
+		
+		tribal_respect = {
+			
+		}
+		
+		tribal_family = {
+
+		}
+		
+		tribal_ties = {
+
+		}
+
+		# ---------------------
+		# Mending Fragmentation
+		# ---------------------
+		
+		Shurima_broken = {
+			picture = SHU_shurima_broken-1239
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}	
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 1.5
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.5
+			}
+		}
+
+		Shurima_fractured = {
+			picture = SHU_shurima_fractured-1238
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 1
+				local_resources_factor = -0.15
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		Shurima_scattered = {
+			picture = SHU_shurima_scattered-1240
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.125
+			}
+		}
+
+		Shurima_apart = {
+			picture = SHU_shurima_apart-1241
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				# political_power_cost = 0
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.0625
+			}
+		}
+		
+
+		Shurima_united = {
+			picture = SHU_shurima_united-1242
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.5
+				political_power_cost = -1
+				# local_resources_factor = 0.00
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 1
+			}
+		}
+		
+		# -------------------
+		# Restoring the Pride
+		# -------------------
+		
+		Shuriman_shame = {
+			picture = SHU_shuriman_shame-1752
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		Shuriman_guilt = {
+			picture = SHU_shuriman_guilt-1753
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		Shuriman_hybris = {
+			picture = SHU_shuriman_hybris-1754
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		Shuriman_struggle = {
+			picture = SHU_shuriman_struggle-1755
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+
+		Shuriman_pride = {
+			picture = SHU_shuriman_pride-1756
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			on_add = {
+				add_political_power = 100
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {}
+		}
+				
+		# -----------------
+		# Foreign Relations 
+		# -----------------
+		
+		diplomacy_approach = {
+			picture = received_attache
+			# Improve All Effect factors for diplomacy
+			# Improve All Modifiers to improve diplomacy
+			# Reduce Price Of Improving relationships
+			# Increase Efficiency Factors of diplomacy
+
+		}
+
+		# -----------------
+		# Restoring Shurima
+		# -----------------
+		
+		Hex_crystal_sovereignty = {
+			picture = SHU_hex_crystal_sovereignty-1452
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.2
+			}
+		}
+
+		The_great_fall = {
+			picture = SHU_the_great_fall-1237
+			allowed = {
+				original_tag = SHU
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		# ------------------
+		# View of Shurima
+		# ------------------
+		
+			# Hated -> Rejected
+			azir_rejected = { picture = saf_ossewabrandwag_fascism }
+			sivir_rejected = { picture = can_patriation }
+
+			# Unsure -> Undecided
+			unsure_rule = { picture = saf_ossewabrandwag_2 }
+
+			# Loved -> Accepted
+			azir_accepted = { picture = saf_ossewabrandwag_2 }
+			sivir_accepted = { picture = saf_ossewabrandwag }
+
+
+			
+
+		# ------------------
+		# Legitimacy Shurima
+		# ------------------
+
+		low_legitimcy = {
+			picture = saf_ossewabrandwag_fascism
+		}
+		medium_legitimcy = {
+			picture = saf_ossewabrandwag_2
+		}
+		high_legitimcy = {
+			picture = saf_ossewabrandwag
+		}
+
+		# -----------------
+		# Slavery Shurima
+		# -----------------
+
+		sun_servitude = {
+			picture = socialist_science_focus
+		}
+
+		servitude = {
+			picture = socialist_science_focus
+		}
+
+		segregation = {
+			picture = saf_history_of_segregation_2
+		}
+		
+		Lawful_slavery = {
+			picture = saf_history_of_segregation
+		}
+
+		Lawless_slavery = {
+			picture = SHU_lawless_slavery-1506
+			allowed = { original_tag = SHU }
+			available = {}
+			cancel = {}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {}
+		}
+
+		# -------------------
+		# Restoring the Army
+		# -------------------
+		
+
+		shuriman_defense_bonus = {
+			name = "Shuriman Shieldwall" 
+			picture = ARG_military_government
+			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense" 
+			modifier = { army_defence = 0.10 }
+		}
+		
+		shuriman_defense_bonus_extra = {
+			name = "Shuriman Shieldwall" 
+			picture = ARG_military_government
+			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense for a year!" 
+			modifier = { army_defence = 0.10 days = 365 }
+		}
+
+		Offensive_War_Bonus = {
+			
+		}
+		
+		SHU_Officer_School = {
+			name = "Officer School"
+			picture = Combined_bomber_offensive
+			custom_effect_tooltip = "If we are going to war we better let our officers study it indepth!"
+			modifier = {
+				army_intel_factor = 0.45
+				army_intel_decryption_bonus = 0.25
+				land_doctrine_cost_factor = -0.10
+				offence = 0.05
+				defence = 0.05
+				attrition = -0.05
+			}
+		}
+	
+				
+		SHU_War_Academy = {
+			name = "War Academy"
+			picture = soviet_german_friendship
+			custom_effect_tooltip = "Why stop at officers? Our general need just as sharp wit, and organisation to study warfare."
+			modifier = {
+				army_intel_factor = 0.45
+				army_intel_decryption_bonus = 0.25
+				land_doctrine_cost_factor = -0.10
+				offence = 0.05
+				defence = 0.05
+				attrition = -0.05
+			}
+		}
+
+		SHU_rebuild_library_idea = {
+			name = "Rebuild Library"
+			picture = jap_supremacy_of_technology
+			custom_effect_tooltip = ""
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		
+		SHU_shuriman_university_idea = {
+			name = "Shuriman Universities"
+			picture = jap_supremacy_of_technology
+			custom_effect_tooltip = ""
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		
+		SHU_restore_great_library = {
+			name = "Restore The Great Shuriman"
+			picture = generic_research_bonus
+			custom_effect_tooltip = ""
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
+		Rebuilding_Ourselves = {}
+		Rebuilding_Our_Armory = {
+			picture = SOV_third_five_year_plan_military
+			custom_trigger_tooltip = "It's Time To Rebuild Our Great Armory!"
+
+			modifier = { production_speed_arms_factory_factor = 0.25}
+		}
+	}
+
+
+	mobilization_laws = {
+	}
+    economy = {
+
+    }
+	political_advisor = {
+	}
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	industrial_concern = {
+	}
+	theorist = {
+	}
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+}

@@ -1,0 +1,124 @@
+spriteTypes = {
+
+# LARGE MEANS LARGE OUTPUT NOT LARGE FILE OMFG
+
+# Animated 
+
+	frameAnimatedSpriteType = {
+		name = "GFX_portrait_shu_azir_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_azir_anim.dds"
+		noOfFrames = 83
+		animation_rate_fps = 21
+		looping = yes
+		play_on_show = yes
+	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_portrait_shu_azir_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_azir_anim.dds"
+		noOfFrames = 83
+		animation_rate_fps = 21
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_portrait_shu_taliyah_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_taliyah_full_anim.dds"
+		noOfFrames = 99
+		animation_rate_fps = 33
+		looping = yes
+		play_on_show = yes
+	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_portrait_shu_taliyah_face_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_taliyah_face_anim.dds"
+		noOfFrames = 99
+		animation_rate_fps = 33
+		looping = yes
+		play_on_show = yes
+	}
+
+# Larger 
+
+	# Azir
+	# SpriteType = {
+	# 	 name = "GFX_portrait_shu_azir_large"
+	#	 texturefile = "gfx/leaders/SHU/portrait_shu_azir_large.dds"
+	# }
+
+ 	# Ksante / K'sante
+	# SpriteType = {
+	# 	name = "GFX_portrait_shu_ksante_large"
+	# 	texturefile = "gfx/characters/SHU/portrait_shu_ksante_large.dds"
+	# }	
+
+ 	# Sivir
+	SpriteType = {
+		name = "GFX_portrait_shu_sivir_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_sivir_large.dds"
+	}
+
+ 	# Nasus	
+	SpriteType = {
+		name = "GFX_portrait_shu_nasus_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_nasus_large.dds"
+	}
+
+ 	# Renekton
+	SpriteType = {
+		name = "GFX_portrait_shu_renekton_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_renekton_large.dds"
+	}
+	
+ 	# Xerath
+	SpriteType = {
+		name = "GFX_portrait_shu_xerath_large"
+		texturefile = "gfx/leaders/SHU/portrait_shu_xerath_large.dds"
+	}
+
+	# Nami
+	spriteType = {
+		name = "GFX_portrait_nami_large"
+		texturefile = "gfx/characters/SHU/portrait_nami_large.dds"
+	}
+
+# Smaller 
+
+	# Azir
+	SpriteType = {
+		name = "GFX_portrait_shu_azir_small"
+		texturefile = "gfx/characters/SHU/portrait_azir_small.dds"
+	}
+
+	# Renekton
+	SpriteType = {
+		name = "GFX_portrait_shu_renekton_small"
+		texturefile = "gfx/characters/SHU/portrait_azir_small.dds"
+	}
+	
+	# Sivir
+	SpriteType = {
+		name = "GFX_portrait_shu_sivir_small"
+		texturefile = "gfx/characters/SHU/portrait_sivir_small.dds"
+	}
+	
+	# Taliyah
+	SpriteType = {
+		name = "GFX_portrait_shu_taliyah_small"
+		texturefile = "gfx/characters/SHU/portrait_taliyah_small.dds"
+	}
+
+	# Nasus
+	SpriteType = {
+		name = "GFX_portrait_shu_nasus_small"
+		texturefile = "gfx/characters/SHU/portrait_nasus_small.dds"
+	}
+
+	# Nami
+	spriteType = {
+		name = "GFX_portrait_nami_small"
+		texturefile = "gfx/characters/SHU/portrait_nami_small.dds"
+	}
+}
