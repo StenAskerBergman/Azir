@@ -66,21 +66,6 @@ units = {
  }
  division = {
   name = "Risen Soldier"
-  location = 703
-  division_template = "Sand Soldier"
-  start_experience_factor = 0.1
-  start_equipment_factor = 0.90
- }
- division = {
-  name = "Risen Soldier"
-  location = 674
-  division_template = "Sand Soldier"
-  start_experience_factor = 0.1
-  start_equipment_factor = 0.90
- }
-
- division = {
-  name = "Risen Soldier"
   location = 9086
   division_template = "Sand Soldier"
   start_experience_factor = 0.1

@@ -101,3 +101,24 @@ create_country_leader = {
 		Corrupt
 	}
 }
+
+XER = {
+	declare_war_on = {
+		target = SHU
+		type = civil_war
+	}
+	add_civil_war_target = SHU
+}
+
+create_wargoal = {
+	target = XER
+	type = civil_war
+}
+add_civil_war_target = XER
+
+set_province_controller = 9442
+set_province_controller = 9470
+set_province_controller = 9453
+set_province_controller = 1093
+set_province_controller = 1721
+set_province_controller = 5579

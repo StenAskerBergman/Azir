@@ -1,0 +1,42 @@
+
+state={
+        id=23
+        name="STATE_23"
+        #tungsten is wood
+        #rubber is stone
+        #steel is iron
+        #oil is coal
+        #chromium is hexite crystal
+        #aluminium is runes
+        resources={
+                tungsten = 6
+                rubber = 2
+                #steel = 4
+                #oil = 3
+                #chromium = 18
+                #aluminium = 6
+        }
+        history = {
+                owner = MUD
+                add_core_of = MUD
+                victory_points = {
+                        8363 10
+                }
+                buildings = {
+                        infrastructure = 2
+                        arms_factory = 0
+                        industrial_complex = 2
+                        dockyard = 0
+                        8350 = {
+                                naval_base = 2
+                        }
+                }
+        }
+        provinces={
+                5 467 1092 1254 1542 1550 2119 2559 2966 3204 3877 3899 3910 4869 5547 8343 8350 8355 8361 8363 8369 8386 8390 8391 8414 8416 8423 8429 8447 8448 8477 
+        }
+        buildings_max_level_factor=1.000
+        local_supplies=0.000
+        manpower=1201922
+        state_category = town
+}

@@ -1399,6 +1399,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_fate_of_targon
 		}
+		bypass = {
+			TAR = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			TAR = {
+				country_event = useful-events-quarior-anschluss.1
+			}
+		}
+		will_lead_to_war_with = TAR
 	}
 	
 	focus = {
@@ -2380,6 +2391,17 @@ focus_tree = {
 			focus = SHU_approach_piltover
 			focus = SHU_approach_zaun
 		}
+		bypass = {
+			PLT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			PLT = {
+				country_event = useful-events-quarior-anschluss.1
+			}
+		}
+		will_lead_to_war_with = PLT
 	}
 	
 	focus = {
@@ -2540,6 +2562,17 @@ focus_tree = {
 			focus = SHU_approach_piltover
 			
 		}
+		bypass = {
+			ZAU = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			ZAU = {
+				country_event = useful-events-quarior-anschluss.1
+			}
+		}
+		will_lead_to_war_with = ZAU
 	}
 	
 	focus = {
@@ -3455,7 +3488,7 @@ focus_tree = {
 		bypass = { 
 			AND = { 
 				# Bc: You don't want this to trigger day 1
-				hidden_trigger = { date > 990.1.5 } # date > 1941.6.22
+				hidden_trigger = { has_global_flag = SHU_XER_civil_war_trigger }
 				not = { has_war_with = XER }
 			}
 		}

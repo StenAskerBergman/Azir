@@ -44,6 +44,20 @@ units = {
 #   start_experience_factor = 0.1
 #   start_equipment_factor = 0.90
 # }
+division = {
+  name = "Light Soldier"
+  location = 674
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+division = {
+  name = "Light Soldier"
+  location = 703
+  division_template = "Arcane Followers"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
   division = {
   name = "Light Soldier"
   location = 5552
