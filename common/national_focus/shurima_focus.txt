@@ -1406,7 +1406,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			TAR = {
-				country_event = useful-events-quarior-anschluss.1
+				country_event = useful-events-quarior-annexion_ultimatum.1
 			}
 		}
 		will_lead_to_war_with = TAR
@@ -1550,6 +1550,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_fate_of_ixtal
 		}
+		bypass = {
+			IXT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			IXT = {
+				country_event = useful-events-quarior-anschluss.1
+			}
+		}
+		will_lead_to_war_with = IXT
 	}
 	
 	focus = {
