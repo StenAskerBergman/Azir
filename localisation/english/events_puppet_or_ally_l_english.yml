@@ -1,0 +1,5 @@
+﻿l_english:
+  puppet_or_ally.1.title:0 "Puppet or be ally?"
+  puppet_or_ally.1.desc:0 "We need to decide on the future of our relationship with [?country_puppet_ally.GetNameDef]. What we should do?"
+  puppet_or_ally.1.a:0 "Let's send a request for it to be our puppet"
+  puppet_or_ally.1.b:0 "Let's send a request to become allies"

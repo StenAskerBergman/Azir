@@ -125,11 +125,14 @@ focus_tree = {
 			focus = SHU_empress
 		}
 		available = {
-			custom_trigger_tooltip = unlock_by_event_tt
-			hidden_trigger = { always = no }
+			custom_trigger_tooltip = {
+				tooltip = unlock_by_event
+				always = no
+			}
 		}
 		completion_reward = {
 			set_country_flag = SHU_emperor_focus_completed
+			SHU_azir = { promote_character = { ideology = shurimanEmperor } }
 		}
 	}
 	
@@ -151,8 +154,18 @@ focus_tree = {
 			focus = SHU_emperor
 		}
 		available = {
-			custom_trigger_tooltip = unlock_by_event_tt
-			hidden_trigger = { always = no }
+			custom_trigger_tooltip = {
+				tooltip = unlock_by_event
+				always = no
+			}
+		}
+		completion_reward = {
+			SHU_azir = {
+				remove_country_leader_role = {
+					ideology = shurimanEmperor
+				}
+			}
+			SHU_sivir = { promote_character = { ideology = shurimanEmperor } }
 		}
 	}
 	
@@ -1487,6 +1500,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_fate_of_targon
 		}
+		available = {
+			TAR = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			set_variable = {
+				country_puppet_ally = TAR
+			}
+			country_event = puppet_or_ally.1
+		}
 	}
 	
 	# Shuriman Agreement
@@ -1543,6 +1567,7 @@ focus_tree = {
 		icon = GFX_focus_generic_total_war
 		x=-2
 		y=1
+		cost = 5
 		relative_position_id = SHU_fate_of_ixtal
 		mutually_exclusive = {
 			focus = SHU_puppet_or_ally_ixtal
@@ -1633,12 +1658,24 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x=2
 		y=1
+		cost = 5
 		relative_position_id = SHU_fate_of_ixtal
 		mutually_exclusive = {
 			focus = SHU_annex_ixtal
 		}
 		prerequisite = {
 			focus = SHU_fate_of_ixtal
+		}
+		available = {
+			IXT = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			set_variable = {
+				country_puppet_ally = IXT
+			}
+			country_event = puppet_or_ally.1
 		}
 	}
 	

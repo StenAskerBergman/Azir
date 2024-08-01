@@ -44,7 +44,7 @@ units = {
  }
  division = {
   name = "Risen Soldier"
-  location = 9266 # near vekura (9120)
+  location = 3723 # near vekura (9120)
   division_template = "Sand Soldier"
   start_experience_factor = 0.1
   start_equipment_factor = 0.90
