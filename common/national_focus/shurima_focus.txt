@@ -1526,6 +1526,17 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SHU_jungle_machine
+		icon = GFX_goal_unknown
+		x=-2
+		y=0
+		relative_position_id = SHU_fate_of_ixtal
+		prerequisite = {
+			#focus = SHU_fate_of_ixtal
+		}
+	}
+	
 	# Ixtal AA Line
 	focus = {
 		id = SHU_annex_ixtal
@@ -1542,7 +1553,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SHU_jungle_machine
+		id = SHU_hire_yuntal_exils
 		icon = GFX_goal_unknown
 		x=0
 		y=1
@@ -1557,9 +1568,9 @@ focus_tree = {
 		icon = GFX_goal_reform_socialist_army
 		x=0
 		y=1
-		relative_position_id = SHU_jungle_machine
+		relative_position_id = SHU_hire_yuntal_exils
 		prerequisite = {
-			focus = SHU_jungle_machine
+			focus = SHU_hire_yuntal_exils
 		}
 	}
 	
@@ -2104,7 +2115,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_approach_aurma
-			focus = SHU_rule_aurma
+			# focus = SHU_rule_aurma
 		}
 	}
 	
@@ -2143,7 +2154,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_approach_aurma
-			focus = SHU_rule_aurma
+			# focus = SHU_rule_aurma
 		}
 	}
 	
@@ -2169,7 +2180,7 @@ focus_tree = {
 		}
 	}
 	
-	# Aurma (Super) Puppet Soverignty Line
+	# Aurma - Puppet Soverignty Line
 	focus = {
 		id = SHU_autonomus_state
 		icon = GFX_goal_unknown
