@@ -3181,6 +3181,49 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_start_the_mines
 		}
+		available = {
+			has_character = SHU_taliyah
+			any_state = {
+				OR = {
+					state = 132
+					state = 116
+					state = 106
+					state = 312
+					state = 117
+					state = 115
+				}
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 132
+						state = 116
+						state = 106
+						state = 312
+						state = 117
+						state = 115
+					}
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+		}
 	}
 	
 	# Open Crystal Mines
@@ -3196,6 +3239,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_land_prospect
+		}
+		completion_reward = {
+			# Add hex crystal resssources ?
 		}
 	}
 	# Gold Trade
@@ -3260,6 +3306,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_non_factory_construct
 		x = 0 # 18
 		y = 1
+		cost = 7
 		relative_position_id = SHU_workers_rights
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -3267,8 +3314,49 @@ focus_tree = {
 		prerequisite = {
 			# focus = SHU_land_prospect
 		}
+		available = {
+			any_state = {
+				OR = {
+					state = 132
+					state = 116
+					state = 106
+					state = 312
+					state = 117
+					state = 115
+				}
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
 		completion_reward = {
 			# Remove Brazil No Resources Debuff
+			every_state = {
+				limit = {
+					OR = {
+						state = 132
+						state = 116
+						state = 106
+						state = 312
+						state = 117
+						state = 115
+					}
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 3
+				}
+			}
 		}
 	}
 	
@@ -3538,8 +3626,22 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+		available = {
+			132 = {
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = SHU_land_prospect
+				category = nuclear
+				bonus = 1.5
+			}
 		}
 	}
 	
