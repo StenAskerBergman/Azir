@@ -24,8 +24,7 @@ country_event = {
 		custom_effect_tooltip = shurima.1.pick_leader.tooltip_azir
 		ai_chance = { factor = 50 } # Adjust AI chance accordingly
 		# trigger = { # Add any conditions for selecting Azir }
-        SHU_azir = { promote_character = { ideology = shurimanEmperor } ruling_only = yes }
-        unlock_national_focus = SHU_emperor    
+        
         complete_national_focus = SHU_emperor        
 	}
 
@@ -35,12 +34,7 @@ country_event = {
         custom_effect_tooltip = shurima.1.pick_leader.tooltip_sivir				
         ai_chance = { factor = 50 } # Adjust AI chance accordingly
 		# trigger = { # Add any conditions for selecting Sivir }
-        unlock_national_focus = SHU_empress
         complete_national_focus = SHU_empress
-        
-        retire_country_leader = SHU_azir
-        SHU_sivir = { promote_character = { ideology = shurimanEmperor } ruling_only = yes }
-        
     }
 }
 
