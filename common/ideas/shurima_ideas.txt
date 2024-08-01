@@ -111,6 +111,18 @@ ideas = {
 			amphibious_invasion = 0.5
 			amphibious_invasion_defence = 0.5
 			invasion_preparation = 0.3
+
+			allowed = {
+                always = no
+            }
+				
+			cancel = {
+				has_global_flag = moonstone_quest_fail 
+			}
+
+			on_remove = {
+				clr_global_flag = moonstone_quest_fail
+			}
 		}
 		
 		# ---------------

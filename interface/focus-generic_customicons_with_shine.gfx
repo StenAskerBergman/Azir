@@ -1194,6 +1194,13 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/generic/GFX_goal_japanese_officer.dds"
     }
     
+    # JUNGLE SECTION
+
+    spriteType = {
+        name = "GFX_goal_jungle_machine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_machine.dds"
+    }
+
     spriteType = {
         name = "GFX_goal_jungle_company"
         texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
@@ -1238,7 +1245,439 @@ spriteTypes = {
         name = "GFX_goal_Jungle_Railroad"
         texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
     }
+        
+    spriteType = {
+        name = "GFX_jungle_training"
+        texturefile = "gfx/interface/goals/generic/GFX_jungle_training.dds"
+    }
     
+    spriteType = {
+        name = "GFX_jungle_work_camps"
+        texturefile = "gfx/interface/goals/generic/GFX_jungle_work_camps.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_goal_deep_jungle"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
+    }
+    
+    # JUNGLE SHINE
+
+    spriteType = {
+        name = "GFX_goal_jungle_company_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_jungle_defence_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_defence.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_defence.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_defence.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_Jungle_Diamond_Mine_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Diamond_Mine.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Diamond_Mine.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Diamond_Mine.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_jungle_forces_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_forces.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_forces.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_forces.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_Jungle_Gold_Mine_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Gold_Mine.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Gold_Mine.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Gold_Mine.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_jungle_pay_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_pay.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_pay.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_pay.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_jungle_projects_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_projects.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_projects.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_projects.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_jungle_radio_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_radio.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_radio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_radio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_Jungle_Railroad_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_goal_deep_jungle_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_goal_exotic_jungle_trade_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_goal_exotic_jungle_trade_shine"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_goal_jungle_machine_shine"
+        texturefile = "gfx/interface/goals/SHU/GFX_goal_jungle_machine.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/GFX_goal_jungle_machine.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 } 
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/GFX_goal_jungle_machine.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+
+
+    # JUNGLE END
+
     spriteType = {
         name = "GFX_goal_leblanc"
         texturefile = "gfx/interface/goals/generic/GFX_goal_leblanc.dds"
@@ -1736,17 +2175,7 @@ spriteTypes = {
         name = "GFX_JAP_tank"
         texturefile = "gfx/interface/goals/generic/GFX_JAP_tank.dds"
     }
-    
-    spriteType = {
-        name = "GFX_jungle_training"
-        texturefile = "gfx/interface/goals/generic/GFX_jungle_training.dds"
-    }
-    
-    spriteType = {
-        name = "GFX_jungle_work_camps"
-        texturefile = "gfx/interface/goals/generic/GFX_jungle_work_camps.dds"
-    }
-    
+
     spriteType = {
         name = "GFX_maritime_small_boat"
         texturefile = "gfx/interface/goals/generic/GFX_maritime_small_boat.dds"
@@ -2148,10 +2577,6 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/generic/GFX_goal_void_spread.dds"
     }
 
-    spriteType = {
-        name = "GFX_goal_deep_jungle"
-        texturefile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
-    }
     spriteType ={ 
         name = "GFX_focus_lion_riders"
         texturefile = "gfx/interface/goals/SHU/SHU_shuriman_lion_riders.dds"
@@ -2261,36 +2686,6 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     
-    spriteType = {
-        name = "GFX_goal_deep_jungle_shine"
-        texturefile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-            animationlooping = no			# yes or no ;)
-            animationtime = 0.75				# in seconds
-            animationdelay = 0			# in seconds
-            animationblendmode = "add"       #add, multiply, overlay
-            animationtype = "scrolling"      #scrolling, rotating, pulsing
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 2.0 y = 1.0 } 
-        }
-        animation = {
-            animationmaskfile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-            animationlooping = no			# yes or no ;)
-            animationtime = 0.75				# in seconds
-            animationdelay = 0			# in seconds
-            animationblendmode = "add"       #add, multiply, overlay
-            animationtype = "scrolling"      #scrolling, rotating, pulsing
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 } 
-        }
-        legacy_lazy_load = no
-    }
     
     SpriteType = {
         name = "GFX_focus_BlueIndustry_shine"
@@ -3953,37 +4348,6 @@ spriteType = {
     legacy_lazy_load = no
 }
 
-
-spriteType = {
-    name = "GFX_goal_exotic_jungle_trade_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
 
 
 spriteType = {
@@ -5745,37 +6109,6 @@ spriteType = {
     legacy_lazy_load = no
 }
 
-
-spriteType = {
-    name = "GFX_goal_exotic_jungle_trade_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_exotic_jungle_trade.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
 
 
 spriteType = {
@@ -10062,293 +10395,6 @@ spriteType = {
     legacy_lazy_load = no
 }
 
-
-spriteType = {
-    name = "GFX_goal_jungle_company_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_company.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_jungle_defence_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_defence.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_defence.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_defence.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_Jungle_Diamond_Mine_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Diamond_Mine.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Diamond_Mine.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Diamond_Mine.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_jungle_forces_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_forces.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_forces.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_forces.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_Jungle_Gold_Mine_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Gold_Mine.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Gold_Mine.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Gold_Mine.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_jungle_pay_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_pay.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_pay.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_pay.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_jungle_projects_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_projects.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_projects.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_projects.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_jungle_radio_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_jungle_radio.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_radio.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_jungle_radio.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
-
-
-spriteType = {
-    name = "GFX_goal_Jungle_Railroad_shine"
-    texturefile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
-    effectFile = "gfx/FX/buttonstate.lua"
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 2.0 y = 1.0 } 
-    }
-    animation = {
-        animationmaskfile = "gfx/interface/goals/generic/GFX_goal_Jungle_Railroad.dds"
-        animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-        animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-        animationlooping = no			# yes or no ;)
-        animationtime = 0.75				# in seconds
-        animationdelay = 0			# in seconds
-        animationblendmode = "add"       #add, multiply, overlay
-        animationtype = "scrolling"      #scrolling, rotating, pulsing
-        animationrotationoffset = { x = 0.0 y = 0.0 }
-        animationtexturescale = { x = 1.0 y = 1.0 } 
-    }
-    legacy_lazy_load = no
-}
 
 
 spriteType = {

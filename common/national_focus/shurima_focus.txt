@@ -1399,6 +1399,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_fate_of_targon
 		}
+		
 	}
 	
 	focus = {
@@ -1473,6 +1474,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SHU_annex_targon 
 		}
+		
+		
+		prerequisite = {
+			focus = SHU_fate_of_targon
+			focus = SHU_fish_on_land
+		}
 		prerequisite = {
 			focus = SHU_fate_of_targon
 		}
@@ -1526,17 +1533,63 @@ focus_tree = {
 		}
 	}
 	
+	# Requirement to Annex - Optional
 	focus = {
 		id = SHU_jungle_machine
-		icon = GFX_goal_unknown
-		x=-2
+		icon = SHU_jungle_machine
+		x=-3
 		y=0
 		relative_position_id = SHU_fate_of_ixtal
+
+	}
+
+	# Crystal Scar: Starter Line
+
+	# Fate of Crystal Scar
+	focus = {
+		id = SHU_fate_of_crystal_scar
+		icon = GFX_goal_unknown
+		x=-3
+		y=0
+		relative_position_id = SHU_fate_of_targon
 		prerequisite = {
 			#focus = SHU_fate_of_ixtal
 		}
 	}
-	
+
+	# Nami hunts Diana! - Simple version ( for now :D )
+	focus = {
+		id = SHU_fish_on_land
+		icon = GFX_goal_unknown
+		x=3
+		y=0
+		relative_position_id = SHU_fate_of_targon
+
+		available = {
+			# ALL CONDITIONS MUST BE TRUE TO BE SELECTED/SEEN
+			OR = {
+				TAR = { has_country_flag = diana_ran_away }
+				ROOT = { has_country_flag = has_moonstone}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				
+				limit ={
+					has_character = SHU_nami 
+					has_country_flag = gave_moonstone
+				}
+				
+				set_global_flag = moonstone_quest_success
+			}
+			else = {
+				
+				set_global_flag = moonstone_quest_fail # set_global_flag moonstone_quest_fail 1
+			}
+		}
+	}
+
 	# Ixtal AA Line
 	focus = {
 		id = SHU_annex_ixtal
@@ -1544,8 +1597,14 @@ focus_tree = {
 		x=-2
 		y=1
 		relative_position_id = SHU_fate_of_ixtal
+
 		mutually_exclusive = {
 			focus = SHU_puppet_or_ally_ixtal
+		}
+
+		prerequisite = {
+			focus = SHU_fate_of_ixtal
+			focus = SHU_jungle_machine
 		}
 		prerequisite = {
 			focus = SHU_fate_of_ixtal
@@ -2275,16 +2334,43 @@ focus_tree = {
 	# ██║  ██╗██╔══██╗  ╚██╔╝   ╚═══██╗   ██║   ██╔══██║██║        ╚═══██╗██║  ██╗██╔══██║██╔══██╗
 	# ╚█████╔╝██║  ██║   ██║   ██████╔╝   ██║   ██║  ██║███████╗  ██████╔╝╚█████╔╝██║  ██║██║  ██║
 	#  ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝  ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+		
+	# # FYI: Conceptual future idea - this, may or may not be kept!
+	# # Its time we determine the fate of the foreign companies 
+	# focus = {
+	# 	id = SHU_fate_of_foreigners #crystal_scar 
+	# 	icon = GFX_goal_unknown
+	# 	x=3
+	# 	y=0
+	# 	relative_position_id = SHU_approach_zaun
+	# 	prerequisite = {
+	# 		focus = SHU_fate_of_crystal_scar # SHU_starter_crystal_scar
+	# 	}
+	# 	available = {
+	# 		if ={
+	# 			SHU = {
+	# 				tooltip = "Has Taliyah"
+	# 				has_character = SHU_taliyah	
+	# 			}
+	#
+	# 			SHU = {
+	# 				tooltip = "Has Natinalized Hexcore"
+	# 				has_country_flag = has_nationalized_hexcore
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
-	# crystal_scar Starter Line
+
+	# Its time we determine the fate of the Brackern 
 	focus = {
-		id = SHU_starter_crystal_scar
+		id = SHU_fate_of_brackern #crystal_scar # SHU_starter_crystal_scar
 		icon = GFX_goal_unknown
 		x=3
 		y=0
 		relative_position_id = SHU_approach_zaun
 		prerequisite = {
-			# focus = SHU_Minors
+			focus = SHU_fate_of_crystal_scar # SHU_starter_crystal_scar
 		}
 		available = {
 			if ={
@@ -2307,10 +2393,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x=0
 		y=1
-		relative_position_id = SHU_starter_crystal_scar
+		relative_position_id = SHU_fate_of_brackern #crystal_scar
 		
 		prerequisite = {
-			focus = SHU_starter_crystal_scar
+			focus = SHU_fate_of_brackern #crystal_scar
 			# focus = SHU_starter_zaun_crystal_scar
 		}
 	}
@@ -3769,7 +3855,7 @@ focus_tree = {
 				NAZ = {
 					OR = {
 						is_subject = yes
-						exists = no 
+						exists = no  
 						AND = {
 							is_in_faction = yes
 							NOT = { is_in_faction_with = SHU }
