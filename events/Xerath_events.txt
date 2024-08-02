@@ -10,21 +10,21 @@ country_event = {
 	title = "Power Play"
 	desc = "Placeholder text, Main Msg -> Pick Your Leader"
 	picture = GFX_report_event_empty_throne
-    is_triggered_only = yes
+	is_triggered_only = yes
 	fire_only_once = no
 	
 	trigger ={
 		# Origin Country
 		tag = XER
 	}
-
+	
 	# Xerath
 	option = {
 		name = "Make Xerath Leader"
 		# custom_effect_tooltip = "Make Xerath Leader"
 		# retire = XER_renekton
 		# unlock_national_focus = XER_Xerath_Conquest #
-        complete_national_focus = XER_Xerath_Conquest        
+		complete_national_focus = XER_Xerath_Conquest        
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.15
@@ -41,14 +41,14 @@ country_event = {
 		}
 		
 	}
-
+	
 	# Renekton Option
 	option = {
 		name = "Make Renekton Leader"
 		retire_country_leader = yes
 		set_politics = { ruling_party = fascism }	
 		unlock_national_focus = XER_Renekton_Conquest    
-        # complete_national_focus = XER_Renekton_Conquest        	
+		# complete_national_focus = XER_Renekton_Conquest        	
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.25
@@ -77,52 +77,42 @@ country_event = {
 	title = "Final Struggle" # shurima.azir.1.t
 	desc = "We Embark On Our Final Struggle Towards a world of Total Enlightenment!" # shurima.azir.1.d
 	picture = GFX_report_event_empty_throne
-	effect_tooltip = "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!"
-    
-    # trigger = { always = yes }
-    fire_only_once = yes
-    is_triggered_only = yes
-    
-    # mean_time_to_happen = { days = 1 }
-
-	trigger = {
-        country_exists = SHU
-
-		NOT ={ xer_at_war_with_shu = true}
-		NOT ={ has_country_flag = xer_at_war_with_shu }
-
-		SHU = {
-			has_war_with = XER
-		}
-		
-		XER = {
-			has_war_with = SHU
-			has_offensive_war_with = SHU
+	trigger = { NOT = { has_country_flag = xer_at_war_with_shu } }
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		custom_effect_tooltip = "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!"
+	
+		hidden_effect = {
+			set_global_flag = SHU_XER_civil_war_trigger
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = XER
+							tag = SHU
+						}
+					}
+					scoped_play_song = warofresistance
+				}
+			}
 		}
 	}
-
-    immediate = {
-        create_wargoal = {
-            target = SHU
-            attacker = XER
-            type = annex_everything
-        }
-
-        declare_war_on = {
-        target = SHU
-        type = annex_everything
-        }
-    }
-
-
+	
+	
 	option = { # Breaking point!
-		name = "Let us Begin!"
-        xer_at_war_with_shu = true
-        ai_chance = { factor = 100 }
-		news_event = { id = shuriman_rnews.5 days = 1 }
-        set_country_flag = xer_at_war_with_shu
-
-	}
+	name = "Let us Begin!"
+	ai_chance = { factor = 100 }
+	
+	# Not Sure we need to show this! # for XER & SHU 
+	# but I think its already solve, it misses them
+	news_event = { id = shuriman_rnews.5 days = 2 }
+	set_country_flag = xer_at_war_with_shu
+}
 }
 
 # Other - Random

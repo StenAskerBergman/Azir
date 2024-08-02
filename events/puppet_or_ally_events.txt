@@ -1,0 +1,103 @@
+﻿add_namespace = puppet_or_ally
+
+country_event = {
+	id = puppet_or_ally.1
+	title = puppet_or_ally.1.title
+	desc = puppet_or_ally.1.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	# Puppet
+	option = {
+		name = puppet_or_ally.1.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				var:country_puppet_ally = {
+					is_enemy_ideology = yes
+				}
+				factor = 2
+			}
+			modifier = {
+				var:country_puppet_ally = {
+					is_subject_of = ROOT
+				}
+				factor = 2
+			}
+		}
+		var:country_puppet_ally = {
+			country_event = {
+				id = NSB_soviet_foreign_politics_events.200
+				days = 5
+				random_days = 3
+			}
+		}
+	}
+	
+	# Puppet
+	option = {
+		name = puppet_or_ally.1.b
+		trigger = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction_with = var:country_puppet_ally
+				AND = {
+					ROOT = {
+						is_in_faction = no
+					}
+					var:country_puppet_ally = {
+						is_faction_leader = yes
+					}
+				}
+			}
+			NOT = {
+				has_war_with = var:country_puppet_ally
+			}
+		}
+		ai_chance = {
+			modifier = {
+				var:country_puppet_ally = {
+					has_same_ideology = yes
+				}
+				factor = 2
+			}
+			modifier = {
+				is_in_faction_with = var:country_puppet_ally
+				add = 1
+			}
+			modifier = {
+				has_war_with = var:country_puppet_ally
+				factor = 0
+			}
+		}
+		var:country_puppet_ally = {
+			if = {
+				limit = {
+					NOT = {
+						is_in_faction_with = ROOT
+					}
+				}
+				
+				if = {
+					limit = {
+						ROOT = {
+							is_in_faction = yes
+							is_faction_leader = yes
+						}
+					}
+					country_event = generic.5
+				}
+				else_if = {
+					limit = {
+						var:country_puppet_ally = {
+							is_faction_leader = yes
+						}
+					}
+					country_event = generic.2
+				}
+			}
+		}
+	}
+}

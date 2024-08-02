@@ -1,0 +1,42 @@
+
+state={
+        id=38
+        name="STATE_38"
+        #tungsten is wood
+        #rubber is stone
+        #steel is iron
+        #oil is coal
+        #chromium is hexite crystal
+        #aluminium is runes
+        resources={
+                tungsten = 5
+                rubber = 6
+                #steel = 3
+                #oil = 5
+                #chromium = 3
+                #aluminium = 3
+        }
+        history = {
+                owner = HAR
+                add_core_of = HAR
+                victory_points = {
+                        8740 10
+                }
+                buildings = {
+                        infrastructure = 2
+                        arms_factory = 0
+                        industrial_complex = 1
+                        dockyard = 1
+                        8740 = {
+                                naval_base = 2
+                        }
+                }
+        }
+        provinces={
+                1179 1809 2803 2816 3298 3426 3846 4005 4102 4455 4828 4872 5000 5035 5064 5114 5250 5289 5717 5736 8608 8620 8627 8635 8645 8654 8656 8671 8681 8684 8690 8717 8740 8754 8767 8793 8801 8807 8811 8820 8823 8824 8837 
+        }
+        buildings_max_level_factor=1.000
+        local_supplies=0.000
+        manpower=1402923
+        state_category = town
+}

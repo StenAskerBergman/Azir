@@ -874,23 +874,18 @@ focus_tree = {
 		}
         
 		available = {
-            has_country_flag = resist_the_void
+            has_country_flag = resisted_the_void
             has_country_flag = No_Void_Threats
 			# custom_trigger_tooltip = unlock_by_event_tt
 			# hidden_trigger = { always = no } 
 		}
-        
-        allowed = {
-            has_country_flag = No_Void_Threats
-            has_country_flag = resist_the_void
-        }
 
 		completion_reward = {
             # Improve relations with all neighbors
             every_neighbor_country = {
                 add_opinion_modifier = {
                     target = ROOT
-                    modifier = improved_relations
+                    modifier = improve_relation
                 }
             }
             # Change ideology rule to allow joining factions
@@ -898,7 +893,7 @@ focus_tree = {
                 can_join_factions = yes
             }
             # Remove Abandonment
-            remove_country_flag = VOI_abandonment
+            clr_country_flag = VOI_abandonment
         }
         ai_will_do = {
             factor = 5

@@ -5,32 +5,32 @@
   father_of_the_empire: "Father of the Empire"
 
  ##### ADVISORS
- 
+
  ##### ARMY CHIEF
- 
+
  ##### NAVY CHIEF
- 
+
  ##### AIR CHIEF
- 
+
  ##### HIGH COMMAND
- 
+
  ##### ARMOR DESIGNER
- 
+
  ##### AIRCRAFT DESIGNER
- 
+
  ##### SHIP DESIGNER
- 
+
  ##### MATERIAL DESIGNER
- 
+
  ##### INDUSTRIAL CONCERN
- 
+
  ##### THEORIST
- 
+
 ################################### OPINION MODIFIERS           \n      §H§!
- 
- 
- 
- 
+
+
+
+
 ################################### FOCUSES                     \n      §H§!
 SHU_lectures_in_shakkal: "Lectures in Shakkal"
 SHU_lectures_in_shakkal_desc: "Hold lectures in Shakkal to educate our people about the threat of the Void and improve our tactics against it. This will grant us an attack bonus against Void creatures."
@@ -236,7 +236,7 @@ SHU_rebuilding_our_armada_desc: "It is time we start rebuilding our fleets to th
 SHU_merchant_fleet: "Merchant Fleet"
 SHU_merchant_fleet_desc: "Establish a strong and expansive merchant fleet to boost our trade capabilities. This will enhance our economic strength by increasing the flow of goods and resources between Shurima and other regions."
 
-# TODO: Write Definition + Maybe BOP: Guild vs Workers 
+# TODO: Write Definition + Maybe BOP: Guild vs Workers
 SHU_work_unions: "Work Unions"
 SHU_work_unions_desc: "Form work unions to represent and protect the interests of our labor force. This will improve working conditions, increase productivity, and ensure the well-being of our workers, fostering loyalty and stability within the empire."
 
@@ -244,7 +244,7 @@ SHU_work_unions_desc: "Form work unions to represent and protect the interests o
 SHU_marai_dockyards: "Marai Shipbuilders"
 SHU_marai_dockyards_desc: "We must give the Marai People a reason to help us! It's high time we get a fleet, and only by rewarding the Marai shipbuilders a more integral part of the empire can this slow process be lifted!\n\n§GHint: Our naval expansion will be alot faster with Nami on our side!§!"
 
-#TODO: The Marai People are willing to help us, however their skillset needs to be 
+#TODO: The Marai People are willing to help us, however their skillset needs to be
 SHU_marai_dockyards_company: "Hire Marai Company"
 SHU_marai_dockyards_company_desc: "The Marai People are willing to help us, however their skillset needs to be developed! \n\nUtilize the shipbuilding expertise of Marai This will enhance our naval capabilities and strengthen our maritime presence."
 
@@ -588,7 +588,7 @@ SHU_rebuild_trade_routes: "Rebuild Trade Routes"
 SHU_rebuild_trade_routes_desc: "Re-establish our ancient trade routes to bring wealth and exotic goods back to Shurima. Enhancing our trade infrastructure will boost our economy and strengthen ties with neighboring regions, ensuring Shurima's prosperity and dominance in commerce."
 
 
-#"With the Sun Disc restored and Shurima's influence expanding, we must re-establish our ancient trade routes. These routes once brought wealth, knowledge, and exotic goods to our empire. Enhancing our trade infrastructure will bolster our economy and strengthen ties with neighboring regions, ensuring Shurima's prosperity and dominance in commerce." 
+#"With the Sun Disc restored and Shurima's influence expanding, we must re-establish our ancient trade routes. These routes once brought wealth, knowledge, and exotic goods to our empire. Enhancing our trade infrastructure will bolster our economy and strengthen ties with neighboring regions, ensuring Shurima's prosperity and dominance in commerce."
 
 #"With the Sun Disc restored and Shurima's influence expanding, it is imperative to re-establish and enhance our ancient trade routes. These routes were once the lifeblood of our empire, bringing wealth, knowledge, and exotic goods from distant lands. By improving our trade infrastructure, we will not only bolster our economy but also strengthen our ties with neighboring regions, ensuring Shurima's prosperity and dominance in commerce. Let us revive the golden paths that once connected the heart of Shurima to the farthest reaches of Runeterra."
 
@@ -635,7 +635,7 @@ SHU_aircraft_industry: "Aircraft Industry"
 SHU_aircraft_industry_desc: "We must build up our airfleet to ensure air supremacy against all the dragons and aircrafts that pose a threat to our empire"
 
 SHU_shuriman_armor: "Shuriman Armor"
-SHU_shuriman_armor_desc: "Our Soldiers is our last line of defense! But if we want our last line to become our first line, then something has to change!" 
+SHU_shuriman_armor_desc: "Our Soldiers is our last line of defense! But if we want our last line to become our first line, then something has to change!"
 
 SHU_shurima_bow_deep: "SHURIMA KNEEL!"
 SHU_shurima_bow_deep_desc: "Once More We stand at the gates of History! No Longer shall we take the filth left over by others! BOW FOR DAUGHTERS OF SHURIMA, KNEEL MY SONS OF THE SUN TODAY I RISE!"
@@ -675,26 +675,26 @@ SHU_gold_refinement_desc: "By utilizing the mining gold dust left overs, in a tr
 
 #OLD "Mineral Deposits" "Deep Mineral Veins" "Deep Minerals" "Deep Mineral Mining" "Deep Mineral Mines" "Digging Deeper" "Deep Dig" "Dig Deeper!" "Deep Mineral Ore"
 SHU_open_metal_mines: "Deep Mineral Ore"
-SHU_open_metal_mines_desc: "With Taliyah's on our side we can finally to dig deep enough to uncover untapped Mineral Deposits!" 
+SHU_open_metal_mines_desc: "With Taliyah's on our side we can finally to dig deep enough to uncover untapped Mineral Deposits!"
 
 # Extra S
 SHU_gold_reserves: "Gold Reserves"
-SHU_gold_reserves_desc: "The this much Gold about to enter into circulation, will tank its price, its better if we build up our own gold stockpile instead, and use it to bargin with when needed, that way we also have secure funding for whatever we desire." 
+SHU_gold_reserves_desc: "The this much Gold about to enter into circulation, will tank its price, its better if we build up our own gold stockpile instead, and use it to bargin with when needed, that way we also have secure funding for whatever we desire."
 
 # Default
 SHU_gold_reserve: "Gold Reserve"
-SHU_gold_reserve_desc: "The this much Gold about to enter into circulation, will tank its price, its better if we build up our own gold stockpile instead, and use it to bargin with when needed, that way we also have secure funding for whatever we desire." 
+SHU_gold_reserve_desc: "The this much Gold about to enter into circulation, will tank its price, its better if we build up our own gold stockpile instead, and use it to bargin with when needed, that way we also have secure funding for whatever we desire."
 
-# "Gold Trade" "Golden Trade" "Golden Monopoly" "Gold Market" 
+# "Gold Trade" "Golden Trade" "Golden Monopoly" "Gold Market"
 # "Gold Index" "Gold Value" "Gold Price" "Golden Profits"
 # "Price Index"  "Stock exchange" "Gold Exchange"
 
 SHU_gold_trade: "Price Index"
-SHU_gold_trade_desc: "The deemand for gold is at all time high, to resolve soaring gold prices we need to take precautionary step and create gold order system let us trade our future gold at a competative gold price." 
+SHU_gold_trade_desc: "The deemand for gold is at all time high, to resolve soaring gold prices we need to take precautionary step and create gold order system let us trade our future gold at a competative gold price."
 
 SHU_safermines: "Safer Mines!"
-SHU_safermines_desc: "With Taliyah's on our side we can afford to take more risk!" 
-# "With Taliyah's on our side we can afford to dig deeper!" 
+SHU_safermines_desc: "With Taliyah's on our side we can afford to take more risk!"
+# "With Taliyah's on our side we can afford to dig deeper!"
 
 SHU_shuriman_university: "Shuriman University"
 SHU_shuriman_university_desc: "A new age of Enlightment is here, to harbour the shuriman minds in order for the shuriman mind to bloom."
@@ -711,13 +711,13 @@ SHU_Restoring_Shuriman_Economy_desc: "Restoring Economic prosperity is no small 
 SHU_Restoring_Shuriman_Economy_TT: "Allows us to finally resolve our forsaken economic  situation"
 
 SHU_general_academy: "OLD"
-SHU_officer_academy: "OLD" 
+SHU_officer_academy: "OLD"
 
 
 SHU_officer_school: "Officer School"
 SHU_officer_school_desc: "The Officer School trains all Shuriman patriots for military careers, providing a place where officers enhance their skills to surpass our enemies!\n\n§GArmy Buffs & Better Officers§!"
 
-SHU_war_academy: "War Academy" 
+SHU_war_academy: "War Academy"
 SHU_war_academy_desc: "The military relies on the War Academy to forge a formidable skillset, sharpening minds like spears to outmatch our foes on the battlefield!\n\n§GArmy Buffs & Better Generals!"
 
 SHU_restore_great_library: "Restore Shuriman Library"
@@ -836,11 +836,11 @@ SHU_annex_nazumah: "Annex Nazumah"
 SHU_annex_nazumah_desc: "Bring the city-state of Nazumah under Shuriman control. This will secure our southern border and provide a valuable trade hub."
 
 SHU_puppet_nazumah: "Puppet Nazumah"
-SHU_puppet_nazumah_desc: "Establish Nazumah as a Shuriman vassel state. By Puppeting Nazumah our influence will expand without the administrative burden of direct control.\n\n§OPuppet Nazumah§!" 
+SHU_puppet_nazumah_desc: "Establish Nazumah as a Shuriman vassel state. By Puppeting Nazumah our influence will expand without the administrative burden of direct control.\n\n§OPuppet Nazumah§!"
 SHU_puppet_nazumah_tt: "§OPuppets Nazumah, into our Vassel state!§!"
 
 SHU_nazumahs_pride: "Royal Plot"
-SHU_nazumahs_pride_desc: "By Establish Ksante as Nazumah King and ending their legacy as a trouble state, we might be able to ensure they become a loyal royal subject, a true Shuriman vassel state.  By installing K'sante Nazumah our influence will expand without the administrative burden of direct control.\n\n§OPuppet Nazumah§!" 
+SHU_nazumahs_pride_desc: "By Establish Ksante as Nazumah King and ending their legacy as a trouble state, we might be able to ensure they become a loyal royal subject, a true Shuriman vassel state.  By installing K'sante Nazumah our influence will expand without the administrative burden of direct control.\n\n§OPuppet Nazumah§!"
 SHU_nazumahs_pride_tt: "§OPuppets Nazumah, into our Vassel state!§!"
 
 SHU_imperial_efforts: "Imperial Efforts"
@@ -866,16 +866,16 @@ SHU_rebirth_legions_tooltip: "Enables us re-configure our own divisions!"
 
 
 ################################### IDEAS                       \n      §H§!
- 
- 
- 
- 
-################################### DECISIONS                   \n      §H§! 
- 
 
 
 
- 
+
+################################### DECISIONS                   \n      §H§!
+
+
+
+
+
 ################################### EVENTS                      \n      §H§!
 
 
@@ -885,7 +885,7 @@ afk_tag.1000000.d: ""
 afk_tag.1000000.a: ""
 afk_tag.1000000.b: ""
 afk_tag.1000000.c: ""
- 
+
 ################################### OTHER\n                     \n      §H§!
 
 has_nationalized_hexcore: "Has Nationalized Hexcore"
@@ -900,21 +900,16 @@ SHU_TALIYAH_DESC: "Taliyah of the Nasaaj,\n The Stoneweaver Taliyah is a nomadic
 SHU_AZIR_NAME: "Azir" # God Emperor of Shurima
 SHU_AZIR_DESC: "The Acended Emperor of Shurima Azir \n was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended being of immense power. With his buried city risen from the sand, Azir seeks to restore Shurima to its former glory."
 
-SHU_NASUS_NAME: "Nasus" 
+SHU_NASUS_NAME: "Nasus"
 
-SHU_SIVIR_NAME: "Sivir" 
+SHU_SIVIR_NAME: "Sivir"
 SHU_SIVIR_DESC: "The Battle Mistress of Shurima,\n Sivir is a renowned fortune hunter and mercenary captain.  Feared and respected for her combat prowess, she leads her band of sellswords through the harsh Shuriman deserts, taking on lucrative contracts to recover lost treasures from ancient tombs.  While fiercely loyal to her crew, Sivir prioritizes profit, and her blade sings for the highest bidder."
 
 # SHU_SIVIR_NAME: "Sivir, Empress of Shurima"
 # SHU_SIVIR_DESC: "Once a cunning treasure hunter,\n Sivir now finds herself Empress of the reborn Shurima. Ascended by Azir's will, she trades the thrill of tomb raiding for the burden of ruling a vast desert empire.  Though her past as a mercenary captain honed her into a formidable leader, the weight of responsibility clashes with her free spirit.  Sivir wrestles with the legacy thrust upon her, even as she fights to protect her newfound home and its Ascended emperor."
 
-SHU_NAME_KSANTE: "K'Sante" 
+SHU_NAME_KSANTE: "K'Sante"
 
 SHU_NAME_NAMI: "Nami"
 
-# ! TODO: We should create a new file for all the names and just call them "NAME_" + "Champ_Name_in_Caps" 
-
-
-
- 
- 
+# ! TODO: We should create a new file for all the names and just call them "NAME_" + "Champ_Name_in_Caps"

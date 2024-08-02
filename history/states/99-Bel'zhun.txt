@@ -17,7 +17,8 @@ resources={
  #aluminium = 7
  }
  history = {
- owner = NOX
+ owner = BLZ
+ add_core_of = BLZ
  # add_core_of = NOX # Post Event
  add_core_of = SHU
  add_core_of = XER
