@@ -1,0 +1,10 @@
+ideas = {
+
+    country = {        
+
+        jungle_machine = {
+            picture = LAT_the_sun_shines_equally
+        }
+
+    }
+}

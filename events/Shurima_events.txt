@@ -276,7 +276,7 @@ country_event = {
 	}
 }
 
-#Shuriman Void Events
+# Shuriman Void Events
 country_event = {
 	id = shurima.33
 	title = shurima.33.t
@@ -385,6 +385,24 @@ country_event = {
             add_war_support = 0.10
         }
     }
+}
+
+# Guild Events Series
+country_event = {
+	id = shurima.101
+	title = shurima.101.t
+	desc = shurima.101.d
+	picture = GFX_report_event_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Acknowledge"
+		hidden_effect = {
+			# Add a hidden idea that will trigger the event every year or two years
+			add_ideas = SHU_recurring_event_trigger
+		}
+	}
 }
 
 

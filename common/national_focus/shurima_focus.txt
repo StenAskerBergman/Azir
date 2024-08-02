@@ -428,192 +428,467 @@ focus_tree = {
 	
 	# Shuriman Navy 
 	
-	# # Rebuilding Our Dockyards - SHU_rebuilding_our_dockyards
-	# focus = {
-	# 	id = SHU_rebuilding_our_harbours
-	# 	icon = GFX_goal_generic_construct_naval_dockyard # doesn't exit -> GFX_goal_generic_construct_dockyard 
-	# 	x = 1
-	# 	y = 1
-	# 	relative_position_id = SHU_shuriman_legions
-	# 	cost = 5
+	# Rebuilding Our Dockyards - SHU_rebuilding_our_dockyards
+	focus = {
+		id = SHU_rebuilding_our_harbours
+		icon = GFX_goal_generic_construct_naval_dockyard # doesn't exit -> GFX_goal_generic_construct_dockyard 
+		x = 1
+		y = 1
+		relative_position_id = SHU_shuriman_legions
+		cost = 12
 	
-	# 	prerequisite ={
-	# 		focus = SHU_shuriman_legions
-	# 	}
+		prerequisite ={
+			focus = SHU_shuriman_legions
+		}
 	
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}
+		ai_will_do = {
+			factor = 1
+		}
 	
-	# 	available = {
-	# 		# Condition to ensure the player controls at least one coastal state
-	# 		OR = {
-	# 			# Northern Coast
-	# 			114 = { is_controlled_by = ROOT } # Kalamandian
-	# 			107 = { is_controlled_by = ROOT } # Nashramae
+		available = {
+			# Condition to ensure the player controls at least one coastal state
+			OR = {
+				# Northern Coast
+				114 = { is_controlled_by = ROOT } # Kalamandian
+				107 = { is_controlled_by = ROOT } # Nashramae
 	
-	# 			# Aurma
-	# 			110 = { is_controlled_by = ROOT } # Northern Island 
+				# Aurma
+				110 = { is_controlled_by = ROOT } # Northern Island 
 	
-	# 			# Noxian colony
-	# 			103 = { is_controlled_by = ROOT } #Northn Eastern 
-	# 			101 = { is_controlled_by = ROOT } #North West A
-	# 			100 = { is_controlled_by = ROOT } # Northern Island 
-	# 			99 = { is_controlled_by = ROOT } #North West B
+				# Noxian colony
+				103 = { is_controlled_by = ROOT } #Northn Eastern 
+				101 = { is_controlled_by = ROOT } #North West A
+				100 = { is_controlled_by = ROOT } # Northern Island 
+				99 = { is_controlled_by = ROOT } #North West B
 	
-	# 			# Western Coast 
-	# 			118 = { is_controlled_by = ROOT } # Crystal Scar
-	# 			119 = { is_controlled_by = ROOT } # Nazumah Coast
-	# 			120 = { is_controlled_by = ROOT } # Marai Coast
+				# Western Coast 
+				118 = { is_controlled_by = ROOT } # Crystal Scar
+				119 = { is_controlled_by = ROOT } # Nazumah Coast
+				120 = { is_controlled_by = ROOT } # Marai Coast
 	
-	# 			#Sourthern Coast
-	# 			122 = { is_controlled_by = ROOT } # Marai Coast
-	# 			126 = { is_controlled_by = ROOT } # Marai Coast
-	# 			127 = { is_controlled_by = ROOT } # Marai Coast
+				#Sourthern Coast
+				122 = { is_controlled_by = ROOT } # Marai Coast
+				126 = { is_controlled_by = ROOT } # Marai Coast
+				127 = { is_controlled_by = ROOT } # Marai Coast
 	
-	# 			# Void Coastline
-	# 			91 = { is_controlled_by = ROOT } # Void Coast
-	# 			92 = { is_controlled_by = ROOT } # Void Coast
-	# 			93 = { is_controlled_by = ROOT } # Void Coast
-	# 			94 = { is_controlled_by = ROOT } # Void Coast
-	# 			95 = { is_controlled_by = ROOT } # Void Coast
-	# 			96 = { is_controlled_by = ROOT } # Void Coast
-	# 			97 = { is_controlled_by = ROOT } # Void Coast
-	# 			98 = { is_controlled_by = ROOT } # Void Coast
+				# Void Coastline
+				91 = { is_controlled_by = ROOT } # Void Coast
+				92 = { is_controlled_by = ROOT } # Void Coast
+				93 = { is_controlled_by = ROOT } # Void Coast
+				94 = { is_controlled_by = ROOT } # Void Coast
+				95 = { is_controlled_by = ROOT } # Void Coast
+				96 = { is_controlled_by = ROOT } # Void Coast
+				97 = { is_controlled_by = ROOT } # Void Coast
+				98 = { is_controlled_by = ROOT } # Void Coast
 	
-	# 			# Add all other coastal state IDs that can have dockyards
-	# 		}
-	# 	}
+				# Add all other coastal state IDs that can have dockyards
+			}
+		}
 	
-	# 	completion_reward = {
-	# 		# Add dockyards to all valid coastal states
-	# 		if = {
-	# 			limit = { is_controlled_by = ROOT }
-	# 			1 = {
-	# 				add_building_construction = {
-	# 					type = dockyard
-	# 					level = 1
-	# 					instant_build = yes
-	# 				}
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = { is_controlled_by = ROOT }
-	# 			2 = {
-	# 				add_building_construction = {
-	# 					type = dockyard
-	# 					level = 1
-	# 					instant_build = yes
-	# 				}
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = { is_controlled_by = ROOT }
-	# 			3 = {
-	# 				add_building_construction = {
-	# 					type = dockyard
-	# 					level = 1
-	# 					instant_build = yes
-	# 				}
-	# 			}
-	# 		}
-	# 		# Repeat for all other coastal state IDs that can have dockyards
-	# 	}
-	# }
+	completion_reward = {
+		# Add dockyards to all valid coastal states
+		114 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		107 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		110 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		103 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		101 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		100 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		99 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		118 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		119 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		120 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		122 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		126 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		127 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		91 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		92 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		93 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		94 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		95 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		96 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		97 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		98 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
 	
 	
-	# # Rebuilding Our Fleet
-	# focus = {
-	# 	id = SHU_rebuilding_our_fleet
-	# 	icon = GFX_focus_generic_refit_civilian_ships # GFX_goal_generic_construct_naval_dockyard # doesn't exit -> GFX_goal_generic_construct_dockyard 
-	# 	x = 1
-	# 	y = 1
-	# 	relative_position_id = SHU_rebuilding_our_harbours
-	# 	cost = 5
+	# Rebuilding Our Fleet
+	focus = {
+		id = SHU_rebuilding_our_fleet
+		icon = GFX_focus_generic_refit_civilian_ships # GFX_goal_generic_construct_naval_dockyard # doesn't exit -> GFX_goal_generic_construct_dockyard 
+		x = 1
+		y = 1
+		relative_position_id = SHU_rebuilding_our_harbours
+		cost = 13
 	
-	# 	prerequisite = {
-	# 		focus = SHU_rebuilding_our_harbours
-	# 	}
+		prerequisite = {
+			focus = SHU_rebuilding_our_harbours
+		}
 	
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}
+		ai_will_do = {
+			factor = 1
+		}
 	
-	# 	available = {
-	# 		# Condition to ensure the player controls at least one coastal state
-	# 		OR = {
-	# 			# Northern Coast
-	# 			114 = { is_controlled_by = ROOT } # Kalamandian
-	# 			107 = { is_controlled_by = ROOT } # Nashramae
+		available = {
+			# Condition to ensure the player controls at least one coastal state
+			OR = {
+				# Northern Coast
+				114 = { is_controlled_by = ROOT } # Kalamandian
+				107 = { is_controlled_by = ROOT } # Nashramae
 	
-	# 			# Aurma
-	# 			110 = { is_controlled_by = ROOT } # Northern Island 
+				# Aurma
+				110 = { is_controlled_by = ROOT } # Northern Island 
 	
-	# 			# Noxian colony
-	# 			103 = { is_controlled_by = ROOT } #Northn Eastern 
-	# 			101 = { is_controlled_by = ROOT } #North West A
-	# 			100 = { is_controlled_by = ROOT } # Northern Island 
-	# 			99 = { is_controlled_by = ROOT } #North West B
+				# Noxian colony
+				103 = { is_controlled_by = ROOT } #Northn Eastern 
+				101 = { is_controlled_by = ROOT } #North West A
+				100 = { is_controlled_by = ROOT } # Northern Island 
+				99 = { is_controlled_by = ROOT } #North West B
 	
-	# 			# Western Coast 
-	# 			118 = { is_controlled_by = ROOT } # Crystal Scar
-	# 			119 = { is_controlled_by = ROOT } # Nazumah Coast
-	# 			120 = { is_controlled_by = ROOT } # Marai Coast
+				# Western Coast 
+				118 = { is_controlled_by = ROOT } # Crystal Scar
+				119 = { is_controlled_by = ROOT } # Nazumah Coast
+				120 = { is_controlled_by = ROOT } # Marai Coast
 	
-	# 			#Sourthern Coast
-	# 			122 = { is_controlled_by = ROOT } # Marai Coast
-	# 			126 = { is_controlled_by = ROOT } # Marai Coast
-	# 			127 = { is_controlled_by = ROOT } # Marai Coast
+				#Sourthern Coast
+				122 = { is_controlled_by = ROOT } # Marai Coast
+				126 = { is_controlled_by = ROOT } # Marai Coast
+				127 = { is_controlled_by = ROOT } # Marai Coast
 	
-	# 			# Void Coastline
-	# 			91 = { is_controlled_by = ROOT } # Void Coast
-	# 			92 = { is_controlled_by = ROOT } # Void Coast
-	# 			93 = { is_controlled_by = ROOT } # Void Coast
-	# 			94 = { is_controlled_by = ROOT } # Void Coast
-	# 			95 = { is_controlled_by = ROOT } # Void Coast
-	# 			96 = { is_controlled_by = ROOT } # Void Coast
-	# 			97 = { is_controlled_by = ROOT } # Void Coast
-	# 			98 = { is_controlled_by = ROOT } # Void Coast
+				# Void Coastline
+				91 = { is_controlled_by = ROOT } # Void Coast
+				92 = { is_controlled_by = ROOT } # Void Coast
+				93 = { is_controlled_by = ROOT } # Void Coast
+				94 = { is_controlled_by = ROOT } # Void Coast
+				95 = { is_controlled_by = ROOT } # Void Coast
+				96 = { is_controlled_by = ROOT } # Void Coast
+				97 = { is_controlled_by = ROOT } # Void Coast
+				98 = { is_controlled_by = ROOT } # Void Coast
 	
-	# 			# Add all other coastal state IDs that can have dockyards
-	# 		}
-	# 	}
+				# Add all other coastal state IDs that can have dockyards
+			}
+		}
 	
-	# 	completion_reward = {
-	# 		# Add dockyards to all valid coastal states
-	# 		if = {
-	# 			limit = { is_controlled_by = ROOT }
-	# 			1 = {
-	# 				add_building_construction = {
-	# 					type = dockyard
-	# 					level = 1
-	# 					instant_build = yes
-	# 				}
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = { is_controlled_by = ROOT }
-	# 			2 = {
-	# 				add_building_construction = {
-	# 					type = dockyard
-	# 					level = 1
-	# 					instant_build = yes
-	# 				}
-	# 			}
-	# 		}
-	# 		if = {
-	# 			limit = { is_controlled_by = ROOT }
-	# 			3 = {
-	# 				add_building_construction = {
-	# 					type = dockyard
-	# 					level = 1
-	# 					instant_build = yes
-	# 				}
-	# 			}
-	# 		}
-	# 		# Repeat for all other coastal state IDs that can have dockyards
-	# 	}
-	# }
+
+	completion_reward = {
+		# Add dockyards to all valid coastal states
+		114 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		107 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		110 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		103 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		101 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		100 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		99 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		118 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		119 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		120 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		122 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		126 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		127 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		91 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		92 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		93 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		94 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		95 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		96 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		97 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		98 = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
 	
 	# # Fleet
 	# focus = {
@@ -650,73 +925,73 @@ focus_tree = {
 	# 	}
 	# }
 	
-	# # Rebuild Armory
-	# focus = {
-	# 	id = SHU_rebuild_armory # green
-	# 	icon = GFX_goal_generic_construct_mil_factory
-	# 	x = -1
-	# 	y = 1
-	# 	relative_position_id = SHU_shuriman_legions # ? blue
-	# 	cost = 5
-	# 	search_filters = {
-	# 		FOCUS_FILTER_INDUSTRY
-	# 	}
-	# 	prerequisite = {
-	# 		focus = SHU_shuriman_legions # ? blue
-	# 	}
-	# 	completion_reward = {
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				free_building_slots = {
-	# 					building = arms_factory
-	# 					size > 0
-	# 					include_locked = yes
-	# 				}
-	# 			}
-	# 			add_extra_state_shared_building_slots = 2
-	# 			add_building_construction = {
-	# 				type = arms_factory
-	# 				level = 2
-	# 				instant_build = yes
-	# 			}
-	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
-	# 		}
-	# 	}
-	# }
+	# Rebuild Armory
+	focus = {
+		id = SHU_rebuild_armory # green
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -1
+		y = 1
+		relative_position_id = SHU_shuriman_legions # ? blue
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_shuriman_legions # ? blue
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
 	
-	# # Refilling Armory
-	# focus = {
-	# 	id = SHU_refilling_armory
-	# 	icon = GFX_goal_generic_construct_mil_factory
-	# 	x = -1
-	# 	y = 1
-	# 	relative_position_id = SHU_rebuild_armory # green
-	# 	cost = 5
-	# 	search_filters = {
-	# 		FOCUS_FILTER_INDUSTRY
-	# 	}
-	# 	prerequisite = {
-	# 		focus = SHU_rebuild_armory # green
-	# 	}
-	# 	completion_reward = {
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				free_building_slots = {
-	# 					building = arms_factory
-	# 					size > 0
-	# 					include_locked = yes
-	# 				}
-	# 			}
-	# 			add_extra_state_shared_building_slots = 2
-	# 			add_building_construction = {
-	# 				type = arms_factory
-	# 				level = 2
-	# 				instant_build = yes
-	# 			}
-	# 			# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
-	# 		}
-	# 	}
-	# }
+	# Refilling Armory
+	focus = {
+		id = SHU_refilling_armory
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -1
+		y = 1
+		relative_position_id = SHU_rebuild_armory # green
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {
+			focus = SHU_rebuild_armory # green
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				# set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
 	
 	# # Shuriman Armor
 	# focus = {
@@ -1254,22 +1529,75 @@ focus_tree = {
 			
 		}
 	}
-	
-	# Force + Takeover Marai / Aurma / Resettlement
+		
+	# Help Leona
 	focus = {
-		id = SHU_marai_dockyards
-		icon = GFX_focus_generic_annex_country
-		x=-2
+		id = SHU_restore_solari
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x=0
 		y=1
-		relative_position_id = SHU_annex_nazumah
+		relative_position_id = SHU_work_camps
 		prerequisite = {
 			focus = SHU_work_camps
-			focus = SHU_annex_nazumah
+			#focus = SHU_remove_the_savages
 			#focus = SHU_shakkal_region
 		}
 		
 		completion_reward = {
+			TAR = { 
+				add_ideas = big_sun
+			}
+
+			# diplomacy buff for shurima 
+		}
+	}
+
+	# Force + Takeover Marai / Aurma / Resettlement
+	focus = {
+		id = SHU_marai_dockyards
+		icon = GFX_focus_generic_annex_country
+		x = -2
+		y = 1
+		relative_position_id = SHU_annex_nazumah
+		prerequisite = {
+			focus = SHU_restore_solari
+			focus = SHU_annex_nazumah
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
 			
+			set_country_flag = has_marai_dockyards
+
+			# Annex Marai/Aurma or create a puppet state
+			annex_country = MAR # Replace MAR with the actual tag for Marai
+
+			# Add dockyards in Marai territory
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+				state = 120 # Replace with actual state ID for Marai Coast or equivalent
+			}
+			
+			# Boost naval experience or naval production
+			add_country_leader_trait = {
+				trait = naval_engineer
+				country_leader = ROOT
+			}
+
+			# Add resources to Marai territories to reflect their naval contribution
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 120 # Replace with actual state ID for Marai Coast or equivalent
+			}
+			
+			# Trigger potential resistance event
+			country_event = {
+				id = SHU_marai_resistance_event
+				days = 5
+			}
 		}
 	}
 	
@@ -1399,7 +1727,10 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_fate_of_targon
 		}
-		
+		prerequisite = {
+			focus = SHU_fate_of_targon 
+			focus = SHU_fate_of_crystal_scar # TODO: In the future has a effect on how Shurima interacts with Targon somehow... 
+		}
 	}
 	
 	focus = {
@@ -1536,11 +1867,20 @@ focus_tree = {
 	# Requirement to Annex - Optional
 	focus = {
 		id = SHU_jungle_machine
-		icon = SHU_jungle_machine
+		icon = GFX_goal_jungle_machine
 		x=-3
 		y=0
 		relative_position_id = SHU_fate_of_ixtal
 
+		compelation_reward = {
+			
+			# jungle_warfare
+			# add_ideas = { jungle_warfare }
+
+			# jungle_warfare
+			custom_effect_tooltip = RAJ_jungle_training_effect
+			hidden_effect = { set_technology = { jungle_warfare = 1 } }
+		}
 	}
 
 	# Crystal Scar: Starter Line
@@ -1687,6 +2027,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_fate_of_ixtal
+		}
+		prerequisite = {
+			focus = SHU_fate_of_ixtal
+			focus = SHU_fate_of_crystal_scar # TODO: In the future has a effect on how shurima interacts with Ixtal - Shurima: Finds out about Scarner!
 		}
 	}
 	
@@ -2428,6 +2772,7 @@ focus_tree = {
 			focus = SHU_taliyahs_supervision
 		}
 	}
+	
 	# crystal_scar c Line
 	focus = {
 		id = SHU_develop_crystal_scar
@@ -2840,6 +3185,7 @@ focus_tree = {
 			focus = SHU_land_prospect
 		} 
 	}
+
 	# Gold Trade 
 	focus = {
 		id = SHU_gold_trade
@@ -2858,7 +3204,13 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_craft_guild
 		}
+
+		completion_reward = {
+			add_ideas = gold_trade
+			consumer_goods_factor = -0.5
+		}
 	}
+
 	# Gold Refinement
 	focus = {
 		id = SHU_gold_refinement  
@@ -2893,6 +3245,9 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = SHU_shuriman_guilds
+		}
+		completion_reward = {
+			add_ideas = gold_reserve
 		}
 	}
 	
@@ -3007,11 +3362,11 @@ focus_tree = {
 	# 		focus = SHU_rebuilding_our_fleet
 	# 	}
 	# 	available = {
-	
+	#
 	# 	}
 	# 	completion_reward = {
-	
-	
+	#
+	#
 	# 	}
 	# }
 	
@@ -3029,11 +3384,11 @@ focus_tree = {
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}
-	
+	#
 	# 	available = {
 	# 		# Add any conditions for the focus to be available here
 	# 	}
-	
+	#
 	# 	completion_reward = {
 	# 		131 = {
 	# 			add_building_construction = {
@@ -3469,6 +3824,8 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+		
+			# event that happens ever 365 days 
 		}
 	}
 	
@@ -3726,7 +4083,35 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			set_country_flag = has_marai_dockyards
+
 			
+			# Add dockyards in Marai territory
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+				state = 120 # Replace with actual state ID for Marai Coast or equivalent
+			}
+			
+			# Boost naval experience or naval production
+			add_country_leader_trait = {
+				trait = naval_engineer
+				country_leader = ROOT
+			}
+
+			# Add resources to Marai territories to reflect their naval contribution
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 120 # Replace with actual state ID for Marai Coast or equivalent
+			}
+			
+			# Trigger potential resistance event
+			country_event = {
+				id = SHU_marai_resistance_event
+				days = 5
+			}
 		}
 	}
 	
@@ -4197,7 +4582,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
-			add_ideas = SHU_Officer_School
+			add_ideas = SHU_Officer_School_ideas
 		}
 	}
 	
@@ -4377,7 +4762,7 @@ focus_tree = {
 	# SHU_rebirth_legions
 	focus = {
 		id = SHU_rebirth_legions
-		icon = NAZ_shuriman_lion_riders # GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_lion_riders # GFX_goal_generic_axis_build_infantry
 		x = -12 #7
 		y = 0
 		relative_position_id = SHU_sundisc_has_risen
