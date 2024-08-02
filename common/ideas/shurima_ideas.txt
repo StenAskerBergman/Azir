@@ -597,6 +597,31 @@ ideas = {
 
 			modifier = { production_speed_arms_factory_factor = 0.25}
 		}
+
+		# -------------------
+		# Economy
+		# -------------------
+
+		SHU_workers_rights_idea = {
+			# Copy of FRA_matignon_agreements
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				stability_factor = 0.1
+				consumer_goods_factor = 0.10
+			}
+		}
 	}
 
 

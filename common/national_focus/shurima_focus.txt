@@ -1407,6 +1407,7 @@ focus_tree = {
 		icon = GFX_focus_generic_total_war
 		x=-2
 		y=1
+		cost = 5
 		relative_position_id = SHU_fate_of_targon
 		mutually_exclusive = {
 			focus = SHU_puppet_or_ally_targon
@@ -1495,6 +1496,7 @@ focus_tree = {
 		icon = GFX_focus_SMB_a_land_of_mountains
 		x=2
 		y=1
+		cost = 5
 		relative_position_id = SHU_fate_of_targon
 		mutually_exclusive = {
 			focus = SHU_annex_targon
@@ -1791,6 +1793,11 @@ focus_tree = {
 		y=2
 		cost = 3
 		relative_position_id = SHU_shadow_plan
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
 		prerequisite = {
 			# focus = SHU_Major
 		}
@@ -1931,6 +1938,12 @@ focus_tree = {
 		y=0
 		cost = 3
 		relative_position_id = SHU_example_noxian_start
+
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
 		
 		prerequisite = {
 			# focus = SHU_Major
@@ -2084,6 +2097,9 @@ focus_tree = {
 			# # focus = SHU_Minors
 		}
 		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
 			BLG = {
 				exists = yes
 			}
@@ -2230,6 +2246,15 @@ focus_tree = {
 		prerequisite = {
 			# focus = SHU_the_neighbours
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SHU_total_war
+				category = nuclear
+				bonus = 2
+				ahead_reduction = 1
+				uses = 1
+			}
+		}
 	}
 	
 	#   █████╗  ██╗   ██╗ ██████╗  ███╗   ███╗  █████╗
@@ -2251,7 +2276,9 @@ focus_tree = {
 			# # focus = SHU_Minors
 		}
 		available = {
-			
+			any_controlled_state = {
+				is_coastal = yes
+			}
 		}
 	}
 	
@@ -2266,6 +2293,9 @@ focus_tree = {
 			# # focus = SHU_Minors
 		}
 		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
 			AUR = {
 				exists = yes
 			}
@@ -2771,8 +2801,16 @@ focus_tree = {
 			# focus = SHU_Minors
 		}
 		bypass = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
 			PLT = {
 				exists = no
+			}
+		}
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
 			}
 		}
 		completion_reward = {
@@ -2788,9 +2826,10 @@ focus_tree = {
 	# Piltover AA Line
 	focus = {
 		id = SHU_annex_piltover
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_total_war
 		x=-1
 		y=1
+		cost = 5
 		relative_position_id = SHU_approach_piltover
 		mutually_exclusive = {
 			focus = SHU_hostile_takeover
@@ -2806,7 +2845,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			PLT = {
-				country_event = useful-events-quarior-anschluss.1
+				country_event = useful-events-quarior-annexion_ultimatum.1
 			}
 		}
 		will_lead_to_war_with = PLT
@@ -2843,6 +2882,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x=1
 		y=1
+		cost = 5
 		relative_position_id = SHU_approach_piltover
 		mutually_exclusive = {
 			focus = SHU_annex_piltover
@@ -2899,8 +2939,16 @@ focus_tree = {
 		}
 		
 		bypass = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
 			ZAU = {
 				exists = no
+			}
+		}
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
 			}
 		}
 		completion_reward = {
@@ -2919,6 +2967,7 @@ focus_tree = {
 		icon = GFX_goal_flames_of_rebellion
 		x=-1
 		y=1
+		cost = 5
 		relative_position_id = SHU_approach_zaun
 		mutually_exclusive = {
 			focus = SHU_annex_zaun
@@ -2978,6 +3027,7 @@ focus_tree = {
 		icon = GFX_focus_generic_total_war
 		x=1
 		y=1
+		cost = 5
 		relative_position_id = SHU_approach_zaun
 		prerequisite = {
 			focus = SHU_approach_zaun
@@ -2991,7 +3041,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			ZAU = {
-				country_event = useful-events-quarior-anschluss.1
+				country_event = useful-events-quarior-annexion_ultimatum.1
 			}
 		}
 		will_lead_to_war_with = ZAU
@@ -3240,8 +3290,47 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_land_prospect
 		}
+		available = {
+			any_state = {
+				OR = {
+					state = 132
+					state = 116
+					state = 106
+					state = 312
+					state = 117
+					state = 115
+				}
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
 		completion_reward = {
-			# Add hex crystal resssources ?
+			every_state = {
+				limit = {
+					OR = {
+						state = 132
+						state = 116
+						state = 106
+						state = 312
+						state = 117
+						state = 115
+					}
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+				}
+			}
 		}
 	}
 	# Gold Trade
@@ -3250,6 +3339,7 @@ focus_tree = {
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = -2 # 18
 		y = 0
+		cost = 5
 		relative_position_id = SHU_gold_reserve
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -3637,10 +3727,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = SHU_land_prospect
-				category = nuclear
+				category = excavation_tech
 				bonus = 1.5
+				uses = 2
 			}
 		}
 	}
@@ -3768,6 +3860,10 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = SHU_gold_reserve
+		}
+
+		completion_reward = {
+			add_ideas = SHU_workers_rights_idea
 		}
 	}
 	
@@ -4905,7 +5001,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = {focus = SHU_shuriman_legions}
 		completion_reward = {
-			
+			add_ideas = RAJ_lions_of_the_great_war
 		}
 	}
 	# # Army Expansion
