@@ -622,6 +622,25 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
+		
+		SHU_work_unions_idea = {
+			picture = generic_agrarian_reform
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_weekly = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
 	}
 
 

@@ -191,7 +191,7 @@ ideas = {
             cancel_if_invalid = no
         }
 		
-		Restored_Sun_Dics = {
+		Restored_Sun_Disc = {
             allowed = {
                 always = no
             }

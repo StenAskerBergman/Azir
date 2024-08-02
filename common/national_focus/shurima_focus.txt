@@ -4238,6 +4238,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		x=0
 		y=1
+		cost=5
 		relative_position_id = SHU_tribe_unity
 		prerequisite = {
 			focus = SHU_tribe_unity
@@ -4246,7 +4247,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			add_ideas = SHU_work_unions_idea
 		}
 	}
 	
@@ -4256,6 +4257,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		x=0
 		y=1
+		cost=5
 		relative_position_id = SHU_work_unions
 		prerequisite = {
 			focus = SHU_work_unions

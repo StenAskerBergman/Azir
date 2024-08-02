@@ -883,6 +883,12 @@
 
   SHU_no_more_hunger:0 "No more hunger"
   SHU_no_more_hunger_desc:0 ""
+
+  SHU_tribe_unity:0 "Tribe unity"
+  SHU_tribe_unity_desc:0 ""
+
+  SHU_moonstone:0 "Moonstone"
+  SHU_moonstone_desc:0 ""
   
   ################################### IDEAS                       \n      §H§!
   
