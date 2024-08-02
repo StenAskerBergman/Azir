@@ -637,8 +637,27 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.1
-				stability_weekly = 0.1
+				stability_weekly = 0.01
 				consumer_goods_factor = -0.1
+			}
+		}
+
+		SHU_work_camps_idea = {
+			picture = saf_ossewabrandwag
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				stability_weekly = -0.01
+				production_speed_buildings_factor = 0.2
 			}
 		}
 	}
