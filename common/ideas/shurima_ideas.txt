@@ -20,12 +20,89 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			# Support Their Collaboration! Long Live Mount Targon! May we rule Shurima for a Decades to come!  
 		} 
-		
+
+		# ----------------
+		# Gold Trade Bonus
+		# ----------------
+
+
+		gold_trade = {
+			picture = SPR_relocate_the_gold_reserves
+			allowed = {
+				# Conditions under which this idea can be activated (e.g., certain focus completed)
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05 # Reduces consumer goods usage by 5%
+			}
+
+			on_add = {
+				# Effects that occur when this idea is activated (e.g., political power gain)
+			}
+		}
+
+		gold_reserve = {
+			picture = SPR_seize_the_gold_reserves
+			allowed = {
+				# Conditions under which this idea can be activated (e.g., certain focus completed)
+				
+				if = {
+					limit = {
+						root = { has_idea = closed_economy }
+					}
+					swap_ideas = { 
+						remove_ideas = gold_reserve
+						add_ideas = gold_reserve2
+					}
+
+				}
+				ELSEIF 
+				{
+					limit = {
+						root = { NOT = { has_idea = closed_economy } }
+
+					}
+					swap_ideas = { 
+						remove_ideas = gold_reserve2 
+						add_ideas = gold_reserve
+					}
+
+				}
+				ELSEIF{
+					limit = { root = { has_completed_focus = has_completed_focus } }
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.07 # Reduces consumer goods usage by 7%
+			}
+
+			on_add = {
+				
+				# Effects that occur when this idea is activated (e.g., political power gain)
+			}
+		}
+
+		gold_reserve2 = {
+			picture = SPR_seize_the_gold_reserves
+			allowed = {
+				# Conditions under which this idea can be activated (e.g., certain focus completed)
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1 # Reduces consumer goods usage by 7%
+			}
+
+			on_add = {
+				# Effects that occur when this idea is activated (e.g., political power gain)
+			}
+		}
 
 		# ----------------
 		# Production Bonus
 		# ----------------
-		
+
+			
 		central_management = {
 			picture = generic_central_management
 		}
@@ -534,7 +611,7 @@ ideas = {
 			
 		}
 		
-		SHU_Officer_School = {
+		SHU_Officer_School_ideas = {
 			name = "Officer School"
 			picture = Combined_bomber_offensive
 			custom_effect_tooltip = "If we are going to war we better let our officers study it indepth!"
@@ -549,7 +626,7 @@ ideas = {
 		}
 	
 				
-		SHU_War_Academy = {
+		SHU_War_Academy_ideas = {
 			name = "War Academy"
 			picture = soviet_german_friendship
 			custom_effect_tooltip = "Why stop at officers? Our general need just as sharp wit, and organisation to study warfare."

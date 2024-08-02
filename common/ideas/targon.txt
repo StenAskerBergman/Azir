@@ -1,0 +1,28 @@
+ideas = {
+
+    country = {        
+
+        # Internal
+        sun_servitude = {
+            picture = LAT_the_sun_shines_equally
+
+        }
+
+        big_sun = {
+            picture = LAT_the_sun_shines_equally
+        }
+
+
+        # Foreign Support 
+        shuriman_support_lunari = {
+            picture = LAT_the_sun_shines_equally
+
+        }
+
+        shuriman_support_solari = {
+            picture = LAT_the_sun_shines_equally
+
+        }
+
+    }
+}

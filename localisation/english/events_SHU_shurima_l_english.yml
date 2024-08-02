@@ -35,6 +35,9 @@
  shurima.1.pick_leader.option_sivir: "Sivir will lead us!"
  shurima.1.pick_leader.tooltip_sivir: "Sivir becomes the new Country Leader!"
 
+ shurima.101.t: "Initial Event Triggered" 
+ shurima.101.d: "This event triggers a recurring event every year or two years."
+
  shurima.2.t: "Shurima Broken" 
  shurima.2.desc: "Shurima is broken! We must restore the empire!"
 

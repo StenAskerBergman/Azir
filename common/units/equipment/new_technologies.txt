@@ -1,0 +1,26 @@
+improved_dozer_blade_tech = {
+    area = armor
+    level = 2
+    research_cost = 3.0
+    start_year = 1940
+    folder = armor_folder
+    
+    on_research_complete = {
+        enable_tank_equipment = improved_dozer_blade
+    }
+    
+    prerequisites = {
+        tech = engineer_company_2
+    }
+    
+    x = 20
+    y = 5
+    cost = 1
+    
+    icon = GFX_tech_improved_dozer_blade
+    tech_sharing_group = tank_tech_sharing
+    
+    ai_will_do = {
+        factor = 1
+    }
+}

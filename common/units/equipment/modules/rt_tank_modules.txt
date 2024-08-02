@@ -1,0 +1,43 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+
+#### RUNETERRA
+    improved_dozer_blade = {
+        abbreviation = "impdoz"
+        category = tank_special_module
+        sfx = sfx_ui_sd_module_turret
+
+        add_stats = {
+            entrenchment = 2
+            build_cost_ic = 1
+            jungle_attack = 0.05
+            jungle_defense = 0.05
+            
+            hardness 
+            soft_attack 
+        }
+        xp_cost = 1
+        multiply_stats = {
+            defense = 0.05
+            breakthrough = 0.05
+        }
+    }
+
+    # dozer_blade = {
+    #     abbreviation = "dozer"
+    #     category = tank_special_module
+    #     sfx = sfx_ui_sd_module_turret
+
+    #     add_stats = {
+    #         entrenchment = 1
+    #         build_cost_ic = 1
+    #     }
+    #     xp_cost = 1
+    #     multiply_stats = {
+            
+    #     }
+    # }
+
+}
