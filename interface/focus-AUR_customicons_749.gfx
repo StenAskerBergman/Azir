@@ -1,19 +1,19 @@
-spriteTypes = { 
+spriteTypes = {
 	
 # Write in extension by Sten's :) 
 
-        SpriteType = {
-            name = "GFX_AUR_aurman_navy"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_navy.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_aurman_navy"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_navy.dds"
         }
 
-        # GFX_AUR_aurman_navy.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_aurman_navy_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_navy.dds"
+        # GFX_focus_AUR_aurman_navy.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_aurman_navy_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_navy.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_aurman_navy.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_navy.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -25,7 +25,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_aurman_navy.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_navy.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -39,18 +39,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_aurman_sailors"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_sailors.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_aurman_sailors"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_sailors.dds"
         }
 
-        # GFX_AUR_aurman_sailors.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_aurman_sailors_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_aurman_sailors.dds"
+        # GFX_focus_AUR_aurman_sailors.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_aurman_sailors_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_sailors.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_aurman_sailors.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_sailors.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -62,7 +62,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_aurman_sailors.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_aurman_sailors.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -76,18 +76,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_blood_is_thicker_than_water"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_blood_is_thicker_than_water.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_blood_is_thicker_than_water"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_blood_is_thicker_than_water.dds"
         }
 
-        # GFX_AUR_blood_is_thicker_than_water.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_blood_is_thicker_than_water_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_blood_is_thicker_than_water.dds"
+        # GFX_focus_AUR_blood_is_thicker_than_water.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_blood_is_thicker_than_water_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_blood_is_thicker_than_water.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_blood_is_thicker_than_water.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_blood_is_thicker_than_water.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -99,7 +99,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_blood_is_thicker_than_water.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_blood_is_thicker_than_water.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -113,18 +113,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_boats_run_on_water_not_blood"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_boats_run_on_water_not_blood.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_boats_run_on_water_not_blood"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_boats_run_on_water_not_blood.dds"
         }
 
-        # GFX_AUR_boats_run_on_water_not_blood.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_boats_run_on_water_not_blood_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_boats_run_on_water_not_blood.dds"
+        # GFX_focus_AUR_boats_run_on_water_not_blood.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_boats_run_on_water_not_blood_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_boats_run_on_water_not_blood.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_boats_run_on_water_not_blood.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_boats_run_on_water_not_blood.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -136,7 +136,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_boats_run_on_water_not_blood.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_boats_run_on_water_not_blood.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -150,18 +150,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_calm_sea"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_calm_sea.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_calm_sea"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_calm_sea.dds"
         }
 
-        # GFX_AUR_calm_sea.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_calm_sea_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_calm_sea.dds"
+        # GFX_focus_AUR_calm_sea.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_calm_sea_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_calm_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_calm_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_calm_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -173,7 +173,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_calm_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_calm_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -187,18 +187,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_chaotic_sea"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_chaotic_sea.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_chaotic_sea"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_chaotic_sea.dds"
         }
 
-        # GFX_AUR_chaotic_sea.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_chaotic_sea_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_chaotic_sea.dds"
+        # GFX_focus_AUR_chaotic_sea.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_chaotic_sea_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_chaotic_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_chaotic_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_chaotic_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -210,7 +210,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_chaotic_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_chaotic_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -224,18 +224,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_clan_medarda"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_clan_medarda.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_clan_medarda"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_medarda.dds"
         }
 
-        # GFX_AUR_clan_medarda.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_clan_medarda_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_clan_medarda.dds"
+        # GFX_focus_AUR_clan_medarda.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_clan_medarda_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_medarda.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_clan_medarda.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_medarda.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -247,7 +247,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_clan_medarda.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_medarda.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -261,18 +261,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_clan_merdarda"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_clan_merdarda.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_clan_merdarda"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_merdarda.dds"
         }
 
-        # GFX_AUR_clan_merdarda.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_clan_merdarda_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_clan_merdarda.dds"
+        # GFX_focus_AUR_clan_merdarda.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_clan_merdarda_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_merdarda.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_clan_merdarda.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_merdarda.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -284,7 +284,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_clan_merdarda.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_clan_merdarda.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -298,18 +298,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_cold_sea"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_cold_sea.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_cold_sea"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_cold_sea.dds"
         }
 
-        # GFX_AUR_cold_sea.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_cold_sea_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_cold_sea.dds"
+        # GFX_focus_AUR_cold_sea.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_cold_sea_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_cold_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_cold_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_cold_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -321,7 +321,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_cold_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_cold_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -335,18 +335,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_family_ties"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_family_ties.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_family_ties"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_family_ties.dds"
         }
 
-        # GFX_AUR_family_ties.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_family_ties_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_family_ties.dds"
+        # GFX_focus_AUR_family_ties.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_family_ties_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_family_ties.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_family_ties.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_family_ties.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -358,7 +358,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_family_ties.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_family_ties.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -372,18 +372,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_freljordian_Boarding_parties"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_freljordian_Boarding_parties.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_freljordian_Boarding_parties"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_freljordian_Boarding_parties.dds"
         }
 
-        # GFX_AUR_freljordian_Boarding_parties.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_freljordian_Boarding_parties_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_freljordian_Boarding_parties.dds"
+        # GFX_focus_AUR_freljordian_Boarding_parties.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_freljordian_Boarding_parties_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_freljordian_Boarding_parties.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_freljordian_Boarding_parties.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_freljordian_Boarding_parties.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -395,7 +395,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_freljordian_Boarding_parties.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_freljordian_Boarding_parties.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -409,18 +409,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_lurking_threats"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_lurking_threats.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_lurking_threats"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_lurking_threats.dds"
         }
 
-        # GFX_AUR_lurking_threats.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_lurking_threats_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_lurking_threats.dds"
+        # GFX_focus_AUR_lurking_threats.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_lurking_threats_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_lurking_threats.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_lurking_threats.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_lurking_threats.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -432,7 +432,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_lurking_threats.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_lurking_threats.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -446,18 +446,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_maritime_mastery"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_maritime_mastery.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_maritime_mastery"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_maritime_mastery.dds"
         }
 
-        # GFX_AUR_maritime_mastery.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_maritime_mastery_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_maritime_mastery.dds"
+        # GFX_focus_AUR_maritime_mastery.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_maritime_mastery_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_maritime_mastery.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_maritime_mastery.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_maritime_mastery.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -469,7 +469,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_maritime_mastery.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_maritime_mastery.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -483,18 +483,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_national_identity"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_national_identity.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_national_identity"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_national_identity.dds"
         }
 
-        # GFX_AUR_national_identity.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_national_identity_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_national_identity.dds"
+        # GFX_focus_AUR_national_identity.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_national_identity_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_national_identity.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_national_identity.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_national_identity.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -506,7 +506,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_national_identity.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_national_identity.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -520,18 +520,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_naval_linage"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_naval_linage.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_naval_linage"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_naval_linage.dds"
         }
 
-        # GFX_AUR_naval_linage.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_naval_linage_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_naval_linage.dds"
+        # GFX_focus_AUR_naval_linage.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_naval_linage_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_naval_linage.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_naval_linage.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_naval_linage.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -543,7 +543,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_naval_linage.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_naval_linage.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -557,18 +557,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_navigational_diplomacy"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_navigational_diplomacy.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_navigational_diplomacy"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_navigational_diplomacy.dds"
         }
 
-        # GFX_AUR_navigational_diplomacy.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_navigational_diplomacy_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_navigational_diplomacy.dds"
+        # GFX_focus_AUR_navigational_diplomacy.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_navigational_diplomacy_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_navigational_diplomacy.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_navigational_diplomacy.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_navigational_diplomacy.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -580,7 +580,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_navigational_diplomacy.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_navigational_diplomacy.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -594,18 +594,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_noxian_trade"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_noxian_trade.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_noxian_trade"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_noxian_trade.dds"
         }
 
-        # GFX_AUR_noxian_trade.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_noxian_trade_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_noxian_trade.dds"
+        # GFX_focus_AUR_noxian_trade.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_noxian_trade_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_noxian_trade.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_noxian_trade.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_noxian_trade.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -617,7 +617,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_noxian_trade.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_noxian_trade.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -631,18 +631,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_ocean_masters"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_ocean_masters.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_ocean_masters"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_ocean_masters.dds"
         }
 
-        # GFX_AUR_ocean_masters.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_ocean_masters_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_ocean_masters.dds"
+        # GFX_focus_AUR_ocean_masters.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_ocean_masters_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_ocean_masters.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_ocean_masters.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_ocean_masters.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -654,7 +654,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_ocean_masters.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_ocean_masters.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -668,18 +668,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_our_sea"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_our_sea.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_our_sea"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_our_sea.dds"
         }
 
-        # GFX_AUR_our_sea.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_our_sea_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_our_sea.dds"
+        # GFX_focus_AUR_our_sea.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_our_sea_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_our_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_our_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_our_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -691,7 +691,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_our_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_our_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -705,18 +705,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_piltover_trade"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_piltover_trade.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_piltover_trade"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_piltover_trade.dds"
         }
 
-        # GFX_AUR_piltover_trade.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_piltover_trade_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_piltover_trade.dds"
+        # GFX_focus_AUR_piltover_trade.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_piltover_trade_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_piltover_trade.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_piltover_trade.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_piltover_trade.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -728,7 +728,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_piltover_trade.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_piltover_trade.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -742,18 +742,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_pirate_question"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_pirate_question.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_pirate_question"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_pirate_question.dds"
         }
 
-        # GFX_AUR_pirate_question.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_pirate_question_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_pirate_question.dds"
+        # GFX_focus_AUR_pirate_question.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_pirate_question_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_pirate_question.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_pirate_question.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_pirate_question.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -765,7 +765,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_pirate_question.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_pirate_question.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -779,18 +779,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_sea_maps"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_sea_maps"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps.dds"
         }
 
-        # GFX_AUR_sea_maps.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_sea_maps_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+        # GFX_focus_AUR_sea_maps.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_sea_maps_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -802,7 +802,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -816,18 +816,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_sea_maps2"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps2.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_sea_maps2"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps2.dds"
         }
 
-        # GFX_AUR_sea_maps2.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_sea_maps2_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps2.dds"
+        # GFX_focus_AUR_sea_maps2.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_sea_maps2_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps2.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps2.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps2.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -839,7 +839,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_sea_maps2.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_sea_maps2.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -853,18 +853,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_shifting_currents"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_shifting_currents.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_shifting_currents"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_shifting_currents.dds"
         }
 
-        # GFX_AUR_shifting_currents.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_shifting_currents_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_shifting_currents.dds"
+        # GFX_focus_AUR_shifting_currents.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_shifting_currents_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_shifting_currents.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_shifting_currents.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_shifting_currents.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -876,7 +876,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_shifting_currents.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_shifting_currents.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -890,18 +890,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_shuriman_threat"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_shuriman_threat.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_shuriman_threat"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_shuriman_threat.dds"
         }
 
-        # GFX_AUR_shuriman_threat.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_shuriman_threat_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_shuriman_threat.dds"
+        # GFX_focus_AUR_shuriman_threat.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_shuriman_threat_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_shuriman_threat.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_shuriman_threat.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_shuriman_threat.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -913,7 +913,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_shuriman_threat.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_shuriman_threat.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -927,18 +927,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_uncertain_waters"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_uncertain_waters.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_uncertain_waters"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_uncertain_waters.dds"
         }
 
-        # GFX_AUR_uncertain_waters.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_uncertain_waters_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_uncertain_waters.dds"
+        # GFX_focus_AUR_uncertain_waters.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_uncertain_waters_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_uncertain_waters.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_uncertain_waters.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_uncertain_waters.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -950,7 +950,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_uncertain_waters.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_uncertain_waters.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -964,18 +964,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_warm_sea"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_warm_sea.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_warm_sea"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_warm_sea.dds"
         }
 
-        # GFX_AUR_warm_sea.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_warm_sea_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_warm_sea.dds"
+        # GFX_focus_AUR_warm_sea.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_warm_sea_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_warm_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_warm_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_warm_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -987,7 +987,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_warm_sea.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_warm_sea.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -1001,18 +1001,18 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_AUR_waves_of_resilience"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_waves_of_resilience.dds"
+        spriteType = {
+            name = "GFX_focus_AUR_waves_of_resilience"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_waves_of_resilience.dds"
         }
 
-        # GFX_AUR_waves_of_resilience.dds shine version
-        SpriteType = {
-            name = "GFX_AUR_waves_of_resilience_shine"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_waves_of_resilience.dds"
+        # GFX_focus_AUR_waves_of_resilience.dds shine version
+        spriteType = {
+            name = "GFX_focus_AUR_waves_of_resilience_shine"
+            texturefile = "gfx/interface/goals/AUR/GFX_focus_AUR_waves_of_resilience.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_waves_of_resilience.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_waves_of_resilience.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = -90.0
                 animationlooping = no
@@ -1024,7 +1024,7 @@ spriteTypes = {
                 animationtexturescale = { x = 2.0 y = 1.0 } 
             }
             animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/GFX_AUR_waves_of_resilience.dds"
+                animationmaskfile = "gfx/interface/goals/AUR/GFX_focus_AUR_waves_of_resilience.dds"
                 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
                 animationrotation = 90.0
                 animationlooping = no
@@ -1038,14 +1038,14 @@ spriteTypes = {
             legacy_lazy_load = no
         }
             
-        SpriteType = {
-            name = "GFX_focus_r56_goal_HOL_east_indies"
+        spriteType = {
+            name = "GFX_focus_focus_r56_goal_HOL_east_indies"
             texturefile = "gfx/interface/goals/AUR/r56_goal_HOL_east_indies.dds"
         }
 
         # r56_goal_HOL_east_indies.dds shine version
-        SpriteType = {
-            name = "GFX_focus_r56_goal_HOL_east_indies_shine"
+        spriteType = {
+            name = "GFX_focus_focus_r56_goal_HOL_east_indies_shine"
             texturefile = "gfx/interface/goals/AUR/r56_goal_HOL_east_indies.dds"
             effectFile = "gfx/FX/buttonstate.lua"
             animation = {

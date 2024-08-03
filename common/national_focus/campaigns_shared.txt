@@ -125,7 +125,8 @@
 		}
 	}
 
-	## XER V KAL
+
+	## XERATH DECLARE WAR | XER WAR KAL
 	shared_focus = {
 		id = XER_WAR_KAL
 		icon = goal_generic_territory_or_war
@@ -167,7 +168,7 @@
 		}
 	}
 
-	## XER V CRY
+	## XERATH DECLARE WAR | XER WAR CRY
 	shared_focus = {
 		id = XER_WAR_CRY
 		icon = goal_generic_territory_or_war
@@ -208,7 +209,7 @@
 			factor = 5
 		}
 	}
-	## XER V TAR
+	## XERATH DECLARE WAR | XER WAR TAR
 	shared_focus = {
 		id = XER_WAR_TAR
 		icon = goal_generic_territory_or_war
@@ -250,53 +251,11 @@
 		}
 	}
 
-	## XER V GWS
-	shared_focus = {
-		id = XER_WAR_GWS
-		icon = goal_generic_territory_or_war
 
-		
-		x = 0
-		y = 0
-
-		offset = {
-			x = -1
-			y = 1
-			trigger = {
-				tag = XER
-			}
-		}
-		offset = {
-			y = 0
-			x = 0
-			trigger = {
-				tag = SHU
-			}
-		}
-
-		relative_position_id = XER_WAR_TWO
-
-		
-		prerequisite = { focus = XER_WAR_TWO }
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	## XER V NAZUMAH
+	## XERATH DECLARE NAZUMAH XER WAR NAZUMAH
 	shared_focus = {
 		id = XER_WAR_NAZ
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_local_subjugation
 
 		
 		x = 0
@@ -320,7 +279,10 @@
 		relative_position_id = XER_WAR_GWS
 
 		
-		prerequisite = { focus = XER_WAR_GWS }
+		prerequisite = { 
+			focus = XER_WAR_GWS 
+			focus = XER_WAR_GSD
+		}
 		cost = 10
 
 		available = {
@@ -336,10 +298,10 @@
 		}
 	}
 	
-	## XER V VOI
+	## XERATH DECLARE WAR VOID / ICATHIA | XER WAR VOI
 	shared_focus = {
 		id = XER_WAR_VOI
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_major_subjugation
 
 		
 		x = 0
@@ -379,7 +341,7 @@
 		}
 	}
 
-	## XER V NAS
+	## XERATH DECLARE WAR NASHRAMAE| XER WAR NAS
 	shared_focus = {
 		id = XER_WAR_NAS
 		icon = goal_generic_territory_or_war
@@ -422,7 +384,7 @@
 		}
 	}
 
-	## XER V NOX
+	## XERATH DECLARE WAR | XER WAR NOX
 	shared_focus = {
 		id = XER_WAR_NOX
 		icon = goal_generic_territory_or_war
@@ -464,7 +426,7 @@
 			factor = 5
 		}
 	}
-	## XER V DEM
+	## XERATH DECLARE WAR | XER WAR DEM
 	shared_focus = {
 		id = XER_WAR_DEM
 		icon = goal_generic_territory_or_war
@@ -507,7 +469,7 @@
 		}
 	}
 		
-	## XER V ZAU
+	## XERATH DECLARE WAR | XER WAR ZAU
 	shared_focus = {
 		id = XER_WAR_ZAU
 		icon = goal_generic_territory_or_war
@@ -550,7 +512,7 @@
 		}
 	}
 			
-	## XER V PIL
+	## XERATH DECLARE WAR | XER WAR PIL
 	shared_focus = {
 		id = XER_WAR_PIL
 		icon = goal_generic_territory_or_war
@@ -593,7 +555,7 @@
 		}
 	}
 	
-	## XER V AVA
+	## XERATH DECLARE WAR | XER WAR AVA
 	shared_focus = {
 		id = XER_WAR_AVA
 		icon = goal_generic_territory_or_war
@@ -635,7 +597,7 @@
 			factor = 5
 		}
 	}
-		## XER V PIL
+		## XERATH DECLARE WAR | XER WAR PIL
 	shared_focus = {
 		id = XER_WAR_STO
 		icon = goal_generic_territory_or_war
@@ -679,7 +641,7 @@
 		}
 	}
 	
-	## XER V AVA
+	## XERATH DECLARE WAR | XER WAR AVA
 	shared_focus = {
 		id = XER_WAR_AVA
 		icon = goal_generic_territory_or_war
@@ -722,7 +684,7 @@
 		}
 	}
 	
-	## XER V WIN
+	## XERATH DECLARE WAR | XER WAR WIN
 	shared_focus = {
 		id = XER_WAR_WIN
 		icon = goal_generic_territory_or_war
@@ -766,7 +728,7 @@
 		}
 	}
 	
-	## XER V URS
+	## XERATH DECLARE WAR | XER WAR URS
 	shared_focus = {
 		id = XER_WAR_URS
 		icon = goal_generic_territory_or_war
@@ -809,7 +771,7 @@
 		}
 	}
 		
-	## XER V FRO
+	## XERATH DECLARE WAR | XER WAR FRO
 	shared_focus = {
 		id = XER_WAR_FRO
 		icon = goal_generic_territory_or_war
@@ -852,51 +814,10 @@
 			factor = 5
 		}
 	}
-	
-	## XER V GES
-	shared_focus = {
-		id = XER_WAR_GES
-		icon = goal_generic_territory_or_war
-
 		
-		x = 0
-		y = 0
 
-		offset = {
-			x = 1
-			y = 1
-			trigger = {
-				tag = XER
-			}
-		}
-		offset = {
-			y = 0
-			x = 0
-			trigger = {
-				tag = SHU
-			}
-		}
 
-		relative_position_id = XER_WAR_TWO
-
-		
-		prerequisite = { focus = XER_WAR_TWO }
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	## XER V SHK
+	## XERATH DECLARE WAR | XER WAR SHK
 	shared_focus = {
 		id = XER_WAR_SHK
 		icon = goal_generic_territory_or_war
@@ -910,6 +831,11 @@
 			y = 1
 			trigger = {
 				tag = XER
+				if = { 
+					limited = { 
+						XER_WAR_GSD
+					} 
+				}
 			}
 		}
 		offset = {
@@ -923,7 +849,11 @@
 		relative_position_id = XER_WAR_GES
 
 		
-		prerequisite = { focus = XER_WAR_GES }
+		prerequisite = { 
+			focus = XER_WAR_GES 
+			focus = XER_WAR_GSD
+		}
+
 		cost = 10
 
 		available = {
@@ -939,7 +869,7 @@
 		}
 	}
 
-	## XER V IXTAL
+	## XERATH DECLARE WAR | XER WAR IXTAL
 	shared_focus = {
 		id = XER_WAR_IXT
 		icon = goal_generic_territory_or_war
@@ -987,7 +917,7 @@
 
 	
 	
-	## XER V AUR
+	## XERATH DECLARE WAR | XER WAR AUR
 	shared_focus = {
 		id = XER_WAR_AUR
 		icon = goal_generic_territory_or_war
@@ -1031,7 +961,7 @@
 			factor = 5
 		}
 	}
-	## XER V MAR
+	## XERATH DECLARE WAR | XER WAR MAR
 	shared_focus = {
 		id = XER_WAR_MAR
 		icon = goal_generic_territory_or_war
@@ -1090,7 +1020,7 @@
 		}
 	}
 	
-	## XER V BLG
+	## XERATH DECLARE WAR | XER WAR BLG
 	shared_focus = {
 		id = XER_WAR_BLG
 		icon = goal_generic_territory_or_war
@@ -1136,7 +1066,7 @@
 		}
 	}
 	
-	## XER V ION
+	## XERATH DECLARE WAR | XER WAR ION
 	shared_focus = {
 		id = XER_WAR_ION
 		icon = goal_generic_territory_or_war
@@ -1221,3 +1151,444 @@
 # 	completion_reward = {
 # 	}
 # }
+
+
+############################################################################
+# Next Segment
+############################################################################
+
+
+		# ## XERATH DECLARE WAR GREAT SAI DESERT | XER WAR GSD
+		# shared_focus = {
+		# 	id = XER_WAR_GSD
+		# 	icon = goal_generic_territory_or_war
+		# 	prerequisite = { focus = XER_WAR_TWO }
+			
+		# 	x = 0
+		# 	y = 1
+		# 	offset = {
+		# 		x=0
+		# 		y=1
+		# 		trigger = {
+		# 			tag = XER
+		# 		}
+		# 	}
+			
+		# 	relative_position_id = SHU_XER_WAR
+			
+		# 	cost = 10
+		# 	bypass = {
+
+		# 		ROOT = {
+		# 			# All Cores of these nations must be controlled by ROOT
+		# 			GSD = { all_core_state = { is_controlled_by = ROOT } } 
+		# 			GWS = { all_core_state = { is_controlled_by = ROOT } }
+		# 			GES = { all_core_state = { is_controlled_by = ROOT } } 
+		# 		}
+		# 	}
+
+		# 		# ROOT = {
+		# 		# 	AND = {
+		# 		# 		# All Statements must be proven true to be bypassed
+		# 		# 		NOT = { country_exists = GSD } 
+		# 		# 		NOT = { country_exists = GWS } 
+		# 		# 		NOT = { country_exists = GES } 
+					
+		# 		# 		# Idea of Implementation
+		# 		# 		# SAI = { is_owned_by = ROOT } 
+
+		# 		# 	}
+		# 		#  }
+		# 		# }
+
+		# 	# available
+		# 	allow_branch = {
+		# 		IF = {
+		# 			limit = {
+		# 				has_game_rule = {
+		# 					rule = obsolete_focus_branches_visibility
+		# 					option = HIDE
+		# 				}
+		# 			}
+					
+		# 			OR = {  # Both conditions must be met.
+		# 				tag = GSD  # The country tag must be XER.
+		# 				country_exists = GSD
+		# 				has_country_flag = GSD_formed
+		# 			}
+		# 		}
+		# 	}
+
+			
+		# 	completion_reward = {
+				
+		# 	}
+			
+		# 	ai_will_do = {
+		# 		factor = 5
+		# 	}
+		# }
+		
+		# ## XERATH DECLARE WAR GREAT WESTERN SAI | XER WAR GWS
+		# shared_focus = {
+		# 	id = XER_WAR_GWS
+		# 	icon = GFX_goal_nomad_hunters
+
+		# 	available = {
+		# 		trigger = { 
+		# 			if = { 
+		# 				limited = { 
+		# 					any_neighbor_state = GSD 
+
+		# 				}
+		# 			}
+
+		# 		}
+		# 	}
+		# 	# available
+		# 	allow_branch = {
+		# 		if = {
+		# 			limit = {
+		# 				has_game_rule = {
+		# 					rule = obsolete_focus_branches_visibility
+		# 					option = HIDE
+		# 				}
+		# 			}
+		# 			NOT = {
+		# 				OR = {
+		# 					has_completed_focus = XER_WAR_GSD
+		# 					# has_completed_focus = XER_WAR_GWS
+		# 					# has_completed_focus = XER_WAR_GES
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+
+		# 	x = 0
+		# 	y = 0
+
+		# 	offset = {
+		# 		x = -1
+		# 		y = 1
+		# 		trigger = {
+		# 			tag = XER
+		# 		}
+		# 	}
+		# 	offset = {
+		# 		y = 0
+		# 		x = 0
+		# 		trigger = {
+		# 			tag = SHU
+		# 		}
+		# 	}
+
+		# 	relative_position_id = XER_WAR_TWO
+
+			
+		# 	prerequisite = { focus = XER_WAR_TWO }
+		# 	cost = 10
+
+		# 	available = {
+				
+		# 	}
+			
+		# 	completion_reward = {
+				
+		# 	}
+			
+		# 	ai_will_do = {
+		# 		factor = 5
+		# 	}
+		# }
+
+		# ## XERATH DECLARE WAR GREAT EASTERN SAI | XER WAR GES
+		# shared_focus = {
+		# 	id = XER_WAR_GES
+		# 	icon = GFX_goal_nomad_hunters
+
+		# 	# available
+		# 	allow_branch = {
+		# 		if = {
+		# 			limit = {
+		# 				has_game_rule = {
+		# 					rule = obsolete_focus_branches_visibility
+		# 					option = HIDE
+		# 				}
+		# 			}
+		# 			NOT = {
+		# 				OR = {
+		# 					has_completed_focus = XER_WAR_GSD
+		# 					# has_completed_focus = XER_WAR_GWS
+		# 					# has_completed_focus = XER_WAR_GES
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+
+		# 	x = 0
+		# 	y = 0
+
+		# 	offset = {
+		# 		x = 1
+		# 		y = 1
+		# 		trigger = {
+		# 			tag = XER
+		# 		}
+		# 	}
+		# 	offset = {
+		# 		y = 0
+		# 		x = 0
+		# 		trigger = {
+		# 			tag = SHU
+		# 		}
+		# 	}
+
+		# 	relative_position_id = XER_WAR_TWO
+
+			
+		# 	prerequisite = { focus = XER_WAR_TWO }
+		# 	cost = 10
+
+		# 	available = {
+				
+		# 	}
+			
+		# 	completion_reward = {
+				
+		# 	}
+			
+		# 	ai_will_do = {
+		# 		factor = 5
+		# 	}
+		# }
+
+	## XERATH DECLARE WAR GREAT SAI DESERT | XER WAR GSD
+	shared_focus = {
+		id = XER_WAR_GSD
+		icon = goal_generic_territory_or_war
+		prerequisite = { focus = XER_WAR_TWO }
+		
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+			
+		# available
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						# has_completed_focus = XER_WAR_GSD
+						has_completed_focus = XER_WAR_GWS
+						has_completed_focus = XER_WAR_GES
+
+						country_exists = GWS
+						country_exists = GES
+						
+					}
+				}
+			}
+		}
+		
+		relative_position_id = SHU_XER_WAR
+		
+		cost = 10
+		
+		available = {
+			OR = {  
+				tag = GSD  
+				country_exists = GSD
+				has_country_flag = GSD_formed
+			}
+		}
+
+		bypass = {
+			ROOT = {
+				GSD = { all_core_state = { is_controlled_by = ROOT } } 
+				GWS = { all_core_state = { is_controlled_by = ROOT } }
+				GES = { all_core_state = { is_controlled_by = ROOT } } 
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = 100  # Adjust reward as needed
+			hidden_effect = {
+				remove_focus = XER_WAR_GWS
+				remove_focus = XER_WAR_GES
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XERATH DECLARE WAR GREAT WESTERN SAI | XER WAR GWS
+	shared_focus = {
+		id = XER_WAR_GWS
+		icon = GFX_goal_nomad_hunters
+
+		prerequisite = { focus = XER_WAR_TWO }
+
+		x = 0
+		y = 0
+		offset = {
+			x = -1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+				
+		# available
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = XER_WAR_GSD
+						# has_completed_focus = XER_WAR_GWS
+						# has_completed_focus = XER_WAR_GES
+					}
+				}
+			}
+		}
+		
+		relative_position_id = XER_WAR_TWO
+
+		cost = 10
+
+		available = {
+			NOT = {
+				has_country_flag = GSD_formed
+			}
+		}
+
+		bypass = {
+			ROOT = {
+				OR = {
+					has_completed_focus = XER_WAR_GSD
+					GWS = { all_core_state = { is_controlled_by = ROOT } }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 100  # Adjust reward as needed
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	## XERATH DECLARE WAR GREAT EASTERN SAI | XER WAR GES
+	shared_focus = {
+		id = XER_WAR_GES
+		icon = GFX_goal_nomad_hunters
+
+		prerequisite = { focus = XER_WAR_TWO }
+
+		x = 0
+		y = 0
+		offset = {
+			x = 1
+			y = 1
+			trigger = {
+				tag = XER
+			}
+		}
+		
+		# available
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = XER_WAR_GSD
+						# has_completed_focus = XER_WAR_GWS
+						# has_completed_focus = XER_WAR_GES
+					}
+				}
+			}
+		}
+
+		relative_position_id = XER_WAR_TWO
+
+		cost = 10
+
+		available = {
+			NOT = {
+				has_country_flag = GSD_formed
+			}
+		}
+
+		bypass = {
+			ROOT = {
+				OR = {
+					has_completed_focus = XER_WAR_GSD
+					GES = { all_core_state = { is_controlled_by = ROOT } }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 100  # Adjust reward as needed
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	# ## Focus for Forming GSD (Great Sai Desert)
+	# shared_focus = {
+	# 	id = form_GSD
+	# 	icon = GFX_goal_generic_ally
+	# 	prerequisite = {
+	# 		focus = XER_WAR_GWS
+	# 		focus = XER_WAR_GES
+	# 	}
+
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 10
+
+	# 	available = {
+	# 		OR = {
+	# 			has_completed_focus = XER_WAR_GWS
+	# 			has_completed_focus = XER_WAR_GES
+	# 		}
+	# 	}
+
+	# 	completion_reward = {
+	# 		set_country_flag = GSD_formed
+	# 		add_political_power = 150  # Adjust reward as needed
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 10
+	# 	}
+	# }

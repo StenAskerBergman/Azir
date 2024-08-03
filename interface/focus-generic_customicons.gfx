@@ -1094,12 +1094,7 @@ spriteTypes = {
         name = "GFX_goal_imperial_legacy"
         texturefile = "gfx/interface/goals/generic/GFX_goal_imperial_legacy.dds"
     }
-    
-    spriteType = {
-        name = "GFX_goal_imperial_machine"
-        texturefile = "gfx/interface/goals/generic/GFX_goal_imperial_machine.dds"
-    }
-    
+
     spriteType = {
         name = "GFX_goal_imprison"
         texturefile = "gfx/interface/goals/generic/GFX_goal_imprison.dds"
@@ -1462,12 +1457,7 @@ spriteTypes = {
         name = "GFX_goal_noxian_agenda"
         texturefile = "gfx/interface/goals/generic/GFX_goal_noxian_agenda.dds"
     }
-    
-    spriteType = {
-        name = "GFX_goal_noxian_pact"
-        texturefile = "gfx/interface/goals/generic/GFX_goal_noxian_pact.dds"
-    }
-    
+
     spriteType = {
         name = "GFX_goal_noxus_star"
         texturefile = "gfx/interface/goals/generic/GFX_goal_noxus_star.dds"
@@ -1826,7 +1816,7 @@ spriteTypes = {
             animationblendmode = "add"       #add, multiply, overlay
             animationtype = "scrolling"      #scrolling, rotating, pulsing
             animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 2.0 y = 1.0 } 
+            animationtexturescale = { x = 1.0 y = 1.0 } 
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/generic/RedIndustry.dds"
@@ -2019,7 +2009,7 @@ spriteTypes = {
     }
     
     spriteType = {
-        name = "GFX_goal_social_reforms"
+        name = "GFX_focus_goal_social_reforms"
         texturefile = "gfx/interface/goals/generic/GFX_goal_social_reforms.dds"
     }
     
@@ -2160,7 +2150,7 @@ spriteTypes = {
             animationblendmode = "add"
             animationtype = "scrolling"
             animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 2.0 y = 1.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/generic/BlueIndustry.dds"
@@ -2191,7 +2181,7 @@ spriteTypes = {
             animationblendmode = "add"
             animationtype = "scrolling"
             animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 2.0 y = 1.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/generic/OrangeIndustry.dds"
@@ -2222,7 +2212,7 @@ spriteTypes = {
             animationblendmode = "add"
             animationtype = "scrolling"
             animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 2.0 y = 1.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/generic/PurpleIndustry.dds"
@@ -2253,7 +2243,7 @@ spriteTypes = {
             animationblendmode = "add"
             animationtype = "scrolling"
             animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 2.0 y = 1.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/generic/GreenIndustry.dds"

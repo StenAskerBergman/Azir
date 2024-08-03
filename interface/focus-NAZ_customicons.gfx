@@ -19,10 +19,10 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/NAZ/GFX_focus_NAZ_Big_Game.dds"
     }
 
-    SpriteType = {
-        name = "GFX_focus_NAZ_Big_Game"
-        texturefile = "gfx/interface/goals/NAZ/GFX_focus_NAZ_Big_Game.dds"
-    }
+    # SpriteType = {
+    #     name = "GFX_focus_NAZ_Big_Game"
+    #     texturefile = "gfx/interface/goals/NAZ/GFX_focus_NAZ_Big_Game.dds"
+    # }
 
     SpriteType = {
         name = "GFX_focus_NAZ_national_pride"

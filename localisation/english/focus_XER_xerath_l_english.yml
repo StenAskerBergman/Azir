@@ -62,14 +62,14 @@ XER_Noxian_Relationship_desc: "As we nurture our ties with Noxus, a powerful all
 XER_Noxian_Autonomy: "Noxian Autonomy" # Gain Independence, as a Noxian Satellite
 XER_Noxian_Autonomy_desc: "By embracing our role as a Noxian satellite, we secure our autonomy while reaping the benefits of allegiance to a formidable empire. Through collaboration and strategic partnership, we pave the path to prosperity."
 
-XER_Noxian_Independence: "Noxian Independence" # Regain Independence from Noxus
-XER_Noxian_Independence_desc: "In our quest for independence, we cast off the shackles of Noxian influence, reclaiming our sovereignty and charting our own destiny amidst the sands of Shurima."
+XER_noxian_independence: "Noxian Independence" # Regain Independence from Noxus
+XER_noxian_independence_desc: "In our quest for independence, we cast off the shackles of Noxian influence, reclaiming our sovereignty and charting our own destiny amidst the sands of Shurima."
 
 XER_Power_Reborn: "Power Reborn" # Xerath attempts to become a god, will take time!
 XER_Power_Reborn_desc: "As we embark on the path to ascension, Xerath's ambition knows no bounds. Through patient scheming and unparalleled power, we lay the foundation for our divine ascent, shaping the future of Shurima."
 
-XER_Shadow_Pact: "Shadow Pact" # They can now rejoin if the other haven't killed or cured them
-XER_Shadow_Pact_desc: "In the shadows, a pact is forged between erstwhile enemies. Should one fall, the other stands ready to extend a hand, offering redemption or ruin in equal measure."
+XER_shadow_pact: "Shadow Pact" # They can now rejoin if the other haven't killed or cured them
+XER_shadow_pact_desc: "In the shadows, a pact is forged between erstwhile enemies. Should one fall, the other stands ready to extend a hand, offering redemption or ruin in equal measure."
 
 XER_Cruelty_Pact: "Cruelty Pact" # Renekton's Pact with any raider nation to find his brother
 XER_Cruelty_Pact_desc: "In his quest to find his brother, Renekton forges a pact with raider nations, promising bloodshed and plunder in exchange for aid. With cruelty as their currency, they march forth into the unknown."

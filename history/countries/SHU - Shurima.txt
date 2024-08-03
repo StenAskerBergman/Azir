@@ -58,7 +58,7 @@ recruit_character = SHU_nami
 # recruit_character = SHU_renekton
 # recruit_character = SHU_xerath 
 
-# XER_Shadow_Pact 
+# XER_shadow_pact 
 # XER_Renekton_Conquest
 
 set_convoys = 200

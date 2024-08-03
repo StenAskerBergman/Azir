@@ -40,7 +40,7 @@ spriteTypes = {
 	}
 	
 
-	SpiriteType = {
+	SpriteType = {
 		name ="GFX_focus_SHU_shurima_bow"
 		texturefile ="gfx/interface/goals/SHU/GFX_focus_SHU_shurima_bow.dds"
 	}

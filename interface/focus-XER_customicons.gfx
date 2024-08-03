@@ -2,18 +2,324 @@ spriteTypes = {
 		
 
 # Below  was Written in extension by Sten's :)  r56_goal_generic_army_purges
-	
-	##Icon For: Power Play
-	SpriteType = {
-		name = "GFX_XER_power_play"
-		texturefile = "gfx/interface/goals/XER/XER_power_play.dds"
+
+	##Icon For: Renektons Military 1
+	spriteType = {
+		name = "GFX_focus_renekton_military"
+		texturefile = "gfx/interface/goals/XER/focus_renekton_military.dds"
 	}
-		SpriteType = {
-		name = "GFX_XER_power_play_shine"
-		texturefile = "gfx/interface/goals/XER/XER_power_play.dds"
+	
+	##Icon Shine For: Renektons Military 1
+	spriteType = {
+		name = "GFX_focus_renekton_military_shine"
+		texturefile = "gfx/interface/goals/XER/focus_renekton_military.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/XER/XER_power_play.dds"
+			animationmaskfile = "gfx/interface/goals/XER/focus_renekton_military.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_renekton_military.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Renektons Military 2
+	spriteType = {
+		name = "GFX_focus_renekton_military2"
+		texturefile = "gfx/interface/goals/XER/focus_renekton_military2.dds"
+	}
+	
+	##Icon Shine For: Renektons Military 2
+	spriteType = {
+		name = "GFX_focus_renekton_military2_shine"
+		texturefile = "gfx/interface/goals/XER/focus_renekton_military2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_renekton_military2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_renekton_military2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Swain's Military 2
+	spriteType = {
+		name = "GFX_focus_swain_military2"
+		texturefile = "gfx/interface/goals/XER/focus_swain_military2.dds"
+	}
+	
+	##Icon Shine For: Swain's Military 2
+	spriteType = {
+		name = "GFX_focus_swain_military2_shine"
+		texturefile = "gfx/interface/goals/XER/focus_swain_military2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_swain_military2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_swain_military2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: FIN Jaeger Movement
+	spriteType = {
+		name = "GFX_focus_FIN_jaeger_movement"
+		texturefile = "gfx/interface/goals/XER/focus_FIN_jaeger_movement.dds"
+	}
+	
+	##Icon Shine For: FIN Jaeger Movement
+	spriteType = {
+		name = "GFX_focus_FIN_jaeger_movement_shine"
+		texturefile = "gfx/interface/goals/XER/focus_FIN_jaeger_movement.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_FIN_jaeger_movement.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_FIN_jaeger_movement.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Generic Annex Country
+	spriteType = {
+		name = "GFX_focus_generic_annex_country"
+		texturefile = "gfx/interface/goals/XER/focus_generic_annex_country.dds"
+	}
+	
+	##Icon Shine For: Generic Annex Country
+	spriteType = {
+		name = "GFX_focus_generic_annex_country_shine"
+		texturefile = "gfx/interface/goals/XER/focus_generic_annex_country.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_generic_annex_country.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_generic_annex_country.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Generic Mining Industry
+	spriteType = {
+		name = "GFX_focus_generic_mining_industry"
+		texturefile = "gfx/interface/goals/XER/focus_generic_mining_industry.dds"
+	}
+	
+	##Icon Shine For: Generic Mining Industry
+	spriteType = {
+		name = "GFX_focus_generic_mining_industry_shine"
+		texturefile = "gfx/interface/goals/XER/focus_generic_mining_industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_generic_mining_industry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_generic_mining_industry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Generic Self Management
+	spriteType = {
+		name = "GFX_focus_generic_self_management"
+		texturefile = "gfx/interface/goals/XER/focus_generic_self_management.dds"
+	}
+	
+	##Icon Shine For: Generic Self Management
+	spriteType = {
+		name = "GFX_focus_generic_self_management_shine"
+		texturefile = "gfx/interface/goals/XER/focus_generic_self_management.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_generic_self_management.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_generic_self_management.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Noxian Agreement
+	spriteType = {
+		name = "GFX_focus_noxian_agreement"
+		texturefile = "gfx/interface/goals/XER/focus_noxian_agreement.dds"
+	}
+	
+	##Icon Shine For: Noxian Agreement
+	spriteType = {
+		name = "GFX_focus_noxian_agreement_shine"
+		texturefile = "gfx/interface/goals/XER/focus_noxian_agreement.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_noxian_agreement.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_noxian_agreement.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Renektons Military 3 - focus_renekton_military3
+	spriteType = {
+		name = "GFX_focus_renekton_military3"
+		texturefile = "gfx/interface/goals/XER/focus_renekton_military3.dds"
+	}
+	
+	##Icon Shine For: Renektons Military 3 
+	spriteType = {
+		name = "GFX_focus_renekton_military3_shine"
+		texturefile = "gfx/interface/goals/XER/focus_renekton_military3.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_renekton_military3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -25,7 +331,7 @@ spriteTypes = {
 			animationtexturescale = { x = 2.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/XER/XER_power_play.dds"
+			animationmaskfile = "gfx/interface/goals/XER/focus_renekton_military3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			 # yes or no ;)
@@ -38,42 +344,146 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	##Icon For: GFX_focus_XER_power_play
-	SpriteType = {
+		
+	##Icon For: Renektons Conquest - GFX_focus_XER_blood_hunger
+	spriteType = {
+		name = "GFX_focus_XER_blood_hunger"
+		texturefile = "gfx/interface/goals/XER/focus_XER_blood_hunger.dds"
+	}
+	
+	##Icon Shine For: Renektons Conquest
+	spriteType = {
+		name = "GFX_focus_XER_blood_hunger_shine"
+		texturefile = "gfx/interface/goals/XER/focus_XER_blood_hunger.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_blood_hunger.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_blood_hunger.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			 # yes or no ;)
+			animationtime = 0.75			 # in seconds
+			animationdelay = 0				 # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Power Play - GFX_focus_XER_power_play
+	spriteType = {
 		name = "GFX_focus_XER_power_play"
 		texturefile = "gfx/interface/goals/XER/focus_XER_power_play.dds"
 	}
 
-	##Icon For: GFX_focus_XER_power_struggle
-	SpriteType = {
+	spriteType = {
+		name = "GFX_focus_XER_power_play_shine"
+		texturefile = "gfx/interface/goals/XER/focus_XER_power_play.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_play.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_play.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			 # yes or no ;)
+			animationtime = 0.75			 # in seconds
+			animationdelay = 0				 # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: power struggle
+	spriteType = {
 		name = "GFX_focus_XER_power_struggle"
 		texturefile = "gfx/interface/goals/XER/focus_XER_power_struggle.dds"
 	}
 
+	##Icon Shine For: power struggle
+	spriteType = {
+		name = "GFX_focus_XER_power_struggle_shine"
+		texturefile = "gfx/interface/goals/XER/focus_XER_power_struggle.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_struggle.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_struggle.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+
 	##Icon For: focus_XER_noxian_coalition
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_XER_noxian_coalition"
 		texturefile = "gfx/interface/goals/XER/focus_XER_noxian_coalition.dds"
 	}
 	##Icon For: GFX_goal_noxian_pact
-	SpriteType = {
+	spriteType = {
 		name = "GFX_goal_noxian_pact"
 		texturefile = "gfx/interface/goals/XER/goal_noxian_pact.dds"
 	}
 
 	##Icon For: focus_XER_colonial_pact
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_XER_colonial_pact"
 		texturefile = "gfx/interface/goals/XER/focus_XER_colonial_pact.dds"
 	}
 
 	##Icon For: 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_ARG_defense_and_democracy"
 		texturefile = "gfx/interface/goals/XER/focus_ARG_defense_and_democracy.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_ARG_defense_and_democracy_shine"
 		texturefile = "gfx/interface/goals/focus_ARG_defense_and_democracy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
