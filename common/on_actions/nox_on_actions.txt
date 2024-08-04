@@ -1,0 +1,19 @@
+# Runeterra
+on_actions = {
+	
+	# On Start
+	on_startup = {
+		
+		# EFFECT
+		effect = {
+			 
+			# Noxus 
+			NOX = { 
+				
+				# Create A Faction for them and their puppet
+				Create_faction = "Noxian Federation"
+				Add_to_faction = BLZ
+			}
+		}
+	}
+}

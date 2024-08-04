@@ -439,7 +439,45 @@
 
 	# Rebuild in Our Image
 	focus = {
-		id = XER_rulers
+		id = XER_new_age
+		icon = GFX_goal_revive_economy
+		x=-1
+		y=1
+		relative_position_id = XER_Raider_Relationship
+		cost = 10
+
+		available = {
+			
+		}
+		
+		mutually_exclusive ={
+			focus = XER_the_true_rulers
+		}
+
+		prerequisite = {	
+			focus = XER_loyal_legionaries
+			focus = XER_loyal_henchmen
+			# focus = XER_Brutal_Slavery 
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion 
+		}
+
+		prerequisite = {	
+			focus = XER_noxian_independence
+		}
+
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	# The True Rulers
+	focus = {
+		id = XER_the_true_rulers
 		icon = GFX_goal_revolution
 		x=-1
 		y=1
@@ -450,6 +488,9 @@
 			
 		}
 		
+		mutually_exclusive ={
+			focus = XER_new_age
+		}
 		
 		prerequisite = {	
 			focus = XER_loyal_henchmen
@@ -468,6 +509,7 @@
 		}
 	}
 	
+	# Rebuild in Our Image
 	focus = {
 		id = XER_rebuild_in_my_image
 		icon = GFX_goal_revive_economy
@@ -480,13 +522,16 @@
 			
 		}
 		
-		
 		prerequisite = {	
 			focus = XER_loyal_smugglers
 			focus = XER_power_reborn
 			# focus = XER_Brutal_Slavery 
 			# focus = XER_Wild_Anger
 			# focus = XER_Identity_Fusion 
+		}
+
+		prerequisite = {	
+			focus = XER_noxian_independence
 		}
 
 		completion_reward = {
@@ -498,6 +543,45 @@
 		}
 	}
 	
+	# Rebuild in Our Image
+	focus = {
+		id = XER_rebuild_in_my_image
+		icon = GFX_goal_revive_economy
+		x=1
+		y=1
+		relative_position_id = XER_loyal_smugglers
+		cost = 10
+
+		available = {
+			
+		}
+				
+		mutually_exclusive ={
+			focus = XER_rebuild_in_their_image
+		}
+		
+		prerequisite = {	
+			focus = XER_loyal_smugglers
+			focus = XER_power_reborn
+			# focus = XER_Brutal_Slavery 
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion 
+		}
+
+		prerequisite = {	
+			focus = XER_noxian_independence
+		}
+
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	# Loyal Smugglers
 	focus = {
 		id = XER_loyal_smugglers
 		icon = GFX_goal_smugglers
@@ -528,6 +612,122 @@
 		}
 	}
 
+	# Rebuild in With* Image
+	focus = {
+		id = XER_rebuild_in_their_image
+		icon = GFX_goal_rebuild_in_their_image
+		x=1
+		y=1
+		relative_position_id = XER_power_reborn
+		cost = 10
+
+		available = {
+			
+		}
+				
+		mutually_exclusive ={
+			focus = XER_rebuild_in_my_image
+		}
+		
+		prerequisite = {	
+			focus = XER_loyal_smugglers
+			focus = XER_power_reborn
+			# focus = XER_Brutal_Slavery 
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion 
+		}
+
+		prerequisite = {	
+			focus = XER_noxian_independence
+		}
+
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+		
+	# 
+	focus = {
+		id = XER_total_war
+		icon = GFX_goal_revolution
+		x=1
+		y=1
+		relative_position_id = XER_the_true_rulers
+		cost = 10
+
+		available = {
+			
+		}
+		
+	 	prerequisite = {	
+			 focus = XER_loyal_smugglers
+		}
+			
+		prerequisite = {	
+			focus = XER_the_true_rulers
+		}
+		
+		prerequisite = {	
+			focus = XER_rebuild_in_my_image
+			# focus = XER_noxian_indepedence
+			# focus = XER_Brutal_Slavery 
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion 
+		
+		}
+
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	# The True Rulers
+	focus = {
+		id = XER_total_war
+		icon = GFX_goal_revolution
+		x=1
+		y=1
+		relative_position_id = XER_the_true_rulers
+		cost = 10
+
+		available = {
+			
+		}
+		
+	 	prerequisite = {	
+			 focus = XER_loyal_smugglers
+		}
+			
+		prerequisite = {	
+			focus = XER_the_true_rulers
+		}
+		
+		prerequisite = {	
+			focus = XER_rebuild_in_my_image
+			# focus = XER_noxian_indepedence
+			# focus = XER_Brutal_Slavery 
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion 
+		
+		}
+
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
 	# Cruelty Pact 
 	focus = {
 		id = XER_Cruelty_Pact 
@@ -857,7 +1057,7 @@
 	# Colonial Identity
 	focus = {
 		id = XER_Colonial_Identity # XER_Identity_Fusion
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_tax_slave
 		
 		x = 2
 		y = 2
