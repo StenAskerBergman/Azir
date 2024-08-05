@@ -86,7 +86,7 @@ characters = {
 			VOI_char_cw_desolate = yes
 		}
         country_leader = {
-            ideology = Desolate
+            ideology = oblivion #Desolate
             desc = "POLITICS_BELVETH_DESC"
             traits = { void_empress }
             id=-1
@@ -97,7 +97,7 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = VOI_Belveth
-            ledger = government
+            ledger = civilian
             traits = { void_empress mind_control } # Lore: Empress of the Void with mind control abilities
             cost = 0
         }
@@ -129,9 +129,12 @@ characters = {
             factor = 1.0
         }
         advisor = {
+            available = {
+                has_completed_focus = VOI_Shifting_Sands
+            }
             slot = political_advisor #military_advisor
             idea_token = VOI_Reksai
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { scavenger supreme_hunter ruthless_hunter } # Lore: Master of ambush and hunting
             cost = 0
         }
@@ -162,9 +165,12 @@ characters = {
             factor = 1.0
         }
         advisor = {
+            available = {
+                has_country_flag = can_request_khazix
+            }
             slot = political_advisor #military_advisor
             idea_token = VOI_Khazix
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { guerilla_warfare adaptive_strategist evolution_master } # Lore: Evolution and adaptability - maybe? strategic_mind
             cost = 0
         }
@@ -200,15 +206,15 @@ characters = {
         }
         advisor = {
             slot = theorist #military_advisor #political_advisor #army_chief
-            idea_token = VOI_Chogath_theorist
-            ledger = government # ledger = army
+            idea_token = VOI_Chogath #VOI_Chogath_theorist
+            ledger = civilian # ledger = army
             traits = { devourer brute_force devourer_of_worlds } # Lore: Devourer of worlds and brute force
             cost = 0
         }
         advisor = {
             slot = political_advisor #military_advisor #political_advisor #chief_of_army
             idea_token = VOI_Chogath
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { devourer brute_force devourer_of_worlds } # Lore: Devourer of worlds and brute force
             cost = 0
         }
@@ -245,14 +251,14 @@ characters = {
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_Kogmaw
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
             cost = 0
         }
         advisor = {
             slot = army_chief #military_advisor
             idea_token = VOI_Kogmaw
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
             cost = 0
         }
@@ -290,14 +296,14 @@ characters = {
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_velkos
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
             cost = 0
         }
         advisor = {
             slot = army_chief #military_advisor
             idea_token = VOI_velkos
-            ledger = army #ledger = government  
+            ledger = army #ledger = civilian  
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
             cost = 0
         }
@@ -418,7 +424,7 @@ characters = {
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_kaisa
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { void_sentinel evolution_hunter } # Lore: Void Hunter and evolved sentinel
             cost = 0
         }
@@ -455,7 +461,7 @@ characters = {
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_Kassadin
-            ledger = government # ledger = army
+            ledger = civilian # ledger = army
             traits = { void_walker void_resistance } # Lore: Void walker and resistance leader
             cost = 0
         }
