@@ -1,0 +1,169 @@
+focus_tree = {
+
+#################################################################################
+# Shared
+#################################################################################
+
+# Ideas
+
+    # Constant Power Struggle
+
+# Starters
+
+    # Temporary Alliance: 
+        # They might temporarily ally to achieve a common goal, such as defeating 
+        # a shared enemy like Nasus or reclaiming Shurima. However, this alliance 
+        # would be unstable, with constant power struggles.
+
+    # Direct Conflict: 
+        # Their differences could lead to an outright battle, with 
+        # Renekton's raw strength clashing against Xerath's cunning 
+        # and magical power.
+ 
+    # Seize the Sun Disc:
+        # Gain access to ancient powers and technological bonuses.
+        
+    # Master Arcane Warfare:
+        # Unlock advanced magical weapons and increase army efficiency.
+
+        
+#################################################################################
+# Path of Domination
+#################################################################################
+
+# Expand the Empire: 
+    # Conquer surrounding territories, using both military and arcane might.
+
+# Suppress Rebellions: 
+    # Implement policies to deal with internal unrest and dissent.
+
+# Ascended Supremacy: 
+    # Cement rule by purging rivals and asserting dominance over all of Shurima.
+
+#################################################################################
+# Path of Power
+#################################################################################
+
+# Usurp the Throne: 
+    # Plot to overthrow Azir, leading to a civil war within Shurima.
+
+# Alliance with Noxus: 
+    # Form a strategic alliance with Noxus, gaining military and economic support.
+
+# The Endless Pursuit: 
+    # Focus on research and industrial capacity, sacrificing stability for more power.
+
+
+#################################################################################
+# Xerath Path
+#################################################################################
+
+    # Subjugate the Noxian Colonies:
+        # Forge alliances or take over Noxian territories in Shurima.
+
+    # Manipulation and Betrayal: 
+        # Xerath could manipulate Renekton’s madness to use him
+        # as a weapon, only to betray him once his usefulness ends.
+
+    # Double-Cross: 
+        # Xerath might betray Noxus once he no longer needs their help, 
+        # seizing their resources for himself.
+
+    # Power Struggle: 
+        # The alliance could deteriorate into a power struggle, with 
+        # Xerath attempting to subjugate or eliminate his Noxian allies 
+        # once they have outlived their usefulness.
+
+    # Subjugate with Magic: 
+        # Unlock special units with magical bonuses, focus on experimental tech.
+
+    # Betrayal of Allies: 
+        # Gain war goals on former allies (Noxus), increase military strength at 
+        # the cost of stability.
+
+    # Cunning Over Strength: 
+        # Increase espionage effectiveness.
+
+#################################################################################
+# Renekton Path
+#################################################################################
+ 
+    # Direct Confrontation
+        # Renekton might reject alliances altogether, preferring to 
+        # face his enemies directly. His primary goal would be to 
+        # destroy Nasus and any who stand with him, including Azir.
+
+    # Temporary Truce: 
+        # Renekton might form a temporary truce with Noxus or other 
+        # forces if it directly serves his purpose of getting closer 
+        # to his enemies, but this truce would be fragile and likely 
+        # to break once his immediate goals are achieved.
+
+    # Unleash the Fury: 
+        # Increase division attack and defense, lower division organization.
+    
+    # Rampage Across Shurima: 
+        # Gain war goals on Shuriman nations, increase division speed and damage.
+
+    # Revenge on Nasus: 
+        # Focus on a major battle, leading to an epic showdown with an enemy 
+        # nation modeled after Nasus.
+    
+    # Madness Unleashed:
+        # Buff all military units but reduce political power gain and stability significantly. 
+
+
+#################################################################################
+# Noxian Path
+#################################################################################
+ 
+    # Expand the Empire
+        # Gain war goals on neighboring royal & rich countries
+
+    # Integrate Raiders:
+        #  Convert any raider units into regular army units with increased stats.
+
+    # Reinforce the Colonies: 
+        # Strengthen control over Shuriman colonies, increase colonial resources.
+
+    # The Strength of Noxus:
+        # Bonus to recruitable population by +10%
+        # Unlocks military-focused research bonuses.
+
+#################################################################################
+# Internal Noxian Politics Path
+#################################################################################
+
+    # Meritocracy Over Birthright: 
+        # Increase political power gain, decrease stability.
+
+    # Deal with Raiders: 
+        # Choose between: 
+            # 1. Crushing the raiders (boosts military, decreases stability) 
+                # or 
+            # 2. Integrating them (adds manpower, increases stability).
+    
+    # Handle Slavery Debate: 
+        # Choose to either: 
+            # 1. Abolish slavery (increases stability, decreases industrial output temporarily) 
+                # or 
+            # 2. Exploit it (increases output, decreases world tension).
+
+#################################################################################
+# Events and Decisions
+#################################################################################
+
+    # Xerath’s Betrayal: 
+        # Trigger an event where Xerath either remains loyal to noxus, or Xerath 
+        # betrays the alliance with Noxus, impacting both the diplomatic relations 
+        # and military positions.
+
+    # Renekton’s Rampage: 
+        # Event chain where Renekton’s forces may revolt or destabilize areas under 
+        # Noxian control, forcing the player to either suppress or negotiate with him.
+        
+    # Shuriman Resurrection: 
+        # An event where Shurima’s ancient powers awaken, presenting opportunities or 
+        # threats to Noxian and allied forces.
+
+}

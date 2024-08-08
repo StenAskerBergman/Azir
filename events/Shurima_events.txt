@@ -5,7 +5,79 @@
 add_namespace = shurima
 add_namespace = shurima.azir
 add_namespace = shurima.sivir
-# add_namespace = shurima.xerath
+add_namespace = shurima.xerath
+
+add_namespace = shu_assassination_aftermath
+
+# Shuriman Event: The Aftermath of the Assassination Attempt
+country_event = {
+	id = shu_assassination_aftermath.1
+	title = "The Aftermath of the Assassination Attempt" # shu_assassination_aftermath.1.t
+	desc = "Fifty days have passed since the shocking attempt on Azir's life. The empire now holds its breath as the consequences of this act unfold." # shu_assassination_aftermath.1.d
+	picture = GFX_report_event_empty_throne
+	major = yes
+	
+	trigger = {
+		has_country_flag = xer_assassination_attempt
+		tag = SHU
+	}
+
+	mean_time_to_happen = {
+		days = 50
+	}
+	
+	immediate = {
+		# Remove the flag indicating the assassination attempt
+		clr_country_flag = xer_assassination_attempt
+	}
+
+	option = {
+		name = "Azir has fallen..." # Azir dies, retirement event for SHU_azir
+		ai_chance = {
+			factor = 5
+		}
+		immediate = {
+			retire_character = SHU_azir
+			news_event_tooltip = "Azir has been assassinated, leaving the empire in chaos."
+		}
+	}
+
+	option = {
+		name = "Azir Strikes Back!" # Azir survives and gains legitimacy
+		ai_chance = {
+			factor = 25
+		}
+		immediate = {
+			add_ideas = SHU_legitimate_ruler
+			news_event_tooltip = "Azir has survived the assassination attempt and reasserts his rule."
+		}
+	}
+
+	option = {
+		name = "Xerath Strikes a Blow" # Xerath either hurts Sivir or Azir
+		ai_chance = {
+			factor = 25
+		}
+		immediate = {
+			random_list = {
+				5 = { retire_character = SHU_azir }
+				95 = { add_stability = -0.1 } # Represents injury or unrest
+			}
+			news_event_tooltip = "Xerath's attack has dealt a significant blow, leaving the empire shaken."
+		}
+	}
+
+	option = {
+		name = "Sivir is Killed..." # Sivir dies, retirement event for SHU_sivir
+		ai_chance = {
+			factor = 20
+		}
+		immediate = {
+			retire_character = SHU_sivir
+			news_event_tooltip = "In the chaos, Sivir has been killed, leaving a power vacuum in the empire."
+		}
+	}
+}
 
 # Pick a Leader Event
 country_event = {

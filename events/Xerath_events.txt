@@ -105,7 +105,7 @@ country_event = {
 	
 	
 	option = { # Breaking point!
-	name = "Let us Begin!"
+	name = "Finally... Power..."
 	ai_chance = { factor = 100 }
 	
 	# Not Sure we need to show this! # for XER & SHU 
@@ -113,6 +113,85 @@ country_event = {
 	news_event = { id = shuriman_rnews.5 days = 2 }
 	set_country_flag = xer_at_war_with_shu
 }
+}
+
+# Usurp the Throne
+country_event = {
+	id = xerath.4
+	title = "Usurp the Throne" # xerath.4.t
+	desc = "The time has come to seize the throne from Azir and claim the Empire for ourselves. How shall we approach this monumental task?" # xerath.4.d
+	picture = GFX_report_event_empty_throne
+	trigger = { NOT = { has_country_flag = xer_throne_usurped } }
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		custom_effect_tooltip = "We will claim the throne of Shurima, breaking Azir's rule and forging a new era under Xerath!"
+	
+		hidden_effect = {
+			set_global_flag = xer_usurpation_initiated
+		}
+	}
+	
+	# Option 1: Direct Assault
+	option = { 
+		name = "Launch a Direct Assault on the Imperial Palace"
+		ai_chance = { factor = 50 }
+		
+		custom_effect_tooltip = "Our forces will launch a direct and overwhelming attack on Azir's palace."
+		
+		immediate = {
+			add_political_power = -50
+			set_country_flag = xer_direct_assault
+			add_stability = -0.05
+		}
+		news_event = { id = shuriman_rnews.6 days = 2 }
+	}
+
+	# Option 2: Sabotage and Deception
+	option = { 
+		name = "Undermine Azir's Support through Sabotage"
+		ai_chance = { factor = 25 }
+		
+		custom_effect_tooltip = "We'll weaken Azir's support base through targeted sabotage and deceit."
+		
+		immediate = {
+			add_political_power = -30
+			set_country_flag = xer_sabotage_campaign
+			add_stability = 0.05
+		}
+		news_event = { id = shuriman_rnews.7 days = 3 }
+	}
+
+	# Option 3: Incite a Rebellion
+	option = { 
+		name = "Incite a Rebellion among Azir's Forces"
+		ai_chance = { factor = 15 }
+		
+		custom_effect_tooltip = "We'll rally discontented elements within Azir's army to turn against him."
+		
+		immediate = {
+			add_political_power = -40
+			set_country_flag = xer_rebellion_incited
+			add_stability = -0.1
+		}
+		news_event = { id = shuriman_rnews.8 days = 4 }
+	}
+
+	# Option 4: Assassinate Azir
+	option = { 
+		name = "Attempt to Assassinate Azir"
+		ai_chance = { factor = 10 }
+		
+		custom_effect_tooltip = "We'll make a daring move to assassinate Azir, leaving the throne open for our taking."
+		
+		immediate = {
+			add_political_power = -60
+			set_country_flag = xer_assassination_attempt
+			add_stability = -0.2
+		}
+		news_event = { id = shuriman_rnews.9 days = 1 }
+	}
 }
 
 # Other - Random

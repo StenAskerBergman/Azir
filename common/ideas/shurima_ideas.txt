@@ -2,6 +2,12 @@ ideas = {
 
 	country = {
 		
+		SHU_legitimate_ruler = {
+			picture = GFX_goal_generic_ruler
+			add_stability = 0.1
+		}
+
+
 		# ----------------------------
 		# Targon Support - Sider Idea
 		# ----------------------------

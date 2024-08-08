@@ -39,6 +39,39 @@ news_event = {
 }
 
 
+# Shuriman News Event: Azir Assassination Attempt
+news_event = {
+	id = shuriman_rnews.9
+	title = "Azir Assassination Attempt" # shuriman_rnews.9.t
+	desc = "A shocking attempt on Azir's life has been reported, throwing the empire into chaos as rumors spread about the identity of the attackers." # shuriman_rnews.9.d
+	picture = GFX_report_event_assassination
+	major = yes
+	
+	trigger = { 
+		has_global_flag = xer_assassination_attempt
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		news_event_tooltip = "An attempt on Azir's life has left the empire in turmoil."
+	}
+	
+	option = {
+		name = "The Empire Holds Its Breath..."
+		ai_chance = { factor = 100 }
+
+		immediate = {
+			# You can add specific country effects here if needed, 
+			# for example, impacting stability or triggering further events.
+			clr_global_flag = xer_assassination_attempt
+		}
+	}
+}
+
+
 # Shuriman Great War - News: Xerath vs Shurima
 news_event = {
 	id = shuriman_rnews.5 

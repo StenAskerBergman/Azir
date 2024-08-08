@@ -344,7 +344,84 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+			
+	##Icon For: Xerath Conquest - GFX_focus_XER_path_of_domination
+	spriteType = {
+		name = "GFX_focus_XER_path_of_domination"
+		texturefile = "gfx/interface/goals/XER/focus_XER_path_of_domination.dds"
+	}
+	
+	##Icon Shine For: Xerath Conquest
+	spriteType = {
+		name = "GFX_focus_XER_path_of_domination_shine"
+		texturefile = "gfx/interface/goals/XER/GFX_focus_XER_path_of_domination.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_hungry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_hungry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			 # yes or no ;)
+			animationtime = 0.75			 # in seconds
+			animationdelay = 0				 # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 		
+	##Icon For: Xerath Conquest - GFX_focus_XER_power_hungry
+	spriteType = {
+		name = "GFX_focus_XER_power_hungry"
+		texturefile = "gfx/interface/goals/XER/focus_XER_power_hungry.dds"
+	}
+	
+	##Icon Shine For: Xerath Conquest
+	spriteType = {
+		name = "GFX_focus_XER_power_hungry_shine"
+		texturefile = "gfx/interface/goals/XER/focus_XER_power_hungry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_hungry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/focus_XER_power_hungry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			 # yes or no ;)
+			animationtime = 0.75			 # in seconds
+			animationdelay = 0				 # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
 	##Icon For: Renektons Conquest - GFX_focus_XER_blood_hunger
 	spriteType = {
 		name = "GFX_focus_XER_blood_hunger"
@@ -370,6 +447,43 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/XER/focus_XER_blood_hunger.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			 # yes or no ;)
+			animationtime = 0.75			 # in seconds
+			animationdelay = 0				 # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Xerath People Support - GFX_focus_xerath_peoples_support
+	spriteType = {
+		name = "GFX_focus_xerath_peoples_support"
+		texturefile = "gfx/interface/goals/XER/XER_xerath_peoples_support.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_xerath_peoples_support_shine"
+		texturefile = "gfx/interface/goals/XER/XER_xerath_peoples_support.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/XER_xerath_peoples_support.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XER/XER_xerath_peoples_support.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		 # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			 # yes or no ;)

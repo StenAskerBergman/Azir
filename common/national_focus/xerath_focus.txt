@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = xerath_focus
 	continuous_focus_position = {
 		x = 150
@@ -11,31 +11,51 @@
 			tag = XER
 		}
 	}
+#################################################################################
+# Shared
+#################################################################################
 
-	default = no
+# Ideas
 
-	### SHARED FOCUSES
-	shared_focus = SHU_XER
-	shared_focus = SHU_XER_WAR
-	shared_focus = SHU_XER_MAIN
-	### POLITICAL FOCUSES	
-	
-	# First Focus -> who will win?
+    # Constant Power Struggle
 
-	# Power Play : Ren V Xer
+# Starters
+
+    # Temporary Alliance: 
+        # They might temporarily ally to achieve a common goal, such as defeating 
+        # a shared enemy like Nasus or reclaiming Shurima. However, this alliance 
+        # would be unstable, with constant power struggles.
+
+    focus = {
+        id = XER_temporary_alliance
+        icon = GFX_goal_generic_military_deal # GFX_XER_temporary_alliance
+        
+        x = 9
+        y = 0
+
+        cost = 1
+        available = { }
+        
+        completion_reward = { }
+        
+        ai_will_do = { factor = 5 }
+    }
+
+	# Power Play
 	focus = {
-		id = XER_Power_Play 
+		id = XER_power_play 
 		icon = GFX_focus_XER_power_play
 		
-		x = 6
-		y = 0
-		
+		x = 0
+		y = 1
+		relative_position_id = XER_usurp_the_throne
 		mutually_exclusive	= {
 			focus = XER_Power_Struggle
+            
 		}
 		
 		cost = 5
-		prerequisite = {}
+		prerequisite = { focus = XER_usurp_the_throne }
 
 		available = {}
 		
@@ -53,88 +73,27 @@
 			# 	mark_focus_tree_layout_dirty = yes
 			# }
 		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	# Power Struggle : Xer V Ren V Nox
+    }
+
+
+
+    # Direct Conflict: 
+        # Their differences could lead to an outright battle, with 
+        # Renekton's raw strength clashing against Xerath's cunning 
+        # and magical power.
+ 
+    # Xerath's Conquest
 	focus = {
-		id = XER_Power_Struggle
-		icon = GFX_focus_XER_power_struggle
-		
-		x = 8
-		y = 0
-		
-		mutually_exclusive	= {
-			focus = XER_Power_Play
-		}
-
-		cost = 5
-		prerequisite = {}
-
-		available = {}
-		
-		completion_reward = {}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Foreign Interference
-	# Sacrifice various rights, and claims to Shurima in return for foreign firepower
-	focus = {
-		id = XER_Foreign_Interference
-		icon = GFX_goal_imperial_machine
-
-		x = 11
-		y = 0
-
-		cost = 10
-		prerequisite = {}
-
-		available = {}
-
-		completion_reward = {}
-
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Internal Support
-	focus = {
-		id = XER_Internal_Support
-		icon = GFX_goal_social_reforms
-		x = 3
-		y = 0
-		cost = 10
-		prerequisite = {}
-		available = {}
-		completion_reward = {
-			add_stability = 0.1
-		}
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Xerath's Conquest
-	focus = {
-		id = XER_Xerath_Conquest
-		icon = GFX_goal_generic_territory_or_war
+		id = XER_xerath_conquest
+		icon = GFX_focus_xerath_emblem
 		x = 1
 		y = 1
-		relative_position_id = XER_Power_Play
+		relative_position_id = XER_power_play
 		mutually_exclusive = {
-			focus = XER_Renekton_Conquest
-			focus = XER_Noxian_Coalition
+			focus = XER_renekton_conquest
 		}
 		prerequisite ={
-			focus = XER_Power_Play
-			focus = XER_Power_Struggle
+			focus = XER_power_play
 		}
 		cost = 10
 		available = {
@@ -149,739 +108,385 @@
 		}
 	}
 
-	# Renekton's Conquest
+# Power Pact
+    # DESC
+    focus = {
+		id = XER_power_pact # XER_Colonial_Liberty
+		icon = GFX_goal_generic_territory_or_war
+		
+		x = 1
+		y = 1
+		
+		relative_position_id = XER_xerath_conquest
+		prerequisite = {
+			focus = XER_xerath_conquest
+			#focus = XER_Renekton_Conquest
+		}
+		
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+    # baccai Maddness
 	focus = {
-		id = XER_Renekton_Conquest
+		id = XER_baccai_ritual
+		icon = GFX_focus_xerath_peoples_support
+		x=0
+		y=1
+		relative_position_id = XER_power_pact # XER_shadow_pact
+		cost = 10
+
+		available = {
+			
+		}
+		
+		
+		prerequisite = {	
+			focus = XER_power_pact
+            # focus = XER_shadow_pact
+			# focus = XER_brutal_slavery 
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion 
+		}
+
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+    # # Magus Ascendant
+	# focus = {
+	# 	id = XER_magus_ascendant
+	# 	icon = GFX_focus_xerath_peoples_support
+	# 	x=0
+	# 	y=1
+	# 	relative_position_id = XER_power_pact # XER_shadow_pact
+	# 	cost = 10
+
+	# 	available = {
+			
+	# 	}
+		
+		
+	# 	prerequisite = {	
+	# 		focus = XER_power_pact
+    #         # focus = XER_shadow_pact
+	# 		# focus = XER_brutal_slavery 
+	# 		# focus = XER_Wild_Anger
+	# 		# focus = XER_Identity_Fusion 
+	# 	}
+
+	# 	completion_reward = {
+			
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 	}
+	# }
+
+	# Remove The Savages
+	focus = {
+		id = XER_remove_the_savages
+		icon = GFX_goal_purge_the_enemy2
+		x=0
+		y=1
+		relative_position_id = XER_baccai_ritual
+		prerequisite = {
+			# focus = XER_magus_ascendant
+			focus = XER_baccai_ritual
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
+	# Collective Punishment
+	focus = {
+		id = XER_collective_punishment
+		icon = GFX_goal_death_tracks
+		
+		x = -1
+		y = 1
+		
+		relative_position_id = XER_foreign_interference
+
+		prerequisite = {
+			focus = XER_foreign_interference
+		}
+
+		cost = 10
+
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+# Renekton's Conquest
+    # DESC
+	focus = {
+		id = XER_renekton_conquest
 		icon = GFX_focus_XER_blood_hunger
 		x = -1
 		y = 1
-		relative_position_id = XER_Power_Play
+		relative_position_id = XER_power_play
 		mutually_exclusive = {
-			focus = XER_Xerath_Conquest
-			focus = XER_Noxian_Coalition
+			focus = XER_xerath_conquest
 		}
 		prerequisite ={
-			focus = XER_Power_Play
-			focus = XER_Power_Struggle
+			focus = XER_power_play
+			# focus = XER_Power_Struggle
 		}
 		cost = 10
-		available = {
-			custom_trigger_tooltip = unlock_by_event_tt
-			hidden_trigger = { always = no }
-		}
 		completion_reward = {}
 		ai_will_do = {
 			factor = 5
 		}
 	}
 
+# Blood Pact
+    # DESC
+	focus = {
+		id = XER_Blood_Pact # XER_Colonial_Liberty
+		icon = GFX_goal_generic_territory_or_war
+		
+		x = -1
+		y = 1
+		
+		relative_position_id = XER_renekton_conquest
+		mutually_exclusive = {
+			focus = XER_brutal_slavery
+		}
+		prerequisite = {
+			focus = XER_renekton_conquest
+			#focus = XER_Xerath_Conquest
+			#focus = XER_shadow_pact
+		}
+		cost = 10
+	}
+
+# Power Struggle
+    # DESC
+    focus = {
+        id = XER_power_struggle
+        icon = GFX_focus_XER_power_struggle
+        relative_position_id = XER_foreign_interference
+        x=1
+        y=1
+        prerequisite ={
+            focus = XER_foreign_interference
+		}
+        completion_reward = {}
+    }
+    
+# Foreign Interference
+	# Sacrifice various rights, and claims to Shurima in return for foreign firepower
+	focus = {
+		id = XER_foreign_interference
+		icon = GFX_goal_imperial_machine
+        relative_position_id = XER_internal_support
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = XER_internal_support }
+
+		available = {}
+
+		completion_reward = {}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+    
 	# Noxian Coalition
 	focus = {
-		id = XER_Noxian_Coalition
+		id = XER_noxian_coalition
 		icon = GFX_goal_noxian_pact # GFX_focus_generic_diplomatic_treaty
-		x = 3
+		x = 0
 		y = 1
-		relative_position_id = XER_Power_Play
-		mutually_exclusive = {
-			focus = XER_Renekton_Conquest
-			focus = XER_Xerath_Conquest
-		}
+		relative_position_id = XER_colonial_pact
+
 		prerequisite ={
-			focus = XER_Power_Play
-			focus = XER_Power_Struggle
+			focus = XER_colonial_pact
 		}
 		cost = 10
-		available = {
-			custom_trigger_tooltip = unlock_by_event_tt
-			hidden_trigger = { always = no }
-		}
+
 		completion_reward = {}
 		ai_will_do = {
 			factor = 5
 		}
 	}
 
-	# Noxian Relationship
+	# Colonial Investments
 	focus = {
-		id = XER_Noxian_Relationship # Independance or Autonomy?
-		icon = GFX_goal_new_army_legacy
-		
-		x = 1
-		y = 1
-		
-		relative_position_id = XER_Brutal_Slavery 
-
-		mutually_exclusive = {
-			focus = XER_shadow_pact
-			focus = XER_Cruelty_Pact
-			focus = XER_Dawg_Pack
-		}
-
-		prerequisite = {
-			focus = XER_Colonial_Identity 
-		}
-
-		prerequisite = {
-			focus = XER_Brutal_Slavery
-		}
-
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	## Raider
-	focus = {
-		id = XER_Raider_Relationship
-		icon = GFX_focus_FIN_strengthen_military_administration
-		
-		x = 1
-		y = 1
-		relative_position_id = XER_loyal_legionaries 
-		cost = 10
-
-		prerequisite = {
-			focus = XER_loyal_legionaries
-			focus = XER_loyal_henchmen
-		}
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Noxian Autonomy
-	focus = {
-		id = XER_Noxian_Autonomy # Autonomy 
-		icon = GFX_goal_generic_join_faction
-		
-		x = 1
-		y = 1
-		
-		relative_position_id = XER_Noxian_Relationship
-
-		mutually_exclusive = { focus = XER_noxian_independence }
-		
-		prerequisite = {
-			focus = XER_Noxian_Relationship
-		}
-
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Noxian Independence
-	focus = {
-		id = XER_noxian_independence # Independence
-		icon = GFX_goal_broken_agreement_skulls
-		
-		x = -2
-		y = 2
-		
-		relative_position_id = XER_Colonial_Identity # Fusion - XER_Idenity_Fusion
-		
-		mutually_exclusive ={ focus = XER_Noxian_Autonomy }
-
-		prerequisite = {
-			focus = XER_Noxian_Relationship
-		}
-
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	# Power Reborn
-	focus = {
-		id = XER_power_reborn # XER_noxian_independence
-		icon = goal_generic_territory_or_war
-		
-		x = 0
-		y = 2
-		
-		relative_position_id = XER_Noxian_Relationship
-
-		prerequisite = {
-			focus = XER_Noxian_Autonomy
-		}
-		prerequisite = {
-			focus = XER_noxian_independence
-		}
-
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	# Shadow Pact
-	focus = {
-		id = XER_shadow_pact 
-		icon = GFX_goal_generic_territory_or_war 
-		
+		id = XER_colonial_investments
+		icon = GFX_goal_noxian_pact # GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 1
-		
-		relative_position_id = XER_Collective_Punishment # XER_Noxian_Coalition
-		# mutually_exclusive = {
-		# 	focus = XER_Dawg_Pack
-		# 	focus = XER_Noxian_Relationship
-		# 	focus = XER_Cruelty_Pact
-		# }
-
-		mutually_exclusive = {
-			focus = XER_Noxian_Relationship
-			focus = XER_Cruelty_Pact
-			focus = XER_Dawg_Pack
-		}
+		relative_position_id = XER_noxian_coalition
 
 		prerequisite = {
-			focus = XER_Endless_Rage
-
-			focus = XER_Brutal_Dominance
-
-			focus = XER_Collective_Punishment
-		}
-		
-		prerequisite = {	
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			focus = XER_noxian_coalition
 		}
 
-		cost = 10
+		cost = 5
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
+		completion_reward = {}
 	}
 
+	# Colonial Pact
 	focus = {
-		id = XER_loyal_henchmen
-		icon = GFX_goal_spies
-		x=0
-		y=1
-		relative_position_id = XER_shadow_pact
+		id = XER_colonial_pact
+		icon = GFX_goal_noxian_pact # GFX_focus_generic_diplomatic_treaty
+        relative_position_id = XER_power_play
+        x=0
+        y=2
+
+        prerequisite = {
+            focus = XER_xerath_conquest
+            focus = XER_renekton_conquest
+        }
 		cost = 10
 
-		available = {
-			
-		}
-		
-		
-		prerequisite = {	
-			focus = XER_shadow_pact
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		completion_reward = {
-			
-		}
-		
+		completion_reward = {}
 		ai_will_do = {
 			factor = 5
 		}
 	}
 
-	# Rebuild in Our Image
+    # Seize the Sun Disc:
+        # Gain access to ancient powers and technological bonuses.
+        
+    # Master Arcane Warfare:
+        # Unlock advanced magical weapons and increase army efficiency.
+
+        
+#################################################################################
+# Path of Domination
+#################################################################################
 	focus = {
-		id = XER_new_age
-		icon = GFX_goal_revive_economy
-		x=-1
-		y=1
-		relative_position_id = XER_Raider_Relationship
+		id = XER_path_of_domination
+		icon = GFX_focus_XER_path_of_domination
+		x = -6
+		y = 0
+		relative_position_id = XER_power_play
+
+		prerequisite ={
+			focus = XER_usurp_the_throne
+		}
 		cost = 10
-
-		available = {
-			
-		}
 		
-		mutually_exclusive ={
-			focus = XER_the_true_rulers
-		}
-
-		prerequisite = {	
-			focus = XER_loyal_legionaries
-			focus = XER_loyal_henchmen
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		prerequisite = {	
-			focus = XER_noxian_independence
-		}
-
-		completion_reward = {
-			
-		}
-		
+		completion_reward = {}
 		ai_will_do = {
 			factor = 5
 		}
 	}
-
-	# The True Rulers
-	focus = {
-		id = XER_the_true_rulers
-		icon = GFX_goal_revolution
-		x=-1
-		y=1
-		relative_position_id = XER_loyal_smugglers
-		cost = 10
-
-		available = {
-			
-		}
-		
-		mutually_exclusive ={
-			focus = XER_new_age
-		}
-		
-		prerequisite = {	
-			focus = XER_loyal_henchmen
-			# focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	# Rebuild in Our Image
-	focus = {
-		id = XER_rebuild_in_my_image
-		icon = GFX_goal_revive_economy
-		x=1
-		y=1
-		relative_position_id = XER_loyal_smugglers
-		cost = 10
-
-		available = {
-			
-		}
-		
-		prerequisite = {	
-			focus = XER_loyal_smugglers
-			focus = XER_power_reborn
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		prerequisite = {	
-			focus = XER_noxian_independence
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	# Rebuild in Our Image
-	focus = {
-		id = XER_rebuild_in_my_image
-		icon = GFX_goal_revive_economy
-		x=1
-		y=1
-		relative_position_id = XER_loyal_smugglers
-		cost = 10
-
-		available = {
-			
-		}
-				
-		mutually_exclusive ={
-			focus = XER_rebuild_in_their_image
-		}
-		
-		prerequisite = {	
-			focus = XER_loyal_smugglers
-			focus = XER_power_reborn
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		prerequisite = {	
-			focus = XER_noxian_independence
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	# Loyal Smugglers
-	focus = {
-		id = XER_loyal_smugglers
-		icon = GFX_goal_smugglers
-		x=1
-		y=1
-		relative_position_id = XER_loyal_henchmen
-		cost = 10
-
-		available = {
-			
-		}
-		
-		
-		prerequisite = {	
-			focus = XER_loyal_henchmen
-			focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Rebuild in With* Image
-	focus = {
-		id = XER_rebuild_in_their_image
-		icon = GFX_goal_rebuild_in_their_image
-		x=1
-		y=1
-		relative_position_id = XER_power_reborn
-		cost = 10
-
-		available = {
-			
-		}
-				
-		mutually_exclusive ={
-			focus = XER_rebuild_in_my_image
-		}
-		
-		prerequisite = {	
-			focus = XER_loyal_smugglers
-			focus = XER_power_reborn
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		}
-
-		prerequisite = {	
-			focus = XER_noxian_independence
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-		
-	# 
-	focus = {
-		id = XER_total_war
-		icon = GFX_goal_revolution
-		x=1
-		y=1
-		relative_position_id = XER_the_true_rulers
-		cost = 10
-
-		available = {
-			
-		}
-		
-	 	prerequisite = {	
-			 focus = XER_loyal_smugglers
-		}
-			
-		prerequisite = {	
-			focus = XER_the_true_rulers
-		}
-		
-		prerequisite = {	
-			focus = XER_rebuild_in_my_image
-			# focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	# The True Rulers
-	focus = {
-		id = XER_total_war
-		icon = GFX_goal_revolution
-		x=1
-		y=1
-		relative_position_id = XER_the_true_rulers
-		cost = 10
-
-		available = {
-			
-		}
-		
-	 	prerequisite = {	
-			 focus = XER_loyal_smugglers
-		}
-			
-		prerequisite = {	
-			focus = XER_the_true_rulers
-		}
-		
-		prerequisite = {	
-			focus = XER_rebuild_in_my_image
-			# focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		
-		}
-
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	# Cruelty Pact 
-	focus = {
-		id = XER_Cruelty_Pact 
-		icon = GFX_goal_generic_territory_or_war 
-		
-		x = -2
-		y = 1
-		
-		relative_position_id = XER_Collective_Punishment 
-
-		mutually_exclusive = {
-			focus = XER_Noxian_Relationship
-			focus = XER_shadow_pact
-			focus = XER_Dawg_Pack
-		}
-
-		# prerequisite = {
-		# 	focus = XER_Endless_Rage
-		# }	
-
-		prerequisite = {
-			focus = XER_Brutal_Dominance
-		}
-
-		prerequisite = {
-			focus = XER_Collective_Punishment
-		}
-		
-		prerequisite = {
-			focus = XER_Endless_Rage
-
-			focus = XER_Brutal_Dominance
-
-			focus = XER_Collective_Punishment
-		}
-
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
+    
+# Expand the Empire: 
+    # Conquer surrounding territories, using both military and arcane might.
 
 	focus = {
 		id = XER_loyal_legionaries
 		icon = GFX_goal_soldiers
-		relative_position_id = XER_Cruelty_Pact
-		x = 0
-		y = 1
+        x = 2
+        y = 1
+        relative_position_id = XER_path_of_domination 
 		prerequisite = {
-			focus = XER_Cruelty_Pact
+			focus = XER_path_of_domination
 		}
 	}
 	
 	# XER_Force_Brutality # XER_Purge_Disloyalty # XER_Proclaim_Noxian_Rule 
 	# XER_Remove_Nasus # XER_Foreign_War # XER_Colonial_Liberty # XER_shadow_pact
 	
-	# Brutal Slavery
+# Brutal Slavery
+    # DESC
+    focus = {
+        id = XER_brutal_slavery 
+        icon = GFX_goal_purge_the_enemy
+        
+        x = 0
+        y = 1
+        
+        relative_position_id = XER_loyal_legionaries 
+
+        mutually_exclusive = {
+            focus = XER_Blood_Pact
+        }		
+
+        prerequisite = {
+            focus = XER_loyal_legionaries
+        }		
+    }
+
+# Raider
+    # DESC
 	focus = {
-		id = XER_Brutal_Slavery 
-		icon = GFX_goal_purge_the_enemy
-		
-		x = 0
-		y = 2
-		
-		relative_position_id = XER_Noxian_Coalition 
-
-		prerequisite = {
-			focus = XER_Colonial_Pact
-		}		
-
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Brutal Dominance
-	focus = {
-		id = XER_Brutal_Dominance
-		icon = GFX_goal_death_skulls
+		id = XER_raider_relationship
+		icon = GFX_focus_FIN_strengthen_military_administration
 		
 		x = 0
 		y = 1
-		
-		relative_position_id = XER_Blood_Pact 
-		prerequisite = {
-			focus = XER_Blood_Pact 
-		}
-
+		relative_position_id = XER_brutal_slavery 
 		cost = 10
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
+		prerequisite = {
+			focus = XER_brutal_slavery
 		}
 	}
-		
-	# XER_Identity_Fusion # XER_Colonial_Liberty #XER_Wild_Hatred # XER_Wild_Fear # XER_Demonic_Occupation # XER_Collective_Punishment # XER_Demonic_Destruction  # Ruthless_Rulers # XER_Endless_Destruction # focus = XER_Endless_Rage
 
-	# Brutal Dominance
+
+# Suppress Rebellions: 
+    # Implement policies to deal with internal unrest and dissent.
 	focus = {
-		id = XER_Total_War
-		icon = GFX_socialist_constitution
-		
+		id = XER_suppress_rebellions
+		icon = GFX_goal_social_reforms
 		x = 0
 		y = 1
-		
-		relative_position_id = XER_Internal_Support
-
-		prerequisite = {
-  			focus = XER_Internal_Support
-		}
-
 		cost = 10
-
-		available = {
-			
-		}
-		
+        relative_position_id = XER_path_of_domination
+		prerequisite = { focus = XER_path_of_domination }
+		available = {}
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
-		
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
-	# Ruthless Cruelty
+
+# Ascended Supremacy: 
+    # Cement rule by purging rivals and asserting dominance over all of Shurima.
+
+    
+# Ruthless Cruelty
+    # DESC
 	focus = {
 		id = XER_Ruthless_Cruelty # XER_Demonic_Hatred
 		icon = GFX_goal_conspiracy
@@ -889,10 +494,10 @@
 		x = 0
 		y = 1
 		
-		relative_position_id = XER_Total_War
+		relative_position_id = XER_suppress_rebellions
 
 		prerequisite = {
-  			focus = XER_Total_War
+  			focus = XER_suppress_rebellions
 		}
 
 		cost = 10
@@ -909,96 +514,47 @@
 			factor = 5
 		}
 	}
-	
-	# Easter Egg: shhhh Don't tell anyone!
 
-	# Dawg Pack
-	focus = {
-		id = XER_Dawg_Pack
-		icon = goal_generic_territory_or_war
-		
-		x = 0
-		y = 1
-		
-		available = {
-
-            IF = {
-                Limit  = { 
-                    XER = { has_character = XER_nasus } 
-                }
-
-                focus = XER_Noxian_Relationship
-                focus = XER_shadow_pact
-                focus = XER_Dawg_Pack
-            }
-            ELSEIF = {
-                limit = { 
-                    XER  = { 
-                        NOT = { has_character = XER_nasus } 
-                    } 
-                }
-                focus = XER_Noxian_Relationship
-                focus = XER_shadow_pact
-            }
+   
+# Brutal Dominance
+    # DESC
+    focus = {
+        id = XER_brutal_dominance
+        icon = GFX_goal_death_skulls
+        
+        x = 0
+        y = 1
+        
+        relative_position_id = XER_Blood_Pact 
+        prerequisite = {
+            focus = XER_Blood_Pact 
         }
+    }
 
-		relative_position_id = XER_Endless_Rage
-		mutually_exclusive = {
-			focus = XER_Noxian_Relationship
-			focus = XER_shadow_pact
-			focus = XER_Cruelty_Pact
-		}
-		prerequisites = { 
-			focus = XER_Endless_Rage  
-		}
+# Noxian Suppresses our influence
+    # Noxian is bureaucratically underminding our efforts! We must act immediately!
+    focus = {
+        id = XER_noxian_suppression
+        icon = GFX_goal_social_reforms
+        x = 0
+        y = 1
+        cost = 10
+        relative_position_id = XER_brutal_dominance
+        prerequisite = { focus = XER_brutal_dominance }
+        available = {}
+        completion_reward = {
+            add_stability = 0.1
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
 
 
-		cost = 10
-		
-		# visible = {
-
-		# 	XER = {
-		# 		has_character = XER_Nasus  # XER_Nasus must exist.
-		# 	}
-
-		# 	# OR = {  # Either one of these nested conditions must be true.
-		# 	# 	AND = {  # All conditions in this AND block must be met.
-		# 	# 		tag = SHU  # The country tag must be SHU.
-		# 	# 		NOT = { has_character = SHU_Nasus }  # SHU_Nasus must not exist.
-		# 	# 	}
-		# 	# 	AND = {  # All conditions in this AND block must be met.
-		# 	# 		tag = XER  # The country tag must be XER.
-		# 	# 		has_character = XER_Nasus  # XER_Nasus must exist.
-		# 	# 	}
-		# 	# }
-		# }
-
-		# available
-
-		allow_branch = {
-			
-			AND = {  # Both conditions must be met.
-				tag = XER  # The country tag must be XER.
-				has_character = XER_Nasus  # XER_Nasus must exist.
-			}
-		}
-
-		prerequisite = {
-			focus = XER_Endless_Rage
-		}
-
-		completion_reward = {
-			# Define rewards here
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	# Endless Rage
+# Endless Rage
+    # DESC
 	focus = {
-		id = XER_Endless_Rage 
+		id = XER_endless_rage 
 		icon = GFX_goal_world_on_fire
 		
 		x = 0
@@ -1024,19 +580,102 @@
 			factor = 5
 		}
 	}
+    
+#################################################################################
+# Path of Power
+#################################################################################
+	
+    # Path of Ascension
+    focus = {
+		id = XER_path_of_ascension
+		icon = GFX_focus_XER_power_hungry
+		x = 6
+		y = 0
+		relative_position_id = XER_power_play
 
-	# Collective Punishment
+		prerequisite ={
+			focus = XER_usurp_the_throne
+		}
+
+		cost = 10
+		available = {}
+		completion_reward = {}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+    # Internal Support
 	focus = {
-		id = XER_Collective_Punishment
-		icon = GFX_goal_death_tracks
-		
+		id = XER_internal_support
+		icon = GFX_goal_social_reforms
 		x = 0
 		y = 1
+		cost = 10
+        relative_position_id = XER_path_of_ascension
+		prerequisite = { focus = XER_path_of_ascension }
+		available = {}
+		completion_reward = {
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	# Loyal Henchmen
+	focus = {
+		id = XER_loyal_henchmen
+		icon = GFX_focus_xerath_peoples_support
+		x = -2
+		y = 1
+		cost = 10
+        relative_position_id = XER_path_of_ascension
+		prerequisite = { focus = XER_path_of_ascension }
+
+		ai_will_do = {
+			factor = 5
+		}
 		
-		relative_position_id = XER_Power_Pact
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	# Abolish Slavery
+	focus = {
+		id = XER_abolish_slavery
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		cost = 10
+        relative_position_id = XER_loyal_henchmen
+		prerequisite = { focus = XER_loyal_henchmen }
+		available = {}
+		completion_reward = {
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	# Identity Fusion
+	focus = {
+		id = XER_identity_fusion # XER_identity_fusion
+		icon = GFX_goal_tax_slave
+		
+		x = 1
+		y = 1
+		
+		relative_position_id = XER_colonial_investments
 
 		prerequisite = {
-			focus = XER_Power_Pact
+			focus = XER_remove_the_savages 
+		}
+		
+		prerequisite = {
+            focus = XER_colonial_investments
 		}
 
 		cost = 10
@@ -1056,19 +695,21 @@
 
 	# Colonial Identity
 	focus = {
-		id = XER_Colonial_Identity # XER_Identity_Fusion
+		id = XER_colonial_identity # XER_Identity_Fusion
 		icon = GFX_goal_tax_slave
 		
-		x = 2
+		x = -1
 		y = 2
 		
-		relative_position_id = XER_Noxian_Coalition
+		relative_position_id = XER_noxian_coalition
+        
+        prerequisite = { focus = XER_noxian_suppression }
+		
+        prerequisite = {
+			focus = XER_colonial_investments
+			
+			# focus = XER_colonial_pact 
 
-		prerequisite = {
-			focus = XER_Colonial_Pact 
-			focus = XER_Colonial_Investments
-
-			#focus = XER_Noxian_Suppression
 		}
 
 		cost = 10
@@ -1086,251 +727,144 @@
 		}
 	}
 	
-	# Noxian War Economy
+# Usurp the Throne: 
+    # Plot to overthrow Azir, leading to a civil war within Shurima.
+
 	focus = {
-		id = XER_Noxian_War_Economy
-		icon = RedIndustry
-		
+		id = XER_usurp_the_throne
+		icon = GFX_focus_unknown
 		x = 0
-		y = 1
-		
-		relative_position_id = XER_Foreign_Interference
+        y = 1
+		relative_position_id = XER_temporary_alliance
+		cost = 2
+		prerequisite = { focus = XER_temporary_alliance }
+        available = { }
+		bypass = { }
+        completion_reward = {
+			country_event = { id = xerath.4 days = 1 }
+		}
+        
+        ai_will_do = { factor = 5 }
+    }
 
-		prerequisite = {
-			focus = XER_Foreign_Interference
-			# focus = XER_Reform_Colonial_Law
-		}
 
-		cost = 10
+# Alliance with Noxus: 
+    # Form a strategic alliance with Noxus, gaining military and economic support.
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
+# The Endless Pursuit: 
+    # Focus on research and industrial capacity, sacrificing stability for more power.
 
-	# Colonial Investments
-	focus = {
-		id = XER_Colonial_Investments
-		icon = GFX_focus_generic_self_management
-		
-		x = 0
-		y = 1
-		
-		relative_position_id = XER_Noxian_War_Economy
 
-		prerequisite = {
-			focus = XER_Noxian_War_Economy
-			# focus = XER_Reform_Colonial_Law
-		}
+#################################################################################
+# Xerath Path
+#################################################################################
 
-		cost = 10
+    # Subjugate the Noxian Colonies:
+        # Forge alliances or take over Noxian territories in Shurima.
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	#---------------------------------------------------#
-	#													#
-	#		#### 	  ##		###		#	  #			#
-	#		#	#	#    #	  #	 	#	#	 #			#
-	#		#	#	#  	 #	 #		   	#	#			#
-	#		####	######	 #			#  #			#
-	#		#		#    #	 #		   	#	#			#
-	#		#		#	 #	  #	 	#	#	 #			#
-	#		#		#    # 		###		#	  #			#
-	#													#
-	#---------------------------------------------------#
+    # Manipulation and Betrayal: 
+        # Xerath could manipulate Renekton’s madness to use him
+        # as a weapon, only to betray him once his usefulness ends.
 
-	
-	# IDEA:
-	# Sacrifice various rights, and claims to 
-	# Shurima in return for foreign firepower 
-	
+    # Double-Cross: 
+        # Xerath might betray Noxus once he no longer needs their help, 
+        # seizing their resources for himself.
 
-	#---------------------------------------------------#
+    # Power Struggle: 
+        # The alliance could deteriorate into a power struggle, with 
+        # Xerath attempting to subjugate or eliminate his Noxian allies 
+        # once they have outlived their usefulness.
 
-	### NOXIAN PACT
-	# Colonial Pact
-	focus = {
-		id = XER_Colonial_Pact # XER_Colonial_Liberty
-		icon = GFX_focus_XER_colonial_pact
-		
-		x = 0
-		y = 1
-		
-		relative_position_id = XER_Noxian_Coalition
-		
-		prerequisite = {
-			focus = XER_Noxian_Coalition
-		}
+    # Subjugate with Magic: 
+        # Unlock special units with magical bonuses, focus on experimental tech.
 
-		cost = 10
+    # Betrayal of Allies: 
+        # Gain war goals on former allies (Noxus), increase military strength at 
+        # the cost of stability.
 
-		available = {
-			
-		}
+    # Cunning Over Strength: 
+        # Increase espionage effectiveness.
 
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	
-	### XERATH PACT
-	# Power Pact
-	focus = {
-		id = XER_Power_Pact # XER_Colonial_Liberty
-		icon = GFX_goal_generic_territory_or_war
-		
-		x = 0
-		y = 1
-		
-		relative_position_id = XER_Xerath_Conquest
-		prerequisite = {
-			focus = XER_Xerath_Conquest
-			#focus = XER_Renekton_Conquest
-		}
-		
-		cost = 10
+#################################################################################
+# Renekton Path
+#################################################################################
+ 
+    # Direct Confrontation
+        # Renekton might reject alliances altogether, preferring to 
+        # face his enemies directly. His primary goal would be to 
+        # destroy Nasus and any who stand with him, including Azir.
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	### RENEKTON PACT
-	# Blood Pact
-	focus = {
-		id = XER_Blood_Pact # XER_Colonial_Liberty
-		icon = GFX_goal_generic_territory_or_war
-		
-		x = 0
-		y = 1
-		
-		relative_position_id = XER_Renekton_Conquest
-		
-		prerequisite = {
-			focus = XER_Renekton_Conquest
-			#focus = XER_Xerath_Conquest
-			#focus = XER_shadow_pact
-		}
-		cost = 10
+    # Temporary Truce: 
+        # Renekton might form a temporary truce with Noxus or other 
+        # forces if it directly serves his purpose of getting closer 
+        # to his enemies, but this truce would be fragile and likely 
+        # to break once his immediate goals are achieved.
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
+    # Unleash the Fury: 
+        # Increase division attack and defense, lower division organization.
+    
+    # Rampage Across Shurima: 
+        # Gain war goals on Shuriman nations, increase division speed and damage.
 
-	### SHURIMAN REBIRTH
-	## ONE
-	focus = {
-		id = XER_one
-		icon = GFX_goal_poor
-		
-		x = 1
-		y = 0
-		
-		cost = 10
+    # Revenge on Nasus: 
+        # Focus on a major battle, leading to an epic showdown with an enemy 
+        # nation modeled after Nasus.
+    
+    # Madness Unleashed:
+        # Buff all military units but reduce political power gain and stability significantly. 
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			set_technology = {
-				suicide_craft = 1
-			}
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
 
-	## TWO
-	focus = {
-		id = XER_two
-		icon = goal_generic_territory_or_war
-		prerequisite = { focus = XER_one }
-		
-		x = 0
-		y = 1
-		relative_position_id = XER_one
-		
-		cost = 10
+#################################################################################
+# Noxian Path
+#################################################################################
+ 
+    # Expand the Empire
+        # Gain war goals on neighboring royal & rich countries
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
+    # Integrate Raiders:
+        #  Convert any raider units into regular army units with increased stats.
 
-	## THREE
-	focus = {
-		id = XER_three
-		icon = goal_generic_territory_or_war
-		prerequisite = { focus = XER_two }
-		
-		x = 0
-		y = 1
-		relative_position_id = XER_two
-		
-		cost = 10
+    # Reinforce the Colonies: 
+        # Strengthen control over Shuriman colonies, increase colonial resources.
 
-		available = {
-			
-		}
-		
-		completion_reward = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
+    # The Strength of Noxus:
+        # Bonus to recruitable population by +10%
+        # Unlocks military-focused research bonuses.
+
+#################################################################################
+# Internal Noxian Politics Path
+#################################################################################
+
+    # Meritocracy Over Birthright: 
+        # Increase political power gain, decrease stability.
+
+    # Deal with Raiders: 
+        # Choose between: 
+            # 1. Crushing the raiders (boosts military, decreases stability) 
+                # or 
+            # 2. Integrating them (adds manpower, increases stability).
+    
+    # Handle Slavery Debate: 
+        # Choose to either: 
+            # 1. Abolish slavery (increases stability, decreases industrial output temporarily) 
+                # or 
+            # 2. Exploit it (increases output, decreases world tension).
+
+#################################################################################
+# Events and Decisions
+#################################################################################
+
+    # Xerath’s Betrayal: 
+        # Trigger an event where Xerath either remains loyal to noxus, or Xerath 
+        # betrays the alliance with Noxus, impacting both the diplomatic relations 
+        # and military positions.
+
+    # Renekton’s Rampage: 
+        # Event chain where Renekton’s forces may revolt or destabilize areas under 
+        # Noxian control, forcing the player to either suppress or negotiate with him.
+        
+    # Shuriman Resurrection: 
+        # An event where Shurima’s ancient powers awaken, presenting opportunities or 
+        # threats to Noxian and allied forces.
+
 }

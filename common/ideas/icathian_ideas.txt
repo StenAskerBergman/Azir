@@ -7,18 +7,22 @@ ideas = {
 		# ---------------------
 		
 		Zileans_Zeal = {
+			picture = zileans_zeal
 			research_speed_factor = 0.1
 		}
 
 		Time_Warp = {
+			picture = time_warp
 			research_speed_factor = 0.1
 		}
 		
 		Rewind = {
+			picture = rewind
 			research_speed_factor = 0.1
 		}
 		
 		Chronoshift = {
+			picture = chronoshift
 			research_speed_factor = 0.1
 		}
 

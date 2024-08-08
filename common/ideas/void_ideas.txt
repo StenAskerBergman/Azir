@@ -10,7 +10,7 @@ ideas = {
 		}
 
 		VOI_abandonment = {
-			picture = GFX_idea_abandonment
+			picture = abandonment
 			research_speed_factor = -0.50
 			local_manpower = -0.50
 			local_factories = -0.45

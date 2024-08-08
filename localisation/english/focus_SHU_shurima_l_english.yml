@@ -32,6 +32,7 @@
 
 
 ################################### FOCUSES                     \n      §H§!
+
 SHU_lectures_in_shakkal: "Lectures in Shakkal"
 SHU_lectures_in_shakkal_desc: "Hold lectures in Shakkal to educate our people about the threat of the Void and improve our tactics against it. This will grant us an attack bonus against Void creatures."
 
@@ -68,8 +69,8 @@ SHU_allies_desc: "Forge alliances with like-minded nations to strengthen our pos
 SHU_great_crusade: "Great Crusade"
 SHU_great_crusade_desc: "Launch a great crusade to expand our territory and spread our influence. This will unite our people under a common cause and strengthen our empire."
 
-SHU_remove_the_savages: "Remove the Savages"
-SHU_remove_the_savages_desc: "Initiate a campaign to remove savage elements from our lands. This will secure our borders and ensure the safety of our people."
+SHU_remove_the_natives: "Remove the Savages"
+SHU_remove_the_natives_desc: "Initiate a campaign to remove savage elements from our lands. This will secure our borders and ensure the safety of our people."
 
 SHU_regional_investment: "Regional Investment"
 SHU_regional_investment_desc: "Invest in the development of various regions within Shurima. This will boost local economies and improve the overall prosperity of the empire."

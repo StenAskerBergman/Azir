@@ -46,9 +46,9 @@ focus_tree = {
 		id = SHU_economic_revival
 		icon = GFX_goal_generic_construction
 		cost = 5
-		x = 29 # 14
-		y = 0
-
+		x = 11 # 29 # 14
+		y = -1
+		relative_position_id = SHU_our_leader
 
 		ai_will_do = {
 			factor = 10
@@ -1459,7 +1459,7 @@ focus_tree = {
 
 	# Remove The Savages
 	focus = {
-		id = SHU_remove_the_savages
+		id = SHU_remove_the_natives
 		icon = GFX_goal_purge_the_enemy2
 		x=1
 		y=1
@@ -1480,9 +1480,9 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		x=-1
 		y=1
-		relative_position_id = SHU_remove_the_savages
+		relative_position_id = SHU_remove_the_natives
 		prerequisite = {
-			focus = SHU_remove_the_savages
+			focus = SHU_remove_the_natives
 			focus = SHU_shakkal_region
 		}
 
@@ -1518,7 +1518,7 @@ focus_tree = {
 			focus = SHU_great_crusade
 		}
 		prerequisite = {
-			focus = SHU_remove_the_savages
+			focus = SHU_remove_the_natives
 			focus = SHU_lectures_in_shakkal
 		}
 
@@ -1537,7 +1537,7 @@ focus_tree = {
 		relative_position_id = SHU_military_court
 		prerequisite = {
 			focus = SHU_military_court
-			#focus = SHU_remove_the_savages
+			#focus = SHU_remove_the_natives
 			#focus = SHU_shakkal_region
 		}
 
@@ -1555,7 +1555,7 @@ focus_tree = {
 		relative_position_id = SHU_work_camps
 		prerequisite = {
 			focus = SHU_work_camps
-			#focus = SHU_remove_the_savages
+			#focus = SHU_remove_the_natives
 			#focus = SHU_shakkal_region
 		}
 
@@ -3746,7 +3746,7 @@ focus_tree = {
 		id = SHU_start_the_mines # OLD: SHU_expand_hex_mines
 		icon = GFX_goal_continuous_non_factory_construct
 		x = 0 # 18
-		y = 1
+		y = 2
 		cost = 7
 		relative_position_id = SHU_workers_rights
 		search_filters = {
@@ -4360,7 +4360,7 @@ focus_tree = {
 		id = SHU_shuriman_guilds
 		icon = GFX_focus_generic_agricultural_subsidies #GFX_goal_gold_reserve #GFX_goal_unknown
 		x = 0 # 13
-		y = 1
+		y = 2
 		relative_position_id = SHU_replant_the_basin
 
 		cost = 5
@@ -4448,13 +4448,30 @@ focus_tree = {
 		}
 	}
 
+	# We Remember Shurima!
+	focus = {
+		id = SHU_we_remember_shurima
+		icon = GFX_goal_unknown
+		x = 17
+		y = 0
+		cost = 5
+		relative_position_id = SHU_we_remember_shurima
+		completion_reward = {
+			country_event = { id = shurima.565 days = 1 }
+		}
+	}
+
 	# Sun Disc, Has Risen!
 	focus = {
 		id = SHU_sundisc_has_risen
 		icon = GFX_focus_BUL_prussia_of_the_balkans
-		x = 17 # 8
-		y = 0
+		x = 0 #17 # 8
+		y = 1
 		cost = 5
+		prerequisite = {
+			focus = SHU_we_remember_shurima
+		}
+		relative_position_id = SHU_we_remember_shurima
 		available = {
 			has_war_with = XER
 		}
@@ -4471,10 +4488,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
-			add_national_unity = 0.05
+			# add_national_unity = 0.05
 			news_event = { id = shuriman_rnews.7 days = 1 }
 		}
 	}
+
 
 	# Tribe Council
 	focus = {
@@ -4595,7 +4613,7 @@ focus_tree = {
 		relative_position_id = SHU_tribe_unity
 		prerequisite = {
 			focus = SHU_tribe_unity
-			#focus = SHU_remove_the_savages
+			#focus = SHU_remove_the_natives
 			#focus = SHU_shakkal_region
 		}
 
@@ -4614,7 +4632,7 @@ focus_tree = {
 		relative_position_id = SHU_work_unions
 		prerequisite = {
 			focus = SHU_work_unions
-			#focus = SHU_remove_the_savages
+			#focus = SHU_remove_the_natives
 			#focus = SHU_shakkal_region
 		}
 
@@ -5318,8 +5336,8 @@ focus_tree = {
 		id = SHU_rebirth_legions
 		icon = GFX_focus_lion_riders # GFX_goal_generic_axis_build_infantry
 		x = -12 #7
-		y = 0
-		relative_position_id = SHU_sundisc_has_risen
+		y = -1
+		relative_position_id = SHU_our_leader
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY

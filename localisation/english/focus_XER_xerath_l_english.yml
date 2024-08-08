@@ -34,6 +34,93 @@
  
 ################################### FOCUSES           \n   §H§!
 
+XER_temporary_alliance: "Temporary Alliance"
+XER_temporary_alliance_desc: "Form an unstable alliance to defeat a shared enemy, risking constant power struggles."
+
+XER_power_play: "Power Play"
+XER_power_play_desc: "Engage in direct combat between Renekton's strength and Xerath's cunning."
+
+XER_xerath_conquest: "Xerath Conquest"
+XER_xerath_conquest_desc: "Access ancient powers, gaining technological bonuses."
+
+XER_power_pact: "Power Pact"
+XER_power_pact_desc: "Unlock advanced magical weapons, increasing army efficiency."
+
+XER_baccai_ritual: "Baccai Ritual"
+XER_baccai_ritual_desc: "Conquer nearby territories using military and arcane might."
+
+XER_remove_the_savages: "Remove the Savages"
+XER_remove_the_savages_desc: "Implement policies to quell internal unrest and dissent."
+
+XER_collective_punishment: "Collective Punishment"
+XER_collective_punishment_desc: "Solidify rule by purging rivals and asserting dominance over Shurima."
+
+XER_renekton_conquest: "Renekton Conquest"
+XER_renekton_conquest_desc: "Plot to overthrow Azir, igniting civil war in Shurima."
+
+XER_Blood_Pact: "Blood Pact"
+XER_Blood_Pact_desc: "Form a strategic alliance with Noxus for military and economic support."
+
+XER_power_struggle: "Power Struggle"
+XER_power_struggle_desc: "Focus on research and industry, sacrificing stability for power."
+
+XER_foreign_interference: "Foreign Interference"
+XER_foreign_interference_desc: "Forge alliances or take control of Noxian territories in Shurima."
+
+XER_noxian_coalition: "Noxian Coalition"
+XER_noxian_coalition_desc: "Use Renekton as a weapon, betraying him when he's no longer useful."
+
+XER_colonial_investments: "Colonial Investments"
+XER_colonial_investments_desc: "Betray Noxus, seizing their resources once they outlive their usefulness."
+
+XER_colonial_pact: "Colonial Pact"
+XER_colonial_pact_desc: "Subjugate or eliminate Noxian allies in a deteriorating alliance."
+
+XER_path_of_domination: "Path of Domination"
+XER_path_of_domination_desc: "Unlock special units with magical bonuses and experimental technology."
+
+XER_loyal_legionaries: "Loyal Legionaries"
+XER_loyal_legionaries_desc: "Gain war goals on former allies, boosting military strength at the cost of stability."
+
+XER_brutal_slavery: "Brutal Slavery"
+XER_brutal_slavery_desc: "Increase espionage effectiveness to outmaneuver opponents."
+
+XER_raider_relationship: "Raider Relationship"
+XER_raider_relationship_desc: "Reject alliances, focusing on destroying Nasus and his supporters."
+
+XER_suppress_rebellions: "Suppress Rebellions"
+XER_suppress_rebellions_desc: "Form a fragile truce with Noxus to further immediate goals, likely to break soon."
+
+XER_brutal_dominance: "Brutal Dominance"
+XER_brutal_dominance_desc: "Gain war goals on Shuriman nations, increasing division speed and damage."
+
+XER_noxian_suppression: "Noxian Suppression"
+XER_noxian_suppression_desc: "Focus on an epic showdown with an enemy nation modeled after Nasus."
+
+XER_endless_rage: "Endless Rage"
+XER_endless_rage_desc: "Enhance all military units while significantly reducing political power gain and stability."
+
+XER_path_of_ascension: "Path of Ascension"
+XER_path_of_ascension_desc: "Gain war goals on neighboring wealthy nations."
+
+XER_internal_support: "Internal Support"
+XER_internal_support_desc: "Convert raider units into regular army units with increased stats."
+
+XER_loyal_henchmen: "Loyal Henchmen"
+XER_loyal_henchmen_desc: "Strengthen control over Shuriman colonies and increase resources."
+
+XER_abolish_slavery: "Abolish Slavery"
+XER_abolish_slavery_desc: "Increase recruitable population by 10%, unlocking military research bonuses."
+
+XER_identity_fusion: "Identity Fusion"
+XER_identity_fusion_desc: "Increase political power gain while reducing stability."
+
+XER_colonial_identity: "Colonial Identity"
+XER_colonial_identity_desc: "Choose between crushing raiders (boosts military, decreases stability) or integrating them (adds manpower, increases stability)."
+
+
+
+
 XER_Power_Play: "Power Play"
 XER_Power_Play_desc: "Xerath, the manipulative master of arcane forces, and Renekton, the primal warrior consumed by rage. Their clash shapes the fate of empires, as §2Xerath§! schemes for godhood while §RRenekton§! seeks vengeance and redemption. Whose path will decide the fate of their empire?" 
 # What lies ahead for the fate of their allegiances, as Xerath plots for godhood and Renekton yearns for vengeance and redemption?" 
@@ -84,7 +171,7 @@ XER_Total_War: "Total War" # Total war against whoever stands up to you
 XER_Total_War_desc: "In the crucible of total war, we unleash our fury upon all who dare to oppose us. With relentless aggression, we crush our enemies beneath the weight of our unstoppable might."
 
 XER_Ruthless_Cruelty: "Ruthless Cruelty" # Renekton is in power, Xerath is gone/dead
-XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist, and mercy is but a distant memory. As Xerath fades into obscurity, Shurima trembles beneath the weight of unbridled brutality."
+XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist, and mercy is but a distant memory. As Xerath fades into obscurity, Shurima trembles beneath the weight of unbridled brutality.\n\n §OBoost §!§Rdivision attack§R and §Bdefense§!, but §Rlower division organization.§!"
 
 XER_Dawg_Pack: "Dawg Pack" # Easter Egg: If Renekton is in power, his brother Nasus can Join!
 XER_Dawg_Pack_desc: "In a rare display of unity, Renekton and his brother Nasus form a formidable alliance, known as the Dawg Pack. Together, they bring the fury of the desert to bear against all who oppose them."
