@@ -6,349 +6,351 @@
 ###################################################### THE THREAT ######################################################
 ########################################################################################################################
 
-    VOI_void_threat_category = { 
-
-
-        VOI_zilean_speech_mission = {
-            icon = eng_propaganda_campaigns
-            on_map_mode = map_and_decisions_view 
-
-            highlight_states = {
-                highlight_state_targets = {
-                    state = 95
-                } 
-            }
-
-            allowed = {
-                tag = VOI
-                has_character = VOI_Zilean
-            }
-
-            available = {
-                #always = yes
-            }
-
-            complete_effect = {
-                add_popularity = {
-                    ideology = oblivion
-                    popularity = 0.05
-                }
-                add_stability = -0.05
-                add_political_power = -15
-                if = {
-                    limit = {
-                        NOT = { has_country_flag = VOI_zilean_first_speech }
-                    }
-                    set_country_flag = VOI_zilean_first_speech
-                }
-                hidden_effect = {
-                    country_event = { id = icathia.3 }
-                }
-            }
-            cost = 0
-            days_mission_timeout = 38
-            is_good = no
-            cancel_if_not_visible = yes
-        }
-
-        VOI_malzahar_speech_mission = {
-            icon = eng_propaganda_campaigns
-            on_map_mode = map_and_decisions_view 
-            
-            highlight_states = {
-                highlight_state_targets = {
-                    state = 91
-                } 
-            }
-            allowed = {
-                tag = VOI
-                has_character = VOI_Malzahar
-            }
-
-            available = {
-                # always = yes
-            }
-            complete_effect = {
-                add_popularity = {
-                    ideology = oblivion
-                    popularity = 0.05
-                }
-                add_stability = -0.05
-                add_political_power = -15
-                if = {
-                    limit = {
-                        NOT = { has_country_flag = VOI_malzahar_first_speech }
-                    }
-                    set_country_flag = VOI_malzahar_first_speech
-                }
-                hidden_effect = {
-                    country_event = { id = icathia.3 }
-                }
-            }
-            cost = 0
-            days_mission_timeout = 38
-            is_good = no
-            cancel_if_not_visible = yes
-        }
-       
-
-        # Prohibit Zilean's Speeches 
-        VOI_void_threat_decision_silence_z = {
-
-            icon = GFX_decision_generic_break_treaty
-
-            allowed = { hidden_trigger = { tag = VOI } }
-
-            visible = {
-                hidden_trigger = { tag = VOI }
-            }
-            
-            available = {
-                hidden_trigger = { tag = VOI }
-                # has_state_flag = zilean
-                has_character = VOI_Zilean
-            }
-
-            fire_only_once = yes
-
-            cost = 25
-
-            complete_effect = {
-                
-            }
-            
-            ai_will_do = {
-                factor = 1
-            }
-        }
-
-        # Prohibit Malzhar's Speeches 
-        VOI_void_threat_decision_silence_m = {
-
-            icon = GFX_decision_generic_break_treaty # GFX_decision_generic_civil_support
-
-
-            allowed = { hidden_trigger = { tag = VOI } }
-            
-            visible = {
-                hidden_trigger = { tag = VOI } 
-                
-            }
-            
-            available = {
-                hidden_trigger = { tag = VOI } 
-                #has_state_flag = malzahar
-                has_character = VOI_Malzahar
-            }
-
-            fire_only_once = yes
-
-            cost = 25
-
-            complete_effect = {
-                
-            }
-            
-            ai_will_do = {
-                factor = 1
-            }
-        }
-
+VOI_void_threat_category = { 
+    
+    
+    VOI_zilean_speech_mission = {
+        icon = eng_propaganda_campaigns
+        on_map_mode = map_and_decisions_view 
         
-        # Exterminate The Void Threat!
-        VOI_void_threat_decision_exterminate = {
-
-            icon = GFX_decision_generic_prepare_civil_war
-            on_map_mode = map_and_decisions_view 
-            # on_map_mode = map_only
-            
-            highlight_states = {
-                highlight_state_targets = {
-                    state = 97
-                } 
-            }
-
-            zoom = { state = 97 }
-            goto_state = { state = 97 }
-            
-            
-            allowed = { hidden_trigger = { tag = VOI }  }
-            
-            visible = {
-                hidden_trigger = { tag = VOI } 
-                
-                # NOT = { has_active_mission = VOI_void_threat_decision_study }
-                has_country_flag = VOI_northern_void_threat
-            }
-            
-            available = {
-                hidden_trigger = { tag = VOI } 
-                # has_state_flag = void_threat
-                # has_completed_focus = VOI_pacify_the_countryside
-                custom_trigger_tooltip ={
-                    tooltip = "Found a Way to deal with void"
-                    has_completed_focus = VOI_The_Voids_Influence
-                }
-                
-                has_country_flag = VOI_northern_void_threat
-
-                divisions_in_state = {
-                    state = 97	
-                    size > 5
-                }
-            }
-
-            timeout_effect = {
-                every_controlled_state = {
-                    remove_dynamic_modifier = { modifier = demon_attack }
-                }
-            }
-
-
-            fire_only_once = yes
-
-            cost = 25
-            is_good = yes
-
-            complete_effect = {
-                custom_effect_tooltip = VOI_hunt_down_northern_void_threat_tt
-                add_manpower = -1000
-            
-                add_equipment_to_stockpile = {
-                    type = infantry_equipment
-                    amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-                }
-
-                army_experience = 10
-
-                remove_mission = MAN_maintain_northern_control
-                clr_country_flag = MAN_northern_bandits
-                if = {
-                    limit = {
-                        NOT = { has_country_flag = MAN_eastern_bandits }
-                        NOT = { has_country_flag = MAN_western_bandits }
-                    }
-                    remove_ideas = MAN_banditry
-                                    
-                }
-            }
-            
+        highlight_states = {
+            highlight_state_targets = {
+                state = 95
+            } 
         }
         
-        
-        # Study the Remaining Void Subjects!
-        VOI_void_threat_decision_study = {
-
-            icon = generic_decision
-
-            allowed = {
-                tag = VOI
-            }
-            
-            visible = {
-                tag = VOI
-            }
-            
-            available = {
-                tag = VOI
-                has_state_flag = void_threat
-            }
-
-            fire_only_once = yes
-
-            cost = 25
-
-            complete_effect = {
-                
-            }
-            
-            ai_will_do = {
-                factor = 1
-            }
+        allowed = {
+            tag = VOI
+            has_character = VOI_Zilean
         }
         
-        VOI_void_threat_decision_mission = {
-
-            icon = generic_decision
-
-            allowed = {
-                tag = VOI
+        available = {
+            has_country_flag = silence_zilean
+        }
+        
+        timeout_effect = {
+            add_popularity = {
+                ideology = mages
+                popularity = 0.05
             }
-            
-            visible = {
-                tag = VOI
+            add_stability = -0.05
+            add_political_power = -15
+            if = {
+                limit = {
+                    NOT = { has_country_flag = VOI_zilean_first_speech }
+                }
+                set_country_flag = VOI_zilean_first_speech
             }
-            
-            available = {
-                tag = VOI
+            hidden_effect = {
+                country_event = { id = icathia.3 }
             }
-
-            fire_only_once = yes
-
-            cost = 25
-
-            complete_effect = {
-                
+        }
+        cost = 0
+        days_mission_timeout = 38
+        is_good = no
+        cancel_if_not_visible = yes
+    }
+    
+    VOI_malzahar_speech_mission = {
+        icon = eng_propaganda_campaigns
+        on_map_mode = map_and_decisions_view 
+        
+        highlight_states = {
+            highlight_state_targets = {
+                state = 91
+            } 
+        }
+        allowed = {
+            tag = VOI
+            has_character = VOI_Malzahar
+        }
+        
+        available = {
+            has_country_flag = silence_malzhar
+        }
+        timeout_effect = {
+            add_popularity = {
+                ideology = desolation
+                popularity = 0.05
             }
-            
-            ai_will_do = {
-                factor = 1
+            add_stability = -0.05
+            add_political_power = -15
+            if = {
+                limit = {
+                    NOT = { has_country_flag = VOI_malzahar_first_speech }
+                }
+                set_country_flag = VOI_malzahar_first_speech
             }
+            hidden_effect = {
+                country_event = { id = icathia.3 }
+            }
+        }
+        cost = 0
+        days_mission_timeout = 38
+        is_good = no
+        cancel_if_not_visible = yes
+    }
+    
+    
+    # Prohibit Zilean's Speeches 
+    VOI_void_threat_decision_silence_z = {
+        
+        icon = GFX_decision_generic_break_treaty
+        
+        allowed = { hidden_trigger = { tag = VOI } }
+        
+        visible = {
+            hidden_trigger = { tag = VOI }
+        }
+        
+        available = {
+            hidden_trigger = { tag = VOI }
+            has_country_flag = embraced_the_void
+            # has_country_flag = zilean
+            has_character = VOI_Zilean
+        }
+        
+        fire_only_once = yes
+        
+        cost = 25
+        
+        complete_effect = {
+            set_country_flag = silence_zilean
+        }
+        
+        ai_will_do = {
+            factor = 1
         }
     }
+    
+    # Prohibit Malzhar's Speeches 
+    VOI_void_threat_decision_silence_m = {
+        
+        icon = GFX_decision_generic_break_treaty # GFX_decision_generic_civil_support
+        
+        
+        allowed = { hidden_trigger = { tag = VOI } }
+        
+        visible = {
+            hidden_trigger = { tag = VOI }
+        }
+        
+        available = {
+            hidden_trigger = { tag = VOI }
+            has_country_flag = resisted_the_void
+            #has_country_flag = malzahar
+            has_character = VOI_Malzahar
+        }
+        
+        fire_only_once = yes
+        
+        cost = 25
+        
+        complete_effect = {
+            set_country_flag = silence_malzhar
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    
+    # Exterminate The Void Threat!
+    VOI_void_threat_decision_exterminate = {
+        
+        icon = GFX_decision_generic_prepare_civil_war
+        on_map_mode = map_and_decisions_view 
+        # on_map_mode = map_only
+        
+        highlight_states = {
+            highlight_state_targets = {
+                state = 97
+            } 
+        }
+        
+        zoom = { state = 97 }
+        goto_state = { state = 97 }
+        
+        
+        allowed = { hidden_trigger = { tag = VOI }  }
+        
+        visible = {
+            hidden_trigger = { tag = VOI } 
+            
+            # NOT = { has_active_mission = VOI_void_threat_decision_study }
+            has_country_flag = VOI_northern_void_threat
+        }
+        
+        available = {
+            hidden_trigger = { tag = VOI } 
+            # has_country_flag = void_threat
+            # has_completed_focus = VOI_pacify_the_countryside
+            custom_trigger_tooltip ={
+                tooltip = "Found a Way to deal with void"
+                has_completed_focus = VOI_The_Voids_Influence
+            }
+            
+            has_country_flag = VOI_northern_void_threat
+            
+            divisions_in_state = {
+                state = 97	
+                size > 5
+            }
+        }
+
+        days_remove = 70
+        
+        remove_effect = {
+            every_controlled_state = {
+                remove_dynamic_modifier = { modifier = demon_attack }
+            }
+        }
+        
+        
+        fire_only_once = yes
+        
+        cost = 25
+        
+        complete_effect = {
+            custom_effect_tooltip = VOI_hunt_down_northern_void_threat_tt
+            add_manpower = -1000
+            
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+            }
+            
+            army_experience = 10
+            
+            remove_mission = MAN_maintain_northern_control
+            clr_country_flag = MAN_northern_bandits
+            if = {
+                limit = {
+                    NOT = { has_country_flag = MAN_eastern_bandits }
+                    NOT = { has_country_flag = MAN_western_bandits }
+                }
+                remove_ideas = MAN_banditry
+                
+            }
+        }
+        
+    }
+    
+    
+    # Study the Remaining Void Subjects!
+    VOI_void_threat_decision_study = {
+        
+        icon = generic_decision
+        
+        allowed = {
+            tag = VOI
+        }
+        
+        visible = {
+            tag = VOI
+        }
+        
+        available = {
+            tag = VOI
+            has_country_flag = void_threat
+        }
+        
+        fire_only_once = yes
+        
+        cost = 25
+        
+        complete_effect = {
+            
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    VOI_void_threat_decision_mission = {
+        
+        icon = generic_decision
+        
+        allowed = {
+            tag = VOI
+        }
+        
+        visible = {
+            tag = VOI
+        }
+        
+        available = {
+            tag = VOI
+        }
+        
+        fire_only_once = yes
+        
+        cost = 25
+        
+        complete_effect = {
+            
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
 
 ########################################################################################################################
 ##################################################### THE WAR ##########################################################
 ########################################################################################################################
 
-    # VOI_WAR_category = {
+# VOI_WAR_category = {
 
-    #     #
+#     #
 
-    # }
+# }
 
 ########################################################################################################################
 #################################################### THE VOID ##########################################################
 ########################################################################################################################
 
 
-    # VOI_improve_the_void_influence_category = {
+# VOI_improve_the_void_influence_category = {
 
-    #     ### Void Influence - When embracing the Void
-    #     VOI_void_influence_decision = {
-    #         picture = GFX_decision_eng_puppet_usa   
-    #         available = { 
-    #             has_country_flag = embraced_the_void
-    #         }
-    #         removal_cost = -1
-    #         modifier = {
-    #             division_attack = 0.15
-    #             division_defense = 0.15
-    #             research_time = 0.05
-    #         }
-    #         on_add = {
-    #             log = "[GetDateText]: [Root.GetName]: event void_influence"
-    #         }
-    #         on_remove = {
-    #             log = "[GetDateText]: [Root.GetName]: event void_influence_removed"
-    #         }
-    #     }
+#     ### Void Influence - When embracing the Void
+#     VOI_void_influence_decision = {
+#         picture = GFX_decision_eng_puppet_usa   
+#         available = { 
+#             has_country_flag = embraced_the_void
+#         }
+#         removal_cost = -1
+#         modifier = {
+#             division_attack = 0.15
+#             division_defense = 0.15
+#             research_time = 0.05
+#         }
+#         on_add = {
+#             log = "[GetDateText]: [Root.GetName]: event void_influence"
+#         }
+#         on_remove = {
+#             log = "[GetDateText]: [Root.GetName]: event void_influence_removed"
+#         }
+#     }
 
-    #     ### Void Supremacy - Ultimate power from the Void
-    #     VOI_void_supremacy_decision = {
-    #         picture = GFX_idea_generic_aggression
-    #         available = {
-    #             has_country_flag = ascension_ritual
-    #         }
-    #         removal_cost = -1
-    #         modifier = {
-    #             division_attack = 0.2
-    #             national_unity = 0.1
-    #         }
-    #     }
+#     ### Void Supremacy - Ultimate power from the Void
+#     VOI_void_supremacy_decision = {
+#         picture = GFX_idea_generic_aggression
+#         available = {
+#             has_country_flag = ascension_ritual
+#         }
+#         removal_cost = -1
+#         modifier = {
+#             division_attack = 0.2
+#             national_unity = 0.1
+#         }
+#     }
 
 
-    # } VOI_void_resistance_decision
+# } VOI_void_resistance_decision
 
 
 ########################################################################################################################
@@ -356,72 +358,72 @@
 ########################################################################################################################
 
 
- ### Void Resistance - When resisting the Void
-    VOI_resistance_category = {
-
-        # VOI_void_resistance_decision = {
-            #     picture = GFX_idea_generic_defence_construction
-            #
-            #     available = {
-            #         has_country_flag = resisted_the_void
-            #     }
-            #     removal_cost = -1
-            #
-            #     modifier = {
-            #         political_power_gain = 0.15
-            #         stability = 0.05
-            #     }
-            #
-            #     on_add = {
-            #         #log = "[GetDateText]: [Root.GetName]: event void_resistance"
-            #     }
-            #
-            #     on_remove = {
-            #         #log = "[GetDateText]: [Root.GetName]: event void_resistance_removed"
-            #     }
-            # }
-
-        VOI_pacify_resistance_in_the_northern_countryside = {
-
-            icon = oppression
-            
-            available = {
-                has_completed_focus = VOI_pacify_the_countryside
-                has_country_flag = VOI_northern_resistance
+### Void Resistance - When resisting the Void
+VOI_resistance_category = {
+    
+    # VOI_void_resistance_decision = {
+    #     picture = GFX_idea_generic_defence_construction
+    #
+    #     available = {
+    #         has_country_flag = resisted_the_void
+    #     }
+    #     removal_cost = -1
+    #
+    #     modifier = {
+    #         political_power_gain = 0.15
+    #         stability = 0.05
+    #     }
+    #
+    #     on_add = {
+    #         #log = "[GetDateText]: [Root.GetName]: event void_resistance"
+    #     }
+    #
+    #     on_remove = {
+    #         #log = "[GetDateText]: [Root.GetName]: event void_resistance_removed"
+    #     }
+    # }
+    
+    VOI_pacify_resistance_in_the_northern_countryside = {
+        
+        icon = oppression
+        
+        available = {
+            has_completed_focus = VOI_pacify_the_countryside
+            has_country_flag = VOI_northern_resistance
+            divisions_in_state = {
+                state = 714	
+                size > 5
+            }
+        }
+        
+        highlight_states = {
+            highlight_state_targets = {
+                state = 714
+            } 
+        }
+        
+        cost = 0
+        
+        ai_will_do = {
+            factor = 0
+            modifier = {
+                add = 200
                 divisions_in_state = {
                     state = 714	
                     size > 5
                 }
             }
-
-            highlight_states = {
-                highlight_state_targets = {
-                    state = 714
-                } 
-            }
-
-            cost = 0
-
-            ai_will_do = {
-                factor = 0
-                modifier = {
-                    add = 200
-                    divisions_in_state = {
-                        state = 714	
-                        size > 5
-                    }
-                }
-            }
-
-            visible = {
-                NOT = { has_active_mission = VOI_maintain_northern_control }
-                has_country_flag = VOI_northern_resistance
-                has_idea = VOI_banditry
-            }
-
-            complete_effect = {
-                activate_mission = VOI_maintain_northern_control
-                custom_effect_tooltip = VOI_pacify_resistance_mission_explanation
-            }
+        }
+        
+        visible = {
+            NOT = { has_active_mission = VOI_maintain_northern_control }
+            has_country_flag = VOI_northern_resistance
+            has_idea = VOI_banditry
+        }
+        
+        complete_effect = {
+            activate_mission = VOI_maintain_northern_control
+            custom_effect_tooltip = VOI_pacify_resistance_mission_explanation
         }
     }
+}

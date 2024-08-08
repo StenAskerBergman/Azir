@@ -227,6 +227,7 @@ ideologies = {
 			
 			#shadow isles subfaction
 			undeadWastes = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders desolation
 				color = { 63 196 177 } 
 			}
 			
