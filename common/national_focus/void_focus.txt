@@ -22,7 +22,7 @@ focus_tree = {
     focus = {
         id = VOI_The_Voids_Influence
         icon = GFX_focus_hol_gateway_to_europe
-        x = 6
+        x = 8
         y = 0
         cost = 5
         completion_reward = {
@@ -112,6 +112,7 @@ focus_tree = {
             
             set_global_flag = VOI_Resist_the_Void
             add_ideas = void_resistance
+            country_event = { id = icathia.5 days = 1 }
         }
     }
     
@@ -127,6 +128,11 @@ focus_tree = {
         prerequisite = {
             focus = VOI_Embrace_the_Void
         }
+        
+        allowed = {
+            has_country_flag = embraced_the_void
+        }
+        
         completion_reward = {
             add_political_power = 50
             add_stability = 0.05
@@ -146,7 +152,7 @@ focus_tree = {
         }
         
         
-        search_filters = { FOCUS_FILTER_MANPOWER }
+        search_filters = { FOCUS_FILTER_VOIPOWER }
         
         completion_reward = {
             
@@ -254,7 +260,7 @@ focus_tree = {
     
     focus = {
         id = VOI_Zilean # Zilean Recruited
-        icon = GFX_goal_generic_major_alliance
+        icon = GFX_focus_contact_zilean #GFX_goal_generic_major_alliance
         #x = 10
         #y = 3
         relative_position_id = VOI_Resistance_Fighters
@@ -300,7 +306,7 @@ focus_tree = {
     
     focus = {
         id = VOI_The_Man_Without_A_Daughter # Kassadin Event
-        icon = GFX_goal_generic_major_alliance
+        icon = GFX_focus_contact_kassadin #GFX_goal_generic_major_alliance
         # x = 12
         # y = 4
         x = 4
@@ -322,6 +328,7 @@ focus_tree = {
         }
         
         completion_reward = {
+            set_country_flag = kassadin_returns
             add_political_power = 50
             add_stability = 0.05
             add_research_slot = 1
@@ -401,7 +408,7 @@ focus_tree = {
     
     focus = {
         id = VOI_Cleanse_the_Corruption
-        icon = GFX_focus_TUR_reform_the_balkan_pact # GFX_focus_ARG_crackdown_on_corruption # GFX_goal_generic_demand_territory #GFX_goal_generic_production
+        icon = GFX_focus_TUR_reform_the_balkan_pact # GFX_focus_ARG_crackdown_on_corruption # GFX_goal_generic_deVOId_territory #GFX_goal_generic_production
         relative_position_id = VOI_Ancient_Icathian_Knowledge
         x = 0
         y = 1
@@ -481,7 +488,7 @@ focus_tree = {
     # Void Army
     focus = {
         id = VOI_Expand_the_Horde
-        icon = GFX_focus_NORDIC_com_selector_army
+        icon = GFX_focus_expand_the_horde
         relative_position_id = VOI_Void_Prophet
         x = -2
         y = 1
@@ -490,7 +497,11 @@ focus_tree = {
         prerequisite = {}
         
         available = {
-            has_idea = Voidborn_Army 
+            has_country_flag = embraced_the_void
+            # OR = {
+            #     has_country_flag = embraced_the_void
+            #     has_idea = Voidborn_Army 
+            # }
         }
         
         completion_reward = {
@@ -500,7 +511,7 @@ focus_tree = {
     
     focus = {
         id = VOI_Rift_Rapture
-        icon = GFX_focus_TUR_the_sun_language_theory #GFX_focus_TUR_misak_i_milli #GFX_focus_LAT_the_old_ways # GFX_focus_PAR_revenge_for_the_chaco_war  
+        icon = GFX_focus_rift_rapture #GFX_focus_TUR_misak_i_milli #GFX_focus_LAT_the_old_ways # GFX_focus_PAR_revenge_for_the_chaco_war  
         relative_position_id = VOI_Expand_the_Horde
         x = 0
         y = 1
@@ -527,7 +538,7 @@ focus_tree = {
     
     focus = {
         id = VOI_Shadow_War
-        icon = GFX_goal_generic_occupy_states_ongoing_war
+        icon = GFX_focus_burrowed # GFX_goal_generic_occupy_states_ongoing_war
         relative_position_id = VOI_Expand_the_Horde
         x = -2
         y = 1
@@ -536,7 +547,8 @@ focus_tree = {
         prerequisite = {}
         
         available = {
-            has_idea = Void_Army 
+            has_country_flag = embraced_the_void 
+            # has_idea = Void_Army 
         }
         
         completion_reward = {
@@ -581,9 +593,65 @@ focus_tree = {
         }
     }
     
+    focus = {
+        id = VOI_unseen_threats
+        icon = GFX_focus_generic_provoke_border_clashes
+        relative_position_id = VOI_Shadow_War
+        x = -2
+        y = 1
+        cost = 10
+        prerequisite = {
+            # focus = VOI_Void_Invasion
+        }
+        available = {
+            has_country_flag = embraced_the_void 
+            # has_idea = Void_Army 
+        }
+        completion_reward = {
+            # add_tech_bonus = {
+            #     bonus = 0.5
+            #     uses = 1
+            #     category = armor
+            # }
+            # add_political_power = 50
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = VOI_Reksai
+            custom_effect_tooltip = VOI_shifting_sands_TT
+        }
+    }
+
+    # Voidborne Acoustics
+    focus = {
+        id = VOI_voidborne_acoustics
+        icon = GFX_focus_audio_ear
+        relative_position_id = VOI_unseen_threats
+        x = 0
+        y = 1
+        cost = 10
+
+        prerequisite = {
+            focus = VOI_Void_Invasion
+        }
+
+        prerequisite = {
+            focus = VOI_unseen_threats
+        }
+
+        completion_reward = {
+            # add_tech_bonus = {
+            #     bonus = 0.5
+            #     uses = 1
+            #     category = armor
+            # }
+            # add_political_power = 50
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = VOI_Reksai
+            custom_effect_tooltip = VOI_shifting_sands_TT
+        }
+    }
     # GFX_focus_generic_winter_warfare 
     focus = {
-        id = VOI_Apex_Hunter
+        id = VOI_apex_hunter
         icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit #GFX_goal_generic_attack_allies # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
         relative_position_id = VOI_Void_Invasion
         x = 0
@@ -602,8 +670,8 @@ focus_tree = {
     }
     
     focus = {
-        id = VOI_Our_Queen #VOI_Her_Arrival 
-        icon = GFX_goal_generic_attack_allies # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
+        id = VOI_our_queen #VOI_Her_Arrival 
+        icon = GFX_focus_our_queen # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
         relative_position_id = VOI_Subjugate_the_Resisters
         x = 1
         y = 1 
@@ -620,14 +688,15 @@ focus_tree = {
             focus = VOI_Void_Empowerment
         }
         completion_reward = {
-            # recruit_character = 
+            recruit_character = VOI_khazix 
             # add_war_support = 0.10
             # add_ideas = void_invasion
+            custom_effect_tooltip = VOI_apex_hunter_CR
         }
     }
-    
+    # GFX_focus_SWE_marauder_bombers
     focus = {
-        id = VOI_Our_Army  #VOI_Her_Army #VOI_Their_Arrival  
+        id = VOI_our_army  #VOI_Her_Army #VOI_Their_Arrival  
         icon = GFX_goal_generic_attack_allies # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
         relative_position_id = VOI_Subjugate_the_Resisters
         x = -1
@@ -637,7 +706,7 @@ focus_tree = {
             focus = VOI_Subjugate_the_Resisters
         }
         prerequisite = {
-            focus = VOI_Apex_Hunter
+            focus = VOI_apex_hunter
         }
         
         available = {
@@ -650,18 +719,92 @@ focus_tree = {
         }
     }
     
+    # GFX_focus_SWE_marauder_bombers
     focus = {
-        id = VOI_Our_War
+        id = VOI_remora_reborn  #VOI_Her_Army #VOI_Their_Arrival  
+        icon = GFX_focus_remora # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
+        relative_position_id = VOI_our_army
+        x = -2
+        y = 0 
+        cost = 10
+        prerequisite = {
+            focus = VOI_voidborne_acoustics
+        }
+        prerequisite = {
+            focus = VOI_apex_hunter
+        }
+        
+        available = {
+            controls_province = 2883
+        }
+        
+        completion_reward = {
+            # add_war_support = 0.10
+            # add_ideas = void_invasion
+        }
+    }
+
+    focus = {
+        id = VOI_our_world  #VOI_Her_Army #VOI_Their_Arrival  
+        icon = GFX_focus_remora_rng #GFX_focus_generic_total_war # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
+        relative_position_id = VOI_our_army
+        x = -1
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = VOI_our_army
+        }
+        prerequisite = {
+            focus = VOI_remora_reborn
+        }
+        
+        available = {
+            controls_province = 2883
+        }
+        
+        completion_reward = {
+            # add_war_support = 0.10
+            # add_ideas = void_invasion
+        }
+    }
+
+    # Her Image
+    focus = {
+        id = VOI_new_world  #VOI_Her_Army #VOI_Their_Arrival  
+        icon = GFX_focus_new_world # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
+        relative_position_id = VOI_our_army
+        x = 0
+        y = 2
+        cost = 10
+        prerequisite = {
+            focus = VOI_our_world
+        }
+        prerequisite = {
+            focus = VOI_our_war
+        }
+        
+        available = {
+            controls_province = 2883
+        }
+        
+        completion_reward = {
+            # add_war_support = 0.10
+            # add_ideas = void_invasion
+        }
+    }
+
+    focus = {
+        id = VOI_our_war
         icon = GFX_focus_generic_total_war #GFX_goal_generic_attack_allies # GFX_goal_generic_occupy_states_ongoing_war # GFX_goal_generic_attack_allies
-        relative_position_id = VOI_Our_Queen #VOI_Her_Arrival
+        relative_position_id = VOI_our_queen #VOI_Her_Arrival
         x = -1
         y = 1 
         cost = 10
         prerequisite = {
-            focus = VOI_Our_Queen #VOI_Her_Arrival
+            focus = VOI_our_queen #VOI_Her_Arrival
         }
         prerequisite = {
-            focus = VOI_Our_Army  #VOI_Her_Army #VOI_Their_Arrival 
+            focus = VOI_our_army  #VOI_Her_Army #VOI_Their_Arrival 
         }
         
         available = {
@@ -672,7 +815,7 @@ focus_tree = {
             add_war_support = 0.10
             # add_ideas = void_invasion
             
-            # Bonus Manpower 
+            # Bonus VOIpower 
             if = {
                 limit = {
                     has_war_support < 0.8
@@ -697,10 +840,10 @@ focus_tree = {
         }
     }
     
-    
+    # Shifting Sand    
     focus = {
-        id = VOI_Shifting_Sands
-        icon = GFX_focus_generic_provoke_border_clashes
+        id = VOI_shifting_sands
+        icon = GFX_focus_unburrowed 
         relative_position_id = VOI_pacify_the_countryside
         x = 0
         y = 1
@@ -717,12 +860,13 @@ focus_tree = {
             # add_political_power = 50
             custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = VOI_Reksai
-            custom_effect_tooltip = VOI_Shifting_Sands_TT
+            custom_effect_tooltip = VOI_shifting_sands_TT
         }
     }
+    
     focus = {
-        id = VOI_Open_Void_Gate #VOI_Shifting_Sands
-        icon = GFX_focus_jap_spiritual_mobilization
+        id = VOI_Open_Void_Gate #VOI_shifting_sands
+        icon = GFX_focus_open_void_gate #GFX_focus_jap_spiritual_mobilization
         relative_position_id = VOI_Rift_Rapture
         x = 0
         y = 1
@@ -749,13 +893,13 @@ focus_tree = {
     
     focus = {
         id = VOI_Subjugate_the_Resisters
-        icon = GFX_focus_eng_move_to_secure_the_dominions 
-        relative_position_id = VOI_Open_Void_Gate #VOI_Shifting_Sands
+        icon = GFX_focus_subjugate_the_resistance 
+        relative_position_id = VOI_Open_Void_Gate #VOI_shifting_sands
         x = 0
         y = 1
         cost = 10
         prerequisite = {
-            focus = VOI_Open_Void_Gate #VOI_Shifting_Sands
+            focus = VOI_Open_Void_Gate #VOI_shifting_sands
         }
         completion_reward = {
             add_political_power = 100
@@ -825,7 +969,7 @@ focus_tree = {
     
     focus = {
         id = VOI_Mageking_Restoration
-        icon = GFX_focus_RAJ_seek_help_from_germany # GFX_focus_generic_political_theory
+        icon = GFX_focus_RAJ_seek_help_from_gerVOIy # GFX_focus_generic_political_theory
         relative_position_id = VOI_Uncover_Lost_Secrets
         x = 1
         y = 1
@@ -847,6 +991,33 @@ focus_tree = {
     }
     
     focus = {
+        id = VOI_purple_meat
+        icon = GFX_focus_RAJ_seek_help_from_soviet
+        relative_position_id = VOI_Mageking_Restoration
+        x = 2
+        y = 0
+        cost = 10
+        
+        allowed_branch = {
+            hidden_trigger = {
+                has_country_flag = resisted_the_void
+            }
+        }
+
+        prerequisite = {
+            focus = VOI_purge_the_void
+        }
+        prerequisite = {
+            focus = VOI_expand_the_textile_industry
+        }
+        completion_reward = {
+            add_political_power = 100
+            set_country_flag = ascension_ritual
+            add_stability = 0.10
+        }
+    }
+
+    focus = {
         id = VOI_Axamuk_Supremacy
         icon = GFX_focus_RAJ_all_india_forward_bloc # GFX_focus_generic_all_power
         relative_position_id = VOI_Ritual_of_Axamuk
@@ -865,6 +1036,57 @@ focus_tree = {
         }
     }
     
+    focus = {
+        id = VOI_purple_royalty
+        icon = GFX_focus_hun_elect_a_king # GFX_focus_generic_all_power
+        relative_position_id = VOI_Ritual_of_Axamuk
+        x = 3
+        y = 1
+        cost = 10
+                
+        allowed_branch = {
+            hidden_trigger = {
+                has_country_flag = resisted_the_void
+            }
+        }
+
+        prerequisite = {
+            focus = VOI_purple_meat
+        }
+        prerequisite = {
+            focus = VOI_Mageking_Restoration
+        }
+        completion_reward = {
+            add_ideas = ascendant_supremacy
+            add_national_unity = 0.10
+        }
+    }
+
+    focus = {
+        id = VOI_Icathian_Mircle
+        icon = GFX_focus_TUR_turanist_ambition #GFX_focus_eng_special_air_service # GFX_focus_generic_all_power
+        relative_position_id = VOI_Axamuk_Supremacy
+        x = 1
+        y = 1
+        cost = 10
+        
+        allowed_branch = {
+            hidden_trigger = {
+                has_country_flag = resisted_the_void
+            }
+        }
+
+        prerequisite = {
+            focus = VOI_Axamuk_Supremacy
+        }
+        prerequisite = {
+            focus = VOI_purple_royalty
+        }
+        completion_reward = {
+            add_ideas = ascendant_supremacy
+            add_national_unity = 0.10
+        }
+    }
     # Resistance Pacification
     
     focus = {
@@ -941,12 +1163,105 @@ focus_tree = {
         }
     }
     
-    # Void Containment
+    # Penal Divisions
+    focus = {
+        id = VOI_penal_bandit_divisions
+        icon = GFX_focus_SOV_penal_battalions # GFX_focus_generic_conspiracy
+        prerequisite = { focus = VOI_pacify_our_neightbours}
+        x = 0 
+        y = 1
+        relative_position_id = VOI_pacify_our_neightbours
+		ai_will_do = {
+			factor = 1
+		}
+        search_filters = { FOCUS_FILTER_VOIPOWER }
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+        allowed = {
+            if = {
+                limit = {
+                    tag = VOI
+                }
+                is_core_of = SHK
+            }
+        }
+
+        # completion_reward = { 
+        #     add_VOIpower = 10000
+        # }
+
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
     
+        # Spawn Penal divisions
+        completion_reward = {
+			add_ideas = MAN_five_Shakkal_armies
+			unlock_decision_tooltip = MAN_raise_manchu_banner
+			custom_effect_tooltip = MAN_five_Shakkal_armies_tt
+			hidden_effect = {
+				division_template = {
+					name = "Shakkal Bandit Division"
+					priority = 2
+					division_names_group = VOI_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 328 }
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Shakkal Bandit Division\" division_template = \"Shakkal Bandit Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+				}			
+			}
+		}
+	}
+	
+   
+
+    
+    # Void Containment
     focus = {
         id = VOI_void_containment
-        icon = GFX_focus_RAJ_clamp_down_on_corruption # GFX_focus_CHL_avenge_the_pacification_of_araucania  #GFX_goal_unknown # GFX_goal_VOI_confront_gorillas
-        x = 12
+        icon = GFX_focus_contain_the_void_threat #GFX_focus_RAJ_clamp_down_on_corruption # GFX_focus_CHL_avenge_the_pacification_of_araucania  #GFX_goal_unknown # GFX_goal_VOI_confront_gorillas
+        x = 14
         y = 0
         
         cost = 5
@@ -979,10 +1294,10 @@ focus_tree = {
         }
     }
     
-    # obedience - GFX_focus_CZE_german_puppet
+    # obedience - GFX_focus_CZE_gerVOI_puppet
     focus = {
         id = VOI_obedience
-        icon = GFX_focus_CZE_german_puppet
+        icon = GFX_focus_CZE_gerVOI_puppet
         x = -1
         y = 1
         relative_position_id = VOI_void_containment
@@ -1055,7 +1370,7 @@ focus_tree = {
         }
         
         allowed = {
-            NOT = { has_idea = VOI_abandonment } # MAN_banditry
+            NOT = { has_idea = VOI_abandonment } # VOI_banditry
         }
         
         search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1075,7 +1390,7 @@ focus_tree = {
         completion_reward = {
             random_owned_controlled_state = {
                 limit = { is_fully_controlled_by = ROOT }
-                add_manpower = 25417
+                add_VOIpower = 25417
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
@@ -1086,7 +1401,7 @@ focus_tree = {
             }
             random_owned_controlled_state = {
                 limit = { is_fully_controlled_by = ROOT }
-                add_manpower = 33846
+                add_VOIpower = 33846
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
@@ -1148,6 +1463,78 @@ focus_tree = {
         }
     }
     
+    focus = {
+        id = VOI_talk_to_a_daughter # VOI_The_Daughter_of_the_Void # Kassadin Event
+        icon = GFX_focus_contact_kaisa #GFX_goal_generic_major_alliance
+        # x = 12
+        # y = 4
+        x = 2
+        y = 0 
+        relative_position_id = VOI_invite_settlers
+        cost = 10
+
+        allowed_branch = {
+            hidden_trigger = {
+                has_country_flag = resisted_the_void
+            }
+        }
+
+        prerequisite = {
+            # focus = VOI_Resist_the_Void
+        }
+        
+        available = {
+            has_country_flag = resisted_the_void
+            # custom_trigger_tooltip = unlock_by_event_tt
+            # hidden_trigger = { always = no }
+        }
+        allowed_branch = {
+            has_country_flag = kassadin_returns
+        }
+        
+        allowed = {
+            has_country_flag = resisted_the_void
+        }
+        
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
+            add_research_slot = 1
+        }
+    }
     
+    focus = {
+        id = VOI_purge_the_void
+        icon = GFX_focus_GRE_byzantine_themata # GFX_goal_generic_defence
+        x = 0
+        y = 1 
+        relative_position_id = VOI_talk_to_a_daughter
+        cost = 10
+        prerequisite = {
+            focus = VOI_talk_to_a_daughter
+        }
+        prerequisite = {
+            focus = VOI_invite_settlers
+        }
+        
+        available = {
+            has_country_flag = resisted_the_void
+            # custom_trigger_tooltip = unlock_by_event_tt
+            # hidden_trigger = { always = no }
+        }
+        allowed_branch = {
+            has_country_flag = kassadin_returns
+        }
+        
+        allowed = {
+            has_country_flag = resisted_the_void
+        }
+        
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
+            add_research_slot = 1
+        }
+    }
 }
 

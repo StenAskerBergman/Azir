@@ -130,7 +130,7 @@ characters = {
         }
         advisor = {
             available = {
-                has_completed_focus = VOI_Shifting_Sands
+                has_completed_focus = VOI_shifting_sands
             }
             slot = political_advisor #military_advisor
             idea_token = VOI_Reksai

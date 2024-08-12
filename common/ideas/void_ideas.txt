@@ -24,7 +24,7 @@ ideas = {
 		}
 
 		Void_Threats = {
-			picture = Unknown_picture
+			picture = void_threats
 			
 			construction_speed = -0.50
 						

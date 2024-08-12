@@ -1,5 +1,4 @@
 add_namespace = icathia
-
 # Recovery of the Prince
 # VOI_Ixtal_Recovery_event 
 country_event = {
@@ -123,4 +122,58 @@ country_event = {
 			# }
 		}
 	}
+
+    country_event = {
+        id = icathia.5
+        
+        is_triggered_only = yes
+
+        # Spawn Resistance divisions
+        immediate = {
+			hidden_effect = {
+				division_template = {
+					name = "Resistance Division"
+					priority = 2
+					division_names_group = VOI_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 328 }
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+					create_unit = {
+						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0" 
+						owner = VOI
+					}
+				}			
+			}
+		}
+    }
 }

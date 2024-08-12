@@ -25,7 +25,7 @@ spriteTypes = {
 		# Rewind
 		SpriteType = {
 			name = "GFX_idea_rewind"
-			texturefile ="gfx/interface/ideas/void-ideas/rewind.dds"
+			texturefile ="gfx/interface/ideas/void-ideas/rewind1.dds"
 		}
 
 		# Chronoshift 
@@ -36,18 +36,42 @@ spriteTypes = {
 
 
 	##Icon For: Void Related 
-		SpriteType = { 
-			name = "GFX_goals_expand_the_horde"
-			texturefile = "gfx/interface/goals/VOI/expand_the_horde.dds"
-		}
 		
+	# Ideas 
+	# When using name its required to not say GFX_idea_ for some reason / - trust me bro, it works ¯\_(ツ)_/¯ 
+
+		# abandonment 
 		SpriteType = {
 			name = "GFX_idea_abandonment"
 			texturefile = "gfx/interface/ideas/void-ideas/abandonment.dds"
 		}
 		
+		# abandonment 
 		SpriteType = {
-			name = "GFX_idea_empty_desert"
-			texturefile = "gfx/interface/ideas/empty_desert.dds"
+			name = "GFX_idea_abandonment"
+			texturefile = "gfx/interface/ideas/void-ideas/abandonment.dds"
 		}
+		
+		# Active Void Threats
+		SpriteType = {
+			name = "GFX_idea_active_void_threats"
+			texturefile = "gfx/interface/ideas/void-ideas/active_void_threat.dds"
+		}
+
+		# Void Threats
+		SpriteType = {
+			name = "GFX_idea_void_threats"
+			texturefile = "gfx/interface/ideas/void-ideas/void_threats.dds"
+		}
+
+
+	# focus
+
+		# Expand the horde # ! TODO: Add the related _Shine code here
+		SpriteType = { 
+			name = "GFX_goals_expand_the_horde"
+			texturefile = "gfx/interface/goals/VOI/expand_the_horde.dds"
+		}
+		
+
 }

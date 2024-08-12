@@ -181,10 +181,20 @@ spriteTypes = {
 # Smaller 
 
 	# Advisors
-	 
+	 	 
+		SpriteType = {
+			name = "GFX_portrait_voi_zilean_small"
+			texturefile = "gfx/characters/VOI/portrait_zilean_small.dds"
+		}
+	 	 
+		SpriteType = {
+			name = "GFX_portrait_voi_jax_small"
+			texturefile = "gfx/characters/VOI/portrait_jax_small.dds"
+		}
+
 		SpriteType = {
 			name = "GFX_portrait_voi_malzahar_small"
-			texturefile = "gfx/leaders/VOI/portrait_malzahar_small.dds"
+			texturefile = "gfx/characters/VOI/portrait_malzahar_small.dds"
 		}
 
 		SpriteType = {

@@ -5,10 +5,17 @@ leader_traits = {
 		sprite = 13
 		war_support_factor = 0.1
 		stability_factor = -0.05
-
+		
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+	silenced = {
+		name = "Silenced"
+		random = no 
+
+		stability_factor = -0.15
 	}
 
 	leader_recent_slumber = {
@@ -31,7 +38,17 @@ leader_traits = {
 		research_speed_factor = 0.05
 	}
 
-	Ascended= {
+	baccai = {
+		name = "Ascended"
+		random = no
+
+		logistics_skill=1
+		planning_skill=1
+		defense_skill=1
+		attack_skill=1
+	}
+
+	Ascended = {
 		name = "Ascended"
 		random = no
 

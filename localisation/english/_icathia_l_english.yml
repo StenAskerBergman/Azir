@@ -65,10 +65,32 @@
 ########################## ICATHIAN FOCUS ##########################
 ####################################################################
 ####################################################################
+ resisted_the_void: " Resist The Voids Embrace"
+ embraced_the_void: " §1Embrace The Voids Veil...§! "
+ kassadin_returns: " Has Kassadin returned? "
+ can_request_khazix: " Has requested for Kha'Zix "
 
  # VOI_ Name: "Focus Title"
  # VOI_ Name _TT: "Focus Tool Tip"
  # VOI_ Name _desc: "Focus Description"
+
+
+ VOI_expended_the_textile_industry: "Expand the Textile Industry"
+
+ VOI_penal_bandit_divisions: "Penal Bandit Divisions"
+
+ VOI_Mageking_Restoration: "Mageking Restoration"
+
+ VOI_Icathian_Mircle: "Icathian Mircle"
+
+ VOI_invite_settlers: "Invite Settlers"
+
+ VOI_Open_Void_Gate: "Open Void Gate"
+
+ VOI_purge_the_void: "Purge The Void"
+
+ VOI_purple_royalty: "Purple Meat"
+
 
  VOI_Mage_King: "Mage King"
  VOI_Mage_King_desc: "Its time we recover our bloodlines, the last royal bloodlines appears to still exists in Ixtal... Yun tal appears unaware of his families secret heritage, we must do a swift recover!"
@@ -112,6 +134,11 @@
  VOI_The_Man_Without_A_Daughter: "Talk to a Father"  # Talk to Kassadin - Hire Kassadin
  VOI_The_Man_Without_A_Daughter_desc: "We need to hire Kassadin before it's too late!"
 
+ VOI_purple_meat: "Purple Meat"
+
+ VOI_talk_to_a_daughter: "Talk to a Daughter" 
+ VOI_talk_to_a_daughter_desc: "The remnants of the Void continue to threaten Icathia's restoration. Kai'Sa, a survivor and fighter of the Void, could be an essential ally in cleansing the corruption and defending the new state."
+
  VOI_Resistance_Fighters: "Resistance Fighters"
  VOI_Resistance_Fighters_desc: "Train elite units to fight against the corrupting influence of the Void, ensuring our sovereignty."
 
@@ -149,10 +176,24 @@
  # VOI_ Name _desc: "Focus Description"
 
  
- # VOI_Apex_Hunter - Cat vs Bug
- VOI_Apex_Hunter: "Focus Title"
- VOI_Apex_Hunter_TT: "Unlocks Apex " # Unlock: Cat_vs_Bug_Category
- VOI_Apex_Hunter_desc: "Our Forces are Struggling! Our united are suppose to be fearless monsters, but as of recent the our hunters have become pray to the jungles of shurima! In these places the hunters are the apex of danger... It's time we show them what a true §1Apex Hunter§! look like!"
+ # VOI_apex_hunter - Cat vs Bug
+ VOI_apex_hunter: "Apex Hunter"
+ VOI_apex_hunter_TT: "Unlocks Apex " # Unlock: Cat_vs_Bug_Category
+ VOI_apex_hunter_CR: "§YRecruit§! a true §1Apex Hunter§!"
+ VOI_apex_hunter_desc: "Our Forces are Struggling! Our united are suppose to be  monsters, the apex of the food chain but as of recent, our hunters have fallen pray to the jungles of shurima! It's time we show them what a true §OMonsters§! look like!"
+ 
+ VOI_voidborne_acoustics: "Voidborne Acoustics"
+
+ VOI_unseen_threats: "Unseen Threats"
+
+ VOI_our_army: "Our Army"
+
+ VOI_remora_reborn: "Our Ways"
+
+ VOI_our_world: "Our World"
+
+ VOI_new_world: "New World... "
+ VOI_new_world_desc: "Belveth visage is a haunting blend of beauty and monstrosity, a reflection of the Void’s alien nature. When she takes her true form, she becomes a towering, otherworldly figure with wings that spread like a void across the battlefield, commanding an army of creatures spawned from the very essence of the Void." # Placeholder Text
 
  VOI_Expand_the_Horde: "Expand the Horde"
  VOI_Expand_the_Horde_desc: "Increase our military might by integrating Void creatures into our armies."
@@ -160,20 +201,20 @@
  VOI_Void_Invasion: "Void Invasion"
  VOI_Void_Invasion_desc: "Prepare for a massive offensive, utilizing the powers of the Void to conquer and subjugate."
 
- VOI_Shifting_Sands: "Shifting Sands"
- VOI_Shifting_Sands_TT: "Shifting Sands"
- VOI_Shifting_Sands_desc: "We must summon §1Rek'sai§!, and with her §Ochildren...§!\n\nTogather they can extend our reach across the entire §YSai Desert§! \n\nRecruit §1Rek'sai§! & §O Xer'sai§! to spread §RTerror§!!"
+ VOI_shifting_sands: "Shifting Sands"
+ VOI_shifting_sands_TT: "Shifting Sands"
+ VOI_shifting_sands_desc: "We must summon §1Rek'sai§!, and with her §Ochildren...§!\n\nTogather they can extend our reach across the entire §YSai Desert§! \n\nRecruit §1Rek'sai§! & §O Xer'sai§! to spread §RTerror§!!"
 
  # First Draft 
- # VOI_Shifting_Sands_desc: "We must summon Rek'sai, with her we can extend our reach across the entire deserts, using her children as a testing ground for our new Void-powered technologies..."
+ # VOI_shifting_sands_desc: "We must summon Rek'sai, with her we can extend our reach across the entire deserts, using her children as a testing ground for our new Void-powered technologies..."
 
 
  VOI_Subjugate_the_Resisters: "Subjugate the Resisters"
  VOI_Subjugate_the_Resisters_desc: "Crush all opposition to our rule, showing no mercy to those who fear the Void's gift."
 
  # Not Used
- VOI_Domination_of_Shifting_Sands: "Domination of Shifting Sands"
- VOI_Domination_of_Shifting_Sands_desc: "Extend our reach across the deserts, using them as a testing ground for our new Void-powered technologies."
+ VOI_Domination_of_shifting_sands: "Domination of Shifting Sands"
+ VOI_Domination_of_shifting_sands_desc: "Extend our reach across the deserts, using them as a testing ground for our new Void-powered technologies."
 
  VOI_The_Voids_Influence: "The Void's Influence"
  VOI_The_Voids_Influence_desc: "The mysterious and terrifying force of the Void begins to seep into our nation, influencing our culture, military, and science. How will we harness this dark power?"
@@ -206,16 +247,16 @@
  VOI_Her_Arrival: "Her Arrival"
  VOI_Her_Arrival_desc: "Belveth our Queen will soon arrive... Our army must match her expectations"
 
- VOI_Our_Queen: "Our Queen"
- VOI_Our_Queen_desc: "Belveth, Our Queen is here!"
+ VOI_our_queen: "Our Queen"
+ VOI_our_queen_desc: "Belveth, Our Queen is here!"
 
  # VOI_ Name: "Focus Title"
  # VOI_ Name _TT: "Focus Tool Tip"
  # VOI_ Name _desc: "Focus Description"
 
- VOI_Our_War: "Our War"
- VOI_Our_War_TT: "For Our Final Endevour has begun..."
- VOI_Our_War_desc: "For Our Final Endevour can begin..."
+ VOI_our_war: "Our War"
+ VOI_our_war_TT: "For Our Final Endevour has begun..."
+ VOI_our_war_desc: "For Our Final Endevour can begin..."
 
  # VOI_ Name: "Focus Title"
  # VOI_ Name _TT: "Focus Tool Tip"
