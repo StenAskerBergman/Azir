@@ -12,7 +12,7 @@
 	#National Identity
 	focus = {
 		id = AUR_national_identity
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_national_identity
 		x = 9
 		y = 0
 		cost = 5
@@ -64,7 +64,7 @@
 	#Aurman sailors
 	focus = {
 		id = AUR_aurman_sailors
-		icon = GFX_goal_unknown # GFX_AUR_aurman_sailors 
+		icon = GFX_AUR_aurman_sailors 
 		x = 10
 		y = 2
 		cost = 5
@@ -170,7 +170,7 @@
 	#Waves of Resilience
 	focus = {
 		id = AUR_waves_of_resilience
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_waves_of_resilience
 		x = 5
 		y = 1
 		cost = 5
@@ -463,7 +463,7 @@
 	# Island Ownership
 	focus = {
 		id = AUR_island_ownership
-		icon = GFX_goal_unknown
+		icon = GFX_focus_unknown
 		x = 2
 		y = 8
 		cost = 5		
@@ -525,7 +525,7 @@
 		y = 6
 		prerequisite = { focus = AUR_oceanic_outreach }
 		prerequisite = { focus = AUR_warships }
-		prerequisite = { focus = AUR_targonian_nav} # OLD: AUR_targonian_navigators 
+		prerequisite = { focus = AUR_targonian_navigators} # OLD: AUR_targonian_navigatorsigators 
 		prerequisite = { focus = AUR_freljordian_boarding_parties }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -574,7 +574,7 @@
 	#Warships
 	focus = {
 		id = AUR_warships
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_warships
 		x = 11
 		y = 5
 		prerequisite = { focus = AUR_naval_outposts }
@@ -629,7 +629,7 @@
 		x = 15
 		y = 6
 		prerequisite = { focus = AUR_freljordian_boarding_parties }
-		prerequisite = { focus = AUR_targonian_nav} # OLD: AUR_targonian_navigators 
+		prerequisite = { focus = AUR_targonian_navigators} # OLD: AUR_targonian_navigatorsigators 
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -637,8 +637,8 @@
 
 	#Open Water Tyrant
 	focus = {
-		id = AUR_water_tyrant
-		icon = GFX_goal_unknown
+		id = AUR_open_water_tyrant
+		icon = GFX_AUR_open_water_tyrant
 		x = 14
 		y = 8
 		cost = 5
@@ -653,8 +653,8 @@
 
 	#Targonian Navigators
 	focus = {
-		id = AUR_targonian_nav # OLD: AUR_targonian_navigators
-		icon = GFX_goal_unknown
+		id = AUR_targonian_navigators # OLD: AUR_targonian_nav
+		icon = GFX_AUR_targonian_navigators #GFX_goal_unknown # AUR_targonian_nav
 		x = 15
 		y = 5
 		cost = 1
