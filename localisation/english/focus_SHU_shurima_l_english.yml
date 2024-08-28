@@ -801,6 +801,9 @@ SHU_trade_guild_desc: "Establish the Royal Trade Guild to oversee and regulate c
 SHU_replant_the_basin: "Replant The Basin!"
 SHU_replant_the_basin_desc: "With the Waters of Shurima Flowing Again means it's time for us to once more seed our dreams with lush forestation and green vally's around our barren wasteland!"
 
+SHU_we_remember_shurima: "We Remember Shurima"
+SHU_we_remember_shurima_desc: "Long have the sands of time buried the glory of Shurima, but the heart of our empire still beats within our people. Through stories, rituals, and the preservation of ancient traditions, we shall remind the world and ourselves of the greatness that once was. This will rekindle the memory of our past, uniting the Shuriman people under a shared heritage and pride. By honoring our ancestors and celebrating the Sun Disc, we will restore the identity of Shurima, ensuring that the spirit of our empire never fades from the hearts of our descendants."
+
 SHU_sundisc_has_risen: "Sun Disc, Has Risen!"
 SHU_sundisc_has_risen_desc: "Our Sun Disc has Risen!\n\n Son And Daughters of Shurima!\n\n Once Again Shurima Calls You!"
 
@@ -879,7 +882,22 @@ SHU_rebirth_legions_tooltip: "Enables us re-configure our own divisions!"
 
 ################################### EVENTS                      \n      §H§!
 
+shurima.565.ts: "We Remember Shurima"
+shurima.565.d: "Long have the sands of time buried the glory of Shurima, but the heart of our empire still beats within our people. Through stories, rituals, and the preservation of ancient traditions, we shall remind the world—and ourselves—of the greatness that once was. This focus will rekindle the memory of our past, uniting the Shuriman people under a shared heritage and pride. By honoring our ancestors and celebrating the Sun Disc, we will restore the identity of Shurima, ensuring that the spirit of our empire never fades from the hearts of our descendants."
 
+SHU_opt_revive_traditions: "Revive Ancient Traditions"
+SHU_opt_invest_in_infrastructure: "Invest in Grand Infrastructure"
+SHU_opt_promote_cultural_renaissance: "Promote a Cultural Renaissance"
+SHU_opt_expand_military_glory: "Expand Military Glory"
+
+SHU_infrastructure_bonus: "Infrastructure Development"
+SHU_cultural_renaissance: "Cultural Renaissance"
+SHU_military_glory: "Military Glory"
+
+shurima.570.d: "Our renewed focus on traditions has sparked a resurgence in cultural practices, strengthening our identity and unity."
+shurima.571.d: "The infrastructure projects have started transforming our cities, bringing Shurima closer to its former glory."
+shurima.572.d: "The cultural renaissance is inspiring innovation and pride among the people of Shurima, as we rediscover the treasures of our past."
+shurima.573.d: "Our military forces grow stronger as we channel the legacy of Shurima’s warrior-kings, ready to defend and expand our borders."
 
 afk_tag.1000000.t: ""
 afk_tag.1000000.d: ""

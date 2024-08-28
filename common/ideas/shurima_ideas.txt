@@ -39,7 +39,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05 # Reduces consumer goods usage by 5%
+				consumer_goods_factor = -0.05 # Reduces consumer goods usage by 5
 			}
 
 			on_add = {
@@ -261,6 +261,16 @@ ideas = {
 			# Boost day time efficiency
 			# Boost Airplane Defence
 		}
+
+		# ----------------------
+		# Mending the Tribal Gap
+		# ----------------------
+
+
+		shuriman_recognition = {
+			
+		}
+
 
 		# ----------------------
 		# Mending the Tribal Gap

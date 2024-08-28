@@ -1,5 +1,89 @@
 spriteTypes = { 	
 	
+
+	
+	##Icon For: Test
+	SpriteType = { 
+		name = "GFX_focus_test"
+		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+	}
+    
+	##Icon Shine For: Test
+	SpriteType = {
+		name = "GFX_focus_test_shine"
+		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	## ! above will be missing always ! ##
+	
+	
+	##Icon For: Test
+	SpriteType = { 
+		name = "GFX_focus_test"
+		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+	}
+    
+	##Icon Shine For: Test
+	SpriteType = {
+		name = "GFX_focus_test_shine"
+		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+    
+
 	##Icon For: focus god warriors - focus_god_warriors
 	SpriteType = {
 		name = "GFX_focus_god_warriors"
@@ -568,6 +652,138 @@ spriteTypes = {
 		name = "GFX_r56_goal_generic_military_research2" # rt56 placeholder 
 		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
 	}
+
+	##Icon Shine For: Shurima Military Research
+	SpriteType = {
+		name = "GFX_goal_generic_military_research2_shine"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	##Icon Shine For: Shurima Military Research
+	SpriteType = {
+		name = "GFX_goal_generic_military_research1_shine"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Icon Shine For: Shurima Military Research
+	SpriteType = {
+		name = "GFX_goal_generic_military_research_shine"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+			animationtexturefile = "gfx/interface/goals/SHU/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: 
 	SpriteType = {
 		name = "GFX_SHU_replant_the_basin" # rt56 placeholder 

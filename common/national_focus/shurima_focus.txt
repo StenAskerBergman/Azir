@@ -1321,6 +1321,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = shuriman_recognition
+			
+			# Adds shuriman_recognition To Nazumah
+			NAZ = { 
+				add_ideas = shuriman_recognition
+			}
 		}
 	}
 
@@ -2272,7 +2277,7 @@ focus_tree = {
 
 	# ionia Starter Line
 	focus = {
-		id =  SHU_example_ionian_start
+		id = SHU_example_ionian_start
 		icon = GFX_goal_unknown
 		x=6
 		y=0
@@ -3697,7 +3702,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = gold_trade
-			consumer_goods_factor = -0.5
 		}
 	}
 
@@ -4455,9 +4459,9 @@ focus_tree = {
 		x = 17
 		y = 0
 		cost = 5
-		relative_position_id = SHU_we_remember_shurima
+		# relative_position_id = SHU_we_remember_shurima
 		completion_reward = {
-			country_event = { id = shurima.565 days = 1 }
+			country_event = { id = shurima.56 days = 1 }
 		}
 	}
 
@@ -5130,7 +5134,7 @@ focus_tree = {
 	# military academy - Great Shuriman Military Academy
 	focus = {
 		id = SHU_officer_school
-		icon = GFX_goal_generic_military_research
+		icon = GFX_goal_generic_military_research1
 		x = 2 # 30 # 18
 		y = 0
 		relative_position_id = SHU_shuriman_university
@@ -5273,20 +5277,23 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+
 		prerequisite = {
 			focus = SHU_school_of_nasus
 			focus = SHU_shuriman_university
 			focus = SHU_officer_school
 		}
+		
 		mutually_exclusive = {
 			focus = SHU_rebuild_library
 			focus = SHU_library_of_nasus
-			# focus = SHU_officer_school ->
+			# focus = SHU_officer_school 
 		}
+
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
-			add_ideas = SHU_War_Academy
+			add_ideas = SHU_War_Academy_ideas
 		}
 	}
 
@@ -5335,7 +5342,7 @@ focus_tree = {
 	focus = {
 		id = SHU_rebirth_legions
 		icon = GFX_focus_lion_riders # GFX_goal_generic_axis_build_infantry
-		x = -12 #7
+		x = -11 #7
 		y = -1
 		relative_position_id = SHU_our_leader
 		cost = 5

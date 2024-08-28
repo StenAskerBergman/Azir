@@ -468,6 +468,116 @@ country_event = {
 	}
 }
 
+# Remember Shurima Event
+country_event = {
+    id = shurima.565
+    title = shurima.565.ts # "SHU_we_remember_shurima"
+    desc = shurima.565.d # "SHU_we_remember_shurima_desc"
+    picture = GFX_evt_sun_disc # Placeholder for an appropriate image
+
+    is_triggered_only = yes
+
+    option = {
+        name = "SHU_opt_revive_traditions" # Option 1: Revive Ancient Traditions
+        trigger = {
+            # Conditions for this option to appear, if any.
+        }
+        ai_chance = {
+            factor = 1
+        }
+        effect = {
+            # add_national_unity = 0.05
+            add_popularity = {
+                ideology = traditionalism
+                popularity = 0.10
+            }
+            add_stability = 0.05
+            country_event = {
+                days = 30
+                id = shurima.570 # Follow-up event for this choice, if desired
+            }
+        }
+    }
+
+    option = {
+        name = "SHU_opt_invest_in_infrastructure" # Option 2: Invest in Grand Infrastructure
+        trigger = {
+            # Conditions for this option to appear, if any.
+        }
+        ai_chance = {
+            factor = 1
+        }
+        effect = {
+            add_infrastructure = 1
+            add_stability = 0.05
+            add_country_modifier = {
+                name = "SHU_infrastructure_bonus"
+                duration = 365
+                modifier = {
+                    construction_speed = 0.20
+                    production_efficiency = 0.10
+                }
+            }
+            country_event = {
+                days = 30
+                id = shurima.571 # Follow-up event for this choice, if desired
+            }
+        }
+    }
+
+    option = {
+        name = "SHU_opt_promote_cultural_renaissance" # Option 3: Promote a Cultural Renaissance
+        trigger = {
+            # Conditions for this option to appear, if any.
+        }
+        ai_chance = {
+            factor = 1
+        }
+        effect = {
+            add_national_unity = 0.05
+            add_stability = 0.05
+            add_political_power = 50
+            add_country_modifier = {
+                name = "SHU_cultural_renaissance"
+                duration = 365
+                modifier = {
+                    research_speed = 0.10
+                    recruitable_population_factor = 0.05
+                }
+            }
+            country_event = {
+                days = 30
+                id = shurima.572 # Follow-up event for this choice, if desired
+            }
+        }
+    }
+
+    option = {
+        name = "SHU_opt_expand_military_glory" # Option 4: Expand Military Glory
+        trigger = {
+            # Conditions for this option to appear, if any.
+        }
+        ai_chance = {
+            factor = 1
+        }
+        effect = {
+            add_military_experience = 50
+            add_war_support = 0.10
+            add_country_modifier = {
+                name = "SHU_military_glory"
+                duration = 365
+                modifier = {
+                    army_offense_factor = 0.10
+                    army_defense_factor = 0.10
+                }
+            }
+            country_event = {
+                days = 30
+                id = shurima.573 # Follow-up event for this choice, if desired
+            }
+        }
+    }
+}
 
 # First Draft 
 # country_event = {

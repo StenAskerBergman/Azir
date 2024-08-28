@@ -119,6 +119,7 @@
 		icon = GFX_goal_unknown
 		x = 2
 		y = 2
+		cost = 5
 		prerequisite = { focus = AUR_navigational_diplomacy }
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -145,6 +146,7 @@
 		icon = GFX_goal_unknown
 		x = 0
 		y = 4
+		cost = 5
 		mutually_exclusive = { focus = AUR_boats_run_on_water_not_blood }
 		prerequisite = { focus = AUR_family_ties}
 		search_filters = {
@@ -184,8 +186,9 @@
 	focus = {
 		id = AUR_sea_of_profit
 		icon = GFX_goal_unknown
-		x = 2
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = AUR_overclass_society
 		cost = 5
 		mutually_exclusive = { focus = AUR_sea_of_blood }
 		prerequisite = { focus = AUR_overclass_society }
@@ -251,7 +254,7 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 2
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUR_pirate_question }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -316,6 +319,7 @@
 		icon = GFX_goal_unknown
 		x = 9
 		y = 1
+		cost = 5
 		prerequisite = { focus = AUR_national_identity }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -437,9 +441,10 @@
 	focus = {
 		id = AUR_sea_of_blood
 		icon = GFX_goal_unknown
-		x = 0
-		y = 7
-		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = AUR_overclass_society
+		cost = 5
 		mutually_exclusive = { focus = AUR_sea_of_profit }
 		prerequisite = { focus = AUR_overclass_society }
 		search_filters = {
@@ -452,7 +457,8 @@
 		id = AUR_island_stewardship
 		icon = GFX_goal_unknown
 		x = 0
-		y = 8
+		y = 1
+		relative_position_id = AUR_sea_of_blood
 		cost = 5		
 		prerequisite = { focus = AUR_sea_of_blood }
 		search_filters = {
@@ -464,8 +470,9 @@
 	focus = {
 		id = AUR_island_ownership
 		icon = GFX_focus_unknown
-		x = 2
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = AUR_sea_of_profit
 		cost = 5		
 		prerequisite = { focus = AUR_sea_of_profit }
 		search_filters = {
@@ -523,6 +530,7 @@
 		icon = GFX_goal_unknown
 		x = 13
 		y = 6
+		cost = 5
 		prerequisite = { focus = AUR_oceanic_outreach }
 		prerequisite = { focus = AUR_warships }
 		prerequisite = { focus = AUR_targonian_navigators} # OLD: AUR_targonian_navigatorsigators 
@@ -552,7 +560,7 @@
 		icon = GFX_AUR_navigational_diplomacy
 		x = 1
 		y = 1
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUR_sea_maps }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -602,7 +610,7 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 3
-		cost = 1
+		cost = 5
 		prerequisite = { focus = AUR_calm_sea }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -628,8 +636,9 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 6
+		cost = 5
 		prerequisite = { focus = AUR_freljordian_boarding_parties }
-		prerequisite = { focus = AUR_targonian_navigators} # OLD: AUR_targonian_navigatorsigators 
+		prerequisite = { focus = AUR_targonian_navigators } # OLD: AUR_targonian_navigatorsigators 
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -673,7 +682,8 @@
 		icon = GFX_AUR_ocean_masters
 		x = 9
 		y = 5
-		cost = 1
+		cost = 5
+
 		prerequisite = { focus = AUR_shuriman_threat }		
 		prerequisite = {	focus = AUR_maritime_mastery } 
 		search_filters = {

@@ -297,14 +297,82 @@ spriteTypes = {
             }
             legacy_lazy_load = no
         }
-            
+           
+        # Warships
+        SpriteType = {
+            name = "GFX_AUR_warships"
+            texturefile = "gfx/interface/goals/AUR/AUR_warships.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_AUR_warships_shine"
+            texturefile = "gfx/interface/goals/AUR/AUR_warships.dds"
+            effectFile = "gfx/FX/buttonstate.lua"
+            animation = {
+                animationmaskfile = "gfx/interface/goals/AUR/AUR_warships.dds"
+                animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                animationrotation = -90.0
+                animationlooping = no
+                animationtime = 0.75
+                animationdelay = 0
+                animationblendmode = "add"
+                animationtype = "scrolling"
+                animationrotationoffset = { x = 0.0 y = 0.0 }
+                animationtexturescale = { x = 2.0 y = 1.0 } 
+            }
+            animation = {
+                animationmaskfile = "gfx/interface/goals/AUR/AUR_warships.dds"
+                animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                animationrotation = 90.0
+                animationlooping = no
+                animationtime = 0.75
+                animationdelay = 0
+                animationblendmode = "add"
+                animationtype = "scrolling"
+                animationrotationoffset = { x = 0.0 y = 0.0 }
+                animationtexturescale = { x = 1.0 y = 1.0 } 
+            }
+            legacy_lazy_load = no
+        }
+
         SpriteType = {
             name = "GFX_AUR_waves_of_resilience"
-            texturefile = "gfx/interface/goals/AUR/GFX_AUR_waves_of_resilience.dds"
+            texturefile = "gfx/interface/goals/AUR/AUR_waves_of_resilience.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_AUR_waves_of_resilience_shine"
+            texturefile = "gfx/interface/goals/AUR/AUR_waves_of_resilience.dds"
+            effectFile = "gfx/FX/buttonstate.lua"
+            animation = {
+                animationmaskfile = "gfx/interface/goals/AUR/AUR_waves_of_resilience.dds"
+                animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                animationrotation = -90.0
+                animationlooping = no
+                animationtime = 0.75
+                animationdelay = 0
+                animationblendmode = "add"
+                animationtype = "scrolling"
+                animationrotationoffset = { x = 0.0 y = 0.0 }
+                animationtexturescale = { x = 2.0 y = 1.0 } 
+            }
+            animation = {
+                animationmaskfile = "gfx/interface/goals/AUR/AUR_waves_of_resilience.dds"
+                animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                animationrotation = 90.0
+                animationlooping = no
+                animationtime = 0.75
+                animationdelay = 0
+                animationblendmode = "add"
+                animationtype = "scrolling"
+                animationrotationoffset = { x = 0.0 y = 0.0 }
+                animationtexturescale = { x = 1.0 y = 1.0 } 
+            }
+            legacy_lazy_load = no
         }
 
         # AUR_chaotic_sea.dds shine version
-        SpriteType = {
+        SpriteType = {s
             name = "GFX_AUR_chaotic_sea_shine"
             texturefile = "gfx/interface/goals/AUR/AUR_chaotic_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"
