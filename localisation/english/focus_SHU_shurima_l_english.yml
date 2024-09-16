@@ -871,6 +871,34 @@ SHU_rebirth_legions_tooltip: "Enables us re-configure our own divisions!"
 
 ################################### IDEAS                       \n      §H§!
 
+guild_bonus: "Shuriman Guilds Reborn"
+guild_bonus_desc: "The Shuriman Guilds are revitalizing our industry, boosting factory construction speed by 5%."
+
+stronger_guild_bonus: "Rising Guild Influence"
+stronger_guild_bonus_desc: "The Guilds have increased their industrial output, raising factory construction speed by 10%."
+
+even_stronger_guild_bonus: "Guild Power Ascendant"
+even_stronger_guild_bonus_desc: "Shuriman Guilds now control the industry, improving factory speed by 20%."
+
+superior_guild_bonus: "Guilds of the Golden Age"
+superior_guild_bonus_desc: "The Guilds are reaching their zenith, pushing factory speed by 30%."
+
+ultimate_guild_bonus: "Ultimate Shuriman Guild Power"
+ultimate_guild_bonus_desc: "The Guilds have fully restored their ancient glory, with factories producing at 40% increased speed."
+
+# Debugging w. Ideas - IDs:
+
+idea_guild_bonus: "Shuriman Guilds Reborn"
+idea_guild_bonus_desc: "Through the efforts of the Shuriman Guilds, our industrial complexes are slowly regaining their past efficiency. Production speed has increased by 5%, marking the first steps toward restoring our empire's greatness."
+
+idea_stronger_guild_bonus: "Rising Guild Influence"
+idea_stronger_guild_bonus_desc: "As the Shuriman Guilds grow in influence, the industrial strength of Shurima continues to rise. With a 10% increase in factory output, we are getting closer to our former glory."
+
+idea_even_stronger_guild_bonus: "Guild Power Ascendant"
+idea_even_stronger_guild_bonus_desc: "The Shuriman Guilds now wield immense power over our production lines. Our factories operate at 15% increased efficiency, hastening Shurima's rebirth."
+
+idea_superior_guild_bonus: "Shuriman Guilds Restored"
+idea_superior_guild_bonus_desc: "The Shuriman Guilds have fully restored their ancient capabilities. Our industrial strength is unmatched, with factories producing at 20% increased speed, bringing Shurima closer to its legendary past, and into it's current future!"
 
 
 

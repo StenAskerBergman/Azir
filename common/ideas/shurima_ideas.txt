@@ -1,7 +1,126 @@
 ideas = {
 
+	# hidden_ideas = {
+	# 	SHU_recurring_event_trigger = {
+	# 	}
+	# }
+
 	country = {
-		
+
+		# -------------------------------------
+		#   Growth, Cost & Build - Scaling Idea
+		# -------------------------------------
+
+		guild_bonus = {
+			picture = man_five_year_plan_industry
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
+			visible = { always = yes }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05  # Initial 5% boosst
+			}
+		}
+
+		stronger_guild_bonus = {
+			picture = man_five_year_plan_industry
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
+			visible = { always = yes }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10  # Increase to 10%
+			}
+		}
+
+		even_stronger_guild_bonus = {
+			picture = man_five_year_plan_industry
+
+			 TAG = SHU
+			 original_tag = SHU
+
+			visible = { always = yes }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20  # 20% boost
+			}
+		}
+
+		superior_guild_bonus = {
+			picture = man_five_year_plan_industry
+
+			 TAG = SHU
+			 original_tag = SHU
+
+			visible = { always = yes }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.30  # 30% boost
+			}
+		}
+
+		ultimate_guild_bonus = {
+			picture = man_five_year_plan_industry
+
+			 TAG = SHU
+			 original_tag = SHU
+
+			visible = { always = yes }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.40  # 40% boost
+			}
+		}
+
+		# -------------------------------------
+		#  Growth, Cost & Build - Flat Idea
+		# -------------------------------------
+
+		BuildMore = {
+			picture = POL_disjointed_industry
+			modifier = {
+				# 20% Increase Bonus
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		# ------------------------------------
+		#  Farming, Agriculture, Horticulture
+		# ------------------------------------
+
+		idea_no_more_hunger = {
+			picture = GFX_idea_generic_agriculture
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
+
+			visible = { always = yes }
+
+			# Modifiers: Increase civilian factory construction speed by 10%, recruitable population by 3%
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1  # 10% boost to civilian factory production
+				recruitable_population_factor = 0.03  # 3% boost to recruitable population
+			}
+
+			on_add = {
+				# Any effects when the idea is first applied (optional)
+			}
+
+			on_remove = {
+				# Any effects when the idea is removed (optional)
+			}
+		}
+
+		# ----------------------------
+		# 	Ruler Stability Bonus
+		# ----------------------------
+
+
 		SHU_legitimate_ruler = {
 			picture = GFX_goal_generic_ruler
 			add_stability = 0.1
@@ -11,21 +130,21 @@ ideas = {
 		# ----------------------------
 		# Targon Support - Sider Idea
 		# ----------------------------
-		
+
 		solari_supporter = {
 			picture = tur_tuz_golu_training_facility
-			# Support Leona - Solari are the true rulers! Long Live the Sun! Long Live Her Warmth! 
-		} 
+			# Support Leona - Solari are the true rulers! Long Live the Sun! Long Live Her Warmth!
+		}
 
 		lunari_supporter = {
 			picture = tur_sub_zero_survival_training
 			# Support Diana - Lunari are the true rulers! Long Live the Nightsky! Long Live the Moon!
-		} 
+		}
 
 		rakkor_supporter = {
 			picture = generic_pp_unity_bonus
-			# Support Their Collaboration! Long Live Mount Targon! May we rule Shurima for a Decades to come!  
-		} 
+			# Support Their Collaboration! Long Live Mount Targon! May we rule Shurima for a Decades to come!
+		}
 
 		# ----------------
 		# Gold Trade Bonus
@@ -51,30 +170,30 @@ ideas = {
 			picture = SPR_seize_the_gold_reserves
 			allowed = {
 				# Conditions under which this idea can be activated (e.g., certain focus completed)
-				
+
 				if = {
 					limit = {
 						root = { has_idea = closed_economy }
 					}
-					swap_ideas = { 
+					swap_ideas = {
 						remove_ideas = gold_reserve
 						add_ideas = gold_reserve2
 					}
 
 				}
-				ELSEIF 
+				else_if =
 				{
 					limit = {
 						root = { NOT = { has_idea = closed_economy } }
 
 					}
-					swap_ideas = { 
-						remove_ideas = gold_reserve2 
+					swap_ideas = {
+						remove_ideas = gold_reserve2
 						add_ideas = gold_reserve
 					}
 
 				}
-				ELSEIF{
+				else_if = {
 					limit = { root = { has_completed_focus = has_completed_focus } }
 				}
 			}
@@ -84,7 +203,7 @@ ideas = {
 			}
 
 			on_add = {
-				
+
 				# Effects that occur when this idea is activated (e.g., political power gain)
 			}
 		}
@@ -108,7 +227,7 @@ ideas = {
 		# Production Bonus
 		# ----------------
 
-			
+
 		central_management = {
 			picture = generic_central_management
 		}
@@ -116,12 +235,12 @@ ideas = {
 		local_management = {
 			picture = generic_local_self_management
 		}
-				
+
 		recyclement = {
 			picture = generic_flexible_foreign_policy2
 		}
 
-		refurbishment ={ 
+		refurbishment ={
 			picture = generic_flexible_foreign_policy
 		}
 
@@ -131,8 +250,8 @@ ideas = {
 
 		united_railway = {
 			picture = generic_train_tracks
-			
-		} 
+
+		}
 
 		famine = {
 			picture = raj_risk_of_famine
@@ -143,7 +262,7 @@ ideas = {
 			picture = generic_agrarian_society
 			construction_factor = 0.25
 		}
-		
+
 		# --------------
 		#  Weaker Navy
 		# --------------
@@ -163,7 +282,7 @@ ideas = {
 			shuriman_armada = {
 				picture = generic_navy_bonus
 			}
-		
+
 		# ----------------------------------
 		# Shuriman Targonian Aurman Nazuman
 		# ----------------------------------
@@ -173,10 +292,10 @@ ideas = {
 			ascended_armada = {
 				picture = generic_navy_carrier_bonus
 			}
-		
+
 		# ----------------------------------
-		# Shuriman Targonian Aurman Nazuman 
-		# Contiental Hexcore Trade Agreement 
+		# Shuriman Targonian Aurman Nazuman
+		# Contiental Hexcore Trade Agreement
 		# ----------------------------------
 
 			armada_on_conquest = {
@@ -186,7 +305,7 @@ ideas = {
 		# -------------
 		# Marai Marines
 		# -------------
-		
+
 		marai_marines = {
 			picture = generic_coastal_navy
 			naval_invasion_prep_speed = 10
@@ -198,22 +317,22 @@ ideas = {
 			allowed = {
                 always = no
             }
-				
+
 			cancel = {
-				has_global_flag = moonstone_quest_fail 
+				has_global_flag = moonstone_quest_fail
 			}
 
 			on_remove = {
 				clr_global_flag = moonstone_quest_fail
 			}
 		}
-		
+
 		# ---------------
 		# Marai Dockyards
 		# ---------------
-		
+
 		marai_dockyards_idea = {
-			picture = generic_coastal_navy 
+			picture = generic_coastal_navy
 			# boosts naval construction factor by 0.25
 		}
 
@@ -226,18 +345,18 @@ ideas = {
 		# ----------------
 
 		aurman_dockyards_idea = {
-			picture = generic_the_london_naval_treaty 
+			picture = generic_the_london_naval_treaty
 			# boosts naval construction factor by 0.15
 		}
 
-		aurman_arriving_idea ={ 
+		aurman_arriving_idea ={
 			picture = eng_preparing_the_second_front
 		 }
 
 		# ---------------------
 		# Targonian Air Support
 		# ---------------------
-		
+
 		# Rakkor Support Version
 		SHU_targonian_air_support = {
 			picture = generic_air_bonus
@@ -268,34 +387,34 @@ ideas = {
 
 
 		shuriman_recognition = {
-			
+
 		}
 
 
 		# ----------------------
 		# Mending the Tribal Gap
 		# ----------------------
-		
+
 		tribal_council = {
 
 		}
-		
+
 		tribal_recognition = {
 
 		}
-		
+
 		tribe_law = {
 
 		}
-		
+
 		tribal_respect = {
-			
+
 		}
-		
+
 		tribal_family = {
 
 		}
-		
+
 		tribal_ties = {
 
 		}
@@ -303,15 +422,18 @@ ideas = {
 		# ---------------------
 		# Mending Fragmentation
 		# ---------------------
-		
+
 		Shurima_broken = {
 			picture = SHU_shurima_broken-1239
-			allowed = { original_tag = SHU }
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
 			available = {}
 			cancel = {}
 			allowed_civil_war = {
 				always = yes
-			}	
+			}
 			modifier = {
 				stability_factor = -0.2
 				political_power_cost = 1.5
@@ -323,7 +445,10 @@ ideas = {
 
 		Shurima_fractured = {
 			picture = SHU_shurima_fractured-1238
-			allowed = { original_tag = SHU }
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
 			available = {}
 			cancel = {}
 			allowed_civil_war = {
@@ -340,7 +465,10 @@ ideas = {
 
 		Shurima_scattered = {
 			picture = SHU_shurima_scattered-1240
-			allowed = { original_tag = SHU }
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
 			available = {}
 			cancel = {}
 			allowed_civil_war = {
@@ -357,7 +485,10 @@ ideas = {
 
 		Shurima_apart = {
 			picture = SHU_shurima_apart-1241
-			allowed = { original_tag = SHU }
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
 			available = {}
 			cancel = {}
 			allowed_civil_war = {
@@ -371,11 +502,14 @@ ideas = {
 				production_speed_buildings_factor = -0.0625
 			}
 		}
-		
+
 
 		Shurima_united = {
 			picture = SHU_shurima_united-1242
-			allowed = { original_tag = SHU }
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
 			available = {}
 			cancel = {}
 			allowed_civil_war = {
@@ -389,21 +523,24 @@ ideas = {
 				production_speed_buildings_factor = 1
 			}
 		}
-		
+
 		# -------------------
 		# Restoring the Pride
 		# -------------------
-		
+
 		Shuriman_shame = {
 			picture = SHU_shuriman_shame-1752
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -415,13 +552,16 @@ ideas = {
 		Shuriman_guilt = {
 			picture = SHU_shuriman_guilt-1753
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -433,13 +573,16 @@ ideas = {
 		Shuriman_hybris = {
 			picture = SHU_shuriman_hybris-1754
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -451,13 +594,16 @@ ideas = {
 		Shuriman_struggle = {
 			picture = SHU_shuriman_struggle-1755
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -469,13 +615,16 @@ ideas = {
 		Shuriman_pride = {
 			picture = SHU_shuriman_pride-1756
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			on_add = {
 				add_political_power = 100
@@ -486,11 +635,11 @@ ideas = {
 			removal_cost = -1
 			modifier = {}
 		}
-				
+
 		# -----------------
-		# Foreign Relations 
+		# Foreign Relations
 		# -----------------
-		
+
 		diplomacy_approach = {
 			picture = received_attache
 			# Improve All Effect factors for diplomacy
@@ -503,17 +652,20 @@ ideas = {
 		# -----------------
 		# Restoring Shurima
 		# -----------------
-		
+
 		Hex_crystal_sovereignty = {
 			picture = SHU_hex_crystal_sovereignty-1452
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -527,13 +679,16 @@ ideas = {
 		The_great_fall = {
 			picture = SHU_the_great_fall-1237
 			allowed = {
-				original_tag = SHU
+
+			 TAG = SHU
+			 original_tag = SHU
+
 			}
 			available = {
-				
+
 			}
 			cancel = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -545,7 +700,7 @@ ideas = {
 		# ------------------
 		# View of Shurima
 		# ------------------
-		
+
 			# Hated -> Rejected
 			azir_rejected = { picture = saf_ossewabrandwag_fascism }
 			sivir_rejected = { picture = can_patriation }
@@ -558,7 +713,7 @@ ideas = {
 			sivir_accepted = { picture = saf_ossewabrandwag }
 
 
-			
+
 
 		# ------------------
 		# Legitimacy Shurima
@@ -589,14 +744,17 @@ ideas = {
 		segregation = {
 			picture = saf_history_of_segregation_2
 		}
-		
+
 		Lawful_slavery = {
 			picture = saf_history_of_segregation
 		}
 
 		Lawless_slavery = {
 			picture = SHU_lawless_slavery-1506
-			allowed = { original_tag = SHU }
+			allowed = {
+			 TAG = SHU
+			 original_tag = SHU
+ 			}
 			available = {}
 			cancel = {}
 			allowed_civil_war = { always = yes }
@@ -607,26 +765,26 @@ ideas = {
 		# -------------------
 		# Restoring the Army
 		# -------------------
-		
+
 
 		shuriman_defense_bonus = {
-			name = "Shuriman Shieldwall" 
+			name = "Shuriman Shieldwall"
 			picture = ARG_military_government
-			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense" 
+			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense"
 			modifier = { army_defence = 0.10 }
 		}
-		
+
 		shuriman_defense_bonus_extra = {
-			name = "Shuriman Shieldwall" 
+			name = "Shuriman Shieldwall"
 			picture = ARG_military_government
-			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense for a year!" 
+			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense for a year!"
 			modifier = { army_defence = 0.10 days = 365 }
 		}
 
 		Offensive_War_Bonus = {
-			
+
 		}
-		
+
 		SHU_Officer_School_ideas = {
 			name = "Officer School"
 			picture = Combined_bomber_offensive
@@ -640,8 +798,8 @@ ideas = {
 				attrition = -0.05
 			}
 		}
-	
-				
+
+
 		SHU_War_Academy_ideas = {
 			name = "War Academy"
 			picture = soviet_german_friendship
@@ -664,7 +822,7 @@ ideas = {
 				research_speed_factor = 0.10
 			}
 		}
-		
+
 		SHU_shuriman_university_idea = {
 			name = "Shuriman Universities"
 			picture = jap_supremacy_of_technology
@@ -673,7 +831,7 @@ ideas = {
 				research_speed_factor = 0.10
 			}
 		}
-		
+
 		SHU_restore_great_library = {
 			name = "Restore The Great Shuriman"
 			picture = generic_research_bonus
@@ -715,7 +873,7 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
-		
+
 		SHU_work_unions_idea = {
 			picture = generic_agrarian_reform
 			allowed = {

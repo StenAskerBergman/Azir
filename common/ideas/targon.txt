@@ -8,17 +8,21 @@ ideas = {
 
         }
 
+        # Foreign Support 
+        # Shurima Acknowledges the Solari Rulers!
         big_sun = {
             picture = LAT_the_sun_shines_equally
         }
 
-
         # Foreign Support 
+        # Shurima Acknowledges the Lunari Future!
         shuriman_support_lunari = {
             picture = LAT_the_sun_shines_equally
 
         }
-
+        
+        # Foreign Support 
+        # Shurima Acknowledges the Solari Rulers!
         shuriman_support_solari = {
             picture = LAT_the_sun_shines_equally
 

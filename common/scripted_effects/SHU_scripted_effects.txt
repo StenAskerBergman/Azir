@@ -212,6 +212,19 @@ SHU_remove_unity = {
             remove_country_flag = nazumah_buff
         }
     }
+    
+# ------------------------------
+# Restoring Guild Bonus 2 Year
+# ------------------------------
+
+recurring_event = {
+    every_2_years = {
+        days = 10 # Debug testing
+        # days = 730  # 2 years in HoI4 time (365 days * 2)
+    }
+    country_event = { id = shurima.102 }  # This is your event ID
+}
+
 
 # ------------------------------
 # Restoring Shurima Bonuses

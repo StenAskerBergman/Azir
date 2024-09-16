@@ -61,7 +61,7 @@ recruit_character = SHU_nami
 # XER_shadow_pact 
 # XER_Renekton_Conquest
 
-set_convoys = 200
+set_convoys = 0
 set_politics = {
 	ruling_party = absolutists
 	last_election = "989.9.07"

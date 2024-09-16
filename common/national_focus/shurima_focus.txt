@@ -54,7 +54,20 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+				}
 
+				add_extra_state_shared_building_slots = 2
+				#	add_building_construction = {
+				#		type = industrial_complex
+				#	level = 2
+				#	instant_build = yes
+				# }
+				
+			}
 		}
 	}
 
@@ -1551,7 +1564,8 @@ focus_tree = {
 		}
 	}
 
-	# Help Leona
+	# Recognize Solari Rule
+	# Help Leona retake Targonia if Lunari are the Rulers
 	focus = {
 		id = SHU_restore_solari
 		icon = GFX_focus_generic_workers_and_farmers_rise
@@ -3699,7 +3713,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_craft_guild
 		}
-
+		
 		completion_reward = {
 			add_ideas = gold_trade
 		}
@@ -4219,6 +4233,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SHU_workers_rights_idea
+			country_event = { id = shurima.1001 days = 1 }
 		}
 	}
 
@@ -4317,19 +4332,31 @@ focus_tree = {
 		}
 	}
 
-	focus ={
+	focus = {
 		id = SHU_no_more_hunger
 		icon = GFX_goal_farm_boom
-		x=-3
-		y=1
+		x = -3
+		y = 1
 		relative_position_id = SHU_shrines_of_shurima
-		prerequisite = {
-			focus = SHU_shrines_of_shurima
-		}
-		complete_effect = {
 
+		prerequisite = {
+			focus = SHU_return_of_the_amulet 
+			# focus = SHU_shrines_of_shurima
 		}
+
+		cost = 10  # Adjust as necessary
+		available = { 
+			# Any conditions for availability can be added here
+		}
+
+		completion_reward = {
+			# Add the "No More Hunger" idea that boosts civilian factory construction and recruitable population
+			add_ideas = idea_no_more_hunger
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+
 
 	# focus ={
 	# 	id = SHU_irigation_system
@@ -4371,8 +4398,19 @@ focus_tree = {
 		# prerequisite = {
 		# 	focus = SHU_replant_the_basin
 		# }
+
+		# Incase we somehow set it before for somereason
+		# immediate = { 
+		# 	clr_global_flag = guild_event_max_level_reached
+		# }
+		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			
+			# Country Event
+			country_event = { id = shurima.101 days = 1 } 
+			
+			# Every State
 			every_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -4410,12 +4448,13 @@ focus_tree = {
 					is_core_of = ROOT
 				}
 
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
+				
 			}
 		}
 	}
@@ -4433,6 +4472,9 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_ideas = BuildMore
 		}
 	}
 
@@ -4627,6 +4669,7 @@ focus_tree = {
 	}
 
 	# Help Nami
+	# Get Moonstone from Diana - Help Diana and secure the moonstone!
 	focus = {
 		id = SHU_moonstone
 		icon = GFX_focus_generic_workers_and_farmers_rise

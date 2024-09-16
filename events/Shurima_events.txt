@@ -450,22 +450,115 @@ country_event = {
     }
 }
 
+  ####   #    #  ###  #   ####
+ #       #    #   #   #   #   #
+ #   ##  #    #   #   #   #   #
+ #    #  #    #   #   #   #   #
+  ####    ####   ###  #   ####
+
 # Guild Events Series
 country_event = {
 	id = shurima.101
 	title = shurima.101.t
 	desc = shurima.101.d
-	picture = GFX_report_event_generic
+	picture = GFX_report_event_soviet_japanese_pact
 
 	is_triggered_only = yes
 
 	option = {
 		name = "Acknowledge"
+
+        # Set Global Flag
+        set_global_flag = shurima_event_start
+
+        # country_event = shurima.102
+        
+        effect = {
+            add_ideas = guild_bonus 
+        
+        }
+
 		hidden_effect = {
 			# Add a hidden idea that will trigger the event every year or two years
-			add_ideas = SHU_recurring_event_trigger
+            
+            # Adds An Hidden Idea 
+			# add_ideas = SHU_recurring_event_trigger 
 		}
 	}
+}
+
+country_event = {
+    id = shurima.102
+    title = "Guild Meeting" 
+    desc = "This event occurs every two years and strengthens the nation's industry."
+    picture = GFX_report_event_soviet_purge_politicians
+    
+    trigger = {
+        TAG = SHU
+        has_global_flag = shurima_event_start
+        # Prevent event from triggering if max level is reached
+        NOT = { has_global_flag = guild_event_max_level_reached }  
+    }
+
+    
+    mean_time_to_happen = {
+        
+        # For testing, adjust as needed
+        # days = 10  
+        # days = 720
+        
+        days = 365
+    }
+    
+    option = {
+        name = "Ok"
+        hidden_effect = {
+            # If "superior_guild_bonus" then Upgrade to "ultimate_guild_bonus" and stop event
+            if = {
+                limit = { has_idea = superior_guild_bonus }
+                remove_ideas = superior_guild_bonus
+                add_ideas = ultimate_guild_bonus
+                set_global_flag = guild_event_max_level_reached  # Set flag to stop further events
+            }
+            
+            # If "even_stronger_guild_bonus" then Upgrade to "superior_guild_bonus"
+            else_if = {
+                limit = { has_idea = even_stronger_guild_bonus }
+                remove_ideas = even_stronger_guild_bonus
+                add_ideas = superior_guild_bonus
+            }
+            
+            # If "stronger_guild_bonus" then Upgrade to "even_stronger_guild_bonus"
+            else_if = {
+                limit = { has_idea = stronger_guild_bonus }
+                remove_ideas = stronger_guild_bonus
+                add_ideas = even_stronger_guild_bonus
+            }
+            
+            # If "guild_bonus" then Upgrade to "stronger_guild_bonus"
+            else_if = {
+                limit = { has_idea = guild_bonus }
+                remove_ideas = guild_bonus
+                add_ideas = stronger_guild_bonus
+            }
+            
+            # If no idea exists, add the base "guild_bonus"
+            else = {
+                add_ideas = guild_bonus  # Start with base idea
+            }
+        }
+    }
+}
+
+country_event = {
+    id = shurima.1001
+    title = "Shurima Respects the Workers Rights!"
+    picture = GFX_report_event_sanation_revolt
+    
+    
+    is_triggered_only = yes 
+    fire_only_once = yes 
+
 }
 
 # Remember Shurima Event
