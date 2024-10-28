@@ -54,33 +54,7 @@ focus_tree = {
 #  48"` '8*~   `8888!` "888*""888" '"888*" 4888" '"888*" 4888"    'Y"          "Y"      
 #   ^-==""      `""     ^Y"   ^Y'     ""    ""      ""    ""                            
                                                                                       
-                                                                                      
-           	
-    # Used to be the Main focus leading to political choices
-    focus = {
-        id = TAR_central_start_point
-        icon = GFX_focus_generic_alliance 
-        x = 8
-        y = 0
-        cost = 10
-		
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				always = false
-			}
-		}
-
-        completion_reward = {
-            add_political_power = 50
-        }
-    }                                                                            
-                                  
+                                                                                                              
                                   
 
     # Central Path - Path of Mending
@@ -89,8 +63,8 @@ focus_tree = {
         icon = GFX_focus_generic_diplomacy
         # prerequisite = { focus = TAR_central_start_point }
         mutually_exclusive = { focus = TAR_strengthen_the_solari focus = TAR_strengthen_the_lunari }
-        relative_position_id = TAR_central_start_point
-        x = 0
+
+		x = 8
         y = 0
         cost = 10
         allow_branch = {
@@ -215,6 +189,30 @@ focus_tree = {
 		# Words falling on Deaf Ears 
 		# Words falling on Deaf Ears by a dead man  - Special Event
 
+		# If Lunari Reposition
+		offset = {
+			x = -6
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_lunari
+			}
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = TAR_strengthen_the_solari
+						has_completed_focus = TAR_strengthen_the_lunari 
+					}
+				}
+			}
+		}
+		
 		x = 1
 		y = 1
 		cost = 10
@@ -353,6 +351,7 @@ focus_tree = {
                     has_completed_focus = TAR_pantheon_lies
                 }
 				
+				# Read the Trotsky Code for reference
 				# AND = {
 					# 	HAS = {
 					# 		has_character = TAR_pantheon
@@ -389,7 +388,7 @@ focus_tree = {
 			focus = TAR_rise_of_pantheon 
 			focus = TAR_fall_of_pantheon
 		}
-        relative_position_id = TAR_central_start_point
+        relative_position_id = TAR_path_of_mending
         x = 16
         y = 1
         cost = 10
@@ -459,7 +458,7 @@ focus_tree = {
 		icon = GFX_focus_Targon_Crest_Solari #GFX_focus_generic_fascism
 		# prerequisite = { focus = TAR_central_start_point }
 		mutually_exclusive = { focus = TAR_path_of_mending focus = TAR_strengthen_the_lunari }
-		relative_position_id = TAR_central_start_point
+		relative_position_id = TAR_path_of_mending
 		x = -4
 		y = 0
 		cost = 10
@@ -505,6 +504,14 @@ focus_tree = {
 
 		}
 
+		# # If Finished Reposition tree
+		# offset = {
+		# 	x = 2
+		# 	trigger = {
+		# 		has_completed_focus = TAR_strengthen_the_solari
+		# 	}
+		# }
+
 		search_filters = { FOCUS_FILTER_POLITICAL } # Custom Filter For Solari
 
 		completion_reward = {
@@ -526,6 +533,14 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+		
+		# If Finished Reposition tree
+		offset = {
+			x = 2
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_solari
+			}
+		}
         completion_reward = {
             army_experience = 50
         }
@@ -554,6 +569,14 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 10
+		
+		# If Finished Reposition tree
+		offset = {
+			x = 2
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_solari
+			}
+		}
 		completion_reward = {
 			add_building_construction = {
 				type = military_factory
@@ -576,6 +599,15 @@ focus_tree = {
         x = -2
         y = 1
         cost = 10
+		
+		# If Finished Reposition tree
+		offset = {
+			x = 2
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_solari
+			}
+		}
+
         completion_reward = {
             add_stability = 0.10
             add_resistance_suppression = 15
@@ -629,6 +661,7 @@ focus_tree = {
         }
     }
 
+
 #       ...                                                               .    
 #   .zf"` `"tu                                                           @88>  
 #  x88      '8N.    x.    .        u.    u.                  .u    .     %8P   
@@ -651,19 +684,37 @@ focus_tree = {
         icon = GFX_focus_SHU_TAR
         # prerequisite = { focus = TAR_central_start_point }
         mutually_exclusive = { focus = TAR_path_of_mending focus = TAR_strengthen_the_solari }
-        relative_position_id = TAR_central_start_point
+        relative_position_id = TAR_path_of_mending
         x = 4
 		y = 0
 		cost = 10
 
+
+		
 		allow_branch = {
-			NOT = {
-				OR = {
-                    has_completed_focus = TAR_strengthen_the_solari
-                    has_completed_focus = TAR_path_of_mending 
-                }
-            }
-        }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = TAR_strengthen_the_solari
+						has_completed_focus = TAR_path_of_mending 
+					}
+				}
+			}
+		}
+
+		# If Finished Reposition tree
+		offset = {
+			x = -6
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_lunari
+			}
+		}
 
         completion_reward = {
 			set_country_flag = selected_lunari_path
@@ -680,10 +731,18 @@ focus_tree = {
 			focus = TAR_strengthen_the_lunari 
 			focus = TAR_path_of_mending
 		}
-		relative_position_id = TAR_strengthen_the_lunari
-		x = 0
+		relative_position_id = TAR_path_of_mending
+		x = 4
 		y = 1
 		cost = 10
+
+		offset = {
+			x = -8
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_lunari
+			}
+		}
+
 		completion_reward = {
 			army_experience = 50
 			trigger = {
@@ -712,6 +771,7 @@ focus_tree = {
 	}
 
 	
+	# Pantheon Lies about our safety! There is no safe harbour from the sun's rays!
 	focus = {
 		id = TAR_pantheon_lies
 		icon = GFX_focus_generic_diplomacy
@@ -724,11 +784,17 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = TAR_pantheon_demands
+			
 		}
 		relative_position_id = TAR_embrace_the_eclipse
 		x = 1
 		y = 1
-
+		offset = {
+			x = -1
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_lunari
+			}
+		}
 		cost = 10
 		completion_reward = {
 			add_diplomacy_efficiency = 15
@@ -738,17 +804,18 @@ focus_tree = {
 
 
 
-	# Path of Rebellion 
+	# Into The Shadows - ( Path of Rebellion )
 	focus = {
         id = TAR_into_the_shadows
         icon = GFX_focus_generic_espionage
         prerequisite = { 
 			focus = TAR_strengthen_the_lunari 
 		}
-        relative_position_id = TAR_strengthen_the_lunari
-        x = 2
-        y = 1
+		relative_position_id = TAR_lunari_rakkor_alliance
+		x = 2
+        y = 0
         cost = 10
+
         completion_reward = {
             add_espionage_efficiency = 10
             increase_resistance_growth = 5
@@ -779,6 +846,12 @@ focus_tree = {
         cost = 10
 		mutually_exclusive = {
 			focus = TAR_aphelios_strike
+		}
+		offset = {
+			x = -1
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_lunari
+			}
 		}
         completion_reward = {
             army_experience = 50
@@ -831,7 +904,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TAR_aphelios_silent_assault
 		}
-
+		offset = {
+			x = -1
+			trigger = {
+				has_completed_focus = TAR_strengthen_the_lunari
+			}
+		}
         relative_position_id = TAR_call_of_the_moon
 		x = 1
 		y = 1
