@@ -1,0 +1,880 @@
+focus_tree = {
+    id = targon_focus
+    
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = TAR
+        }
+    }
+
+    default = no
+
+    continuous_focus_position = { x = 150 y = 1600 }
+	
+	# The Ascended Conflict
+    # focus = {
+    #     id = TAR_the_ascended_conflict
+    #     icon = GFX_focus_generic_alliance 
+    #     x = 4.5
+    #     y = 0
+    #     cost = 10
+	# 
+	# 	allow_branch = {
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = {
+	# 					rule = obsolete_focus_branches_visibility
+	# 					option = HIDE
+	# 				}
+	# 			}
+	# 			always = false
+	# 		}
+	# 	}
+	# 
+    #     completion_reward = {
+    #         add_political_power = 50
+    #     }
+    # }             
+                       
+
+
+
+#      ..      ...                       ..            ..                               
+#   :~"8888x :"%888x               < .z@8"`      < .z@8"`                               
+#  8    8888Xf  8888>               !@88E         !@88E               u.      .u    .   
+# X88x. ?8888k  8888X        u      '888E   u     '888E   u     ...ue888b   .d88B :@8c  
+# '8888L'8888X  '%88X     us888u.    888E u@8NL    888E u@8NL   888R Y888r ="8888f8888r 
+#  "888X 8888X:xnHH(`` .@88 "8888"   888E`"88*"    888E`"88*"   888R I888>   4888>'88"  
+#    88~ 8888X X8888   9888  9888    888E .dN.     888E .dN.    888R I888>   4888> '    
+#  -~`   8888> X8888   9888  9888    888E~8888     888E~8888    888R I888>   4888>      
+#  :H8x  8888  X8888   9888  9888    888E '888&    888E '888&  u8888cJ888   .d888L .+   
+#  8888> 888~  X8888   9888  9888    888E  9888.   888E  9888.  "*888*P"    ^"8888*"    
+#  48"` '8*~   `8888!` "888*""888" '"888*" 4888" '"888*" 4888"    'Y"          "Y"      
+#   ^-==""      `""     ^Y"   ^Y'     ""    ""      ""    ""                            
+                                                                                      
+                                                                                      
+           	
+    # Used to be the Main focus leading to political choices
+    focus = {
+        id = TAR_central_start_point
+        icon = GFX_focus_generic_alliance 
+        x = 8
+        y = 0
+        cost = 10
+		
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				always = false
+			}
+		}
+
+        completion_reward = {
+            add_political_power = 50
+        }
+    }                                                                            
+                                  
+                                  
+
+    # Central Path - Path of Mending
+    focus = {
+        id = TAR_path_of_mending
+        icon = GFX_focus_generic_diplomacy
+        # prerequisite = { focus = TAR_central_start_point }
+        mutually_exclusive = { focus = TAR_strengthen_the_solari focus = TAR_strengthen_the_lunari }
+        relative_position_id = TAR_central_start_point
+        x = 0
+        y = 0
+        cost = 10
+        allow_branch = {
+            NOT = {
+                OR = {
+                    has_completed_focus = TAR_strengthen_the_solari
+                    has_completed_focus = TAR_strengthen_the_lunari
+                }
+            }
+        }
+        completion_reward = {
+            add_stability = 0.05
+			hidden_effect = { mark_focus_tree_layout_dirty = yes }
+        }
+
+    }
+
+    focus = {
+        id = TAR_healers_of_targon
+        icon = GFX_focus_generic_diplomacy
+        prerequisite = { focus = TAR_path_of_mending }
+        relative_position_id = TAR_path_of_mending
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.10
+        }
+    }
+    
+	focus = {
+		id = TAR_rakkor_mediation
+		icon = GFX_focus_generic_agreement
+		prerequisite = { focus = TAR_healers_of_targon }
+		relative_position_id = TAR_healers_of_targon
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			form_political_alliance = {
+				target = Lunari
+			}
+		}
+	}
+	
+    focus = {
+		id = TAR_tarics_shield
+        icon = GFX_focus_generic_military_build_up
+        prerequisite = { 
+			focus = TAR_healers_of_targon 
+		}
+        relative_position_id = TAR_healers_of_targon
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+			army_experience = 25
+        }
+    }
+	
+    focus = {
+		id = TAR_sorakas_gift
+        icon = GFX_focus_generic_welfare
+        prerequisite = { focus = TAR_healers_of_targon }
+        relative_position_id = TAR_healers_of_targon
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+			add_	popularity = {
+				ideology = democratic
+                popularity = 0.10
+            }
+        }
+    }
+	
+
+	focus = {
+		id = TAR_celestial_alliance
+		icon = GFX_focus_generic_diplomacy
+		prerequisite = { focus = TAR_rakkor_mediation }
+		relative_position_id = TAR_rakkor_mediation
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = TAR_balance_restored
+		icon = GFX_focus_generic_major_war
+		prerequisite = { focus = TAR_celestial_alliance }
+		relative_position_id = TAR_celestial_alliance
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = 10
+			add_political_power = 100
+			increase_legitimacy_bonus = 20
+		}
+	}
+
+	focus = {
+		id = TAR_pantheon_demands
+		icon = GFX_focus_generic_diplomacy
+		prerequisite = { 
+			focus = TAR_embrace_the_eclipse 
+			focus = TAR_sorakas_gift
+		}
+		mutually_exclusive = {
+			focus = TAR_pantheon_lies
+		}
+		relative_position_id = TAR_sorakas_gift
+		
+		# Pantheon is right, this isn't the way...
+		# Pantheon may be right, but what options do we have?
+		# Pantheon has lost his goddamn smind... 
+		
+		# Words falling on Deaf Ears 
+		# Words falling on Deaf Ears by a dead man  - Special Event
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_diplomacy_efficiency = 15
+			reduce_war_support = 10
+		}
+	}
+
+	focus = {
+		id = TAR_pantheon_warning
+		icon = GFX_focus_generic_diplomacy
+		prerequisite = { 
+			focus = TAR_hold_the_light 
+			focus = TAR_tarics_shield
+		}
+		mutually_exclusive = {
+			focus = TAR_pantheon_threat
+		}
+		relative_position_id = TAR_hold_the_light
+
+		# Pantheon is right, this isn't the way...
+		# Pantheon may be right, but what options do we have?
+		# Pantheon has lost his goddamn mind... 
+		
+		# Words falling on Deaf Ears 
+		# Words falling on Deaf Ears by a dead man  - Special Event
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_diplomacy_efficiency = 15
+			reduce_war_support = 10
+		}
+	}
+
+	focus = {
+		id = TAR_pantheon_threat
+		icon = GFX_focus_generic_diplomacy
+		prerequisite = { 
+			focus = TAR_hold_the_light 
+		}
+		prerequisite = { 
+			focus = TAR_rakkor_crusade
+		}
+		mutually_exclusive = {
+			focus = TAR_pantheon_warning
+		}
+		# Idea Reduce Pantheons Influence
+
+		# Pantheon has forgotten the lins he has crossed... 
+		# Pantheon has failed single his duty he had...
+		# Pantheon has been corrupted by darkness...
+		# Pantheon has gone mad...
+
+		# Actions: 
+		# isolate pantheon 
+			# Expell Pantheon
+			# Pantheon is Sick
+			# Pantheon is Training
+
+		# slander pantheon ?
+		# trial pantheon
+		# Punishments:
+				# Exile pantheon
+				# Execute Pantheon 
+				# Trial by Combat
+
+		relative_position_id = TAR_hold_the_light
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_diplomacy_efficiency = 15
+			reduce_war_support = 10
+		}
+	}
+
+    focus = {
+        id = TAR_fall_of_pantheon
+        icon = GFX_focus_generic_militarism
+        # prerequisite = { focus = TAR_healers_of_targon }
+        relative_position_id = TAR_split_summits
+        #mutually_exclusive = { focus = TAR_strengthen_the_solari focus = TAR_strengthen_the_lunari }
+        x = 1
+        y = -1
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				OR = {
+                    has_completed_focus = TAR_pantheon_threat
+                    has_completed_focus = TAR_pantheon_lies
+                }
+			}
+		}
+
+        allow_branch = {
+            NOT = {
+                OR = {
+                    has_completed_focus = TAR_celestial_alliance
+                    has_completed_focus = TAR_path_of_mending
+                }
+            }
+        }
+        cost = 10
+        completion_reward = {
+            army_experience = 50
+        }
+    }
+
+    # Path of Nationalizing the Rakkor (Pantheon Path)
+    focus = {
+        id = TAR_rise_of_pantheon
+        icon = GFX_focus_generic_militarism
+        # prerequisite = { focus = TAR_healers_of_targon }
+        relative_position_id = TAR_split_summits
+        #mutually_exclusive = { focus = TAR_strengthen_the_solari focus = TAR_strengthen_the_lunari }
+        x = -1
+        y = -1
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				OR = {
+                    has_completed_focus = TAR_path_of_mending
+                    has_completed_focus = TAR_celestial_alliance
+                }
+			}
+		}
+        allow_branch = {
+            NOT = {
+                OR = {
+                    has_completed_focus = TAR_pantheon_threat
+                    has_completed_focus = TAR_pantheon_lies
+                }
+				
+				# AND = {
+					# 	HAS = {
+					# 		has_character = TAR_pantheon
+					# 	}
+							
+					# 	OR = {
+					# 		has_character_flag = Exiled
+					# 		has_character_flag = Prison 
+					# 	}
+					# } 
+            }
+        }
+		# allow_branch = {
+        #     NOT = {
+        #         OR = {
+        #             has_completed_focus = TAR_strengthen_the_solari
+        #             has_completed_focus = TAR_strengthen_the_lunari
+        #         }
+        #     }
+        # }
+        cost = 10
+        completion_reward = {
+            army_experience = 50
+        }
+    }
+
+	# The world aint a perfect place...
+	# and like wise aint we, but...
+	# The show must go on...
+	focus = {
+        id = TAR_split_summits
+        icon = GFX_focus_generic_military
+        prerequisite = { 
+			focus = TAR_rise_of_pantheon 
+			focus = TAR_fall_of_pantheon
+		}
+        relative_position_id = TAR_central_start_point
+        x = 16
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_military_factory = 2
+        }
+    }
+
+    focus = {
+        id = TAR_warriors_spirit
+        icon = GFX_focus_generic_military
+        prerequisite = { focus = TAR_split_summits }
+        relative_position_id = TAR_split_summits
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_military_factory = 2
+        }
+    }
+
+	
+	focus = {
+		id = TAR_rakkor_supremacy
+		icon = GFX_focus_generic_military_build_up
+		prerequisite = { focus = TAR_split_summits }
+		relative_position_id = TAR_split_summits
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			increase_military_support = 20
+			add_recruitment_factor = 10
+		}
+	}
+
+    focus = {
+        id = TAR_disciplined_rakkor
+        icon = GFX_focus_generic_military_doctrine
+        prerequisite = { focus = TAR_split_summits }
+        relative_position_id = TAR_split_summits
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            army_experience = 100
+        }
+    }
+#        ...                           ..                             .    
+#    .x888888hx    :             x .d88"                             @88>  
+#   d88888888888hxx         u.    5888R                  .u    .     %8P   
+#  8" ... `"*8888%`   ...ue888b   '888R         u      .d88B :@8c     .    
+# 1  "   ` .xnxx.     888R Y888r   888R      us888u.  ="8888f8888r  .@88u  
+# X X   .H8888888%:   888R I888>   888R   .@88 "8888"   4888>'88"  ''888E` 
+# X 'hn8888888*"   >  888R I888>   888R   9888  9888    4888> '      888E  
+# X: `*88888%`     !  888R I888>   888R   9888  9888    4888>        888E  
+# '8h.. ``     ..x8> u8888cJ888    888R   9888  9888   .d888L .+     888E  
+#  `88888888888888f   "*888*P"    .888B . 9888  9888   ^"8888*"      888&  
+#   '%8888888888*"      'Y"       ^*888%  "888*""888"     "Y"        R888" 
+#      ^"****""`                    "%     ^Y"   ^Y'                  ""   
+                                                                         
+                                                                         
+                                                                         
+	# Path of Solari Supremacy
+	focus = {
+		id = TAR_strengthen_the_solari
+		icon = GFX_focus_Targon_Crest_Solari #GFX_focus_generic_fascism
+		# prerequisite = { focus = TAR_central_start_point }
+		mutually_exclusive = { focus = TAR_path_of_mending focus = TAR_strengthen_the_lunari }
+		relative_position_id = TAR_central_start_point
+		x = -4
+		y = 0
+		cost = 10
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				OR = {
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+						has_completed_focus = TAR_strengthen_the_solari
+					}
+				}
+			}
+		}
+		
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = TAR_path_of_mending # JAP_strengthen_civilian_government
+						has_completed_focus = TAR_strengthen_the_lunari # JAP_support_the_kodoha_faction
+						# has_completed_focus = TAR_random_focus # JAP_the_unthinkable_option
+					}
+				}
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL } # Custom Filter For Solari
+
+		completion_reward = {
+			set_country_flag = selected_solari_path
+			add_stability = 0.05
+			hidden_effect = { mark_focus_tree_layout_dirty = yes }
+		}
+	}
+
+
+    focus = {
+        id = TAR_siding_with_the_rakkor
+        icon = GFX_focus_generic_military_build_up
+        prerequisite = { 
+			focus = TAR_strengthen_the_solari 
+			focus = TAR_path_of_mending
+		}
+        relative_position_id = TAR_strengthen_the_solari
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            army_experience = 50
+        }
+    }
+
+	focus = {
+		id = TAR_hold_the_light
+		icon = GFX_focus_generic_spirituality
+		prerequisite = { focus = TAR_siding_with_the_rakkor }
+		relative_position_id = TAR_siding_with_the_rakkor
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_political_power = 50
+			increase_rakkor_support = 10
+			reduce_tension = 5
+		}
+	}
+
+	focus = {
+		id = TAR_purify_the_mountains
+		icon = GFX_focus_generic_fascism
+		prerequisite = { focus = TAR_strengthen_the_solari }
+		relative_position_id = TAR_strengthen_the_solari
+		x = -4
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_building_construction = {
+				type = military_factory
+				level = 2
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.10
+			}
+		}
+	}
+
+
+    focus = {
+        id = TAR_enforce_solar_law
+        icon = GFX_focus_generic_law
+        prerequisite = { focus = TAR_strengthen_the_solari }
+        relative_position_id = TAR_strengthen_the_solari
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.10
+            add_resistance_suppression = 15
+        }
+    }
+
+    focus = {
+        id = TAR_rakkor_crusade
+        icon = GFX_focus_generic_military
+        prerequisite = { focus = TAR_enforce_solar_law }
+        relative_position_id = TAR_enforce_solar_law
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_recruitment_factor = 10
+            unlock_unit = "Rakkor Elite Division"
+        }
+    }
+
+    focus = {
+        id = TAR_leonas_dawn
+        icon = GFX_focus_generic_leader
+        prerequisite = { focus = TAR_rakkor_crusade }
+        relative_position_id = TAR_rakkor_crusade
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            army_experience = 50
+            unlock_leader = "Leona"
+        }
+    }
+
+    focus = {
+        id = TAR_crush_the_heretics
+        icon = GFX_focus_generic_civilwar
+        prerequisite = { 
+			focus = TAR_leonas_dawn 
+			focus = TAR_pantheon_threat
+		}
+        relative_position_id = TAR_leonas_dawn
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            trigger_civil_war = {
+                ideology = fascism
+                size = 0.35
+            }
+        }
+    }
+
+#       ...                                                               .    
+#   .zf"` `"tu                                                           @88>  
+#  x88      '8N.    x.    .        u.    u.                  .u    .     %8P   
+#  888k     d88&  .@88k  z88u    x@88k u@88c.       u      .d88B :@8c     .    
+#  8888N.  @888F ~"8888 ^8888   ^"8888""8888"    us888u.  ="8888f8888r  .@88u  
+#  `88888 9888%    8888  888R     8888  888R  .@88 "8888"   4888>'88"  ''888E` 
+#    %888 "88F     8888  888R     8888  888R  9888  9888    4888> '      888E  
+#     8"   "*h=~   8888  888R     8888  888R  9888  9888    4888>        888E  
+#   z8Weu          8888 ,888B .   8888  888R  9888  9888   .d888L .+     888E  
+#  ""88888i.   Z  "8888Y 8888"   "*88*" 8888" 9888  9888   ^"8888*"      888&  
+# "   "8888888*    `Y"   'YP       ""   'Y"   "888*""888"     "Y"        R888" 
+#       ^"**""                                 ^Y"   ^Y'                  ""   
+                                                                             
+                                                                             
+                                                                             
+                                 
+    # Path of Lunari Solidarity
+    focus = {
+		id = TAR_strengthen_the_lunari
+        icon = GFX_focus_SHU_TAR
+        # prerequisite = { focus = TAR_central_start_point }
+        mutually_exclusive = { focus = TAR_path_of_mending focus = TAR_strengthen_the_solari }
+        relative_position_id = TAR_central_start_point
+        x = 4
+		y = 0
+		cost = 10
+
+		allow_branch = {
+			NOT = {
+				OR = {
+                    has_completed_focus = TAR_strengthen_the_solari
+                    has_completed_focus = TAR_path_of_mending 
+                }
+            }
+        }
+
+        completion_reward = {
+			set_country_flag = selected_lunari_path
+            add_stability = 0.05
+            hidden_effect = { mark_focus_tree_layout_dirty = yes }
+        }
+    }
+    
+
+	focus = {
+		id = TAR_lunari_rakkor_alliance
+		icon = GFX_focus_generic_military
+		prerequisite = { 
+			focus = TAR_strengthen_the_lunari 
+			focus = TAR_path_of_mending
+		}
+		relative_position_id = TAR_strengthen_the_lunari
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			army_experience = 50
+			trigger = {
+				civil_war = {
+					ideology = communism
+					size = 0.35
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = TAR_embrace_the_eclipse
+		icon = GFX_focus_generic_ideology
+		prerequisite = { focus = TAR_lunari_rakkor_alliance }
+		relative_position_id = TAR_lunari_rakkor_alliance
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+	}
+
+	
+	focus = {
+		id = TAR_pantheon_lies
+		icon = GFX_focus_generic_diplomacy
+
+		prerequisite = { 
+			focus = TAR_embrace_the_eclipse 
+		}
+		prerequisite = { 
+			focus = TAR_gather_lunari_outcast
+		}
+		mutually_exclusive = {
+			focus = TAR_pantheon_demands
+		}
+		relative_position_id = TAR_embrace_the_eclipse
+		x = 1
+		y = 1
+
+		cost = 10
+		completion_reward = {
+			add_diplomacy_efficiency = 15
+			reduce_war_support = 10
+		}
+	}
+
+
+
+	# Path of Rebellion 
+	focus = {
+        id = TAR_into_the_shadows
+        icon = GFX_focus_generic_espionage
+        prerequisite = { 
+			focus = TAR_strengthen_the_lunari 
+		}
+        relative_position_id = TAR_strengthen_the_lunari
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_espionage_efficiency = 10
+            increase_resistance_growth = 5
+        }
+    }
+
+    focus = {
+        id = TAR_gather_lunari_outcast
+        icon = GFX_focus_generic_resistance
+        prerequisite = { focus = TAR_into_the_shadows }
+        relative_position_id = TAR_into_the_shadows
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            unlock_unit = "Lunari Guerrilla"
+            add_resistance_growth_bonus = 10
+        }
+    }
+
+    focus = {
+        id = TAR_aphelios_silent_assault
+        icon = GFX_focus_generic_military
+        prerequisite = { focus = TAR_gather_lunari_outcast }
+        relative_position_id = TAR_gather_lunari_outcast
+        x = 1
+        y = 1
+        cost = 10
+		mutually_exclusive = {
+			focus = TAR_aphelios_strike
+		}
+        completion_reward = {
+            army_experience = 50
+            add_sabotage_efficiency = 20
+        }
+    }
+
+	focus = {
+		id = TAR_endure_the_night
+		icon = GFX_focus_generic_war_propaganda
+		prerequisite = { focus = TAR_strengthen_the_lunari }
+        relative_position_id = TAR_into_the_shadows
+		x = 2
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_national_spirit = {
+				name = TAR_endure_the_night_spirit
+				picture = GFX_endure_night_icon
+				modifier = {
+					division_defense_on_core = 0.1
+					resistance_strength = 0.05
+					stability = 0.05
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = TAR_call_of_the_moon
+		icon = GFX_focus_generic_major_war
+		prerequisite = { focus = TAR_endure_the_night }
+        relative_position_id = TAR_endure_the_night
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			trigger_civil_war = {
+				ideology = communism
+				size = 0.35
+			}
+		}
+	}
+
+	focus = {
+		id = TAR_aphelios_strike
+		icon = GFX_focus_generic_espionage
+		prerequisite = { focus = TAR_call_of_the_moon }
+
+		mutually_exclusive = {
+			focus = TAR_aphelios_silent_assault
+		}
+
+        relative_position_id = TAR_call_of_the_moon
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_espionage_efficiency = 20
+			increase_sabotage_efficiency = 15
+		}
+	}
+
+	focus = {
+		id = TAR_midnight_retribution
+		icon = GFX_focus_generic_war_propaganda
+		prerequisite = { focus = TAR_aphelios_strike }
+		relative_position_id = TAR_aphelios_strike
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_army_experience = 50
+			increase_guerrilla_warfare_bonus = 10
+		}
+	}
+
+	# Start Civil War: Lunari   
+	focus = {
+        id = TAR_eclipse_war
+        icon = GFX_focus_generic_civilwar
+        prerequisite = { 
+			focus = TAR_aphelios_silent_assault
+			focus = TAR_aphelios_strike
+			focus = TAR_pantheon_lies 
+		}
+        relative_position_id = TAR_aphelios_silent_assault #TAR_embrace_the_eclipse
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            trigger_civil_war = {
+                ideology = communism
+                size = 0.35
+            }
+        }
+    }
+
+}

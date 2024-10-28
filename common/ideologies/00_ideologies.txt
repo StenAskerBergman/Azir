@@ -5,6 +5,7 @@ ideologies = {
 		types = {
 			#targon subfaction
 			solari = {
+				color = { 255 135 13}
 			}
 			#ursine subfaction
 			cultOfVoli = {
@@ -69,6 +70,14 @@ ideologies = {
 			#Shuriman subfaction
 			ascendedCouncil = {
 			}			
+			
+			# Diana Subfaction
+			lunari = {
+				color = { 165 118 211 }
+				# color = { 192 150 224 } 
+				# color = { 176 150 224 }  
+			}
+			
 			#A lot more in the future
 		}
 
@@ -122,6 +131,13 @@ ideologies = {
 			icathianVassel ={
 				
 			}
+
+			# Vanilla Targon Faction - Pantheon leader 
+			rakkor = {
+				color = {117 208 209}
+				# color = { 60 179 113 } # medium seagreen	#3CB371
+			}
+
 			#A lot more in the future
 		}
 
@@ -175,6 +191,10 @@ ideologies = {
 			}
 			#unknown subfaction
 			tribes = {
+			}
+			# 
+			celestials ={ 
+				color = { 201 185 40 }
 			}
 		}
 
@@ -244,6 +264,16 @@ ideologies = {
 			#ruination 
 			ruination = {
 				color = { 109 110 109 }
+			}
+
+			# Celestial Beings
+			celestials = {
+				color = { 76 110 184}
+			}
+
+			# Aurelions Subfaction
+			cosmic_dragon = {
+				color = { 76 110 184}
 			}
 		}
 

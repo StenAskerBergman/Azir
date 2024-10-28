@@ -376,5 +376,7 @@ spriteTypes = {
         name = "GFX_zaun_red_icon_category"
         texturefile = "gfx/interface/decisions/zaun_red_icon_category.dds"
     }
+
+
 }
 

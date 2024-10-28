@@ -372,7 +372,7 @@ spriteTypes = {
         }
 
         # AUR_chaotic_sea.dds shine version
-        SpriteType = {s
+        SpriteType = {
             name = "GFX_AUR_chaotic_sea_shine"
             texturefile = "gfx/interface/goals/AUR/AUR_chaotic_sea.dds"
             effectFile = "gfx/FX/buttonstate.lua"

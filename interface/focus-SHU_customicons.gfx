@@ -5,16 +5,16 @@ spriteTypes = {
 	##Icon For: Test
 	SpriteType = { 
 		name = "GFX_focus_test"
-		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+		texturefile = "gfx/interface/goals/SHU/focus_test.dds"
 	}
     
 	##Icon Shine For: Test
 	SpriteType = {
-		name = "GFX_focus_test_shine"
-		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+		name = "GFX_r56_goal_BEL_union_agreement_shine"
+		texturefile = "gfx/interface/goals/SHU/focus_test.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationmaskfile = "gfx/interface/goals/SHU/focus_test.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -27,7 +27,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationmaskfile = "gfx/interface/goals/SHU/focus_test.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -42,21 +42,21 @@ spriteTypes = {
 	}
 
 	## ! above will be missing always ! ##
-	
-	
-	##Icon For: Test
+
+
+	##Icon For: Targon Crest Old
 	SpriteType = { 
-		name = "GFX_focus_test"
-		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+		name = "GFX_focus_Targon_Crest_Old"
+		texturefile = "gfx/interface/goals/SHU/focus_Targon_Crest_Old.dds"
 	}
-    
-	##Icon Shine For: Test
+
+	##Icon Shine For: Targon Crest Old
 	SpriteType = {
-		name = "GFX_focus_test_shine"
-		texturefile = "gfx/interface/goals/VOI/focus_test.dds"
+		name = "GFX_r56_goal_BEL_union_agreement_shine"
+		texturefile = "gfx/interface/goals/SHU/focus_Targon_Crest_Old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationmaskfile = "gfx/interface/goals/SHU/focus_Targon_Crest_Old.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -69,7 +69,205 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VOI/focus_test.dds"
+			animationmaskfile = "gfx/interface/goals/SHU/focus_Targon_Crest_Old.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+
+	##Icon For: TAR icon
+	SpriteType = { 
+		name = "GFX_focus_TAR_icon"
+		texturefile = "gfx/interface/goals/SHU/focus_TAR_icon.dds"
+	}
+
+	##Icon Shine For: TAR icon
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_union_agreement_shine"
+		texturefile = "gfx/interface/goals/SHU/focus_TAR_icon.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/focus_TAR_icon.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/focus_TAR_icon.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+
+	##Icon For: SHU TAR deal
+	SpriteType = { 
+		name = "GFX_focus_SHU_TAR_deal"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_TAR_deal.dds"
+	}
+
+	##Icon Shine For: SHU TAR deal
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_union_agreement_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_TAR_deal.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_TAR_deal.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_TAR_deal.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: SHU RAK deal
+	SpriteType = { 
+		name = "GFX_focus_SHU_RAK_deal"
+		texturefile = "gfx/interface/goals/SHU/focus_SHU_RAK_deal.dds"
+	}
+
+	##Icon Shine For: SHU RAK deal
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_union_agreement_shine"
+		texturefile = "gfx/interface/goals/SHU/focus_SHU_RAK_deal.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/focus_SHU_RAK_deal.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/focus_SHU_RAK_deal.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	
+	##Icon For: SHU_IXT
+	SpriteType = { 
+		name = "GFX_focus_SHU_IXT"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT.dds"
+	}
+    
+	##Icon Shine For: SHU_IXT
+	SpriteType = {
+		name = "GFX_focus_SHU_IXT_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	##Icon For: SHU_IXT_deal
+	SpriteType = { 
+		name = "GFX_focus_SHU_IXT_deal"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT_deal.dds"
+	}
+    
+	##Icon Shine For: SHU_IXT_deal
+	SpriteType = {
+		name = "GFX_focus_SHU_IXT_deal_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT_deal.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT_deal.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_IXT_deal.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -287,7 +485,7 @@ spriteTypes = {
 
 	##Icon For: 
 	SpriteType = {
-		name = "GFX_Goal_BUL_Brannik"
+		name = "Goal_BUL_Brannik"
 		texturefile = "gfx/interface/goals/SHU/Goal_BUL_Brannik.dds"
 	}
 
@@ -305,19 +503,19 @@ spriteTypes = {
 
 	##Icon For: 
 	SpriteType = {
-		name = "GFX_r56_goal_AUS_demand_slovenia"
+		name = "r56_goal_AUS_demand_slovenia"
 		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_demand_slovenia.dds"
 	}
 
 	##Icon For: 
 	SpriteType = {
-		name = "GFX_r56_goal_AUS_demand_sudtirol"
+		name = "r56_goal_AUS_demand_sudtirol"
 		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_demand_sudtirol.dds"
 	}
 
 	##Icon For: 
 	SpriteType = {
-		name = "GFX_r56_goal_AUS_demand_trieste"
+		name = "r56_goal_AUS_demand_trieste"
 		texturefile = "gfx/interface/goals/SHU/r56_goal_AUS_demand_trieste.dds"
 	}
 
@@ -398,10 +596,43 @@ spriteTypes = {
 		name = "GFX_r56_goal_BEL_tungsten"
 		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_tungsten.dds"
 	}
+	
+	##Icon Shine For: r56_goal_BEL_union_agreement
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_union_agreement_shine"
+		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_union_agreement.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_BEL_union_agreement.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/r56_goal_BEL_union_agreement.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 
 	##Icon For: 
 	SpriteType = {
-		name = "GFX_r56_goal_BEL_union_agreement"
+		name = "r56_goal_BEL_union_agreement"
 		texturefile = "gfx/interface/goals/SHU/r56_goal_BEL_union_agreement.dds"
 	}
 

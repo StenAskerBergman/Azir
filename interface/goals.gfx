@@ -5028,6 +5028,10 @@ spriteTypes = {
 		name = "GFX_focus_NOR_weathering_the_storm_to_come"
 		texturefile = "gfx/interface/goals/focus_NOR_weathering_the_storm_to_come.dds"
 	}
+	SpriteType ={
+		name = "SHU_restore_solari"
+		texturefile = "gfx/interface/goals/SHU/SHU_restore_solari.dds"
+	}
 	SpriteType = { 
 		name = "GFX_focus_generic_workers_and_farmers_rise"
 		texturefile = "gfx/interface/goals/focus_generic_workers_and_farmers_rise.dds"

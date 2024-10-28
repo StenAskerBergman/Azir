@@ -36,35 +36,7 @@ spriteTypes = {
 
 
 	##Icon For: Void Related 
-		
-	# Ideas 
-	# When using name its required to not say GFX_idea_ for some reason / - trust me bro, it works ¯\_(ツ)_/¯ 
-
-		# abandonment 
-		SpriteType = {
-			name = "GFX_idea_abandonment"
-			texturefile = "gfx/interface/ideas/void-ideas/abandonment.dds"
-		}
-		
-		# abandonment 
-		SpriteType = {
-			name = "GFX_idea_abandonment"
-			texturefile = "gfx/interface/ideas/void-ideas/abandonment.dds"
-		}
-		
-		# Active Void Threats
-		SpriteType = {
-			name = "GFX_idea_active_void_threats"
-			texturefile = "gfx/interface/ideas/void-ideas/active_void_threat.dds"
-		}
-
-		# Void Threats
-		SpriteType = {
-			name = "GFX_idea_void_threats"
-			texturefile = "gfx/interface/ideas/void-ideas/void_threats.dds"
-		}
-
-
+	
 	# focus
 
 		# Expand the horde # ! TODO: Add the related _Shine code here

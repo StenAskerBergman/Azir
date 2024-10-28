@@ -691,7 +691,7 @@ SHU_gold_reserve_desc: "The this much Gold about to enter into circulation, will
 # "Price Index"  "Stock exchange" "Gold Exchange"
 
 SHU_gold_trade: "Price Index"
-SHU_gold_trade_desc: "The deemand for gold is at all time high, to resolve soaring gold prices we need to take precautionary step and create gold order system let us trade our future gold at a competative gold price."
+SHU_gold_trade_desc: "The demand for gold is at all time high, to resolve soaring gold prices we need to take precautionary step and create gold order system let us trade our future gold at a competative gold price."
 
 SHU_safermines: "Safer Mines!"
 SHU_safermines_desc: "With Taliyah's on our side we can afford to take more risk!"
@@ -835,6 +835,17 @@ SHU_nazumah_investments_desc: "Focusing on investments in Nazumah to boost local
 
 SHU_nazumah_self_govern: "Self-Management"
 SHU_nazumah_self_govern_desc: "Lets 'Let' the Nazumahs controll their own affairs it will improving their internal affairs and resource management, and we won't waste our time on it."
+
+SHU_restore_solari: "Restore Solari Rule"
+SHU_restore_solari_desc: "It's high time we restore the solari rulers of targon to aid us in the coming storm!"
+
+SHU_restore_lunari: "Secure Lunari Future"
+SHU_restore_lunaris_desc: "It's high time we secure the lunari people's future in targon, to aid us in the coming storm!"
+
+SHU_moonstone: "Moonstone"
+SHU_moonstone_desc: "Nami, a Tidecaller from the Marai, seeks the legendary Moonstone to protect her people. Her journey brings her to Shurima, where she believes the ancient power of the desert may aid her quest. Meanwhile, the celestial connection between the Moonstone and Diana, the Scorn of the Moon, could hold the key to success. By helping Nami, Shurima may secure a valuable alliance with the Marai and perhaps even gain insight into the mysteries of the moon and stars."
+
+big_sun: "Big Sun"
 
 SHU_annex_nazumah: "Annex Nazumah"
 SHU_annex_nazumah_desc: "Bring the city-state of Nazumah under Shuriman control. This will secure our southern border and provide a valuable trade hub."

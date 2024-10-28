@@ -1568,7 +1568,7 @@ focus_tree = {
 	# Help Leona retake Targonia if Lunari are the Rulers
 	focus = {
 		id = SHU_restore_solari
-		icon = GFX_focus_generic_workers_and_farmers_rise
+		icon = SHU_restore_solari
 		x=0
 		y=1
 		relative_position_id = SHU_work_camps
@@ -1842,7 +1842,7 @@ focus_tree = {
 	# Targon AB Line
 	focus = {
 		id = SHU_puppet_or_ally_targon
-		icon = GFX_focus_SMB_a_land_of_mountains
+		icon =GFX_focus_SHU_TAR_deal # GFX_focus_SMB_a_land_of_mountains
 		x=2
 		y=1
 		cost = 5
@@ -2114,7 +2114,7 @@ focus_tree = {
 	# Shuriman Pact
 	focus = {
 		id = SHU_shuriman_pact_ixtal
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SHU_IXT_deal
 		x=0
 		y=1
 		relative_position_id = SHU_puppet_or_ally_ixtal

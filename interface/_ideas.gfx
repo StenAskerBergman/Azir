@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	
+	# Ideas 
+	# When using name its required to not say GFX_idea_ for some reason / - trust me bro, it works ¯\_(ツ)_/¯ 
+
+		### ECONOMY LAWS
+		# Empty Desert
+		spriteType = {
+			name = "GFX_idea_empty_desert"
+			texturefile = "gfx/interface/ideas/empty_desert.dds"
+		}
+
+		# Empty Desert
+		spriteType = {
+			name = "GFX_idea_empty_desert"
+			texturefile = "gfx/interface/ideas/shurima-ideas/empty_desert.dds"
+		}
+							
+		# abandonment 
+		SpriteType = {
+			name = "GFX_idea_abandonment"
+			texturefile = "gfx/interface/ideas/abandonment.dds"
+		}
+
+		# abandonment 
+		SpriteType = {
+			name = "GFX_idea_abandonment"
+			texturefile = "gfx/interface/ideas/void-ideas/abandonment.dds"
+		}
+		
+		# Active Void Threats
+		SpriteType = {
+			name = "GFX_idea_active_void_threats"
+			texturefile = "gfx/interface/ideas/void-ideas/active_void_threat.dds"
+		}
+
+		# Void Threats
+		SpriteType = {
+			name = "GFX_idea_void_threats"
+			texturefile = "gfx/interface/ideas/void-ideas/void_threats.dds"
+		}
+
+
+}

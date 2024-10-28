@@ -1,0 +1,332 @@
+### SOME NOTES
+# Filling all "allowed" with TAG (making that decision 
+# only available for country you want) will reduce lag
+
+
+# START - BOP CAT below!
+TAR_balance_of_power_category = {
+
+    ### TARGON DECISION CATEGORY
+    # Decisions to influence the balance of power between Solari and Lunari
+
+    ### SOLARI SINGLE USE INFLUENCE DECISION
+    TAR_influence_solari = {
+        icon = generic_decision
+        allowed = {
+            has_government = fascism  # Example: Solari aligned with fascism
+        }
+        visible = {
+            always = yes
+        }
+        available = {
+            is_power_balance_side_active = {
+                id = TAR_balance_of_power
+                side = TAR_solari_side
+            }
+        }
+        decision_trigger = {
+            is_power_balance_active = {
+                id = TAR_balance_of_power
+            }
+        }
+        fire_only_once = no
+        days_remove = 60
+        days_re_enable = 30
+        cost = 50
+    
+        complete_effect = {
+            add_power_balance_value = {
+                id = TAR_balance_of_power
+                value = -0.05  # Swings power 5% toward Solari
+                tooltip_side = TAR_solari_side
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    ### LUNARI SINGLE USE INFLUENCE DECISION
+    TAR_influence_lunari = {
+        icon = generic_decision
+        allowed = {
+            has_government = democracy  # Example: Lunari aligned with democracy
+        }
+        visible = {
+            always = yes
+        }
+        available = {
+            is_power_balance_side_active = {
+                id = TAR_balance_of_power
+                side = TAR_lunari_side
+            }
+        }
+        decision_trigger = {
+            is_power_balance_active = {
+                id = TAR_balance_of_power
+            }
+        }
+        fire_only_once = no
+        days_remove = 60
+        days_re_enable = 30
+        cost = 50
+
+        complete_effect = {
+            add_power_balance_value = {
+                id = TAR_balance_of_power
+                value = 0.05  # Swings power 5% toward Lunari
+                tooltip_side = TAR_lunari_side
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    ### SOLARI DAILY INFLUENCE DECISION
+    TAR_daily_influence_solari = {
+        icon = generic_decision
+        allowed = {
+            has_government = fascism
+        }
+        visible = {
+            always = yes
+        }
+        available = {
+            is_power_balance_side_active = {
+                id = TAR_balance_of_power
+                side = TAR_solari_side
+            }
+        }
+        decision_trigger = {
+            is_power_balance_active = {
+                id = TAR_balance_of_power
+            }
+        }
+        fire_only_once = no
+        days_remove = 60
+        days_re_enable = 30
+        cost = 50
+
+        complete_effect = {
+
+			# Kinda Work but induces no changes
+            add_power_balance_value = {
+				power_balance_daily_change = {
+					id = TAR_balance_of_power
+					side = TAR_solari_side
+					power_balance_daily = -0.01  # Adjust value for daily influence toward Solari
+					
+				}
+            }
+
+			# Doesn't Work
+			# add_power_balance_modifier = {
+			# 	id = TAR_balance_of_power    # The ID of the balance of power
+			# 	side = TAR_solari_side
+			# 	power_balance_daily = -0.01 # The modifier to add
+			# }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    ### LUNARI DAILY INFLUENCE DECISION
+    TAR_daily_influence_lunari = {
+        icon = generic_decision
+        allowed = {
+            has_government = democracy
+        }
+        visible = {
+            always = yes
+        }
+        available = {
+            is_power_balance_side_active = {
+                id = TAR_balance_of_power
+                side = TAR_lunari_side
+            }
+        }
+        decision_trigger = {
+            is_power_balance_active = {
+                id = TAR_balance_of_power
+            }
+        }
+        fire_only_once = no
+        days_remove = 60
+        days_re_enable = 30
+        cost = 50
+
+        # Effect that continuously adds daily influence - Doesn't WORK!!!
+        modifier = {
+            power_balance_daily_change = {
+                id = TAR_balance_of_power
+                side = TAR_lunari_side
+                value = 0.01  # Adjust value for daily influence toward Lunari
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+} # END - BOP CATEGORY ABOVE!
+
+
+
+## REAL CATEGORIES BELOW!
+TAR_main_cat = {
+
+	### TARGONS DECISION
+ 	# Decisions to influence the balance of power between Solari and Lunari
+
+	### SOLARI INFLUENCE DECISION
+	TAR_influence_solari = {
+
+		icon = generic_decision
+
+		allowed = {
+			has_government = theocracy  # Example: Solari aligned with fascism
+		}
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			is_power_balance_side_active = {
+				id = TAR_balance_of_power
+				side = TAR_solari_side
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+			balance_of_power_swing = {
+				id = TAR_balance_of_power
+				swing = -0.05  # Swings power 5% toward Solari
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### LUNARI INFLUENCE DECISION
+	TAR_influence_lunari = {
+
+		icon = generic_decision
+
+		allowed = {
+			has_government = oligarchy  # Example: Lunari aligned with democracy
+		}
+
+		visible = {
+			always = yes
+		}
+
+		available = { # doesn't work
+			is_power_balance_side_active = {
+				id = TAR_balance_of_power
+				side = TAR_lunari_side
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+			balance_of_power_swing = {
+				id = TAR_balance_of_power
+				swing = 0.05  # Swings power 5% toward Lunari
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	### EXEMPLARY DECISION
+	
+	# AFK_EXMP_selectable_dec = {
+
+	# 	icon = generic_decision
+
+	# 	allowed = {
+			
+	# 	}
+		
+	# 	visible = {
+			
+	# 	}
+		
+	# 	available = {
+			
+	# 	}
+
+	# 	fire_only_once = yes
+
+	# 	cost = 25
+
+	# 	complete_effect = {
+			
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	
+	# AFK_EXMP_takestime_dec = {
+
+	# 	icon = generic_decision
+
+	# 	allowed = {
+			
+	# 	}
+		
+	# 	visible = {
+			
+	# 	}
+		
+	# 	available = {
+			
+	# 	}
+	
+	# 	fire_only_once = no
+	# 	days_remove = 120
+	# 	days_re_enable = 0
+		
+	# 	cost = 25
+
+	# 	complete_effect = {
+			
+	# 	}
+
+	# 	modifier = {
+			
+	# 	}
+
+	# 	remove_effect = {
+			
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+}

@@ -1,0 +1,119 @@
+﻿l_english:
+
+# Targon
+ TAR_fascism_party: "Aspect Ascendancy"
+ TAR_fascism_party_long: "The Ascendancy of the Aspects"
+
+ TAR_neutrality_party: "Celestial Guardians"
+ TAR_neutrality_party_long: "Celestial Guardians of Targon"
+
+ TAR_communism_party: "Vastayan Nomads"
+ TAR_communism_party_long: "Vastayan of Targon"
+
+ # Solari
+ TAR_theocracy_party: "§OSolari§!"
+ TAR_theocracy_party_long: "The Solari Order"
+
+ # Lunari
+ TAR_oligarchy_party: "§1Lunari§!"
+ TAR_oligarchy_party_long: "The Lunari Followers of the Moon"
+
+ # Rakkor
+ TAR_absolutists_party: "§6Rakkor§!"
+ TAR_absolutists_party_long: "The Rakkor Tribes"
+
+ # TAR_mages_party: "The Lunari"
+ # TAR_mages_party_long: "The Lunari Sect"
+
+# Shurima
+ SHU_theocracy_party: "The Ascended"
+ SHU_theocracy_party_long: "The Ascended Council"
+ SHU_oligarchy_party: "The Chem Barons"
+ SHU_oligarchy_party_long: "Council of Chem Barons"
+ SHU_absolutists_party: "Shuriman Emperor"
+ SHU_absolutists_party_long: "Empire of Shurima"
+ SHU_fascism_party: "Imperial Sand Legion"
+ SHU_fascism_party_long: "Shurima’s Sand Legion"
+ SHU_neutrality_party: "The Nomads"
+ SHU_neutrality_party_long: "Nomads of the Shuriman Desert"
+ SHU_communism_party: "The Unshackled"
+ SHU_communism_party_long: "The Unshackled Army"
+
+# Xerath’s Order
+ XER_theocracy_party: "Arcanum"
+ XER_theocracy_party_long: "Xerath’s Arcanum Order"
+ XER_oligarchy_party: "Mage Revolutionaries"
+ XER_oligarchy_party_long: "Mage Revolutionaries of the Arcanum"
+ XER_absolutists_party: "Arcane Supremacy"
+ XER_absolutists_party_long: "The Arcane Supremacy of Xerath"
+ XER_fascism_party: "Renektons Enforcers"
+ XER_fascism_party_long: "Enforcers of the Renektons Order"
+ XER_neutrality_party: "Arcanum Guardians"
+ XER_neutrality_party_long: "Guardians of the Arcanum"
+ XER_communism_party: "Revolutionary Arcanists"
+ XER_communism_party_long: "Revolutionary Arcanists of Xerath"
+ XER_mages_party: "Arcanum"
+ XER_mages_party_long: "Xerath's Arcane Order"
+
+# Void / Icathia
+ VOI_theocracy_party: "The Voidborn"
+ VOI_theocracy_party_long: "The Voidborn Ascendancy"
+ VOI_oligarchy_party: "Void Cultists"
+ VOI_oligarchy_party_long: "The Void Cultists of Icathia"
+ VOI_absolutists_party: "Watchers"
+ VOI_absolutists_party_long: "Watchers of the Void"
+ VOI_fascism_party: "Void Creatures"
+ VOI_fascism_party_long: "Creatures of the Void"
+ VOI_neutrality_party: "Voidwalkers"
+ VOI_neutrality_party_long: "Voidwalkers of Icathia"
+ VOI_communism_party: "Void Reformation"
+ VOI_communism_party_long: "Void Reformation Council"
+
+# Ixtal
+ IXT_theocracy_party: "The Axiomata"
+ IXT_theocracy_party_long: "The Axiomata Order"
+ IXT_oligarchy_party: "Yuntal Order"
+ IXT_oligarchy_party_long: "Yuntal Order of Ixtal"
+ IXT_absolutists_party: "Elemental Council"
+ IXT_absolutists_party_long: "The Elemental Council of Ixtal"
+ IXT_fascism_party: "Ixtals Guardians"
+ IXT_fascism_party_long: "Guardians of the Ixtal"
+ IXT_neutrality_party: "Elementalists"
+ IXT_neutrality_party_long: "The Elementalists of Ixtal"
+ IXT_communism_party: "Elemental Reformation"
+ IXT_communism_party_long: "Elemental Reformation Front"
+
+# Demacia
+ DEM_theocracy_party: "The Illuminators"
+ DEM_theocracy_party_long: "The Illuminators of Demacia"
+ DEM_oligarchy_party: "Royal Syndicate"
+ DEM_oligarchy_party_long: "Demacian Royal Syndicate"
+ DEM_absolutists_party: "Demacian Royal Family"
+ DEM_absolutists_party_long: "The Royal Family of Demacia"
+ DEM_fascism_party: "Demacian Vanguard"
+ DEM_fascism_party_long: "Demacian Vanguard Army"
+ DEM_neutrality_party: "The Elders"
+ DEM_neutrality_party_long: "Demacian Council of Elders"
+ DEM_communism_party: "Revolutionary Guards"
+ DEM_communism_party_long: "Demacian Revolutionary Guards"
+ DEM_royalist_party: "Revolutionary Guards"
+ DEM_royalist_party_long: "Demacian Revolutionary Guards"
+
+# Other Potential Countries (Based on your reference)
+ WRL_theocracy_party: "Warlord Tribes"
+ WRL_theocracy_party_long: "Tribes of the Warlords"
+ NAS_theocracy_party: "Nazuma Elders"
+ NAS_theocracy_party_long: "Nazuma Council of Elders"
+
+# Raiders
+ GES_fascism_party: "Eastern Sai Nomads"
+ GES_fascism_party_long: "Nomads of the Eastern Sai"
+ GWS_fascism_party: "Western Sai Tribe"
+ GWS_fascism_party_long: "The Weastern Sai Tribes"
+
+
+# One Day... One day...  Doesn't work :(
+ # GES_fascism: "Raiders" 
+ # GWS_fascism: "Raiders" 
+ 
+ 

@@ -1,0 +1,102 @@
+spriteTypes = {
+
+    # Leona Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_leona_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_leona_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_leona_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_leona_small.dds"
+    }
+
+    # Diana Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_diana_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_diana_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_diana_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_diana_small.dds"
+    }
+
+    # Pantheon Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_pantheon_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_pantheon_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_pantheon_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_pantheon_small.dds"
+    }
+
+    # Aurelion Sol Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_aurelion_sol_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_aurelion_sol_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_aurelion_sol_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_aurelion_sol_small.dds"
+    }
+
+    # Aphelios Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_aphelios_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_aphelios_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_aphelios_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_aphelios_small.dds"
+    }
+
+    # Alune Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_alune_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_alune_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_alune_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_alune_small.dds"
+    }
+
+    # Taric Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_taric_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_taric_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_taric_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_taric_small.dds"
+    }
+
+    # Kayle Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_kayle_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_kayle_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_kayle_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_kayle_small.dds"
+    }
+
+    # Morgana Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_morgana_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_morgana_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_morgana_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_morgana_small.dds"
+    }
+
+    # Soraka Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_soraka_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_soraka_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_tar_soraka_small"
+        texturefile = "gfx/leaders/tar/portrait_tar_soraka_small.dds"
+    }
+}

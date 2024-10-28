@@ -100,6 +100,23 @@ bookmarks = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
+				
+		"TAR"={
+			history = TAR_990_DESC
+			ideology = solari #theocracy
+			ideas = {
+				# National Spirits
+				# Shurima_broken
+				# Shuriman_shame
+				# Lawless_slavery
+				# The_great_fall
+			}
+			# focuses = {}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
 		
 		"---"={
 			history = "Unknown... "  # "OTHER_BLITZKRIEG_DESC"

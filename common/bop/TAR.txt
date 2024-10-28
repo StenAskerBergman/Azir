@@ -1,0 +1,211 @@
+
+
+# Balance of Power between Solari and Lunari in Targon
+TAR_balance_of_power = {
+    initial_value = 0.0
+    left_side = TAR_solari_side   # Solari represents one side of the balance
+    right_side = TAR_lunari_side  # Lunari represents the other side of the balance
+    decision_category = TAR_balance_of_power_category  # Category for decisions affecting this balance
+
+    ### Neutral (Balanced) Range
+    range = {
+        id = TAR_neutral_range
+        min = -0.1
+        max = 0.1
+        modifier = {
+            stability_factor = 0.05
+            war_support = 0.02
+        }
+        on_activate = {
+            # Effect when balance is in the neutral zone
+            set_power_balance_gfx = {
+                id = TAR_balance_of_power
+                side = TAR_solari_side
+                icon = GFX_bop_TAR_solari_bad_side
+            }
+            
+            set_power_balance_gfx = {
+                id = TAR_balance_of_power
+                side = TAR_lunari_side
+                icon = GFX_bop_TAR_lunari_bad_side
+            }
+        }
+        on_deactivate = {
+            # Effect when balance leaves the neutral zone
+            set_power_balance_gfx = {
+                id = TAR_balance_of_power
+                side = TAR_solari_side
+                gfx = GFX_bop_TAR_solari_bad_side
+            }
+            
+            set_power_balance_gfx = {
+                id = TAR_balance_of_power
+                side = TAR_lunari_side
+                gfx = GFX_bop_TAR_lunari_bad_side
+            }
+        }
+    }
+
+    ### Solari Side
+    side = {
+        id = TAR_solari_side
+        icon = GFX_bop_TAR_solari_bad_side
+        range = {
+            id = TAR_solari_weak_influence
+            min = -0.4
+            max = -0.1
+            modifier = {
+                stability_factor = 0.03
+                production_speed_arms_factory_factor = 0.05
+                research_speed_factor = -0.02
+            }
+            on_activate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_solari_side
+                    gfx = GFX_bop_TAR_solari_bad_side
+                }
+            }
+            on_deactivate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_solari_side
+                    gfx = GFX_bop_TAR_solari_bad_side
+                }
+            }
+        }
+
+        range = {
+            id = TAR_solari_medium_influence
+            min = -0.7
+            max = -0.4
+            modifier = {
+                stability_factor = 0.05
+                war_support = 0.05
+                production_speed_arms_factory_factor = 0.1
+                research_speed_factor = -0.05
+            }
+            on_activate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_solari_side
+                    gfx = GFX_bop_TAR_solari_improved_side
+                }
+            }
+            on_deactivate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_solari_side
+                    gfx = GFX_bop_TAR_solari_bad_side
+                }
+            }
+        }
+
+        range = {
+            id = TAR_solari_strong_influence
+            min = -1
+            max = -0.7
+            modifier = {
+                stability_factor = 0.1
+                war_support = 0.1
+                production_speed_arms_factory_factor = 0.15
+                research_speed_factor = -0.1
+            }
+            on_activate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_solari_side
+                    gfx = GFX_bop_TAR_solari_empowered_side
+                }
+            }
+            on_deactivate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_solari_side
+                    gfx = GFX_bop_TAR_solari_improved_side
+                }
+            }
+        }
+    }
+
+    ### Lunari Side
+    side = {
+        id = TAR_lunari_side
+        icon = GFX_bop_TAR_lunari_bad_side
+        
+        range = {
+            id = TAR_lunari_weak_influence
+            min = 0.1
+            max = 0.4
+            modifier = {
+                stability_factor = 0.03
+                research_speed_factor = 0.05
+                war_support = -0.02
+            }
+            on_activate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_lunari_side
+                    gfx = GFX_bop_TAR_lunari_bad_side
+                }
+            }
+            on_deactivate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_lunari_side
+                    gfx = GFX_bop_TAR_lunari_bad_side
+                }
+            }
+        }
+
+        range = {
+            id = TAR_lunari_medium_influence
+            min = 0.4
+            max = 0.7
+            modifier = {
+                stability_factor = 0.05
+                research_speed_factor = 0.1
+                war_support = -0.05
+            }
+            on_activate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_lunari_side
+                    gfx = GFX_bop_TAR_lunari_improved_side
+                }
+            }
+            on_deactivate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_lunari_side
+                    gfx = GFX_bop_TAR_lunari_bad_side
+                }
+            }
+        }
+
+        range = {
+            id = TAR_lunari_strong_influence
+            min = 0.7
+            max = 1
+            modifier = {
+                stability_factor = 0.1
+                research_speed_factor = 0.15
+                war_support = -0.1
+            }
+            on_activate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_lunari_side
+                    gfx = GFX_bop_TAR_lunari_empowered_side
+                }
+            }
+            on_deactivate = {
+                set_power_balance_gfx = {
+                    id = TAR_balance_of_power
+                    side = TAR_lunari_side
+                    gfx = GFX_bop_TAR_lunari_improved_side
+                }
+            }
+        }
+    }
+}

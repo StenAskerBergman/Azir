@@ -1,295 +1,295 @@
 ﻿l_english:
- VICTORY_POINTS_5381:0 "Helia" # State 2 
- VICTORY_POINTS_2184:0 "Shepard's Graveyard" #State 1
- VICTORY_POINTS_9025:0 "Maoki's Grove" #State 3
- VICTORY_POINTS_9258:0 "Abandoned Outpost" #State 4
- VICTORY_POINTS_9483:0 "Ruined Villa" #State 5
- VICTORY_POINTS_9088:0 "Harbor of Suffering" #State 7
- VICTORY_POINTS_5672:0 "Temple of the Akana" #State 8
- VICTORY_POINTS_3257:0 "Spirit's Refuge" #State 9
- VICTORY_POINTS_9344:0 "Shadowfall" #State 10
- VICTORY_POINTS_8415:0 "Bilgewater Harbor" #State 11
- VICTORY_POINTS_3702:0 "Hearth of Nagakabouros" #State 12
- VICTORY_POINTS_8364:0 "Smuggler's Den" #State 13
- VICTORY_POINTS_8374:0 "Sharkfin Cove" #State 14
- VICTORY_POINTS_1039:0 "Port Plunder" #State 15
- VICTORY_POINTS_8250:0 "Pirate's Outpost" #State 16
- VICTORY_POINTS_2982:0 "Saltwater Row" #State 17
- VICTORY_POINTS_8273:0 "Slaughter Docks" #State 18
- VICTORY_POINTS_8334:0 "Ripper Harbor" #State 19
- VICTORY_POINTS_8296:0 "Mariner's Mark" #State 20
- VICTORY_POINTS_4413:0 "Serpentine Villas" #State 21
- VICTORY_POINTS_4114:0 "Serpent Harbor" #State 22
- VICTORY_POINTS_8363:0 "Mudtown" #State 23
- VICTORY_POINTS_9428:0 "City of Desolation" #State 24
- VICTORY_POINTS_38:0 "Killash Village" #State 25
- VICTORY_POINTS_4152:0 "Zyr" #State 26
- VICTORY_POINTS_3585:0 "Jungle's Edge" #State 27
- VICTORY_POINTS_4385:0 "Radiant Ridge" #State 28
- VICTORY_POINTS_5112:0 "Verdant City" #State 29
- VICTORY_POINTS_3629:0 "Hearth of the Killash" #State 30
- VICTORY_POINTS_8241:0 "Kumangra" #State 31
- VICTORY_POINTS_5392:0 "Shimmering Docks" #State 32
- VICTORY_POINTS_5700:0 "The Glowing Falls" #State 34
- VICTORY_POINTS_4753:0 "Ixaocan" #State 35
- VICTORY_POINTS_9365:0 "Bay of Amor" #State 36
- VICTORY_POINTS_5350:0 "Tengla" #State 37
- VICTORY_POINTS_8740:0 "Harelport" #State 38
- VICTORY_POINTS_8665:0 "Hunter's Retreat" #State 40
- VICTORY_POINTS_5185:0 "Paretha" #State 41
- VICTORY_POINTS_9050:0 "Dragon's Lair" #State 42
- VICTORY_POINTS_9279:0 "Ixtali Harbor" #State 43
- VICTORY_POINTS_4605:0 "Killashi Point" #State 44
- VICTORY_POINTS_8892:0 "Elemental Sanctuary" #State 45
- VICTORY_POINTS_1951:0 "Western Outpost" #State 46
- VICTORY_POINTS_9309:0 "Arbor" #State 47
- VICTORY_POINTS_8239:0 "Crystal Quarry" #State 48
- VICTORY_POINTS_8199:0 "The Last Drop" #State 49
- VICTORY_POINTS_8189:0 "Chem Baron Tower" #State 50
- VICTORY_POINTS_8173:0 "University of Piltover" #State 51
- VICTORY_POINTS_4310:0 "Bridge of Progress" #State 52
- VICTORY_POINTS_2692:0 "Stillwater" #State 53
- VICTORY_POINTS_8154:0 "Enforcer's Grounds" #State 54
- VICTORY_POINTS_8203:0 "Chem Mines" #State 55
- VICTORY_POINTS_8018:0 "Sudar" #State 56
- VICTORY_POINTS_7679:0 "Temple of Pallas" #State 57
- VICTORY_POINTS_3375:0 "Ghetu" #State 58
- VICTORY_POINTS_7806:0 "Galrin Meadows" #State 59
- VICTORY_POINTS_4031:0 "Kashuri" #State 60
- VICTORY_POINTS_2208:0 "Zhyunia" #State 62
- VICTORY_POINTS_3774:0 "Raikkon" #State 63
- VICTORY_POINTS_4408:0 "Tuula" #State 64
- VICTORY_POINTS_7123:0 "Epool" #State 65
- VICTORY_POINTS_6860:0 "Tevasa" #State 66
- VICTORY_POINTS_3531:0 "Wuju" #State 67
- VICTORY_POINTS_4732:0 "Bahrl Encampment" #State 68
- VICTORY_POINTS_3631:0 "Fae'lor" #State 69
- VICTORY_POINTS_7103:0 "Westward Harbor" #State 70
- VICTORY_POINTS_6036:0 "Hirana Monastery" #State 71
- VICTORY_POINTS_5999:0 "Ralin Garden" #State 72
- VICTORY_POINTS_4348:0 "Lotus Glade" #State 73
- VICTORY_POINTS_5098:0 "Qaelin Temple" #State 75
- VICTORY_POINTS_6441:0 "Moonlit Camp" #State 76
- VICTORY_POINTS_6671:0 "Vlonqo" #State 77
- VICTORY_POINTS_6962:0 "Silent Pass" #State 78
- VICTORY_POINTS_3330:0 "Jade Brook" #State 79
- VICTORY_POINTS_5991:0 "Puboe" #State 80
- VICTORY_POINTS_5053:0 "Ionia's Peak" #State 81
- VICTORY_POINTS_6678:0 "Guardian's Pull" #State 83
- VICTORY_POINTS_494:0 "Ethereal Glade" #State 84
- VICTORY_POINTS_5247:0 "The Placidium" #State 85
- VICTORY_POINTS_6267:0 "Kinkou Monastery" #State 87
- VICTORY_POINTS_1919:0 "Radiant Temple" #State 88
- VICTORY_POINTS_5293:0 "Weh'le" #State 89
- VICTORY_POINTS_6680:0 "Whispering Gardens" #State 90
- VICTORY_POINTS_2883:0 "Void Rupture" #State 91
- VICTORY_POINTS_9805:0 "Icathia's Point" #State 92
- VICTORY_POINTS_3135:0 "Lost City of Icathia" #State 93
- VICTORY_POINTS_3550:0 "The Void's Vale" #State 94
- VICTORY_POINTS_9757:0 "Time-Stopped Tower" #State 95
- VICTORY_POINTS_3084:0 "Abyssian Garden" #State 96
- VICTORY_POINTS_2983:0 "Dreaded Graves" #State 97
- VICTORY_POINTS_2846:0 "Bel'zhun" #State 99
- VICTORY_POINTS_1149:0 "Forgotten Tomb" #State 100
- VICTORY_POINTS_8359:0 "Tereshni" #State 101
- VICTORY_POINTS_8385:0 "Sunbaked Port" #State 102
- VICTORY_POINTS_1269:0 "Urzeris" #State 103
- VICTORY_POINTS_3071:0 "Kenethet" #State 104
- VICTORY_POINTS_1425:0 "Dusty Oasis" #State 105
- VICTORY_POINTS_1934:0 "Zuretta" #State 106
- VICTORY_POINTS_8527:0 "Nashramae" #State 107
- VICTORY_POINTS_8908:0 "Eastern Post" #State 108
- VICTORY_POINTS_4174:0 "Mwati" #State 109
- VICTORY_POINTS_5071:0 "Aurma" #State 110
- VICTORY_POINTS_8378:0 "Conquerer's Harbor" #State 111
- VICTORY_POINTS_3758:0 "Lesser Gardens" #State 112
- VICTORY_POINTS_8808:0 "Forgotten Point" #State 113
- VICTORY_POINTS_8604:0 "Kalamanda" #State 114
- VICTORY_POINTS_3051:0 "Stargazer's Hill" #State 115
- VICTORY_POINTS_266:0 "Survivor's Cave" #State 116
- VICTORY_POINTS_575:0 "Coastal Advance" #State 118
- VICTORY_POINTS_1159:0 "Slashed Bay" #State 119
- VICTORY_POINTS_4444:0 "Gathering of the Marai" #State 120
- VICTORY_POINTS_1685:0 "Zoantha" #State 121
- VICTORY_POINTS_5291:0 "Hold of the Moonstone" #State 122
- VICTORY_POINTS_5288:0 "Zirima" #State 123
- VICTORY_POINTS_9594:0 "Song" #State 125
- VICTORY_POINTS_9701:0 "Antathir" #State 126
- VICTORY_POINTS_4748:0 "Desolate Harbor" #State 127
- VICTORY_POINTS_9447:0 "Icathian Border Fort" #State 128
- VICTORY_POINTS_4010:0 "Jungle's Outcrop" #State 129
- VICTORY_POINTS_5052:0 "Marrowmark" #State 130
- VICTORY_POINTS_3588:0 "Kahleeki Village" #State 131
- VICTORY_POINTS_3119:0 "Scavenger's Hills" #State 132
- VICTORY_POINTS_2028:0 "Nazumah" #State 133
- VICTORY_POINTS_9453:0 "Renek" #State 134
- VICTORY_POINTS_3281:0 "The City of Gardens" #State 135
- VICTORY_POINTS_9261:0 "Tomb of Ne'Zuk" #State 136
- VICTORY_POINTS_9075:0 "Dormun" #State 137
- VICTORY_POINTS_9085:0 "Saikhal" #State 138
- VICTORY_POINTS_2511:0 "Nerimazeth" #State 139
- VICTORY_POINTS_4441:0 "Faraj" #State 140
- VICTORY_POINTS_9120:0 "Vekaura" #State 141
- VICTORY_POINTS_1120:0 "Kenethet" #State 142
- VICTORY_POINTS_8950:0 "Desert Ruins" #State 143
- VICTORY_POINTS_9119:0 "The Sun Disc" #State 144
- VICTORY_POINTS_9202:0 "Tomb of the Emperors" #State 145
- VICTORY_POINTS_5333:0 "Oasis of the Dawn" #State 146
- VICTORY_POINTS_2452:0 "Circle of Ascension" #State 147
- VICTORY_POINTS_9522:0 "Temple of the Solstice" #State 148
- VICTORY_POINTS_9555:0 "Starry Ridge" #State 149
- VICTORY_POINTS_3035:0 "Targon's Peak" #State 150
- VICTORY_POINTS_1:0 "Frozen Lake" #State 151
- VICTORY_POINTS_9383:0 "Celestial Markings" #State 152
- VICTORY_POINTS_1778:0 "Ottrani Tribe" #State 153
- VICTORY_POINTS_9391:0 "Marus Omegnum Temple" #State 154
- VICTORY_POINTS_4997:0 "Patterns of the Dead" #State 155
- VICTORY_POINTS_9293:0 "Divine Farmland" #State 156
- VICTORY_POINTS_9528:0 "Temple of the Lunari" #State 157
- VICTORY_POINTS_9466:0 "Ring of the Mountain" #State 158
- VICTORY_POINTS_836:0 "Holdrum" #State 159
- VICTORY_POINTS_8152:0 "Brannin" #State 160
- VICTORY_POINTS_4681:0 "Upper Pilt Camp" #State 161
- VICTORY_POINTS_8022:0 "Harvest Meadow" #State 162
- VICTORY_POINTS_257:0 "Rolling Vista" #State 163
- VICTORY_POINTS_3911:0 "Stonewall" #State 164
- VICTORY_POINTS_987:0 "Noorin" #State 165
- VICTORY_POINTS_8067:0 "Dunpor" #State 166
- VICTORY_POINTS_8091:0 "Trevale" #State 167
- VICTORY_POINTS_2801:0 "Palyclyff" #State 169
- VICTORY_POINTS_2261:0 "Gates of Mourning" #State 170
- VICTORY_POINTS_8082:0 "Rokrund" #State 171
- VICTORY_POINTS_2300:0 "Qualthala" #State 173
- VICTORY_POINTS_1955:0 "Eastern Camps" #State 174
- VICTORY_POINTS_8163:0 "Glorft" #State 175
- VICTORY_POINTS_2178:0 "Kilgrove" #State 176
- VICTORY_POINTS_5528:0 "Rolling Basin" #State 177
- VICTORY_POINTS_6459:0 "The Delverhold" #State 178
- VICTORY_POINTS_748:0 "Lokan" #State 179
- VICTORY_POINTS_6369:0 "Iron Quarries" #State 180
- VICTORY_POINTS_6521:0 "Ironspike Gate" #State 181
- VICTORY_POINTS_6660:0 "Drugne" #State 182
- VICTORY_POINTS_847:0 "Urtis" #State 183
- VICTORY_POINTS_26:0 "Coastal Citadel" #State 184
- VICTORY_POINTS_6453:0 "Kimir" #State 185
- VICTORY_POINTS_968:0 "Ruug" #State 186
- VICTORY_POINTS_6614:0 "Morrin" #State 187
- VICTORY_POINTS_4142:0 "The Iron Pinnacle" #State 188
- VICTORY_POINTS_4502:0 "Khworez" #State 189
- VICTORY_POINTS_7220:0 "The Immortal Bastion" #State 190
- VICTORY_POINTS_7195:0 "Central Noxian Harbor" #State 191
- VICTORY_POINTS_7358:0 "Drekan" #State 192
- VICTORY_POINTS_6917:0 "Bukket" #State 193
- VICTORY_POINTS_1144:0 "Scattered Lodges" #State 195
- VICTORY_POINTS_930:0 "Ravencall" #State 196
- VICTORY_POINTS_4713:0 "Bloodcliffs" #State 198
- VICTORY_POINTS_2458:0 "The Drakkengate" #State 199
- VICTORY_POINTS_7266:0 "Khom" #State 200
- VICTORY_POINTS_7964:0 "Fallgren" #State 201
- VICTORY_POINTS_96:0 "Basilich" #State 202
- VICTORY_POINTS_5097:0 "Ruined Fort" #State 203
- VICTORY_POINTS_7988:0 "Vindor" #State 204
- VICTORY_POINTS_2976:0 "Central Encampment" #State 205
- VICTORY_POINTS_348:0 "Floodwater Farms" #State 207
- VICTORY_POINTS_4424:0 "Krexor" #State 208
- VICTORY_POINTS_4835:0 "Ironwater" #State 209
- VICTORY_POINTS_7708:0 "Dawnhold" #State 210
- VICTORY_POINTS_1531:0 "High Harbor" #State 211
- VICTORY_POINTS_143:0 "Demacian Harbor" #State 212
- VICTORY_POINTS_213:0 "Arcane Registry" #State 213
- VICTORY_POINTS_7632:0 "Lightbringer Temple" #State 214
- VICTORY_POINTS_2875:0 "Great Demacia City" #State 215
- VICTORY_POINTS_134:0 "Freljordian Border Fort" #State 216
- VICTORY_POINTS_5276:0 "High Silvermere" #State 217
- VICTORY_POINTS_3390:0 "Uwendale" #State 218
- VICTORY_POINTS_5701:0 "Hidden Camp" #State 219
- VICTORY_POINTS_4690:0 "Fossbarrow" #State 220
- VICTORY_POINTS_1577:0 "Pinara" #State 221
- VICTORY_POINTS_7591:0 "Ehrenmount" #State 222
- VICTORY_POINTS_561:0 "Vaskasia" #State 223
- VICTORY_POINTS_7767:0 "Cloudwood Village" #State 224
- VICTORY_POINTS_2804:0 "Jandelle" #State 225
- VICTORY_POINTS_3366:0 "Terbisia" #State 226
- VICTORY_POINTS_3793:0 "Evenmoor" #State 227
- VICTORY_POINTS_1182:0 "Needlebrook" #State 228
- VICTORY_POINTS_7600:0 "Raptor Training Grounds" #State 229
- VICTORY_POINTS_1792:0 "Zeffira" #State 230
- VICTORY_POINTS_1237:0 "Cloudfield" #State 231
- VICTORY_POINTS_872:0 "Everpeak" #State 232
- VICTORY_POINTS_7522:0 "The Graygate" #State 233
- VICTORY_POINTS_3399:0 "Meltridge" #State 234
- VICTORY_POINTS_4998:0 "Stalker's Point" #State 235
- VICTORY_POINTS_2711:0 "Clawed Encampment" #State 237
- VICTORY_POINTS_3975:0 "Den of the Volibear" #State 238
- VICTORY_POINTS_5982:0 "Sacrificial Forests" #State 239
- VICTORY_POINTS_1961:0 "Savage Upland" #State 240
- VICTORY_POINTS_4301:0 "Da'arvong" #State 241
- VICTORY_POINTS_5442:0 "Rune Prison" #State 242
- VICTORY_POINTS_1404:0 "Valar's Hollow" #State 243
- VICTORY_POINTS_5464:0 "Rygann's Reach" #State 244
- VICTORY_POINTS_4309:0 "Glaserport" #State 245
- VICTORY_POINTS_898:0 "Frostheld" #State 246
- VICTORY_POINTS_1773:0 "Lokfari Tribes" #State 247
- VICTORY_POINTS_6428:0 "Frozen Mines" #State 248
- VICTORY_POINTS_6186:0 "Naljaag" #State 249
- VICTORY_POINTS_4854:0 "Rakelstake" #State 250
- VICTORY_POINTS_2889:0 "Village of the Ice Children" #State 252
- VICTORY_POINTS_6142:0 "Yadulsk" #State 253
- VICTORY_POINTS_1845:0 "Ghulfrost" #State 254
- VICTORY_POINTS_6149:0 "Quchar" #State 255
- VICTORY_POINTS_1060:0 "Frost-Tipped Harbor" #State 256
- VICTORY_POINTS_5366:0 "Vathcaer" #State 257
- VICTORY_POINTS_1690:0 "Cursed Tombs" #State 258
- VICTORY_POINTS_3857:0 "Frostborn's Rest" #State 259
- VICTORY_POINTS_1779:0 "Yeti's Vigil" #State 260
- VICTORY_POINTS_5457:0 "Frost Troll Village" #State 261
- VICTORY_POINTS_6049:0 "The Winterspike" #State 262
- VICTORY_POINTS_5881:0 "Hearth-Home" #State 263
- VICTORY_POINTS_5850:0 "Foundling Village" #State 264
- VICTORY_POINTS_1625:0 "The Frostguard Citadel" #State 265
- VICTORY_POINTS_5854:0 "The Howling Abyss" #State 266
- VICTORY_POINTS_5931:0 "Frostgate" #State 267
- VICTORY_POINTS_5553:0 "Mourncrow" #State 268
- VICTORY_POINTS_6577:0 "Ridgeback Mines" #State 270
- VICTORY_POINTS_3593:0 "Warmother's Call" #State 271
- VICTORY_POINTS_6753:0 "Vale of True Ice " #State 272
- VICTORY_POINTS_3707:0 "Western Rakel" #State 274
- VICTORY_POINTS_1825:0 "Hearth of the Winter's Claw" #State 275
- VICTORY_POINTS_2235:0 "Proving Grounds" #State 276
- VICTORY_POINTS_7036:0 "Elnuk Range" #State 277
- VICTORY_POINTS_7097:0 "Valley of Poros" #State 278
- VICTORY_POINTS_2632:0 "Arbor Mines" #State 279
- VICTORY_POINTS_3790:0 "Arbormark" #State 280
- VICTORY_POINTS_7529:0 "Old Bargate" #State 281
- VICTORY_POINTS_7551:0 "Rijenland" #State 282
- VICTORY_POINTS_4391:0 "Lesser Training Grounds" #State 283
- VICTORY_POINTS_3818:0 "Chiefdom's Lodge" #State 284
- VICTORY_POINTS_7234:0 "Skaggorn" #State 285
- VICTORY_POINTS_183:0 "Freljord's Call" #State 286
- VICTORY_POINTS_7638:0 "Alderburg" #State 287
- VICTORY_POINTS_7876:0 "Nockmirchian Mines" #State 288
- VICTORY_POINTS_7758:0 "Odelyn" #State 289
- VICTORY_POINTS_4622:0 "Heart of Valoran" #State 290
- VICTORY_POINTS_656:0 "Silent Fortress" #State 291
- VICTORY_POINTS_1674:0 "Kalsted" #State 292
- VICTORY_POINTS_5282:0 "Boleham" #State 293
- VICTORY_POINTS_4406:0 "Argent Village" #State 294
- VICTORY_POINTS_142:0 "Tokogol" #State 295
- VICTORY_POINTS_1536:0 "Dalamor Estuary" #State 296
- VICTORY_POINTS_1401:0 "Decimator's Pass" #State 297
- VICTORY_POINTS_3700:0 "Tokogoli Lodging Camps" #State 298
- VICTORY_POINTS_1864:0 "Central Quarries" #State 299
- VICTORY_POINTS_1666:0 "Varju" #State 300
- VICTORY_POINTS_7851:0 "Western Mines" #State 301
- VICTORY_POINTS_2825:0 "Central Varju Villas" #State 302
- VICTORY_POINTS_1611:0 "Front of Isolation" #State 303
- VICTORY_POINTS_3505:0 "Gray Claw" #State 304
- VICTORY_POINTS_574:0 "Hunting Grounds" #State 305
- VICTORY_POINTS_3977:0 "Tribal Settlements" #State 306
- VICTORY_POINTS_21:0 "Home of The Warmasons" #State 307
- VICTORY_POINTS_7193:0 "Settlements of Servitude" #State 308
- VICTORY_POINTS_7249:0 "Howling Fortress" #State 309
- VICTORY_POINTS_7332:0 "The Fleshing Arena" #State 310
- VICTORY_POINTS_3971:0 "Mortoraa" #State 311
- VICTORY_POINTS_9540:0 "Akkal" #State 124
- VICTORY_POINTS_1881:0 "Xolan" #State 312
+ VICTORY_POINTS_5381: "Helia" # State 2 
+ VICTORY_POINTS_2184: "Shepard's Graveyard" #State 1
+ VICTORY_POINTS_9025: "Maoki's Grove" #State 3
+ VICTORY_POINTS_9258: "Abandoned Outpost" #State 4
+ VICTORY_POINTS_9483: "Ruined Villa" #State 5
+ VICTORY_POINTS_9088: "Harbor of Suffering" #State 7
+ VICTORY_POINTS_5672: "Temple of the Akana" #State 8
+ VICTORY_POINTS_3257: "Spirit's Refuge" #State 9
+ VICTORY_POINTS_9344: "Shadowfall" #State 10
+ VICTORY_POINTS_8415: "Bilgewater Harbor" #State 11
+ VICTORY_POINTS_3702: "Hearth of Nagakabouros" #State 12
+ VICTORY_POINTS_8364: "Smuggler's Den" #State 13
+ VICTORY_POINTS_8374: "Sharkfin Cove" #State 14
+ VICTORY_POINTS_1039: "Port Plunder" #State 15
+ VICTORY_POINTS_8250: "Pirate's Outpost" #State 16
+ VICTORY_POINTS_2982: "Saltwater Row" #State 17
+ VICTORY_POINTS_8273: "Slaughter Docks" #State 18
+ VICTORY_POINTS_8334: "Ripper Harbor" #State 19
+ VICTORY_POINTS_8296: "Mariner's Mark" #State 20
+ VICTORY_POINTS_4413: "Serpentine Villas" #State 21
+ VICTORY_POINTS_4114: "Serpent Harbor" #State 22
+ VICTORY_POINTS_8363: "Mudtown" #State 23
+ VICTORY_POINTS_9428: "City of Desolation" #State 24
+ VICTORY_POINTS_38: "Killash Village" #State 25
+ VICTORY_POINTS_4152: "Zyr" #State 26
+ VICTORY_POINTS_3585: "Jungle's Edge" #State 27
+ VICTORY_POINTS_4385: "Radiant Ridge" #State 28
+ VICTORY_POINTS_5112: "Verdant City" #State 29
+ VICTORY_POINTS_3629: "Hearth of the Killash" #State 30
+ VICTORY_POINTS_8241: "Kumangra" #State 31
+ VICTORY_POINTS_5392: "Shimmering Docks" #State 32
+ VICTORY_POINTS_5700: "The Glowing Falls" #State 34
+ VICTORY_POINTS_4753: "Ixaocan" #State 35
+ VICTORY_POINTS_9365: "Bay of Amor" #State 36
+ VICTORY_POINTS_5350: "Tengla" #State 37
+ VICTORY_POINTS_8740: "Harelport" #State 38
+ VICTORY_POINTS_8665: "Hunter's Retreat" #State 40
+ VICTORY_POINTS_5185: "Paretha" #State 41
+ VICTORY_POINTS_9050: "Dragon's Lair" #State 42
+ VICTORY_POINTS_9279: "Ixtali Harbor" #State 43
+ VICTORY_POINTS_4605: "Killashi Point" #State 44
+ VICTORY_POINTS_8892: "Elemental Sanctuary" #State 45
+ VICTORY_POINTS_1951: "Western Outpost" #State 46
+ VICTORY_POINTS_9309: "Arbor" #State 47
+ VICTORY_POINTS_8239: "Crystal Quarry" #State 48
+ VICTORY_POINTS_8199: "The Last Drop" #State 49
+ VICTORY_POINTS_8189: "Chem Baron Tower" #State 50
+ VICTORY_POINTS_8173: "University of Piltover" #State 51
+ VICTORY_POINTS_4310: "Bridge of Progress" #State 52
+ VICTORY_POINTS_2692: "Stillwater" #State 53
+ VICTORY_POINTS_8154: "Enforcer's Grounds" #State 54
+ VICTORY_POINTS_8203: "Chem Mines" #State 55
+ VICTORY_POINTS_8018: "Sudar" #State 56
+ VICTORY_POINTS_7679: "Temple of Pallas" #State 57
+ VICTORY_POINTS_3375: "Ghetu" #State 58
+ VICTORY_POINTS_7806: "Galrin Meadows" #State 59
+ VICTORY_POINTS_4031: "Kashuri" #State 60
+ VICTORY_POINTS_2208: "Zhyunia" #State 62
+ VICTORY_POINTS_3774: "Raikkon" #State 63
+ VICTORY_POINTS_4408: "Tuula" #State 64
+ VICTORY_POINTS_7123: "Epool" #State 65
+ VICTORY_POINTS_6860: "Tevasa" #State 66
+ VICTORY_POINTS_3531: "Wuju" #State 67
+ VICTORY_POINTS_4732: "Bahrl Encampment" #State 68
+ VICTORY_POINTS_3631: "Fae'lor" #State 69
+ VICTORY_POINTS_7103: "Westward Harbor" #State 70
+ VICTORY_POINTS_6036: "Hirana Monastery" #State 71
+ VICTORY_POINTS_5999: "Ralin Garden" #State 72
+ VICTORY_POINTS_4348: "Lotus Glade" #State 73
+ VICTORY_POINTS_5098: "Qaelin Temple" #State 75
+ VICTORY_POINTS_6441: "Moonlit Camp" #State 76
+ VICTORY_POINTS_6671: "Vlonqo" #State 77
+ VICTORY_POINTS_6962: "Silent Pass" #State 78
+ VICTORY_POINTS_3330: "Jade Brook" #State 79
+ VICTORY_POINTS_5991: "Puboe" #State 80
+ VICTORY_POINTS_5053: "Ionia's Peak" #State 81
+ VICTORY_POINTS_6678: "Guardian's Pull" #State 83
+ VICTORY_POINTS_494: "Ethereal Glade" #State 84
+ VICTORY_POINTS_5247: "The Placidium" #State 85
+ VICTORY_POINTS_6267: "Kinkou Monastery" #State 87
+ VICTORY_POINTS_1919: "Radiant Temple" #State 88
+ VICTORY_POINTS_5293: "Weh'le" #State 89
+ VICTORY_POINTS_6680: "Whispering Gardens" #State 90
+ VICTORY_POINTS_2883: "Void Rupture" #State 91
+ VICTORY_POINTS_9805: "Icathia's Point" #State 92
+ VICTORY_POINTS_3135: "Lost City of Icathia" #State 93
+ VICTORY_POINTS_3550: "The Void's Vale" #State 94
+ VICTORY_POINTS_9757: "Time-Stopped Tower" #State 95
+ VICTORY_POINTS_3084: "Abyssian Garden" #State 96
+ VICTORY_POINTS_2983: "Dreaded Graves" #State 97
+ VICTORY_POINTS_2846: "Bel'zhun" #State 99
+ VICTORY_POINTS_1149: "Forgotten Tomb" #State 100
+ VICTORY_POINTS_8359: "Tereshni" #State 101
+ VICTORY_POINTS_8385: "Sunbaked Port" #State 102
+ VICTORY_POINTS_1269: "Urzeris" #State 103
+ VICTORY_POINTS_3071: "Kenethet" #State 104
+ VICTORY_POINTS_1425: "Dusty Oasis" #State 105
+ VICTORY_POINTS_1934: "Zuretta" #State 106
+ VICTORY_POINTS_8527: "Nashramae" #State 107
+ VICTORY_POINTS_8908: "Eastern Post" #State 108
+ VICTORY_POINTS_4174: "Mwati" #State 109
+ VICTORY_POINTS_5071: "Aurma" #State 110
+ VICTORY_POINTS_8378: "Conquerer's Harbor" #State 111
+ VICTORY_POINTS_3758: "Lesser Gardens" #State 112
+ VICTORY_POINTS_8808: "Forgotten Point" #State 113
+ VICTORY_POINTS_8604: "Kalamanda" #State 114
+ VICTORY_POINTS_3051: "Stargazer's Hill" #State 115
+ VICTORY_POINTS_266: "Survivor's Cave" #State 116
+ VICTORY_POINTS_575: "Coastal Advance" #State 118
+ VICTORY_POINTS_1159: "Slashed Bay" #State 119
+ VICTORY_POINTS_4444: "Gathering of the Marai" #State 120
+ VICTORY_POINTS_1685: "Zoantha" #State 121
+ VICTORY_POINTS_5291: "Hold of the Moonstone" #State 122
+ VICTORY_POINTS_5288: "Zirima" #State 123
+ VICTORY_POINTS_9594: "Song" #State 125
+ VICTORY_POINTS_9701: "Antathir" #State 126
+ VICTORY_POINTS_4748: "Desolate Harbor" #State 127
+ VICTORY_POINTS_9447: "Icathian Border Fort" #State 128
+ VICTORY_POINTS_4010: "Jungle's Outcrop" #State 129
+ VICTORY_POINTS_5052: "Marrowmark" #State 130
+ VICTORY_POINTS_3588: "Kahleeki Village" #State 131
+ VICTORY_POINTS_3119: "Scavenger's Hills" #State 132
+ VICTORY_POINTS_2028: "Nazumah" #State 133
+ VICTORY_POINTS_9453: "Renek" #State 134
+ VICTORY_POINTS_3281: "The City of Gardens" #State 135
+ VICTORY_POINTS_9261: "Tomb of Ne'Zuk" #State 136
+ VICTORY_POINTS_9075: "Dormun" #State 137
+ VICTORY_POINTS_9085: "Saikhal" #State 138
+ VICTORY_POINTS_2511: "Nerimazeth" #State 139
+ VICTORY_POINTS_4441: "Faraj" #State 140
+ VICTORY_POINTS_9120: "Vekaura" #State 141
+ VICTORY_POINTS_1120: "Kenethet" #State 142
+ VICTORY_POINTS_8950: "Desert Ruins" #State 143
+ VICTORY_POINTS_9119: "The Sun Disc" #State 144
+ VICTORY_POINTS_9202: "Tomb of the Emperors" #State 145
+ VICTORY_POINTS_5333: "Oasis of the Dawn" #State 146
+ VICTORY_POINTS_2452: "Circle of Ascension" #State 147
+ VICTORY_POINTS_9522: "Temple of the Solstice" #State 148
+ VICTORY_POINTS_9555: "Starry Ridge" #State 149
+ VICTORY_POINTS_3035: "Targon's Peak" #State 150
+ VICTORY_POINTS_1: "Frozen Lake" #State 151
+ VICTORY_POINTS_9383: "Celestial Markings" #State 152
+ VICTORY_POINTS_1778: "Ottrani Tribe" #State 153
+ VICTORY_POINTS_9391: "Marus Omegnum Temple" #State 154
+ VICTORY_POINTS_4997: "Patterns of the Dead" #State 155
+ VICTORY_POINTS_9293: "Divine Farmland" #State 156
+ VICTORY_POINTS_9528: "Temple of the Lunari" #State 157
+ VICTORY_POINTS_9466: "Ring of the Mountain" #State 158
+ VICTORY_POINTS_836: "Holdrum" #State 159
+ VICTORY_POINTS_8152: "Brannin" #State 160
+ VICTORY_POINTS_4681: "Upper Pilt Camp" #State 161
+ VICTORY_POINTS_8022: "Harvest Meadow" #State 162
+ VICTORY_POINTS_257: "Rolling Vista" #State 163
+ VICTORY_POINTS_3911: "Stonewall" #State 164
+ VICTORY_POINTS_987: "Noorin" #State 165
+ VICTORY_POINTS_8067: "Dunpor" #State 166
+ VICTORY_POINTS_8091: "Trevale" #State 167
+ VICTORY_POINTS_2801: "Palyclyff" #State 169
+ VICTORY_POINTS_2261: "Gates of Mourning" #State 170
+ VICTORY_POINTS_8082: "Rokrund" #State 171
+ VICTORY_POINTS_2300: "Qualthala" #State 173
+ VICTORY_POINTS_1955: "Eastern Camps" #State 174
+ VICTORY_POINTS_8163: "Glorft" #State 175
+ VICTORY_POINTS_2178: "Kilgrove" #State 176
+ VICTORY_POINTS_5528: "Rolling Basin" #State 177
+ VICTORY_POINTS_6459: "The Delverhold" #State 178
+ VICTORY_POINTS_748: "Lokan" #State 179
+ VICTORY_POINTS_6369: "Iron Quarries" #State 180
+ VICTORY_POINTS_6521: "Ironspike Gate" #State 181
+ VICTORY_POINTS_6660: "Drugne" #State 182
+ VICTORY_POINTS_847: "Urtis" #State 183
+ VICTORY_POINTS_26: "Coastal Citadel" #State 184
+ VICTORY_POINTS_6453: "Kimir" #State 185
+ VICTORY_POINTS_968: "Ruug" #State 186
+ VICTORY_POINTS_6614: "Morrin" #State 187
+ VICTORY_POINTS_4142: "The Iron Pinnacle" #State 188
+ VICTORY_POINTS_4502: "Khworez" #State 189
+ VICTORY_POINTS_7220: "The Immortal Bastion" #State 190
+ VICTORY_POINTS_7195: "Central Noxian Harbor" #State 191
+ VICTORY_POINTS_7358: "Drekan" #State 192
+ VICTORY_POINTS_6917: "Bukket" #State 193
+ VICTORY_POINTS_1144: "Scattered Lodges" #State 195
+ VICTORY_POINTS_930: "Ravencall" #State 196
+ VICTORY_POINTS_4713: "Bloodcliffs" #State 198
+ VICTORY_POINTS_2458: "The Drakkengate" #State 199
+ VICTORY_POINTS_7266: "Khom" #State 200
+ VICTORY_POINTS_7964: "Fallgren" #State 201
+ VICTORY_POINTS_96: "Basilich" #State 202
+ VICTORY_POINTS_5097: "Ruined Fort" #State 203
+ VICTORY_POINTS_7988: "Vindor" #State 204
+ VICTORY_POINTS_2976: "Central Encampment" #State 205
+ VICTORY_POINTS_348: "Floodwater Farms" #State 207
+ VICTORY_POINTS_4424: "Krexor" #State 208
+ VICTORY_POINTS_4835: "Ironwater" #State 209
+ VICTORY_POINTS_7708: "Dawnhold" #State 210
+ VICTORY_POINTS_1531: "High Harbor" #State 211
+ VICTORY_POINTS_143: "Demacian Harbor" #State 212
+ VICTORY_POINTS_213: "Arcane Registry" #State 213
+ VICTORY_POINTS_7632: "Lightbringer Temple" #State 214
+ VICTORY_POINTS_2875: "Great Demacia City" #State 215
+ VICTORY_POINTS_134: "Freljordian Border Fort" #State 216
+ VICTORY_POINTS_5276: "High Silvermere" #State 217
+ VICTORY_POINTS_3390: "Uwendale" #State 218
+ VICTORY_POINTS_5701: "Hidden Camp" #State 219
+ VICTORY_POINTS_4690: "Fossbarrow" #State 220
+ VICTORY_POINTS_1577: "Pinara" #State 221
+ VICTORY_POINTS_7591: "Ehrenmount" #State 222
+ VICTORY_POINTS_561: "Vaskasia" #State 223
+ VICTORY_POINTS_7767: "Cloudwood Village" #State 224
+ VICTORY_POINTS_2804: "Jandelle" #State 225
+ VICTORY_POINTS_3366: "Terbisia" #State 226
+ VICTORY_POINTS_3793: "Evenmoor" #State 227
+ VICTORY_POINTS_1182: "Needlebrook" #State 228
+ VICTORY_POINTS_7600: "Raptor Training Grounds" #State 229
+ VICTORY_POINTS_1792: "Zeffira" #State 230
+ VICTORY_POINTS_1237: "Cloudfield" #State 231
+ VICTORY_POINTS_872: "Everpeak" #State 232
+ VICTORY_POINTS_7522: "The Graygate" #State 233
+ VICTORY_POINTS_3399: "Meltridge" #State 234
+ VICTORY_POINTS_4998: "Stalker's Point" #State 235
+ VICTORY_POINTS_2711: "Clawed Encampment" #State 237
+ VICTORY_POINTS_3975: "Den of the Volibear" #State 238
+ VICTORY_POINTS_5982: "Sacrificial Forests" #State 239
+ VICTORY_POINTS_1961: "Savage Upland" #State 240
+ VICTORY_POINTS_4301: "Da'arvong" #State 241
+ VICTORY_POINTS_5442: "Rune Prison" #State 242
+ VICTORY_POINTS_1404: "Valar's Hollow" #State 243
+ VICTORY_POINTS_5464: "Rygann's Reach" #State 244
+ VICTORY_POINTS_4309: "Glaserport" #State 245
+ VICTORY_POINTS_898: "Frostheld" #State 246
+ VICTORY_POINTS_1773: "Lokfari Tribes" #State 247
+ VICTORY_POINTS_6428: "Frozen Mines" #State 248
+ VICTORY_POINTS_6186: "Naljaag" #State 249
+ VICTORY_POINTS_4854: "Rakelstake" #State 250
+ VICTORY_POINTS_2889: "Village of the Ice Children" #State 252
+ VICTORY_POINTS_6142: "Yadulsk" #State 253
+ VICTORY_POINTS_1845: "Ghulfrost" #State 254
+ VICTORY_POINTS_6149: "Quchar" #State 255
+ VICTORY_POINTS_1060: "Frost-Tipped Harbor" #State 256
+ VICTORY_POINTS_5366: "Vathcaer" #State 257
+ VICTORY_POINTS_1690: "Cursed Tombs" #State 258
+ VICTORY_POINTS_3857: "Frostborn's Rest" #State 259
+ VICTORY_POINTS_1779: "Yeti's Vigil" #State 260
+ VICTORY_POINTS_5457: "Frost Troll Village" #State 261
+ VICTORY_POINTS_6049: "The Winterspike" #State 262
+ VICTORY_POINTS_5881: "Hearth-Home" #State 263
+ VICTORY_POINTS_5850: "Foundling Village" #State 264
+ VICTORY_POINTS_1625: "The Frostguard Citadel" #State 265
+ VICTORY_POINTS_5854: "The Howling Abyss" #State 266
+ VICTORY_POINTS_5931: "Frostgate" #State 267
+ VICTORY_POINTS_5553: "Mourncrow" #State 268
+ VICTORY_POINTS_6577: "Ridgeback Mines" #State 270
+ VICTORY_POINTS_3593: "Warmother's Call" #State 271
+ VICTORY_POINTS_6753: "Vale of True Ice " #State 272
+ VICTORY_POINTS_3707: "Western Rakel" #State 274
+ VICTORY_POINTS_1825: "Hearth of the Winter's Claw" #State 275
+ VICTORY_POINTS_2235: "Proving Grounds" #State 276
+ VICTORY_POINTS_7036: "Elnuk Range" #State 277
+ VICTORY_POINTS_7097: "Valley of Poros" #State 278
+ VICTORY_POINTS_2632: "Arbor Mines" #State 279
+ VICTORY_POINTS_3790: "Arbormark" #State 280
+ VICTORY_POINTS_7529: "Old Bargate" #State 281
+ VICTORY_POINTS_7551: "Rijenland" #State 282
+ VICTORY_POINTS_4391: "Lesser Training Grounds" #State 283
+ VICTORY_POINTS_3818: "Chiefdom's Lodge" #State 284
+ VICTORY_POINTS_7234: "Skaggorn" #State 285
+ VICTORY_POINTS_183: "Freljord's Call" #State 286
+ VICTORY_POINTS_7638: "Alderburg" #State 287
+ VICTORY_POINTS_7876: "Nockmirchian Mines" #State 288
+ VICTORY_POINTS_7758: "Odelyn" #State 289
+ VICTORY_POINTS_4622: "Heart of Valoran" #State 290
+ VICTORY_POINTS_656: "Silent Fortress" #State 291
+ VICTORY_POINTS_1674: "Kalsted" #State 292
+ VICTORY_POINTS_5282: "Boleham" #State 293
+ VICTORY_POINTS_4406: "Argent Village" #State 294
+ VICTORY_POINTS_142: "Tokogol" #State 295
+ VICTORY_POINTS_1536: "Dalamor Estuary" #State 296
+ VICTORY_POINTS_1401: "Decimator's Pass" #State 297
+ VICTORY_POINTS_3700: "Tokogoli Lodging Camps" #State 298
+ VICTORY_POINTS_1864: "Central Quarries" #State 299
+ VICTORY_POINTS_1666: "Varju" #State 300
+ VICTORY_POINTS_7851: "Western Mines" #State 301
+ VICTORY_POINTS_2825: "Central Varju Villas" #State 302
+ VICTORY_POINTS_1611: "Front of Isolation" #State 303
+ VICTORY_POINTS_3505: "Gray Claw" #State 304
+ VICTORY_POINTS_574: "Hunting Grounds" #State 305
+ VICTORY_POINTS_3977: "Tribal Settlements" #State 306
+ VICTORY_POINTS_21: "Home of The Warmasons" #State 307
+ VICTORY_POINTS_7193: "Settlements of Servitude" #State 308
+ VICTORY_POINTS_7249: "Howling Fortress" #State 309
+ VICTORY_POINTS_7332: "The Fleshing Arena" #State 310
+ VICTORY_POINTS_3971: "Mortoraa" #State 311
+ VICTORY_POINTS_9540: "Akkal" #State 124
+ VICTORY_POINTS_1881: "Xolan" #State 312

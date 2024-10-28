@@ -14,6 +14,116 @@
 
 leader_traits = {
 
+	# Leona 
+	radiant_dawn = {
+		random = no
+		experience_gain_army_unit = 0.35
+		land_reinforce_rate = 0.10
+	}
+	solar_shield = {
+		random = no
+		army_defence_factor = 0.15
+	}
+
+	# Diana
+	moonblade = {
+		random = no
+		land_night_attack = 0.15
+		army_attack_factor = 0.1
+	}
+	guerrilla_leader = {
+		random = no
+		dig_in_speed = 0.2
+		max_dig_in = 5
+	}
+
+	# Pantheon
+	warrior_spirit = {
+		random = no
+		army_org = 0.1
+		breakthrough_factor = 0.2
+	}
+	rakkor_warrior = {
+		random = no
+		army_morale = 0.1
+		combat_width_factor = -0.05
+	}
+
+	# Aphelios
+	silent_sentinel = {
+    random = no
+    covert_operations = 0.2
+    land_night_attack = 0.1
+	}
+
+	covert_operations = {
+		random = no
+		intel_network_gain_factor = 0.25
+		encryption_factor = 0.2
+		decryption_factor = 0.2
+	}
+
+	# Alune
+	astral_guidance = {
+    random = no
+    planning_speed = 0.1
+    army_planning_factor = 0.05
+	}
+	moonshadow_tactics = {
+		random = no
+		land_night_attack = 0.2
+		land_reinforce_rate = 0.1
+	}
+
+	# Taric
+	protector_of_targon = {
+		random = no
+		army_core_defence_factor = 0.15
+	}
+	celestial_defender = {
+		random = no
+		army_defence_factor = 0.10
+		land_reinforce_rate = 0.05
+	}
+	
+	# Kayle
+	protector_of_targon = {
+		random = no
+		army_core_defence_factor = 0.15
+	}
+	celestial_defender = {
+		random = no
+		army_defence_factor = 0.10
+		land_reinforce_rate = 0.05
+	}
+
+	# Morgana
+	fallen_judgment = {
+		random = no
+		guerrilla_warfare_factor = 0.2
+		max_dig_in = 3
+	}
+	shackles_of_fate = {
+		random = no
+		army_core_defence_factor = 0.1
+		recon_factor = 0.15
+	}
+
+	# Soraka
+	divine_healer = {
+		random = no
+		army_recovery_rate = 0.20
+		land_reinforce_rate = 0.10
+	}
+	pacifist_boon = {
+		random = no
+		war_support_factor = -0.15
+		stability_factor = 0.1
+	}
+
+
+
+
 	merceneryCataloger = {
 		random = no
 		special_forces_cap = 1

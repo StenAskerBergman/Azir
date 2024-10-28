@@ -1,4 +1,70 @@
 ﻿l_english:
+ # Theocracy Ideology and Subfactions
+ theocracy: "Theocracy"
+ solari: "Solari"
+ cultOfVoli: "Cult of Volibear"
+ frostguardCult: "Frostguard Cult"
+
+ # Oligarchy Ideology and Subfactions
+ oligarchy: "Oligarchy"
+ noxianTrifarix: "Noxian Trifarix"
+ gangSyndicate: "Bilgewater Gang Syndicate"
+ piltovanCouncil: "Piltovan Council"
+ chemBarons: "Chem Barons"
+ ascendedCouncil: "Ascended Council"
+
+ # Absolutist Ideology and Subfactions
+ absolutists: "Absolutists"
+ mordekaisersRealm: "Mordekaiser's Realm"
+ shurimanEmperor: "Shuriman Emperor"
+ icathianVassel: "Icathian Vassel"
+
+ # Chiefdom Ideology and Subfactions
+ chiefdom: "Chiefdom"
+ avarosa: "Avarosa"
+ wintersclaw: "Winter's Claw"
+ hunters: "The Hunters"
+ tribes: "Tribes"
+
+ # Desolation Ideology and Subfactions
+ desolation: "Desolation"
+ oblivion: "Void Oblivion"
+ undeadWastes: "Undead Wastes"
+ brackern: "Brackern"
+ raiders: "Raiders"
+ ruination: "The Ruination"
+ celestials: "Celestials"
+ cosmic_dragon: "Cosmic Dragon"
+
+ # Mages Ideology and Subfactions
+ mages: "Mages"
+ illuminators: "The Illuminators"
+ unshackled: "The Unshackled"
+ axiomata: "Axiomata"
+ kohari: "Order of Kohari"
+ spiritualGuidance: "Spiritual Guidance"
+ arcanum: "Arcanum"
+ lunari: "Lunari"
+
+ # Royalist Ideology and Subfactions
+ royalist: "Royalists"
+ sympathizers: "Crown Sympathizers"
+ elders: "The Elders"
+ royalty: "Royalty"
+
+ # Fascist Ideology and Subfactions
+ rakkor: "The Rakkor"
+
+ # Generic Dynamic Faction Names (Example)
+ dynamic_factions_names_theocracy_1: "Holy Order of %COUNTRY%"
+ dynamic_factions_names_oligarchy_1: "Oligarchic Republic of %COUNTRY%"
+ dynamic_factions_names_absolutists_1: "The Absolute State of %COUNTRY%"
+ dynamic_factions_names_chiefdom_1: "Chiefdom of %COUNTRY%"
+ dynamic_factions_names_desolation_1: "Desolation of %COUNTRY%"
+ dynamic_factions_names_mages_1: "Mage Federation of %COUNTRY%"
+ dynamic_factions_names_royalist_1: "Royal Kingdom of %COUNTRY%"
+ dynamic_factions_names_royalist_2: "Empire of %COUNTRY%"
+
  communism: "Communist"
  communism_noun: "Communism"
  democratic: "Democratic"
@@ -581,7 +647,7 @@
  ISR_democratic_party: "Mapai"
  ISR_fascism_party: "Helpam"
  ISR_neutrality_party: "Central Council"
- VIN_fascism_party: "Vietnamese Restoration League" #or Reformation Society   
+ VIN_fascism_party: "Vietnamese Restoration League" #or Reformation Society  
  VIN_democratic_party: "Can Lao Party" #formed in early 50s
  VIN_communism_party: "Communist Party of Vietnam" #Viet Minh was more important in early years
  VIN_neutrality_party: "Viêt Nam Quoc Dân Đang"

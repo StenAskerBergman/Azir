@@ -1,0 +1,150 @@
+division_template = {
+ name = "Solari Warrior"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+division_template = {
+ name = "Lunari Warrior"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Faithful Lunari"
+  location = 3035
+  division_template = "Lunari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Lunari"
+  location = 5504
+  division_template = "Lunari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Lunari"
+  location = 2566
+  division_template = "Lunari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Lunari"
+  location = 2577
+  division_template = "Lunari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Lunari"
+  location = 3651
+  division_template = "Lunari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 4604
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 3557
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 391
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 3304
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 4368
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 444
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 1778
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 2911
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 3263
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 1394
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Faithful Solari"
+  location = 9412
+  division_template = "Solari Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+}

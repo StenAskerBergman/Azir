@@ -29,7 +29,7 @@
  SHK_RAIDER_TEN_NAME: "Ironclad Raider"
  SHK_RAIDER_TEN_DESC: "A heavily armored raider who is nearly invincible in combat, leading his troops with unmatched strength."
 
- # The Void Cast  
+ # The Void Cast 
  # VOI_REKSAI_NAME: "Rek'Sai"
  # POLITICS_REKSAI_DESC: "Rek'Sai is a ferocious predator from the Void, renowned for her mastery of ambush and hunting."
  
@@ -83,6 +83,102 @@
 
  VOI_ZILEAN_NAME: "Zilean"
  POLITICS_ZILEAN_DESC: "The Chronokeeper, manipulating time to achieve his goals."
+
+ ## TARGONIAN CHARACTERS
+
+ # Leona
+ TAR_LEONA_NAME: "Leona"
+ POLITICS_LEONA_DESC: "Leona, the Radiant Dawn, leads the Solari with the power of the sun. She is a protector, guiding her people with both strength and wisdom."
+ 
+ # Diana
+ TAR_DIANA_NAME: "Diana"
+ POLITICS_DIANA_DESC: "Diana, Scorn of the Moon, leads the Lunari in their struggle against the Solari. She wields the power of the moon and seeks to bring change to Targon."
+
+ # Pantheon
+ TAR_PANTHEON_NAME: "Pantheon"
+ POLITICS_PANTHEON_DESC: "Pantheon, the Aspect of War, is the embodiment of the Rakkor's warrior spirit. He is relentless on the battlefield, inspiring all who fight alongside him."
+
+ # Aurelion Sol
+ TAR_AURELION_SOL_NAME: "Aurelion Sol"
+ POLITICS_AURELION_SOL_DESC: "Aurelion Sol, the Star Forger, is a powerful cosmic dragon, enslaved by the Targonians. He waits for the moment to reclaim his freedom and return to his celestial kingdom."
+
+ # Aphelios
+ TAR_APHELIOS_NAME: "Aphelios"
+ POLITICS_APHELIOS_DESC: "Aphelios, the silent weapon of the Lunari, carries out his sister Alune's wishes in perfect silence, striking down enemies from the shadows."
+
+ # Alune
+ TAR_ALUNE_NAME: "Alune"
+ POLITICS_ALUNE_DESC: "Alune, guiding Aphelios from afar, is the mystical force behind the Lunari's secretive operations, manipulating celestial forces with precision."
+
+ # Taric
+ TAR_TARIC_NAME: "Taric"
+ POLITICS_TARIC_DESC: "Taric, the Shield of Valoran, is the Aspect of Protection, sworn to defend the cosmic balance. His divine strength makes him a stalwart protector of Targon."
+
+ # Kayle
+ TAR_KAYLE_NAME: "Kayle"
+ POLITICS_KAYLE_DESC: "Kayle, the Righteous, is a paragon of justice. She seeks to bring order to Targon with her divine power, believing in swift judgment for all."
+
+ # Morgana
+ TAR_MORGANA_NAME: "Morgana"
+ POLITICS_MORGANA_DESC: "Morgana, the Fallen, rejects her sister Kayle’s rigid views on justice. She fights for the downtrodden and misunderstood, defending those cast aside by Targon’s laws."
+
+ # Soraka
+ TAR_SORAKA_NAME: "Soraka"
+ POLITICS_SORAKA_DESC: "Soraka, the Starchild, brings healing and guidance to all who need it. Her power is not for conquest, but for protection and restoration of life."
+
+ # Leona Traits
+ sun_warrior: "Sun Warrior"
+ sun_warrior_desc: "Leona, blessed by the power of the sun, excels at leading defensive and offensive maneuvers under the harshest conditions."
+ solar_shield: "Solar Shield"
+ solar_shield_desc: "Leona's shield absorbs incoming damage, granting her troops powerful defensive bonuses."
+
+ # Diana Traits
+ moonblade: "Moonblade"
+ moonblade_desc: "Diana uses her moonlit blade to strike swiftly and decisively, especially in night operations."
+ guerrilla_leader: "Guerrilla Leader"
+ guerrilla_leader_desc: "Diana excels in leading small, covert operations, especially during the night."
+
+ # Pantheon Traits
+ warrior_spirit: "Warrior Spirit"
+ warrior_spirit_desc: "Pantheon embodies the spirit of the Rakkor, making him a formidable and inspiring leader on the battlefield."
+ rakkor_warrior: "Rakkor Warrior"
+ rakkor_warrior_desc: "Pantheon's martial prowess grants his troops bonuses in infantry combat and battlefield organization."
+
+ # Aphelios Traits
+ silent_sentinel: "Silent Sentinel"
+ silent_sentinel_desc: "Aphelios strikes from the shadows, utilizing stealth and long-range attacks with deadly precision."
+ covert_operations: "Covert Operations"
+ covert_operations_desc: "Aphelios excels in espionage and sabotage, making him an invaluable asset in secretive military operations."
+
+ # Alune Traits
+ astral_guidance: "Astral Guidance"
+ astral_guidance_desc: "Alune uses her celestial connection to guide her allies, providing strategic insights and celestial foresight."
+ moonshadow_tactics: "Moonshadow Tactics"
+ moonshadow_tactics_desc: "Alune's command of celestial forces provides bonuses in espionage and special operations."
+
+ # Taric Traits
+ protector_of_targon: "Protector of Targon"
+ protector_of_targon_desc: "Taric's divine powers make him a capable defender, ensuring the safety of Targon and its people."
+ celestial_defender: "Celestial Defender"
+ celestial_defender_desc: "Taric’s command of celestial protection grants significant defensive bonuses to his army."
+
+ # Kayle Traits
+ divine_judgment: "Divine Judgment"
+ divine_judgment_desc: "Kayle’s pursuit of justice grants her leadership in battle, enforcing order through swift and righteous judgment."
+ righteous_fury: "Righteous Fury"
+ righteous_fury_desc: "Kayle's divine fury increases the effectiveness of her troops in combat, particularly during aggressive offensives."
+
+ # Morgana Traits
+ fallen_judgment: "Fallen Judgment"
+ fallen_judgment_desc: "Morgana's power lies in protecting the marginalized, granting her a unique ability to turn the tide of battle in her favor."
+ shackles_of_fate: "Shackles of Fate"
+ shackles_of_fate_desc: "Morgana’s magic binds her enemies, weakening their resolve and allowing her forces to gain an advantage."
+
+ # Soraka Traits
+ divine_healer: "Divine Healer"
+ divine_healer_desc: "Soraka’s powers focus on healing and supporting her allies, providing restoration and support during campaigns."
+ pacifist_boon: "Pacifist's Boon"
+ pacifist_boon_desc: "Soraka’s influence prevents unnecessary conflict, reducing war exhaustion and boosting stability."
 
  # VOI_MALZAHAR_NAME: "Malzahar"
  # POLITICS_MALZAHAR_DESC: "" Already written

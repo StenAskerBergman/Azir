@@ -1,0 +1,129 @@
+spriteTypes = { 	
+        
+    SpriteType = {
+        name = "GFX_focus_SHU_IXT_deal"
+        texturefile = "gfx/interface/goals/TAR/SHU_IXT_deal.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_IXT_deal_shine"
+        texturefile = "gfx/interface/goals/TAR/SHU_IXT_deal.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/TAR/SHU_IXT_deal.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_RAK_deal"
+        texturefile = "gfx/interface/goals/TAR/SHU_RAK_deal.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_RAK_deal_shine"
+        texturefile = "gfx/interface/goals/TAR/SHU_RAK_deal.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/TAR/SHU_RAK_deal.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_TAR"
+        texturefile = "gfx/interface/goals/TAR/SHU_TAR.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_TAR_shine"
+        texturefile = "gfx/interface/goals/TAR/SHU_TAR.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/TAR/SHU_TAR.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_TAR_deal"
+        texturefile = "gfx/interface/goals/TAR/SHU_TAR_deal.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_SHU_TAR_deal_shine"
+        texturefile = "gfx/interface/goals/TAR/SHU_TAR_deal.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/TAR/SHU_TAR_deal.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+    SpriteType = {
+        name = "GFX_focus_Targon_Crest_Solari"
+        texturefile = "gfx/interface/goals/TAR/Targon_Crest_Solari.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_Targon_Crest_Solari_shine"
+        texturefile = "gfx/interface/goals/TAR/Targon_Crest_Solari.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/TAR/Targon_Crest_Solari.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+    SpriteType = {
+        name = "GFX_focus_Targon_Rakkor_Crest"
+        texturefile = "gfx/interface/goals/TAR/Targon_Rakkor_Crest.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_Targon_Rakkor_Crest_shine"
+        texturefile = "gfx/interface/goals/TAR/Targon_Rakkor_Crest.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/TAR/Targon_Rakkor_Crest.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+}

@@ -1,0 +1,92 @@
+spriteTypes = {
+
+    # Leona Traits
+    spriteType = {
+        name = "GFX_trait_sun_warrior"
+        texturefile = "gfx/interface/traits/sun_warrior.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_solar_shield"
+        texturefile = "gfx/interface/traits/solar_shield.dds"
+    }
+
+    # Diana Traits
+    spriteType = {
+        name = "GFX_trait_moonblade"
+        texturefile = "gfx/interface/traits/moonblade.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_guerrilla_leader"
+        texturefile = "gfx/interface/traits/guerrilla_leader.dds"
+    }
+
+    # Pantheon Traits
+    spriteType = {
+        name = "GFX_trait_warrior_spirit"
+        texturefile = "gfx/interface/traits/warrior_spirit.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_rakkor_warrior"
+        texturefile = "gfx/interface/traits/rakkor_warrior.dds"
+    }
+
+    # Aphelios Traits
+    spriteType = {
+        name = "GFX_trait_silent_sentinel"
+        texturefile = "gfx/interface/traits/silent_sentinel.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_covert_operations"
+        texturefile = "gfx/interface/traits/covert_operations.dds"
+    }
+
+    # Alune Traits
+    spriteType = {
+        name = "GFX_trait_astral_guidance"
+        texturefile = "gfx/interface/traits/astral_guidance.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_moonshadow_tactics"
+        texturefile = "gfx/interface/traits/moonshadow_tactics.dds"
+    }
+
+    # Taric Traits
+    spriteType = {
+        name = "GFX_trait_protector_of_targon"
+        texturefile = "gfx/interface/traits/protector_of_targon.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_celestial_defender"
+        texturefile = "gfx/interface/traits/celestial_defender.dds"
+    }
+
+    # Kayle Traits
+    spriteType = {
+        name = "GFX_trait_divine_judgment"
+        texturefile = "gfx/interface/traits/divine_judgment.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_righteous_fury"
+        texturefile = "gfx/interface/traits/righteous_fury.dds"
+    }
+
+    # Morgana Traits
+    spriteType = {
+        name = "GFX_trait_fallen_judgment"
+        texturefile = "gfx/interface/traits/fallen_judgment.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_shackles_of_fate"
+        texturefile = "gfx/interface/traits/shackles_of_fate.dds"
+    }
+
+    # Soraka Traits
+    spriteType = {
+        name = "GFX_trait_divine_healer"
+        texturefile = "gfx/interface/traits/divine_healer.dds"
+    }
+    spriteType = {
+        name = "GFX_trait_pacifist_boon"
+        texturefile = "gfx/interface/traits/pacifist_boon.dds"
+    }
+}

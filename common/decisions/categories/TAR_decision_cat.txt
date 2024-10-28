@@ -1,0 +1,88 @@
+	# These needs to be defined in order for your DEC to show up in the game
+	# IMPORTANT! Filling "allowed", "visible" or "available" will have effects on ALL the DECISIONS in that CATEGORY!
+	# - Therefore you usually here only fill "allowed" (so only specific country like GER can see those DECs) 
+	# - And possibly "visible" (so all of those DECs will visible / invisible after certain event / time / focus etc)
+	
+	### BOP
+	TAR_balance_of_power_category = { 
+		icon = generic_political_actions
+		allowed = {
+			original_tag = tar  # Ensures only the Targon nation sees this category
+		}
+		visible = {
+			always = yes
+		}
+		priority = 100  # Set high priority to display it at the top if needed
+	}
+
+	### DEC CAT: For Generic Desicions
+	TAR_main_cat = { 
+		icon = generic_political_actions
+		allowed = {
+			original_tag = tar
+		}
+
+		visible = {
+			
+		}
+		
+		available = {
+			
+		}
+		
+
+		# Note: Higher priority DEC CAT will be higher
+		priority = 100
+	}
+	
+	TAR_rakkor_cat = {
+		icon = generic_political_actions
+		allowed = {
+			original_tag = tar
+		}
+
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		priority = 50
+	}
+	
+	TAR_lunari_cat = {
+		icon = generic_political_actions
+		allowed = {
+			original_tag = tar
+		}
+
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		priority = 50
+	}
+		
+	TAR_solari_cat = {
+		icon = generic_political_actions
+		allowed = {
+			original_tag = tar
+		}
+
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		priority = 50
+	}
+	
