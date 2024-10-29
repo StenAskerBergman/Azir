@@ -1,0 +1,41 @@
+on_actions = {
+	# Apply on ROOT
+	on_weekly = {
+		effect = {
+			# Update BOP of Targon # ?: I think can be useful in case Targon change ideology, and revert to Solari or Lunari. I hope it doesn't modify for all Targons countries 
+			if = {
+				limit = {
+					original_tag = TAR
+					OR = {
+						has_government = theocracy
+						has_government = oligarchy
+					}
+					NOT = {
+						has_power_balance = {
+							id = TAR_balance_of_power
+						}
+					}
+				}
+				set_power_balance = {
+					id = TAR_balance_of_power
+					set_default = yes
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = TAR
+					NOT = {
+						has_government = theocracy
+						has_government = oligarchy
+					}
+					has_power_balance = {
+						id = TAR_balance_of_power
+					}
+				}
+				remove_power_balance = {
+					id = TAR_balance_of_power
+				}
+			}
+		}
+	}
+}
