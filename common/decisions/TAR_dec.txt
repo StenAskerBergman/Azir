@@ -5,10 +5,10 @@
 
 # START - BOP CAT below!
 TAR_balance_of_power_category = {
-
+    
     ### TARGON DECISION CATEGORY
     # Decisions to influence the balance of power between Solari and Lunari
-
+    
     ### SOLARI SINGLE USE INFLUENCE DECISION
     TAR_influence_solari = {
         icon = generic_decision
@@ -27,20 +27,44 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-    
+        
         complete_effect = {
             add_power_balance_value = {
                 id = TAR_balance_of_power
                 value = -0.05  # Swings power 5% toward Solari
                 tooltip_side = TAR_solari_side
             }
+            every_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_popularity = {
+                    ideology = theocracy
+                    popularity = 0.05
+                }
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
+            }
         }
-
+        
         ai_will_do = {
             factor = 1
         }
     }
-
+    
     ### LUNARI SINGLE USE INFLUENCE DECISION
     TAR_influence_lunari = {
         icon = generic_decision
@@ -59,20 +83,44 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-
+        
         complete_effect = {
             add_power_balance_value = {
                 id = TAR_balance_of_power
                 value = 0.05  # Swings power 5% toward Lunari
                 tooltip_side = TAR_lunari_side
             }
+            every_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_popularity = {
+                    ideology = oligarchy
+                    popularity = 0.05
+                }
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
+            }
         }
-
+        
         ai_will_do = {
             factor = 1
         }
     }
-
+    
     ### SOLARI DAILY INFLUENCE DECISION
     TAR_daily_influence_solari = {
         icon = generic_decision
@@ -91,16 +139,50 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-
-        modifier = {
-            power_balance_daily = -0.01
+        
+        complete_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_ideas =  theocracy_influence_weak
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
+            }
         }
-
+        
+        remove_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                }
+                remove_ideas =  theocracy_influence_weak
+            }
+        }
+        
+        modifier = {
+            power_balance_daily = -0.005
+            theocracy_drift = 0.01
+        }
+        
         ai_will_do = {
             factor = 1
         }
     }
-
+    
     ### LUNARI DAILY INFLUENCE DECISION
     TAR_daily_influence_lunari = {
         icon = generic_decision
@@ -119,11 +201,45 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-
-        modifier = {
-            power_balance_daily = 0.01
+        
+        complete_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_ideas =  oligarchy_influence_weak
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
+            }
         }
-
+        
+        remove_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                }
+                remove_ideas =  oligarchy_influence_weak
+            }
+        }
+        
+        modifier = {
+            power_balance_daily = 0.005
+            oligarchy_drift = 0.01
+        }
+        
         ai_will_do = {
             factor = 1
         }
@@ -134,77 +250,77 @@ TAR_balance_of_power_category = {
 
 ## REAL CATEGORIES BELOW!
 TAR_main_cat = {
-
-	### TARGONS DECISION
-
-
-	### EXEMPLARY DECISION
-	
-	# AFK_EXMP_selectable_dec = {
-
-	# 	icon = generic_decision
-
-	# 	allowed = {
-			
-	# 	}
-		
-	# 	visible = {
-			
-	# 	}
-		
-	# 	available = {
-			
-	# 	}
-
-	# 	fire_only_once = yes
-
-	# 	cost = 25
-
-	# 	complete_effect = {
-			
-	# 	}
-		
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}
-	# }
-	
-	# AFK_EXMP_takestime_dec = {
-
-	# 	icon = generic_decision
-
-	# 	allowed = {
-			
-	# 	}
-		
-	# 	visible = {
-			
-	# 	}
-		
-	# 	available = {
-			
-	# 	}
-	
-	# 	fire_only_once = no
-	# 	days_remove = 120
-	# 	days_re_enable = 0
-		
-	# 	cost = 25
-
-	# 	complete_effect = {
-			
-	# 	}
-
-	# 	modifier = {
-			
-	# 	}
-
-	# 	remove_effect = {
-			
-	# 	}
-		
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}
-	# }
+    
+    ### TARGONS DECISION
+    
+    
+    ### EXEMPLARY DECISION
+    
+    # AFK_EXMP_selectable_dec = {
+    
+    # 	icon = generic_decision
+    
+    # 	allowed = {
+    
+    # 	}
+    
+    # 	visible = {
+    
+    # 	}
+    
+    # 	available = {
+    
+    # 	}
+    
+    # 	fire_only_once = yes
+    
+    # 	cost = 25
+    
+    # 	complete_effect = {
+    
+    # 	}
+    
+    # 	ai_will_do = {
+    # 		factor = 1
+    # 	}
+    # }
+    
+    # AFK_EXMP_takestime_dec = {
+    
+    # 	icon = generic_decision
+    
+    # 	allowed = {
+    
+    # 	}
+    
+    # 	visible = {
+    
+    # 	}
+    
+    # 	available = {
+    
+    # 	}
+    
+    # 	fire_only_once = no
+    # 	days_remove = 120
+    # 	days_re_enable = 0
+    
+    # 	cost = 25
+    
+    # 	complete_effect = {
+    
+    # 	}
+    
+    # 	modifier = {
+    
+    # 	}
+    
+    # 	remove_effect = {
+    
+    # 	}
+    
+    # 	ai_will_do = {
+    # 		factor = 1
+    # 	}
+    # }
 }

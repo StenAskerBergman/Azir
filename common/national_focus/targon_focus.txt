@@ -654,8 +654,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			trigger_civil_war = {
-				ideology = fascism
+			start_civil_war = {
+				ideology = oligarchy
 				size = 0.35
 			}
 		}
@@ -955,8 +955,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			trigger_civil_war = {
-				ideology = communism
+			start_civil_war = {
+				ideology = theocracy
 				size = 0.35
 			}
 		}
