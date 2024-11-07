@@ -99,4 +99,28 @@ spriteTypes = {
         name = "GFX_portrait_tar_soraka_small"
         texturefile = "gfx/leaders/tar/portrait_tar_soraka_small.dds"
     }
+
+    # Lyra Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_lyra_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_lyra_large.dds"
+    }
+
+    # Cygnus Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_cygnus_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_cygnus_large.dds"
+    }
+
+    # Rahvun Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_rahvun_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_rahvun_large.dds"
+    }
+
+    # Zoe Portraits
+    spriteType = {
+        name = "GFX_portrait_tar_zoe_large"
+        texturefile = "gfx/leaders/tar/portrait_tar_zoe_large.dds"
+    }
 }

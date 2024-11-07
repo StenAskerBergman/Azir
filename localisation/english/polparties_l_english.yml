@@ -53,6 +53,9 @@
  theocracy_noun: "Theocracy"
  theocracy_desc: "Religious Rule."
  solari: "Solari"
+ solari_noun: "§OSolar 1i§!"
+ # TAR_solari_noun: "§OSolar 2i§!"
+
  solari_desc: "Absolute faith in the power of the aspect of the sun."
  cultOfVoli: "Cult of the Volibear"
  cultOfVoli_desc: "Lost shamans who have lost themselves to the unnatural power of the Volibear."

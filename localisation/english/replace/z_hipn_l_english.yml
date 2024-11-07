@@ -13,6 +13,9 @@
  # Solari
  TAR_theocracy_party: "§OSolari§!"
  TAR_theocracy_party_long: "The Solari Order"
+ TAR_theocracy_party_short: "§OSolari§!"
+ TAR_theocracy_noun: "§OSolari§!"
+ TAR_solari_noun: "§OSolari§!" 
 
  # Lunari
  TAR_oligarchy_party: "§1Lunari§!"

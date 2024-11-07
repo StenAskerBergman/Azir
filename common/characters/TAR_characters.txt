@@ -1,5 +1,6 @@
 characters = {
 
+    # Leona - Solari, Targonian, tar_purist
     TAR_Leona = {
         name = TAR_LEONA_NAME # "Leona"
         gender = female
@@ -19,10 +20,7 @@ characters = {
         country_leader = {
             desc = POLITICS_LEONA_DESC
             ideology = solari # Solari Ideology
-            traits = { 
-                sun_warrior
-                solar_shield
-            }
+            traits = { sun_warrior solar_shield tar_solari tar_reformer }
             do_effect = {
                 NOT = {
                     has_completed_focus = TAR_Unite_the_Solari
@@ -34,10 +32,10 @@ characters = {
             idea_token = TAR_Leona
             ledger = army
             cost = 150
-            traits = { defensive_doctrine division_defense }
+            traits = { defensive_doctrine division_defense tar_solari }
         }
         field_marshal = {
-            traits = { organizer defensive_doctrine }
+            traits = { organizer defensive_doctrine tar_solari }
             skill = 4
             attack_skill = 3
             defense_skill = 5
@@ -47,6 +45,7 @@ characters = {
         }
     }
 
+    # Diana - Lunari, Targonian, tar_reformer 
     TAR_Diana = {
         name = TAR_DIANA_NAME # "Diana"
         gender = female
@@ -66,10 +65,7 @@ characters = {
         country_leader = {
             desc = POLITICS_DIANA_DESC
             ideology = lunari # Lunari Ideology
-            traits = { 
-                moonblade
-                guerrilla_leader
-            }
+            traits = { moonblade guerrilla_leader tar_reformer tar_lunari }
             do_effect = {
                 NOT = {
                     has_completed_focus = TAR_Lunari_Rebellion
@@ -81,10 +77,10 @@ characters = {
             idea_token = TAR_Diana
             ledger = army
             cost = 150
-            traits = { night_operations_specialist irregular_warfare }
+            traits = { night_operations_specialist irregular_warfare tar_reformer tar_lunari }
         }
         field_marshal = {
-            traits = { guerilla_leader night_operations_specialist }
+            traits = { guerilla_leader night_operations_specialist tar_reformer tar_lunari }
             skill = 5
             attack_skill = 5
             defense_skill = 3
@@ -94,49 +90,71 @@ characters = {
         }
     }
 
-
-    TAR_Pantheon = {
-        name = TAR_PANTHEON_NAME # "Pantheon"
+    # Rahvun - Solari, Targonian, tar_purist
+    TAR_Rahvun = {
+        name = TAR_RAHVUN_NAME # "Rahvun"
         gender = male
         portraits = {
             civilian = {
-                large = GFX_portrait_tar_pantheon_large
-                small = GFX_portrait_tar_pantheon_small
+                large = GFX_portrait_tar_rahvun_large
+                small = GFX_portrait_tar_rahvun_small
             }
             army = {
-                large = GFX_portrait_tar_pantheon_large
-                small = GFX_portrait_tar_pantheon_small
-            }
-        }
-        allowed_civil_war = {
-            TAR_char_cw_rakkor = yes
-        }
-        country_leader = {
-            desc = POLITICS_PANTHEON_DESC
-            ideology = rakkor # Rakkor Ideology
-            traits = { 
-                warrior_spirit
-                rakkor_warrior
+                large = GFX_portrait_tar_rahvun_large
+                small = GFX_portrait_tar_rahvun_small
             }
         }
         advisor = {
-            slot = military_theorist
-            idea_token = TAR_Pantheon
+            slot = military_high_command
+            idea_token = TAR_Rahvun
             ledger = army
             cost = 150
-            traits = { military_theorist infantry_specialist }
+            traits = { offensive_doctrine daybreak_vanguard tar_purist tar_solari }
         }
-        field_marshal = {
-            traits = { harsh_leader organizer aggressive_assault }
-            skill = 6
-            attack_skill = 6
-            defense_skill = 4
-            planning_skill = 5
-            logistics_skill = 4
+        corps_commander = {
+            traits = { harsh_leader aggressive_assault tar_purist tar_solari }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 3
             legacy_id = -1
         }
     }
 
+    # Cygnus - Lunari, Targonian, tar_reformer 
+    TAR_Cygnus = {
+        name = TAR_CYGNUS_NAME # "Cygnus"
+        gender = male
+        portraits = {
+            civilian = {
+                large = GFX_portrait_tar_cygnus_large
+                small = GFX_portrait_tar_cygnus_small
+            }
+            army = {
+                large = GFX_portrait_tar_cygnus_large
+                small = GFX_portrait_tar_cygnus_small
+            }
+        }
+        advisor = {
+            slot = espionage_expert
+            idea_token = TAR_Cygnus
+            ledger = espionage
+            cost = 150
+            traits = { covert_operations night_operations_specialist tar_lunari } # tar_reformer
+        }
+        corps_commander = {
+            traits = { ambusher guerilla_leader tar_lunari } # tar_reformer
+            skill = 5
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+        }
+    }
+
+    # Aurelion Sol - Celestial, Not Targonian, No Faction Alignment
     TAR_AurelionSol = {
         name = TAR_AURELION_SOL_NAME # "Aurelion Sol"
         gender = male
@@ -149,10 +167,7 @@ characters = {
         country_leader = {
             desc = POLITICS_AURELION_SOL_DESC
             ideology = cosmic_dragon # Cosmic Ideology
-            traits = { 
-                cosmic_power
-                celestial_ruler
-            }
+            traits = { cosmic_power celestial tar_reformer }
             do_effect = {
                 NOT = {
                     has_completed_focus = TAR_Enslave_the_Dragon
@@ -168,6 +183,26 @@ characters = {
         }
     }
 
+    # Soraka - Celestial, Targonian, tar_reformer 
+    TAR_Soraka = {
+        name = TAR_SORAKA_NAME # "Soraka"
+        gender = female
+        portraits = {
+            civilian = {
+                large = GFX_portrait_tar_soraka_large
+                small = GFX_portrait_tar_soraka_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = TAR_Soraka
+            ledger = politics
+            cost = 150
+            traits = { divine_healer pacifist celestial tar_reformer }
+        }
+    }
+
+    # Zoe - Celestial, Not Targonian, tar_purist
     TAR_Zoe = {
         name = TAR_ZOE_NAME # "Zoe"
         gender = female
@@ -182,7 +217,54 @@ characters = {
             idea_token = TAR_Zoe
             ledger = politics
             cost = 150
-            traits = { chaos_instigator twilight_meddler }
+            traits = {  celestial tar_lunari }
+        }
+    }
+
+    # Bard - Celestial, Aspect, tar_purist
+    TAR_Bard = {
+        name = TAR_BARD_NAME # "Bard"
+        gender = female
+        portraits = {
+            civilian = {
+                large = GFX_portrait_tar_Bard_large
+                small = GFX_portrait_tar_Bard_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = TAR_Bard
+            ledger = politics
+            cost = 150
+            traits = { celestial }
+        }
+    }
+
+    # Taric - Celestial, Targonian, tar_reformer 
+    TAR_Taric = {
+        name = TAR_TARIC_NAME # "Taric"
+        gender = male
+        portraits = {
+            civilian = {
+                large = GFX_portrait_tar_taric_large
+                small = GFX_portrait_tar_taric_small
+            }
+        }
+        advisor = {
+            slot = military_high_command
+            idea_token = TAR_Taric
+            ledger = army
+            cost = 150
+            traits = { protector_of_targon celestial_defender celestial tar_reformer }
+        }
+        corps_commander = {
+            traits = { charismatic_defender logistics_wizard celestial tar_reformer }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 4
+            logistics_skill = 5
+            legacy_id = -1
         }
     }
 
@@ -200,14 +282,16 @@ characters = {
             idea_token = TAR_Alune
             ledger = espionage
             cost = 150
-            traits = { strategic_genius astral_guidance }
+            traits = { strategic_genius astral_guidance tar_lunari tar_reformer }
         }
-        country_leader = {
+        corps_commander = {
             desc = POLITICS_ALUNE_DESC
             ideology = lunari # Lunari Ideology
             traits = { 
                 astral_mastery
                 moonshadow_tactics
+                tar_lunari
+                tar_reformer 
             }
         }
     }
@@ -226,10 +310,10 @@ characters = {
             idea_token = TAR_Aphelios
             ledger = espionage
             cost = 150
-            traits = { silent_sentinel covert_operations }
+            traits = { silent_sentinel covert_operations tar_lunari } # tar_reformer
         }
-        field_marshal = {
-            traits = { ambusher night_operations_specialist }
+        corps_commander = {
+            traits = { ambusher night_operations_specialist tar_lunari } # tar_reformer
             skill = 5
             attack_skill = 4
             defense_skill = 3
@@ -239,138 +323,93 @@ characters = {
         }
     }
 
-    TAR_Taric = {
-        name = TAR_TARIC_NAME # "Taric"
-        gender = male
-        portraits = {
-            civilian = {
-                large = GFX_portrait_tar_taric_large
-                small = GFX_portrait_tar_taric_small
-            }
-        }
-        advisor = {
-            slot = military_high_command
-            idea_token = TAR_Taric
-            ledger = army
-            cost = 150
-            traits = { protector_of_targon celestial_defender }
-        }
-        field_marshal = {
-            traits = { charismatic_defender logistics_wizard }
-            skill = 4
-            attack_skill = 3
-            defense_skill = 6
-            planning_skill = 4
-            logistics_skill = 5
-            legacy_id = -1
-        }
-    }
 
-    TAR_Kayle = {
-        name = TAR_KAYLE_NAME # "Kayle"
-        gender = female
-        portraits = {
-            civilian = {
-                large = GFX_portrait_tar_kayle_large
-                small = GFX_portrait_tar_kayle_small
-            }
-        }
-        country_leader = {
-            desc = POLITICS_KAYLE_DESC
-            ideology = solari # Solari Ideology
-            traits = { 
-                divine_judgment
-                righteous_fury
-            }
-            do_effect = {
-                NOT = {
-                    has_completed_focus = TAR_Solari_Unite
-                }
-            }
-        }
-        country_leader = {
-            desc = POLITICS_KAYLE_DESC
-            ideology = celestials # celestials Ideology
-            traits = { 
-                divine_judgment
-                righteous_fury
-            }
-            do_effect = {
-                NOT = {
-                    has_completed_focus = TAR_Solari_Unite
-                }
-            }
-        }
-        advisor = {
-            slot = military_theorist
-            idea_token = TAR_Kayle
-            ledger = army
-            cost = 150
-            traits = { military_theorist infantry_theorist }
-        }
-        field_marshal = {
-            traits = { aggressive_assault charismatic_defender }
-            skill = 6
-            attack_skill = 6
-            defense_skill = 5
-            planning_skill = 5
-            logistics_skill = 4
-            legacy_id = -1
-        }
-    }
+    # TAR_Kayle = {
+    #     name = TAR_KAYLE_NAME # "Kayle"
+    #     gender = female
+    #     portraits = {
+    #         civilian = {
+    #             large = GFX_portrait_tar_kayle_large
+    #             small = GFX_portrait_tar_kayle_small
+    #         }
+    #     }
+    #     country_leader = {
+    #         desc = POLITICS_KAYLE_DESC
+    #         ideology = solari # Solari Ideology
+    #         traits = { 
+    #             divine_judgment
+    #             righteous_fury
+    #         }
+    #         do_effect = {
+    #             NOT = {
+    #                 has_completed_focus = TAR_Solari_Unite
+    #             }
+    #         }
+    #     }
+    #     country_leader = {
+    #         desc = POLITICS_KAYLE_DESC
+    #         ideology = celestials # celestials Ideology
+    #         traits = { 
+    #             divine_judgment
+    #             righteous_fury
+    #         }
+    #         do_effect = {
+    #             NOT = {
+    #                 has_completed_focus = TAR_Solari_Unite
+    #             }
+    #         }
+    #     }
+    #     advisor = {
+    #         slot = military_theorist
+    #         idea_token = TAR_Kayle
+    #         ledger = army
+    #         cost = 150
+    #         traits = { military_theorist infantry_theorist }
+    #     }
+    #     field_marshal = {
+    #         traits = { aggressive_assault charismatic_defender }
+    #         skill = 6
+    #         attack_skill = 6
+    #         defense_skill = 5
+    #         planning_skill = 5
+    #         logistics_skill = 4
+    #         legacy_id = -1
+    #     }
+    # }
 
-    TAR_Morgana = {
-        name = TAR_MORGANA_NAME # "Morgana"
-        gender = female
-        portraits = {
-            civilian = {
-                large = GFX_portrait_tar_morgana_large
-                small = GFX_portrait_tar_morgana_small
-            }
-        }
-        country_leader = {
-            desc = POLITICS_MORGANA_DESC
-            ideology = lunari # Lunari Ideology
-            traits = { 
-                fallen_judgment
-                shackles_of_fate
-            }
-        }
-        advisor = {
-            slot = political_advisor
-            idea_token = TAR_Morgana
-            ledger = politics
-            cost = 150
-            traits = { fallen_angel_divine_protector }
-        }
-        field_marshal = {
-            traits = { guerrilla_leader ambusher }
-            skill = 5
-            attack_skill = 4
-            defense_skill = 5
-            planning_skill = 4
-            logistics_skill = 3
-            legacy_id = -1
-        }
-    }
-
-    TAR_Soraka = {
-        name = TAR_SORAKA_NAME # "Soraka"
-        gender = female
-        portraits = {
-            civilian = {
-                large = GFX_portrait_tar_soraka_large
-                small = GFX_portrait_tar_soraka_small
-            }
-        }
-        advisor = {
-            slot = political_advisor
-            idea_token = TAR_Soraka
-            ledger = politics
-            cost = 150
-            traits = { divine_healer pacifist_boon }
-        }
-    }
-
+    # TAR_Morgana = {
+    #     name = TAR_MORGANA_NAME # "Morgana"
+    #     gender = female
+    #     portraits = {
+    #         civilian = {
+    #             large = GFX_portrait_tar_morgana_large
+    #             small = GFX_portrait_tar_morgana_small
+    #         }
+    #     }
+    #     country_leader = {
+    #         desc = POLITICS_MORGANA_DESC
+    #         ideology = lunari # Lunari Ideology
+    #         traits = { 
+    #             fallen_judgment
+    #             shackles_of_fate
+    #         }
+    #     }
+    #     advisor = {
+    #         slot = political_advisor
+    #         idea_token = TAR_Morgana
+    #         ledger = politics
+    #         cost = 150
+    #         traits = { fallen_angel_divine_protector }
+    #     }
+    #     field_marshal = {
+    #         traits = { guerrilla_leader ambusher }
+    #         skill = 5
+    #         attack_skill = 4
+    #         defense_skill = 5
+    #         planning_skill = 4
+    #         logistics_skill = 3
+    #         legacy_id = -1
+    #     }
+    # }
 
 }

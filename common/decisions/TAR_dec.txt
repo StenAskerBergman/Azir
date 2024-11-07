@@ -4,7 +4,7 @@
 
 
 # START - BOP CAT below!
-TAR_balance_of_power_category = {
+TAR_balance_of_power_category = { # BOPs
 
     ### TARGON DECISION CATEGORY
     # Decisions to influence the balance of power between Solari and Lunari
@@ -178,16 +178,79 @@ TAR_balance_of_power_category = {
 
 
 ## REAL CATEGORIES BELOW!
-TAR_main_cat = {
+TAR_main_cat = { # Normal decisions
 
 	### TARGONS DECISION
  	# Decisions to influence the balance of power between Solari and Lunari
 
+    TAR_activate_rakkor_tenacity = {
+        icon = GFX_decision_rakkor_tenacity
+        available = {
+            # has_idea = TAR_rakkor_tenacity
+        }
+        allowed = {
+            original_tag = tar
+        }
+        cost = 50 # Cost in political power
+        days_active = 150
+        days_remove = 150
+		days_re_enable = 30
+
+        modifier = {
+            military_factory_output = 0.15
+            consumer_goods_factory_factor = -0.10
+
+            if = {
+                limit = {
+                    has_war = yes
+                }
+                every_other_country={
+                    limit = {
+                        has_war_with = ROOT
+                    }
+
+                    add_ideas = {}
+                }
+                targeted_modifier = {
+                    tag = ENG
+                    attack_bonus_against = 0.1
+                    defense_bonus_against = -0.15
+                }
+            }
+        }
+    }
+
+
+    
+    TAR_activate_celestial_pilgrimage = {
+        icon = GFX_decision_celestial_pilgrimage
+        available = {
+            # has_idea = TAR_celestial_pilgrimage
+        }
+        allowed = {
+            original_tag = tar
+        }
+        cost = 30 # Cost in political power
+        days_active = 60
+        days_remove = 60
+		days_re_enable = 30
+
+        modifier = {
+            stability_factor = -0.02
+            consumer_goods = -0.10
+        }
+        
+    }
+
+
+    ### BOP RELATED DESCISIONS
 	### SOLARI INFLUENCE DECISION
 	TAR_influence_solari = {
 
 		icon = generic_decision
-
+        allowed = {
+            original_tag = tar
+        }
 		allowed = {
 			has_government = theocracy  # Example: Solari aligned with fascism
 		}
@@ -215,6 +278,23 @@ TAR_main_cat = {
 				swing = -0.05  # Swings power 5% toward Solari
 			}
 		}
+    TAR_summit_harvest = {
+        allowed = {
+            always = no
+        }
+        removal_cost = -1
+
+        modifier = {
+            local_resources_factor = 0.15
+            monthly_population = -0.02
+            attrition = 0.05
+        }
+
+        allowed_to_remove = {
+            has_war_support > 0.4
+        }
+        cancel_if_invalid = no
+    }
 
 		ai_will_do = {
 			factor = 1

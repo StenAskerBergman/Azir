@@ -20,10 +20,16 @@ set_technology = {
 	early_heavy_cruiser = 1
 	transport = 1
 }
-#add_ideas = {
-	#valor_of_LT
-	#al_rashid_dynasty
-#}
+
+add_ideas = {
+
+	# Economic
+	mountains_of_isolation
+
+	# Political
+	
+}
+
 set_politics = {
 	ruling_party = theocracy
 	last_election = "985.6.09"
@@ -59,17 +65,23 @@ recruit_character = TAR_taric
 recruit_character = TAR_kayle
 recruit_character = TAR_morgana
 recruit_character = TAR_soraka
+recruit_character = TAR_cygnus
+recruit_character = TAR_rahvun
+recruit_character = TAR_aurelion_sol
+recruit_character = TAR_zoe
+recruit_character = TAR_bard
 
-create_country_leader = {
-	name = "Aurelion Sol"
-	desc = "Dragon Guy"
-	picture = "gfx/leaders/Targon/AurelionSol.dds"
-	#expire = ""
-	ideology = celestials
-	traits = {
-		# radiantdawn
-	}
-}
+
+# create_country_leader = {
+# 	name = "Aurelion Sol"
+# 	desc = "Dragon Guy"
+# 	picture = "gfx/leaders/Targon/AurelionSol.dds"
+# 	#expire = ""
+# 	ideology = celestials
+# 	traits = {
+# 		# radiantdawn
+# 	}
+# }
 # create_country_leader = {
 # 	name = "Leona"
 # 	desc = "POLITICS_LEONA_DESC"

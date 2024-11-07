@@ -1,0 +1,35 @@
+# | Color Name   | Code |
+# |--------------|------|
+# | Cyan         | §C   |
+# | Lilac        | §L   |
+# | White        | §W   |
+# | Blue         | §B   |
+# | Green        | §G   |
+# | Red          | §R   |
+# | Black        | §b   |
+# | Light Gray   | §g   |
+# | Yellow       | §Y   |
+# | Header       | §H   |
+# | Title        | §T   |
+# | Orange       | §O   |
+# | Purple       | §0   |
+# | Lilac        | §1   |
+# | Blue         | §2   |
+# | Gray-Blue    | §3   |
+# | Light Blue   | §4   |
+# | Dull Cyan    | §5   |
+# | Turquoise    | §6   |
+# | Light Green  | §7   |
+# | Orange-Yellow| §8   |
+# | White-Orange | §9   |
+# | Vivid Red    | §t   |
+# | End          | §!   |
+# |--------------|------|
+# |              |      |
+# |              |      |
+# |              |      |
+# |              |      |
+# |              |      |
+# |              |      |
+# |              |      |
+# |              |      |

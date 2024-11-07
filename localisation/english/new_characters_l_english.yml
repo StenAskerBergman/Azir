@@ -177,8 +177,9 @@
  # Soraka Traits
  divine_healer: "Divine Healer"
  divine_healer_desc: "Soraka’s powers focus on healing and supporting her allies, providing restoration and support during campaigns."
- pacifist_boon: "Pacifist's Boon"
- pacifist_boon_desc: "Soraka’s influence prevents unnecessary conflict, reducing war exhaustion and boosting stability."
+
+ pacifist: "pacifist"
+ pacifist_desc: "Soraka’s influence prevents unnecessary conflict, reducing war exhaustion and boosting stability."
 
  # VOI_MALZAHAR_NAME: "Malzahar"
  # POLITICS_MALZAHAR_DESC: "" Already written
