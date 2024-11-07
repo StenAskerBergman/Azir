@@ -1,0 +1,39 @@
+spriteTypes = {
+	# Default
+	spriteType = {
+		name = GFX_super_event_window_close_button
+		textureFile = "gfx/interface/super_events/close_button.dds"
+	}
+
+	spriteType = {
+		name = GFX_super_event_title_background
+		textureFile = "gfx/interface/button_359x34.dds"
+	}
+
+	spriteType = {
+		name = GFX_super_event_background_superevent
+		textureFile = "gfx/interface/super_events/background_superevent.dds"
+	}
+
+	spriteType = {
+		name = GFX_super_event_background_superevent_2
+		textureFile = "gfx/interface/super_events/background_superevent_2.dds"
+	}
+
+	spriteType = {
+		name = GFX_super_event_desc_background
+		textureFile = "gfx/interface/super_events/desc_background.dds"
+	}
+
+	# For each super_event
+
+	spriteType = {
+		name = GFX_superevent_placeholder
+		textureFile = "gfx/interface/super_events/superevent_placeholder.dds"
+	}
+
+	spriteType = {
+		name = GFX_superevent_1
+		textureFile = "gfx/interface/super_events/superevent_1.dds"
+	}
+}

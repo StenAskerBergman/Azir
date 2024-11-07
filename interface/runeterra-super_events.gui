@@ -1,0 +1,104 @@
+guiTypes = {
+	# Super events
+
+	containerWindowType = {
+        name = "SuperEventWindow_News"
+        position = { x = 0 y = 0}
+        size = { width = 800 height= 650 }
+        orientation = center
+        origo = center
+        fade_time = 100
+        moveable = yes
+        fade_type = linear
+        click_to_front = no
+        clipping = no
+
+        show_sound = world_news_effect
+		hide_sound = menu_close_window
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_transparent"
+        }
+
+        iconType ={
+            name ="Picture"
+            spriteType = "GFX_superevent_placeholder"
+            position = { x= -385 y = -320 }
+            Orientation = CENTER
+        }
+
+        iconType ={
+            name ="Frame"
+            spriteType = "GFX_super_event_background_superevent"
+            position = { x= -400 y = -340 }
+            Orientation = CENTER
+        }
+
+		iconType ={
+            name ="title_background"
+            spriteType = "GFX_super_event_title_background"
+            position = { x= -175 y = -320 }
+            Orientation = CENTER
+        }
+		instantTextboxType = {
+            name = "title_text"
+            position = { x = 250 y = 10 }
+            font = "hoi_30header"
+            borderSize = {x = 0 y = 0}
+            text = "[runeterra_super_events_title]"
+            maxWidth = 300
+            maxHeight = 20
+            fixedsize = yes
+			format = center
+			vertical_alignment = center
+			alwaystransparent = yes
+        }
+
+		iconType ={
+            name ="desc_background"
+            spriteType = "GFX_super_event_desc_background"
+            position = { x = -345 y = -0 }
+            Orientation = CENTER
+        }
+		instantTextboxType = {
+            name = "desc_text"
+            position = { x = 65 y = 336 }
+            font = "newsfeed_body"
+            borderSize = {x = 0 y = 0}
+            text = "[runeterra_super_events_desc]"
+            maxWidth = 688
+            maxHeight = 200
+            fixedsize = yes
+			format = left
+			vertical_alignment = top
+			alwaystransparent = yes
+        }
+
+		iconType ={
+            name ="a_background"
+            spriteType = "GFX_event_option_entry"
+            position = { x= -175 y = 195 }
+            Orientation = CENTER
+        }
+        # iconType ={
+        #     name ="close_button"
+        #     spriteType = "GFX_super_event_window_close_button"
+        #     position = { x= 215 y = 220}
+        #     Orientation = CENTER
+        # }
+        instantTextboxType = {
+            name = "a_text"
+            position = { x = 215 y = 520 }
+            font = "hoi_20bs"
+            borderSize = {x = 0 y = 0}
+            text = "[runeterra_super_events_a]"
+            maxWidth = 340
+            maxHeight = 40
+            fixedsize = yes
+			format = center
+			vertical_alignment = center
+			alwaystransparent = yes
+        }
+    }
+}

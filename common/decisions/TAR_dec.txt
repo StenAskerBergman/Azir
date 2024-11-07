@@ -1,5 +1,5 @@
 ### SOME NOTES
-# Filling all "allowed" with TAG (making that decision 
+# Filling all "allowed" with TAG (making that decision
 # only available for country you want) will reduce lag
 
 
@@ -12,11 +12,10 @@ TAR_balance_of_power_category = { # BOPs
     ### SOLARI SINGLE USE INFLUENCE DECISION
     TAR_influence_solari = {
         icon = generic_decision
-        allowed = {
-            has_government = fascism  # Example: Solari aligned with fascism
-        }
         visible = {
-            always = yes
+            has_power_balance = {
+                id = TAR_balance_of_power
+            }
         }
         available = {
             is_power_balance_side_active = {
@@ -24,21 +23,40 @@ TAR_balance_of_power_category = { # BOPs
                 side = TAR_solari_side
             }
         }
-        decision_trigger = {
-            is_power_balance_active = {
-                id = TAR_balance_of_power
-            }
-        }
         fire_only_once = no
         days_remove = 60
         days_re_enable = 30
         cost = 50
-    
+
         complete_effect = {
             add_power_balance_value = {
                 id = TAR_balance_of_power
                 value = -0.05  # Swings power 5% toward Solari
                 tooltip_side = TAR_solari_side
+            }
+            every_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_popularity = {
+                    ideology = theocracy
+                    popularity = 0.05
+                }
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
             }
         }
 
@@ -50,21 +68,15 @@ TAR_balance_of_power_category = { # BOPs
     ### LUNARI SINGLE USE INFLUENCE DECISION
     TAR_influence_lunari = {
         icon = generic_decision
-        allowed = {
-            has_government = democracy  # Example: Lunari aligned with democracy
-        }
         visible = {
-            always = yes
+            has_power_balance = {
+                id = TAR_balance_of_power
+            }
         }
         available = {
             is_power_balance_side_active = {
                 id = TAR_balance_of_power
                 side = TAR_lunari_side
-            }
-        }
-        decision_trigger = {
-            is_power_balance_active = {
-                id = TAR_balance_of_power
             }
         }
         fire_only_once = no
@@ -78,6 +90,30 @@ TAR_balance_of_power_category = { # BOPs
                 value = 0.05  # Swings power 5% toward Lunari
                 tooltip_side = TAR_lunari_side
             }
+            every_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_popularity = {
+                    ideology = oligarchy
+                    popularity = 0.05
+                }
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
+            }
         }
 
         ai_will_do = {
@@ -88,21 +124,15 @@ TAR_balance_of_power_category = { # BOPs
     ### SOLARI DAILY INFLUENCE DECISION
     TAR_daily_influence_solari = {
         icon = generic_decision
-        allowed = {
-            has_government = fascism
-        }
         visible = {
-            always = yes
+            has_power_balance = {
+                id = TAR_balance_of_power
+            }
         }
         available = {
             is_power_balance_side_active = {
                 id = TAR_balance_of_power
                 side = TAR_solari_side
-            }
-        }
-        decision_trigger = {
-            is_power_balance_active = {
-                id = TAR_balance_of_power
             }
         }
         fire_only_once = no
@@ -111,23 +141,41 @@ TAR_balance_of_power_category = { # BOPs
         cost = 50
 
         complete_effect = {
-
-			# Kinda Work but induces no changes
-            add_power_balance_value = {
-				power_balance_daily_change = {
-					id = TAR_balance_of_power
-					side = TAR_solari_side
-					power_balance_daily = -0.01  # Adjust value for daily influence toward Solari
-					
-				}
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_ideas =  theocracy_influence_weak
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
             }
+        }
 
-			# Doesn't Work
-			# add_power_balance_modifier = {
-			# 	id = TAR_balance_of_power    # The ID of the balance of power
-			# 	side = TAR_solari_side
-			# 	power_balance_daily = -0.01 # The modifier to add
-			# }
+        remove_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                }
+                remove_ideas =  theocracy_influence_weak
+            }
+        }
+
+        modifier = {
+            power_balance_daily = -0.005
+            theocracy_drift = 0.01
         }
 
         ai_will_do = {
@@ -138,11 +186,10 @@ TAR_balance_of_power_category = { # BOPs
     ### LUNARI DAILY INFLUENCE DECISION
     TAR_daily_influence_lunari = {
         icon = generic_decision
-        allowed = {
-            has_government = democracy
-        }
         visible = {
-            always = yes
+            has_power_balance = {
+                id = TAR_balance_of_power
+            }
         }
         available = {
             is_power_balance_side_active = {
@@ -150,23 +197,47 @@ TAR_balance_of_power_category = { # BOPs
                 side = TAR_lunari_side
             }
         }
-        decision_trigger = {
-            is_power_balance_active = {
-                id = TAR_balance_of_power
-            }
-        }
         fire_only_once = no
         days_remove = 60
         days_re_enable = 30
         cost = 50
 
-        # Effect that continuously adds daily influence - Doesn't WORK!!!
-        modifier = {
-            power_balance_daily_change = {
-                id = TAR_balance_of_power
-                side = TAR_lunari_side
-                value = 0.01  # Adjust value for daily influence toward Lunari
+        complete_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                    has_power_balance = {
+                        id = TAR_balance_of_power
+                    }
+                }
+                add_ideas =  oligarchy_influence_weak
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                tag = ROOT
+                            }
+                        }
+                        country_event = {
+                            id = generic.1
+                        }
+                    }
+                }
             }
+        }
+
+        remove_effect = {
+            every_other_country = {
+                limit = {
+                    original_tag = ROOT
+                }
+                remove_ideas =  oligarchy_influence_weak
+            }
+        }
+
+        modifier = {
+            power_balance_daily = 0.005
+            oligarchy_drift = 0.01
         }
 
         ai_will_do = {
@@ -221,7 +292,7 @@ TAR_main_cat = { # Normal decisions
     }
 
 
-    
+
     TAR_activate_celestial_pilgrimage = {
         icon = GFX_decision_celestial_pilgrimage
         available = {
@@ -239,7 +310,7 @@ TAR_main_cat = { # Normal decisions
             stability_factor = -0.02
             consumer_goods = -0.10
         }
-        
+
     }
 
 
@@ -341,21 +412,21 @@ TAR_main_cat = { # Normal decisions
 
 
 	### EXEMPLARY DECISION
-	
+
 	# AFK_EXMP_selectable_dec = {
 
 	# 	icon = generic_decision
 
 	# 	allowed = {
-			
+
 	# 	}
-		
+
 	# 	visible = {
-			
+
 	# 	}
-		
+
 	# 	available = {
-			
+
 	# 	}
 
 	# 	fire_only_once = yes
@@ -363,48 +434,48 @@ TAR_main_cat = { # Normal decisions
 	# 	cost = 25
 
 	# 	complete_effect = {
-			
+
 	# 	}
-		
+
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}
 	# }
-	
+
 	# AFK_EXMP_takestime_dec = {
 
 	# 	icon = generic_decision
 
 	# 	allowed = {
-			
+
 	# 	}
-		
+
 	# 	visible = {
-			
+
 	# 	}
-		
+
 	# 	available = {
-			
+
 	# 	}
-	
+
 	# 	fire_only_once = no
 	# 	days_remove = 120
 	# 	days_re_enable = 0
-		
+
 	# 	cost = 25
 
 	# 	complete_effect = {
-			
+
 	# 	}
 
 	# 	modifier = {
-			
+
 	# 	}
 
 	# 	remove_effect = {
-			
+
 	# 	}
-		
+
 	# 	ai_will_do = {
 	# 		factor = 1
 	# 	}

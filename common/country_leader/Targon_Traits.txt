@@ -1,0 +1,11 @@
+leader_traits = {
+	TAR_purists = {
+		random = no
+	}
+
+	TAR_solari = {
+		random = no
+	}
+
+	
+}
