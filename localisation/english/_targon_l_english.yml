@@ -111,13 +111,19 @@
  
  # Tooltip and Option Localization
 
- targon.3.t: "The Lunari"
- targon.3.desc: "The Lunari are a dark cult that seeks to corrupt our holy light. They have been hidden for years, but now they have finally come out.\n What do we do now?"
+ targon.3.t: "Our Origins"
+ targon.3.desc: "While exploring the ancient archives of the Solari temple, Leona uncovers hidden records revealing a shared origin between the Solari and Lunari, indicating a time when both factions coexisted harmoniously. Confronted with this revelation, she faces a pivotal decision: \nThe Lunari are a dark cult that seeks to corrupt our holy light. They have been hidden for years, but now they have finally come out.\n What do we do now?"
  targon.3.a: "Acknowledge Lunari Past"
- targon.3.a.tt: "Recognizing the Lunari's beliefs could stabilize Targon, though it may not sit well with all Solari"
+ targon.3.a.tt: "Recognizing the Lunari's beliefs could stabilize Targon, though it may not sit well with most faithful"
 
- targon.3.b: "Purge the Lunari Heretics"
- targon.3.b.tt: "The Lunari are a poison within Targon, a dark cult that seeks to corrupt our holy light. We must rid ourselves of their seditious influence and cleanse Targon of their blasphemy once and for all."
+ targon.3.b: "Deny Lunari Past"
+ targon.3.b.tt: "Clearly a Trick to fool us!"
+
+ #"I refuse to believe it"
+ #"We are Solari. Our devotion to the sun is pure and unbroken. Let the Lunari cling to shadows and false histories. This… this is nothing more than a blasphemous tale"
+
+ #targon.3.b: "Purge the Lunari Heretics"
+ #targon.3.b.tt: "The Lunari are a poison within Targon, a dark cult that seeks to corrupt our holy light. We must rid ourselves of their seditious influence and cleanse Targon of their blasphemy once and for all."
 
 
  targon.9.t: "Leona’s Choice"
@@ -157,7 +163,8 @@
  targon.101.d: "The Lunari, led by Diana and her followers, have risen against the oppressive Solari rule. After years of hiding, they now strike with full force, aiming to reclaim Targon for themselves."
  targon.101.a: "The Lunari Uprising Begins"
 
-
+ PuristPathTrue: "§GTake§! the §OPurist Path§!"
+ PuristPathFalse: "§RAvoid§! the Purist Path"
 
  TAR_lunari_harvest: "Lunari Harvest"    
  lunari.16.t: "In the Shadow of the Sun"

@@ -163,11 +163,9 @@ focus_tree = {
 
         }
         available = {
-            NOT =  { 
-                has_country_leader = { 
-                    character = TAR_rahvun 
-                } 
-            }
+            has_country_flag = PuristPathFalse
+
+            NOT = { has_country_leader = { character = TAR_rahvun } }
         }
     }
 
@@ -239,12 +237,13 @@ focus_tree = {
 		mutually_exclusive = { focus = TAR_reform focus = TAR_rejectors }
 		prerequisite = { focus = TAR_our_leader}
 		available = {
+            has_country_flag = PuristPathTrue
 			OR = {
                 has_country_leader = {
                     character = TAR_rahvun
                 }
                 AND = {
-                    has_country_flag = PuristPathTrue
+
                     has_country_leader = {
                         character = TAR_leona
                     }
@@ -361,8 +360,21 @@ focus_tree = {
 		prerequisite = { focus = TAR_our_leader }
 
         available = {
+            # MUST BE TRUE
+            has_country_flag = PuristPathFalse
+
+            # CANNOT TRUE
             NOT =  { has_country_leader = { character = TAR_rahvun } }
             NOT = { TAR_purge_success = true }
+            
+            NOT =  { 
+                OR =  { 
+                    has_country_flag = PuristPathTrue
+                    has_country_leader = { 
+                        character = TAR_rahvun 
+                    } 
+                }
+            }
         }
     }
 

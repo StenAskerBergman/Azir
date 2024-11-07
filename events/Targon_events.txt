@@ -117,7 +117,7 @@ country_event = {
         custom_effect_tooltip = targon.9.a.tt
         # Choose Solari Purist path
         set_country_flag = TAR_purity_path
-        # add_ideas = TAR_solari_supremacy # Adds purist traits
+        add_ideas = TAR_solari_supremacy # Adds purist traits
         add_stability = -0.05
         add_war_support = 0.10
     }
@@ -127,7 +127,7 @@ country_event = {
         custom_effect_tooltip = targon.9.b.tt
         # Choose Reformist path
         set_country_flag = TAR_reformation_path
-        # add_ideas = TAR_peaceful_reforms # Adds reformist traits
+        add_ideas = TAR_peaceful_reforms # Adds reformist traits
         add_stability = 0.05
         add_political_power = 20
     }

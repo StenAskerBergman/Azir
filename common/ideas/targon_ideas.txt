@@ -222,7 +222,32 @@ ideas = {
         #          ^"****""`                    "%     ^Y"   ^Y'                  ""   
         #                                                                              
                                                                          
-                                                                         
+        TAR_solari_supremacy = {
+            picture = GFX_idea_solari_supremacy
+            allowed = { original_tag = TAR }
+            removal_cost = -1  # Prevents manual removal
+            modifier = {
+                political_power_gain = 0.10  # +10% Political Power gain
+                division_attack = 0.05       # +5% Division Attack
+                war_support = 0.10           # +10% War Support
+                stability = -0.05            # -5% Stability
+                ideology_drift_defense = 0.10  # +10% Ideology Drift Defense
+            }
+        }
+
+        TAR_peaceful_reforms = {
+            picture = GFX_idea_peaceful_reforms
+            allowed = { original_tag = TAR }
+            removal_cost = -1  # Prevents manual removal
+            modifier = {
+                political_power_gain = 0.05  # +5% Political Power gain
+                stability = 0.10             # +10% Stability
+                recruitable_population_factor = 0.05  # +5% Recruitable Population Factor
+                reinforce_rate = 0.05        # +5% Reinforce Rate
+                war_support = -0.05          # -5% War Support
+            }
+        }
+
 
         TAR_divine_mandate = {
             picture = generic_theocracy_drift_bonus # TODO: Replace with actual image as needed
