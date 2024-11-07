@@ -171,7 +171,22 @@ XER_Total_War: "Total War" # Total war against whoever stands up to you
 XER_Total_War_desc: "In the crucible of total war, we unleash our fury upon all who dare to oppose us. With relentless aggression, we crush our enemies beneath the weight of our unstoppable might."
 
 XER_Ruthless_Cruelty: "Ruthless Cruelty" # Renekton is in power, Xerath is gone/dead
-XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist, and mercy is but a distant memory. As Xerath fades into obscurity, Shurima trembles beneath the weight of unbridled brutality.\n\n §OBoost §!§Rdivision attack§R and §Bdefense§!, but §Rlower division organization.§!"
+XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist,\n And mercy is but a distant memory... As Xerath, fades into obscurity, Shurima trembles beneath the weight of unbridled brutality.\n\n §OBoost§! §RAttack§R§! \n §OBoost§! §GDefense§!" 
+
+# Higher Attack for Lower Organization -> High Organization for Lower Attack
+# Higher Defense for Lower Speed -> High Speed for Lower Defense
+
+# Higher Attack for Lower Stability -> High Stability for Lower Attack
+# Higher Reorg for Higher War Support -> Lower War Support for Lower Reorg
+
+# Another Idea:
+# Lower Enemy War Support for Higher Attack / Reorg  ->  Higher Enemy War Support lowers our Reorg / Attack
+
+xerath.2.t: "Power Play"
+xerath.2.d: "In the heart of the ancient Shuriman desert, a climactic confrontation unfolds between Renekton, the Butcher of the Sands, and Xerath, the Magus Ascendant. Both seek to eliminate the other to fulfill their own ambitions.\n Will it be Renekton, seeking vengeance and redemption?\n Or\n Will it be Xerath, pursuing boundless arcane power?"
+xerath.2.d.tt: "Your choice will shape the fate of Shurima."
+
+# \n but §Rlower §!division organization.§!"
 
 XER_Dawg_Pack: "Dawg Pack" # Easter Egg: If Renekton is in power, his brother Nasus can Join!
 XER_Dawg_Pack_desc: "In a rare display of unity, Renekton and his brother Nasus form a formidable alliance, known as the Dawg Pack. Together, they bring the fury of the desert to bear against all who oppose them."

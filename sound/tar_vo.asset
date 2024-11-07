@@ -1,0 +1,619 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	TAR_infantry_idle
+	TAR_infantry_neutral_combat
+	TAR_infantry_positive_combat
+	TAR_infantry_retreat
+ }
+}
+
+########### TAR
+
+soundeffect = 
+{
+    name = "TAR_infantry_idle"
+    sounds = {
+		sound = TAR_idle_001
+		sound = TAR_idle_002
+		sound = TAR_idle_003
+		sound = TAR_idle_004
+		sound = TAR_idle_005
+		sound = TAR_idle_006
+		# sound = TAR_idle_007
+		# sound = TAR_idle_008
+		# sound = TAR_idle_009
+		# sound = TAR_idle_010
+		# sound = TAR_idle_011
+		# sound = TAR_idle_012
+		# sound = TAR_idle_013
+		# sound = TAR_idle_014
+		# sound = TAR_idle_015
+		# sound = TAR_idle_016
+		# sound = TAR_idle_017
+		# sound = TAR_idle_018
+		# sound = TAR_idle_019
+		# sound = TAR_idle_020
+		# sound = TAR_idle_021
+		# sound = TAR_idle_022
+		# sound = TAR_idle_023
+		# sound = TAR_idle_024
+		# sound = TAR_idle_025
+		# sound = TAR_idle_026
+		# sound = TAR_idle_027
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "TAR_infantry_neutral_combat"
+    sounds = {
+		sound = TAR_neutral_001
+		sound = TAR_neutral_002
+		sound = TAR_neutral_003
+		sound = TAR_neutral_004
+		sound = TAR_neutral_005
+		sound = TAR_neutral_006
+		sound = TAR_neutral_007
+		sound = TAR_neutral_008
+		sound = TAR_neutral_009
+		sound = TAR_neutral_010
+		sound = TAR_neutral_011
+		sound = TAR_neutral_012
+		sound = TAR_neutral_013
+		sound = TAR_neutral_014
+		sound = TAR_neutral_015
+		sound = TAR_neutral_016
+		sound = TAR_neutral_017
+		sound = TAR_neutral_018
+		sound = TAR_neutral_019
+		sound = TAR_neutral_020
+		sound = TAR_neutral_021
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "TAR_infantry_positive_combat"
+    sounds = {
+		sound = TAR_positive_001
+		sound = TAR_positive_002
+		sound = TAR_positive_003
+		sound = TAR_positive_004
+		sound = TAR_positive_005
+		sound = TAR_positive_006
+		sound = TAR_positive_007
+		sound = TAR_positive_008
+		sound = TAR_positive_009
+		sound = TAR_positive_010
+		sound = TAR_positive_011
+		sound = TAR_positive_012
+		sound = TAR_positive_013
+		sound = TAR_positive_014
+		sound = TAR_positive_015
+		sound = TAR_positive_016
+		sound = TAR_positive_017
+		sound = TAR_positive_018
+		sound = TAR_positive_019
+		sound = TAR_positive_021
+		sound = TAR_positive_022
+		sound = TAR_positive_023
+		sound = TAR_positive_024
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "TAR_infantry_retreat"
+    sounds = {
+		sound = TAR_retreat_001
+		sound = TAR_retreat_002
+		sound = TAR_retreat_003
+		sound = TAR_retreat_004
+		sound = TAR_retreat_005
+		sound = TAR_retreat_006
+		sound = TAR_retreat_007
+		sound = TAR_retreat_008
+		sound = TAR_retreat_009
+		sound = TAR_retreat_010
+		sound = TAR_retreat_011
+		sound = TAR_retreat_012
+		sound = TAR_retreat_013
+		sound = TAR_retreat_014
+		sound = TAR_retreat_015
+		sound = TAR_retreat_016
+		sound = TAR_retreat_016_alt
+		sound = TAR_retreat_017
+		sound = TAR_retreat_017_alt
+		sound = TAR_retreat_018
+		sound = TAR_retreat_018_alt
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+############## AUDIO ASSETS
+
+######## TAR
+sound = 
+{
+	name = "TAR_idle_001"
+	file = "TAR/tar_idle_001.wav"
+}
+sound = 
+{
+	name = "TAR_idle_002"
+	file = "TAR/tar_idle_002.wav"
+}
+sound = 
+{
+	name = "TAR_idle_003"
+	file = "TAR/tar_idle_003.wav"
+}
+sound = 
+{
+	name = "TAR_idle_004"
+	file = "TAR/tar_idle_004.wav"
+}
+sound = 
+{
+	name = "TAR_idle_005"
+	file = "TAR/tar_idle_005.wav"
+}
+sound = 
+{
+	name = "TAR_idle_006"
+	file = "TAR/tar_idle_006.wav"
+}
+sound = 
+{
+	name = "TAR_idle_007"
+	file = "TAR/tar_idle_007.wav"
+}
+sound = 
+{
+	name = "TAR_idle_008"
+	file = "TAR/tar_idle_008.wav"
+}
+sound = 
+{
+	name = "TAR_idle_009"
+	file = "TAR/tar_idle_009.wav"
+}
+sound = 
+{
+	name = "TAR_idle_010"
+	file = "TAR/tar_idle_010.wav"
+}
+sound = 
+{
+	name = "TAR_idle_011"
+	file = "TAR/tar_idle_011.wav"
+}
+sound = 
+{
+	name = "TAR_idle_012"
+	file = "TAR/tar_idle_012.wav"
+}
+sound = 
+{
+	name = "TAR_idle_013"
+	file = "TAR/tar_idle_013.wav"
+}
+sound = 
+{
+	name = "TAR_idle_014"
+	file = "TAR/tar_idle_014.wav"
+}
+sound = 
+{
+	name = "TAR_idle_015"
+	file = "TAR/tar_idle_015.wav"
+}
+sound = 
+{
+	name = "TAR_idle_016"
+	file = "TAR/tar_idle_016.wav"
+}
+sound = 
+{
+	name = "TAR_idle_017"
+	file = "TAR/tar_idle_017.wav"
+}
+sound = 
+{
+	name = "TAR_idle_018"
+	file = "TAR/tar_idle_018.wav"
+}
+sound = 
+{
+	name = "TAR_idle_019"
+	file = "TAR/tar_idle_019.wav"
+}
+sound = 
+{
+	name = "TAR_idle_020"
+	file = "TAR/tar_idle_020.wav"
+}
+sound = 
+{
+	name = "TAR_idle_021"
+	file = "TAR/tar_idle_021.wav"
+}
+sound = 
+{
+	name = "TAR_idle_022"
+	file = "TAR/tar_idle_022.wav"
+}
+sound = 
+{
+	name = "TAR_idle_023"
+	file = "TAR/tar_idle_023.wav"
+}
+sound = 
+{
+	name = "TAR_idle_024"
+	file = "TAR/tar_idle_024.wav"
+}
+sound = 
+{
+	name = "TAR_idle_025"
+	file = "TAR/tar_idle_025.wav"
+}
+sound = 
+{
+	name = "TAR_idle_026"
+	file = "TAR/tar_idle_026.wav"
+}
+sound = 
+{
+	name = "TAR_idle_027"
+	file = "TAR/tar_idle_027.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_001"
+	file = "TAR/tar_neutral_001.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_002"
+	file = "TAR/tar_neutral_002.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_003"
+	file = "TAR/tar_neutral_003.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_004"
+	file = "TAR/tar_neutral_004.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_005"
+	file = "TAR/tar_neutral_005.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_006"
+	file = "TAR/tar_neutral_006.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_007"
+	file = "TAR/tar_neutral_007.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_008"
+	file = "TAR/tar_neutral_008.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_009"
+	file = "TAR/tar_neutral_009.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_010"
+	file = "TAR/tar_neutral_010.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_011"
+	file = "TAR/tar_neutral_011.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_012"
+	file = "TAR/tar_neutral_012.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_013"
+	file = "TAR/tar_neutral_013.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_014"
+	file = "TAR/tar_neutral_014.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_015"
+	file = "TAR/tar_neutral_015.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_016"
+	file = "TAR/tar_neutral_016.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_017"
+	file = "TAR/tar_neutral_017.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_018"
+	file = "TAR/tar_neutral_018.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_019"
+	file = "TAR/tar_neutral_019.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_020"
+	file = "TAR/tar_neutral_020.wav"
+}
+sound = 
+{
+	name = "TAR_neutral_021"
+	file = "TAR/tar_neutral_021.wav"
+}
+sound = 
+{
+	name = "TAR_positive_001"
+	file = "TAR/tar_positive_001.wav"
+}
+sound = 
+{
+	name = "TAR_positive_002"
+	file = "TAR/tar_positive_002.wav"
+}
+sound = 
+{
+	name = "TAR_positive_003"
+	file = "TAR/tar_positive_003.wav"
+}
+sound = 
+{
+	name = "TAR_positive_004"
+	file = "TAR/tar_positive_004.wav"
+}
+sound = 
+{
+	name = "TAR_positive_005"
+	file = "TAR/tar_positive_005.wav"
+}
+sound = 
+{
+	name = "TAR_positive_006"
+	file = "TAR/tar_positive_006.wav"
+}
+sound = 
+{
+	name = "TAR_positive_007"
+	file = "TAR/tar_positive_007.wav"
+}
+sound = 
+{
+	name = "TAR_positive_008"
+	file = "TAR/tar_positive_008.wav"
+}
+sound = 
+{
+	name = "TAR_positive_009"
+	file = "TAR/tar_positive_009.wav"
+}
+sound = 
+{
+	name = "TAR_positive_010"
+	file = "TAR/tar_positive_010.wav"
+}
+sound = 
+{
+	name = "TAR_positive_011"
+	file = "TAR/tar_positive_011.wav"
+}
+sound = 
+{
+	name = "TAR_positive_012"
+	file = "TAR/tar_positive_012.wav"
+}
+sound = 
+{
+	name = "TAR_positive_013"
+	file = "TAR/tar_positive_013.wav"
+}
+sound = 
+{
+	name = "TAR_positive_014"
+	file = "TAR/tar_positive_014.wav"
+}
+sound = 
+{
+	name = "TAR_positive_015"
+	file = "TAR/tar_positive_015.wav"
+}
+sound = 
+{
+	name = "TAR_positive_016"
+	file = "TAR/tar_positive_016.wav"
+}
+sound = 
+{
+	name = "TAR_positive_017"
+	file = "TAR/tar_positive_017.wav"
+}
+sound = 
+{
+	name = "TAR_positive_018"
+	file = "TAR/tar_positive_018.wav"
+}
+sound = 
+{
+	name = "TAR_positive_019"
+	file = "TAR/tar_positive_019.wav"
+}
+sound = 
+{
+	name = "TAR_positive_020"
+	file = "TAR/tar_positive_020.wav"
+}
+sound = 
+{
+	name = "TAR_positive_021"
+	file = "TAR/tar_positive_021.wav"
+}
+sound = 
+{
+	name = "TAR_positive_022"
+	file = "TAR/tar_positive_022.wav"
+}
+sound = 
+{
+	name = "TAR_positive_023"
+	file = "TAR/tar_positive_023.wav"
+}
+sound = 
+{
+	name = "TAR_positive_024"
+	file = "TAR/tar_positive_024.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_001"
+	file = "TAR/tar_retreat_001.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_002"
+	file = "TAR/tar_retreat_002.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_003"
+	file = "TAR/tar_retreat_003.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_004"
+	file = "TAR/tar_retreat_004.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_005"
+	file = "TAR/tar_retreat_005.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_006"
+	file = "TAR/tar_retreat_006.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_007"
+	file = "TAR/tar_retreat_007.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_008"
+	file = "TAR/tar_retreat_008.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_009"
+	file = "TAR/tar_retreat_009.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_010"
+	file = "TAR/tar_retreat_010.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_011"
+	file = "TAR/tar_retreat_011.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_012"
+	file = "TAR/tar_retreat_012.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_013"
+	file = "TAR/tar_retreat_013.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_014"
+	file = "TAR/tar_retreat_014.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_015"
+	file = "TAR/tar_retreat_015.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_016"
+	file = "TAR/tar_retreat_016.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_016_alt"
+	file = "TAR/tar_retreat_016_alt.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_017"
+	file = "TAR/tar_retreat_017.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_017_alt"
+	file = "TAR/tar_retreat_017_alt.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_018"
+	file = "TAR/tar_retreat_018.wav"
+}
+sound = 
+{
+	name = "TAR_retreat_018_alt"
+	file = "TAR/tar_retreat_018_alt.wav"
+}

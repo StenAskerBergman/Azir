@@ -1,14 +1,14 @@
 ### SOME NOTES
-# Filling all "allowed" with TAG (making that decision 
+# Filling all "allowed" with TAG (making that decision
 # only available for country you want) will reduce lag
 
 
 # START - BOP CAT below!
-TAR_balance_of_power_category = {
-    
+TAR_balance_of_power_category = { # BOPs
+
     ### TARGON DECISION CATEGORY
     # Decisions to influence the balance of power between Solari and Lunari
-    
+
     ### SOLARI SINGLE USE INFLUENCE DECISION
     TAR_influence_solari = {
         icon = generic_decision
@@ -27,7 +27,7 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-        
+
         complete_effect = {
             add_power_balance_value = {
                 id = TAR_balance_of_power
@@ -59,12 +59,12 @@ TAR_balance_of_power_category = {
                 }
             }
         }
-        
+
         ai_will_do = {
             factor = 1
         }
     }
-    
+
     ### LUNARI SINGLE USE INFLUENCE DECISION
     TAR_influence_lunari = {
         icon = generic_decision
@@ -83,7 +83,7 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-        
+
         complete_effect = {
             add_power_balance_value = {
                 id = TAR_balance_of_power
@@ -115,12 +115,12 @@ TAR_balance_of_power_category = {
                 }
             }
         }
-        
+
         ai_will_do = {
             factor = 1
         }
     }
-    
+
     ### SOLARI DAILY INFLUENCE DECISION
     TAR_daily_influence_solari = {
         icon = generic_decision
@@ -139,7 +139,7 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-        
+
         complete_effect = {
             every_other_country = {
                 limit = {
@@ -163,7 +163,7 @@ TAR_balance_of_power_category = {
                 }
             }
         }
-        
+
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -172,17 +172,17 @@ TAR_balance_of_power_category = {
                 remove_ideas =  theocracy_influence_weak
             }
         }
-        
+
         modifier = {
             power_balance_daily = -0.005
             theocracy_drift = 0.01
         }
-        
+
         ai_will_do = {
             factor = 1
         }
     }
-    
+
     ### LUNARI DAILY INFLUENCE DECISION
     TAR_daily_influence_lunari = {
         icon = generic_decision
@@ -201,7 +201,7 @@ TAR_balance_of_power_category = {
         days_remove = 60
         days_re_enable = 30
         cost = 50
-        
+
         complete_effect = {
             every_other_country = {
                 limit = {
@@ -225,7 +225,7 @@ TAR_balance_of_power_category = {
                 }
             }
         }
-        
+
         remove_effect = {
             every_other_country = {
                 limit = {
@@ -234,12 +234,12 @@ TAR_balance_of_power_category = {
                 remove_ideas =  oligarchy_influence_weak
             }
         }
-        
+
         modifier = {
             power_balance_daily = 0.005
             oligarchy_drift = 0.01
         }
-        
+
         ai_will_do = {
             factor = 1
         }
@@ -249,78 +249,235 @@ TAR_balance_of_power_category = {
 
 
 ## REAL CATEGORIES BELOW!
-TAR_main_cat = {
-    
-    ### TARGONS DECISION
-    
-    
-    ### EXEMPLARY DECISION
-    
-    # AFK_EXMP_selectable_dec = {
-    
-    # 	icon = generic_decision
-    
-    # 	allowed = {
-    
-    # 	}
-    
-    # 	visible = {
-    
-    # 	}
-    
-    # 	available = {
-    
-    # 	}
-    
-    # 	fire_only_once = yes
-    
-    # 	cost = 25
-    
-    # 	complete_effect = {
-    
-    # 	}
-    
-    # 	ai_will_do = {
-    # 		factor = 1
-    # 	}
-    # }
-    
-    # AFK_EXMP_takestime_dec = {
-    
-    # 	icon = generic_decision
-    
-    # 	allowed = {
-    
-    # 	}
-    
-    # 	visible = {
-    
-    # 	}
-    
-    # 	available = {
-    
-    # 	}
-    
-    # 	fire_only_once = no
-    # 	days_remove = 120
-    # 	days_re_enable = 0
-    
-    # 	cost = 25
-    
-    # 	complete_effect = {
-    
-    # 	}
-    
-    # 	modifier = {
-    
-    # 	}
-    
-    # 	remove_effect = {
-    
-    # 	}
-    
-    # 	ai_will_do = {
-    # 		factor = 1
-    # 	}
-    # }
+TAR_main_cat = { # Normal decisions
+
+	### TARGONS DECISION
+ 	# Decisions to influence the balance of power between Solari and Lunari
+
+    TAR_activate_rakkor_tenacity = {
+        icon = GFX_decision_rakkor_tenacity
+        available = {
+            # has_idea = TAR_rakkor_tenacity
+        }
+        allowed = {
+            original_tag = tar
+        }
+        cost = 50 # Cost in political power
+        days_active = 150
+        days_remove = 150
+		days_re_enable = 30
+
+        modifier = {
+            military_factory_output = 0.15
+            consumer_goods_factory_factor = -0.10
+
+            if = {
+                limit = {
+                    has_war = yes
+                }
+                every_other_country={
+                    limit = {
+                        has_war_with = ROOT
+                    }
+
+                    add_ideas = {}
+                }
+                targeted_modifier = {
+                    tag = ENG
+                    attack_bonus_against = 0.1
+                    defense_bonus_against = -0.15
+                }
+            }
+        }
+    }
+
+
+
+    TAR_activate_celestial_pilgrimage = {
+        icon = GFX_decision_celestial_pilgrimage
+        available = {
+            # has_idea = TAR_celestial_pilgrimage
+        }
+        allowed = {
+            original_tag = tar
+        }
+        cost = 30 # Cost in political power
+        days_active = 60
+        days_remove = 60
+		days_re_enable = 30
+
+        modifier = {
+            stability_factor = -0.02
+            consumer_goods = -0.10
+        }
+
+    }
+
+
+    ### BOP RELATED DESCISIONS
+	### SOLARI INFLUENCE DECISION
+	TAR_influence_solari = {
+
+		icon = generic_decision
+        allowed = {
+            original_tag = tar
+        }
+		allowed = {
+			has_government = theocracy  # Example: Solari aligned with fascism
+		}
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			is_power_balance_side_active = {
+				id = TAR_balance_of_power
+				side = TAR_solari_side
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+			balance_of_power_swing = {
+				id = TAR_balance_of_power
+				swing = -0.05  # Swings power 5% toward Solari
+			}
+		}
+    TAR_summit_harvest = {
+        allowed = {
+            always = no
+        }
+        removal_cost = -1
+
+        modifier = {
+            local_resources_factor = 0.15
+            monthly_population = -0.02
+            attrition = 0.05
+        }
+
+        allowed_to_remove = {
+            has_war_support > 0.4
+        }
+        cancel_if_invalid = no
+    }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### LUNARI INFLUENCE DECISION
+	TAR_influence_lunari = {
+
+		icon = generic_decision
+
+		allowed = {
+			has_government = oligarchy  # Example: Lunari aligned with democracy
+		}
+
+		visible = {
+			always = yes
+		}
+
+		available = { # doesn't work
+			is_power_balance_side_active = {
+				id = TAR_balance_of_power
+				side = TAR_lunari_side
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+			balance_of_power_swing = {
+				id = TAR_balance_of_power
+				swing = 0.05  # Swings power 5% toward Lunari
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	### EXEMPLARY DECISION
+
+	# AFK_EXMP_selectable_dec = {
+
+	# 	icon = generic_decision
+
+	# 	allowed = {
+
+	# 	}
+
+	# 	visible = {
+
+	# 	}
+
+	# 	available = {
+
+	# 	}
+
+	# 	fire_only_once = yes
+
+	# 	cost = 25
+
+	# 	complete_effect = {
+
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+
+	# AFK_EXMP_takestime_dec = {
+
+	# 	icon = generic_decision
+
+	# 	allowed = {
+
+	# 	}
+
+	# 	visible = {
+
+	# 	}
+
+	# 	available = {
+
+	# 	}
+
+	# 	fire_only_once = no
+	# 	days_remove = 120
+	# 	days_re_enable = 0
+
+	# 	cost = 25
+
+	# 	complete_effect = {
+
+	# 	}
+
+	# 	modifier = {
+
+	# 	}
+
+	# 	remove_effect = {
+
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 }

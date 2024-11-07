@@ -3,3 +3,7 @@ XER_renekon = {
     # color = rgb { 128 128 128 }
     color_ui = rgb { 115 115 115 }
 }
+TAR_solari ={
+    # rgb(247,216,90)
+    color = rgb { 247 216 90 } 
+}

@@ -115,7 +115,7 @@ leader_traits = {
 		army_recovery_rate = 0.20
 		land_reinforce_rate = 0.10
 	}
-	pacifist_boon = {
+	pacifist = {
 		random = no
 		war_support_factor = -0.15
 		stability_factor = 0.1

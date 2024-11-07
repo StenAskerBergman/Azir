@@ -741,7 +741,7 @@ focus_tree = {
         available = { }
 		bypass = { }
         completion_reward = {
-			country_event = { id = xerath.4 days = 1 }
+			country_event = { id = xerath.4 }
 		}
         
         ai_will_do = { factor = 5 }

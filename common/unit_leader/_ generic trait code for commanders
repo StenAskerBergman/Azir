@@ -1,0 +1,75 @@
+# Examples of Leader Traits
+leader_traits = {
+    my_trait = {
+        random = no
+        sprite = 1
+		gain_xp = {
+			always = no # not gainable - Default: always = yes
+		}
+        political_power_gain = 0.1
+        equipment_bonus = {
+            train_equipment = {
+                build_cost_ic = 0.05
+                reliability = 0.15
+            }
+        }
+        ai_will_do = {
+            base = 2
+        }
+        command_cap = @tier1
+    }
+
+	##################################
+	# Enclave Traits
+	##################################
+	enc_purist = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = { FROM = { tag = ERB } }
+		modifier = {
+			army_attack_factor = 0.05
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	enc_reformer = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = { FROM = { tag = ERB } }
+		modifier = {
+			army_morale_factor = 0.05
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	enc_demoted = { 		
+		type = all
+		trait_type = personality_trait	
+		gain_xp = {
+			always = no # not gainable
+		}	
+		attack_skill = -1
+		defense_skill = -1
+		logistics_skill = -1
+		planning_skill = -1
+		new_commander_weight = {
+			factor = 0
+		}
+		gain_xp = {
+			always = no
+		}	
+		non_shared_modifier = {
+			experience_gain_factor = -0.10
+			promote_cost_factor = 10
+		}
+	}
+
+}

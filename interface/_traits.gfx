@@ -22,10 +22,6 @@ spriteTypes = {
 
     # Pantheon Traits
     spriteType = {
-        name = "GFX_trait_warrior_spirit"
-        texturefile = "gfx/interface/traits/warrior_spirit.dds"
-    }
-    spriteType = {
         name = "GFX_trait_rakkor_warrior"
         texturefile = "gfx/interface/traits/rakkor_warrior.dds"
     }
@@ -86,7 +82,62 @@ spriteTypes = {
         texturefile = "gfx/interface/traits/divine_healer.dds"
     }
     spriteType = {
-        name = "GFX_trait_pacifist_boon"
-        texturefile = "gfx/interface/traits/pacifist_boon.dds"
+        name = "GFX_trait_pacifist"
+        texturefile = "gfx/interface/traits/pacifist.dds"
+    }
+
+    # Targonian Traits
+    spriteType = {
+        name = "GFX_trait_targonian"
+        texturefile = "gfx/interface/traits/trait_targonian.dds"
+    }
+    
+    # Reformer Trait
+    spriteType = {
+        name = "GFX_trait_reformer"
+        texturefile = "gfx/interface/traits/trait_reformer.dds"
+    }
+    
+    # Demoted Trait
+    spriteType = {
+        name = "GFX_trait_tar_demoted"
+        texturefile = "gfx/interface/traits/trait_tar_demoted.dds"
+    }
+
+    # Celestial Trait
+    spriteType = {
+        name = "GFX_trait_celestial"
+        texturefile = "gfx/interface/traits/celestial.dds"
+    }
+    
+    # Slumber Trait
+    spriteType = {
+        name = "GFX_trait_slumber"
+        texturefile = "gfx/interface/traits/trait_slumber.dds"
+    }
+
+
+    # Lunari Trait Icon
+    spriteType = {
+        name = "GFX_trait_tar_lunari"
+        texturefile = "gfx/interface/traits/trait_tar_lunari.dds"
+    }
+
+    # Purist Trait Icon
+    spriteType = {
+        name = "GFX_trait_tar_purist"
+        texturefile = "gfx/interface/traits/trait_tar_purist.dds"
+    }
+
+    # Reformer Trait Icon
+    spriteType = {
+        name = "GFX_trait_tar_reformer"
+        texturefile = "gfx/interface/traits/trait_tar_reformer.dds"
+    }
+
+    # Solari Trait Icon
+    spriteType = {
+        name = "GFX_trait_tar_solari"
+        texturefile = "gfx/interface/traits/trait_tar_solari.dds"
     }
 }

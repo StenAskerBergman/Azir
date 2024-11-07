@@ -1,4 +1,205 @@
 ﻿l_english:
+
+ # Localization File: SHU_parties_l_english.yml
+
+ # === Localization ===
+ # Ideology Nouns and Adjectives
+ theocracy_noun: "Theocratic"
+ theocracy_adjective: "Theocratic"
+ oligarchy_noun: "Oligarchic"
+ oligarchy_adjective: "Oligarchic"
+ chiefdom_noun: "Chiefdom"
+ chiefdom_adjective: "Chiefly"
+ absolutists_noun: "Absolutist"
+ absolutists_adjective: "Absolutist"
+ desolation_noun: "Desolate"
+ desolation_adjective: "Desolate"
+ royalist_noun: "Royalist"
+ royalist_adjective: "Royalist"
+ democratic_noun: "Democrat"
+ democratic_adjective: "Democratic"
+ communism_noun: "Communist"
+ communism_adjective: "Communist"
+ fascism_noun: "Fascist"
+ fascism_adjective: "Fascist"
+ #neutrality_noun: "Neutral"
+ neutrality_adjective: "Neutral"
+
+ # Ideology Tooltip Descriptions
+ theocracy_tooltip: "Rule by religious authorities who guide the people."
+ oligarchy_tooltip: "A powerful few govern the land based on wealth and influence."
+ chiefdom_tooltip: "Governance based on tribal structures and lineage."
+ absolutists_tooltip: "Absolute authority with a single ruler in command."
+ desolation_tooltip: "Anarchy reigns here with no structured government."
+ royalist_tooltip: "Dynastic rule where monarchy and heritage determine law."
+ democratic_tooltip: "Government chosen by the people's vote."
+ communism_tooltip: "Rule based on collective ownership and societal equality."
+ fascism_tooltip: "Strong central rule emphasizing national strength."
+ neutrality_tooltip: "No strong ideological sway, with an emphasis on stability."
+
+ # === Drift Definitions ===
+ theocracy_drift: "Theocracy Drift"
+ oligarchy_drift: "Oligarchy Drift"
+ chiefdom_drift: "Chiefdom Drift"
+ absolutists_drift: "Absolutist Drift"
+ desolation_drift: "Desolation Drift"
+ royalist_drift: "Royalist Drift"
+ democratic_drift: "Democratic Drift"
+ communism_drift: "Communist Drift"
+ fascism_drift: "Fascist Drift"
+ neutrality_drift: "Neutrality Drift"
+
+ # === Party Names and Descriptions ===
+ # These are placeholders and should match in other localization files as needed
+ democratic_party: "People’s Party"
+ democratic_party_desc: "A party representing the people's choice in governance."
+ communist_party: "Workers' Union"
+ communist_party_desc: "Dedicated to equality and collective ownership."
+ fascist_party: "National Unity Front"
+ fascist_party_desc: "Promotes national strength and strong leadership."
+ neutral_party: "Stability Coalition"
+ neutral_party_desc: "A coalition aiming for non-ideological governance."
+ # Repeat for other ideologies where needed
+
+ # === Ideology Traits Definitions ===
+ ideology_trait_theocracy: "Religious Guidance"  # Placeholder trait for theocracy effects
+ ideology_trait_oligarchy: "Council Control"
+ ideology_trait_chiefdom: "Tribal Strength"
+ ideology_trait_absolutists: "Central Command"
+ ideology_trait_desolation: "Anarchic Presence"
+ ideology_trait_royalist: "Royal Stability"
+ ideology_trait_democratic: "People’s Choice"
+ ideology_trait_communist: "Worker Unity"
+ ideology_trait_fascist: "National Power"
+ ideology_trait_neutrality: "Balanced Approach"
+# Localization File: SHU_parties_l_english.yml
+
+ # === Ideology Nouns, Adjectives, and Tooltips (Extended) ===
+ # These are included for new ideologies and their subfactions from 00_ideologies.txt.
+
+ # New Ideology and Subfaction Terms
+ solari_noun: "Solarist"
+ solari_adjective: "Solar"
+ solari_tooltip: "Absolute faith in the Aspect of the Sun."
+
+ cultOfVoli_noun: "Volibear Cultist"
+ cultOfVoli_adjective: "Volibearian"
+ cultOfVoli_tooltip: "Worshipers of the Volibear’s primal power."
+
+ frostguardCult_noun: "Frostguard Cultist"
+ frostguardCult_adjective: "Frostguard"
+ frostguardCult_tooltip: "Followers of the Ice Witch and her icy command."
+
+ noxianTrifarix_noun: "Trifarix Member"
+ noxianTrifarix_adjective: "Trifaric"
+ noxianTrifarix_tooltip: "Guided by Might, Vision, and Guile under the Trifarix Council."
+
+ gangSyndicate_noun: "Syndicate Member"
+ gangSyndicate_adjective: "Syndicate"
+ gangSyndicate_tooltip: "Powerful gangs running the lawless regions."
+
+ piltovanCouncil_noun: "Council Member"
+ piltovanCouncil_adjective: "Council-driven"
+ piltovanCouncil_tooltip: "An elite council governing Piltover’s interests."
+
+ chemBarons_noun: "Chem Baron"
+ chemBarons_adjective: "Chem-driven"
+ chemBarons_tooltip: "Powerful barons running Zaun's underground networks."
+
+ ascendedCouncil_noun: "Ascended"
+ ascendedCouncil_adjective: "Ascendant"
+ ascendedCouncil_tooltip: "The council of Ascended ruling the Shuriman Empire."
+
+ hunters_noun: "Hunter"
+ hunters_adjective: "Hunter"
+ hunters_tooltip: "Warriors of the K'Sante tribe skilled in combat."
+
+ brackern_noun: "Brackern"
+ brackern_adjective: "Brackern"
+ brackern_tooltip: "Scarner’s ancient and resilient race."
+
+ raiders_noun: "Raider"
+ raiders_adjective: "Raiders"
+ raiders_tooltip: "Nomadic fighters and pillagers."
+
+ # === Drift Definitions (Extended) ===
+ # Includes drift for the subfactions listed above.
+
+ solari_drift: "Solar Drift"
+ cultOfVoli_drift: "Volibearian Drift"
+ frostguardCult_drift: "Frostguard Drift"
+ noxianTrifarix_drift: "Trifarix Drift"
+ gangSyndicate_drift: "Syndicate Drift"
+ piltovanCouncil_drift: "Council Drift"
+ chemBarons_drift: "Chem Baron Drift"
+ ascendedCouncil_drift: "Ascended Drift"
+ hunters_drift: "Hunter Drift"
+ brackern_drift: "Brackern Drift"
+ raiders_drift: "Raider Drift"
+
+ # === Party Names and Descriptions (Extended) ===
+ # Add party names and descriptions for unique factions/subfactions.
+
+ solari_party: "Solar Faithful"
+ solari_party_desc: "Dedicated followers of the Aspect of the Sun."
+ cultOfVoli_party: "Volibear’s Chosen"
+ cultOfVoli_party_desc: "A cult of shamans worshiping the Volibear."
+ frostguardCult_party: "Frostguard"
+ frostguardCult_party_desc: "Servants of the Ice Witch’s will."
+ noxianTrifarix_party: "Trifarix Council"
+ noxianTrifarix_party_desc: "Leaders representing Might, Vision, and Guile."
+ gangSyndicate_party: "Syndicate Families"
+ gangSyndicate_party_desc: "Unified criminal families ruling the lawless lands."
+ piltovanCouncil_party: "Piltover Council"
+ piltovanCouncil_party_desc: "Noble representatives of Piltover’s interests."
+ chemBarons_party: "Chem Barons"
+ chemBarons_party_desc: "Underground rulers of Zaun’s industry and power."
+ ascendedCouncil_party: "Ascended Rulers"
+ ascendedCouncil_party_desc: "Ancient and powerful rulers of the Shuriman Empire."
+ hunters_party: "Hunter’s Brotherhood"
+ hunters_party_desc: "Tribal warriors trained in survival and battle."
+ brackern_party: "Brackern Keepers"
+ brackern_party_desc: "Defenders of the ancient Brackern."
+
+ # === Ideology Traits (Extended) ===
+ # Additional traits based on faction characteristics.
+
+ ideology_trait_solari: "Faithful Resolve"
+ ideology_trait_cultOfVoli: "Primal Fury"
+ ideology_trait_frostguardCult: "Icy Dominion"
+ ideology_trait_noxianTrifarix: "Strategic Command"
+ ideology_trait_gangSyndicate: "Lawless Might"
+ ideology_trait_piltovanCouncil: "Industrial Influence"
+ ideology_trait_chemBarons: "Zaun’s Power"
+ ideology_trait_ascendedCouncil: "Ancient Wisdom"
+ ideology_trait_hunters: "Hunter’s Strength"
+ ideology_trait_brackern: "Brackern Resilience"
+ ideology_trait_raiders: "Nomadic Ferocity"
+
+ # === Dynamic Faction Naming (Extended) ===
+ dynamic_factions_names_theocracy_2: "The Solari Order"
+ dynamic_factions_names_theocracy_3: "The Cult of Volibear"
+ dynamic_factions_names_theocracy_4: "The Frostguard"
+ dynamic_factions_names_oligarchy_2: "The Trifarix Council"
+ dynamic_factions_names_oligarchy_3: "The Chem Syndicate"
+ dynamic_factions_names_oligarchy_4: "The Piltover Elite"
+ dynamic_factions_names_absolutists_2: "Shuriman Empire"
+ dynamic_factions_names_absolutists_3: "The Hunter’s Call"
+ dynamic_factions_names_chiefdom_2: "Brackern Unity"
+ dynamic_factions_names_desolation_2: "The Raider’s Hold"
+
+  # === Dynamic Faction Naming ===
+ dynamic_faction_names_theocracy_1: "The Holy Order"
+ dynamic_faction_names_oligarchy_1: "The Council of Power"
+ dynamic_faction_names_chiefdom_1: "Tribal Confederacy"
+ dynamic_faction_names_absolutists_1: "The Monarch’s Realm"
+ dynamic_faction_names_desolation_1: "The Wastelanders"
+ dynamic_faction_names_royalist_1: "The Crown’s Dominion"
+ dynamic_faction_names_democratic_1: "The Free Alliance"
+ dynamic_faction_names_communist_1: "People’s Union"
+ dynamic_faction_names_fascist_1: "The National Front"
+ dynamic_faction_names_neutrality_1: "Stability Pact"
+
  # Theocracy Ideology and Subfactions
  theocracy: "Theocracy"
  solari: "Solari"
@@ -65,12 +266,18 @@
  dynamic_factions_names_royalist_1: "Royal Kingdom of %COUNTRY%"
  dynamic_factions_names_royalist_2: "Empire of %COUNTRY%"
 
+ # Generic Code 
  communism: "Communist"
- communism_noun: "Communism"
  democratic: "Democratic"
- democratic_noun: "Democracy"
  fascism: "Fascist"
- fascism_noun: "Fascism"
+
+ # Old Order 
+ # communism: "Communist"
+ # communism_noun: "Communism"
+ # democratic: "Democratic"
+ # democratic_noun: "Democracy"
+ # fascism: "Fascist"
+ # fascism_noun: "Fascism"
  fascism_desc: "Totalitarian Regime"
  communism_desc: "Totalitarian Regime"
  democratic_desc: "Democratic Regime"
