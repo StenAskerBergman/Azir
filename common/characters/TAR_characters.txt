@@ -1,7 +1,7 @@
 characters = {
 
     # Leona - Solari, Targonian, tar_purist
-    TAR_Leona = {
+    TAR_leona = {
         name = TAR_LEONA_NAME # "Leona"
         gender = female
         portraits = {
@@ -29,7 +29,7 @@ characters = {
         }
         advisor = {
             slot = military_high_command
-            idea_token = TAR_Leona
+            idea_token = TAR_leona
             ledger = army
             cost = 150
             traits = { defensive_doctrine division_defense tar_solari }
@@ -46,7 +46,7 @@ characters = {
     }
 
     # Diana - Lunari, Targonian, tar_reformer 
-    TAR_Diana = {
+    TAR_diana = {
         name = TAR_DIANA_NAME # "Diana"
         gender = female
         portraits = {
@@ -74,7 +74,7 @@ characters = {
         }
         advisor = {
             slot = military_high_command
-            idea_token = TAR_Diana
+            idea_token = TAR_diana
             ledger = army
             cost = 150
             traits = { night_operations_specialist irregular_warfare tar_reformer tar_lunari }
@@ -91,7 +91,7 @@ characters = {
     }
 
     # Rahvun - Solari, Targonian, tar_purist
-    TAR_Rahvun = {
+    TAR_rahvun = {
         name = TAR_RAHVUN_NAME # "Rahvun"
         gender = male
         portraits = {
@@ -106,7 +106,7 @@ characters = {
         }
         advisor = {
             slot = military_high_command
-            idea_token = TAR_Rahvun
+            idea_token = TAR_rahvun
             ledger = army
             cost = 150
             traits = { offensive_doctrine daybreak_vanguard tar_purist tar_solari }
@@ -120,10 +120,15 @@ characters = {
             logistics_skill = 3
             legacy_id = -1
         }
+        country_leader = {
+            ideology = solari
+            desc = POLITICS_RAHVUN_DESC
+            traits = { tar_purist tar_solari }
+        }
     }
 
     # Cygnus - Lunari, Targonian, tar_reformer 
-    TAR_Cygnus = {
+    TAR_cygnus = {
         name = TAR_CYGNUS_NAME # "Cygnus"
         gender = male
         portraits = {
@@ -138,7 +143,7 @@ characters = {
         }
         advisor = {
             slot = espionage_expert
-            idea_token = TAR_Cygnus
+            idea_token = TAR_cygnus
             ledger = espionage
             cost = 150
             traits = { covert_operations night_operations_specialist tar_lunari } # tar_reformer
@@ -155,7 +160,7 @@ characters = {
     }
 
     # Aurelion Sol - Celestial, Not Targonian, No Faction Alignment
-    TAR_AurelionSol = {
+    TAR_aurelionSol = {
         name = TAR_AURELION_SOL_NAME # "Aurelion Sol"
         gender = male
         portraits = {
@@ -176,7 +181,7 @@ characters = {
         }
         advisor = {
             slot = political_advisor
-            idea_token = TAR_AurelionSol
+            idea_token = TAR_aurelionSol
             ledger = army
             cost = 150
             traits = { star_forge cosmic_insight }
@@ -184,7 +189,7 @@ characters = {
     }
 
     # Soraka - Celestial, Targonian, tar_reformer 
-    TAR_Soraka = {
+    TAR_soraka = {
         name = TAR_SORAKA_NAME # "Soraka"
         gender = female
         portraits = {
@@ -195,7 +200,7 @@ characters = {
         }
         advisor = {
             slot = political_advisor
-            idea_token = TAR_Soraka
+            idea_token = TAR_soraka
             ledger = politics
             cost = 150
             traits = { divine_healer pacifist celestial tar_reformer }
@@ -203,7 +208,7 @@ characters = {
     }
 
     # Zoe - Celestial, Not Targonian, tar_purist
-    TAR_Zoe = {
+    TAR_zoe = {
         name = TAR_ZOE_NAME # "Zoe"
         gender = female
         portraits = {
@@ -222,7 +227,7 @@ characters = {
     }
 
     # Bard - Celestial, Aspect, tar_purist
-    TAR_Bard = {
+    TAR_bard = {
         name = TAR_BARD_NAME # "Bard"
         gender = female
         portraits = {
@@ -233,7 +238,7 @@ characters = {
         }
         advisor = {
             slot = political_advisor
-            idea_token = TAR_Bard
+            idea_token = TAR_bard
             ledger = politics
             cost = 150
             traits = { celestial }
@@ -241,7 +246,7 @@ characters = {
     }
 
     # Taric - Celestial, Targonian, tar_reformer 
-    TAR_Taric = {
+    TAR_taric = {
         name = TAR_TARIC_NAME # "Taric"
         gender = male
         portraits = {
@@ -250,9 +255,14 @@ characters = {
                 small = GFX_portrait_tar_taric_small
             }
         }
+        country_leader = {
+            desc = POLITICS_TARIC_DESC
+            ideology = absolutists # Assign to Absolutists
+            traits = { celestial_defender protector_of_targon tar_rakkor }
+        }
         advisor = {
             slot = military_high_command
-            idea_token = TAR_Taric
+            idea_token = TAR_taric
             ledger = army
             cost = 150
             traits = { protector_of_targon celestial_defender celestial tar_reformer }
@@ -296,8 +306,8 @@ characters = {
         }
     }
 
-    TAR_Aphelios = {
-        name = TAR_APHELIOS_NAME # "Aphelios"
+    TAR_aphelios = {
+        name = sAPHELIOS_NAME # "Aphelios"
         gender = male
         portraits = {
             civilian = {
@@ -307,7 +317,7 @@ characters = {
         }
         advisor = {
             slot = military_high_command
-            idea_token = TAR_Aphelios
+            idea_token = TAR_aphelios
             ledger = espionage
             cost = 150
             traits = { silent_sentinel covert_operations tar_lunari } # tar_reformer
@@ -320,6 +330,32 @@ characters = {
             planning_skill = 4
             logistics_skill = 3
             legacy_id = -1
+        }
+
+
+    }
+
+    # Pantheon - The Rakkor, Targonian, theocracy leader
+    TAR_pantheon = {
+        name = TAR_PANTHEON_NAME # "Pantheon"
+        gender = male
+        portraits = {
+            civilian = {
+                large = GFX_portrait_tar_pantheon_large
+                small = GFX_portrait_tar_pantheon_small
+            }
+        }
+        country_leader = {
+            desc = POLITICS_PANTHEON_DESC
+            ideology = absolutists # Assign to absolutists
+            traits = { warrior_spirit celestial_defender tar_rakkor }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = TAR_pantheon
+            ledger = politics
+            cost = 150
+            traits = { strategic_genius celestial_defender tar_rakkor }
         }
     }
 

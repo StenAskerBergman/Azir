@@ -776,7 +776,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = TAR_Rahvun
+		id = TAR_rahvun
 		icon = GFX_focus_generic
 		prerequisite = { focus = TAR_Sunforger }
 		relative_position_id = TAR_Sunforger
@@ -793,7 +793,7 @@ focus_tree = {
 		id = TAR_divine_mandate
 		icon = GFX_focus_generic_diplomacy
 		prerequisite = { focus = TAR_crusade_of_light focus = TAR_find_the_heretics focus = TAR_pilgrimage_tax }
-		prerequisite = { focus = TAR_Rahvun }
+		prerequisite = { focus = TAR_rahvun }
 		relative_position_id = TAR_crusade_of_light
 		x = 1
 		y = 1

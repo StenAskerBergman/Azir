@@ -114,7 +114,7 @@
  targon.3.t: "The Lunari"
  targon.3.desc: "The Lunari are a dark cult that seeks to corrupt our holy light. They have been hidden for years, but now they have finally come out.\n What do we do now?"
  targon.3.a: "Acknowledge Lunari Past"
- targon.3.a.tt: "Recognizing the Lunari's beliefs could stabilize Targon, though it may not sit well with all Solari adherents."
+ targon.3.a.tt: "Recognizing the Lunari's beliefs could stabilize Targon, though it may not sit well with all Solari"
 
  targon.3.b: "Purge the Lunari Heretics"
  targon.3.b.tt: "The Lunari are a poison within Targon, a dark cult that seeks to corrupt our holy light. We must rid ourselves of their seditious influence and cleanse Targon of their blasphemy once and for all."
@@ -150,7 +150,7 @@
  targon.13.a: "Reformer Path"
  targon.13.b: "Rejector Path"
 
-
+ targon.20.b.tt: "It's time Leona steps down to focus on her faith. \nNow, Rahvun will Lead the Light!"
  
 #################################################################
  targon.101.t: "The Shadow Uprising Begins"
