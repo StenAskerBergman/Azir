@@ -257,7 +257,7 @@ characters = {
         }
         country_leader = {
             desc = POLITICS_TARIC_DESC
-            ideology = absolutists # Assign to Absolutists
+            ideology = rakkor # Assign to Absolutists
             traits = { celestial_defender protector_of_targon tar_rakkor }
         }
         advisor = {
@@ -347,7 +347,7 @@ characters = {
         }
         country_leader = {
             desc = POLITICS_PANTHEON_DESC
-            ideology = absolutists # Assign to absolutists
+            ideology = rakkor # Assign to absolutists
             traits = { warrior_spirit celestial_defender tar_rakkor }
         }
         advisor = {
