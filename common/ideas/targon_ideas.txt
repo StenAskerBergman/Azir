@@ -1,385 +1,385 @@
 ideas = {
 
-#     # TODO: Add Solari, Lunari & Rakkor ideas 
-#     # TODO: Add Debuffs
-#     # TODO: Add laws for Economy & Trade
+    # TODO: Add Solari, Lunari & Rakkor ideas 
+    # TODO: Add Debuffs
+    # TODO: Add laws for Economy & Trade
 
-#     country = {        
+    country = {        
 
             
-#         #                      .        _             .           .. 
-#         #                     @88>     u             @88>   x .d88"  
-#         #                     %8P     88Nu.    u.    %8P     5888R   
-#         #              .       .     '88888 .o888c    .      '888R   
-#         #         .udR88N    .@88u    ^8888   8888  .@88u     888R   
-#         #        <888'888k  ''888E`    8888   8888 ''888E`    888R   
-#         #        9888 'Y"     888E     8888   8888   888E     888R   
-#         #        9888         888E     8888   8888   888E     888R   
-#         #        9888         888E    .8888b.888P    888E     888R   
-#         #        $8888u../    888&     ^Y8888*""     888&    .888B . 
-#         #         "8888P'     R888"      `Y"         R888"   ^*888%  
-#         #           "P'        ""                     ""       "%    
-#         #                                                          
-#         #                                                        
-#         #          x=~                                              
-#         #         88x.   .e.   .e.            u           .u    .       
-#         #        '8888X.x888:.x888         us888u.      .d88B :@8c      
-#         #         `8888  888X '888k     .@88 "8888"    ="8888f8888r     
-#         #          X888  888X  888X     9888  9888       4888>'88"      
-#         #          X888  888X  888X     9888  9888       4888> '        
-#         #          X888  888X  888X     9888  9888       4888>          
-#         #         .X888  888X. 888~     9888  9888      .d888L .+       
-#         #         `%88%``"*888Y"        "888*""888"     ^"8888*"        
-#         #           `~     `"            ^Y"   ^Y'         "Y"          
+        #                      .        _             .           .. 
+        #                     @88>     u             @88>   x .d88"  
+        #                     %8P     88Nu.    u.    %8P     5888R   
+        #              .       .     '88888 .o888c    .      '888R   
+        #         .udR88N    .@88u    ^8888   8888  .@88u     888R   
+        #        <888'888k  ''888E`    8888   8888 ''888E`    888R   
+        #        9888 'Y"     888E     8888   8888   888E     888R   
+        #        9888         888E     8888   8888   888E     888R   
+        #        9888         888E    .8888b.888P    888E     888R   
+        #        $8888u../    888&     ^Y8888*""     888&    .888B . 
+        #         "8888P'     R888"      `Y"         R888"   ^*888%  
+        #           "P'        ""                     ""       "%    
+        #                                                          
+        #                                                        
+        #          x=~                                              
+        #         88x.   .e.   .e.            u           .u    .       
+        #        '8888X.x888:.x888         us888u.      .d88B :@8c      
+        #         `8888  888X '888k     .@88 "8888"    ="8888f8888r     
+        #          X888  888X  888X     9888  9888       4888>'88"      
+        #          X888  888X  888X     9888  9888       4888> '        
+        #          X888  888X  888X     9888  9888       4888>          
+        #         .X888  888X. 888~     9888  9888      .d888L .+       
+        #         `%88%``"*888Y"        "888*""888"     ^"8888*"        
+        #           `~     `"            ^Y"   ^Y'         "Y"          
 
                                                             
                                                             
 
-#         TAR_scorn_of_the_moon = {
-#             picture = generic_resistance_bonus
-#             allowed = {
-#                 has_ideology = lunari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 resistance_target = 0.10
-#                 recruitable_population_factor = 0.05
-#             }
-#         }                                                                                                     
+        TAR_scorn_of_the_moon = {
+            picture = generic_resistance_bonus
+            allowed = {
+                has_ideology = lunari
+            }
+            removal_cost = -1
+            modifier = {
+                resistance_target = 0.10
+                recruitable_population_factor = 0.05
+            }
+        }                                                                                                     
                                                                                                                 
 
-#         #                                                                    .              
-#         #                                                                   @88>            
-#         #                              u.    u.                 .u    .     %8P             
-#         #         uL          .u     x@88k u@88c.      .u     .d88B :@8c     .          .   
-#         #     .ue888Nc..   ud8888.  ^"8888""8888"   ud8888.  ="8888f8888r  .@88u   .udR88N  
-#         #    d88E`"888E` :888'8888.   8888  888R  :888'8888.   4888>'88"  ''888E` <888'888k 
-#         #    888E  888E  d888 '88%"   8888  888R  d888 '88%"   4888> '      888E  9888 'Y"  
-#         #    888E  888E  8888.+"      8888  888R  8888.+"      4888>        888E  9888      
-#         #    888E  888E  8888L        8888  888R  8888L       .d888L .+     888E  9888      
-#         #    888& .888E  '8888c. .+  "*88*" 8888" '8888c. .+  ^"8888*"      888&  ?8888u../ 
-#         #    `888" 888&   "88888%      ""   'Y"    "88888%       "Y"        R888"  "8888P'  
-#         #     `"   "888E    "YP'                     "YP'                    ""      "P'    
-#         #    .dWi   `88E                                                                    
-#         #    4888~  J8%                                                                     
-#         #     ^"===*"`                                                                       
-#         # 
+        #                                                                    .              
+        #                                                                   @88>            
+        #                              u.    u.                 .u    .     %8P             
+        #         uL          .u     x@88k u@88c.      .u     .d88B :@8c     .          .   
+        #     .ue888Nc..   ud8888.  ^"8888""8888"   ud8888.  ="8888f8888r  .@88u   .udR88N  
+        #    d88E`"888E` :888'8888.   8888  888R  :888'8888.   4888>'88"  ''888E` <888'888k 
+        #    888E  888E  d888 '88%"   8888  888R  d888 '88%"   4888> '      888E  9888 'Y"  
+        #    888E  888E  8888.+"      8888  888R  8888.+"      4888>        888E  9888      
+        #    888E  888E  8888L        8888  888R  8888L       .d888L .+     888E  9888      
+        #    888& .888E  '8888c. .+  "*88*" 8888" '8888c. .+  ^"8888*"      888&  ?8888u../ 
+        #    `888" 888&   "88888%      ""   'Y"    "88888%       "Y"        R888"  "8888P'  
+        #     `"   "888E    "YP'                     "YP'                    ""      "P'    
+        #    .dWi   `88E                                                                    
+        #    4888~  J8%                                                                     
+        #     ^"===*"`                                                                       
+        # 
 
-#         TAR_celestial_unity = {
-#             picture = generic_stability_bonus
-#             allowed = {
-#                 has_ideology = solari
-#                 has_ideology = lunari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 stability = 0.05
-#                 compliance_gain = 0.05
-#             }
-#         }
+        TAR_celestial_unity = {
+            picture = generic_stability_bonus
+            allowed = {
+                has_ideology = solari
+                has_ideology = lunari
+            }
+            removal_cost = -1
+            modifier = {
+                stability = 0.05
+                compliance_gain = 0.05
+            }
+        }
     
-#         # Targonian Expansionism 
+        # Targonian Expansionism 
 
-#         TAR_blessing_of_the_mountain = {
-#             picture = generic_resource_bonus
-#             allowed = {
-#                 always = yes
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 construction_speed = 0.10
-#                 resource_gain_efficiency_factor = 0.10
-#             }
-#         }
+        TAR_blessing_of_the_mountain = {
+            picture = generic_resource_bonus
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                construction_speed = 0.10
+                resource_gain_efficiency_factor = 0.10
+            }
+        }
 
-#         TAR_tithes_of_faith = {
-#             picture = generic_tax_bonus
-#             allowed = {
-#                 always = yes
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 political_power_gain = 0.05
-#                 stability = -0.05
-#             }
-#         }
+        TAR_tithes_of_faith = {
+            picture = generic_tax_bonus
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.05
+                stability = -0.05
+            }
+        }
 
-#         #         ..      ...                       ..            ..                               
-#         #      :~"8888x :"%888x               < .z@8"`      < .z@8"`                               
-#         #     8    8888Xf  8888>               !@88E         !@88E               u.      .u    .   
-#         #    X88x. ?8888k  8888X        u      '888E   u     '888E   u     ...ue888b   .d88B :@8c  
-#         #    '8888L'8888X  '%88X     us888u.    888E u@8NL    888E u@8NL   888R Y888r ="8888f8888r 
-#         #     "888X 8888X:xnHH(`` .@88 "8888"   888E`"88*"    888E`"88*"   888R I888>   4888>'88"  
-#         #       88~ 8888X X8888   9888  9888    888E .dN.     888E .dN.    888R I888>   4888> '    
-#         #     -~`   8888> X8888   9888  9888    888E~8888     888E~8888    888R I888>   4888>      
-#         #     :H8x  8888  X8888   9888  9888    888E '888&    888E '888&  u8888cJ888   .d888L .+   
-#         #     8888> 888~  X8888   9888  9888    888E  9888.   888E  9888.  "*888*P"    ^"8888*"    
-#         #     48"` '8*~   `8888!` "888*""888" '"888*" 4888" '"888*" 4888"    'Y"          "Y"      
-#         #      ^-==""      `""     ^Y"   ^Y'     ""    ""      ""    ""                            
+        #         ..      ...                       ..            ..                               
+        #      :~"8888x :"%888x               < .z@8"`      < .z@8"`                               
+        #     8    8888Xf  8888>               !@88E         !@88E               u.      .u    .   
+        #    X88x. ?8888k  8888X        u      '888E   u     '888E   u     ...ue888b   .d88B :@8c  
+        #    '8888L'8888X  '%88X     us888u.    888E u@8NL    888E u@8NL   888R Y888r ="8888f8888r 
+        #     "888X 8888X:xnHH(`` .@88 "8888"   888E`"88*"    888E`"88*"   888R I888>   4888>'88"  
+        #       88~ 8888X X8888   9888  9888    888E .dN.     888E .dN.    888R I888>   4888> '    
+        #     -~`   8888> X8888   9888  9888    888E~8888     888E~8888    888R I888>   4888>      
+        #     :H8x  8888  X8888   9888  9888    888E '888&    888E '888&  u8888cJ888   .d888L .+   
+        #     8888> 888~  X8888   9888  9888    888E  9888.   888E  9888.  "*888*P"    ^"8888*"    
+        #     48"` '8*~   `8888!` "888*""888" '"888*" 4888" '"888*" 4888"    'Y"          "Y"      
+        #      ^-==""      `""     ^Y"   ^Y'     ""    ""      ""    ""                            
                                                                                                                                                                                                             
                                 
-#         #          ...                                                               .    
-#         #      .zf"` `"tu                                                           @88>  
-#         #     x88      '8N.    x.    .        u.    u.                  .u    .     %8P   
-#         #     888k     d88&  .@88k  z88u    x@88k u@88c.       u      .d88B :@8c     .    
-#         #     8888N.  @888F ~"8888 ^8888   ^"8888""8888"    us888u.  ="8888f8888r  .@88u  
-#         #     `88888 9888%    8888  888R     8888  888R  .@88 "8888"   4888>'88"  ''888E` 
-#         #       %888 "88F     8888  888R     8888  888R  9888  9888    4888> '      888E  
-#         #        8"   "*h=~   8888  888R     8888  888R  9888  9888    4888>        888E  
-#         #      z8Weu          8888 ,888B .   8888  888R  9888  9888   .d888L .+     888E  
-#         #     ""88888i.   Z  "8888Y 8888"   "*88*" 8888" 9888  9888   ^"8888*"      888&  
-#         #    "   "8888888*    `Y"   'YP       ""   'Y"   "888*""888"     "Y"        R888" 
-#         #          ^"**""                                 ^Y"   ^Y'                  ""   
+        #          ...                                                               .    
+        #      .zf"` `"tu                                                           @88>  
+        #     x88      '8N.    x.    .        u.    u.                  .u    .     %8P   
+        #     888k     d88&  .@88k  z88u    x@88k u@88c.       u      .d88B :@8c     .    
+        #     8888N.  @888F ~"8888 ^8888   ^"8888""8888"    us888u.  ="8888f8888r  .@88u  
+        #     `88888 9888%    8888  888R     8888  888R  .@88 "8888"   4888>'88"  ''888E` 
+        #       %888 "88F     8888  888R     8888  888R  9888  9888    4888> '      888E  
+        #        8"   "*h=~   8888  888R     8888  888R  9888  9888    4888>        888E  
+        #      z8Weu          8888 ,888B .   8888  888R  9888  9888   .d888L .+     888E  
+        #     ""88888i.   Z  "8888Y 8888"   "*88*" 8888" 9888  9888   ^"8888*"      888&  
+        #    "   "8888888*    `Y"   'YP       ""   'Y"   "888*""888"     "Y"        R888" 
+        #          ^"**""                                 ^Y"   ^Y'                  ""   
                 
 
-#         TAR_lunari_endurance = {
-#             picture = GFX_idea_TAR_lunari_endurance
-#             allowed = { always = yes }
-#             modifier = {
-#                 stability_factor = 0.05
-#                 resistance_growth_speed_factor = 0.1
-#             }
-#         }
+        TAR_lunari_endurance = {
+            picture = GFX_idea_TAR_lunari_endurance
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                resistance_growth_speed_factor = 0.1
+            }
+        }
 
-#         TAR_lunari_revolution = {
-#             picture = GFX_idea_TAR_lunari_revolution
-#             allowed = { always = yes }
-#             modifier = {
-#                 war_support = 0.1
-#                 resistance_growth_speed_factor = 0.2
-#             }
-#         }
+        TAR_lunari_revolution = {
+            picture = GFX_idea_TAR_lunari_revolution
+            allowed = { always = yes }
+            modifier = {
+                war_support = 0.1
+                resistance_growth_speed_factor = 0.2
+            }
+        }
 
-#         TAR_lunari_dominance = {
-#             picture = GFX_idea_TAR_lunari_dominance
-#             allowed = { always = yes }
-#             modifier = {
-#                 stability_factor = 0.1
-#                 resistance_target = -0.1
-#             }
-#         }
+        TAR_lunari_dominance = {
+            picture = GFX_idea_TAR_lunari_dominance
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.1
+                resistance_target = -0.1
+            }
+        }
 
-#         TAR_lunar_dominion = {
-#             picture = generic_political_pressure
-#             allowed = {
-#                 has_ideology = lunari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 lunari_popularity = 0.10
-#                 enemy_popularity_gain = -0.05
-#             }
-#         }
+        TAR_lunar_dominion = {
+            picture = generic_political_pressure
+            allowed = {
+                has_ideology = lunari
+            }
+            removal_cost = -1
+            modifier = {
+                lunari_popularity = 0.10
+                enemy_popularity_gain = -0.05
+            }
+        }
 
-#         TAR_echo_of_oppression = {
-#             picture = generic_resistance_support
-#             allowed = {
-#                 has_ideology = lunari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 resistance_target = 0.15
-#                 recruitable_population_factor = 0.05
-#             }
-#         }
+        TAR_echo_of_oppression = {
+            picture = generic_resistance_support
+            allowed = {
+                has_ideology = lunari
+            }
+            removal_cost = -1
+            modifier = {
+                resistance_target = 0.15
+                recruitable_population_factor = 0.05
+            }
+        }
 
-#         TAR_wrath_of_the_moon = {
-#             picture = generic_attack_bonus
-#             allowed = {
-#                 has_ideology = lunari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 division_attack = 0.10
-#                 division_defense = 0.05
-#             }
-#         }
+        TAR_wrath_of_the_moon = {
+            picture = generic_attack_bonus
+            allowed = {
+                has_ideology = lunari
+            }
+            removal_cost = -1
+            modifier = {
+                division_attack = 0.10
+                division_defense = 0.05
+            }
+        }
 
-#         TAR_shadows_of_the_past = {
-#             picture = generic_resistance_support
-#             allowed = {
-#                 has_ideology = lunari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 resistance_growth_speed = 0.10
-#                 compliance_gain = -0.05
-#             }
-#         }
+        TAR_shadows_of_the_past = {
+            picture = generic_resistance_support
+            allowed = {
+                has_ideology = lunari
+            }
+            removal_cost = -1
+            modifier = {
+                resistance_growth_speed = 0.10
+                compliance_gain = -0.05
+            }
+        }
 
 
-#         #            ...                           ..                             .    
-#         #        .x888888hx    :             x .d88"                             @88>  
-#         #       d88888888888hxx         u.    5888R                  .u    .     %8P   
-#         #      8" ... `"*8888%`   ...ue888b   '888R         u      .d88B :@8c     .    
-#         #     i  "   ` .xnxx.     888R Y888r   888R      us888u.  ="8888f8888r  .@88u  
-#         #     X X   .H8888888%:   888R I888>   888R   .@88 "8888"   4888>'88"  ''888E` 
-#         #     X 'hn8888888*"   >  888R I888>   888R   9888  9888    4888> '      888E  
-#         #     X: `*88888%`     !  888R I888>   888R   9888  9888    4888>        888E  
-#         #     '8h.. ``     ..x8> u8888cJ888    888R   9888  9888   .d888L .+     888E  
-#         #      `88888888888888f   "*888*P"    .888B . 9888  9888   ^"8888*"      888&  
-#         #       '%8888888888*"      'Y"       ^*888%  "888*""888"     "Y"        R888" 
-#         #          ^"****""`                    "%     ^Y"   ^Y'                  ""   
-#         #                                                                              
+        #            ...                           ..                             .    
+        #        .x888888hx    :             x .d88"                             @88>  
+        #       d88888888888hxx         u.    5888R                  .u    .     %8P   
+        #      8" ... `"*8888%`   ...ue888b   '888R         u      .d88B :@8c     .    
+        #     i  "   ` .xnxx.     888R Y888r   888R      us888u.  ="8888f8888r  .@88u  
+        #     X X   .H8888888%:   888R I888>   888R   .@88 "8888"   4888>'88"  ''888E` 
+        #     X 'hn8888888*"   >  888R I888>   888R   9888  9888    4888> '      888E  
+        #     X: `*88888%`     !  888R I888>   888R   9888  9888    4888>        888E  
+        #     '8h.. ``     ..x8> u8888cJ888    888R   9888  9888   .d888L .+     888E  
+        #      `88888888888888f   "*888*P"    .888B . 9888  9888   ^"8888*"      888&  
+        #       '%8888888888*"      'Y"       ^*888%  "888*""888"     "Y"        R888" 
+        #          ^"****""`                    "%     ^Y"   ^Y'                  ""   
+        #                                                                              
                                                                          
-#         TAR_solari_supremacy = {
-#             picture = GFX_idea_solari_supremacy
-#             allowed = { original_tag = TAR }
-#             removal_cost = -1  # Prevents manual removal
-#             modifier = {
-#                 political_power_gain = 0.10  # +10% Political Power gain
-#                 division_attack = 0.05       # +5% Division Attack
-#                 war_support = 0.10           # +10% War Support
-#                 stability = -0.05            # -5% Stability
-#                 ideology_drift_defense = 0.10  # +10% Ideology Drift Defense
-#             }
-#         }
+        TAR_solari_supremacy = {
+            picture = GFX_idea_solari_supremacy
+            allowed = { original_tag = TAR }
+            removal_cost = -1  # Prevents manual removal
+            modifier = {
+                political_power_gain = 0.10  # +10% Political Power gain
+                division_attack = 0.05       # +5% Division Attack
+                war_support = 0.10           # +10% War Support
+                stability = -0.05            # -5% Stability
+                ideology_drift_defense = 0.10  # +10% Ideology Drift Defense
+            }
+        }
 
-#         TAR_peaceful_reforms = {
-#             picture = GFX_idea_peaceful_reforms
-#             allowed = { original_tag = TAR }
-#             removal_cost = -1  # Prevents manual removal
-#             modifier = {
-#                 political_power_gain = 0.05  # +5% Political Power gain
-#                 stability = 0.10             # +10% Stability
-#                 recruitable_population_factor = 0.05  # +5% Recruitable Population Factor
-#                 reinforce_rate = 0.05        # +5% Reinforce Rate
-#                 war_support = -0.05          # -5% War Support
-#             }
-#         }
+        TAR_peaceful_reforms = {
+            picture = GFX_idea_peaceful_reforms
+            allowed = { original_tag = TAR }
+            removal_cost = -1  # Prevents manual removal
+            modifier = {
+                political_power_gain = 0.05  # +5% Political Power gain
+                stability = 0.10             # +10% Stability
+                recruitable_population_factor = 0.05  # +5% Recruitable Population Factor
+                reinforce_rate = 0.05        # +5% Reinforce Rate
+                war_support = -0.05          # -5% War Support
+            }
+        }
 
 
-#         TAR_divine_mandate = {
-#             picture = generic_theocracy_drift_bonus # TODO: Replace with actual image as needed
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 division_attack_on_core = 0.10
-#                 resistance_growth_speed = -0.10
-#             }
-#         }
-#         TAR_divine_mandate = {
-#             picture = generic_theocracy_drift_bonus
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 division_attack_on_core = 0.10
-#                 resistance_growth_speed = -0.10
-#             }
-#         }
+        TAR_divine_mandate = {
+            picture = generic_theocracy_drift_bonus # TODO: Replace with actual image as needed
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                division_attack_on_core = 0.10
+                resistance_growth_speed = -0.10
+            }
+        }
+        TAR_divine_mandate = {
+            picture = generic_theocracy_drift_bonus
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                division_attack_on_core = 0.10
+                resistance_growth_speed = -0.10
+            }
+        }
 
-#         TAR_solar_ascendancy = {
-#             picture = generic_religious_zeal
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 recruitable_population_factor = 0.05
-#                 solari_popularity = 0.05
-#             }
-#         }
+        TAR_solar_ascendancy = {
+            picture = generic_religious_zeal
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.05
+                solari_popularity = 0.05
+            }
+        }
 
-#         TAR_crusade_of_light = {
-#             picture = generic_major_war
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 war_support = 0.10
-#                 military_factory_construction_speed = 0.15
-#             }
-#         }
+        TAR_crusade_of_light = {
+            picture = generic_major_war
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                war_support = 0.10
+                military_factory_construction_speed = 0.15
+            }
+        }
 
-#         TAR_daylights_crusade = {
-#             picture = generic_militarism
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 military_factory_construction_speed = 0.10
-#                 division_attack_on_core = 0.10
-#             }
-#         }
+        TAR_daylights_crusade = {
+            picture = generic_militarism
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                military_factory_construction_speed = 0.10
+                division_attack_on_core = 0.10
+            }
+        }
 
-#         TAR_pilgrimage_tax = {
-#             picture = generic_economy_bonus
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 political_power_gain = 0.05
-#                 stability = -0.05
-#             }
-#         }
+        TAR_pilgrimage_tax = {
+            picture = generic_economy_bonus
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.05
+                stability = -0.05
+            }
+        }
 
-#         TAR_solar_sanctification = {
-#             picture = generic_construction_bonus
-#             allowed = {
-#                 has_government = theocracy
-#                 has_ideology = solari
-#             }
-#             removal_cost = -1
-#             modifier = {
-#                 civilian_factory_construction_speed = 0.10
-#                 solari_popularity = 0.05
-#             }
-#         }
+        TAR_solar_sanctification = {
+            picture = generic_construction_bonus
+            allowed = {
+                has_government = theocracy
+                has_ideology = solari
+            }
+            removal_cost = -1
+            modifier = {
+                civilian_factory_construction_speed = 0.10
+                solari_popularity = 0.05
+            }
+        }
         
-#         #           ....             .                        ..                                                                    
-#         #       .xH888888Hx.        @88>                x .d88"                                                          ..         
-#         #     .H8888888888888:      %8P    .d``          5888R          u.      ..    .     :                           @L          
-#         #     888*"""?""*88888X      .     @8Ne.   .u    '888R    ...ue888b   .888: x888  x888.        u           .   9888i   .dL  
-#         #    'f     d8x.   ^%88k   .@88u   %8888:u@88N    888R    888R Y888r ~`8888~'888X`?888f`    us888u.   .udR88N  `Y888k:*888. 
-#         #    '>    <88888X   '?8  ''888E`   `888I  888.   888R    888R I888>   X888  888X '888>  .@88 "8888" <888'888k   888E  888I 
-#         #     `:..:`888888>    8>   888E     888I  888I   888R    888R I888>   X888  888X '888>  9888  9888  9888 'Y"    888E  888I 
-#         #            `"*88     X    888E     888I  888I   888R    888R I888>   X888  888X '888>  9888  9888  9888        888E  888I 
-#         #       .xHHhx.."      !    888E   uW888L  888'   888R   u8888cJ888    X888  888X '888>  9888  9888  9888        888E  888I 
-#         #      X88888888hx. ..!     888&  '*88888Nu88P   .888B .  "*888*P"    "*88%""*88" '888!` 9888  9888  ?8888u../  x888N><888' 
-#         #     ´   "*888888888"      R888" ~ '88888F`     ^*888%     'Y"         `~    "    `"`   "888*""888"  "8888P'    "88"  888  
-#         #            ^"***"`         ""      888 ^         "%                                     ^Y"   ^Y'     "P'            88F  
-#         #                                    '8E                                                                              98"   
-#         #                                    '8>                                                                            ./"     
-#         #                                     "                                                                            ~`       
+        #           ....             .                        ..                                                                    
+        #       .xH888888Hx.        @88>                x .d88"                                                          ..         
+        #     .H8888888888888:      %8P    .d``          5888R          u.      ..    .     :                           @L          
+        #     888*"""?""*88888X      .     @8Ne.   .u    '888R    ...ue888b   .888: x888  x888.        u           .   9888i   .dL  
+        #    'f     d8x.   ^%88k   .@88u   %8888:u@88N    888R    888R Y888r ~`8888~'888X`?888f`    us888u.   .udR88N  `Y888k:*888. 
+        #    '>    <88888X   '?8  ''888E`   `888I  888.   888R    888R I888>   X888  888X '888>  .@88 "8888" <888'888k   888E  888I 
+        #     `:..:`888888>    8>   888E     888I  888I   888R    888R I888>   X888  888X '888>  9888  9888  9888 'Y"    888E  888I 
+        #            `"*88     X    888E     888I  888I   888R    888R I888>   X888  888X '888>  9888  9888  9888        888E  888I 
+        #       .xHHhx.."      !    888E   uW888L  888'   888R   u8888cJ888    X888  888X '888>  9888  9888  9888        888E  888I 
+        #      X88888888hx. ..!     888&  '*88888Nu88P   .888B .  "*888*P"    "*88%""*88" '888!` 9888  9888  ?8888u../  x888N><888' 
+        #     ´   "*888888888"      R888" ~ '88888F`     ^*888%     'Y"         `~    "    `"`   "888*""888"  "8888P'    "88"  888  
+        #            ^"***"`         ""      888 ^         "%                                     ^Y"   ^Y'     "P'            88F  
+        #                                    '8E                                                                              98"   
+        #                                    '8>                                                                            ./"     
+        #                                     "                                                                            ~`       
 
-#         # Foreign Support
-#         sun_servitude = {
-#             picture = LAT_the_sun_shines_equally
+        # Foreign Support
+        sun_servitude = {
+            picture = LAT_the_sun_shines_equally
 
-#         }
+        }
 
-#         # Foreign Support 
-#         # Shurima Acknowledges the Solari Rulers!
-#         big_sun = {
-#             picture = LAT_the_sun_shines_equally
-#         }
+        # Foreign Support 
+        # Shurima Acknowledges the Solari Rulers!
+        big_sun = {
+            picture = LAT_the_sun_shines_equally
+        }
 
-#         # Foreign Support 
-#         # Shurima Acknowledges the Lunari Future!
-#         shuriman_support_lunari = {
-#             picture = LAT_the_sun_shines_equally
+        # Foreign Support 
+        # Shurima Acknowledges the Lunari Future!
+        shuriman_support_lunari = {
+            picture = LAT_the_sun_shines_equally
 
-#         }
+        }
         
-#         # Foreign Support 
-#         # Shurima Acknowledges the Solari Rulers!
-#         shuriman_support_solari = {
-#             picture = LAT_the_sun_shines_equally
+        # Foreign Support 
+        # Shurima Acknowledges the Solari Rulers!
+        shuriman_support_solari = {
+            picture = LAT_the_sun_shines_equally
 
-#         }
+        }
 
-#     }
+    }
 }
