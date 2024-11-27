@@ -135,6 +135,7 @@ Shuriman Focus List:
     SHU_shuriman_guilds
     SHU_war_guild
     SHU_craft_guild
+    SHU_archaeology_guild
     SHU_trade_guild
     SHU_we_remember_shurima
     SHU_sundisc_has_risen

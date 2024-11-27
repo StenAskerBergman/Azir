@@ -2,8 +2,8 @@
 focus_tree = {
 	id = shurima_focus
 	continuous_focus_position = {
-		x = 3950
-		y = 20
+		x = 1370
+		y = 1700
 	}
 	country = {
 		factor = 0
@@ -45,9 +45,9 @@ focus_tree = {
 	focus = {
 		id = SHU_economic_revival
 		icon = GFX_goal_generic_construction
-		cost = 5
-		x = 11 # 29 # 14
-		y = -1
+		cost = 10
+		x = 15 # 29 # 14
+		y = -2
 		relative_position_id = SHU_our_leader
 
 		ai_will_do = {
@@ -59,14 +59,11 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-
-				add_extra_state_shared_building_slots = 2
-				#	add_building_construction = {
-				#		type = industrial_complex
-				#	level = 2
-				#	instant_build = yes
-				# }
-				
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -75,7 +72,7 @@ focus_tree = {
 	focus = {
 		id = SHU_sun_disc_restorations
 		icon = GFX_focus_TUR_the_sun_language_theory
-		x = 0  #x = 22 # 14
+		x = -6  #x = 22 # 14
 		y = 1  #y = 1
 		relative_position_id = SHU_economic_revival
 
@@ -1733,10 +1730,9 @@ focus_tree = {
 	focus = {
 		id = SHU_fate_of_targon
 		icon = GFX_focus_GRE_a_land_of_mountains
-		x=3
-		y=1
+		x=30
+		y=6
 		cost = 3
-		relative_position_id = SHU_the_neighbours
 
 		available = {
 			if = {
@@ -1912,9 +1908,9 @@ focus_tree = {
 		id = SHU_fate_of_ixtal
 		icon = GFX_focus_por_luso_tropicalism
 		x=-3
-		y=1
+		y=0
 		cost = 3
-		relative_position_id = SHU_the_neighbours
+		relative_position_id = SHU_fate_of_crystal_scar
 		prerequisite = {
 			# # focus = SHU_Major
 		}
@@ -2148,9 +2144,8 @@ focus_tree = {
 	focus = {
 		id = SHU_example_noxian_start
 		icon = GFX_goal_unknown
-		x=1
-		y=2
-		cost = 3
+		x=-19
+		y=3
 		relative_position_id = SHU_shadow_plan
 		available = {
 			any_controlled_state = {
@@ -2627,10 +2622,9 @@ focus_tree = {
 	focus = {
 		id = SHU_rule_aurma
 		icon = GFX_goal_unknown
-		x=5
-		y=2
+		x=25
+		y=17
 		cost = 3
-		relative_position_id = SHU_example_cc_noxian
 		prerequisite = {
 			# # focus = SHU_Minors
 		}
@@ -3698,10 +3692,10 @@ focus_tree = {
 	focus = {
 		id = SHU_gold_trade
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = -2 # 18
-		y = 0
+		x = 5 # 18
+		y = 4
 		cost = 5
-		relative_position_id = SHU_gold_reserve
+		relative_position_id = SHU_economic_revival
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -3711,7 +3705,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = SHU_craft_guild
+			focus = SHU_gold_reserve
 		}
 		
 		completion_reward = {
@@ -3739,16 +3733,15 @@ focus_tree = {
 	focus = {
 		id = SHU_gold_reserve
 		icon = GFX_r56_goal_HOL_ditch_gold_standard
-		x = 1 # 18
-		y = 1
+		x = 4 # 18
+		y = 3
 		cost = 5
-		relative_position_id = SHU_trade_guild
+		relative_position_id = SHU_economic_revival
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = {
-			# Has completed
-			# focus = SHU_gold_refinement
+			focus = SHU_open_gold_mines
 		}
 
 		prerequisite = {
@@ -3764,14 +3757,14 @@ focus_tree = {
 		id = SHU_start_the_mines # OLD: SHU_expand_hex_mines
 		icon = GFX_goal_continuous_non_factory_construct
 		x = 0 # 18
-		y = 2
+		y = 1
 		cost = 7
-		relative_position_id = SHU_workers_rights
+		relative_position_id = SHU_economic_revival
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = {
-			# focus = SHU_land_prospect
+			focus = SHU_economic_revival
 		}
 		available = {
 			any_state = {
@@ -4115,7 +4108,7 @@ focus_tree = {
 		relative_position_id = SHU_start_the_mines
 		cost = 5
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = {
 			focus = SHU_start_the_mines
@@ -4200,11 +4193,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SHU_workers_rights
+		id = SHU_workers_rights #this focus sucks ass lol -dj
 		icon = GFX_goal_generic_consumer_goods
 		relative_position_id = SHU_tribe_unity
-		x = 2
-		y = 1
+		x = -2
+		y = 0
 		relative_position_id = SHU_war_guild
 
 		cost = 5
@@ -4220,15 +4213,11 @@ focus_tree = {
 
 		# New
 		prerequisite = {
-			focus = SHU_war_guild
+			focus = SHU_craft_guild
 		}
 
 		prerequisite = {
-			focus = SHU_gold_trade
-		}
-
-		prerequisite = {
-			focus = SHU_gold_reserve
+			focus = SHU_trade_guild
 		}
 
 		completion_reward = {
@@ -4390,9 +4379,13 @@ focus_tree = {
 	focus = {
 		id = SHU_shuriman_guilds
 		icon = GFX_focus_generic_agricultural_subsidies #GFX_goal_gold_reserve #GFX_goal_unknown
-		x = 0 # 13
+		x = 7 # 13
 		y = 2
-		relative_position_id = SHU_replant_the_basin
+		relative_position_id = SHU_economic_revival
+
+		prerequisite = {
+			focus = SHU_economic_revival
+		}
 
 		cost = 5
 		# prerequisite = {
@@ -4427,14 +4420,14 @@ focus_tree = {
 	focus = {
 		id = SHU_war_guild
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -2 # 14
-		y = 2
+		x = 9 # 14
+		y = 4
 		cost = 5
 
-		relative_position_id = SHU_shuriman_guilds
+		relative_position_id = SHU_economic_revival
 
 		prerequisite = {
-			focus = SHU_shuriman_guilds
+			focus = SHU_craft_guild
 		}
 
 		search_filters = {
@@ -4463,9 +4456,9 @@ focus_tree = {
 	focus = {
 		id = SHU_craft_guild
 		icon = GFX_goal_generic_construct_civ_factory #GFX_goal_unknown
-		x = -1 # 13
-		y = 1
-		relative_position_id = SHU_shuriman_guilds
+		x = 8 # 13
+		y = 3
+		relative_position_id = SHU_economic_revival
 		cost = 5
 		prerequisite = {
 			focus = SHU_shuriman_guilds
@@ -4482,9 +4475,9 @@ focus_tree = {
 	focus = {
 		id = SHU_trade_guild
 		icon = GFX_r56_goal_generic_banking_legislation # GFX_focus_usa_reestablish_the_gold_standard #GFX_goal_unknown
-		x = 1 # 13
-		y = 1
-		relative_position_id = SHU_shuriman_guilds
+		x = 6 # 13
+		y = 3
+		relative_position_id = SHU_economic_revival
 		cost = 5
 		prerequisite = {
 			focus = SHU_shuriman_guilds
@@ -4494,11 +4487,27 @@ focus_tree = {
 		}
 	}
 
+	# Archaeology Guild
+	focus = {
+		id = SHU_archaeology_guild
+		icon = GFX_r56_goal_generic_banking_legislation # GFX_focus_usa_reestablish_the_gold_standard #GFX_goal_unknown
+		x = 10 # 13
+		y = 3
+		relative_position_id = SHU_economic_revival
+		cost = 5
+		prerequisite = {
+			focus = SHU_shuriman_guilds
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
 	# We Remember Shurima!
 	focus = {
 		id = SHU_we_remember_shurima
 		icon = GFX_goal_unknown
-		x = 17
+		x = 7
 		y = 0
 		cost = 5
 		# relative_position_id = SHU_we_remember_shurima
@@ -5140,7 +5149,7 @@ focus_tree = {
 	focus = {
 		id = SHU_shuriman_university
 		icon = GFX_focus_research
-		x = 35 # 18
+		x = 33 # 18
 		y = 0
 
 		cost = 5
@@ -5347,7 +5356,7 @@ focus_tree = {
 		id = SHU_restore_great_library
 		icon = GFX_goal_books #GFX_focus_research
 		x = 0 # 18
-		y = 1
+		y = 3
 		relative_position_id = SHU_rebuild_library
 		cost = 5
 
@@ -5371,6 +5380,9 @@ focus_tree = {
 			focus = SHU_rebuild_library
 			focus = SHU_war_academy
 		}
+		prerequisite = {
+			focus = SHU_archaeology_guild
+		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
@@ -5385,9 +5397,9 @@ focus_tree = {
 	focus = {
 		id = SHU_rebirth_legions
 		icon = GFX_focus_lion_riders # GFX_goal_generic_axis_build_infantry
-		x = -11 #7
-		y = -1
-		relative_position_id = SHU_our_leader
+		x = 10 #7
+		y = 5
+		relative_position_id = SHU_we_remember_shurima
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY

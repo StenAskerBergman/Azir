@@ -780,8 +780,8 @@ SHU_return_of_the_amulet_desc: "The Final Puzzel Piece to reigniting the Sun Dis
 # SHU_war_guild: "Royal War Guild"
 # SHU_war_guild_desc: "Shuriman War Guilds desc"
 
-SHU_economic_revival: "Economic Revival"
-SHU_economic_revival_desc: "Our economy has suffered greatly in recent times. This focus will direct efforts towards reviving our economy, investing in key industries, and creating jobs to ensure prosperity for our nation."
+SHU_economic_revival: "From Dust"
+SHU_economic_revival_desc: "The desert quaked as our glorious capital emerged from its sandy tomb. Majestic golden spires pierced the sky, etched with ancient, glowing runes, while the Sun Disc ignited above, radiating divine light. Now, the time has come to spread this solar blessing across the lands beyond."
 
 SHU_rebirth_legions: "Rebirth of the Legions"
 SHU_rebirth_legions_desc: "Emperor Azir has returned to a land of scattered tribes and forgotten legacies. To reclaim Shurima's glory and defend its people, he must raise a new army from the sands of the desert. This focus will unite the tribes under one banner, train new legions, and restore the military might of the Shuriman Empire."
@@ -794,6 +794,9 @@ SHU_rebuilding_our_fleet_desc: "Our naval forces are in dire need of modernizati
 
 SHU_workers_rights: "Worker Rights"
 SHU_workers_rights_desc: "With the recent social changes in our society, it is important to ensure that worker rights are protected. This focus will help to establish and enforce labor laws, improve working conditions, and guarantee fair wages for all workers."
+
+SHU_archaeology_guild: "Archaeology Guild"
+SHU_archaeology_guild_desc: "Support the expansion of the Explorer's Guild to uncover the mysteries of our long-forgotten cities, delving into Shurima's ancient secrets and paving the way for exciting new discoveries. This endeavor will deepen our understanding of the magic that permeates our land, illuminating its wonders and harnessing its potential for the future."
 
 SHU_trade_guild: "Royal Trade Guild"
 SHU_trade_guild_desc: "Establish the Royal Trade Guild to oversee and regulate commerce within Shurima. This will centralize trade operations, enhance economic efficiency, and strengthen our position as a dominant trading power in the region."

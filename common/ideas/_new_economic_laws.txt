@@ -143,7 +143,6 @@ ideas = {
                         has_war_support > 0.5
                         has_stability > 0.5
 						has_completed_focus = SHU_economic_revival
-                        has_completed_focus = SHU_Restoring_Shuriman_Economy
 						has_completed_focus = SHU_Restoring_Icathian_Economy
                     }
                 }
@@ -232,7 +231,6 @@ ideas = {
                         has_war_support > 0.5
                         has_stability > 0.5
 						has_completed_focus = SHU_economic_revival
-                        has_completed_focus = SHU_Restoring_Shuriman_Economy
 						has_completed_focus = SHU_Restoring_Icathian_Economy
                     }
                 }
