@@ -92,7 +92,7 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Remnents Shuriman Elite"
+	name = "Shuriman Elite Remnants"
 	desc = "Cult of the Ascended"
 	#picture = "gfx/leaders//.dds"
 	#expire = ""

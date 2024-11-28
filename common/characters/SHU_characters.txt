@@ -131,14 +131,14 @@ characters = {
                 empress 
                 battle_mistress_of_shurima 
             }
-            
             # Trivia. 
             # Based on the timeline of events, Sivir is possibly in her late 26s- early 31s.
             # I think however due to her age, at the timeline of 990 she is 24, mean avg. is 26.
             # Fictious: Sivir, Naturally dies at 82 years old - but leaves power 2 years early '
             # Sivir FN. Death Date: 1045.1.1
-            
-            expires = { 1043.1.1 }
+
+            #If sivir has ascended, she will not die or leave power. (var = sivirAscended)
+        }
     }
     advisor = {
         available = {
@@ -157,7 +157,7 @@ characters = {
             allowed = { original_tag = SHU }
             traits = { silent_workhorse }
         }
-        corps_commander = {
+    corps_commander = {
         traits = {  armor_officer cavalry_officer defensive_doctrine infantry_officer}
         skill = 4
         attack_skill = 2

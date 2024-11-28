@@ -27,6 +27,12 @@
  shurima.57.a: "A New Era of Cooperation"
  shurima.57.a.tt: "Both Nazumah and Shurima gain stability and war support as a result of their closer ties."
 
+# Sivir Ascension Event
+shurima.58.t: "Ascension"
+shurima.58.d: "Following the reunification of Shurima, the people eagerly call for the ascension of the empress who made it possible, Sivir. Ascension is a sacred process that channels the sun's power into an individual, transforming them into a being of supreme might and divinity."
+
+shurima.58.a: "Only a mortal could understand the people's suffering."
+shurima.58.b: "It would be the greatest of honors."
 
  # Pick Leader Event 
  shurima.1.pick_leader.option_azir: "Azir will lead us!"

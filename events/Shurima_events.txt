@@ -672,6 +672,50 @@ country_event = {
     }
 }
 
+# ascend Sivir event
+country_event = {
+    id = shurima.58
+    title = shurima.58.t
+    desc = shurima.58.d
+    picture = GFX_report_event_empty_throne #TODO
+
+    trigger = { #Needs to reunite the continent of Shurima with the exception of Aurma, the Void, Targon and the eastern part.
+        limit = {
+            147 = { is_controlled_by_ROOT_or_ally = yes }
+            has_country_leader = {
+                ruling_only = yes
+                character = SHU_sivir
+            }
+        }
+    }
+
+    fire_only_once = yes
+    
+    # sivir refuses ascension
+    option = { 
+        name = shurima.58.a
+        ai_chance = { factor = 55 } # Adjust AI chance accordingly
+        
+        add_stability = 0.05
+    }
+    
+    # sivir ascends
+    option = {
+        name = shurima.58.b
+        ai_chance = { factor = 45 } # Adjust AI chance accordingly
+
+        add_trait = {
+            character = SHU_sivir
+            ideology = shurimanEmperor
+            trait = Ascended
+        }
+        set_variable = {
+            name = sivirAscended
+            value = 1  # True
+        }
+    }
+}
+
 # First Draft 
 # country_event = {
 #     id = shurima.55

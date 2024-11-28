@@ -39,7 +39,7 @@ leader_traits = {
 	}
 
 	baccai = {
-		name = "Ascended"
+		name = "Baccai"
 		random = no
 
 		logistics_skill=1
@@ -69,6 +69,7 @@ leader_traits = {
     }
 
 	empress = {
+		name = "Empress"
 		random = no
 		stability_factor = 0.2
 	}
@@ -79,8 +80,8 @@ leader_traits = {
 		attack_skill=2
 	}
 
-	Ascended = {
+	ascended = {
 		name = Ascended_trait_name
-		 
+		stability_factor = 0.05
 	}
 }
