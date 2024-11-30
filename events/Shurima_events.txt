@@ -679,11 +679,45 @@ country_event = {
     desc = shurima.58.d
     picture = GFX_report_event_empty_throne #TODO
 
-    trigger = { #Needs to reunite the continent of Shurima with the exception of Aurma, the Void, Targon and the eastern part.
-        limit = {
-            147 = { is_controlled_by_ROOT_or_ally = yes }
+    trigger = { #Needs to reunite the continent of Shurima with the exception of Aurma, Icathia, Targon and the eastern lands.
+        99 = { is_controlled_by_ROOT_or_ally = yes }
+        100 = { is_controlled_by_ROOT_or_ally = yes }
+        101 = { is_controlled_by_ROOT_or_ally = yes }
+        102 = { is_controlled_by_ROOT_or_ally = yes }
+        103 = { is_controlled_by_ROOT_or_ally = yes }
+        104 = { is_controlled_by_ROOT_or_ally = yes }
+        105 = { is_controlled_by_ROOT_or_ally = yes }
+        106 = { is_controlled_by_ROOT_or_ally = yes }
+        107 = { is_controlled_by_ROOT_or_ally = yes }
+        108 = { is_controlled_by_ROOT_or_ally = yes }
+        109 = { is_controlled_by_ROOT_or_ally = yes }
+        115 = { is_controlled_by_ROOT_or_ally = yes }
+        116 = { is_controlled_by_ROOT_or_ally = yes }
+        117 = { is_controlled_by_ROOT_or_ally = yes }
+        118 = { is_controlled_by_ROOT_or_ally = yes }
+        119 = { is_controlled_by_ROOT_or_ally = yes }
+        121 = { is_controlled_by_ROOT_or_ally = yes }
+        122 = { is_controlled_by_ROOT_or_ally = yes }
+        123 = { is_controlled_by_ROOT_or_ally = yes }
+        130 = { is_controlled_by_ROOT_or_ally = yes }
+        131 = { is_controlled_by_ROOT_or_ally = yes }
+        132 = { is_controlled_by_ROOT_or_ally = yes }
+        133 = { is_controlled_by_ROOT_or_ally = yes }
+        134 = { is_controlled_by_ROOT_or_ally = yes }
+        135 = { is_controlled_by_ROOT_or_ally = yes }
+        136 = { is_controlled_by_ROOT_or_ally = yes }
+        137 = { is_controlled_by_ROOT_or_ally = yes }
+        138 = { is_controlled_by_ROOT_or_ally = yes }
+        139 = { is_controlled_by_ROOT_or_ally = yes }
+        140 = { is_controlled_by_ROOT_or_ally = yes }
+        141 = { is_controlled_by_ROOT_or_ally = yes }
+        143 = { is_controlled_by_ROOT_or_ally = yes }
+        144 = { is_controlled_by_ROOT_or_ally = yes }
+        145 = { is_controlled_by_ROOT_or_ally = yes }
+        146 = { is_controlled_by_ROOT_or_ally = yes }
+        147 = { is_controlled_by_ROOT_or_ally = yes }
+        ROOT = {
             has_country_leader = {
-                ruling_only = yes
                 character = SHU_sivir
             }
         }
@@ -694,25 +728,19 @@ country_event = {
     # sivir refuses ascension
     option = { 
         name = shurima.58.a
-        ai_chance = { factor = 55 } # Adjust AI chance accordingly
-        
+        ai_chance = { base = 55 } # Adjust AI chance accordingly
         add_stability = 0.05
     }
     
     # sivir ascends
     option = {
         name = shurima.58.b
-        ai_chance = { factor = 45 } # Adjust AI chance accordingly
+        ai_chance = { base = 45 } # Adjust AI chance accordingly
 
-        add_trait = {
-            character = SHU_sivir
-            ideology = shurimanEmperor
-            trait = Ascended
+        add_country_leader_trait = {
+            ascended_leader
         }
-        set_variable = {
-            name = sivirAscended
-            value = 1  # True
-        }
+        set_variable = { name = sivirAscended }
     }
 }
 

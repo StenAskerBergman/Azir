@@ -49,7 +49,7 @@ leader_traits = {
 	}
 
 	Ascended = {
-		name = "Ascended"
+		name = "God Warrior"
 		random = no
 
 		logistics_skill=2
@@ -80,8 +80,9 @@ leader_traits = {
 		attack_skill=2
 	}
 
-	ascended = {
+	ascended_leader = {
 		name = Ascended_trait_name
-		stability_factor = 0.05
+		random = no
+		war_support_factor = 0.1
 	}
 }

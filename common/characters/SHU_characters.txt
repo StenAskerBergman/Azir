@@ -18,7 +18,8 @@ characters = {
             desc = SHU_AZIR_DESC
             ideology = shurimanEmperor
             traits = { 
-                emperorsands Hawk
+                emperorsands 
+                ascended_leader
             }
             do_effect = {
                 NOT = {
