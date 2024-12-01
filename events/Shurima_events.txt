@@ -739,7 +739,7 @@ country_event = {
 
         add_country_leader_trait = {
             ascended_leader
-        }
+        }   
         set_variable = { name = sivirAscended }
     }
 }

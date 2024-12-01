@@ -517,7 +517,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.5
-				political_power_cost = -1
+				political_power_gain = 1
 				# local_resources_factor = 0.00
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 1

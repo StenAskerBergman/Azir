@@ -9,9 +9,4 @@ leader_traits = {
         random = no        
         war_support_factor = 0.2
     }
-    ascended_leader = {
-		name = Ascended_trait_name
-		random = no
-		war_support_factor = 0.1
-	}
 }

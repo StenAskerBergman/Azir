@@ -43,10 +43,10 @@ spriteTypes = {
 # Larger 
 
 	# Azir
-	# SpriteType = {
-	# 	 name = "GFX_portrait_shu_azir_large"
-	#	 texturefile = "gfx/leaders/SHU/portrait_shu_azir_large.dds"
-	# }
+	SpriteType = {
+		 name = "GFX_portrait_shu_azir_large_unanimated"
+	 	texturefile = "gfx/leaders/SHU/portrait_shu_azir_large.dds"
+	}
 
  	# Ksante / K'sante
 	# SpriteType = {
@@ -58,6 +58,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_shu_sivir_large"
 		texturefile = "gfx/leaders/SHU/portrait_shu_sivir_large.dds"
+	}
+
+	# Taliyah
+	SpriteType = {
+		name = "GFX_portrait_shu_taliyah_large_unanimated"
+		texturefile = "gfx/leaders/SHU/portrait_shu_taliyah_large.dds"
 	}
 
  	# Nasus	
@@ -88,7 +94,7 @@ spriteTypes = {
 
 	# Azir
 	SpriteType = {
-		name = "GFX_portrait_shu_azir_small"
+		name = "GFX_portrait_shu_azir_small_unanimated"
 		texturefile = "gfx/characters/SHU/portrait_azir_small.dds"
 	}
 

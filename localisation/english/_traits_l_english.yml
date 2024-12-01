@@ -101,12 +101,17 @@
  fascist_demagogue_desc: "§LDriven by a will to unite the people under a strong state, this politician emphasizes nationalist and militarist rhetoric.§!"
  staunch_monarchist: "Staunch Monarchist"
  staunch_monarchist_desc: "§LThis politician believes that a hereditary ruler serves as a powerful icon to unite the country.§!"
- Ascended_trait_name: "Ascended"
+ ascended_leader: "Ascended"
  God_Warrior_Ascended_trait_name: "Ascended God Warrior"
+ librarian: "Librarian"
  Loyal_Xerath: "Xerath Follower"
  Loyal_Renekton: "Renekton Bandit"
  Loyal_Azir: "Azir Loyalist"
  Loyal_Sivir: "Sivir Loyalist"
+ b_m_of_shu_trait_name: "Battle Mistress of Shurima"
+ Empress_trait_name: "Empress"
+ baccai: "Baccai"
+ silenced: "Silenced"
   
  ideological_crusader: "Ideological Crusader"
  shadow_of_calles: "Shadow of Calles"
@@ -186,3 +191,5 @@
  electronics_concern: "Electronics Concern"
  electronics_developer: "Electronics Developer"
 
+#Taliyah
+aquaphobia: "Aquaphobia"

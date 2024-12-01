@@ -592,12 +592,6 @@ leader_traits = {
 		conscription = 0.05
 		acclimatization_hot_climate_gain_factor = 0.75
 	}
-
-	ascended_leader = {
-		name = Ascended_trait_name
-		random = no
-		war_support_factor = 0.05
-	}
 	
 	radiantdawn = {
 		random = no

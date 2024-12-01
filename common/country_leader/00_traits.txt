@@ -512,12 +512,6 @@ leader_traits = {
 		acclimatization_hot_climate_gain_factor = 0.75
 	}
 
-	ascended_leader = {
-		name = Ascended_trait_name
-		random = no
-		war_support_factor = 0.1
-	}
-
 	radiantdawn = {
 		random = no
 		experience_gain_army_unit = 0.35

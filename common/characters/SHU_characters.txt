@@ -1,9 +1,9 @@
 characters = {
 
-# Azir - Status: 60% DONE 
+    # Azir - Status: 80% DONE 
     # Leader: DONE
-    # Advisor: SEMI 
-    # Commander: TODO 
+    # Advisor: SEMI
+    # Commander: REVIEW
     
     SHU_azir = {
     name = SHU_AZIR_NAME # "Azir"
@@ -11,7 +11,11 @@ characters = {
     portraits = {
         civilian = {
             large = GFX_portrait_shu_azir_large
-            small = GFX_portrait_shu_azir_small
+            small = GFX_portrait_shu_azir_small_unanimated
+        }
+        army = {
+            large = GFX_portrait_shu_azir_large_unanimated
+            small = GFX_portrait_shu_azir_small_unanimated
         }
     }
     country_leader = {
@@ -61,20 +65,20 @@ characters = {
         traits = { emperorsands }
     }
     field_marshal = {
-        traits = {  war_hero trait_cautious inflexible_strategist brilliant_strategist defensive_doctrine }
+        traits = { desert_fox old_guard politically_connected infantry_officer }
         skill = 4
-        attack_skill = 2
+        attack_skill = 3
         defense_skill = 4
         planning_skill = 3
         logistics_skill = 4
         legacy_id = -1
+        }
     }
-}
     
-# Nasus - Status: 30%
+    # Nasus - Status: 50%
     # Leader: DONE
     # Advisor: TODO 
-    # Commander: TODO 
+    # Commander: REVIEW
     
 	SHU_nasus = {
         name = SHU_NASUS_NAME # "Nasus"
@@ -84,7 +88,7 @@ characters = {
             small = "GFX_portrait_shu_nasus_small"
             }
         }
-        country_leader = {
+    country_leader = {
                 desc = "POLITICS_NASUS_DESC"
                 ideology = shurimanEmperor
                 traits = { politicalPuppeteer }
@@ -93,28 +97,28 @@ characters = {
         ai_will_do = {
             factor = 1.0
         }
-        advisor = {
+    advisor = {
             slot = political_advisor
             idea_token = SHU_nasus
             ledger = army
             
-            traits = { military_theorist really_good_boss librarian }      # Unspecified cost defaults to 150.
+            traits = { grand_battle_plan_expert librarian }      # Unspecified cost defaults to 150.
         }
-        corps_commander = {
-        traits = {  trait_cautious war_hero engineer_officer }
-        skill = 4
-        attack_skill = 2
+    field_marshal = {
+        traits = { desert_fox politically_connected trait_cautious engineer_officer organizer }
+        skill = 5
+        attack_skill = 3
         defense_skill = 4
-        planning_skill = 3
-        logistics_skill = 4
+        planning_skill = 5
+        logistics_skill = 5
         legacy_id = -1
+        }
     }
-}
 
-# Sivir - Status: 30%
+    # Sivir - Status: 60%
     # Leader: TODO < DOING
     # Advisor: DONE 
-    # Commander: TODO 
+    # Commander: REVIEW
     
     SHU_sivir = {
     name = SHU_SIVIR_NAME # "Sivir"
@@ -140,7 +144,6 @@ characters = {
 
             #If sivir has ascended, she will not die or leave power. (var = sivirAscended)
         }
-    }
     advisor = {
         available = {
             NOT = {
@@ -159,29 +162,33 @@ characters = {
             traits = { silent_workhorse }
         }
     corps_commander = {
-        traits = {  armor_officer cavalry_officer defensive_doctrine infantry_officer}
+        traits = { desert_fox brilliant_strategist media_personality trickster }
         skill = 4
-        attack_skill = 2
-        defense_skill = 4
-        planning_skill = 3
-        logistics_skill = 4
+        attack_skill = 3
+        defense_skill = 2
+        planning_skill = 2
+        logistics_skill = 3
         legacy_id = -1
         }
-	}
+    }
 
-    # Taliyah - Status: 30%
+    # Taliyah - Status: 60%
     # Leader: TODO
     # Advisor: DONE 
-    # Commander: TODO 
+    # Commander: REVIEW
         
 	SHU_taliyah = {
-        name = "Taliyah"
-        desc = SHU_TALIYAH_DESC
+    name = "Taliyah"
+    desc = SHU_TALIYAH_DESC
     portraits = {
     civilian = {
         large = GFX_portrait_shu_taliyah_large
         small = GFX_portrait_shu_taliyah_small
         }
+    army = {
+        large = GFX_portrait_shu_taliyah_large_unanimated
+        small = GFX_portrait_shu_taliyah_small
+    }
     }
     advisor = {
         slot = political_advisor
@@ -193,27 +200,28 @@ characters = {
         allowed = { original_tag = SHU }
         traits = { popular_figurehead }
         }
-        corps_commander = {
-        traits = {  trait_cautious engineer_officer defensive_doctrine infantry_officer}
-        skill = 4
-        attack_skill = 2
-        defense_skill = 4
-        planning_skill = 3
-        logistics_skill = 4
+    corps_commander = {
+        traits = { inflexible_strategist trait_engineer aquaphobia }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 3
+        planning_skill = 1
+        logistics_skill = 2
         legacy_id = -1
         }
     }
 
-# Renekton - Status: 30%
+    # Renekton - Status: 60%
     # Leader: DONE
     # Advisor: TODO 
-    # Commander: TODO 
+    # Commander: REVIEW
     
 	SHU_renekton = {
 	name = "Renekton"
 	portraits = {
    	 civilian = {
-         large = "GFX_portrait_shu_renekton"
+         large = "GFX_portrait_shu_renekton_large"
+         small = "GFX_portrait_shu_renekton_small"
          }
 	}
 	country_leader = {
@@ -222,20 +230,26 @@ characters = {
 			traits = { Fascist_Militarist }
 			#expire = "1943.1.1.1"
 		}
+    field_marshal = {
+        traits = { desert_fox brilliant_strategist trait_reckless harsh_leader }
+        skill = 5
+        attack_skill = 6
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 2
+        legacy_id = -1
+        }
     }
 
-# Ksante - Status: 30%
+    # Ksante - Status: 40%
+    # Leader: TODO
     # Advisor: TODO 
-    # Commander: TODO 
+    # Commander: REVIEW
     
 	SHU_ksante = {
 	name = SHU_NAME_KSANTE
 	portraits = {
    	    civilian = {
-            large = GFX_portrait_naz_ksante_large
-            small = GFX_portrait_ksante_small
-        }
-        army = {
             large = GFX_portrait_naz_ksante_large
             small = GFX_portrait_ksante_small
         }
@@ -246,24 +260,28 @@ characters = {
         can_be_fired = yes
         ledger = civilian
         cost = 150
-        allowed = { original_tag = SHU }
-        traits = { silent_workhorse irregulars_officer }
+        allowed = { SHU }
+        traits = { silent_workhorse }
+        }
+    field_marshal = {
+        traits = { desert_fox brilliant_strategist politically_connected war_hero career_officer }
+        skill = 4
+        attack_skill = 4
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 3
+        legacy_id = -1
         }
     }
-
     
-# Nami - Status: 30%
+    # Nami - Status: 50%
     # Advisor: TODO 
-    # Commander: TODO 
+    # Commander: REVIEW
     
 	SHU_nami = {
 	name = SHU_NAME_NAMI
 	portraits = {
    	    civilian = {
-            large = GFX_portrait_nami_large
-            small = GFX_portrait_nami_small
-        }
-        army = {
             large = GFX_portrait_nami_large
             small = GFX_portrait_nami_small
         }
@@ -290,14 +308,42 @@ characters = {
                 has_completed_focus = NOR_prince_olav_to_navy_staff
             }
         }
-        traits={ navy_media_personality bold blockade_runner }
-        skill=5
-        attack_skill=6
-        defense_skill=3
-        maneuvering_skill=3
-        coordination_skill=5
-        legacy_id=-1
-        
+        traits = { navy_media_personality bold navy_career_officer }
+        skill = 4
+        attack_skill = 4
+        defense_skill = 3
+        maneuvering_skill = 4
+        coordination_skill = 3
+        legacy_id=-1  
+        }
     }
-    }
+
+    #Golden Herald
+    #Commander: TODO
+
+    SHU_herald = {
+        name = "The Emperor's Will"
+        portraits = {
+            army = {
+                large = 
+                small = 
+            }
+        }
+        advisor = {
+            slot = theorist
+            allowed = {
+                original_tag = SHU
+            }
+            ledger = army
+            traits = { military_theorist }
+        }
+        field_marshal = {
+            traits = { desert_fox brilliant_strategist armor_officer }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 3
+            }
+        }
 }
