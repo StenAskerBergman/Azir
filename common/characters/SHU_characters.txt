@@ -11,11 +11,11 @@ characters = {
     portraits = {
         civilian = {
             large = GFX_portrait_shu_azir_large
-            small = GFX_portrait_shu_azir_small_unanimated
+            small = GFX_portrait_azir_small_unanimated
         }
         army = {
             large = GFX_portrait_shu_azir_large_unanimated
-            small = GFX_portrait_shu_azir_small_unanimated
+            small = GFX_portrait_azir_small_unanimated
         }
     }
     country_leader = {
@@ -85,7 +85,7 @@ characters = {
         portraits = {
         civilian = {
             large = "GFX_portrait_shu_nasus_large"
-            small = "GFX_portrait_shu_nasus_small"
+            small = "GFX_portrait_nasus_small"
             }
         }
     country_leader = {
@@ -126,7 +126,7 @@ characters = {
     portraits = {
     civilian = {
         large = "GFX_portrait_shu_sivir_large"
-        small = "GFX_portrait_shu_sivir_small"
+        small = "GFX_portrait_sivir_small"
         }
     }
     country_leader = {
@@ -183,11 +183,11 @@ characters = {
     portraits = {
     civilian = {
         large = GFX_portrait_shu_taliyah_large
-        small = GFX_portrait_shu_taliyah_small
+        small = GFX_portrait_taliyah_small
         }
     army = {
         large = GFX_portrait_shu_taliyah_large_unanimated
-        small = GFX_portrait_shu_taliyah_small
+        small = GFX_portrait_taliyah_small
     }
     }
     advisor = {
@@ -221,7 +221,7 @@ characters = {
 	portraits = {
    	 civilian = {
          large = "GFX_portrait_shu_renekton_large"
-         small = "GFX_portrait_shu_renekton_small"
+         small = "GFX_portrait_renekton_small"
          }
 	}
 	country_leader = {
@@ -282,7 +282,7 @@ characters = {
 	name = SHU_NAME_NAMI
 	portraits = {
    	    civilian = {
-            large = GFX_portrait_nami_large
+            large = GFX_portrait_nami_shu_large
             small = GFX_portrait_nami_small
         }
 	}
@@ -319,18 +319,24 @@ characters = {
     }
 
     #Golden Herald
-    #Commander: TODO
+    #Advisor: DONE
+    #Commander: DONE
 
     SHU_herald = {
         name = "The Emperor's Will"
         portraits = {
+            civilian = {
+                large = GFX_portrait_shu_herald_large
+                small = GFX_portrait_herald_small
+            }
             army = {
-                large = 
-                small = 
+                large = GFX_portrait_shu_herald_large
+                small = GFX_portrait_herald_small
             }
         }
         advisor = {
             slot = theorist
+            idea_token = herald
             allowed = {
                 original_tag = SHU
             }

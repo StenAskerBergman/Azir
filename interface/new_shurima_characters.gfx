@@ -86,39 +86,45 @@ spriteTypes = {
 
 	# Nami
 	spriteType = {
-		name = "GFX_portrait_nami_large"
-		texturefile = "gfx/characters/SHU/portrait_nami_large.dds"
+		name = "GFX_portrait_shu_nami_large"
+		texturefile = "gfx/characters/SHU/portrait_shu_nami_large.dds"
+	}
+
+	# Golden Herald
+	spriteType = {
+		name = "GFX_portrait_shu_herald_large"
+		texturefile = "gfx/characters/SHU/portrait_shu_herald_large.dds"
 	}
 
 # Smaller 
 
 	# Azir
 	SpriteType = {
-		name = "GFX_portrait_shu_azir_small_unanimated"
+		name = "GFX_portrait_azir_small_unanimated"
 		texturefile = "gfx/characters/SHU/portrait_azir_small.dds"
 	}
 
 	# Renekton
 	SpriteType = {
-		name = "GFX_portrait_shu_renekton_small"
+		name = "GFX_portrait_renekton_small"
 		texturefile = "gfx/characters/SHU/portrait_azir_small.dds"
 	}
 	
 	# Sivir
 	SpriteType = {
-		name = "GFX_portrait_shu_sivir_small"
+		name = "GFX_portrait_sivir_small"
 		texturefile = "gfx/characters/SHU/portrait_sivir_small.dds"
 	}
 	
 	# Taliyah
 	SpriteType = {
-		name = "GFX_portrait_shu_taliyah_small"
+		name = "GFX_portrait_taliyah_small"
 		texturefile = "gfx/characters/SHU/portrait_taliyah_small.dds"
 	}
 
 	# Nasus
 	SpriteType = {
-		name = "GFX_portrait_shu_nasus_small"
+		name = "GFX_portrait_nasus_small"
 		texturefile = "gfx/characters/SHU/portrait_nasus_small.dds"
 	}
 
@@ -126,5 +132,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_nami_small"
 		texturefile = "gfx/characters/SHU/portrait_nami_small.dds"
+	}
+
+	# Herald
+	spriteType = {
+		name = "GFX_portrait_herald_small"
+		texturefile = "gfx/characters/SHU/portrait_herald_small.dds"
 	}
 }
