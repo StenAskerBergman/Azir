@@ -13,88 +13,7 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
-	# drift is a percent applied weekly
-	mages_revolutionary = {
-		random = no
-		# Boosts Mages
-		sprite = 13
-		mages_drift = 0.1
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	oligarchy_revolutionary = {
-		random = no
-		# Boosts Oligarchy
-		sprite = 13
-		oligarchy_drift = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	theocracy_revolutionary = {
-		random = no
-		# Boosts Theocracy
-		sprite = 13
-		theocracy_drift = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	staunch_royalist = {
-		random = no
-		# Boosts Royalist
-		sprite = 13
-		royalist_drift = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	chiefdom_reformer = {
-		random = no
-		# Boosts Chiefdom
-		sprite = 13
-		chiefdom_drift = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	absolutists_demagogue = {
-		random = no
-		# Boosts Absolutists
-		sprite = 13
-		absolutists_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	desolation_demagogue = {
-		random = no
-		# Boosts Desolation
-		sprite = 13
-		desolation_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	charismatic = {
-		
-	}
-	
 	# Leona 
 	radiant_dawn = {
 		random = no
@@ -105,7 +24,7 @@ leader_traits = {
 		random = no
 		army_defence_factor = 0.15
 	}
-	
+
 	# Diana
 	moonblade = {
 		random = no
@@ -117,7 +36,7 @@ leader_traits = {
 		dig_in_speed = 0.2
 		max_dig_in = 5
 	}
-	
+
 	# Pantheon
 	warrior_spirit = {
 		random = no
@@ -129,33 +48,33 @@ leader_traits = {
 		army_morale = 0.1
 		combat_width_factor = -0.05
 	}
-	
+
 	# Aphelios
 	silent_sentinel = {
-		random = no
-		covert_operations = 0.2
-		land_night_attack = 0.1
+    random = no
+    covert_operations = 0.2
+    land_night_attack = 0.1
 	}
-	
+
 	covert_operations = {
 		random = no
 		intel_network_gain_factor = 0.25
 		encryption_factor = 0.2
 		decryption_factor = 0.2
 	}
-	
+
 	# Alune
 	astral_guidance = {
-		random = no
-		planning_speed = 0.1
-		army_planning_factor = 0.05
+    random = no
+    planning_speed = 0.1
+    army_planning_factor = 0.05
 	}
 	moonshadow_tactics = {
 		random = no
 		land_night_attack = 0.2
 		land_reinforce_rate = 0.1
 	}
-	
+
 	# Taric
 	protector_of_targon = {
 		random = no
@@ -177,7 +96,7 @@ leader_traits = {
 		army_defence_factor = 0.10
 		land_reinforce_rate = 0.05
 	}
-	
+
 	# Morgana
 	fallen_judgment = {
 		random = no
@@ -189,7 +108,7 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 		recon_factor = 0.15
 	}
-	
+
 	# Soraka
 	divine_healer = {
 		random = no
@@ -201,10 +120,10 @@ leader_traits = {
 		war_support_factor = -0.15
 		stability_factor = 0.1
 	}
-	
-	
-	
-	
+
+
+
+
 	merceneryCataloger = {
 		random = no
 		special_forces_cap = 1
@@ -259,80 +178,80 @@ leader_traits = {
 		random = no
 		conscription = 0.05
 	}
-	
+
 	masterTactician = {
 		random = no
 		choose_preferred_tactics_cost = -5
 		assign_army_leader_cp_cost = -10
 		land_reinforce_rate = 0.2
 	}
-	
+
 	experiencedGeneral = {
 		random = no
 		experience_gain_army_factor = 0.20
 	}
-	
+
 	bloodHosts = {
 		random = no
 		cat_mass_assault_cost_factor = -0.12
 		attrition = -0.15
 	}
-	
+
 	flexible_tactician = {
 		random = no
 		land_equipment_upgrade_xp_cost = -0.25
 		land_doctrine_cost_factor = -0.05
 	}
-	
+
 	naval_focused = {
 		random = no
 		naval_doctrine_cost_factor = -0.15
 	}
-	
+
 	deceiver = {
 		random = no
 		encryption_factor = 0.4
 		decryption_factor = 0.4
 		intel_network_gain_factor = 0.5
 	}
-	
+
 	crimsonLord = {
 		random = no
 		consumer_goods_factor = 0.03
 		political_power_gain = 0.25
 	}
-	
+
 	deviousCharmer = {
 		random = no
 		offensive_war_stability_factor = 0.15
 		local_resources_factor = 0.1
 	}
-	
+
 	talentSearcher = {
 		random = no
 		research_speed_factor = 0.05
 		max_command_power = 25
 	}
-	
+
 	greatReckoner = {
 		random = no
 		war_support_weekly = 0.01
 		army_advisor_cost_factor = -0.20
 	}
-	
+
 	reformedMage = {
 		random = no
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 	}
-	
+
 	politicalPuppeteer = {
 		random = no
 		political_power_gain = 0.20
 		political_advisor_cost_factor = -0.2
 		war_support_weekly = -0.005
 	}
-	
+
 	unsureLeader = {
 		random = no
 		stability_factor = -0.15	
@@ -340,58 +259,58 @@ leader_traits = {
 		political_power_gain = -0.25
 		army_org = -5
 	}
-	
+
 	seneschal = {
 		random = no
 		army_strength_factor = 0.10
 		army_org = 5
 	}
-	
+
 	empoweredKing = {
 		random = no
 		political_power_gain = +0.15
 		political_advisor_cost_factor = -0.1
 	}
-	
+
 	guerilla_fighter = {
 		random = no		
 		dig_in_speed = 20
 		max_dig_in = 15
 		pocket_penalty = -0.25
 	}
-	
+
 	magic_focused = {
 		random = no	
 		army_artillery_defence_factor = 0.12
 		army_artillery_attack_factor = 0.12
 	}
-	
+
 	defensive_turtler = {
 		random = no	
 		army_speed_factor = -0.1
 		army_defence_factor = 0.15
 	}
-	
+
 	untrained_fighter = {
 		random = no	
 		army_strength_factor = -0.10
 		army_morale_factor = 0.15
 		army_org_regain = 0.15
 	}
-	
+
 	revenge_seeker = {
 		random = no	
 		army_speed_factor = 0.15
 		army_strength_factor = 0.1
 		army_org = -3
 	}
-	
+
 	combat_seeker = {
 		random = no	
 		offence = 0.2
 		defence = -0.1
 	}
-	
+
 	mage_supremacist = {
 		random = no	
 		monthly_population = 0.5
@@ -400,19 +319,19 @@ leader_traits = {
 		navy_advisor_cost_factor = 0.1
 		air_advisor_cost_factor = 0.1
 	}
-	
+
 	outspoken_motivator = {
 		random = no	
 		war_support_weekly = 0.005
 		political_power_gain = 0.20
 	}
-	
+
 	natural_leader = {
 		random = no	
 		stability_factor = 0.1	
 		war_support_factor = 0.15
 	}
-	
+
 	breaker_of_tradition = {
 		random = no	
 		research_speed_factor = 0.1
@@ -424,36 +343,36 @@ leader_traits = {
 		random = no	
 		combat_width_factor = -0.20
 	}
-	
+
 	devout_defender = {
 		random = no	
 		army_core_defence_factor = 0.15
 	}
-	
+
 	relentless_attacker = {
 		random = no	
 		army_attack_factor = 0.15
 		coordination_bonus = -0.10
 	}
-	
+
 	combat_cook = {
 		random = no
 		supply_factor = 0.20
 		supply_consumption_factor = -0.20
 	}
-	
+
 	duelist = {
 		random = no
 		army_org = 5
 		breakthrough_factor = 0.20
 		combat_width_factor = 0.15
 	}
-	
+
 	elusive_raptors = {
 		random = no
 		air_agility_factor = 0.15
 	}
-	
+
 	elevated_trainers = {
 		random = no
 		ace_effectiveness_factor = 0.30
@@ -465,35 +384,35 @@ leader_traits = {
 		naval_coordination = 0.25
 		naval_detection = 0.25
 	}
-	
+
 	amphibious_assaulter = {
 		random = no
 		invasion_preparation = -0.5
 		naval_invasion_penalty = -0.25
 	}
-	
+
 	cohesive_general = {
 		random = no
 		land_reinforce_rate = 0.15
 	}
-	
+
 	drill_sergeant = {
 		random = no
 		experience_gain_army = 0.10
 		experience_gain_army_factor = 0.15
 	}
-	
+
 	training_reformist = {
 		random = no
 		minimum_training_level = -0.25
 		max_training = -0.20
 	}
-	
+
 	well_rounded = {
 		random = no
 		land_doctrine_cost_factor = -0.10
 	}
-	
+
 	offensive_focused = {
 		random = no
 		cat_superior_firepower_cost_factor = -0.15
@@ -503,21 +422,21 @@ leader_traits = {
 		random = no
 		cat_grand_battle_plan_cost_factor = -0.15
 	}
-	
+
 	staunch_traditionalist = {
 		random = no
 		research_speed_factor = -0.1
 		party_popularity_stability_factor = 0.1
 		resistance_activity = -0.2
 	}
-	
+
 	antagonizer = {
 		random = no
 		stability_weekly = -0.005
 		war_support_weekly = 0.01
 		surrender_limit = 0.15
 	}
-	
+
 	devoted_propagandist = {
 		random = no
 		royalist_drift = 0.03
@@ -528,107 +447,107 @@ leader_traits = {
 		random = no
 		mageseeker_influence_gain = 0.01
 	}
-	
+
 	the_unshackled = {
 		random = no
 		war_support_factor = 0.05
 		forced_surrender_limit = 0.15
 		party_popularity_stability_factor = 0.3
 	}
-	
+
 	exemplar = {
 		random = no
 		war_support_factor = 0.10
 		army_core_attack_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
-	
+
 	influenceableKing = {
 		random = no
 		political_power_gain = -0.2
 		political_advisor_cost_factor = 0.2
 	}
-	
+
 	bountyhunter = {
 		random = no			
 		naval_coordination = 0.25
 		equipment_capture_factor = 0.25
 	}
-	
+
 	noxgeneral = {
 		random = no
 		land_doctrine_cost_factor = -0.10
 		max_planning_factor = 0.3
 		
 	}
-	
+
 	chainwarden = {
 		random = no
 		land_night_attack = 0.5
 		recon_factor = 0.25
 	}
-	
+
 	bladedancer = {
 		random = no
 		army_core_defence_factor = 0.1
 		training_time_factor = -0.2
 		minimum_training_level = -0.1
 	}
-	
+
 	empresselements = {
 		random = no
 		supply_consumption_factor = -0.25
 		command_power_gain = 0.5
 	}
-	
+
 	prophetvoid = {
 		random = no
 		monthly_population = 1.0
 		army_leader_start_level = 1
 	}
-	
+
 	emperorsands = {
 		random = no
 		conscription = 0.05
 		acclimatization_hot_climate_gain_factor = 0.75
 	}
-	
+
 	radiantdawn = {
 		random = no
 		experience_gain_army_unit = 0.35
 		land_reinforce_rate = 0.10
 	}
-	
+
 	outdatedBureau = {
 		random = no
 		research_speed_factor = -0.10
 		political_advisor_cost_factor = 0.25
 	}
-	
+
 	houndunderground = {
 		random = no
 		war_support_factor = 0.10
 		stability_factor = 0.10
 	}
-	
+
 	relentlessStorm = {
 		random = no
 		acclimatization_cold_climate_gain_factor = 0.5
 		offence = 0.15
 	}
-	
+
 	frostarcher = {
 		random = no
 		acclimatization_cold_climate_gain_factor = 0.5
 		army_morale = 10
 	}
-	
+
 	furynorth = {
 		random = no
 		acclimatization_cold_climate_gain_factor = 0.5
 		army_org = 10
 	}
-	
+
 	icewitch = {
 		random = no
 		acclimatization_cold_climate_gain_factor = 0.5
