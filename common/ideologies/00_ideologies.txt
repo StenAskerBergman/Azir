@@ -395,7 +395,7 @@ ideologies = {
 			}
 			#unkown subfaction
 			royalty = {
-				color ={ 160 110 194 }
+				color ={ 219 110 194 }
 			}
 		}
 
