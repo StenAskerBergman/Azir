@@ -5,19 +5,29 @@ ideologies = {
 		types = {
 			#targon subfaction
 			solari = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 255 135 13}
 			}
 			#ursine subfaction
 			cultOfVoli = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = { 44 92 76 }
 			}
 			#frostguard subfaction
 			frostguardCult = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = { 12 141 240 }
 			}
-			#A lot more in the future
+			#Other
+			theocracy_ideology = {
+			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_theocracy_1
+
+			dynamic_factions_names_1
+			dynamic_factions_names_3
 		}
 
 		color = { 235 195 157 }
@@ -57,32 +67,42 @@ ideologies = {
 		types = {
 			#noxus subfaction
 			noxianTrifarix = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			#bilg subfaction
 			gangSyndicate = {
 			}
 			#pilt subfaction
 			piltovanCouncil = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			#zaun subfaction
 			chemBarons = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			#Shuriman subfaction
 			ascendedCouncil = {
-			}			
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
 			
 			# Diana Subfaction
 			lunari = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 165 118 211 }
 				# color = { 192 150 224 } 
 				# color = { 176 150 224 }  
 			}
 			
-			#A lot more in the future
+			#Other
+			oligarchy_ideology = {
+			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_oligarchy_1
+
+			dynamic_factions_names_1
+			dynamic_factions_names_3
 		}
 
 		color = { 173 71 81 }
@@ -122,27 +142,35 @@ ideologies = {
 		types = {
 			#morde subfaction
 			mordekaisersRealm = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			#azir subfaction
 			shurimanEmperor = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 201 185 40 }
 			}
 			#mageking subfaction
 			icathianVassel ={
-				
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			# Vanilla Targon Faction - Pantheon leader 
 			rakkor = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = {117 208 209}
 				# color = { 60 179 113 } # medium seagreen	#3CB371
 			}
 
-			#A lot more in the future
+			#Other
+			absolutists_ideology = {
+			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_absolutists_1
+
+			dynamic_factions_names_1
+			dynamic_factions_names_2
 		}
 
 		color = { 201 185 40 }
@@ -182,24 +210,28 @@ ideologies = {
 		types = {
 			#ashe subfaction
 			avarosa = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = { 69 227 245 }
 			}
 			#sej subfaction
 			wintersclaw = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = { 41 170 240 }
 			}
 			#Ksante subfaction
 			hunters = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			#unknown subfaction
 			tribes = {
-			}
-			# 
-			celestials ={ 
-				color = { 201 185 40 }
 			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_chiefdom_1
+
+			dynamic_factions_names_1
+			dynamic_factions_names_3
 		}
 
 		color = { 4 199 179 }
@@ -237,22 +269,22 @@ ideologies = {
 	desolation = {
 
 		types = {
-			
 			#void subfaction
 			oblivion = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders desolation
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 90 20 180 }
 				#color = { 81 113 229 } 
 			}
 			
 			#shadow isles subfaction
 			undeadWastes = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders desolation
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 63 196 177 } 
 			}
 			
 			#Scarner Subfaction - Brackern 
 			brackern = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 76 110 184}
 			}
 			
@@ -273,12 +305,18 @@ ideologies = {
 
 			# Aurelions Subfaction
 			cosmic_dragon = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 76 110 184}
+			}
+
+			desolation_ideology = {
 			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_desolation_1
+
+			dynamic_factions_names_2
 		}
 
 		color = { 109 110 109 }
@@ -323,14 +361,17 @@ ideologies = {
 			}
 			#sylas subfaction - The Unshackled
 			unshackled = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 8 24 163 }
 			}
 			#ixtal subfaction
 			axiomata = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color = { 8 195 110 }
 			}
 			# Icathian Subfaction - Order of Kohari - Jax Zilean Mageking, Axamuk
 			kohari = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				color ={ 160 110 194 }
 				# color = { 8 195 163 } 
 				# color = { 8 24 163 }
@@ -342,16 +383,22 @@ ideologies = {
 			}
 			# Xerath subfaction
 			arcanum = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				#color = { 110 190 255 }
 				color = { 8 24 163 }
+			}
+
+			mages_ideology = {
 			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_mages_1
+
+			dynamic_factions_names_3
 		}
 
-		# color = { 8 24 163 }
+		color = { 8 24 163 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -389,22 +436,26 @@ ideologies = {
 		types = {
 			#Crown Sympathizers
 			sympathizers = {
+				color = { 219 219 219 }
 			}
 			#Ksante subfaction
 			elders = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			#unkown subfaction
 			royalty = {
-				color ={ 219 110 194 }
 			}
 		}
 
 		dynamic_faction_names = {
 			dynamic_factions_names_royalist_1
 			dynamic_factions_names_royalist_2
+
+			dynamic_factions_names_1
+			dynamic_factions_names_2
 		}
 
-		color = { 219 219 219 }
+		color = { 219 110 194 }
 
 		rules = {
 			can_create_collaboration_government = yes
@@ -442,258 +493,4 @@ ideologies = {
 		ai_democratic = yes # uses the democratic AI behaviour
 		ai_ideology_wanted_units_factor = 1.0 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
-
-	democratic = {
-
-		types = {
-
-			conservatism = {
-			}
-
-			liberalism = {
-			}
-
-			socialism = {
-			}
-
-			populism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-
-		color = { 0 0 255 }
-
-		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-		
-		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
-	}
-
-
-	communism = {
-
-		types = {
-
-			marxism = {
-			}
-
-			leninism = {
-			}
-
-			stalinism = {
-			}
-
-			anti_revisionism = {
-			}
-
-			anarchist_communism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
-
-		color = { 255 0 0 }
-
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
-
-		ai_communist = yes # uses the commie AI behaviour
-		ai_ideology_wanted_units_factor = 1.20
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-			hidden_modifier = { join_faction_tension = -0.1 }
-			embargo_threshold_factor = 0.5
-			lend_lease_tension = 0.50
-		}
-
-		faction_modifiers = {
-
-		}
-
-		ai_give_core_state_control_threshold = 10
-	}
-
-	fascism = {
-
-		types = {
-
-			nazism = {
-			}
-
-			gen_nazism = {
-			}
-
-			fascism_ideology = {
-			}
-
-			falangism = {
-			}
-
-			rexism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-
-		color = { 150 75 0 }
-
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
-			hidden_modifier = { join_faction_tension = -0.1 }
-			embargo_cost_factor = 1
-			lend_lease_tension = 0.50
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
-		ai_ideology_wanted_units_factor = 1.65
-		
-		ai_give_core_state_control_threshold = 10000
-	}
-
-	neutrality = {
-
-		types = {
-
-			despotism  = {
-			}
-
-			oligarchism  = {
-			}
-
-			anarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			moderatism = {
-			}
-
-			centrism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
-		}
-
-		color = { 124 124 124 }
-
-
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-
-		rules = {
-			can_force_government = yes
-			can_puppet = yes
-			can_send_volunteers = no
-		}
-
-		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.6
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-			drift_defence_factor = -0.3
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 10.0
-		}
-
-		faction_modifiers = {
-		}
-
-		ai_neutral = yes #
-		ai_ideology_wanted_units_factor = 1.15
-		
-		ai_give_core_state_control_threshold = 10000
-	}
 }
- 

@@ -107,7 +107,7 @@ recruit_character = TAR_bard
 # 	desc = "POLITICS_LEONA_DESC"
 # 	picture = "gfx/leaders/Targon/leona.dds"
 # 	#expire = ""
-# 	ideology = rexism
+# 	ideology = fascism_ideology
 # 	traits = {
 # 		radiantdawn
 # 	}

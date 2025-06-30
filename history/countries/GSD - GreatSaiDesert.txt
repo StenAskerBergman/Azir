@@ -1,5 +1,7 @@
-capital = 114 # Capital 8604
-oob = "KAL"
+capital = 106
+oob = "GSD"
+
+#TODO - set_cosmetic_tag = GSD
 
 set_research_slots = 2
 set_stability = 0.65
@@ -19,31 +21,6 @@ set_technology = {
     early_destroyer = 1
     early_heavy_cruiser = 1
     transport = 1
-}
-
-
-
-# First person in the list is the leader at the start!
-# recruit_character 
-create_country_leader = {
-	name = "Prince"
-	desc = "The Last Shuriman Prince"
-	picture = "gfx/leaders/KAL/portrait_kal_prince_large.dds"
-	#expire = ""
-	ideology = fascism_ideology #Sub Ideology
-	traits = {
-		Dictator
-	}
-}
-create_country_leader = {
-	name = "Traders"
-	desc = "Leaderless?"
-	picture = "gfx/leaders/KAL/portrait_kal_trade_large.dds"
-	#expire = ""
-	ideology = arcanum #Sub Ideology
-	traits = {
-		Dictator
-	}
 }
 
 set_convoys = 10

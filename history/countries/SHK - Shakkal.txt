@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_VUATI_DESC"
 	picture = "gfx/leaders/SHK/portrait_shk_vuati_large.dds"
 	#expire = ""
-	ideology = rexism
+	ideology = fascism_ideology
 	traits = {
 		Dictator
 	}

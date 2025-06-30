@@ -2799,7 +2799,7 @@ focus_tree = {
 				}
 				AUR = {
 					country_event = {
-						id = NSB_soviet_foreign_politics_events.200
+						id = useful-events-quarior-submission.1
 						days = 5
 						random_days = 3
 					}
@@ -4939,7 +4939,7 @@ focus_tree = {
 			custom_effect_tooltip = SHU_puppet_nazumah_tt
 			NAZ = {
 				country_event = {
-					id = NSB_soviet_foreign_politics_events.200
+					id = useful-events-quarior-submission.1
 					days = 5
 					random_days = 3
 				}

@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = "Brother of Nafir"
 	picture = "gfx/leaders/GES/portrait_ges_safir_large.dds"
 	#expire = ""
-	ideology = rexism
+	ideology = fascism_ideology
 	traits = {
 		Dictator
 	}

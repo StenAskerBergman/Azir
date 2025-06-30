@@ -29,14 +29,14 @@ country_event = {
 		}
 		var:country_puppet_ally = {
 			country_event = {
-				id = NSB_soviet_foreign_politics_events.200
+				id = useful-events-quarior-submission.1
 				days = 5
 				random_days = 3
 			}
 		}
 	}
 	
-	# Puppet
+	# Ally
 	option = {
 		name = puppet_or_ally.1.b
 		trigger = {

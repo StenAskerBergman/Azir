@@ -51,7 +51,7 @@ characters={
 	}
 	country_leader = {
 			desc = "POLITICS_RENEKTON_DESC"
-			ideology = rexism # conservatism fascist 
+			ideology = fascism_ideology # conservatism fascist 
 			traits = { Fascist_Militarist Dictator }
 			#expire = "1943.1.1.1"
 	}
@@ -83,7 +83,7 @@ characters={
 	}
 	country_leader = {
 			desc = "POLITICS_NASUS_DESC"
-			ideology = rexism # conservatism fascist 
+			ideology = fascism_ideology # conservatism fascist 
 			traits = { Fascist_Militarist }
 			#expire = "1943.1.1.1"
 		}

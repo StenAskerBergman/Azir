@@ -26,7 +26,7 @@ create_country_leader = {
 	desc = "Currently at Blue"
 	picture = "gfx/leaders/JGL/portrait_jgl_ira_large.dds"
 	#expire = ""
-	ideology = arcanum
+	ideology = mages_ideology
 	traits = {
 		Dictator
 	}
@@ -34,7 +34,7 @@ create_country_leader = {
 
 set_convoys = 0
 set_politics = {
-	ruling_party = mages # arcanum
+	ruling_party = mages # mages_ideology
 	last_election = "989.9.07"
 	election_frequency = 72
 	elections_allowed = no

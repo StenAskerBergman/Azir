@@ -107,7 +107,7 @@ set_convoys = 3
 # 	desc = "POLITICS_MALZAHAR_DESC"
 # 	picture = "gfx/leaders/Void/malzahar.dds"
 # 	#expire = ""
-# 	ideology = rexism
+# 	ideology = fascism_ideology
 # 	traits = {
 # 		prophetvoid
 # 	}
