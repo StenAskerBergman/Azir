@@ -378,6 +378,7 @@ ideologies = {
 			}
 			#ionia subfaction
 			spiritualGuidance = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				#color = { 8 195 110 }
 				color ={ 160 110 194 }
 			}
