@@ -52,20 +52,20 @@ characters = {
     }
 
     NAZ_tope = {
-        name = "Tope",
+        name = "Tope"
         gender = male
         portraits = {
             civilian = {
                 small = GFX_portrait_tope_small
             }
-        },
+        }
         advisor = {
-            slot = political_advisor,
-            idea_token = Tope_Token,
-            can_be_fired = yes,
-            ledger = civilian,
-            cost = 150,
-            allowed = { original_tag = SHU },
+            slot = political_advisor
+            idea_token = Tope_Token
+            can_be_fired = yes
+            ledger = civilian
+            cost = 150
+            allowed = { original_tag = SHU }
             traits = { strategic_mind }
         }
     }

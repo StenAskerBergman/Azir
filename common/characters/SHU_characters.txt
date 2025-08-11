@@ -133,9 +133,9 @@ characters = {
             }
             
             # Trivia. 
-            # Based on the timeline of events, Sivir is possibly in her late 26s- early 31s.
-            # I think however due to her age, at the timeline of 990 she is 24, mean avg. is 26.
-            # Fictious: Sivir, Naturally dies at 82 years old - but leaves power 2 years early '
+            # Based on the timeline of events Sivir is possibly in her late 26s- early 31s.
+            # I think however due to her age at the timeline of 990 she is 24 mean avg. is 26.
+            # Fictious: Sivir Naturally dies at 82 years old - but leaves power 2 years early '
             # Sivir FN. Death Date: 1045.1.1
             
             expires = { 1043.1.1 }

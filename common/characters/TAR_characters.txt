@@ -1,6 +1,6 @@
 characters = {
 
-    # Leona - Solari, Targonian, tar_purist
+    # Leona - Solari Targonian tar_purist
     TAR_leona = {
         name = TAR_LEONA_NAME # "Leona"
         gender = female
@@ -45,7 +45,7 @@ characters = {
         }
     }
 
-    # Diana - Lunari, Targonian, tar_reformer 
+    # Diana - Lunari Targonian tar_reformer 
     TAR_diana = {
         name = TAR_DIANA_NAME # "Diana"
         gender = female
@@ -90,7 +90,7 @@ characters = {
         }
     }
 
-    # Rahvun - Solari, Targonian, tar_purist
+    # Rahvun - Solari Targonian tar_purist
     TAR_rahvun = {
         name = TAR_RAHVUN_NAME # "Rahvun"
         gender = male
@@ -127,7 +127,7 @@ characters = {
         }
     }
 
-    # Cygnus - Lunari, Targonian, tar_reformer 
+    # Cygnus - Lunari Targonian tar_reformer 
     TAR_cygnus = {
         name = TAR_CYGNUS_NAME # "Cygnus"
         gender = male
@@ -159,7 +159,7 @@ characters = {
         }
     }
 
-    # Aurelion Sol - Celestial, Not Targonian, No Faction Alignment
+    # Aurelion Sol - Celestial Not Targonian No Faction Alignment
     TAR_aurelionSol = {
         name = TAR_AURELION_SOL_NAME # "Aurelion Sol"
         gender = male
@@ -188,7 +188,7 @@ characters = {
         }
     }
 
-    # Soraka - Celestial, Targonian, tar_reformer 
+    # Soraka - Celestial Targonian tar_reformer 
     TAR_soraka = {
         name = TAR_SORAKA_NAME # "Soraka"
         gender = female
@@ -207,7 +207,7 @@ characters = {
         }
     }
 
-    # Zoe - Celestial, Not Targonian, tar_purist
+    # Zoe - Celestial Not Targonian tar_purist
     TAR_zoe = {
         name = TAR_ZOE_NAME # "Zoe"
         gender = female
@@ -226,7 +226,7 @@ characters = {
         }
     }
 
-    # Bard - Celestial, Aspect, tar_purist
+    # Bard - Celestial Aspect tar_purist
     TAR_bard = {
         name = TAR_BARD_NAME # "Bard"
         gender = female
@@ -245,7 +245,7 @@ characters = {
         }
     }
 
-    # Taric - Celestial, Targonian, tar_reformer 
+    # Taric - Celestial Targonian tar_reformer 
     TAR_taric = {
         name = TAR_TARIC_NAME # "Taric"
         gender = male
@@ -335,7 +335,7 @@ characters = {
 
     }
 
-    # Pantheon - The Rakkor, Targonian, theocracy leader
+    # Pantheon - The Rakkor Targonian theocracy leader
     TAR_pantheon = {
         name = TAR_PANTHEON_NAME # "Pantheon"
         gender = male
