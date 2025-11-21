@@ -1,6 +1,6 @@
 spriteTypes = { #TODO: Add Icon Shine Later 
 
-	##Icon For: 
+	##Focus Icon For Aurma: 
 
 	spriteType = {
 		name = "GFX_AUR_aurman_sailors"

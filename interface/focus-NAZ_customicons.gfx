@@ -59,6 +59,32 @@ spriteTypes = {
         texturefile = "gfx/characters/NAZ/GFX_portrait_ksante_small_b.dds"
     }
 
+    ##Icon For: Pact of Shurima
+    SpriteType = {
+        name = "GFX_focus_pact_of_shurima"
+        texturefile = "gfx/interface/goals/NAZ/NAZ_pact_of_shurima.dds"
+    }
+
+    ##Icon Shine For: Pact of Shurima
+    SpriteType = {
+        name = "GFX_focus_pact_of_shurima_shine"
+        texturefile = "gfx/interface/goals/NAZ/NAZ_pact_of_shurima.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/NAZ/NAZ_pact_of_shurima.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
+
     SpriteType = {
         name = "GFX_focus_NAZ_friend_or_foe"
         texturefile = "gfx/interface/goals/NAZ/NAZ_friend_or_foe.dds"

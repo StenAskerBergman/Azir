@@ -1944,7 +1944,7 @@ focus_tree = {
 	# Fate of Crystal Scar
 	focus = {
 		id = SHU_fate_of_crystal_scar
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fate_of_crystal_scar
 		x=-3
 		y=0
 		relative_position_id = SHU_fate_of_targon
@@ -2086,7 +2086,7 @@ focus_tree = {
 	# Ixtal Puppet or Ally Line
 	focus = {
 		id = SHU_puppet_or_ally_ixtal
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SHU_IXT_deal
 		x=2
 		y=1
 		cost = 5
@@ -2114,7 +2114,7 @@ focus_tree = {
 	# Shuriman Pact
 	focus = {
 		id = SHU_shuriman_pact_ixtal
-		icon = GFX_focus_SHU_IXT_deal
+		icon = GFX_focus_pact_of_shurima #GFX_focus_NAZ_invite_nearby_settlers
 		x=0
 		y=1
 		relative_position_id = SHU_puppet_or_ally_ixtal
@@ -3062,7 +3062,7 @@ focus_tree = {
 	# Its time we determine the fate of the Brackern
 	focus = {
 		id = SHU_fate_of_brackern #crystal_scar # SHU_starter_crystal_scar
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		x=3
 		y=0
 		relative_position_id = SHU_approach_zaun
@@ -3152,7 +3152,7 @@ focus_tree = {
 	# Piltover Starter Line
 	focus = {
 		id = SHU_approach_piltover
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_piltover_trade
 		x=4
 		y=2
 		cost = 3
@@ -3213,7 +3213,7 @@ focus_tree = {
 
 	focus = {
 		id = SHU_deep_pockets_piltover
-		icon = GFX_goal_unknown
+		icon = GFX_focus_deep_pockets
 		x=0
 		y=1
 		relative_position_id = SHU_hostile_takeover
@@ -3224,7 +3224,7 @@ focus_tree = {
 
 	focus = {
 		id = SHU_mutal_assurance
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_noxian_trade
 		x=0
 		y=2
 		relative_position_id = SHU_deep_pockets_piltover
@@ -3239,7 +3239,7 @@ focus_tree = {
 	# Piltover AB Line
 	focus = {
 		id = SHU_hostile_takeover
-		icon = GFX_goal_unknown
+		icon = GFX_focus_renata_plan
 		x=1
 		y=1
 		cost = 5
@@ -3409,7 +3409,7 @@ focus_tree = {
 
 	focus = {
 		id = SHU_chemical_warefare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_chemical_warfare_zaun
 		x=0
 		y=1
 		relative_position_id = SHU_annex_zaun
@@ -3420,7 +3420,7 @@ focus_tree = {
 
 	focus = {
 		id = SHU_new_management_zaun
-		icon = GFX_goal_unknown
+		icon = GFX_focus_new_management
 		x=0
 		y=1
 		relative_position_id = SHU_chemical_warefare
@@ -4497,7 +4497,7 @@ focus_tree = {
 	# We Remember Shurima!
 	focus = {
 		id = SHU_we_remember_shurima
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SHU_we_remember_shurima
 		x = 17
 		y = 0
 		cost = 5
@@ -5384,7 +5384,7 @@ focus_tree = {
 	# SHU_rebirth_legions
 	focus = {
 		id = SHU_rebirth_legions
-		icon = GFX_focus_lion_riders # GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_generic_axis_build_infantry #GFX_r56_goal_generic_military_government #GFX_focus_lion_riders # GFX_goal_generic_axis_build_infantry
 		x = -11 #7
 		y = -1
 		relative_position_id = SHU_our_leader

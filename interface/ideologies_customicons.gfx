@@ -7,6 +7,35 @@ spriteTypes = {
     # Note: 
     # Replace with the correct file if 'unknown.dds' is not the intended icon
     
+    # Solari icons
+    spriteType = {
+        name = "GFX_ideology_solari"
+        texturefile = "gfx/interface/ideologies/solari.dds"
+    }
+    # Solari icons
+    spriteType = {
+        name = "GFX_ideology_solari_group"
+        texturefile = "gfx/interface/ideologies/solari.dds"
+    }
+
+    # Lunari icons
+    spriteType = {
+        name = "GFX_ideology_lunari"
+        texturefile = "gfx/interface/ideologies/lunari.dds"
+    }
+
+    # Lunari icons
+    spriteType = {
+        name = "GFX_ideology_lunari_group"
+        texturefile = "gfx/interface/ideologies/lunari.dds"
+    }
+
+    # Lunari icons
+    spriteType = {
+        name = "GFX_ideology_lunari_group"
+        texturefile = "gfx/interface/ideologies/unknown.dds" #theocracy.dds"
+    }
+
     # Theocracy icons
     spriteType = {
         name = "GFX_ideology_theocracy_group"
@@ -40,13 +69,25 @@ spriteTypes = {
     # Desolation icons
     spriteType = {
         name = "GFX_ideology_desolation_group"
-        texturefile = "gfx/interface/ideologies/unknown.dds" 
+        texturefile = "gfx/interface/ideologies/desolation.dds"
     }
 
     # Mages icons
     spriteType = {
         name = "GFX_ideology_mages_group"
         texturefile = "gfx/interface/ideologies/mages_group.dds"
+    }
+
+    # Arcanum group icons
+    spriteType = {
+        name = "GFX_ideology_arcanum_group"
+        texturefile = "gfx/interface/ideologies/mages_arcanum.dds"
+    }
+
+    # Arcanum icons
+    spriteType = {
+        name = "GFX_ideology_arcanum"
+        texturefile = "gfx/interface/ideologies/mages_arcanum.dds"
     }
 
     # Royalism icons
@@ -78,6 +119,14 @@ spriteTypes = {
         name = "GFX_ideology_neutrality_group"
         texturefile = "gfx/interface/ideologies/neutrality_group.dds"
     }
+
+
+    # Desolation icons
+    spriteType = {
+        name = "GFX_ideology_desolation_group"
+        texturefile = "gfx/interface/ideologies/oblivion_group.dds"
+    }
+
 
     # Make sure to close each spriteType block with a comma, except for the last one.
     # Additional ideology sprites can be added here following the same structure...

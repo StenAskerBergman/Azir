@@ -2,14 +2,20 @@ spriteTypes = {
 
 	
 	# Ideas 
-	# When using name its required to not say GFX_idea_ for some reason / - trust me bro, it works ¯\_(ツ)_/¯ 
+	# When using names its required to not say GFX_idea_ for some reason in the filename / - trust me bro, it works ¯\_(ツ)_/¯ 
+	
+		##Idea Icons For Aurma:
 
-		### ECONOMY LAWS
-		# Empty Desert
 		spriteType = {
-			name = "GFX_idea_empty_desert"
-			texturefile = "gfx/interface/ideas/empty_desert.dds"
+			name = "GFX_AUR_Fish"
+			texturefile = "gfx/interface/ideas/aurma-ideas/AurmaFish.dds"
 		}
+	
+		spriteType = {
+			name = "GFX_AUR_Fisheries"
+			texturefile = "gfx/interface/ideas/aurma-ideas/AurmaFisheries.dds"
+		}
+		### ECONOMY LAWS
 
 		# Empty Desert
 		spriteType = {

@@ -5,7 +5,7 @@ ideologies = {
 		types = {
 			#targon subfaction
 			solari = {
-				color = { 255 135 13}
+				color = { 255 135 13 }
 			}
 			#ursine subfaction
 			cultOfVoli = {
@@ -55,18 +55,23 @@ ideologies = {
 	oligarchy = {
 
 		types = {
+
 			#noxus subfaction
 			noxianTrifarix = {
 			}
+			
 			#bilg subfaction
 			gangSyndicate = {
 			}
+
 			#pilt subfaction
 			piltovanCouncil = {
 			}
+
 			#zaun subfaction
 			chemBarons = {
 			}
+
 			#Shuriman subfaction
 			ascendedCouncil = {
 			}			
@@ -340,7 +345,7 @@ ideologies = {
 				#color = { 8 195 110 }
 				color ={ 160 110 194 }
 			}
-			# Xerath subfaction
+			# Xerath subfaction - The Arcanum / mages_arcanum
 			arcanum = {
 				#color = { 110 190 255 }
 				color = { 8 24 163 }

@@ -70,7 +70,7 @@ bookmarks = {
 				
 				# Ideas
 				# Nazumah Nationalism
-				# Nazumah Resiliance
+				# Nazumah Resilience
 				# Peaceful Reign
 				# Peaceful Era
 

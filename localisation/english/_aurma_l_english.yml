@@ -38,6 +38,9 @@ AUR_waves_of_resilience_desc: "Makes Naval Invasions Last Longer, makes naval em
 AUR_sea_of_profit: "Sea of Profit"
 AUR_sea_of_profit_desc: "Focus of Trade Empire"
 
+AUR_fisheries: "Fisheries"
+AUR_fisheries_desc: "Our Fisheries needs to be expanded, to meet the coming demands"
+
 AUR_pirate_question: "Pirate Question"
 AUR_pirate_question_desc: "How will we respond to the pirate forces interrupting our trade routes?"
 
@@ -104,7 +107,7 @@ AUR_tight_crews_desc: "We run a tight ship, loyalty above all!"
 AUR_oceanic_outreach: "Oceanic Outreach"
 AUR_oceanic_outreach_desc: "Aurma's Quest for Global Influence"
 
-AUR_shallow_water_supremacy: "Shallow Water/n Supremacy"
+AUR_shallow_water_supremacy: "Shallow Water\n Supremacy"
 AUR_shallow_water_supremacy_desc: "For too long low standing vessels blockade, and interfer with our most efficient trade area. We must expand this area immensly."
 
 AUR_sea_of_iron: "Sea of Iron"
@@ -128,7 +131,7 @@ AUR_chaotic_sea_desc: "Seafaring bonus"
 AUR_strait_question: "Strait Question"
 AUR_strait_question_desc: "The Piltorver Straits our vital to our Trade Routes, and must be controlled!"
 
-AUR_deep_water_supremacy: "Deep Water/n Supremacy"
+AUR_deep_water_supremacy: "Deep Water\n Supremacy"
 AUR_deep_water_supremacy_desc: "For too long our rivals have kept us out of these area's but no longer will this be a issue! Now we will determine our own fate at sea!"
 
 AUR_water_tyrant: "Open Water Tyrant"
