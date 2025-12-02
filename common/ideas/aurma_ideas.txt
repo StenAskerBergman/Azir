@@ -1,0 +1,219 @@
+ideas = {
+
+    country = {        
+
+        TAG = AUR
+
+        # ---------------------
+		#   National Spirits
+		# ---------------------
+		AUR_Aurma_Fish = {
+              name = "Aurma Fish Trade"
+              desc = "Aurma waters harbor valuable fish known as Aurman Fish; its roe and leather are considered some of the most valuable commodities our seas can offer."
+              picture = GFX_AUR_Fish
+              allowed = { always = yes }
+              modifier = {
+                  consumer_goods_factor = -0.05
+              }
+        }
+
+        AUR_fisheries = {
+            name = "Fishery"
+            desc = "Aurma waters harbor valuable fish known as Aurman Fish; its roe and leather are considered some of the most valuable commodities our seas can offer."
+            picture = GFX_AUR_Fish
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+
+		# -----------------------
+		#   Focus Related Ideas
+		# -----------------------
+		
+        # National & Cultural Identity
+        AUR_national_identity = {
+            name = "National Identity"
+            desc = "What Future do we want?"
+            picture = GFX_AUR_national_identity
+            allowed = { always = yes }
+        }
+
+        AUR_maritime_heritage = {
+            name = "Maritime Heritage"
+            desc = "Embrace Aurma's rich maritime culture and history."
+            picture = GFX_AUR_maritime_heritage
+            allowed = { always = yes }
+            modifier = {
+                naval_experience_factor = 0.05
+                trade_opinion_factor = 0.1
+            }
+        }
+
+        AUR_maritime_mastery = {
+            name = "Maritime Mastery"
+            desc = "Aurma's identity is deeply tied to its maritime history."
+            picture = GFX_AUR_maritime_mastery
+            allowed = { always = yes }
+            modifier = {
+                naval_speed = 0.05
+                naval_org = 0.05
+            }
+        }
+
+        AUR_aurman_sailors = {
+            name = "Aurman Sailors"
+            desc = "Generations of Aurman sailors have mastered navigation."
+            picture = GFX_AUR_aurman_sailors
+            allowed = { always = yes }
+            modifier = {
+                convoy_raiding_efficiency = 0.1
+                naval_safety = 0.05
+            }
+        }
+
+        AUR_overclass_society = {
+            name = "Overclass Society"
+            desc = "Aurma adopts Piltover’s elite societal values."
+            picture = GFX_AUR_overclass_society
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                research_speed_factor = 0.03
+            }
+        }
+
+        AUR_naval_linage = {
+            name = "Naval Lineage"
+            desc = "Centuries of naval tradition grant us great strength at sea."
+            picture = GFX_AUR_naval_linage
+            allowed = { always = yes }
+            modifier = {
+                naval_doctrine_cost_factor = -0.1
+                navy_capital_ship_attack_factor = 0.05
+            }
+        }
+
+        # Trade & Diplomacy
+        AUR_noxian_trade = {
+            name = "Noxian Trade"
+            desc = "Aurma maintains strategic trade relations with Noxus."
+            picture = GFX_AUR_noxian_trade
+            allowed = { always = yes }
+            modifier = {
+                civilian_factory_use = -0.02
+                trade_opinion_factor = 0.1
+            }
+        }
+
+        AUR_piltover_trade = {
+            name = "Piltover Trade"
+            desc = "Piltover's wealth and innovation influence Aurma's economy."
+            picture = GFX_AUR_piltover_trade
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.02
+                industrial_capacity_factor = 0.05
+            }
+        }
+
+        AUR_clan_medarda = {
+            name = "Clan Medarda"
+            desc = "Piltover's Clan Medarda plays a key role in our trade."
+            picture = GFX_AUR_clan_medarda
+            allowed = { always = yes }
+            modifier = {
+                trade_opinion_factor = 0.2
+                stability_factor = 0.03
+            }
+        }
+
+        AUR_blood_is_thicker_than_water = {
+            name = "Blood is Thicker than Water"
+            desc = "Strengthen our economic and political ties with Noxus."
+            picture = GFX_AUR_blood_is_thicker_than_water
+            allowed = { always = yes }
+            modifier = {
+                political_power_factor = 0.05
+                trade_opinion_factor = 0.1
+            }
+        }
+
+        AUR_boats_run_on_water_not_blood = {
+            name = "Boats Run on Water, Not Blood"
+            desc = "Our trade empire comes before political obligations."
+            picture = GFX_AUR_boats_run_on_water_not_blood
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                trade_opinion_factor = 0.05
+            }
+        }
+
+        # Naval Power
+        AUR_aurman_navy = {
+            name = "Aurman Navy"
+            desc = "Our navy safeguards Aurma’s trade and territorial waters."
+            picture = GFX_AUR_aurman_navy
+            allowed = { always = yes }
+            modifier = {
+                naval_org = 0.1
+                screening_efficiency = 0.05
+            }
+        }
+
+        AUR_warships = {
+            name = "Warships"
+            desc = "Investing in advanced warships to dominate the seas."
+            picture = GFX_AUR_warships
+            allowed = { always = yes }
+            modifier = {
+                naval_production_speed = 0.05
+                navy_capital_ship_attack_factor = 0.05
+            }
+        }
+
+        AUR_naval_outposts = {
+            name = "Naval Outposts"
+            desc = "Expanded outposts strengthen our naval logistics."
+            picture = GFX_AUR_naval_outposts
+            allowed = { always = yes }
+            modifier = {
+                naval_base_capacity_factor = 0.1
+            }
+        }
+
+        AUR_tight_crews = {
+            name = "Tight Crews"
+            desc = "Loyalty and discipline keep our fleet strong."
+            picture = GFX_AUR_tight_crews
+            allowed = { always = yes }
+            modifier = {
+                naval_org = 0.05
+                navy_submarine_defense = 0.1
+            }
+        }
+
+        AUR_sea_of_iron = {
+            name = "Sea of Iron"
+            desc = "Massive naval industrialization is the future."
+            picture = GFX_AUR_sea_of_iron
+            allowed = { always = yes }
+            modifier = {
+                naval_production_speed = 0.1
+                industrial_capacity_factor = 0.05
+            }
+        }
+
+        AUR_ocean_masters = {
+            name = "Ocean Masters"
+            desc = "We are the undisputed rulers of the seas."
+            picture = GFX_AUR_ocean_masters
+            allowed = { always = yes }
+            modifier = {
+                naval_org = 0.1
+                naval_speed = 0.05
+            }
+        }
+    }
+}

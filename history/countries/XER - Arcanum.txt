@@ -57,7 +57,7 @@ set_popularities = {
 add_ideas = {
 	#The_great_fall
 	Lawless_slavery
+	Shurima_broken
 	#Shuriman_shame
-	#Shurima_broken
 	#al_rashid_dynasty
 }

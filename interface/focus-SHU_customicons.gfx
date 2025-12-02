@@ -43,6 +43,172 @@ spriteTypes = {
 
 	## ! above will be missing always ! ##
 
+	### Icon For: Deep Pockets
+	SpriteType = {
+		name = "GFX_focus_deep_pockets"
+		texturefile = "gfx/interface/goals/SHU/gfx_goals_deep_pockets.dds"
+	}
+
+	### Icon Shine For: Deep Pockets
+	SpriteType = {
+		name = "GFX_focus_deep_pockets_shine"
+		texturefile = "gfx/interface/goals/SHU/gfx_goals_deep_pockets.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/gfx_goals_deep_pockets.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/gfx_goals_deep_pockets.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+		
+	### Icon For: Renata Hidden Plan
+	SpriteType = {
+		name = "GFX_focus_renata_hiddenplan"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goals_renata__hiddenplan.dds"
+	}
+
+	### Icon Shine For: Renata Hidden Plan
+	SpriteType = {
+		name = "GFX_focus_renata_hiddenplan_shine"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goals_renata__hiddenplan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goals_renata__hiddenplan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goals_renata__hiddenplan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+
+	### Icon For: Renata Show Plan
+	SpriteType = {
+		name = "GFX_focus_renata_showplan"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goals_renata__showplan.dds"
+	}
+
+	### Icon Shine For: Renata Show Plan
+	SpriteType = {
+		name = "GFX_focus_renata_showplan_shine"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goals_renata__showplan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goals_renata__showplan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goals_renata__showplan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	### Icon For: Renata Plan
+	SpriteType = {
+		name = "GFX_focus_renata_plan"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goals_renata_plan.dds"
+	}
+
+	### Icon Shine For: Renata Plan
+	SpriteType = {
+		name = "GFX_focus_renata_plan_shine"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goals_renata_plan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goals_renata_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goals_renata_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
 
 	##Icon For: Targon Crest Old
 	SpriteType = { 
@@ -882,6 +1048,55 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_r56_goal_generic_military_research2" # rt56 placeholder 
 		texturefile = "gfx/interface/goals/SHU/r56_goal_generic_military_research.dds"
+	}
+	##Icon For: Chemical Warfare
+	SpriteType = {
+		name = "GFX_goal_chemical_warfare"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goal_chemical_warfare.dds"
+	}
+
+	##Icon Shine For: Chemical Warfare
+	SpriteType = {
+		name = "GFX_goal_chemical_warfare_shine"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goal_chemical_warfare.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goal_chemical_warfare.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+
+	##Icon For: Chemical Warfare - Zaun Variant
+	SpriteType = {
+		name = "GFX_goal_chemical_warfare_zaun"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goal_chemical_warfare_zaun.dds"
+	}
+
+	##Icon Shine For: Chemical Warfare - Zaun Variant
+	SpriteType = {
+		name = "GFX_goal_chemical_warfare_zaun_shine"
+		texturefile = "gfx/interface/goals/ZAU/gfx_goal_chemical_warfare_zaun.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ZAU/gfx_goal_chemical_warfare_zaun.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
 	}
 
 	##Icon Shine For: Shurima Military Research

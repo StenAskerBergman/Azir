@@ -19,12 +19,15 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_national_identity
+		}
 	}
 
 	#Maritime Heritage
 	focus = {
 		id = AUR_maritime_heritage
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_maritime_heritage
 		x = 8
 		y = 3
 		cost = 5
@@ -32,12 +35,15 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_maritime_mastery
+		}
 	}
 
 	#Ocean Stewardship
 	focus = {
 		id = AUR_ocean_stewardship
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_ocean_stewardship
 		x = 7
 		y = 5
 		cost = 5		
@@ -51,7 +57,7 @@
 	#Maritime Mastery
 	focus = {
 		id = AUR_maritime_mastery
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_maritime_mastery
 		x = 8
 		y = 4
 		cost = 5
@@ -72,12 +78,15 @@
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+		completion_reward = {
+			add_ideas = AUR_aurman_sailors
+		}
 	}
 
 	#Noxian Trade
 	focus = {
 		id = AUR_noxian_trade
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_noxian_trade
 		x = 0
 		y = 2
 		cost = 5
@@ -85,12 +94,16 @@
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+		completion_reward = {
+			add_ideas = AUR_noxian_trade
+		}
+
 	}
 
 	#Family ties
 	focus = {
 		id = AUR_family_ties
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_family_ties
 		x = 0
 		y = 3
 		cost = 5
@@ -103,7 +116,7 @@
 	#Our Sea
 	focus = {
 		id = AUR_our_sea
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_our_sea
 		x = 6
 		y = 4
 		cost = 5
@@ -116,7 +129,7 @@
 	#Piltover Trade
 	focus = {
 		id = AUR_piltover_trade
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_piltover_trade
 		x = 2
 		y = 2
 		cost = 5
@@ -129,7 +142,7 @@
 	#Clan Medarda
 	focus = {
 		id = AUR_clan_medarda
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_clan_medarda
 		x = 2
 		y = 3
 		cost = 5
@@ -137,13 +150,16 @@
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+		completion_reward = {
+			add_ideas = AUR_clan_medarda
+		}
 	}
 
 	# mutually exclusive 
 	#Blood is thicker than water
 	focus = {
 		id = AUR_blood_is_thicker_than_water
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_blood_is_thicker_than_water
 		x = 0
 		y = 4
 		cost = 5
@@ -152,13 +168,14 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		
 	}
 	
 	# mutually exclusive 
 	#Boats Run on Water, Not Blood  
 	focus = {
 		id = AUR_boats_run_on_water_not_blood 
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_boats_run_on_water_not_blood
 		x = 2
 		y = 4
 		cost = 5
@@ -185,7 +202,7 @@
 	#Sea of Profit
 	focus = {
 		id = AUR_sea_of_profit
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_sea_of_profit
 		x = 1
 		y = 1
 		relative_position_id = AUR_overclass_society
@@ -214,7 +231,7 @@
 	#Shuriman Threat
 	focus = {
 		id = AUR_shuriman_threat
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_shuriman_threat
 		x = 10
 		y = 4
 		cost = 5
@@ -236,6 +253,27 @@
 		}
 	}
 
+	# Fisheries
+	focus = {
+		id = AUR_fisheries
+		icon = GFX_AUR_national_identity_b
+		x = 18
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+
+		completion_reward = {
+			add_ideas = AUR_fisheries
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
 	#Uncertain Waters
 	focus = {
 		id = AUR_uncertain_waters
@@ -251,7 +289,7 @@
 	#Aurman Pirates
 	focus = {
 		id = AUR_aurman_pirates
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_aurman_pirates
 		x = 15
 		y = 2
 		cost = 5
@@ -264,7 +302,7 @@
 	#Calm Sea
 	focus = {
 		id = AUR_calm_sea
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_calm_sea
 		x = 6
 		y = 2
 		cost = 5
@@ -277,7 +315,7 @@
 	#Lurking Threats
 	focus = {
 		id = AUR_lurking_threats
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_lurking_threats
 		x = 10
 		y = 3
 		cost = 5
@@ -290,7 +328,7 @@
 	#Aurman Privateer
 	focus = {
 		id = AUR_aurman_privateer
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_aurman_privateer
 		x = 13
 		y = 2
 		cost = 5
@@ -303,7 +341,7 @@
 	#Aurman Navy
 	focus = {
 		id = AUR_aurman_navy
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_aurman_navy
 		x = 8
 		y = 2
 		cost = 5
@@ -311,12 +349,16 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_aurman_navy
+		}
+
 	}
 
 	#Naval Linage
 	focus = {
 		id = AUR_naval_linage
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_naval_linage
 		x = 9
 		y = 1
 		cost = 5
@@ -324,12 +366,16 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_naval_linage
+		}
+
 	}
 
 	#Coastal Raid Parties
 	focus = {
 		id = AUR_coastal_raid_parties
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_coastal_raid_parties
 		x = 14
 		y = 4
 		cost = 5
@@ -344,25 +390,28 @@
 
 	#Overclass Society
 	focus = {
-	id = AUR_overclass_society
-	icon = GFX_goal_unknown
-	x = 1
-	y = 5
-	cost = 5 
-	prerequisite = {  # New prerequisite
-		focus = AUR_boats_run_on_water_not_blood
-		focus = AUR_blood_is_thicker_than_water
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
+		id = AUR_overclass_society
+		icon = GFX_AUR_overclass_society
+		x = 1
+		y = 5
+		cost = 5 
+		prerequisite = {  # New prerequisite
+			focus = AUR_boats_run_on_water_not_blood
+			focus = AUR_blood_is_thicker_than_water
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		add_ideas = AUR_overclass_society
+		}
 	}
 
 
 	#End to Era
 	focus = {
 		id = AUR_end_to_era
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_end_to_era
 		x = 13
 		y = 3
 		cost = 5
@@ -375,7 +424,7 @@
 	#New Era
 	focus = {
 		id = AUR_new_era
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_new_era
 		x = 15
 		y = 3
 		cost = 5
@@ -388,7 +437,7 @@
 	#Naval Outposts
 	focus = {
 		id = AUR_naval_outposts
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_naval_outposts
 		x = 12
 		y = 4
 		cost = 5
@@ -396,12 +445,15 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_naval_outposts
+		}		
 	}
 
 	#Pirate Bay
 	focus = {
 		id = AUR_pirate_bay
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_pirate_bay
 		x = 16
 		y = 4
 		cost = 5
@@ -414,7 +466,7 @@
 	#Warm Sea
 	focus = {
 		id = AUR_warm_sea
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_warm_sea
 		x = 4
 		y = 2
 		cost = 5
@@ -427,7 +479,7 @@
 	#Cold Sea
 	focus = {
 		id = AUR_cold_sea
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_cold_sea
 		x = 4
 		y = 3
 		cost = 5
@@ -440,7 +492,7 @@
 	#Sea of Blood
 	focus = {
 		id = AUR_sea_of_blood
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_sea_of_blood
 		x = -1
 		y = 1
 		relative_position_id = AUR_overclass_society
@@ -455,7 +507,7 @@
 	#Island Stewardship
 	focus = {
 		id = AUR_island_stewardship
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_island_stewardship
 		x = 0
 		y = 1
 		relative_position_id = AUR_sea_of_blood
@@ -469,7 +521,7 @@
 	# Island Ownership
 	focus = {
 		id = AUR_island_ownership
-		icon = GFX_focus_unknown
+		icon = GFX_AUR_island_ownership
 		x = 0
 		y = 1
 		relative_position_id = AUR_sea_of_profit
@@ -497,7 +549,7 @@
 	#Tight Crews
 	focus = {
 		id = AUR_tight_crews
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_tight_crews
 		x = 5
 		y = 5
 		cost = 5
@@ -506,12 +558,16 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_tight_crews
+		}
+
 	}
 
 	#Oceanic Outreach
 	focus = {
 		id = AUR_oceanic_outreach
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_oceanic_outreach
 		x = 13
 		y = 5
 		cost = 5
@@ -527,13 +583,13 @@
 	#Shallow Water Supremacy
 	focus = {
 		id = AUR_shallow_water_supremacy
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_shallow_water_supremacy
 		x = 13
 		y = 6
 		cost = 5
 		prerequisite = { focus = AUR_oceanic_outreach }
 		prerequisite = { focus = AUR_warships }
-		prerequisite = { focus = AUR_targonian_navigators} # OLD: AUR_targonian_navigatorsigators 
+		prerequisite = { focus = AUR_targonian_navigators}  
 		prerequisite = { focus = AUR_freljordian_boarding_parties }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -543,7 +599,7 @@
 	#Sea of Iron
 	focus = {
 		id = AUR_sea_of_iron
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_sea_of_iron
 		x = 13
 		y = 7
 		cost = 5
@@ -552,6 +608,10 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_ideas = AUR_sea_of_iron
+		}
+
 	}
 
 	#Navigational Diplomacy
@@ -577,6 +637,9 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			navy_intel_to_others = 5
+		}
 	}
 
 	#Warships
@@ -589,12 +652,15 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		complete_reward = {
+			add_ideas = AUR_warships
+		}
 	}
 
 	#Freljordian Boarding Parties
 	focus = {
 		id = AUR_freljordian_boarding_parties
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_freljordian_boarding_parties
 		x = 17
 		y = 5
 		cost = 5
@@ -607,7 +673,7 @@
 	#Chaotic Sea
 	focus = {
 		id = AUR_chaotic_sea
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_chaotic_sea
 		x = 6
 		y = 3
 		cost = 5
@@ -620,7 +686,7 @@
 	#Strait Question
 	focus = {
 		id = AUR_strait_question
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_strait_question
 		x = 4
 		y = 4
 		cost = 5
@@ -633,7 +699,7 @@
 	#Deep Water Supremacy
 	focus = {
 		id = AUR_deep_water_supremacy
-		icon = GFX_goal_unknown
+		icon = GFX_AUR_deep_water_supremacy
 		x = 15
 		y = 6
 		cost = 5
@@ -689,6 +755,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		
+		completion_reward = {
+			add_ideas = AUR_ocean_masters
+		}
+
 	}
 
 }

@@ -1,0 +1,222 @@
+spriteTypes = { 	
+	
+
+	
+	##Icon For: Test
+	SpriteType = { 
+		name = "GFX_focus_test2"
+		texturefile = "gfx/interface/goals/SHU/focus_test.dds"
+	}
+    
+	##Icon Shine For: Test
+	SpriteType = {
+		name = "GFX_focus_test2_shine"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_test2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_test2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_test2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	## ! above will be missing always ! ##
+
+
+	##Icon For: Crystal Mining
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry_crystal"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
+  }
+
+  ##Icon Shine For: Crystal Mining
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry_crystal_shine"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+  ##Icon For: Mining Industry (Dark)
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry_mineral"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_mineral.dds"
+  }
+
+  ##Icon Shine For: Mining Industry (Dark)
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry_mineral_shine"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_mineral.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry_mineral.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+  ##Icon For: Mining Industry 3
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry_mineral3"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_mineral3.dds"
+  }
+
+  ##Icon Shine For: Mining Industry 3
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry_mineral3_shine"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_mineral3.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry_mineral3.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+  ##Icon For: Mining Industry 1
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry1"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry1.dds"
+  }
+
+  ##Icon Shine For: Mining Industry 1
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry1_shine"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry1.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry1.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+  ##Icon For: Mining Industry 2
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry2"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry2.dds"
+  }
+
+  ##Icon Shine For: Mining Industry 2
+  SpriteType = {
+      name = "GFX_focus_generic_mining_industry2_shine"
+      texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry2.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry2.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+  ##Icon For: Fate of Crystal Scar
+  SpriteType = {
+      name = "GFX_goal_fate_of_crystal_scar"
+      texturefile = "gfx/interface/goals/CRY/GFX_goal_fate_of_crystal_scar.dds"
+  }
+
+  ##Icon Shine For: Fate of Crystal Scar
+  SpriteType = {
+      name = "GFX_goal_fate_of_crystal_scar_shine"
+      texturefile = "gfx/interface/goals/CRY/GFX_goal_fate_of_crystal_scar.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/GFX_goal_fate_of_crystal_scar.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+  ##Icon For: Generic Crystal Mining
+  SpriteType = {
+      name = "GFX_goal_generic_mining_crystals"
+      texturefile = "gfx/interface/goals/CRY/GFX_goal_generic_mining_crystals.dds"
+  }
+
+  ##Icon Shine For: Generic Crystal Mining
+  SpriteType = {
+      name = "GFX_goal_generic_mining_crystals_shine"
+      texturefile = "gfx/interface/goals/CRY/GFX_goal_generic_mining_crystals.dds"
+      effectFile = "gfx/FX/buttonstate.lua"
+      animation = {
+          animationmaskfile = "gfx/interface/goals/CRY/GFX_goal_generic_mining_crystals.dds"
+          animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+          animationrotation = -90.0
+          animationlooping = no
+          animationtime = 0.75
+          animationdelay = 0
+          animationblendmode = "add"
+          animationtype = "scrolling"
+          animationrotationoffset = { x = 0.0 y = 0.0 }
+          animationtexturescale = { x = 1.0 y = 1.0 }
+      }
+  }
+
+}

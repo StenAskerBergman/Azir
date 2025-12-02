@@ -105,7 +105,7 @@ country_event = {
 	
 	
 	option = { # Breaking point!
-	name = "Finally... Power..."
+	name = "Finally... We Strike!"
 	ai_chance = { factor = 100 }
 	
 	# Not Sure we need to show this! # for XER & SHU 
@@ -196,6 +196,7 @@ country_event = {
 
 # Other - Random
 
+# S: Sure, add anything else you think fits here :ThumbsUp:
 
 # Q: Can I change fonts on events? or txt color?
 # Q: What does +/n+ Do? And What '' `` ¨¨¨ sign looks best ingame? 

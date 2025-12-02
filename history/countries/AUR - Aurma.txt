@@ -20,10 +20,10 @@ set_technology = {
 	early_heavy_cruiser = 1
 	transport = 1
 }
-#add_ideas = {
-	#valor_of_LT
+add_ideas = {
+	AUR_Aurma_Fish
 	#al_rashid_dynasty
-#}
+}
 set_politics = {
 	ruling_party = royalist
 	last_election = "987.3.17"
@@ -81,4 +81,11 @@ create_country_leader = {
 	traits = {
 		#exemplar
 	}
+}
+
+create_country_leader = {
+	name = "Qaalinn"
+	desc = "POLITICS_QAALINN_DESC"
+
+
 }

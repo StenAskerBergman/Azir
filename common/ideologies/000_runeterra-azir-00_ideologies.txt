@@ -65,21 +65,26 @@ ideologies = {
 	oligarchy = {
 
 		types = {
+
 			#noxus subfaction
 			noxianTrifarix = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
+			
 			#bilg subfaction
 			gangSyndicate = {
 			}
+
 			#pilt subfaction
 			piltovanCouncil = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
+
 			#zaun subfaction
 			chemBarons = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
+
 			#Shuriman subfaction
 			ascendedCouncil = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
@@ -382,7 +387,7 @@ ideologies = {
 				#color = { 8 195 110 }
 				color ={ 160 110 194 }
 			}
-			# Xerath subfaction
+			# Xerath subfaction - The Arcanum / mages_arcanum
 			arcanum = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 				#color = { 110 190 255 }

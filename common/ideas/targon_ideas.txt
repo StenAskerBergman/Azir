@@ -1,9 +1,5 @@
 ideas = {
 
-    # TODO: Add Solari, Lunari & Rakkor ideas 
-    # TODO: Add Debuffs
-    # TODO: Add laws for Economy & Trade
-
     country = {        
 
             
@@ -63,7 +59,7 @@ ideas = {
         #    .dWi   `88E                                                                    
         #    4888~  J8%                                                                     
         #     ^"===*"`                                                                       
-        # 
+        #  
 
         TAR_celestial_unity = {
             picture = generic_stability_bonus
@@ -169,7 +165,7 @@ ideas = {
                 lunari_popularity = 0.10
                 enemy_popularity_gain = -0.05
             }
-        }
+        }   
 
         TAR_echo_of_oppression = {
             picture = generic_resistance_support

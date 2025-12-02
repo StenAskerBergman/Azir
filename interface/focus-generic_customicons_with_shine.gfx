@@ -1,6 +1,6 @@
 spriteTypes = {
 
-
+    ### This is how icon is suppose to be written
 	##Icon For: Test
 	SpriteType = { 
 		name = "GFX_focus_test"
@@ -43,6 +43,12 @@ spriteTypes = {
 	## ! above will be missing always ! ##
 	
     # NOTE: Remember to include Focus after GFX icon name!
+    
+	SpriteType = { 
+		name = "GFX_focus_SHU_we_remember_shurima"
+		texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_we_remember_shurima.dds"
+	}
+    
     SpriteType = {
         name = "GFX_goal_big_bookstack"
         texturefile = "gfx/interface/goals/generic/GFX_goal_big_bookstack.dds"
@@ -1333,8 +1339,45 @@ spriteTypes = {
         name = "GFX_goal_deep_jungle"
         texturefile = "gfx/interface/goals/generic/GFX_goal_deep_jungle.dds"
     }
-    
-    # JUNGLE SHINE
+        
+    SpriteType = {
+        name = "GFX_focus_new_management"
+        texturefile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_new_management_shine"
+        texturefile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        legacy_lazy_load = no
+    }
 
     SpriteType = {
         name = "GFX_goal_jungle_company_shine"
@@ -2711,7 +2754,11 @@ spriteTypes = {
         name = "GFX_focus_lion_riders"
         texturefile = "gfx/interface/goals/SHU/SHU_shuriman_lion_riders.dds"
     }
-
+    
+    SpriteType ={
+        name = "goal_generic_military_government"
+        texturefile = "gfx/interface/goals/SHU/goal_generic_military_government.dds"
+    }
 
     SpriteType ={ 
         name = "GFX_focus_our_sand"
@@ -2723,8 +2770,86 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/XER/XER_rebuild_in_their_image.dds"
     }
 
-    
-    # Add similar shine effect for other icons if needed
+    SpirteType = {
+        name ="GFX_focus_xerath_emblem"
+        texturefile ="gfx/interface/goals/SHU/GFX_focus_xerath_emblem.dds"
+    }
+
+    SpirteType = {
+        name ="GFX_focus_XER_xerath_conquest"
+        texturefile ="gfx/interface/goals/XER/focus_XER_xerath_conquest.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_new_management"
+        texturefile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_new_management_shine"
+        texturefile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/gfx_goal_new_management.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        legacy_lazy_load = no
+    }
+
+
+    SpriteType = {
+        name = "GFX_focus_XER_xerath_conquest_shine"
+        texturefile ="gfx/interface/goals/XER/focus_XER_xerath_conquest.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile ="gfx/interface/goals/XER/focus_XER_xerath_conquest.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile ="gfx/interface/goals/XER/focus_XER_xerath_conquest.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+            animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no			# yes or no ;)
+            animationtime = 0.75				# in seconds
+            animationdelay = 0			# in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 
 
     SpriteType = {
@@ -15464,4 +15589,24 @@ spriteTypes = {
             }
             legacy_lazy_load = no
     }
+    
+    ##Icon Shine For: We Remember Shurima
+    SpriteType = {
+        name = "GFX_focus_SHU_we_remember_shurima_shine"
+        texturefile = "gfx/interface/goals/SHU/GFX_focus_SHU_we_remember_shurima.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_SHU_we_remember_shurima.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+
 }
