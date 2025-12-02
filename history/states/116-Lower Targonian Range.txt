@@ -5,14 +5,14 @@ state={
 #tungsten is wood
 #rubber is stone
 #steel is iron
-#oil is coal
+
 #chromium is hexite crystal
 #aluminium is runes
 resources={
  #tungsten = 9
  rubber = 11
  #steel = 4
- oil = 5
+ coal = 5
  #chromium = 3
  #aluminium = 4
  }

@@ -5,7 +5,7 @@ state={
 #tungsten is wood
 #rubber is stone
 #steel is iron
-#oil is coal
+
 #chromium is hexite crystal
 #aluminium is runes
 resources={
@@ -19,7 +19,7 @@ resources={
  history = {
  owner = SHK # SHU 
  #  add_core_of = SHU
- add_core_of = XER
+ # add_core_of = XER
  add_core_of = SHK
 
  # add_core_of = JGL # Req. Event

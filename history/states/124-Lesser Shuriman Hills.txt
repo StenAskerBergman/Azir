@@ -5,21 +5,21 @@ state={
 #tungsten is wood
 #rubber is stone
 #steel is iron
-#oil is coal
+
 #chromium is hexite crystal
 #aluminium is runes
 resources={
  #tungsten = 12
  rubber = 3
  #steel = 5
- oil = 8
+ coal = 8
  #chromium = 3
  #aluminium = 5
  }
  history = {
  owner = SHK
  # add_core_of = SHU  # Should be added, After a Event 
- add_core_of = XER  # Should be added, After a Event 
+ # add_core_of = XER  # Should be added, After a Event 
  add_core_of = RAI  # Should be added, After a Event 
  add_core_of = SHK  # Should be added, After a Event 
  victory_points = {
