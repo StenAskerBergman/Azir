@@ -83,22 +83,17 @@ country_event = {
 	
 	immediate = {
 		custom_effect_tooltip = "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!"
-	
+		
 		hidden_effect = {
 			set_global_flag = SHU_XER_civil_war_trigger
-			if = {
+			every_country = {
 				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				every_country = {
-					limit = {
-						OR = {
-							tag = XER
-							tag = SHU
-						}
+					OR = {
+						tag = XER
+						tag = SHU
 					}
-					scoped_play_song = warofresistance
 				}
+				scoped_play_song = Miya_Izumi-Shurima-Serpent_Whisper
 			}
 		}
 	}
@@ -127,7 +122,7 @@ country_event = {
 	
 	immediate = {
 		custom_effect_tooltip = "We will claim the throne of Shurima, breaking Azir's rule and forging a new era under Xerath!"
-	
+		
 		hidden_effect = {
 			set_global_flag = xer_usurpation_initiated
 		}
@@ -147,7 +142,7 @@ country_event = {
 		}
 		news_event = { id = shuriman_rnews.6 days = 2 }
 	}
-
+	
 	# Option 2: Sabotage and Deception
 	option = { 
 		name = "Undermine Azir's Support through Sabotage"
@@ -162,7 +157,7 @@ country_event = {
 		}
 		news_event = { id = shuriman_rnews.7 days = 3 }
 	}
-
+	
 	# Option 3: Incite a Rebellion
 	option = { 
 		name = "Incite a Rebellion among Azir's Forces"
@@ -177,7 +172,7 @@ country_event = {
 		}
 		news_event = { id = shuriman_rnews.8 days = 4 }
 	}
-
+	
 	# Option 4: Assassinate Azir
 	option = { 
 		name = "Attempt to Assassinate Azir"
