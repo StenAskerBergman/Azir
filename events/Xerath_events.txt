@@ -93,7 +93,7 @@ country_event = {
 						tag = SHU
 					}
 				}
-				scoped_play_song = Miya_Izumi-Shurima-Serpent_Whisper
+				scoped_play_song = Miya_Izumi-Shurima-Ashes_of_the_Crescent_2
 			}
 		}
 	}
