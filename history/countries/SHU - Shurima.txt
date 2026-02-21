@@ -96,7 +96,7 @@ create_country_leader = {
 	desc = "Cult of the Ascended"
 	#picture = "gfx/leaders//.dds"
 	#expire = ""
-	ideology = Royalist
+	ideology = royalty
 	traits = {
 		Corrupt
 	}
