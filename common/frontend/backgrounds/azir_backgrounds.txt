@@ -1,0 +1,247 @@
+# Azir frontend background definitions.
+# Full images live in gfx/loadingscreens/<name>.dds.
+# Thumbnail sprites are defined in interface/azir_small_background.gfx as GFX_<name>_small.
+
+azir_shurima_wallpaper = {
+}
+
+# Source folder: Superb
+AlphaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+BetaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+GammaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+DeltaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+EpsilonSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+ZetaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+EtaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+ThetaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+IotaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+KappaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+LambdaSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+MuSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+NuSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+XiSuperbLoadingScreen = {
+}
+
+# Source folder: Superb
+OmicronSuperbLoadingScreen = {
+}
+
+# Source folder: Amazing
+AlphaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+BetaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+GammaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+DeltaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+EpsilonAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+ZetaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+EtaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+ThetaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+IotaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+KappaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+LambdaAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+MuAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+NuAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+XiAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+OmicronAmazingLoadingScreen = {
+}
+
+# Source folder: Amazing
+PiAmazingLoadingScreen = {
+}
+
+# Source folder: Must
+AlphaMustLoadingScreen = {
+}
+
+# Source folder: Must
+BetaMustLoadingScreen = {
+}
+
+# Source folder: Must
+GammaMustLoadingScreen = {
+}
+
+# Source folder: Must
+DeltaMustLoadingScreen = {
+}
+
+# Source folder: Must
+EpsilonMustLoadingScreen = {
+}
+
+# Source folder: Must
+ZetaMustLoadingScreen = {
+}
+
+# Source folder: Must
+EtaMustLoadingScreen = {
+}
+
+# Source folder: Must
+ThetaMustLoadingScreen = {
+}
+
+# Source folder: Must
+IotaMustLoadingScreen = {
+}
+
+# Source folder: Must
+KappaMustLoadingScreen = {
+}
+
+# Source folder: Must
+LambdaMustLoadingScreen = {
+}
+
+# Source folder: Must
+MuMustLoadingScreen = {
+}
+
+# Source folder: Must
+NuMustLoadingScreen = {
+}
+
+# Source folder: Must
+XiMustLoadingScreen = {
+}
+
+# Source folder: Must
+OmicronMustLoadingScreen = {
+}
+
+# Source folder: Must
+PiMustLoadingScreen = {
+}
+
+# Source folder: Must
+RhoMustLoadingScreen = {
+}
+
+# Source folder: Must
+SigmaMustLoadingScreen = {
+}
+
+# Source folder: Must
+TauMustLoadingScreen = {
+}
+
+# Source folder: Must
+UpsilonMustLoadingScreen = {
+}
+
+# Source folder: Must
+PhiMustLoadingScreen = {
+}
+
+# Source folder: Must
+ChiMustLoadingScreen = {
+}
+
+# Source folder: Must
+PsiMustLoadingScreen = {
+}
+
+# Source folder: Finished
+DariusNoxianLoadingScreen = {
+}
+
+# Source folder: Finished
+IoniaLoadingScreenRiven = {
+}
+
+# Source folder: Finished
+LucianLoadingScreen = {
+}
+
+# Source folder: Finished
+NoxianLoadingScreenElephants = {
+}
+
+# Source folder: Finished
+NoxianLoadingScreenRider = {
+}
+
+# Source folder: Finished
+NoxianLoadingScreenWarship = {
+}
+

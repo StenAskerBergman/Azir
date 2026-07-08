@@ -1,0 +1,397 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_azir_shurima_wallpaper_small"
+		texturefile = "gfx/loadingscreens/azir_shurima_wallpaper_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_AlphaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/AlphaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BetaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/BetaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GammaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/GammaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_DeltaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/DeltaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EpsilonSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/EpsilonSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZetaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ZetaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EtaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/EtaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ThetaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ThetaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_IotaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/IotaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_KappaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/KappaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LambdaSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/LambdaSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MuSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/MuSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NuSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/NuSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XiSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/XiSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_OmicronSuperbLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/OmicronSuperbLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_AlphaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/AlphaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BetaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/BetaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GammaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/GammaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_DeltaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/DeltaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EpsilonAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/EpsilonAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZetaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ZetaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EtaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/EtaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ThetaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ThetaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_IotaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/IotaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_KappaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/KappaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LambdaAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/LambdaAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MuAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/MuAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NuAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/NuAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XiAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/XiAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_OmicronAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/OmicronAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PiAmazingLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/PiAmazingLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_AlphaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/AlphaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BetaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/BetaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GammaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/GammaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_DeltaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/DeltaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EpsilonMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/EpsilonMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZetaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ZetaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EtaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/EtaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ThetaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ThetaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_IotaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/IotaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_KappaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/KappaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LambdaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/LambdaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MuMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/MuMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NuMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/NuMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_XiMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/XiMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_OmicronMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/OmicronMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PiMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/PiMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_RhoMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/RhoMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SigmaMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/SigmaMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_TauMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/TauMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_UpsilonMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/UpsilonMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PhiMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/PhiMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ChiMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/ChiMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PsiMustLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/PsiMustLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_DariusNoxianLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/DariusNoxianLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_IoniaLoadingScreenRiven_small"
+		texturefile = "gfx/loadingscreens/IoniaLoadingScreenRiven_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LucianLoadingScreen_small"
+		texturefile = "gfx/loadingscreens/LucianLoadingScreen_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NoxianLoadingScreenElephants_small"
+		texturefile = "gfx/loadingscreens/NoxianLoadingScreenElephants_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NoxianLoadingScreenRider_small"
+		texturefile = "gfx/loadingscreens/NoxianLoadingScreenRider_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NoxianLoadingScreenWarship_small"
+		texturefile = "gfx/loadingscreens/NoxianLoadingScreenWarship_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_taog_ast_small"
+		texturefile = "gfx/loadingscreens/load_taog_ast_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_ncns_chi_small"
+		texturefile = "gfx/loadingscreens/load_ncns_chi_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_ncns_jap_small"
+		texturefile = "gfx/loadingscreens/load_ncns_jap_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_lar_small"
+		texturefile = "gfx/loadingscreens/load_lar_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_botb_small"
+		texturefile = "gfx/loadingscreens/load_botb_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_nsb_small"
+		texturefile = "gfx/loadingscreens/load_nsb_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_nsb2_small"
+		texturefile = "gfx/loadingscreens/load_nsb2_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_bba_small"
+		texturefile = "gfx/loadingscreens/load_bba_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_aat_small"
+		texturefile = "gfx/loadingscreens/load_aat_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_aat2_small"
+		texturefile = "gfx/loadingscreens/load_aat2_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_toa_small"
+		texturefile = "gfx/loadingscreens/load_toa_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_ww_small"
+		texturefile = "gfx/loadingscreens/load_ww_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_goe_small"
+		texturefile = "gfx/loadingscreens/load_goe_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_tfv_small"
+		texturefile = "gfx/loadingscreens/load_tfv_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_dod_small"
+		texturefile = "gfx/loadingscreens/load_dod_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_tiger_small"
+		texturefile = "gfx/loadingscreens/load_tiger_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_mtg_small"
+		texturefile = "gfx/loadingscreens/load_mtg_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_mtg_2_small"
+		texturefile = "gfx/loadingscreens/load_mtg_2_small.dds"
+	}
+
+}
