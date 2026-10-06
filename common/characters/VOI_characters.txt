@@ -11,12 +11,12 @@ characters = {
     ####                         ####
     #################################
     #################################
-    
+
     # Malzahar - Status: 0%
         # Leader: DONE
-        # Advisor: TODO 
-        # Commander: TODO 
-    
+        # Advisor: TODO
+        # Commander: TODO
+
 	VOI_Malzahar = {
     name = VOI_MALZAHAR_NAME # "Malzahar"
     gender = male
@@ -36,23 +36,11 @@ characters = {
     country_leader = {
             desc = POLITICS_MALZAHAR_DESC
             ideology = oblivion # Desolate - desolation
-            traits = { 
-                # politicalPuppeteer 
-                prophetvoid 
-                # visions 
+            traits = {
+                # politicalPuppeteer
+                prophetvoid
+                # visions
             }
-            do_effect = {
-                NOT = {
-                    has_completed_focus = VOI_Resist_the_Void
-                }
-                
-                NOT = {
-                    has_country_leader = {
-                        ruling_only = yes
-                        character = VOI_Jax
-                    }
-                }
-            } 
             #expire = "1943.1.1.1"
     }
     advisor = {
@@ -91,9 +79,6 @@ characters = {
             traits = { void_empress }
             id=-1
         }
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor
             idea_token = VOI_Belveth
@@ -125,9 +110,6 @@ characters = {
         allowed_civil_war = {
 			VOI_char_cw_desolate = yes
 		}
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             available = {
                 has_completed_focus = VOI_shifting_sands
@@ -161,9 +143,6 @@ characters = {
         allowed_civil_war = {
 			VOI_char_cw_desolate = yes
 		}
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             available = {
                 has_country_flag = can_request_khazix
@@ -201,9 +180,6 @@ characters = {
         allowed_civil_war = {
 			VOI_char_cw_desolate = yes
 		}
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = theorist #military_advisor #political_advisor #army_chief
             idea_token = VOI_Chogath #VOI_Chogath_theorist
@@ -236,7 +212,7 @@ characters = {
             civilian = {
                 large = "GFX_portrait_voi_kogmaw_large"
                 small = "GFX_portrait_voi_kogmaw_small"
-            }            
+            }
             army = {
                 large = "GFX_portrait_voi_kogmaw_large"
                 small = "GFX_portrait_voi_kogmaw_small"
@@ -245,9 +221,6 @@ characters = {
         allowed_civil_war = {
 			VOI_char_cw_desolate = yes
 		}
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_Kogmaw
@@ -281,7 +254,7 @@ characters = {
             civilian = {
                 large = "GFX_portrait_voi_velkos_large"
                 small = "GFX_portrait_voi_velkos_small"
-            }            
+            }
             army = {
                 large = "GFX_portrait_voi_velkos_large"
                 small = "GFX_portrait_voi_velkos_small"
@@ -290,9 +263,6 @@ characters = {
         allowed_civil_war = {
 			VOI_char_cw_desolate = yes
 		}
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_velkos
@@ -303,7 +273,7 @@ characters = {
         advisor = {
             slot = army_chief #military_advisor
             idea_token = VOI_velkos
-            ledger = army #ledger = civilian  
+            ledger = army #ledger = civilian
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
             cost = 0
         }
@@ -345,9 +315,6 @@ characters = {
                 traits = { MasterOfArms }
                 #expire = "1943.1.1.1"
         }
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor
             idea_token = VOI_Jax
@@ -384,9 +351,6 @@ characters = {
                 traits = { MasterOfArms }
                 #expire = "1943.1.1.1"
         }
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor
             idea_token = VOI_Zilean
@@ -417,9 +381,6 @@ characters = {
         }
         allowed_civil_war = {
             VOI_char_cw_desolate = yes
-        }
-        ai_will_do = {
-            factor = 1.0
         }
         advisor = {
             slot = political_advisor #military_advisor
@@ -455,9 +416,6 @@ characters = {
         allowed_civil_war = {
             VOI_char_cw_desolate = yes
         }
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor #military_advisor
             idea_token = VOI_Kassadin
@@ -476,7 +434,7 @@ characters = {
         }
     }
 
-    
+
     VOI_Milio = {
         name = VOI_MILIO_NAME # "Milio"
         gender = male
@@ -494,9 +452,6 @@ characters = {
             ideology = kohari
             traits = { master_of_arms }
             #expire = "1943.1.1.1"
-        }
-        ai_will_do = {
-            factor = 1.0
         }
         advisor = {
             slot = political_advisor
@@ -534,9 +489,6 @@ characters = {
             traits = { master_of_arms }
             #expire = "1943.1.1.1"
         }
-        ai_will_do = {
-            factor = 1.0
-        }
         advisor = {
             slot = political_advisor
             idea_token = VOI_jaximus_a
@@ -572,9 +524,6 @@ characters = {
             ideology = kohari
             traits = { master_of_arms }
             #expire = "1943.1.1.1"
-        }
-        ai_will_do = {
-            factor = 1.0
         }
         advisor = {
             slot = political_advisor

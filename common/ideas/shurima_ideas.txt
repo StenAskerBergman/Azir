@@ -13,10 +13,7 @@ ideas = {
 
 		guild_bonus = {
 			picture = man_five_year_plan_industry
-			allowed = {
-			 TAG = SHU
-			 original_tag = SHU
- 			}
+			allowed = { original_tag = SHU }
 			visible = { always = yes }
 
 			modifier = {
@@ -26,10 +23,7 @@ ideas = {
 
 		stronger_guild_bonus = {
 			picture = man_five_year_plan_industry
-			allowed = {
-			 TAG = SHU
-			 original_tag = SHU
- 			}
+			allowed = { original_tag = SHU }
 			visible = { always = yes }
 
 			modifier = {
@@ -40,8 +34,7 @@ ideas = {
 		even_stronger_guild_bonus = {
 			picture = man_five_year_plan_industry
 
-			 TAG = SHU
-			 original_tag = SHU
+			allowed = { original_tag = SHU }
 
 			visible = { always = yes }
 
@@ -53,8 +46,7 @@ ideas = {
 		superior_guild_bonus = {
 			picture = man_five_year_plan_industry
 
-			 TAG = SHU
-			 original_tag = SHU
+			allowed = { original_tag = SHU }
 
 			visible = { always = yes }
 
@@ -66,8 +58,7 @@ ideas = {
 		ultimate_guild_bonus = {
 			picture = man_five_year_plan_industry
 
-			 TAG = SHU
-			 original_tag = SHU
+			allowed = { original_tag = SHU }
 
 			visible = { always = yes }
 
@@ -95,7 +86,7 @@ ideas = {
 		idea_no_more_hunger = {
 			picture = GFX_idea_generic_agriculture
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 
@@ -123,7 +114,7 @@ ideas = {
 
 		SHU_legitimate_ruler = {
 			picture = GFX_goal_generic_ruler
-			add_stability = 0.1
+			modifier = { stability_factor = 0.1 }
 		}
 
 
@@ -168,35 +159,7 @@ ideas = {
 
 		gold_reserve = {
 			picture = SPR_seize_the_gold_reserves
-			allowed = {
-				# Conditions under which this idea can be activated (e.g., certain focus completed)
-
-				if = {
-					limit = {
-						root = { has_idea = closed_economy }
-					}
-					swap_ideas = {
-						remove_ideas = gold_reserve
-						add_ideas = gold_reserve2
-					}
-
-				}
-				else_if =
-				{
-					limit = {
-						root = { NOT = { has_idea = closed_economy } }
-
-					}
-					swap_ideas = {
-						remove_ideas = gold_reserve2
-						add_ideas = gold_reserve
-					}
-
-				}
-				else_if = {
-					limit = { root = { has_completed_focus = has_completed_focus } }
-				}
-			}
+			allowed = { always = yes }
 
 			modifier = {
 				consumer_goods_factor = -0.07 # Reduces consumer goods usage by 7%
@@ -255,12 +218,12 @@ ideas = {
 
 		famine = {
 			picture = raj_risk_of_famine
-			construction_factor = 0.50
+			modifier = { production_speed_buildings_factor = -0.50 }
 		}
 
 		starvation = {
 			picture = generic_agrarian_society
-			construction_factor = 0.25
+			modifier = { production_speed_buildings_factor = -0.25 }
 		}
 
 		# --------------
@@ -308,22 +271,37 @@ ideas = {
 
 		marai_marines = {
 			picture = generic_coastal_navy
-			naval_invasion_prep_speed = 10
-			naval_invasion_capacity = 5
-			amphibious_invasion = 0.5
-			amphibious_invasion_defence = 0.5
-			invasion_preparation = 0.3
+			modifier = {
+				naval_invasion_prep_speed = 0.10
+				naval_invasion_capacity = 5
+				amphibious_invasion = 0.15
+				amphibious_invasion_defence = 0.15
+				invasion_preparation = -0.15
+			}
 
 			allowed = {
                 always = no
             }
 
-			cancel = {
-				has_global_flag = moonstone_quest_fail
-			}
+			cancel = { has_country_flag = SHU_moonstone_quest_failed }
+		}
 
-			on_remove = {
-				clr_global_flag = moonstone_quest_fail
+		SHU_moonstone_quest_unresolved = {
+			picture = generic_coastal_navy
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = -0.02
+			}
+		}
+
+		SHU_moonstone_blessing = {
+			picture = generic_coastal_navy
+			modifier = {
+				stability_factor = 0.05
+				naval_invasion_prep_speed = 0.15
+				naval_invasion_capacity = 5
+				amphibious_invasion = 0.10
+				amphibious_invasion_defence = 0.10
 			}
 		}
 
@@ -426,7 +404,7 @@ ideas = {
 		Shurima_broken = {
 			picture = SHU_shurima_broken-1239
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 			available = {}
@@ -446,7 +424,7 @@ ideas = {
 		Shurima_fractured = {
 			picture = SHU_shurima_fractured-1238
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 			available = {}
@@ -466,7 +444,7 @@ ideas = {
 		Shurima_scattered = {
 			picture = SHU_shurima_scattered-1240
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 			available = {}
@@ -486,7 +464,7 @@ ideas = {
 		Shurima_apart = {
 			picture = SHU_shurima_apart-1241
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 			available = {}
@@ -507,7 +485,7 @@ ideas = {
 		Shurima_united = {
 			picture = SHU_shurima_united-1242
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 			available = {}
@@ -532,7 +510,7 @@ ideas = {
 			picture = SHU_shuriman_shame-1752
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -553,7 +531,7 @@ ideas = {
 			picture = SHU_shuriman_guilt-1753
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -574,7 +552,7 @@ ideas = {
 			picture = SHU_shuriman_hybris-1754
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -595,7 +573,7 @@ ideas = {
 			picture = SHU_shuriman_struggle-1755
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -616,7 +594,7 @@ ideas = {
 			picture = SHU_shuriman_pride-1756
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -657,7 +635,7 @@ ideas = {
 			picture = SHU_hex_crystal_sovereignty-1452
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -680,7 +658,7 @@ ideas = {
 			picture = SHU_the_great_fall-1237
 			allowed = {
 
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
 
 			}
@@ -752,7 +730,7 @@ ideas = {
 		Lawless_slavery = {
 			picture = SHU_lawless_slavery-1506
 			allowed = {
-			 TAG = SHU
+			 tag = SHU
 			 original_tag = SHU
  			}
 			available = {}
@@ -770,15 +748,13 @@ ideas = {
 		shuriman_defense_bonus = {
 			name = "Shuriman Shieldwall"
 			picture = ARG_military_government
-			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense"
-			modifier = { army_defence = 0.10 }
+			modifier = { army_defence_factor = 0.10 }
 		}
 
 		shuriman_defense_bonus_extra = {
 			name = "Shuriman Shieldwall"
 			picture = ARG_military_government
-			custom_effect_tooltip = "By Azir's Command we will hold this line! \n§G10%§! bonus defense for a year!"
-			modifier = { army_defence = 0.10 days = 365 }
+			modifier = { army_defence_factor = 0.10 }
 		}
 
 		Offensive_War_Bonus = {
@@ -788,13 +764,12 @@ ideas = {
 		SHU_Officer_School_ideas = {
 			name = "Officer School"
 			picture = Combined_bomber_offensive
-			custom_effect_tooltip = "If we are going to war we better let our officers study it indepth!"
 			modifier = {
 				army_intel_factor = 0.45
 				army_intel_decryption_bonus = 0.25
 				land_doctrine_cost_factor = -0.10
-				offence = 0.05
-				defence = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 				attrition = -0.05
 			}
 		}
@@ -803,13 +778,12 @@ ideas = {
 		SHU_War_Academy_ideas = {
 			name = "War Academy"
 			picture = soviet_german_friendship
-			custom_effect_tooltip = "Why stop at officers? Our general need just as sharp wit, and organisation to study warfare."
 			modifier = {
 				army_intel_factor = 0.45
 				army_intel_decryption_bonus = 0.25
 				land_doctrine_cost_factor = -0.10
-				offence = 0.05
-				defence = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 				attrition = -0.05
 			}
 		}
@@ -817,7 +791,6 @@ ideas = {
 		SHU_rebuild_library_idea = {
 			name = "Rebuild Library"
 			picture = jap_supremacy_of_technology
-			custom_effect_tooltip = ""
 			modifier = {
 				research_speed_factor = 0.10
 			}
@@ -826,7 +799,6 @@ ideas = {
 		SHU_shuriman_university_idea = {
 			name = "Shuriman Universities"
 			picture = jap_supremacy_of_technology
-			custom_effect_tooltip = ""
 			modifier = {
 				research_speed_factor = 0.10
 			}
@@ -835,17 +807,51 @@ ideas = {
 		SHU_restore_great_library = {
 			name = "Restore The Great Shuriman"
 			picture = generic_research_bonus
-			custom_effect_tooltip = ""
 			modifier = {
 				research_speed_factor = 0.10
+			}
+		}
+
+		ascendant_supremacy = {
+			picture = generic_aggression
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.20
+				stability_factor = 0.10
+			}
+		}
+
+		SHU_infrastructure_bonus = {
+			picture = generic_construction_bonus
+			allowed = { original_tag = SHU }
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+
+		SHU_cultural_renaissance = {
+			picture = generic_research_bonus
+			allowed = { original_tag = SHU }
+			modifier = {
+				research_speed_factor = 0.10
+				recruitable_population_factor = 0.05
+			}
+		}
+
+		SHU_military_glory = {
+			picture = generic_aggression
+			allowed = { original_tag = SHU }
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
 			}
 		}
 
 		Rebuilding_Ourselves = {}
 		Rebuilding_Our_Armory = {
 			picture = SOV_third_five_year_plan_military
-			custom_trigger_tooltip = "It's Time To Rebuild Our Great Armory!"
-
 			modifier = { production_speed_arms_factory_factor = 0.25}
 		}
 

@@ -1,22 +1,22 @@
-﻿focus_tree = {
+focus_tree = {
 	id = nazumah_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = NAZ
-			has_dlc = "Waking the Tiger" 
+			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
 	continuous_focus_position = { x = 150 y = 1600 }
 
 	initial_show_position = {
-		focus = NAZ_develop_hunter_guilds
+		focus = NAZ_develop_capitalstate
 	}
 
 	focus = {
@@ -26,13 +26,13 @@
 
 		x = 2
 		y = 0
-		#relative_position_id = 
+		#relative_position_id =
 		cost = 10
 
 		completion_reward = {
-			
+
 			capital_scope = {
-				ETH_upgrade_state_category = yes 
+				ETH_upgrade_state_category = yes
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -100,14 +100,14 @@
 				limit = {
 					NOT = { has_tech = basic_train }
 				}
-				set_technology = { 
+				set_technology = {
 					basic_train = 1
 					popup = yes
 				}
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = train_equipment_1
-				amount = 10 
+				amount = 10
 				producer = ETH
 			}
 		}
@@ -116,7 +116,7 @@
 		id = NAZ_the_nazuman_regional_development_fund
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = NAZ_the_state_bank_of_nazumah }
-		dynamic = yes 
+		dynamic = yes
 		#mutually_exclusive = { focus = NAZ_the_nazuman_industrial_fund }
 		x = 0
 		y = 1
@@ -125,7 +125,7 @@
 
 		completion_reward = {
 			unlock_decision_tooltip = ETH_promote_construction_development_in_from
-			unlock_decision_tooltip = ETH_promote_infrastructure_development_in_from				
+			unlock_decision_tooltip = ETH_promote_infrastructure_development_in_from
 		}
 	}
 
@@ -137,7 +137,7 @@
 		x = 0
 		y = 1
 		relative_position_id = NAZ_the_steam_locomotive
-        
+
 		cost = 10
 		available = {
 			# IF = {
@@ -150,22 +150,22 @@
 			# 	limit = {
 			# 		original_tag = ORO
 			# 	}
-			# 	836  = { is_controlled_by = ROOT } 
-				
+			# 	836  = { is_controlled_by = ROOT }
+
 			# }
 			# ELSE_IF = {
 			# 	limit = {
 			# 		original_tag = QEM
 			# 	}
-			# 	841  = { is_controlled_by = ROOT } 
-				
+			# 	841  = { is_controlled_by = ROOT }
+
 			# }
 			# ELSE_IF = {
 			# 	limit = {
 			# 		original_tag = TIG
 			# 	}
 			# 	842  = { is_controlled_by = ROOT }
-				
+
 			# }
 			# ELSE_IF = {
 			# 	limit = {
@@ -199,7 +199,7 @@
 				bonus = 1
 				uses = 2
 				category = excavation_tech
-			}			
+			}
 		}
 	}
 
@@ -218,7 +218,7 @@
 				name = NAZ_promote_local_crafts
 				bonus = 0.25
 				uses = 2
-				category = industry 
+				category = industry
 			}
 			add_tech_bonus = {
 				name = NAZ_promote_local_crafts
@@ -238,7 +238,7 @@
 		relative_position_id = NAZ_promote_local_crafts
 		cost = 10
 
-		completion_reward = { 
+		completion_reward = {
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -256,7 +256,7 @@
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = NAZ_use_the_natural_harbors
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -286,14 +286,14 @@
 		}
 	}
 	focus = {
-		id = NAZ_the_capital_city_airport  
+		id = NAZ_the_capital_city_airport
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = NAZ_promote_local_crafts }
 		mutually_exclusive = { focus = NAZ_use_the_natural_harbors }
-		dynamic = yes 
+		dynamic = yes
 		x = 1
 		y = 1
-		relative_position_id = NAZ_promote_local_crafts  
+		relative_position_id = NAZ_promote_local_crafts
 		cost = 10
 
 		completion_reward = {
@@ -304,14 +304,14 @@
 					instant_build = yes
 				}
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = transport_plane_equipment
-				amount = 10 
+				amount = 10
 				producer = ROOT
 			}
 		}
 	}
-	focus = { 
+	focus = {
 		id = NAZ_a_steamboat_fleet
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = NAZ_use_the_natural_harbors }
@@ -345,7 +345,7 @@
 			every_owned_state = {
 				custom_effect_tooltip = NAZ_improved_irrigation_systems_tt
 				add_to_variable = { ETH_state_development_production_speed = 0.15 }
-				add_to_variable = { ETH_state_development_local_building_slots_factor = 0.15 }		
+				add_to_variable = { ETH_state_development_local_building_slots_factor = 0.15 }
 			}
 		}
 	}
@@ -396,7 +396,7 @@
 		}
 	}
 	focus = {
-		id = NAZ_the_grand_university_of_capital 
+		id = NAZ_the_grand_university_of_capital
 		icon = GFX_focus_research
 		prerequisite = { focus = NAZ_state-funded_projects }
 
@@ -404,19 +404,19 @@
 		y = 1
 		relative_position_id = NAZ_state-funded_projects
 		cost = 10
-		available = {  
-		} 
+		available = {
+		}
 
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
 
-	#   # ### #   ### ###  ##  ###  #   # 
-	## ##  #  #    #   #  #  # #  #  # #  
-	# # #  #  #    #   #  #### ###    #   
-	#   #  #  #    #   #  #  # #  #   #   
-	#   # ### ### ###  #  #  # #  #   #   
+	#   # ### #   ### ###  ##  ###  #   #
+	## ##  #  #    #   #  #  # #  #  # #
+	# # #  #  #    #   #  #### ###    #
+	#   #  #  #    #   #  #  # #  #   #
+	#   # ### ### ###  #  #  # #  #   #
 
 	focus = {
 		id = NAZ_basic_armed_forces
@@ -431,24 +431,18 @@
 
 	focus = {
     id = NAZ_warrior_tradition
-    icon = GFX_focus_NAZ_tribal_traditions # GFX_focus_ETH_expand_the_levy # GFX_focus_generic_military_spirit
+		icon = GFX_goal_generic_army_doctrines
     prerequisite = { focus = NAZ_basic_armed_forces }
     x = 0
     y = 1
-	
+
 	relative_position_id = NAZ_basic_armed_forces
 
     cost = 10
 		completion_reward = {
-			add_units_to_template = {
-				template = "Hunter Warriors"
-				division = {
-					name = "Hunter Warrior Division"
-					size = 3
-					experience = 300
-					equipment_percent = 100
-				}
-			}
+			add_ideas = NAZ_improved_warrior_tradition_idea
+			army_experience = 15
+			add_manpower = 2000
 		}
 	}
 
@@ -469,14 +463,14 @@
 
 	focus = {
 
-		# ? Suggestion: NAZ_every_man_hunts 
-		# ? Suggestion: NAZ_every_man_a_hunter 
+		# ? Suggestion: NAZ_every_man_hunts
+		# ? Suggestion: NAZ_every_man_a_hunter
 		# ? Suggestion: NAZ_a_hunter_in_every_man
 
-		id =  NAZ_universal_conscription 
+		id =  NAZ_universal_conscription
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = NAZ_warrior_tradition }
-		mutually_exclusive = { focus = NAZ_strengthen_warriors }
+		mutually_exclusive = { focus = NAZ_strengthen_the_hunters }
 		x = 1
 		y = 1
 		relative_position_id = NAZ_warrior_tradition
@@ -527,24 +521,24 @@
 	# 		}
 	# 	}
 	# }
-	
+
 	focus = {
 		id = NAZ_strengthen_the_hunters
 		icon = GFX_focus_ETH_keep_the_chitet
 		prerequisite = { focus = NAZ_warrior_tradition }
-		mutually_exclusive = { focus = NAZ_every_man_a_warrior }
+		mutually_exclusive = { focus = NAZ_universal_conscription }
 		x = -1
 		y = 1
 		relative_position_id = NAZ_warrior_tradition
 		cost = 10
 		completion_reward = {
 			add_units_to_division_template = {
-				template_name = "Special Hunter Division" 
+				template_name = "Special Hunter Division"
 				regiments = {
-					irregular_infantry = 0 
-					irregular_infantry = 1 
-					irregular_infantry = 2 
-					irregular_infantry = 3 
+					irregular_infantry = 0
+					irregular_infantry = 1
+					irregular_infantry = 2
+					irregular_infantry = 3
 				}
 			}
 			add_ideas = NAZ_improved_irregulars_idea
@@ -554,7 +548,7 @@
 	# Note, Used to be:
 	# "The Nation's Finest"
 	focus = {
-		id = NAZ_nations_best 
+		id = NAZ_nations_best
 		icon = GFX_focus_ETH_sway_the_warlords
 		prerequisite = { focus = NAZ_strengthen_the_hunters }
 
@@ -570,7 +564,8 @@
 	focus = {
 		id = NAZ_utilize_our_strengths
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = NAZ_strengthen_the_hunters focus = NAZ_universal_conscription }
+		prerequisite = { focus = NAZ_strengthen_the_hunters }
+		prerequisite = { focus = NAZ_universal_conscription }
 
 		x = 1
 		y = 1
@@ -622,7 +617,7 @@
 		completion_reward = {
 			add_war_support = 0.1
 			IF = {
-				limit = { 
+				limit = {
 					NOT = { has_idea = extensive_conscription }
 					NOT = { has_idea = service_by_requirement }
 					NOT = { has_idea = all_adults_serve }
@@ -709,7 +704,7 @@
 				name = NAZ_metal_beasts
 				bonus = 0.5
 				uses = 2
-				category = armor 
+				category = armor
 			}
 		}
 	}
@@ -728,8 +723,8 @@
 				name = NAZ_the_roars_of_thunder
 				bonus = 0.5
 				uses = 2
-				category = artillery 
-				category = cat_anti_tank 
+				category = artillery
+				category = cat_anti_tank
 			}
 		}
 	}
@@ -748,7 +743,7 @@
 				name = NAZ_develop_indigenous_models
 				bonus = 0.25
 				uses = 2
-				category = infantry_weapons 
+				category = infantry_weapons
 			}
 		}
 	}
@@ -768,7 +763,7 @@
 					has_dlc = "No Step Back"
 					NOT = { has_tech = gwtank_chassis }
 				}
-				set_technology = { 
+				set_technology = {
 					gwtank_chassis  = 1
 					popup = no
 				}
@@ -779,11 +774,11 @@
 					NOT = { has_dlc = "No Step Back" }
 					NOT = { has_tech = gwtank }
 				}
-				set_technology = { 
+				set_technology = {
 					gwtank = 1
 					popup = no
 				}
-				
+
 			}
 			division_template = {
 				name = "Steel Lions"
@@ -815,12 +810,12 @@
 
 		completion_reward = {
 			add_units_to_division_template = {
-				template_name = "Eastern Hunters" 
+				template_name = "Eastern Hunters"
 				support = {
-					artillery = 0 
+					artillery = 0
 				}
 				regiments = {
-					artillery_brigade = 2 
+					artillery_brigade = 2
 				}
 			}
 		}
@@ -858,14 +853,14 @@
 				}
 			}
 		}
-	} 
+	}
 
-    
-	###   ##  #   ### ### ###  ##   ##  #   
-	#  # #  # #    #   #   #  #  # #  # #   
-	###  #  # #    #   #   #  #    #### #   
-	#    #  # #    #   #   #  #  # #  # #   
-	#     ##  ### ###  #  ###  ##  #  # ### 
+
+	###   ##  #   ### ### ###  ##   ##  #
+	#  # #  # #    #   #   #  #  # #  # #
+	###  #  # #    #   #   #  #    #### #
+	#    #  # #    #   #   #  #  # #  # #
+	#     ##  ### ###  #  ###  ##  #  # ###
 
 
 	## PRO AZIR PATH
@@ -874,10 +869,10 @@
 
     focus = {
         id = NAZ_Friend_or_Foe
-        icon = GFX_focus_NAZ_friend_or_foe  
-		# icon =  GFX_focus_generic_balkan_diplomacy 
-		# icon = GFX_goal_generic_national_unity 
-		# icon = sGFX_focus_generic_diplomatic_treaty 
+        icon = GFX_focus_NAZ_friend_or_foe
+		# icon =  GFX_focus_generic_balkan_diplomacy
+		# icon = GFX_goal_generic_national_unity
+		# icon = sGFX_focus_generic_diplomatic_treaty
 		# icon = GFX_goal_generic_major_alliance
         x = 17
         y = 0
@@ -906,19 +901,19 @@
         completion_reward = {
             add_political_power = 50
 
-			# Shurima's Opinion 
+			# Shurima's Opinion
 			SHU = {
-				add_opinion_modifier = { 
-					target = NAZ 
-					modifier = large_increase 
+				add_opinion_modifier = {
+					target = NAZ
+					modifier = large_increase
 				}
 			}
 
-			# Shurima's Opinion 
+			# Shurima's Opinion
 			XER = {
-				add_opinion_modifier = { 
-					target = NAZ 
-					modifier = large_decrease 
+				add_opinion_modifier = {
+					target = NAZ
+					modifier = large_decrease
 				}
 			}
 
@@ -957,17 +952,17 @@
 			add_political_power = 50
 
 			# If Azirs is In Power
-			add_opinion_modifier = { 
-				target = SHU 
-				modifier = large_increase 
+			add_opinion_modifier = {
+				target = SHU
+				modifier = large_increase
 			}
 
 			# Xerath did not like that one bit!
-			add_opinion_modifier = { 
-				target = XER 
-				modifier = large_decrease 
+			add_opinion_modifier = {
+				target = XER
+				modifier = large_decrease
 			}
-			
+
 			# Set a flag indicating this focus was completed
 			set_country_flag = azirs_reign_recognized
 		}
@@ -991,9 +986,9 @@
 			add_political_power = 50
 
 			# If Azirs is In Power
-			add_opinion_modifier = { 
-				target = SHU 
-				modifier = large_decrease 
+			add_opinion_modifier = {
+				target = SHU
+				modifier = large_decrease
 			}
 		}
 	}
@@ -1006,7 +1001,7 @@
 		y = 1
 		cost = 10
 		prerequisite = {
-			focus = NAZ_Friend_of_Shurima 
+			focus = NAZ_Friend_of_Shurima
 		}
 		mutually_exclusive = {
 			focus = NAZ_Recognize_Azirs_Sovereignty
@@ -1016,17 +1011,17 @@
 			add_political_power = 50
 
 			# If Azirs is In Power
-			add_opinion_modifier = { 
-				target = SHU 
-				modifier = large_increase 
+			add_opinion_modifier = {
+				target = SHU
+				modifier = large_increase
 			}
 
 			# Xerath did not like that one bit!
-			add_opinion_modifier = { 
-				target = XER 
-				modifier = large_decrease 
+			add_opinion_modifier = {
+				target = XER
+				modifier = large_decrease
 			}
-			
+
 			# Set a flag indicating this focus was completed
 			set_country_flag = azirs_reign_recognized
 		}
@@ -1044,7 +1039,9 @@
             focus = NAZ_Recognize_Azirs_Sovereignty
         }
 		completion_reward = {
-
+			add_political_power = 75
+			add_stability = 0.05
+			add_opinion_modifier = { target = SHU modifier = NAZ_shuriman_cooperation }
 		}
     }
 
@@ -1060,7 +1057,9 @@
             focus = NAZ_Recognize_Sivirs_Sovereignty
         }
 		completion_reward = {
-
+			add_political_power = 75
+			add_stability = 0.08
+			add_opinion_modifier = { target = SHU modifier = NAZ_shuriman_cooperation }
 		}
     }
 
@@ -1072,7 +1071,7 @@
         y = 1
         cost = 10
         prerequisite = {
-            focus = NAZ_Common_Cause			
+            focus = NAZ_Common_Cause
         }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1087,7 +1086,7 @@
 
     focus = {
         id = NAZ_Military_Cooperation
-        icon = NAZ_Big_Game_Big_Guns # GFX_focus_generic_tank_production
+		icon = GFX_goal_generic_military_deal
         relative_position_id = NAZ_Imperial_Alliance
         x = 0
         y = 2
@@ -1101,7 +1100,7 @@
         }
 
         completion_reward = {
-			
+
 			# Research
             add_tech_bonus = {
                 bonus = 0.5
@@ -1142,7 +1141,7 @@
         }
 
         completion_reward = {
-			
+
 			# Research
             add_tech_bonus = {
                 bonus = 0.5
@@ -1172,7 +1171,7 @@
 
 	focus = {
         id = NAZ_Navy_Cooperation
-        icon = GFX_focus_NAZ_City_On_Water #GFX_focus_generic_industry_3
+		icon = GFX_goal_generic_navy_doctrines_tactics
         relative_position_id = NAZ_Imperial_Alliance
         x = 1
         y = 1
@@ -1183,7 +1182,7 @@
         }
 
         completion_reward = {
-			
+
 			# Research
             add_tech_bonus = {
                 bonus = 0.5
@@ -1214,9 +1213,8 @@
 		id = NAZ_collective_farms
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = NAZ_invite_foreign_settlers }
-		x = 1
-		y = 1
-		relative_position_id = NAZ_invite_foreign_settlers
+		x = 26
+		y = 3
 
 		cost = 10
 
@@ -1236,7 +1234,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1258,7 +1256,7 @@
         y = 1
         cost = 10
 		mutually_exclusive = {
-            focus = NAZ_Friend_Of_Shurima
+			focus = NAZ_Friend_of_Shurima
         }
 
         prerequisite = {
@@ -1268,31 +1266,31 @@
 
 			add_political_power = 50
 
-			# Shurima's Opinion 
+			# Shurima's Opinion
 			SHU = {
-				add_opinion_modifier = { 
-					target = NAZ 
-					modifier = large_decrease 
+				add_opinion_modifier = {
+					target = NAZ
+					modifier = large_decrease
 				}
 			}
 
-			# Shurima's Opinion 
+			# Shurima's Opinion
 			XER = {
-				add_opinion_modifier = { 
-					target = NAZ 
-					modifier = medium_increase 
+				add_opinion_modifier = {
+					target = NAZ
+					modifier = medium_increase
 				}
 			}
 
 			# Nazumah's Opinion
-			add_opinion_modifier = { 
-				target = XER 
-				modifier = large_Increase 
+			add_opinion_modifier = {
+				target = XER
+				modifier = large_Increase
 			}
-			
-			add_opinion_modifier = { 
-				target = SHU 
-				modifier = large_decrease 
+
+			add_opinion_modifier = {
+				target = SHU
+				modifier = large_decrease
 			}
 
         }
@@ -1300,10 +1298,10 @@
             factor = 10
         }
     }
-	
+
     focus = {
         id = NAZ_Declare_Independence
-        icon = GFZ_focus_NAZ_Declare_Independance # GFX_goal_generic_war_propaganda
+		icon = GFX_goal_generic_propaganda
         relative_position_id = NAZ_Foe_of_Shurima
         x = 1
         y = 1
@@ -1327,21 +1325,21 @@
 		y = 1
 		cost = 5
 		search_filters = {
-			
+
 		}
 		prerequisite = {
 			focus = NAZ_Declare_Independence
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 2
 				any_neighbor_country = {
 					is_enemy_ideology = yes
 				}
 			}
-			
+
 			modifier = {
 				factor = 5
 				any_neighbor_country = {
@@ -1434,7 +1432,7 @@
 
     focus = {
         id = NAZ_National_Pride
-        icon = GFX_focus_NAZ_national_pride 
+		icon = GFX_goal_generic_national_unity
         relative_position_id = NAZ_Independent_Economy
         x = 0
         y = 1
@@ -1468,7 +1466,7 @@
 
 	# Next Tree
 
-	# Domestic's - Internal Political Sphere 
+	# Domestic's - Internal Political Sphere
 	focus = {
 		id = NAZ_hunters_path
 		icon = GFX_focus_spr_masters_of_our_own_fate
@@ -1484,7 +1482,7 @@
 			add_war_support = 0.1
 		}
 	}
-	
+
 	focus = {
 		id = NAZ_royal_subject
 		icon = GFX_goal_generic_major_alliance
@@ -1492,17 +1490,17 @@
 
 		x = -3
 		y = 1
-		relative_position_id = NAZ_hunters_path 
+		relative_position_id = NAZ_hunters_path
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
-			add_autonomy_score = { 
-				value = 250  
+			add_autonomy_score = {
+				value = 250
 			}
-			add_stability = 0.05 
+			add_stability = 0.05
 		}
 
 	}
@@ -1534,10 +1532,10 @@
 		relative_position_id = NAZ_royal_subject
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 			IF = {
 				limit = {
-					is_subject = yes 
+					is_subject = yes
 				}
 				ROOT.OVERLORD = {
 					any_owned_state = {
@@ -1552,7 +1550,7 @@
 		completion_reward = {
 			IF = {
 				limit = {
-					is_subject = yes 
+					is_subject = yes
 					any_owned_state = {
 						any_neighbor_state = {
 							is_owned_by = ROOT.OVERLORD
@@ -1569,16 +1567,16 @@
 		  					start_state = THIS
 		  					target_state = PREV
 						}
-						
+
 					}
 				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NAZ_invite_foreign_settlers
-		icon = GFX_focus_NAZ_invite_nearby_settlers
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = NAZ_royal_subject }
 
 		x = 1
@@ -1592,9 +1590,9 @@
 
 		completion_reward = {
 			capital_scope = {
-				ETH_upgrade_state_category = yes 
-				add_manpower = 75000
+				ETH_upgrade_state_category = yes
 			}
+			add_manpower = 75000
 		}
 	}
 
@@ -1618,18 +1616,18 @@
 				limit = {
 					any_character = {
 						is_country_leader = yes
-						is_field_marshal = yes 
+						is_field_marshal = yes
 					}
 
 				}
 				random_character = {
 					limit = {
 						is_country_leader = yes
-						is_field_marshal = yes 
+						is_field_marshal = yes
 					}
-					add_attack = 1	
+					add_attack = 1
 				}
-				
+
 			}
 			ELSE = {
 				random_character = {
@@ -1648,7 +1646,7 @@
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NAZ_securing_the_future
 
@@ -1667,19 +1665,16 @@
 			add_political_power = 75
 			every_other_country = {
 				limit = {
-					is_major = yes
-					any_owned_state = {
-						is_on_continent = africa
-					}
+					is_neighbor_of = ROOT
 				}
 				add_opinion_modifier = {
 					target = ROOT
-					modifier = NAZ_african_cooperation
+					modifier = NAZ_regional_cooperation
 				}
 				ROOT = {
 					add_opinion_modifier = {
 						target = PREV
-						modifier = NAZ_african_cooperation
+						modifier = NAZ_regional_cooperation
 					}
 				}
 			}
@@ -1695,7 +1690,7 @@
 		relative_position_id = NAZ_the_capital_railroad
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
@@ -1750,7 +1745,7 @@
 			add_ideas = NAZ_education_idea
 		}
 	}
-    
+
 	focus = {
 		id = NAZ_construct_great_monuments
 		icon = GFX_goal_generic_construction
@@ -1767,8 +1762,8 @@
 		completion_reward = {
 			add_stability = 0.15
 			capital_scope = {
-				NAZ_upgrade_main_city = yes 
-			}	
+				NAZ_upgrade_main_city = yes
+			}
 
 		}
 	}
@@ -1789,7 +1784,7 @@
 		completion_reward = {
 			add_ideas = NAZ_volunteers_idea
 			set_rule = {
-				can_send_volunteers = yes 
+				can_send_volunteers = yes
 			}
 		}
 	}
@@ -1829,7 +1824,7 @@
 			add_timed_idea = {
 			 	idea = NAZ_rightfully_ours_idea
 			 	days = 720
-			 } 
+			 }
 		}
 	}
 	focus = {
@@ -1908,7 +1903,7 @@
 		relative_position_id = NAZ_improving_the_educational_system
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
@@ -1916,7 +1911,7 @@
 				name = NAZ_foreign_investors
 				bonus = 0.25
 				uses = 1
-				category = industry 
+				category = industry
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -1932,11 +1927,11 @@
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
-				
+
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NAZ_research_exchange_programs
 		icon = GFX_goal_generic_scientific_exchange
@@ -1947,7 +1942,7 @@
 		relative_position_id = NAZ_improving_the_educational_system
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
@@ -1955,19 +1950,19 @@
 				name = NAZ_research_exchange_programs
 				bonus = 0.25
 				uses = 2
-				category = industry 
+				category = industry
 				category = electronics
 			}
 			IF = {
 				limit = {
-					is_subject = yes 
+					is_subject = yes
 				}
 				OVERLORD = {
 					add_tech_bonus = {
 						name = NAZ_research_exchange_programs
 						bonus = 0.25
 						uses = 2
-						category = industry 
+						category = industry
 						category = electronics
 					}
 				}
@@ -1984,7 +1979,7 @@
 		relative_position_id = NAZ_research_exchange_programs
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
@@ -2000,12 +1995,12 @@
 		relative_position_id = NAZ_research_exchange_programs
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
-			add_autonomy_score = { 
-				value = 750 
+			add_autonomy_score = {
+				value = 750
 				localization = NAZ_nazuman_loyalist_advisors
 			}
 		}
@@ -2036,24 +2031,24 @@
 			every_state = {
 				limit = {
 					region = 273
-					OWNER = { 
+					OWNER = {
 						capital_scope = { region = 273 }
 						is_subject = no
 						NOT = { tag = ROOT }
 					}
-					
+
 				}
 				OWNER = {
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							
+
 						}
 					}
 				}
 			}
-			
+
 		}
 	}
 	focus = {
@@ -2082,7 +2077,7 @@
 			every_state = {
 				limit = {
 					region = 17
-					OWNER = { 
+					OWNER = {
 						capital_scope = { region = 17 }
 						is_subject = no
 						NOT = { tag = ROOT }
@@ -2093,7 +2088,7 @@
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							
+
 						}
 					}
 				}
@@ -2103,9 +2098,9 @@
 	focus = {
 		id = NAZ_secure_the_shakkal
 		icon = GFX_focus_ETH_protector_of_the_somalis
-		prerequisite = { 
-			focus = NAZ_that_which_is_rightfully_ours 
-			focus = NAZ_commandos 
+		prerequisite = {
+			focus = NAZ_that_which_is_rightfully_ours
+			focus = NAZ_commandos
 		}
 
 		x = 2
@@ -2125,12 +2120,12 @@
 					}
 				}
 				add_claim_by = ROOT
-				
+
 			}
 			every_state = {
 				limit = {
 					region = 274
-					OWNER = { 
+					OWNER = {
 						capital_scope = { region = 274 }
 						is_subject = no
 						NOT = { tag = ROOT }
@@ -2141,13 +2136,13 @@
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							
+
 						}
 					}
 				}
 			}
-			
-			
+
+
 		}
 	}
 	focus = {
@@ -2177,7 +2172,7 @@
 		relative_position_id = NAZ_foreign_trained_officials
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
@@ -2194,14 +2189,14 @@
 		relative_position_id = NAZ_nazuman_loyalist_advisors
 		cost = 10
 		available = {
-			is_subject = yes 
+			is_subject = yes
 		}
 
 		completion_reward = {
 			add_war_support = 0.1
 			add_political_power = 100
-			add_autonomy_score = { 
-				value = 500 
+			add_autonomy_score = {
+				value = 500
 				localization = NAZ_promote_nazumah_nationalism
 			}
 		}
@@ -2209,10 +2204,10 @@
 	focus = {
 		id = NAZ_crowning_of_the_hunter
 		icon = GFX_focus_ETH_negusa-nagast
-		prerequisite = { 
-			focus = NAZ_push_for_the_highlands 
-			focus = NAZ_secure_the_shakkal 
-			focus = NAZ_lay_claim_to_the_lowlands 
+		prerequisite = {
+			focus = NAZ_push_for_the_highlands
+			focus = NAZ_secure_the_shakkal
+			focus = NAZ_lay_claim_to_the_lowlands
 		}
 
 		x = 0
@@ -2235,13 +2230,13 @@
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_controlled_by = ROOT 
-					is_core_of = ETH 
+					is_controlled_by = ROOT
+					is_core_of = ETH
 				}
 				add_core_of = ROOT
-				remove_core_of = ETH 
+				remove_core_of = ETH
 			}
-			
+
 		}
 	}
 
@@ -2270,7 +2265,7 @@
 	# Big Hunt - This focus Make everything Below it not work! Make sure this is working
 	focus = {
 		id = NAZ_Big_Game
-		icon = GFX_focus_NAZ_Big_Game #GFX_focus_SWE_en_svensk_tiger
+		icon = GFX_goal_generic_major_war
 		relative_position_id = NAZ_National_Pride
 		x = -1
 		y = 1
@@ -2285,18 +2280,15 @@
 			focus = NAZ_Foe_of_Shurima
 		}
 		completion_reward = {
-			# add_tech_bonus = {
-			# 	bonus = 0.5
-			# 	uses = 1
-			# 	category = infantry_weapons
-			# }
-			# add_political_power = 75
-			# add_stability = 0.05
-			# add_manpower = 10000  # Added manpower reward
-			# add_equipment_to_stockpile = {  # Added equipment reward
-			# 	type = infantry_equipment
-			# 	amount = 5000
-			# }
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_weapons
+			}
+			add_political_power = 75
+			add_war_support = 0.10
+			add_manpower = 5000
+			army_experience = 20
 		}
 		available = {
 			# has_country_flag = resisted_the_void  # Uncommented and ensured this condition is met

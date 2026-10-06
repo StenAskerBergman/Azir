@@ -1,5 +1,43 @@
 characters = {
 
+	# Daughters of the Aspect of Justice, born on Mount Targon before their
+	# family carried its legacy to Demacia.
+	TAR_kayle = {
+		name = TAR_KAYLE_NAME
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_tar_kayle_large
+				small = GFX_portrait_tar_kayle_small
+			}
+		}
+		advisor = {
+			slot = military_high_command
+			idea_token = TAR_kayle
+			ledger = army
+			cost = 150
+			traits = { offensive_doctrine celestial tar_reformer }
+		}
+	}
+
+	TAR_morgana = {
+		name = TAR_MORGANA_NAME
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_tar_morgana_large
+				small = GFX_portrait_tar_morgana_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TAR_morgana
+			ledger = civilian
+			cost = 150
+			traits = { pacifist celestial tar_reformer }
+		}
+	}
+
     # Leona - Solari Targonian tar_purist
     TAR_leona = {
         name = TAR_LEONA_NAME # "Leona"
@@ -14,18 +52,11 @@ characters = {
                 small = GFX_portrait_tar_leona_small
             }
         }
-        allowed_civil_war = {
-            TAR_char_cw_solari = yes
-        }
+		allowed_civil_war = { always = yes }
         country_leader = {
             desc = POLITICS_LEONA_DESC
             ideology = solari # Solari Ideology
             traits = { sun_warrior solar_shield tar_solari tar_reformer }
-            do_effect = {
-                NOT = {
-                    has_completed_focus = TAR_Unite_the_Solari
-                }
-            }
         }
         advisor = {
             slot = military_high_command
@@ -45,7 +76,7 @@ characters = {
         }
     }
 
-    # Diana - Lunari Targonian tar_reformer 
+    # Diana - Lunari Targonian tar_reformer
     TAR_diana = {
         name = TAR_DIANA_NAME # "Diana"
         gender = female
@@ -59,18 +90,11 @@ characters = {
                 small = GFX_portrait_tar_diana_small
             }
         }
-        allowed_civil_war = {
-            TAR_char_cw_lunari = yes
-        }
+		allowed_civil_war = { always = yes }
         country_leader = {
             desc = POLITICS_DIANA_DESC
             ideology = lunari # Lunari Ideology
             traits = { moonblade guerrilla_leader tar_reformer tar_lunari }
-            do_effect = {
-                NOT = {
-                    has_completed_focus = TAR_Lunari_Rebellion
-                }
-            }
         }
         advisor = {
             slot = military_high_command
@@ -127,7 +151,7 @@ characters = {
         }
     }
 
-    # Cygnus - Lunari Targonian tar_reformer 
+    # Cygnus - Lunari Targonian tar_reformer
     TAR_cygnus = {
         name = TAR_CYGNUS_NAME # "Cygnus"
         gender = male
@@ -144,7 +168,7 @@ characters = {
         advisor = {
             slot = espionage_expert
             idea_token = TAR_cygnus
-            ledger = espionage
+			ledger = civilian
             cost = 150
             traits = { covert_operations night_operations_specialist tar_lunari } # tar_reformer
         }
@@ -173,11 +197,6 @@ characters = {
             desc = POLITICS_AURELION_SOL_DESC
             ideology = cosmic_dragon # Cosmic Ideology
             traits = { cosmic_power celestial tar_reformer }
-            do_effect = {
-                NOT = {
-                    has_completed_focus = TAR_Enslave_the_Dragon
-                }
-            }
         }
         advisor = {
             slot = political_advisor
@@ -188,7 +207,7 @@ characters = {
         }
     }
 
-    # Soraka - Celestial Targonian tar_reformer 
+    # Soraka - Celestial Targonian tar_reformer
     TAR_soraka = {
         name = TAR_SORAKA_NAME # "Soraka"
         gender = female
@@ -201,7 +220,7 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = TAR_soraka
-            ledger = politics
+			ledger = civilian
             cost = 150
             traits = { divine_healer pacifist celestial tar_reformer }
         }
@@ -220,7 +239,7 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = TAR_Zoe
-            ledger = politics
+			ledger = civilian
             cost = 150
             traits = {  celestial tar_lunari }
         }
@@ -239,13 +258,13 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = TAR_bard
-            ledger = politics
+			ledger = civilian
             cost = 150
             traits = { celestial }
         }
     }
 
-    # Taric - Celestial Targonian tar_reformer 
+    # Taric - Celestial Targonian tar_reformer
     TAR_taric = {
         name = TAR_TARIC_NAME # "Taric"
         gender = male
@@ -290,18 +309,16 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = TAR_Alune
-            ledger = espionage
+			ledger = civilian
             cost = 150
             traits = { strategic_genius astral_guidance tar_lunari tar_reformer }
         }
         corps_commander = {
-            desc = POLITICS_ALUNE_DESC
-            ideology = lunari # Lunari Ideology
-            traits = { 
+            traits = {
                 astral_mastery
                 moonshadow_tactics
                 tar_lunari
-                tar_reformer 
+                tar_reformer
             }
         }
     }
@@ -318,7 +335,7 @@ characters = {
         advisor = {
             slot = military_high_command
             idea_token = TAR_aphelios
-            ledger = espionage
+			ledger = army
             cost = 150
             traits = { silent_sentinel covert_operations tar_lunari } # tar_reformer
         }
@@ -353,7 +370,7 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = TAR_pantheon
-            ledger = politics
+			ledger = civilian
             cost = 150
             traits = { strategic_genius celestial_defender tar_rakkor }
         }
@@ -372,7 +389,7 @@ characters = {
     #     country_leader = {
     #         desc = POLITICS_KAYLE_DESC
     #         ideology = solari # Solari Ideology
-    #         traits = { 
+    #         traits = {
     #             divine_judgment
     #             righteous_fury
     #         }
@@ -385,7 +402,7 @@ characters = {
     #     country_leader = {
     #         desc = POLITICS_KAYLE_DESC
     #         ideology = celestials # celestials Ideology
-    #         traits = { 
+    #         traits = {
     #             divine_judgment
     #             righteous_fury
     #         }
@@ -425,7 +442,7 @@ characters = {
     #     country_leader = {
     #         desc = POLITICS_MORGANA_DESC
     #         ideology = lunari # Lunari Ideology
-    #         traits = { 
+    #         traits = {
     #             fallen_judgment
     #             shackles_of_fate
     #         }

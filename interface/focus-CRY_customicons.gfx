@@ -1,20 +1,20 @@
-spriteTypes = { 	
-	
+spriteTypes = {
 
-	
+
+
 	##Icon For: Test
-	SpriteType = { 
+	SpriteType = {
 		name = "GFX_focus_test2"
-		texturefile = "gfx/interface/goals/SHU/focus_test.dds"
+		texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
 	}
-    
+
 	##Icon Shine For: Test
 	SpriteType = {
 		name = "GFX_focus_test2_shine"
-		texturefile = "gfx/interface/goals/SHU/GFX_focus_test2.dds"
+		texturefile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_test2.dds"
+			animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -27,7 +27,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SHU/GFX_focus_test2.dds"
+			animationmaskfile = "gfx/interface/goals/CRY/focus_generic_mining_industry_crystal.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

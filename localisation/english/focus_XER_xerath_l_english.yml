@@ -1,37 +1,37 @@
 ﻿l_english:
 ################################### TRAITS           \n   §H§!
  ##### LEADERS
- 
+
  trait_great_hunter:"Great Hunter"
  father_of_the_empire:"Father of the Empire"
  pride_of_nazumah:"Pride of Nazumah"
- 
+
  ##### ADVISORS
- 
+
  ##### ARMY CHIEF
- 
+
  ##### NAVY CHIEF
- 
+
  ##### AIR CHIEF
- 
+
  ##### HIGH COMMAND
- 
+
  ##### ARMOR DESIGNER
- 
+
  ##### AIRCRAFT DESIGNER
- 
+
  ##### SHIP DESIGNER
- 
+
  ##### MATERIAL DESIGNER
- 
+
  ##### INDUSTRIAL CONCERN
- 
+
  ##### THEORIST
- 
+
 ################################### OPINION MODIFIERS      \n   §H§!
- 
- 
- 
+
+
+
 ################################### FOCUSES           \n   §H§!
 
 XER_temporary_alliance: "Temporary Alliance"
@@ -58,8 +58,6 @@ XER_collective_punishment_desc: "Solidify rule by purging rivals and asserting d
 XER_renekton_conquest: "Renekton Conquest"
 XER_renekton_conquest_desc: "Plot to overthrow Azir, igniting civil war in Shurima."
 
-XER_Blood_Pact: "Blood Pact"
-XER_Blood_Pact_desc: "Form a strategic alliance with Noxus for military and economic support."
 
 XER_power_struggle: "Power Struggle"
 XER_power_struggle_desc: "Focus on research and industry, sacrificing stability for power."
@@ -122,8 +120,8 @@ XER_colonial_identity_desc: "Choose between crushing raiders (boosts military, d
 
 
 XER_Power_Play: "Power Play"
-XER_Power_Play_desc: "Xerath, the manipulative master of arcane forces, and Renekton, the primal warrior consumed by rage. Their clash shapes the fate of empires, as §2Xerath§! schemes for godhood while §RRenekton§! seeks vengeance and redemption. Whose path will decide the fate of their empire?" 
-# What lies ahead for the fate of their allegiances, as Xerath plots for godhood and Renekton yearns for vengeance and redemption?" 
+XER_Power_Play_desc: "Xerath, the manipulative master of arcane forces, and Renekton, the primal warrior consumed by rage. Their clash shapes the fate of empires, as §2Xerath§! schemes for godhood while §RRenekton§! seeks vengeance and redemption. Whose path will decide the fate of their empire?"
+# What lies ahead for the fate of their allegiances, as Xerath plots for godhood and Renekton yearns for vengeance and redemption?"
 
 XER_Power_Struggle: "Power Struggle"
 XER_Power_Struggle_desc: "Azir's ascendance poses a greater threat than Noxus, leading them to entertain the idea of leveraging the Noxian colonies against their royal nemesis. But in this delicate dance of power, trust is scarce and betrayal lurks in every shadow. But who will lead such a Coalition?"
@@ -171,7 +169,7 @@ XER_Total_War: "Total War" # Total war against whoever stands up to you
 XER_Total_War_desc: "In the crucible of total war, we unleash our fury upon all who dare to oppose us. With relentless aggression, we crush our enemies beneath the weight of our unstoppable might."
 
 XER_Ruthless_Cruelty: "Ruthless Cruelty" # Renekton is in power, Xerath is gone/dead
-XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist,\n And mercy is but a distant memory... As Xerath, fades into obscurity, Shurima trembles beneath the weight of unbridled brutality.\n\n §OBoost§! §RAttack§R§! \n §OBoost§! §GDefense§!" 
+XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist,\n And mercy is but a distant memory... As Xerath, fades into obscurity, Shurima trembles beneath the weight of unbridled brutality.\n\n §OBoost§! §RAttack§R§! \n §OBoost§! §GDefense§!"
 
 # Higher Attack for Lower Organization -> High Organization for Lower Attack
 # Higher Defense for Lower Speed -> High Speed for Lower Defense
@@ -215,32 +213,16 @@ XER_Power_Pact_desc: "Through the power pact, we solidify our alliances with lik
 XER_Blood_Pact: "Blood Pact"
 XER_Blood_Pact_desc: "In a pact sealed in blood, we bind ourselves to our allies with unbreakable bonds of loyalty and kinship. Through sacrifice and solidarity, we forge a brotherhood that transcends the trials of war and time."
 
-XER_one: "One"
-XER_one_desc: "Description of One."
-
-XER_two: "Two"
-XER_two_desc: "Description of Two."
-
-XER_three: "Three"
-XER_three_desc: "Description of Three."
-
-
-
 ################################### IDEAS            \n   §H§!
- 
 
- 
-################################### DECISIONS          \n   §H§! 
- 
- 
- 
+
+
+################################### DECISIONS          \n   §H§!
+
+
+
 ################################### EVENTS           \n   §H§!
- 
-afk_tag.1000000.t: ""
-afk_tag.1000000.d: ""
-afk_tag.1000000.a: ""
-afk_tag.1000000.b: ""
-afk_tag.1000000.c: ""
+
 
 ################################### OTHER\n           \n   §H§!
 
@@ -248,7 +230,3 @@ TAG_NAME_NAME: "NAME"
 TAG_NAME_DESC: "Description."
 
 XER_990_DESC: "Xerath's Order, a coalition of heretics and mages bound by the allure of power, emerges as a formidable force in the shifting sands of Shurima. With Xerath's insatiable thirst for dominance at its helm, the Order seeks to forge alliances with former adversaries of Azir, marshaling dark forces to challenge the Emperor Ascendant. Will the flames of rebellion ignite a new era under Xerath's banner, or will the price of conquest consume both friend and foe alike?"
-
-
- 
- 

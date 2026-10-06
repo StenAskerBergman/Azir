@@ -1,7 +1,7 @@
 SHU_main_cat = {
 
 	# In Xerath War
-	
+
 	SHU_azir_speech = {
 
 		icon = eng_propaganda_campaigns
@@ -27,7 +27,7 @@ SHU_main_cat = {
 		days_remove = 37
 
 		modifier = {
-			
+
 		}
 
 		visible = {
@@ -82,7 +82,7 @@ SHU_main_cat = {
 		days_remove = 37
 
 		modifier = {
-			
+
 		}
 
 		visible = {
@@ -114,62 +114,45 @@ SHU_main_cat = {
 }
 
 SHU_nasus_category = {
-	
+
 	SHU_restore_great_library_dec ={
 
 		visible = {
 			has_character = SHU_nasus
 		}
 
-		allow = {
+		available = {
 			has_character = SHU_nasus
 		}
-		
+
 		cost = 250
 
 		complete_effect = {
 			add_ideas = SHU_restore_great_library
 		}
-	} 
-	
+	}
+
 }
-
-SHU_improve_the_god_warriors_influence = { 
-### Ascendant Supremacy - Ultimate power from Shurima
-    ascendant_supremacy = {
-        picture = GFX_idea_generic_aggression
-        available = {
-            has_country_flag = ascension_ritual
-        }
-        removal_cost = -1
-        modifier = {
-            division_attack = 0.2
-            Stability = 0.1
-        }
-    }
-}
-
-
 
 SHU_void_cat = {
-	
-    # Xer'Sai 
 
-	DuneBreakerFound = { 
+    # Xer'Sai
+
+	DuneBreakerFound = {
 
 		##DuneBreaker - Evelynn
 
 		days_mission_timeout = 180
 		icon = DuneBreaker_icon
 		fire_only_once = no
-		allowed = { always = no }	
+		allowed = { always = no }
 
 		available = {
        		 always = no
     		}
 
 		timeout_effect = {
-			
+
 			every_controlled_state = {
 				remove_dynamic_modifier = { modifier = void_attack }
 			}
@@ -181,24 +164,24 @@ SHU_void_cat = {
 					id = shurima.310 # Demacia.9 is suppose to be here, btw
 					days = 40
 				}
-			
+
 		}
 	}
-	DuneSwallowerFound = { 
+	DuneSwallowerFound = {
 
 		##DuneSwallower - Fiddle (sometimes noctrune I fked up)
 
 		days_mission_timeout = 180
 		icon = XersaiCaller_icon
 		fire_only_once = no
-		allowed = { always = no }	
+		allowed = { always = no }
 
 		available = {
        		 always = no
     		}
 
 		timeout_effect = {
-			
+
 			every_controlled_state = {
 				remove_dynamic_modifier = { modifier = void_attack }
 			}
@@ -210,10 +193,10 @@ SHU_void_cat = {
 					id = shurima.39
 					days = 40
 				}
-			
+
 		}
 	}
-	XersaiCaller = { 
+	XersaiCaller = {
 
 		##DuneSwallower - XersaiCaller (sometimes DuneSwallower - I fked up)
 
@@ -227,11 +210,11 @@ SHU_void_cat = {
     		}
 
 		timeout_effect = {
-			
+
 			every_controlled_state = {
 				remove_dynamic_modifier = { modifier = void_attack }
 			}
-			
+
 				country_event = {
 					id = shurima.38
 					days = 1
@@ -240,17 +223,17 @@ SHU_void_cat = {
 					id = shurima.39
 					days = 40
 				}
-			
+
 		}
 	}
-	investigate_void = { 
+	investigate_void = {
 			available = {
        			 NOT = { has_country_flag = DuneBreaker }
        			 NOT = { has_country_flag = DuneSwallower }
        			 NOT = { has_country_flag = XersaiCaller }
 				 NOT = { has_country_flag = found_void }
     			}
-	
+
 			days_remove = 5
 			fire_only_once = no
 
@@ -290,7 +273,7 @@ SHU_void_cat = {
 				}
 			}
 	}
-	martial_law = { 
+	SHU_void_martial_law = {
 			available = {
 			has_country_flag = found_void
 			 	any_controlled_state = {
@@ -298,7 +281,7 @@ SHU_void_cat = {
     						modifier = void_attack
 					}
 					#FIX THIS ASAP
-					has_ROOT_at_least_1_div_in_current_state_scope = yes	
+					has_ROOT_at_least_1_div_in_current_state_scope = yes
 				}
     			}
 			icon = generic_prepare_civil_war
@@ -338,7 +321,7 @@ SHU_void_cat = {
 				}
 			}
 	}
-	prepare_a_defense = { 
+	SHU_void_prepare_a_defense = {
 			available = {
 			has_country_flag = found_void
 				has_equipment = {
@@ -387,12 +370,12 @@ SHU_void_cat = {
 				}
 			}
 	}
-	relocate_resources = { 
+	SHU_void_relocate_resources = {
 			available = {
 			has_country_flag = found_void
-				
+
     			}
-	
+
 			days_remove = 30
 			fire_only_once = no
 
@@ -429,14 +412,14 @@ SHU_void_cat = {
 				}
 			}
 	}
-	request_night_hunter = { 
+	SHU_void_request_night_hunter = {
 			visible = {
-			has_country_flag = vayne	
+			has_country_flag = vayne
 			}
 			available = {
-			has_country_flag = found_void	
+			has_country_flag = found_void
     			}
-	
+
 			days_remove = 30
 			fire_only_once = no
 
@@ -474,4 +457,3 @@ SHU_void_cat = {
 			}
 	}
 }
-

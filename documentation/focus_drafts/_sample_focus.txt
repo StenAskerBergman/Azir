@@ -33,7 +33,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAC
         icon = GFX_goal_new_coin
@@ -55,7 +55,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAE
         icon = GFX_goal_machine
@@ -77,7 +77,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAG
         icon = GFX_goal_void_spread
@@ -99,7 +99,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAI
         icon = GFX_goal_big_invasion
@@ -121,7 +121,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAK
         icon = GFX_goal_irrigation_system
@@ -144,7 +144,7 @@ focus_tree = {
         }
     }
 
-    
+
     focus = {
         id = AAM
         icon = GFX_goal_major_battleship
@@ -168,7 +168,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAO
         icon = GFX_goal_graveyard
@@ -190,7 +190,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAQ
         icon = GFX_goal_demacian_agenda
@@ -212,7 +212,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAS
         icon = GFX_goal_naval_officer
@@ -234,7 +234,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAU
         icon = GFX_goal_generic_tech_sharing
@@ -256,7 +256,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAW
         icon = GFX_goal_jungle_forces
@@ -278,7 +278,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = AAY
         icon = GFX_goal_clear_boundaries
@@ -324,7 +324,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABC
         icon = GFX_goal_generic_election
@@ -346,7 +346,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABE
         icon = GFX_goal_naval_fleet2
@@ -368,7 +368,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABG
         icon = GFX_goal_generic_stable_government
@@ -390,7 +390,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABI
         icon = GFX_goal_dream_fleet
@@ -412,7 +412,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABK
         icon = GFX_goal_reform_socialist_army
@@ -434,7 +434,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABM
         icon = GFX_goal_invite_governors
@@ -457,7 +457,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABO
         icon = GFX_goal_faith_and_state
@@ -479,7 +479,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABQ
         icon = GFX_goal_great_riders
@@ -501,7 +501,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABS
         icon = GFX_goal_flames_of_rebellion
@@ -523,7 +523,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABU
         icon = GFX_goals_icathia
@@ -545,7 +545,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABW
         icon = GFX_goal_JAP_WAY
@@ -567,7 +567,7 @@ focus_tree = {
             always = yes
         }
     }
-    
+
     focus = {
         id = ABY
         icon = GFX_goal_smugglers

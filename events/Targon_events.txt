@@ -5,6 +5,7 @@ add_namespace = targon.lunari
 add_namespace = targon.solari
 add_namespace = targon.rakkor
 add_namespace = targon
+add_namespace = TAR_reformers
 ###########################
 # Targon Events Checklist #
 ###########################
@@ -22,37 +23,37 @@ country_event = {
     title = targon.1.t
     desc = targon.1.d
     picture = GFX_event_TAR_foundations
-    
+
     trigger ={
         # Origin Country
         tag = TAR
     }
-    
+
     is_triggered_only = yes
-    
+
     option = {
-        
-        name = targon.1.a 
+
+        name = targon.1.a
         # Effect for strengthening the political base
         add_political_power = 50
-        
+
         # Add trait to leader
         add_country_leader_trait = tar_purist
-        
+
     }
-    
+
     option = {
         name = targon.1.b
         # Effect for promoting stability
         add_stability = 0.05
     }
-    
+
     option = {
         name = targon.1.c
         # Effect for future conflict preparation
         army_experience = 25
     }
-    
+
     option = {
         name = targon.1.e
         # Effect for increasing military command capabilities
@@ -67,12 +68,12 @@ country_event = {
     desc = targon.3.desc
     picture = GFX_event_TAR_decision # Event illustration image
     is_triggered_only = yes
-    
+
     trigger ={
         # Origin Country
         tag = TAR
     }
-    
+
     option = {
         name = targon.3.a
         # Positive path with tolerance for the Lunari
@@ -86,7 +87,7 @@ country_event = {
             id = targon.9
         }
     }
-    
+
     option = {
         name = targon.3.b
         # Purist path condemning the Lunari as heretics
@@ -109,9 +110,9 @@ country_event = {
     title = targon.9.t
     desc = targon.9.d
     picture = GFX_event_TAR_leona_decision
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = targon.9.a
         custom_effect_tooltip = targon.9.a.tt
@@ -121,7 +122,7 @@ country_event = {
         add_stability = -0.05
         add_war_support = 0.10
     }
-    
+
     option = {
         name = targon.9.b
         custom_effect_tooltip = targon.9.b.tt
@@ -131,7 +132,7 @@ country_event = {
         add_stability = 0.05
         add_political_power = 20
     }
-    
+
     option = {
         name = targon.9.c
         custom_effect_tooltip = targon.9.c.tt
@@ -146,24 +147,24 @@ country_event = {
     id = targon.10
     title = "Eradicate the Heretics"
     desc = "Rahvun has initiated a campaign to purge of Lunari influence within Targon. Will Leona support this effort?"
-    
+
     is_triggered_only = yes
-    
+
     trigger ={
         # Origin Country
         tag = TAR
     }
-    
+
     option = {
         name = "Purge the Lunari"
-        custom_effect_tooltip = "we warned them..."  
+        custom_effect_tooltip = "we warned them..."
         #targon.10.a.tt
         add_ideas = TAR_zealous_crusader # Adds zealotry for purists
         set_country_flag = TAR_purge_success
         add_stability = -0.10
         add_war_support = 0.15
     }
-    
+
     option = {
         name = "Allow them to remain"
         custom_effect_tooltip = "The Lunari will be left to their own devices..."
@@ -182,12 +183,12 @@ country_event = {
     desc = "It's high time we choose a leader"
     picture = GFX_event_TAR_pick_leader
     is_triggered_only = yes
-    
+
     trigger ={
         # Origin Country
         tag = TAR
     }
-    
+
     # Leona Remain's - Default
     option = {
         name = TAR_LEONA_NAME
@@ -204,10 +205,10 @@ country_event = {
                 trait = TAR_purists
             }
         }
-        
+
         ai_chance = { factor = 50 }
     }
-    
+
     # Rahvun Leader Path
     option = {
         name = TAR_RAHVUN_NAME
@@ -215,7 +216,7 @@ country_event = {
             has_character = TAR_rahvun
         }
         custom_effect_tooltip = targon.20.b.tt
-        
+
         if = {
             limit = {
                 has_character = TAR_leona
@@ -239,12 +240,12 @@ country_event = {
         ai_chance = {
             base = 5
         }
-        
+
         hidden_effect = {
-            
+
         }
     }
-    
+
     option = {
         name = TAR_PANTHEON_NAME
         trigger = {
@@ -260,7 +261,7 @@ country_event = {
         }
         promote_character = TAR_pantheon
     }
-    
+
     option = {
         name = TAR_TARIC_NAME
         trigger = {
@@ -284,14 +285,14 @@ country_event = {
     id = targon.11
     title = "Preparation for Civil War"
     desc = "With tensions escalating between the Solari and Lunari factions, a civil war seems imminent. Choose which side to support."
-    
+
     is_triggered_only = yes
-    
+
     trigger ={
         # Origin Country
         tag = TAR
     }
-    
+
     option = {
         name = "Support the Purists"
         custom_effect_tooltip = targon.11.a.tt
@@ -299,7 +300,7 @@ country_event = {
         add_ideas = TAR_solari_supreme_commander
         add_stability = -0.05
     }
-    
+
     option = {
         name = "Support the Reformers"
         custom_effect_tooltip = targon.11.b.tt
@@ -314,9 +315,9 @@ country_event = {
     id = targon.12
     title = "Leona's Path of Reformation"
     desc = "Leona strives to reconcile the Solari and Lunari factions, but the balance is fragile."
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "Promise to Solari"
         custom_effect_tooltip = targon.12.a.tt
@@ -325,7 +326,7 @@ country_event = {
         add_political_power = 10
         set_country_flag = TAR_promised_solari
     }
-    
+
     option = {
         name = "Promise to Lunari"
         custom_effect_tooltip = targon.12.b.tt
@@ -334,7 +335,7 @@ country_event = {
         add_political_power = 10
         set_country_flag = TAR_promised_lunari
     }
-    
+
     option = {
         name = "Balance Both Sides"
         custom_effect_tooltip = targon.12.c.tt
@@ -348,9 +349,9 @@ country_event = {
     id = targon.13
     title = "Diana's Return"
     desc = "Diana returns to lead the Lunari rebellion. Will she choose a path of reform or rejection?"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "Lead the Lunari as a Reformer"
         custom_effect_tooltip = targon.13.a.tt
@@ -359,7 +360,7 @@ country_event = {
         add_stability = 0.05
         add_war_support = 0.05
     }
-    
+
     option = {
         name = "Reject the Solari entirely"
         custom_effect_tooltip = targon.13.b.tt
@@ -377,9 +378,9 @@ country_event = {
     title = "The Eclipse Begins"
     desc = "The Lunari heretics, led by the traitor Diana and her cult followers, have risen against the rightous Solari rulers. After years of deceitful hiding, they now strike with full force, aiming to destroy Targon and distinguish our sun!"
     picture = GFX_report_event_Lunari_Uprising
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "Extinguish the Lunari's rampage"
         add_war_support = 0.2
@@ -394,9 +395,9 @@ country_event = {
     title = targon.101.t
     desc = targon.101.d
     picture = GFX_report_event_Lunari_Uprising
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = targon.101.a
         add_war_support = 0.1
@@ -409,12 +410,12 @@ country_event = {
 
 # Leona's Speech Event
 country_event = {
-    id = TAR_leona_speech
+	id = targon.100
     title = TAR_leona_speech.t
     desc = TAR_leona_speech.desc
     picture = GFX_event_TAR_leona_speech # Image for Leona's speech event
     is_triggered_only = yes
-    
+
     option = {
         name = TAR_leona_speech.a
         # Support Leona's balanced approach
@@ -424,7 +425,7 @@ country_event = {
         add_political_power = 20
         set_country_flag = TAR_supported_balance
     }
-    
+
     option = {
         name = TAR_leona_speech.b
         # Push for Solari supremacy
@@ -434,7 +435,7 @@ country_event = {
         add_political_power = 15
         set_country_flag = TAR_supported_supremacy
     }
-    
+
     option = {
         name = TAR_leona_speech.c
         # Seek a peaceful path with the Lunari
@@ -444,38 +445,38 @@ country_event = {
         add_ideas = TAR_peaceful_path
         set_country_flag = TAR_supported_peace
     }
-    
+
     option = {
         name = TAR_leona_speech.d
         # Demand an aggressive expansion of Solari influence
         ai_chance = { factor = 25 }
         custom_effect_tooltip = TAR_leona_speech.d.tt
         add_political_power = 30
-        add_military_experience = 5
+		army_experience = 5
         set_country_flag = TAR_supported_aggression
     }
 }
 
 
-country_event = { 
+country_event = {
     id = TAR_reformers.1
     title = TAR_reformers.1.t
     desc = TAR_reformers.1.d
     picture = GFX_event_TAR_reformers
     is_triggered_only = yes
-    
+
     option = {
         name = TAR_reformers.1.a
         custom_effect_tooltip = TAR_reformers.1.a.tt
         add_ideas = TAR_reformers
     }
-    
+
     option = {
         name = TAR_reformers.1.b
         custom_effect_tooltip = TAR_reformers.1.b.tt
         add_ideas = TAR_challange
     }
-    
+
     option = {
         name = TAR_reformers.1.c
         custom_effect_tooltip = TAR_reformers.1.c.tt
@@ -512,34 +513,6 @@ option = {#Better be careful
 }
 }
 
-################################################################
-# CREDIT TO ENCLAVE OFFICERS MOD! <3
-################################################################
-# WE CAN MIMIC THIS EVENT FOR THE FUTURE
-# ENCLAVE OFFICER EVENT
-country_event = { #A Tale Of Officers
-id = enc_officers.7
-title = enc_officers.7.t
-desc = enc_officers.7.d
-picture = GFX_officers_reform_or_challange_event
-fire_only_once = yes
-is_triggered_only = yes
-option = { #No, I Want A Challange!
-custom_effect_tooltip = challange_eh_tt
-name = enc_officers.7.a
-}
-option = { #Please reform them...
-custom_effect_tooltip = what_in_the_god_damn_tt
-name = enc_officers.7.b
-every_army_leader = {
-    limit = {
-        has_trait = enc_purist
-    }
-    remove_unit_leader_trait = enc_purist
-    add_unit_leader_trait = enc_reformer
-}
-}
-} 
 ################################################################################################################################
 # OLD EVENTS -> NOT IN USE
 ################################################################################################################################
@@ -621,4 +594,3 @@ every_army_leader = {
 #         add_political_power = 50
 #     }
 # }
-

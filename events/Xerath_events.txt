@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Xerath's Faction Events
 ###########################
 
@@ -12,19 +12,19 @@ country_event = {
 	picture = GFX_report_event_empty_throne
 	is_triggered_only = yes
 	fire_only_once = no
-	
+
 	trigger ={
 		# Origin Country
 		tag = XER
 	}
-	
+
 	# Xerath
 	option = {
 		name = "Make Xerath Leader"
 		# custom_effect_tooltip = "Make Xerath Leader"
 		# retire = XER_renekton
 		# unlock_national_focus = XER_Xerath_Conquest #
-		complete_national_focus = XER_Xerath_Conquest        
+		complete_national_focus = XER_Xerath_Conquest
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.15
@@ -32,28 +32,24 @@ country_event = {
 		ai_chance = {
 			base = 5
 		}
-		
+
 		trigger = {
 			tag = XER
 		}
-		effects ={
-			
-		}
-		
 	}
-	
+
 	# Renekton Option
 	option = {
 		name = "Make Renekton Leader"
 		retire_country_leader = yes
-		set_politics = { ruling_party = fascism }	
-		unlock_national_focus = XER_Renekton_Conquest    
-		# complete_national_focus = XER_Renekton_Conquest        	
+		set_politics = { ruling_party = fascism }
+		unlock_national_focus = XER_Renekton_Conquest
+		# complete_national_focus = XER_Renekton_Conquest
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.25
 		}
-		
+
 		ai_chance = {
 			base = 5
 		}
@@ -61,17 +57,11 @@ country_event = {
 			has_character = XER_renekton
 		}
 		set_cosmetic_tag = XER_renekon
-		effect = {
-			
-			hidden_effect = {
-				# Add hidden effects here if necessary
-			}
-		}
 	}
 }
 # Event - Specific
 
-# Shuriman Great War 
+# Shuriman Great War
 country_event = {
 	id = xerath.1
 	title = "Final Struggle" # shurima.azir.1.t
@@ -80,10 +70,10 @@ country_event = {
 	trigger = { NOT = { has_country_flag = xer_at_war_with_shu } }
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		custom_effect_tooltip = "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!"
-		
+
 		hidden_effect = {
 			set_global_flag = SHU_XER_civil_war_trigger
 			every_country = {
@@ -97,13 +87,13 @@ country_event = {
 			}
 		}
 	}
-	
-	
+
+
 	option = { # Breaking point!
 	name = "Finally... We Strike!"
 	ai_chance = { factor = 100 }
-	
-	# Not Sure we need to show this! # for XER & SHU 
+
+	# Not Sure we need to show this! # for XER & SHU
 	# but I think its already solve, it misses them
 	news_event = { id = shuriman_rnews.5 days = 2 }
 	set_country_flag = xer_at_war_with_shu
@@ -119,72 +109,64 @@ country_event = {
 	trigger = { NOT = { has_country_flag = xer_throne_usurped } }
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		custom_effect_tooltip = "We will claim the throne of Shurima, breaking Azir's rule and forging a new era under Xerath!"
-		
+
 		hidden_effect = {
 			set_global_flag = xer_usurpation_initiated
 		}
 	}
-	
+
 	# Option 1: Direct Assault
-	option = { 
+	option = {
 		name = "Launch a Direct Assault on the Imperial Palace"
 		ai_chance = { factor = 50 }
-		
+
 		custom_effect_tooltip = "Our forces will launch a direct and overwhelming attack on Azir's palace."
-		
-		immediate = {
-			add_political_power = -50
-			set_country_flag = xer_direct_assault
-			add_stability = -0.05
-		}
+
+		add_political_power = -50
+		set_country_flag = xer_direct_assault
+		add_stability = -0.05
 		news_event = { id = shuriman_rnews.6 days = 2 }
 	}
-	
+
 	# Option 2: Sabotage and Deception
-	option = { 
+	option = {
 		name = "Undermine Azir's Support through Sabotage"
 		ai_chance = { factor = 25 }
-		
+
 		custom_effect_tooltip = "We'll weaken Azir's support base through targeted sabotage and deceit."
-		
-		immediate = {
-			add_political_power = -30
-			set_country_flag = xer_sabotage_campaign
-			add_stability = 0.05
-		}
+
+		add_political_power = -30
+		set_country_flag = xer_sabotage_campaign
+		add_stability = 0.05
 		news_event = { id = shuriman_rnews.7 days = 3 }
 	}
-	
+
 	# Option 3: Incite a Rebellion
-	option = { 
+	option = {
 		name = "Incite a Rebellion among Azir's Forces"
 		ai_chance = { factor = 15 }
-		
+
 		custom_effect_tooltip = "We'll rally discontented elements within Azir's army to turn against him."
-		
-		immediate = {
-			add_political_power = -40
-			set_country_flag = xer_rebellion_incited
-			add_stability = -0.1
-		}
+
+		add_political_power = -40
+		set_country_flag = xer_rebellion_incited
+		add_stability = -0.1
 		news_event = { id = shuriman_rnews.8 days = 4 }
 	}
-	
+
 	# Option 4: Assassinate Azir
-	option = { 
+	option = {
 		name = "Attempt to Assassinate Azir"
 		ai_chance = { factor = 10 }
-		
+
 		custom_effect_tooltip = "We'll make a daring move to assassinate Azir, leaving the throne open for our taking."
-		
-		immediate = {
-			add_political_power = -60
-			set_country_flag = xer_assassination_attempt
-			add_stability = -0.2
-		}
+
+		add_political_power = -60
+		set_country_flag = xer_assassination_attempt
+		add_stability = -0.2
 		news_event = { id = shuriman_rnews.9 days = 1 }
 	}
 }
@@ -194,5 +176,5 @@ country_event = {
 # S: Sure, add anything else you think fits here :ThumbsUp:
 
 # Q: Can I change fonts on events? or txt color?
-# Q: What does +/n+ Do? And What '' `` ¨¨¨ sign looks best ingame? 
+# Q: What does +/n+ Do? And What '' `` ¨¨¨ sign looks best ingame?
 # "We will Begin Our Final" +/n+"'Liberation' of Shurima "+/n+" ¨Liberation¨ of Shurima"

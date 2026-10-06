@@ -4,7 +4,7 @@ leader_traits = {
     ruthless_hunter = {
         random = no
         sprite = 13
-        army_experience_gain_factor = 0.1
+		experience_gain_army_factor = 0.1
         army_attack_factor = 0.05
         army_defence_factor = 0.05
     }
@@ -27,7 +27,7 @@ leader_traits = {
         random = no
         sprite = 13
         army_defence_factor = 0.05
-        weather_impact = -0.1
+		attrition = -0.1
     }
 
     hunter = {
@@ -106,13 +106,13 @@ leader_traits = {
     brute_force = {
         random = no
         sprite = 13
-        breakthrough = 0.1
+		breakthrough_factor = 0.1
     }
 
     fearsome = {
         random = no
         sprite = 13
-        enemy_army_attack_factor = -0.05
+		army_defence_factor = 0.05
         stability_factor = -0.1
     }
 
@@ -121,13 +121,13 @@ leader_traits = {
         random = no
         sprite = 13
         army_artillery_attack_factor = 0.1
-        soft_attack = 0.05
+		army_attack_factor = 0.05
     }
 
     explosive_growth = {
         random = no
         sprite = 13
-        soft_attack = 0.05
-        breakthrough = 0.05
+		army_attack_factor = 0.05
+		breakthrough_factor = 0.05
     }
 }

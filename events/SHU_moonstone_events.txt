@@ -1,0 +1,151 @@
+add_namespace = shurima_moonstone
+
+# Nami explains why the broken Marai-Targonian accord threatens her people.
+country_event = {
+	id = shurima_moonstone.1
+	title = shurima_moonstone.1.t
+	desc = shurima_moonstone.1.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+
+	option = {
+		name = shurima_moonstone.1.a
+		set_country_flag = SHU_aiding_moonstone_quest
+		add_stability = 0.02
+	}
+}
+
+# Shurima chooses whether to petition Diana or trace the Lunari ritual alone.
+country_event = {
+	id = shurima_moonstone.2
+	title = shurima_moonstone.2.t
+	desc = shurima_moonstone.2.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+
+	option = {
+		name = shurima_moonstone.2.a
+		trigger = {
+			country_exists = TAR
+			NOT = { has_war_with = TAR }
+			TAR = { has_character = TAR_diana }
+		}
+		ai_chance = { factor = 10 }
+		set_country_flag = SHU_awaiting_moonstone_answer
+		TAR = { country_event = { id = shurima_moonstone.3 days = 2 } }
+	}
+
+	option = {
+		name = shurima_moonstone.2.b
+		ai_chance = { factor = 1 }
+		set_country_flag = SHU_moonstone_search_available
+		add_ideas = SHU_moonstone_quest_unresolved
+		add_stability = -0.02
+	}
+}
+
+# Diana and Targon answer the Marai petition.
+country_event = {
+	id = shurima_moonstone.3
+	title = shurima_moonstone.3.t
+	desc = shurima_moonstone.3.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+	trigger = {
+		tag = TAR
+		has_character = TAR_diana
+	}
+
+	option = {
+		name = shurima_moonstone.3.a
+		ai_chance = {
+			base = 70
+			modifier = { factor = 2 has_country_flag = TAR_diana_reformer }
+			modifier = { factor = 0.25 has_country_flag = TAR_diana_rejector }
+			modifier = { factor = 0.25 has_country_flag = TAR_purity_path }
+		}
+		add_political_power = 25
+		add_opinion_modifier = { target = FROM modifier = SHU_moonstone_cooperation }
+		FROM = { country_event = { id = shurima_moonstone.4 days = 1 } }
+	}
+
+	option = {
+		name = shurima_moonstone.3.b
+		ai_chance = {
+			base = 30
+			modifier = { factor = 0.25 has_country_flag = TAR_diana_reformer }
+			modifier = { factor = 2 has_country_flag = TAR_diana_rejector }
+			modifier = { factor = 2 has_country_flag = TAR_purity_path }
+		}
+		add_war_support = 0.02
+		add_opinion_modifier = { target = FROM modifier = SHU_moonstone_refused }
+		FROM = { country_event = { id = shurima_moonstone.5 days = 1 } }
+	}
+}
+
+# The Lunari restore the sacred exchange and the Marai receive a Moonstone.
+country_event = {
+	id = shurima_moonstone.4
+	title = shurima_moonstone.4.t
+	desc = shurima_moonstone.4.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+	trigger = { tag = SHU }
+
+	option = {
+		name = shurima_moonstone.4.a
+		clr_country_flag = SHU_awaiting_moonstone_answer
+		clr_country_flag = SHU_moonstone_quest_failed
+		set_country_flag = SHU_has_moonstone
+		set_global_flag = moonstone_quest_success
+		remove_ideas = SHU_moonstone_quest_unresolved
+		add_ideas = SHU_moonstone_blessing
+		add_stability = 0.05
+		navy_experience = 20
+	}
+}
+
+# Targon refuses; Shurima may search for scattered Lunari knowledge instead.
+country_event = {
+	id = shurima_moonstone.5
+	title = shurima_moonstone.5.t
+	desc = shurima_moonstone.5.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+	trigger = { tag = SHU }
+
+	option = {
+		name = shurima_moonstone.5.a
+		clr_country_flag = SHU_awaiting_moonstone_answer
+		set_country_flag = SHU_moonstone_quest_failed
+		set_country_flag = SHU_moonstone_search_available
+		add_ideas = SHU_moonstone_quest_unresolved
+		add_stability = -0.03
+	}
+}
+
+# Nami and Lunari exiles reconstruct the rite without Targon's government.
+country_event = {
+	id = shurima_moonstone.6
+	title = shurima_moonstone.6.t
+	desc = shurima_moonstone.6.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+	trigger = {
+		tag = SHU
+		has_character = SHU_nami
+		has_country_flag = SHU_moonstone_search_underway
+	}
+
+	option = {
+		name = shurima_moonstone.6.a
+		clr_country_flag = SHU_moonstone_search_underway
+		clr_country_flag = SHU_moonstone_quest_failed
+		set_country_flag = SHU_has_moonstone
+		set_global_flag = moonstone_quest_success
+		remove_ideas = SHU_moonstone_quest_unresolved
+		add_ideas = SHU_moonstone_blessing
+		add_stability = 0.03
+		navy_experience = 10
+	}
+}

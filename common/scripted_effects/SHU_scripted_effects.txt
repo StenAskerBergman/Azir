@@ -1,4 +1,4 @@
-# SRC: SHU_scripted_effects.txt / INSPIRED BY MEXICO 
+# SRC: SHU_scripted_effects.txt / INSPIRED BY MEXICO
 
 # ---------------------
 # Mending Fragmentation
@@ -7,7 +7,7 @@
 	# Shurima Broken -> Fractured
 	# Shurima Fractured -> Scattered
 	# Shurima Scattered -> Apart
-	# Shurima Apart -> United 
+	# Shurima Apart -> United
 
 SHU_increase_unity = {
     if = {
@@ -95,13 +95,13 @@ SHU_remove_unity = {
 }
 
 # ------------------------------
-# Restoring The Shuriman Pride 
+# Restoring The Shuriman Pride
 # ------------------------------
 
-    # Shurima shame -> guilt 
-	# Shurima guilt -> hybris 
+    # Shurima shame -> guilt
+	# Shurima guilt -> hybris
 	# Shurima hybris -> struggle
-	# Shurima struggle -> pride 
+	# Shurima struggle -> pride
 
     SHU_increase_pride = {
         if = {
@@ -188,11 +188,11 @@ SHU_remove_unity = {
         }
     }
     # Shuriman Pride States
-        # Shuriman_shame 
-        # Shuriman_guilt 
+        # Shuriman_shame
+        # Shuriman_guilt
         # Shuriman_hybris
-        # Shuriman_struggle 
-        # Shuriman_pride 
+        # Shuriman_struggle
+        # Shuriman_pride
 
     # Special case:
         # Nazumah can Remove > Shuriman_shame
@@ -209,55 +209,46 @@ SHU_remove_unity = {
         if = {
             limit = { has_country_flag = nazumah_buff }
             remove_ideas = Shuriman_shame
-            remove_country_flag = nazumah_buff
+			clr_country_flag = nazumah_buff
         }
     }
-    
+
 # ------------------------------
 # Restoring Guild Bonus 2 Year
 # ------------------------------
-
-recurring_event = {
-    every_2_years = {
-        days = 10 # Debug testing
-        # days = 730  # 2 years in HoI4 time (365 days * 2)
-    }
-    country_event = { id = shurima.102 }  # This is your event ID
-}
-
 
 # ------------------------------
 # Restoring Shurima Bonuses
 # ------------------------------
 
-# ignorance unawareness inexperience poor 
+# ignorance unawareness inexperience poor
 # unenlightenment inability incapability
 # powerlessness disqualification failure
 # frailty impotence inadequacy inaptitude
-# feeble weak impotent paralyzed passive 
+# feeble weak impotent paralyzed passive
 # vulnerable lack shortcoming unfit
 
 # general common extensive universal global
 
-# rampant   uncontrolled  unrestrained    
+# rampant   uncontrolled  unrestrained
 # unchecked   unbridled   widespread
 
     # Widespread Illiteracy
     # Ineffective Bureaucracy
-    # 
+    #
     # Shuriman Illiteracy
     # Shuriman Incompetance
     # Shuriman Army Incompetance
     # Shuriman Industry Incompetance
-    
+
     # Shuriman Brilliance
     # Shuriman University
-    
+
     # Republican
     # University Programs
 
-    # Imperial 
-    # University Subjects 
+    # Imperial
+    # University Subjects
 
     # Federalists
     # University Collectives
@@ -266,25 +257,25 @@ recurring_event = {
 # Restoring Shurima Sovereignty
 # ------------------------------
 
-    # The Great Fall -> The Great Rise 
+    # The Great Fall -> The Great Rise
     # Colonial Victim -> Colonial Revenge
     # Colonial Victim -> Sneering Imperialist
     # Colonial Victim -> Fight the Powers
-    
-    # Colonial Interferance -> Foreign Interferance 
+
+    # Colonial Interferance -> Foreign Interferance
     # Foreign Interferance -> Enternalize Interferance
 
-    # Colonial Mine Control -> Foreign Mine Control 
-    # Foreign Mine Control -> Nationalize Resource Rights   
-    
+    # Colonial Mine Control -> Foreign Mine Control
+    # Foreign Mine Control -> Nationalize Resource Rights
+
     # Bitter Loosers -> Vicious Return -> Victorious Victors
 
 # ------------------------------
-# Question of Slavery 
+# Question of Slavery
 # ------------------------------
 
     # Republican Ending
-        # Lawless Slavery -> Partial Slavery -> Ending Slavery -> Era Of Freedom 
+        # Lawless Slavery -> Partial Slavery -> Ending Slavery -> Era Of Freedom
 
     # Imperial Ending
         # Lawless Slavery -> Legal Slavery -> Sun Service -> True Servitude
@@ -295,44 +286,44 @@ recurring_event = {
     # TODO: Think about this later, for now keep it easy
 
         # Lawless Slavery   ->    Broken Slavery  ( End )
-        # Lawless Slavery   ->    Lawfull Slavery 
+        # Lawless Slavery   ->    Lawfull Slavery
         # Lawfull Slavery   ->    Stable Slavery
 
-        # Stable Slavery    ->    Reduced Slavery 
-        # Stable Slavery    ->    Ban Slavery 
-        # Stable Slavery    ->    Illegal Slavery 
+        # Stable Slavery    ->    Reduced Slavery
+        # Stable Slavery    ->    Ban Slavery
+        # Stable Slavery    ->    Illegal Slavery
 
-        # Stable Slavery    ->    State Servitude   ->    Sun Service  
+        # Stable Slavery    ->    State Servitude   ->    Sun Service
         # Stable Slavery    ->    Gulag Service    ->    Sun Service
         # Stable Slavery    ->    State Servitude
 
 
-    # Lawless Slavery   ->    Legalized Slavery  
+    # Lawless Slavery   ->    Legalized Slavery
 
     # Bad Endings
     # Legalized Slavery -> State Servitude
 
 
 # ------------------------------
-# Laws of Slavery & Prisons  
+# Laws of Slavery & Prisons
 # ------------------------------
 
 # TODO: Complex Slave Law System
 
 # Default States
-    
+
     # Slave Law
         # Legal Slavery
-        # Illegal Slavery 
-        # Banned Slavery 
-    
+        # Illegal Slavery
+        # Banned Slavery
+
     # Slave Rights
         # Heavy Rights
         # Bare Rights
         # No Rights
-        
+
     # Slave Types
-        # Companion Slavery 
+        # Companion Slavery
         # Child Slavery
         # Full Slavery
         # Female Only
@@ -343,7 +334,7 @@ recurring_event = {
         # Total Slave State
 
 # ------------------------------
-# Laws of Slavery & Prisons 
+# Laws of Slavery & Prisons
 # ------------------------------
 
     # Prison Systems
@@ -351,14 +342,14 @@ recurring_event = {
         # Worker Camps
         # Train Camps
         # Mine Camps
-        
+
     # Slavery Systems
         # Private Slavery
         # State Slavery
         # Banned Slavery
-        
+
 # ------------------------------
-# Promote / Demote Society Value 
+# Promote / Demote Society Value
 # ------------------------------
 
     # Culture Values
@@ -368,31 +359,31 @@ recurring_event = {
         # Promote Idealism
         # Promote Diversity
         # Promote Dependancies
-        
+
         # Demote Individual Righs
         # Demote Civil Liberaties
         # Demote Press Rights / Freedoms
         # Demote Civil Expendature
-        
+
     # Civil Rights
-        
-        # Equity        
-        # Equality 
-        # 
+
+        # Equity
+        # Equality
+        #
         # Traditional Roles
         # Minority Vote
-        
-        
-        
-    # Civil Finacial 
-    
+
+
+
+    # Civil Finacial
+
         # Promote Big Buiness
         # Promote Small Buisness
         # Promote Subsidies
         # Promote Harmoney
-        # Promote 
+        # Promote
         # Farmers Rights
 
 # ------------------------------
-# Question of Acendancy 
+# Question of Acendancy
 # ------------------------------

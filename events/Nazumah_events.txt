@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Nazumah Events
 ###########################
 
@@ -13,12 +13,12 @@ add_namespace = nazumah
 # Other - Random
 
 # The Hunt Begins Event
-event = {
+country_event = {
     id = nazumah.100
-    id = NAZ_the_hunt_begins
     title = "The Hunt Begins"
-    description = "We have set our sights on the great demi-gods of Shurima. The hunt begins now."
+    desc = "We have set our sights on the great Ascended of Shurima. The hunt begins now."
     picture = GFX_report_event_generic_battle
+	fire_only_once = yes
 
     trigger = {
         has_country_flag = resisted_the_void
@@ -32,26 +32,18 @@ event = {
         name = "Begin the Hunt"
         add_political_power = 50
         add_stability = 0.05
-        create_country_leader = {
-            name = "Hunter Leader"
-            picture = "GFX_leader_generic"
-            expire = "1965.1.1"
-            ideology = neutrality
-            traits = {
-                hunter
-                tough
-            }
-        }
+		army_experience = 15
+		add_manpower = 2500
     }
 }
 
 # Showdown with Azir Event
-event = {
+country_event = {
     id = nazumah.101
-    id = NAZ_showdown_with_azir
     title = "Showdown with Azir"
-    description = "The time has come to face Azir, the God-Emperor of Shurima."
+    desc = "The time has come to face Azir, the God-Emperor of Shurima."
     picture = GFX_report_event_generic_battle
+	fire_only_once = yes
 
     trigger = {
         has_country_flag = resisted_the_void
@@ -66,23 +58,23 @@ event = {
         name = "Engage Azir"
         add_war_support = 0.10
         country_event = {
-            id = NAZ_victory_over_azir
+            id = nazumah.102
             days = 7
         }
     }
 }
 
 # Victory over Azir Event
-event = {
+country_event = {
     id = nazumah.102
-    id = NAZ_victory_over_azir
     title = "Victory Over Azir"
-    description = "Our forces have triumphed over Azir. The God-Emperor is no more!"
+    desc = "Our forces have triumphed over Azir's armies. Nazumah remains unbowed."
     picture = GFX_report_event_generic_battle
+	fire_only_once = yes
 
     trigger = {
         has_country_flag = resisted_the_void
-        is_in_war = no
+		has_war = no
     }
 
     mean_time_to_happen = {
@@ -100,11 +92,12 @@ event = {
 # New Events for Big Game Focus
 
 # Event for hunting Azir
-event = {
+country_event = {
     id = nazumah.200
     title = "The Hunt for Azir"
     desc = "The Tribunal Council has decided to hunt down the Ascended Emperor Azir."
     picture = GFX_report_event_default
+	fire_only_once = yes
 
     trigger = {
         has_country_flag = nazumah_hunting_azir
@@ -123,16 +116,17 @@ event = {
             type = infantry_equipment
             amount = 2000
         }
-        trigger_event = nazumah.201
+		country_event = { id = nazumah.201 }
     }
 }
 
 # Event for hunting Nasus
-event = {
+country_event = {
     id = nazumah.201
     title = "The Hunt for Nasus"
     desc = "The Tribunal Council has decided to hunt down the Ascended Guardian Nasus."
     picture = GFX_report_event_default
+	fire_only_once = yes
 
     trigger = {
         has_country_flag = nazumah_hunting_nasus
@@ -151,16 +145,17 @@ event = {
             type = infantry_equipment
             amount = 2000
         }
-        trigger_event = nazumah.202
+		country_event = { id = nazumah.202 }
     }
 }
 
 # Event for hunting Renekton
-event = {
+country_event = {
     id = nazumah.202
     title = "The Hunt for Renekton"
     desc = "The Tribunal Council has decided to hunt down the Ascended Butcher Renekton."
     picture = GFX_report_event_default
+	fire_only_once = yes
 
     trigger = {
         has_country_flag = nazumah_hunting_renekton
@@ -184,14 +179,15 @@ event = {
 }
 
 # Non-Aggression Pact Event
-event = {
+country_event = {
     id = nazumah.303
     title = "Request for Non-Aggression Pact"
     desc = "Nazumah seeks a non-aggression pact with Xerath to ensure peace and cooperation in the region. This pact could pave the way for a more collaborative future."
     picture = GFX_event_generic_pact
+	fire_only_once = yes
 
     trigger = {
-        has_focus = NAZ_Foe_of_Shurima
+		has_completed_focus = NAZ_Foe_of_Shurima
         XER = {
             is_subject_of = NAZ
         }
@@ -209,13 +205,13 @@ event = {
         ai_chance = {
             factor = 90
         }
-        trigger_event = {
+		country_event = {
             id = nazumah.304
         }
     }
 }
 
-event = {
+country_event = {
     id = nazumah.304
     title = "Non-Aggression Pact Proposal"
     desc = "Nazumah has proposed a non-aggression pact. Accepting this pact could lead to a future alliance."

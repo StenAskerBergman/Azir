@@ -10,7 +10,7 @@
 
 This document consolidates all major HOI4-related material from past work, including focus trees, lore logic, design rules, GFX setup, and faction-specific mechanics. The mod represents a substantial conversion of League of Legends' Runeterra universe into Hearts of Iron IV, with particular focus on the Shuriman region and its complex political dynamics.
 
-**Note:** This document serves as the primary reference for all HOI4 modding work. For official HOI4 scripting documentation, refer to the `documentation` folder in the Hearts of Iron IV installation directory.
+**Note:** This document provides historical design and progress context. Read [Planner.md](Planner.md) for the author's Trello board, current constraints and repair checkpoint; verify implementation and completion claims against current code and runtime evidence. For official HOI4 scripting documentation, refer to the `documentation` folder in the Hearts of Iron IV installation directory.
 
 ---
 
@@ -835,7 +835,7 @@ This mod represents a substantial conversion of League of Legends' Runeterra uni
 
 **Next Phase:** Focus on completing Xerath tree, implementing event chains, creating Renekton content, and adding general unscripted events (Nazumah "Happenings") to realize the full vision of Shurima's complex political landscape.
 
-**Document Status:** This document serves as the primary reference for all HOI4 modding work. It consolidates all major material and should be updated as new content is implemented.
+**Document Status:** Historical design and progress reference. Follow [Planner.md](Planner.md) for current planning constraints and verify completion against current code and runtime evidence.
 
 ---
 

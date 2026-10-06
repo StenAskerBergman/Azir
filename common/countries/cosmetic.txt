@@ -5,5 +5,6 @@ XER_renekon = {
 }
 TAR_solari ={
     # rgb(247,216,90)
-    color = rgb { 247 216 90 } 
+	color = rgb { 247 216 90 }
+	color_ui = rgb { 247 216 90 }
 }

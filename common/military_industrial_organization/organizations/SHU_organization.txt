@@ -1,23 +1,23 @@
 #####################
 
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
+###  ##  #  # # #  ##
+ #  #  # ## # # # #
+ #  #### # ## ##   #
+ #  #  # #  # # #   #
+ #  #  # #  # # # ##
 
- #################### 
+ ####################
 
 
 
 #####################
 
- ## #  # ### ###   ## 
-#   #  #  #  #  # #   
- #  ####  #  ###   #  
-  # #  #  #  #      # 
-##  #  # ### #    ##  
- 
+ ## #  # ### ###   ##
+#   #  #  #  #  # #
+ #  ####  #  ###   #
+  # #  #  #  #      #
+##  #  # ### #    ##
+
 #####################
 
 aurma_shipyard = {
@@ -25,18 +25,17 @@ aurma_shipyard = {
 	icon = GFX_idea_generic_naval_manufacturer_3
 
 	allowed = {
-        AND = { 
+        AND = {
             controls_state = 110  # controlled_province = 5071s
 		    OR = {
 			    is_literally_shurima = yes
-                is_country_freljord = yes
 				tag = AUR
                 tag = IXT
 				tag = NOX
-				tag = PIL
+				tag = PLT
             }
 	    	has_dlc = "Waking the Tiger"
-        } 
+        }
 	}
 	available = {
 		owner = { controls_state = 110 }
@@ -54,7 +53,7 @@ marai_shipyard = {
                 tag = IXT
             }
 	    	has_dlc = "Waking the Tiger"
-        
+
 	}
 	available = {
 		owner = { controls_state = 120 } # controlled_province = 4444
@@ -67,7 +66,7 @@ marai_dockyards = {
 	icon = GFX_idea_generic_naval_manufacturer_3
 
 	allowed = {
-        AND = { 
+        AND = {
             controls_state = 120  # controlled_province = 4444
 		    OR = {
 			    is_literally_shurima = yes
@@ -75,7 +74,7 @@ marai_dockyards = {
                 tag = IXT
             }
 	    	has_dlc = "Waking the Tiger"
-        } 
+        }
 	}
 	available = {
 		owner = { controls_state = 120 }
@@ -84,23 +83,23 @@ marai_dockyards = {
 
 ###########################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
+###  #    ##  #  # ###  ##
+#  # #   #  # ## # #   #
+###  #   #### # ## ##   #
+#    #   #  # #  # #     #
+#    ### #  # #  # ### ##
 
 ###########################
 
 
 
-################################### 
+###################################
 
-#   #  ##  ### ### ###  ### ### #   
-## ## #  #  #  #   #  #  #  #   #   
-# # # ####  #  ##  ###   #  ##  #   
-#   # #  #  #  #   #  #  #  #   #   
-#   # #  #  #  ### #  # ### ### ### 
+#   #  ##  ### ### ###  ### ### #
+## ## #  #  #  #   #  #  #  #   #
+# # # ####  #  ##  ###   #  ##  #
+#   # #  #  #  #   #  #  #  #   #
+#   # #  #  #  ### #  # ### ### ###
 
 
 ###################################

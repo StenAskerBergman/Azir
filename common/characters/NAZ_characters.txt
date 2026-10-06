@@ -1,7 +1,7 @@
 characters = {
 
     # Ksante / K'sante - Status: 30%
-    
+
     NAZ_ksante = {
         name = "K'sante"
         gender = male
@@ -13,7 +13,7 @@ characters = {
             army={
     			large = GFX_portrait_naz_ksante_large
 		    }
-        }	
+        }
         country_leader = {
             desc = "POLITICS_KSANTE_DESC"
             ideology = hunters
@@ -26,7 +26,7 @@ characters = {
             can_be_fired = yes
             ledger = civilian
             cost = 150
-            allowed = { original_tag = SHU }
+            allowed = { original_tag = NAZ }
             traits = { silent_workhorse great_hunter }
         }
     }
@@ -41,7 +41,7 @@ characters = {
                 small = "GFX_portrait_naz_tribal_elder_council_small"
 
             }
-        }   
+        }
         country_leader = {
             desc = "POLITICS_TRIBAL_ELDER_COUNCIL_DESC"
             ideology = elders
@@ -65,7 +65,7 @@ characters = {
             can_be_fired = yes
             ledger = civilian
             cost = 150
-            allowed = { original_tag = SHU }
+            allowed = { original_tag = NAZ }
             traits = { strategic_mind }
         }
     }

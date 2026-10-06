@@ -10,7 +10,7 @@ TAR_balance_of_power_category = { # BOPs
     # Decisions to influence the balance of power between Solari and Lunari
 
     ### SOLARI SINGLE USE INFLUENCE DECISION
-    TAR_influence_solari = {
+    TAR_bop_influence_solari = {
         icon = generic_decision
         visible = {
             has_power_balance = {
@@ -66,7 +66,7 @@ TAR_balance_of_power_category = { # BOPs
     }
 
     ### LUNARI SINGLE USE INFLUENCE DECISION
-    TAR_influence_lunari = {
+    TAR_bop_influence_lunari = {
         icon = generic_decision
         visible = {
             has_power_balance = {
@@ -260,35 +260,14 @@ TAR_main_cat = { # Normal decisions
             # has_idea = TAR_rakkor_tenacity
         }
         allowed = {
-            original_tag = tar
+			original_tag = TAR
         }
         cost = 50 # Cost in political power
-        days_active = 150
-        days_remove = 150
 		days_re_enable = 30
 
-        modifier = {
-            military_factory_output = 0.15
-            consumer_goods_factory_factor = -0.10
-
-            if = {
-                limit = {
-                    has_war = yes
-                }
-                every_other_country={
-                    limit = {
-                        has_war_with = ROOT
-                    }
-
-                    add_ideas = {}
-                }
-                targeted_modifier = {
-                    tag = ENG
-                    attack_bonus_against = 0.1
-                    defense_bonus_against = -0.15
-                }
-            }
-        }
+		complete_effect = {
+			add_timed_idea = { idea = TAR_rakkor_tenacity days = 150 }
+		}
     }
 
 
@@ -299,17 +278,14 @@ TAR_main_cat = { # Normal decisions
             # has_idea = TAR_celestial_pilgrimage
         }
         allowed = {
-            original_tag = tar
+			original_tag = TAR
         }
         cost = 30 # Cost in political power
-        days_active = 60
-        days_remove = 60
 		days_re_enable = 30
 
-        modifier = {
-            stability_factor = -0.02
-            consumer_goods = -0.10
-        }
+		complete_effect = {
+			add_timed_idea = { idea = TAR_celestial_pilgrimage days = 60 }
+		}
 
     }
 
@@ -320,10 +296,7 @@ TAR_main_cat = { # Normal decisions
 
 		icon = generic_decision
         allowed = {
-            original_tag = tar
-        }
-		allowed = {
-			has_government = theocracy  # Example: Solari aligned with fascism
+			original_tag = TAR
 		}
 
 		visible = {
@@ -344,28 +317,23 @@ TAR_main_cat = { # Normal decisions
 		cost = 50
 
 		complete_effect = {
-			balance_of_power_swing = {
+			add_power_balance_value = {
 				id = TAR_balance_of_power
-				swing = -0.05  # Swings power 5% toward Solari
+				value = -0.05
 			}
 		}
+	}
+
     TAR_summit_harvest = {
         allowed = {
-            always = no
+			original_tag = TAR
         }
-        removal_cost = -1
-
-        modifier = {
-            local_resources_factor = 0.15
-            monthly_population = -0.02
-            attrition = 0.05
-        }
-
-        allowed_to_remove = {
-            has_war_support > 0.4
-        }
-        cancel_if_invalid = no
-    }
+		available = { has_war_support > 0.4 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_timed_idea = { idea = TAR_summit_harvest_idea days = 120 }
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -377,9 +345,7 @@ TAR_main_cat = { # Normal decisions
 
 		icon = generic_decision
 
-		allowed = {
-			has_government = oligarchy  # Example: Lunari aligned with democracy
-		}
+		allowed = { original_tag = TAR }
 
 		visible = {
 			always = yes
@@ -399,9 +365,9 @@ TAR_main_cat = { # Normal decisions
 		cost = 50
 
 		complete_effect = {
-			balance_of_power_swing = {
+			add_power_balance_value = {
 				id = TAR_balance_of_power
-				swing = 0.05  # Swings power 5% toward Lunari
+				value = 0.05
 			}
 		}
 

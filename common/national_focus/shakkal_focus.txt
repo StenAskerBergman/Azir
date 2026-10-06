@@ -5,7 +5,7 @@ focus_tree = {
         factor = 0
         modifier = {
             add = 10
-            tag = SHK 
+            tag = SHK
         }
     }
 
@@ -14,7 +14,7 @@ focus_tree = {
     # New Leadership
     focus = {
         id = SHK_new_leadership
-        icon = GFX_focus_generic_political_pressure
+		icon = GFX_goal_generic_political_pressure
         x = 4
         y = 0
         cost = 10
@@ -26,178 +26,168 @@ focus_tree = {
     focus = {
         id = SHK_the_sadists
         relative_position_id = SHK_new_leadership
-        icon = GFX_focus_generic_tanks
+		icon = GFX_goal_generic_army_tanks
         x = -3
         y = 1
         cost = 10
         prerequisite = { focus = SHK_new_leadership }
         completion_reward = {
-            division_attack_on_core_factor = 0.10
-            add_stability = -0.05
+            add_ideas = SHK_the_sadists
         }
     }
-    # TODO: I don't like the name, not cannon 
-    # Tinkers, Looters, Prospectors, Salvagers 
+    # TODO: I don't like the name, not cannon
+    # Tinkers, Looters, Prospectors, Salvagers
     focus = {
         id = SHK_the_eggheads
         relative_position_id = SHK_new_leadership
-        icon = GFX_focus_generic_science
+		icon = GFX_goal_generic_scientific_exchange
         x = -1
         y = 1
         cost = 10
         prerequisite = { focus = SHK_new_leadership }
         completion_reward = {
-            research_speed = 0.10
-            planning_speed = 0.05
+            add_ideas = SHK_the_eggheads
         }
     }
 
     focus = {
         id = SHK_the_grunts
         relative_position_id = SHK_new_leadership
-        icon = GFX_focus_generic_army_training
+		icon = GFX_goal_generic_army_doctrines
         x = 1
         y = 1
         cost = 10
         prerequisite = { focus = SHK_new_leadership }
         completion_reward = {
-            division_defense_factor = 0.10
-            training_time_factor = -0.05
+            add_ideas = SHK_the_grunts
         }
     }
 
     focus = {
         id = SHK_the_boss
         relative_position_id = SHK_new_leadership
-        icon = GFX_focus_generic_political_pressure
+		icon = GFX_goal_generic_political_pressure
         x = 3
         y = 1
         cost = 10
         prerequisite = { focus = SHK_new_leadership }
         completion_reward = {
-            add_stability = 0.15
-            add_war_support = 0.10
+            add_ideas = SHK_the_boss
         }
     }
 
     focus = {
         id = SHK_preparing_for_total_war
         relative_position_id = SHK_the_sadists
-        icon = GFX_focus_generic_war_propaganda
+		icon = GFX_goal_generic_propaganda
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_the_sadists }
         completion_reward = {
-            add_war_support = 0.10
-            add_recruitable_population_factor = 0.05
+            add_ideas = SHK_preparing_for_total_war
+            add_war_support = 0.05
         }
     }
 
     focus = {
         id = SHK_draconian_recovery
         relative_position_id = SHK_preparing_for_total_war
-        icon = GFX_focus_generic_production
+		icon = GFX_goal_generic_production
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_preparing_for_total_war }
         completion_reward = {
-            factory_output_factor = 0.20
-            add_stability = -0.10
+            add_ideas = SHK_draconian_recovery
+            add_stability = -0.05
         }
     }
 
     focus = {
         id = SHK_critical_thinking
         relative_position_id = SHK_the_eggheads
-        icon = GFX_focus_generic_science
+		icon = GFX_goal_generic_scientific_exchange
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_the_eggheads }
         completion_reward = {
-            research_speed_factor = 0.10
-            planning_speed_factor = 0.05
+            add_ideas = SHK_critical_thinking
         }
     }
 
     focus = {
         id = SHK_the_master_plan
         relative_position_id = SHK_critical_thinking
-        icon = GFX_focus_generic_strategy
+		icon = GFX_goal_generic_position_armies
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_critical_thinking }
         completion_reward = {
-            planning_speed_factor = 0.10
-            organization_factor = 0.10
+            add_ideas = SHK_the_master_plan
         }
     }
 
     focus = {
         id = SHK_gangland_diplomacy
         relative_position_id = SHK_the_grunts
-        icon = GFX_focus_generic_diplomacy
+		icon = GFX_goal_generic_improve_relations
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_the_grunts }
         completion_reward = {
-            infantry_equipment_production_factor = 0.10
-            political_power_gain = 0.05
+            add_ideas = SHK_gangland_diplomacy
         }
     }
 
     focus = {
         id = SHK_everyone_works
         relative_position_id = SHK_gangland_diplomacy
-        icon = GFX_focus_generic_allies_build
+		icon = GFX_goal_generic_major_alliance
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_gangland_diplomacy }
         completion_reward = {
-            production_efficiency_factor = 0.10
-            add_recruitable_population_factor = 0.05
+            add_ideas = SHK_everyone_works
         }
     }
 
     focus = {
         id = SHK_dont_question_the_boss
         relative_position_id = SHK_the_boss
-        icon = GFX_focus_generic_political_pressure
+		icon = GFX_goal_generic_political_pressure
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_the_boss }
         completion_reward = {
-            add_stability = 0.20
-            political_power_gain = 0.10
+            add_ideas = SHK_dont_question_the_boss
         }
     }
 
     focus = {
         id = SHK_iron_grip
         relative_position_id = SHK_dont_question_the_boss
-        icon = GFX_focus_generic_authoritarian
+		icon = GFX_goal_generic_demand_territory
         x = 0
         y = 1
         cost = 10
         prerequisite = { focus = SHK_dont_question_the_boss }
         completion_reward = {
-            add_war_support = 0.10
-            add_stability = 0.10
+            add_ideas = SHK_iron_grip
         }
     }
-    
 
 
 
 
 
-    
+
+
 
 
 
@@ -230,7 +220,7 @@ focus_tree = {
     # prerequisite = { focus = SHK_ }
     focus = {
         id = SHK_reject_our_ways
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 6
         y = 0
 		offset = { # Mostly so I can view this tree in the extension
@@ -243,264 +233,299 @@ focus_tree = {
         relative_position_id = RAI_rise_of_the_shuriman_raiders
         mutually_exclusive = {focus = SHK_reject_their_rules }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_political_power = 75
+            add_stability = 0.05
         }
     }
 
     focus = {
         id = SHK_reject_their_rules
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 2
         y = 0
         relative_position_id = SHK_reject_our_ways
         mutually_exclusive = {focus = SHK_reject_our_ways }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_political_power = 50
+            add_war_support = 0.05
+            army_experience = 5
         }
     }
 
     focus = {
         id = SHK_constant_resistance
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_reject_their_rules
         prerequisite = { focus = SHK_reject_their_rules }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            army_experience = 15
+            add_war_support = 0.05
+            add_stability = -0.03
         }
     }
 
     focus = {
         id = SHK_icathian_ties
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
-        y = 1
-        relative_position_id = SHK_icathian_heritage
+        y = 5
+        relative_position_id = SHK_constant_resistance
         prerequisite = { focus = SHK_icathian_heritage }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            set_country_flag = SHK_icathian_ties
+            add_political_power = 50
+            add_stability = 0.03
         }
     }
 
     focus = {
         id = SHK_ancestral_lineage
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
-        y = 1
-        relative_position_id = SHK_return_to_traditions
+        y = 6
+        relative_position_id = SHK_reject_our_ways
         prerequisite = { focus = SHK_return_to_traditions }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_political_power = 50
+            add_stability = 0.08
         }
     }
 
     focus = {
         id = SHK_foreign_trade
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 2
         relative_position_id = SHK_constant_resistance
         prerequisite = { focus = SHK_constant_resistance }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
         }
     }
 
     focus = {
         id = SHK_icathian_heritage
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 2
         relative_position_id = SHK_foreign_trade
         prerequisite = { focus = SHK_foreign_trade }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_research_slot = 1
+            add_stability = 0.05
         }
     }
 
     focus = {
         id = SHK_embrace_new_ways
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
         y = 1
         relative_position_id = SHK_reject_our_ways
         prerequisite = { focus = SHK_reject_our_ways }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_tech_bonus = { bonus = 0.50 uses = 1 category = industry }
+            add_political_power = 50
         }
     }
 
     focus = {
         id = SHK_settle_down
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 2
         relative_position_id = SHK_embrace_new_ways
         prerequisite = { focus = SHK_embrace_new_ways }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_stability = 0.05
         }
     }
 
     focus = {
         id = SHK_return_to_traditions
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 2
         relative_position_id = SHK_settle_down
         prerequisite = { focus = SHK_settle_down }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_political_power = 75
+            add_stability = 0.05
         }
     }
 
     focus = {
         id = SHK_our_lands
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_reject_our_ways
         prerequisite = { focus = SHK_reject_our_ways focus = SHK_reject_their_rules }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            set_country_flag = SHK_reclaimed_our_lands
+            add_manpower = 3000
+            add_war_support = 0.05
         }
     }
 
     focus = {
         id = SHK_our_coast
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 1
         relative_position_id = SHK_our_lands
         prerequisite = { focus = SHK_our_lands }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            navy_experience = 10
+            add_political_power = 50
         }
     }
 
     focus = {
         id = SHK_our_sea
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 1
         relative_position_id = SHK_our_coast
         prerequisite = { focus = SHK_our_coast }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            navy_experience = 20
+            add_war_support = 0.05
         }
     }
 
     focus = {
         id = SHK_our_share
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 1
         relative_position_id = SHK_our_sea
         prerequisite = { focus = SHK_our_sea }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_political_power = 100
+            add_stability = 0.03
         }
     }
 
     focus = {
         id = SHK_our_ancestors
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 0
         y = 1
         relative_position_id = SHK_our_share
         prerequisite = { focus = SHK_our_share }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_stability = 0.10
+            add_political_power = 50
         }
     }
 
     focus = {
         id = SHK_kill_burn_destroy
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_our_ancestors
         prerequisite = { focus = SHK_reject_their_rules  focus = SHK_our_ancestors   }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            army_experience = 20
+            add_war_support = 0.10
+            add_stability = -0.05
         }
     }
 
     focus = {
         id = SHK_protect_shield_guard
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
         y = 1
         relative_position_id = SHK_our_ancestors
         prerequisite = { focus = SHK_reject_our_ways  focus = SHK_our_ancestors   }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            army_experience = 15
+            add_stability = 0.08
+            add_war_support = 0.03
         }
     }
 
     focus = {
         id = SHK_rebuild
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
         y = 1
         relative_position_id = SHK_protect_shield_guard
-        prerequisite = { 
-            focus = SHK_protect_shield_guard 
+        prerequisite = {
+            focus = SHK_protect_shield_guard
             focus = SHK_ancestral_lineage
-            # focus = SHK_kill_burn_destroy 
+            # focus = SHK_kill_burn_destroy
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
         }
     }
 
     focus = {
         id = SHK_resemble
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_protect_shield_guard
-        prerequisite = { 
-            focus = SHK_protect_shield_guard 
-            focus = SHK_kill_burn_destroy 
+        prerequisite = {
+            focus = SHK_protect_shield_guard
+            focus = SHK_kill_burn_destroy
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_tech_bonus = { bonus = 0.50 uses = 1 category = industry }
+            add_political_power = 50
         }
     }
 
     focus = {
         id = SHK_recreate
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 3
         y = 1
         relative_position_id = SHK_protect_shield_guard
-        prerequisite = { 
-            # focus = SHK_protect_shield_guard 
+        prerequisite = {
+            # focus = SHK_protect_shield_guard
             focus = SHK_icathian_ties
-            focus = SHK_kill_burn_destroy 
+            focus = SHK_kill_burn_destroy
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_research_slot = 1
+            add_stability = 0.05
         }
     }
 
     focus = {
         id = SHK_shakkal_republic
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -3
         y = 1
         relative_position_id = SHK_recreate
-        prerequisite = { 
-            focus = SHK_rebuild 
-            focus = SHK_resemble 
+        prerequisite = {
+            focus = SHK_rebuild
+            focus = SHK_resemble
         }
-        prerequisite = {  
-            focus = SHK_protect_shield_guard 
+        prerequisite = {
+            focus = SHK_protect_shield_guard
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            set_country_flag = SHK_republic_proclaimed
+            add_political_power = 150
+            add_stability = 0.10
         }
         mutually_exclusive = {
             focus = SHK_greater_shakkal
@@ -511,14 +536,16 @@ focus_tree = {
 
     focus = {
         id = SHK_greater_shakkal
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
         y = 1
         relative_position_id = SHK_rebuild
         prerequisite = { focus = SHK_rebuild }
         prerequisite = { focus = SHK_ancestral_lineage}
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            set_country_flag = SHK_greater_shakkal
+            add_manpower = 5000
+            add_war_support = 0.10
         }
         mutually_exclusive = {
             focus = SHK_shakkal_republic
@@ -529,14 +556,16 @@ focus_tree = {
 
     focus = {
         id = SHK_icathia_alliance
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_recreate
         prerequisite = { focus = SHK_recreate }
         prerequisite = { focus = SHK_icathian_ties }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            set_country_flag = SHK_icathian_alliance
+            add_political_power = 75
+            add_stability = 0.05
         }
         mutually_exclusive = {
             focus = SHK_shakkal_republic
@@ -546,20 +575,22 @@ focus_tree = {
     }
 
     focus = {
-        id = SHK_icathia_reborn 
-        icon = GFX_focus_generic_expansion
+        id = SHK_icathia_reborn
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
         y = 1
         relative_position_id = SHK_recreate
-        prerequisite = { 
-            focus = SHK_recreate 
-            focus = SHK_resemble 
+        prerequisite = {
+            focus = SHK_recreate
+            focus = SHK_resemble
         }
-        prerequisite = {  
-            focus = SHK_kill_burn_destroy 
+        prerequisite = {
+            focus = SHK_kill_burn_destroy
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            set_country_flag = SHK_icathia_reborn
+            add_research_slot = 1
+            add_political_power = 100
         }
         mutually_exclusive = {
             focus = SHK_shakkal_republic
@@ -567,149 +598,156 @@ focus_tree = {
             focus = SHK_icathia_alliance
         }
     }
-    
+
     # final focus
 
     focus = {
         id = SHK_desert_dream
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_icathia_reborn
-        prerequisite = { 
-            focus = SHK_icathia_reborn 
+        prerequisite = {
+            focus = SHK_icathia_reborn
             focus = SHK_icathia_alliance
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_stability = 0.05
         }
     }
 
     focus = {
         id = SHK_sand_storm
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -1
         y = 1
         relative_position_id = SHK_shakkal_republic
-        prerequisite = { 
-            focus = SHK_icathia_reborn 
+        prerequisite = {
+            focus = SHK_icathia_reborn
             focus = SHK_greater_shakkal
             focus = SHK_shakkal_republic
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            army_experience = 20
+            add_war_support = 0.08
         }
     }
 
     focus = {
         id = SHK_greater_ambitious
-        icon = GFX_focus_generic_expansion
-        x = -2
-        y = 0
-        relative_position_id = SHK_greater_dreams
-        prerequisite = { 
-            focus = SHK_sand_storm 
+		icon = GFX_goal_generic_more_territorial_claims
+        x = 1
+        y = 1
+        relative_position_id = SHK_sand_storm
+        prerequisite = {
+            focus = SHK_sand_storm
         }
         mutually_exclusive = {
             focus = SHK_greater_dreams
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_political_power = 100
+            add_war_support = 0.08
         }
     }
 
     focus = {
         id = SHK_greater_dreams
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 3
         y = 1
         relative_position_id = SHK_sand_storm
-        prerequisite = { 
-            focus = SHK_desert_dream 
+        prerequisite = {
+            focus = SHK_desert_dream
             focus = SHK_sand_storm
         }
         mutually_exclusive = {
             focus = SHK_greater_ambitious
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_research_slot = 1
+            add_political_power = 75
         }
     }
 
     focus = {
         id = SHK_the_bell_tolls
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         relative_position_id = SHK_shakkal_republic
-        available = { 
+        available = {
             SHK = { has_idea = True_Enemy }
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_war_support = 0.10
+            army_experience = 10
         }
     }
 
     focus = {
         id = SHK_graveyard_of_empires
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 3
         relative_position_id = SHK_shakkal_republic
-        prerequisite = { 
-            focus = SHK_greater_dreams 
+        prerequisite = {
+            focus = SHK_greater_dreams
             focus = SHK_greater_ambitious
         }
-        prerequisite = { 
-            focus = SHK_the_bell_tolls 
+        prerequisite = {
+            focus = SHK_the_bell_tolls
         }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            army_experience = 25
+            add_manpower = 5000
+            add_war_support = 0.10
         }
     }
 
-    # Right Wing 
-    #TODO: SHK_our_right / SHK_our_turn  
+    # Right Wing
+    #TODO: SHK_our_right / SHK_our_turn
     focus = {
         id = SHK_our_legacy # SHK_our_legacy
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = -2
         y = 1
         relative_position_id = SHK_greater_ambitious
-        prerequisite = { 
+        prerequisite = {
             focus = SHK_greater_ambitious
         }
-        prerequisite = { 
-            focus = SHK_our_time 
-        }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_stability = 0.10
+            add_political_power = 100
         }
     }
 
-    # Left Wing 
+    # Left Wing
 
     #TODO: SHK_our_time
-    
+
     focus = {
         id = SHK_our_destiny
-        icon = GFX_focus_generic_expansion
+		icon = GFX_goal_generic_more_territorial_claims
         x = 2
         y = 1
         relative_position_id = SHK_greater_dreams
-        prerequisite = { 
+        prerequisite = {
             focus = SHK_greater_dreams
         }
-        prerequisite = { 
-            focus = SHK_our_time 
-        }
         completion_reward = {
-            # add_ideas = expansion_of_territory_idea
+            add_stability = 0.10
+            add_war_support = 0.10
+            add_political_power = 100
         }
     }
 
 
-    # A option should exist that lets the Shakkal reject all 
+    # A option should exist that lets the Shakkal reject all
     # and join their jungle brothers in the struggle for the
     # shuriman right to independance / autonomy
 
@@ -733,8 +771,8 @@ focus_tree = {
 
 
 
-    
-    # # New Wing 
+
+    # # New Wing
 
     # focus = {
     #     id = SHK_rise_of_the_shuriman_raiders

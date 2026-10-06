@@ -5,3 +5,5 @@
 /_info
 *.code-workspace
 Azir.7z
+__pycache__/
+*.pyc

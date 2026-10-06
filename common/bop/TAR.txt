@@ -14,20 +14,20 @@ TAR_balance_of_power = {
         max = 0.1
         modifier = {
             stability_factor = 0.05
-            war_support = 0.02
+			war_support_factor = 0.02
         }
         on_activate = {
             # Effect when balance is in the neutral zone
             set_power_balance_gfx = {
                 id = TAR_balance_of_power
                 side = TAR_solari_side
-                icon = GFX_bop_TAR_solari_bad_side
+				gfx = GFX_bop_TAR_solari_bad_side
             }
-            
+
             set_power_balance_gfx = {
                 id = TAR_balance_of_power
                 side = TAR_lunari_side
-                icon = GFX_bop_TAR_lunari_bad_side
+				gfx = GFX_bop_TAR_lunari_bad_side
             }
         }
         on_deactivate = {
@@ -37,7 +37,7 @@ TAR_balance_of_power = {
                 side = TAR_solari_side
                 gfx = GFX_bop_TAR_solari_bad_side
             }
-            
+
             set_power_balance_gfx = {
                 id = TAR_balance_of_power
                 side = TAR_lunari_side
@@ -81,7 +81,7 @@ TAR_balance_of_power = {
             max = -0.4
             modifier = {
                 stability_factor = 0.05
-                war_support = 0.05
+				war_support_factor = 0.05
                 production_speed_arms_factory_factor = 0.1
                 research_speed_factor = -0.05
             }
@@ -107,7 +107,7 @@ TAR_balance_of_power = {
             max = -0.7
             modifier = {
                 stability_factor = 0.1
-                war_support = 0.1
+				war_support_factor = 0.1
                 production_speed_arms_factory_factor = 0.15
                 research_speed_factor = -0.1
             }
@@ -132,7 +132,7 @@ TAR_balance_of_power = {
     side = {
         id = TAR_lunari_side
         icon = GFX_bop_TAR_lunari_bad_side
-        
+
         range = {
             id = TAR_lunari_weak_influence
             min = 0.1
@@ -140,7 +140,7 @@ TAR_balance_of_power = {
             modifier = {
                 stability_factor = 0.03
                 research_speed_factor = 0.05
-                war_support = -0.02
+				war_support_factor = -0.02
             }
             on_activate = {
                 set_power_balance_gfx = {
@@ -165,7 +165,7 @@ TAR_balance_of_power = {
             modifier = {
                 stability_factor = 0.05
                 research_speed_factor = 0.1
-                war_support = -0.05
+				war_support_factor = -0.05
             }
             on_activate = {
                 set_power_balance_gfx = {
@@ -190,7 +190,7 @@ TAR_balance_of_power = {
             modifier = {
                 stability_factor = 0.1
                 research_speed_factor = 0.15
-                war_support = -0.1
+				war_support_factor = -0.1
             }
             on_activate = {
                 set_power_balance_gfx = {

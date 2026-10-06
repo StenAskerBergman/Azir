@@ -5,7 +5,7 @@ leader_traits = {
 		sprite = 13
 		war_support_factor = 0.1
 		stability_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -13,23 +13,9 @@ leader_traits = {
 
 	silenced = {
 		name = "Silenced"
-		random = no 
+		random = no
 
 		stability_factor = -0.15
-	}
-
-	leader_recent_slumber = {
-		type = land
-		trait_type = status_trait
-		
-		allowed = {
-			FROM = { tag = SHU }
-		}
-		
-		attack_skill = -1
-		defense_skill = -1
-		logistics_skill = -1
-		planning_skill = -1
 	}
 
 	librarian={
@@ -41,30 +27,24 @@ leader_traits = {
 	baccai = {
 		name = "Ascended"
 		random = no
-
-		logistics_skill=1
-		planning_skill=1
-		defense_skill=1
-		attack_skill=1
+		army_org_factor = 0.05
+		army_defence_factor = 0.05
 	}
 
 	Ascended = {
 		name = "Ascended"
 		random = no
-
-		logistics_skill=2
-		planning_skill=2
-		defense_skill=2
-		attack_skill=2
+		army_attack_factor = 0.10
+		army_defence_factor = 0.10
 	}
 
 	trusted = {
-        random = no        
+        random = no
         stability_factor = 0.2
     }
 
 	emperorsands = {
-        random = no 
+        random = no
         war_support_factor = 0.2
     }
 
@@ -72,15 +52,10 @@ leader_traits = {
 		random = no
 		stability_factor = 0.2
 	}
-	
+
 	battle_mistress_of_shurima = {
 		name = "Battle Mistress of Shurima"
-		random = no 
-		attack_skill=2
-	}
-
-	Ascended = {
-		name = Ascended_trait_name
-		 
+		random = no
+		army_attack_factor = 0.10
 	}
 }

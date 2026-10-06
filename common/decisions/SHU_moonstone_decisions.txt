@@ -1,0 +1,22 @@
+SHU_moonstone_decisions = {
+	SHU_seek_lunari_exiles = {
+		icon = generic_decision
+		allowed = { original_tag = SHU }
+		visible = {
+			has_country_flag = SHU_moonstone_search_available
+			NOT = { has_country_flag = SHU_has_moonstone }
+		}
+		available = {
+			has_character = SHU_nami
+			has_idea = SHU_moonstone_quest_unresolved
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = SHU_moonstone_search_available
+			set_country_flag = SHU_moonstone_search_underway
+			country_event = { id = shurima_moonstone.6 days = 30 }
+		}
+		ai_will_do = { factor = 10 }
+	}
+}

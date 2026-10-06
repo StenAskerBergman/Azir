@@ -1,11 +1,8 @@
 ﻿l_english:
- ruthless_hunter: "Ruthless Hunter"
  ruthless_hunter_desc: "Rek'Sai is a ferocious predator from the Void, known for her ruthless hunting skills."
- 
- supreme_hunter: "Supreme Hunter"
+
  supreme_hunter_desc: "Rek'Sai's hunting prowess is unmatched, making her a supreme hunter in the battlefield."
- 
- scavenger: "Scavenger"
+
  scavenger_desc: "Rek'Sai excels in scavenging resources and using them to her advantage."
 
  adaptable: "Adaptable"
@@ -14,22 +11,17 @@
  hunter: "Hunter"
  hunter_desc: "Rek'Sai is a master hunter, able to track and eliminate targets efficiently."
 
- evolution_master: "Evolution Master"
  evolution_master_desc: "Kha'Zix thrives on evolution, adapting and growing stronger with each encounter."
 
- guerilla_warfare: "Guerilla Warfare"
  guerilla_warfare_desc: "Kha'Zix excels in guerilla warfare, using hit-and-run tactics to outmaneuver his enemies."
 
- adaptive_strategist: "Adaptive Strategist"
  adaptive_strategist_desc: "Kha'Zix is an adaptive strategist, always evolving his tactics to stay ahead."
 
  guerilla: "Guerilla"
  guerilla_desc: "Kha'Zix is a master of guerilla tactics, striking from the shadows and disappearing without a trace."
 
- void_empress: "Void Empress"
  void_empress_desc: "Bel'Veth is the Empress of the Void, wielding supreme control over her minions and the battlefield."
 
- mind_control: "Mind Control"
  mind_control_desc: "Bel'Veth has the ability to control minds, bending others to her will."
 
  void_tactician: "Void Tactician"
@@ -38,27 +30,23 @@
  supreme_commander: "Supreme Commander"
  supreme_commander_desc: "Bel'Veth commands her forces with unparalleled skill, leading them to victory."
 
- devourer_of_worlds: "Devourer of Worlds"
  devourer_of_worlds_desc: "Cho'Gath is a monstrous being, consuming everything in his path."
 
- brute_force: "Brute Force"
  brute_force_desc: "Cho'Gath uses brute force to overpower his enemies, crushing them with sheer strength."
 
  fearsome: "Fearsome"
  fearsome_desc: "Cho'Gath's presence on the battlefield strikes fear into the hearts of his enemies."
 
- artillery_expert: "Artillery Expert"
  artillery_expert_desc: "Kog'Maw is a living artillery unit, specializing in long-range explosive attacks."
 
- explosive_growth: "Explosive Growth"
  explosive_growth_desc: "Kog'Maw's attacks grow more powerful and explosive over time, devastating his enemies."
- 
+
  Zileans_Zeal: "Zileans Zeal Provides us the vision we need to focus on what matters!"
  Zileans_Zeal_TT: "Adds §OZileans Zeal§!"
 
  Chronoshift: "Chronoshift"
  Chronoshift_desc: "Zileans Chronoshift will give our students a unfair advantage!"
- Chronoshift_TT: "Adds §YChronoshift§!, This will Jump Start our journey towards Hextech!" 
+ Chronoshift_TT: "Adds §YChronoshift§!, This will Jump Start our journey towards Hextech!"
 
 ####################################################################
 ####################################################################
@@ -102,14 +90,14 @@
 
  Icathian_wasteland: "The current state of Icathia is one of desolation and ruin. After its catastrophic fall, triggered by the release of the Void to counter Shurima's Ascended Host, the region became a barren wasteland. The land is now largely uninhabitable, marked by the remnants of ancient battles and the pervasive influence of the Void."
 
- # 
+ #
  VOI_pacify_our_neightbours: "Reshape Our Image"
  VOI_pacify_our_neightbours_decs: "It's time we reshape our image to the world so people understand icathia is safe again!"
 
  VOI_pacify_the_countryside: "Pacify the Countryside" # Remove all the remenents of a resistance - Wipe out any and all inhabitants
  VOI_pacify_the_countryside_desc: "It's time we resmove all the remenents of a resistance! Let's wipe out any and all inhabitants"
  VOI_pacify_the_countryside_effect_tooltip: "Let's wipe out any and all inhabitants"
- 
+
  VOI_Shadow_War: "Shadow War"
  VOI_Shadow_War_desc: "Its time we start preparing for the coming cleansing..."
 
@@ -119,7 +107,7 @@
  VOI_assertiveness: "Assertiveness" # Make a powerful Ally and Join their faction!
  VOI_assertiveness_desc: "By asserting our strength and forming powerful alliances, we will secure a position of influence in the global arena. Through diplomatic and military cooperation, we aim to join a formidable faction that will ensure our nation's security and prosperity."
 
- VOI_obedience: "Obedience" # Accept our current cards, become a obedient vassel state 
+ VOI_obedience: "Obedience" # Accept our current cards, become a obedient vassel state
  VOI_obedience_desc: "In these turbulent times, our best course of action is to accept our current circumstances and pledge our loyalty to a stronger power. By becoming a dutiful vassal state, we will gain protection and stability, allowing our nation to recover and thrive under the guidance of our benefactors."
 
  VOI_revive_the_grand_wizard_council: "Revive the Grand Wizard Council"
@@ -136,7 +124,7 @@
 
  VOI_purple_meat: "Purple Meat"
 
- VOI_talk_to_a_daughter: "Talk to a Daughter" 
+ VOI_talk_to_a_daughter: "Talk to a Daughter"
  VOI_talk_to_a_daughter_desc: "The remnants of the Void continue to threaten Icathia's restoration. Kai'Sa, a survivor and fighter of the Void, could be an essential ally in cleansing the corruption and defending the new state."
 
  VOI_Resistance_Fighters: "Resistance Fighters"
@@ -175,13 +163,13 @@
  # VOI_ Name _TT: "Focus Tool Tip"
  # VOI_ Name _desc: "Focus Description"
 
- 
+
  # VOI_apex_hunter - Cat vs Bug
  VOI_apex_hunter: "Apex Hunter"
  VOI_apex_hunter_TT: "Unlocks Apex " # Unlock: Cat_vs_Bug_Category
  VOI_apex_hunter_CR: "§YRecruit§! a true §1Apex Hunter§!"
  VOI_apex_hunter_desc: "Our Forces are Struggling! Our united are suppose to be  monsters, the apex of the food chain but as of recent, our hunters have fallen pray to the jungles of shurima! It's time we show them what a true §OMonsters§! look like!"
- 
+
  VOI_voidborne_acoustics: "Voidborne Acoustics"
 
  VOI_unseen_threats: "Unseen Threats"
@@ -205,7 +193,7 @@
  VOI_shifting_sands_TT: "Shifting Sands"
  VOI_shifting_sands_desc: "We must summon §1Rek'sai§!, and with her §Ochildren...§!\n\nTogather they can extend our reach across the entire §YSai Desert§! \n\nRecruit §1Rek'sai§! & §O Xer'sai§! to spread §RTerror§!!"
 
- # First Draft 
+ # First Draft
  # VOI_shifting_sands_desc: "We must summon Rek'sai, with her we can extend our reach across the entire deserts, using her children as a testing ground for our new Void-powered technologies..."
 
 
@@ -220,7 +208,7 @@
  VOI_The_Voids_Influence_desc: "The mysterious and terrifying force of the Void begins to seep into our nation, influencing our culture, military, and science. How will we harness this dark power?"
 
  VOI_Crushed_Resistance: "Crushed Resistance"
- VOI_Crushed_Resistance_desc: "The Resistance Movement is stunned that so many of our followers blindly trust Malzahar knowing our history with the void, thereby leaving our nation for a better life..." 
+ VOI_Crushed_Resistance_desc: "The Resistance Movement is stunned that so many of our followers blindly trust Malzahar knowing our history with the void, thereby leaving our nation for a better life..."
 
  VOI_Embrace_the_Void: "Embrace the Void"
  VOI_Embrace_the_Void_desc: "By embracing the Void, we can harness its destructive power to enhance our military capabilities and intimidate our enemies."
@@ -242,7 +230,7 @@
  VOI_Void_Empowerment_desc: "Empower our nation through the Void, enhancing our political structure and military prowess through its dark energies."
 
  VOI_Rift_Rapture: "Rift Rapture"
- VOI_Rift_Rapture_desc: "It's About time we re-open our way in... \n\nFor our armies, our knowledge, and our Queen..." 
+ VOI_Rift_Rapture_desc: "It's About time we re-open our way in... \n\nFor our armies, our knowledge, and our Queen..."
 
  VOI_Her_Arrival: "Her Arrival"
  VOI_Her_Arrival_desc: "Belveth our Queen will soon arrive... Our army must match her expectations"
@@ -311,5 +299,3 @@
  VOI_990_DESC: "Escaping the domination of Shurima, Icathia's founders sought to create a realm free from oppression. However, their defiance against the Ascended led to their downfall as they unleashed the Void, a malevolent force that consumed the land.\n\nNow, Icathia is a nation of contrasts and conflicts. \n\nTraditionalists long for the days before the Void, blaming the calamity on reckless mages like Zilean. Reformists argue that Icathia never knew true freedom under Azir's brutal regime, believing that the path forward lies in new ideas and alliances.\n\nAs war looms on the horizon and the Void's influence grows, Icathia must choose its path: Resist the Void's corruption, Embrace its dark gifts, or Find a new way forward amidst the ruins of its past."
 
  # ICA_990_DESC: "Escaping the domination of Shurima, Icathia's founders sought to create a realm free from oppression. However, their defiance against the Ascended led to their downfall as they unleashed the Void, a malevolent force that consumed the land. Now, Icathia is a nation of contrasts and conflicts.\n\nTraditionalists long for the days before the Void, blaming the calamity on reckless mages like Zilean.\n\nReformists argue that Icathia never knew true freedom under Azir's brutal regime, believing that the path forward lies in new ideas and alliances.\n\nAs war looms on the horizon and the Void's influence grows, Icathia must choose its path: §1resist the Void's corruption§!, §2embrace its dark gifts§!, or §Ofind a new way forward amidst the ruins of its past.§!"
-
-

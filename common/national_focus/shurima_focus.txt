@@ -1,4 +1,4 @@
-﻿
+
 focus_tree = {
 	id = shurima_focus
 	continuous_focus_position = {
@@ -27,9 +27,8 @@ focus_tree = {
 	focus = {
 		id = SHU_imperial_courts
 		icon = GFX_SHU_imperial_courts
-		x = 1
-		y = 1
-		relative_position_id = SHU_emperor
+		x = 17
+		y = 4
 
 		cost = 5
 		search_filters = {
@@ -39,6 +38,11 @@ focus_tree = {
 			focus = SHU_emperor
 			focus = SHU_empress
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
 	}
 
 	# Economic Revival
@@ -46,9 +50,8 @@ focus_tree = {
 		id = SHU_economic_revival
 		icon = GFX_goal_generic_construction
 		cost = 5
-		x = 11 # 29 # 14
-		y = -1
-		relative_position_id = SHU_our_leader
+		x = 28
+		y = 1
 
 		ai_will_do = {
 			factor = 10
@@ -66,7 +69,7 @@ focus_tree = {
 				#	level = 2
 				#	instant_build = yes
 				# }
-				
+
 			}
 		}
 	}
@@ -92,6 +95,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 8.50
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
 	}
 
 
@@ -101,9 +112,8 @@ focus_tree = {
 	focus = {
 		id = SHU_our_leader
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 0
-		y = 1
-		relative_position_id = SHU_sundisc_has_risen
+		x = 17
+		y = 2
 
 		cost = 1
 		search_filters = {
@@ -115,8 +125,6 @@ focus_tree = {
 		completion_reward = {
 
 			country_event = shurima.1
-
-			EventType_event = { id = shurima.1 }
 		}
 	}
 
@@ -201,6 +209,11 @@ focus_tree = {
 			focus = SHU_imperial_courts
 			focus = SHU_republican_future
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
 	}
 
 	# OLD: Imperial Order
@@ -223,9 +236,8 @@ focus_tree = {
 	focus = {
 		id = SHU_public_order # MK.1 SHU_imperial_order
 		icon = GFX_goal_generic_stable_government #GFX_SHU_public_order
-		x = -1
-		y = 1
-		relative_position_id = SHU_republican_future
+		x = 18
+		y = 5
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -233,6 +245,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_imperial_courts
 			focus = SHU_imperial_state
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	# Question of Slavery
@@ -264,6 +281,12 @@ focus_tree = {
 		# 	focus = SHU_nazumah_alliance
 		# 	focus = SHU_nazumahs_pride
 		# }
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+			set_country_flag = SHU_slavery_debate_opened
+		}
 	}
 
 	# Question of Nazumah
@@ -289,14 +312,19 @@ focus_tree = {
 		# 	focus = SHU_nazumah_alliance
 		# 	focus = SHU_nazumahs_pride
 		# }
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+			set_country_flag = SHU_nazumah_policy_debated
+		}
 	}
 	# Plan Frontlines
 	focus = {
 		id = SHU_plan_frontlines
 		icon = GFX_SHU_plan_frontlines
-		x = -1
-		y = 1
-		relative_position_id = SHU_rebirth_legions
+		x = 5
+		y = 2
 
 		cost = 5
 		search_filters = {
@@ -308,15 +336,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_rebirth_legions
 		}
+
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.03
+		}
 	}
 
 	# Defensive Lines
 	focus = {
 		id = SHU_defensive_lines
 		icon = GFX_focus_chi_whampoa_military_academy
-		x = 1
-		y = 1
-		relative_position_id = SHU_rebirth_legions
+		x = 7
+		y = 2
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
@@ -349,46 +381,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_wargoal = {
-				type = wargoal_annexation
+				type = annex_everything
 				target = XER
-				generator = { type = annex_everything target = XER }
-				focus = SHU_storm_nerimazeth
 			}
-			effect = {
-				set_country_flag = offensive_war_bonus
-				add_timed_modifier = {
-					modifier = {
-						name = "Temporary Offensive War Bonus"
-						duration = 365
-						attack = 0.15
-						breakthrough = 0.15
-						planning_speed = 0.25
-					}
-				}
-				# Add any additional effects here if needed
-			}
-			custom_effect_tooltip = "Temporary Offensive War Bonus: Increases Attack by 15%, Breakthrough by 15%, and Planning Speed by 25% for one year."
-
-
-			remove_effect = {
-				remove_country_flag = offensive_war_bonus
-				if = {
-					limit = {
-						NOT = { has_country_flag = won_offensive_war }
-					}
-					add_timed_modifier = {
-						modifier = {
-							name = "Failed Offensive War Debuff"
-							duration = 365
-							attack = -0.1
-							defense = -0.1
-							planning_speed = -0.2
-						}
-					}
-					# Add any additional removal effects here if needed
-
-				}
-			}
+			set_country_flag = offensive_war_bonus
+			add_war_support = 0.05
+			army_experience = 20
 		}
 	}
 
@@ -407,23 +405,21 @@ focus_tree = {
 			focus = SHU_defensive_lines
 		}
 		completion_reward = {
-			effect = {
-				custom_effect_tooltip = arm_shurima
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 1500
-					producer = SHU
-				}
-
-				# add_equipment_production = {
-				# 	equipment = {
-				# 		type = infantry_equipment
-				# 	}
-				# 	requested_factories = 1
-				# 	progress = 0.95
-				# 	amount = 1
-				# }
+			custom_effect_tooltip = arm_shurima
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = SHU
 			}
+
+			# add_equipment_production = {
+			# 	equipment = {
+			# 		type = infantry_equipment
+			# 	}
+			# 	requested_factories = 1
+			# 	progress = 0.95
+			# 	amount = 1
+			# }
 		}
 	}
 
@@ -513,177 +509,18 @@ focus_tree = {
 			}
 		}
 
-	completion_reward = {
-		# Add dockyards to all valid coastal states
-		114 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
+completion_reward = {
+			navy_experience = 10
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
-		107 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		110 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		103 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		101 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		100 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		99 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		118 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		119 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		120 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		122 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		126 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		127 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		91 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		92 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		93 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		94 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		95 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		96 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		97 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		98 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
 }
 
 
@@ -745,177 +582,18 @@ focus_tree = {
 		}
 
 
-	completion_reward = {
-		# Add dockyards to all valid coastal states
-		114 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
+completion_reward = {
+			navy_experience = 20
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
-		107 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		110 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		103 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		101 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		100 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		99 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		118 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		119 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		120 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		122 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		126 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		127 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		91 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		92 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		93 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		94 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		95 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		96 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		97 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		98 = {
-			limit = { is_controlled_by = ROOT }
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
 }
 
 	# # Fleet
@@ -1152,9 +830,8 @@ focus_tree = {
 	focus = {
 		id = SHU_hunters_for_hire
 		icon = GFX_focus_generic_military_mission
-		x = 0
-		y = 1
-		relative_position_id = SHU_annex_nazumah
+		x = 14
+		y = 10
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1163,7 +840,6 @@ focus_tree = {
 			focus = SHU_annex_nazumah
 			focus = SHU_puppet_nazumah
 		}
-
 		bypass = {
 			ROOT = {
 				has_character = VOI_Kassadin
@@ -1214,9 +890,8 @@ focus_tree = {
 	focus = {
 		id = SHU_lectures_in_shakkal
 		icon = GFX_focus_generic_military_mission
-		x = 1
-		y = 1
-		relative_position_id = SHU_great_crusade
+		x = 18
+		y = 13
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1227,8 +902,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Enables us to fight better against void
-
+			add_political_power = 50
+			army_experience = 10
 		}
 	}
 
@@ -1236,9 +911,8 @@ focus_tree = {
 	focus = {
 		id = SHU_shakkal_deal
 		icon = GFX_goal_generic_neutrality_focus
-		x = -1
-		y = 1
-		relative_position_id = SHU_allies
+		x = 19
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1251,8 +925,8 @@ focus_tree = {
 			focus = SHU_allies
 		}
 		completion_reward = {
-			# Enables us to fight better against void
-
+			add_political_power = 75
+			add_stability = 0.03
 		}
 	}
 
@@ -1260,9 +934,8 @@ focus_tree = {
 	focus = {
 		id = SHU_nomadic_library
 		icon = GFX_focus_generic_military_mission
-		x = 1
-		y = 1
-		relative_position_id = SHU_allies
+		x = 21
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1272,7 +945,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Gives us another book for nasus!
+			add_political_power = 50
+			add_tech_bonus = {
+				name = SHU_nomadic_library_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
 		}
 	}
 
@@ -1280,9 +959,8 @@ focus_tree = {
 	focus = {
 		id = SHU_shakkal_lecture
 		icon = GFX_focus_generic_military_mission
-		x = -1
-		y = 1
-		relative_position_id = SHU_shakkal_region
+		x = 13
+		y = 14
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1292,8 +970,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# Enables us to fight better against void
-
+			add_political_power = 50
+			army_experience = 10
 		}
 	}
 
@@ -1309,19 +987,21 @@ focus_tree = {
 			focus = SHU_annex_nazumah
 			focus = SHU_puppet_nazumah
 		}
+		mutually_exclusive = { focus = SHU_nazumahs_pride }
 
 		completion_reward = {
-
+			army_experience = 20
+			add_war_support = 0.04
+			add_stability = -0.02
 		}
 	}
 
 	# Shuriman Recognition
 	focus = {
 		id = SHU_shuriman_recognition
-		icon = GFX_SHU_tribal_respect # GFX_focus_ETH_empower_the_ras # GFX_SHU_tribal_respect
-		x = 1
-		y = 1
-		relative_position_id = SHU_imperial_efforts
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 6
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1334,9 +1014,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = shuriman_recognition
-			
-			# Adds shuriman_recognition To Nazumah
-			NAZ = { 
+			NAZ = {
 				add_ideas = shuriman_recognition
 			}
 		}
@@ -1346,9 +1024,8 @@ focus_tree = {
 	focus = {
 		id = SHU_marai_marines # SHU_shuriman_recognition
 		icon = GFX_focus_generic_coastal_fort # GFX_SHU_tribal_respect
-		x=0
-		y=1
-		relative_position_id = SHU_nazumah_alliance
+		x = 20
+		y = 10
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
@@ -1379,7 +1056,6 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = SHU_subjugate_the_locals
-			focus = SHU_nazumahs_pride
 		}
 
 		prerequisite = {
@@ -1388,7 +1064,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = shuriman_respect # shuriman_recognition
+			add_ideas = shuriman_recognition
 		}
 	}
 
@@ -1407,7 +1083,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			army_experience = 15
+			add_war_support = 0.03
 		}
 	}
 
@@ -1423,7 +1100,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			army_experience = 25
+			add_war_support = 0.03
 		}
 	}
 
@@ -1439,7 +1117,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 100
+			add_stability = 0.03
 		}
 	}
 
@@ -1455,7 +1134,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 75
+			add_stability = 0.05
+			set_country_flag = SHU_shakkal_allies
 		}
 	}
 
@@ -1471,7 +1152,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			army_experience = 30
+			add_war_support = 0.05
+			add_manpower = 15000
 		}
 	}
 
@@ -1488,7 +1171,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			army_experience = 20
+			add_war_support = 0.05
+			add_stability = -0.05
 		}
 	}
 
@@ -1505,7 +1190,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 50
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -1521,7 +1210,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 75
+			add_stability = 0.04
+			set_country_flag = SHU_shakkal_region_integrated
 		}
 	}
 
@@ -1541,7 +1232,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			army_experience = 20
+			add_war_support = 0.04
+			add_manpower = 10000
 		}
 	}
 
@@ -1549,10 +1242,9 @@ focus_tree = {
 	focus = {
 		id = SHU_work_camps
 		icon = GFX_focus_ITA_generic_fascist_workers
-		x=0
-		y=1
+		x = 12
+		y = 8
 		cost=5
-		relative_position_id = SHU_military_court
 		prerequisite = {
 			focus = SHU_military_court
 			#focus = SHU_remove_the_natives
@@ -1591,9 +1283,8 @@ focus_tree = {
 	focus = {
 		id = SHU_marai_dockyards
 		icon = GFX_focus_generic_annex_country
-		x = -2
-		y = 1
-		relative_position_id = SHU_annex_nazumah
+		x = 12
+		y = 10
 		prerequisite = {
 			focus = SHU_restore_solari
 			focus = SHU_annex_nazumah
@@ -1605,28 +1296,19 @@ focus_tree = {
 			set_country_flag = has_marai_dockyards
 
 			# Annex Marai/Aurma or create a puppet state
-			annex_country = MAR # Replace MAR with the actual tag for Marai
+			annex_country = { target = MAR }
 
-			# Add dockyards in Marai territory
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-				state = 120 # Replace with actual state ID for Marai Coast or equivalent
+			# Establish an imperial naval base in a controlled coastal state.
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
-
-			# Boost naval experience or naval production
-			add_country_leader_trait = {
-				trait = naval_engineer
-				country_leader = ROOT
-			}
-
-			# Add resources to Marai territories to reflect their naval contribution
-			add_resource = {
-				type = steel
-				amount = 50
-				state = 120 # Replace with actual state ID for Marai Coast or equivalent
-			}
+			navy_experience = 20
 
 			# Trigger potential resistance event
 			country_event = {
@@ -1747,6 +1429,11 @@ focus_tree = {
 		prerequisite = {
 			# # focus = SHU_Major
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = SHU_targon_policy_chosen
+		}
 	}
 
 	# Targon AA Line
@@ -1786,6 +1473,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_annex_targon
 		}
+
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.03
+		}
 	}
 
 	focus = {
@@ -1797,13 +1489,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_ba_targon
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
 	}
 	# Middle Row
 
 	# Rich Mountains
 	focus = {
 		id = SHU_rich_mountains_gold
-		icon = GFX_r56_goal_COG_Jungle_Diamond_Mine
+		icon = GFX_goal_generic_production
 		x=2
 		y=1
 		relative_position_id = SHU_annex_targon
@@ -1812,15 +1509,15 @@ focus_tree = {
 			focus = SHU_puppet_or_ally_targon
 		}
 		completion_reward = {
-
-
+			add_political_power = 75
+			random_owned_controlled_state = { add_resource = { type = steel amount = 8 } }
 		}
 	}
 
 	# Rich lands 2
 	focus = {
 		id = SHU_rich_mountains_dia
-		icon = GFX_r56_goal_BEL_gold_extraction
+		icon = GFX_goal_generic_production2
 		x=0
 		y=1
 		relative_position_id = SHU_rich_mountains_gold
@@ -1834,8 +1531,8 @@ focus_tree = {
 			focus = SHU_puppet_or_ally_targon
 		}
 		completion_reward = {
-
-
+			add_political_power = 50
+			random_owned_controlled_state = { add_resource = { type = chromium amount = 6 } }
 		}
 	}
 
@@ -1882,6 +1579,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_puppet_or_ally_targon
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			set_country_flag = SHU_targon_compact
+		}
 	}
 
 	focus = {
@@ -1892,6 +1595,12 @@ focus_tree = {
 		relative_position_id = SHU_shuriman_argreement_targon
 		prerequisite = {
 			focus = SHU_shuriman_argreement_targon
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 10
+			add_stability = 0.02
 		}
 	}
 
@@ -1917,6 +1626,11 @@ focus_tree = {
 		relative_position_id = SHU_the_neighbours
 		prerequisite = {
 			# # focus = SHU_Major
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = SHU_ixtal_policy_chosen
 		}
 	}
 
@@ -1951,38 +1665,31 @@ focus_tree = {
 		prerequisite = {
 			#focus = SHU_fate_of_ixtal
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			set_country_flag = SHU_crystal_scar_policy_chosen
+		}
 	}
 
 	# Nami hunts Diana! - Simple version ( for now :D )
 	focus = {
 		id = SHU_fish_on_land
-		icon = GFX_goal_unknown
+		icon = GFX_goal_lunari
 		x=3
 		y=0
 		relative_position_id = SHU_fate_of_targon
+		cost = 4
+		prerequisite = { focus = SHU_fate_of_targon }
 
 		available = {
-			# ALL CONDITIONS MUST BE TRUE TO BE SELECTED/SEEN
-			OR = {
-				TAR = { has_country_flag = diana_ran_away }
-				ROOT = { has_country_flag = has_moonstone}
-			}
+			has_character = SHU_nami
+			NOT = { has_country_flag = SHU_aiding_moonstone_quest }
 		}
 
 		completion_reward = {
-			if = {
-
-				limit ={
-					has_character = SHU_nami
-					has_country_flag = gave_moonstone
-				}
-
-				set_global_flag = moonstone_quest_success
-			}
-			else = {
-
-				set_global_flag = moonstone_quest_fail # set_global_flag moonstone_quest_fail 1
-			}
+			add_political_power = 25
+			country_event = { id = shurima_moonstone.1 }
 		}
 	}
 
@@ -2028,6 +1735,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_annex_ixtal
 		}
+
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 10000
+			add_political_power = 50
+		}
 	}
 
 	focus = {
@@ -2038,6 +1751,12 @@ focus_tree = {
 		relative_position_id = SHU_hire_yuntal_exils
 		prerequisite = {
 			focus = SHU_hire_yuntal_exils
+		}
+
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.02
+			add_political_power = 50
 		}
 	}
 
@@ -2055,8 +1774,8 @@ focus_tree = {
 			focus = SHU_annex_ixtal
 		}
 		completion_reward = {
-
-
+			add_political_power = 75
+			random_owned_controlled_state = { add_resource = { type = steel amount = 8 } }
 		}
 	}
 
@@ -2077,8 +1796,8 @@ focus_tree = {
 			focus = SHU_annex_ixtal
 		}
 		completion_reward = {
-
-
+			add_political_power = 50
+			random_owned_controlled_state = { add_resource = { type = tungsten amount = 6 } }
 		}
 	}
 
@@ -2121,6 +1840,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_puppet_or_ally_ixtal
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			set_country_flag = SHU_ixtal_pact
+		}
 	}
 
 	focus = {
@@ -2131,6 +1856,17 @@ focus_tree = {
 		relative_position_id = SHU_shuriman_pact_ixtal
 		prerequisite = {
 			focus = SHU_shuriman_pact_ixtal
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_tech_bonus = {
+				name = SHU_ixtali_elemental_exchange
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
 		}
 	}
 
@@ -2148,10 +1884,9 @@ focus_tree = {
 	focus = {
 		id = SHU_example_noxian_start
 		icon = GFX_goal_unknown
-		x=1
-		y=2
+		x = 14
+		y = 26
 		cost = 3
-		relative_position_id = SHU_shadow_plan
 		available = {
 			any_controlled_state = {
 				is_coastal = yes
@@ -2159,6 +1894,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			# focus = SHU_Major
+		}
+
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 50
+			set_country_flag = SHU_zaun_shadow_plan
 		}
 	}
 
@@ -2175,6 +1916,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_noxian_start
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
 	}
 
 	focus = {
@@ -2186,6 +1932,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_aa_noxian
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.02
+		}
 	}
 
 	focus = {
@@ -2196,6 +1947,11 @@ focus_tree = {
 		relative_position_id = SHU_example_ba_noxian
 		prerequisite = {
 			focus = SHU_example_ba_noxian
+		}
+
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.03
 		}
 	}
 
@@ -2212,6 +1968,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_noxian_start
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.04
+			set_country_flag = SHU_noxian_diplomacy
+		}
 	}
 
 	focus = {
@@ -2222,6 +1984,14 @@ focus_tree = {
 		relative_position_id = SHU_example_ab_noxian
 		prerequisite = {
 			focus = SHU_example_ab_noxian
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -2234,6 +2004,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_bb_noxian
 		}
+
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 10000
+		}
 	}
 
 
@@ -2244,18 +2019,15 @@ focus_tree = {
 		x=2
 		y=1
 		relative_position_id = SHU_example_noxian_start
-		mutually_exclusive = {
-
-			# Noxian
-			focus = SHU_example_aa_noxian
-			focus = SHU_example_ab_noxian
-			# Ionian
-			focus = SHU_example_aa_ionian
-			focus = SHU_example_ab_ionian
-		}
 		prerequisite = {
 			focus = SHU_total_war
 			focus = SHU_example_noxian_start
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			set_country_flag = SHU_noxian_compact
 		}
 	}
 
@@ -2268,6 +2040,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_ac_noxian
 		}
+
+		completion_reward = {
+			army_experience = 30
+			add_war_support = 0.05
+		}
 	}
 
 	focus = {
@@ -2278,6 +2055,12 @@ focus_tree = {
 		relative_position_id = SHU_example_bc_noxian
 		prerequisite = {
 			focus = SHU_example_bc_noxian
+		}
+
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.05
+			add_stability = -0.03
 		}
 	}
 
@@ -2307,6 +2090,11 @@ focus_tree = {
 		prerequisite = {
 			# focus = SHU_Major
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = SHU_ionia_policy_chosen
+		}
 	}
 
 	# ionia AA Line: Subjugate
@@ -2323,6 +2111,11 @@ focus_tree = {
 			focus = SHU_total_war
 			focus =  SHU_example_ionian_start
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+		}
 	}
 
 	focus = {
@@ -2333,6 +2126,11 @@ focus_tree = {
 		relative_position_id = SHU_example_aa_ionian
 		prerequisite = {
 			focus = SHU_example_aa_ionian
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
 		}
 	}
 
@@ -2345,6 +2143,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_ba_ionian
 		}
+
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.02
+		}
 	}
 
 	# ionia AB Line: Annex
@@ -2354,10 +2157,17 @@ focus_tree = {
 		x=0
 		y=1
 		relative_position_id =  SHU_example_ionian_start
+		mutually_exclusive = { focus = SHU_example_aa_ionian }
 		prerequisite = {
 			focus =  SHU_example_ionian_start
 			# focus = SHU_starter_ionian_piltover
 
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			set_country_flag = SHU_ionian_exchange
 		}
 	}
 
@@ -2370,6 +2180,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_ab_ionian
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = SHU_ionian_learning
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
 	}
 
 	focus = {
@@ -2380,6 +2200,11 @@ focus_tree = {
 		relative_position_id = SHU_example_bb_ionian
 		prerequisite = {
 			focus = SHU_example_bb_ionian
+		}
+
+		completion_reward = {
+			army_experience = 15
+			add_manpower = 10000
 		}
 	}
 
@@ -2402,6 +2227,12 @@ focus_tree = {
 			# Both at War with noxus
 			# They likes & they at war with noxus
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			set_country_flag = SHU_ionian_compact
+		}
 	}
 
 	focus = {
@@ -2413,6 +2244,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_example_ac_ionian
 		}
+
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.04
+		}
 	}
 
 	focus = {
@@ -2423,6 +2259,12 @@ focus_tree = {
 		relative_position_id = SHU_example_bc_ionian
 		prerequisite = {
 			focus = SHU_example_bc_ionian
+		}
+
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.04
+			add_stability = -0.02
 		}
 	}
 
@@ -2447,10 +2289,9 @@ focus_tree = {
 	focus = {
 		id = SHU_scout_remote_islands
 		icon = GFX_goal_unknown
-		x=-8
-		y=0
+		x = 13
+		y = 31
 		cost = 3
-		relative_position_id = SHU_rule_aurma
 		mutually_exclusive = {focus = SHU_approach_aurma}
 		prerequisite = {
 			# # focus = SHU_Minors
@@ -2487,6 +2328,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_scout_remote_islands
 		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_war_support = 0.03
+		}
 	}
 
 	focus = {
@@ -2498,6 +2344,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_pirate_hunt
 		}
+
+		completion_reward = {
+			navy_experience = 15
+			add_political_power = 50
+		}
 	}
 
 	focus = {
@@ -2508,6 +2359,11 @@ focus_tree = {
 		relative_position_id = SHU_example_ba_bilge_water
 		prerequisite = {
 			focus = SHU_example_ba_bilge_water
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			add_war_support = 0.03
 		}
 	}
 
@@ -2576,6 +2432,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_pirate_alliance
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+			set_country_flag = SHU_bilgewater_compact
+		}
 	}
 
 	focus = {
@@ -2586,6 +2448,12 @@ focus_tree = {
 		relative_position_id = SHU_example_bb_bilge_water
 		prerequisite = {
 			focus = SHU_example_bb_bilge_water
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_war_support = 0.04
+			add_stability = -0.02
 		}
 	}
 
@@ -2639,6 +2507,11 @@ focus_tree = {
 				is_coastal = yes
 			}
 		}
+		completion_reward = {
+			add_political_power = 100
+			navy_experience = 10
+			set_country_flag = SHU_aurma_policy_chosen
+		}
 	}
 
 	focus = {
@@ -2648,6 +2521,7 @@ focus_tree = {
 		y=0
 		cost = 3
 		relative_position_id = SHU_rule_aurma
+		mutually_exclusive = { focus = SHU_scout_remote_islands }
 		prerequisite = {
 			# # focus = SHU_Minors
 		}
@@ -2679,7 +2553,6 @@ focus_tree = {
 		relative_position_id = SHU_approach_aurma
 		mutually_exclusive = {
 			focus = SHU_pirate_alliance
-			focus = SHU_shuriman_ship_builders
 			focus = SHU_independant_republic
 			focus = SHU_autonomus_state
 		}
@@ -2737,6 +2610,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_potential_alliance
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			navy_experience = 10
+		}
 	}
 
 	focus = {
@@ -2747,6 +2625,11 @@ focus_tree = {
 		relative_position_id = SHU_example_ba_aurma
 		prerequisite = {
 			focus = SHU_example_ba_aurma
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			add_war_support = 0.03
 		}
 	}
 
@@ -2857,6 +2740,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_independant_republic
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+			set_country_flag = SHU_aurma_autonomy
+		}
 	}
 
 	focus = {
@@ -2867,6 +2756,11 @@ focus_tree = {
 		relative_position_id = SHU_example_bb_aurma
 		prerequisite = {
 			focus = SHU_example_bb_aurma
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			add_manpower = 10000
 		}
 	}
 
@@ -2881,7 +2775,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SHU_potential_alliance
 			focus = SHU_independant_republic
-			focus = SHU_shuriman_ship_builders
 		}
 		prerequisite = {
 			focus = SHU_rule_aurma
@@ -2954,6 +2847,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_autonomus_state
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+		}
 	}
 
 	focus = {
@@ -2964,6 +2866,11 @@ focus_tree = {
 		relative_position_id = SHU_example_bc_aurma
 		prerequisite = {
 			focus = SHU_example_bc_aurma
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_war_support = 0.04
 		}
 	}
 
@@ -2977,11 +2884,6 @@ focus_tree = {
 		y=1
 		cost=5
 		relative_position_id = SHU_rule_aurma
-		mutually_exclusive = {
-			focus = SHU_potential_alliance
-			focus = SHU_independant_republic
-			focus = SHU_autonomus_state
-		}
 		prerequisite = {
 			focus = SHU_rule_aurma
 		}
@@ -3011,6 +2913,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_shuriman_ship_builders
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+			set_country_flag = SHU_aurma_integrated
+		}
 	}
 
 	focus = {
@@ -3021,6 +2929,12 @@ focus_tree = {
 		relative_position_id = SHU_example_bd_aurma
 		prerequisite = {
 			focus = SHU_example_bd_aurma
+		}
+
+		completion_reward = {
+			navy_experience = 30
+			add_war_support = 0.05
+			add_stability = -0.03
 		}
 	}
 
@@ -3063,24 +2977,21 @@ focus_tree = {
 	focus = {
 		id = SHU_fate_of_brackern #crystal_scar # SHU_starter_crystal_scar
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		x=3
-		y=0
-		relative_position_id = SHU_approach_zaun
+		x = 17
+		y = 21
 		prerequisite = {
 			focus = SHU_fate_of_crystal_scar # SHU_starter_crystal_scar
 		}
 		available = {
-			if ={
-				SHU = {
-					tooltip = "Has Taliyah"
-					has_character = SHU_taliyah
-				}
-
-				SHU = {
-					tooltip = "Has Natinalized Hexcore"
-					has_country_flag = has_nationalized_hexcore
-				}
+			OR = {
+				has_character = SHU_taliyah
+				has_country_flag = has_nationalized_hexcore
 			}
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = SHU_brackern_policy_chosen
 		}
 	}
 
@@ -3096,6 +3007,11 @@ focus_tree = {
 			focus = SHU_fate_of_brackern #crystal_scar
 			# focus = SHU_starter_zaun_crystal_scar
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+		}
 	}
 
 	# crystal_scar A Line
@@ -3110,6 +3026,17 @@ focus_tree = {
 			focus = SHU_overseer_taliyah
 			# focus = SHU_starter_zaun_crystal_scar
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_tech_bonus = {
+				name = SHU_taliyah_engineering
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
 	}
 
 
@@ -3123,6 +3050,12 @@ focus_tree = {
 
 		prerequisite = {
 			focus = SHU_taliyahs_supervision
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = { add_resource = { type = tungsten amount = 8 } }
+			set_country_flag = SHU_controls_crystal_scar
 		}
 	}
 
@@ -3139,6 +3072,14 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_our_crystal_scar
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -3214,11 +3155,18 @@ focus_tree = {
 	focus = {
 		id = SHU_deep_pockets_piltover
 		icon = GFX_focus_deep_pockets
-		x=0
-		y=1
-		relative_position_id = SHU_hostile_takeover
+		x = 21
+		y = 23
 		prerequisite = {
 			focus = SHU_hostile_takeover
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -3230,9 +3178,16 @@ focus_tree = {
 		relative_position_id = SHU_deep_pockets_piltover
 		mutually_exclusive = {
 			focus = SHU_develop_crystal_scar
+			focus = SHU_shadow_deal
 		}
 		prerequisite = {
 			focus = SHU_deep_pockets_piltover
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+			set_country_flag = SHU_piltover_assurances
 		}
 	}
 
@@ -3250,6 +3205,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_approach_piltover
 		}
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.04
+			add_stability = -0.02
+		}
 	}
 
 	focus = {
@@ -3261,6 +3221,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_annex_piltover
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = SHU_piltovan_expertise
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
 	}
 
 	focus = {
@@ -3271,6 +3241,15 @@ focus_tree = {
 		relative_position_id = SHU_brain_gain
 		prerequisite = {
 			focus = SHU_brain_gain
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -3333,11 +3312,16 @@ focus_tree = {
 			focus = SHU_annex_zaun
 		}
 		available = {
-			NOT = { ZAU = { has_country_leader = ZAU_silco } }
+			NOT = { ZAU = { has_country_leader = { character = ZAU_silco } } }
 			# Maybe Fire a event/eventchain to make silco leader
 		}
 		prerequisite = {
 			focus = SHU_approach_zaun
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = SHU_backing_silco
 		}
 	}
 
@@ -3351,6 +3335,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_silco_plan
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
 	}
 
 	# Shadow Plan
@@ -3363,6 +3355,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_futher_funding
 		}
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 50
+			set_country_flag = SHU_zaun_shadow_plan
+		}
 	}
 
 	# Shadow Deal
@@ -3374,10 +3371,16 @@ focus_tree = {
 		relative_position_id = SHU_shadow_plan
 		mutually_exclusive = {
 			focus = SHU_develop_crystal_scar
-			focus = SHU_mutual_assurance_piltover
+			focus = SHU_mutal_assurance
 		}
 		prerequisite = {
 			focus = SHU_shadow_plan
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.03
+			set_country_flag = SHU_zaun_shadow_deal
 		}
 	}
 
@@ -3389,6 +3392,7 @@ focus_tree = {
 		y=1
 		cost = 5
 		relative_position_id = SHU_approach_zaun
+		mutually_exclusive = { focus = SHU_silco_plan }
 		prerequisite = {
 			focus = SHU_approach_zaun
 			focus = SHU_approach_piltover
@@ -3416,6 +3420,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_annex_zaun
 		}
+
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.04
+			add_tech_bonus = {
+				name = SHU_zaunite_chemtech
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
 	}
 
 	focus = {
@@ -3426,6 +3441,15 @@ focus_tree = {
 		relative_position_id = SHU_chemical_warefare
 		prerequisite = {
 			focus = SHU_chemical_warefare
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -3580,11 +3604,10 @@ focus_tree = {
 	# Open Metal Mines
 	focus = {
 		id = SHU_open_metal_mines
-		icon = GFX_r56_goal_generic_mining_iron
-		x = 0 # 18
-		y = 1
+		icon = GFX_goal_generic_production
+		x = 24
+		y = 11
 		cost = 5
-		relative_position_id = SHU_start_the_mines
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -3640,9 +3663,8 @@ focus_tree = {
 	focus = {
 		id = SHU_open_crystal_mines
 		icon = GFX_SHU_nationalize_the_mines # GFX_focus_usa_reestablish_the_gold_standard
-		x = 0 # 22
-		y = 1
-		relative_position_id = SHU_land_prospect
+		x = 22
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -3698,10 +3720,9 @@ focus_tree = {
 	focus = {
 		id = SHU_gold_trade
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = -2 # 18
-		y = 0
+		x = 28
+		y = 8
 		cost = 5
-		relative_position_id = SHU_gold_reserve
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -3713,7 +3734,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_craft_guild
 		}
-		
+
 		completion_reward = {
 			add_ideas = gold_trade
 		}
@@ -3722,27 +3743,35 @@ focus_tree = {
 	# Gold Refinement
 	focus = {
 		id = SHU_gold_refinement
-		icon = GFX_r56_goal_BEL_gold_extraction
-		x = 0 # 22
-		y = 1
+		icon = GFX_goal_generic_production2
+		x = 26
+		y = 12
 		cost = 6
-		relative_position_id = SHU_open_gold_mines
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = {
 			focus = SHU_open_gold_mines
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = SHU_gold_refinement_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
 	}
 
 	# Gold Reserves
 	focus = {
 		id = SHU_gold_reserve
-		icon = GFX_r56_goal_HOL_ditch_gold_standard
-		x = 1 # 18
-		y = 1
+		icon = GFX_goal_generic_production2
+		x = 30
+		y = 8
 		cost = 5
-		relative_position_id = SHU_trade_guild
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -3763,10 +3792,9 @@ focus_tree = {
 	focus = {
 		id = SHU_start_the_mines # OLD: SHU_expand_hex_mines
 		icon = GFX_goal_continuous_non_factory_construct
-		x = 0 # 18
-		y = 2
+		x = 24
+		y = 10
 		cost = 7
-		relative_position_id = SHU_workers_rights
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -4038,8 +4066,10 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_gold_refinement
 		}
-		complete_effect = {
+		completion_reward = {
 			custom_effect_tooltip = SHU_Restoring_Shuriman_Economy_TT
+			add_stability = 0.03
+			add_political_power = 75
 		}
 	}
 
@@ -4109,7 +4139,7 @@ focus_tree = {
 	# Open Gold Mines
 	focus = {
 		id = SHU_open_gold_mines
-		icon = GFX_r56_goal_COG_Jungle_Gold_Mine
+		icon = GFX_goal_generic_production
 		x = 2 # 22
 		y = 1
 		relative_position_id = SHU_start_the_mines
@@ -4119,6 +4149,13 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_start_the_mines
+		}
+		completion_reward = {
+			add_political_power = 75
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 	# Shurima Arise!
@@ -4182,7 +4219,7 @@ focus_tree = {
 	# NEW: Republican Future
 	focus = {
 		id = SHU_republican_future # MK.1 SHU_ascended_council
-		icon = GFX_focus_SHU_republic_future_b # GFX_goal_unknown GFX_focus_EST_republican_defence_league GFX_focus_SOV_transcaucasian_republic
+		icon = GFX_goal_generic_political_pressure
 		x = 1
 		y = 1
 		relative_position_id = SHU_empress
@@ -4195,17 +4232,15 @@ focus_tree = {
 			focus = SHU_empress
 		}
 		completion_reward = {
-			stability_factor = 0.1
+			add_stability = 0.1
 		}
 	}
 
 	focus = {
 		id = SHU_workers_rights
 		icon = GFX_goal_generic_consumer_goods
-		relative_position_id = SHU_tribe_unity
-		x = 2
-		y = 1
-		relative_position_id = SHU_war_guild
+		x = 24
+		y = 8
 
 		cost = 5
 
@@ -4242,7 +4277,7 @@ focus_tree = {
 	# NEW: The Imperial Dream
 	focus = {
 		id = SHU_imperial_state # MK.2 SHU_imperial_dream # MK.1 SHU_royal_high_courts
-		icon = GFX_focus_SHU_republic_future_a  # MK.2 SHU_republican_purge
+		icon = GFX_goal_generic_political_pressure
 		x = -1
 		y = 1
 		relative_position_id = SHU_emperor
@@ -4253,6 +4288,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_emperor
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.04
+			add_war_support = 0.03
 		}
 	}
 	# Return of the Amulet
@@ -4269,6 +4310,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_sun_disc_restorations
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.03
+			set_country_flag = SHU_amulet_returned
+		}
 	}
 	# Shrines of Shurima
 	focus = {
@@ -4284,23 +4331,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_sun_disc_restorations
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
 	}
 
 	# Replant The Basin!
 	focus = {
 		id = SHU_replant_the_basin
-		icon = {
-			trigger = { has_country_leader = { character = SHU_azir ruling_only = only } } # Condition Example: has_government = democratic
-			value = GFX_SHU_replant_the_basin_green
-		}
-		icon = {
-			trigger = { has_country_leader = { character = SHU_sivir ruling_only = only } } # Condition Example: has_government = democratic
-			value = GFX_SHU_replant_the_basin_blue
-		}
-		icon = {
-			trigger = { NOT = {  has_country_leader = { character = SHU_azir ruling_only = only }}} # Condition Example: has_government = democratic
-			value = GFX_SHU_replant_the_basin
-		}
+		icon = GFX_goal_generic_construct_infrastructure
 
 		dynamic = yes
 		x = 1 # 13
@@ -4325,10 +4366,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			improve_development = {
-				state = ROOT
-				value = 5
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
+			add_stability = 0.03
 		}
 	}
 
@@ -4340,12 +4386,12 @@ focus_tree = {
 		relative_position_id = SHU_shrines_of_shurima
 
 		prerequisite = {
-			focus = SHU_return_of_the_amulet 
+			focus = SHU_return_of_the_amulet
 			# focus = SHU_shrines_of_shurima
 		}
 
 		cost = 10  # Adjust as necessary
-		available = { 
+		available = {
 			# Any conditions for availability can be added here
 		}
 
@@ -4374,15 +4420,22 @@ focus_tree = {
 
 	focus = {
 		id = SHU_diverse_farmland
-		icon = GFX_SHU_diverse_farmland
+		icon = GFX_focus_generic_industry_1
 		x=1
 		y=1
 		relative_position_id = SHU_shrines_of_shurima
 		prerequisite = {
 			focus = SHU_shrines_of_shurima
 		}
-		complete_effect = {
-
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+			add_tech_bonus = {
+				name = SHU_diverse_farmland_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 	}
 
@@ -4400,16 +4453,16 @@ focus_tree = {
 		# }
 
 		# Incase we somehow set it before for somereason
-		# immediate = { 
+		# immediate = {
 		# 	clr_global_flag = guild_event_max_level_reached
 		# }
-		
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+
 			# Country Event
-			country_event = { id = shurima.101 days = 1 } 
-			
+			country_event = { id = shurima.101 days = 1 }
+
 			# Every State
 			every_state = {
 				limit = {
@@ -4454,7 +4507,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				
+
 			}
 		}
 	}
@@ -4481,7 +4534,7 @@ focus_tree = {
 	# Trade Guild
 	focus = {
 		id = SHU_trade_guild
-		icon = GFX_r56_goal_generic_banking_legislation # GFX_focus_usa_reestablish_the_gold_standard #GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		x = 1 # 13
 		y = 1
 		relative_position_id = SHU_shuriman_guilds
@@ -4491,6 +4544,14 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -4543,7 +4604,7 @@ focus_tree = {
 	# Tribe Council
 	focus = {
 		id = SHU_tribe_council
-		icon = GFX_SHU_tribe_council
+		icon = GFX_goal_generic_political_pressure
 		x = 4
 		y = 1
 		relative_position_id = SHU_empress
@@ -4563,7 +4624,7 @@ focus_tree = {
 	# Tribe Law
 	focus = {
 		id = SHU_tribe_law
-		icon = GFX_SHU_tribal_recognition
+		icon = GFX_goal_generic_political_pressure
 		x = -1
 		y = 1
 		relative_position_id = SHU_tribe_council
@@ -4582,7 +4643,7 @@ focus_tree = {
 	# Tribal Legal Recognition
 	focus = {
 		id = SHU_tribal_recognition
-		icon = GFX_SHU_tribal_recognition
+		icon = GFX_goal_generic_political_pressure
 		x = 1
 		y = 1
 		relative_position_id = SHU_tribe_council
@@ -4601,7 +4662,7 @@ focus_tree = {
 	# Tribal Respect
 	focus = {
 		id = SHU_tribal_respect
-		icon = GFX_SHU_tribal_respect
+		icon = GFX_goal_generic_political_pressure
 		x = 1
 		y = 1
 		relative_position_id = SHU_tribe_law
@@ -4672,19 +4733,25 @@ focus_tree = {
 	# Get Moonstone from Diana - Help Diana and secure the moonstone!
 	focus = {
 		id = SHU_moonstone
-		icon = GFX_focus_generic_workers_and_farmers_rise
+		icon = GFX_goal_lunari_offer
 		x=0
 		y=1
 		cost=5
-		relative_position_id = SHU_work_unions
+		relative_position_id = SHU_fish_on_land
 		prerequisite = {
-			focus = SHU_work_unions
-			#focus = SHU_remove_the_natives
-			#focus = SHU_shakkal_region
+			focus = SHU_fish_on_land
+		}
+
+		available = {
+			has_character = SHU_nami
+			has_country_flag = SHU_aiding_moonstone_quest
+			NOT = { has_country_flag = SHU_has_moonstone }
 		}
 
 		completion_reward = {
-
+			add_political_power = 25
+			navy_experience = 10
+			country_event = { id = shurima_moonstone.2 }
 		}
 	}
 
@@ -4692,39 +4759,27 @@ focus_tree = {
 	focus = {
 		id = SHU_marai_dockyards_company
 		icon = GFX_goal_dockyard
-		x=2
-		y=1
-		relative_position_id = SHU_nazumah_alliance
+		x = 22
+		y = 10
 		prerequisite = {
 			focus = SHU_nazumah_alliance
-			focus = SHU_moonstone
-			#focus = SHU_shakkal_region
 		}
+		prerequisite = { focus = SHU_moonstone }
+		available = { has_country_flag = SHU_has_moonstone }
 
 		completion_reward = {
 			set_country_flag = has_marai_dockyards
 
-
-			# Add dockyards in Marai territory
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-				state = 120 # Replace with actual state ID for Marai Coast or equivalent
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
-
-			# Boost naval experience or naval production
-			add_country_leader_trait = {
-				trait = naval_engineer
-				country_leader = ROOT
-			}
-
-			# Add resources to Marai territories to reflect their naval contribution
-			add_resource = {
-				type = steel
-				amount = 50
-				state = 120 # Replace with actual state ID for Marai Coast or equivalent
-			}
+			navy_experience = 20
 
 			# Trigger potential resistance event
 			country_event = {
@@ -4756,16 +4811,20 @@ focus_tree = {
 	# Imperial Efforts
 	focus = {
 		id = SHU_imperial_efforts #SHU_imperial_efforts #SHU_military_court
-		icon = GFX_r56_goal_AUS_emergency_powers
-		x = -1
-		y = 1
-		relative_position_id = SHU_ascended_god_warriors_council
+		icon = GFX_goal_generic_political_pressure
+		x = 11
+		y = 5
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = {
 			focus = SHU_ascended_god_warriors_council
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.03
 		}
 	}
 
@@ -4783,6 +4842,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_emperor
+		}
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.04
+			add_political_power = 50
 		}
 	}
 
@@ -4818,7 +4882,7 @@ focus_tree = {
 	# Military Court
 	focus = {
 		id = SHU_military_court #SHU_imperial_efforts
-		icon = GFX_r56_goal_AUS_emergency_powers
+		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
 		relative_position_id = SHU_shuriman_recognition
@@ -4828,6 +4892,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SHU_shuriman_recognition
+		}
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 75
+			add_stability = 0.03
 		}
 	}
 
@@ -5079,9 +5148,8 @@ focus_tree = {
 	focus = {
 		id = SHU_school_of_nasus
 		icon = GFX_focus_generic_socialist_science # GFX_focus_research
-		x = -2 #26 # 18
+		x = 33
 		y = 0
-		relative_position_id = SHU_shuriman_university
 
 		cost = 5
 
@@ -5089,22 +5157,9 @@ focus_tree = {
 			factor = 4
 		}
 
-		visible = {
-			IF = {
-				tag = SHU
-			}
-		}
-
-
 		available = {
-			IF = {
-				tag = SHU  # If your Shurima
-				AND = {
-					SHU_nasus = { is_advisor = yes }		# If Nasus Hired
-					SHU = { has_character = SHU_nasus } 	# If Nasus is not lost
-					available = SHU_nasus 					# If Nasus is not lost
-				}
-			}
+			has_character = SHU_nasus
+			SHU_nasus = { is_advisor = yes }
 		}
 
 		bypass = {
@@ -5177,7 +5232,7 @@ focus_tree = {
 	# military academy - Great Shuriman Military Academy
 	focus = {
 		id = SHU_officer_school
-		icon = GFX_goal_generic_military_research1
+		icon = GFX_goal_generic_army_motorized
 		x = 2 # 30 # 18
 		y = 0
 		relative_position_id = SHU_shuriman_university
@@ -5220,14 +5275,8 @@ focus_tree = {
 		ai_will_do = { factor = 4 }
 
 		available = {
-			IF = {
-				tag = SHU  # If your Shurima
-				AND = {
-					SHU_nasus = { is_advisor = yes }		# If Nasus Hired
-					SHU = { has_character = SHU_nasus } 	# If Nasus is not lost
-					available = SHU_nasus 					# If Nasus is not lost
-				}
-			}
+			has_character = SHU_nasus
+			SHU_nasus = { is_advisor = yes }
 		}
 
 		bypass = {
@@ -5326,11 +5375,11 @@ focus_tree = {
 			focus = SHU_shuriman_university
 			focus = SHU_officer_school
 		}
-		
+
 		mutually_exclusive = {
 			focus = SHU_rebuild_library
 			focus = SHU_library_of_nasus
-			# focus = SHU_officer_school 
+			# focus = SHU_officer_school
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -5360,7 +5409,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			not = { has_character = SHU_nasus }
+			NOT = { has_character = SHU_nasus }
 		}
 
 		cancel_if_invalid = yes
@@ -5394,32 +5443,11 @@ focus_tree = {
 		}
 
 		available = {
-
-			custom_tooltip_trigger = {
-
-				OR = {
-
-					OR = {
-
-						any_controlled_state = {
-							any_neighbor_state = {
-								state = 121
-								# controller = {
-								owner = {
-									original_tag = NAZ
-								}
-							}
-						}
-
-					}
-
-					OR = {
-						ROOT = {
-							tag = SHU
-							has_idea = Shurima_fractured
-						}
-					}
+			OR = {
+				any_controlled_state = {
+					any_neighbor_state = { state = 121 }
 				}
+				has_idea = Shurima_fractured
 			}
 		}
 		completion_reward = {
@@ -5433,12 +5461,8 @@ focus_tree = {
 				division_template = "Shuriman Infantry"
 				is_locked = no
 			}
-			effect = {
-				add_timed_unit_leader_trait = {
-					trait = recent_slumber
-					days = 100
-				}
-			}
+			army_experience = 15
+			add_manpower = 25000
 		}
 	}
 

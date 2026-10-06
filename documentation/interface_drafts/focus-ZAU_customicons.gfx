@@ -1,13 +1,13 @@
-spriteTypes = { 	
-	
+spriteTypes = {
 
-	
+
+
 	##Icon For: Test
-	SpriteType = { 
+	SpriteType = {
 		name = "GFX_focus_test2"
 		texturefile = "gfx/interface/goals/SHU/focus_test.dds"
 	}
-    
+
 	##Icon Shine For: Test
 	SpriteType = {
 		name = "GFX_focus_test2_shine"

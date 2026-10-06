@@ -1,11 +1,11 @@
-﻿
-### CAMPAIGN - SHARED WAR FOCUSES ### 
 
-	### AZIR / NAZUMAH / MAJOR WAR CAMPAIGN 
+### CAMPAIGN - SHARED WAR FOCUSES ###
+
+	### AZIR / NAZUMAH / MAJOR WAR CAMPAIGN
 	shared_focus = {
 		id = SHU_XER_WAR
 		icon = GFX_goal_generic_territory_or_war
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -19,40 +19,40 @@
 			x = 0
 			y = 0
 			trigger = {
-				tag = NAZ  
+				tag = NAZ
 			}
 		}
 		offset = {
 			x = 10
 			y = 0
 			trigger = {
-				tag = XER  
+				tag = XER
 			}
 		}
-		
+
 		relative_position_id = SHU_XER
-		
+
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			add_political_power = 75
+			add_war_support = 0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
 
-	### XERATH / RENEKTON / MAJOR WAR CAMPAIGN 
+	### XERATH / RENEKTON / MAJOR WAR CAMPAIGN
 	shared_focus = {
 		id = XER_WAR_ONE
-		icon = goal_generic_territory_or_war
-		
+		icon = GFX_goal_generic_territory_or_war
+
 		x = 0
 		y = 0
 		offset = {
@@ -69,24 +69,22 @@
 				tag = XER
 			}
 		}
-		
+
 		relative_position_id = SHU_XER
-		
-		
+
+
 		cost = 10
 
 		available = {
-			NOT ={ 
-				trigger ={
-					tag = SHU
-				}
+			NOT ={
+				tag = SHU
 			}
 		}
-		
 		completion_reward = {
-			
+			army_experience = 20
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -95,9 +93,9 @@
 	## TWO
 	shared_focus = {
 		id = XER_WAR_TWO
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = SHU_XER_WAR }
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -107,19 +105,20 @@
 				tag = XER
 			}
 		}
-		
+
 		relative_position_id = SHU_XER_WAR
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			army_experience = 25
+			add_manpower = 15000
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -129,9 +128,9 @@
 	## XERATH DECLARE WAR | XER WAR KAL
 	shared_focus = {
 		id = XER_WAR_KAL
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -151,18 +150,25 @@
 
 		relative_position_id = XER_WAR_TWO
 
-		
+
 		prerequisite = { focus = XER_WAR_TWO }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					KAL = { exists = yes }
+					NOT = { has_war_with = KAL }
+				}
+				create_wargoal = { type = annex_everything target = KAL }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -171,9 +177,9 @@
 	## XERATH DECLARE WAR | XER WAR CRY
 	shared_focus = {
 		id = XER_WAR_CRY
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -193,18 +199,25 @@
 
 		relative_position_id = XER_WAR_KAL
 
-		
+
 		prerequisite = { focus = XER_WAR_KAL }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					CRY = { exists = yes }
+					NOT = { has_war_with = CRY }
+				}
+				create_wargoal = { type = annex_everything target = CRY }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -212,9 +225,9 @@
 	## XERATH DECLARE WAR | XER WAR TAR
 	shared_focus = {
 		id = XER_WAR_TAR
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -234,18 +247,25 @@
 
 		relative_position_id = XER_WAR_CRY
 
-		
+
 		prerequisite = { focus = XER_WAR_CRY }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					TAR = { exists = yes }
+					NOT = { has_war_with = TAR }
+				}
+				create_wargoal = { type = annex_everything target = TAR }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -257,7 +277,7 @@
 		id = XER_WAR_NAZ
 		icon = GFX_goal_local_subjugation
 
-		
+
 		x = 0
 		y = 0
 
@@ -276,34 +296,41 @@
 			}
 		}
 
-		relative_position_id = XER_WAR_GWS
+		relative_position_id = XER_WAR_TAR
 
-		
-		prerequisite = { 
-			focus = XER_WAR_GWS 
+
+		prerequisite = {
+			focus = XER_WAR_GWS
 			focus = XER_WAR_GSD
 		}
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NAZ = { exists = yes }
+					NOT = { has_war_with = NAZ }
+				}
+				create_wargoal = { type = annex_everything target = NAZ }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR VOID / ICATHIA | XER WAR VOI
 	shared_focus = {
 		id = XER_WAR_VOI
 		icon = GFX_goal_major_subjugation
 
-		
+
 		x = 0
 		y = 0
 
@@ -324,18 +351,25 @@
 
 		relative_position_id = XER_WAR_NAZ
 
-		
+
 		prerequisite = { focus = XER_WAR_NAZ}
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					VOI = { exists = yes }
+					NOT = { has_war_with = VOI }
+				}
+				create_wargoal = { type = annex_everything target = VOI }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -344,9 +378,9 @@
 	## XERATH DECLARE WAR NASHRAMAE| XER WAR NAS
 	shared_focus = {
 		id = XER_WAR_NAS
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -366,19 +400,26 @@
 
 		relative_position_id = XER_WAR_TAR
 
-		
+
 		prerequisite = { focus = XER_WAR_VOI }
 		prerequisite = { focus = XER_WAR_IXT }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NAS = { exists = yes }
+					NOT = { has_war_with = NAS }
+				}
+				create_wargoal = { type = annex_everything target = NAS }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -387,9 +428,9 @@
 	## XERATH DECLARE WAR | XER WAR NOX
 	shared_focus = {
 		id = XER_WAR_NOX
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -409,19 +450,26 @@
 
 		relative_position_id = XER_WAR_TAR
 
-		
+
 		prerequisite = { focus = XER_WAR_TAR }
 		prerequisite = { focus = XER_WAR_VOI }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOX = { exists = yes }
+					NOT = { has_war_with = NOX }
+				}
+				create_wargoal = { type = annex_everything target = NOX }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -429,9 +477,9 @@
 	## XERATH DECLARE WAR | XER WAR DEM
 	shared_focus = {
 		id = XER_WAR_DEM
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -451,30 +499,37 @@
 
 		relative_position_id = XER_WAR_NOX
 
-		
+
 		prerequisite = { focus = XER_WAR_NOX }
 		prerequisite = { focus = XER_WAR_NAS }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# DEM
+			if = {
+				limit = {
+					DEM = { exists = yes }
+					NOT = { has_war_with = DEM }
+				}
+				create_wargoal = { type = annex_everything target = DEM }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
+
 	## XERATH DECLARE WAR | XER WAR ZAU
 	shared_focus = {
 		id = XER_WAR_ZAU
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -494,30 +549,37 @@
 
 		relative_position_id = XER_WAR_NAS
 
-		
+
 		prerequisite = { focus = XER_WAR_ION }
 		prerequisite = { focus = XER_WAR_NAS }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# DEM
+			if = {
+				limit = {
+					ZAU = { exists = yes }
+					NOT = { has_war_with = ZAU }
+				}
+				create_wargoal = { type = annex_everything target = ZAU }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-			
+
 	## XERATH DECLARE WAR | XER WAR PIL
 	shared_focus = {
 		id = XER_WAR_PIL
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -537,72 +599,38 @@
 
 		relative_position_id = XER_WAR_ZAU
 
-		
+
 		prerequisite = { focus = XER_WAR_ZAU}
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# PIL
+			if = {
+				limit = {
+					PLT = { exists = yes }
+					NOT = { has_war_with = PLT }
+				}
+				create_wargoal = { type = annex_everything target = PLT }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR | XER WAR AVA
-	shared_focus = {
-		id = XER_WAR_AVA
-		icon = goal_generic_territory_or_war
-
-		
-		x = 0
-		y = 0
-		offset = {
-			x = 0
-			y = 2
-			trigger = {
-				tag = XER
-			}
-		}
-		offset = {
-			y = 0
-			x = 0
-			trigger = {
-				tag = SHU
-			}
-		}
-
-		relative_position_id = XER_WAR_NOX
-
-		
-		prerequisite = { focus = XER_WAR_DEM }
-		
-		cost = 10
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			# DEM
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
 		## XERATH DECLARE WAR | XER WAR PIL
 	shared_focus = {
 		id = XER_WAR_STO
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -622,31 +650,38 @@
 
 		relative_position_id = XER_WAR_DEM
 
-		
+
 		prerequisite = { focus = XER_WAR_DEM }
 		prerequisite = { focus = XER_WAR_ZAU }
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# Sto
+			if = {
+				limit = {
+					STO = { exists = yes }
+					NOT = { has_war_with = STO }
+				}
+				create_wargoal = { type = annex_everything target = STO }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR | XER WAR AVA
 	shared_focus = {
 		id = XER_WAR_AVA
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -666,30 +701,37 @@
 
 		relative_position_id = XER_WAR_NOX
 
-		
+
 		prerequisite = { focus = XER_WAR_DEM }
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# DEM
+			if = {
+				limit = {
+					AVA = { exists = yes }
+					NOT = { has_war_with = AVA }
+				}
+				create_wargoal = { type = annex_everything target = AVA }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR | XER WAR WIN
 	shared_focus = {
 		id = XER_WAR_WIN
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -707,33 +749,40 @@
 			}
 		}
 
-		relative_position_id = XER_WAR_URS
+		relative_position_id = XER_WAR_AVA
 
-		
+
 		prerequisite = { focus = XER_WAR_FRO}
 		prerequisite = { focus = XER_WAR_URS}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# DEM
+			if = {
+				limit = {
+					WIN = { exists = yes }
+					NOT = { has_war_with = WIN }
+				}
+				create_wargoal = { type = annex_everything target = WIN }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR | XER WAR URS
 	shared_focus = {
 		id = XER_WAR_URS
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -755,28 +804,35 @@
 
 		prerequisite = { focus = XER_WAR_AVA}
 		prerequisite = { focus = XER_WAR_STO}
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# DEM
+			if = {
+				limit = {
+					URS = { exists = yes }
+					NOT = { has_war_with = URS }
+				}
+				create_wargoal = { type = annex_everything target = URS }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
+
 	## XERATH DECLARE WAR | XER WAR FRO
 	shared_focus = {
 		id = XER_WAR_FRO
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 		offset = {
@@ -796,33 +852,40 @@
 
 		relative_position_id = XER_WAR_STO
 
-		
+
 		prerequisite = { focus = XER_WAR_STO }
 		prerequisite = { focus = XER_WAR_PIL }
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# DEM
+			if = {
+				limit = {
+					FRO = { exists = yes }
+					NOT = { has_war_with = FRO }
+				}
+				create_wargoal = { type = annex_everything target = FRO }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
+
 
 
 	## XERATH DECLARE WAR | XER WAR SHK
 	shared_focus = {
 		id = XER_WAR_SHK
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 
@@ -831,11 +894,6 @@
 			y = 1
 			trigger = {
 				tag = XER
-				if = { 
-					limited = { 
-						XER_WAR_GSD
-					} 
-				}
 			}
 		}
 		offset = {
@@ -846,24 +904,31 @@
 			}
 		}
 
-		relative_position_id = XER_WAR_GES
+		relative_position_id = XER_WAR_STO
 
-		
-		prerequisite = { 
-			focus = XER_WAR_GES 
+
+		prerequisite = {
+			focus = XER_WAR_GES
 			focus = XER_WAR_GSD
 		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					SHK = { exists = yes }
+					NOT = { has_war_with = SHK }
+				}
+				create_wargoal = { type = annex_everything target = SHK }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -872,9 +937,9 @@
 	## XERATH DECLARE WAR | XER WAR IXTAL
 	shared_focus = {
 		id = XER_WAR_IXT
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 
@@ -895,34 +960,41 @@
 
 		relative_position_id = XER_WAR_TWO
 
-		
-		prerequisite = { 
+
+		prerequisite = {
 			focus = XER_WAR_SHK
 		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					IXT = { exists = yes }
+					NOT = { has_war_with = IXT }
+				}
+				create_wargoal = { type = annex_everything target = IXT }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
 
-	
-	
+
+
 	## XERATH DECLARE WAR | XER WAR AUR
 	shared_focus = {
 		id = XER_WAR_AUR
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 
@@ -943,20 +1015,27 @@
 
 		relative_position_id = XER_WAR_TWO
 
-		
-		prerequisite = { 
+
+		prerequisite = {
 			focus = XER_WAR_TWO
 		 }
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					AUR = { exists = yes }
+					NOT = { has_war_with = AUR }
+				}
+				create_wargoal = { type = annex_everything target = AUR }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -964,9 +1043,9 @@
 	## XERATH DECLARE WAR | XER WAR MAR
 	shared_focus = {
 		id = XER_WAR_MAR
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 
@@ -987,45 +1066,45 @@
 
 		relative_position_id = XER_WAR_AUR
 
-		
-		prerequisite = { 
+
+		prerequisite = {
 			focus = XER_WAR_AUR
 		}
-		
+
 		cost = 10
 
 		available = {
-			if ={
-				trigger = {
-					country_exists = MAR
-				}
-
-			}
+			country_exists = MAR
 		}
 
 		bypass = {
 			NOT ={
-				trigger = {
-					country_exists = MAR
-				}
-
+				country_exists = MAR
 			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					MAR = { exists = yes }
+					NOT = { has_war_with = MAR }
+				}
+				create_wargoal = { type = annex_everything target = MAR }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR | XER WAR BLG
 	shared_focus = {
 		id = XER_WAR_BLG
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 
@@ -1046,32 +1125,39 @@
 
 		relative_position_id = XER_WAR_MAR
 
-		
-		prerequisite = { 
+
+		prerequisite = {
 			focus = XER_WAR_MAR
 		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					BLG = { exists = yes }
+					NOT = { has_war_with = BLG }
+				}
+				create_wargoal = { type = annex_everything target = BLG }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	## XERATH DECLARE WAR | XER WAR ION
 	shared_focus = {
 		id = XER_WAR_ION
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 
-		
+
 		x = 0
 		y = 0
 
@@ -1095,19 +1181,26 @@
 		# Post War Ixtal
 		prerequisite = { focus = XER_WAR_IXT }
 		# Post War Bilgewater
-		prerequisite = { focus = XER_WAR_BLG }		
-	
+		prerequisite = { focus = XER_WAR_BLG }
+
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
 		completion_reward = {
-			# WARGOAL against tag = ION - Ionia
+			if = {
+				limit = {
+					ION = { exists = yes }
+					NOT = { has_war_with = ION }
+				}
+				create_wargoal = { type = annex_everything target = ION }
+			}
+			army_experience = 15
+			add_war_support = 0.03
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1134,7 +1227,7 @@
 #			tag = MAN # EXAMPLE
 #		}
 #	}
-# 	relative_position_id = 
+# 	relative_position_id =
 # 	cost = 10
 # 	ai_will_do = {
 # 		factor = 1
@@ -1163,7 +1256,7 @@
 		# 	id = XER_WAR_GSD
 		# 	icon = goal_generic_territory_or_war
 		# 	prerequisite = { focus = XER_WAR_TWO }
-			
+
 		# 	x = 0
 		# 	y = 1
 		# 	offset = {
@@ -1173,29 +1266,29 @@
 		# 			tag = XER
 		# 		}
 		# 	}
-			
+
 		# 	relative_position_id = SHU_XER_WAR
-			
+
 		# 	cost = 10
 		# 	bypass = {
 
 		# 		ROOT = {
 		# 			# All Cores of these nations must be controlled by ROOT
-		# 			GSD = { all_core_state = { is_controlled_by = ROOT } } 
+		# 			GSD = { all_core_state = { is_controlled_by = ROOT } }
 		# 			GWS = { all_core_state = { is_controlled_by = ROOT } }
-		# 			GES = { all_core_state = { is_controlled_by = ROOT } } 
+		# 			GES = { all_core_state = { is_controlled_by = ROOT } }
 		# 		}
 		# 	}
 
 		# 		# ROOT = {
 		# 		# 	AND = {
 		# 		# 		# All Statements must be proven true to be bypassed
-		# 		# 		NOT = { country_exists = GSD } 
-		# 		# 		NOT = { country_exists = GWS } 
-		# 		# 		NOT = { country_exists = GES } 
-					
+		# 		# 		NOT = { country_exists = GSD }
+		# 		# 		NOT = { country_exists = GWS }
+		# 		# 		NOT = { country_exists = GES }
+
 		# 		# 		# Idea of Implementation
-		# 		# 		# SAI = { is_owned_by = ROOT } 
+		# 		# 		# SAI = { is_owned_by = ROOT }
 
 		# 		# 	}
 		# 		#  }
@@ -1210,7 +1303,7 @@
 		# 					option = HIDE
 		# 				}
 		# 			}
-					
+
 		# 			OR = {  # Both conditions must be met.
 		# 				tag = GSD  # The country tag must be XER.
 		# 				country_exists = GSD
@@ -1219,26 +1312,26 @@
 		# 		}
 		# 	}
 
-			
+
 		# 	completion_reward = {
-				
+
 		# 	}
-			
+
 		# 	ai_will_do = {
 		# 		factor = 5
 		# 	}
 		# }
-		
+
 		# ## XERATH DECLARE WAR GREAT WESTERN SAI | XER WAR GWS
 		# shared_focus = {
 		# 	id = XER_WAR_GWS
 		# 	icon = GFX_goal_nomad_hunters
 
 		# 	available = {
-		# 		trigger = { 
-		# 			if = { 
-		# 				limited = { 
-		# 					any_neighbor_state = GSD 
+		# 		trigger = {
+		# 			if = {
+		# 				limited = {
+		# 					any_neighbor_state = GSD
 
 		# 				}
 		# 			}
@@ -1284,18 +1377,18 @@
 
 		# 	relative_position_id = XER_WAR_TWO
 
-			
+
 		# 	prerequisite = { focus = XER_WAR_TWO }
 		# 	cost = 10
 
 		# 	available = {
-				
+
 		# 	}
-			
+
 		# 	completion_reward = {
-				
+
 		# 	}
-			
+
 		# 	ai_will_do = {
 		# 		factor = 5
 		# 	}
@@ -1345,18 +1438,18 @@
 
 		# 	relative_position_id = XER_WAR_TWO
 
-			
+
 		# 	prerequisite = { focus = XER_WAR_TWO }
 		# 	cost = 10
 
 		# 	available = {
-				
+
 		# 	}
-			
+
 		# 	completion_reward = {
-				
+
 		# 	}
-			
+
 		# 	ai_will_do = {
 		# 		factor = 5
 		# 	}
@@ -1365,9 +1458,9 @@
 	## XERATH DECLARE WAR GREAT SAI DESERT | XER WAR GSD
 	shared_focus = {
 		id = XER_WAR_GSD
-		icon = goal_generic_territory_or_war
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = XER_WAR_TWO }
-		
+
 		x = 0
 		y = 1
 		offset = {
@@ -1377,7 +1470,7 @@
 				tag = XER
 			}
 		}
-			
+
 		# available
 		allow_branch = {
 			if = {
@@ -1395,19 +1488,19 @@
 
 						country_exists = GWS
 						country_exists = GES
-						
+
 					}
 				}
 			}
 		}
-		
+
 		relative_position_id = SHU_XER_WAR
-		
+
 		cost = 10
-		
+
 		available = {
-			OR = {  
-				tag = GSD  
+			OR = {
+				tag = GSD
 				country_exists = GSD
 				has_country_flag = GSD_formed
 			}
@@ -1415,21 +1508,16 @@
 
 		bypass = {
 			ROOT = {
-				GSD = { all_core_state = { is_controlled_by = ROOT } } 
+				GSD = { all_core_state = { is_controlled_by = ROOT } }
 				GWS = { all_core_state = { is_controlled_by = ROOT } }
-				GES = { all_core_state = { is_controlled_by = ROOT } } 
+				GES = { all_core_state = { is_controlled_by = ROOT } }
 			}
 		}
-		
+
 		completion_reward = {
 			add_political_power = 100  # Adjust reward as needed
-			hidden_effect = {
-				remove_focus = XER_WAR_GWS
-				remove_focus = XER_WAR_GES
-				mark_focus_tree_layout_dirty = yes
-			}
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1451,7 +1539,7 @@
 				tag = XER
 			}
 		}
-				
+
 		# available
 		allow_branch = {
 			if = {
@@ -1470,7 +1558,7 @@
 				}
 			}
 		}
-		
+
 		relative_position_id = XER_WAR_TWO
 
 		cost = 10
@@ -1515,7 +1603,7 @@
 				tag = XER
 			}
 		}
-		
+
 		# available
 		allow_branch = {
 			if = {
@@ -1587,7 +1675,7 @@
 	# 		set_country_flag = GSD_formed
 	# 		add_political_power = 150  # Adjust reward as needed
 	# 	}
-		
+
 	# 	ai_will_do = {
 	# 		factor = 10
 	# 	}

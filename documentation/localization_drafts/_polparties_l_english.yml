@@ -96,6 +96,6 @@
 ####################################################################
 
  # ? BUG: Missing Desc On Tribe
- # ? FIX: tribe s-> tribes_desc 
+ # ? FIX: tribe s-> tribes_desc
  #tribes: "Tribes"
  #tribes_desc: "The region is governed by a collection of nomadic tribes in the area."

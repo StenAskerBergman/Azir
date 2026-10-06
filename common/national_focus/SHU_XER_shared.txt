@@ -1,4 +1,4 @@
-﻿
+
 shared_focus = {
 	id = SHU_XER
 	icon = GFX_focus_ARG_defense_and_democracy
@@ -12,13 +12,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 
@@ -31,7 +31,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -43,9 +43,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_political_power = 50
+		add_stability = 0.02
 	}
 }
 
@@ -62,13 +62,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -82,7 +82,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -121,13 +121,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -141,7 +141,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -169,7 +169,7 @@ shared_focus = {
 shared_focus = {
 	id = SHU_XER_INFA
 	icon = GFX_focus_ETH_peacekeeping_forces #GFX_goal_unknown
-	prerequisite = { 
+	prerequisite = {
 		focus = SHU_XER_ECO
 		focus = SHU_XER_MIL
 	}
@@ -182,13 +182,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -202,7 +202,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -214,9 +214,11 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		random_owned_controlled_state = {
+			add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+		}
+		add_political_power = 50
 	}
 }
 
@@ -234,13 +236,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -254,7 +256,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -266,9 +268,14 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		random_owned_controlled_state = { add_resource = { type = steel amount = 8 } }
+		add_tech_bonus = {
+			name = SHU_XER_mining_bonus
+			bonus = 0.5
+			uses = 1
+			category = excavation_tech
+		}
 	}
 }
 
@@ -285,13 +292,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -305,7 +312,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -317,9 +324,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_stability = 0.05
+		add_manpower = 10000
 	}
 }
 
@@ -336,13 +343,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -356,7 +363,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -368,9 +375,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_manpower = 20000
+		army_experience = 10
 	}
 }
 
@@ -387,13 +394,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -407,7 +414,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -419,9 +426,11 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+		}
 	}
 }
 
@@ -438,13 +447,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -458,7 +467,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -470,9 +479,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_stability = 0.04
+		add_manpower = 15000
 	}
 }
 
@@ -491,13 +500,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -511,7 +520,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -523,9 +532,14 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_tech_bonus = {
+			name = SHU_XER_agriculture_bonus
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		add_political_power = 50
 	}
 }
 
@@ -544,13 +558,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -563,16 +577,16 @@ shared_focus = {
 
 	available = {
 		NOT = {
-			tag = SHU 
+			tag = SHU
 		}
 	}
-	
+
 	allow_branch = {
 		NOT = {
-			tag = SHU 
+			tag = SHU
 		}
 	}
-	
+
 
 	bypass = {
 
@@ -585,9 +599,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		capital_scope = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+		add_stability = 0.03
 	}
 }
 
@@ -604,13 +618,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -624,7 +638,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -636,16 +650,16 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		random_owned_controlled_state = { add_resource = { type = tungsten amount = 8 } }
+		add_political_power = 50
 	}
 }
 
 # Safer Mines!
 shared_focus = {
 	id = SHU_safermines
-	icon = GFX_focus_generic_mining_industry 
+	icon = GFX_focus_generic_mining_industry
 	x = -4 # 27 # 18
 	y = 4 # 7
 	search_filters = {
@@ -660,42 +674,40 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
 
-	# Have Taliyah Recruited 
+	# Have Taliyah Recruited
 	available = {
-		if = {
-			 has_character = SHU_taliyah
-			 OR
-			 has_character = XER_taliyah
-			 OR
-			 has_character = NAZ_taliyah
+		OR = {
+			has_character = SHU_taliyah
+			has_character = XER_taliyah
+			has_character = NAZ_taliyah
 		}
 	}
-	
+
 	allow_branch = {
 		NOT = {
-			tag = SHU 
+			tag = SHU
 		}
 	}
 
 	cost = 10
 
 	completion_reward = {
-		limit = { has_resources_amount = { resource = oil amount > 19 } }
-
-		add_resource = {
-			type = oil
-			amount = 24
+		random_owned_controlled_state = {
+			add_resource = {
+				type = oil
+				amount = 8
+			}
 		}
 	}
 }
@@ -703,8 +715,8 @@ shared_focus = {
 shared_focus = {
 	id = SHU_XER_HEXT
 	icon = GFX_goal_unknown
-	prerequisite = { 
-		focus = SHU_XER_MINE  
+	prerequisite = {
+		focus = SHU_XER_MINE
 	}
 	# mutually_exclusive = { focus =  }
 	x = -2
@@ -715,13 +727,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -735,7 +747,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -747,9 +759,13 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_tech_bonus = {
+			name = SHU_XER_hextech_bonus
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
 	}
 }
 
@@ -757,10 +773,10 @@ shared_focus = {
 shared_focus = {
 	id = SHU_XER_HEXF
 	icon = GFX_goal_unknown
-	prerequisite = { 
-		focus = SHU_XER_ORE 
+	prerequisite = {
+		focus = SHU_XER_ORE
 	}
-	prerequisite = { 
+	prerequisite = {
 	#	focus = SHU_XER_HEXT
 	}
 
@@ -773,13 +789,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -793,7 +809,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -805,21 +821,21 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_research_slot = 1
+		add_political_power = 50
 	}
 }
 
 shared_focus = {
 	id = SHU_XER_FIRE
 	icon = GFX_focus_SWE_revoke_militia_law # GFX_goal_unknown
-	prerequisite = { 
-		focus = SHU_XER_HEXF 
+	prerequisite = {
+		focus = SHU_XER_HEXF
 		focus = SHU_XER_HEXT
 		focus = SHU_XER_HUB
 	}
-	prerequisite = { 
+	prerequisite = {
 	#	focus = SHU_XER_HEXT
 	}
 
@@ -832,13 +848,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -851,19 +867,19 @@ shared_focus = {
 
 	available = {
 		NOT = {
-			tag = SHU 
+			tag = SHU
 		}
 		NOT = {
-			AND = { 
+			AND = {
 				tag = XER
-				has_country_leader = XER_Xerath
+				has_country_leader = { character = XER_xerath }
 			}
-		}	
+		}
 	}
-	
+
 	allow_branch = {
 		NOT = {
-			tag = SHU 
+			tag = SHU
 		}
 	}
 
@@ -878,9 +894,12 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		army_experience = 10
 	}
 }
 
@@ -897,13 +916,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -917,7 +936,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -929,9 +948,13 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		navy_experience = 20
+		random_owned_controlled_state = {
+			limit = { is_coastal = yes }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = dockyard level = 1 instant_build = yes }
+		}
 	}
 }
 
@@ -948,13 +971,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -968,7 +991,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -980,16 +1003,16 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		add_research_slot = 1
+		add_stability = 0.02
 	}
 }
 
 shared_focus = {
 	id = SHU_XER_INFB
 	icon = GFX_focus_generic_military_mission # GFX_goal_unknown
-	prerequisite = { 
+	prerequisite = {
 		focus = SHU_XER_INFA
 	}
 	# mutually_exclusive = { focus = SHU_XER_MIL  }
@@ -1001,13 +1024,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -1021,7 +1044,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -1033,9 +1056,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+		add_political_power = 50
 	}
 }
 
@@ -1054,13 +1077,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -1074,7 +1097,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -1086,9 +1109,9 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		capital_scope = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+		army_experience = 10
 	}
 }
 
@@ -1107,13 +1130,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 	relative_position_id = SHU_XER
@@ -1127,7 +1150,7 @@ shared_focus = {
 	available = {
 
 	}
-	
+
 	bypass = {
 
 	}
@@ -1139,9 +1162,12 @@ shared_focus = {
 	complete_tooltip = {
 
 	}
-
 	completion_reward = {
-
+		air_experience = 20
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = radar_station level = 1 instant_build = yes }
+		}
 	}
 }
 
@@ -1170,7 +1196,7 @@ shared_focus = {
 #			tag = MAN # EXAMPLE
 #		}
 #	}
-# 	relative_position_id = 
+# 	relative_position_id =
 # 	cost = 10
 # 	ai_will_do = {
 # 		factor = 1

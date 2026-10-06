@@ -37,17 +37,17 @@ GER_poor_iron_quality = {
 
 ################################
 
-###  ##  ### #    ##  #  # ###  
- #  #  # #   #   #  # ## # #  # 
- #  #    ##  #   #### # ## #  # 
- #  #  # #   #   #  # #  # #  # 
-###  ##  ### ### #  # #  # ###  
+###  ##  ### #    ##  #  # ###
+ #  #  # #   #   #  # ## # #  #
+ #  #    ##  #   #### # ## #  #
+ #  #  # #   #   #  # #  # #  #
+###  ##  ### ### #  # #  # ###
 
 ################################
 
 ICE_the_icelandic_economy_modifier = {
 	enable = { always = yes }
-	icon = GFX_idea_tur_balkan_central_bank_wealthy_greece 
+	icon = GFX_idea_tur_balkan_central_bank_wealthy_greece
 
 	research_speed_factor = ICE_economy_research_speed_factor
 	production_factory_max_efficiency_factor = ICE_economy_production_factory_max_efficiency_factor
@@ -72,13 +72,13 @@ ICE_transformation_of_nature_state_modifier = {
 ##################################################################
 ##################################################################
 
-    ##    ##  #######  ########  ##      ##    ###    ##    ## 
-    ###   ## ##     ## ##     ## ##  ##  ##   ## ##    ##  ##  
-    ####  ## ##     ## ##     ## ##  ##  ##  ##   ##    ####   
-    ## ## ## ##     ## ########  ##  ##  ## ##     ##    ##    
-    ##  #### ##     ## ##   ##   ##  ##  ## #########    ##    
-    ##   ### ##     ## ##    ##  ##  ##  ## ##     ##    ##    
-    ##    ##  #######  ##     ##  ###  ###  ##     ##    ##    
+    ##    ##  #######  ########  ##      ##    ###    ##    ##
+    ###   ## ##     ## ##     ## ##  ##  ##   ## ##    ##  ##
+    ####  ## ##     ## ##     ## ##  ##  ##  ##   ##    ####
+    ## ## ## ##     ## ########  ##  ##  ## ##     ##    ##
+    ##  #### ##     ## ##   ##   ##  ##  ## #########    ##
+    ##   ### ##     ## ##    ##  ##  ##  ## ##     ##    ##
+    ##    ##  #######  ##     ##  ###  ###  ##     ##    ##
 
 ##################################################################
 ##################################################################
@@ -93,13 +93,13 @@ NOR_prep_his_dmod_1 = {
 	remove_trigger = {
 		NOR_prep_his_mod_remove_trigger = yes
 	}
-	icon = GFX_modifiers_generic_construction   
-	# Positive 
+	icon = GFX_modifiers_generic_construction
+	# Positive
 	state_production_speed_industrial_complex_factor = 0.25
-	local_manpower = 0.1 
+	local_manpower = 0.1
 	# Negative
-	state_production_speed_bunker_factor = -0.1 
-	state_production_speed_coastal_bunker_factor = -0.1 
+	state_production_speed_bunker_factor = -0.1
+	state_production_speed_coastal_bunker_factor = -0.1
 }
 
 NOR_prep_his_dmod_2 = {
@@ -109,7 +109,7 @@ NOR_prep_his_dmod_2 = {
 	remove_trigger = {
 		NOR_prep_his_mod_remove_trigger = yes
 	}
-	icon = GFX_modifiers_generic_construction  
+	icon = GFX_modifiers_generic_construction
 	# Positive
 	local_manpower = 0.1
 	state_production_speed_industrial_complex_factor = 0.25
@@ -117,9 +117,9 @@ NOR_prep_his_dmod_2 = {
 	state_resources_factor = 0.1
 	# Negative
 	max_dig_in_factor = -0.2
-	state_production_speed_bunker_factor = -0.1 
+	state_production_speed_bunker_factor = -0.1
 	state_production_speed_coastal_bunker_factor = -0.1
-	state_production_speed_arms_factory_factor = -0.15 
+	state_production_speed_arms_factory_factor = -0.15
 }
 
 NOR_prep_his_dmod_3 = {
@@ -129,7 +129,7 @@ NOR_prep_his_dmod_3 = {
 	remove_trigger = {
 		NOR_prep_his_mod_remove_trigger = yes
 	}
-	icon = GFX_modifiers_generic_construction   
+	icon = GFX_modifiers_generic_construction
 	# Positive
 	local_manpower = 0.1
 	state_production_speed_industrial_complex_factor = 0.25
@@ -141,8 +141,8 @@ NOR_prep_his_dmod_3 = {
 	local_org_regain = -0.1
 	local_supplies = -0.1
 	max_dig_in_factor = -0.2
-	state_production_speed_bunker_factor = -0.1 
-	state_production_speed_coastal_bunker_factor = -0.1 
+	state_production_speed_bunker_factor = -0.1
+	state_production_speed_coastal_bunker_factor = -0.1
 	state_production_speed_arms_factory_factor = -0.15
 }
 
@@ -154,11 +154,11 @@ NOR_prep_resistance_dmod = {
 	resistance_decay = -0.2
 }
 
-NOR_defend_state_dmod = { #Added when deploying Level 1 Prep 
+NOR_defend_state_dmod = { #Added when deploying Level 1 Prep
 	enable = { always = yes }
-	
-	icon = GFX_modifiers_generic_defense  
-	
+
+	icon = GFX_modifiers_generic_defense
+
 	remove_trigger = {
 		NOR = {
 			OR = {
@@ -166,9 +166,9 @@ NOR_defend_state_dmod = { #Added when deploying Level 1 Prep
 				has_country_flag = NOR_going_dem_allied
 			}
 			OR = {
-				has_defensive_war = no 
-				exists = no 
-				has_capitulated = yes 
+				has_defensive_war = no
+				exists = no
+				has_capitulated = yes
 			}
 		}
 	}
@@ -182,7 +182,7 @@ NOR_defend_state_dmod = { #Added when deploying Level 1 Prep
 
 NOR_prep_fasc_dmod_1 = {
 	enable = {
-		always = yes   
+		always = yes
 	}
 	remove_trigger = {
 		NOR_prep_fasc_mod_remove_trigger = yes
@@ -192,14 +192,14 @@ NOR_prep_fasc_dmod_1 = {
 	recruitable_population_factor = 0.05
 	# Negative
 	state_production_speed_buildings_factor = -0.15
-	local_factories = NOR_prep_fasc_dmod_factories #-0.2  
+	local_factories = NOR_prep_fasc_dmod_factories #-0.2
 	local_supplies =  NOR_prep_fasc_dmod_local_supplies #-0.15
 
 }
 
 NOR_prep_fasc_dmod_2 = {
 	enable = {
-		always = yes  
+		always = yes
 	}
 	remove_trigger = {
 		NOR_prep_fasc_mod_remove_trigger = yes
@@ -209,34 +209,34 @@ NOR_prep_fasc_dmod_2 = {
 	recruitable_population_factor = 0.05
 	# Negative
 	state_production_speed_buildings_factor = -0.15
-	local_factories = NOR_prep_fasc_dmod_factories #-0.15   
+	local_factories = NOR_prep_fasc_dmod_factories #-0.15
 	local_supplies =  NOR_prep_fasc_dmod_local_supplies #-0.15
 }
 
 NOR_prep_fasc_dmod_3 = {
 	enable = {
-		always = yes  
+		always = yes
 	}
 	remove_trigger = {
 		NOR_prep_fasc_mod_remove_trigger = yes
 	}
-	icon = GFX_modifiers_NOR_fascism  
+	icon = GFX_modifiers_NOR_fascism
 	# Positive
 	recruitable_population_factor = 0.05
 	# Negative
 	state_production_speed_buildings_factor = -0.15
-	local_factories = NOR_prep_fasc_dmod_factories #-0.12   
+	local_factories = NOR_prep_fasc_dmod_factories #-0.12
 	local_supplies =  NOR_prep_fasc_dmod_local_supplies #-0.15
 }
 
-#### Monarchist ##### 
+#### Monarchist #####
 NOR_royal_defenses = {
 	enable = {
-		always = yes 
-	}	
+		always = yes
+	}
 	remove_trigger = {
 		NOR = {
-			has_capitulated = yes  
+			has_capitulated = yes
 		}
 	}
 
@@ -253,7 +253,7 @@ NOR_royal_defenses = {
 
 NOR_independent_norway_dmod = { # Added at the start of the Civilian Industrial branch and improved throughout it
 	enable = {
-		NOR_AAT = yes 
+		NOR_AAT = yes
 	}
 
 	remove_trigger = {
@@ -262,7 +262,7 @@ NOR_independent_norway_dmod = { # Added at the start of the Civilian Industrial 
 
 	icon = GFX_idea_generic_morale_bonus
 
-	political_power_factor = 0.1 # Making this one a number so I don't need to make a tooltip just for this.  
+	political_power_factor = 0.1 # Making this one a number so I don't need to make a tooltip just for this.
 	consumer_goods_factor = NOR.NOR_independent_norway_dmod_consumer_goods_factor #-0.1
 	production_speed_industrial_complex_factor = NOR.NOR_independent_norway_dmod_production_speed_industrial_complex_factor #0.15 then 0.30
 	production_speed_infrastructure_factor = NOR.NOR_independent_norway_dmod_production_speed_infrastructure_factor #0.2
@@ -270,37 +270,37 @@ NOR_independent_norway_dmod = { # Added at the start of the Civilian Industrial 
 	production_speed_supply_node_factor = NOR.NOR_independent_norway_dmod_production_speed_supply_node #0.15
 	production_speed_naval_base_factor = NOR.NOR_independent_norway_dmod_modifier_production_speed_naval_base_factor #0.15
 	army_org_factor = NOR.NOR_independent_norway_dmod_army_org_factor #0.15 (A New Norway Focus)
-	navy_org_factor = NOR.NOR_independent_norway_dmod_navy_org_factor #0.1 (A New Norway Focus) 
-	war_stability_factor = NOR.NOR_independent_norway_dmod_war_stability_factor #0.2 (A New Norway Focus) 
-	war_support_factor = NOR.NOR_independent_norway_dmod_war_support_factor #0.15 (A New Norway Focus) 
+	navy_org_factor = NOR.NOR_independent_norway_dmod_navy_org_factor #0.1 (A New Norway Focus)
+	war_stability_factor = NOR.NOR_independent_norway_dmod_war_stability_factor #0.2 (A New Norway Focus)
+	war_support_factor = NOR.NOR_independent_norway_dmod_war_support_factor #0.15 (A New Norway Focus)
 }
 
-NOR_army_air_force_dmod = { # Remeber to copy any change to the royal version. 
+NOR_army_air_force_dmod = { # Remeber to copy any change to the royal version.
 	enable = {
-		NOR_AAT = yes 
+		NOR_AAT = yes
 	}
 
-	icon = GFX_idea_air_support_focus 
+	icon = GFX_idea_air_support_focus
 
 	air_mission_efficiency = 0.1 # Starting bonus
 	air_mission_xp_gain_factor = 0.12 # Starting bonus
 	license_air_purchase_cost = NOR.NOR_army_air_force_dmod_license_air_purchase_cost #-0.4
-	production_speed_air_base_factor = NOR.NOR_army_air_force_dmod_production_speed_air_base_factor #0.45   
+	production_speed_air_base_factor = NOR.NOR_army_air_force_dmod_production_speed_air_base_factor #0.45
 	production_speed_anti_air_building_factor = NOR.NOR_army_air_force_dmod_production_speed_anti_air_building_factor #0.25
 	air_doctrine_cost_factor = NOR.NOR_army_air_force_dmod_air_doctrine_cost_factor #-0.1 then -0.2
-	air_ace_bonuses_factor = NOR.NOR_army_air_force_dmod_air_ace_bonuses_factor #0.15 
+	air_ace_bonuses_factor = NOR.NOR_army_air_force_dmod_air_ace_bonuses_factor #0.15
 	air_ace_generation_chance_factor = NOR.NOR_army_air_force_dmod_air_ace_generation_chance_factor # 0.25
 	air_attack_factor = NOR.NOR_army_air_force_dmod_air_attack_factor #0.1
 	air_defence_factor = NOR.NOR_army_air_force_dmod_air_defence_factor #0.1
 	air_nav_efficiency = NOR.NOR_army_air_force_dmod_air_nav_efficiency #0.25
 }
 
-NOR_royal_air_force_dmod = { #This is a duplicate of the army arforce one right above so we can change name 
-	
+NOR_royal_air_force_dmod = { #This is a duplicate of the army arforce one right above so we can change name
+
 	icon = GFX_idea_NOR_luftforsvaret_ns
 
 	enable = {
-		NOR_AAT = yes 
+		NOR_AAT = yes
 	}
 
 	icon = GFX_idea_NOR_luftforsvaret_ns
@@ -308,10 +308,10 @@ NOR_royal_air_force_dmod = { #This is a duplicate of the army arforce one right 
 	air_mission_efficiency = 0.1 # Starting bonus
 	air_mission_xp_gain_factor = 0.12 # Starting bonus
 	license_air_purchase_cost = NOR.NOR_army_air_force_dmod_license_air_purchase_cost #-0.4
-	production_speed_air_base_factor = NOR.NOR_army_air_force_dmod_production_speed_air_base_factor #0.45   
+	production_speed_air_base_factor = NOR.NOR_army_air_force_dmod_production_speed_air_base_factor #0.45
 	production_speed_anti_air_building_factor = NOR.NOR_army_air_force_dmod_production_speed_anti_air_building_factor #0.25
 	air_doctrine_cost_factor = NOR.NOR_army_air_force_dmod_air_doctrine_cost_factor #-0.1 then -0.2
-	air_ace_bonuses_factor = NOR.NOR_army_air_force_dmod_air_ace_bonuses_factor #0.15 
+	air_ace_bonuses_factor = NOR.NOR_army_air_force_dmod_air_ace_bonuses_factor #0.15
 	air_ace_generation_chance_factor = NOR.NOR_army_air_force_dmod_air_ace_generation_chance_factor # 0.25
 	air_attack_factor = NOR.NOR_army_air_force_dmod_air_attack_factor #0.1
 	air_defence_factor = NOR.NOR_army_air_force_dmod_air_defence_factor #0.1
@@ -319,21 +319,21 @@ NOR_royal_air_force_dmod = { #This is a duplicate of the army arforce one right 
 }
 
 NOR_royal_navy_dmod = {
-	
+
 	icon = GFX_idea_NOR_royal_navy_dmod
-	
+
 	enable = {
-		NOR_AAT = yes 
+		NOR_AAT = yes
 	}
 
-	icon =  GFX_idea_NOR_royal_navy_dmod 
-	
+	icon =  GFX_idea_NOR_royal_navy_dmod
+
 	naval_coordination = 0.1 # Starting bonus
-	naval_morale_factor = 0.1 # Starting bonus 
+	naval_morale_factor = 0.1 # Starting bonus
 	industrial_capacity_dockyard = NOR.NOR_royal_navy_dmod_industrial_capacity_dockyard
 	convoy_escort_efficiency = NOR.NOR_royal_navy_dmod_convoy_escort_efficiency #0.3
 	naval_strike_attack_factor = NOR.NOR_royal_navy_dmod_naval_strike_attack_factor #0.25
-	naval_strike_targetting_factor = NOR.NOR_royal_navy_dmod_naval_strike_targetting_factor #0.2 
+	naval_strike_targetting_factor = NOR.NOR_royal_navy_dmod_naval_strike_targetting_factor #0.2
 	spotting_chance = NOR.NOR_royal_navy_dmod_spotting_chance # 0.25
 	sortie_efficiency = NOR.NOR_royal_navy_dmod_sortie_efficiency #0.2
 	mines_planting_by_fleets_factor = NOR.NOR_royal_navy_dmod_mines_planting_by_fleets_factor # 0.35
@@ -343,14 +343,14 @@ NOR_royal_navy_dmod = {
 	convoy_retreat_speed = NOR.NOR_royal_navy_dmod_convoy_retreat_speed # 0.2
 }
 
-NOR_administrative_council_dmod = { # Added in the Historical side of the Fascist Path 
+NOR_administrative_council_dmod = { # Added in the Historical side of the Fascist Path
 	enable = {
-		NOR_AAT = yes 
+		NOR_AAT = yes
 	}
 
 	remove_trigger = {
-		NOR = { 
-			NOT = { has_government = fascism } 
+		NOR = {
+			NOT = { has_government = fascism }
 		}
 	}
 
@@ -363,7 +363,7 @@ NOR_administrative_council_dmod = { # Added in the Historical side of the Fascis
 
 NOR_oppressed_civilians_dmod = {
 		enable = {
-			NOR_AAT = yes 
+			NOR_AAT = yes
 		}
 		remove_trigger = {
 			NOT = { has_government = fascism }
@@ -374,13 +374,13 @@ NOR_oppressed_civilians_dmod = {
 		resistance_growth = -0.15
 		resistance_target = -0.1
 		stability_factor = 0.2
-		consumer_goods_factor = 0.1	
+		consumer_goods_factor = 0.1
 		conscription_factor = NOR.NOR_oppressed_civilians_dmod_recruitable_population_factor #0.15
 }
 
 NOR_kingdom_of_norway_dmod = {
 	enable = {
-		NOR_AAT = yes 
+		NOR_AAT = yes
 	}
 	remove_trigger = {
 		NOT = {	has_government = neutrality	}
@@ -397,15 +397,15 @@ NOR_kingdom_of_norway_dmod = {
 	special_forces_training_time_factor = NOR_kingdom_of_norway_dmod_special_forces_training_time_factor # -0.1
 	special_forces_defence_factor = NOR_kingdom_of_norway_dmod_special_forces_defence_factor #0.10
 	modifier_army_sub_unit_mountaineers_max_org_factor = NOR_kingdom_of_norway_dmod_modifier_army_sub_unit_mountaineers_max_org_factor #0.10
-	modifier_army_sub_unit_marines_max_org_factor = NOR_kingdom_of_norway_dmod_modifier_army_sub_unit_marines_max_org_factor #0.10
+	modifier_army_sub_unit_marine_max_org_factor = NOR_kingdom_of_norway_dmod_modifier_army_sub_unit_marine_max_org_factor #0.10
 	conscription_factor = NOR_kingdom_of_norway_dmod_recruitable_population_factor # 0.2
-	army_defence_factor = NOR_kingdom_of_norway_dmod_army_defence_factor # 0.2 
-	army_morale_factor = NOR_kingdom_of_norway_dmod_army_morale_factor # 0.15 
+	army_defence_factor = NOR_kingdom_of_norway_dmod_army_defence_factor # 0.2
+	army_morale_factor = NOR_kingdom_of_norway_dmod_army_morale_factor # 0.15
 	army_org_factor = NOR_kingdom_of_norway_dmod_army_org_factor # 0.15
 	justify_war_goal_time = NOR_kingdom_of_norway_dmod_justify_war_goal_time # -0.2
 	production_speed_coastal_bunker_factor =  NOR_kingdom_of_norway_dmod_production_speed_coastal_bunker_factor # 0.35
 	production_speed_naval_base_factor = NOR_kingdom_of_norway_dmod_production_speed_naval_base_factor # 0.4
-	production_speed_dockyard_factor = NOR_kingdom_of_norway_dmod_production_speed_dockyard_factor # 0.2 
+	production_speed_dockyard_factor = NOR_kingdom_of_norway_dmod_production_speed_dockyard_factor # 0.2
 	naval_mines_damage_factor = NOR_kingdom_of_norway_dmod_naval_mines_damage_factor # 0.2
 	spotting_chance = NOR_kingdom_of_norway_dmod_spotting_chance # 0.35
 	navy_max_range_factor = NOR_kingdom_of_norway_dmod_navy_max_range_factor # 0.15
@@ -549,7 +549,7 @@ DEN_neglected_military_dynamic_modifier = {
 	planning_speed = DEN_neglected_military_planning_speed # -0.1
 }
 
-DEN_economic_crisis_dynamic_modifier = { 
+DEN_economic_crisis_dynamic_modifier = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_economic_crisis
 
@@ -704,7 +704,7 @@ DEN_political_edicts_dynamic_modifier = {
 		check_variable = { DEN_political_edicts_conscription_factor = 0 }
 		check_variable = { DEN_political_edicts_operative_slot = 0 }
 	}
-	
+
 	drift_defence_factor = DEN_political_edicts_drift_defence_factor #0
 	conscription_factor = DEN_political_edicts_conscription_factor #0
 	operative_slot = DEN_political_edicts_operative_slot #0
@@ -717,7 +717,7 @@ DEN_occupation_laws_dynamic_modifier = {
 	remove_trigger = {
 		is_subject = no
 	}
-	
+
 	cic_to_overlord_factor = DEN_occupation_laws_cic_to_overlord
 	mic_to_overlord_factor = DEN_occupation_laws_mic_to_overlord
 	autonomy_manpower_share = DEN_occupation_laws_autonomy_manpower_share
@@ -932,7 +932,7 @@ DEN_flyvevabnet_dynamic_modifier_max_improved = { #Make sure to change all effec
 #### STATE MODIFIERS ####
 DEN_development_projects_state_modifier = {
 	enable = { always = yes }
-	icon = GFX_modifiers_ETH_state_development 
+	icon = GFX_modifiers_ETH_state_development
 
 	remove_trigger = {
 		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
@@ -947,7 +947,7 @@ DEN_development_projects_state_modifier = {
 
 DEN_development_projects_mainland_state_modifier = {
 	enable = { always = yes }
-	icon = GFX_modifiers_ETH_state_development 
+	icon = GFX_modifiers_ETH_state_development
 
 	remove_trigger = {
 		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
@@ -962,7 +962,7 @@ DEN_development_projects_mainland_state_modifier = {
 
 DEN_military_projects_state_modifier = {
 	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_industry 
+	icon = GFX_modifiers_generic_military_industry
 
 	remove_trigger = {
 		ROOT = { NOT = { is_core_of = ROOT.controller } } # ROOT refers to the state on which the modifier is added
@@ -1020,13 +1020,13 @@ DEN_pan_scandinavianism_modifier = {
 ###################################################################################################
 ###################################################################################################
 
-######## #### ##    ## ##          ###    ##    ## ########  
-##        ##  ###   ## ##         ## ##   ###   ## ##     ## 
-##        ##  ####  ## ##        ##   ##  ####  ## ##     ## 
-######    ##  ## ## ## ##       ##     ## ## ## ## ##     ## 
-##        ##  ##  #### ##       ######### ##  #### ##     ## 
-##        ##  ##   ### ##       ##     ## ##   ### ##     ## 
-##       #### ##    ## ######## ##     ## ##    ## ########  
+######## #### ##    ## ##          ###    ##    ## ########
+##        ##  ###   ## ##         ## ##   ###   ## ##     ##
+##        ##  ####  ## ##        ##   ##  ####  ## ##     ##
+######    ##  ## ## ## ##       ##     ## ## ## ## ##     ##
+##        ##  ##  #### ##       ######### ##  #### ##     ##
+##        ##  ##   ### ##       ##     ## ##   ### ##     ##
+##       #### ##    ## ######## ##     ## ##    ## ########
 
 ###################################################################################################
 ###################################################################################################
@@ -1222,13 +1222,13 @@ FIN_confederation_of_finno_russian_republics_dm = {
 ###########################################################
 ###########################################################
 
-    ##    ##  #######  ########  ########  ####  ######  
-    ###   ## ##     ## ##     ## ##     ##  ##  ##    ## 
-    ####  ## ##     ## ##     ## ##     ##  ##  ##       
-    ## ## ## ##     ## ########  ##     ##  ##  ##       
-    ##  #### ##     ## ##   ##   ##     ##  ##  ##       
-    ##   ### ##     ## ##    ##  ##     ##  ##  ##    ## 
-    ##    ##  #######  ##     ## ########  ####  ######  
+    ##    ##  #######  ########  ########  ####  ######
+    ###   ## ##     ## ##     ## ##     ##  ##  ##    ##
+    ####  ## ##     ## ##     ## ##     ##  ##  ##
+    ## ## ## ##     ## ########  ##     ##  ##  ##
+    ##  #### ##     ## ##   ##   ##     ##  ##  ##
+    ##   ### ##     ## ##    ##  ##     ##  ##  ##    ##
+    ##    ##  #######  ##     ## ########  ####  ######
 
 ###########################################################
 ###########################################################
@@ -1241,7 +1241,7 @@ FIN_confederation_of_finno_russian_republics_dm = {
 NORDIC_efficient_resource_extraction = {
 	enable = { always = yes }
 	icon = GFX_modifiers_generic_construction
-	
+
 	state_resources_factor = 0.1
 }
 
@@ -1271,7 +1271,7 @@ NORDIC_airforces_originator_dmod = {
 
 	experience_gain_air = 0.2
 	air_cas_present_factor = NORDIC_airforces_originator_dmod_cas_factor #0.25
-	air_strategic_bomber_bombing_factor = NORDIC_airforces_originator_dmod_strat_bombing_factor #0.35 
+	air_strategic_bomber_bombing_factor = NORDIC_airforces_originator_dmod_strat_bombing_factor #0.35
 	air_intercept_efficiency = NORDIC_airforces_originator_dmod_intercept_efficiency #0.25
 	air_superiority_efficiency = NORDIC_airforces_originator_dmod_superiority_efficiency #0.25
 	air_range_factor = NORDIC_airforces_originator_dmod_range_factor # 0.3
@@ -1289,7 +1289,7 @@ NORDIC_airforces_member_dmod = {
 
 	experience_gain_air = 0.1
 	air_cas_present_factor = NORDIC_airforces_member_dmod_cas_factor #0.15
-	air_strategic_bomber_bombing_factor = NORDIC_airforces_member_dmod_strat_bombing_factor #0.2 
+	air_strategic_bomber_bombing_factor = NORDIC_airforces_member_dmod_strat_bombing_factor #0.2
 	air_intercept_efficiency = NORDIC_airforces_member_dmod_intercept_efficiency #0.15
 	air_superiority_efficiency = NORDIC_airforces_member_dmod_superiority_efficiency #0.15
 	air_range_factor = NORDIC_airforces_member_dmod_range_factor # 0.2
@@ -1332,7 +1332,7 @@ NORDIC_mil_industry_originator_dmod = {
 	production_factory_max_efficiency_factor = 0.1
 	production_speed_arms_factory_factor = NORDIC_mil_industry_originator_production_speed_arms_factory_factor # 0.15
 	production_factory_efficiency_gain_factor = NORDIC_mil_industry_originator_dmod_efficiency_gain_factor # 0.2
-	equipment_conversion_speed = NORDIC_mil_industry_originator_dmod_equipment_conversion_speed # 0.25 
+	equipment_conversion_speed = NORDIC_mil_industry_originator_dmod_equipment_conversion_speed # 0.25
 	production_factory_start_efficiency_factor = NORDIC_mil_industry_originator_dmod_start_efficiency_factor # 0.2
 }
 
@@ -1359,7 +1359,7 @@ NORDIC_democratic_alliance_leader_dmod = {
 	democratic_drift = 0.025
 	production_speed_buildings_factor = 0.15
 	consumer_goods_factor = 0.2
-	research_speed_factor = NORDIC_democratic_alliance_leader_dmod_research # 0.075 
+	research_speed_factor = NORDIC_democratic_alliance_leader_dmod_research # 0.075
 	training_time_factor = NORDIC_democratic_alliance_leader_dmod_training_time # 0.12
 	production_factory_start_efficiency_factor = NORDIC_democratic_alliance_leader_dmod_prod_eff_start # 0.2
 	war_support_factor = NORDIC_democratic_alliance_leader_dmod_war_support # -0.15
@@ -1374,15 +1374,15 @@ NORDIC_democratic_alliance_member_dmod = {
 	democratic_drift = 0.015
 	production_speed_buildings_factor = 0.10
 	consumer_goods_factor = 0.12
-	research_speed_factor = NORDIC_democratic_alliance_member_dmod_research # 0.05 
+	research_speed_factor = NORDIC_democratic_alliance_member_dmod_research # 0.05
 	training_time_factor = NORDIC_democratic_alliance_member_dmod_training_time # 0.08
-	production_factory_start_efficiency_factor = NORDIC_democratic_alliance_member_dmod_prod_eff_start # 0.15	
+	production_factory_start_efficiency_factor = NORDIC_democratic_alliance_member_dmod_prod_eff_start # 0.15
 	war_support_factor = NORDIC_democratic_alliance_member_dmod_war_support # -0.1
 }
 
 NORDIC_communist_alliance_leader_dmod = {
 	enable = { always = yes }
-	icon = GFX_idea_NORDIC_northern_union 
+	icon = GFX_idea_NORDIC_northern_union
 
 	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
@@ -1409,7 +1409,7 @@ NORDIC_communist_alliance_member_dmod = {
 	research_speed_factor = NORDIC_communist_alliance_member_dmod_research # 0.05
 	production_lack_of_resource_penalty_factor = NORDIC_communist_alliance_member_dmod_resource_penalty # 0.06
 }
-NORDIC_monarchist_alliance_leader_dmod = {	
+NORDIC_monarchist_alliance_leader_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_NORDIC_kalmar_league
 
@@ -1421,12 +1421,12 @@ NORDIC_monarchist_alliance_leader_dmod = {
 	production_factory_efficiency_gain_factor = NORDIC_monarchist_alliance_leader_dmod_prod_eff_gain # 0.25
 	production_speed_buildings_factor = NORDIC_monarchist_alliance_leader_dmod_construction # -0.1
 	army_org_factor = NORDIC_monarchist_alliance_leader_dmod_max_org # 0.2
-	fascism_drift = NORDIC_monarchist_alliance_leader_dmod_drift_defense # -0.15 
+	fascism_drift = NORDIC_monarchist_alliance_leader_dmod_drift_defense # -0.15
 }
 
-NORDIC_monarchist_alliance_member_dmod = {	
+NORDIC_monarchist_alliance_member_dmod = {
 	enable = { always = yes }
-	icon = GFX_idea_NORDIC_kalmar_league 
+	icon = GFX_idea_NORDIC_kalmar_league
 
 	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
@@ -1436,5 +1436,5 @@ NORDIC_monarchist_alliance_member_dmod = {
 	production_factory_efficiency_gain_factor = NORDIC_monarchist_alliance_member_dmod_prod_eff_gain # 0.17
 	production_speed_buildings_factor = NORDIC_monarchist_alliance_member_dmod_construction # -0.7
 	army_org_factor = NORDIC_monarchist_alliance_member_dmod_max_org # 0.12
-	fascism_drift = NORDIC_monarchist_alliance_member_dmod_drift_defense # -0.1  
+	fascism_drift = NORDIC_monarchist_alliance_member_dmod_drift_defense # -0.1
 }

@@ -1,7 +1,7 @@
 ﻿l_english:
 
 
-# Example 
+# Example
 
 #Majors
  GER_communism_party:0 "KPD"
@@ -239,7 +239,7 @@
  HUN_communism_party:0 "KMP"
  HUN_communism_party_long:0 "Kommunisták Magyarországi Pártja"
  HUN_fascism_party:1 "NEP"
- HUN_fascism_party_long:1 "Nemzeti Egység Pártja" 
+ HUN_fascism_party_long:1 "Nemzeti Egység Pártja"
  HUN_arrow_cross_party:0 "NYKP"
  HUN_arrow_cross_party_long:0 "Nyilaskeresztes Párt – Hungarista Mozgalom"
  HUN_democratic_party:0 "MSZDP"
@@ -389,13 +389,13 @@
  PHI_neutrality_party:0 "PA"
  PHI_neutrality_party_long:0 "Hukbong Katihan ng Pilipinas"
  MAL_fascism_party:0 "MMA"
- MAL_fascism_party_long:0 "Malay Military Administration" 
+ MAL_fascism_party_long:0 "Malay Military Administration"
  MAL_democratic_party:0 "UMNO" #or UMNO or PEKEMBAR
  MAL_democratic_party_long:0 "United Malays National Organisation" #or UMNO or PEKEMBAR
  MAL_communism_party:0 "MCP" #or MCP
  MAL_communism_party_long:0 "Malayan Communist Party" #or MCP
- MAL_neutrality_party:0 "KMM" 
- MAL_neutrality_party_long:0 "Kesatuan Melayu Muda" #or KMM 
+ MAL_neutrality_party:0 "KMM"
+ MAL_neutrality_party_long:0 "Kesatuan Melayu Muda" #or KMM
  INS_communism_party:0 "PKI"
  INS_communism_party_long:0 "Partai Komunis Indonesia"
  INS_fascism_party:0 "Indonesian Military Administration"
@@ -976,7 +976,7 @@
  ETH_jimma_jofir_fascism_party:0 "Jofir Supporters"
  ETH_gojjam_haymanot_fascism_party_long:0 "Gojjami Royalists"
  ETH_gojjam_haymanot_fascism_party:0 "Gojjami Royalists"
- 
+
  #bugfix
  URG_democratic_party:0 "PC"
  URG_democratic_party_long:0 "Partido Colorado"
@@ -986,5 +986,3 @@
  URG_neutrality_party_long:0 "Partido Colorado-Marzistas"
  URG_fascism_party:0 "NSDAP-LU"
  URG_fascism_party_long:0 "NSDAP-Landkreis Uruguay"
-
-

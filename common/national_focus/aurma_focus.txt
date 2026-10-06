@@ -1,7 +1,7 @@
-﻿focus_tree = {
+focus_tree = {
 	id = aurma # File name is just plain "aurma" now
 	default = no
-	continuous_focus_position = { x = 150 y = 1310 } 
+	continuous_focus_position = { x = 150 y = 1310 }
 	country = {
 		factor = 0
 		modifier = {
@@ -36,7 +36,7 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			add_ideas = AUR_maritime_mastery
+			add_ideas = AUR_maritime_heritage
 		}
 	}
 
@@ -46,11 +46,16 @@
 		icon = GFX_AUR_ocean_stewardship
 		x = 7
 		y = 5
-		cost = 5		
+		cost = 5
 		prerequisite = { focus = AUR_maritime_mastery }
 		prerequisite = { focus = AUR_our_sea }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 15
+			add_stability = 0.05
 		}
 	}
 
@@ -65,12 +70,17 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_ideas = AUR_maritime_mastery
+			navy_experience = 10
+		}
 	}
 
 	#Aurman sailors
 	focus = {
 		id = AUR_aurman_sailors
-		icon = GFX_AUR_aurman_sailors 
+		icon = GFX_AUR_aurman_sailors
 		x = 10
 		y = 2
 		cost = 5
@@ -111,6 +121,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
 	}
 
 	#Our Sea
@@ -124,6 +139,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			navy_experience = 15
+			add_war_support = 0.05
+		}
 	}
 
 	#Piltover Trade
@@ -136,6 +156,11 @@
 		prerequisite = { focus = AUR_navigational_diplomacy }
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
+		}
+
+		completion_reward = {
+			add_ideas = AUR_piltover_trade
+			add_political_power = 50
 		}
 	}
 
@@ -155,7 +180,7 @@
 		}
 	}
 
-	# mutually exclusive 
+	# mutually exclusive
 	#Blood is thicker than water
 	focus = {
 		id = AUR_blood_is_thicker_than_water
@@ -168,13 +193,18 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		
+
+
+		completion_reward = {
+			add_ideas = AUR_blood_is_thicker_than_water
+			add_political_power = 50
+		}
 	}
-	
-	# mutually exclusive 
-	#Boats Run on Water, Not Blood  
+
+	# mutually exclusive
+	#Boats Run on Water, Not Blood
 	focus = {
-		id = AUR_boats_run_on_water_not_blood 
+		id = AUR_boats_run_on_water_not_blood
 		icon = GFX_AUR_boats_run_on_water_not_blood
 		x = 2
 		y = 4
@@ -183,6 +213,11 @@
 		prerequisite = { focus = AUR_clan_medarda }
 		search_filters = {
 			FOCUS_FILTER_STABILITY
+		}
+
+		completion_reward = {
+			add_ideas = AUR_boats_run_on_water_not_blood
+			add_stability = 0.05
 		}
 	}
 
@@ -197,20 +232,31 @@
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+
+		completion_reward = {
+			navy_experience = 15
+			add_manpower = 2000
+		}
 	}
 
 	#Sea of Profit
 	focus = {
 		id = AUR_sea_of_profit
 		icon = GFX_AUR_sea_of_profit
-		x = 1
-		y = 1
-		relative_position_id = AUR_overclass_society
+		x = 2
+		y = 6
 		cost = 5
 		mutually_exclusive = { focus = AUR_sea_of_blood }
 		prerequisite = { focus = AUR_overclass_society }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -226,6 +272,11 @@
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			navy_experience = 5
+		}
 	}
 
 	#Shuriman Threat
@@ -239,6 +290,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_war_support = 0.08
+			navy_experience = 10
+		}
 	}
 
 	#Shifting Currents
@@ -250,6 +306,11 @@
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			navy_experience = 10
 		}
 	}
 
@@ -266,10 +327,14 @@
 
 		completion_reward = {
 			add_ideas = AUR_fisheries
-			add_building_construction = {
-				type = dockyard
-				level = 2
-				instant_build = yes
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -284,6 +349,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
 	}
 
 	#Aurman Pirates
@@ -296,6 +366,12 @@
 		prerequisite = { focus = AUR_pirate_question }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			add_war_support = 0.05
+			add_stability = -0.03
 		}
 	}
 
@@ -310,6 +386,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_stability = 0.08
+			navy_experience = 10
+		}
 	}
 
 	#Lurking Threats
@@ -323,6 +404,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			navy_experience = 10
+		}
 	}
 
 	#Aurman Privateer
@@ -335,6 +421,11 @@
 		prerequisite = { focus = AUR_pirate_question }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			navy_experience = 15
 		}
 	}
 
@@ -379,12 +470,17 @@
 		x = 14
 		y = 4
 		cost = 5
-		prerequisite = { 
-			focus = AUR_new_era  
-			focus = AUR_end_to_era 
+		prerequisite = {
+			focus = AUR_new_era
+			focus = AUR_end_to_era
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
 		}
 	}
 
@@ -394,7 +490,7 @@
 		icon = GFX_AUR_overclass_society
 		x = 1
 		y = 5
-		cost = 5 
+		cost = 5
 		prerequisite = {  # New prerequisite
 			focus = AUR_boats_run_on_water_not_blood
 			focus = AUR_blood_is_thicker_than_water
@@ -419,6 +515,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_war_support = 0.08
+			add_stability = 0.05
+		}
 	}
 
 	#New Era
@@ -431,6 +532,11 @@
 		prerequisite = { focus = AUR_aurman_pirates }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			navy_experience = 15
 		}
 	}
 
@@ -447,7 +553,7 @@
 		}
 		completion_reward = {
 			add_ideas = AUR_naval_outposts
-		}		
+		}
 	}
 
 	#Pirate Bay
@@ -460,6 +566,14 @@
 		prerequisite = { focus = AUR_new_era }
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -474,6 +588,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			navy_experience = 10
+			add_stability = 0.03
+		}
 	}
 
 	#Cold Sea
@@ -486,6 +605,11 @@
 		prerequisite = { focus = AUR_warm_sea }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 10
+			add_war_support = 0.03
 		}
 	}
 
@@ -502,6 +626,12 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.10
+			add_stability = -0.05
+		}
 	}
 
 	#Island Stewardship
@@ -511,10 +641,18 @@
 		x = 0
 		y = 1
 		relative_position_id = AUR_sea_of_blood
-		cost = 5		
+		cost = 5
 		prerequisite = { focus = AUR_sea_of_blood }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_stability = 0.05
 		}
 	}
 
@@ -525,13 +663,18 @@
 		x = 0
 		y = 1
 		relative_position_id = AUR_sea_of_profit
-		cost = 5		
+		cost = 5
 		prerequisite = { focus = AUR_sea_of_profit }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
 	}
-	
+
 	#Sea of Thiefs
 	focus = {
 		id = AUR_sea_of_thiefs
@@ -543,6 +686,11 @@
 		mutually_exclusive = { focus = AUR_sea_of_iron }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			add_war_support = 0.08
 		}
 	}
 
@@ -571,12 +719,17 @@
 		x = 13
 		y = 5
 		cost = 5
-		prerequisite = { 
-			focus = AUR_naval_outposts 
+		prerequisite = {
+			focus = AUR_naval_outposts
 			focus = AUR_coastal_raid_parties
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			navy_experience = 10
 		}
 	}
 
@@ -589,10 +742,15 @@
 		cost = 5
 		prerequisite = { focus = AUR_oceanic_outreach }
 		prerequisite = { focus = AUR_warships }
-		prerequisite = { focus = AUR_targonian_navigators}  
+		prerequisite = { focus = AUR_targonian_navigators}
 		prerequisite = { focus = AUR_freljordian_boarding_parties }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 20
+			add_war_support = 0.05
 		}
 	}
 
@@ -625,6 +783,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			navy_experience = 10
+		}
 	}
 
 	#Sea Maps
@@ -638,7 +801,8 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			navy_intel_to_others = 5
+			navy_experience = 10
+			add_political_power = 25
 		}
 	}
 
@@ -652,8 +816,9 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		complete_reward = {
+		completion_reward = {
 			add_ideas = AUR_warships
+			navy_experience = 10
 		}
 	}
 
@@ -668,6 +833,12 @@
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 15
+			add_manpower = 1500
+		}
 	}
 
 	#Chaotic Sea
@@ -680,6 +851,11 @@
 		prerequisite = { focus = AUR_calm_sea }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 15
+			add_war_support = 0.03
 		}
 	}
 
@@ -694,6 +870,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 75
+			navy_experience = 10
+		}
 	}
 
 	#Deep Water Supremacy
@@ -704,9 +885,14 @@
 		y = 6
 		cost = 5
 		prerequisite = { focus = AUR_freljordian_boarding_parties }
-		prerequisite = { focus = AUR_targonian_navigators } # OLD: AUR_targonian_navigatorsigators 
+		prerequisite = { focus = AUR_targonian_navigators } # OLD: AUR_targonian_navigatorsigators
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_war_support = 0.05
 		}
 	}
 
@@ -724,6 +910,12 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+
+		completion_reward = {
+			add_political_power = 100
+			navy_experience = 25
+			add_war_support = 0.10
+		}
 	}
 
 	#Targonian Navigators
@@ -733,12 +925,17 @@
 		x = 15
 		y = 5
 		cost = 1
-		prerequisite = { 
+		prerequisite = {
 			focus = AUR_coastal_raid_parties
 			focus = AUR_pirate_bay
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+
+		completion_reward = {
+			navy_experience = 15
+			add_political_power = 50
 		}
 	}
 
@@ -750,12 +947,12 @@
 		y = 5
 		cost = 5
 
-		prerequisite = { focus = AUR_shuriman_threat }		
-		prerequisite = {	focus = AUR_maritime_mastery } 
+		prerequisite = { focus = AUR_shuriman_threat }
+		prerequisite = {	focus = AUR_maritime_mastery }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		
+
 		completion_reward = {
 			add_ideas = AUR_ocean_masters
 		}

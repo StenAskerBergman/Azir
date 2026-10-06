@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Shurima Events
 ###########################
 
@@ -16,7 +16,7 @@ country_event = {
 	desc = "Fifty days have passed since the shocking attempt on Azir's life. The empire now holds its breath as the consequences of this act unfold." # shu_assassination_aftermath.1.d
 	picture = GFX_report_event_empty_throne
 	major = yes
-	
+
 	trigger = {
 		has_country_flag = xer_assassination_attempt
 		tag = SHU
@@ -25,7 +25,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 50
 	}
-	
+
 	immediate = {
 		# Remove the flag indicating the assassination attempt
 		clr_country_flag = xer_assassination_attempt
@@ -36,10 +36,7 @@ country_event = {
 		ai_chance = {
 			factor = 5
 		}
-		immediate = {
-			retire_character = SHU_azir
-			news_event_tooltip = "Azir has been assassinated, leaving the empire in chaos."
-		}
+		retire_character = SHU_azir
 	}
 
 	option = {
@@ -47,10 +44,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		immediate = {
-			add_ideas = SHU_legitimate_ruler
-			news_event_tooltip = "Azir has survived the assassination attempt and reasserts his rule."
-		}
+		add_ideas = SHU_legitimate_ruler
 	}
 
 	option = {
@@ -58,12 +52,9 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		immediate = {
-			random_list = {
-				5 = { retire_character = SHU_azir }
-				95 = { add_stability = -0.1 } # Represents injury or unrest
-			}
-			news_event_tooltip = "Xerath's attack has dealt a significant blow, leaving the empire shaken."
+		random_list = {
+			5 = { retire_character = SHU_azir }
+			95 = { add_stability = -0.1 }
 		}
 	}
 
@@ -72,10 +63,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		immediate = {
-			retire_character = SHU_sivir
-			news_event_tooltip = "In the chaos, Sivir has been killed, leaving a power vacuum in the empire."
-		}
+		retire_character = SHU_sivir
 	}
 }
 
@@ -85,25 +73,25 @@ country_event = {
     title = shurima.1.t
     desc = SHU_our_leader_desc # shurima.1.d
     picture = GFX_report_event_empty_throne
-    
+
     fire_only_once = yes
-    
+
     is_triggered_only = yes
-    
+
     # Azir option
-    option = { 
+    option = {
         name = shurima.1.pick_leader.option_azir # shurima.1.a
         custom_effect_tooltip = shurima.1.pick_leader.tooltip_azir
         ai_chance = { factor = 50 } # Adjust AI chance accordingly
         # trigger = { # Add any conditions for selecting Azir }
-        
-        complete_national_focus = SHU_emperor        
+
+        complete_national_focus = SHU_emperor
     }
-    
-    # Sivir option  
+
+    # Sivir option
     option = {
         name = shurima.1.pick_leader.option_sivir # shurima.1.b
-        custom_effect_tooltip = shurima.1.pick_leader.tooltip_sivir				
+        custom_effect_tooltip = shurima.1.pick_leader.tooltip_sivir
         ai_chance = { factor = 50 } # Adjust AI chance accordingly
         # trigger = { # Add any conditions for selecting Sivir }
         complete_national_focus = SHU_empress
@@ -115,14 +103,14 @@ country_event = {
     id = shurima.10
     title = shurima.1.t
     desc = shurima.1.d
-    
+
     is_triggered_only = yes
     # fire_only_once = yes
-    
-    
+
+
     option = {
         name = "Retire Leader"
-        
+
         retire_country_leader = yes
     }
 }
@@ -131,33 +119,33 @@ country_event ={
     id = shurima.11
     title = shurima.11.t
     desc = shurima.11.d
-    
-    is_triggered_only = yes 
-    fire_only_once = yes 
-    
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
     # Support the Solari over the Lunari
     option = {
         name = shurima.11.a
         add_ideas = solari_supporter
     }
-    
+
     # Support The Lunari over the Solari
     option = {
         name = shuriuma.11.b
         add_ideas = lunari_supporter
     }
-    
-    # Support the Collective group of targon 
+
+    # Support the Collective group of targon
     option = {
         name = shurima.11.c
         add_ideas = rakkor_supporter
     }
-    
+
 }
 
 ### Spirit Events ###
 
-# Shurima.2 - Idea: Broken -> Fractured 
+# Shurima.2 - Idea: Broken -> Fractured
 country_event = {
     id = shurima.2
     title = shurima.2.t
@@ -166,25 +154,25 @@ country_event = {
     fire_only_once = yes
     # mean_time_to_happen = { days = 20 }
     # original_recipient_only = yes
-    
+
     trigger = {
         NOT = { has_global_flag = shurima_war_victory_acknowledged }  # Check flag is not set
         tag = SHU
         has_idea = Shurima_broken
     }
-    
+
     option = {
         name = shurima.2.a
-        hidden_effect = { 
-            SHU_increase_unity = yes 
+        hidden_effect = {
+            SHU_increase_unity = yes
             set_global_flag = shurima_war_victory_acknowledged
-            
+
         }
         custom_effect_tooltip = "Replace Shurima Broken with Shurima Fractured"
         hidden_effect = {
             SHU = {
-                remove_ideas = Shurima_broken 
-                add_ideas = Shurima_fractured 
+                remove_ideas = Shurima_broken
+                add_ideas = Shurima_fractured
             }
         }
     }
@@ -197,38 +185,18 @@ country_event = {
     desc = shurima.3.desc
     picture = GFX_report_event_shurima_broken
     fire_only_once = yes
-    
-    # Combine win condition and territory conquest checks
+
     trigger = {
-        NOT = { has_flag = shu_event_triggered }  # Check flag is not set
-        owner = {
-            tag = SHU
-            has_idea = Shurima_fractured
-        }
-        OR = {
-            is_war_goal = yes
-            war_goal_victor = yes
-            NOT = {
-                OR = {
-                    is_neighbor_of = { province_id = NAZ country = SHU } #4444
-                    is_neighbor_of = { province_id = NAS country = SHU } #575
-                }
-            }
-            NOT = {
-                OR = {
-                    is_neighbor_of = { province_id = KAL country = SHU } #8604
-                    is_neighbor_of = { province_id = SHK country = SHU } #4748
-                    is_neighbor_of = { province_id = CRY country = SHU } #575
-                }
-            }
-        }
+		tag = SHU
+		has_idea = Shurima_fractured
+		NOT = { has_country_flag = shu_event_triggered }
     }
-    
+
     option = {
         name = shurima.3.a
         hidden_effect = {
             SHU_increase_unity = yes
-            set_flag = shu_event_triggered
+			set_country_flag = shu_event_triggered
         }
         custom_effect_tooltip = "Replace Shurima Fractured with Shurima Scattered"
         hidden_effect = {
@@ -250,7 +218,7 @@ country_event = {
     trigger = {
         tag = SHU
         has_idea = Shurima_scattered
-        any_owned_province = { development = 40 }
+		has_stability > 0.40
     }
     option = {
         name = shurima.4.a
@@ -272,7 +240,7 @@ country_event = {
     trigger = {
         tag = SHU
         has_idea = Shurima_apart
-        any_owned_province = { development = 50 }
+		has_stability > 0.50
     }
     option = {
         name = shurima.5.a
@@ -287,9 +255,9 @@ country_event = {
 
 # ! TODO: Set Later so it Checks every 4 months
 
-# From now on it should be late game therefore we will start a new "quest" to hold the cores 
+# From now on it should be late game therefore we will start a new "quest" to hold the cores
 # to retain the immense buff they have, however if they lose ctrl of a core the Shurima buff
-# Gets disrupted, and weakend until they regroup and regain their cores again. 
+# Gets disrupted, and weakend until they regroup and regain their cores again.
 
 # Late Game, if this gets interrupted the plater cycle between being united or splittered
 
@@ -304,7 +272,7 @@ country_event = {
     trigger = {
         tag = SHU
         has_idea = Shurima_apart
-        any_owned_province = { development = 50 }
+		has_stability > 0.50
     }
     option = {
         name = shurima.5.a
@@ -316,7 +284,7 @@ country_event = {
     }
 }
 
-# Shurima Splittered -> United (If Cores are recovered, Cycle Up) 
+# Shurima Splittered -> United (If Cores are recovered, Cycle Up)
 country_event = {
     id = shurima.7  # Event ID
     title = shurima.7.t
@@ -326,15 +294,15 @@ country_event = {
     trigger = {
         tag = SHU
         has_idea = Shurima_apart
-        any_owned_province = { development = 50 }
+		has_stability > 0.50
     }
-    
+
     option = {
-        
+
         hidden_effect = {
-            
+
             SHU_increase_unity = yes
-            
+
         }
     }
 }
@@ -344,9 +312,9 @@ country_event = {
     id = shurima.33
     title = shurima.33.t
     desc = shurima.33.d
-    
+
     is_triggered_only = yes
-    
+
     option = { #We must stay vigilant...
     name = shurima.3.a
     ai_chance = { factor = 100 }
@@ -362,18 +330,18 @@ country_event = {
     title = shurima.55.t
     desc = shurima.55.d
     picture = GFX_report_event_soviet_invasion_map
-    
+
     is_triggered_only = yes
-    
-    option = { 
+
+    option = {
         name = shurima.55.a
         ai_chance = { factor = 90 }
         trigger = { TAG = SHU }
-        
+
         ROOT = {
-            add_ideas = tribal_ties 
+            add_ideas = tribal_ties
         }
-        
+
         FROM = {
             country_event = {
                 id = shurima.56
@@ -381,8 +349,8 @@ country_event = {
             }
         }
     }
-    
-    option = { 
+
+    option = {
         name = shurima.55.g
         ai_chance = { factor = 10 }
         trigger = { TAG = SHU }
@@ -394,23 +362,23 @@ country_event = {
     title = shurima.56.t
     desc = shurima.56.d
     picture = GFX_report_event_soviet_invasion_map
-    
+
     is_triggered_only = yes
-    
-    option = { 
+
+    option = {
         name = shurima.56.a
         ai_chance = { factor = 90 }
         trigger = { TAG = NAZ }
-        
+
         ROOT = {
             add_ideas = tribal_family
         }
-        
+
         FROM = {
             add_ideas = tribal_family
             remove_ideas = tribal_ties
         }
-        
+
         SHU = {
             country_event = {
                 id = shurima.57
@@ -418,8 +386,8 @@ country_event = {
             }
         }
     }
-    
-    option = { 
+
+    option = {
         name = shurima.56.c
         ai_chance = { factor = 10 }
         trigger = { TAG = NAZ }
@@ -431,18 +399,18 @@ country_event = {
     title = shurima.57.t
     desc = shurima.57.d
     picture = GFX_report_event_soviet_invasion_map
-    
+
     is_triggered_only = yes
-    
-    option = { 
+
+    option = {
         name = shurima.57.a
         ai_chance = { factor = 100 }
-        
+
         ROOT = {
             add_stability = 0.10
             add_war_support = 0.10
         }
-        
+
         FROM = {
             add_stability = 0.10
             add_war_support = 0.10
@@ -472,44 +440,41 @@ country_event = {
         set_global_flag = shurima_event_start
 
         # country_event = shurima.102
-        
-        effect = {
-            add_ideas = guild_bonus 
-        
-        }
+
+		add_ideas = guild_bonus
 
 		hidden_effect = {
 			# Add a hidden idea that will trigger the event every year or two years
-            
-            # Adds An Hidden Idea 
-			# add_ideas = SHU_recurring_event_trigger 
+
+            # Adds An Hidden Idea
+			# add_ideas = SHU_recurring_event_trigger
 		}
 	}
 }
 
 country_event = {
     id = shurima.102
-    title = "Guild Meeting" 
+    title = "Guild Meeting"
     desc = "This event occurs every two years and strengthens the nation's industry."
     picture = GFX_report_event_soviet_purge_politicians
-    
+
     trigger = {
         TAG = SHU
         has_global_flag = shurima_event_start
         # Prevent event from triggering if max level is reached
-        NOT = { has_global_flag = guild_event_max_level_reached }  
+        NOT = { has_global_flag = guild_event_max_level_reached }
     }
 
-    
+
     mean_time_to_happen = {
-        
+
         # For testing, adjust as needed
-        # days = 10  
+        # days = 10
         # days = 720
-        
+
         days = 365
     }
-    
+
     option = {
         name = "Ok"
         hidden_effect = {
@@ -520,28 +485,28 @@ country_event = {
                 add_ideas = ultimate_guild_bonus
                 set_global_flag = guild_event_max_level_reached  # Set flag to stop further events
             }
-            
+
             # If "even_stronger_guild_bonus" then Upgrade to "superior_guild_bonus"
             else_if = {
                 limit = { has_idea = even_stronger_guild_bonus }
                 remove_ideas = even_stronger_guild_bonus
                 add_ideas = superior_guild_bonus
             }
-            
+
             # If "stronger_guild_bonus" then Upgrade to "even_stronger_guild_bonus"
             else_if = {
                 limit = { has_idea = stronger_guild_bonus }
                 remove_ideas = stronger_guild_bonus
                 add_ideas = even_stronger_guild_bonus
             }
-            
+
             # If "guild_bonus" then Upgrade to "stronger_guild_bonus"
             else_if = {
                 limit = { has_idea = guild_bonus }
                 remove_ideas = guild_bonus
                 add_ideas = stronger_guild_bonus
             }
-            
+
             # If no idea exists, add the base "guild_bonus"
             else = {
                 add_ideas = guild_bonus  # Start with base idea
@@ -553,11 +518,16 @@ country_event = {
 country_event = {
     id = shurima.1001
     title = "Shurima Respects the Workers Rights!"
+	desc = "The restored empire has formally recognized the rights of its laborers and guild workers."
     picture = GFX_report_event_sanation_revolt
-    
-    
-    is_triggered_only = yes 
-    fire_only_once = yes 
+
+
+    is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = "A fairer Shurima rises."
+		add_stability = 0.05
+	}
 
 }
 
@@ -578,18 +548,11 @@ country_event = {
         ai_chance = {
             factor = 1
         }
-        effect = {
-            # add_national_unity = 0.05
-            add_popularity = {
-                ideology = traditionalism
-                popularity = 0.10
-            }
-            add_stability = 0.05
-            country_event = {
-                days = 30
-                id = shurima.570 # Follow-up event for this choice, if desired
-            }
-        }
+		add_popularity = {
+			ideology = absolutists
+			popularity = 0.10
+		}
+		add_stability = 0.05
     }
 
     option = {
@@ -600,22 +563,12 @@ country_event = {
         ai_chance = {
             factor = 1
         }
-        effect = {
-            add_infrastructure = 1
-            add_stability = 0.05
-            add_country_modifier = {
-                name = "SHU_infrastructure_bonus"
-                duration = 365
-                modifier = {
-                    construction_speed = 0.20
-                    production_efficiency = 0.10
-                }
-            }
-            country_event = {
-                days = 30
-                id = shurima.571 # Follow-up event for this choice, if desired
-            }
-        }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+		}
+		add_stability = 0.05
+		add_timed_idea = { idea = SHU_infrastructure_bonus days = 365 }
     }
 
     option = {
@@ -626,23 +579,9 @@ country_event = {
         ai_chance = {
             factor = 1
         }
-        effect = {
-            add_national_unity = 0.05
-            add_stability = 0.05
-            add_political_power = 50
-            add_country_modifier = {
-                name = "SHU_cultural_renaissance"
-                duration = 365
-                modifier = {
-                    research_speed = 0.10
-                    recruitable_population_factor = 0.05
-                }
-            }
-            country_event = {
-                days = 30
-                id = shurima.572 # Follow-up event for this choice, if desired
-            }
-        }
+		add_stability = 0.05
+		add_political_power = 50
+		add_timed_idea = { idea = SHU_cultural_renaissance days = 365 }
     }
 
     option = {
@@ -653,26 +592,13 @@ country_event = {
         ai_chance = {
             factor = 1
         }
-        effect = {
-            add_military_experience = 50
-            add_war_support = 0.10
-            add_country_modifier = {
-                name = "SHU_military_glory"
-                duration = 365
-                modifier = {
-                    army_offense_factor = 0.10
-                    army_defense_factor = 0.10
-                }
-            }
-            country_event = {
-                days = 30
-                id = shurima.573 # Follow-up event for this choice, if desired
-            }
-        }
+		army_experience = 50
+		add_war_support = 0.10
+		add_timed_idea = { idea = SHU_military_glory days = 365 }
     }
 }
 
-# First Draft 
+# First Draft
 # country_event = {
 #     id = shurima.55
 #     title = shurima.55.t
@@ -683,23 +609,23 @@ country_event = {
 # 		trigger = { TAG = SHU }
 #         name = shurima.55.a
 #         ai_chance = { factor = 90 }
-#         TAG = SHU 
+#         TAG = SHU
 
 #         ROOT = {
-#             add_ideas = tribal_ties 
+#             add_ideas = tribal_ties
 # 		}
 # 	}
 #     option = { # Reject Closer Ties
 # 		trigger = { TAG = SHU }
 #         name = shurima.55.g
 #         ai_chance = { factor = 10 }
-#         TAG = SHU 
+#         TAG = SHU
 # 	}
 
 # 	option = { # Accept Closer Ties
 # 		trigger = { TAG = NAZ }
 # 		name = shurima.55.b
-#         TAG = NAZ 
+#         TAG = NAZ
 #         ai_chance = { factor = 90 }
 
 #         ROOT = {
@@ -718,7 +644,7 @@ country_event = {
 #     option = { # Reject Closer Ties
 # 		trigger = { TAG = NAZ }
 # 		name = shurima.55.c
-#         TAG = NAZ 
+#         TAG = NAZ
 #         ai_chance = { factor = 10 }
 
 # 	}
@@ -731,28 +657,28 @@ country_event = {
 # }
 
 # -------------------------------------- #
-# Core 
+# Core
 
-# Climb 
+# Climb
 
 # Start
 # Shurima Broken -> Fractured
 # Shurima Fractured -> Scattered
 # Shurima Scattered -> Apart
-# Shurima Apart -> United 
+# Shurima Apart -> United
 # End
 
 #
 
-# Cycle 
+# Cycle
 
-# Shurima United -> Splittered 
+# Shurima United -> Splittered
 # Shurima Splittered -> United
 
 #
 
 # -------------------------------------- #
-# Other 
+# Other
 # Shurima Broken -> Fractured
 # Shurima Fractured -> Splittered
 # Shurima Splittered -> Apart

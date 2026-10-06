@@ -1,122 +1,120 @@
 ﻿l_english:
- 
+
 # War Time Focus \n      §H§!
 
-  SHU_XER_WAR: "SHU XER WAR"
-  SHU_XER_WAR_desc: "Description of SHU XER WAR."
+  SHU_XER_WAR: "The Reconquest Begins"
+  SHU_XER_WAR_desc: "The reborn power at Nerimazeth will no longer remain confined to one city. The treasury, legions, and caravan roads must be prepared for continental war."
 
-  XER_WAR_ONE: "XER WAR ONE"
-  XER_WAR_ONE_desc: "Description of XER WAR ONE."
+  XER_WAR_ONE: "Muster the Ascendant Host"
+  XER_WAR_ONE_desc: "Veterans, mercenaries, and those who still revere the Ascended will be gathered into an army fit for the coming campaigns."
 
-  XER_WAR_TWO: "XER WAR TWO"
-  XER_WAR_TWO_desc: "Description of XER WAR TWO."
+  XER_WAR_TWO: "Plan the Continental Campaign"
+  XER_WAR_TWO_desc: "Shurima's enemies are scattered across deserts, mountains, and distant coasts. A deliberate sequence of campaigns will keep the host supplied and victorious."
 
-  XER_WAR_KAL: "XER WAR KAL"
-  XER_WAR_KAL_desc: "Description of XER WAR KAL."
+  XER_WAR_KAL: "Subdue Kalamanda"
+  XER_WAR_KAL_desc: "Kalamanda's mineral wealth and strategic roads cannot remain outside our grasp."
 
-  XER_WAR_CRY: "XER WAR CRY"
-  XER_WAR_CRY_desc: "Description of XER WAR CRY."
+  XER_WAR_CRY: "Secure the Crystal Scar"
+  XER_WAR_CRY_desc: "The scarred western wastes command routes and resources coveted across Runeterra. We will impose order there."
 
-  XER_WAR_TAR: "XER WAR TAR"
-  XER_WAR_TAR_desc: "Description of XER WAR TAR."
+  XER_WAR_TAR: "Challenge Mount Targon"
+  XER_WAR_TAR_desc: "The mountain's Solari, Lunari, and celestial powers stand above Shurima's western approaches. Their defiance must be answered."
 
-  XER_WAR_GWS: "XER WAR GWS"
-  XER_WAR_GWS_desc: "Description of XER WAR GWS."
+  XER_WAR_GWS: "Pacify the Western Sai"
+  XER_WAR_GWS_desc: "Western clans and raiders control the approaches to the Great Sai. Bringing them to heel will open the road to Nazumah."
 
-  XER_WAR_NAZ: "XER WAR NAZ"
-  XER_WAR_NAZ_desc: "Description of XER WAR NAZ."
+  XER_WAR_NAZ: "Break Nazumah's Defiance"
+  XER_WAR_NAZ_desc: "Nazumah won its freedom by slaying Ascended tyrants. The restored empire will discover whether that defiance can endure."
 
-  XER_WAR_VOI: "XER WAR VOI"
-  XER_WAR_VOI_desc: "Description of XER WAR VOI."
+  XER_WAR_VOI: "March into Icathia"
+  XER_WAR_VOI_desc: "Icathia's ruins remain a wound in the desert. We will secure the border and destroy any power that threatens Shurima from within them."
 
-  XER_WAR_NAS: "XER WAR NAS"
-  XER_WAR_NAS_desc: "Description of XER WAR NAS."
+  XER_WAR_NAS: "Claim Nashramae"
+  XER_WAR_NAS_desc: "Nashramae's traders prosper beneath Shurima's memory. Its wealth and ports belong within the restored realm."
 
-  XER_WAR_NOX: "XER WAR NOX"
-  XER_WAR_NOX_desc: "Description of XER WAR NOX."
+  XER_WAR_NOX: "Confront Noxus"
+  XER_WAR_NOX_desc: "Noxian ambition recognizes only strength. Our armies will show the empire beyond the mountains that Shurima has returned."
 
-  XER_WAR_DEM: "XER WAR DEM"
-  XER_WAR_DEM_desc: "Description of XER WAR DEM."
+  XER_WAR_DEM: "Cross into Demacia"
+  XER_WAR_DEM_desc: "Demacia's disciplined armies and petricite defenses make it a formidable western rival. Preparations must be exact."
 
-  XER_WAR_ZAU: "XER WAR ZAU"
-  XER_WAR_ZAU_desc: "Description of XER WAR ZAU."
+  XER_WAR_ZAU: "Seize the Undercity"
+  XER_WAR_ZAU_desc: "Zaun's chemtech and industry are too valuable to leave beyond imperial control."
 
-  XER_WAR_PIL: "XER WAR PIL"
-  XER_WAR_PIL_desc: "Description of XER WAR PIL."
+  XER_WAR_PIL: "Take Piltover"
+  XER_WAR_PIL_desc: "The City of Progress has grown rich by controlling trade and technology. Its gates will open to Shurima one way or another."
 
-  XER_WAR_AVA: "XER WAR AVA"
-  XER_WAR_AVA_desc: "Description of XER WAR AVA."
+  XER_WAR_AVA: "Campaign against Avarosa"
+  XER_WAR_AVA_desc: "Avarosa's coalition seeks to unite the Freljord. We will strike before its scattered tribes become a single northern power."
 
-  XER_WAR_STO: "XER WAR STO"
-  XER_WAR_STO_desc: "Description of XER WAR STO."
+  XER_WAR_STO: "Storm Stonewall"
+  XER_WAR_STO_desc: "Stonewall bars a northern route with fortifications and stubborn defenders. It must fall before our advance can continue."
 
-  XER_WAR_WIN: "XER WAR WIN"
-  XER_WAR_WIN_desc: "Description of XER WAR WIN."
+  XER_WAR_WIN: "Break the Winter's Claw"
+  XER_WAR_WIN_desc: "Sejuani's Winter's Claw respects force above every treaty. We will answer raid with conquest."
 
-  XER_WAR_URS: "XER WAR URS"
-  XER_WAR_URS_desc: "Description of XER WAR URS."
+  XER_WAR_URS: "Hunt the Ursine"
+  XER_WAR_URS_desc: "The Ursine surrender themselves to the Volibear's savage power. Our host must be ready for an enemy that fights like a storm."
 
-  XER_WAR_FRO: "XER WAR FRO"
-  XER_WAR_FRO_desc: "Description of XER WAR FRO."
+  XER_WAR_FRO: "Shatter the Frostguard"
+  XER_WAR_FRO_desc: "Lissandra's Frostguard conceal ancient designs beneath the ice. Their citadels cannot remain a threat to our northern flank."
 
-  XER_WAR_GES: "XER WAR GES"
-  XER_WAR_GES_desc: "Description of XER WAR GES."
+  XER_WAR_GES: "Pacify the Eastern Sai"
+  XER_WAR_GES_desc: "The eastern clans control the roads toward Shakkal and Ixtal. Their submission will complete our hold over the Great Sai."
 
-  XER_WAR_SHK: "XER WAR SHK"
-  XER_WAR_SHK_desc: "Description of XER WAR SHK."
+  XER_WAR_SHK: "Subjugate Shakkal"
+  XER_WAR_SHK_desc: "Shakkal's raiders know every dune and dry pass. Defeating them will deny our enemies their deadliest desert guides."
 
-  XER_WAR_IXT: "XER WAR IXT"
-  XER_WAR_IXT_desc: "Description of XER WAR IXT."
+  XER_WAR_IXT: "Breach Ixtal"
+  XER_WAR_IXT_desc: "Ixtal has hidden its elemental mastery behind the jungle for centuries. Shuriman armies will force the ancient realm to look outward."
 
-  XER_WAR_AUR: "XER WAR AUR"
-  XER_WAR_AUR_desc: "Description of XER WAR AUR."
+  XER_WAR_AUR: "Bring Aurma to Heel"
+  XER_WAR_AUR_desc: "Aurma's ships and islands command the southern approaches. Imperial power must reach them before a rival fleet does."
 
-  XER_WAR_MAR: "XER WAR MAR"
-  XER_WAR_MAR_desc: "Description of XER WAR MAR."
+  XER_WAR_MAR: "Secure the Marai"
+  XER_WAR_MAR_desc: "The Marai guard their people and moonstone traditions beneath the waves. Control of their waters will strengthen our coast."
 
-  XER_WAR_BLG: "XER WAR BLG"
-  XER_WAR_BLG_desc: "Description of XER WAR BLG."
+  XER_WAR_BLG: "Cleanse Bilgewater"
+  XER_WAR_BLG_desc: "Pirate captains, monster hunters, and smugglers thrive in Bilgewater. Our fleet will end their attacks on imperial commerce."
 
-  XER_WAR_ION: "XER WAR ION"
-  XER_WAR_ION_desc: "Description of XER WAR ION."
+  XER_WAR_ION: "Invade Ionia"
+  XER_WAR_ION_desc: "Ionia's living lands resist foreign armies as fiercely as its people do. Victory will require discipline, supply, and overwhelming force."
 
 
 # Industrial Focuses
 
-  SHU_XER: "SHU XER"
-  SHU_XER_desc: "Description of SHU XER."
+  SHU_XER: "Restore the Heartland"
+  SHU_XER_desc: "The realm cannot be rebuilt through proclamations alone. Roads, workshops, farms, and schools will give the restored heartland lasting strength."
 
-  SHU_XER_ECO: "SHU XER ECO"
-  SHU_XER_ECO_desc: "Description of SHU XER ECO."
+  SHU_XER_ECO: "Civilian Reconstruction"
+  SHU_XER_ECO_desc: "Markets and civilian workshops will rebuild daily life before the state asks for further sacrifice."
 
-  SHU_XER_MIL: "SHU XER MIL"
-  SHU_XER_MIL_desc: "Description of SHU XER MIL."
+  SHU_XER_MIL: "Arsenals of the Sun"
+  SHU_XER_MIL_desc: "A restored Shurima must arm its legions at home instead of relying on scattered foreign suppliers."
 
-  SHU_XER_INFA: "SHU XER INFA"
-  SHU_XER_INFA_desc: "Description of SHU XER INFA."
+  SHU_XER_INFA: "Roads Across the Dunes"
+  SHU_XER_INFA_desc: "Modern roads will connect distant oases and let workers, soldiers, and caravans cross the desert safely."
 
-  SHU_XER_MINE: "SHU XER MINE"
-  SHU_XER_MINE_desc: "Description of SHU XER MINE."
+  SHU_XER_MINE: "Reopen the Ancient Mines"
+  SHU_XER_MINE_desc: "Old Shuriman workings still hold metal beneath the sand. Surveyors and machinery can make them productive again."
 
-  SHU_XER_FOOD: "SHU XER FOOD"
-  SHU_XER_FOOD_desc: "Description of SHU XER FOOD."
+  SHU_XER_FOOD: "Secure the Grain Supply"
+  SHU_XER_FOOD_desc: "Granaries and protected caravan routes will keep the cities fed through drought, war, and poor harvests."
 
-  SHU_XER_ANIM: "SHU XER ANIM"
-  SHU_XER_ANIM_desc: "Description of SHU XER ANIM."
+  SHU_XER_ANIM: "Restore the Herds"
+  SHU_XER_ANIM_desc: "Camels, goats, and other desert livestock sustain nomads, transport armies, and turn marginal land into wealth."
 
-  SHU_XER_GROW: "SHU XER GROW"
-  SHU_XER_GROW_desc: "Description of SHU XER GROW."
+  SHU_XER_GROW: "Workshops of a Growing Realm"
+  SHU_XER_GROW_desc: "New settlements need tools, cloth, and building materials. Civilian workshops will meet that demand."
 
-  SHU_XER_CROP: "SHU XER CROP"
-  SHU_XER_CROP_desc: "Description of SHU XER CROP."
+  SHU_XER_CROP: "Crops Beneath the Sun Disc"
+  SHU_XER_CROP_desc: "Restored canals and careful planting will return crops to land abandoned after the fall of ancient Shurima."
 
-  SHU_XER_AGRI: "SHU XER AGRI"
-  SHU_XER_AGRI_desc: "Description of SHU XER AGRI."
+  SHU_XER_AGRI: "Desert Agronomy"
+  SHU_XER_AGRI_desc: "Scholars and farmers will combine old irrigation lore with modern machinery to make every drop of water count."
 
-  SHU_XER_WATR: "SHU XER WATR"
-  SHU_XER_WATR_desc: "Description of SHU XER WATR."
+  SHU_XER_WATR: "Restore the Aqueducts"
+  SHU_XER_WATR_desc: "Ancient channels once carried water across impossible distances. Rebuilding them will revive the heartland."
 
-  SHU_XER_ORE: "SHU XER ORE"
-  SHU_XER_ORE_desc: "Description of SHU XER ORE."
-
-
+  SHU_XER_ORE: "Survey the Deep Deposits"
+  SHU_XER_ORE_desc: "Systematic surveys will locate ores missed by ancient miners and secure material for future industry."

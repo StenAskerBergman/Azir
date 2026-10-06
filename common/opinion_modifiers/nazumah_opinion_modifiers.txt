@@ -2,13 +2,12 @@ opinion_modifiers = {
 
     # enemy_of_my_enemy_is_my_friend
  enemy_of_my_enemy_is_my_friend = {
-     desc ="Enemy of my enemy is my friend"
      value = 15
  }
  Future_Allies = {
     value = 55
  }
- 
+
  tribal_brother = {
     value = 55
  }
@@ -16,7 +15,7 @@ opinion_modifiers = {
  tribal_sister = {
     value = 55
  }
- 
+
  tribal_brothers = {
     value = 55
  }
@@ -24,7 +23,7 @@ opinion_modifiers = {
  tribal_sisters = {
     value = 55
  }
- 
+
  tribal_family = {
     value = 25
  }
@@ -36,9 +35,14 @@ opinion_modifiers = {
  Adversaries = {
      value = -15
  }
-        
+
  NAZ_shuriman_cooperation = {
      value = 50
+     months = 24
+ }
+
+ NAZ_regional_cooperation = {
+     value = 25
      months = 24
  }
 

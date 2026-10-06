@@ -1,6 +1,6 @@
 equipment_modules = {
 	limit = {
-		has_dlc = "No Step Back" 
+		has_dlc = "No Step Back"
 	}
 
 #### RUNETERRA
@@ -9,15 +9,10 @@ equipment_modules = {
         category = tank_special_module
         sfx = sfx_ui_sd_module_turret
 
-        add_stats = {
-            entrenchment = 2
-            build_cost_ic = 1
-            jungle_attack = 0.05
-            jungle_defense = 0.05
-            
-            hardness 
-            soft_attack 
-        }
+		add_stats = {
+			entrenchment = 2
+			build_cost_ic = 1
+		}
         xp_cost = 1
         multiply_stats = {
             defense = 0.05
@@ -36,7 +31,7 @@ equipment_modules = {
     #     }
     #     xp_cost = 1
     #     multiply_stats = {
-            
+
     #     }
     # }
 

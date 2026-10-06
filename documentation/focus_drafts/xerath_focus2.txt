@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = xerath_focus2
 	continuous_focus_position = {
 		x = 150
@@ -18,27 +18,27 @@
 	shared_focus = SHU_XER
 	shared_focus = SHU_XER_WAR
 	shared_focus = SHU_XER_MAIN
-	### POLITICAL FOCUSES	
-	
+	### POLITICAL FOCUSES
+
 	# First Focus -> who will win?
 
 	# Power Play : Ren V Xer
 	focus = {
-		id = XER_Power_Play 
+		id = XER_Power_Play
 		icon = GFX_focus_XER_power_play
-		
+
 		x = 6
 		y = 0
-		
+
 		mutually_exclusive	= {
 			focus = XER_Power_Struggle
 		}
-		
+
 		cost = 5
 		prerequisite = {}
 
 		available = {}
-		
+
 		completion_reward = {
 			country_event = {
 				id = xerath.2
@@ -53,20 +53,20 @@
 			# 	mark_focus_tree_layout_dirty = yes
 			# }
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# Power Struggle : Xer V Ren V Nox
 	focus = {
 		id = XER_Power_Struggle
 		icon = GFX_focus_XER_power_struggle
-		
+
 		x = 8
 		y = 0
-		
+
 		mutually_exclusive	= {
 			focus = XER_Power_Play
 		}
@@ -75,9 +75,9 @@
 		prerequisite = {}
 
 		available = {}
-		
+
 		completion_reward = {}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -205,11 +205,11 @@
 	focus = {
 		id = XER_Noxian_Relationship # Independance or Autonomy?
 		icon = GFX_goal_new_army_legacy
-		
+
 		x = 1
 		y = 1
-		
-		relative_position_id = XER_Brutal_Slavery 
+
+		relative_position_id = XER_Brutal_Slavery
 
 		mutually_exclusive = {
 			focus = XER_shadow_pact
@@ -218,7 +218,7 @@
 		}
 
 		prerequisite = {
-			focus = XER_Colonial_Identity 
+			focus = XER_Colonial_Identity
 		}
 
 		prerequisite = {
@@ -228,13 +228,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -243,10 +243,10 @@
 	focus = {
 		id = XER_Raider_Relationship
 		icon = GFX_focus_FIN_strengthen_military_administration
-		
+
 		x = 1
 		y = 1
-		relative_position_id = XER_loyal_legionaries 
+		relative_position_id = XER_loyal_legionaries
 		cost = 10
 
 		prerequisite = {
@@ -254,13 +254,13 @@
 			focus = XER_loyal_henchmen
 		}
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -268,16 +268,16 @@
 
 	# Noxian Autonomy
 	focus = {
-		id = XER_Noxian_Autonomy # Autonomy 
+		id = XER_Noxian_Autonomy # Autonomy
 		icon = GFX_goal_generic_join_faction
-		
+
 		x = 1
 		y = 1
-		
+
 		relative_position_id = XER_Noxian_Relationship
 
 		mutually_exclusive = { focus = XER_noxian_independence }
-		
+
 		prerequisite = {
 			focus = XER_Noxian_Relationship
 		}
@@ -285,13 +285,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -301,12 +301,12 @@
 	focus = {
 		id = XER_noxian_independence # Independence
 		icon = GFX_goal_broken_agreement_skulls
-		
+
 		x = -2
 		y = 2
-		
+
 		relative_position_id = XER_Colonial_Identity # Fusion - XER_Idenity_Fusion
-		
+
 		mutually_exclusive ={ focus = XER_Noxian_Autonomy }
 
 		prerequisite = {
@@ -316,13 +316,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -331,10 +331,10 @@
 	focus = {
 		id = XER_power_reborn # XER_noxian_independence
 		icon = goal_generic_territory_or_war
-		
+
 		x = 0
 		y = 2
-		
+
 		relative_position_id = XER_Noxian_Relationship
 
 		prerequisite = {
@@ -347,25 +347,25 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
 	# Shadow Pact
 	focus = {
-		id = XER_shadow_pact 
-		icon = GFX_goal_generic_territory_or_war 
-		
+		id = XER_shadow_pact
+		icon = GFX_goal_generic_territory_or_war
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Collective_Punishment # XER_Noxian_Coalition
 		# mutually_exclusive = {
 		# 	focus = XER_Dawg_Pack
@@ -386,23 +386,23 @@
 
 			focus = XER_Collective_Punishment
 		}
-		
-		prerequisite = {	
-			# focus = XER_Brutal_Slavery 
+
+		prerequisite = {
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -417,21 +417,21 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
-		
-		prerequisite = {	
+
+
+		prerequisite = {
 			focus = XER_shadow_pact
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -447,29 +447,29 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		mutually_exclusive ={
 			focus = XER_the_true_rulers
 		}
 
-		prerequisite = {	
+		prerequisite = {
 			focus = XER_loyal_legionaries
 			focus = XER_loyal_henchmen
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
-		prerequisite = {	
+		prerequisite = {
 			focus = XER_noxian_independence
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -485,30 +485,30 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		mutually_exclusive ={
 			focus = XER_new_age
 		}
-		
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_loyal_henchmen
 			# focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# Rebuild in Our Image
 	focus = {
 		id = XER_rebuild_in_my_image
@@ -519,30 +519,30 @@
 		cost = 10
 
 		available = {
-			
-		}
-		
-		prerequisite = {	
-			focus = XER_loyal_smugglers
-			focus = XER_power_reborn
-			# focus = XER_Brutal_Slavery 
-			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+
 		}
 
-		prerequisite = {	
+		prerequisite = {
+			focus = XER_loyal_smugglers
+			focus = XER_power_reborn
+			# focus = XER_Brutal_Slavery
+			# focus = XER_Wild_Anger
+			# focus = XER_Identity_Fusion
+		}
+
+		prerequisite = {
 			focus = XER_noxian_independence
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# Rebuild in Our Image
 	focus = {
 		id = XER_rebuild_in_my_image
@@ -553,34 +553,34 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-				
+
 		mutually_exclusive ={
 			focus = XER_rebuild_in_their_image
 		}
-		
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_loyal_smugglers
 			focus = XER_power_reborn
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
-		prerequisite = {	
+		prerequisite = {
 			focus = XER_noxian_independence
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# Loyal Smugglers
 	focus = {
 		id = XER_loyal_smugglers
@@ -591,22 +591,22 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
-		
-		prerequisite = {	
+
+
+		prerequisite = {
 			focus = XER_loyal_henchmen
 			focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -622,35 +622,35 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-				
+
 		mutually_exclusive ={
 			focus = XER_rebuild_in_my_image
 		}
-		
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_loyal_smugglers
 			focus = XER_power_reborn
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
+			# focus = XER_Identity_Fusion
 		}
 
-		prerequisite = {	
+		prerequisite = {
 			focus = XER_noxian_independence
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
-	# 
+
+	#
 	focus = {
 		id = XER_total_war
 		icon = GFX_goal_revolution
@@ -660,35 +660,35 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
-	 	prerequisite = {	
+
+	 	prerequisite = {
 			 focus = XER_loyal_smugglers
 		}
-			
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_the_true_rulers
 		}
-		
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_rebuild_in_my_image
 			# focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		
+			# focus = XER_Identity_Fusion
+
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# The True Rulers
 	focus = {
 		id = XER_total_war
@@ -699,44 +699,44 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
-	 	prerequisite = {	
+
+	 	prerequisite = {
 			 focus = XER_loyal_smugglers
 		}
-			
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_the_true_rulers
 		}
-		
-		prerequisite = {	
+
+		prerequisite = {
 			focus = XER_rebuild_in_my_image
 			# focus = XER_noxian_indepedence
-			# focus = XER_Brutal_Slavery 
+			# focus = XER_Brutal_Slavery
 			# focus = XER_Wild_Anger
-			# focus = XER_Identity_Fusion 
-		
+			# focus = XER_Identity_Fusion
+
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
-	# Cruelty Pact 
+
+	# Cruelty Pact
 	focus = {
-		id = XER_Cruelty_Pact 
-		icon = GFX_goal_generic_territory_or_war 
-		
+		id = XER_Cruelty_Pact
+		icon = GFX_goal_generic_territory_or_war
+
 		x = -2
 		y = 1
-		
-		relative_position_id = XER_Collective_Punishment 
+
+		relative_position_id = XER_Collective_Punishment
 
 		mutually_exclusive = {
 			focus = XER_Noxian_Relationship
@@ -746,7 +746,7 @@
 
 		# prerequisite = {
 		# 	focus = XER_Endless_Rage
-		# }	
+		# }
 
 		prerequisite = {
 			focus = XER_Brutal_Dominance
@@ -755,7 +755,7 @@
 		prerequisite = {
 			focus = XER_Collective_Punishment
 		}
-		
+
 		prerequisite = {
 			focus = XER_Endless_Rage
 
@@ -767,13 +767,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -789,34 +789,34 @@
 			focus = XER_Cruelty_Pact
 		}
 	}
-	
-	# XER_Force_Brutality # XER_Purge_Disloyalty # XER_Proclaim_Noxian_Rule 
+
+	# XER_Force_Brutality # XER_Purge_Disloyalty # XER_Proclaim_Noxian_Rule
 	# XER_Remove_Nasus # XER_Foreign_War # XER_Colonial_Liberty # XER_shadow_pact
-	
+
 	# Brutal Slavery
 	focus = {
-		id = XER_Brutal_Slavery 
+		id = XER_Brutal_Slavery
 		icon = GFX_goal_purge_the_enemy
-		
+
 		x = 0
 		y = 2
-		
-		relative_position_id = XER_Noxian_Coalition 
+
+		relative_position_id = XER_Noxian_Coalition
 
 		prerequisite = {
 			focus = XER_Colonial_Pact
-		}		
+		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -826,40 +826,40 @@
 	focus = {
 		id = XER_Brutal_Dominance
 		icon = GFX_goal_death_skulls
-		
+
 		x = 0
 		y = 1
-		
-		relative_position_id = XER_Blood_Pact 
+
+		relative_position_id = XER_Blood_Pact
 		prerequisite = {
-			focus = XER_Blood_Pact 
+			focus = XER_Blood_Pact
 		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
+
 	# XER_Identity_Fusion # XER_Colonial_Liberty #XER_Wild_Hatred # XER_Wild_Fear # XER_Demonic_Occupation # XER_Collective_Punishment # XER_Demonic_Destruction  # Ruthless_Rulers # XER_Endless_Destruction # focus = XER_Endless_Rage
 
 	# Brutal Dominance
 	focus = {
 		id = XER_Total_War
 		icon = GFX_socialist_constitution
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Internal_Support
 
 		prerequisite = {
@@ -869,26 +869,26 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-		
+
 	# Ruthless Cruelty
 	focus = {
 		id = XER_Ruthless_Cruelty # XER_Demonic_Hatred
 		icon = GFX_goal_conspiracy
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Total_War
 
 		prerequisite = {
@@ -898,33 +898,33 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# Easter Egg: shhhh Don't tell anyone!
 
 	# Dawg Pack
 	focus = {
 		id = XER_Dawg_Pack
 		icon = goal_generic_territory_or_war
-		
+
 		x = 0
 		y = 1
-		
+
 		available = {
 
             IF = {
-                Limit  = { 
-                    XER = { has_character = XER_nasus } 
+                Limit  = {
+                    XER = { has_character = XER_nasus }
                 }
 
                 focus = XER_Noxian_Relationship
@@ -932,10 +932,10 @@
                 focus = XER_Dawg_Pack
             }
             ELSEIF = {
-                limit = { 
-                    XER  = { 
-                        NOT = { has_character = XER_nasus } 
-                    } 
+                limit = {
+                    XER  = {
+                        NOT = { has_character = XER_nasus }
+                    }
                 }
                 focus = XER_Noxian_Relationship
                 focus = XER_shadow_pact
@@ -948,13 +948,13 @@
 			focus = XER_shadow_pact
 			focus = XER_Cruelty_Pact
 		}
-		prerequisites = { 
-			focus = XER_Endless_Rage  
+		prerequisites = {
+			focus = XER_Endless_Rage
 		}
 
 
 		cost = 10
-		
+
 		# visible = {
 
 		# 	XER = {
@@ -976,7 +976,7 @@
 		# available
 
 		allow_branch = {
-			
+
 			AND = {  # Both conditions must be met.
 				tag = XER  # The country tag must be XER.
 				has_character = XER_Nasus  # XER_Nasus must exist.
@@ -990,7 +990,7 @@
 		completion_reward = {
 			# Define rewards here
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -998,28 +998,28 @@
 
 	# Endless Rage
 	focus = {
-		id = XER_Endless_Rage 
+		id = XER_Endless_Rage
 		icon = GFX_goal_world_on_fire
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Ruthless_Cruelty
 
 		prerequisite = {
-			focus = XER_Ruthless_Cruelty 
+			focus = XER_Ruthless_Cruelty
 		}
 
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1029,10 +1029,10 @@
 	focus = {
 		id = XER_Collective_Punishment
 		icon = GFX_goal_death_tracks
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Power_Pact
 
 		prerequisite = {
@@ -1042,13 +1042,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1058,14 +1058,14 @@
 	focus = {
 		id = XER_Colonial_Identity # XER_Identity_Fusion
 		icon = GFX_goal_tax_slave
-		
+
 		x = 2
 		y = 2
-		
+
 		relative_position_id = XER_Noxian_Coalition
 
 		prerequisite = {
-			focus = XER_Colonial_Pact 
+			focus = XER_Colonial_Pact
 			focus = XER_Colonial_Investments
 
 			#focus = XER_Noxian_Suppression
@@ -1074,26 +1074,26 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	# Noxian War Economy
 	focus = {
 		id = XER_Noxian_War_Economy
 		icon = RedIndustry
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Foreign_Interference
 
 		prerequisite = {
@@ -1104,13 +1104,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1120,10 +1120,10 @@
 	focus = {
 		id = XER_Colonial_Investments
 		icon = GFX_focus_generic_self_management
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Noxian_War_Economy
 
 		prerequisite = {
@@ -1134,18 +1134,18 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	#---------------------------------------------------#
 	#													#
 	#		#### 	  ##		###		#	  #			#
@@ -1158,11 +1158,11 @@
 	#													#
 	#---------------------------------------------------#
 
-	
+
 	# IDEA:
-	# Sacrifice various rights, and claims to 
-	# Shurima in return for foreign firepower 
-	
+	# Sacrifice various rights, and claims to
+	# Shurima in return for foreign firepower
+
 
 	#---------------------------------------------------#
 
@@ -1171,12 +1171,12 @@
 	focus = {
 		id = XER_Colonial_Pact # XER_Colonial_Liberty
 		icon = GFX_focus_XER_colonial_pact
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Noxian_Coalition
-		
+
 		prerequisite = {
 			focus = XER_Noxian_Coalition
 		}
@@ -1184,60 +1184,60 @@
 		cost = 10
 
 		available = {
-			
+
 		}
 
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
-	
+
+
 	### XERATH PACT
 	# Power Pact
 	focus = {
 		id = XER_Power_Pact # XER_Colonial_Liberty
 		icon = GFX_goal_generic_territory_or_war
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Xerath_Conquest
 		prerequisite = {
 			focus = XER_Xerath_Conquest
 			#focus = XER_Renekton_Conquest
 		}
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
 	}
-	
+
 	### RENEKTON PACT
 	# Blood Pact
 	focus = {
 		id = XER_Blood_Pact # XER_Colonial_Liberty
 		icon = GFX_goal_generic_territory_or_war
-		
+
 		x = 0
 		y = 1
-		
+
 		relative_position_id = XER_Renekton_Conquest
-		
+
 		prerequisite = {
 			focus = XER_Renekton_Conquest
 			#focus = XER_Xerath_Conquest
@@ -1246,13 +1246,13 @@
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1263,22 +1263,22 @@
 	focus = {
 		id = XER_one
 		icon = GFX_goal_poor
-		
+
 		x = 1
 		y = 0
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
 			set_technology = {
 				suicide_craft = 1
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1289,21 +1289,21 @@
 		id = XER_two
 		icon = goal_generic_territory_or_war
 		prerequisite = { focus = XER_one }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = XER_one
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1314,21 +1314,21 @@
 		id = XER_three
 		icon = goal_generic_territory_or_war
 		prerequisite = { focus = XER_two }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = XER_two
-		
+
 		cost = 10
 
 		available = {
-			
+
 		}
-		
+
 		completion_reward = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 5
 		}

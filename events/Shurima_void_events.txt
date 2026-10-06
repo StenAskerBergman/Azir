@@ -1,13 +1,15 @@
+add_namespace = shurima_void
+
 # shurima Demons Events
 country_event = {
-	id = shurima.3
-	title = shurima.3.t
-	desc = shurima.3.d
+	id = shurima_void.3
+	title = shurima_void.3.t
+	desc = shurima_void.3.d
 	
 	is_triggered_only = yes
 	
 	option = { #We must stay vigilant...
-		name = shurima.3.a
+		name = shurima_void.3.a
 		ai_chance = { factor = 100 }
 		add_stability = 0.01
 	}
@@ -53,9 +55,9 @@ country_event = {
 }
 # Void Weekly Bad Events
 country_event = {
-	id = shurima.10
-	title = shurima.10.t
-	desc = shurima.10.d
+	id = shurima_void.10
+	title = shurima_void.10.t
+	desc = shurima_void.10.d
 	picture = GFX_report_event_demons_attack
 
 	is_triggered_only = yes
@@ -81,9 +83,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = shurima.11
-	title = shurima.11.t
-	desc = shurima.11.d
+	id = shurima_void.11
+	title = shurima_void.11.t
+	desc = shurima_void.11.d
 	picture = GFX_report_event_demons_attack
 
 	is_triggered_only = yes
@@ -204,7 +206,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = shurima.7
+	id = shurima_void.7
 	
 	is_triggered_only = yes
 	hidden = yes
@@ -220,7 +222,7 @@ country_event = {
 			random_list = {
 						33 = {
 							country_event = {
-							id = shurima.4
+							id = shurima_void.4
 							days = 1
 							}
 						}
@@ -242,15 +244,15 @@ country_event = {
 }
 #These will all be named like Demons Found!
 country_event = {
-	id = shurima.4
-	title = shurima.4.t
-	desc = shurima.4.d
+	id = shurima_void.4
+	title = shurima_void.4.t
+	desc = shurima_void.4.d
 	picture = GFX_report_event_demons
 	
 	is_triggered_only = yes
 	
 	option = { #We must beat back this evil!
-		name = shurima.4.a
+		name = shurima_void.4.a
 		ai_chance = { factor = 100 }
 		if = {
 		limit = {

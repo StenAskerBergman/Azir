@@ -27,7 +27,7 @@ add_ideas = {
 	mountains_of_isolation
 
 	# Political
-	
+
 }
 
 set_politics = {
@@ -67,7 +67,7 @@ recruit_character = TAR_morgana
 recruit_character = TAR_soraka
 recruit_character = TAR_cygnus
 recruit_character = TAR_rahvun
-recruit_character = TAR_aurelion_sol
+recruit_character = TAR_aurelionSol
 recruit_character = TAR_zoe
 recruit_character = TAR_bard
 

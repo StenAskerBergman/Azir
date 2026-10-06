@@ -1,0 +1,26 @@
+﻿l_english:
+ # Collision repairs reuse the existing authored Void text.
+ shurima_void.3.t: "$shurima.33.t$"
+ shurima_void.3.d: "$shurima.33.d$"
+ shurima_void.3.a: "$shurima.33.a$"
+ shurima_void.4.t: "$shurima.34.t$"
+ shurima_void.4.d: "$shurima.34.d$"
+ shurima_void.4.a: "$shurima.34.a$"
+ shurima_void.10.t: "$shurima.310.t$"
+ shurima_void.10.d: "$shurima.310.d$"
+ shurima_void.11.t: "$shurima.311.t$"
+ shurima_void.11.d: "$shurima.311.d$"
+
+ # Keep the dependency decision wording without overriding Demacia keys.
+ SHU_void_martial_law: "$martial_law$"
+ SHU_void_martial_law_desc: "$martial_law_desc$"
+ SHU_void_prepare_a_defense: "$prepare_a_defense$"
+ SHU_void_prepare_a_defense_desc: "$prepare_a_defense_desc$"
+ SHU_void_relocate_resources: "$relocate_resources$"
+ SHU_void_relocate_resources_desc: "$relocate_resources_desc$"
+ SHU_void_request_night_hunter: "$request_night_hunter$"
+ SHU_void_request_night_hunter_desc: "$request_night_hunter_desc$"
+
+ # The BOP-panel variants retain their existing political and BOP effects.
+ TAR_bop_influence_solari: "Influence the Solari"
+ TAR_bop_influence_lunari: "Influence the Lunari"

@@ -6,7 +6,7 @@ bookmarks = {
 		picture = "GFX_990_bookmark"
 		default_country = "SHU"
 		default = yes
-		
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
@@ -48,19 +48,19 @@ bookmarks = {
 				The_great_fall
 			}
 			focuses = {
-				
+
 				SHU_sundisc_has_risen
 
 			}
 		}
 
 		"NAZ"={
-			# minor = yes # Unique Minor => Has Unique Tree => Assume its not working, Just incase 
+			# minor = yes # Unique Minor => Has Unique Tree => Assume its not working, Just incase
 			history = "NAZ_990_DESC"
 			ideology = chiefdom
 			ideas = {
 				NAZ_Exotic_materials
-				
+
 				# Ideas
 				# Nazumah Nationalism
 				# Nazumah Resilience
@@ -72,10 +72,10 @@ bookmarks = {
 			}
 			# focuses = {}
 		}
-		
+
 		"XER"={
 			history = "XER_990_DESC"
-			ideology = arcanum #mages_arcanum
+			ideology = mages
 			ideas = {
 				# National Spirits
 				# Shurima_broken
@@ -85,10 +85,10 @@ bookmarks = {
 			}
 			# focuses = {}
 		}
-				
+
 		"TAR"={
 			history = "TAR_990_DESC"
-			ideology = solari #theocracy
+			ideology = theocracy
 			ideas = {
 				# National Spirits
 				# Shurima_broken
@@ -98,15 +98,15 @@ bookmarks = {
 			}
 			# focuses = {}
 		}
-		
+
 		"---"={
-			history = "Unknown... "  # "OTHER_BLITZKRIEG_DESC"
+			history = "OTHER_990_DESC"
 		}
 
 		"AUR"={
 			minor = yes
 			history = "AUR_990_DESC"
-			ideology = royalty
+			ideology = royalist
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame
@@ -114,26 +114,26 @@ bookmarks = {
 			}
 			# focuses = {}
 		}
-		
-		# Icathia - Void 
+
+		# Icathia - Void
 		"VOI"={
 			minor = yes
 			history = "VOI_990_DESC"
-			ideology = oblivion
+			ideology = desolation
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame
 				# Shurima_broken
 			}
 			# focuses = {}
-		}	
+		}
 
 		# FRELJORD
 
 		"FRO"={
 			minor = yes
 			history = "FRO_990_DESC"
-			ideology = theocracy # avarosa 
+			ideology = theocracy # avarosa
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame
@@ -145,7 +145,7 @@ bookmarks = {
 		"URS"={
 			minor = yes
 			history = "URS_990_DESC"
-			ideology = theocracy # Volibear 
+			ideology = theocracy # Volibear
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame
@@ -157,7 +157,7 @@ bookmarks = {
 		"AVA"={
 			minor = yes
 			history = "AVA_990_DESC"
-			ideology = chiefdom # avarosa 
+			ideology = chiefdom # avarosa
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame
@@ -177,11 +177,11 @@ bookmarks = {
 			}
 			# focuses = {}
 		}
-		
+
 		"SHK"={
 			minor = yes
-			history = SHK_990_DESC
-			ideology = Fascism # Shakkal Dune Raiders 
+			history = "SHK_990_DESC"
+			ideology = fascism # Shakkal Dune Raiders
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame

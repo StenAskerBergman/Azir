@@ -1,9 +1,9 @@
 ﻿l_english:
 
- # TAR_balance_of_power: "Balance of Rule" 
+ # TAR_balance_of_power: "Balance of Rule"
  # TAR_balance_of_power: "Balance of Legitimacy"
 
- TAR_balance_of_power: "Balance of Power" 
+ TAR_balance_of_power: "Balance of Power"
  TAR_lunari_side: "Lunari Influence"
  TAR_solari_side: "Solari Power"
 
@@ -22,7 +22,7 @@
  TAR_shadow_uprising: "Shadow Uprising"
  TAR_shadow_uprising_desc: "The Lunari are ready to rise from the shadows. With strength forged in darkness, they prepare for an all-out rebellion to reclaim Targon from Solari rule."
 
- # Change of Hearts 
+ # Change of Hearts
  TAR_change_of_hearts: "Change of Hearts"
  TAR_change_of_hearts_desc: "As the Lunari consolidate power, they face a choice: offer unity to the remnants of Solari, or solidify their dominance with unwavering authority. A new era is dawning for Targon."
 
@@ -34,29 +34,29 @@
  TAR_our_past: "Our Past"
  TAR_our_past_desc: "Targon’s origins are rooted in ancient celestial worship and harsh mountain life. The Rakkor, Solari, and Lunari emerged as pillars of this legacy, each shaped by devotion and conflict. 'Our Past' honors the strength and sacrifices that defined Targon’s early days and set the stage for the struggles to come."
 
- # Our Origins 
+ # Our Origins
  TAR_our_origins: "Our Origins"
  TAR_our_origins_desc: "The Solari and the Lunari have faced each other in many pivotal moments, but the conflict between them remains unresolved if our origins are not remembered."
  TAR_our_origins.tt: "Only once we know our past can we know our future.\n \n"
 
- 
- # Our Leaders 
+
+ # Our Leaders
  TAR_our_leaders: "Our Leader"
  TAR_our_leaders_desc: "Rakkor need a leader going  "
 
  # Rise of the Rakkor
  TAR_rise_of_the_rakkor: "Rise of the Rakkor"
  TAR_rise_of_the_rakkor_desc: "The Rakkor have risen to the challenge of the Lunari. The Lunari have been defeated, but the Rakkor still hold their power."
-               
+
  # Path of Purity
- TAR_remember_summit: "Remember the Summit" 
+ TAR_remember_summit: "Remember the Summit"
  TAR_remember_summit_desc: "Three decades ago, the great summit of Targon fell into darkness and chaos. Betrayal and hidden agendas led to the sabotage of our once-untouchable fortress. Many of our leaders and brave warriors lost their lives in the ensuing chaos. The act has gone unavenged for years, but we, the survivors, have not forgotten."
 
  # Our Escape - Lunari
  TAR_lunari_escape: "Our Escape"
  TAR_lunari_escape_desc: "Years ago, we managed to escape from the destruction wrought upon us by the Solari’s wrath at the summit. The moon’s guidance allowed us to survive that fateful night, but the shadows of the past still influence our path today. The wounds are deep, yet our spirits remain unbroken."
 
- # Our Escape - Solari 
+ # Our Escape - Solari
  TAR_solari_escape: "Our Escape"
  TAR_solari_escape_desc: "The betrayal by the Lunari at the summit left our proud fortress in ruins. The Solari survived through sheer determination, regrouping in the face of such a staggering loss. The scars of that day still remain, but the sun’s light will guide us to vengeance and retribution."
 
@@ -82,7 +82,7 @@
  TAR_reconstruction_era_desc: "With the tides turning towards reform, the Reformers extend an olive branch to those once in opposition. Through careful integration and respect for both Solari and Lunari beliefs, we aim to unify Targon under a shared vision. Leaders from all walks—Leona, Diana, Taric, Soraka, and even Pantheon pledges to work towards an era of unity, letting past grievances pave the way for a resilient, united Targon."
 
  ################################################################
- # IDEAS LOC 
+ # IDEAS LOC
  ################################################################
 
  # Policy Effects Localization
@@ -105,10 +105,10 @@
  TAR_celestial_devotion_desc: "The Targonian people devote themselves to their gods and celestial rites, fostering stability yet slowing production due to ritualistic observance."
 
  ################################################################
- # EVENTS LOC 
+ # EVENTS LOC
  ################################################################
  # OLD: targon.3.a: "Acknowledge Lunari Traditions"
- 
+
  # Tooltip and Option Localization
 
  targon.3.t: "Our Origins"
@@ -157,7 +157,7 @@
  targon.13.b: "Rejector Path"
 
  targon.20.b.tt: "It's time Leona steps down to focus on her faith. \nNow, Rahvun will Lead the Light!"
- 
+
 #################################################################
  targon.101.t: "The Shadow Uprising Begins"
  targon.101.d: "The Lunari, led by Diana and her followers, have risen against the oppressive Solari rule. After years of hiding, they now strike with full force, aiming to reclaim Targon for themselves."
@@ -166,16 +166,16 @@
  PuristPathTrue: "§GTake§! the §OPurist Path§!"
  PuristPathFalse: "§RAvoid§! the Purist Path"
 
- TAR_lunari_harvest: "Lunari Harvest"    
+ TAR_lunari_harvest: "Lunari Harvest"
  lunari.16.t: "In the Shadow of the Sun"
  lunari.16.d: "We dwell on the very edges of Solari control, a persecuted people surviving in secrecy. We cannot deny that the Solari would crush us if they learned of our true strength. For now, the sun remains blind to our cause, distracted by its own zealous pursuits and internal divisions. With careful actions, we can grow and prepare under their gaze, gathering strength until the time comes to reveal ourselves. But we cannot remain hidden forever; with each day, the risk of discovery rises, and with it, the certainty of conflict."
  lunari.16.a: "Our time will come soon."
  lunari.16.a.tt: "Unlocks the §YHide Activities from Solari§! decision.\nThis allows you to spend £pol_power §YPolitical Power§! to keep the Solari from mobilizing against you.\nThe cost of this decision will increase by 10 £pol_power §YPolitical Power§! with each use!"
 
- 
+
 
  # Our Past - event: targon.1 - old targon.1.t: "The Foundations of the Rakkor"
- targon.1.t: "Our Past" 
+ targon.1.t: "Our Past"
  targon.1.d: "As the Rakkor establish their foundations, choices must be made that will shape the future of our people. What path will we pursue to secure our place in history?"
 
  targon.1.a: "Strengthen our political base."
@@ -198,71 +198,57 @@
 
  TAR_tolerance_path_tt: "The Solari consider tolerance, seeking unity in the heavens."
  purist_path_tt: "The Solari choose purist retaliation, opposing the Lunari as heretics."
- 
+
+ TAR_reform: "One Sky, Two Lights"
+ TAR_reform_desc: "Leona's revelation cannot be buried beneath old dogma. The Solari and Lunari look upon the same heavens; Targon will endure only if both are granted a place beneath them."
+ TAR_help_our_allies: "Aid the Moon's Faithful"
+ TAR_help_our_allies_desc: "The Lunari survived generations of persecution in hidden temples and mountain paths. Food, arms, and protection will let their scattered communities stand openly beside us."
+ TAR_integrate_opposition: "Reconcile Sun and Moon"
+ TAR_integrate_opposition_desc: "Neither the Solari nor the Lunari possess the whole truth of Mount Targon. A common council will bind both faiths to the defense of the mountain."
+ TAR_rejectors: "Return of the Lunari"
+ TAR_rejectors_desc: "The Lunari will no longer exist only in whispers. Diana's return has given the moon's faithful the courage to reclaim their history and their place upon Targon."
+ TAR_purge_opposition: "Purge the Lunari"
+ TAR_purge_opposition_desc: "The Solari hierarchy has chosen zeal over reconciliation. The Ra'Horak will hunt the Lunari from the mountain's paths and erase every shrine that denies the sun's supremacy."
+
  # Characters
- TAR_LEONA_NAME: "Leona"
- TAR_DIANA_NAME: "Diana"
  TAR_RAHVUN_NAME: "Rahvun"
  TAR_CYGNUS_NAME: "Cygnus"
- TAR_AURELION_SOL_NAME: "Aurelion Sol"
- TAR_SORAKA_NAME: "Soraka"
  TAR_ZOE_NAME: "Zoe"
  TAR_BARD_NAME: "Bard"
- TAR_TARIC_NAME: "Taric"
- TAR_ALUNE_NAME: "Alune"
- TAR_APHELIOS_NAME: "Aphelios"
 
- POLITICS_LEONA_DESC: "Leona, the Radiant Dawn, embodies the Solari ideals and leads with unwavering faith and strength. A natural leader, she strives to unite Targon under the light of the Solari faith."
- POLITICS_DIANA_DESC: "Diana, Scorn of the Moon, is a fierce Lunari warrior who fights for the resurgence of the Lunari faith against the Solari. She represents the Lunari’s defiance and their quest for equality in Targon."
  POLITICS_RAHVUN_DESC: "Rahvun, Daylight's Spear, is a staunch Solari purist committed to preserving the Solari faith's dominance and eradicating all Lunari influence. He seeks to maintain the Solari’s supremacy in Targon."
  POLITICS_CYGNUS_DESC: "Cygnus the Moonstalker, a Lunari loyalist, is a master of shadows and secrecy. He works behind the scenes to dismantle the Solari's power and strengthen the Lunari cause."
- POLITICS_AURELION_SOL_DESC: "Aurelion Sol, the Celestial Dragon, holds no loyalty to Targon's mortal politics. His cosmic power and celestial knowledge are unmatched, but he remains uninterested in Targon's petty struggles."
- POLITICS_SORAKA_DESC: "Soraka, the Starchild, is a peaceful healer who seeks unity among all of Targon's people. Her celestial guidance is a beacon for those wishing to heal the division between the Solari and Lunari."
  POLITICS_ZOE_DESC: "Zoe, the Aspect of Twilight, is a chaotic force of celestial energy. While aligned with the Solari, her interests are far more enigmatic, often disrupting the status quo for her own amusement."
  POLITICS_BARD_DESC: "Bard, the Wandering Caretaker, is a celestial being driven by the balance of cosmic forces. His motives are a mystery to mortals, but his interventions often steer Targon’s fate."
- POLITICS_TARIC_DESC: "Taric, the Shield of Valoran, stands as a celestial guardian devoted to protecting Targon. He believes in bridging divides and upholding harmony within Targon’s factions."
- POLITICS_ALUNE_DESC: "Alune, the Mystic Voice, serves as a spiritual guide to the Lunari. Her wisdom and astral abilities support the Lunari in their quest for freedom and unity."
- POLITICS_APHELIOS_DESC: "Aphelios, the Weapon of the Faithful, is a silent assassin for the Lunari. Bound to the shadows, he serves the Lunari cause with unwavering loyalty, striking fear into the hearts of the Solari."
 
  ################################################################
  # Trait Names & Descriptions
  ################################################################
 
  # Name
- 
+
 
  # Descriptions
- sun_warrior: "Sun Warrior"
- solar_shield: "Solar Shield"
- moonblade: "Moonblade"
- guerrilla_leader: "Guerrilla Leader"
  offensive_doctrine: "Offensive Doctrine"
  daybreak_vanguard: "Daybreak Vanguard"
  harsh_leader: "Harsh Leader"
  aggressive_assault: "Aggressive Assault"
  night_operations_specialist: "Night Operations Specialist"
  irregular_warfare: "Irregular Warfare"
- covert_operations: "Covert Operations"
  ambusher: "Ambusher"
  charismatic_defender: "Charismatic Defender"
  logistics_wizard: "Logistics Wizard"
  celestial: "Celestial"
- protector_of_targon: "Protector of Targon"
- celestial_defender: "Celestial Defender"
- pacifist: "pacifist"
- divine_healer: "Divine Healer"
  cosmic_power: "Cosmic Power"
  star_forge: "Star Forge"
  twilight_meddler: "Twilight Meddler"
  chaos_instigator: "Chaos Instigator"
- astral_guidance: "Astral Guidance"
  strategic_genius: "Strategic Genius"
  astral_mastery: "Astral Mastery"
- moonshadow_tactics: "Moonshadow Tactics"
 
 
  ################################################################
- # NOT USED 
+ # NOT USED
  ################################################################
 
  TAR_rakkor_escape: "Our Escape"
@@ -311,7 +297,7 @@
  TAR_rakkor_solari_darkin_desc: "During the Darkin War, the Rakkor found themselves as both allies and tools of the Solari. Forced to fight for a cause that was never truly ours, we bore the brunt of the battle while the celestial powers pulled the strings. The war left us hardened, but also skeptical of the Solari’s promises, as we saw firsthand the devastation that unchecked celestial ambition could bring."
 
  ################################################################
- # OLD ONES 
+ # OLD ONES
  ################################################################
 
  TAR_the_ascended_conflict: "The Ascended Conflict"
@@ -448,12 +434,12 @@
  TAR_endure_the_night_desc: "Under relentless oppression, the Lunari have learned to survive and persevere. Despite the constant surveillance and suppression, they find ways to adapt, growing stronger in the darkness and awaiting the right moment to rise."
 
 
-#   _____    _                
-#  |_   _|  | |               
-#    | |  __| | ___  __ _ ___ 
+#   _____    _
+#  |_   _|  | |
+#    | |  __| | ___  __ _ ___
 #    | | / _` |/ _ \/ _` / __|
 #   _| || (_| |  __/ (_| \__ \
 #  |_____\__,_|\___|\__,_|___/
-                            
-                          
+
+
   # idea: Make a post war civil war focus that lets both factions have their leaders if they can / won as reformers "The Solari and the Lunari have both fought to survive. Their leaders have proved to be legendary.

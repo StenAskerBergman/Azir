@@ -11,13 +11,13 @@ shared_focus = {
 		trigger = {
 			tag = XER
 		}
-		
+
 	}
 	offset = {
 		x = 0
 		y = 0
 		trigger = {
-			 tag = SHU 
+			 tag = SHU
 		}
 	}
 
@@ -29,19 +29,19 @@ shared_focus = {
 
 
 	available = {
-		NOT = {
-			tag = SHU 
-            tag = XER
+		OR = {
+			tag = SHU
+			tag = XER
 		}
 	}
-	
+
 	allow_branch = {
-		NOT = {
-			tag = SHU 
-            tag = XER
+		OR = {
+			tag = SHU
+			tag = XER
 		}
 	}
-	
+
 	bypass = {
 
 	}
@@ -55,6 +55,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-
+		add_political_power = 50
+		add_stability = 0.02
 	}
 }

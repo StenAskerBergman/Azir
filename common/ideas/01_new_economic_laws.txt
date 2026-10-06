@@ -9,13 +9,13 @@ ideas = {
 
 	mobilization_laws = {
 	}
-    
+
 	economy = {
         law = yes
         use_list_view = yes
-		
+
 		# Targon: Mountain Isolation Law
-        mountains_of_isolation = { 
+        mountains_of_isolation = {
             allowed = {
                 if = {
                     limit = { tag = TAR }
@@ -115,7 +115,7 @@ ideas = {
             allowed = {
                 always = no
             }
-			
+
             removal_cost = -1
 
             modifier = {
@@ -144,7 +144,6 @@ ideas = {
                         has_stability > 0.5
 						has_completed_focus = SHU_economic_revival
                         has_completed_focus = SHU_Restoring_Shuriman_Economy
-						has_completed_focus = SHU_Restoring_Icathian_Economy
                     }
                 }
             }
@@ -189,7 +188,7 @@ ideas = {
                         # Allied Country has Amulet
                         # Root in faction = { has_country_flag = has_amulett }
                         # Root ask FROM to activate amulet
-                        # Event 
+                        # Event
                     }
                 }
             }
@@ -197,7 +196,7 @@ ideas = {
             cancel_if_invalid = no
         }
 
-		
+
         forgotten_sun_disc = {
             allowed = {
                 always = no
@@ -226,21 +225,20 @@ ideas = {
                         original_tag = SHU
                         # original_tag = XER
                         # original_tag = NAZ
-                        
+
                     }
                     OR = {
                         has_war_support > 0.5
                         has_stability > 0.5
 						has_completed_focus = SHU_economic_revival
                         has_completed_focus = SHU_Restoring_Shuriman_Economy
-						has_completed_focus = SHU_Restoring_Icathian_Economy
                     }
                 }
             }
 
             cancel_if_invalid = no
         }
-		
+
 		restored_sun_disc = {
             allowed = {
                 always = no
@@ -253,7 +251,7 @@ ideas = {
             }
 		}
 
-		
+
         activated_sun_disc = {
             allowed = {
                 always = no
@@ -265,7 +263,7 @@ ideas = {
             allowed = {
                 always = no
             }
-			
+
 
             removal_cost = -1
 
@@ -295,7 +293,6 @@ ideas = {
                         has_war_support > 0.5
                         has_stability > 0.5
                         has_completed_focus = SHU_Restoring_Shuriman_Economy
-						has_completed_focus = SHU_Restoring_Icathian_Economy
                     }
                 }
                 ELSE = {

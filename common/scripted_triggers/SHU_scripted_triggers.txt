@@ -2,7 +2,7 @@
 
 # SRC: SHU_scripted_triggers.txt
 
-is_literally_shurima = { 
+is_literally_shurima = {
 	OR = {
 		original_tag = SHU
 		original_tag = XER
@@ -14,12 +14,12 @@ is_literally_shurima = {
 		original_tag = NAS
     AND =  {
       original_tag = VOI
-      ruling_party = { NOT = desolation } 
+		NOT = { has_government = desolation }
     }
 	}
 }
 
-is_shurima = { 
+is_shurima = {
 	OR = {
 		original_tag = SHU
 		original_tag = XER
@@ -32,27 +32,27 @@ is_shurima = {
 }
 
 is_shuriman_warlord = {
-	OR = {		
+	OR = {
 		original_tag = SHK
 		original_tag = NAS
 		original_tag = KAL
-    # ? Not Sure here 
-		# original_tag = XER 
+    # ? Not Sure here
+		# original_tag = XER
 	}
 }
 
 is_shuriman_major = {
-	OR = {		
+	OR = {
 		original_tag = XER
 		original_tag = IXT
 		original_tag = TAR
-		original_tag = SHU 
-    # ? Not Sure here, what do we do with the colonies?     
-    # original_tag = NOX 
+		original_tag = SHU
+    # ? Not Sure here, what do we do with the colonies?
+    # original_tag = NOX
 	}
 }
 
-# Original: is_state_japan_wants 
+# Original: is_state_japan_wants
 
 is_xerath_states = {
 	 OR = {
@@ -61,24 +61,24 @@ is_xerath_states = {
     state = 115 # Upper Targonian Range
     state = 117 # Outer Targonian Cliffs
     state = 119 # Southern Advance
-    state = 134 # River Renek  
+    state = 134 # River Renek
     state = 135 # Scorched Ruins
     state = 136 # Endless Plain
-    state = 137 # Dormun  
+    state = 137 # Dormun
     state = 138 # Skallashi
     state = 139 # The Sun's Extent
-    state = 140 # River Faraj  
+    state = 140 # River Faraj
 	}
 }
 
 is_nazumah_states = {
   OR = {
-    state = 116 # Lower Targonian Range.txt  
-    state = 119 # Southern Advance.txt  
-    state = 120 # Marai Coastline.txt  
-    state = 121 # Zoantha Cascade.txt  
-    state = 122 # Cape of the Marai.txt  
-    state = 123 # Zirima.txt  
+    state = 116 # Lower Targonian Range.txt
+    state = 119 # Southern Advance.txt
+    state = 120 # Marai Coastline.txt
+    state = 121 # Zoantha Cascade.txt
+    state = 122 # Cape of the Marai.txt
+    state = 123 # Zirima.txt
   }
 }
 
@@ -142,4 +142,3 @@ is_colony_states = {
 		state = 103 # Sai Hold
 	}
 }
-

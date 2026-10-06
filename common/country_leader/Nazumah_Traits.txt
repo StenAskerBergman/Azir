@@ -1,24 +1,23 @@
 leader_traits = {
 
 	trusted = {
-        random = no        
+        random = no
         stability_factor = 0.2
     }
 
 	great_hunter = {
-        random = no        
+        random = no
         war_support_factor = 0.2
     }
 
     pride_of_nazumah = {
-        random = no        
+        random = no
         stability_factor = 0.1
     }
 
     strategic_mind = {
         random = no
-        land_attack_factor = 0.10
-        land_defense_factor = 0.05
+		army_attack_factor = 0.10
+		army_defence_factor = 0.05
     }
 }
-

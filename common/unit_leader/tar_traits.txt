@@ -1,5 +1,5 @@
 leader_traits = {
-	
+
 ##################################
 # Targon Traits
 ##################################
@@ -11,9 +11,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		allowed = { FROM = { tag = TAR } }
-		modifier = {
-			division_attack = 0.05
-		}
+		attack_skill = 1
 		new_commander_weight = {
 			factor = 0
 		}
@@ -26,9 +24,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		allowed = { FROM = { tag = TAR } }
-		modifier = {
-			division_recovery_rate = 0.05
-		}
+		logistics_skill = 1
 		new_commander_weight = {
 			factor = 0
 		}
@@ -40,9 +36,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		allowed = { FROM = { tag = TAR } }
-		modifier = {
-			division_attack = 0.05
-		}
+		attack_skill = 1
 		new_commander_weight = {
 			factor = 0
 		}
@@ -54,20 +48,18 @@ leader_traits = {
 			always = no # not gainable
 		}
 		allowed = { FROM = { tag = TAR } }
-		modifier = {
-			division_attack = 0.05
-		}
+		planning_skill = 1
 		new_commander_weight = {
 			factor = 0
 		}
 	}
 
-	tar_demoted = { 		
+	tar_demoted = {
 		type = all
-		trait_type = personality_trait	
+		trait_type = personality_trait
 		gain_xp = {
 			always = no # not gainable
-		}	
+		}
 		attack_skill = -1
 		defense_skill = -1
 		logistics_skill = -1
@@ -77,30 +69,24 @@ leader_traits = {
 		}
 		non_shared_modifier = {
 			experience_gain_army_unit_factor = -0.10
-			promotion_cost = 10
+			promote_cost_factor = -0.10
 		}
 	}
 
 ##################################
 # Solari Traits
 ##################################
-    
+
     solari_supreme_commander = {
         type = all
         trait_type = personality_trait
         gain_xp = {
             always = no # not gainable
         }
-        allowed = {
-            FROM = {
-                ideology = solari
-            }
-        }
-        modifier = {
-            division_organisation = 0.15
-            division_attack = 0.1
-            division_defense = 0.1
-        }
+		allowed = { FROM = { original_tag = TAR } }
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
         ai_will_do = {
             factor = 1
         }
@@ -115,15 +101,8 @@ leader_traits = {
         gain_xp = {
             always = no # not gainable
         }
-        allowed = {
-            FROM = {
-                ideology = solari
-            }
-        }
-        modifier = {
-            breakthrough = 0.1
-            army_speed_factor = 0.1
-        }
+		allowed = { FROM = { original_tag = TAR } }
+		attack_skill = 1
         ai_will_do = {
             factor = 1
         }
@@ -139,15 +118,8 @@ leader_traits = {
         gain_xp = {
             always = no # not gainable
         }
-        allowed = {
-            FROM = {
-                ideology = reformer
-            }
-        }
-        modifier = {
-            division_organisation = 0.05
-            reinforce_rate = 0.1
-        }
+		allowed = { FROM = { original_tag = TAR } }
+		planning_skill = 1
         ai_will_do = {
             factor = 1
         }
@@ -159,16 +131,9 @@ leader_traits = {
         gain_xp = {
             always = no # not gainable
         }
-        allowed = {
-            FROM = {
-                ideology = reformer
-            }
-        }
-        modifier = {
-            max_entrenchment = 1.0
-            division_defense = 0.15
-            supply_consumption_factor = -0.1
-        }
+		allowed = { FROM = { original_tag = TAR } }
+		defense_skill = 1
+		logistics_skill = 1
         ai_will_do = {
             factor = 1
         }
@@ -184,15 +149,9 @@ leader_traits = {
         gain_xp = {
             always = no # not gainable
         }
-        allowed = {
-            FROM = {
-                ideology = lunari
-            }
-        }
-        modifier = {
-            night_attack = 0.15
-            planning_speed = 0.05
-        }
+		allowed = { FROM = { original_tag = TAR } }
+		planning_skill = 1
+		attack_skill = 1
         ai_will_do = {
             factor = 1
         }
@@ -204,15 +163,9 @@ leader_traits = {
         gain_xp = {
             always = no # not gainable
         }
-        allowed = {
-            FROM = {
-                ideology = lunari
-            }
-        }
-        modifier = {
-            division_speed = 0.1
-            entrenchment_speed = 0.1
-        }
+		allowed = { FROM = { original_tag = TAR } }
+		attack_skill = 1
+		defense_skill = 1
         ai_will_do = {
             factor = 1
         }
@@ -228,10 +181,10 @@ leader_traits = {
         gain_xp = {
             always = no # not gainable
         }
-        modifier = {
-            planning_speed = 0.1
-            reacon_reconnaissance = 0.1
-        }
+		modifier = {
+			planning_speed = 0.1
+			recon_factor = 0.1
+		}
     }
 
     slumber = {
@@ -241,10 +194,8 @@ leader_traits = {
             always = no # not gainable
         }
 
-        modifier = {
-            division_recovery_rate = -0.05
-            division_organisation = -0.05
-        }
+		attack_skill = -1
+		planning_skill = -1
     }
 
 

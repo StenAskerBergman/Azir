@@ -103,11 +103,11 @@ SHU_fate_of_targon_desc: "Decide the fate of Targon and its people. This crucial
 SHU_annex_targon: "Annex Targon"
 SHU_annex_targon_desc: "Initiate the annexation of Targon into the Shuriman Empire. This bold move will expand our territory and increase our power."
 
-SHU_example_ba_targon: "Example: Targon BA"
-SHU_example_ba_targon_desc: "Implement strategic actions in Targon to solidify our control. This will enhance our influence and effectiveness in the region."
+SHU_example_ba_targon: "Occupy the Mountain Passes"
+SHU_example_ba_targon_desc: "Control of the mountain roads will isolate Targon's temples and prevent reinforcements from reaching the lower settlements."
 
-SHU_example_ca_targon: "Example: Targon CA"
-SHU_example_ca_targon_desc: "Consolidate our strategies in Targon to ensure long-term success. This will secure our objectives and achieve our goals."
+SHU_example_ca_targon: "Break the Celestial Strongholds"
+SHU_example_ca_targon_desc: "Solari temples and Lunari refuges alike can become centers of resistance. The legions will secure every defensible height they can reach."
 
 SHU_rich_mountains_gold: "Rich Mountains: Gold"
 SHU_rich_mountains_gold_desc: "Exploit the gold resources in the rich mountains. This will boost our economy and provide valuable resources for our development."
@@ -121,8 +121,8 @@ SHU_puppet_or_ally_targon_desc: "Determine whether to puppet or ally with Targon
 SHU_shuriman_argreement_targon: "Shuriman Agreement with Targon"
 SHU_shuriman_argreement_targon_desc: "Negotiate an agreement with Targon. This will solidify our relationship and ensure mutual benefits."
 
-SHU_example_cb_targon: "Example: Targon CB"
-SHU_example_cb_targon_desc: "Finalize our actions in Targon to secure our objectives. This will complete our initiatives and ensure our success."
+SHU_example_cb_targon: "Celestial Exchange"
+SHU_example_cb_targon_desc: "Targonian knowledge of the heavens and Shuriman knowledge of the sun can enrich both realms without another war."
 
 SHU_fate_of_ixtal: "Fate of Ixtal"
 SHU_fate_of_ixtal_desc: "Decide the fate of Ixtal and its people. This critical decision will shape our relationship with this region rich in natural resources."
@@ -148,68 +148,68 @@ SHU_puppet_or_ally_ixtal_desc: "Decide whether to puppet or ally with Ixtal. Thi
 SHU_shuriman_pact_ixtal: "Shuriman Pact with Ixtal"
 SHU_shuriman_pact_ixtal_desc: "Form a pact with Ixtal to ensure mutual benefits and cooperation. This will strengthen our alliance and secure valuable resources."
 
-SHU_example_cb_ixtal: "Example: Ixtal CB"
-SHU_example_cb_ixtal_desc: "Finalize our actions in Ixtal to secure our objectives. This will complete our initiatives and ensure our success."
+SHU_example_cb_ixtal: "Elemental Exchange"
+SHU_example_cb_ixtal_desc: "Ixtali elemental theory and Shuriman engineering arose from ancient traditions. A guarded exchange will advance both states."
 
-SHU_example_noxian_start: "Example: Noxian Start"
-SHU_example_noxian_start_desc: "Begin our engagement with the Noxian territories. This will set the stage for future interactions and strategies."
+SHU_example_noxian_start: "The Noxian Question"
+SHU_example_noxian_start_desc: "Noxus is an expansionist empire built on strength, vision, and guile. Shurima must decide whether to bargain with it, divide it, or meet it in war."
 
-SHU_example_aa_noxian: "Example: Noxian AA"
-SHU_example_aa_noxian_desc: "Implement strategic actions in the Noxian territories. This will advance our goals and influence in the region."
+SHU_example_aa_noxian: "Demand Noxian Submission"
+SHU_example_aa_noxian_desc: "The Trifarix will be offered a place beneath Shuriman supremacy. Refusal will reveal whether Noxian strength matches its boasts."
 
-SHU_example_ba_noxian: "Example: Noxian BA"
-SHU_example_ba_noxian_desc: "Execute further actions in the Noxian territories. This will enhance our control and effectiveness in the region."
+SHU_example_ba_noxian: "Win over the Border Legions"
+SHU_example_ba_noxian_desc: "Noxian soldiers respect proven strength. Defectors and cooperative commanders can weaken the empire before the decisive confrontation."
 
-SHU_example_ca_noxian: "Example: Noxian CA"
-SHU_example_ca_noxian_desc: "Consolidate our strategies in the Noxian territories. This will secure our objectives and ensure long-term success."
+SHU_example_ca_noxian: "A Shuriman Governor in Noxus"
+SHU_example_ca_noxian_desc: "A loyal military administration will preserve order while Noxian institutions are bent toward Shurima."
 
-SHU_example_ab_noxian: "Example: Noxian AB"
-SHU_example_ab_noxian_desc: "Advance our initiatives in the Noxian territories. This will strengthen our presence and influence in the region."
+SHU_example_ab_noxian: "Treat with the Trifarix"
+SHU_example_ab_noxian_desc: "Might, Vision, and Guile offer a language the restored empire understands. A hard bargain may secure a powerful continental partner."
 
-SHU_example_bb_noxian: "Example: Noxian BB"
-SHU_example_bb_noxian_desc: "Further our strategies in the Noxian territories. This will solidify our control and ensure continued progress."
+SHU_example_bb_noxian: "Arms Across the Mountains"
+SHU_example_bb_noxian_desc: "Trade with Noxian foundries will expand our arsenals while binding influential warbands to the agreement."
 
-SHU_example_cb_noxian: "Example: Noxian CB"
-SHU_example_cb_noxian_desc: "Finalize our actions in the Noxian territories. This will secure our objectives and complete our initiatives."
+SHU_example_cb_noxian: "Joint Desert Exercises"
+SHU_example_cb_noxian_desc: "Noxian discipline and Shuriman mobility will be tested together in the Great Sai."
 
-SHU_example_ac_noxian: "Example: Noxian AC"
-SHU_example_ac_noxian_desc: "Begin comprehensive actions in the Noxian territories. This will enhance our influence and control over the region."
+SHU_example_ac_noxian: "Prepare War with Noxus"
+SHU_example_ac_noxian_desc: "Two empires claim the right to shape the continent. We will settle the question on the battlefield."
 
-SHU_example_bc_noxian: "Example: Noxian BC"
-SHU_example_bc_noxian_desc: "Implement detailed strategies in the Noxian territories. This will ensure our dominance and effectiveness in the region."
+SHU_example_bc_noxian: "Shatter the Border Forts"
+SHU_example_bc_noxian_desc: "The roads through the mountains must be opened before the main host advances into Noxian territory."
 
-SHU_example_cc_noxian: "Example: Noxian CC"
-SHU_example_cc_noxian_desc: "Complete our comprehensive strategies in the Noxian territories. This will solidify our control and achieve our goals."
+SHU_example_cc_noxian: "The Empire against the Trifarix"
+SHU_example_cc_noxian_desc: "The campaign will not end with a frontier concession. Noxian power must be broken so completely that it cannot return to Shurima."
 
-SHU_example_ionian_start: "Example: Ionian Start"
-SHU_example_ionian_start_desc: "Initiate our engagement with the Ionian territories. This will set the foundation for our future actions and strategies."
+SHU_example_ionian_start: "The Ionian Question"
+SHU_example_ionian_start_desc: "Ionia is a living land of diverse provinces, spiritual orders, and battle-scarred communities. Any Shuriman policy there must account for all three."
 
-SHU_example_aa_ionian: "Example: Ionian AA"
-SHU_example_aa_ionian_desc: "Implement strategic actions in the Ionian territories. This will advance our goals and influence in the region."
+SHU_example_aa_ionian: "Demand Ionian Submission"
+SHU_example_aa_ionian_desc: "The First Lands will retain local customs only if their leaders recognize Shuriman authority."
 
-SHU_example_ba_ionian: "Example: Ionian BA"
-SHU_example_ba_ionian_desc: "Execute further actions in the Ionian territories. This will enhance our control and effectiveness in the region."
+SHU_example_ba_ionian: "Break Provincial Resistance"
+SHU_example_ba_ionian_desc: "Every province fights in its own way. Mobile columns will isolate resistant orders before they can unite."
 
-SHU_example_ca_ionian: "Example: Ionian CA"
-SHU_example_ca_ionian_desc: "Consolidate our strategies in the Ionian territories. This will secure our objectives and ensure long-term success."
+SHU_example_ca_ionian: "Shuriman Protectors of Ionia"
+SHU_example_ca_ionian_desc: "A protectorate will leave village and spiritual affairs in Ionian hands while placing foreign policy beneath the empire."
 
-SHU_example_ab_ionian: "Example: Ionian AB"
-SHU_example_ab_ionian_desc: "Advance our initiatives in the Ionian territories. This will strengthen our presence and influence in the region."
+SHU_example_ab_ionian: "Annex the First Lands"
+SHU_example_ab_ionian_desc: "Ionia's strategic ports and fertile provinces will be incorporated directly into the restored empire."
 
-SHU_example_bb_ionian: "Example: Ionian BB"
-SHU_example_bb_ionian_desc: "Further our strategies in the Ionian territories. This will solidify our control and ensure continued progress."
+SHU_example_bb_ionian: "Secure the Navori Roads"
+SHU_example_bb_ionian_desc: "Navori lies at the heart of Ionian politics. Holding its roads will let the administration reach the surrounding provinces."
 
-SHU_example_cb_ionian: "Example: Ionian CB"
-SHU_example_cb_ionian_desc: "Finalize our actions in the Ionian territories. This will secure our objectives and complete our initiatives."
+SHU_example_cb_ionian: "Pacify the Provinces"
+SHU_example_cb_ionian_desc: "Patient garrisons and local agreements will end scattered resistance without destroying the land we intend to govern."
 
-SHU_example_ac_ionian: "Example: Ionian AC"
-SHU_example_ac_ionian_desc: "Begin comprehensive actions in the Ionian territories. This will enhance our influence and control over the region."
+SHU_example_ac_ionian: "Seek an Ionian Accord"
+SHU_example_ac_ionian_desc: "Both Shurima and Ionia remember invasion and ruin. Mutual recognition can turn that history into cooperation."
 
-SHU_example_bc_ionian: "Example: Ionian BC"
-SHU_example_bc_ionian_desc: "Implement detailed strategies in the Ionian territories. This will ensure our dominance and effectiveness in the region."
+SHU_example_bc_ionian: "Wisdom of the First Lands"
+SHU_example_bc_ionian_desc: "Ionian healers, artisans, and spiritual teachers preserve knowledge unknown in the desert. Their exchange will strengthen the realm."
 
-SHU_example_cc_ionian: "Example: Ionian CC"
-SHU_example_cc_ionian_desc: "Complete our comprehensive strategies in the Ionian territories. This will solidify our control and achieve our goals."
+SHU_example_cc_ionian: "Alliance of Ancient Lands"
+SHU_example_cc_ionian_desc: "Two of Runeterra's oldest civilizations will stand together while respecting the balance that sustains the First Lands."
 
 SHU_scout_remote_islands: "Scout Remote Islands"
 SHU_scout_remote_islands_desc: "Send expeditions to scout the remote islands around Bilgewater. This will gather valuable information and open up new opportunities for expansion."
@@ -254,35 +254,32 @@ SHU_military_complex: "Military Complex"
 SHU_military_complex_desc: "Develop a state-of-the-art military complex to bolster our defense capabilities. This will enhance our military production, improve training facilities, and ensure our armed forces are well-equipped and prepared for any conflict."
 
 
-SHU_example_ba_aurma: "Example: Aurma BA"
-SHU_example_ba_aurma_desc: "Implement strategic actions in Aurma to solidify our control. This will enhance our influence and effectiveness in the region."
+SHU_example_ba_aurma: "Naval Cooperation"
+SHU_example_ba_aurma_desc: "Aurman pilots and Shuriman resources can patrol the southern waters more effectively together."
 
-SHU_example_ca_aurma: "Example: Aurma CA"
-SHU_example_ca_aurma_desc: "Consolidate our strategies in Aurma to ensure long-term success. This will secure our objectives and achieve our goals."
+SHU_example_ca_aurma: "A Southern Maritime Pact"
+SHU_example_ca_aurma_desc: "A formal pact will protect Aurma's islands and give Shurima dependable access to its sea lanes."
 
-SHU_example_bb_aurma: "Example: Aurma BB"
-SHU_example_bb_aurma_desc: "Further our strategies in Aurma. This will solidify our control and ensure continued progress."
+SHU_example_bb_aurma: "Guarantee Aurman Independence"
+SHU_example_bb_aurma_desc: "Aurma may govern itself under an imperial guarantee, provided its harbors remain friendly to Shuriman vessels."
 
-SHU_example_cb_aurma: "Example: Aurma CB"
-SHU_example_cb_aurma_desc: "Finalize our actions in Aurma to secure our objectives. This will complete our initiatives and ensure our success."
+SHU_example_cb_aurma: "Treaty Ports"
+SHU_example_cb_aurma_desc: "Shared ports will turn political goodwill into repair yards, supply depots, and protected commerce."
 
-SHU_example_bc_aurma: "Example: Aurma BC"
-SHU_example_bc_aurma_desc: "Implement detailed strategies in Aurma. This will ensure our dominance and effectiveness in the region."
+SHU_example_bc_aurma: "An Aurman Assembly"
+SHU_example_bc_aurma_desc: "Local representatives will manage island affairs within a broad Shuriman autonomous framework."
 
-SHU_example_cc_aurma: "Example: Aurma CC"
-SHU_example_cc_aurma_desc: "Complete our comprehensive strategies in Aurma. This will solidify our control and achieve our goals."
+SHU_example_cc_aurma: "Autonomous Fleet Command"
+SHU_example_cc_aurma_desc: "Aurman officers will retain command at sea while coordinating strategy with the imperial admiralty."
 
 # SHU_shuriman_ship_builders: "Shuriman Ship Builders"
 # SHU_shuriman_ship_builders_desc: "Utilize the shipbuilding expertise of Aurma. This will enhance our naval capabilities and strengthen our maritime presence."
 
-SHU_example_bd_aurma: "Example: Aurma BD"
-SHU_example_bd_aurma_desc: "Implement further actions in Aurma to enhance our control. This will solidify our influence and ensure continued progress."
+SHU_example_bd_aurma: "Imperial Naval Contracts"
+SHU_example_bd_aurma_desc: "Long-term contracts will place Aurma's shipwrights at the center of Shuriman naval expansion."
 
-SHU_example_cd_aurma: "Example: Aurma CD"
-SHU_example_cd_aurma_desc: "Finalize our comprehensive strategies in Aurma to secure our objectives. This will complete our initiatives and ensure our success."
-
-SHU_starter_crystal_scar: "Example: Starter Crystal Scar"
-SHU_starter_crystal_scar_desc: "Begin our engagement with the Crystal Scar. This will set the stage for future interactions and strategies."
+SHU_example_cd_aurma: "Integrate the Aurman Fleet"
+SHU_example_cd_aurma_desc: "Common doctrine, signals, and supply will make the Aurman and Shuriman fleets one force in practice."
 
 SHU_overseer_taliyah: "Overseer Taliyah"
 SHU_overseer_taliyah_desc: "Appoint Taliyah as the overseer of the Crystal Scar. Her guidance will ensure the efficient development and control of the region."
@@ -843,8 +840,8 @@ SHU_restore_solari_desc: "It's high time we restore the solari rulers of targon 
 SHU_restore_lunari: "Secure Lunari Future"
 SHU_restore_lunaris_desc: "It's high time we secure the lunari people's future in targon, to aid us in the coming storm!"
 
-SHU_moonstone: "Moonstone"
-SHU_moonstone_desc: "Nami, a Tidecaller from the Marai, seeks the legendary Moonstone to protect her people. Her journey brings her to Shurima, where she believes the ancient power of the desert may aid her quest. Meanwhile, the celestial connection between the Moonstone and Diana, the Scorn of the Moon, could hold the key to success. By helping Nami, Shurima may secure a valuable alliance with the Marai and perhaps even gain insight into the mysteries of the moon and stars."
+SHU_moonstone: "Restore the Moonstone Accord"
+SHU_moonstone_desc: "Every generation, a Marai Tidecaller carried an abyssal pearl to a lunar guardian and returned with a Moonstone whose magic protected the tribe. That ancient Targonian accord has collapsed. Nami has come ashore because her people cannot survive without a new stone, and Diana now bears the Moon Aspect's power and the Lunari knowledge needed to restore the rite. We will help the Tidecaller reach her."
 
 big_sun: "Big Sun"
 
@@ -939,11 +936,6 @@ shurima.571.d: "The infrastructure projects have started transforming our cities
 shurima.572.d: "The cultural renaissance is inspiring innovation and pride among the people of Shurima, as we rediscover the treasures of our past."
 shurima.573.d: "Our military forces grow stronger as we channel the legacy of Shurima’s warrior-kings, ready to defend and expand our borders."
 
-afk_tag.1000000.t: ""
-afk_tag.1000000.d: ""
-afk_tag.1000000.a: ""
-afk_tag.1000000.b: ""
-afk_tag.1000000.c: ""
 
 ################################### OTHER\n                     \n      §H§!
 

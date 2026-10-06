@@ -1,6 +1,6 @@
-spriteTypes = { 
-	
- # Write in extension by Sten's :) 
+spriteTypes = {
+
+ # Write in extension by Sten's :)
 
         SpriteType = {
             name = "AUR_Aurman_Navy"
@@ -22,7 +22,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Aurman_Navy.dds"
@@ -34,11 +34,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Aurman_Pirates"
             texturefile = "gfx/interface/goals/AUR/Aurman_Pirates.dds"
@@ -59,7 +59,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Aurman_Pirates.dds"
@@ -71,11 +71,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Aurman_Privateer"
             texturefile = "gfx/interface/goals/AUR/Aurman_Privateer.dds"
@@ -96,7 +96,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Aurman_Privateer.dds"
@@ -108,11 +108,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Aurman_Sailors"
             texturefile = "gfx/interface/goals/AUR/Aurman_Sailors.dds"
@@ -133,7 +133,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Aurman_Sailors.dds"
@@ -145,11 +145,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         # SpriteType = {
         #     name = "AUR_aurman_navy"
         #     texturefile = "gfx/interface/goals/AUR/AUR_aurman_navy.dds"
@@ -170,7 +170,7 @@ spriteTypes = {
         #         animationblendmode = "add"
         #         animationtype = "scrolling"
         #         animationrotationoffset = { x = 0.0 y = 0.0 }
-        #         animationtexturescale = { x = 2.0 y = 1.0 } 
+        #         animationtexturescale = { x = 2.0 y = 1.0 }
         #     }
         #     animation = {
         #         animationmaskfile = "gfx/interface/goals/AUR/AUR_aurman_navy.dds"
@@ -182,11 +182,11 @@ spriteTypes = {
         #         animationblendmode = "add"
         #         animationtype = "scrolling"
         #         animationrotationoffset = { x = 0.0 y = 0.0 }
-        #         animationtexturescale = { x = 1.0 y = 1.0 } 
+        #         animationtexturescale = { x = 1.0 y = 1.0 }
         #     }
         #     legacy_lazy_load = no
         # }
-            
+
         SpriteType = {
             name = "AUR_aurman_sailors"
             texturefile = "gfx/interface/goals/AUR/AUR_aurman_sailors.dds"
@@ -207,7 +207,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_aurman_sailors.dds"
@@ -219,11 +219,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_blood_is_thicker_than_water"
             texturefile = "gfx/interface/goals/AUR/AUR_blood_is_thicker_than_water.dds"
@@ -244,7 +244,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_blood_is_thicker_than_water.dds"
@@ -256,11 +256,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_boats_run_on_water_not_blood"
             texturefile = "gfx/interface/goals/AUR/AUR_boats_run_on_water_not_blood.dds"
@@ -281,7 +281,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_boats_run_on_water_not_blood.dds"
@@ -293,11 +293,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_calm_sea"
             texturefile = "gfx/interface/goals/AUR/AUR_calm_sea.dds"
@@ -318,7 +318,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_calm_sea.dds"
@@ -330,11 +330,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_chaotic_sea"
             texturefile = "gfx/interface/goals/AUR/AUR_chaotic_sea.dds"
@@ -355,7 +355,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_chaotic_sea.dds"
@@ -367,11 +367,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_clan_medarda"
             texturefile = "gfx/interface/goals/AUR/AUR_clan_medarda.dds"
@@ -392,7 +392,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_clan_medarda.dds"
@@ -404,11 +404,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_clan_merdarda"
             texturefile = "gfx/interface/goals/AUR/AUR_clan_merdarda.dds"
@@ -429,7 +429,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_clan_merdarda.dds"
@@ -441,11 +441,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_cold_sea"
             texturefile = "gfx/interface/goals/AUR/AUR_cold_sea.dds"
@@ -466,7 +466,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_cold_sea.dds"
@@ -478,11 +478,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_family_ties"
             texturefile = "gfx/interface/goals/AUR/AUR_family_ties.dds"
@@ -503,7 +503,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_family_ties.dds"
@@ -515,11 +515,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_freljordian_Boarding_parties"
             texturefile = "gfx/interface/goals/AUR/AUR_freljordian_Boarding_parties.dds"
@@ -540,7 +540,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_freljordian_Boarding_parties.dds"
@@ -552,11 +552,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_lurking_threats"
             texturefile = "gfx/interface/goals/AUR/AUR_lurking_threats.dds"
@@ -577,7 +577,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_lurking_threats.dds"
@@ -589,11 +589,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_maritime_mastery"
             texturefile = "gfx/interface/goals/AUR/AUR_maritime_mastery.dds"
@@ -614,7 +614,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_maritime_mastery.dds"
@@ -626,11 +626,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_national_identity"
             texturefile = "gfx/interface/goals/AUR/AUR_national_identity.dds"
@@ -651,7 +651,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_national_identity.dds"
@@ -663,11 +663,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_naval_linage"
             texturefile = "gfx/interface/goals/AUR/AUR_naval_linage.dds"
@@ -688,7 +688,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_naval_linage.dds"
@@ -700,11 +700,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_navigational_diplomacy"
             texturefile = "gfx/interface/goals/AUR/AUR_navigational_diplomacy.dds"
@@ -725,7 +725,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_navigational_diplomacy.dds"
@@ -737,11 +737,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_noxian_trade"
             texturefile = "gfx/interface/goals/AUR/AUR_noxian_trade.dds"
@@ -762,7 +762,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_noxian_trade.dds"
@@ -774,11 +774,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_ocean_masters"
             texturefile = "gfx/interface/goals/AUR/AUR_ocean_masters.dds"
@@ -799,7 +799,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_ocean_masters.dds"
@@ -811,11 +811,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_our_sea"
             texturefile = "gfx/interface/goals/AUR/AUR_our_sea.dds"
@@ -836,7 +836,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_our_sea.dds"
@@ -848,11 +848,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_piltover_trade"
             texturefile = "gfx/interface/goals/AUR/AUR_piltover_trade.dds"
@@ -873,7 +873,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_piltover_trade.dds"
@@ -885,11 +885,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_pirate_question"
             texturefile = "gfx/interface/goals/AUR/AUR_pirate_question.dds"
@@ -910,7 +910,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_pirate_question.dds"
@@ -922,11 +922,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_sea_maps"
             texturefile = "gfx/interface/goals/AUR/AUR_sea_maps.dds"
@@ -947,7 +947,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_sea_maps.dds"
@@ -959,48 +959,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
-        }
-            
-        SpriteType = {
-            name = "AUR_sea_maps2"
-            texturefile = "gfx/interface/goals/AUR/AUR_sea_maps2.dds"
         }
 
-        # AUR_sea_maps2.dds shine version
-        SpriteType = {
-            name = "AUR_sea_maps2_shine"
-            texturefile = "gfx/interface/goals/AUR/AUR_sea_maps2.dds"
-            effectFile = "gfx/FX/buttonstate.lua"
-            animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/AUR_sea_maps2.dds"
-                animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-                animationrotation = -90.0
-                animationlooping = no
-                animationtime = 0.75
-                animationdelay = 0
-                animationblendmode = "add"
-                animationtype = "scrolling"
-                animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
-            }
-            animation = {
-                animationmaskfile = "gfx/interface/goals/AUR/AUR_sea_maps2.dds"
-                animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-                animationrotation = 90.0
-                animationlooping = no
-                animationtime = 0.75
-                animationdelay = 0
-                animationblendmode = "add"
-                animationtype = "scrolling"
-                animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
-            }
-            legacy_lazy_load = no
-        }
-            
         SpriteType = {
             name = "AUR_sea_of_blood"
             texturefile = "gfx/interface/goals/AUR/AUR_sea_of_blood.dds"
@@ -1021,7 +984,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_sea_of_blood.dds"
@@ -1033,11 +996,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_sea_of_profit"
             texturefile = "gfx/interface/goals/AUR/AUR_sea_of_profit.dds"
@@ -1058,7 +1021,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_sea_of_profit.dds"
@@ -1070,11 +1033,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_shifting_currents"
             texturefile = "gfx/interface/goals/AUR/AUR_shifting_currents.dds"
@@ -1095,7 +1058,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_shifting_currents.dds"
@@ -1107,11 +1070,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_shuriman_threat"
             texturefile = "gfx/interface/goals/AUR/AUR_shuriman_threat.dds"
@@ -1132,7 +1095,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_shuriman_threat.dds"
@@ -1144,11 +1107,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_uncertain_waters"
             texturefile = "gfx/interface/goals/AUR/AUR_uncertain_waters.dds"
@@ -1169,7 +1132,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_uncertain_waters.dds"
@@ -1181,11 +1144,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_warm_sea"
             texturefile = "gfx/interface/goals/AUR/AUR_warm_sea.dds"
@@ -1206,7 +1169,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_warm_sea.dds"
@@ -1218,11 +1181,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_waves_of_resilience"
             texturefile = "gfx/interface/goals/AUR/AUR_waves_of_resilience.dds"
@@ -1243,7 +1206,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/AUR_waves_of_resilience.dds"
@@ -1255,11 +1218,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Blood_is_thicker_than_water"
             texturefile = "gfx/interface/goals/AUR/Blood_is_thicker_than_water.dds"
@@ -1280,7 +1243,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Blood_is_thicker_than_water.dds"
@@ -1292,11 +1255,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Boats_Run_on_Water_Not_Blood"
             texturefile = "gfx/interface/goals/AUR/Boats_Run_on_Water_Not_Blood.dds"
@@ -1317,7 +1280,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Boats_Run_on_Water_Not_Blood.dds"
@@ -1329,11 +1292,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Calm_Sea"
             texturefile = "gfx/interface/goals/AUR/Calm_Sea.dds"
@@ -1354,7 +1317,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Calm_Sea.dds"
@@ -1366,11 +1329,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Chaotic_Sea"
             texturefile = "gfx/interface/goals/AUR/Chaotic_Sea.dds"
@@ -1391,7 +1354,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Chaotic_Sea.dds"
@@ -1403,11 +1366,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Clan_Medarda"
             texturefile = "gfx/interface/goals/AUR/Clan_Medarda.dds"
@@ -1428,7 +1391,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Clan_Medarda.dds"
@@ -1440,11 +1403,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Coastal_Raid_Parties"
             texturefile = "gfx/interface/goals/AUR/Coastal_Raid_Parties.dds"
@@ -1465,7 +1428,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Coastal_Raid_Parties.dds"
@@ -1477,11 +1440,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Cold_Sea"
             texturefile = "gfx/interface/goals/AUR/Cold_Sea.dds"
@@ -1502,7 +1465,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Cold_Sea.dds"
@@ -1514,11 +1477,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Deep_Water_Supremacy"
             texturefile = "gfx/interface/goals/AUR/Deep_Water_Supremacy.dds"
@@ -1539,7 +1502,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Deep_Water_Supremacy.dds"
@@ -1551,11 +1514,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_End_to_Era"
             texturefile = "gfx/interface/goals/AUR/End_to_Era.dds"
@@ -1576,7 +1539,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/End_to_Era.dds"
@@ -1588,11 +1551,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Family_Ties"
             texturefile = "gfx/interface/goals/AUR/Family_Ties.dds"
@@ -1613,7 +1576,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Family_Ties.dds"
@@ -1625,11 +1588,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Freljordian_Boarding_Parties"
             texturefile = "gfx/interface/goals/AUR/Freljordian_Boarding_Parties.dds"
@@ -1650,7 +1613,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Freljordian_Boarding_Parties.dds"
@@ -1662,11 +1625,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Island_Ownership"
             texturefile = "gfx/interface/goals/AUR/Island_Ownership.dds"
@@ -1687,7 +1650,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Island_Ownership.dds"
@@ -1699,11 +1662,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Island_Stewardship"
             texturefile = "gfx/interface/goals/AUR/Island_Stewardship.dds"
@@ -1724,7 +1687,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Island_Stewardship.dds"
@@ -1736,11 +1699,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Lurking_Threats"
             texturefile = "gfx/interface/goals/AUR/Lurking_Threats.dds"
@@ -1761,7 +1724,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Lurking_Threats.dds"
@@ -1773,11 +1736,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Maritime_Heritage"
             texturefile = "gfx/interface/goals/AUR/Maritime_Heritage.dds"
@@ -1798,7 +1761,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Maritime_Heritage.dds"
@@ -1810,11 +1773,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Maritime_Mastery"
             texturefile = "gfx/interface/goals/AUR/Maritime_Mastery.dds"
@@ -1835,7 +1798,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Maritime_Mastery.dds"
@@ -1847,11 +1810,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_National_Identity"
             texturefile = "gfx/interface/goals/AUR/National_Identity.dds"
@@ -1872,7 +1835,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/National_Identity.dds"
@@ -1884,11 +1847,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Naval_Linage"
             texturefile = "gfx/interface/goals/AUR/Naval_Linage.dds"
@@ -1909,7 +1872,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Naval_Linage.dds"
@@ -1921,11 +1884,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Naval_Outposts"
             texturefile = "gfx/interface/goals/AUR/Naval_Outposts.dds"
@@ -1946,7 +1909,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Naval_Outposts.dds"
@@ -1958,11 +1921,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Navigational_Diplomacy"
             texturefile = "gfx/interface/goals/AUR/Navigational_Diplomacy.dds"
@@ -1983,7 +1946,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Navigational_Diplomacy.dds"
@@ -1995,11 +1958,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_New_Era"
             texturefile = "gfx/interface/goals/AUR/New_Era.dds"
@@ -2020,7 +1983,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/New_Era.dds"
@@ -2032,11 +1995,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Noxus_Trade"
             texturefile = "gfx/interface/goals/AUR/Noxus_Trade.dds"
@@ -2057,7 +2020,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Noxus_Trade.dds"
@@ -2069,11 +2032,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Oceanic_Outreach"
             texturefile = "gfx/interface/goals/AUR/Oceanic_Outreach.dds"
@@ -2094,7 +2057,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Oceanic_Outreach.dds"
@@ -2106,11 +2069,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Ocean_Masters"
             texturefile = "gfx/interface/goals/AUR/Ocean_Masters.dds"
@@ -2131,7 +2094,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Ocean_Masters.dds"
@@ -2143,11 +2106,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Ocean_Stewardship"
             texturefile = "gfx/interface/goals/AUR/Ocean_Stewardship.dds"
@@ -2168,7 +2131,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Ocean_Stewardship.dds"
@@ -2180,11 +2143,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Open_Water_Tyrant"
             texturefile = "gfx/interface/goals/AUR/Open_Water_Tyrant.dds"
@@ -2205,7 +2168,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Open_Water_Tyrant.dds"
@@ -2217,11 +2180,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Our_Sea"
             texturefile = "gfx/interface/goals/AUR/Our_Sea.dds"
@@ -2242,7 +2205,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Our_Sea.dds"
@@ -2254,11 +2217,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Overclass_Society"
             texturefile = "gfx/interface/goals/AUR/Overclass_Society.dds"
@@ -2279,7 +2242,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Overclass_Society.dds"
@@ -2291,11 +2254,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Piltover_Trade"
             texturefile = "gfx/interface/goals/AUR/Piltover_Trade.dds"
@@ -2316,7 +2279,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Piltover_Trade.dds"
@@ -2328,11 +2291,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Pirate_Bay"
             texturefile = "gfx/interface/goals/AUR/Pirate_Bay.dds"
@@ -2353,7 +2316,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Pirate_Bay.dds"
@@ -2365,11 +2328,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Pirate_Question"
             texturefile = "gfx/interface/goals/AUR/Pirate_Question.dds"
@@ -2390,7 +2353,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Pirate_Question.dds"
@@ -2402,11 +2365,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Sea_Maps"
             texturefile = "gfx/interface/goals/AUR/Sea_Maps.dds"
@@ -2427,7 +2390,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Sea_Maps.dds"
@@ -2439,11 +2402,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Sea_of_Blood"
             texturefile = "gfx/interface/goals/AUR/Sea_of_Blood.dds"
@@ -2464,7 +2427,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Sea_of_Blood.dds"
@@ -2476,11 +2439,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Sea_of_Iron"
             texturefile = "gfx/interface/goals/AUR/Sea_of_Iron.dds"
@@ -2501,7 +2464,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Sea_of_Iron.dds"
@@ -2513,11 +2476,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Sea_of_Profit"
             texturefile = "gfx/interface/goals/AUR/Sea_of_Profit.dds"
@@ -2538,7 +2501,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Sea_of_Profit.dds"
@@ -2550,11 +2513,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Sea_of_Thiefs"
             texturefile = "gfx/interface/goals/AUR/Sea_of_Thiefs.dds"
@@ -2575,7 +2538,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Sea_of_Thiefs.dds"
@@ -2587,11 +2550,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Shallow_Water_Supremacy"
             texturefile = "gfx/interface/goals/AUR/Shallow_Water_Supremacy.dds"
@@ -2612,7 +2575,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Shallow_Water_Supremacy.dds"
@@ -2624,11 +2587,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Shifting_Currents"
             texturefile = "gfx/interface/goals/AUR/Shifting_Currents.dds"
@@ -2649,7 +2612,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Shifting_Currents.dds"
@@ -2661,11 +2624,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Shuriman_Threat"
             texturefile = "gfx/interface/goals/AUR/Shuriman_Threat.dds"
@@ -2686,7 +2649,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Shuriman_Threat.dds"
@@ -2698,11 +2661,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Strait_Question"
             texturefile = "gfx/interface/goals/AUR/Strait_Question.dds"
@@ -2723,7 +2686,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Strait_Question.dds"
@@ -2735,11 +2698,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Targonian_Navigators"
             texturefile = "gfx/interface/goals/AUR/Targonian_Navigators.dds"
@@ -2760,7 +2723,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Targonian_Navigators.dds"
@@ -2772,11 +2735,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Tight_Crews"
             texturefile = "gfx/interface/goals/AUR/Tight_Crews.dds"
@@ -2797,7 +2760,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Tight_Crews.dds"
@@ -2809,11 +2772,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Uncertain_Waters"
             texturefile = "gfx/interface/goals/AUR/Uncertain_Waters.dds"
@@ -2834,7 +2797,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Uncertain_Waters.dds"
@@ -2846,11 +2809,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_Warm_Sea"
             texturefile = "gfx/interface/goals/AUR/Warm_Sea.dds"
@@ -2871,7 +2834,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/Warm_Sea.dds"
@@ -2883,11 +2846,11 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
-            
+
         SpriteType = {
             name = "AUR_r56_goal_HOL_east_indies"
             texturefile = "gfx/interface/goals/AUR/r56_goal_HOL_east_indies.dds"
@@ -2908,7 +2871,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 2.0 y = 1.0 } 
+                animationtexturescale = { x = 2.0 y = 1.0 }
             }
             animation = {
                 animationmaskfile = "gfx/interface/goals/AUR/r56_goal_HOL_east_indies.dds"
@@ -2920,7 +2883,7 @@ spriteTypes = {
                 animationblendmode = "add"
                 animationtype = "scrolling"
                 animationrotationoffset = { x = 0.0 y = 0.0 }
-                animationtexturescale = { x = 1.0 y = 1.0 } 
+                animationtexturescale = { x = 1.0 y = 1.0 }
             }
             legacy_lazy_load = no
         }
