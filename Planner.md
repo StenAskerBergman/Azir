@@ -23,6 +23,8 @@ Relevant context includes the [paused-focus guidance](https://trello.com/c/QlIt7
 
 ## Planning and execution
 
+Commit boundaries are defined in [COMMIT_SCOPE.md](COMMIT_SCOPE.md) and `commit-scope.json`. Classify each batch explicitly and run the staged-path checker before committing. Unclassified paths stay out; earlier checkpoint authorization does not carry forward to new changes.
+
 Follow the author's sequence: **Authority -> Planning/Contracts -> Verification/Freeze -> Emission**.
 
 1. Read current production definitions and callers, relevant Trello intent, and the author's instructions. Use [the progress review](HOI4_Modding_Progress_Review.md) for historical design context, then verify its claims in code.

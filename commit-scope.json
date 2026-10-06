@@ -1,0 +1,13 @@
+{
+  "purpose": "Add explicit commit-scope rules and a staged-path checker",
+  "base_commit": "80fb044f26730ed3e4eed41ce226e7d99226f4a2",
+  "include": [
+    "AGENTS.md",
+    "Planner.md",
+    "COMMIT_SCOPE.md",
+    "commit-scope.json",
+    "tools/check_commit_scope.py"
+  ],
+  "hold": [],
+  "never": []
+}
