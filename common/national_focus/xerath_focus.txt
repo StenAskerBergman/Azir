@@ -30,7 +30,7 @@ focus_tree = {
         id = XER_temporary_alliance
         icon = GFX_goal_generic_military_deal # GFX_XER_temporary_alliance
 
-        x = 9
+        x = 15
         y = 0
 
         cost = 1
@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = XER_xerath_conquest
 		icon = GFX_focus_XER_power_hungry
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = XER_power_play
 		mutually_exclusive = {
@@ -115,7 +115,7 @@ focus_tree = {
 		id = XER_power_pact # XER_Colonial_Liberty
 		icon = GFX_goal_generic_territory_or_war
 
-		x = 1
+		x = 3
 		y = 1
 
 		relative_position_id = XER_xerath_conquest
@@ -230,7 +230,7 @@ focus_tree = {
 		id = XER_collective_punishment
 		icon = GFX_goal_death_tracks
 
-		x = -1
+		x = 3
 		y = 1
 
 		relative_position_id = XER_remove_the_savages
@@ -265,7 +265,7 @@ focus_tree = {
 	focus = {
 		id = XER_renekton_conquest
 		icon = GFX_focus_XER_blood_hunger
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = XER_power_play
 		mutually_exclusive = {
@@ -292,7 +292,7 @@ focus_tree = {
 		id = XER_Blood_Pact # XER_Colonial_Liberty
 		icon = GFX_goal_generic_territory_or_war
 
-		x = -1
+		x = -3
 		y = 1
 
 		relative_position_id = XER_renekton_conquest
@@ -319,7 +319,7 @@ focus_tree = {
         id = XER_power_struggle
         icon = GFX_focus_XER_power_struggle
         relative_position_id = XER_Blood_Pact
-        x=1
+        x=9
         y=1
         prerequisite ={
             focus = XER_foreign_interference
@@ -336,8 +336,8 @@ focus_tree = {
 		id = XER_foreign_interference
 		icon = GFX_goal_imperial_machine
         relative_position_id = XER_Blood_Pact
-		x = 0
-		y = 1
+		x = 18
+		y = 0
 		cost = 10
 		prerequisite = { focus = XER_internal_support }
 
@@ -357,7 +357,7 @@ focus_tree = {
 	focus = {
 		id = XER_noxian_coalition
 		icon = GFX_goal_noxian_pact # GFX_focus_generic_diplomatic_treaty
-		x = 0
+		x = -12
 		y = 2
 		relative_position_id = XER_foreign_interference
 
@@ -448,7 +448,7 @@ focus_tree = {
 	focus = {
 		id = XER_path_of_domination
 		icon = GFX_focus_XER_path_of_domination
-		x = -6
+		x = -12
 		y = 0
 		relative_position_id = XER_power_play
 
@@ -473,7 +473,7 @@ focus_tree = {
 	focus = {
 		id = XER_loyal_legionaries
 		icon = GFX_goal_soldiers
-        x = 2
+        x = 3
         y = 1
         relative_position_id = XER_path_of_domination
 		prerequisite = {
@@ -678,7 +678,7 @@ focus_tree = {
     focus = {
 		id = XER_path_of_ascension
 		icon = GFX_focus_XER_power_hungry
-		x = 6
+		x = 12
 		y = 0
 		relative_position_id = XER_power_play
 
@@ -720,7 +720,7 @@ focus_tree = {
 	focus = {
 		id = XER_loyal_henchmen
 		icon = GFX_focus_xerath_peoples_support
-		x = -2
+		x = -3
 		y = 1
 		cost = 10
         relative_position_id = XER_path_of_ascension
@@ -758,7 +758,7 @@ focus_tree = {
 		id = XER_identity_fusion # XER_identity_fusion
 		icon = GFX_goal_tax_slave
 
-		x = 1
+		x = 3
 		y = 1
 
 		relative_position_id = XER_colonial_investments
@@ -793,7 +793,7 @@ focus_tree = {
 		id = XER_colonial_identity # XER_Identity_Fusion
 		icon = GFX_goal_tax_slave
 
-		x = -1
+		x = -3
 		y = 2
 
 		relative_position_id = XER_noxian_coalition

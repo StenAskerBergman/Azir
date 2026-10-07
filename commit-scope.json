@@ -1,18 +1,18 @@
 {
-  "purpose": "Commit country-selection layout and heading alignment requested on 7 October 2026; preserve other local work",
-  "base_commit": "fff0b439f129f1280371398bd28eb9a2e3df2030",
+  "purpose": "Integrate separately committed Xerath alignment from 3fa65a4 into the consolidated local checkout",
+  "base_commit": "23d91fc140eb4f873452d194431c84ef0920ebfa",
   "include": [
-    "interface/frontendgamesetupview.gui",
-    "localisation/english/azir_country_menu_l_english.yml",
-    "Planner.md",
+    "common/national_focus/xerath_focus.txt",
     "commit-scope.json"
   ],
   "hold": [
+    "Planner.md",
     "common/bookmarks/990.txt",
+    "interface/frontendgamesetupview.gui",
     "Background-repair-2026-10-07.md",
-    "interface/frontendmainview.gui",
     "Error.Log",
-    "Shurima-models-2026-10-07.md"
+    "Shurima-models-2026-10-07.md",
+    "interface/frontendmainview.gui"
   ],
   "never": []
 }
