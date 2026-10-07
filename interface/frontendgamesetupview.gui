@@ -112,7 +112,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "focus_entry"
-		size = { width=60 height=80}
+		size = { width=96 height=64}
 		clipping = no
 
 		iconType = {
@@ -120,6 +120,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_idea_unknown"
 			orientation = "CENTER"
 			centerPosition = yes
+			scale = 0.85
 		}
 	}
 
@@ -152,8 +153,8 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "country_name"
-			position = { x = 8 y = 247 }
-			font = "hoi_20b"
+			position = { x = 8 y = 249 }
+			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 131
 			maxHeight = 20
@@ -650,7 +651,7 @@ guiTypes = {
 		containerWindowType = {
 			name ="countries"
 			position = { x = 15 y = 45 }
-			size = { width = -15 height = 120}
+			size = { width = 1195 height = 280}
 
 			gridboxType = {
 				name ="countries_grid"
@@ -664,10 +665,11 @@ guiTypes = {
 
 		}
 
+
 		containerWindowType = {
 			name ="countries_medium"
-			position = { x = 15 y = 330 }
-			size = { width = -15 height = 120}
+			position = { x = 15 y = 352 }
+			size = { width = 1195 height = 80}
 
 			gridboxType = {
 				name ="countries_grid"
@@ -682,15 +684,14 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries_mini"
-			position = { x = 15 y = 340 }
-			size = { width = -15 height = 120}
+			position = { x = 15 y = 360 }
+			size = { width = 1195 height = 80}
 
 			gridboxType = {
 				name ="countries_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 53 height = 40 }
-				max_slots_horizontal = 22
 				add_horizontal = yes
 				max_slots_horizontal = 22
 				max_slots_vertical = 2
@@ -701,7 +702,7 @@ guiTypes = {
 		iconType = {
 			name = "minor_country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 289 y = 441 }
+			position = { x = 289 y = 493 }
 			scale=0.696
 			rotation=-0.04
 		}
@@ -709,17 +710,17 @@ guiTypes = {
 		iconType = {
 				name ="minor_portrait_overlay"
 				spriteType = "GFX_minor_portrait_overlay"
-				position = { x= 280 y = 430 }
+				position = { x= 280 y = 482 }
 		}
 
 
 		instantTextBoxType = {
 			name = "info_title"
-			position = { x = 10 y = 450 }
+			position = { x = 25 y = 458 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_INFO_TITLE"
-			maxWidth = 340
+			maxWidth = 400
 			maxHeight = 30
 			format = centre
 		}
@@ -734,7 +735,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -745,7 +746,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -756,7 +757,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -765,7 +766,7 @@ guiTypes = {
 				position = { x = 0 y = 52 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -775,7 +776,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "GOVERNMENT"
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -785,7 +786,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "FE_INTERESTING_COUNTRIES"
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -795,7 +796,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "ELECTIONS"
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -804,7 +805,7 @@ guiTypes = {
 				position = { x = 0 y = 132 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -814,7 +815,7 @@ guiTypes = {
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "RULING_PARTY"
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 
@@ -823,24 +824,25 @@ guiTypes = {
 				position = { x = 0 y = 172 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 340
+				maxWidth = 220
 				format = left
 			}
 		}
 
 		instantTextBoxType = {
 			name = "nation_title"
-			position = { x = 442 y = 421 }
+			position = { x = 451 y = 438 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 340
-			maxHeight = 48
+			maxWidth = 335
+			maxHeight = 30
 			format = centre
 			vertical_alignment = center
 		}
 
 		containerWindowType = {
 			name = "spirit"
+			size = { width = 335 height = 185 }
 			position = { x = 451 y = 475 }
 
 			iconType ={
@@ -853,14 +855,14 @@ guiTypes = {
 			containerWindowType = {
 				name ="ideas"
 				position = { x = 91 y = -1 }
-				size = { width = 100%% height = 70 }
+				size = { width = 240 height = 70 }
 
 				gridboxType = {
 					name ="ideas_grid"
 					position = { x = 0 y = 0 }
-					size = { width = 100% height = 70 }
+					size = { width = 240 height = 70 }
 					slotsize = { width = 60 height = 66 }
-					max_slots = { x = 3 y = 1 }
+					max_slots = { x = 4 y = 1 }
 					add_horizontal = yes
 					format = "UPPER_LEFT"
 				}
@@ -869,14 +871,26 @@ guiTypes = {
 			containerWindowType = {
 				name ="focus"
 				position = { x = 9 y = 85 }
-				size = { width = 100% height = 100 }
+				size = { width = 315 height = 100 }
+
+				instantTextBoxType = {
+					name = "featured_focuses_title"
+					position = { x = 8 y = 10 }
+					font = "hoi_16mbs"
+					borderSize = { x = 0 y = 0 }
+					text = "AZIR_MENU_FEATURED_FOCUSES"
+					maxWidth = 298
+					maxHeight = 20
+					format = centre
+					alwaystransparent = yes
+				}
 
 				gridboxType = {
 					name ="focus_grid"
-					position = { x = 17 y = 8 }
-					size = { width = 100% height = 100 }
-					slotsize = { width = 105 height = 100 }
-					max_slots = { x = 4 y = 1 }
+					position = { x = 13 y = 32 }
+					size = { width = 288 height = 64 }
+					slotsize = { width = 96 height = 64 }
+					max_slots = { x = 3 y = 1 }
 					add_horizontal = yes
 					format = "UPPER_LEFT"
 				}
@@ -885,11 +899,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 830 y = 450 }
+			position = { x = 810 y = 458 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_HISTORY_TITLE"
-			maxWidth = 340
+			maxWidth = 400
 			maxHeight = 30
 			format = centre
 		}
@@ -904,6 +918,8 @@ guiTypes = {
 			scrollbarType = standardtext_slider
 			format = left
 		}
+
+
 	}
 
 	containerWindowType = {

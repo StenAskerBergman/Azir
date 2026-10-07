@@ -73,3 +73,20 @@ The 7 October 2026 progress checkpoint is being committed and pushed on `main`, 
 Before publishing, verify a new 990 campaign, intended focus and decision routes, event outcomes, starting states/armies, required visuals, save/reload and a two-player run using the same package, dependencies and game version. Record errors, simulation stalls and out-of-sync incidents. Keep development material out of the upload and establish the origin and suitability of retained art. Publication requires a separate user instruction.
 
 When updating this planner, record the affected production path, preserved design, evidence level and unresolved next step. Never promote a static pass or successful launch into full gameplay or multiplayer acceptance.
+
+
+## Country-selection menu accepted - 7 October 2026
+
+Include the working country-selection repair in the next major commit, as directly requested by the user. Production file: `interface/frontendgamesetupview.gui`. It adjusts country-label font/height, country-grid bounds, portrait placement, information-text widths, and center-panel spirit/focus capacity. Existing country designs, bookmark content and Back/Esc bindings are preserved. The added filters and expanded-country selector were removed after startup hung; the reduced repair completed native startup in a 1280x800 window and the user reported "It works". This is user-reported acceptance of the menu test, not campaign, multiplayer or all-resolution acceptance.
+
+The display settings and diagnostic backups are outside the repository. Preserve other ongoing bookmark/background work and classify it separately before the next major commit. No commit or push was requested at this checkpoint.
+
+
+## Country-menu layout continuation - 7 October 2026
+
+All three Git checkouts had the same HEAD; only the live Documents checkout contained menu work. Continue this section there. Preserve its accepted card bounds, label sizing, portrait placement, information widths and scenario-navigation repair. The focus preview now has three 96-pixel slots, 0.85 icon scale and a localized heading. Existing selected-card artwork and animated portraits are preserved. Background band reduction, parchment rule shortening and a conditional Other countries information state remain artwork/engine follow-up work. Static checks do not establish native rendering, focus tooltip bounds, animation performance or acceptance across resolutions.
+
+
+## Country-menu alignment commit - 7 October 2026
+
+Country-card labels were lowered into their strips. Information and Brief History headings were lowered eight pixels and centered across their parchment panels. The selected-country title now uses the center column width and a shorter heading box. Featured focuses was lowered into its frame; its three-slot grid retains room below the heading. Focus/English localization validation, GUI brace/bounds checks and whitespace checks passed. The supplied screenshot still shows the earlier running layout; final native alignment and animation performance remain unverified. Only menu changes are committed; scenario navigation, background and model work remain local. The remaining clean worktree has no unique commits or files and can be removed.

@@ -1,13 +1,18 @@
 {
-  "purpose": "Add explicit commit-scope rules and a staged-path checker",
-  "base_commit": "80fb044f26730ed3e4eed41ce226e7d99226f4a2",
+  "purpose": "Commit country-selection layout and heading alignment requested on 7 October 2026; preserve other local work",
+  "base_commit": "fff0b439f129f1280371398bd28eb9a2e3df2030",
   "include": [
-    "AGENTS.md",
+    "interface/frontendgamesetupview.gui",
+    "localisation/english/azir_country_menu_l_english.yml",
     "Planner.md",
-    "COMMIT_SCOPE.md",
-    "commit-scope.json",
-    "tools/check_commit_scope.py"
+    "commit-scope.json"
   ],
-  "hold": [],
+  "hold": [
+    "common/bookmarks/990.txt",
+    "Background-repair-2026-10-07.md",
+    "interface/frontendmainview.gui",
+    "Error.Log",
+    "Shurima-models-2026-10-07.md"
+  ],
   "never": []
 }
