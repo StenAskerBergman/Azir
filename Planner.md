@@ -75,6 +75,9 @@ Before publishing, verify a new 990 campaign, intended focus and decision routes
 When updating this planner, record the affected production path, preserved design, evidence level and unresolved next step. Never promote a static pass or successful launch into full gameplay or multiplayer acceptance.
 
 
+7 October background repair: six screenshot artworks and their aliases/thumbnails were rebuilt in the live Documents checkout. See [Background-repair-2026-10-07.md](Background-repair-2026-10-07.md) for exact paths, source limits, backups and validation. Uncompressed pixel export passed; global menu bounds and loading behavior across resolutions remain unverified in-game.
+
+
 ## Country-selection menu accepted - 7 October 2026
 
 Include the working country-selection repair in the next major commit, as directly requested by the user. Production file: `interface/frontendgamesetupview.gui`. It adjusts country-label font/height, country-grid bounds, portrait placement, information-text widths, and center-panel spirit/focus capacity. Existing country designs, bookmark content and Back/Esc bindings are preserved. The added filters and expanded-country selector were removed after startup hung; the reduced repair completed native startup in a 1280x800 window and the user reported "It works". This is user-reported acceptance of the menu test, not campaign, multiplayer or all-resolution acceptance.

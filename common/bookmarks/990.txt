@@ -190,4 +190,198 @@ bookmarks = {
 			# focuses = {}
 		}
 	}
+
+	# Engine navigation sentinel: two bookmarks keep scenario selection reachable.
+	# Same 990 setup; the GUI clips this second entry. Keep in sync with the first.
+	bookmark = {
+		name = "990_BOOKMARK_NAME"
+		desc = "990_BOOKMARK_DESC"
+		date = 990.1.1.12
+		picture = "GFX_990_bookmark"
+		default_country = "SHU"
+		default = no
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+		"DEM"={
+			history = "990_DEM_DESC"
+			ideology = royalist
+			ideas = {
+				petricite_kingdom
+				growing_mage_support
+			}
+			#	focuses = {}
+			#		FRA_form_the_popular_front
+			#		FRA_revive_the_national_bloc
+			#		FRA_france_leads
+			#	}
+		}
+
+		"NOX"={
+			history = "990_NOX_DESC"
+			ideology = oligarchy
+			ideas = {
+				# noxianStrength
+				# newAscension
+				# corruptingInf
+			}
+			# focuses = {}
+		}
+
+		"SHU"={ # My Changes Start here
+			history = "SHU_990_DESC"
+			ideology = absolutists # fascism / shurimanEmperor
+			ideas = {
+
+				Lawless_slavery
+				Shurima_broken
+				Shuriman_shame
+				The_great_fall
+			}
+			focuses = {
+
+				SHU_sundisc_has_risen
+
+			}
+		}
+
+		"NAZ"={
+			# minor = yes # Unique Minor => Has Unique Tree => Assume its not working, Just incase
+			history = "NAZ_990_DESC"
+			ideology = chiefdom
+			ideas = {
+				NAZ_Exotic_materials
+
+				# Ideas
+				# Nazumah Nationalism
+				# Nazumah Resilience
+				# Peaceful Reign
+				# Peaceful Era
+
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		"XER"={
+			history = "XER_990_DESC"
+			ideology = mages
+			ideas = {
+				# National Spirits
+				# Shurima_broken
+				# Shuriman_shame
+				# Lawless_slavery
+				# The_great_fall
+			}
+			# focuses = {}
+		}
+
+		"TAR"={
+			history = "TAR_990_DESC"
+			ideology = theocracy
+			ideas = {
+				# National Spirits
+				# Shurima_broken
+				# Shuriman_shame
+				# Lawless_slavery
+				# The_great_fall
+			}
+			# focuses = {}
+		}
+
+		"---"={
+			history = "OTHER_990_DESC"
+		}
+
+		"AUR"={
+			minor = yes
+			history = "AUR_990_DESC"
+			ideology = royalist
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		# Icathia - Void
+		"VOI"={
+			minor = yes
+			history = "VOI_990_DESC"
+			ideology = desolation
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		# FRELJORD
+
+		"FRO"={
+			minor = yes
+			history = "FRO_990_DESC"
+			ideology = theocracy # avarosa
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		"URS"={
+			minor = yes
+			history = "URS_990_DESC"
+			ideology = theocracy # Volibear
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		"AVA"={
+			minor = yes
+			history = "AVA_990_DESC"
+			ideology = chiefdom # avarosa
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		"WIN"={
+			minor = yes
+			history = "WIN_990_DESC"
+			ideology = chiefdom # wintersclaw
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+
+		"SHK"={
+			minor = yes
+			history = "SHK_990_DESC"
+			ideology = fascism # Shakkal Dune Raiders
+			ideas = {
+				# Exotic_materials
+				# Shuriman_shame
+				# Shurima_broken
+			}
+			# focuses = {}
+		}
+	}
 }

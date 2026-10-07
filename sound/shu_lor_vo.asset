@@ -1,0 +1,41 @@
+# Original English Legends of Runeterra Emperor's Guard recordings.
+# Names follow the installed native DLC country-specific unit VO contract.
+category = {
+ name = "Voices"
+ soundeffects = {
+  SHU_infantry_idle
+  SHU_infantry_move_out
+  SHU_infantry_neutral_combat
+  SHU_infantry_positive_combat
+ }
+}
+soundeffect = {
+ name = "SHU_infantry_idle"
+ sounds = { sound = "SHU_lor_guard_acknowledge" }
+ max_audible = 1
+ max_audible_behaviour = fail
+ volume = 0.50
+}
+soundeffect = {
+ name = "SHU_infantry_move_out"
+ sounds = { sound = "SHU_lor_guard_acknowledge" }
+ max_audible = 1
+ max_audible_behaviour = fail
+ volume = 0.50
+}
+soundeffect = {
+ name = "SHU_infantry_neutral_combat"
+ sounds = { sound = "SHU_lor_guard_combat" }
+ max_audible = 1
+ max_audible_behaviour = fail
+ volume = 0.50
+}
+soundeffect = {
+ name = "SHU_infantry_positive_combat"
+ sounds = { sound = "SHU_lor_guard_combat" }
+ max_audible = 1
+ max_audible_behaviour = fail
+ volume = 0.50
+}
+sound = { name = "SHU_lor_guard_combat" file = "shu_lor/guard_combat.wav" }
+sound = { name = "SHU_lor_guard_acknowledge" file = "shu_lor/guard_acknowledge.wav" }

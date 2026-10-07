@@ -1,18 +1,22 @@
 {
-  "purpose": "Integrate separately committed Xerath alignment from 3fa65a4 into the consolidated local checkout",
-  "base_commit": "23d91fc140eb4f873452d194431c84ef0920ebfa",
+  "purpose": "User-requested consolidation checkpoint: recent menu, scenario navigation, background documentation and Shurima runtime voices; preserve graphics and diagnostic logs outside Git",
+  "base_commit": "38b253e257e384aea4706326348422cff6b6feb1",
   "include": [
-    "common/national_focus/xerath_focus.txt",
-    "commit-scope.json"
-  ],
-  "hold": [
     "Planner.md",
     "common/bookmarks/990.txt",
     "interface/frontendgamesetupview.gui",
     "Background-repair-2026-10-07.md",
-    "Error.Log",
     "Shurima-models-2026-10-07.md",
-    "interface/frontendmainview.gui"
+    "Shurima-voices-2026-10-07.md",
+    "interface/frontendmainview.gui",
+    "sound/shu_lor_vo.asset",
+    "sound/shu_lor/guard_acknowledge.wav",
+    "sound/shu_lor/guard_combat.wav",
+    "Consolidation-2026-10-07.md",
+    "commit-scope.json"
+  ],
+  "hold": [
+    "Error.Log"
   ],
   "never": []
 }
