@@ -18,119 +18,119 @@ division_template = {
 
 units = {
  division = {
-  name = "Voidling"
+  name = "1st Voidling Brood"
   location = 2883
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "2nd Voidling Brood"
   location = 9511
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "3rd Voidling Brood"
   location = 3988
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "4th Voidling Brood"
   location = 9629
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "5th Voidling Brood"
   location = 4757
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "6th Voidling Brood"
   location = 1618
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "7th Voidling Brood"
   location = 9713
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "8th Voidling Brood"
   location = 4610
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "9th Voidling Brood"
   location = 3550
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "10th Voidling Brood"
   location = 4693
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "11th Voidling Brood"
   location = 9753
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "12th Voidling Brood"
   location = 2635
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "13th Voidling Brood"
   location = 9805
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Voidling"
+  name = "14th Voidling Brood"
   location = 9795
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "X-Mitter"
+  name = "15th Voidling Brood"
   location = 3545
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Chopan"
+  name = "16th Voidling Brood"
   location = 3120
   division_template = "Void Creature"
   start_experience_factor = 0.1
   start_equipment_factor = 0.85
  }
  division = {
-  name = "Mato"
+  name = "17th Voidling Brood"
   location = 2437
   division_template = "Void Creature"
   start_experience_factor = 0.1

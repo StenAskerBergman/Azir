@@ -80,11 +80,12 @@ characters = {
             id=-1
         }
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = political_advisor
             idea_token = VOI_Belveth
             ledger = civilian
             traits = { void_empress mind_control } # Lore: Empress of the Void with mind control abilities
-            cost = 0
+            cost = 150
         }
         corps_commander = {
             traits = { void_tactician supreme_commander }
@@ -181,18 +182,20 @@ characters = {
 			VOI_char_cw_desolate = yes
 		}
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = theorist #military_advisor #political_advisor #army_chief
-            idea_token = VOI_Chogath #VOI_Chogath_theorist
+            idea_token = VOI_Chogath_theorist
             ledger = civilian # ledger = army
             traits = { devourer brute_force devourer_of_worlds } # Lore: Devourer of worlds and brute force
-            cost = 0
+            cost = 150
         }
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = political_advisor #military_advisor #political_advisor #chief_of_army
             idea_token = VOI_Chogath
             ledger = civilian # ledger = army
             traits = { devourer brute_force devourer_of_worlds } # Lore: Devourer of worlds and brute force
-            cost = 0
+            cost = 150
         }
         corps_commander = {
             traits = { brute_force fearsome devourer_of_worlds }
@@ -222,18 +225,20 @@ characters = {
 			VOI_char_cw_desolate = yes
 		}
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = political_advisor #military_advisor
             idea_token = VOI_Kogmaw
             ledger = civilian # ledger = army
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
-            cost = 0
+            cost = 150
         }
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = army_chief #military_advisor
-            idea_token = VOI_Kogmaw
+            idea_token = VOI_Kogmaw_army_chief
             ledger = civilian # ledger = army
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
-            cost = 0
+            cost = 150
         }
         corps_commander = {
             traits = { artillery_expert explosive_growth }
@@ -264,6 +269,7 @@ characters = {
 			VOI_char_cw_desolate = yes
 		}
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = political_advisor #military_advisor
             idea_token = VOI_velkos
             ledger = civilian # ledger = army
@@ -271,8 +277,9 @@ characters = {
             cost = 0
         }
         advisor = {
+            available = { NOT = { has_country_flag = resisted_the_void } }
             slot = army_chief #military_advisor
-            idea_token = VOI_velkos
+            idea_token = VOI_velkos_army_chief
             ledger = army #ledger = civilian
             traits = { artillery_expert explosive_growth } # Lore: Relating to artillery and explosive attacks
             cost = 0
@@ -387,7 +394,7 @@ characters = {
             idea_token = VOI_kaisa
             ledger = civilian # ledger = army
             traits = { void_sentinel evolution_hunter } # Lore: Void Hunter and evolved sentinel
-            cost = 0
+            cost = 150
         }
         corps_commander = {
             traits = { adaptive_strategist void_sentinel }
@@ -421,7 +428,7 @@ characters = {
             idea_token = VOI_Kassadin
             ledger = civilian # ledger = army
             traits = { void_walker void_resistance } # Lore: Void walker and resistance leader
-            cost = 0
+            cost = 150
         }
         corps_commander = {
             traits = { guerilla adaptive_strategist void_walker }

@@ -67,7 +67,7 @@ focus_tree = {
             set_global_flag = VOI_Embrace_the_Void
 
             # Unlock Category
-            unlock_decision_category_tooltip = VOI_void_resistance_category
+            unlock_decision_category_tooltip = VOI_void_influence_category
 
             # Flat Buffs
             add_political_power = 50
@@ -245,7 +245,7 @@ focus_tree = {
         y = 1
         cost = 10
         prerequisite = {
-            # focus = VOI_Resist_the_Void
+            focus = VOI_Mage_King
         }
 
         available = {
@@ -291,7 +291,7 @@ focus_tree = {
         relative_position_id = VOI_Mage_King
         cost = 10
         prerequisite = {
-            # focus = VOI_Resist_the_Void
+            focus = VOI_Mage_King
         }
 
         available = {
@@ -468,7 +468,7 @@ focus_tree = {
         y = 1
         cost = 10
 
-        prerequisite = {}
+        prerequisite = { focus = VOI_Void_Prophet }
 
         available = {
             has_country_flag = embraced_the_void
@@ -518,7 +518,7 @@ focus_tree = {
         y = 1
         cost = 10
 
-        prerequisite = {}
+        prerequisite = { focus = VOI_Expand_the_Horde }
 
         available = {
             has_country_flag = embraced_the_void
@@ -576,7 +576,7 @@ focus_tree = {
         y = 1
         cost = 10
         prerequisite = {
-            # focus = VOI_Void_Invasion
+            focus = VOI_Shadow_War
         }
         available = {
             has_country_flag = embraced_the_void

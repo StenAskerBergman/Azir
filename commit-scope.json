@@ -1,21 +1,24 @@
 {
-  "purpose": "User-requested consolidation checkpoint: recent menu, scenario navigation, background documentation and Shurima runtime voices; preserve graphics and diagnostic logs outside Git",
-  "base_commit": "38b253e257e384aea4706326348422cff6b6feb1",
+  "purpose": "Void repairs: idea loc, focus view GUI restore, tree prerequisites, advisor costs/gating, army names, icathia.2 choice options",
+  "base_commit": "c4400497f55266833e6f49e24148eee54e74fa87",
   "include": [
-    "Planner.md",
-    "common/bookmarks/990.txt",
-    "interface/frontendgamesetupview.gui",
-    "Background-repair-2026-10-07.md",
-    "Shurima-models-2026-10-07.md",
-    "Shurima-voices-2026-10-07.md",
-    "interface/frontendmainview.gui",
-    "sound/shu_lor_vo.asset",
-    "sound/shu_lor/guard_acknowledge.wav",
-    "sound/shu_lor/guard_combat.wav",
-    "Consolidation-2026-10-07.md",
+    "common/characters/VOI_characters.txt",
+    "common/national_focus/void_focus.txt",
+    "events/Icathian_events.txt",
+    "history/units/VOI.txt",
+    "interface/nationalfocusview.gui",
+    "localisation/english/_icathia_l_english.yml",
+    "localisation/english/ideas_VOI_void_l_english.yml",
     "commit-scope.json"
   ],
   "hold": [
+    "common/decisions/VOI_dec.txt",
+    "events/Shurima_void_events.txt",
+    "localisation/english/decisions_VOI_l_english.yml",
+    "localisation/english/events_VOI_void_icathia_l_english.yml",
+    "localisation/english/focus_VOI_repairs_l_english.yml",
+    "documentation/IcathianPathChoiceProposal.md",
+    "documentation/IcathianPrinceRecoveryProposal.md",
     "Error.Log"
   ],
   "never": []

@@ -42,31 +42,15 @@ country_event = {
 
     option = {
         name = icathia.2.a
-        # Resist the Void's Corruption
-        custom_effect_tooltip = icathia.2.a.tt
-        # Add your specific effects here
+        complete_national_focus = VOI_Resist_the_Void
     }
 
     option = {
         name = icathia.2.b
-        # Succumb to the Void's Influence
-        custom_effect_tooltip = icathia.2.b.tt
-        # Add your specific effects here
+        complete_national_focus = VOI_Embrace_the_Void
     }
 
-    option = {
-        name = icathia.2.c
-        # Embrace the Traditionalist Path
-        custom_effect_tooltip = icathia.2.c.tt
-        # Add your specific effects here
-    }
 
-    option = {
-        name = icathia.2.d
-        # Support the Reformists
-        custom_effect_tooltip = icathia.2.d.tt
-        # Add your specific effects here
-    }
 }
 
 country_event = {
