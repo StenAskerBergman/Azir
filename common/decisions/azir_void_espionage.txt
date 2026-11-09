@@ -1,0 +1,55 @@
+azir_campaign_settings = {
+    azir_choose_void_espionage_tone = {
+        icon = generic_political_discourse
+        cost = 0
+        fire_only_once = yes
+        available = { date < 990.4.1 }
+
+        complete_effect = {
+            country_event = { id = azir_void_espionage.1 }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}
+
+azir_void_espionage_category = {
+    azir_recruit_void_operative = {
+        icon = generic_intelligence_operation
+        cost = 0
+        fire_only_once = yes
+
+        available = {
+            has_intelligence_agency = yes
+            num_free_operative_slots > 0
+            OR = {
+                has_country_flag = azir_void_espionage_tone_chosen
+                NOT = { date < 990.4.1 }
+            }
+        }
+
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = azir_void_espionage_goofy }
+                create_operative_leader = {
+                    name = "Definitely Not Vel'Koz"
+                    GFX = GFX_portrait_voi_velkoz_large
+                    gender = male
+                    traits = { operative_infiltrator }
+                    bypass_recruitment = yes
+                }
+            }
+            else = {
+                create_operative_leader = {
+                    name = "Vel'Koz"
+                    GFX = GFX_portrait_voi_velkoz_large
+                    gender = male
+                    traits = { operative_infiltrator }
+                    bypass_recruitment = yes
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

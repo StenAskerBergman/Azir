@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-09",
+  "cards": [
+    {
+      "id": "ZGUJkU36",
+      "name": "SHU_moonstone",
+      "status": "DOING"
+    },
+    {
+      "id": "U3im8CcW",
+      "name": "SHU_fate_of_targon",
+      "status": "TODO"
+    },
+    {
+      "id": "qK3EqPA6",
+      "name": "SHU_puppet_or_ally_targon",
+      "status": "BACKLOG"
+    },
+    {
+      "id": "wO5yFvgE",
+      "name": "SHU_annex_targon",
+      "status": "BACKLOG"
+    },
+    {
+      "id": "REnBP9xj",
+      "name": "SHU_economic_revival",
+      "status": "DOING",
+      "members": [
+        "fate217",
+        "netsnamgreb"
+      ],
+      "proof": "EconomicRevivalTrelloProof.png"
+    },
+    {
+      "id": "FZhzwrIH",
+      "name": "SHU_fish_on_land",
+      "status": "DOING",
+      "proof": "FishOnLandTrelloProof.png"
+    },
+    {
+      "id": "UOMJwJTO",
+      "name": "SHU_jungle_machine",
+      "status": "DOING",
+      "proof": "JungleTrainingTrelloProof.png"
+    },
+    {
+      "id": "LfBSRNVY",
+      "name": "SHU_work_unions",
+      "status": "DOING",
+      "proof": "WorkUnionsTrelloProof.png"
+    },
+    {
+      "id": "LklqjEcB",
+      "name": "SHU_gold_refinement",
+      "status": "TODO",
+      "proof": "GoldRefinementTrelloProof.png"
+    },
+    {
+      "id": "j3bP2ulB",
+      "name": "SHU_rule_aurma",
+      "status": "TODO",
+      "proof": "AurmaPolicyTrelloProof.png"
+    },
+    {
+      "id": "FxFWKltJ",
+      "name": "SHU_deep_pockets_piltover",
+      "status": "TODO",
+      "proof": "DeepPocketsTrelloProof.png"
+    },
+    {
+      "id": "2h9cTkzh",
+      "name": "SHU_mutal_assurance",
+      "status": "TODO",
+      "proof": "MutualAssuranceTrelloProof.png",
+      "dependency_clarification": "installed Runeterra/Quarior txt/yml snapshots checked; no flag consumers; saved/reloaded run259"
+    },
+    {
+      "id": "OdLYNAcR",
+      "name": "SHU_hostile_takeover",
+      "status": "TODO",
+      "proof": "HostileTakeoverTrelloProof.png"
+    },
+    {
+      "id": "0PJXFfIN",
+      "name": "SHU_brain_gain",
+      "status": "TODO",
+      "proof": "BrainGainTrelloProof.png"
+    },
+    {
+      "id": "4Vb06PJy",
+      "name": "SHU_new_management_piltover",
+      "status": "FIX LATER",
+      "members": [
+        "netsnamgreb"
+      ],
+      "proof": "PiltoverManagementTrelloProof.png"
+    }
+  ],
+  "updates": "source evidence and unmet criteria added; each saved/reloaded readback verified; existing requirements preserved",
+  "complete_claims": 0,
+  "owner_labels": "preserved",
+  "scope": "fifteen-card bounded reconciliation, not whole-board completion",
+  "pending": "native gates/design proposals; remaining relevant board cards need separate bounded selection"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "VOI_zilean_speech_mission",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_malzahar_speech_mission",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_void_threat_decision_silence_z",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_void_threat_decision_silence_m",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_void_threat_decision_exterminate",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_void_threat_decision_study",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_void_threat_decision_mission",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  },
+  {
+    "id": "VOI_pacify_resistance_in_the_northern_countryside",
+    "file": "common/decisions/VOI_dec.txt",
+    "title_and_description": "local unique present; source reviewed in runs147-156",
+    "dependency_localization_files": [],
+    "runtime_acceptance": "open"
+  }
+]

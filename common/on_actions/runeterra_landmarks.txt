@@ -1,0 +1,17 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = { NOT = { has_global_flag = runeterra_landmarks_placed } }
+                215 = { set_building_level = { type = landmark_demacia_city level = 1 province = 2875 } }
+                265 = { set_building_level = { type = landmark_frostguard_citadel level = 1 province = 1625 } }
+                190 = { set_building_level = { type = landmark_immortal_bastion level = 1 province = 7220 } }
+                35 = { set_building_level = { type = landmark_ixaocan level = 1 province = 4753 } }
+                150 = { set_building_level = { type = landmark_mount_targon level = 1 province = 3035 } }
+                85 = { set_building_level = { type = landmark_placidium level = 1 province = 5247 } }
+                144 = { set_building_level = { type = landmark_sun_disc level = 1 province = 9119 } }
+                set_global_flag = runeterra_landmarks_placed
+            }
+        }
+    }
+}

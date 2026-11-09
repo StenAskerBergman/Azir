@@ -1,0 +1,83 @@
+equipments = {
+	azir_plt_caliver_equipment = {
+		year = 990
+		is_archetype = yes
+		is_buildable = no
+		can_license = no
+		can_be_produced = { original_tag = PLT }
+		picture = archetype_anti_tank_equipment
+		type = { anti_tank infantry }
+		group_by = archetype
+		interface_category = interface_category_land
+
+		maximum_speed = 4
+		reliability = 0.68
+		defense = 4
+		soft_attack = 2
+		hard_attack = 18
+		ap_attack = 65
+		lend_lease_cost = 3
+		build_cost_ic = 4.8
+		resources = { steel = 2 tungsten = 2 }
+	}
+
+	azir_plt_caliver_equipment_1 = {
+		year = 990
+		archetype = azir_plt_caliver_equipment
+		priority = 90
+		visual_level = 0
+	}
+
+	azir_plt_caliver_equipment_2 = {
+		year = 990
+		archetype = azir_plt_caliver_equipment
+		parent = azir_plt_caliver_equipment_1
+		priority = 90
+		visual_level = 0
+		reliability = 0.85
+		ap_attack = 78
+		build_cost_ic = 5.2
+	}
+
+	azir_zau_carbine_equipment = {
+		year = 990
+		is_archetype = yes
+		is_buildable = no
+		can_license = no
+		can_be_produced = { original_tag = ZAU }
+		picture = archetype_infantry_equipment
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+
+		maximum_speed = 4
+		reliability = 0.72
+		defense = 5
+		breakthrough = 4
+		soft_attack = 5
+		hard_attack = 1
+		ap_attack = 3
+		lend_lease_cost = 1
+		build_cost_ic = 2.4
+		resources = { steel = 2 }
+	}
+
+	azir_zau_carbine_equipment_1 = {
+		year = 990
+		archetype = azir_zau_carbine_equipment
+		priority = 15
+		visual_level = 0
+	}
+
+	# The upgraded kit includes field-service spares and breathing equipment.
+	azir_zau_carbine_equipment_2 = {
+		year = 990
+		archetype = azir_zau_carbine_equipment
+		parent = azir_zau_carbine_equipment_1
+		priority = 15
+		visual_level = 0
+		reliability = 0.88
+		defense = 7
+		build_cost_ic = 2.7
+	}
+}

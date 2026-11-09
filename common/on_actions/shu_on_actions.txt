@@ -1,10 +1,26 @@
 on_actions = {
-	# Runeterra 
+	# Runeterra
 	on_startup = {
 		effect = {
 			XER = { # The Shuriman War
 				# Events Outcomes
 				country_event = xerath.1
+				if = {
+					limit = { has_offensive_war_with = SHU }
+					news_event = { id = shuriman_rnews.5 days = 2 }
+				}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = XER
+					FROM = { tag = SHU }
+				}
+				news_event = { id = shuriman_rnews.5 days = 2 }
 			}
 		}
 	}

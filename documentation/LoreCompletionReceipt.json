@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "focus_definitions_reviewed": 502,
+  "focus_remaining_ids": [],
+  "focus_exact_id_receipt": "LoreFocusCoverage.json",
+  "decision_receipt": "DecisionCoverageReceipt.json",
+  "decision_definition_count": 29,
+  "existing_event_refs_reviewed": 35,
+  "existing_event_remaining_keys": [],
+  "earlier_event_design_blockers": "16 initial references and2 structured SunDisc references remain in their exact queues",
+  "evidence_level": "source/static only; native/visual/gameplay/multiplayer gates remain",
+  "trello_new_evidence": "Local signed-in JSON export exists,119cards/7lists; read-only snapshot does not prove current live status or synchronization",
+  "next_bounded_task": "Verify live authenticated Trello access against snapshot SHU_moonstone DOING and SHU_fate_of_targon TODO before updating; ICED examples excluded",
+  "commit": "none; main c440049; shared dirty changes preserved"
+}

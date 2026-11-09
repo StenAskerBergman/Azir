@@ -1,0 +1,363 @@
+{
+  "generated": "2026-10-09",
+  "scope": "unquoted local event text references absent from local and installed Runeterra English; base-game resolution not yet checked",
+  "references": [
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 152,
+      "field": "title",
+      "key": "shuriman_rnews.6.t",
+      "status": "reviewed/localized run190; xerath.4 direct-assault choice, no conquest outcome"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 153,
+      "field": "desc",
+      "key": "shuriman_rnews.6.d",
+      "status": "reviewed/localized run190; xerath.4 direct-assault choice, no conquest outcome"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 173,
+      "field": "title",
+      "key": "shuriman_rnews.40.t",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 204,
+      "field": "name",
+      "key": "shuriman_rnews.40.a",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 219,
+      "field": "name",
+      "key": "shuriman_rnews.40.b",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 235,
+      "field": "name",
+      "key": "shuriman_rnews.40.c",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 246,
+      "field": "name",
+      "key": "shuriman_rnews.40.d",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 258,
+      "field": "name",
+      "key": "shuriman_rnews.40.e",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 274,
+      "field": "name",
+      "key": "shuriman_rnews.40.f",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 286,
+      "field": "name",
+      "key": "shuriman_rnews.40.g",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 302,
+      "field": "name",
+      "key": "shuriman_rnews.40.h",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG/state446 contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 326,
+      "field": "title",
+      "key": "shuriman_rnews.42.t",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 327,
+      "field": "desc",
+      "key": "shuriman_rnews.42.desc",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 334,
+      "field": "name",
+      "key": "shuriman_rnews.42.a",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 342,
+      "field": "name",
+      "key": "shuriman_rnews.42.b",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 350,
+      "field": "name",
+      "key": "shuriman_rnews.42.c",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 360,
+      "field": "name",
+      "key": "shuriman_rnews.42.d",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 370,
+      "field": "name",
+      "key": "shuriman_rnews.42.e",
+      "status": "blocked narrative outcome: SunDiscNewsProposal.md; inherited canal/ENG restoration contract"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 120,
+      "field": "title",
+      "key": "shurima.11.t",
+      "status": "reviewed/localized run193; empty supporter ideas, diplomatic preference only"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 121,
+      "field": "desc",
+      "key": "shurima.11.d",
+      "status": "reviewed/localized run193; empty supporter ideas, diplomatic preference only"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 128,
+      "field": "name",
+      "key": "shurima.11.a",
+      "status": "reviewed/localized run193; empty supporter ideas, diplomatic preference only"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 134,
+      "field": "name",
+      "key": "shuriuma.11.b",
+      "status": "reviewed/localized run193; empty supporter ideas, diplomatic preference only"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 140,
+      "field": "name",
+      "key": "shurima.11.c",
+      "status": "reviewed/localized run193; empty supporter ideas, diplomatic preference only"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 196,
+      "field": "name",
+      "key": "shurima.3.a",
+      "status": "reviewed run194; unity labels added, .33 rebound to existing vigilance option"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 224,
+      "field": "name",
+      "key": "shurima.4.a",
+      "status": "reviewed run194; unity labels added, .33 rebound to existing vigilance option"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 320,
+      "field": "name",
+      "key": "shurima.3.a",
+      "status": "reviewed run194; unity labels added, .33 rebound to existing vigilance option"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 298,
+      "field": "custom_effect_tooltip",
+      "key": "targon.11.a.tt",
+      "status": "reviewed/localized run195; exact flags/ideas/stability, no civil-war guarantee"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 306,
+      "field": "custom_effect_tooltip",
+      "key": "targon.11.b.tt",
+      "status": "reviewed/localized run195; exact flags/ideas/stability, no civil-war guarantee"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 323,
+      "field": "custom_effect_tooltip",
+      "key": "targon.12.a.tt",
+      "status": "reviewed/localized run196; promises/spirits/stability/PP only"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 332,
+      "field": "custom_effect_tooltip",
+      "key": "targon.12.b.tt",
+      "status": "reviewed/localized run196; promises/spirits/stability/PP only"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 341,
+      "field": "custom_effect_tooltip",
+      "key": "targon.12.c.tt",
+      "status": "reviewed/localized run196; promises/spirits/stability/PP only"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 357,
+      "field": "custom_effect_tooltip",
+      "key": "targon.13.a.tt",
+      "status": "reviewed/localized run197; route spirits and stability/war support only"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 366,
+      "field": "custom_effect_tooltip",
+      "key": "targon.13.b.tt",
+      "status": "reviewed/localized run197; route spirits and stability/war support only"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 414,
+      "field": "title",
+      "key": "TAR_leona_speech.t",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 415,
+      "field": "desc",
+      "key": "TAR_leona_speech.desc",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 420,
+      "field": "name",
+      "key": "TAR_leona_speech.a",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 423,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_leona_speech.a.tt",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 430,
+      "field": "name",
+      "key": "TAR_leona_speech.b",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 433,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_leona_speech.b.tt",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 440,
+      "field": "name",
+      "key": "TAR_leona_speech.c",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 443,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_leona_speech.c.tt",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 450,
+      "field": "name",
+      "key": "TAR_leona_speech.d",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 453,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_leona_speech.d.tt",
+      "status": "reviewed/localized run198; exact political/stability/war support/XP outcomes"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 463,
+      "field": "title",
+      "key": "TAR_reformers.1.t",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 464,
+      "field": "desc",
+      "key": "TAR_reformers.1.d",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 469,
+      "field": "name",
+      "key": "TAR_reformers.1.a",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 470,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_reformers.1.a.tt",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 475,
+      "field": "name",
+      "key": "TAR_reformers.1.b",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 476,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_reformers.1.b.tt",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 481,
+      "field": "name",
+      "key": "TAR_reformers.1.c",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 482,
+      "field": "custom_effect_tooltip",
+      "key": "TAR_reformers.1.c.tt",
+      "status": "reviewed/localized run199; reform spirit versus identical challenge spirits"
+    }
+  ]
+}

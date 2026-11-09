@@ -8,7 +8,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_portrait_naz_ksante_large
-                small = GFX_portrait_ksante_small
+                small = GFX_portrait_naz_ksante_small
             }
             army={
     			large = GFX_portrait_naz_ksante_large
@@ -37,7 +37,7 @@ characters = {
         gender = undefined
         portraits = {
             civilian = {
-                large = "GFX_portrait_naz_tribal_elder_council_large"
+                large = "GFX_portrait_NAZ_tribal_council_large"
                 small = "GFX_portrait_naz_tribal_elder_council_small"
 
             }

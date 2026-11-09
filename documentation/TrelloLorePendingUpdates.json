@@ -1,0 +1,269 @@
+{
+  "recorded_at": "2026-10-09T18:05:09.983Z",
+  "scope": "historical TODO/FIX LATER/DOING lore queue, not entire board completion",
+  "browser_blocker": "Selected Chrome browser3: Browser is not available (run265); no unchanged retry",
+  "prior_synchronized_descriptions": 15,
+  "pending_cards": [
+    {
+      "card": "mGr93Var",
+      "url": "https://trello.com/c/mGr93Var",
+      "historical_name": "SHU_chemical_warefare",
+      "active_focus_id": "SHU_chemical_warefare",
+      "source_receipt_run": 275,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "C0QaIgyV",
+      "url": "https://trello.com/c/C0QaIgyV",
+      "historical_name": "SHU_diplomacy_approach",
+      "active_focus_id": "SHU_diplomacy_approach",
+      "source_receipt_run": 269,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "pO3HeehW",
+      "url": "https://trello.com/c/pO3HeehW",
+      "historical_name": "SHU_subjugation_tactics",
+      "active_focus_id": "SHU_subjugation_tactics",
+      "source_receipt_run": 269,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "oPg9xik8",
+      "url": "https://trello.com/c/oPg9xik8",
+      "historical_name": "SHU_we_remember_shurima",
+      "active_focus_id": "SHU_we_remember_shurima",
+      "source_receipt_run": 273,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "GfulCLBZ",
+      "url": "https://trello.com/c/GfulCLBZ",
+      "historical_name": "SHU_remove_the_savages",
+      "active_focus_id": "SHU_remove_the_natives",
+      "source_receipt_run": 276,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "9vgjPuPU",
+      "url": "https://trello.com/c/9vgjPuPU",
+      "historical_name": "SHU_imperial_efforts",
+      "active_focus_id": "SHU_imperial_efforts",
+      "source_receipt_run": 273,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "JhETqPNZ",
+      "url": "https://trello.com/c/JhETqPNZ",
+      "historical_name": "SHU_new_management_zaun",
+      "active_focus_id": "SHU_new_management_zaun",
+      "source_receipt_run": 274,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "LNCX03Fs",
+      "url": "https://trello.com/c/LNCX03Fs",
+      "historical_name": "SHU_ascended_god_warriors_council",
+      "active_focus_id": "SHU_ascended_god_warriors_council",
+      "source_receipt_run": 275,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "BKbpr4TO",
+      "url": "https://trello.com/c/BKbpr4TO",
+      "historical_name": "SHU_recover_our_sand",
+      "active_focus_id": "SHU_recover_our_sand",
+      "source_receipt_run": 274,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "AqAzxlKI",
+      "url": "https://trello.com/c/AqAzxlKI",
+      "historical_name": "SHU_rich_mountains_gold",
+      "active_focus_id": "SHU_rich_mountains_gold",
+      "source_receipt_run": 264,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "ex19sTaN",
+      "url": "https://trello.com/c/ex19sTaN",
+      "historical_name": "SHU_rich_mountains_dia",
+      "active_focus_id": "SHU_rich_mountains_dia",
+      "source_receipt_run": 265,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "WPweQloX",
+      "url": "https://trello.com/c/WPweQloX",
+      "historical_name": "SHU_silco_plan",
+      "active_focus_id": "SHU_silco_plan",
+      "source_receipt_run": 267,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "DfOevTpV",
+      "url": "https://trello.com/c/DfOevTpV",
+      "historical_name": "SHU_shadow_plan",
+      "active_focus_id": "SHU_shadow_plan",
+      "source_receipt_run": 268,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "U4Qq2gNH",
+      "url": "https://trello.com/c/U4Qq2gNH",
+      "historical_name": "SHU_shadow_deal",
+      "active_focus_id": "SHU_shadow_deal",
+      "source_receipt_run": 268,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "0BQLCPdh",
+      "url": "https://trello.com/c/0BQLCPdh",
+      "historical_name": "SHU_in_the_hawks_eyes",
+      "active_focus_id": "SHU_in_the_hawks_eyes",
+      "source_receipt_run": 269,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "qR9DHMHL",
+      "url": "https://trello.com/c/qR9DHMHL",
+      "historical_name": "SHU_allies",
+      "active_focus_id": "SHU_allies",
+      "source_receipt_run": 269,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "pwygzP0Z",
+      "url": "https://trello.com/c/pwygzP0Z",
+      "historical_name": "SHU_great_crusade",
+      "active_focus_id": "SHU_great_crusade",
+      "source_receipt_run": 269,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "AfyxFhy1",
+      "url": "https://trello.com/c/AfyxFhy1",
+      "historical_name": "SHU_regional_investment",
+      "active_focus_id": "SHU_regional_investment",
+      "source_receipt_run": 270,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "13CdmoVz",
+      "url": "https://trello.com/c/13CdmoVz",
+      "historical_name": "SHU_shakkal_region",
+      "active_focus_id": "SHU_shakkal_region",
+      "source_receipt_run": 270,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "KgNf94VR",
+      "url": "https://trello.com/c/KgNf94VR",
+      "historical_name": "SHU_imperial_courts",
+      "active_focus_id": "SHU_imperial_courts",
+      "source_receipt_run": 271,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "93Vy5kw2",
+      "url": "https://trello.com/c/93Vy5kw2",
+      "historical_name": "SHU_sun_disc_restorations",
+      "active_focus_id": "SHU_sun_disc_restorations",
+      "source_receipt_run": 276,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "S9KXCFwE",
+      "url": "https://trello.com/c/S9KXCFwE",
+      "historical_name": "SHU_imperial_law",
+      "active_focus_id": "SHU_imperial_law",
+      "source_receipt_run": 271,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "GfGx9ytr",
+      "url": "https://trello.com/c/GfGx9ytr",
+      "historical_name": "SHU_public_order",
+      "active_focus_id": "SHU_public_order",
+      "source_receipt_run": 271,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "E3Wg4lkc",
+      "url": "https://trello.com/c/E3Wg4lkc",
+      "historical_name": "SHU_war_guild",
+      "active_focus_id": "SHU_war_guild",
+      "source_receipt_run": 272,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    },
+    {
+      "card": "jtq4gTHF",
+      "url": "https://trello.com/c/jtq4gTHF",
+      "historical_name": "SHU_craft_guild",
+      "active_focus_id": "SHU_craft_guild",
+      "source_receipt_run": 272,
+      "source_receipt": "documentation/LoreFocusWriter.md",
+      "tracking_state": "pending_authenticated_current_card_read_and_evidence_append",
+      "can_mark_complete": false
+    }
+  ],
+  "excluded_from_this_lore_batch": [
+    {
+      "card": "3ZddYMyy",
+      "reason": "Neeko OST music task; requires assets/rights outside focus lore scope"
+    },
+    {
+      "card": "8xwiAynP",
+      "reason": "Void character native acceptance/other writer work; separate ownership and runtime gates"
+    }
+  ],
+  "next_action": "When authenticated browser availability changes, read AqAzxlKI and ex19sTaN current criteria/ownership, append existing source receipts preserving contributor text, save and read back. Do not repeat completed source audits or mark COMPLETE without all native criteria. Independent next batch: collect missing named research/idea localization from active focus rewards using installed dependency snapshots; review candidates before writing."
+}

@@ -113,10 +113,17 @@ spriteTypes = {
 	}
 
 	# Malzahar 
-	SpriteType = {
-		name = "GFX_portrait_voi_malzahar_large"
-		texturefile = "gfx/leaders/Void/malzahar.dds"
-	}
+
+	frameAnimatedSpriteType = {
+        name = "GFX_portrait_voi_malzahar_large"
+        texturefile = "gfx/leaders/VOI/portrait_voi_malzahar_aura.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
 
 	# Belveth
 	SpriteType = {
@@ -299,11 +306,31 @@ spriteTypes = {
 
 		SpriteType = {
 			name = "GFX_portrait_voi_velkoz_small"
-			texturefile = "gfx/characters/VOI/portrait_velkoz_small.dds"
+			texturefile = "gfx/characters/VOI/portrait_velkos_small.dds"
 		}
 
 		SpriteType = {
 			name = "GFX_portrait_voi_velkoz1_small"
-			texturefile = "gfx/characters/VOI/portrait_velkoz1_small.dds"
+			texturefile = "gfx/characters/VOI/portrait_velkos1_small.dds"
 		}
+
+    spriteType = {
+        name = "GFX_portrait_a_jaximus_small"
+        texturefile = "gfx/characters/VOI/portrait_a_jaximus_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_b_jaximus_small"
+        texturefile = "gfx/characters/VOI/portrait_b_jaximus_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_milio_small"
+        texturefile = "gfx/characters/VOI/portrait_milio_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_milio_large"
+        texturefile = "gfx/leaders/VOI/portrait_voi_milio_large.dds"
+    }
 }

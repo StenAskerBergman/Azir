@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-09",
+  "batch": "run236",
+  "scope": "ExistingEventNarrativeQueue bounded review, not exhaustive native acceptance",
+  "references": 35,
+  "reviewed": 35,
+  "pending": 0,
+  "events": [
+    "targon.3",
+    "targon.9",
+    "icathia.1",
+    "icathia.2",
+    "icathia.5"
+  ],
+  "last_source_evidence": {
+    "icathia.5": "VOI_Resist_the_Void calls after1day; immediate defines3-infantry template, seven unit creation attempts for VOI in qualifying owned controlled state prioritized328; option +3% war support",
+    "targon.3.b": "Deny Lunari Past agrees with purist condemnation path; reviewed without edit"
+  },
+  "static_validator": "PASS",
+  "scoped_diff_check": "PASS",
+  "native_visual_gameplay_multiplayer": "not accepted by this receipt",
+  "remaining_design": [
+    "TargonPolicyParticipantProposal.md",
+    "IcathianPrinceRecoveryProposal.md",
+    "IcathianPathChoiceProposal.md",
+    "earlier SunDisc/unity/assassination/void/diplomacy proposals remain unresolved"
+  ],
+  "trello": "authenticated access unavailable; no synchronization",
+  "next": "Consolidated coverage receipt and bounded-ready-task reconciliation; do not repeat this completed queue"
+}

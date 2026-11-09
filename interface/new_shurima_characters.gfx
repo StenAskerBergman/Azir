@@ -81,7 +81,7 @@ spriteTypes = {
 	# Nami
 	spriteType = {
 		name = "GFX_portrait_nami_large"
-		texturefile = "gfx/characters/SHU/portrait_nami_large.dds"
+		texturefile = "gfx/leaders/SHU/portrait_shu_nami_large.dds"
 	}
 
 # Smaller 

@@ -1,0 +1,83 @@
+{
+  "scope": "literal active local event idea grants; not reachability or runtime evidence",
+  "candidates": [
+    {
+      "file": "events\\Shurima_events.txt",
+      "line": 47,
+      "key": "SHU_legitimate_ruler",
+      "title_missing": true,
+      "desc_missing": true
+    },
+    {
+      "file": "events\\Shurima_events.txt",
+      "line": 129,
+      "key": "solari_supporter",
+      "title_missing": true,
+      "desc_missing": true
+    },
+    {
+      "file": "events\\Shurima_events.txt",
+      "line": 135,
+      "key": "lunari_supporter",
+      "title_missing": true,
+      "desc_missing": true
+    },
+    {
+      "file": "events\\Shurima_events.txt",
+      "line": 141,
+      "key": "rakkor_supporter",
+      "title_missing": true,
+      "desc_missing": true
+    },
+    {
+      "file": "events\\Shurima_events.txt",
+      "line": 343,
+      "key": "tribal_ties",
+      "title_missing": true,
+      "desc_missing": true
+    }
+  ],
+  "status": "source_trace_pending",
+  "resolved_keys": {
+    "SHU_legitimate_ruler": {
+      "run": 293,
+      "source": "shu_assassination_aftermath.1 option b; stability_factor0.10",
+      "native_accepted": false
+    },
+    "solari_supporter": {
+      "run": 294,
+      "source": "shurima.11 distinct options; picture-only ideas; no local caller",
+      "native_accepted": false
+    },
+    "lunari_supporter": {
+      "run": 294,
+      "source": "shurima.11 distinct options; picture-only ideas; no local caller",
+      "native_accepted": false
+    },
+    "rakkor_supporter": {
+      "run": 294,
+      "source": "shurima.11 distinct options; picture-only ideas; no local caller",
+      "native_accepted": false
+    },
+    "tribal_ties": {
+      "run": 295,
+      "source": "empty idea;55SHU-only acceptance grant;56NAZ acceptance removes from FROM",
+      "native_accepted": false
+    }
+  },
+  "completion_receipt": {
+    "run": 295,
+    "status": "bounded_static_text_complete_runtime_unaccepted",
+    "resolved_distinct_ideas": 5,
+    "authored_keys": 10,
+    "remaining_ids": [],
+    "gates": [
+      "event reachability and recipient contract",
+      "conditional choices",
+      "idea display/load order",
+      "save reload",
+      "multiplayer"
+    ],
+    "scope_limit": "literal local event add_ideas/add_timed_idea inventory; not whole-mod narrative completion"
+  }
+}

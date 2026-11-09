@@ -1,0 +1,222 @@
+[
+  {
+    "id": "TAR_bop_influence_solari",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 13,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_bop_influence_solari": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Influence the Solari"
+        }
+      ],
+      "TAR_bop_influence_solari_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Supporters of the Solari will press their claim to authority within Targon. This campaign will shift the balance toward their side."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_bop_influence_lunari",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 69,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_bop_influence_lunari": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Influence the Lunari"
+        }
+      ],
+      "TAR_bop_influence_lunari_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Supporters of the Lunari will press for greater influence within Targon. This campaign will shift the balance toward their side."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_daily_influence_solari",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 125,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_daily_influence_solari": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Sustain Solari Influence"
+        }
+      ],
+      "TAR_daily_influence_solari_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Solari supporters will maintain a campaign for religious authority. While active, their efforts will move the balance toward the Solari and encourage support for theocracy."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_daily_influence_lunari",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 187,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_daily_influence_lunari": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Sustain Lunari Influence"
+        }
+      ],
+      "TAR_daily_influence_lunari_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Lunari supporters will maintain a campaign for a stronger place in government. While active, their efforts will move the balance toward the Lunari and encourage support for oligarchy."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_activate_rakkor_tenacity",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 257,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_activate_rakkor_tenacity": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Rally Rakkor Tenacity"
+        }
+      ],
+      "TAR_activate_rakkor_tenacity_desc": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Rakkor discipline will be directed toward the work that sustains Targon. For a time, greater military-factory output and lower consumer-goods demands will support that effort."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_activate_celestial_pilgrimage",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 275,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_activate_celestial_pilgrimage": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Encourage Celestial Pilgrimage"
+        }
+      ],
+      "TAR_activate_celestial_pilgrimage_desc": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Pilgrimage will renew public confidence in Targon's spiritual life. For a time, it will strengthen stability and the government's political authority."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_influence_solari",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 295,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_influence_solari": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Strengthen the Solari Position"
+        }
+      ],
+      "TAR_influence_solari_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Solari supporters will press for greater authority in Targon's councils. Their campaign will shift the balance toward the Solari."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_summit_harvest",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 327,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_summit_harvest": [
+        {
+          "file": "localisation/english/_targon_l_english.yml",
+          "text": "Summit Harvest"
+        }
+      ],
+      "TAR_summit_harvest_desc": [
+        {
+          "file": "localisation/english/_targon_l_english.yml",
+          "text": "Harvesting from the mountains is a daily hardship, yielding valuable resources but at the cost of increased strain on the population."
+        }
+      ]
+    },
+    "dependency_localization": {
+      "TAR_summit_harvest": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_targon_l_english.yml",
+          "text": "Summit Harvest"
+        }
+      ],
+      "TAR_summit_harvest_desc": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_targon_l_english.yml",
+          "text": "Harvesting from the mountains is a daily hardship, yielding valuable resources but at the cost of increased strain on the population."
+        }
+      ]
+    },
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  },
+  {
+    "id": "TAR_influence_lunari",
+    "file": "common/decisions/TAR_dec.txt",
+    "line": 344,
+    "review_date": "2026-10-07",
+    "source_review": "runs158-161; costs, route gates, BOP shifts and timed idea modifiers traced",
+    "localization": {
+      "TAR_influence_lunari": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Strengthen the Lunari Position"
+        }
+      ],
+      "TAR_influence_lunari_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Lunari supporters will press for greater influence in Targon's councils. Their campaign will shift the balance toward the Lunari."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: visibility, timer refresh, BOP side gating; daily foreign idea eligibility and removal scope require native checks"
+  }
+]

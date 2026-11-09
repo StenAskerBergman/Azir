@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-09",
+  "head": "c4400497f55266833e6f49e24148eee54e74fa87",
+  "literal_queue": {
+    "total": 102,
+    "reviewed": 101,
+    "excluded": 1,
+    "pending": 0
+  },
+  "initial_queue": {
+    "reviewed": 35,
+    "blocked": 16
+  },
+  "structured_blocked": [
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 175,
+      "key": "shuriman_rnews.40.desc_eng",
+      "status": "blocked outcome choice: documentation/SunDiscNewsProposal.md"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 185,
+      "key": "shuriman_rnews.40.desc_not_eng",
+      "status": "blocked outcome choice: documentation/SunDiscNewsProposal.md"
+    }
+  ],
+  "remaining_active_quoted_values": [
+    {
+      "file": "events/Icathian_events.txt",
+      "line": 129,
+      "field": "name",
+      "text": "Resistance Division",
+      "classification": "division template; not event presentation"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 545,
+      "field": "name",
+      "text": "SHU_opt_revive_traditions",
+      "classification": "existing quoted localization key; dormant heritage event"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 560,
+      "field": "name",
+      "text": "SHU_opt_invest_in_infrastructure",
+      "classification": "existing quoted localization key; dormant heritage event"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 576,
+      "field": "name",
+      "text": "SHU_opt_promote_cultural_renaissance",
+      "classification": "existing quoted localization key; dormant heritage event"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 589,
+      "field": "name",
+      "text": "SHU_opt_expand_military_glory",
+      "classification": "existing quoted localization key; dormant heritage event"
+    }
+  ],
+  "acceptance": "Static presentation/source coverage only. Not exhaustive accuracy of all pre-existing localized text or native dispatch/gameplay/multiplayer.",
+  "trello": "Not synchronized; existing authenticated access blocker retained.",
+  "next": "Review pre-existing event localization contradictions, starting targon.101 Lunari uprising actor/outcome text; retain SunDisc and other mechanic proposals."
+}

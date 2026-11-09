@@ -1,0 +1,286 @@
+{
+  "date": "2026-10-09",
+  "scope": "Bounded follow-up: unresolved pre-existing Targon origin/choice and mortal Icathian event text. Excludes already recorded receipts; not exhaustive narrative acceptance.",
+  "references": [
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 6,
+      "field": "title",
+      "key": "icathia.1.t",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 7,
+      "field": "desc",
+      "key": "icathia.1.desc",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 12,
+      "field": "name",
+      "key": "icathia.1.a",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 14,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.1.a.tt",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 18,
+      "field": "name",
+      "key": "icathia.1.b",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 20,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.1.b.tt",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 24,
+      "field": "name",
+      "key": "icathia.1.c",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.1",
+      "file": "events/Icathian_events.txt",
+      "line": 26,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.1.c.tt",
+      "status": "reviewed run233; Milio name aligned; authored royal claim distinguished from canon; empty option effects honestly described; recovery implementation proposal remains"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 33,
+      "field": "title",
+      "key": "icathia.2.t",
+      "status": "reviewed run235; concise mortal-survivor exposition; four authored intentions retained; unspecified ancient Shuriman rule"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 34,
+      "field": "desc",
+      "key": "icathia.2.desc",
+      "status": "reviewed run235; concise mortal-survivor exposition; four authored intentions retained; unspecified ancient Shuriman rule"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 44,
+      "field": "name",
+      "key": "icathia.2.a",
+      "status": "reviewed run235; concise mortal-survivor exposition; four authored intentions retained; unspecified ancient Shuriman rule"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 46,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.2.a.tt",
+      "status": "reviewed run234; intention retained; empty option effects disclosed; route proposal pending"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 51,
+      "field": "name",
+      "key": "icathia.2.b",
+      "status": "reviewed run235; concise mortal-survivor exposition; four authored intentions retained; unspecified ancient Shuriman rule"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 53,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.2.b.tt",
+      "status": "reviewed run234; intention retained; empty option effects disclosed; route proposal pending"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 58,
+      "field": "name",
+      "key": "icathia.2.c",
+      "status": "reviewed run235; concise mortal-survivor exposition; four authored intentions retained; unspecified ancient Shuriman rule"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 60,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.2.c.tt",
+      "status": "reviewed run234; intention retained; empty option effects disclosed; route proposal pending"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 65,
+      "field": "name",
+      "key": "icathia.2.d",
+      "status": "reviewed run235; concise mortal-survivor exposition; four authored intentions retained; unspecified ancient Shuriman rule"
+    },
+    {
+      "event_id": "icathia.2",
+      "file": "events/Icathian_events.txt",
+      "line": 67,
+      "field": "custom_effect_tooltip",
+      "key": "icathia.2.d.tt",
+      "status": "reviewed run234; intention retained; empty option effects disclosed; route proposal pending"
+    },
+    {
+      "event_id": "icathia.5",
+      "file": "events/Icathian_events.txt",
+      "line": 120,
+      "field": "title",
+      "key": "icathia.5.t",
+      "status": "reviewed run236; resistance to Void caller; conditional seven unit attempts and +3% war support option; no special terrain ability promised"
+    },
+    {
+      "event_id": "icathia.5",
+      "file": "events/Icathian_events.txt",
+      "line": 121,
+      "field": "desc",
+      "key": "icathia.5.d",
+      "status": "reviewed run236; resistance to Void caller; conditional seven unit attempts and +3% war support option; no special terrain ability promised"
+    },
+    {
+      "event_id": "icathia.5",
+      "file": "events/Icathian_events.txt",
+      "line": 173,
+      "field": "name",
+      "key": "icathia.5.a",
+      "status": "reviewed run236; resistance to Void caller; conditional seven unit attempts and +3% war support option; no special terrain ability promised"
+    },
+    {
+      "event_id": "targon.3",
+      "file": "events/Targon_events.txt",
+      "line": 67,
+      "field": "title",
+      "key": "targon.3.t",
+      "status": "reviewed run230; authored archive discovery distinguished from canon; tolerance/purist choices preserved"
+    },
+    {
+      "event_id": "targon.3",
+      "file": "events/Targon_events.txt",
+      "line": 68,
+      "field": "desc",
+      "key": "targon.3.desc",
+      "status": "reviewed run230; authored archive discovery distinguished from canon; tolerance/purist choices preserved"
+    },
+    {
+      "event_id": "targon.3",
+      "file": "events/Targon_events.txt",
+      "line": 78,
+      "field": "name",
+      "key": "targon.3.a",
+      "status": "reviewed run230; authored archive discovery distinguished from canon; tolerance/purist choices preserved"
+    },
+    {
+      "event_id": "targon.3",
+      "file": "events/Targon_events.txt",
+      "line": 81,
+      "field": "custom_effect_tooltip",
+      "key": "targon.3.a.tt",
+      "status": "reviewed/corrected run229; exact immediate rewards/spirits and next-event choices"
+    },
+    {
+      "event_id": "targon.3",
+      "file": "events/Targon_events.txt",
+      "line": 92,
+      "field": "name",
+      "key": "targon.3.b",
+      "status": "reviewed run236; purist option matches original event3 condemnation intent; prior queue omission corrected"
+    },
+    {
+      "event_id": "targon.3",
+      "file": "events/Targon_events.txt",
+      "line": 95,
+      "field": "custom_effect_tooltip",
+      "key": "targon.3.b.tt",
+      "status": "reviewed/corrected run229; exact immediate rewards/spirits and next-event choices"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 110,
+      "field": "title",
+      "key": "targon.9.t",
+      "status": "reviewed run232; authored Leona choice retained; description grammar clarified; leader/participant gate proposal recorded"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 111,
+      "field": "desc",
+      "key": "targon.9.d",
+      "status": "reviewed run232; authored Leona choice retained; description grammar clarified; leader/participant gate proposal recorded"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 117,
+      "field": "name",
+      "key": "targon.9.a",
+      "status": "reviewed run232; authored Leona choice retained; description grammar clarified; leader/participant gate proposal recorded"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 118,
+      "field": "custom_effect_tooltip",
+      "key": "targon.9.a.tt",
+      "status": "reviewed/corrected run231; exact immediate rewards and policy names"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 127,
+      "field": "name",
+      "key": "targon.9.b",
+      "status": "reviewed run232; authored Leona choice retained; description grammar clarified; leader/participant gate proposal recorded"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 128,
+      "field": "custom_effect_tooltip",
+      "key": "targon.9.b.tt",
+      "status": "reviewed/corrected run231; exact immediate rewards and policy names"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 137,
+      "field": "name",
+      "key": "targon.9.c",
+      "status": "reviewed run232; authored Leona choice retained; description grammar clarified; leader/participant gate proposal recorded"
+    },
+    {
+      "event_id": "targon.9",
+      "file": "events/Targon_events.txt",
+      "line": 138,
+      "field": "custom_effect_tooltip",
+      "key": "targon.9.c.tt",
+      "status": "reviewed/corrected run231; exact immediate rewards and policy names"
+    }
+  ]
+}

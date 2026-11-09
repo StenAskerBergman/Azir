@@ -6,9 +6,9 @@
  VOI_void_threat_decision_silence_m: "We must Silence Malzahar!"
  VOI_void_threat_decision_silence_z: "We must Silence Zilean!"
 
- VOI_void_threat_decision_exterminate: "Exterminate Northern Void Creatures!"
+ VOI_void_threat_decision_exterminate: "Launch the Northern Operation"
  VOI_hunt_down_northern_void_threat: "Hunt Down Northern Void Creatures!"
- VOI_hunt_down_northern_void_threat_tt: "Removes northern Void Creatures.\n"
+ VOI_hunt_down_northern_void_threat_tt: "Commits 1,000 manpower and 500 infantry equipment to the operation and grants 10 army experience."
 
  # Void Scar's? - _icon_category.dds - Remnants of a Void World 
  # "Unlocks §YDealing with the Void Threats§!" 
@@ -62,3 +62,34 @@
 
 ################################### OTHER\n                     \n      §H§!
 
+
+ VOI_void_threat_decision_silence_z_desc: "The cult authorities will prohibit Zilean's public speeches. This order declares their policy toward dissent; it does not remove him from the country."
+ VOI_void_threat_decision_silence_m_desc: "The survivor government will prohibit Malzahar's public speeches. The order records its opposition to his preaching; it does not remove him from the country."
+
+ VOI_zilean_speech_mission: "Zilean Addresses the Public"
+
+ VOI_zilean_speech_mission_desc: "Zilean's address threatens the government's authority. If the mission runs its course, support for the mages will rise while stability and political power fall."
+
+ VOI_malzahar_speech_mission: "Malzahar Addresses the Public"
+
+ VOI_malzahar_speech_mission_desc: "Malzahar's preaching threatens the government's authority. If the mission runs its course, support for desolation will rise while stability and political power fall."
+
+ VOI_influence_required_tt: "Complete §YThe Void's Influence§! before launching this operation."
+
+ VOI_void_threat_decision_exterminate_desc: "Commit troops and equipment to clear the Ancient Graveyard. Hold the state for 70 days to subdue the northern threat and open the way to Reshape Our Image on the Resistance route."
+
+ VOI_northern_operation_required_tt: "Successfully complete §YLaunch the Northern Operation§! in the Decisions tab."
+
+ VOI_void_threat_decision_study: "Consider a Study of the Void"
+
+ VOI_void_threat_decision_study_desc: "The threat has raised questions that force alone cannot answer. The government will consider a study of the surviving traces of the Void."
+
+ VOI_void_threat_decision_mission: "Review the Void Threat"
+
+ VOI_void_threat_decision_mission_desc: "The government will consider how to respond to the threat facing Icathia. The course of action remains to be settled."
+
+ VOI_pacify_resistance_in_the_northern_countryside: "Pacify the Northern Countryside"
+
+ VOI_pacify_resistance_in_the_northern_countryside_desc: "A substantial military presence is required for this operation. Completing it will resolve the recorded northern resistance and strengthen stability while giving the army experience."
+
+ VOI_pacify_resistance_mission_explanation: "Clears the northern resistance flag and grants 3% stability and 10 army experience."

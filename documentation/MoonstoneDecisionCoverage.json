@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SHU_seek_lunari_exiles",
+    "file": "common/decisions/SHU_moonstone_decisions.txt",
+    "line": 2,
+    "localization": {
+      "SHU_seek_lunari_exiles": [
+        {
+          "file": "localisation/english/events_SHU_moonstone_l_english.yml",
+          "text": "Seek the Hidden Lunari"
+        }
+      ],
+      "SHU_seek_lunari_exiles_desc": [
+        {
+          "file": "localisation/english/events_SHU_moonstone_l_english.yml",
+          "text": "Search the mountain roads, coastal sanctuaries, and refugee communities for Lunari who remember enough of the ancient Marai accord to forge a new Moonstone."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "source_review": "50 PP, once; original SHU, search available/no moonstone, Nami and unresolved idea; flags transition, shurima_moonstone.6 after 30 days",
+    "outcome": "event requires current tag SHU, Nami and underway flag; clears underway/failed, grants moonstone/global success/blessing, removes unresolved, +3% stability/+10 navy XP",
+    "authored_divergence": "Lunari exiles reconstruct rite without Targon government; mod alternate history",
+    "runtime_acceptance": "open: Nami removal or tag change during 30 days can fail event trigger, leaving underway and consumed once-only decision; recovery design requires direction"
+  }
+]

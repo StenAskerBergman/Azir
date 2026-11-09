@@ -35,19 +35,19 @@
 ################################### FOCUSES                     \n      §H§!
 
 SHU_lectures_in_shakkal: "Lectures in Shakkal"
-SHU_lectures_in_shakkal_desc: "Hold lectures in Shakkal to educate our people about the threat of the Void and improve our tactics against it. This will grant us an attack bonus against Void creatures."
+SHU_lectures_in_shakkal_desc: "The struggle against the Void demands more than resolve. Gather the lessons discussed in Shakkal and put them before our commanders, strengthening the experience and authority behind our preparations."
 
 SHU_shakkal_deal: "Shakkal Deal"
-SHU_shakkal_deal_desc: "Negotiate a plea deal with the leaders of Shakkal. This agreement will strengthen our position and improve our ability to fight against the Void."
+SHU_shakkal_deal_desc: "Our dealings with Shakkal must give the restored state firmer ground on which to act. Pursue an understanding that strengthens confidence at home and the authority needed to sustain our course."
 
 SHU_nomadic_library: "Nomadic Library"
-SHU_nomadic_library_desc: "Establish a Nomadic Library to uncover hidden knowledge and secrets. This will provide us with another valuable book for Nasus."
+SHU_nomadic_library_desc: "Knowledge carried between camps should have a place in Shurima's renewal. Assemble a traveling collection of technical learning, supporting the study of communications and other electronic devices."
 
 SHU_shakkal_lecture: "Shakkal Lecture"
-SHU_shakkal_lecture_desc: "Deliver a one-time lecture in Shakkal to boost our knowledge and morale. This will grant us a temporary buff against our enemies."
+SHU_shakkal_lecture_desc: "The experience gathered in Shakkal deserves a hearing among our officers. Use these lessons to sharpen their judgment and strengthen the authority guiding the legions."
 
 SHU_subjugate_the_locals: "Subjugate the Locals"
-SHU_subjugate_the_locals_desc: "Enforce our rule over the local populations to maintain order and control. This will secure our territories and ensure loyalty."
+SHU_subjugate_the_locals_desc: "Impose the restored state's authority upon those who resist it. Our commanders will gain experience and supporters will rally to the campaign, but coercion will deepen unrest at home."
 
 # SHU_marai_marines: "Marai Marines"
 # SHU_marai_marines_desc: "Form the Marai Marines to strengthen our coastal defenses and project our power across the seas. This will add a naval company and increase our maritime capabilities."
@@ -56,40 +56,40 @@ SHU_subjugate_the_locals_desc: "Enforce our rule over the local populations to m
 #  SHU_nazumahs_pride_desc: "Emphasize the pride and strength of Nazumah. This will foster loyalty and respect among the Nazumah people."
 
 SHU_in_the_hawks_eyes: "In the Hawk's Eyes"
-SHU_in_the_hawks_eyes_desc: "Focus on military strategies and tactics observed by the hawk-eyed scouts. This will improve our military capabilities and readiness."
+SHU_in_the_hawks_eyes_desc: "Study the desert with the patience of a watchful hawk. Refine the judgment of our commanders and rally support for the preparations that must precede action."
 
 SHU_subjugation_tactics: "Subjugation Tactics"
-SHU_subjugation_tactics_desc: "Develop and implement tactics to subjugate resistant populations. This will ensure our dominance and control over newly acquired territories."
+SHU_subjugation_tactics_desc: "Our commanders must prepare for the resistance that imperial coercion invites. Draw lessons from the campaign and strengthen resolve for the struggle ahead."
 
 SHU_diplomacy_approach: "Diplomatic Approach"
-SHU_diplomacy_approach_desc: "Adopt a diplomatic approach to manage our relations with other nations. This will improve our political standing and foster alliances."
+SHU_diplomacy_approach_desc: "The restored state must be able to speak with authority as well as command its armies. Build support for a diplomatic course, strengthening confidence at home before seeking agreements abroad."
 
 SHU_allies: "Allies"
-SHU_allies_desc: "Forge alliances with like-minded nations to strengthen our position. This will enhance our international influence and cooperation."
+SHU_allies_desc: "Shurima should seek partners willing to stand beside its renewal. Rally domestic support for cooperation with Shakkal and prepare the authority needed to pursue that relationship."
 
 SHU_great_crusade: "Great Crusade"
-SHU_great_crusade_desc: "Launch a great crusade to expand our territory and spread our influence. This will unite our people under a common cause and strengthen our empire."
+SHU_great_crusade_desc: "Call the people to a great campaign in the name of Shurima's restoration. Gather fresh recruits, draw on the legions' experience and strengthen the resolve needed for the struggles ahead."
 
 SHU_remove_the_natives: "Remove the Savages"
-SHU_remove_the_natives_desc: "Initiate a campaign to remove savage elements from our lands. This will secure our borders and ensure the safety of our people."
+SHU_remove_the_natives_desc: "The hardliners demand a campaign against those they condemn as enemies of the restored empire. Rally their supporters and prepare our commanders for coercion, knowing that this course will deepen division at home."
 
 SHU_regional_investment: "Regional Investment"
-SHU_regional_investment_desc: "Invest in the development of various regions within Shurima. This will boost local economies and improve the overall prosperity of the empire."
+SHU_regional_investment_desc: "Restoration must be supported by productive work throughout our lands. Establish a new civilian workshop in a province we own and control, strengthening the authority behind our investment program."
 
-SHU_shakkal_region: "Our Border!"
-SHU_shakkal_region_desc: "Secure control over the Shakkal region to strengthen our strategic position. This will enhance our influence and provide valuable resources."
+SHU_shakkal_region: "The Shakkal Frontier"
+SHU_shakkal_region_desc: "Assert a clearer imperial policy toward the Shakkal frontier. Strengthen the government's mandate and public confidence in its approach, preparing the ground for the relationship we seek."
 
 SHU_shakkal_autonomy_region2: "Shakkal Autonomy"
 SHU_shakkal_autonomy_region2_desc: "Secure control over the Shakkal region to strengthen our strategic position but let them retain a local mandate. This will enhance our influence, without upsetting the order and still provide valuable resources."
 
 SHU_recover_our_sand: "Recover Our Sand"
-SHU_recover_our_sand_desc: "Reclaim the lost territories of Shurima. This will restore our empire to its former glory and ensure the unity of our lands."
+SHU_recover_our_sand_desc: "Call fresh recruits to the cause of recovering Shurima's lost lands. Build the experience and resolve of the legions before the struggle to reclaim them begins."
 
 SHU_work_camps: "Work Camps"
-SHU_work_camps_desc: "Establish work camps to utilize labor for our ambitious projects. This will boost our industrial output and infrastructure development."
+SHU_work_camps_desc: "The military authorities will organize compulsory labor for the restored state's factories and building projects. Greater output and faster construction will come at a continuing cost to stability."
 
 SHU_the_neighbours: "The Neighbours"
-SHU_the_neighbours_desc: "Engage with our neighboring regions to build relationships and secure alliances. This will enhance our influence and ensure the stability of our borders."
+SHU_the_neighbours_desc: "Shurima's renewal cannot be considered apart from the peoples beyond its borders. Set out an expansion policy and weigh the courses available toward our neighbors before committing to them."
 
 SHU_Minors: "Minor Nations"
 SHU_Minors_desc: "Address the issues and concerns of the minor nations within our borders. This will ensure their loyalty and integration into the Shuriman Empire."
@@ -98,139 +98,139 @@ SHU_Major: "Major Nations"
 SHU_Major_desc: "Engage with the major nations surrounding Shurima. This will strengthen our diplomatic relations and secure our position as a dominant power."
 
 SHU_fate_of_targon: "Fate of Targon"
-SHU_fate_of_targon_desc: "Decide the fate of Targon and its people. This crucial decision will shape our relationship with this powerful region."
+SHU_fate_of_targon_desc: "With an expansion policy established, Shurima must define its course toward Targon. Build the authority needed to pursue that policy before choosing the demands or agreements that will follow."
 
-SHU_annex_targon: "Annex Targon"
-SHU_annex_targon_desc: "Initiate the annexation of Targon into the Shuriman Empire. This bold move will expand our territory and increase our power."
+SHU_annex_targon: "Demand Targon's Annexation"
+SHU_annex_targon_desc: "The crown will demand that Targon accept direct Shuriman rule. Its answer will determine whether incorporation proceeds by agreement or leaves us preparing an annexation campaign."
 
 SHU_example_ba_targon: "Occupy the Mountain Passes"
-SHU_example_ba_targon_desc: "Control of the mountain roads will isolate Targon's temples and prevent reinforcements from reaching the lower settlements."
+SHU_example_ba_targon_desc: "Prepare the legions for the struggle over Targon's mountain approaches. Draw on our commanders' experience and rally support for the campaign, before attempting to hold the passes."
 
 SHU_example_ca_targon: "Break the Celestial Strongholds"
-SHU_example_ca_targon_desc: "Solari temples and Lunari refuges alike can become centers of resistance. The legions will secure every defensible height they can reach."
+SHU_example_ca_targon_desc: "The campaign against Targon needs steadier direction at home. Strengthen the authority behind our policy and public confidence in the government as it pursues its ambitions upon the mountain."
 
-SHU_rich_mountains_gold: "Rich Mountains: Gold"
-SHU_rich_mountains_gold_desc: "Exploit the gold resources in the rich mountains. This will boost our economy and provide valuable resources for our development."
+SHU_rich_mountains_gold: "Develop Steel Deposits"
+SHU_rich_mountains_gold_desc: "The restored state needs a steadier supply of metal for its workshops and arsenals. Develop steel resources in land we own and control, strengthening the authority behind this new industrial effort."
 
-SHU_rich_mountains_dia: "Rich Mountains: Diamonds"
-SHU_rich_mountains_dia_desc: "Mine the diamond resources in the rich mountains. This will enhance our wealth and strengthen our economic power."
+SHU_rich_mountains_dia: "Develop Chromium Deposits"
+SHU_rich_mountains_dia_desc: "Carry our mineral development further by opening chromium resources in our own controlled lands. Give the government firmer means to support the industries on which Shurima's renewal depends."
 
 SHU_puppet_or_ally_targon: "Puppet or Ally Targon"
-SHU_puppet_or_ally_targon_desc: "Determine whether to puppet or ally with Targon. This decision will affect our influence and control over the region."
+SHU_puppet_or_ally_targon_desc: "Choose the relationship Shurima will pursue with Targon: a demand for submission or, where faction ties permit, an approach toward alliance. The mountain's response must follow through the diplomatic exchange."
 
 SHU_shuriman_argreement_targon: "Shuriman Agreement with Targon"
-SHU_shuriman_argreement_targon_desc: "Negotiate an agreement with Targon. This will solidify our relationship and ensure mutual benefits."
+SHU_shuriman_argreement_targon_desc: "Give the proposed relationship with Targon a firmer place in Shurima's policy. Rally confidence and authority behind the compact we seek, without presuming that every term has already been accepted."
 
 SHU_example_cb_targon: "Celestial Exchange"
-SHU_example_cb_targon_desc: "Targonian knowledge of the heavens and Shuriman knowledge of the sun can enrich both realms without another war."
+SHU_example_cb_targon_desc: "Bring the lessons of our dealings with Targon before the imperial court and the legions. Strengthen the authority, experience and confidence needed to carry this course forward."
 
 SHU_fate_of_ixtal: "Fate of Ixtal"
-SHU_fate_of_ixtal_desc: "Decide the fate of Ixtal and its people. This critical decision will shape our relationship with this region rich in natural resources."
+SHU_fate_of_ixtal_desc: "Shurima must establish a course toward Ixtal before pursuing its ambitions there. Strengthen the authority behind that policy and prepare to choose the relationship our government will seek."
 
-SHU_annex_ixtal: "Annex Ixtal"
-SHU_annex_ixtal_desc: "Begin the process of annexing Ixtal into the Shuriman Empire. This strategic move will expand our territory and increase our resource base."
+SHU_annex_ixtal: "Demand Ixtal's Annexation"
+SHU_annex_ixtal_desc: "We will demand that Ixtal submit to incorporation into the Shuriman Empire. Acceptance would bring it under our rule; refusal will give us grounds to pursue annexation by force."
 
-SHU_jungle_machine: "Jungle Machine"
-SHU_jungle_machine_desc: "Utilize advanced machinery to exploit the resources of Ixtal's jungles. This will boost our industrial capabilities and resource extraction."
+SHU_jungle_machine: "Jungle Warfare Training"
+SHU_jungle_machine_desc: "The empire must prepare its specialist troops for fighting beneath the jungle canopy. Training marines, mountaineers, and airborne troops for these conditions will improve their movement and attacks in jungle terrain."
 
 SHU_jungle_adventure: "Jungle Adventure"
-SHU_jungle_adventure_desc: "Embark on an adventure to explore and conquer the jungles of Ixtal. This will secure valuable resources and expand our influence."
+SHU_jungle_adventure_desc: "Prepare our forces for the demands of a campaign beyond the desert. Draw lessons from the jungle venture and gather support for the course Shurima intends to pursue."
 
-SHU_rich_lands_gold: "Rich Lands: Gold"
-SHU_rich_lands_gold_desc: "Exploit the gold deposits in Ixtal's rich lands. This will significantly boost our economy and resource base."
+SHU_rich_lands_gold: "Broaden the Steel Supply"
+SHU_rich_lands_gold_desc: "Extend the search for steel resources through lands we own and control. A broader supply will give Shurima's industrial ambitions firmer foundations and strengthen the mandate for development."
 
-SHU_rich_lands_dia: "Rich Lands: Diamonds"
-SHU_rich_lands_dia_desc: "Mine the diamond deposits in Ixtal's rich lands. This will enhance our wealth and economic power."
+SHU_rich_lands_dia: "Open Tungsten Deposits"
+SHU_rich_lands_dia_desc: "Develop tungsten resources in our own controlled lands as the next step in mineral expansion. Place the government's authority behind an effort to supply the restored state's industries."
 
 SHU_puppet_or_ally_ixtal: "Puppet or Ally Ixtal"
-SHU_puppet_or_ally_ixtal_desc: "Decide whether to puppet or ally with Ixtal. This decision will influence our control and relationship with the region."
+SHU_puppet_or_ally_ixtal_desc: "Choose whether Shurima will seek Ixtal's submission or, where faction ties permit, approach it as a prospective ally. The diplomatic exchange must determine the response; our choice alone does not settle the relationship."
 
 SHU_shuriman_pact_ixtal: "Shuriman Pact with Ixtal"
-SHU_shuriman_pact_ixtal_desc: "Form a pact with Ixtal to ensure mutual benefits and cooperation. This will strengthen our alliance and secure valuable resources."
+SHU_shuriman_pact_ixtal_desc: "Give our proposed relationship with Ixtal a firmer place in imperial policy. Strengthen public confidence and the authority behind the pact we seek to sustain."
 
 SHU_example_cb_ixtal: "Elemental Exchange"
-SHU_example_cb_ixtal_desc: "Ixtali elemental theory and Shuriman engineering arose from ancient traditions. A guarded exchange will advance both states."
+SHU_example_cb_ixtal_desc: "Put the technical lessons sought through our dealings with Ixtal to work in Shurima. Support the study of electronic devices and strengthen confidence in the policy guiding this exchange."
 
 SHU_example_noxian_start: "The Noxian Question"
-SHU_example_noxian_start_desc: "Noxus is an expansionist empire built on strength, vision, and guile. Shurima must decide whether to bargain with it, divide it, or meet it in war."
+SHU_example_noxian_start_desc: "Shurima must prepare a course toward Noxus while its coast remains within reach. Gather military experience and political authority before deciding whether confrontation or diplomacy will serve the restored state."
 
-SHU_example_aa_noxian: "Demand Noxian Submission"
-SHU_example_aa_noxian_desc: "The Trifarix will be offered a place beneath Shuriman supremacy. Refusal will reveal whether Noxian strength matches its boasts."
+SHU_example_aa_noxian: "Pursue Noxian Submission"
+SHU_example_aa_noxian_desc: "Commit the government to seeking Noxian submission beneath Shuriman authority. Build confidence in this course at home before making any demand abroad."
 
-SHU_example_ba_noxian: "Win over the Border Legions"
-SHU_example_ba_noxian_desc: "Noxian soldiers respect proven strength. Defectors and cooperative commanders can weaken the empire before the decisive confrontation."
+SHU_example_ba_noxian: "Rally Against Noxus"
+SHU_example_ba_noxian_desc: "Strengthen the mandate for our chosen course against Noxus. Rally supporters behind the government and prepare them for the possibility of a wider struggle."
 
-SHU_example_ca_noxian: "A Shuriman Governor in Noxus"
-SHU_example_ca_noxian_desc: "A loyal military administration will preserve order while Noxian institutions are bent toward Shurima."
+SHU_example_ca_noxian: "Prepare the Noxian Campaign"
+SHU_example_ca_noxian_desc: "The pursuit of imperial supremacy requires commanders ready for the struggle. Develop their experience and strengthen support for the campaign we intend to undertake."
 
 SHU_example_ab_noxian: "Treat with the Trifarix"
-SHU_example_ab_noxian_desc: "Might, Vision, and Guile offer a language the restored empire understands. A hard bargain may secure a powerful continental partner."
+SHU_example_ab_noxian_desc: "Prepare a diplomatic approach toward the Noxian leadership. Strengthen the authority and confidence behind our negotiating position before seeking a bargain with the other empire."
 
 SHU_example_bb_noxian: "Arms Across the Mountains"
-SHU_example_bb_noxian_desc: "Trade with Noxian foundries will expand our arsenals while binding influential warbands to the agreement."
+SHU_example_bb_noxian_desc: "Our diplomatic course must rest on an arsenal of our own. Establish a new arms workshop in land we own and control, giving the government firmer means to sustain its policy."
 
-SHU_example_cb_noxian: "Joint Desert Exercises"
-SHU_example_cb_noxian_desc: "Noxian discipline and Shuriman mobility will be tested together in the Great Sai."
+SHU_example_cb_noxian: "Reinforce the Desert Host"
+SHU_example_cb_noxian_desc: "Bring fresh recruits into Shurima's available manpower and draw on the experience of our commanders. The desert host must be ready to support the course our government has chosen."
 
 SHU_example_ac_noxian: "Prepare War with Noxus"
-SHU_example_ac_noxian_desc: "Two empires claim the right to shape the continent. We will settle the question on the battlefield."
+SHU_example_ac_noxian_desc: "Gather the political authority and public confidence needed to prepare for confrontation with Noxus. Establish our intended course before deciding when and how it will be carried into action."
 
 SHU_example_bc_noxian: "Shatter the Border Forts"
-SHU_example_bc_noxian_desc: "The roads through the mountains must be opened before the main host advances into Noxian territory."
+SHU_example_bc_noxian_desc: "Prepare the legions for the hard fighting that a Noxian frontier campaign would demand. Develop their experience and rally support for the advance we intend to attempt."
 
 SHU_example_cc_noxian: "The Empire against the Trifarix"
-SHU_example_cc_noxian_desc: "The campaign will not end with a frontier concession. Noxian power must be broken so completely that it cannot return to Shurima."
+SHU_example_cc_noxian_desc: "The hardliners demand that Shurima persist in its struggle against Noxian power. Rally their supporters and draw lessons for the legions, accepting that this determination will strain stability at home."
 
 SHU_example_ionian_start: "The Ionian Question"
-SHU_example_ionian_start_desc: "Ionia is a living land of diverse provinces, spiritual orders, and battle-scarred communities. Any Shuriman policy there must account for all three."
+SHU_example_ionian_start_desc: "A course toward Ionia must be established before Shurima acts beyond the sea. Gather the authority needed to weigh imperial demands against other approaches to the First Lands."
 
-SHU_example_aa_ionian: "Demand Ionian Submission"
-SHU_example_aa_ionian_desc: "The First Lands will retain local customs only if their leaders recognize Shuriman authority."
+SHU_example_aa_ionian: "Pursue Ionian Submission"
+SHU_example_aa_ionian_desc: "Commit our government to seeking recognition of Shuriman authority in Ionia. Strengthen confidence in that policy at home before attempting to enforce it abroad."
 
 SHU_example_ba_ionian: "Break Provincial Resistance"
-SHU_example_ba_ionian_desc: "Every province fights in its own way. Mobile columns will isolate resistant orders before they can unite."
+SHU_example_ba_ionian_desc: "The pursuit of supremacy in Ionia will demand steadier direction from the capital. Consolidate the government's mandate and public confidence before confronting the resistance we anticipate."
 
-SHU_example_ca_ionian: "Shuriman Protectors of Ionia"
-SHU_example_ca_ionian_desc: "A protectorate will leave village and spiritual affairs in Ionian hands while placing foreign policy beneath the empire."
+SHU_example_ca_ionian: "Prepare the Ionian Host"
+SHU_example_ca_ionian_desc: "Develop the experience of our commanders and rally support for the course chosen toward Ionia. The legions must be prepared before they can attempt to carry that policy beyond our shores."
 
-SHU_example_ab_ionian: "Annex the First Lands"
-SHU_example_ab_ionian_desc: "Ionia's strategic ports and fertile provinces will be incorporated directly into the restored empire."
+SHU_example_ab_ionian: "Prepare Ionian Integration"
+SHU_example_ab_ionian_desc: "Build the government's mandate for the relationship it seeks with the First Lands. Strengthen confidence in this course before attempting any change to the political order beyond our borders."
 
-SHU_example_bb_ionian: "Secure the Navori Roads"
-SHU_example_bb_ionian_desc: "Navori lies at the heart of Ionian politics. Holding its roads will let the administration reach the surrounding provinces."
+SHU_example_bb_ionian: "Study Ionian Methods"
+SHU_example_bb_ionian_desc: "Support technical study arising from our interest in the First Lands. Direct that learning toward electronic devices and gather the authority needed to sustain the effort."
 
-SHU_example_cb_ionian: "Pacify the Provinces"
-SHU_example_cb_ionian_desc: "Patient garrisons and local agreements will end scattered resistance without destroying the land we intend to govern."
+SHU_example_cb_ionian: "Gather the Expeditionary Recruits"
+SHU_example_cb_ionian_desc: "Gather fresh recruits for Shurima's available manpower and develop the experience of our commanders. Our forces must be prepared to carry the policy chosen toward Ionia."
 
 SHU_example_ac_ionian: "Seek an Ionian Accord"
-SHU_example_ac_ionian_desc: "Both Shurima and Ionia remember invasion and ruin. Mutual recognition can turn that history into cooperation."
+SHU_example_ac_ionian_desc: "Rally confidence in seeking an accord with Ionia. Strengthen the authority behind this diplomatic ambition before pursuing agreement with those beyond our shores."
 
 SHU_example_bc_ionian: "Wisdom of the First Lands"
-SHU_example_bc_ionian_desc: "Ionian healers, artisans, and spiritual teachers preserve knowledge unknown in the desert. Their exchange will strengthen the realm."
+SHU_example_bc_ionian_desc: "Turn the lessons sought from the First Lands toward the preparation of our commanders. Develop their experience and strengthen support for the course we intend to carry forward."
 
-SHU_example_cc_ionian: "Alliance of Ancient Lands"
-SHU_example_cc_ionian_desc: "Two of Runeterra's oldest civilizations will stand together while respecting the balance that sustains the First Lands."
+SHU_example_cc_ionian: "Rally for the Ionian Compact"
+SHU_example_cc_ionian_desc: "Call for renewed resolve behind our intended course toward Ionia. The legions will gain experience and supporters will rally, though this commitment will strain stability at home."
 
-SHU_scout_remote_islands: "Scout Remote Islands"
-SHU_scout_remote_islands_desc: "Send expeditions to scout the remote islands around Bilgewater. This will gather valuable information and open up new opportunities for expansion."
+SHU_scout_remote_islands: "Extend Influence to Bilgewater"
+SHU_scout_remote_islands_desc: "Our coastal foothold gives Shurima a route to Bilgewater. We will use it to promote our political influence among its people and prepare for further imperial dealings."
 
 SHU_pirate_hunt: "Pirate Hunt"
-SHU_pirate_hunt_desc: "Launch a campaign to hunt down pirates in the Bilgewater region. This will secure the area and ensure safe passage for our ships."
+SHU_pirate_hunt_desc: "Prepare our maritime service for a campaign against piracy around Bilgewater. Develop the experience of our captains and rally support for the pursuit of safer passage."
 
 SHU_pirate_alliance: "Pirate Alliance"
-SHU_pirate_alliance_desc: "Form an alliance with the pirates of Bilgewater. This will leverage their knowledge and skills for our benefit."
+SHU_pirate_alliance_desc: "Invite Bilgewater to stand within our faction while its captains remain outside another alliance and at peace with us. The invitation offers a place beside Shurima; their response must decide whether that partnership is formed."
 
-SHU_independant_republic: "Independent Republic"
-SHU_independant_republic_desc: "Support the establishment of an independent republic in Bilgewater. This will create a stable and friendly government in the region."
+SHU_independant_republic: "Seek Aurman Submission"
+SHU_independant_republic_desc: "If Aurma still stands, demand its submission and await its response. If its state has fallen, reconstitute an administration beneath Shuriman authority from eligible Aurman core lands fully under our control, excluding our own claimed and core territories."
 
-SHU_autonomus_state: "Autonomous State"
-SHU_autonomus_state_desc: "Recognize Bilgewater as an autonomous state. This will ensure their cooperation and maintain stability in the region."
+SHU_autonomus_state: "Reconstitute Aurma as a Subject"
+SHU_autonomus_state_desc: "Where Aurma has ceased to exist and eligible Aurman core lands are fully under our control, restore its administration beneath Shuriman authority. Lands claimed by or core to Shurima will remain outside this transfer."
 
-SHU_rule_aurma: "Rule Aurma"
-SHU_rule_aurma_desc: "Establish Shuriman rule over Aurma. This will secure the region and integrate it into our empire."
+SHU_rule_aurma: "The Aurma Question"
+SHU_rule_aurma_desc: "Establish a course toward Aurma while our coast provides a foothold for maritime policy. Gather political authority and naval experience before choosing the relationship Shurima will pursue."
 
 SHU_potential_alliance: "Potential Alliance"
-SHU_potential_alliance_desc: "Explore the possibility of forming an alliance with Aurma. This will ensure mutual benefits and strengthen our position."
+SHU_potential_alliance_desc: "Invite Aurma to stand beside Shurima within our faction while it remains outside another alliance and at peace with us. Its response must determine whether this prospective partnership is formed."
 
 SHU_rebuilding_our_armada: "Rebuilding Our Armada"
 SHU_rebuilding_our_armada_desc: "It is time we start rebuilding our fleets to their former glory! By revitalizing our naval forces, we will ensure the protection of our trade routes, assert our dominance at sea, and prepare for any maritime challenges. This will strengthen our naval capabilities and secure Shurima's position as a formidable maritime power."
@@ -240,103 +240,103 @@ SHU_merchant_fleet_desc: "Establish a strong and expansive merchant fleet to boo
 
 # TODO: Write Definition + Maybe BOP: Guild vs Workers
 SHU_work_unions: "Work Unions"
-SHU_work_unions_desc: "Form work unions to represent and protect the interests of our labor force. This will improve working conditions, increase productivity, and ensure the well-being of our workers, fostering loyalty and stability within the empire."
+SHU_work_unions_desc: "Organize the labor force around the work of restoration. The unions will strengthen factory output, ease civilian demands on industry and support a steadier recovery of stability."
 
 #TODO: We must give the Marai People a reason to help us! + Idea
-SHU_marai_dockyards: "Marai Shipbuilders"
-SHU_marai_dockyards_desc: "We must give the Marai People a reason to help us! It's high time we get a fleet, and only by rewarding the Marai shipbuilders a more integral part of the empire can this slow process be lifted!\n\n§GHint: Our naval expansion will be alot faster with Nami on our side!§!"
+SHU_marai_dockyards: "Seize the Marai Coast"
+SHU_marai_dockyards_desc: "Bring the Marai lands directly under imperial control and turn their annexation toward our naval ambitions. Where we own and control a coastal site, establish new dockyard capacity and draw on the experience gained for Shurima's maritime service."
 
 #TODO: The Marai People are willing to help us, however their skillset needs to be
-SHU_marai_dockyards_company: "Hire Marai Company"
-SHU_marai_dockyards_company_desc: "The Marai People are willing to help us, however their skillset needs to be developed! \n\nUtilize the shipbuilding expertise of Marai This will enhance our naval capabilities and strengthen our maritime presence."
+SHU_marai_dockyards_company: "Marai Shipbuilding Company"
+SHU_marai_dockyards_company_desc: "With the Moonstone secured and an alliance with Nazumah established, we can develop the Marai shipbuilding partnership. Where we hold a coastal state, new dockyards will strengthen our naval industry."
 
 SHU_military_complex: "Military Complex"
 SHU_military_complex_desc: "Develop a state-of-the-art military complex to bolster our defense capabilities. This will enhance our military production, improve training facilities, and ensure our armed forces are well-equipped and prepared for any conflict."
 
 
 SHU_example_ba_aurma: "Naval Cooperation"
-SHU_example_ba_aurma_desc: "Aurman pilots and Shuriman resources can patrol the southern waters more effectively together."
+SHU_example_ba_aurma_desc: "Put the lessons of our approach to Aurma before the imperial maritime service. Develop naval experience and strengthen the authority needed to pursue cooperation."
 
 SHU_example_ca_aurma: "A Southern Maritime Pact"
-SHU_example_ca_aurma_desc: "A formal pact will protect Aurma's islands and give Shurima dependable access to its sea lanes."
+SHU_example_ca_aurma_desc: "Rally our maritime service behind the pact we seek in the southern seas. Strengthen naval experience and public resolve before attempting to secure that relationship."
 
-SHU_example_bb_aurma: "Guarantee Aurman Independence"
-SHU_example_bb_aurma_desc: "Aurma may govern itself under an imperial guarantee, provided its harbors remain friendly to Shuriman vessels."
+SHU_example_bb_aurma: "Affirm the Aurman Arrangement"
+SHU_example_bb_aurma_desc: "Strengthen confidence in the political arrangement we seek for Aurma. Gather authority behind our intended autonomy policy without presuming that this proclamation alone changes its status."
 
-SHU_example_cb_aurma: "Treaty Ports"
-SHU_example_cb_aurma_desc: "Shared ports will turn political goodwill into repair yards, supply depots, and protected commerce."
+SHU_example_cb_aurma: "Reinforce the Maritime Service"
+SHU_example_cb_aurma_desc: "Bring fresh recruits into Shurima's available manpower and develop the experience of its maritime service. Our ambitions at sea need people and judgment before they can be sustained."
 
-SHU_example_bc_aurma: "An Aurman Assembly"
-SHU_example_bc_aurma_desc: "Local representatives will manage island affairs within a broad Shuriman autonomous framework."
+SHU_example_bc_aurma: "Support Coastal Shipbuilding"
+SHU_example_bc_aurma_desc: "Give our maritime policy a stronger industrial foundation. Where we own and control a coastal site, establish another dockyard and strengthen the authority supporting the work."
 
 SHU_example_cc_aurma: "Autonomous Fleet Command"
-SHU_example_cc_aurma_desc: "Aurman officers will retain command at sea while coordinating strategy with the imperial admiralty."
+SHU_example_cc_aurma_desc: "Develop the experience of our maritime service and rally support for its course. The arrangement sought for Aurma must be supported by sound naval judgment, rather than assumed changes to its officers or command."
 
 # SHU_shuriman_ship_builders: "Shuriman Ship Builders"
 # SHU_shuriman_ship_builders_desc: "Utilize the shipbuilding expertise of Aurma. This will enhance our naval capabilities and strengthen our maritime presence."
 
 SHU_example_bd_aurma: "Imperial Naval Contracts"
-SHU_example_bd_aurma_desc: "Long-term contracts will place Aurma's shipwrights at the center of Shuriman naval expansion."
+SHU_example_bd_aurma_desc: "Strengthen the government's authority behind its naval contracting ambitions. Rally confidence in the policy intended to bring Aurma's shipbuilding into Shurima's plans."
 
-SHU_example_cd_aurma: "Integrate the Aurman Fleet"
-SHU_example_cd_aurma_desc: "Common doctrine, signals, and supply will make the Aurman and Shuriman fleets one force in practice."
+SHU_example_cd_aurma: "Rally the Imperial Maritime Service"
+SHU_example_cd_aurma_desc: "Develop the experience and resolve of our maritime service for the next stage of imperial policy. This greater commitment will strain stability at home, rather than automatically placing Aurma's ships under our command."
 
-SHU_overseer_taliyah: "Overseer Taliyah"
-SHU_overseer_taliyah_desc: "Appoint Taliyah as the overseer of the Crystal Scar. Her guidance will ensure the efficient development and control of the region."
+SHU_overseer_taliyah: "Seek Taliyah's Counsel"
+SHU_overseer_taliyah_desc: "Shurima should seek Taliyah's counsel as it considers the future of the Crystal Scar. A policy mindful of those who live upon the land can strengthen confidence in the crown."
 
-SHU_taliyahs_supervision: "Taliyah's Supervision"
-SHU_taliyahs_supervision_desc: "Enhance Taliyah's supervision over the Crystal Scar. This will ensure the proper management and utilization of the region's resources."
+SHU_taliyahs_supervision: "Lessons of the Stoneweaver"
+SHU_taliyahs_supervision_desc: "Taliyah's command of stone offers an example for those studying the earth beneath Shurima. We will support excavation research and seek a steadier approach to developing the region."
 
 SHU_our_crystal_scar: "Our Crystal Scar"
-SHU_our_crystal_scar_desc: "Secure the Crystal Scar under Shuriman control. This will ensure the stability and prosperity of the region."
+SHU_our_crystal_scar_desc: "Put the ambitions of our Crystal Scar policy behind a new effort to develop tungsten resources in lands we own and control. Strengthen the government's mandate for this program without mistaking a proclamation for territorial possession."
 
 SHU_develop_crystal_scar: "Develop Crystal Scar"
-SHU_develop_crystal_scar_desc: "Invest in the development of the Crystal Scar. This will enhance its economic and strategic value for Shurima."
+SHU_develop_crystal_scar_desc: "Support the development program through new civilian production in our own controlled lands. Establish a workshop and strengthen the authority needed to carry our chosen policy forward."
 
 SHU_approach_piltover: "Approach Piltover"
-SHU_approach_piltover_desc: "Engage with Piltover to explore potential alliances and opportunities. This will set the foundation for future interactions and strategies."
+SHU_approach_piltover_desc: "Shurima will carry its political influence into Piltover. Our envoys will promote the principles of our government as we prepare for further dealings with the city."
 
-SHU_annex_piltover: "Annex Piltover"
-SHU_annex_piltover_desc: "Initiate the annexation of Piltover into the Shuriman Empire. This bold move will expand our territory and increase our power."
+SHU_annex_piltover: "Demand Piltover's Annexation"
+SHU_annex_piltover_desc: "We will press Piltover to accept incorporation into the empire. Its government can accept our demand or refuse, leaving Shurima with a cause for an annexation campaign."
 
 SHU_deep_pockets_piltover: "Deep Pockets of Piltover"
-SHU_deep_pockets_piltover_desc: "Tap into the vast wealth of Piltover to fund our projects and ambitions. This will enhance our economic strength and capabilities."
+SHU_deep_pockets_piltover_desc: "Give the industrial ambitions of our Piltover policy a foundation within Shurima. Establish a civilian workshop in land we own and control, strengthening the government's authority to sustain its projects."
 
 SHU_mutal_assurance: "Mutual Assurance"
-SHU_mutal_assurance_desc: "Form a pact of mutual assurance with Piltover. This will ensure cooperation and stability between our regions."
+SHU_mutal_assurance_desc: "Rally confidence behind the assurances we seek with Piltover. Strengthen the government's mandate for cooperation before attempting to settle that relationship through agreement."
 
 SHU_hostile_takeover: "Hostile Takeover"
-SHU_hostile_takeover_desc: "Execute a hostile takeover of Piltover's key industries. This will assert our control and integrate Piltover's resources into Shurima."
+SHU_hostile_takeover_desc: "Rally support for a forceful course toward Piltover and prepare our commanders for the struggle it may bring. This determination will strain stability at home; control of foreign industry must still be won."
 
 SHU_brain_gain: "Brain Gain"
-SHU_brain_gain_desc: "Attract the brightest minds from Piltover to Shurima. This will boost our technological advancements and innovation."
+SHU_brain_gain_desc: "Support technical study drawing upon the expertise sought through our Piltover policy. Accelerate research into electronic devices and strengthen the authority sustaining that effort."
 
-SHU_new_management_piltover: "New Management in Piltover"
-SHU_new_management_piltover_desc: "Install new management to oversee Piltover's integration into the Shuriman Empire. This will ensure efficient control and governance."
+SHU_new_management_piltover: "Administer the Piltover Policy"
+SHU_new_management_piltover_desc: "Give our intended Piltover policy firmer administrative and industrial support within Shurima. Build public confidence and establish a new civilian workshop in land we own and control."
 
 SHU_approach_zaun: "Approach Zaun"
-SHU_approach_zaun_desc: "Engage with Zaun to explore potential alliances and opportunities. This will set the foundation for future interactions and strategies."
+SHU_approach_zaun_desc: "We will make Shurima's political case in Zaun and seek support for our governing principles. This approach will extend our influence before the crown decides its next course."
 
 SHU_silco_plan: "Silco's Plan"
-SHU_silco_plan_desc: "Support Silco's plan to take over Zaun. This will create a puppet state under our influence and control."
+SHU_silco_plan_desc: "Commit imperial backing to the prospect of Silco gaining authority in Zaun. Gather the political mandate for this course before attempting to bring that ambition into effect."
 
 SHU_futher_funding: "Further Funding"
-SHU_futher_funding_desc: "Provide additional funding to our allies in Zaun. This will strengthen our influence and ensure their loyalty."
+SHU_futher_funding_desc: "Provide our chosen Zaun policy with an arsenal of its own. Establish a new arms workshop in Shurima's owned and controlled lands and strengthen the authority behind the program."
 
 SHU_shadow_plan: "Shadow Plan"
-SHU_shadow_plan_desc: "Implement a covert plan to gain control over Zaun's key resources and industries. This will secure our dominance in the region."
+SHU_shadow_plan_desc: "Prepare a covert course toward Zaun before attempting to carry it into effect. Develop military experience and political authority behind the plan, without presuming that its targets are already ours."
 
 SHU_shadow_deal: "Shadow Deal"
-SHU_shadow_deal_desc: "Make a secret deal with key players in Zaun. This will ensure their cooperation and strengthen our control over the region."
+SHU_shadow_deal_desc: "Strengthen support for the covert arrangement we seek in Zaun. Build the authority and public confidence needed to sustain our chosen policy without presuming that foreign cooperation has already been secured."
 
-SHU_annex_zaun: "Annex Zaun"
-SHU_annex_zaun_desc: "Initiate the annexation of Zaun into the Shuriman Empire. This bold move will expand our territory and increase our power."
+SHU_annex_zaun: "Demand Zaun's Annexation"
+SHU_annex_zaun_desc: "Shurima will demand that Zaun come under direct imperial rule. Acceptance would permit incorporation; refusal will provide grounds for an annexation campaign."
 
-SHU_chemical_warefare: "Chemical Warfare"
-SHU_chemical_warefare_desc: "Develop and utilize chemical warfare tactics. This will enhance our military capabilities and strike fear into our enemies."
+SHU_chemical_warefare: "Zaunite Arms Research"
+SHU_chemical_warefare_desc: "Direct the technical ambitions of our Zaun policy toward improved infantry weapons. Develop military experience and support for the program while accelerating the research needed to equip the legions."
 
-SHU_new_management_zaun: "New Management in Zaun"
-SHU_new_management_zaun_desc: "Install new management to oversee Zaun's integration into the Shuriman Empire. This will ensure efficient control and governance."
+SHU_new_management_zaun: "Administer the Zaun Policy"
+SHU_new_management_zaun_desc: "Support our intended Zaun policy through steadier administration and arms production within Shurima. Build confidence in the government and establish a new arms workshop in land we own and control."
 
 # SHU_recover_our_sand: "Recover Our Sand"
 # SHU_recover_our_sand_desc: "Reclaim the lost territories of Shurima. This will restore our empire to its former glory and ensure the unity of our lands."
@@ -516,25 +516,25 @@ SHU_irigation_system: "Irrigation System"
 SHU_irigation_system_desc: "Implement a comprehensive irrigation system to revitalize our agricultural lands. This will boost food production and ensure the prosperity of our people."
 
 SHU_diverse_farmland: "Diverse Farmland"
-SHU_diverse_farmland_desc: "Develop a diverse range of farmlands across Shurima. This will ensure a stable food supply and enhance our economic strength."
+SHU_diverse_farmland_desc: "Support a broader agricultural program with technical study and steadier public confidence. Advance industrial research and strengthen the authority needed to pursue the productive lands we envision."
 
 SHU_shuriman_guilds: "Shuriman Guilds"
-SHU_shuriman_guilds_desc: "Establish powerful guilds to oversee various industries and trades. These guilds will organize production, enhance trade, and strengthen our economy."
+SHU_shuriman_guilds_desc: "Bring Shurima's guilds into the work of restoration and convene their first meeting. Set aside new building capacity throughout the core lands firmly under our control, giving their industrial efforts room to grow."
 
 SHU_war_guild: "War Guild"
-SHU_war_guild_desc: "Form a War Guild to coordinate the production of military supplies and equipment. This will ensure our armies are well-equipped to defend Shurima."
+SHU_war_guild_desc: "The armies of a restored empire need workshops as well as weapons. The War Guild will expand civilian production across our fully controlled heartlands, laying a broader industrial foundation for Shurima."
 
 SHU_craft_guild: "Craft Guild"
-SHU_craft_guild_desc: "Create a Craft Guild to promote and regulate the production of goods and crafts. This will boost our industrial capabilities and improve the quality of life for our citizens."
+SHU_craft_guild_desc: "Organize the craft guild around the building work Shurima's renewal demands. Its methods will accelerate civilian-factory construction, helping turn the restored state's plans into productive workshops."
 
 SHU_rebuilding_our_harbours: "Rebuild Our Harbours"
-SHU_rebuilding_our_harbours_desc: "Reconstruct and modernize our harbours to facilitate trade and strengthen our naval capabilities. This will boost our economy and improve our maritime defenses."
+SHU_rebuilding_our_harbours_desc: "Shurima must recover the craft and discipline needed to work its coasts. Where we own and control a coastal site, establish a new dockyard and lay the foundations of a renewed maritime service."
 
 SHU_stronger_fleet: "Stronger Fleet"
 SHU_stronger_fleet_desc: "We must modernize our naval fleet to protect our trade routes and assert our dominance at sea. A stronger navy is essential! We need a stronger navy for the security and prosperity of Shurima."
 
 SHU_shuriman_legions: "Shuriman Legions"
-SHU_shuriman_legions_desc: "Raise and equip the Shuriman Legions to defend our empire. These elite forces will ensure the safety and stability of our realm."
+SHU_shuriman_legions_desc: "The legions cannot be sustained by the army alone. Put the economy on a wartime footing, directing the resources of the restored state toward the demands of its defense."
 
 # SHU_arm_the_defenders: "Arm the Defenders"
 # SHU_arm_the_defenders_desc: "Provide weapons and equipment to our defenders. This will enhance our defensive capabilities and ensure that Shurima is protected from external threats."
@@ -542,8 +542,8 @@ SHU_shuriman_legions_desc: "Raise and equip the Shuriman Legions to defend our e
 SHU_rebuild_armory2: "Rebuild Armory"
 SHU_rebuild_armory2_desc: "Reconstruct our armories to ensure a steady supply of military equipment. This will strengthen our military forces and improve our readiness for conflict."
 
-SHU_refilling_armory: "Refill Armory"
-SHU_refilling_armory_desc: "Restock our armories with weapons and supplies. This will ensure our military is well-prepared and equipped for any potential threats."
+SHU_refilling_armory: "Expand the Armory"
+SHU_refilling_armory_desc: "A rebuilt arsenal must grow with the demands of the legions. Expand arms production at an eligible site in our own controlled lands, laying the industrial foundation for replenishing our stores."
 
 SHU_expand_armory: "Expand Armory"
 SHU_expand_armory_desc: "Develop and produce advanced weaponry for our troops. This will enhance their protection and effectiveness we have in combat!"
@@ -555,7 +555,7 @@ SHU_public_order2: "Public Order"
 SHU_public_order2_desc: "Establish public order across Shurima. This will ensure stability and security, allowing our people to live in peace and prosperity."
 
 SHU_imperial_law: "Imperial Law"
-SHU_imperial_law_desc: "Implement Imperial Law to govern the lands of Shurima. This will provide a unified legal framework and ensure justice throughout the empire."
+SHU_imperial_law_desc: "A renewed Shurima needs laws that can bind its scattered communities to a common authority. Establish a clearer legal order, strengthening public confidence in the institutions that govern our lands."
 
 SHU_plan_frontlines2: "Plan Frontlines"
 SHU_plan_frontlines2_desc: "Strategically plan our frontlines to defend against potential threats. This will strengthen our defensive positions and ensure the security of our borders."
@@ -566,11 +566,11 @@ SHU_defensive_lines2_desc: "Establish defensive lines to protect our territory. 
 SHU_storm_nerimazeth2: "Storm Nerimazeth"
 SHU_storm_nerimazeth2_desc: "Launch an offensive to capture Nerimazeth. This strategic move will expand our territory and weaken our enemies."
 
-SHU_hunters_for_hire: "Hunters for Hire"
-SHU_hunters_for_hire_desc: "Recruit skilled hunters of Nazumah to bolster our forces. These hunters will provide valuable support in our military campaigns and help secure Shurima.\n\n§YHire K'sante, Kassadin, Jax if possible!§!"
+SHU_hunters_for_hire: "Enlist Kassadin"
+SHU_hunters_for_hire_desc: "Seek Kassadin's service while he remains available beyond our borders. Bring the Void Walker into Shurima's ranks, placing his counsel and experience at the disposal of our struggle."
 
 SHU_shuriman_recognition: "Shuriman Recognition"
-SHU_shuriman_recognition_desc: "Seek recognition for Shurima on the international stage. This will enhance our diplomatic standing and secure alliances with other nations."
+SHU_shuriman_recognition_desc: "Extend a formal gesture of recognition between Shurima and Nazumah. Let it stand as a statement of the relationship we seek, without presuming that recognition alone settles their differences."
 
 SHU_minors: "Minor Nations"
 SHU_minors_desc: "Address the issues and concerns of the minor nations within our borders. This will ensure their loyalty and integration into the Shuriman Empire."
@@ -593,19 +593,19 @@ SHU_rebuild_trade_routes_desc: "Re-establish our ancient trade routes to bring w
 
 
 SHU_imperial_courts: "Imperial Courts"
-SHU_imperial_courts_desc: "Our lands have been Lawless for too long! It's time we bring law and order to this deserted wasteland! Law returns, ready to start a long journey of re-alignment of Shuriman Values."
+SHU_imperial_courts_desc: "A throne cannot restore order by proclamation alone. Reestablish the imperial courts so that disputes can be heard under a common authority and confidence in the crown can take root."
 
 SHU_sun_disc_restorations: "Sun Disc Restorations"
-SHU_sun_disc_restorations_desc: "Our commitment to restoring the heart of Shurima, the Sun Disc, to its former glory starts here! With this monumental task ahead of us, we must channel all our resources, knowledge, and determination into reviving the ancient artifact that once brought us power beyond measure. The future of Shurima hinges on our success in this endeavor, as the Sun Disc's radiant light shall guide our empire to unprecedented heights..."
+SHU_sun_disc_restorations_desc: "The Sun Disc must stand at the heart of a living capital, not amid neglected ruins. Organize the restoration works and establish a new civilian workshop, giving the crown the means and authority to sustain its renewal."
 
 SHU_our_leader: "Our Leader"
-SHU_our_leader_desc: "The future of our nation stands at a crossroads, with two distinct paths laid before us. \n\nChoose your path wisely, as 'Our Leaders' visions of tomorrow, are quite incompatable... Should Azir let go? Let his Decendants rule their fate? Or Should Sivir Trust Azir? That his vision of a great existance for all is even possible? Right, now life is very bleak, the future of shurima is in your hands... do not squander it!"
+SHU_our_leader_desc: "Shurima must decide who will carry its restored crown. Will Azir continue the work of imperial restoration, or yield the throne to Sivir and the different future she would seek?"
 
 SHU_emperor: "Emperor Azir"
-SHU_emperor_desc: "Azir is a resolute and unwavering leader, \nAs Emperor he restores faith in the idea of restoring the Shurima Empire to its former glory, through ruthless  expansion using his unwavering determination and sheer brute force strenght to do so."
+SHU_emperor_desc: "Azir will retain the imperial throne and the burden of restoring Shurima. His authority rests on the promise that the scattered lands can once again stand beneath a common crown."
 
 SHU_empress: "Empress Sivir"
-SHU_empress_desc: "Sivir offers a vision of more stable and peaceful rule, prioritizing diplomacy, internal alignment and stability over conquest."
+SHU_empress_desc: "Azir will relinquish his imperial role, and Sivir will take the throne. The mercenary captain must now turn her resolve toward governing Shurima, seeking the steadier rule envisioned for her crown."
 SHU_empress_effect: "§BSivir Becomes our new Ruler!§!"
 
 SHU_imperial_law2: "Imperial Law"
@@ -616,19 +616,19 @@ SHU_question_of_slavery2: "Question of Slavery"
 SHU_question_of_slavery2_desc: "Address the issue of slavery within Shurima. This crucial decision will shape the future of our society and define our moral standing."
 
 SHU_question_of_slavery: "Question of Slavery"
-SHU_question_of_slavery_desc: "For millennia ago, the Slavery Question was settled; we no longer needed slavery, and so, we abolished the unethical practice of enslaving our Shuriman brothers and sisters. The Sun Service was enough to keep the empire strong. But those days are long gone, and now the abolitionist stance we had on slavery is all but a old mythic tale... \n \nWe find ourselves in a new era, no longer in a position of absolute power. By reintroducing the old laws as they were last recorded, we also reestablish the institution of enslavement and begin to regulate the Slave Trade as a whole. How do we proceed with this moral and ethical dilemma, knowing we must free all the sons and daughters of the sun? \n \nAs we contemplate the reintroduction of an institution long abolished, we must navigate a treacherous path. Will we choose to embrace the shadows of our history or seek a more equitable and enlightened future for our nation? \n \nThe decision lies in our hands, and the world will be watching closely...\n"
+SHU_question_of_slavery_desc: "The restoration has reopened the question of bondage and the obligations owed to Shurima's people. Bring the dispute before our institutions: the authority we claim will be judged by the laws we choose to uphold."
 
 SHU_plan_frontlines: "Plan Frontlines"
-SHU_plan_frontlines_desc: "We must plan out a extensive offensive campaign against Xerath & Renekton before they get the chance to strike!"
+SHU_plan_frontlines_desc: "The restored legions need a plan before they march against the empire's enemies. Study the approaches to Xerath's strongholds and prepare our commanders for the campaigns ahead."
 
 SHU_defensive_lines: "Defensive Lines"
-SHU_defensive_lines_desc: "We barely have any army! Xerath's followers will attack us shortly! We must stand ready to defend whats left of the sun disc!"
+SHU_defensive_lines_desc: "The legions must learn to hold what Shurima has restored. Strengthen their defensive formations so that the empire's enemies face a steadier shieldwall."
 
 SHU_storm_nerimazeth: "Storm Nerimazeth"
-SHU_storm_nerimazeth_desc: "Time to launch offensive attack against Xerath & Renekton before they get the chance to strike! If this is the final stand we make then let it be... Glorious! FOR SHURIMA!"
+SHU_storm_nerimazeth_desc: "Prepare to carry the struggle against Xerath to Nerimazeth. Establish our claim to war and rally the legions for an offensive, leaving the hour of the march to our command."
 
 SHU_rebuild_armory: "Rebuild Armory"
-SHU_rebuild_armory_desc: "War loom on our doorstep! We need to Rebuild Shuriman Armory to its former glory. This mighty endeavor to resurrect the remnants of Shurima's once-proud arsenal, is a long and hard path..."
+SHU_rebuild_armory_desc: "The restored legions need an arsenal capable of sustaining their service. Where an owned province under our control has room for arms works, establish new production halls and rebuild Shurima's capacity to equip its defenders."
 
 SHU_aircraft_industry: "Aircraft Industry"
 SHU_aircraft_industry_desc: "We must build up our airfleet to ensure air supremacy against all the dragons and aircrafts that pose a threat to our empire"
@@ -643,7 +643,7 @@ SHU_shurima_stand_tall: "STAND TALL SHURIMA!"
 SHU_shurima_stand_tall_desc: "Once More We stand at the gates of History! No Longer shall we take the filth left over by others! STAND TALL DAUGHTERS OF SHURIMA, STAND STRONG SONS OF THE SUN TODAY WE RISE!"
 
 SHU_shrines_of_shurima: "Shrines of Shurima"
-SHU_shrines_of_shurima_desc: "Shrines of the Ascended have long been forgotton and abandonded! We need to refirbish and refine them, so our enchanters can once more, refill our armories with magical weapons!"
+SHU_shrines_of_shurima_desc: "Restoring the shrines will give our people places to honor the Ascended and renew the traditions of the old realm. Their restoration can strengthen public confidence in Shurima's future."
 
 SHU_sun_service: "Sun Service"
 SHU_sun_service_desc: "The Sun doesn't need slaves to shine! My Brothers, and Sisters... WE RISE ANEW!"
@@ -651,11 +651,11 @@ SHU_sun_service_desc: "The Sun doesn't need slaves to shine! My Brothers, and Si
 SHU_child_enslavement_bill: "Child Enslavement Bill"
 SHU_child_enslavement_bill_desc: "What role does Children in Shurima play in slavery?"
 
-SHU_open_crystal_mines: "Open Crystal Mines"
-SHU_open_crystal_mines_desc: "Amidst the arid sands of Shurima, the new lifeblood of our nation flows in the form of Hex Crystals. These mystical gems, gifted by the gods of ancient Shurima, have sustained our civilization through the dark ages. By more 'officially' opening the Hex Crystal Mine, we are able formalize and tap deeper into the vein, allowing us to sell more of this new found blue gold to our neighbours in piltover for a better price."
+SHU_open_crystal_mines: "Open Chromium Workings"
+SHU_open_crystal_mines_desc: "Carry the prospecting program into the next stage of mineral development. Open chromium resources at the designated sites wherever Shurima or its subjects maintain control."
 
-SHU_start_the_mines: "Start the Mines"
-SHU_start_the_mines_desc: "Our commitment to harness the boundless power hidden beneath the earth only grows. As we delve deeper into the heart of our land, we unlock the secrets of hexcraft. By expanding the Mines, we unearth not only the life-giving energy of the crystals but also the hope for a brighter future. With each excavation, we empower our magicians with hex, fuel our inventions with minerals, and strengthen our defense against the coming darkness." #OLD: and strengthen our defense against the encroaching darkness."
+SHU_start_the_mines: "Develop the Resource Sites"
+SHU_start_the_mines_desc: "Bring the designated resource sites into productive service wherever Shurima or its subjects hold control. Expand their capacity for building and develop rubber supplies for the restored state's industries."
 
 SHU_expand_the_mines: "Expand Mines"
 SHU_expand_the_mines_desc: "Our commitment to harness the boundless power hidden beneath the earth only grows. As we delve deeper into the heart of our land, we unlock the secrets of hexcraft. By expanding the Mines, we unearth not only the life-giving energy of the crystals but also the hope for a brighter future. With each excavation, we empower our magicians with hex, fuel our inventions with minerals, and strengthen our defense against the coming darkness." #OLD: and strengthen our defense against the encroaching darkness."
@@ -665,16 +665,16 @@ SHU_nationalize_the_mines: "Nationalize The Mines!"
 SHU_nationalize_the_mines_desc: "For too long, our people have suffered, our wealth plundered, and our spirits broken. The elite of Piltover have exploited our labor, monopolized our precious Hex Crystals, and left our lands in despair. It's time to reclaim what is rightfully ours!"
 
 # NEW
-SHU_nationalize_hexore: "Nationalize Our Hexore!"
-SHU_nationalize_hexore_desc: "For too long, our people have suffered, our wealth plundered, and our spirits broken. The elite of Piltover have exploited our labor, monopolized our precious Hex Crystals, and left our lands in despair. It's time to reclaim what is rightfully ours!"
+SHU_nationalize_hexore: "Nationalize Our Hexore"
+SHU_nationalize_hexore_desc: "Shurima will assert a national claim over its hexore industry. This policy will guide our dealings over the Crystal Scar and our wider plans for economic recovery."
 
 SHU_gold_refinement: "Gold Refinement"
-SHU_gold_refinement_desc: "By utilizing the mining gold dust left overs, in a trade secret formula we are able to increase our production tremendusly, what many would let go to waste, we make sure to utilize, our goal is simple, shuriman gold will be nothing but the best!"
+SHU_gold_refinement_desc: "The value of our mines depends on methods that recover more from the earth. Support excavation research and strengthen the authority behind a more disciplined refinement program."
 
 
 #OLD "Mineral Deposits" "Deep Mineral Veins" "Deep Minerals" "Deep Mineral Mining" "Deep Mineral Mines" "Digging Deeper" "Deep Dig" "Dig Deeper!" "Deep Mineral Ore"
 SHU_open_metal_mines: "Deep Mineral Ore"
-SHU_open_metal_mines_desc: "With Taliyah's on our side we can finally to dig deep enough to uncover untapped Mineral Deposits!"
+SHU_open_metal_mines_desc: "With Taliyah available to our government, pursue the deeper metal deposits envisioned for the resource program. Develop steel supplies at the designated sites under Shuriman or subject control."
 
 # Extra S
 SHU_gold_reserves: "Gold Reserves"
@@ -682,57 +682,57 @@ SHU_gold_reserves_desc: "The this much Gold about to enter into circulation, wil
 
 # Default
 SHU_gold_reserve: "Gold Reserve"
-SHU_gold_reserve_desc: "The this much Gold about to enter into circulation, will tank its price, its better if we build up our own gold stockpile instead, and use it to bargin with when needed, that way we also have secure funding for whatever we desire."
+SHU_gold_reserve_desc: "Organize the reserves envisioned for Shurima's renewal with greater discipline. This policy will ease the burden of civilian consumption on our industry, leaving more capacity for the state's wider ambitions."
 
 # "Gold Trade" "Golden Trade" "Golden Monopoly" "Gold Market"
 # "Gold Index" "Gold Value" "Gold Price" "Golden Profits"
 # "Price Index"  "Stock exchange" "Gold Exchange"
 
 SHU_gold_trade: "Price Index"
-SHU_gold_trade_desc: "The demand for gold is at all time high, to resolve soaring gold prices we need to take precautionary step and create gold order system let us trade our future gold at a competative gold price."
+SHU_gold_trade_desc: "Bring greater order to the trade policy pursued by our guilds. Reduce the industrial burden of civilian consumption so that Shurima can devote more of its capacity to renewal."
 
-SHU_safermines: "Safer Mines!"
-SHU_safermines_desc: "With Taliyah's on our side we can afford to take more risk!"
+SHU_safermines: "Develop the Oil Deposits"
+SHU_safermines_desc: "With Taliyah among our people, we can pursue the next stage of resource development. New oil deposits will expand the supplies available in territory we own and control."
 # "With Taliyah's on our side we can afford to dig deeper!"
 
 SHU_shuriman_university: "Shuriman University"
-SHU_shuriman_university_desc: "A new age of Enlightment is here, to harbour the shuriman minds in order for the shuriman mind to bloom."
+SHU_shuriman_university_desc: "Gather Shurima's scholars into a university devoted to the restored state's future. Expand our capacity for research and improve the pace at which new knowledge can be put to work."
 
 SHU_library_of_shurima: "Library of Shurima"
 SHU_library_of_shurima_desc: "Library of Shurima lead us to greatness! but also to our doom, this tells us that we need to re-approach our stand on 'forbidden knowledge' \n We must  reconsider and re-think for us to not repeat the mistake of the past!"
 
 SHU_rebuild_library: "Rebuild Shuriman Library"
-SHU_rebuild_library_desc: "After the great fall the library was destroyed in the darkin war, it's time to Rebuild our Libraries of Shurima."
+SHU_rebuild_library_desc: "Gather the scattered works of learning into a rebuilt Shuriman library. Expand our capacity for research and improve its pace, giving the work of renewal a stronger scholarly foundation."
 SHU_rebuild_library_tooltip: "Its time we Rebuild Shurima's library & minds from the ground up! Let's learn from the mistakes of our past and grow!"
 
 SHU_Restoring_Shuriman_Economy: "Restoring Shuriman Economy"
-SHU_Restoring_Shuriman_Economy_desc: "Restoring Economic prosperity is no small feat, but the more we try the closer we get to create the paradise we so wish to see"
-SHU_Restoring_Shuriman_Economy_TT: "Allows us to finally resolve our forsaken economic  situation"
+SHU_Restoring_Shuriman_Economy_desc: "Our mines, refiners, and hexore policy must serve a common plan for recovery. A steadier economy will strengthen confidence in the crown and give us grounds to move beyond the burdens of decline."
+SHU_Restoring_Shuriman_Economy_TT: "Completing this focus satisfies a removal condition for the Shuriman decline economy laws; it does not change the current law automatically."
 
 SHU_general_academy: "OLD"
 SHU_officer_academy: "OLD"
 
 
 SHU_officer_school: "Officer School"
-SHU_officer_school_desc: "The Officer School trains all Shuriman patriots for military careers, providing a place where officers enhance their skills to surpass our enemies!\n\n§GArmy Buffs & Better Officers§!"
+SHU_officer_school_desc: "Give the legions an institution devoted to disciplined study and military preparation. Expand research capacity while improving army intelligence, doctrine study and the effectiveness of our forces in the field."
 
 SHU_war_academy: "War Academy"
-SHU_war_academy_desc: "The military relies on the War Academy to forge a formidable skillset, sharpening minds like spears to outmatch our foes on the battlefield!\n\n§GArmy Buffs & Better Generals!"
+SHU_war_academy_desc: "Establish an academy devoted to the study of war and the preparation of the legions. Expand research capacity and improve army intelligence, doctrine study and field effectiveness through disciplined instruction."
 
 SHU_restore_great_library: "Restore Shuriman Library"
-SHU_restore_great_library_desc: "After the great fall the library was destroyed in the darkin war, it's time to Restore the once 'Great' Library of Shurima."
+SHU_restore_great_library_desc: "Extend the scholarly foundation established by our chosen school or library. Expand research capacity and, while Nasus remains available, prepare the separate restoration work that can further improve the pace of study."
 
 SHU_library_of_nasus: "Library of Nasus"
-SHU_library_of_nasus_desc: "A new age of Enlightment is here, to harbour the shuriman literature to hold, grow, and protect our shuriman knowledge."
+SHU_library_of_nasus_desc: "With Nasus serving as an adviser, give the knowledge gathered under his guidance a lasting home. Expand Shurima's research capacity so that study can accompany the restored state's ambitions."
 
 SHU_school_of_nasus: "School of Nasus"
-SHU_school_of_nasus_desc: "A new age of Enlightment is here, and Nasus is here to lead the way for shurimans futurer once again."
+SHU_school_of_nasus_desc: "With Nasus serving as an adviser, establish a school under his guidance. Give Shurima greater capacity for research so that learning can sustain the work of restoration."
 
 SHU_land_prospect: "Land Prospect"
-SHU_land_prospect_desc: "Its time we see what lies below the dunes of Shurima!"
+SHU_land_prospect_desc: "A sustained prospecting program needs scholars and methods equal to the task. Expand our research capacity and accelerate the study of excavation, building the knowledge needed to develop what lies beneath our lands."
 
-SHU_open_gold_mines: "Open Gold Mines"
-SHU_open_gold_mines_desc: "Gold! Gold! Glimmers!"
+SHU_open_gold_mines: "Build the Extraction Workshops"
+SHU_open_gold_mines_desc: "Support the resource program with a new civilian workshop in land we own and control. Strengthen the authority behind this industrial effort so that our ambitions can be sustained by productive work."
 
 SHU_shurima_arise: "Shurima Arise!"
 SHU_shurima_arise_desc: "Finally The Internal Battle has been resolved! As One WE RISE AGAIN!"
@@ -750,7 +750,7 @@ SHU_slaver_rights_act: "Slaver Rights Act"
 SHU_slaver_rights_act_desc: "The Right of Slavers"
 
 SHU_public_order: "Public Order"
-SHU_public_order_desc: "Under Sivir's leadership, the winds of change sweep across the desert. Rejecting the old imperial ways, Sivir champions the formation of the Shuriman Democratic Republic.\nAs the new republic's first President, she vows to uphold democratic values and ensure that every voice in Shurima is heard. The establishment of a parliamentary system aims to unite the diverse tribes and city-states under a single, fair political framework.\nThis is a new era for Shurima, one where the people rule, not ancient monarchs or self-proclaimed gods.\nIt's time for democracy to flourish in the sands!"
+SHU_public_order_desc: "Restoration must bring security to the streets as well as splendor to the throne. Coordinate the authorities charged with keeping order, giving our people firmer grounds to trust the government."
 
 SHU_imperial_order: "Imperial Order"
 SHU_imperial_order_desc: "The Imperial Law is back! Finally, we have the power to bring justice to the lawless Raiders for their rampant abuse, both past and present.\nTechnically, the Shuriman Courts never officially 'closed.' Any laws broken during the long slumber still count as offenses, giving us the legal leverage to hold foreign colonialist, trader scalpers, and local raiders alike accountable for their actions.\nIt's time people realize that their actions can have dire consequences!"
@@ -759,18 +759,18 @@ SHU_ascended_council: "Ascended Council"
 SHU_ascended_council_desc: "Our Royalty requires a royal court for their disputes and family issues away from the public, important issues must have a fast lane in both dire and good times for the Emperor to bring justice for all whom deserve it!\nIt was using these courts that Azir was able to gain the power over the priesthood to perform forbidden sacred ascension ritual to begin with."
 
 SHU_republican_future: "Republican Future"
-SHU_republican_future_desc: "Its time we building something new by mending what we already have!"
+SHU_republican_future_desc: "Sivir's crown can look toward a future shaped by broader public confidence. Strengthen stability around that ambition before attempting the political changes it may demand."
 
 #old: "Imperial Dream"
 #new: "Imperial State"
 SHU_imperial_state: "Imperial State"
-SHU_imperial_state_desc: "It's time we finally restore shurima to its former glory!"
+SHU_imperial_state_desc: "Azir's restoration needs an imperial administration capable of turning his commands into a common purpose. Rallying officials and subjects behind the throne will strengthen the authority and resolve of the state."
 
 SHU_royal_high_courts: "Royal High Courts"
 SHU_royal_high_courts_desc: "Our Royalty requires a royal court for their disputes and family issues away from the public, important issues must have a fast lane in both dire and good times for the Emperor to bring justice for all whom deserve it! \nIt was using these courts that Azir was able to gain the power over the priesthood to perform forbidden sacred ascension ritual to begin with."
 
 SHU_return_of_the_amulet: "Return of the Amulet"
-SHU_return_of_the_amulet_desc: "The Final Puzzel Piece to reigniting the Sun Disc to it's former Glory!"
+SHU_return_of_the_amulet_desc: "The return of the amulet will become a symbol of Shurima's renewal. Its place in the restoration will strengthen the crown's authority and rally support for the realm."
 
 # SHU_shuriman_guilds: "Royal Shuriman Guilds"
 # SHU_shuriman_guilds_desc: "Shuriman Guilds desc"
@@ -779,121 +779,121 @@ SHU_return_of_the_amulet_desc: "The Final Puzzel Piece to reigniting the Sun Dis
 # SHU_war_guild_desc: "Shuriman War Guilds desc"
 
 SHU_economic_revival: "Economic Revival"
-SHU_economic_revival_desc: "Our economy has suffered greatly in recent times. This focus will direct efforts towards reviving our economy, investing in key industries, and creating jobs to ensure prosperity for our nation."
+SHU_economic_revival_desc: "Shurima needs room to build a future worthy of its inheritance. Set aside new sites for workshops and industry throughout the core lands firmly under our control."
 
 SHU_rebirth_legions: "Rebirth of the Legions"
-SHU_rebirth_legions_desc: "Emperor Azir has returned to a land of scattered tribes and forgotten legacies. To reclaim Shurima's glory and defend its people, he must raise a new army from the sands of the desert. This focus will unite the tribes under one banner, train new legions, and restore the military might of the Shuriman Empire."
+SHU_rebirth_legions_desc: "Shurima must gather its scattered strength into an army worthy of the restored realm. New recruits will swell our ranks, while reorganizing the Shuriman Infantry will give commanders greater freedom to shape the legions."
 
 SHU_military_expansion_b: "Military Expansion"
 SHU_military_expansion_b_desc: "In a world growing ever more dangerous, it is imperative that we expand our military capabilities. This focus will increase our armed forces, modernize our equipment, and ensure our nation is ready for any threat."
 
 SHU_rebuilding_our_fleet: "Rebuilding Our Fleet"
-SHU_rebuilding_our_fleet_desc: "Our naval forces are in dire need of modernization and expansion. This focus will concentrate on rebuilding our fleet, enhancing our naval infrastructure, and securing our maritime borders."
+SHU_rebuilding_our_fleet_desc: "A fleet must be rebuilt through skilled crews and the yards that sustain them. Expand shipbuilding at an owned coastal site under our control and develop the naval experience needed for the work ahead."
 
 SHU_workers_rights: "Worker Rights"
-SHU_workers_rights_desc: "With the recent social changes in our society, it is important to ensure that worker rights are protected. This focus will help to establish and enforce labor laws, improve working conditions, and guarantee fair wages for all workers."
+SHU_workers_rights_desc: "Recognize the rights of the workers whose labor sustains Shurima's renewal. Greater stability will come with reduced factory and dockyard output and a larger commitment of industry to civilian needs."
 
 SHU_trade_guild: "Royal Trade Guild"
-SHU_trade_guild_desc: "Establish the Royal Trade Guild to oversee and regulate commerce within Shurima. This will centralize trade operations, enhance economic efficiency, and strengthen our position as a dominant trading power in the region."
+SHU_trade_guild_desc: "Give the royal trade guild the authority and public confidence needed to support Shurima's renewal. Establish a civilian workshop in our own controlled lands, turning its commercial ambitions toward a stronger industrial foundation."
 
 SHU_replant_the_basin: "Replant The Basin!"
-SHU_replant_the_basin_desc: "With the Waters of Shurima Flowing Again means it's time for us to once more seed our dreams with lush forestation and green vally's around our barren wasteland!"
+SHU_replant_the_basin_desc: "The ambitions of renewal need practical work around the capital. Establish a civilian workshop and strengthen public confidence in the program intended to restore life to the basin."
 
 SHU_we_remember_shurima: "We Remember Shurima"
-SHU_we_remember_shurima_desc: "Long have the sands of time buried the glory of Shurima, but the heart of our empire still beats within our people. Through stories, rituals, and the preservation of ancient traditions, we shall remind the world and ourselves of the greatness that once was. This will rekindle the memory of our past, uniting the Shuriman people under a shared heritage and pride. By honoring our ancestors and celebrating the Sun Disc, we will restore the identity of Shurima, ensuring that the spirit of our empire never fades from the hearts of our descendants."
+SHU_we_remember_shurima_desc: "The memory of Shurima survives in the traditions its people carried through the long years of ruin. We will make that inheritance part of the restored realm's purpose, while seeking a place for communities whose loyalties cannot simply be commanded."
 
-SHU_sundisc_has_risen: "Sun Disc, Has Risen!"
-SHU_sundisc_has_risen_desc: "Our Sun Disc has Risen!\n\n Son And Daughters of Shurima!\n\n Once Again Shurima Calls You!"
+SHU_sundisc_has_risen: "The Sun Disc Has Risen"
+SHU_sundisc_has_risen_desc: "The Sun Disc stands above Shurima once more, and its return must be proclaimed beyond our borders. As we face Xerath, this announcement will rally the authority of the restored realm."
 
 SHU_military_court: "Military Court"
-SHU_military_court_desc: "The establishment of a Military Court within the Shuriman army is a crucial development aimed at maintaining discipline, order, and justice within the military ranks. This court is specifically designed to handle cases involving military personnel, addressing issues such as breaches of military conduct, discipline violations, and crimes committed in the line of duty. The Military Court operates under a distinct set of rules and regulations, tailored to the unique environment and demands of military service."
+SHU_military_court_desc: "Give military discipline a firmer place in the restored state's institutions. Draw on the experience of the legions and strengthen confidence in the authority charged with judging their conduct."
 
-SHU_military_law: "Military Law"
-SHU_military_law_desc: "Its primary function is to ensure that all military members are held to a high standard of behavior and professionalism, reinforcing the principles of honor, duty, and service that are central to military ethos. By providing a formal mechanism for adjudicating disputes and allegations of misconduct, the Military Court plays a vital role in preserving the integrity and effectiveness of the Shuriman army. It also serves to protect the rights of military personnel, offering a fair and impartial judicial process. The establishment of this court underscores the army's commitment to upholding the rule of law and fostering a culture of accountability and responsibility within its ranks."
+SHU_military_law: "Imperial Intelligence Service"
+SHU_military_law_desc: "The restored state needs an organized service to gather intelligence. Where the means to establish an agency are available and none already exists, create the S.S.S. to support imperial policy."
 
 SHU_tribal_unity: "Tribal Unity"
 SHU_tribal_unity_desc: "Its time high time, we finally unite our tribes against our common enemies!"
 
 SHU_tribal_recognition: "Legal Recognition"
-SHU_tribal_recognition_desc: "We start by recogizing our Tribes legal Status"
+SHU_tribal_recognition_desc: "Affirm the tribes' place within Shurima's intended legal order. Let this recognition express the relationship we seek between their traditions and the restored state."
 
 SHU_tribal_respect: "Tribal Respect"
 SHU_tribe_respect_desc: "It's time we pull some favours for our tribes inorder to secure their faith in our empire and their place in it."
 
 SHU_tribe_council: "Tribe Council"
-SHU_tribe_council_desc: "The Tribes Council within Sivir's empire represents a significant and progressive institution designed to empower tribal communities. Its primary purpose is to serve as a legal body, enabling these communities to autonomously govern and administer court rulings within their own territories. This council acts as a bridge between the central government and the tribal areas, ensuring that the customs, traditions, and laws of the tribes are respected and integrated into the wider legal framework of the empire. By granting judicial autonomy, the Tribes Council not only upholds the unique cultural heritage of each tribe but also fosters a sense of ownership and responsibility among tribal leaders for local governance. This approach aims to create harmony between the central authority and tribal societies, promoting unity while respecting diversity within the empire."
+SHU_tribe_council_desc: "Sivir's crown will give the tribes a place in the institutions envisioned for the renewed empire. Convene their council as a statement that imperial restoration should hear the communities it seeks to govern."
 
 SHU_tribe_law: "Tribe Law"
-SHU_tribe_law_desc: "The formalization of Sacred Traditional Tribe Law is a crucial step in preserving and legitimizing the ancient customs and legal systems of tribal communities. \n\nThis process involves the official recognition and integration of tribal laws into the broader legal framework of the nation, ensuring that these time-honored traditions are respected and upheld.\n\nThis formalization serves several important purposes. Firstly, it acknowledges the rich cultural heritage and legal wisdom inherent in tribal societies, valuing their unique perspectives on justice and governance. \n\nBy bringing these laws into the formal legal system, it allows for a more inclusive and diverse legal landscape that respects the multiplicity of its citizens' backgrounds.\n\nSecondly, it provides legal clarity and security to members of tribal communities. Formal recognition of their laws ensures that tribal members can rely on their customs and traditions to govern their affairs, particularly in areas such as marriage, property rights, and dispute resolution. \n\nThis integration also facilitates better interaction between national and tribal legal systems, reducing conflicts and misunderstandings.\n"
+SHU_tribe_law_desc: "Give the traditions of Shurima's tribes a formal place in the order we seek to restore. Let recognition of their customary law express the intended relationship between local communities and the imperial institutions."
 
 SHU_arm_the_defenders: "Arm the Defenders!"
-SHU_arm_the_defenders_desc: "Facing imminent peril, with Xerath and Renekton on our doorstep. In this dire situation, our mission is to urgently equip and train every available defender, including civilians, to stave off the impending doom. We have only Azir's Sand Soldiers as our last line of defense."
+SHU_arm_the_defenders_desc: "The defenders of Shurima need weapons in their hands, not promises alone. Supply our stockpiles with infantry arms so the forces already under our command can be equipped for the struggle."
 SHU_nazumah_investments: "Nazumah Investments"
 SHU_nazumah_investments_desc: "Focusing on investments in Nazumah to boost local infrastructure and economic growth."
 
 SHU_nazumah_self_govern: "Self-Management"
 SHU_nazumah_self_govern_desc: "Lets 'Let' the Nazumahs controll their own affairs it will improving their internal affairs and resource management, and we won't waste our time on it."
 
-SHU_restore_solari: "Restore Solari Rule"
-SHU_restore_solari_desc: "It's high time we restore the solari rulers of targon to aid us in the coming storm!"
+SHU_restore_solari: "Recognize Solari Rule"
+SHU_restore_solari_desc: "Declare Shurima's support for the Solari cause upon Targon. This gesture of recognition expresses the place we seek for the sun's faithful, without settling who rules the mountain."
 
 SHU_restore_lunari: "Secure Lunari Future"
 SHU_restore_lunaris_desc: "It's high time we secure the lunari people's future in targon, to aid us in the coming storm!"
 
 SHU_moonstone: "Restore the Moonstone Accord"
-SHU_moonstone_desc: "Every generation, a Marai Tidecaller carried an abyssal pearl to a lunar guardian and returned with a Moonstone whose magic protected the tribe. That ancient Targonian accord has collapsed. Nami has come ashore because her people cannot survive without a new stone, and Diana now bears the Moon Aspect's power and the Lunari knowledge needed to restore the rite. We will help the Tidecaller reach her."
+SHU_moonstone_desc: "Nami seeks to restore the broken accord that safeguards her people. We can petition Diana when Targon is able to receive us, or pursue scattered Lunari knowledge through a separate search; cooperation cannot be assumed."
 
 big_sun: "Big Sun"
 
-SHU_annex_nazumah: "Annex Nazumah"
-SHU_annex_nazumah_desc: "Bring the city-state of Nazumah under Shuriman control. This will secure our southern border and provide a valuable trade hub."
+SHU_annex_nazumah: "Demand Nazumah's Annexation"
+SHU_annex_nazumah_desc: "The crown will demand that Nazumah accept direct imperial rule. Its people may submit or refuse; rejection will give Shurima grounds to seek annexation by force."
 
-SHU_puppet_nazumah: "Puppet Nazumah"
-SHU_puppet_nazumah_desc: "Establish Nazumah as a Shuriman vassel state. By Puppeting Nazumah our influence will expand without the administrative burden of direct control.\n\n§OPuppet Nazumah§!"
-SHU_puppet_nazumah_tt: "§OPuppets Nazumah, into our Vassel state!§!"
+SHU_puppet_nazumah: "Demand Nazumah's Submission"
+SHU_puppet_nazumah_desc: "We will demand that Nazumah accept Shuriman overlordship while retaining a separate government. Its response would determine whether submission proceeds by agreement or leaves us considering coercion."
+SHU_puppet_nazumah_tt: "Sends Nazumah a demand for submission, which it may accept or refuse."
 
-SHU_nazumahs_pride: "Royal Plot"
-SHU_nazumahs_pride_desc: "By Establish Ksante as Nazumah King and ending their legacy as a trouble state, we might be able to ensure they become a loyal royal subject, a true Shuriman vassel state.  By installing K'sante Nazumah our influence will expand without the administrative burden of direct control.\n\n§OPuppet Nazumah§!"
+SHU_nazumahs_pride: "Respect Nazumah's Pride"
+SHU_nazumahs_pride_desc: "Nazumah's pride cannot be erased by a proclamation from the capital. Acknowledge it within our dealings and affirm the place we seek for mutual recognition rather than another campaign of coercion."
 SHU_nazumahs_pride_tt: "§OPuppets Nazumah, into our Vassel state!§!"
 
 SHU_imperial_efforts: "Imperial Efforts"
-SHU_imperial_efforts_desc: "Imperial Efforts"
+SHU_imperial_efforts_desc: "The counsel of the Ascended must be matched by resolve throughout the empire. Rallying the administration behind our military ambitions will strengthen the crown and public support for its campaigns."
 
 SHU_marai_marines: "Marai Marines"
-SHU_marai_marines_desc: "Marai's Knowledge of the deep sea, gives us a naval edge! Togather with Nazumah they will support us with Marines"
+SHU_marai_marines_desc: "Marai knowledge of the sea can help our forces prepare for amphibious operations. We will draw upon that experience to strengthen our invasion planning and coastal fighting, though a failure of the Moonstone quest may end this support."
 
-SHU_question_of_nazumah: "Nazuman Question"
-SHU_question_of_nazumah_desc: "The Topic of Nazumah's Independance is up for debate, on one hand they did retain what was left of our empire, but on the other hand they claim to be independent soveign nation coming from a long lost hatred towards azir and his rule. I doubt they can see eye to eye with us on the ownership status of the area, never the less on our core principles and values. After all they reject all forms of  subjugation...\n\n§OIt's high time for introduction...§!\n"
+SHU_question_of_nazumah: "The Nazumah Question"
+SHU_question_of_nazumah_desc: "Nazumah guards its independence while Shurima seeks a renewed place among the desert's peoples. Debate the relationship we should pursue before choosing between imperial control and cooperation."
 
 # "God Warrior Council"
 SHU_ascended_god_warriors_council: "Ascended Council"
-SHU_ascended_god_warriors_council_desc: "God Warrior Council Desc + lore"
+SHU_ascended_god_warriors_council_desc: "Azir will seek the counsel of the Ascended as the empire prepares to defend its restoration. Their martial legacy can guide our commanders and give the realm a common purpose without settling every rivalry of the old order."
 
-SHU_nazumah_alliance: "Nazumah Alliance"
-SHU_nazumah_alliance_desc: "Its time our brothers stand with us against our enemies"
+SHU_nazumah_alliance: "Invite Nazumah to Our Alliance"
+SHU_nazumah_alliance_desc: "We will offer Nazumah a place alongside Shurima in our faction. A shared alliance must rest on its agreement, rather than an imperial command."
 
 change_law_to_war_economy: "Changes the Current Law to §HWar Economy§!"
 arm_shurima: "Adds §H Rifles and Guns§! to our Stockpile"
-SHU_rebirth_legions_tooltip: "Enables us re-configure our own divisions!"
+SHU_rebirth_legions_tooltip: "Unlocks the Shuriman Infantry division template for editing."
 
 
 
 ################################### IDEAS                       \n      §H§!
 
 guild_bonus: "Shuriman Guilds Reborn"
-guild_bonus_desc: "The Shuriman Guilds are revitalizing our industry, boosting factory construction speed by 5%."
+guild_bonus_desc: "The Shuriman guilds coordinate the rebuilding of civilian workshops, increasing civilian factory construction speed by 5%."
 
 stronger_guild_bonus: "Rising Guild Influence"
-stronger_guild_bonus_desc: "The Guilds have increased their industrial output, raising factory construction speed by 10%."
+stronger_guild_bonus_desc: "The Shuriman guilds coordinate the rebuilding of civilian workshops, increasing civilian factory construction speed by 10%."
 
 even_stronger_guild_bonus: "Guild Power Ascendant"
-even_stronger_guild_bonus_desc: "Shuriman Guilds now control the industry, improving factory speed by 20%."
+even_stronger_guild_bonus_desc: "The Shuriman guilds coordinate the rebuilding of civilian workshops, increasing civilian factory construction speed by 20%."
 
 superior_guild_bonus: "Guilds of the Golden Age"
-superior_guild_bonus_desc: "The Guilds are reaching their zenith, pushing factory speed by 30%."
+superior_guild_bonus_desc: "The Shuriman guilds coordinate the rebuilding of civilian workshops, increasing civilian factory construction speed by 30%."
 
 ultimate_guild_bonus: "Ultimate Shuriman Guild Power"
-ultimate_guild_bonus_desc: "The Guilds have fully restored their ancient glory, with factories producing at 40% increased speed."
+ultimate_guild_bonus_desc: "The Shuriman guilds coordinate the rebuilding of civilian workshops, increasing civilian factory construction speed by 40%."
 
 # Debugging w. Ideas - IDs:
 
@@ -920,7 +920,7 @@ idea_superior_guild_bonus_desc: "The Shuriman Guilds have fully restored their a
 ################################### EVENTS                      \n      §H§!
 
 shurima.565.ts: "We Remember Shurima"
-shurima.565.d: "Long have the sands of time buried the glory of Shurima, but the heart of our empire still beats within our people. Through stories, rituals, and the preservation of ancient traditions, we shall remind the world—and ourselves—of the greatness that once was. This focus will rekindle the memory of our past, uniting the Shuriman people under a shared heritage and pride. By honoring our ancestors and celebrating the Sun Disc, we will restore the identity of Shurima, ensuring that the spirit of our empire never fades from the hearts of our descendants."
+shurima.565.d: "Shurima's past offers more than one guide for rebuilding. We must choose whether to renew its traditions, improve its infrastructure, encourage scholarship, or strengthen its armies."
 
 SHU_opt_revive_traditions: "Revive Ancient Traditions"
 SHU_opt_invest_in_infrastructure: "Invest in Grand Infrastructure"
@@ -940,7 +940,7 @@ shurima.573.d: "Our military forces grow stronger as we channel the legacy of Sh
 ################################### OTHER\n                     \n      §H§!
 
 has_nationalized_hexcore: "Has Nationalized Hexcore"
-has_nationalized_hexcore_tt: "It's Time we Nationalized Our §2Hexcore§!"
+has_nationalized_hexcore_tt: "Establishes our nationalization policy for later focus requirements."
 
 SHU_CHARACTER_XERATH: "Xerath"
 SHU_XERATH_DESC: "The Magus Ascendant\n Xerath is an Ascended Magus of ancient Shurima Crest icon Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven insane with power, he now seeks to take what he believes is rightfully his and replace the upstart civilizations of the world with one fashioned in his image."

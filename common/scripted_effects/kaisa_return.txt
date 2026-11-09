@@ -1,0 +1,24 @@
+announce_kaisa_return = {
+    if = {
+        limit = {
+            tag = VOI
+            NOT = { has_country_flag = VOI_kaisa_return_announced }
+        }
+        set_country_flag = VOI_kaisa_return_announced
+        if = {
+            limit = { has_country_flag = VOI_hybrid_path }
+            recruit_returned_kaisa = yes
+        }
+        news_event = { id = azir_kaisa.1 }
+    }
+}
+
+recruit_returned_kaisa = {
+    if = {
+        limit = {
+            tag = VOI
+            NOT = { has_character = VOI_Kaisa }
+        }
+        recruit_character = VOI_Kaisa
+    }
+}

@@ -1,16 +1,209 @@
 ﻿l_english:
  ascendant_supremacy: "Ascendant Supremacy"
- ascendant_supremacy_desc: "The restored Sun Disc has renewed the covenant between Shurima and its Ascended protectors, lending imperial authority an almost divine weight."
- SHU_infrastructure_bonus_desc: "Surveyors and guild crews reconnect the desert roads, oases, and caravan stations that once bound the Shuriman Empire together."
- SHU_cultural_renaissance_desc: "Scholars, artisans, and chroniclers recover the memory of ancient Shurima without denying the peoples who endured after its fall."
- SHU_military_glory_desc: "The empire tempers the legend of its Ascended hosts with disciplined officers, trained formations, and a modern chain of command."
+ ascendant_supremacy_desc: "A claim to exalted authority binds the realm to a common purpose, strengthening public confidence and the army's attacks."
+ SHU_infrastructure_bonus_desc: "Organized building crews will accelerate construction throughout the realm. Better production methods will also raise the efficiency our factories can sustain."
+ SHU_cultural_renaissance_desc: "A renewed place for scholarship will support faster research. The cultural revival will also encourage a larger share of the population to enter service."
+ SHU_military_glory_desc: "The army will draw on the realm's martial traditions to strengthen its fighting methods. Greater effectiveness in attack and defense will give those traditions practical force."
  TAR_rakkor_tenacity: "Rakkor Tenacity"
- TAR_rakkor_tenacity_desc: "The warriors of the Rakkor draw strength from Mount Targon's merciless paths and their long tradition of meeting impossible trials head-on."
+ TAR_rakkor_tenacity_desc: "Rakkor discipline extends to the workshops supporting Targon. Sustained effort raises military-factory output and reduces consumer-goods demands."
  TAR_celestial_pilgrimage: "Celestial Pilgrimage"
- TAR_celestial_pilgrimage_desc: "Pilgrims climbing toward the summit renew Targon's spiritual authority and carry tales of the mountain's celestial power back to every settlement."
+ TAR_celestial_pilgrimage_desc: "Pilgrimage renews public confidence in the mountain's spiritual life. The shared undertaking strengthens stability and gives the governing authorities greater political support."
  TAR_summit_harvest_idea: "Harvests of the High Valleys"
- TAR_summit_harvest_idea_desc: "Terraced fields and carefully guarded mountain pastures give Targon's scattered communities a more dependable food supply."
+ TAR_summit_harvest_idea_desc: "Intensive mountain harvesting raises resource output at a cost. Slower population growth and greater military attrition reflect the strain of the effort."
  icathia.5.t: "Resistance in the Ruins"
- icathia.5.d: "Armed cells have emerged among Icathia's shattered streets. They know every buried passage and intend to deny the invader an uncontested hold over the ruins."
+ icathia.5.d: "Icathia's survivors are gathering fighters among the ruins, determined to resist the Void's hold over their homeland. These armed cells offer a rallying point for those who refuse to surrender what remains of their people."
  icathia.5.a: "Icathia still remembers."
- shuriman_rnews.6.a: "The desert has chosen its future."
+ shuriman_rnews.6.a: "Shurima faces another struggle for power."
+
+ TAR_activate_rakkor_tenacity: "Rally Rakkor Tenacity"
+
+ TAR_activate_rakkor_tenacity_desc: "Rakkor discipline will be directed toward the work that sustains Targon. For a time, greater military-factory output and lower consumer-goods demands will support that effort."
+
+ TAR_activate_celestial_pilgrimage: "Encourage Celestial Pilgrimage"
+
+ TAR_activate_celestial_pilgrimage_desc: "Pilgrimage will renew public confidence in Targon's spiritual life. For a time, it will strengthen stability and the government's political authority."
+
+ SHU_azir_speech: "Address the Imperial Question"
+
+ SHU_azir_speech_desc: "Supporters of the imperial restoration will bring their arguments before the people. The campaign will press the case for a stronger central authority in Shurima."
+
+ SHU_sivir_speech: "Address Shurima's Future"
+
+ SHU_sivir_speech_desc: "The dispute over Shurima's future reaches beyond the restored throne. A public campaign will seek support for a stronger central authority among those weighing its claims."
+
+ SHU_restore_great_library_dec: "Rebuild the Great Library"
+
+ SHU_restore_great_library_dec_desc: "With Nasus still available, we can carry the library restoration beyond its initial foundations. Renewed collections and facilities will help Shuriman scholars advance their research."
+
+ SHU_great_library_restored_name: "Restored Great Library"
+
+ shuriman_rnews.6.t: "Xerath Orders an Assault on the Throne"
+
+ shuriman_rnews.6.d: "Xerath has chosen a direct assault on the imperial palace in his bid to seize Shurima's throne. The challenge to Azir's rule has been declared, but the struggle for the empire remains unresolved."
+
+ shurima.11.t: "Our Position on Targon"
+
+ shurima.11.d: "Shurima must decide which voices on Mount Targon it will support. We can favor the Solari, the Lunari, or cooperation among the mountain's communities."
+
+ shurima.11.a: "Support the Solari."
+
+ shuriuma.11.b: "Support the Lunari."
+
+ shurima.11.c: "Support cooperation on Targon."
+
+ shurima.3.a: "Bring the divided regions closer together."
+
+ shurima.4.a: "Strengthen the ties between our regions."
+
+ targon.11.a.tt: "Back the purists: gain their military organization and defense spirit, at a cost of 5% stability."
+
+ targon.11.b.tt: "Back the reformers: gain their stability and political-power spirit, and increase stability by 5%."
+
+ targon.12.a.tt: "Promise support to the Solari: gain a stability and war-support spirit, 5% stability and 10 political power."
+
+ targon.12.b.tt: "Promise support to the Lunari: gain a stability and research-speed spirit, 5% stability and 10 political power."
+
+ targon.12.c.tt: "Balance the promises to both sides and gain 10% stability."
+
+ targon.13.a.tt: "Choose Lunari reform: gain a stability and political-power spirit, plus 5% stability and 5% war support."
+
+ targon.13.b.tt: "Reject the Solari: gain a war-support and army-attack spirit, lose 5% stability and gain 10% war support."
+
+ TAR_leona_speech.t: "Leona Addresses Targon"
+
+ TAR_leona_speech.desc: "Leona's address brings the question of Targon's future before us. We must choose how to approach the divide between Solari authority and the Lunari."
+
+ TAR_leona_speech.a: "Support a balanced approach."
+
+ TAR_leona_speech.a.tt: "Gain 5% stability and 20 political power."
+
+ TAR_leona_speech.b: "Press for Solari supremacy."
+
+ TAR_leona_speech.b.tt: "Gain 10% war support and 15 political power."
+
+ TAR_leona_speech.c: "Seek a peaceful approach."
+
+ TAR_leona_speech.c.tt: "Gain 10% stability and a spirit that increases stability while reducing war support."
+
+ TAR_leona_speech.d: "Press for a stronger Solari position."
+
+ TAR_leona_speech.d.tt: "Gain 30 political power and 5 army experience."
+
+ TAR_reformers.1.t: "The Reform Question"
+
+ TAR_reformers.1.d: "Calls for change have opened a dispute over Targon's direction. We can support reform or meet the movement with political resistance."
+
+ TAR_reformers.1.a: "Support the reformers."
+
+ TAR_reformers.1.a.tt: "Gain a reform spirit that increases political-power gain and stability."
+
+ TAR_reformers.1.b: "Challenge the reformers."
+
+ TAR_reformers.1.b.tt: "Gain a political-pressure spirit: lower political-power gain and stability, with higher war support."
+
+ TAR_reformers.1.c: "Maintain resistance to reform."
+
+ TAR_reformers.1.c.tt: "Gain the same political-pressure spirit: lower political-power gain and stability, with higher war support."
+
+ nazumah.100.t: "Prepare for the Hunt"
+
+ nazumah.100.d: "Having resisted the Void, we can gather strength for the challenges ahead. Hunters and recruits will prepare for the next campaign."
+
+ nazumah.100.a: "Gather our strength."
+
+ nazumah.101.t: "Preparing to Challenge Azir"
+
+ nazumah.101.d: "Our preparations have brought the prospect of challenging Shurima's emperor into sharper focus. We must rally support for the difficult campaign ahead."
+
+ nazumah.101.a: "Rally support for the campaign."
+
+ nazumah.102.t: "Confidence in Peacetime"
+
+ nazumah.102.d: "With the country at peace after resisting the Void, confidence can begin to recover. The respite offers a chance to strengthen public resolve and prepare for the future."
+
+ nazumah.102.a: "Strengthen public confidence."
+
+ nazumah.303.t: "Opening Talks with Xerath"
+
+ nazumah.303.d: "Relations between Nazumah and Xerath offer an opportunity for diplomatic discussion. A proposal for closer understanding can be considered."
+
+ nazumah.303.a: "Consider the proposal."
+
+ nazumah.304.t: "A Proposal for Better Relations"
+
+ nazumah.304.d: "A diplomatic proposal involving Nazumah and Xerath calls for a response. Acceptance or rejection will influence relations between the parties."
+
+ nazumah.304.a: "Favor closer relations."
+
+ nazumah.304.b: "Reject closer relations."
+
+ shuriman_rnews.9.t: "Reports of an Attempt on Azir's Life"
+
+ shuriman_rnews.9.d: "Reports of an assassination attempt against Azir have unsettled the empire. The identity of those responsible and the consequences for Shurima remain uncertain."
+
+ shuriman_rnews.9.a: "Shurima awaits further word."
+ shuriman_rnews.5.t:0 "War for Shurima"
+ shuriman_rnews.5.d:0 "War has broken out between Shurima and Xerath's forces. With the rival powers now fighting openly, the future of Shurima remains uncertain."
+ shuriman_rnews.5.a:0 "Shurima faces another war."
+ shuriman_rnews.5.b:0 "Our struggle begins."
+ shuriman_rnews.5.c:0 "We must defend Shurima."
+ shuriman_rnews.51.t:0 "Noxus and Shurima at War"
+ shuriman_rnews.51.d:0 "Noxus has gone to war against Shurima. As their armies clash, the outcome of the conflict remains uncertain."
+ shuriman_rnews.51.a:0 "Another war in Shurima."
+ shuriman_rnews.51.b:0 "Our campaign begins."
+ shuriman_rnews.51.c:0 "Defend Shurima."
+ shu_assassination_aftermath.1.t:0 "The Aftermath of the Attempt"
+ shu_assassination_aftermath.1.d:0 "The attempt on Azir's life has left Shurima facing a crisis of authority. The court must now confront its consequences."
+ shu_assassination_aftermath.1.a:0 "Azir leaves public life."
+ shu_assassination_aftermath.1.b:0 "Rally behind Azir."
+ shu_assassination_aftermath.1.c:0 "The attack unsettles the realm."
+ shu_assassination_aftermath.1.d_option:0 "Sivir leaves public life."
+ shurima.10.a:0 "Retire the current leader."
+ SHU_broken_to_fractured_tt:0 "Replaces $Shurima_broken$ with $Shurima_fractured$."
+ SHU_fractured_to_scattered_tt:0 "Replaces $Shurima_fractured$ with $Shurima_scattered$."
+ SHU_scattered_to_apart_tt:0 "Replaces $Shurima_scattered$ with $Shurima_apart$."
+ shurima.101.a:0 "Recognize the guilds."
+ shurima.102.t:0 "The Guilds Convene"
+ shurima.102.d:0 "Shurima's guilds gather to coordinate the rebuilding of civilian workshops. Their growing organization can strengthen the foundations of the empire's industry."
+ shurima.102.a:0 "Support their work."
+ shurima.1001.t:0 "Workers' Rights Recognized"
+ shurima.1001.d:0 "Shurima has formally recognized the rights of its laborers and guild workers. This commitment strengthens confidence in the government."
+ shurima.1001.a:0 "A fairer Shurima rises."
+ targon.10.a.tt:0 "Adopts $TAR_zealous_crusader$, lowers stability by 10% and raises war support by 15%."
+ targon.10.b.tt:0 "Rejects the campaign and raises stability by 5%."
+ targon.20.t:0 "Leadership of Targon"
+ targon.20.d:0 "Targon must choose who will guide its people through the struggles ahead. The available candidates offer different forms of rule."
+ targon.102.t:0 "The Eclipse Begins"
+ targon.102.d:0 "Lunari defiance challenges the authority of the Solari. To the faithful of the sun, this unrest threatens the order they have sworn to uphold."
+ targon.102.a:0 "Rally the Solari faithful."
+ xerath.2.a:0 "Follow Xerath's path."
+ xerath.2.b:0 "Back Renekton's course."
+ xerath.1.t:0 "The Final Struggle"
+ xerath.1.d:0 "Shurima must be remade beneath our power. We proclaim a new order and prepare to confront those who would deny it."
+ xerath.1.tt:0 "Signals the struggle for Shurima. A war report follows if our realm declares war on Shurima."
+ xerath.1.a:0 "Let our resolve be known."
+ xerath.4.t:0 "A Claim to the Throne"
+ xerath.4.d:0 "We seek to supplant Azir's authority over Shurima. Choose how to pursue our claim, knowing that ambition alone cannot secure the throne."
+ xerath.4.tt:0 "Begins the usurpation campaign; this event does not transfer the throne."
+ xerath.4.a:0 "Prepare a direct assault."
+ xerath.4.a.tt:0 "Spends 50 political power and lowers stability by 5%; prepares an assault report."
+ xerath.4.b:0 "Organize sabotage."
+ xerath.4.b.tt:0 "Spends 30 political power and raises stability by 5%; prepares a sabotage report."
+ xerath.4.c:0 "Encourage dissent in Azir's ranks."
+ xerath.4.c.tt:0 "Spends 40 political power and lowers stability by 10%; prepares a rebellion report."
+ xerath.4.e:0 "Attempt to assassinate Azir."
+ xerath.4.e.tt:0 "Spends 60 political power and lowers stability by 20%; prepares an assassination-attempt report. No death is guaranteed."
+ xerath.5.t:0 "Sabotage Campaign Against Azir"
+ xerath.5.d:0 "Xerath has ordered his followers to undermine support for Azir. The campaign has begun, and the court's response remains uncertain."
+ xerath.5.a:0 "The court is under pressure."
+ xerath.6.t:0 "Xerath Calls for Rebellion"
+ xerath.6.d:0 "Xerath has urged soldiers in Azir's service to rise against the throne. Whether any commanders will answer his call remains uncertain."
+ xerath.6.a:0 "The army must choose how to respond."
+ TAR_celestial_unity:0 "Celestial Reconciliation"
+ TAR_celestial_unity_desc:0 "Sun and moon need not demand another war among the mountain's people. A place for former opponents supports a steadier peace and greater acceptance of the governing order."
+ VOI_grand_wizard_council_idea:0 "Icathian Grand Wizard Council"
+ VOI_grand_wizard_council_idea_desc:0 "The revived council brings Icathia's scholars into the work of governing and military preparation. Their coordination supports planning, practical experience, and the study of doctrine."
+ TAR_peaceful_reforms_desc:0 "Reform offers the mountain's people a steadier place within the governing order. Greater stability, manpower participation, and military organization accompany a reduced appetite for war."
+ TAR_solari_supremacy_desc:0 "Solari authority demands obedience to its vision of the mountain's future. Political resolve and stronger attacks come with greater support for war and a less stable peace."
+ Zileans_Zeal_desc:0 "Zilean's determination to preserve Icathia gives its scholars a purpose beyond mere survival. Their focused study helps research advance more quickly."
+ big_sun_desc:0 "Shurima has declared its support for restoring Solari rule on the mountain. The declaration expresses a political intention; the struggle over Targon's future remains unsettled."

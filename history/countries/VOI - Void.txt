@@ -66,7 +66,6 @@ recruit_character = VOI_Belveth
 recruit_character = VOI_Zilean
 recruit_character = VOI_Jax
 
-recruit_character = VOI_Kaisa
 recruit_character = VOI_Kassadin
 
 

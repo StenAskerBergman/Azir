@@ -1,0 +1,23 @@
+azir_campaign_settings = {
+    priority = 1100
+    icon = GFX_decision_category_generic_political_actions
+    allowed = { has_dlc = "La Resistance" }
+    visible = {
+        is_ai = no
+        # Both Runeterra bookmarks begin on 990.1.1.
+        date < 990.4.1
+        NOT = { has_country_flag = azir_void_espionage_tone_chosen }
+    }
+}
+
+azir_void_espionage_category = {
+    priority = 90
+    icon = GFX_void_purple_icon_category
+    allowed = {
+        original_tag = VOI
+        has_dlc = "La Resistance"
+    }
+    visible = {
+        has_country_flag = embraced_the_void
+    }
+}

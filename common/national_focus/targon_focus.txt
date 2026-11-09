@@ -79,54 +79,26 @@ focus_tree = {
 		prerequisite = { focus = TAR_our_origins}
 		cost = 1 #1
 		available = {
-            OR = {
-                    has_country_leader = { # Rakkor
-                        ruling_only = yes
-                        name = "Pantheon"
-                    }
-                    has_country_leader = { # Lunari
-                        ruling_only = yes
-                        name = "Diana"
-                    }
-                    has_country_leader = { # Solari
-                        ruling_only = yes
-                        name = "Leona"
-                    }
-                    has_country_leader = { # Solari
-                        ruling_only = yes
-                        name = "Rahvun"
-                    }
-                }
+			OR = {
+				has_country_flag = PuristPathTrue
+				has_country_flag = PuristPathFalse
+			}
+			OR = {
+				has_character = TAR_leona
+				has_character = TAR_rahvun
+				has_character = TAR_pantheon
+				has_character = TAR_taric
+			}
 		}
 		completion_reward = {
-            country_event = { id = targon.20 }
-
-			if = { # Purity
-				limit = {
-					OR = {
-						has_country_leader = { character = TAR_rahvun }
-						has_country_leader = { character = TAR_leona }
-					}
-				}
-				country_event = { id = targon.9 }
+			# New openings wait for the chosen leader's policy. Older saves use Origins.
+			hidden_effect = {
+				set_country_flag = TAR_opening_uses_leader_policy
+				clr_country_flag = TAR_purity_path
+				clr_country_flag = TAR_reformation_path
+				clr_country_flag = TAR_neutral_path
 			}
-			if = { # Reformers
-				limit = {
-					has_country_leader = {
-						character = TAR_Pantheon
-					}
-				}
-				country_event = { id = TAR_reformers.1 }
-			}
-			if = { # Rejectors
-				limit = {
-					OR = {
-						has_country_leader = { character = TAR_diana }
-						has_country_leader = { character = TAR_cygnus }
-					}
-				}
-				country_event = { id = TAR_reformers.1 }
-			}
+			country_event = { id = targon.20 }
 		}
 	}
 
@@ -159,9 +131,20 @@ focus_tree = {
 
         }
         available = {
-            has_country_flag = PuristPathFalse
-
-            NOT = { has_country_leader = { character = TAR_rahvun } }
+            NOT = { has_country_leader = { character = TAR_rahvun ruling_only = yes } }
+            OR = {
+                AND = {
+                    has_country_flag = TAR_opening_uses_leader_policy
+                    has_country_flag = TAR_reformation_path
+                }
+                AND = {
+                    has_country_flag = PuristPathFalse
+                    OR = {
+                        NOT = { has_country_flag = TAR_opening_uses_leader_policy }
+                        has_country_flag = TAR_neutral_path
+                    }
+                }
+            }
         }
 		cost = 1
 		completion_reward = {
@@ -249,15 +232,20 @@ focus_tree = {
 		mutually_exclusive = { focus = TAR_reform focus = TAR_rejectors }
 		prerequisite = { focus = TAR_our_leader}
 		available = {
-            has_country_flag = PuristPathTrue
-			OR = {
-                has_country_leader = {
-                    character = TAR_rahvun
+            OR = {
+                has_country_leader = { character = TAR_rahvun ruling_only = yes }
+                has_country_leader = { character = TAR_leona ruling_only = yes }
+            }
+            OR = {
+                AND = {
+                    has_country_flag = TAR_opening_uses_leader_policy
+                    has_country_flag = TAR_purity_path
                 }
                 AND = {
-
-                    has_country_leader = {
-                        character = TAR_leona
+                    has_country_flag = PuristPathTrue
+                    OR = {
+                        NOT = { has_country_flag = TAR_opening_uses_leader_policy }
+                        has_country_flag = TAR_neutral_path
                     }
                 }
             }
@@ -368,20 +356,15 @@ focus_tree = {
 		prerequisite = { focus = TAR_our_leader }
 
         available = {
-            # MUST BE TRUE
             has_country_flag = PuristPathFalse
-
-            # CANNOT TRUE
-            NOT =  { has_country_leader = { character = TAR_rahvun } }
-			NOT = { has_country_flag = TAR_purge_success }
-
-            NOT =  {
-                OR =  {
-                    has_country_flag = PuristPathTrue
-                    has_country_leader = {
-                        character = TAR_rahvun
-                    }
-                }
+            NOR = {
+                has_country_flag = PuristPathTrue
+                has_country_flag = TAR_purge_success
+                has_country_leader = { character = TAR_rahvun ruling_only = yes }
+            }
+            OR = {
+                NOT = { has_country_flag = TAR_opening_uses_leader_policy }
+                has_country_flag = TAR_neutral_path
             }
         }
 		cost = 1

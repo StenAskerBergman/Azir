@@ -1,0 +1,65 @@
+sub_units = {
+	azir_plt_warden_caliver_company = {
+		abbreviation = "WCAL"
+		sprite = anti_tank
+		map_icon_category = infantry
+		active = no
+		affects_speed = no
+		type = { infantry support }
+		group = support
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+			category_anti_tank
+		}
+		regimental = no
+		combat_width = 0
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		training_time = 120
+		weight = 0.1
+		supply_consumption = 0.08
+		can_be_parachuted = no
+		essential = { azir_plt_caliver_equipment }
+		need = { azir_plt_caliver_equipment = 24 }
+		defense = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.5
+		ap_attack = -0.15
+		same_support_type = anti_tank
+	}
+
+	azir_zau_sump_raider_company = {
+		abbreviation = "SUMP"
+		sprite = engineer
+		map_icon_category = infantry
+		active = no
+		affects_speed = no
+		type = { infantry support }
+		group = support
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+		regimental = no
+		combat_width = 0
+		manpower = 300
+		max_organisation = 10
+		default_morale = 0.2
+		max_strength = 1
+		training_time = 120
+		weight = 0.1
+		supply_consumption = 0.045
+		can_be_parachuted = no
+		essential = { azir_zau_carbine_equipment }
+		need = { azir_zau_carbine_equipment = 30 }
+		urban = { attack = 0.12 movement = 0.05 }
+		same_support_type = engineer
+	}
+}

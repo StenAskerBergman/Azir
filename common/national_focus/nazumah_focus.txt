@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = {
 		id = NAZ_develop_capitalstate
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_azir_focus_oasis
 		#prerequisite = { focus = }
 
 		x = 2
@@ -205,7 +205,7 @@ focus_tree = {
 
 	focus = {
 		id = NAZ_promote_local_crafts
-		icon = GFX_focus_generic_treaty
+		icon = GFX_azir_focus_crafts
 		prerequisite = { focus = NAZ_the_nazuman_regional_development_fund }
 
 		x = 0
@@ -524,7 +524,7 @@ focus_tree = {
 
 	focus = {
 		id = NAZ_strengthen_the_hunters
-		icon = GFX_focus_ETH_keep_the_chitet
+		icon = GFX_azir_focus_hunters
 		prerequisite = { focus = NAZ_warrior_tradition }
 		mutually_exclusive = { focus = NAZ_universal_conscription }
 		x = -1
@@ -564,8 +564,10 @@ focus_tree = {
 	focus = {
 		id = NAZ_utilize_our_strengths
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = NAZ_strengthen_the_hunters }
-		prerequisite = { focus = NAZ_universal_conscription }
+		prerequisite = {
+			focus = NAZ_strengthen_the_hunters
+			focus = NAZ_universal_conscription
+		}
 
 		x = 1
 		y = 1
@@ -576,6 +578,7 @@ focus_tree = {
 			IF = {
 				limit = {
 					OR = {
+						original_tag = NAZ
 						original_tag = AFA
 						original_tag = TIG
 						original_tag = SID
@@ -1076,7 +1079,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				add_building_construction = {
-					type = civilian_factory
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
@@ -1285,7 +1288,7 @@ focus_tree = {
 			# Nazumah's Opinion
 			add_opinion_modifier = {
 				target = XER
-				modifier = large_Increase
+				modifier = large_increase
 			}
 
 			add_opinion_modifier = {
@@ -1313,6 +1316,13 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             add_stability = 0.05
+            if = {
+                limit = { is_subject = no }
+                country_event = { id = nazumah.400 }
+            }
+            else = {
+                country_event = { id = nazumah.401 }
+            }
         }
     }
 

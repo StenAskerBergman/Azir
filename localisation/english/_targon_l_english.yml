@@ -12,7 +12,7 @@
 
  # Remember Us
  TAR_remember_us: "Remember Us"
- TAR_remember_us_desc: "The Lunari remember their ancestors who were cast into the shadows, and with each step, their spirits grow stronger. Let our enemies know we have not disappeared; we are the Moon, hidden yet eternal."
+ TAR_remember_us_desc: "Our prayers and memories have survived in the shadows. Let the moon's faithful gather openly, renewing the bonds that hold our people together and the authority of our sacred traditions."
 
  # Hidden Resistance
  TAR_hidden_resistance: "Hidden Resistance"
@@ -32,11 +32,11 @@
 
  # Our Past
  TAR_our_past: "Our Past"
- TAR_our_past_desc: "Targon’s origins are rooted in ancient celestial worship and harsh mountain life. The Rakkor, Solari, and Lunari emerged as pillars of this legacy, each shaped by devotion and conflict. 'Our Past' honors the strength and sacrifices that defined Targon’s early days and set the stage for the struggles to come."
+ TAR_our_past_desc: "The mountain has shaped our people through devotion, hardship and conflict. In remembering the Rakkor foundations, we must choose which lessons will guide our authority, our unity and our defenders."
 
  # Our Origins
  TAR_our_origins: "Our Origins"
- TAR_our_origins_desc: "The Solari and the Lunari have faced each other in many pivotal moments, but the conflict between them remains unresolved if our origins are not remembered."
+ TAR_our_origins_desc: "The place of the moon's faithful divides Targon. We must choose whether to acknowledge Lunari traditions or uphold the purist condemnation, setting the course for the struggles ahead."
  TAR_our_origins.tt: "Only once we know our past can we know our future.\n \n"
 
 
@@ -50,7 +50,7 @@
 
  # Path of Purity
  TAR_remember_summit: "Remember the Summit"
- TAR_remember_summit_desc: "Three decades ago, the great summit of Targon fell into darkness and chaos. Betrayal and hidden agendas led to the sabotage of our once-untouchable fortress. Many of our leaders and brave warriors lost their lives in the ensuing chaos. The act has gone unavenged for years, but we, the survivors, have not forgotten."
+ TAR_remember_summit_desc: "The fallen summit remains a wound in our memory. The Solari will invoke its dead to rally the faithful and strengthen their mandate for the struggle ahead."
 
  # Our Escape - Lunari
  TAR_lunari_escape: "Our Escape"
@@ -112,12 +112,12 @@
  # Tooltip and Option Localization
 
  targon.3.t: "Our Origins"
- targon.3.desc: "While exploring the ancient archives of the Solari temple, Leona uncovers hidden records revealing a shared origin between the Solari and Lunari, indicating a time when both factions coexisted harmoniously. Confronted with this revelation, she faces a pivotal decision: \nThe Lunari are a dark cult that seeks to corrupt our holy light. They have been hidden for years, but now they have finally come out.\n What do we do now?"
+ targon.3.desc: "Ancient records in the Solari temple suggest a past in which sun and moon were honored together. This discovery challenges the condemnation of the Lunari: will we recognize their place in Targon, or uphold the purists' doctrine?"
  targon.3.a: "Acknowledge Lunari Past"
- targon.3.a.tt: "Recognizing the Lunari's beliefs could stabilize Targon, though it may not sit well with most faithful"
+ targon.3.a.tt: "Gains 5% stability and 25 political power, and adopts $TAR_tolerance_policy$."
 
  targon.3.b: "Deny Lunari Past"
- targon.3.b.tt: "Clearly a Trick to fool us!"
+ targon.3.b.tt: "Loses 5% stability, gains 50 political power and 10% war support, adopts $purist_policy$, and opens the purist campaign choice."
 
  #"I refuse to believe it"
  #"We are Solari. Our devotion to the sun is pure and unbroken. Let the Lunari cling to shadows and false histories. This… this is nothing more than a blasphemous tale"
@@ -126,42 +126,42 @@
  #targon.3.b.tt: "The Lunari are a poison within Targon, a dark cult that seeks to corrupt our holy light. We must rid ourselves of their seditious influence and cleanse Targon of their blasphemy once and for all."
 
 
- targon.9.t: "Leona’s Choice"
- targon.9.d: "Leona is at a crossroads, deciding between paths of purity, reforming Solari to let Lunari be apart of Targon, or remaining neutral."
+ targon.9.t: "The Solari Decide"
+ targon.9.d: "With the succession settled, the Solari must decide what place the Lunari will have in Targon."
  targon.9.a: "Pursue Solari Purity"
- targon.9.a.tt: "The Lunari have begun to dominate Targon. We must purge them of their heretics."
+ targon.9.a.tt: "Loses 5% stability, gains 10% war support, adopts $TAR_solari_supremacy$, and opens the Purity route."
  targon.9.b: "Pursue Reformation"
- targon.9.b.tt: "The Lunari have been denied a seat for too long... It is high time their place is rectified... Let them in!"
+ targon.9.b.tt: "Gains 5% stability and 20 political power, adopts $TAR_peaceful_reforms$, and opens the Reform route."
  targon.9.c: "Remain Undecided"
- targon.9.c.tt: "Diana has chosen to reclaim her place in Targon. But... I can't support the Lunari's heretical beliefs."
+ targon.9.c.tt: "Gains 10 political power and leaves the focus routes governed by the choice made in Our Origins."
 
  targon.10.t: "Eradicate the Heretics"
- targon.10.d: "Rahvun’s purist faction has called for a full purge of Lunari influence in Targon."
+ targon.10.d: "The Solari purists demand a campaign against Lunari influence. Targon must decide whether to endorse their demands or permit the Lunari to remain."
  targon.10.a: "Support the Purge"
  targon.10.b: "Allow the Lunari to remain"
 
- targon.11.t: "Civil War Preparations"
- targon.11.d: "With growing divisions, a civil war is inevitable. Pick your side in the struggle."
+ targon.11.t: "A Divided Targon"
+ targon.11.d: "Purists and reformers contend over the direction of Targon. We must decide which faction to support as distrust deepens."
  targon.11.a: "Support the Purists"
  targon.11.b: "Support the Reformers"
 
- targon.12.t: "Leona’s Path of Reformation"
- targon.12.d: "Leona aims to reform Targon, but keeping both factions satisfied is a delicate balance."
+ targon.12.t: "Promises of Reform"
+ targon.12.d: "The Solari and Lunari seek assurances about the direction of reform. We can favor one faction or try to balance their competing demands."
  targon.12.a: "Promise to the Solari"
  targon.12.b: "Promise to the Lunari"
  targon.12.c: "Balance Both Sides"
 
- targon.13.t: "Diana’s Return"
- targon.13.d: "Diana returns to lead the Lunari, choosing between a path of reformation or complete rejection."
- targon.13.a: "Reformer Path"
- targon.13.b: "Rejector Path"
+ targon.13.t: "The Lunari Choice"
+ targon.13.d: "The Lunari must decide how to confront Solari authority. Reform offers one course; rejecting the Solari entirely offers another."
+ targon.13.a: "Pursue Lunari reform."
+ targon.13.b: "Reject Solari authority."
 
  targon.20.b.tt: "It's time Leona steps down to focus on her faith. \nNow, Rahvun will Lead the Light!"
 
 #################################################################
- targon.101.t: "The Shadow Uprising Begins"
- targon.101.d: "The Lunari, led by Diana and her followers, have risen against the oppressive Solari rule. After years of hiding, they now strike with full force, aiming to reclaim Targon for themselves."
- targon.101.a: "The Lunari Uprising Begins"
+ targon.101.t: "A Voice from the Shadows"
+ targon.101.d: "The Lunari refuse to let Solari authority silence their faith. Their defiance gathers support, even as the dispute unsettles Targon."
+ targon.101.a: "Stand with the Lunari."
 
  PuristPathTrue: "§GTake§! the §OPurist Path§!"
  PuristPathFalse: "§RAvoid§! the Purist Path"
@@ -200,15 +200,15 @@
  purist_path_tt: "The Solari choose purist retaliation, opposing the Lunari as heretics."
 
  TAR_reform: "One Sky, Two Lights"
- TAR_reform_desc: "Leona's revelation cannot be buried beneath old dogma. The Solari and Lunari look upon the same heavens; Targon will endure only if both are granted a place beneath them."
+ TAR_reform_desc: "A steadier future need not be built on confrontation alone. Strengthen reforming authority and the organization of our defenders, giving more people a place in public life while easing the call for war."
  TAR_help_our_allies: "Aid the Moon's Faithful"
- TAR_help_our_allies_desc: "The Lunari survived generations of persecution in hidden temples and mountain paths. Food, arms, and protection will let their scattered communities stand openly beside us."
+ TAR_help_our_allies_desc: "Our commitments need people ready to uphold them. Rally fresh recruits and draw on our fighters' experience, strengthening confidence in the support we can offer."
  TAR_integrate_opposition: "Reconcile Sun and Moon"
- TAR_integrate_opposition_desc: "Neither the Solari nor the Lunari possess the whole truth of Mount Targon. A common council will bind both faiths to the defense of the mountain."
+ TAR_integrate_opposition_desc: "Those who once opposed us should have a place in the peace we seek to build. Encourage cooperation and steadier acceptance of our authority without pretending every disagreement has vanished."
  TAR_rejectors: "Return of the Lunari"
- TAR_rejectors_desc: "The Lunari will no longer exist only in whispers. Diana's return has given the moon's faithful the courage to reclaim their history and their place upon Targon."
+ TAR_rejectors_desc: "The moon's faithful will no longer survive only in whispers. By restoring a public place for Lunari worship, we can give our scattered communities the confidence to endure together."
  TAR_purge_opposition: "Purge the Lunari"
- TAR_purge_opposition_desc: "The Solari hierarchy has chosen zeal over reconciliation. The Ra'Horak will hunt the Lunari from the mountain's paths and erase every shrine that denies the sun's supremacy."
+ TAR_purge_opposition_desc: "The Solari hierarchy will silence those it condemns as enemies of the sun. This campaign will rally its most zealous supporters, but deepen unrest and close the path to a Lunari restoration."
 
  # Characters
  TAR_RAHVUN_NAME: "Rahvun"
@@ -443,3 +443,6 @@
 
 
   # idea: Make a post war civil war focus that lets both factions have their leaders if they can / won as reformers "The Solari and the Lunari have both fought to survive. Their leaders have proved to be legendary.
+
+ TAR_solari_supremacy: "Solari Supremacy"
+ TAR_peaceful_reforms: "Peaceful Reforms"

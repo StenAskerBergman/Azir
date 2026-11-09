@@ -11,18 +11,17 @@ SHU_main_cat = {
 }
 
 SHU_nasus_category = {
-	icon = FX_shurima_blue_icon_category
-
+	icon = GFX_shurima_blue_icon_category
 	priority = 85
 
 	allowed = {
 		original_tag = SHU
+	}
+
+	visible = {
 		has_character = SHU_nasus
 		has_completed_focus = SHU_restore_great_library
 	}
-
-	# This will pop up once void appear
-
 }
 
 SHU_improve_the_god_warriors_influence = { # TAG_improve_the_void_influence # TAG_improve_the_void_spirit

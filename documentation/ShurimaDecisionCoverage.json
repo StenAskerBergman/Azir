@@ -1,0 +1,318 @@
+[
+  {
+    "id": "SHU_azir_speech",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 5,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_azir_speech": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Address the Imperial Question"
+        }
+      ],
+      "SHU_azir_speech_desc": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Supporters of the imperial restoration will bring their arguments before the people. The campaign will press the case for a stronger central authority in Shurima."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "SHU_sivir_speech",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 60,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_sivir_speech": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Address Shurima's Future"
+        }
+      ],
+      "SHU_sivir_speech_desc": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "The dispute over Shurima's future reaches beyond the restored throne. A public campaign will seek support for a stronger central authority among those weighing its claims."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "SHU_restore_great_library_dec",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 118,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_restore_great_library_dec": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "Rebuild the Great Library"
+        }
+      ],
+      "SHU_restore_great_library_dec_desc": [
+        {
+          "file": "localisation/english/repair_ideas_events_l_english.yml",
+          "text": "With Nasus still available, we can carry the library restoration beyond its initial foundations. Renewed collections and facilities will help Shuriman scholars advance their research."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "DuneBreakerFound",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 141,
+    "review_date": "2026-10-08",
+    "localization": {
+      "DuneBreakerFound": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "Void Terror"
+        }
+      ],
+      "DuneBreakerFound_desc": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "A Xer'sai has shown itself and is now terrorizing thousands in our nation! We must combat its presence through any means necessary!"
+        }
+      ]
+    },
+    "dependency_localization": {
+      "DuneBreakerFound": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "Void Terror"
+        }
+      ],
+      "DuneBreakerFound_desc": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "A Xer'sai has shown itself and is now terrorizing thousands in our nation! We must combat its presence through any means necessary!"
+        }
+      ]
+    },
+    "status": "disabled mission; gates preserved",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "DuneSwallowerFound",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 170,
+    "review_date": "2026-10-08",
+    "localization": {
+      "DuneSwallowerFound": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "Void Terror"
+        }
+      ],
+      "DuneSwallowerFound_desc": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "A Xer'sai has shown itself and is now terrorizing thousands in our nation! We must combat its presence through any means necessary!"
+        }
+      ]
+    },
+    "dependency_localization": {
+      "DuneSwallowerFound": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "Void Terror"
+        }
+      ],
+      "DuneSwallowerFound_desc": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "A Xer'sai has shown itself and is now terrorizing thousands in our nation! We must combat its presence through any means necessary!"
+        }
+      ]
+    },
+    "status": "disabled mission; gates preserved",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "XersaiCaller",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 199,
+    "review_date": "2026-10-08",
+    "localization": {
+      "XersaiCaller": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "Void Terror"
+        }
+      ],
+      "XersaiCaller_desc": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "A Xer'sai has shown itself and is now terrorizing thousands in our nation! We must combat its presence through any means necessary!"
+        }
+      ]
+    },
+    "dependency_localization": {
+      "XersaiCaller": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "Void Terror"
+        }
+      ],
+      "XersaiCaller_desc": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "A Xer'sai has shown itself and is now terrorizing thousands in our nation! We must combat its presence through any means necessary!"
+        }
+      ]
+    },
+    "status": "disabled mission; gates preserved",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "investigate_void",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 229,
+    "review_date": "2026-10-08",
+    "localization": {
+      "investigate_void": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "Investigate Xer'sai"
+        }
+      ],
+      "investigate_void_desc": [
+        {
+          "file": "localisation/english/_decisions_shu_l_english.yml",
+          "text": "Search the affected regions for signs of a hidden Void threat. The investigation may uncover danger or conclude with a call for continued vigilance."
+        }
+      ]
+    },
+    "dependency_localization": {
+      "investigate_void": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "Investigate Xer'sai"
+        }
+      ],
+      "investigate_void_desc": [
+        {
+          "file": "E:/SteamLibrary/steamapps/workshop/content/394360/3297129305/localisation/english/_decisions_shu_l_english.yml",
+          "text": "We suspect there might be Xer'sais lurking about in our states. If we manage to find a Xer'sai from our investigation, we will face a significantly smaller penalty and the Xer'sai will only be active for 90 days compared to 180 days."
+        }
+      ]
+    },
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "SHU_void_martial_law",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 276,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_void_martial_law": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Mobilize Against the Void"
+        }
+      ],
+      "SHU_void_martial_law_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Commit manpower to an emergency response in regions affected by Void attacks. Where a corresponding threat mission is active, this intervention is intended to shorten its remaining duration."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "SHU_void_prepare_a_defense",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 324,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_void_prepare_a_defense": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Equip the Void Response"
+        }
+      ],
+      "SHU_void_prepare_a_defense_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Commit infantry equipment from our reserves to preparations against the discovered threat. The effort is intended to shorten an active threat mission; it does not establish permanent fortifications."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "SHU_void_relocate_resources",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 373,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_void_relocate_resources": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Prioritize the Void Response"
+        }
+      ],
+      "SHU_void_relocate_resources_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Direct the administration toward the discovered Void threat. This effort is intended to hasten an active response mission."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  },
+  {
+    "id": "SHU_void_request_night_hunter",
+    "file": "common/decisions/SHU_dec.txt",
+    "line": 415,
+    "review_date": "2026-10-08",
+    "localization": {
+      "SHU_void_request_night_hunter": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Request the Night Hunter's Aid"
+        }
+      ],
+      "SHU_void_request_night_hunter_desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Seek the Night Hunter's assistance against the discovered threat. Her aid is intended to hasten the response while a threat mission remains active."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "status": "source/text reviewed; runtime open",
+    "evidence": "runs163-170 and documentation/ShurimaVoidMissionProposal.md",
+    "runtime_acceptance": "open: event/mission bindings, eligibility, costs, flag producers and native display; disabled missions not activated"
+  }
+]

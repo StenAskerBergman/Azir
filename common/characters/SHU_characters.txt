@@ -192,7 +192,7 @@ characters = {
 	name = "Renekton"
 	portraits = {
    	 civilian = {
-         large = "GFX_portrait_shu_renekton"
+         large = "GFX_portrait_shu_renekton_large"
          }
 	}
 	country_leader = {
@@ -212,11 +212,11 @@ characters = {
 	portraits = {
    	    civilian = {
             large = GFX_portrait_naz_ksante_large
-            small = GFX_portrait_ksante_small
+            small = GFX_portrait_naz_ksante_small
         }
         army = {
             large = GFX_portrait_naz_ksante_large
-            small = GFX_portrait_ksante_small
+            small = GFX_portrait_naz_ksante_small
         }
 	}
     advisor = {

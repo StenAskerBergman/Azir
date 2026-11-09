@@ -1,0 +1,89 @@
+spriteTypes = {
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_void_prophet"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_void_prophet_eye_smoke.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_void_prophet_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_void_prophet_eye_smoke.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_void_rituals"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_void_rituals.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_void_rituals_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_void_rituals.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_our_queen"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_our_queen_full_size.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_our_queen_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_our_queen_full_size.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_new_world"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_new_world_full_size.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_voi_loop_new_world_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_loop_new_world_full_size.dds"
+        noOfFrames = 24
+        animation_rate_fps = 6
+        looping = yes
+        play_on_show = yes
+        effectFile = "gfx/FX/buttonstate_blendframes.lua"
+        legacy_lazy_load = no
+    }
+}

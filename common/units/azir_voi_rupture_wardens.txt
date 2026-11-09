@@ -1,0 +1,33 @@
+sub_units = {
+    azir_voi_rupture_warden_company = {
+        abbreviation = "RWRD"
+        sprite = engineer
+        map_icon_category = infantry
+        active = no
+        affects_speed = no
+        type = { infantry support }
+        group = support
+        categories = {
+            category_front_line
+            category_support_battalions
+            category_divisional_support_battalions
+            category_army
+        }
+        regimental = no
+        combat_width = 0
+        manpower = 300
+        max_organisation = 10
+        default_morale = 0.2
+        max_strength = 1
+        training_time = 120
+        weight = 0.1
+        supply_consumption = 0.04
+        can_be_parachuted = no
+        essential = { azir_voi_containment_kit }
+        need = { azir_voi_containment_kit = 20 }
+        entrenchment = 3
+        hills = { defence = 0.10 }
+        urban = { defence = 0.10 }
+        same_support_type = engineer
+    }
+}

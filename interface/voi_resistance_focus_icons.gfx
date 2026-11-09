@@ -1,0 +1,51 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_focus_voi_the_man_without_a_weapon"
+        texturefile = "gfx/interface/goals/VOI/voi_the_man_without_a_weapon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_the_man_without_a_weapon_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_the_man_without_a_weapon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_mage_king"
+        texturefile = "gfx/interface/goals/VOI/voi_mage_king.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_mage_king_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_mage_king.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_resistance_fighters"
+        texturefile = "gfx/interface/goals/VOI/voi_resistance_fighters.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_resistance_fighters_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_resistance_fighters.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_reshape_our_image"
+        texturefile = "gfx/interface/goals/VOI/voi_reshape_our_image.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_reshape_our_image_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_reshape_our_image.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_penal_bandit_divisions"
+        texturefile = "gfx/interface/goals/VOI/voi_penal_bandit_divisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_voi_penal_bandit_divisions_shine"
+        texturefile = "gfx/interface/goals/VOI/voi_penal_bandit_divisions.dds"
+    }
+}

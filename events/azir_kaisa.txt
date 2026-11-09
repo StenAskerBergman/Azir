@@ -1,0 +1,35 @@
+add_namespace = azir_kaisa
+
+news_event = {
+    id = azir_kaisa.1
+    title = azir_kaisa.1.t
+    desc = {
+        text = azir_kaisa.1.d_hybrid
+        trigger = { has_country_flag = VOI_hybrid_path }
+    }
+    desc = {
+        text = azir_kaisa.1.d
+        trigger = { NOT = { has_country_flag = VOI_hybrid_path } }
+    }
+    picture = GFX_news_event_azir_kaisa_returns
+    is_triggered_only = yes
+    trigger = { tag = VOI }
+
+    option = {
+        name = azir_kaisa.1.a
+        trigger = { has_country_flag = VOI_hybrid_path }
+    }
+
+    option = {
+        name = azir_kaisa.1.b
+        trigger = { NOT = { has_country_flag = VOI_hybrid_path } }
+        ai_chance = { factor = 100 }
+        recruit_returned_kaisa = yes
+    }
+
+    option = {
+        name = azir_kaisa.1.c
+        trigger = { NOT = { has_country_flag = VOI_hybrid_path } }
+        ai_chance = { factor = 0 }
+    }
+}

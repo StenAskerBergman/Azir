@@ -1,0 +1,12 @@
+defined_text = {
+    name = GetAzirVoidOperativeDossier
+
+    text = {
+        trigger = { has_country_flag = azir_void_espionage_goofy }
+        localization_key = azir_void_operative_dossier_goofy
+    }
+
+    text = {
+        localization_key = azir_void_operative_dossier_serious
+    }
+}

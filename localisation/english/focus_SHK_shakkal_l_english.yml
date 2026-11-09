@@ -1,90 +1,90 @@
 ﻿l_english:
   RAI_rise_of_the_shuriman_raiders: "Rise of the Shuriman Raiders"
-  RAI_rise_of_the_shuriman_raiders_desc: "The Shuriman Raiders rise to prominence, gaining political power."
+  RAI_rise_of_the_shuriman_raiders_desc: "Scattered raiding bands cannot bargain or command as one. We will give the camps a common voice and turn their growing influence into political authority."
 
   RAI_desert_wanderers: "Desert Wanderers"
-  RAI_desert_wanderers_desc: "Training our forces to effectively navigate and fight in desert environments."
+  RAI_desert_wanderers_desc: "Our fighters know the tracks and hiding places around their own camps. Drawing on that knowledge will strengthen attacks on the land we claim as home."
 
   RAI_lore_keepers: "Lore Keepers"
-  RAI_lore_keepers_desc: "Preserving ancient knowledge to enhance our research capabilities."
+  RAI_lore_keepers_desc: "The camps carry knowledge that no imperial archive has preserved for them. Giving their keepers a place in our studies will help us learn without surrendering those traditions."
 
   RAI_cultural_exchange: "Cultural Exchange"
-  RAI_cultural_exchange_desc: "Establishing cultural ties to improve trade and diplomatic relations."
+  RAI_cultural_exchange_desc: "Trade between the camps and settled communities needs more than a wary exchange at the road's edge. Familiar customs and trusted intermediaries will improve how merchants regard us."
 
   RAI_blood_and_sand: "Blood and Sand"
-  RAI_blood_and_sand_desc: "Training fighters to thrive in the harsh desert, improving their combat effectiveness."
+  RAI_blood_and_sand_desc: "Every band has fighters who learned their craft defending a camp or a water source. Sharing that hard-won experience will sharpen our attacks on the country we call home."
 
   RAI_horse_lords: "Horse Lords"
-  RAI_horse_lords_desc: "Focusing on cavalry tactics and breeding superior warhorses to enhance mobility and attack."
+  RAI_horse_lords_desc: "Mounted fighters give our bands a tradition worth organizing around. Better cavalry tactics will strengthen their attacks and help them hold their ground when enemies answer."
 
   RAI_dune_fighters: "Dune Fighters"
-  RAI_dune_fighters_desc: "Specializing in desert warfare, providing bonuses in desert terrains."
+  RAI_dune_fighters_desc: "Bands accustomed to fighting apart must learn to support one another. Shared drills will turn their hard-earned experience into stronger attacks and a steadier defense."
 
   RAI_oasis_control: "Oasis Control"
-  RAI_oasis_control_desc: "Securing and developing oases to boost local infrastructure and resource production."
+  RAI_oasis_control_desc: "A band that wastes its provisions cannot stay in the field for long. Organizing supplies around the oases we rely on will reduce what our forces need to sustain their campaigns."
 
   RAI_sand_scouts: "Sand Scouts"
-  RAI_sand_scouts_desc: "Training scouts to navigate the desert and gather intelligence effectively."
+  RAI_sand_scouts_desc: "Mounted scouts can range ahead of the bands and bring back news of enemy movements. We will make their reports a regular part of our reconnaissance."
 
   RAI_survival_training: "Survival Training"
-  RAI_survival_training_desc: "Enhancing the survivability of our troops in harsh conditions."
+  RAI_survival_training_desc: "A long march can wear down a band before an enemy ever meets it. Teach every fighter to care for equipment and endure the journey, reducing losses to attrition."
 
   RAI_plunder_and_pillage: "Plunder and Pillage"
-  RAI_plunder_and_pillage_desc: "Focusing on raiding enemy settlements to gain resources from conquests."
+  RAI_plunder_and_pillage_desc: "The promise of plunder can rally the camps behind a campaign. We will sharpen our raids on home ground and build support for the fighting ahead."
 
   RAI_ruthless_tactics: "Ruthless Tactics"
-  RAI_ruthless_tactics_desc: "Employing fearsome strategies to increase the effectiveness of surprise attacks."
+  RAI_ruthless_tactics_desc: "Scouts must bring back more than warnings: their reports must shape how the bands fight. Relentless drills will turn that knowledge into firmer attacks and defenses."
 
   RAI_loyal_to_the_clan: "Loyal to the Clan"
-  RAI_loyal_to_the_clan_desc: "Fostering strong internal loyalty to reduce the risk of dissent."
+  RAI_loyal_to_the_clan_desc: "A fighter who trusts the band beside him is less likely to break when the line comes under pressure. Strengthen the bonds of the clans so our forces can hold together and defend their ground."
 
   RAI_treaty_with_outlaws: "Treaty with Outlaws"
-  RAI_treaty_with_outlaws_desc: "Forming alliances with other outlaw groups to expand influence and gain military support."
+  RAI_treaty_with_outlaws_desc: "Agreements among the outlaw bands can settle disputes that otherwise consume the camps' attention. A common understanding will give our leaders more time and authority to act."
 
   RAI_nomadic_coalition: "Nomadic Coalition"
-  RAI_nomadic_coalition_desc: "Uniting various nomadic tribes to enhance manpower and resources."
+  RAI_nomadic_coalition_desc: "The bands need not abandon their own customs to stand together. Coordinating their campaigns will strengthen both attack and defense on the land they call home."
 
   RAI_expansion_of_territory: "Expansion of Territory"
-  RAI_expansion_of_territory_desc: "Conquering and settling new lands to increase territorial control and resources."
+  RAI_expansion_of_territory_desc: "Our leaders must make the case for extending the camps' reach before calling the bands to war. A clearer policy of expansion will shorten the work of justifying future campaigns."
 
   SHK_new_leadership: "New Leadership"
-  SHK_new_leadership_desc: "Choose the direction for the new leadership among the raiders."
+  SHK_new_leadership_desc: "A gang can follow whoever shouts loudest; a people needs a steadier hand. Bring Shakkal's leaders together and give them the authority to chart our next move."
 
   SHK_the_sadists: "The Sadists"
-  SHK_the_sadists_desc: "Focus on ruthless and fear-driven control."
+  SHK_the_sadists_desc: "These commanders measure strength by the fear they leave behind. Their fighters will press the attack harder, but the people at home will pay for their methods."
 
   SHK_the_eggheads: "The Eggheads"
-  SHK_the_eggheads_desc: "Emphasize strategy, intelligence, and technology."
+  SHK_the_eggheads_desc: "A sharp mind can win what a reckless charge throws away. Give our thinkers room to study, test their ideas, and prepare the plans our fighters need."
 
   SHK_the_grunts: "The Grunts"
-  SHK_the_grunts_desc: "Build on brute strength and military discipline."
+  SHK_the_grunts_desc: "The fighters who hold the line have earned their say. Put practical discipline first, training recruits more quickly and teaching them to stand their ground."
 
   SHK_the_boss: "The Boss"
-  SHK_the_boss_desc: "Establish a charismatic and unifying leader."
+  SHK_the_boss_desc: "A dozen rival voices can leave every order disputed. Back a leader who can make decisions stick and give Shakkal a firmer center of authority."
 
   SHK_preparing_for_total_war: "Preparing for Total War"
-  SHK_preparing_for_total_war_desc: "Prepare for large-scale conflict."
+  SHK_preparing_for_total_war_desc: "Small raids will not prepare us for a war that reaches every camp. Rally support for the struggle ahead and bring more of our people into its service."
 
   SHK_draconian_recovery: "Draconian Recovery Methods"
-  SHK_draconian_recovery_desc: "Use harsh measures to recover and maintain order."
+  SHK_draconian_recovery_desc: "The commanders demand that our workshops deliver, whatever the cost. Force production to a harder pace, accepting the anger these measures will stir among our people."
 
   SHK_critical_thinking: "Critical Thinking"
-  SHK_critical_thinking_desc: "Encourage innovation and strategic planning."
+  SHK_critical_thinking_desc: "A plan that cannot survive a hard question will not survive a battle. Encourage our thinkers to challenge weak assumptions and turn better knowledge into better preparation."
 
   SHK_the_master_plan: "The Master Plan"
-  SHK_the_master_plan_desc: "Develop a comprehensive strategy for dominance."
+  SHK_the_master_plan_desc: "Raids fought in isolation cannot serve a common purpose. Give our commanders a shared plan and organize the fighters to carry it through together."
 
   SHK_gangland_diplomacy: "Gangland Diplomacy"
-  SHK_gangland_diplomacy_desc: "Use brute force for diplomatic gains."
+  SHK_gangland_diplomacy_desc: "Our spokesmen intend to bargain from strength. Sharpen the fighters' offensive edge and give Shakkal's leaders more weight behind their words."
 
   SHK_everyone_works: "Everyone Works"
-  SHK_everyone_works_desc: "Enforce mandatory military and labor service."
+  SHK_everyone_works_desc: "No camp can live on the efforts of a few. Put more hands to productive work and military service, building the discipline to keep both supplied."
 
   SHK_dont_question_the_boss: "Don’t Question the Boss"
-  SHK_dont_question_the_boss_desc: "Solidify the authority of the leader."
+  SHK_dont_question_the_boss_desc: "The boss expects an order to settle an argument. Reinforce that authority so decisions carry further and the camps have a steadier hand above them."
 
   SHK_iron_grip: "The Iron Grip"
-  SHK_iron_grip_desc: "Enforce strict control over the population."
+  SHK_iron_grip_desc: "The boss intends to hold the camps together when hardship comes. Make that authority felt throughout Shakkal and rally support for the struggles ahead."
 
   SHK_rise_of_the_shuriman_raiders: "Rise of the Shuriman Raiders"
   SHK_rise_of_the_shuriman_raiders_desc: "Unite the raiders under one banner for increased power and cohesion."
@@ -136,110 +136,110 @@
 
 
   SHK_reject_our_ways: "Reject Our Ways"
-  SHK_reject_our_ways_desc: "Choosing to abandon our traditional ways for new opportunities."
+  SHK_reject_our_ways_desc: "A life of raids need not decide every generation's future. Give those seeking a different course the authority to begin, and build confidence that change can serve our people."
 
   SHK_reject_their_rules: "Reject Their Rules"
-  SHK_reject_their_rules_desc: "Refusing to comply with external powers, striving for independence."
+  SHK_reject_their_rules_desc: "No distant ruler has earned the right to dictate how our camps should live. Rally our people behind a firmer voice of our own and prepare our fighters to defend it."
 
   SHK_constant_resistance: "Constant Resistance"
-  SHK_constant_resistance_desc: "Maintaining persistent resistance against our oppressors."
+  SHK_constant_resistance_desc: "Resistance must outlast the first bold speech. Keep our fighters ready and our people committed, even as the strain of constant preparation unsettles life at home."
 
   SHK_icathian_ties: "Icathian Ties"
-  SHK_icathian_ties_desc: "Strengthening our ties with Icathia for mutual benefit."
+  SHK_icathian_ties_desc: "Those who look to Icathia's legacy need a voice in Shakkal's future. Give that connection a place in our public life and gather support around it."
 
-  SHK_icathian_heritage: "Icathian Lineage"
-  SHK_icathian_heritage_desc: "Reconnecting with our Icathian heritage to strengthen our identity."
+  SHK_icathian_heritage: "Icathian Heritage"
+  SHK_icathian_heritage_desc: "For those who claim an Icathian heritage, remembrance should lead to study as well as pride. Make room for more research and give that shared pursuit a place in Shakkal's life."
 
   SHK_foreign_trade: "Foreign Trade"
-  SHK_foreign_trade_desc: "Expanding trade relations with foreign entities to boost our economy."
+  SHK_foreign_trade_desc: "Resistance alone will not fill a workshop. Put the proceeds of trade from beyond our borders into production at home, giving Shakkal a stronger industrial footing."
 
   SHK_foreign_support: "Foreign Support"
   SHK_foreign_support_desc: "Securing aid and support from foreign allies."
 
   SHK_embrace_new_ways: "Embrace New Ways"
-  SHK_embrace_new_ways_desc: "Adopting new practices and innovations to advance our society."
+  SHK_embrace_new_ways_desc: "Our workshops cannot improve by repeating every old habit. Encourage new industrial methods and give our leaders the means to carry those lessons into practice."
 
   SHK_icathia_ancestors: "Icathia Ancestors"
   SHK_icathia_ancestors_desc: "Honoring our Icathian ancestors and their legacy."
 
 
   SHK_kill_burn_destroy: "Kill, Burn, Destroy"
-  SHK_kill_burn_destroy_desc: "Adopting a scorched earth policy to annihilate our enemies."
+  SHK_kill_burn_destroy_desc: "Some commanders believe only a ruthless fight can secure our future. Rally their fighters for a harsher struggle, accepting the unrest that such a course will bring at home."
 
   SHK_protect_shield_guard: "Protect, Shield, Guard"
-  SHK_protect_shield_guard_desc: "Focusing on defense and protection of our people and lands."
+  SHK_protect_shield_guard_desc: "Our fighters must serve the people whose homes they defend. Gather their experience around a common duty and give the camps confidence in those who stand guard."
 
   SHK_rebuild: "Rebuild"
-  SHK_rebuild_desc: "Reconstructing and revitalizing our infrastructure and communities."
+  SHK_rebuild_desc: "A future worth defending must have work behind it. Establish more workshops in the lands we administer and give Shakkal a stronger foundation for recovery."
 
   SHK_resemble: "Resemble"
-  SHK_resemble_desc: "Aligning our policies and structures with successful models."
+  SHK_resemble_desc: "We need not repeat another people's mistakes to learn from their successes. Study proven industrial methods and give our leaders the means to put them to use."
 
   SHK_recreate: "Recreate"
-  SHK_recreate_desc: "Creating new institutions and systems for a stronger future."
+  SHK_recreate_desc: "Old ambitions need new knowledge if they are to survive. Make room for further research and gather our people behind the future it could open."
 
   SHK_shakkal_republic: "Shakkal Republic"
-  SHK_shakkal_republic_desc: "Establishing a republic to represent and govern the Shakkal people."
+  SHK_shakkal_republic_desc: "Let the promise of a Shakkal republic give our camps a common purpose. Proclaim that political vision and build the public confidence needed to carry it forward."
 
   SHK_greater_shakkal: "Greater Shakkal"
-  SHK_greater_shakkal_desc: "Expanding the Shakkal territory to its greatest extent."
+  SHK_greater_shakkal_desc: "Those who dream of a greater Shakkal must be ready to serve it. Rally new fighters and public support behind that ambition."
 
   SHK_icathia_alliance: "Icathia Alliance"
-  SHK_icathia_alliance_desc: "Forming a strategic alliance with Icathia for mutual benefit."
+  SHK_icathia_alliance_desc: "Those who favor an alliance with Icathia must first build support for that course at home. Give their policy a clear voice and unite our people behind its promise."
 
   SHK_icathia_reborn: "Icathia Reborn"
-  SHK_icathia_reborn_desc: "Reviving the ancient glory of Icathia through a new era of prosperity."
+  SHK_icathia_reborn_desc: "For some among us, Icathia's legacy offers a vision of what comes next. Commit our leadership to that ambition and expand the research that might give it substance."
 
   SHK_ancestral_lineage: "Ancestral Lineage"
-  SHK_ancestral_lineage_desc: "Preserving the lineage and traditions of our ancestors."
+  SHK_ancestral_lineage_desc: "Our elders carry stories that give the camps a common past. Honor those traditions without surrendering the future we are building, and strengthen the bonds that hold our people together."
 
   SHK_sand_storm: "Sand Storm"
-  SHK_sand_storm_desc: "Unleashing the fury of the desert on our enemies."
+  SHK_sand_storm_desc: "Our fighters must turn determination into preparation. Gather the lessons of past struggles and rally Shakkal behind the effort still ahead."
 
   SHK_the_bell_tolls: "The Bell Tolls"
-  SHK_the_bell_tolls_desc: "Marking the time for a significant change in our history."
+  SHK_the_bell_tolls_desc: "When Shakkal recognizes a common enemy, hesitation serves no one. Rally our people for the struggle and bring our fighters' experience to bear."
 
   SHK_desert_dream: "Desert Dream"
-  SHK_desert_dream_desc: "Realizing the vision of a prosperous desert nation."
+  SHK_desert_dream_desc: "Grand visions mean little without livelihoods to sustain them. Build new workshops in the lands we hold and give our people confidence that prosperity can reach their homes."
 
   SHK_greater_ambitious: "Greater Ambitions"
-  SHK_greater_ambitious_desc: "Pursuing ambitious goals to expand our influence."
+  SHK_greater_ambitious_desc: "Caution has its place, but our leaders intend to make Shakkal's voice carry further. Gather the authority and public resolve needed to pursue a bolder course."
 
   SHK_greater_dreams: "Greater Dreams"
-  SHK_greater_dreams_desc: "Chasing grand dreams for the future of our nation."
+  SHK_greater_dreams_desc: "Strength alone cannot build the future we imagine. Expand our capacity for research and give those ambitions a firmer place in Shakkal's policy."
 
   SHK_our_legacy: "Our Legacy"
-  SHK_our_legacy_desc: "Honoring and preserving the legacy of our ancestors."
+  SHK_our_legacy_desc: "An ambitious people needs a past it can stand behind. Honor what our camps have endured and give our leaders a stronger mandate to carry that legacy forward."
 
   SHK_graveyard_of_empires: "Graveyard of Empires"
-  SHK_graveyard_of_empires_desc: "Turning our land into a graveyard for invading empires."
+  SHK_graveyard_of_empires_desc: "An invader should find no easy victory here. Bring fresh fighters into the struggle and turn our hard-earned experience into the resolve to resist."
 
   SHK_our_destiny: "Our Destiny"
-  SHK_our_destiny_desc: "Fulfilling the destiny of our nation and people."
+  SHK_our_destiny_desc: "Our future should be shaped by the people who must live it. Unite Shakkal behind that purpose, with the confidence and resolve to see it through."
 
   SHK_return_to_traditions: "Return to Traditions"
-  SHK_return_to_traditions_desc: "Reviving and preserving our ancient traditions."
+  SHK_return_to_traditions_desc: "Settling down need not mean forgetting who we are. Bring the customs of the camps into our new public life and strengthen confidence in the leaders who uphold them."
 
   SHK_our_ancestors: "Our Ancestors"
-  SHK_our_ancestors_desc: "Honoring our ancestors and their legacy."
+  SHK_our_ancestors_desc: "The stories of those before us belong to more than any one camp. Honor that common inheritance and let it strengthen the bonds between our people."
 
   SHK_icathian_lineage: "Icathian Lineage"
   SHK_icathian_lineage_desc: "Celebrating our lineage and connection to Icathia."
 
   SHK_settle_down: "Settle Down"
-  SHK_settle_down_desc: "Transitioning from a nomadic lifestyle to permanent settlements."
+  SHK_settle_down_desc: "A permanent home needs work as well as walls. Expand production in the lands we administer and give our people a stronger stake in the settlements taking shape there."
 
   SHK_our_lands: "Our Lands"
-  SHK_our_lands_desc: "Reclaiming and securing our ancestral lands."
+  SHK_our_lands_desc: "The ground beneath our camps is worth more than a distant ruler's promises. Rally fresh fighters around the defense of our homeland and give our people a cause they can call their own."
 
   SHK_our_coast: "Our Coast"
-  SHK_our_coast_desc: "Expanding our control to coastal regions for strategic advantage."
+  SHK_our_coast_desc: "Our coast should serve the people who live behind it. Gather the knowledge of sailors and coastal leaders so Shakkal can speak more firmly about its interests along the shore."
 
   SHK_our_sea: "Our Sea"
-  SHK_our_sea_desc: "Establishing dominance over the surrounding seas."
+  SHK_our_sea_desc: "The horizon need not mark the limit of our ambitions. Build on our sailors' experience and rally support for a stronger Shakkal presence at sea."
 
   SHK_our_share: "Our Share"
-  SHK_our_share_desc: "Claiming our rightful share of resources and territories."
+  SHK_our_share_desc: "Our people expect their interests to be heard, not traded away without a word. Unite the camps behind that demand and give our leaders a stronger mandate."
 
  # Works 
 

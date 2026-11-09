@@ -24,7 +24,7 @@ spriteTypes = {
  	# Tribal Council
 	SpriteType = {
 		name = "GFX_portrait_NAZ_tribal_council_large"
-		texturefile = "gfx/leaders/NAZ/portrait_naz_ksante_large.dds"
+		texturefile = "gfx/leaders/NAZ/portrait_naz_council_large.dds"
 	}	
 
 # Small 
@@ -35,4 +35,9 @@ spriteTypes = {
 		texturefile = "gfx/characters/SHU/portrait_ksante_small.dds"
 	}
 
+
+    spriteType = {
+        name = "GFX_portrait_naz_tribal_elder_council_small"
+        texturefile = "gfx/characters/NAZ/portrait_naz_council_small.dds"
+    }
 }

@@ -1,0 +1,49 @@
+buildings = {
+    landmark_void_gate = {
+        show_on_map = 1
+        has_destroyed_mesh = yes
+        base_cost = 20000
+        damage_factor = 1
+        icon_frame = 22
+        value = 5
+        is_buildable = no
+        disable_grow_animation = yes
+        repair_speed_factor = 0.15
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+    landmark_void_gate_construction = {
+        show_on_map = 1
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+    landmark_void_gate_first_rift = {
+        show_on_map = 1
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+    landmark_void_gate_closed = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+}

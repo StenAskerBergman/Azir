@@ -1,0 +1,22 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_news_event_azir_gate_construction"
+        texturefile = "gfx/event_pictures/news_event_azir_gate_construction.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_azir_first_rift"
+        texturefile = "gfx/event_pictures/news_event_nuke.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_azir_rift_aftermath"
+        texturefile = "gfx/event_pictures/news_event_azir_rift_aftermath.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_azir_kaisa_returns"
+        texturefile = "gfx/event_pictures/news_event_azir_kaisa_returns.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_azir_broken_sun_disc"
+        texturefile = "gfx/event_pictures/news_event_azir_broken_sun_disc.dds"
+    }
+}

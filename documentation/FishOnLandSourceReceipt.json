@@ -1,0 +1,33 @@
+{
+  "focus_id": "SHU_fish_on_land",
+  "card": "FZhzwrIH",
+  "live_status": "DOING",
+  "member": "netsnamgreb",
+  "original_description": "empty",
+  "cost": 4,
+  "prerequisite": "SHU_fate_of_targon",
+  "availability": [
+    "has_character SHU_nami",
+    "NOT SHU_aiding_moonstone_quest"
+  ],
+  "focus_reward": [
+    "25 political power",
+    "shurima_moonstone.1"
+  ],
+  "event_option_reward": [
+    "SHU_aiding_moonstone_quest flag",
+    "0.02 stability"
+  ],
+  "sources": [
+    "common/national_focus/shurima_focus.txt",
+    "events/SHU_moonstone_events.txt",
+    "common/characters/SHU_characters.txt",
+    "history/countries/SHU - Shurima.txt",
+    "localisation/english/focus_SHU_repairs_l_english.yml"
+  ],
+  "wording": "existing title and two-sentence description accurately describe introduction and assistance, not Moonstone possession",
+  "checks": "validator PASS; all five focus/event reference keys unique",
+  "board_mutation": true,
+  "pending": "native availability/reward/event/flag/downstream/save/multiplayer gates",
+  "readback": "saved and reloaded 2026-10-09 17:25 Stockholm; DOING/Nets retained"
+}

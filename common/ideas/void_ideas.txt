@@ -52,11 +52,9 @@ ideas = {
 				consumer_goods_factor = 0.50
 			}
 
-			# cancel = {
-			# 	NOT = {
-			# 		has_country_flag = VOI_abandonment
-			# 	}
-			# }
+			cancel = {
+				has_completed_focus = VOI_pacify_our_neightbours
+			}
 		}
 
 		Void_Threats = {

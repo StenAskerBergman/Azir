@@ -1,0 +1,92 @@
+[
+  {
+    "id": "shurima.5",
+    "file": "events/Shurima_events.txt",
+    "trigger": "tag SHU; Shurima_apart; stability>0.50",
+    "timing": "once; mean time four months",
+    "reward": "SHU_increase_unity; .5/.6 also explicit apart-to-united replacement",
+    "localization": {
+      "shurima.5.t": [
+        {
+          "file": "localisation/english/events_SHU_shurima_l_english.yml",
+          "text": "A More United Shurima"
+        }
+      ],
+      "shurima.5.desc": [
+        {
+          "file": "localisation/english/events_SHU_shurima_l_english.yml",
+          "text": "Growing stability gives the empire a firmer foundation. Divisions within Shurima can now give way to a more united administration."
+        }
+      ],
+      "shurima.5.a": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Strengthen our unity."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: overlapping timers, triggered selector calls, idea consistency and intended loss/recovery design",
+    "proposal": "documentation/ShurimaUnityCycleProposal.md"
+  },
+  {
+    "id": "shurima.6",
+    "file": "events/Shurima_events.txt",
+    "trigger": "tag SHU; Shurima_apart; stability>0.50",
+    "timing": "mean time two months",
+    "reward": "SHU_increase_unity; .5/.6 also explicit apart-to-united replacement",
+    "localization": {
+      "shurima.6.t": [
+        {
+          "file": "localisation/english/events_SHU_shurima_l_english.yml",
+          "text": "Consolidating Imperial Unity"
+        }
+      ],
+      "shurima.6.desc": [
+        {
+          "file": "localisation/english/events_SHU_shurima_l_english.yml",
+          "text": "With the country stable enough to move beyond its remaining divisions, the imperial administration can strengthen Shurima's unity."
+        }
+      ],
+      "shurima.5.a": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Strengthen our unity."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: overlapping timers, triggered selector calls, idea consistency and intended loss/recovery design",
+    "proposal": "documentation/ShurimaUnityCycleProposal.md"
+  },
+  {
+    "id": "shurima.7",
+    "file": "events/Shurima_events.txt",
+    "trigger": "tag SHU; Shurima_apart; stability>0.50",
+    "timing": "mean time twenty days",
+    "reward": "SHU_increase_unity; .5/.6 also explicit apart-to-united replacement",
+    "localization": {
+      "shurima.7.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Overcoming Shurima's Divisions"
+        }
+      ],
+      "shurima.7.desc": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Stability has made it possible to draw the divided country together. The imperial administration can now consolidate a more united Shurima."
+        }
+      ],
+      "shurima.5.a": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Strengthen our unity."
+        }
+      ]
+    },
+    "dependency_localization": {},
+    "runtime_acceptance": "open: overlapping timers, triggered selector calls, idea consistency and intended loss/recovery design",
+    "proposal": "documentation/ShurimaUnityCycleProposal.md"
+  }
+]

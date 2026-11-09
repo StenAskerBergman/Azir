@@ -1,26 +1,74 @@
 ﻿l_english:
  # Collision repairs reuse the existing authored Void text.
- shurima_void.3.t: "$shurima.33.t$"
- shurima_void.3.d: "$shurima.33.d$"
- shurima_void.3.a: "$shurima.33.a$"
- shurima_void.4.t: "$shurima.34.t$"
- shurima_void.4.d: "$shurima.34.d$"
- shurima_void.4.a: "$shurima.34.a$"
- shurima_void.10.t: "$shurima.310.t$"
- shurima_void.10.d: "$shurima.310.d$"
- shurima_void.11.t: "$shurima.311.t$"
- shurima_void.11.d: "$shurima.311.d$"
+ shurima_void.3.t: "No Demon Found"
+ shurima_void.3.d: "The investigation has found no evidence of a demonic presence in the countryside. The immediate alarm has eased, though vigilance remains necessary."
+ shurima_void.3.a: "Keep watch."
+ shurima_void.4.t: "A Demon in the Countryside"
+ shurima_void.4.d: "Reports of a demonic presence have reached us from the countryside. Fear is spreading among the population, and the authorities must organize a response."
+ shurima_void.4.a: "Prepare a response."
+ shurima_void.10.t: "Demonic Terror Spreads"
+ shurima_void.10.d: "Fresh reports of demonic terror have reached the authorities. We must decide whether to commit political effort to the response or risk the threat reaching another region."
+ shurima_void.11.t: "The Demon Lingers"
+ shurima_void.11.d: "The demonic threat continues to unsettle the country. Renewed political effort may be needed to prevent the response from dragging on."
 
  # Keep the dependency decision wording without overriding Demacia keys.
- SHU_void_martial_law: "$martial_law$"
- SHU_void_martial_law_desc: "$martial_law_desc$"
- SHU_void_prepare_a_defense: "$prepare_a_defense$"
- SHU_void_prepare_a_defense_desc: "$prepare_a_defense_desc$"
- SHU_void_relocate_resources: "$relocate_resources$"
- SHU_void_relocate_resources_desc: "$relocate_resources_desc$"
- SHU_void_request_night_hunter: "$request_night_hunter$"
- SHU_void_request_night_hunter_desc: "$request_night_hunter_desc$"
+ SHU_void_martial_law: "Mobilize Against the Void"
+ SHU_void_martial_law_desc: "Commit manpower to an emergency response in regions affected by Void attacks. Where a corresponding threat mission is active, this intervention is intended to shorten its remaining duration."
+ SHU_void_prepare_a_defense: "Equip the Void Response"
+ SHU_void_prepare_a_defense_desc: "Commit infantry equipment from our reserves to preparations against the discovered threat. The effort is intended to shorten an active threat mission; it does not establish permanent fortifications."
+ SHU_void_relocate_resources: "Prioritize the Void Response"
+ SHU_void_relocate_resources_desc: "Direct the administration toward the discovered Void threat. This effort is intended to hasten an active response mission."
+ SHU_void_request_night_hunter: "Request the Night Hunter's Aid"
+ SHU_void_request_night_hunter_desc: "Seek the Night Hunter's assistance against the discovered threat. Her aid is intended to hasten the response while a threat mission remains active."
 
  # The BOP-panel variants retain their existing political and BOP effects.
  TAR_bop_influence_solari: "Influence the Solari"
  TAR_bop_influence_lunari: "Influence the Lunari"
+
+ TAR_bop_influence_solari_desc: "Supporters of the Solari will press their claim to authority within Targon. This campaign will shift the balance toward their side."
+
+ TAR_bop_influence_lunari_desc: "Supporters of the Lunari will press for greater influence within Targon. This campaign will shift the balance toward their side."
+
+ TAR_daily_influence_solari: "Sustain Solari Influence"
+
+ TAR_daily_influence_solari_desc: "Solari supporters will maintain a campaign for religious authority. While active, their efforts will move the balance toward the Solari and encourage support for theocracy."
+
+ TAR_daily_influence_lunari: "Sustain Lunari Influence"
+
+ TAR_daily_influence_lunari_desc: "Lunari supporters will maintain a campaign for a stronger place in government. While active, their efforts will move the balance toward the Lunari and encourage support for oligarchy."
+
+ TAR_influence_solari: "Strengthen the Solari Position"
+
+ TAR_influence_solari_desc: "Solari supporters will press for greater authority in Targon's councils. Their campaign will shift the balance toward the Solari."
+
+ TAR_influence_lunari: "Strengthen the Lunari Position"
+
+ TAR_influence_lunari_desc: "Lunari supporters will press for greater influence in Targon's councils. Their campaign will shift the balance toward the Lunari."
+
+ SHU_demon_response_accept: "We must endure the danger."
+
+ SHU_demon_response_commit: "Commit political effort to the response."
+
+ SHU_demon_mission_extension_tt: "If the corresponding demon mission is active, its remaining duration is extended by 30 days."
+
+ shurima.8.t: "After the Demonic Terror"
+
+ shurima.8.d: "The authorities can begin to restore confidence after the demonic alarm. The country must now recover from the fear and disruption it has endured."
+
+ shurima.8.a: "Begin the recovery."
+
+ shurima.12.t: "Lives Threatened by Demonic Terror"
+
+ shurima.12.d: "The demonic presence threatens lives in the affected regions. We must decide whether to commit political effort to the response or leave those communities to bear the losses."
+
+ shurima.13.t: "Demonic Attacks Threaten Roads and Industry"
+
+ shurima.13.d: "The demonic threat puts roads and factories in the affected regions at risk. We must decide whether to commit political effort to the response or endure the damage."
+
+ shurima.5.a: "Strengthen our unity."
+
+ shurima.7.t: "Overcoming Shurima's Divisions"
+
+ shurima.7.desc: "Stability has made it possible to draw the divided country together. The imperial administration can now consolidate a more united Shurima."
+
+ SHU_unity_transition_tt: "Replaces $Shurima_apart$ with $Shurima_united$."

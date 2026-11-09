@@ -1,0 +1,13 @@
+﻿l_english:
+ azir_campaign_settings: "Campaign Settings"
+ azir_choose_void_espionage_tone: "Choose Void Espionage Tone"
+ azir_choose_void_espionage_tone_desc: "Choose how Void espionage is presented for this country. The choice is final and closes on 1 April 990. Serious is the default."
+ azir_void_espionage.1.t: "Void Espionage Tone"
+ azir_void_espionage.1.d: "What kind of dossier should the Watchers file? This choice changes the operative's name and the tone of the report. Both versions use the same abilities."
+ azir_void_espionage.1.a: "Serious"
+ azir_void_espionage.1.b: "Goofy"
+ azir_void_espionage_category: "Void Espionage"
+ azir_recruit_void_operative: "Charm of the Void Watchers"
+ azir_recruit_void_operative_desc: "[Root.GetAzirVoidOperativeDossier]\n\nRequires an Intelligence Agency, a free operative slot, and either a chosen tone or the end of the selection period on 1 April 990."
+ azir_void_operative_dossier_serious: "Recruit Vel'Koz. The Eye of the Void studies Runeterra to find weaknesses the Watchers can exploit."
+ azir_void_operative_dossier_goofy: "Recruit Definitely Not Vel'Koz. His glasses are entirely ordinary. They are also how he discovered that the stolen blueprints were upside down."

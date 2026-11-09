@@ -1,0 +1,51 @@
+{
+  "review_date": "2026-10-08",
+  "faction_definition_count": 29,
+  "unique_ids": [
+    "VOI_zilean_speech_mission",
+    "VOI_malzahar_speech_mission",
+    "VOI_void_threat_decision_silence_z",
+    "VOI_void_threat_decision_silence_m",
+    "VOI_void_threat_decision_exterminate",
+    "VOI_void_threat_decision_study",
+    "VOI_void_threat_decision_mission",
+    "VOI_pacify_resistance_in_the_northern_countryside",
+    "TAR_bop_influence_solari",
+    "TAR_bop_influence_lunari",
+    "TAR_daily_influence_solari",
+    "TAR_daily_influence_lunari",
+    "TAR_activate_rakkor_tenacity",
+    "TAR_activate_celestial_pilgrimage",
+    "TAR_influence_solari",
+    "TAR_summit_harvest",
+    "TAR_influence_lunari",
+    "SHU_azir_speech",
+    "SHU_sivir_speech",
+    "SHU_restore_great_library_dec",
+    "DuneBreakerFound",
+    "DuneSwallowerFound",
+    "XersaiCaller",
+    "investigate_void",
+    "SHU_void_martial_law",
+    "SHU_void_prepare_a_defense",
+    "SHU_void_relocate_resources",
+    "SHU_void_request_night_hunter",
+    "SHU_seek_lunari_exiles"
+  ],
+  "receipts": [
+    "VoidDecisionCoverage.json",
+    "TargonDecisionCoverage.json",
+    "ShurimaDecisionCoverage.json",
+    "MoonstoneDecisionCoverage.json"
+  ],
+  "disabled_shuriman_missions": 3,
+  "native_acceptance": "open",
+  "template_file": "common/decisions/AFK_TAG_dec.txt",
+  "template_status": "four uncommented empty-reward examples gated by category original_tag=AFK; no AFK country tag definition found locally or in installed Runeterra; no local localization. Preserve templates, exclude from faction lore, native load gate remains.",
+  "template_ids": [
+    "AFK_EXPL_selectable_dec",
+    "AFK_takestime_dec",
+    "AFK_EXMP_selectable_dec",
+    "AFK_EXMP_takestime_dec"
+  ]
+}

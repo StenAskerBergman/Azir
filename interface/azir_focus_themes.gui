@@ -1,0 +1,24 @@
+guiTypes = {
+    containerWindowType = {
+        name = "azir_nazumah_focus_theme_window"
+        position = { x = 60 y = 2 }
+        size = { width = 480 height = 34 }
+        iconType = {
+            name = "azir_nazumah_focus_frieze"
+            spriteType = "GFX_azir_focus_nazumah_frieze"
+            position = { x = 0 y = 0 }
+            alwaystransparent = yes
+        }
+    }
+    containerWindowType = {
+        name = "azir_shurima_focus_theme_window"
+        position = { x = 60 y = 2 }
+        size = { width = 480 height = 34 }
+        iconType = {
+            name = "azir_shurima_focus_frieze"
+            spriteType = "GFX_azir_focus_shurima_frieze"
+            position = { x = 0 y = 0 }
+            alwaystransparent = yes
+        }
+    }
+}

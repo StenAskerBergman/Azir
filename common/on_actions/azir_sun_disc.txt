@@ -1,0 +1,17 @@
+on_actions = {
+    # ROOT is the new controller, FROM is the old controller, FROM.FROM is the state.
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    FROM.FROM = { state = 144 }
+                    FROM = { tag = SHU }
+                    has_war_with = SHU
+                    NOT = { has_global_flag = azir_shurima_capital_fell }
+                }
+                set_global_flag = azir_shurima_capital_fell
+                news_event = { id = azir_sun_disc.1 }
+            }
+        }
+    }
+}

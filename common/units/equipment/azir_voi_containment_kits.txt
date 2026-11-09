@@ -1,0 +1,30 @@
+equipments = {
+    azir_voi_containment_kit = {
+        year = 990
+        is_archetype = yes
+        is_buildable = no
+        can_license = no
+        can_be_produced = {
+            original_tag = VOI
+            has_country_flag = resisted_the_void
+        }
+        picture = archetype_infantry_equipment
+        type = infantry
+        group_by = archetype
+        interface_category = interface_category_land
+
+        maximum_speed = 4
+        reliability = 0.85
+        defense = 3
+        lend_lease_cost = 1
+        build_cost_ic = 2
+        resources = { steel = 1 }
+    }
+
+    azir_voi_containment_kit_1 = {
+        year = 990
+        archetype = azir_voi_containment_kit
+        priority = 15
+        visual_level = 0
+    }
+}

@@ -1,0 +1,3998 @@
+[
+  {
+    "id": "AUR_national_identity",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 12,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_maritime_heritage",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 26,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_ocean_stewardship",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 42,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_maritime_mastery",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 61,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_aurman_sailors",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 79,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_noxian_trade",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 95,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_family_ties",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 112,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_our_sea",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 130,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_piltover_trade",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 148,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_clan_medarda",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 166,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_blood_is_thicker_than_water",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 182,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_boats_run_on_water_not_blood",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 203,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_waves_of_resilience",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 223,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_sea_of_profit",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 241,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_pirate_question",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 262,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_shuriman_threat",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 281,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_shifting_currents",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 299,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_fisheries",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 316,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_uncertain_waters",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 341,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_aurman_pirates",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 358,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_calm_sea",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 377,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_lurking_threats",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 395,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_aurman_privateer",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 413,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_aurman_navy",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 431,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_naval_linage",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 448,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_coastal_raid_parties",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 465,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_overclass_society",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 486,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_end_to_era",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 505,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_new_era",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 524,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_naval_outposts",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 542,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_pirate_bay",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 558,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_warm_sea",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 579,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_cold_sea",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 597,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_sea_of_blood",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 615,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_island_stewardship",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 636,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_island_ownership",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 658,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_sea_of_thiefs",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 677,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_tight_crews",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 696,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_oceanic_outreach",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 714,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_shallow_water_supremacy",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 735,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_sea_of_iron",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 756,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_navigational_diplomacy",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 774,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_sea_maps",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 792,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_warships",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 808,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_freljordian_boarding_parties",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 824,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_chaotic_sea",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 843,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_strait_question",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 861,
+    "review": "wording reviewed against direct reward",
+    "kind": "tree definition"
+  },
+  {
+    "id": "AUR_deep_water_supremacy",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 879,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_open_water_tyrant",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 898,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_targonian_navigators",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 920,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "AUR_ocean_masters",
+    "file": "common/national_focus/aurma_focus.txt",
+    "line": 941,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_WAR",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1,
+    "review": "dormant shared wording reviewed against full rewards/conditions; not imported or runtime accepted",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_ONE",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 50,
+    "review": "dormant shared wording reviewed against full rewards/conditions; not imported or runtime accepted",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_TWO",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 92,
+    "review": "dormant shared wording reviewed against full rewards/conditions; not imported or runtime accepted",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_KAL",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 126,
+    "review": "dormant shared wording reviewed against full rewards/conditions; not imported or runtime accepted",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_CRY",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 176,
+    "review": "dormant campaign wording reviewed against full target existence/not-war guards and prerequisite routes",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_TAR",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 225,
+    "review": "dormant campaign wording reviewed against full target existence/not-war guards and prerequisite routes",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_NAZ",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 273,
+    "review": "dormant campaign wording reviewed against full target existence/not-war guards and prerequisite routes",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_VOI",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 327,
+    "review": "dormant campaign wording reviewed against full target guards/rewards and AND prerequisite routes",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_NAS",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 377,
+    "review": "dormant campaign wording reviewed against full target guards/rewards and AND prerequisite routes",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_NOX",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 427,
+    "review": "dormant campaign wording reviewed against full target guards/rewards and AND prerequisite routes",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_DEM",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 477,
+    "review": "dormant wording reviewed against prerequisite routes and conditional annexation war goal; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_ZAU",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 526,
+    "review": "dormant wording reviewed against prerequisite routes and conditional annexation war goal; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_PIL",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 576,
+    "review": "dormant wording reviewed against prerequisite routes and conditional annexation war goal; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_STO",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 626,
+    "review": "dormant wording reviewed against AND prerequisites and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_AVA",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 678,
+    "review": "dormant wording reviewed against AND prerequisites and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_WIN",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 728,
+    "review": "dormant wording reviewed against AND prerequisites and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_URS",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 779,
+    "review": "dormant wording reviewed against AND/OR prerequisites and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_FRO",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 829,
+    "review": "dormant wording reviewed against AND/OR prerequisites and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_SHK",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 880,
+    "review": "dormant wording reviewed against AND/OR prerequisites and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_IXT",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 936,
+    "review": "dormant wording reviewed against prerequisites, target existence/bypass and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_AUR",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 989,
+    "review": "dormant wording reviewed against prerequisites, target existence/bypass and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_MAR",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1043,
+    "review": "dormant wording reviewed against prerequisites, target existence/bypass and conditional annexation war goals; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_BLG",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1101,
+    "review": "dormant wording reviewed against prerequisites, war-goal or political-power reward and bypass; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_ION",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1154,
+    "review": "dormant wording reviewed against prerequisites, war-goal or political-power reward and bypass; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_GSD",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1208,
+    "review": "dormant wording reviewed against political-power reward, formation availability and core-control bypass; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_GWS",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1525,
+    "review": "dormant wording reviewed against political-power reward, formation availability and core-control bypass; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_WAR_GES",
+    "file": "common/national_focus/campaigns_shared.txt",
+    "line": 1589,
+    "review": "dormant wording reviewed against prerequisites, war-goal or political-power reward and bypass; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_develop_capitalstate",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 21,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_state_bank_of_nazumah",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 45,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_pave_the_roads",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 60,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_steam_locomotive",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 88,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_nazuman_regional_development_fund",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 115,
+    "review": "wording reviewed against tooltip-only reward; unresolved inherited decision IDs retained as gameplay blocker",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_exploit_national_resources",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 131,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_promote_local_crafts",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 205,
+    "review": "wording reviewed against research, construction and shared idea consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_nazuman_industrial_fund",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 231,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_use_the_natural_harbors",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 260,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_capital_city_airport",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 288,
+    "review": "wording reviewed against construction, technology and idea rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_a_steamboat_fleet",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 314,
+    "review": "wording reviewed against research, construction and shared idea consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_improved_irrigation_systems",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 334,
+    "review": "wording reviewed against state variables and vanilla dynamic consumer; unattached-modifier gameplay gap retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_nazuman_air_fleet",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 352,
+    "review": "wording reviewed against research, construction and shared idea consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_state-funded_projects",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 384,
+    "review": "wording reviewed against research, construction and shared idea consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_grand_university_of_capital",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 398,
+    "review": "wording reviewed against research, construction and shared idea consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_basic_armed_forces",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 414,
+    "review": "wording reviewed against research, construction and shared idea consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_warrior_tradition",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 431,
+    "review": "wording reviewed against military ideas and conditional recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_universal_conscription",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 448,
+    "review": "wording reviewed against military ideas and conditional recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_strengthen_the_hunters",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 482,
+    "review": "wording reviewed against military ideas and conditional recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_nations_best",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 547,
+    "review": "wording reviewed against military ideas and conditional recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_utilize_our_strengths",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 564,
+    "review": "wording reviewed against source reward; native execution pending",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_reform_the_conscription",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 607,
+    "review": "wording reviewed against military ideas and conditional recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_eyes_on_the_imperialists",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 631,
+    "review": "wording reviewed; progression blocked upstream by Utilize Our Strengths",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_encourage_local_arms_production",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 662,
+    "review": "wording reviewed; progression blocked upstream by Utilize Our Strengths",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_metal_beasts",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 691,
+    "review": "wording reviewed; progression blocked upstream by Utilize Our Strengths",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_roars_of_thunder",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 711,
+    "review": "wording reviewed; progression blocked upstream by Utilize Our Strengths",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_develop_indigenous_models",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 731,
+    "review": "wording reviewed; progression blocked upstream by Utilize Our Strengths",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_steel_lions",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 750,
+    "review": "wording reviewed against source reward; native execution pending",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_warfare_from_afar",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 801,
+    "review": "wording reviewed against full direct rewards; copied research category and missing template gameplay gaps retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_modern_infantry",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 823,
+    "review": "wording reviewed against source reward; native execution pending",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Friend_or_Foe",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 857,
+    "review": "wording reviewed against political power and opinion effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Friend_of_Shurima",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 887,
+    "review": "wording reviewed against political power and opinion effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Recognize_Azirs_Sovereignty",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 936,
+    "review": "wording reviewed against full recognition rewards and flag consumers; copied flag and leader eligibility retained as proposals",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Common_Cause",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 970,
+    "review": "wording reviewed against political power and opinion effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Recognize_Sivirs_Sovereignty",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 995,
+    "review": "wording reviewed against full recognition rewards and flag consumers; copied flag and leader eligibility retained as proposals",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Imperial_Alliance",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1029,
+    "review": "wording reviewed against cooperation opinion and production rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Republican_Alliance",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1047,
+    "review": "wording reviewed against cooperation opinion and production rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Economic_Alliance",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1065,
+    "review": "wording reviewed; exact building/opinion reference repaired",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Military_Cooperation",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1086,
+    "review": "wording reviewed against cooperation opinion and production rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Air_Force",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1130,
+    "review": "wording reviewed against full direct rewards; copied research category and missing template gameplay gaps retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Navy_Cooperation",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1171,
+    "review": "wording reviewed against full direct rewards; copied research category and missing template gameplay gaps retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_collective_farms",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1212,
+    "review": "wording reviewed against controlled core building-slot reward",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Foe_of_Shurima",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1250,
+    "review": "wording reviewed; exact building/opinion reference repaired",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Declare_Independence",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1301,
+    "review": "wording reviewed against independent affirmation and guarded diplomatic demand events; native acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Fortify_the_Borders",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1318,
+    "review": "wording reviewed against conditional border, production and research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Independent_Economy",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1408,
+    "review": "wording reviewed against conditional border, production and research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_National_Pride",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1432,
+    "review": "wording reviewed against conditional border, production and research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_War_Preparations",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1447,
+    "review": "wording reviewed against conditional border, production and research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_hunters_path",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1466,
+    "review": "wording reviewed against current subject status and guarded reward",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_royal_subject",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1485,
+    "review": "wording reviewed against current subject status and guarded reward",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_political_equals",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1507,
+    "review": "wording reviewed against current subject status and guarded reward",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_capital_railroad",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1525,
+    "review": "wording reviewed against current subject status and guarded reward",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_invite_foreign_settlers",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1576,
+    "review": "wording reviewed against complete state scripted effect, rule and DLC-gated idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_countryleader",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1598,
+    "review": "wording reviewed against conditional character and neighbor opinion effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_securing_the_future",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1649,
+    "review": "wording reviewed against conditional character and neighbor opinion effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_improving_the_educational_system",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1683,
+    "review": "wording reviewed against full idea and conditional rewards; unresolved inherited ideology mapping retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_construct_great_monuments",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1748,
+    "review": "wording reviewed against stability, city effect and command experience",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_nazuman_volunteer_force",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1770,
+    "review": "wording reviewed against complete state scripted effect, rule and DLC-gated idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_military_cooperation",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1791,
+    "review": "wording reviewed against stability, city effect and command experience",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_that_which_is_rightfully_ours",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1809,
+    "review": "wording reviewed against full idea and conditional rewards; unresolved inherited ideology mapping retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_commandos",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1830,
+    "review": "wording reviewed against technology, doctrine and conditional factory effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_a_jagged_alliance",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1855,
+    "review": "wording reviewed against complete state scripted effect, rule and DLC-gated idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_observe_and_learn",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1872,
+    "review": "wording reviewed against technology, doctrine and conditional factory effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_foreign_investors",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1896,
+    "review": "wording reviewed against technology, doctrine and conditional factory effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_research_exchange_programs",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1934,
+    "review": "wording reviewed against bilateral research, political power and autonomy effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_foreign_trained_officials",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1973,
+    "review": "wording reviewed against bilateral research, political power and autonomy effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_nazuman_loyalist_advisors",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 1989,
+    "review": "wording reviewed against bilateral research, political power and autonomy effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_lay_claim_to_the_lowlands",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2008,
+    "review": "wording reviewed against complete regional claim/wargoal scopes; unresolved region mapping retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_push_for_the_highlands",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2054,
+    "review": "wording reviewed against complete regional claim/wargoal scopes; unresolved region mapping retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_secure_the_shakkal",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2098,
+    "review": "wording reviewed against complete regional claim/wargoal scopes; unresolved region mapping retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_rallying_the_nazuman_people",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2148,
+    "review": "wording reviewed against complete idea/rewards/prerequisites; contradictory route gate retained as proposal",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_the_capital_school_of_technology",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2165,
+    "review": "wording reviewed against research slot and subject autonomy",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_promote_nazumah_nationalism",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2182,
+    "review": "wording reviewed against research slot and subject autonomy",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_crowning_of_the_hunter",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2204,
+    "review": "wording reviewed against inherited ETH-core transfer and unresolved formation tooltip; major identity/geography proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_proclaim_Kingdom_of_Nazumah",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2242,
+    "review": "wording reviewed against inherited ETH-core transfer and unresolved formation tooltip; major identity/geography proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "NAZ_Big_Game",
+    "file": "common/national_focus/nazumah_focus.txt",
+    "line": 2263,
+    "review": "wording reviewed against complete idea/rewards/prerequisites; contradictory route gate retained as proposal",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_rise_of_the_shuriman_raiders",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 1,
+    "review": "wording reviewed against shared root import, complete rewards and idea modifiers",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_desert_wanderers",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 12,
+    "review": "wording reviewed against shared root import, complete rewards and idea modifiers",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_lore_keepers",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 25,
+    "review": "wording reviewed against shared root import, complete rewards and idea modifiers",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_cultural_exchange",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 38,
+    "review": "wording reviewed against prerequisites and full spirit modifiers; raw idea localization repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_blood_and_sand",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 51,
+    "review": "wording reviewed against prerequisites and full spirit modifiers; raw idea localization repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_horse_lords",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 64,
+    "review": "wording reviewed against prerequisites and full spirit modifiers; raw idea localization repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_dune_fighters",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 77,
+    "review": "wording reviewed against full shared prerequisites and spirit modifiers; exact spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_oasis_control",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 90,
+    "review": "wording reviewed against full shared prerequisites and spirit modifiers; exact spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_sand_scouts",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 103,
+    "review": "wording reviewed against full shared prerequisites and spirit modifiers; exact spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_survival_training",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 116,
+    "review": "wording reviewed against complete shared reward and idea modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_plunder_and_pillage",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 129,
+    "review": "wording reviewed against complete shared reward and idea modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_ruthless_tactics",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 143,
+    "review": "wording reviewed against complete shared reward and idea modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_loyal_to_the_clan",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 156,
+    "review": "wording reviewed against full shared reward/prerequisites and spirit modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_treaty_with_outlaws",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 169,
+    "review": "wording reviewed against full shared reward/prerequisites and spirit modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_nomadic_coalition",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 182,
+    "review": "wording reviewed against full shared reward/prerequisites and spirit modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "RAI_expansion_of_territory",
+    "file": "common/national_focus/raider_focus_shared.txt",
+    "line": 195,
+    "review": "wording reviewed against full shared reward/prerequisites and spirit modifiers; raw spirit keys repaired",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_new_leadership",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 13,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_the_sadists",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 25,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_the_eggheads",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 38,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_the_grunts",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 52,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_the_boss",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 65,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_preparing_for_total_war",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 78,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_draconian_recovery",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 92,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_critical_thinking",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 106,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_the_master_plan",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 119,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_gangland_diplomacy",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 132,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_everyone_works",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 145,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_dont_question_the_boss",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 158,
+    "review": "wording reviewed against focus reward and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_iron_grip",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 171,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_reject_our_ways",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 203,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_reject_their_rules",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 240,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_constant_resistance",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 254,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_icathian_ties",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 268,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_ancestral_lineage",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 282,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_foreign_trade",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 295,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_icathian_heritage",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 310,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_embrace_new_ways",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 323,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_settle_down",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 336,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_return_to_traditions",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 352,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_lands",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 365,
+    "review": "wording reviewed against focus reward and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_coast",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 379,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_sea",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 392,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_share",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 405,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_ancestors",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 418,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_kill_burn_destroy",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 431,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_protect_shield_guard",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 445,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_rebuild",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 459,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_resemble",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 478,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_recreate",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 494,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_shakkal_republic",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 511,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_greater_shakkal",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 536,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_icathia_alliance",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 556,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_icathia_reborn",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 576,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_desert_dream",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 601,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_sand_storm",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 622,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_greater_ambitious",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 639,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_greater_dreams",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 657,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_the_bell_tolls",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 676,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_graveyard_of_empires",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 691,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_legacy",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 711,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHK_our_destiny",
+    "file": "common/national_focus/shakkal_focus.txt",
+    "line": 728,
+    "review": "wording reviewed against reward, route constraints and local flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_MAIN",
+    "file": "common/national_focus/SHU_XER_MAIN.txt",
+    "line": 1,
+    "review": "dormant wording reviewed against eligibility, political authority or civilian-factory rewards; not activated",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 1,
+    "review": "dormant wording reviewed against eligibility, political authority or civilian-factory rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_ECO",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 51,
+    "review": "dormant wording reviewed against eligibility, political authority or civilian-factory rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_MIL",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 109,
+    "review": "dormant wording reviewed against route choices, factory/infrastructure/resource and excavation rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_INFA",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 168,
+    "review": "dormant wording reviewed against route choices, factory/infrastructure/resource and excavation rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_MINE",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 224,
+    "review": "dormant wording reviewed against route choices, factory/infrastructure/resource and excavation rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_FOOD",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 281,
+    "review": "dormant wording reviewed against stability/manpower/army experience or civilian factory rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_ANIM",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 332,
+    "review": "dormant wording reviewed against stability/manpower/army experience or civilian factory rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_GROW",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 383,
+    "review": "dormant wording reviewed against stability/manpower/army experience or civilian factory rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_CROP",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 436,
+    "review": "dormant wording reviewed against manpower/stability, industrial research or capital infrastructure rewards and eligibility; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_AGRI",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 487,
+    "review": "dormant wording reviewed against manpower/stability, industrial research or capital infrastructure rewards and eligibility; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_WATR",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 545,
+    "review": "dormant wording reviewed against manpower/stability, industrial research or capital infrastructure rewards and eligibility; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_ORE",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 607,
+    "review": "dormant wording reviewed against tungsten/PP or oil reward and Taliyah presence gate; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_safermines",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 658,
+    "review": "dormant wording reviewed against tungsten/PP or oil reward and Taliyah presence gate; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_HEXT",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 714,
+    "review": "dormant wording reviewed against electronics bonuses, research slot or factory/XP reward and route eligibility; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_HEXF",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 771,
+    "review": "dormant wording reviewed against electronics bonuses, research slot or factory/XP reward and route eligibility; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_FIRE",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 829,
+    "review": "dormant wording reviewed against electronics bonuses, research slot or factory/XP reward and route eligibility; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_SHIP",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 905,
+    "review": "dormant wording reviewed against coastal dockyard/naval XP, research slot/stability or infrastructure/PP rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_TECH",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 960,
+    "review": "dormant wording reviewed against coastal dockyard/naval XP, research slot/stability or infrastructure/PP rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_INFB",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 1011,
+    "review": "dormant wording reviewed against coastal dockyard/naval XP, research slot/stability or infrastructure/PP rewards; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_HUB",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 1064,
+    "review": "dormant wording reviewed against capital infrastructure/army XP or radar/air XP and AND prerequisites; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_XER_RADI",
+    "file": "common/national_focus/SHU_XER_shared.txt",
+    "line": 1117,
+    "review": "dormant wording reviewed against capital infrastructure/army XP or radar/air XP and AND prerequisites; not activated",
+    "kind": "shared",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_imperial_courts",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 25,
+    "review": "wording reviewed against direct court, controlled-core capacity and capital construction rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_economic_revival",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 47,
+    "review": "wording reviewed against direct court, controlled-core capacity and capital construction rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_sun_disc_restorations",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 76,
+    "review": "wording reviewed against direct court, controlled-core capacity and capital construction rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_our_leader",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 107,
+    "review": "wording reviewed against leader event completion and matching character ideology roles; native transition open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_emperor",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 130,
+    "review": "wording reviewed against leader event completion and matching character ideology roles; native transition open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_empress",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 159,
+    "review": "wording reviewed against leader event completion and matching character ideology roles; native transition open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_imperial_law",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 192,
+    "review": "wording reviewed against administrative authority, local debate flags and military planning rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_public_order",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 218,
+    "review": "wording reviewed against administrative authority, local debate flags and military planning rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_question_of_slavery",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 255,
+    "review": "wording reviewed against administrative authority, local debate flags and military planning rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_question_of_nazumah",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 291,
+    "review": "wording reviewed against administrative authority, local debate flags and military planning rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_plan_frontlines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 322,
+    "review": "wording reviewed against administrative authority, local debate flags and military planning rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_defensive_lines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 345,
+    "review": "wording reviewed against defensive spirit, war goal, stockpile and war-economy rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_storm_nerimazeth",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 367,
+    "review": "wording reviewed against defensive spirit, war goal, stockpile and war-economy rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_arm_the_defenders",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 392,
+    "review": "wording reviewed against defensive spirit, war goal, stockpile and war-economy rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_legions",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 425,
+    "review": "wording reviewed against defensive spirit, war goal, stockpile and war-economy rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rebuilding_our_harbours",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 451,
+    "review": "wording reviewed against conditional owned-controlled coastal dockyard and naval experience; availability mismatch open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rebuilding_our_fleet",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 525,
+    "review": "wording reviewed against conditional owned-controlled coastal dockyard and naval experience; availability mismatch open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rebuild_armory",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 598,
+    "review": "wording reviewed against eligible owned-controlled military-factory construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_refilling_armory",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 667,
+    "review": "wording reviewed against eligible owned-controlled military-factory construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_hunters_for_hire",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 701,
+    "review": "wording reviewed against character transfer or Shakkal authority, experience and electronics bonus",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_lectures_in_shakkal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 880,
+    "review": "wording reviewed against character transfer or Shakkal authority, experience and electronics bonus",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shakkal_deal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 909,
+    "review": "wording reviewed against character transfer or Shakkal authority, experience and electronics bonus",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_nomadic_library",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 932,
+    "review": "wording reviewed against character transfer or Shakkal authority, experience and electronics bonus",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shakkal_lecture",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 957,
+    "review": "wording reviewed against character transfer or Shakkal authority, experience and electronics bonus",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_subjugate_the_locals",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 977,
+    "review": "wording reviewed against military domestic rewards or empty recognition spirit; authored expansion proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_recognition",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 998,
+    "review": "wording reviewed against military domestic rewards or empty recognition spirit; authored expansion proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_marai_marines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1022,
+    "review": "wording reviewed against Marai spirit, conditional construction and Moonstone chain",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_nazumahs_pride",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1045,
+    "review": "wording reviewed against military domestic rewards or empty recognition spirit; authored expansion proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_in_the_hawks_eyes",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1070,
+    "review": "wording reviewed against military domestic rewards or empty recognition spirit; authored expansion proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_subjugation_tactics",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1090,
+    "review": "wording reviewed against military domestic rewards or empty recognition spirit; authored expansion proposals retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_diplomacy_approach",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1107,
+    "review": "wording reviewed against diplomatic domestic rewards, local ally flag and crusade mobilization",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_allies",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1124,
+    "review": "wording reviewed against diplomatic domestic rewards, local ally flag and crusade mobilization",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_great_crusade",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1142,
+    "review": "wording reviewed against diplomatic domestic rewards, local ally flag and crusade mobilization",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_remove_the_natives",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1160,
+    "review": "wording reviewed against coercion costs, civilian construction, frontier flag and recruitment rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_regional_investment",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1179,
+    "review": "wording reviewed against coercion costs, civilian construction, frontier flag and recruitment rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shakkal_region",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1200,
+    "review": "wording reviewed against coercion costs, civilian construction, frontier flag and recruitment rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_recover_our_sand",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1218,
+    "review": "wording reviewed against coercion costs, civilian construction, frontier flag and recruitment rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_work_camps",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1240,
+    "review": "wording reviewed against work-camp modifiers, empty Targon spirit and expansion-policy flag",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_restore_solari",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1258,
+    "review": "wording reviewed against work-camp modifiers, empty Targon spirit and expansion-policy flag",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_marai_dockyards",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1281,
+    "review": "wording reviewed against policy guard or annexation/dockyard reward; missing resistance event unresolved",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_the_neighbours",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1320,
+    "review": "wording reviewed against work-camp modifiers, empty Targon spirit and expansion-policy flag",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_fate_of_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1365,
+    "review": "wording reviewed against policy guard or annexation/dockyard reward; missing resistance event unresolved",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_annex_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1438,
+    "review": "wording reviewed against target-scoped dependency demands and acceptance/refusal",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ba_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1466,
+    "review": "wording reviewed against Targon campaign and compact domestic rewards; diplomacy outcomes unverified",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ca_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1482,
+    "review": "wording reviewed against Targon campaign and compact domestic rewards; diplomacy outcomes unverified",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rich_mountains_gold",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1498,
+    "review": "wording reviewed against exact mineral resources or initial diplomatic event choices; counterpart acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rich_mountains_dia",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1516,
+    "review": "wording reviewed against exact mineral resources or initial diplomatic event choices; counterpart acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_puppet_or_ally_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1538,
+    "review": "wording reviewed against exact mineral resources or initial diplomatic event choices; counterpart acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_argreement_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1571,
+    "review": "wording reviewed against Targon campaign and compact domestic rewards; diplomacy outcomes unverified",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cb_targon",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1589,
+    "review": "wording reviewed against Targon campaign and compact domestic rewards; diplomacy outcomes unverified",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_fate_of_ixtal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1606,
+    "review": "wording reviewed against local policy flags and owned-controlled steel/tungsten rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_jungle_machine",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1636,
+    "review": "wording reviewed against direct rewards and dependency jungle technology",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_fate_of_crystal_scar",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1655,
+    "review": "wording reviewed against local policy flags and owned-controlled steel/tungsten rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_fish_on_land",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1674,
+    "review": "wording reviewed against Marai spirit, conditional construction and Moonstone chain",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_annex_ixtal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1695,
+    "review": "wording reviewed against target-scoped dependency demands and acceptance/refusal",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_hire_yuntal_exils",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1728,
+    "review": "wording reviewed against direct rewards and dependency jungle technology",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_jungle_adventure",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1745,
+    "review": "wording reviewed against Ixtal initial diplomacy, pact flag and domestic experience/research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rich_lands_gold",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1762,
+    "review": "wording reviewed against local policy flags and owned-controlled steel/tungsten rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rich_lands_dia",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1781,
+    "review": "wording reviewed against local policy flags and owned-controlled steel/tungsten rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_puppet_or_ally_ixtal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1803,
+    "review": "wording reviewed against Ixtal initial diplomacy, pact flag and domestic experience/research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_pact_ixtal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1832,
+    "review": "wording reviewed against Ixtal initial diplomacy, pact flag and domestic experience/research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cb_ixtal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1850,
+    "review": "wording reviewed against Ixtal initial diplomacy, pact flag and domestic experience/research rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_noxian_start",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1872,
+    "review": "wording reviewed against coastal availability and domestic Noxian-route preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_aa_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1905,
+    "review": "wording reviewed against coastal availability and domestic Noxian-route preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ba_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1925,
+    "review": "wording reviewed against coastal availability and domestic Noxian-route preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ca_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1941,
+    "review": "wording reviewed against coastal availability and domestic Noxian-route preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ab_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1957,
+    "review": "wording reviewed against Noxian diplomacy flags, domestic factory/recruitment and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bb_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1978,
+    "review": "wording reviewed against Noxian diplomacy flags, domestic factory/recruitment and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cb_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 1997,
+    "review": "wording reviewed against Noxian diplomacy flags, domestic factory/recruitment and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ac_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2013,
+    "review": "wording reviewed against Noxian diplomacy flags, domestic factory/recruitment and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bc_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2033,
+    "review": "wording reviewed against Noxian diplomacy flags, domestic factory/recruitment and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cc_noxian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2049,
+    "review": "wording reviewed against Noxian diplomacy flags, domestic factory/recruitment and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ionian_start",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2066,
+    "review": "wording reviewed against Ionian policy authority, stability and military preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_aa_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2099,
+    "review": "wording reviewed against Ionian policy authority, stability and military preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ba_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2120,
+    "review": "wording reviewed against Ionian policy authority, stability and military preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ca_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2136,
+    "review": "wording reviewed against Ionian policy authority, stability and military preparation rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ab_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2152,
+    "review": "wording reviewed against Ionian exchange/compact domestic rewards, electronics research and recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bb_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2173,
+    "review": "wording reviewed against Ionian exchange/compact domestic rewards, electronics research and recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cb_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2194,
+    "review": "wording reviewed against Ionian exchange/compact domestic rewards, electronics research and recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ac_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2210,
+    "review": "wording reviewed against Ionian exchange/compact domestic rewards, electronics research and recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bc_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2237,
+    "review": "wording reviewed against Ionian exchange/compact domestic rewards, electronics research and recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cc_ionian",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2253,
+    "review": "wording reviewed against Ionian exchange/compact domestic rewards, electronics research and recruitment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_scout_remote_islands",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2270,
+    "review": "wording reviewed against target influence effect and recipient acknowledgment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_pirate_hunt",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2316,
+    "review": "wording reviewed against Bilgewater domestic naval, compact flag and stability-cost rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ba_bilge_water",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2337,
+    "review": "wording reviewed against Bilgewater domestic naval, compact flag and stability-cost rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ca_bilge_water",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2353,
+    "review": "wording reviewed against Bilgewater domestic naval, compact flag and stability-cost rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_pirate_alliance",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2369,
+    "review": "wording reviewed against conditional BLG invitation and vanilla generic.5 response; native scope open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bb_bilge_water",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2425,
+    "review": "wording reviewed against Bilgewater domestic naval, compact flag and stability-cost rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cb_bilge_water",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2442,
+    "review": "wording reviewed against Bilgewater domestic naval, compact flag and stability-cost rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_total_war",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2459,
+    "review": "wording reviewed against nuclear research, Aurma policy flag and conditional invitation",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rule_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2486,
+    "review": "wording reviewed against nuclear research, Aurma policy flag and conditional invitation",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_approach_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2516,
+    "review": "wording reviewed against target influence effect and recipient acknowledgment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_potential_alliance",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2545,
+    "review": "wording reviewed against nuclear research, Aurma policy flag and conditional invitation",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ba_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2603,
+    "review": "wording reviewed against Aurma domestic naval, autonomy flag and manpower follow-ups",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_ca_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2619,
+    "review": "wording reviewed against Aurma domestic naval, autonomy flag and manpower follow-ups",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_independant_republic",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2635,
+    "review": "wording reviewed against Aurma conditional submission/reconstitution or shipbuilding/naval domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bb_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2733,
+    "review": "wording reviewed against Aurma domestic naval, autonomy flag and manpower follow-ups",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cb_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2750,
+    "review": "wording reviewed against Aurma domestic naval, autonomy flag and manpower follow-ups",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_autonomus_state",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2766,
+    "review": "wording reviewed against absent-AUR subject reconstitution and conditional naval follow-up rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bc_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2840,
+    "review": "wording reviewed against absent-AUR subject reconstitution and conditional naval follow-up rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cc_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2860,
+    "review": "wording reviewed against absent-AUR subject reconstitution and conditional naval follow-up rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_ship_builders",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2876,
+    "review": "wording reviewed against Aurma conditional submission/reconstitution or shipbuilding/naval domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_bd_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2906,
+    "review": "wording reviewed against Aurma conditional submission/reconstitution or shipbuilding/naval domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_example_cd_aurma",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2923,
+    "review": "wording reviewed against Aurma conditional submission/reconstitution or shipbuilding/naval domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_fate_of_brackern",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2940,
+    "review": "wording reviewed against rewards, character guards and authored canon divergence",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_overseer_taliyah",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 2997,
+    "review": "wording reviewed against rewards, character guards and authored canon divergence",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_taliyahs_supervision",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3016,
+    "review": "wording reviewed against rewards, character guards and authored canon divergence",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_our_crystal_scar",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3041,
+    "review": "wording reviewed against Crystal Scar/Piltover domestic resource, construction and policy-flag rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_develop_crystal_scar",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3061,
+    "review": "wording reviewed against Crystal Scar/Piltover domestic resource, construction and policy-flag rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_approach_piltover",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3085,
+    "review": "wording reviewed against target influence effect and recipient acknowledgment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_annex_piltover",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3126,
+    "review": "wording reviewed against target-scoped dependency demands and acceptance/refusal",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_deep_pockets_piltover",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3154,
+    "review": "wording reviewed against Crystal Scar/Piltover domestic resource, construction and policy-flag rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_mutal_assurance",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3172,
+    "review": "wording reviewed against Crystal Scar/Piltover domestic resource, construction and policy-flag rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_hostile_takeover",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3193,
+    "review": "wording reviewed against Piltover/Zaun domestic research, construction, shadow flag and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_brain_gain",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3214,
+    "review": "wording reviewed against Piltover/Zaun domestic research, construction, shadow flag and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_new_management_piltover",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3235,
+    "review": "wording reviewed against Piltover/Zaun domestic research, construction, shadow flag and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_approach_zaun",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3255,
+    "review": "wording reviewed against target influence effect and recipient acknowledgment",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_silco_plan",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3302,
+    "review": "wording reviewed against Zaun backing/deal flags, infantry research and domestic construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_futher_funding",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3327,
+    "review": "wording reviewed against Piltover/Zaun domestic research, construction, shadow flag and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shadow_plan",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3347,
+    "review": "wording reviewed against Piltover/Zaun domestic research, construction, shadow flag and escalation costs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shadow_deal",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3364,
+    "review": "wording reviewed against Zaun backing/deal flags, infantry research and domestic construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_annex_zaun",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3386,
+    "review": "wording reviewed against target-scoped dependency demands and acceptance/refusal",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_chemical_warefare",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3413,
+    "review": "wording reviewed against Zaun backing/deal flags, infantry research and domestic construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_new_management_zaun",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3435,
+    "review": "wording reviewed against Zaun backing/deal flags, infantry research and domestic construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_open_metal_mines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3455,
+    "review": "wording reviewed against exact designated state/controller filters and rubber/steel/chromium rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_open_crystal_mines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3661,
+    "review": "wording reviewed against exact designated state/controller filters and rubber/steel/chromium rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_gold_trade",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3718,
+    "review": "wording reviewed against excavation research and gold-policy consumer-goods spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_gold_refinement",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3742,
+    "review": "wording reviewed against excavation research and gold-policy consumer-goods spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_gold_reserve",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3767,
+    "review": "wording reviewed against excavation research and gold-policy consumer-goods spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_start_the_mines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3790,
+    "review": "wording reviewed against exact designated state/controller filters and rubber/steel/chromium rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_nationalize_hexore",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 3849,
+    "review": "wording reviewed against rewards, character guards and authored canon divergence",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_Restoring_Shuriman_Economy",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4053,
+    "review": "wording reviewed against focus reward and referenced idea/law conditions",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_land_prospect",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4075,
+    "review": "wording reviewed against prospecting research slot/bonuses and domestic civilian construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_open_gold_mines",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4138,
+    "review": "wording reviewed against prospecting research slot/bonuses and domestic civilian construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_republican_future",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4161,
+    "review": "wording reviewed against library decision distinction, Sivir stability and worker-spirit tradeoffs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_workers_rights",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4238,
+    "review": "wording reviewed against library decision distinction, Sivir stability and worker-spirit tradeoffs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_imperial_state",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4274,
+    "review": "wording reviewed against focus reward and referenced idea/law conditions",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_return_of_the_amulet",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4299,
+    "review": "wording reviewed against focus rewards, flag consumers and news event",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shrines_of_shurima",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4320,
+    "review": "wording reviewed against focus rewards, flag consumers and news event",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_replant_the_basin",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4340,
+    "review": "wording reviewed against capital civilian construction and farmland industrial research/domestic confidence",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_no_more_hunger",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4380,
+    "review": "wording reviewed against focus reward and referenced idea/law conditions",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_diverse_farmland",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4405,
+    "review": "wording reviewed against capital civilian construction and farmland industrial research/domestic confidence",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_guilds",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4441,
+    "review": "wording reviewed against guild initial event/core building slots and civilian-factory speed spirit",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_war_guild",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4478,
+    "review": "wording reviewed against full focus rewards and referenced scripted effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_craft_guild",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4514,
+    "review": "wording reviewed against guild initial event/core building slots and civilian-factory speed spirit",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_trade_guild",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4533,
+    "review": "wording reviewed against prospecting research slot/bonuses and domestic civilian construction",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_we_remember_shurima",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4557,
+    "review": "wording reviewed against full event options and idea definitions; recipient scope blocker retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_sundisc_has_risen",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4570,
+    "review": "wording reviewed against focus rewards, flag consumers and news event",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_tribe_council",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4602,
+    "review": "wording reviewed against Sivir-only tribal council route and empty recognition/respect spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_tribe_law",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4623,
+    "review": "wording reviewed against empty tribal-law spirit, conditional intelligence agency and court domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_tribal_recognition",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4642,
+    "review": "wording reviewed against Sivir-only tribal council route and empty recognition/respect spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_tribal_respect",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4661,
+    "review": "wording reviewed against Sivir-only tribal council route and empty recognition/respect spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_tribe_unity",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4683,
+    "review": "wording reviewed against full event options and idea definitions; recipient scope blocker retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_work_unions",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4712,
+    "review": "wording reviewed against library decision distinction, Sivir stability and worker-spirit tradeoffs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_moonstone",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4731,
+    "review": "wording reviewed against Marai spirit, conditional construction and Moonstone chain",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_marai_dockyards_company",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4757,
+    "review": "wording reviewed against Marai spirit, conditional construction and Moonstone chain",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_imperial_efforts",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4791,
+    "review": "wording reviewed against full focus rewards and referenced scripted effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_ascended_god_warriors_council",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4830,
+    "review": "wording reviewed against full focus rewards and referenced scripted effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_military_law",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4852,
+    "review": "wording reviewed against empty tribal-law spirit, conditional intelligence agency and court domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_military_court",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4881,
+    "review": "wording reviewed against empty tribal-law spirit, conditional intelligence agency and court domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_annex_nazumah",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4902,
+    "review": "wording reviewed against target-scoped demand/invitation and response",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_puppet_nazumah",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 4952,
+    "review": "wording reviewed; inverted submission eligibility repaired against existing bypass contract",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_nazumah_alliance",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5019,
+    "review": "wording reviewed against target-scoped demand/invitation and response",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_school_of_nasus",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5142,
+    "review": "wording reviewed against mutually exclusive research schools, adviser availability and actual spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_shuriman_university",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5191,
+    "review": "wording reviewed against mutually exclusive research schools, adviser availability and actual spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_officer_school",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5228,
+    "review": "wording reviewed against mutually exclusive research schools, adviser availability and actual spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_library_of_nasus",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5262,
+    "review": "wording reviewed against alternate second-tier research institutions and actual library/academy spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rebuild_library",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5309,
+    "review": "wording reviewed against alternate second-tier research institutions and actual library/academy spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_war_academy",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5350,
+    "review": "wording reviewed against alternate second-tier research institutions and actual library/academy spirits",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_restore_great_library",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5391,
+    "review": "wording reviewed against library decision distinction, Sivir stability and worker-spirit tradeoffs",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_rebirth_legions",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5430,
+    "review": "wording reviewed against full focus rewards and referenced scripted effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "SHU_lion_riders",
+    "file": "common/national_focus/shurima_focus.txt",
+    "line": 5468,
+    "review": "wording reviewed against direct idea grant and both current vanilla duplicate definitions; unit promises removed",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_our_past",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 20,
+    "review": "wording reviewed against initial event options; downstream event timing and native acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_our_origins",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 52,
+    "review": "wording reviewed against initial event options; downstream event timing and native acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_our_leader",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 71,
+    "review": "wording reviewed against initial event options; downstream event timing and native acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_reform",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 132,
+    "review": "wording reviewed against reform/unity spirits and direct rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_help_our_allies",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 173,
+    "review": "wording reviewed against recruitment, experience and stability reward",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_victory_speech",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 192,
+    "review": "wording reviewed against reform/unity spirits and direct rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_integrate_opposition",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 210,
+    "review": "wording reviewed against reform/unity spirits and direct rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_purity",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 227,
+    "review": "wording reviewed against full focus, availability, character definitions and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_remember_summit",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 272,
+    "review": "wording reviewed against full focus, availability, character definitions and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_rejectors",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 287,
+    "review": "wording reviewed against full focus, availability, character definitions and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_remember_us",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 394,
+    "review": "wording reviewed against full focus, availability, character definitions and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "TAR_purge_opposition",
+    "file": "common/national_focus/targon_focus.txt",
+    "line": 412,
+    "review": "wording reviewed against full focus, availability, character definitions and referenced idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_The_Voids_Influence",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 16,
+    "review": "wording reviewed against opening events, speech missions and resistance-unit event",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Embrace_the_Void",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 38,
+    "review": "wording reviewed against full focus and Void spirit modifiers/cancellation",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Resist_the_Void",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 82,
+    "review": "wording reviewed against opening events, speech missions and resistance-unit event",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Void_Prophet",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 118,
+    "review": "wording reviewed against cult-route direct rewards and flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Voidborn_Soldiers",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 142,
+    "review": "wording reviewed against full focus and Void spirit modifiers/cancellation",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Void_Rituals",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 168,
+    "review": "wording reviewed against cult-route direct rewards and flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Spread_the_Void",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 185,
+    "review": "wording reviewed against cult-route direct rewards and flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Void_Empowerment",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 202,
+    "review": "wording reviewed against cult-route direct rewards and flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Mage_King",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 219,
+    "review": "wording reviewed against mortal-route direct rewards and prerequisite bindings",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Zilean",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 237,
+    "review": "wording reviewed against character recruitment, research spirits and return-flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_The_Man_Without_A_Daughter",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 283,
+    "review": "wording reviewed against character recruitment, research spirits and return-flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Resistance_Fighters",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 314,
+    "review": "wording reviewed against mortal-route direct rewards and prerequisite bindings",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_law_university",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 331,
+    "review": "wording reviewed against character recruitment, research spirits and return-flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Ancient_Icathian_Knowledge",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 359,
+    "review": "wording reviewed against mortal-route direct rewards and prerequisite bindings",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Cleanse_the_Corruption",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 381,
+    "review": "wording reviewed against mortal-route direct rewards and prerequisite bindings",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Restoration_of_Icathia",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 398,
+    "review": "wording reviewed against capital/cosmetic dependency bindings and military direct rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Expand_the_Horde",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 459,
+    "review": "wording reviewed against military spirits and conditional mobilization rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Rift_Rapture",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 485,
+    "review": "wording reviewed against military spirits and conditional mobilization rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Shadow_War",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 512,
+    "review": "wording reviewed against military spirits and conditional mobilization rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Void_Invasion",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 550,
+    "review": "wording reviewed against capital/cosmetic dependency bindings and military direct rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_unseen_threats",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 570,
+    "review": "wording and adviser preview tooltip reviewed against actual completed-focus character gate",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_voidborne_acoustics",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 597,
+    "review": "wording and adviser preview tooltip reviewed against actual completed-focus character gate",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_apex_hunter",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 627,
+    "review": "wording reviewed against adviser flag consumer and manpower/experience rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_our_queen",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 646,
+    "review": "wording reviewed against capital/cosmetic dependency bindings and military direct rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_our_army",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 672,
+    "review": "wording reviewed against adviser flag consumer and manpower/experience rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_remora_reborn",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 696,
+    "review": "wording reviewed against complete rewards, prerequisites, province gate and primary Riot remora source",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_our_world",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 722,
+    "review": "wording reviewed against cult-route prerequisites, foothold and research/authority rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_new_world",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 746,
+    "review": "wording reviewed against cult-route prerequisites, foothold and research/authority rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_our_war",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 771,
+    "review": "wording reviewed against conditional law changes and Rift_Open modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_shifting_sands",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 818,
+    "review": "wording reviewed against reward and actual character adviser completed-focus availability",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Open_Void_Gate",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 841,
+    "review": "wording reviewed against conditional law changes and Rift_Open modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Subjugate_the_Resisters",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 868,
+    "review": "wording reviewed against full cult/mortal research rewards and prerequisites",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Seek_the_Ancient_Tombs",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 885,
+    "review": "wording reviewed against full cult/mortal research rewards and prerequisites",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Uncover_Lost_Secrets",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 905,
+    "review": "wording reviewed against full cult/mortal research rewards and prerequisites",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Ritual_of_Axamuk",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 921,
+    "review": "wording reviewed against ritual flags and authority/stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Mageking_Restoration",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 941,
+    "review": "wording reviewed against ritual flags and authority/stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_purple_meat",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 964,
+    "review": "wording reviewed against ritual flags and authority/stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Axamuk_Supremacy",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 991,
+    "review": "wording reviewed against complete shared supremacy modifiers and all local consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_purple_royalty",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1010,
+    "review": "wording reviewed against complete shared supremacy modifiers and all local consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_Icathian_Mircle",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1036,
+    "review": "wording reviewed against complete shared supremacy modifiers and all local consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_pacify_the_countryside",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1062,
+    "review": "wording reviewed against timer-only rewards and unresolved decision category gates; gameplay gap retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_pacify_our_neightbours",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1095,
+    "review": "wording reviewed against neighbor opinion/rule and conditional penal-unit rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_penal_bandit_divisions",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1137,
+    "review": "wording reviewed against neighbor opinion/rule and conditional penal-unit rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_void_containment",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1219,
+    "review": "wording reviewed against timer-only rewards and unresolved decision category gates; gameplay gap retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_obedience",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1259,
+    "review": "wording reviewed against complete rewards, prerequisites, branch conditions and policy flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_assertiveness",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1279,
+    "review": "wording reviewed against complete rewards, prerequisites, branch conditions and policy flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_revive_the_grand_wizard_council",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1299,
+    "review": "wording reviewed against complete rewards, route gates, character history and idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_invite_settlers",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1322,
+    "review": "wording reviewed against complete rewards, prerequisites, branch conditions and policy flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_expand_the_textile_industry",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1382,
+    "review": "wording reviewed against complete rewards, prerequisites, branch conditions and policy flag consumers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_talk_to_a_daughter",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1432,
+    "review": "wording reviewed against complete rewards, route gates, character history and idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "VOI_purge_the_void",
+    "file": "common/national_focus/void_focus.txt",
+    "line": 1472,
+    "review": "wording reviewed against complete rewards, route gates, character history and idea modifiers",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_temporary_alliance",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 14,
+    "review": "wording reviewed against influence, experience and domestic support",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_power_play",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 47,
+    "review": "wording reviewed against full xerath.2 choices and direct focus reward; leader/ideology/event-unlock gaps retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_xerath_conquest",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 76,
+    "review": "wording reviewed against full xerath.2 choices and direct focus reward; leader/ideology/event-unlock gaps retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_power_pact",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 111,
+    "review": "wording reviewed against influence, experience and domestic support",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_baccai_ritual",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 143,
+    "review": "wording reviewed against ritual direct reward or initial event choice; downstream acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_remove_the_savages",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 176,
+    "review": "wording reviewed against authority, war support and stability cost",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_collective_punishment",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 226,
+    "review": "wording reviewed against authority, war support and stability cost",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_renekton_conquest",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 258,
+    "review": "wording reviewed against full reward/flag consumers; copied foreign eligibility and leader runtime gates retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_Blood_Pact",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 288,
+    "review": "wording reviewed against pact flags and direct domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_power_struggle",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 315,
+    "review": "wording reviewed against political influence, military experience and instability",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_foreign_interference",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 332,
+    "review": "wording reviewed against political influence, military experience and instability",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_noxian_coalition",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 355,
+    "review": "wording reviewed against pact flags and direct domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_colonial_investments",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 378,
+    "review": "wording reviewed against pact flags and direct domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_colonial_pact",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 400,
+    "review": "wording reviewed against full reward/flag consumers; copied foreign eligibility and leader runtime gates retained",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_path_of_domination",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 437,
+    "review": "wording reviewed against direct mobilization, factory and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_loyal_legionaries",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 469,
+    "review": "wording reviewed against pact flags and direct domestic rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_brutal_slavery",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 489,
+    "review": "wording reviewed against direct mobilization, factory and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_raider_relationship",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 520,
+    "review": "wording reviewed against direct mobilization, factory and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_suppress_rebellions",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 542,
+    "review": "wording reviewed against direct mobilization, factory and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_Ruthless_Cruelty",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 562,
+    "review": "wording reviewed against direct mobilization, factory and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_brutal_dominance",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 598,
+    "review": "wording reviewed against authority, experience and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_noxian_suppression",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 620,
+    "review": "wording reviewed against authority, experience and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_endless_rage",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 639,
+    "review": "wording reviewed against authority, experience and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_path_of_ascension",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 672,
+    "review": "wording reviewed against authority, experience and stability rewards",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_internal_support",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 700,
+    "review": "wording reviewed against stability, authority and manpower effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_loyal_henchmen",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 718,
+    "review": "wording reviewed against stability, authority and manpower effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_abolish_slavery",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 737,
+    "review": "wording reviewed against stability, authority and manpower effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_identity_fusion",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 755,
+    "review": "wording reviewed against stability, authority and manpower effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_colonial_identity",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 790,
+    "review": "wording reviewed against stability, authority and manpower effects",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  },
+  {
+    "id": "XER_usurp_the_throne",
+    "file": "common/national_focus/xerath_focus.txt",
+    "line": 826,
+    "review": "wording reviewed against ritual direct reward or initial event choice; downstream acceptance open",
+    "kind": "tree definition",
+    "review_date": "2026-10-07"
+  }
+]

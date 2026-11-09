@@ -7,7 +7,7 @@ add_namespace = xerath
 # Focus - Specific
 country_event = {
 	id = xerath.2
-	title = "Power Play"
+	title = xerath.2.t
 	desc = xerath.2.d
 	picture = GFX_report_event_empty_throne
 	is_triggered_only = yes
@@ -20,11 +20,11 @@ country_event = {
 
 	# Xerath
 	option = {
-		name = "Make Xerath Leader"
+		name = xerath.2.a
 		# custom_effect_tooltip = "Make Xerath Leader"
 		# retire = XER_renekton
 		# unlock_national_focus = XER_Xerath_Conquest #
-		complete_national_focus = XER_Xerath_Conquest
+		complete_national_focus = XER_xerath_conquest
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.15
@@ -40,10 +40,10 @@ country_event = {
 
 	# Renekton Option
 	option = {
-		name = "Make Renekton Leader"
+		name = xerath.2.b
 		retire_country_leader = yes
 		set_politics = { ruling_party = fascism }
-		unlock_national_focus = XER_Renekton_Conquest
+		unlock_national_focus = XER_renekton_conquest
 		# complete_national_focus = XER_Renekton_Conquest
 		add_popularity = {
 			ideology = fascism
@@ -64,15 +64,15 @@ country_event = {
 # Shuriman Great War
 country_event = {
 	id = xerath.1
-	title = "Final Struggle" # shurima.azir.1.t
-	desc = "We Embark On Our Final Struggle Towards a world of Total Enlightenment!" # shurima.azir.1.d
+	title = xerath.1.t # shurima.azir.1.t
+	desc = xerath.1.d # shurima.azir.1.d
 	picture = GFX_report_event_empty_throne
 	trigger = { NOT = { has_country_flag = xer_at_war_with_shu } }
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	immediate = {
-		custom_effect_tooltip = "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!"
+		custom_effect_tooltip = xerath.1.tt
 
 		hidden_effect = {
 			set_global_flag = SHU_XER_civil_war_trigger
@@ -90,12 +90,9 @@ country_event = {
 
 
 	option = { # Breaking point!
-	name = "Finally... We Strike!"
+	name = xerath.1.a
 	ai_chance = { factor = 100 }
 
-	# Not Sure we need to show this! # for XER & SHU
-	# but I think its already solve, it misses them
-	news_event = { id = shuriman_rnews.5 days = 2 }
 	set_country_flag = xer_at_war_with_shu
 }
 }
@@ -103,15 +100,15 @@ country_event = {
 # Usurp the Throne
 country_event = {
 	id = xerath.4
-	title = "Usurp the Throne" # xerath.4.t
-	desc = "The time has come to seize the throne from Azir and claim the Empire for ourselves. How shall we approach this monumental task?" # xerath.4.d
+	title = xerath.4.t # xerath.4.t
+	desc = xerath.4.d # xerath.4.d
 	picture = GFX_report_event_empty_throne
 	trigger = { NOT = { has_country_flag = xer_throne_usurped } }
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	immediate = {
-		custom_effect_tooltip = "We will claim the throne of Shurima, breaking Azir's rule and forging a new era under Xerath!"
+		custom_effect_tooltip = xerath.4.tt
 
 		hidden_effect = {
 			set_global_flag = xer_usurpation_initiated
@@ -120,10 +117,10 @@ country_event = {
 
 	# Option 1: Direct Assault
 	option = {
-		name = "Launch a Direct Assault on the Imperial Palace"
+		name = xerath.4.a
 		ai_chance = { factor = 50 }
 
-		custom_effect_tooltip = "Our forces will launch a direct and overwhelming attack on Azir's palace."
+		custom_effect_tooltip = xerath.4.a.tt
 
 		add_political_power = -50
 		set_country_flag = xer_direct_assault
@@ -133,42 +130,64 @@ country_event = {
 
 	# Option 2: Sabotage and Deception
 	option = {
-		name = "Undermine Azir's Support through Sabotage"
+		name = xerath.4.b
 		ai_chance = { factor = 25 }
 
-		custom_effect_tooltip = "We'll weaken Azir's support base through targeted sabotage and deceit."
+		custom_effect_tooltip = xerath.4.b.tt
 
 		add_political_power = -30
 		set_country_flag = xer_sabotage_campaign
 		add_stability = 0.05
-		news_event = { id = shuriman_rnews.7 days = 3 }
+		news_event = { id = xerath.5 days = 3 }
 	}
 
 	# Option 3: Incite a Rebellion
 	option = {
-		name = "Incite a Rebellion among Azir's Forces"
+		name = xerath.4.c
 		ai_chance = { factor = 15 }
 
-		custom_effect_tooltip = "We'll rally discontented elements within Azir's army to turn against him."
+		custom_effect_tooltip = xerath.4.c.tt
 
 		add_political_power = -40
 		set_country_flag = xer_rebellion_incited
 		add_stability = -0.1
-		news_event = { id = shuriman_rnews.8 days = 4 }
+		news_event = { id = xerath.6 days = 4 }
 	}
 
 	# Option 4: Assassinate Azir
 	option = {
-		name = "Attempt to Assassinate Azir"
+		name = xerath.4.e
 		ai_chance = { factor = 10 }
 
-		custom_effect_tooltip = "We'll make a daring move to assassinate Azir, leaving the throne open for our taking."
+		custom_effect_tooltip = xerath.4.e.tt
 
 		add_political_power = -60
-		set_country_flag = xer_assassination_attempt
+		SHU = { set_country_flag = xer_assassination_attempt }
 		add_stability = -0.2
 		news_event = { id = shuriman_rnews.9 days = 1 }
 	}
+}
+
+news_event = {
+	id = xerath.5
+	title = xerath.5.t
+	desc = xerath.5.d
+	picture = GFX_report_event_empty_throne
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { name = xerath.5.a }
+}
+
+news_event = {
+	id = xerath.6
+	title = xerath.6.t
+	desc = xerath.6.d
+	picture = GFX_report_event_empty_throne
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { name = xerath.6.a }
 }
 
 # Other - Random

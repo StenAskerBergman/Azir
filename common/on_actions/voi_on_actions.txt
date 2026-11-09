@@ -10,8 +10,49 @@ on_actions = {
 				remove_ideas = void_army
 
 				add_political_power = 28
+				91 = {
+					if = {
+						limit = { NOT = { has_state_flag = void_gate_initialized } }
+						set_state_flag = void_gate_initialized
+						if = {
+							limit = { VOI = { has_completed_focus = VOI_Open_Void_Gate } }
+							set_building_level = { type = landmark_void_gate level = 1 province = 2883 }
+						}
+						else = {
+							set_building_level = { type = landmark_void_gate_closed level = 1 province = 2883 }
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = VOI_Rift_Rapture
+						NOT = { has_completed_focus = VOI_Open_Void_Gate }
+						NOT = { has_global_flag = void_gate_first_rift_fired }
+					}
+					set_global_flag = void_gate_construction_begun
+					set_global_flag = void_gate_first_rift_fired
+					place_void_gate_first_rift = yes
+				}
 				# id = void_army_removal # StartUpWar.1
 				country_event = { id = icathia.3 days = 100 random_days = 30 }
+				if = {
+					limit = { NOT = { has_global_flag = icathian_civil_war } }
+					country_event = { id = icathia.6 days = 120 }
+				}
+			}
+		}
+	}
+
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = VOI_primary_civil_war_side
+					has_country_flag = resisted_the_void
+					FROM = { has_country_flag = VOI_primary_civil_war_side }
+					FROM = { has_country_flag = embraced_the_void }
+				}
+				country_event = { id = icathia.7 }
 			}
 		}
 	}

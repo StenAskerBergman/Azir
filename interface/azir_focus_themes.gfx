@@ -1,0 +1,115 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_azir_focus_oasis"
+        texturefile = "gfx/interface/goals/azir_country_themes/oasis.dds"
+    }
+    spriteType = {
+        name = "GFX_azir_focus_oasis_shine"
+        texturefile = "gfx/interface/goals/azir_country_themes/oasis.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/azir_country_themes/oasis.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 1.1
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_azir_focus_crafts"
+        texturefile = "gfx/interface/goals/azir_country_themes/crafts.dds"
+    }
+    spriteType = {
+        name = "GFX_azir_focus_crafts_shine"
+        texturefile = "gfx/interface/goals/azir_country_themes/crafts.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/azir_country_themes/crafts.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 1.1
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_azir_focus_hunters"
+        texturefile = "gfx/interface/goals/azir_country_themes/hunters.dds"
+    }
+    spriteType = {
+        name = "GFX_azir_focus_hunters_shine"
+        texturefile = "gfx/interface/goals/azir_country_themes/hunters.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/azir_country_themes/hunters.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90
+            animationlooping = no
+            animationtime = 1.1
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_azir_focus_nazumah_frieze"
+        texturefile = "gfx/interface/goals/azir_country_themes/nazumah_frieze.dds"
+    }
+    spriteType = {
+        name = "GFX_azir_focus_sun_disc"
+        texturefile = "gfx/interface/goals/azir_country_themes/sun_disc.dds"
+    }
+    spriteType = {
+        name = "GFX_azir_focus_sun_disc_shine"
+        texturefile = "gfx/interface/goals/azir_country_themes/sun_disc.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/azir_country_themes/sun_disc.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_azir_focus_legions"
+        texturefile = "gfx/interface/goals/azir_country_themes/legions.dds"
+    }
+    spriteType = {
+        name = "GFX_azir_focus_legions_shine"
+        texturefile = "gfx/interface/goals/azir_country_themes/legions.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/azir_country_themes/legions.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_azir_focus_shurima_frieze"
+        texturefile = "gfx/interface/goals/azir_country_themes/shurima_frieze.dds"
+    }
+}

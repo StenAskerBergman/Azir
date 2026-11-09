@@ -1,0 +1,12 @@
+scripted_gui = {
+    azir_nazumah_focus_theme = {
+        context_type = national_focus_context
+        window_name = azir_nazumah_focus_theme_window
+        visible = { original_tag = NAZ }
+    }
+    azir_shurima_focus_theme = {
+        context_type = national_focus_context
+        window_name = azir_shurima_focus_theme_window
+        visible = { original_tag = SHU }
+    }
+}

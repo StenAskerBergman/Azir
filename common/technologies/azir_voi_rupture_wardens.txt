@@ -1,0 +1,9 @@
+technologies = {
+    # Granted by the Resistance decision. Omit a research folder so the
+    # technology has no selectable entry in the research tree.
+    azir_voi_rupture_wardens_training = {
+        start_year = 990
+        enable_subunits = { azir_voi_rupture_warden_company }
+        enable_equipments = { azir_voi_containment_kit_1 }
+    }
+}

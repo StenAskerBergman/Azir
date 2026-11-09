@@ -1,0 +1,21 @@
+add_namespace = azir_sun_disc
+
+news_event = {
+    id = azir_sun_disc.1
+    title = azir_sun_disc.1.t
+    desc = azir_sun_disc.1.d
+    picture = GFX_news_event_azir_broken_sun_disc
+    is_triggered_only = yes
+    major = yes
+    option = { name = azir_sun_disc.1.a }
+}
+
+news_event = {
+    id = azir_sun_disc.2
+    title = azir_sun_disc.2.t
+    desc = azir_sun_disc.2.d
+    picture = GFX_news_event_xerath_sundisc
+    is_triggered_only = yes
+    major = yes
+    option = { name = azir_sun_disc.2.a }
+}

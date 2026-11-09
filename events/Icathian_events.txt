@@ -36,21 +36,24 @@ country_event = {
 
     is_triggered_only = yes
 
-    immediate = {
-        # Actions to be executed when the event is triggered
+    trigger = {
+        tag = VOI
+        NOT = { has_global_flag = icathian_civil_war }
+        NOT = { has_completed_focus = VOI_Resist_the_Void }
+        NOT = { has_completed_focus = VOI_Embrace_the_Void }
     }
 
     option = {
         name = icathia.2.a
+        trigger = { NOT = { has_completed_focus = VOI_Embrace_the_Void } }
         complete_national_focus = VOI_Resist_the_Void
     }
 
     option = {
         name = icathia.2.b
+        trigger = { NOT = { has_completed_focus = VOI_Resist_the_Void } }
         complete_national_focus = VOI_Embrace_the_Void
     }
-
-
 }
 
 country_event = {
@@ -120,34 +123,34 @@ country_event = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 328 }
+					prioritize = { 93 95 }
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 					create_unit = {
 						division = "name = \"Resistance Division\" division_template = \"Resistance Division\" start_experience_factor = 1.0"
-						owner = VOI
+						owner = ROOT
 					}
 				}
 			}
@@ -158,3 +161,145 @@ country_event = {
 			add_war_support = 0.03
 		}
 	}
+
+# The chosen side remains the player's country. The opposing side takes the
+# dynamic tag, with the Rupture on the Void side and old Icathia on the other.
+country_event = {
+    id = icathia.6
+    is_triggered_only = yes
+    hidden = yes
+
+    trigger = {
+        tag = VOI
+        NOT = { has_global_flag = icathian_civil_war }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                OR = {
+                    has_civil_war = yes
+                    num_of_controlled_states < 2
+                }
+            }
+            country_event = { id = icathia.6 days = 14 }
+        }
+        else = {
+            set_global_flag = icathian_civil_war
+            set_country_flag = VOI_primary_civil_war_side
+            remove_mission = VOI_zilean_speech_mission
+            remove_mission = VOI_malzahar_speech_mission
+            if = {
+                limit = { NOT = { has_completed_focus = VOI_The_Voids_Influence } }
+                complete_national_focus = VOI_The_Voids_Influence
+            }
+            if = {
+                limit = { has_completed_focus = VOI_Resist_the_Void }
+                set_politics = { ruling_party = mages elections_allowed = no }
+                set_cosmetic_tag = VOI_icathians
+                if = {
+                    limit = { controls_state = 93 }
+                    set_capital = { state = 93 }
+                }
+                start_civil_war = {
+                    ideology = desolation
+                    size = 0.5
+                    states = { 91 94 96 97 }
+                    set_country_flag = VOI_primary_civil_war_side
+                    set_cosmetic_tag = VOI_void_followers
+                    clr_country_flag = resisted_the_void
+                    clr_country_flag = Resisted_The_Void
+                    clr_country_flag = VOI_hybrid_path
+                    load_focus_tree = { tree = VOI_focus keep_completed = no }
+                    complete_national_focus = VOI_The_Voids_Influence
+                    complete_national_focus = VOI_Embrace_the_Void
+                }
+            }
+            else = {
+                if = {
+                    limit = { NOT = { has_completed_focus = VOI_Embrace_the_Void } }
+                    complete_national_focus = VOI_Embrace_the_Void
+                }
+                set_politics = { ruling_party = desolation elections_allowed = no }
+                set_cosmetic_tag = VOI_void_followers
+                if = {
+                    limit = { controls_state = 91 }
+                    set_capital = { state = 91 }
+                }
+                start_civil_war = {
+                    ideology = mages
+                    size = 0.5
+                    states = { 92 93 95 98 }
+                    set_country_flag = VOI_primary_civil_war_side
+                    set_cosmetic_tag = VOI_icathians
+                    clr_country_flag = embraced_the_void
+                    remove_ideas = { void_influence crushed_void_resistance }
+                    load_focus_tree = { tree = VOI_focus keep_completed = no }
+                    complete_national_focus = VOI_The_Voids_Influence
+                    complete_national_focus = VOI_Resist_the_Void
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = icathia.7
+    title = icathia.7.t
+    desc = icathia.7.desc
+    picture = GFX_report_event_soviet_invasion_map
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = {
+        country_event = { id = icathia.8 days = 180 }
+    }
+
+    option = {
+        name = icathia.7.a
+    }
+}
+
+country_event = {
+    id = icathia.8
+    title = icathia.8.t
+    desc = icathia.8.desc
+    picture = GFX_report_event_soviet_invasion_map
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = resisted_the_void
+        NOT = { has_completed_focus = VOI_revive_the_grand_wizard_council }
+        has_stability < 0.55
+        has_civil_war = no
+        num_of_controlled_states > 1
+        OR = {
+            has_government = mages
+            has_government = royalist
+        }
+    }
+
+    option = {
+        name = icathia.8.a
+        if = {
+            limit = { has_government = mages }
+            start_civil_war = {
+                ideology = royalist
+                size = 0.30
+                set_cosmetic_tag = VOI_traditionalists
+                load_focus_tree = { tree = VOI_focus copy_completed_from = ROOT }
+                set_country_flag = resisted_the_void
+            }
+        }
+        else = {
+            start_civil_war = {
+                ideology = mages
+                size = 0.30
+                set_cosmetic_tag = VOI_reformists
+                load_focus_tree = { tree = VOI_focus copy_completed_from = ROOT }
+                set_country_flag = resisted_the_void
+            }
+        }
+    }
+}

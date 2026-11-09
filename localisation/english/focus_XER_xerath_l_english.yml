@@ -35,86 +35,86 @@
 ################################### FOCUSES           \n   §H§!
 
 XER_temporary_alliance: "Temporary Alliance"
-XER_temporary_alliance_desc: "Form an unstable alliance to defeat a shared enemy, risking constant power struggles."
+XER_temporary_alliance_desc: "A common ambition can hold rivals together for a time. Gather influence and military experience from this uneasy understanding, accepting the tension it brings at home."
 
 XER_power_play: "Power Play"
-XER_power_play_desc: "Engage in direct combat between Renekton's strength and Xerath's cunning."
+XER_power_play_desc: "The temporary alliance cannot settle who will direct the campaigns ahead. Xerath and Renekton must decide whose claim will shape the faction's next course."
 
 XER_xerath_conquest: "Xerath Conquest"
-XER_xerath_conquest_desc: "Access ancient powers, gaining technological bonuses."
+XER_xerath_conquest_desc: "Xerath's claim will stand at the center of our ambitions. Consolidating political authority around his course will prepare the faction for the struggles ahead."
 
 XER_power_pact: "Power Pact"
-XER_power_pact_desc: "Unlock advanced magical weapons, increasing army efficiency."
+XER_power_pact_desc: "Power must be matched by followers willing to act on it. Rally the commanders behind our ambitions and strengthen the authority and resolve needed to carry them forward."
 
 XER_baccai_ritual: "Baccai Ritual"
-XER_baccai_ritual_desc: "Conquer nearby territories using military and arcane might."
+XER_baccai_ritual_desc: "The promise of power draws our followers toward dangerous rites. Gather the commanders' experience and rally support for this pursuit, accepting the unease it spreads through the realm."
 
 XER_remove_the_savages: "Remove the Savages"
-XER_remove_the_savages_desc: "Implement policies to quell internal unrest and dissent."
+XER_remove_the_savages_desc: "Our rulers will no longer tolerate those who defy their authority. Rally support for a harsher assertion of control, accepting the unrest that follows such a course."
 
 XER_collective_punishment: "Collective Punishment"
-XER_collective_punishment_desc: "Solidify rule by purging rivals and asserting dominance over Shurima."
+XER_collective_punishment_desc: "The regime answers resistance by extending its pressure beyond individual opponents. Strengthen its authority and rally support for confrontation, at a heavy cost to stability at home."
 
 XER_renekton_conquest: "Renekton Conquest"
-XER_renekton_conquest_desc: "Plot to overthrow Azir, igniting civil war in Shurima."
+XER_renekton_conquest_desc: "Renekton's course will give the faction's fighters a common purpose. We will draw on military experience and rally support for the campaigns ahead, without treating preparation as victory over Azir."
 
 
 XER_power_struggle: "Power Struggle"
-XER_power_struggle_desc: "Focus on research and industry, sacrificing stability for power."
+XER_power_struggle_desc: "Rival ambitions cannot be kept quiet forever. Press our claim to authority amid the struggle for influence, even as the contest unsettles the realm."
 
 XER_foreign_interference: "Foreign Interference"
-XER_foreign_interference_desc: "Forge alliances or take control of Noxian territories in Shurima."
+XER_foreign_interference_desc: "Outside interests can be useful without being trusted. Draw on their influence and military experience to advance our own position, without yielding command of our ambitions."
 
 XER_noxian_coalition: "Noxian Coalition"
-XER_noxian_coalition_desc: "Use Renekton as a weapon, betraying him when he's no longer useful."
+XER_noxian_coalition_desc: "Those who favor closer alignment with Noxus must build support for that course at home. Give their policy greater weight and rally the realm behind its ambitions."
 
 XER_colonial_investments: "Colonial Investments"
-XER_colonial_investments_desc: "Betray Noxus, seizing their resources once they outlive their usefulness."
+XER_colonial_investments_desc: "Influence gained abroad should leave productive work behind it. Invest in workshops in the lands we administer, giving our ambitions a stronger industrial foundation."
 
 XER_colonial_pact: "Colonial Pact"
-XER_colonial_pact_desc: "Subjugate or eliminate Noxian allies in a deteriorating alliance."
+XER_colonial_pact_desc: "The faction's competing ambitions need an understanding that can hold its administration together. A common colonial policy will strengthen political authority and confidence while we consider how to deal with outside powers."
 
 XER_path_of_domination: "Path of Domination"
-XER_path_of_domination_desc: "Unlock special units with magical bonuses and experimental technology."
+XER_path_of_domination_desc: "Our rulers intend to shape the realm through strength rather than compromise. Commit the commanders and rally public resolve behind that course."
 
 XER_loyal_legionaries: "Loyal Legionaries"
-XER_loyal_legionaries_desc: "Gain war goals on former allies, boosting military strength at the cost of stability."
+XER_loyal_legionaries_desc: "A ruler's command needs followers prepared to carry it out. Rally fresh recruits and experienced fighters into our service, strengthening confidence in the forces behind us."
 
 XER_brutal_slavery: "Brutal Slavery"
-XER_brutal_slavery_desc: "Increase espionage effectiveness to outmaneuver opponents."
+XER_brutal_slavery_desc: "The regime demands production without regard for those forced to provide it. Expand arms manufacture under these harsh conditions, accepting the deep unrest they leave behind."
 
 XER_raider_relationship: "Raider Relationship"
-XER_raider_relationship_desc: "Reject alliances, focusing on destroying Nasus and his supporters."
+XER_raider_relationship_desc: "Experienced raiders can serve our ambitions if they have reason to answer the call. Draw fresh fighters and hard-earned military knowledge into our service."
 
 XER_suppress_rebellions: "Suppress Rebellions"
-XER_suppress_rebellions_desc: "Form a fragile truce with Noxus to further immediate goals, likely to break soon."
+XER_suppress_rebellions_desc: "A realm divided against itself cannot sustain its rulers' ambitions. Restore confidence in the regime's authority and steady life at home."
 
 XER_brutal_dominance: "Brutal Dominance"
-XER_brutal_dominance_desc: "Gain war goals on Shuriman nations, increasing division speed and damage."
+XER_brutal_dominance_desc: "Our commanders intend to make their authority felt through strength. Gather military experience and rally the realm behind a more forceful pursuit of its ambitions."
 
 XER_noxian_suppression: "Noxian Suppression"
-XER_noxian_suppression_desc: "Focus on an epic showdown with an enemy nation modeled after Nasus."
+XER_noxian_suppression_desc: "A stronger position at home gives outside pressure less room to divide us. Steady the realm and restore confidence in our authority as we confront Noxian influence."
 
 XER_endless_rage: "Endless Rage"
-XER_endless_rage_desc: "Enhance all military units while significantly reducing political power gain and stability."
+XER_endless_rage_desc: "The commanders refuse to let the struggle cool. Harness their experience and rally support for continued confrontation, even as the strain deepens unrest at home."
 
 XER_path_of_ascension: "Path of Ascension"
-XER_path_of_ascension_desc: "Gain war goals on neighboring wealthy nations."
+XER_path_of_ascension_desc: "The promise of greater power draws our rulers toward another ambitious course. Commit their authority to that pursuit, accepting the unease it stirs among those who must follow."
 
 XER_internal_support: "Internal Support"
-XER_internal_support_desc: "Convert raider units into regular army units with increased stats."
+XER_internal_support_desc: "Ambition is easier to sustain when the realm stands behind it. Build confidence in our rulers' course and steady the support on which their authority depends."
 
 XER_loyal_henchmen: "Loyal Henchmen"
-XER_loyal_henchmen_desc: "Strengthen control over Shuriman colonies and increase resources."
+XER_loyal_henchmen_desc: "A trusted following can keep a ruler's purpose from being lost in rival demands. Strengthen the loyalty around our leadership and bring greater steadiness to the realm."
 
 XER_abolish_slavery: "Abolish Slavery"
-XER_abolish_slavery_desc: "Increase recruitable population by 10%, unlocking military research bonuses."
+XER_abolish_slavery_desc: "Our rulers seek a steadier realm by turning away from the bondage imposed on its people. Give that change a place in public life and restore confidence in the future ahead."
 
 XER_identity_fusion: "Identity Fusion"
-XER_identity_fusion_desc: "Increase political power gain while reducing stability."
+XER_identity_fusion_desc: "A common political identity can give divided followers a reason to act together. Strengthen our authority and confidence at home while drawing more recruits into service."
 
 XER_colonial_identity: "Colonial Identity"
-XER_colonial_identity_desc: "Choose between crushing raiders (boosts military, decreases stability) or integrating them (adds manpower, increases stability)."
+XER_colonial_identity_desc: "Foreign ties should not leave our followers uncertain about whom they serve. Give this political course a clearer identity and strengthen confidence in the authority behind it."
 
 
 
@@ -169,7 +169,7 @@ XER_Total_War: "Total War" # Total war against whoever stands up to you
 XER_Total_War_desc: "In the crucible of total war, we unleash our fury upon all who dare to oppose us. With relentless aggression, we crush our enemies beneath the weight of our unstoppable might."
 
 XER_Ruthless_Cruelty: "Ruthless Cruelty" # Renekton is in power, Xerath is gone/dead
-XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed beneath an iron fist,\n And mercy is but a distant memory... As Xerath, fades into obscurity, Shurima trembles beneath the weight of unbridled brutality.\n\n §OBoost§! §RAttack§R§! \n §OBoost§! §GDefense§!"
+XER_Ruthless_Cruelty_desc: "Our commanders choose a harsher course in pursuit of victory. Gather their experience and rally support for the struggle, while the severity of their methods unsettles the realm."
 
 # Higher Attack for Lower Organization -> High Organization for Lower Attack
 # Higher Defense for Lower Speed -> High Speed for Lower Defense
@@ -181,7 +181,7 @@ XER_Ruthless_Cruelty_desc: "Under Renekton's ruthless rule, dissent is crushed b
 # Lower Enemy War Support for Higher Attack / Reorg  ->  Higher Enemy War Support lowers our Reorg / Attack
 
 xerath.2.t: "Power Play"
-xerath.2.d: "In the heart of the ancient Shuriman desert, a climactic confrontation unfolds between Renekton, the Butcher of the Sands, and Xerath, the Magus Ascendant. Both seek to eliminate the other to fulfill their own ambitions.\n Will it be Renekton, seeking vengeance and redemption?\n Or\n Will it be Xerath, pursuing boundless arcane power?"
+xerath.2.d: "Xerath demands that the realm follow his pursuit of power, while Renekton offers a rival course of conquest. We must decide which path will shape our rule."
 xerath.2.d.tt: "Your choice will shape the fate of Shurima."
 
 # \n but §Rlower §!division organization.§!"
@@ -211,7 +211,7 @@ XER_Power_Pact: "Power Pact"
 XER_Power_Pact_desc: "Through the power pact, we solidify our alliances with like-minded nations, pooling our strength and resources in pursuit of shared goals. United in purpose, we stand as an unstoppable force in the shifting sands of Shurima."
 
 XER_Blood_Pact: "Blood Pact"
-XER_Blood_Pact_desc: "In a pact sealed in blood, we bind ourselves to our allies with unbreakable bonds of loyalty and kinship. Through sacrifice and solidarity, we forge a brotherhood that transcends the trials of war and time."
+XER_Blood_Pact_desc: "Bind the commanders to a common undertaking and draw on the experience they bring. Our ambitions need a disciplined following as much as a powerful ruler."
 
 ################################### IDEAS            \n   §H§!
 

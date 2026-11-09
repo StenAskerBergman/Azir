@@ -3,118 +3,118 @@
 # War Time Focus \n      §H§!
 
   SHU_XER_WAR: "The Reconquest Begins"
-  SHU_XER_WAR_desc: "The reborn power at Nerimazeth will no longer remain confined to one city. The treasury, legions, and caravan roads must be prepared for continental war."
+  SHU_XER_WAR_desc: "Our claim to Shurima needs the political will to sustain a campaign. We will rally support and strengthen the authority needed to prepare for the struggles ahead."
 
   XER_WAR_ONE: "Muster the Ascendant Host"
-  XER_WAR_ONE_desc: "Veterans, mercenaries, and those who still revere the Ascended will be gathered into an army fit for the coming campaigns."
+  XER_WAR_ONE_desc: "The host must turn its ambitions into a common military purpose. Shared experience and public backing will help prepare the next campaign."
 
   XER_WAR_TWO: "Plan the Continental Campaign"
-  XER_WAR_TWO_desc: "Shurima's enemies are scattered across deserts, mountains, and distant coasts. A deliberate sequence of campaigns will keep the host supplied and victorious."
+  XER_WAR_TWO_desc: "A wider campaign needs more recruits and commanders who can learn from one another. We will gather manpower, develop military experience and rally support for the effort."
 
   XER_WAR_KAL: "Subdue Kalamanda"
-  XER_WAR_KAL_desc: "Kalamanda's mineral wealth and strategic roads cannot remain outside our grasp."
+  XER_WAR_KAL_desc: "Kalamanda stands among the targets of our expansion. If it remains a country with which we are not already at war, we will prepare a war goal against it and ready the army for the campaign."
 
   XER_WAR_CRY: "Secure the Crystal Scar"
-  XER_WAR_CRY_desc: "The scarred western wastes command routes and resources coveted across Runeterra. We will impose order there."
+  XER_WAR_CRY_desc: "The Crystal Scar is the next target of our expansion policy. If its rulers remain in place and we are not already fighting them, we will prepare a war goal while strengthening military experience and support for the campaign."
 
   XER_WAR_TAR: "Challenge Mount Targon"
-  XER_WAR_TAR_desc: "The mountain's Solari, Lunari, and celestial powers stand above Shurima's western approaches. Their defiance must be answered."
+  XER_WAR_TAR_desc: "We will prepare to challenge Targon's rule rather than assume the mountain is already ours. While Targon exists and we are not at war with it, a war goal will give our ambitions a military course."
 
-  XER_WAR_GWS: "Pacify the Western Sai"
-  XER_WAR_GWS_desc: "Western clans and raiders control the approaches to the Great Sai. Bringing them to heel will open the road to Nazumah."
+  XER_WAR_GWS: "Prepare the Western Sai Campaign"
+  XER_WAR_GWS_desc: "The western Sai remains a separate question for our campaign planners. We will build political support for bringing it under our authority."
 
   XER_WAR_NAZ: "Break Nazumah's Defiance"
-  XER_WAR_NAZ_desc: "Nazumah won its freedom by slaying Ascended tyrants. The restored empire will discover whether that defiance can endure."
+  XER_WAR_NAZ_desc: "Nazumah's independence stands against our ambitions for dominion. If it still exists and we are not already at war with it, we will prepare a war goal and ready the host for that confrontation."
 
   XER_WAR_VOI: "March into Icathia"
-  XER_WAR_VOI_desc: "Icathia's ruins remain a wound in the desert. We will secure the border and destroy any power that threatens Shurima from within them."
+  XER_WAR_VOI_desc: "The power holding Icathia stands among the targets of our expansion. If it remains in place and we are not already at war, we will prepare a war goal and strengthen the army's readiness for the campaign."
 
   XER_WAR_NAS: "Claim Nashramae"
-  XER_WAR_NAS_desc: "Nashramae's traders prosper beneath Shurima's memory. Its wealth and ports belong within the restored realm."
+  XER_WAR_NAS_desc: "We will press our ambitions against Nashramae rather than assume its wealth is already ours. If the country exists and we are not already fighting it, we will prepare a war goal and rally support for the campaign."
 
   XER_WAR_NOX: "Confront Noxus"
-  XER_WAR_NOX_desc: "Noxian ambition recognizes only strength. Our armies will show the empire beyond the mountains that Shurima has returned."
+  XER_WAR_NOX_desc: "Our ambitions now reach toward confrontation with Noxus. While it exists and we are not already at war, we will prepare a war goal and draw on military experience to ready the host."
 
   XER_WAR_DEM: "Cross into Demacia"
-  XER_WAR_DEM_desc: "Demacia's disciplined armies and petricite defenses make it a formidable western rival. Preparations must be exact."
+  XER_WAR_DEM_desc: "With the Noxus and Nashramae campaigns planned, our ambitions extend to Demacia. If it remains outside our current wars, we will prepare a demand for its annexation."
 
   XER_WAR_ZAU: "Seize the Undercity"
-  XER_WAR_ZAU_desc: "Zaun's chemtech and industry are too valuable to leave beyond imperial control."
+  XER_WAR_ZAU_desc: "Our campaign planners now turn toward Zaun. If the city remains outside our current wars, we will prepare a demand to bring it under our authority."
 
   XER_WAR_PIL: "Take Piltover"
-  XER_WAR_PIL_desc: "The City of Progress has grown rich by controlling trade and technology. Its gates will open to Shurima one way or another."
+  XER_WAR_PIL_desc: "After planning the Zaun campaign, we will turn our ambitions toward Piltover. If it remains outside our current wars, we will prepare a demand for its annexation."
 
   XER_WAR_AVA: "Campaign against Avarosa"
-  XER_WAR_AVA_desc: "Avarosa's coalition seeks to unite the Freljord. We will strike before its scattered tribes become a single northern power."
+  XER_WAR_AVA_desc: "The campaign against Demacia has widened our ambitions to Avarosa. If it still exists and we are not already fighting it, we will rally support for a war to bring it under our rule."
 
   XER_WAR_STO: "Storm Stonewall"
-  XER_WAR_STO_desc: "Stonewall bars a northern route with fortifications and stubborn defenders. It must fall before our advance can continue."
+  XER_WAR_STO_desc: "With campaigns against Demacia and Zaun prepared, Stonewall becomes another target for our expansion. If it still exists and we are not already at war, we will prepare to demand its annexation."
 
   XER_WAR_WIN: "Break the Winter's Claw"
-  XER_WAR_WIN_desc: "Sejuani's Winter's Claw respects force above every treaty. We will answer raid with conquest."
+  XER_WAR_WIN_desc: "Our plans now turn to the Winter's Claw. If it still exists and we are not already at war, we will prepare a war goal for its annexation."
 
   XER_WAR_URS: "Hunt the Ursine"
-  XER_WAR_URS_desc: "The Ursine surrender themselves to the Volibear's savage power. Our host must be ready for an enemy that fights like a storm."
+  XER_WAR_URS_desc: "Plans against Avarosa and Stonewall have brought the Ursine territory into our campaign deliberations. If it still exists and we are not already at war, we will prepare a war goal to bring it under our rule."
 
   XER_WAR_FRO: "Shatter the Frostguard"
-  XER_WAR_FRO_desc: "Lissandra's Frostguard conceal ancient designs beneath the ice. Their citadels cannot remain a threat to our northern flank."
+  XER_WAR_FRO_desc: "With the Stonewall and Piltover campaigns prepared, our planners turn to the Frostguard. If it still exists and we are not already fighting it, we will prepare a war goal for its annexation."
 
-  XER_WAR_GES: "Pacify the Eastern Sai"
-  XER_WAR_GES_desc: "The eastern clans control the roads toward Shakkal and Ixtal. Their submission will complete our hold over the Great Sai."
+  XER_WAR_GES: "Prepare the Eastern Sai Campaign"
+  XER_WAR_GES_desc: "The eastern Sai remains a separate question in our desert campaign. We will gather political support for bringing it under our authority."
 
   XER_WAR_SHK: "Subjugate Shakkal"
-  XER_WAR_SHK_desc: "Shakkal's raiders know every dune and dry pass. Defeating them will deny our enemies their deadliest desert guides."
+  XER_WAR_SHK_desc: "Our Sai campaign plans now extend to Shakkal. If it still exists and we are not already at war, we will rally support for a campaign to impose our authority."
 
   XER_WAR_IXT: "Breach Ixtal"
-  XER_WAR_IXT_desc: "Ixtal has hidden its elemental mastery behind the jungle for centuries. Shuriman armies will force the ancient realm to look outward."
+  XER_WAR_IXT_desc: "The Shakkal campaign has drawn our planners toward Ixtal. If it still exists and we are not already at war, we will prepare a war goal to extend our rule there."
 
   XER_WAR_AUR: "Bring Aurma to Heel"
-  XER_WAR_AUR_desc: "Aurma's ships and islands command the southern approaches. Imperial power must reach them before a rival fleet does."
+  XER_WAR_AUR_desc: "Our continental ambitions now include Aurma. If it still exists and we are not already fighting it, we will prepare a war goal for its annexation."
 
   XER_WAR_MAR: "Secure the Marai"
-  XER_WAR_MAR_desc: "The Marai guard their people and moonstone traditions beneath the waves. Control of their waters will strengthen our coast."
+  XER_WAR_MAR_desc: "After preparing the Aurma campaign, we will consider imposing our authority on the Marai. While their country exists and we are not already at war, we will prepare a war goal for its annexation."
 
   XER_WAR_BLG: "Cleanse Bilgewater"
-  XER_WAR_BLG_desc: "Pirate captains, monster hunters, and smugglers thrive in Bilgewater. Our fleet will end their attacks on imperial commerce."
+  XER_WAR_BLG_desc: "The Marai campaign has brought Bilgewater into our wider plans. If it still exists and we are not already at war, we will prepare a war goal to place it under our rule."
 
   XER_WAR_ION: "Invade Ionia"
-  XER_WAR_ION_desc: "Ionia's living lands resist foreign armies as fiercely as its people do. Victory will require discipline, supply, and overwhelming force."
+  XER_WAR_ION_desc: "With campaigns against Ixtal and Bilgewater prepared, our ambitions extend to Ionia. If it still exists and we are not already fighting it, we will prepare a war goal for its annexation."
 
 
 # Industrial Focuses
 
   SHU_XER: "Restore the Heartland"
-  SHU_XER_desc: "The realm cannot be rebuilt through proclamations alone. Roads, workshops, farms, and schools will give the restored heartland lasting strength."
+  SHU_XER_desc: "Rebuilding the heartland begins with a government that can sustain its promises. We will consolidate political authority and steady the realm for the work ahead."
 
   SHU_XER_ECO: "Civilian Reconstruction"
-  SHU_XER_ECO_desc: "Markets and civilian workshops will rebuild daily life before the state asks for further sacrifice."
+  SHU_XER_ECO_desc: "Civilian reconstruction will take priority over expanding the armament workshops. New civilian factories will give the realm a stronger foundation for rebuilding."
 
   SHU_XER_MIL: "Arsenals of the Sun"
-  SHU_XER_MIL_desc: "A restored Shurima must arm its legions at home instead of relying on scattered foreign suppliers."
+  SHU_XER_MIL_desc: "Armament production will take priority over civilian reconstruction. New military factories will strengthen our capacity to equip the realm's armies."
 
   SHU_XER_INFA: "Roads Across the Dunes"
-  SHU_XER_INFA_desc: "Modern roads will connect distant oases and let workers, soldiers, and caravans cross the desert safely."
+  SHU_XER_INFA_desc: "The heartland needs better routes to support its rebuilding. We will improve infrastructure in territory under our control and strengthen the political backing for further work."
 
   SHU_XER_MINE: "Reopen the Ancient Mines"
-  SHU_XER_MINE_desc: "Old Shuriman workings still hold metal beneath the sand. Surveyors and machinery can make them productive again."
+  SHU_XER_MINE_desc: "Reopening the old workings will expand the realm's steel supply. Renewed attention to excavation methods will help prepare further improvements in extraction."
 
   SHU_XER_FOOD: "Secure the Grain Supply"
-  SHU_XER_FOOD_desc: "Granaries and protected caravan routes will keep the cities fed through drought, war, and poor harvests."
+  SHU_XER_FOOD_desc: "Attention to the grain supply will reassure communities asked to sustain the realm's armies. We will use that confidence to steady the country and draw more people into service."
 
   SHU_XER_ANIM: "Restore the Herds"
-  SHU_XER_ANIM_desc: "Camels, goats, and other desert livestock sustain nomads, transport armies, and turn marginal land into wealth."
+  SHU_XER_ANIM_desc: "The herding communities have a place in our military rebuilding. We will draw on their people and experience to strengthen the army's reserves."
 
   SHU_XER_GROW: "Workshops of a Growing Realm"
-  SHU_XER_GROW_desc: "New settlements need tools, cloth, and building materials. Civilian workshops will meet that demand."
+  SHU_XER_GROW_desc: "Rebuilding requires civilian workshops as well as arsenals. A new civilian factory will expand production in territory we own and control."
 
   SHU_XER_CROP: "Crops Beneath the Sun Disc"
-  SHU_XER_CROP_desc: "Restored canals and careful planting will return crops to land abandoned after the fall of ancient Shurima."
+  SHU_XER_CROP_desc: "Support for the farming communities will help steady the rebuilding realm. Their renewed confidence will also bring more people into service."
 
   SHU_XER_AGRI: "Desert Agronomy"
-  SHU_XER_AGRI_desc: "Scholars and farmers will combine old irrigation lore with modern machinery to make every drop of water count."
+  SHU_XER_AGRI_desc: "Agricultural improvement calls for practical study of machinery and production. We will back industrial research and build the political support needed to pursue it."
 
   SHU_XER_WATR: "Restore the Aqueducts"
-  SHU_XER_WATR_desc: "Ancient channels once carried water across impossible distances. Rebuilding them will revive the heartland."
+  SHU_XER_WATR_desc: "Aqueduct restoration will form part of the capital's infrastructure improvements. The work will strengthen public confidence in the government's rebuilding efforts."
 
   SHU_XER_ORE: "Survey the Deep Deposits"
-  SHU_XER_ORE_desc: "Systematic surveys will locate ores missed by ancient miners and secure material for future industry."
+  SHU_XER_ORE_desc: "Further surveys will expand the realm's tungsten supply. The government will build political support for bringing these deposits into use."

@@ -12,8 +12,8 @@ add_namespace = shu_assassination_aftermath
 # Shuriman Event: The Aftermath of the Assassination Attempt
 country_event = {
 	id = shu_assassination_aftermath.1
-	title = "The Aftermath of the Assassination Attempt" # shu_assassination_aftermath.1.t
-	desc = "Fifty days have passed since the shocking attempt on Azir's life. The empire now holds its breath as the consequences of this act unfold." # shu_assassination_aftermath.1.d
+	title = shu_assassination_aftermath.1.t # shu_assassination_aftermath.1.t
+	desc = shu_assassination_aftermath.1.d # shu_assassination_aftermath.1.d
 	picture = GFX_report_event_empty_throne
 	major = yes
 
@@ -32,7 +32,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Azir has fallen..." # Azir dies, retirement event for SHU_azir
+		name = shu_assassination_aftermath.1.a # Azir dies, retirement event for SHU_azir
 		ai_chance = {
 			factor = 5
 		}
@@ -40,7 +40,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Azir Strikes Back!" # Azir survives and gains legitimacy
+		name = shu_assassination_aftermath.1.b # Azir survives and gains legitimacy
 		ai_chance = {
 			factor = 25
 		}
@@ -48,7 +48,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Xerath Strikes a Blow" # Xerath either hurts Sivir or Azir
+		name = shu_assassination_aftermath.1.c # Xerath either hurts Sivir or Azir
 		ai_chance = {
 			factor = 25
 		}
@@ -59,7 +59,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Sivir is Killed..." # Sivir dies, retirement event for SHU_sivir
+		name = shu_assassination_aftermath.1.d_option # Sivir dies, retirement event for SHU_sivir
 		ai_chance = {
 			factor = 20
 		}
@@ -109,7 +109,7 @@ country_event = {
 
 
     option = {
-        name = "Retire Leader"
+        name = shurima.10.a
 
         retire_country_leader = yes
     }
@@ -168,7 +168,7 @@ country_event = {
             set_global_flag = shurima_war_victory_acknowledged
 
         }
-        custom_effect_tooltip = "Replace Shurima Broken with Shurima Fractured"
+        custom_effect_tooltip = SHU_broken_to_fractured_tt
         hidden_effect = {
             SHU = {
                 remove_ideas = Shurima_broken
@@ -198,7 +198,7 @@ country_event = {
             SHU_increase_unity = yes
 			set_country_flag = shu_event_triggered
         }
-        custom_effect_tooltip = "Replace Shurima Fractured with Shurima Scattered"
+        custom_effect_tooltip = SHU_fractured_to_scattered_tt
         hidden_effect = {
             SHU = { remove_ideas = Shurima_fractured add_ideas = Shurima_scattered }
         }
@@ -222,7 +222,7 @@ country_event = {
     }
     option = {
         name = shurima.4.a
-        custom_effect_tooltip = "Replace Shurima Scattered with Shurima Apart"
+        custom_effect_tooltip = SHU_scattered_to_apart_tt
         hidden_effect = {
             SHU = { remove_ideas = Shurima_scattered add_ideas = Shurima_apart }
         }
@@ -245,7 +245,7 @@ country_event = {
     option = {
         name = shurima.5.a
         hidden_effect = { SHU_increase_unity = yes }
-        custom_effect_tooltip = "Replace Shurima Apart with Shurima United"
+        custom_effect_tooltip = SHU_unity_transition_tt
         hidden_effect = {
             SHU = { remove_ideas = Shurima_apart add_ideas = Shurima_united }
         }
@@ -277,7 +277,7 @@ country_event = {
     option = {
         name = shurima.5.a
         hidden_effect = { SHU_increase_unity = yes }
-        custom_effect_tooltip = "Replace Shurima Apart with Shurima United"
+        custom_effect_tooltip = SHU_unity_transition_tt
         hidden_effect = {
             SHU = { remove_ideas = Shurima_apart add_ideas = Shurima_united }
         }
@@ -298,6 +298,7 @@ country_event = {
     }
 
     option = {
+        name = shurima.5.a
 
         hidden_effect = {
 
@@ -316,7 +317,7 @@ country_event = {
     is_triggered_only = yes
 
     option = { #We must stay vigilant...
-    name = shurima.3.a
+    name = shurima.33.a
     ai_chance = { factor = 100 }
     add_stability = 0.01
 }
@@ -434,7 +435,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Acknowledge"
+		name = shurima.101.a
 
         # Set Global Flag
         set_global_flag = shurima_event_start
@@ -454,8 +455,8 @@ country_event = {
 
 country_event = {
     id = shurima.102
-    title = "Guild Meeting"
-    desc = "This event occurs every two years and strengthens the nation's industry."
+    title = shurima.102.t
+    desc = shurima.102.d
     picture = GFX_report_event_soviet_purge_politicians
 
     trigger = {
@@ -476,7 +477,7 @@ country_event = {
     }
 
     option = {
-        name = "Ok"
+        name = shurima.102.a
         hidden_effect = {
             # If "superior_guild_bonus" then Upgrade to "ultimate_guild_bonus" and stop event
             if = {
@@ -517,15 +518,15 @@ country_event = {
 
 country_event = {
     id = shurima.1001
-    title = "Shurima Respects the Workers Rights!"
-	desc = "The restored empire has formally recognized the rights of its laborers and guild workers."
+    title = shurima.1001.t
+	desc = shurima.1001.d
     picture = GFX_report_event_sanation_revolt
 
 
     is_triggered_only = yes
     fire_only_once = yes
 	option = {
-		name = "A fairer Shurima rises."
+		name = shurima.1001.a
 		add_stability = 0.05
 	}
 

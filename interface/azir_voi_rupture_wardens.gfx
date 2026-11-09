@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_unit_azir_voi_rupture_warden_company_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_rupture_warden_company_icon_medium_white"
+        texturefile = "gfx/interface/counters/divisions_small/onmap_unit_engineer_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_rupture_warden_company_icon_small"
+        texturefile = "gfx/texticons/support_engineer_small.dds"
+        noOfFrames = 2
+        legacy_lazy_load = no
+    }
+}

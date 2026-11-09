@@ -1,0 +1,92 @@
+buildings = {
+    landmark_demacia_city = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+
+    landmark_frostguard_citadel = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+
+    landmark_immortal_bastion = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+
+    landmark_ixaocan = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+
+    landmark_mount_targon = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+
+    landmark_placidium = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+
+    landmark_sun_disc = {
+        show_on_map = 1
+        base_cost = 20000
+        damage_factor = 0
+        icon_frame = 22
+        is_buildable = no
+        disable_grow_animation = yes
+        only_display_if_exists = yes
+        always_shown = yes
+        drawn_at_distance = yes
+        level_cap = { province_max = 1 }
+    }
+}

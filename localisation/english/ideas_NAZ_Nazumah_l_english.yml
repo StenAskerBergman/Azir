@@ -46,13 +46,13 @@
  NAZ_promote_countryadjective_nationalism_desc: "Increase war support, political power, and autonomy gain."
 
  NAZ_foreign_trained_officials: "Foreign Trained Officials"
- NAZ_foreign_trained_officials_desc: "Gain additional political power through foreign-trained officials."
+ NAZ_foreign_trained_officials_desc: "Our officials should return from foreign study ready to serve Nazumah's needs. Put their experience behind stronger administration and give our government more room to act."
 
  NAZ_countryadjective_loyalist_advisors: "Country-Adjective Loyalist Advisors"
  NAZ_countryadjective_loyalist_advisors_desc: "Increase autonomy gain with loyalist advisors."
 
  NAZ_promote_local_crafts: "Promote Local Crafts"
- NAZ_promote_local_crafts_desc: "Boost industrial capacity and support technology research."
+ NAZ_promote_local_crafts_desc: "Nazumah's artisans have more to offer than finished wares. Support the study of their methods so better knowledge can guide the work of our workshops."
 
  NAZ_the_adjective_industrial_fund: "The Adjective Industrial Fund"
  NAZ_the_adjective_industrial_fund_desc: "Enhance industrial capacity through dedicated funding."
@@ -61,7 +61,7 @@
  NAZ_the_adjective_air_fleet_desc: "Increase the attack and defense capabilities of our air force."
 
  NAZ_metal_beasts: "Metal Beasts"
- NAZ_metal_beasts_desc: "Boost the attack and defense of armored units."
+ NAZ_metal_beasts_desc: "Our hunters know the value of studying a formidable opponent. Apply that patience to armored warfare and develop the knowledge needed for fighting machines of our own."
 
  NAZ_develop_hunter_guilds: "Develop Hunter Guilds"
  NAZ_develop_hunter_guilds_desc: "Increase land doctrine research speed."
@@ -76,4 +76,4 @@
  NAZ_the_adjective_air_fleet_idea_desc: "Increase the attack and defense capabilities of our air force."
 
  NAZ_a_steamboat_fleet: "A Steamboat Fleet"
- NAZ_a_steamboat_fleet_desc: "Boost the attack and defense capabilities of our navy."
+ NAZ_a_steamboat_fleet_desc: "A capable fleet begins with skilled crews and sound designs. Develop our knowledge of destroyers and gather the experience needed to put future vessels to good use."

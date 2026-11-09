@@ -42,24 +42,16 @@ news_event = {
 # Shuriman News Event: Azir Assassination Attempt
 news_event = {
 	id = shuriman_rnews.9
-	title = "Azir Assassination Attempt" # shuriman_rnews.9.t
-	desc = "A shocking attempt on Azir's life has been reported, throwing the empire into chaos as rumors spread about the identity of the attackers." # shuriman_rnews.9.d
+	title = shuriman_rnews.9.t # shuriman_rnews.9.t
+	desc = shuriman_rnews.9.d # shuriman_rnews.9.d
 	picture = GFX_report_event_assassination
 	major = yes
 	fire_only_once = yes
-
-	trigger = {
-		has_global_flag = xer_assassination_attempt
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
-		name = "The Empire Holds Its Breath..."
+		name = shuriman_rnews.9.a
 		ai_chance = { factor = 100 }
-		clr_global_flag = xer_assassination_attempt
 	}
 }
 
@@ -67,8 +59,8 @@ news_event = {
 # Shuriman Great War - News: Xerath vs Shurima
 news_event = {
 	id = shuriman_rnews.5
-	title = "Shuriman Great War"
-	desc = "War has broken out between Xerath and Azir, the two demi gods will now send shuriman back into another era of tornment! Who will win come out on top remains to be seen!"
+	title = shuriman_rnews.5.t
+	desc = shuriman_rnews.5.d
 	picture = GFX_report_event_shurima_war
 
 	fire_only_once = yes
@@ -87,7 +79,7 @@ news_event = {
 	}
 
 	option = {
-		name = "Another war over sand..." # news.2.a
+		name = shuriman_rnews.5.a # news.2.a
 		trigger = {
 			NOT = {
 				TAG = XER
@@ -96,11 +88,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = "Its Time..." # news.2.b
+		name = shuriman_rnews.5.b # news.2.b
 		trigger = { TAG = XER }
 	}
 	option = {
-		name = "There can be Only One!" # news.2.c
+		name = shuriman_rnews.5.c # news.2.c
 		trigger = { TAG = SHU }
 	}
 }
@@ -109,8 +101,8 @@ news_event = {
 # Shuriman Great War - News: Noxus vs Shurima
 news_event = {
 	id = shuriman_rnews.51
-	title = "Shuriman Great War"
-	desc = "War has broken out between Noxians and Azir, the two factions will now send the world back into another era of tornment! Who will win come out on top remains uncertain!"
+	title = shuriman_rnews.51.t
+	desc = shuriman_rnews.51.d
 	picture = GFX_report_event_shurima_war
 
 	fire_only_once = yes
@@ -129,20 +121,20 @@ news_event = {
 	}
 
 	option = {
-		name = "Another war over sand..." # news.2.a
+		name = shuriman_rnews.51.a # news.2.a
 		trigger = {
 			NOT = {
-				TAG = XER
+				TAG = NOX
 				TAG = SHU
 			}
 		}
 	}
 	option = {
-		name = "Its Time..." # news.2.b
-		trigger = { TAG = XER }
+		name = shuriman_rnews.51.b # news.2.b
+		trigger = { TAG = NOX }
 	}
 	option = {
-		name = "There can be Only One!" # news.2.c
+		name = shuriman_rnews.51.c # news.2.c
 		trigger = { TAG = SHU }
 	}
 }

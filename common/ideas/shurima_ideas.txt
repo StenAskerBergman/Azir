@@ -805,7 +805,7 @@ ideas = {
 		}
 
 		SHU_restore_great_library = {
-			name = "Restore The Great Shuriman"
+			name = SHU_great_library_restored_name
 			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = 0.10

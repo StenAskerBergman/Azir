@@ -1,0 +1,42 @@
+XER_rival_sun_disc_category = {
+    XER_raise_rival_sun_disc = {
+        icon = generic_construction
+        cost = 0
+        days_remove = 70
+
+        visible = {
+            NOT = { has_global_flag = azir_shurima_capital_fell }
+            NOT = { has_country_flag = XER_rival_sun_disc_raised }
+        }
+
+        available = {
+            controls_state = 139
+            SHU = { controls_state = 144 }
+        }
+
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_state = 139 }
+                NOT = { has_country_leader = { character = XER_xerath } }
+                NOT = { SHU = { controls_state = 144 } }
+                has_global_flag = azir_shurima_capital_fell
+            }
+        }
+
+        remove_effect = {
+            if = {
+                limit = {
+                    controls_state = 139
+                    has_country_leader = { character = XER_xerath }
+                    SHU = { controls_state = 144 }
+                    NOT = { has_global_flag = azir_shurima_capital_fell }
+                    NOT = { has_country_flag = XER_rival_sun_disc_raised }
+                }
+                set_country_flag = XER_rival_sun_disc_raised
+                news_event = { id = azir_sun_disc.2 }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+}

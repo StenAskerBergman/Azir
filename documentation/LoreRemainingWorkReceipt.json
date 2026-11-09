@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-10-09T19:50:12.491Z",
+  "head": "153661e9d69c8888e04573afd6050174c346c950",
+  "scope": "focus lore and directly linked reward presentation; static receipts do not accept gameplay",
+  "completed_static": {
+    "active_focuses_reviewed": 502,
+    "existing_event_narrative_references_reviewed": 35,
+    "focus_reward_idea_keys_authored": 38,
+    "event_reward_idea_keys_authored": 10,
+    "named_bonus_missing_candidates_remaining": 0,
+    "generic_vanilla_excavation_label_preserved": true
+  },
+  "pending_trello_manifest": "documentation/TrelloLorePendingUpdates.json",
+  "pending_card_count": 25,
+  "prior_synchronized_description_count": 15,
+  "complete_card_claims": 0,
+  "blocking_access": "Chrome browser3 reported Browser is not available; retry only on changed availability",
+  "review_proposals": [
+    "documentation\\AssassinationScopeProposal.md",
+    "documentation\\GreatLibraryPresentationProposal.md",
+    "documentation\\IcathianPathChoiceProposal.md",
+    "documentation\\IcathianPrinceRecoveryProposal.md",
+    "documentation\\NazumahDevelopmentProposal.md",
+    "documentation\\NazumahDiplomacyProposal.md",
+    "documentation\\ShurimaHeritageEventProposal.md",
+    "documentation\\ShurimaUnityCycleProposal.md",
+    "documentation\\ShurimaVoidMissionProposal.md",
+    "documentation\\SilcoBackingOutcomeProposal.md",
+    "documentation\\SunDiscNewsProposal.md",
+    "documentation\\TargonPolicyParticipantProposal.md",
+    "documentation\\TargonUnrestDispatchProposal.md",
+    "documentation\\VoidContainmentProposal.md"
+  ],
+  "native_gates": [
+    "focus route/exclusion/conditional participant progression",
+    "reward and idea eligibility/cancellation/stacking",
+    "rendered localization dependency load order and Great Library key resolution",
+    "save reload",
+    "multiplayer"
+  ],
+  "next_action": "No repeat audits of finished queues. Resume exact pending Trello manifest if access changes; implement established wording repairs only when new source changes/gaps appear. Design proposals await human choices; native work awaits a specific game handoff. No commit/push/Workshop authorization."
+}

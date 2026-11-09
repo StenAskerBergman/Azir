@@ -1,0 +1,861 @@
+{
+  "date": "2026-10-09T18:25:10.323Z",
+  "scope": "literal add_ideas in parsed active local focus completion rewards, compared local and installed dependency plus vanilla English keys; not semantic acceptance",
+  "grants": [
+    {
+      "focus": "AUR_national_identity",
+      "idea": "AUR_national_identity",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_maritime_heritage",
+      "idea": "AUR_maritime_heritage",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_maritime_mastery",
+      "idea": "AUR_maritime_mastery",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_aurman_sailors",
+      "idea": "AUR_aurman_sailors",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_noxian_trade",
+      "idea": "AUR_noxian_trade",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_piltover_trade",
+      "idea": "AUR_piltover_trade",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_clan_medarda",
+      "idea": "AUR_clan_medarda",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_blood_is_thicker_than_water",
+      "idea": "AUR_blood_is_thicker_than_water",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_boats_run_on_water_not_blood",
+      "idea": "AUR_boats_run_on_water_not_blood",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_fisheries",
+      "idea": "AUR_fisheries",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_aurman_navy",
+      "idea": "AUR_aurman_navy",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_naval_linage",
+      "idea": "AUR_naval_linage",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_overclass_society",
+      "idea": "AUR_overclass_society",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_naval_outposts",
+      "idea": "AUR_naval_outposts",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_tight_crews",
+      "idea": "AUR_tight_crews",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_sea_of_iron",
+      "idea": "AUR_sea_of_iron",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_warships",
+      "idea": "AUR_warships",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "AUR_ocean_masters",
+      "idea": "AUR_ocean_masters",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_the_state_bank_of_nazumah",
+      "idea": "NAZ_state_bank_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_state-funded_projects",
+      "idea": "NAZ_state_funded_projects_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_warrior_tradition",
+      "idea": "NAZ_improved_warrior_tradition_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_strengthen_the_hunters",
+      "idea": "NAZ_improved_irregulars_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_nations_best",
+      "idea": "NAZ_our_finest_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_utilize_our_strengths",
+      "idea": "NAZ_our_strength_fighting_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_utilize_our_strengths",
+      "idea": "NAZ_our_strength_production_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_utilize_our_strengths",
+      "idea": "NAZ_our_strength_research_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_reform_the_conscription",
+      "idea": "extensive_conscription",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "NAZ_improving_the_educational_system",
+      "idea": "NAZ_education_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_the_nazuman_volunteer_force",
+      "idea": "NAZ_volunteers_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_a_jagged_alliance",
+      "idea": "NAZ_jagged_alliance_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "NAZ_rallying_the_nazuman_people",
+      "idea": "NAZ_rallying_the_people_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_desert_wanderers",
+      "idea": "desert_wanderers_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_lore_keepers",
+      "idea": "lore_keepers_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_cultural_exchange",
+      "idea": "cultural_exchange_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_blood_and_sand",
+      "idea": "blood_and_sand_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_horse_lords",
+      "idea": "horse_lords_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_dune_fighters",
+      "idea": "dune_fighters_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_oasis_control",
+      "idea": "oasis_control_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_sand_scouts",
+      "idea": "sand_scouts_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_survival_training",
+      "idea": "survival_training_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_plunder_and_pillage",
+      "idea": "plunder_and_pillage_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_ruthless_tactics",
+      "idea": "ruthless_tactics_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_loyal_to_the_clan",
+      "idea": "loyal_to_the_clan_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_treaty_with_outlaws",
+      "idea": "treaty_with_outlaws_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_nomadic_coalition",
+      "idea": "nomadic_coalition_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "RAI_expansion_of_territory",
+      "idea": "expansion_of_territory_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_the_sadists",
+      "idea": "SHK_the_sadists",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_the_eggheads",
+      "idea": "SHK_the_eggheads",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_the_grunts",
+      "idea": "SHK_the_grunts",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_the_boss",
+      "idea": "SHK_the_boss",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_preparing_for_total_war",
+      "idea": "SHK_preparing_for_total_war",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_draconian_recovery",
+      "idea": "SHK_draconian_recovery",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_critical_thinking",
+      "idea": "SHK_critical_thinking",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_the_master_plan",
+      "idea": "SHK_the_master_plan",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_gangland_diplomacy",
+      "idea": "SHK_gangland_diplomacy",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_everyone_works",
+      "idea": "SHK_everyone_works",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_dont_question_the_boss",
+      "idea": "SHK_dont_question_the_boss",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHK_iron_grip",
+      "idea": "SHK_iron_grip",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHU_defensive_lines",
+      "idea": "shuriman_defense_bonus",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_shuriman_legions",
+      "idea": "war_economy",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_shuriman_recognition",
+      "idea": "shuriman_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_shuriman_recognition",
+      "idea": "shuriman_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_marai_marines",
+      "idea": "marai_marines",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_nazumahs_pride",
+      "idea": "shuriman_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_work_camps",
+      "idea": "SHU_work_camps_idea",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_restore_solari",
+      "idea": "big_sun",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_gold_trade",
+      "idea": "gold_trade",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_gold_reserve",
+      "idea": "gold_reserve",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_workers_rights",
+      "idea": "SHU_workers_rights_idea",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_no_more_hunger",
+      "idea": "idea_no_more_hunger",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_craft_guild",
+      "idea": "BuildMore",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHU_tribe_council",
+      "idea": "tribal_council",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribe_law",
+      "idea": "tribe_law",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribal_recognition",
+      "idea": "tribal_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribal_respect",
+      "idea": "tribal_respect",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribe_unity",
+      "idea": "tribal_family",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribe_unity",
+      "idea": "tribal_family",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_work_unions",
+      "idea": "SHU_work_unions_idea",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "SHU_shuriman_university",
+      "idea": "SHU_shuriman_university_idea",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_officer_school",
+      "idea": "SHU_Officer_School_ideas",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_rebuild_library",
+      "idea": "SHU_rebuild_library_idea",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_war_academy",
+      "idea": "SHU_War_Academy_ideas",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_lion_riders",
+      "idea": "RAJ_lions_of_the_great_war",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "TAR_reform",
+      "idea": "TAR_peaceful_reforms",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "TAR_integrate_opposition",
+      "idea": "TAR_celestial_unity",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "TAR_purity",
+      "idea": "TAR_solari_supremacy",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "TAR_rejectors",
+      "idea": "TAR_lunari_endurance",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "TAR_remember_us",
+      "idea": "TAR_lunari_endurance",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "TAR_purge_opposition",
+      "idea": "TAR_solari_supremacy",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "VOI_Embrace_the_Void",
+      "idea": "void_influence",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Embrace_the_Void",
+      "idea": "crushed_void_resistance",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Resist_the_Void",
+      "idea": "void_resistance",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Voidborn_Soldiers",
+      "idea": "Void_Army",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Zilean",
+      "idea": "Zileans_Zeal",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "VOI_law_university",
+      "idea": "Chronoshift",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Expand_the_Horde",
+      "idea": "Void_Army",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Rift_Rapture",
+      "idea": "Rift_Rapture",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Shadow_War",
+      "idea": "war_economy",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "VOI_our_war",
+      "idea": "extensive_conscription",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "VOI_our_war",
+      "idea": "tot_economic_mobilisation",
+      "title_present": true,
+      "description_present": false
+    },
+    {
+      "focus": "VOI_Open_Void_Gate",
+      "idea": "Rift_Open",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Axamuk_Supremacy",
+      "idea": "ascendant_supremacy",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_purple_royalty",
+      "idea": "ascendant_supremacy",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_Icathian_Mircle",
+      "idea": "ascendant_supremacy",
+      "title_present": true,
+      "description_present": true
+    },
+    {
+      "focus": "VOI_revive_the_grand_wizard_council",
+      "idea": "VOI_grand_wizard_council_idea",
+      "title_present": false,
+      "description_present": false
+    }
+  ],
+  "missing_titles": [
+    {
+      "focus": "SHU_defensive_lines",
+      "idea": "shuriman_defense_bonus",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_shuriman_recognition",
+      "idea": "shuriman_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_shuriman_recognition",
+      "idea": "shuriman_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_marai_marines",
+      "idea": "marai_marines",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_nazumahs_pride",
+      "idea": "shuriman_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_gold_trade",
+      "idea": "gold_trade",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_gold_reserve",
+      "idea": "gold_reserve",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_no_more_hunger",
+      "idea": "idea_no_more_hunger",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribe_law",
+      "idea": "tribe_law",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribal_recognition",
+      "idea": "tribal_recognition",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_tribal_respect",
+      "idea": "tribal_respect",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_shuriman_university",
+      "idea": "SHU_shuriman_university_idea",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_officer_school",
+      "idea": "SHU_Officer_School_ideas",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_rebuild_library",
+      "idea": "SHU_rebuild_library_idea",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "SHU_war_academy",
+      "idea": "SHU_War_Academy_ideas",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "TAR_integrate_opposition",
+      "idea": "TAR_celestial_unity",
+      "title_present": false,
+      "description_present": false
+    },
+    {
+      "focus": "VOI_revive_the_grand_wizard_council",
+      "idea": "VOI_grand_wizard_council_idea",
+      "title_present": false,
+      "description_present": false
+    }
+  ],
+  "next": "Trace missing-title idea definitions/callers first; then bounded missing-description semantics. Description absence is not automatically a defect.",
+  "resolved_keys": {
+    "shuriman_defense_bonus": {
+      "run": 282,
+      "evidence": "local definition and active grants traced; text authored; native acceptance open"
+    },
+    "shuriman_recognition": {
+      "run": 282,
+      "evidence": "local definition and active grants traced; text authored; native acceptance open"
+    },
+    "marai_marines": {
+      "run": 283,
+      "evidence": "idea definitions and active grants traced; authored title and description; runtime gates open"
+    },
+    "gold_trade": {
+      "run": 283,
+      "evidence": "idea definitions and active grants traced; authored title and description; runtime gates open"
+    },
+    "gold_reserve": {
+      "run": 283,
+      "evidence": "idea definitions and active grants traced; authored title and description; runtime gates open"
+    },
+    "idea_no_more_hunger": {
+      "run": 284,
+      "evidence": "definition and prerequisite traced; title/description authored; native acceptance open"
+    },
+    "tribe_law": {
+      "run": 284,
+      "evidence": "definition and prerequisite traced; title/description authored; native acceptance open"
+    },
+    "SHU_shuriman_university_idea": {
+      "run": 285,
+      "evidence": "education definitions and grant routes traced; title/description authored"
+    },
+    "SHU_rebuild_library_idea": {
+      "run": 285,
+      "evidence": "education definitions and grant routes traced; title/description authored"
+    },
+    "SHU_Officer_School_ideas": {
+      "run": 285,
+      "evidence": "education definitions and grant routes traced; title/description authored"
+    },
+    "SHU_War_Academy_ideas": {
+      "run": 285,
+      "evidence": "education definitions and grant routes traced; title/description authored"
+    },
+    "tribal_recognition": {
+      "run": 286,
+      "evidence": "empty idea definition and prerequisites traced; symbolic title/description authored"
+    },
+    "tribal_respect": {
+      "run": 286,
+      "evidence": "empty idea definition and prerequisites traced; symbolic title/description authored"
+    },
+    "TAR_celestial_unity": {
+      "run": 287,
+      "evidence": "faction-specific definition and grant route traced; local title/description authored; native gates open"
+    },
+    "VOI_grand_wizard_council_idea": {
+      "run": 287,
+      "evidence": "faction-specific definition and grant route traced; local title/description authored; native gates open"
+    }
+  },
+  "resolved_description_keys": {
+    "SHU_workers_rights_idea_desc": {
+      "run": 288,
+      "evidence": "labor modifier tradeoffs and grant prerequisites traced"
+    },
+    "SHU_work_camps_idea_desc": {
+      "run": 288,
+      "evidence": "labor modifier tradeoffs and grant prerequisites traced"
+    },
+    "tribal_council_desc": {
+      "run": 289,
+      "evidence": "empty definitions and current pre-consent/event grant scopes traced; neutral wording"
+    },
+    "tribal_family_desc": {
+      "run": 289,
+      "evidence": "empty definitions and current pre-consent/event grant scopes traced; neutral wording"
+    },
+    "TAR_peaceful_reforms_desc": {
+      "run": 290,
+      "evidence": "local definitions/callers traced; conditional faction prose authored"
+    },
+    "TAR_solari_supremacy_desc": {
+      "run": 290,
+      "evidence": "local definitions/callers traced; conditional faction prose authored"
+    },
+    "Zileans_Zeal_desc": {
+      "run": 290,
+      "evidence": "local definitions/callers traced; conditional faction prose authored"
+    },
+    "big_sun_desc": {
+      "run": 290,
+      "evidence": "local definitions/callers traced; conditional faction prose authored"
+    }
+  },
+  "completion_receipt": {
+    "run": 291,
+    "status": "bounded_static_localization_complete_runtime_unaccepted",
+    "literal_grant_references": 105,
+    "distinct_missing_titles_resolved": 15,
+    "extra_descriptions_resolved": 8,
+    "authored_idea_keys": 38,
+    "all_authored_keys_unique": true,
+    "remaining_custom_title_or_description_ids": [],
+    "excluded_generic_law_descriptions": [
+      "extensive_conscription",
+      "tot_economic_mobilisation",
+      "war_economy"
+    ],
+    "native_gates": [
+      "idea eligibility and cancellation",
+      "conditional recipient delivery",
+      "modifier stacking",
+      "rendered text and dependency load order",
+      "save reload",
+      "multiplayer"
+    ],
+    "source_scope_limit": "literal active local focus add_ideas only; does not prove all mod ideas/events/decisions complete"
+  }
+}

@@ -1,31 +1,31 @@
 ﻿l_english:
- shurima.1.t: "Empty Shurima Throne"
- shurima.1.d: "The once-mighty Shurima Empire now stands at a crossroads, its throne vacant and its future uncertain. Will the legendary warrior Sivir rise to claim the throne, or will the resurrected Emperor Azir return to lead the empire to its former glory? The destiny of Shurima hangs in the balance, and the world watches with bated breath to see who will emerge as the rightful ruler of this ancient civilization."
+ shurima.1.t: "The Crown of Shurima"
+ shurima.1.d: "Shurima must decide who will bear the imperial crown. Azir and Sivir offer different courses for its future."
 
  # Tribal Relations Event 
  shurima.55.t: "Nazumah and Shurima: Closer Ties"
- shurima.55.d: "Nazumah and Shurima have the opportunity to strengthen their ties, bringing closer cooperation and mutual benefits. Will they accept this offer?"
+ shurima.55.d: "Our council is considering closer ties with Nazumah. We can pursue an offer of cooperation, but their people must decide whether to accept it."
 
- shurima.55.a: "Accept Closer Ties"
- shurima.55.a.tt: "Shurima accepts closer ties with Nazumah, gaining the tribal ties benefits."
+ shurima.55.a: "Pursue closer ties."
+ shurima.55.a.tt: "Adopts $tribal_ties$ and sends the response event to the initiating country."
 
  shurima.55.g: "Reject Closer Ties"
  shurima.55.g.tt: "Shurima rejects closer ties with Nazumah."
 
  shurima.56.t: "Nazumah and Shurima: Closer Ties Response"
- shurima.56.d: "Shurima has proposed closer ties with Nazumah. How will Nazumah respond?"
+ shurima.56.d: "Shurima has offered closer cooperation. We must decide whether these ties serve Nazumah's people."
 
  shurima.56.a: "Accept Closer Ties"
- shurima.56.a.tt: "Nazumah accepts closer ties with Shurima, gaining the tribal family benefits."
+ shurima.56.a.tt: "Adopts $tribal_family$ here and in the initiating country, removes its $tribal_ties$, and sends a cooperation notice to Shurima."
 
  shurima.56.c: "Reject Closer Ties"
  shurima.56.c.tt: "Nazumah rejects closer ties with Shurima."
 
  shurima.57.t: "Nazumah and Shurima: Mutual Benefits"
- shurima.57.d: "Both Nazumah and Shurima have accepted closer ties, resulting in mutual benefits for both nations."
+ shurima.57.d: "The offer of closer cooperation has been accepted. The agreement can strengthen public confidence as both governments look ahead."
 
  shurima.57.a: "A New Era of Cooperation"
- shurima.57.a.tt: "Both Nazumah and Shurima gain stability and war support as a result of their closer ties."
+ shurima.57.a.tt: "The recipient and initiating country each gain 10% stability and 10% war support."
 
 
  # Pick Leader Event 
@@ -37,7 +37,7 @@
 
  # "Initial Event Triggered" # Title  
  shurima.101.t: "Initial Guild Meeting" 
- shurima.101.d: "This event triggers a recurring event every year or two years."
+ shurima.101.d: "Shurima's guilds are gathering under renewed imperial recognition. Their cooperation will help rebuild civilian workshops and establish a foundation for further industrial development."
 
  shurima.2.t: "Shurima Broken" 
  shurima.2.desc: "Shurima is broken! We must restore the empire!"
@@ -48,11 +48,11 @@
  shurima.4.t: "Recovering Our Lands!"
  shurima.4.desc: "One piece at the time, our empire rebuilds itself!"
 
- shurima.5.t: "Recovering Our Lands!"
- shurima.5.desc: "One piece at the time, our empire rebuilds itself!"
+ shurima.5.t: "A More United Shurima"
+ shurima.5.desc: "Growing stability gives the empire a firmer foundation. Divisions within Shurima can now give way to a more united administration."
 
- shurima.6.t: "Recovering Our Lands!"
- shurima.6.desc: "One piece at the time, our empire rebuilds itself!"
+ shurima.6.t: "Consolidating Imperial Unity"
+ shurima.6.desc: "With the country stable enough to move beyond its remaining divisions, the imperial administration can strengthen Shurima's unity."
 
  shurima.2.a: "Victory!"
 

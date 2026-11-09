@@ -1,0 +1,30 @@
+add_namespace = azir_void_espionage
+
+country_event = {
+    id = azir_void_espionage.1
+    title = azir_void_espionage.1.t
+    desc = azir_void_espionage.1.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+        date < 990.4.1
+        NOT = { has_country_flag = azir_void_espionage_tone_chosen }
+    }
+
+    option = {
+        name = azir_void_espionage.1.a
+        set_country_flag = azir_void_espionage_tone_chosen
+    }
+
+    option = {
+        name = azir_void_espionage.1.b
+        trigger = { date < 990.4.1 }
+        if = {
+            limit = { date < 990.4.1 }
+            set_country_flag = azir_void_espionage_goofy
+        }
+        set_country_flag = azir_void_espionage_tone_chosen
+    }
+}

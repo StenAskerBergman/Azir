@@ -1,0 +1,733 @@
+{
+  "date": "2026-10-09",
+  "structured_unresolved": [
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 175,
+      "key": "shuriman_rnews.40.desc_eng",
+      "status": "blocked outcome choice: documentation/SunDiscNewsProposal.md"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 185,
+      "key": "shuriman_rnews.40.desc_not_eng",
+      "status": "blocked outcome choice: documentation/SunDiscNewsProposal.md"
+    }
+  ],
+  "literal_review": [
+    {
+      "file": "events/Icathian_events.txt",
+      "line": 129,
+      "field": "name",
+      "text": "Resistance Division",
+      "status": "excluded: division template name, not event presentation"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 18,
+      "field": "title",
+      "text": "The Hunt Begins",
+      "status": "reviewed/localized run201; preparation rewards, no Ascended hunt target"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 19,
+      "field": "desc",
+      "text": "We have set our sights on the great Ascended of Shurima. The hunt begins now.",
+      "status": "reviewed/localized run201; preparation rewards, no Ascended hunt target"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 32,
+      "field": "name",
+      "text": "Begin the Hunt",
+      "status": "reviewed/localized run201; preparation rewards, no Ascended hunt target"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 43,
+      "field": "title",
+      "text": "Showdown with Azir",
+      "status": "reviewed/localized run202; rally/peace confidence, no verified Azir victory"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 44,
+      "field": "desc",
+      "text": "The time has come to face Azir, the God-Emperor of Shurima.",
+      "status": "reviewed/localized run202; rally/peace confidence, no verified Azir victory"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 58,
+      "field": "name",
+      "text": "Engage Azir",
+      "status": "reviewed/localized run202; rally/peace confidence, no verified Azir victory"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 70,
+      "field": "title",
+      "text": "Victory Over Azir",
+      "status": "reviewed/localized run202; rally/peace confidence, no verified Azir victory"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 71,
+      "field": "desc",
+      "text": "Our forces have triumphed over Azir's armies. Nazumah remains unbowed.",
+      "status": "reviewed/localized run202; rally/peace confidence, no verified Azir victory"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 85,
+      "field": "name",
+      "text": "Celebrate the Victory",
+      "status": "reviewed/localized run202; rally/peace confidence, no verified Azir victory"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 97,
+      "field": "title",
+      "text": "The Hunt for Azir",
+      "status": "reviewed/localized run203; preparation only, no capture/death"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 98,
+      "field": "desc",
+      "text": "The Tribunal Council has decided to hunt down the Ascended Emperor Azir.",
+      "status": "reviewed/localized run203; preparation only, no capture/death"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 111,
+      "field": "name",
+      "text": "Commence the Hunt",
+      "status": "reviewed/localized run203; preparation only, no capture/death"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 126,
+      "field": "title",
+      "text": "The Hunt for Nasus",
+      "status": "reviewed/localized run204; preparation only"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 127,
+      "field": "desc",
+      "text": "The Tribunal Council has decided to hunt down the Ascended Guardian Nasus.",
+      "status": "reviewed/localized run204; preparation only"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 140,
+      "field": "name",
+      "text": "Commence the Hunt",
+      "status": "reviewed/localized run204; preparation only"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 155,
+      "field": "title",
+      "text": "The Hunt for Renekton",
+      "status": "reviewed/localized run204; preparation only"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 156,
+      "field": "desc",
+      "text": "The Tribunal Council has decided to hunt down the Ascended Butcher Renekton.",
+      "status": "reviewed/localized run204; preparation only"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 169,
+      "field": "name",
+      "text": "Commence the Hunt",
+      "status": "reviewed/localized run204; preparation only"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 184,
+      "field": "title",
+      "text": "Request for Non-Aggression Pact",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 185,
+      "field": "desc",
+      "text": "Nazumah seeks a non-aggression pact with Xerath to ensure peace and cooperation in the region. This pact could pave the way for a more collaborative future.",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 201,
+      "field": "name",
+      "text": "Send the request to Xerath",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 216,
+      "field": "title",
+      "text": "Non-Aggression Pact Proposal",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 217,
+      "field": "desc",
+      "text": "Nazumah has proposed a non-aggression pact. Accepting this pact could lead to a future alliance.",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 223,
+      "field": "name",
+      "text": "Accept the Non-Aggression Pact",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/Nazumah_events.txt",
+      "line": 239,
+      "field": "name",
+      "text": "Reject the proposal",
+      "status": "reviewed/localized run205; opinion-only discussion"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 45,
+      "field": "title",
+      "text": "Azir Assassination Attempt",
+      "status": "reviewed/localized run206; global attempt flag, uncertain result"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 46,
+      "field": "desc",
+      "text": "A shocking attempt on Azir's life has been reported, throwing the empire into chaos as rumors spread about the identity of the attackers.",
+      "status": "reviewed/localized run206; global attempt flag, uncertain result"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 60,
+      "field": "name",
+      "text": "The Empire Holds Its Breath...",
+      "status": "reviewed/localized run206; global attempt flag, uncertain result"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 70,
+      "field": "title",
+      "text": "Shuriman Great War",
+      "status": "reviewed/localized run207; SHU-XER offensive war, no leader or victory assumption"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 71,
+      "field": "desc",
+      "text": "War has broken out between Xerath and Azir, the two demi gods will now send shuriman back into another era of tornment! Who will win come out on top remains to be seen!",
+      "status": "reviewed/localized run207; SHU-XER offensive war, no leader or victory assumption"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 90,
+      "field": "name",
+      "text": "Another war over sand...",
+      "status": "reviewed/localized run207; SHU-XER offensive war, no leader or victory assumption"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 99,
+      "field": "name",
+      "text": "Its Time...",
+      "status": "reviewed/localized run207; SHU-XER offensive war, no leader or victory assumption"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 103,
+      "field": "name",
+      "text": "There can be Only One!",
+      "status": "reviewed/localized run207; SHU-XER offensive war, no leader or victory assumption"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 112,
+      "field": "title",
+      "text": "Shuriman Great War",
+      "status": "reviewed/localized run208; NOX offensive war; copied XER option tags repaired to NOX"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 113,
+      "field": "desc",
+      "text": "War has broken out between Noxians and Azir, the two factions will now send the world back into another era of tornment! Who will win come out on top remains uncertain!",
+      "status": "reviewed/localized run208; NOX offensive war; copied XER option tags repaired to NOX"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 132,
+      "field": "name",
+      "text": "Another war over sand...",
+      "status": "reviewed/localized run208; NOX offensive war; copied XER option tags repaired to NOX"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 141,
+      "field": "name",
+      "text": "Its Time...",
+      "status": "reviewed/localized run208; NOX offensive war; copied XER option tags repaired to NOX"
+    },
+    {
+      "file": "events/SHU_NewsEvents.txt",
+      "line": 145,
+      "field": "name",
+      "text": "There can be Only One!",
+      "status": "reviewed/localized run208; NOX offensive war; copied XER option tags repaired to NOX"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 15,
+      "field": "title",
+      "text": "The Aftermath of the Assassination Attempt",
+      "status": "reviewed/localized run209; mean-time not fixed date; retirement not proven death; scope producer gap recorded"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 16,
+      "field": "desc",
+      "text": "Fifty days have passed since the shocking attempt on Azir's life. The empire now holds its breath as the consequences of this act unfold.",
+      "status": "reviewed/localized run209; mean-time not fixed date; retirement not proven death; scope producer gap recorded"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 35,
+      "field": "name",
+      "text": "Azir has fallen...",
+      "status": "reviewed/localized run209; mean-time not fixed date; retirement not proven death; scope producer gap recorded"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 43,
+      "field": "name",
+      "text": "Azir Strikes Back!",
+      "status": "reviewed/localized run209; mean-time not fixed date; retirement not proven death; scope producer gap recorded"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 51,
+      "field": "name",
+      "text": "Xerath Strikes a Blow",
+      "status": "reviewed/localized run209; mean-time not fixed date; retirement not proven death; scope producer gap recorded"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 62,
+      "field": "name",
+      "text": "Sivir is Killed...",
+      "status": "reviewed/localized run209; mean-time not fixed date; retirement not proven death; scope producer gap recorded"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 112,
+      "field": "name",
+      "text": "Retire Leader",
+      "status": "reviewed/localized run210; source retirement/idea transitions; dynamic idea names verified"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 171,
+      "field": "custom_effect_tooltip",
+      "text": "Replace Shurima Broken with Shurima Fractured",
+      "status": "reviewed/localized run210; source retirement/idea transitions; dynamic idea names verified"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 201,
+      "field": "custom_effect_tooltip",
+      "text": "Replace Shurima Fractured with Shurima Scattered",
+      "status": "reviewed/localized run210; source retirement/idea transitions; dynamic idea names verified"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 225,
+      "field": "custom_effect_tooltip",
+      "text": "Replace Shurima Scattered with Shurima Apart",
+      "status": "reviewed/localized run210; source retirement/idea transitions; dynamic idea names verified"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 438,
+      "field": "name",
+      "text": "Acknowledge",
+      "status": "reviewed/localized run211; guild civilian construction tiers, no fixed recurrence promise"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 458,
+      "field": "title",
+      "text": "Guild Meeting",
+      "status": "reviewed/localized run211; guild civilian construction tiers, no fixed recurrence promise"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 459,
+      "field": "desc",
+      "text": "This event occurs every two years and strengthens the nation's industry.",
+      "status": "reviewed/localized run211; guild civilian construction tiers, no fixed recurrence promise"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 480,
+      "field": "name",
+      "text": "Ok",
+      "status": "reviewed/localized run211; guild civilian construction tiers, no fixed recurrence promise"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 521,
+      "field": "title",
+      "text": "Shurima Respects the Workers Rights!",
+      "status": "reviewed/localized run212; focus workers-rights idea, event5%stability; no restored-empire gate"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 522,
+      "field": "desc",
+      "text": "The restored empire has formally recognized the rights of its laborers and guild workers.",
+      "status": "reviewed/localized run212; focus workers-rights idea, event5%stability; no restored-empire gate"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 529,
+      "field": "name",
+      "text": "A fairer Shurima rises.",
+      "status": "reviewed/localized run212; focus workers-rights idea, event5%stability; no restored-empire gate"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 545,
+      "field": "name",
+      "text": "SHU_opt_revive_traditions",
+      "status": "reviewed existing quoted localization key run213; shurima.565 effects traced; dormant wiring proposal retained"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 560,
+      "field": "name",
+      "text": "SHU_opt_invest_in_infrastructure",
+      "status": "reviewed existing quoted localization key run213; shurima.565 effects traced; dormant wiring proposal retained"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 576,
+      "field": "name",
+      "text": "SHU_opt_promote_cultural_renaissance",
+      "status": "reviewed existing quoted localization key run213; shurima.565 effects traced; dormant wiring proposal retained"
+    },
+    {
+      "file": "events/Shurima_events.txt",
+      "line": 589,
+      "field": "name",
+      "text": "SHU_opt_expand_military_glory",
+      "status": "reviewed existing quoted localization key run213; shurima.565 effects traced; dormant wiring proposal retained"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 148,
+      "field": "title",
+      "text": "Eradicate the Heretics",
+      "status": "reviewed/localized run214; existing four keys/two new tooltips; policy effects, no character or purge outcome"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 149,
+      "field": "desc",
+      "text": "Rahvun has initiated a campaign to purge of Lunari influence within Targon. Will Leona support this effort?",
+      "status": "reviewed/localized run214; existing four keys/two new tooltips; policy effects, no character or purge outcome"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 159,
+      "field": "name",
+      "text": "Purge the Lunari",
+      "status": "reviewed/localized run214; existing four keys/two new tooltips; policy effects, no character or purge outcome"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 160,
+      "field": "custom_effect_tooltip",
+      "text": "we warned them...",
+      "status": "reviewed/localized run214; existing four keys/two new tooltips; policy effects, no character or purge outcome"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 169,
+      "field": "name",
+      "text": "Allow them to remain",
+      "status": "reviewed/localized run214; existing four keys/two new tooltips; policy effects, no character or purge outcome"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 170,
+      "field": "custom_effect_tooltip",
+      "text": "The Lunari will be left to their own devices...",
+      "status": "reviewed/localized run214; existing four keys/two new tooltips; policy effects, no character or purge outcome"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 182,
+      "field": "title",
+      "text": "Pick Your Leader",
+      "status": "reviewed/localized run215; candidate character gates/party appointment effects traced"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 183,
+      "field": "desc",
+      "text": "It's high time we choose a leader",
+      "status": "reviewed/localized run215; candidate character gates/party appointment effects traced"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 286,
+      "field": "title",
+      "text": "Preparation for Civil War",
+      "status": "reviewed/localized run216; existing keys; faction support flags/spirits, no civil-war launch"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 287,
+      "field": "desc",
+      "text": "With tensions escalating between the Solari and Lunari factions, a civil war seems imminent. Choose which side to support.",
+      "status": "reviewed/localized run216; existing keys; faction support flags/spirits, no civil-war launch"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 297,
+      "field": "name",
+      "text": "Support the Purists",
+      "status": "reviewed/localized run216; existing keys; faction support flags/spirits, no civil-war launch"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 305,
+      "field": "name",
+      "text": "Support the Reformers",
+      "status": "reviewed/localized run216; existing keys; faction support flags/spirits, no civil-war launch"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 316,
+      "field": "title",
+      "text": "Leona's Path of Reformation",
+      "status": "reviewed/localized run217; existing keys; compromise choices no verified Leona gate or reconciliation"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 317,
+      "field": "desc",
+      "text": "Leona strives to reconcile the Solari and Lunari factions, but the balance is fragile.",
+      "status": "reviewed/localized run217; existing keys; compromise choices no verified Leona gate or reconciliation"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 322,
+      "field": "name",
+      "text": "Promise to Solari",
+      "status": "reviewed/localized run217; existing keys; compromise choices no verified Leona gate or reconciliation"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 331,
+      "field": "name",
+      "text": "Promise to Lunari",
+      "status": "reviewed/localized run217; existing keys; compromise choices no verified Leona gate or reconciliation"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 340,
+      "field": "name",
+      "text": "Balance Both Sides",
+      "status": "reviewed/localized run217; existing keys; compromise choices no verified Leona gate or reconciliation"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 350,
+      "field": "title",
+      "text": "Diana's Return",
+      "status": "reviewed/localized run218; existing keys; Lunari policies, no Diana presence/appointment or rebellion effect"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 351,
+      "field": "desc",
+      "text": "Diana returns to lead the Lunari rebellion. Will she choose a path of reform or rejection?",
+      "status": "reviewed/localized run218; existing keys; Lunari policies, no Diana presence/appointment or rebellion effect"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 356,
+      "field": "name",
+      "text": "Lead the Lunari as a Reformer",
+      "status": "reviewed/localized run218; existing keys; Lunari policies, no Diana presence/appointment or rebellion effect"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 365,
+      "field": "name",
+      "text": "Reject the Solari entirely",
+      "status": "reviewed/localized run218; existing keys; Lunari policies, no Diana presence/appointment or rebellion effect"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 378,
+      "field": "title",
+      "text": "The Eclipse Begins",
+      "status": "reviewed/localized run219; Solari perspective, mobilization effects not victory or Diana appointment"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 379,
+      "field": "desc",
+      "text": "The Lunari heretics, led by the traitor Diana and her cult followers, have risen against the rightous Solari rulers. After years of deceitful hiding, they now strike with full force, aiming to destroy Targon and distinguish our sun!",
+      "status": "reviewed/localized run219; Solari perspective, mobilization effects not victory or Diana appointment"
+    },
+    {
+      "file": "events/Targon_events.txt",
+      "line": 385,
+      "field": "name",
+      "text": "Extinguish the Lunari's rampage",
+      "status": "reviewed/localized run219; Solari perspective, mobilization effects not victory or Diana appointment"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 10,
+      "field": "title",
+      "text": "Power Play",
+      "status": "reviewed/localized run220; route choices, no mutual killing or Renekton promotion effect"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 23,
+      "field": "name",
+      "text": "Make Xerath Leader",
+      "status": "reviewed/localized run220; route choices, no mutual killing or Renekton promotion effect"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 43,
+      "field": "name",
+      "text": "Make Renekton Leader",
+      "status": "reviewed/localized run220; route choices, no mutual killing or Renekton promotion effect"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 67,
+      "field": "title",
+      "text": "Final Struggle",
+      "status": "reviewed/localized run221; startup declaration/flags/song/news, no war declaration or bloodline destruction"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 68,
+      "field": "desc",
+      "text": "We Embark On Our Final Struggle Towards a world of Total Enlightenment!",
+      "status": "reviewed/localized run221; startup declaration/flags/song/news, no war declaration or bloodline destruction"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 75,
+      "field": "custom_effect_tooltip",
+      "text": "We will Embark Our Final Journey of Towards Power, by crushing azirs bloodline and reforging Shurima to something even greater!",
+      "status": "reviewed/localized run221; startup declaration/flags/song/news, no war declaration or bloodline destruction"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 93,
+      "field": "name",
+      "text": "Finally... We Strike!",
+      "status": "reviewed/localized run221; startup declaration/flags/song/news, no war declaration or bloodline destruction"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 106,
+      "field": "title",
+      "text": "Usurp the Throne",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 107,
+      "field": "desc",
+      "text": "The time has come to seize the throne from Azir and claim the Empire for ourselves. How shall we approach this monumental task?",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 114,
+      "field": "custom_effect_tooltip",
+      "text": "We will claim the throne of Shurima, breaking Azir's rule and forging a new era under Xerath!",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 123,
+      "field": "name",
+      "text": "Launch a Direct Assault on the Imperial Palace",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 126,
+      "field": "custom_effect_tooltip",
+      "text": "Our forces will launch a direct and overwhelming attack on Azir's palace.",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 136,
+      "field": "name",
+      "text": "Undermine Azir's Support through Sabotage",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 139,
+      "field": "custom_effect_tooltip",
+      "text": "We'll weaken Azir's support base through targeted sabotage and deceit.",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 149,
+      "field": "name",
+      "text": "Incite a Rebellion among Azir's Forces",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 152,
+      "field": "custom_effect_tooltip",
+      "text": "We'll rally discontented elements within Azir's army to turn against him.",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 162,
+      "field": "name",
+      "text": "Attempt to Assassinate Azir",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    },
+    {
+      "file": "events/Xerath_events.txt",
+      "line": 165,
+      "field": "custom_effect_tooltip",
+      "text": "We'll make a daring move to assassinate Azir, leaving the throne open for our taking.",
+      "status": "reviewed/localized run222; usurpation intentions and actual PP/stability/flags/news; no target outcome"
+    }
+  ]
+}

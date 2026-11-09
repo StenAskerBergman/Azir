@@ -1,0 +1,13 @@
+﻿l_english:
+ VOI_resistance_category: "Void Resistance"
+ VOI_resistance_category_desc: "Organize the people who defend Icathia against the Void."
+ VOI_form_rupture_wardens: "Form the Rupture Wardens"
+ VOI_form_rupture_wardens_desc: "Jax's fighters know how to hold a narrow approach. Give them the tools to brace a broken wall, seal a passage and buy the people behind them time to escape."
+ VOI_form_rupture_wardens_tt: "Unlocks §YRupture Wardens§! in the division designer and §YContainment Kits§! for production. Each company requires 20 kits."
+ azir_voi_rupture_wardens_training: "Rupture Warden Training"
+ azir_voi_rupture_wardens_training_desc: "Train support companies to contain breaches and defend the approaches to Icathia's settlements."
+ azir_voi_rupture_warden_company: "Rupture Wardens"
+ azir_voi_rupture_warden_company_desc: "Icathian support company trained to dig in and defend hill passes and ruined streets. Uses the same support slot type as engineers."
+ azir_voi_containment_kit: "Containment Kits"
+ azir_voi_containment_kit_1: "Containment Kit"
+ azir_voi_containment_kit_1_short: "Containment Kit"

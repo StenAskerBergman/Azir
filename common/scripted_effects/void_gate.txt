@@ -1,0 +1,70 @@
+# The Void Rupture is province 2883 in state 91.
+begin_void_gate_construction = {
+    if = {
+        limit = { NOT = { has_global_flag = void_gate_construction_begun } }
+        set_global_flag = void_gate_construction_begun
+        91 = {
+            set_building_level = { type = landmark_void_gate_closed level = 0 province = 2883 }
+            set_building_level = { type = landmark_void_gate_construction level = 1 province = 2883 }
+        }
+        news_event = { id = void_gate.10 }
+    }
+}
+
+place_void_gate_first_rift = {
+    91 = {
+        set_building_level = { type = landmark_void_gate_closed level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate_construction level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate_first_rift level = 1 province = 2883 }
+    }
+}
+
+fire_first_void_rift = {
+    if = {
+        limit = { NOT = { has_global_flag = void_gate_first_rift_fired } }
+        begin_void_gate_construction = yes
+        set_global_flag = void_gate_first_rift_fired
+        place_void_gate_first_rift = yes
+        news_event = { id = void_gate.11 }
+        news_event = { id = void_gate.12 days = 3 }
+    }
+}
+
+open_void_gate = {
+    91 = {
+        set_building_level = { type = landmark_void_gate_closed level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate_construction level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate_first_rift level = 0 province = 2883 }
+    }
+    create_entity = {
+        entity = void_gate_opening
+        var = void_gate_scene
+        province = 2883
+        min_zoom = 300.0
+    }
+    country_event = { id = void_gate.1 days = 3 }
+}
+
+seal_void_gate = {
+    91 = {
+        set_building_level = { type = landmark_void_gate_closed level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate_construction level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate_first_rift level = 0 province = 2883 }
+        set_building_level = { type = landmark_void_gate level = 0 province = 2883 }
+    }
+    create_entity = {
+        entity = void_gate_sealing
+        var = void_gate_scene
+        province = 2883
+        min_zoom = 300.0
+    }
+    country_event = { id = void_gate.2 days = 3 }
+}
+
+clear_void_gate_scene = {
+    if = {
+        limit = { has_variable = void_gate_scene }
+        destroy_entity = var:void_gate_scene
+        clear_variable = void_gate_scene
+    }
+}

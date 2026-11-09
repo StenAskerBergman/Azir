@@ -63,7 +63,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-		name = "The Horror!"
+		name = SHU_demon_response_accept
 		ai_chance = { factor = 50 }
 		random_controlled_state = {
 			limit = {
@@ -77,7 +77,7 @@ country_event = {
        		 }
 	}
 	option = { 
-		name = "We Must Counter This Evil!"
+		name = SHU_demon_response_commit
 		ai_chance = { factor = 50 }
 		add_political_power = -25
 	}
@@ -91,9 +91,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-		name = "The Horror!"
+		name = SHU_demon_response_accept
 		ai_chance = { factor = 50 }
-		custom_effect_tooltip = DEM_demonAddDays
+		custom_effect_tooltip = SHU_demon_mission_extension_tt
 		if = {
 					limit = {
 						has_country_flag = DuneBreaker
@@ -123,7 +123,7 @@ country_event = {
 				}
 	}
 	option = { 
-		name = "We Must Counter This Evil!"
+		name = SHU_demon_response_commit
 		ai_chance = { factor = 50 }
 		add_political_power = -25
 	}
@@ -137,7 +137,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-		name = "The Horror!"
+		name = SHU_demon_response_accept
 		ai_chance = { factor = 50 }
 		custom_effect_tooltip = DEM_demonManpowerAtt
 			every_controlled_state = {
@@ -151,7 +151,7 @@ country_event = {
 
 	}
 	option = { 
-		name = "We Must Counter This Evil!"
+		name = SHU_demon_response_commit
 		ai_chance = { factor = 50 }
 		add_political_power = -25
 	}
@@ -165,7 +165,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-		name = "The Horror!"
+		name = SHU_demon_response_accept
 		ai_chance = { factor = 50 }
 		custom_effect_tooltip = DEM_demonInfraAtt
 		every_controlled_state = {
@@ -189,7 +189,7 @@ country_event = {
 		}
 	}
 	option = { 
-		name = "We Must Counter This Evil!"
+		name = SHU_demon_response_commit
 		ai_chance = { factor = 50 }
 		add_political_power = -25
 	}

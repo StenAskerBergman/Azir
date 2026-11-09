@@ -1,0 +1,71 @@
+# Reuse the Land Warfare facility and its scientists. Only each city can
+# instantiate its projects; owning the other city's land does not grant them.
+azir_sp_plt_hexlyene_caliver = {
+	specialization = specialization_land
+	allowed = {
+		original_tag = PLT
+		has_dlc = "Gotterdammerung"
+	}
+	available = { FROM = { has_tech = tech_engineers } }
+	icon = GFX_piltover_blue_icon_category
+	breakthrough_cost = { specialization_land = 1 }
+	prototype_time = 28
+	complexity = sp_complexity.small
+	ai_will_do = { base = 0 } # No AI template or production plan for this company yet.
+	project_output = {
+		enable_equipments = { azir_plt_caliver_equipment_1 }
+		enable_subunits = { azir_plt_warden_caliver_company }
+	}
+}
+
+azir_sp_plt_cube_battery = {
+	specialization = specialization_land
+	allowed = {
+		original_tag = PLT
+		has_dlc = "Gotterdammerung"
+	}
+	special_project_parent = { azir_sp_plt_hexlyene_caliver }
+	icon = GFX_piltover_blue_icon_category
+	breakthrough_cost = { specialization_land = 1 }
+	prototype_time = 21
+	complexity = sp_complexity.small
+	ai_will_do = { base = 0 }
+	project_output = {
+		enable_equipments = { azir_plt_caliver_equipment_2 }
+	}
+}
+
+azir_sp_zau_hex_carbine = {
+	specialization = specialization_land
+	allowed = {
+		original_tag = ZAU
+		has_dlc = "Gotterdammerung"
+	}
+	available = { FROM = { has_tech = tech_engineers } }
+	icon = GFX_zaun_blue_icon_category
+	breakthrough_cost = { specialization_land = 1 }
+	prototype_time = 28
+	complexity = sp_complexity.small
+	ai_will_do = { base = 0 }
+	project_output = {
+		enable_equipments = { azir_zau_carbine_equipment_1 }
+		enable_subunits = { azir_zau_sump_raider_company }
+	}
+}
+
+azir_sp_zau_reusable_esophilters = {
+	specialization = specialization_land
+	allowed = {
+		original_tag = ZAU
+		has_dlc = "Gotterdammerung"
+	}
+	special_project_parent = { azir_sp_zau_hex_carbine }
+	icon = GFX_zaun_blue_icon_category
+	breakthrough_cost = { specialization_land = 1 }
+	prototype_time = 21
+	complexity = sp_complexity.small
+	ai_will_do = { base = 0 }
+	project_output = {
+		enable_equipments = { azir_zau_carbine_equipment_2 }
+	}
+}

@@ -15,8 +15,8 @@ add_namespace = nazumah
 # The Hunt Begins Event
 country_event = {
     id = nazumah.100
-    title = "The Hunt Begins"
-    desc = "We have set our sights on the great Ascended of Shurima. The hunt begins now."
+    title = nazumah.100.t
+    desc = nazumah.100.d
     picture = GFX_report_event_generic_battle
 	fire_only_once = yes
 
@@ -29,7 +29,7 @@ country_event = {
     }
 
     option = {
-        name = "Begin the Hunt"
+        name = nazumah.100.a
         add_political_power = 50
         add_stability = 0.05
 		army_experience = 15
@@ -40,8 +40,8 @@ country_event = {
 # Showdown with Azir Event
 country_event = {
     id = nazumah.101
-    title = "Showdown with Azir"
-    desc = "The time has come to face Azir, the God-Emperor of Shurima."
+    title = nazumah.101.t
+    desc = nazumah.101.d
     picture = GFX_report_event_generic_battle
 	fire_only_once = yes
 
@@ -55,7 +55,7 @@ country_event = {
     }
 
     option = {
-        name = "Engage Azir"
+        name = nazumah.101.a
         add_war_support = 0.10
         country_event = {
             id = nazumah.102
@@ -67,8 +67,8 @@ country_event = {
 # Victory over Azir Event
 country_event = {
     id = nazumah.102
-    title = "Victory Over Azir"
-    desc = "Our forces have triumphed over Azir's armies. Nazumah remains unbowed."
+    title = nazumah.102.t
+    desc = nazumah.102.d
     picture = GFX_report_event_generic_battle
 	fire_only_once = yes
 
@@ -82,7 +82,7 @@ country_event = {
     }
 
     option = {
-        name = "Celebrate the Victory"
+        name = nazumah.102.a
         add_stability = 0.10
         add_war_support = 0.10
         add_political_power = 100
@@ -94,8 +94,8 @@ country_event = {
 # Event for hunting Azir
 country_event = {
     id = nazumah.200
-    title = "The Hunt for Azir"
-    desc = "The Tribunal Council has decided to hunt down the Ascended Emperor Azir."
+    title = nazumah.200.t
+    desc = nazumah.200.d
     picture = GFX_report_event_default
 	fire_only_once = yes
 
@@ -108,7 +108,7 @@ country_event = {
     }
 
     option = {
-        name = "Commence the Hunt"
+        name = nazumah.200.a
         add_political_power = 50
         add_stability = 0.05
         add_manpower = 5000
@@ -123,8 +123,8 @@ country_event = {
 # Event for hunting Nasus
 country_event = {
     id = nazumah.201
-    title = "The Hunt for Nasus"
-    desc = "The Tribunal Council has decided to hunt down the Ascended Guardian Nasus."
+    title = nazumah.201.t
+    desc = nazumah.201.d
     picture = GFX_report_event_default
 	fire_only_once = yes
 
@@ -137,7 +137,7 @@ country_event = {
     }
 
     option = {
-        name = "Commence the Hunt"
+        name = nazumah.201.a
         add_political_power = 50
         add_stability = 0.05
         add_manpower = 5000
@@ -152,8 +152,8 @@ country_event = {
 # Event for hunting Renekton
 country_event = {
     id = nazumah.202
-    title = "The Hunt for Renekton"
-    desc = "The Tribunal Council has decided to hunt down the Ascended Butcher Renekton."
+    title = nazumah.202.t
+    desc = nazumah.202.d
     picture = GFX_report_event_default
 	fire_only_once = yes
 
@@ -166,7 +166,7 @@ country_event = {
     }
 
     option = {
-        name = "Commence the Hunt"
+        name = nazumah.202.a
         add_political_power = 50
         add_stability = 0.05
         add_manpower = 5000
@@ -181,8 +181,8 @@ country_event = {
 # Non-Aggression Pact Event
 country_event = {
     id = nazumah.303
-    title = "Request for Non-Aggression Pact"
-    desc = "Nazumah seeks a non-aggression pact with Xerath to ensure peace and cooperation in the region. This pact could pave the way for a more collaborative future."
+    title = nazumah.303.t
+    desc = nazumah.303.d
     picture = GFX_event_generic_pact
 	fire_only_once = yes
 
@@ -198,7 +198,7 @@ country_event = {
     }
 
     option = {
-        name = "Send the request to Xerath"
+        name = nazumah.303.a
         trigger = {
             has_country_flag = NAZ_Foe_of_Shurima
         }
@@ -213,14 +213,14 @@ country_event = {
 
 country_event = {
     id = nazumah.304
-    title = "Non-Aggression Pact Proposal"
-    desc = "Nazumah has proposed a non-aggression pact. Accepting this pact could lead to a future alliance."
+    title = nazumah.304.t
+    desc = nazumah.304.d
     picture = GFX_event_generic_pact
 
     is_triggered_only = yes
 
     option = {
-        name = "Accept the Non-Aggression Pact"
+        name = nazumah.304.a
         ai_chance = {
             factor = 75
         }
@@ -236,7 +236,7 @@ country_event = {
         }
     }
     option = {
-        name = "Reject the proposal"
+        name = nazumah.304.b
         ai_chance = {
             factor = 25
         }
@@ -250,5 +250,126 @@ country_event = {
                 modifier = Future_Enemies
             }
         }
+    }
+}
+
+
+# Declaration focus: affirmation only when already independent.
+# Subject declaration/overlord-response chain follows below.
+country_event = {
+    id = nazumah.400
+    title = nazumah.400.t
+    desc = nazumah.400.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = {
+        tag = NAZ
+        is_subject = no
+    }
+    option = {
+        name = nazumah.400.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+
+# Both parties retain their own choices; AI alone uses these route weights.
+country_event = {
+    id = nazumah.401
+    title = nazumah.401.t
+    desc = nazumah.401.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { tag = NAZ is_subject = yes }
+    option = {
+        name = nazumah.401.a
+        ai_chance = {
+            base = 80
+            modifier = {
+                factor = 0
+                overlord = { is_ai = no has_completed_focus = SHU_puppet_nazumah }
+            }
+        }
+        if = {
+            limit = { is_subject = yes }
+            overlord = { country_event = { id = nazumah.402 } }
+        }
+    }
+    option = {
+        name = nazumah.401.b
+        ai_chance = {
+            base = 20
+            modifier = {
+                factor = 4
+                is_historical_focus_on = yes
+                NOT = { has_completed_focus = NAZ_Foe_of_Shurima }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = nazumah.402
+    title = nazumah.402.t
+    desc = nazumah.402.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { FROM = { tag = NAZ is_subject_of = ROOT } }
+    option = {
+        name = nazumah.402.a
+        ai_chance = {
+            base = 50
+            modifier = { factor = 0 has_completed_focus = SHU_puppet_nazumah }
+            modifier = { factor = 0 has_completed_focus = SHU_annex_nazumah }
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+                NOT = { has_completed_focus = SHU_nazumah_alliance }
+            }
+        }
+        if = {
+            limit = { FROM = { is_subject_of = ROOT } }
+            set_autonomy = {
+                target = FROM
+                autonomy_state = autonomy_free
+                end_wars = no
+                end_civil_wars = no
+            }
+            FROM = {
+                if = {
+                    limit = { is_subject = no }
+                    country_event = { id = nazumah.400 }
+                }
+            }
+        }
+    }
+    option = {
+        name = nazumah.402.b
+        ai_chance = {
+            base = 50
+            modifier = {
+                factor = 0
+                has_completed_focus = SHU_nazumah_alliance
+                NOT = { has_completed_focus = SHU_puppet_nazumah }
+                NOT = { has_completed_focus = SHU_annex_nazumah }
+            }
+        }
+        if = {
+            limit = { FROM = { is_subject_of = ROOT } }
+            FROM = { country_event = { id = nazumah.403 } }
+        }
+    }
+}
+
+country_event = {
+    id = nazumah.403
+    title = nazumah.403.t
+    desc = nazumah.403.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { tag = NAZ is_subject_of = FROM }
+    option = {
+        name = nazumah.403.a
+        ai_chance = { base = 1 }
     }
 }

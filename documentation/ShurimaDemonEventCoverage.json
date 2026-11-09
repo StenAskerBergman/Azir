@@ -1,0 +1,218 @@
+[
+  {
+    "id": "shurima_void.3",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima_void.3.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "No Demon Found"
+        }
+      ],
+      "shurima_void.3.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "The investigation has found no evidence of a demonic presence in the countryside. The immediate alarm has eased, though vigilance remains necessary."
+        }
+      ],
+      "shurima_void.3.a": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Keep watch."
+        }
+      ]
+    },
+    "id_references": [],
+    "source_review": "runs175-178; demon effects and conditional outcomes",
+    "runtime_acceptance": "open; callers/mission dependency aftermath, flags and state modifiers require native proof"
+  },
+  {
+    "id": "shurima_void.4",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima_void.4.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "A Demon in the Countryside"
+        }
+      ],
+      "shurima_void.4.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Reports of a demonic presence have reached us from the countryside. Fear is spreading among the population, and the authorities must organize a response."
+        }
+      ],
+      "shurima_void.4.a": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Prepare a response."
+        }
+      ]
+    },
+    "id_references": [
+      {
+        "file": "events/Shurima_void_events.txt",
+        "line": 247,
+        "source": "id = shurima_void.4"
+      }
+    ],
+    "source_review": "runs175-178; demon effects and conditional outcomes",
+    "runtime_acceptance": "open; callers/mission dependency aftermath, flags and state modifiers require native proof"
+  },
+  {
+    "id": "shurima_void.10",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima_void.10.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Demonic Terror Spreads"
+        }
+      ],
+      "shurima_void.10.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Fresh reports of demonic terror have reached the authorities. We must decide whether to commit political effort to the response or risk the threat reaching another region."
+        }
+      ],
+      "SHU_demon_response_accept": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "We must endure the danger."
+        }
+      ],
+      "SHU_demon_response_commit": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Commit political effort to the response."
+        }
+      ]
+    },
+    "id_references": [],
+    "source_review": "runs175-178; demon effects and conditional outcomes",
+    "runtime_acceptance": "open; callers/mission dependency aftermath, flags and state modifiers require native proof"
+  },
+  {
+    "id": "shurima_void.11",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima_void.11.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "The Demon Lingers"
+        }
+      ],
+      "shurima_void.11.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "The demonic threat continues to unsettle the country. Renewed political effort may be needed to prevent the response from dragging on."
+        }
+      ],
+      "SHU_demon_response_accept": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "We must endure the danger."
+        }
+      ],
+      "SHU_demon_response_commit": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Commit political effort to the response."
+        }
+      ]
+    },
+    "id_references": [],
+    "source_review": "runs175-178; demon effects and conditional outcomes",
+    "runtime_acceptance": "open; callers/mission dependency aftermath, flags and state modifiers require native proof"
+  },
+  {
+    "id": "shurima.8",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima.8.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "After the Demonic Terror"
+        }
+      ],
+      "shurima.8.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "The authorities can begin to restore confidence after the demonic alarm. The country must now recover from the fear and disruption it has endured."
+        }
+      ],
+      "shurima.8.a": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Begin the recovery."
+        }
+      ]
+    },
+    "source_review": "runs180-182; conditional idea cleanup/stability, affected-state manpower/building damage versus25PP",
+    "runtime_acceptance": "open: callers, state cleanup and dependency aftermath; source text is not gameplay proof"
+  },
+  {
+    "id": "shurima.12",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima.12.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Lives Threatened by Demonic Terror"
+        }
+      ],
+      "shurima.12.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "The demonic presence threatens lives in the affected regions. We must decide whether to commit political effort to the response or leave those communities to bear the losses."
+        }
+      ],
+      "SHU_demon_response_accept": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "We must endure the danger."
+        }
+      ],
+      "SHU_demon_response_commit": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Commit political effort to the response."
+        }
+      ]
+    },
+    "source_review": "runs180-182; conditional idea cleanup/stability, affected-state manpower/building damage versus25PP",
+    "runtime_acceptance": "open: callers, state cleanup and dependency aftermath; source text is not gameplay proof"
+  },
+  {
+    "id": "shurima.13",
+    "file": "events/Shurima_void_events.txt",
+    "localization": {
+      "shurima.13.t": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Demonic Attacks Threaten Roads and Industry"
+        }
+      ],
+      "shurima.13.d": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "The demonic threat puts roads and factories in the affected regions at risk. We must decide whether to commit political effort to the response or endure the damage."
+        }
+      ],
+      "SHU_demon_response_accept": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "We must endure the danger."
+        }
+      ],
+      "SHU_demon_response_commit": [
+        {
+          "file": "localisation/english/duplicate_id_repairs_l_english.yml",
+          "text": "Commit political effort to the response."
+        }
+      ]
+    },
+    "source_review": "runs180-182; conditional idea cleanup/stability, affected-state manpower/building damage versus25PP",
+    "runtime_acceptance": "open: callers, state cleanup and dependency aftermath; source text is not gameplay proof"
+  }
+]

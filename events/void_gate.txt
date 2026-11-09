@@ -1,0 +1,51 @@
+add_namespace = void_gate
+
+country_event = {
+    id = void_gate.1
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        clear_void_gate_scene = yes
+        91 = { set_building_level = { type = landmark_void_gate level = 1 province = 2883 } }
+    }
+}
+
+country_event = {
+    id = void_gate.2
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        clear_void_gate_scene = yes
+        91 = { set_building_level = { type = landmark_void_gate_closed level = 1 province = 2883 } }
+    }
+}
+
+news_event = {
+    id = void_gate.10
+    title = void_gate.10.t
+    desc = void_gate.10.d
+    picture = GFX_news_event_azir_gate_construction
+    is_triggered_only = yes
+    major = yes
+    option = { name = void_gate.10.a }
+}
+
+news_event = {
+    id = void_gate.11
+    title = void_gate.11.t
+    desc = void_gate.11.d
+    picture = GFX_news_event_azir_first_rift
+    is_triggered_only = yes
+    major = yes
+    option = { name = void_gate.11.a }
+}
+
+news_event = {
+    id = void_gate.12
+    title = void_gate.12.t
+    desc = void_gate.12.d
+    picture = GFX_news_event_azir_rift_aftermath
+    is_triggered_only = yes
+    major = yes
+    option = { name = void_gate.12.a }
+}
