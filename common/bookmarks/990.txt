@@ -133,7 +133,7 @@ bookmarks = {
 		"FRO"={
 			minor = yes
 			history = "FRO_990_DESC"
-			ideology = theocracy # avarosa
+			ideology = theocracy # wintersclaw
 			ideas = {
 				# Exotic_materials
 				# Shuriman_shame
