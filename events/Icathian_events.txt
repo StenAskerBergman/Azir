@@ -202,6 +202,7 @@ country_event = {
                     set_capital = { state = 93 }
                 }
                 start_civil_war = {
+                    reserve_dynamic_country = yes
                     ideology = desolation
                     size = 0.5
                     states = { 91 94 96 97 }
@@ -227,6 +228,7 @@ country_event = {
                     set_capital = { state = 91 }
                 }
                 start_civil_war = {
+                    reserve_dynamic_country = yes
                     ideology = mages
                     size = 0.5
                     states = { 92 93 95 98 }
