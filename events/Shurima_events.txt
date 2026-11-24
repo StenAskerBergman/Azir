@@ -78,12 +78,19 @@ country_event = {
 
     is_triggered_only = yes
 
+    trigger = {
+        OR = {
+            has_character = SHU_azir
+            has_character = SHU_sivir
+        }
+    }
+
     # Azir option
     option = {
         name = shurima.1.pick_leader.option_azir # shurima.1.a
         custom_effect_tooltip = shurima.1.pick_leader.tooltip_azir
         ai_chance = { factor = 50 } # Adjust AI chance accordingly
-        # trigger = { # Add any conditions for selecting Azir }
+        trigger = { has_character = SHU_azir }
 
         complete_national_focus = SHU_emperor
     }
@@ -93,7 +100,7 @@ country_event = {
         name = shurima.1.pick_leader.option_sivir # shurima.1.b
         custom_effect_tooltip = shurima.1.pick_leader.tooltip_sivir
         ai_chance = { factor = 50 } # Adjust AI chance accordingly
-        # trigger = { # Add any conditions for selecting Sivir }
+        trigger = { has_character = SHU_sivir }
         complete_national_focus = SHU_empress
     }
 }

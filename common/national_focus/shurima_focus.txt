@@ -122,6 +122,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SHU_sundisc_has_risen
 		}
+		available = {
+			OR = {
+				has_character = SHU_azir
+				has_character = SHU_sivir
+			}
+		}
 		completion_reward = {
 
 			country_event = shurima.1
@@ -181,9 +187,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			SHU_azir = {
-				remove_country_leader_role = {
-					ideology = shurimanEmperor
+			if = {
+				limit = { has_character = SHU_azir }
+				SHU_azir = {
+					remove_country_leader_role = {
+						ideology = shurimanEmperor
+					}
 				}
 			}
 			SHU_sivir = { promote_character = { ideology = shurimanEmperor } }
