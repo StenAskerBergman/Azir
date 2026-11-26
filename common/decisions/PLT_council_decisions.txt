@@ -1,0 +1,65 @@
+PLT_council_decisions = {
+    PLT_council_lobby_0 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 0 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 0
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+    PLT_council_lobby_1 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 1 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 0
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+    PLT_council_lobby_2 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 2 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 25
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+    PLT_council_lobby_3 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 3 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 50
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+    PLT_council_lobby_4 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 4 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 75
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+    PLT_council_lobby_5 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 5 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 100
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+    PLT_council_lobby_6 = {
+        icon = generic_political_reform
+        visible = {
+            check_variable = { PLT_council_support = 6 }
+            NOT = { has_country_flag = PLT_council_lobby_cooldown }
+        }
+        cost = 125
+        complete_effect = { PLT_council_lobby_effect = yes }
+    }
+}

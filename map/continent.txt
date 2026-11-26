@@ -1,0 +1,7 @@
+continents = {
+	valoran
+	shuriman
+	arctic
+	camavoran
+	oceania
+}

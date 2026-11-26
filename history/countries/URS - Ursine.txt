@@ -1,0 +1,85 @@
+capital = 238
+
+oob = "URS"
+
+set_research_slots = 3
+set_stability = 0.82
+set_war_support = 0.77
+set_technology = {
+    ursine_storm_shrine_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+set_politics = {
+	ruling_party = theocracy 
+	last_election = "984.1.22"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 10
+	theocracy = 90
+	oligarchy = 0
+	absolutists = 0
+	chiefdom = 0
+	mages = 0
+	royalist = 0
+}
+
+set_convoys = 200
+
+create_country_leader = {
+	name = "The Volibear"
+	desc = "POLITICS_VOLIBEAR_DESC"
+	picture = "gfx/leaders/Ursine/volibear.dds"
+	#expire = ""
+	ideology = cultOfVoli
+	traits = {
+		relentlessStorm
+	}
+}
+create_country_leader = {
+	name = "The Volibear"
+	desc = "POLITICS_VOLIBEAR_DESC"
+	picture = "gfx/leaders/Ursine/volibear.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		relentlessStorm
+	}
+}
+create_country_leader = {
+	name = "The Volibear"
+	desc = "POLITICS_VOLIBEAR_DESC"
+	picture = "gfx/leaders/Ursine/volibear.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		relentlessStorm
+	}
+}
+create_country_leader = {
+	name = "The Volibear"
+	desc = "POLITICS_VOLIBEAR_DESC"
+	picture = "gfx/leaders/Ursine/volibear.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		relentlessStorm
+	}
+}

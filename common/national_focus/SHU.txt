@@ -1,0 +1,776 @@
+focus_tree = {
+	id = SHU
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SHU
+		}
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 0
+	}
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+	focus = {
+		id = legacy_of_shuriman_empire
+		x = -1
+		y = -126
+		cost = 2.2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus legacy_of_shuriman_empire"
+			add_political_power = 200
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_BRA_restore_brazilian_honor
+	}
+	focus = {
+		id = new_focus_020
+		x = -3
+		y = -124
+		cost = 1.5
+		prerequisite = {
+			focus = legacy_of_shuriman_empire
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus new_focus_020"
+			remove_ideas = { SHU_slavery_3 }
+			add_ideas = { SHU_slavery_2 }
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_ARG_anti_corruption_policies
+	}
+	focus = {
+		id = new_focus_019
+		x = 1
+		y = -124
+		cost = 1.5
+		prerequisite = {
+			focus = legacy_of_shuriman_empire
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus new_focus_019"
+			add_ideas = { SHU_political_instability_2 }
+			remove_ideas = { SHU_political_instability_3 }
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_ARG_universidad_de_buenos_aires
+	}
+	focus = {
+		id = divided_power
+		x = -1
+		y = -123
+		cost = 5
+		prerequisite = {
+			focus = new_focus_020
+		}
+		prerequisite = {
+			focus = new_focus_019
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus divided_power"
+			remove_ideas = { SHU_disorganized_army_3 }
+			add_ideas = { SHU_disorganized_army_2 }
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_CHL_the_patagonian_giants
+	}
+	focus = {
+		id = ascention
+		x = -11
+		y = -122
+		cost = 5
+		prerequisite = {
+			focus = divided_power
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ascention"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = power
+		x = 3
+		y = -122
+		cost = 1
+		prerequisite = {
+			focus = divided_power
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus power"
+		}
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			OR = {
+				has_completed_focus = nasus
+				has_completed_focus = renekton
+			}
+		}
+		icon = GFX_focus_focus_fra_revolution_utmost
+	}
+	focus = {
+		id = the_shuriman_accord_2
+		x = -25
+		y = -120
+		cost = 5
+		prerequisite = {
+			focus = ascention
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_shuriman_accord_2"
+		}
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			NOT = {
+				has_completed_focus = renekton
+				has_completed_focus = nasus
+			}
+		}
+	}
+	focus = {
+		id = nasus
+		x = -16
+		y = -120
+		cost = 5
+		prerequisite = {
+			focus = ascention
+		}
+		mutually_exclusive = {
+			focus = renekton
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus nasus"
+			recruit_character = SHU_Nasus
+			activate_advisor = Nasus
+			set_can_be_fired_in_advisor_role = SHU_Nasus
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = renekton
+		x = -7
+		y = -120
+		cost = 5
+		prerequisite = {
+			focus = ascention
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus renekton"
+			recruit_character = SHU_Renekton
+		}
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = {
+			focus = nasus
+		}
+	}
+	focus = {
+		id = azir
+		x = 1
+		y = -120
+		cost = 5
+		prerequisite = {
+			focus = power
+		}
+		mutually_exclusive = {
+			focus = the_shuriman_accord1
+			focus = xerath
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus azir"
+			start_civil_war = {
+				ideology = mages
+				size = 0.6
+				keep_political_party_members = yes
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_CHL_devalue_the_peso_export
+	}
+	focus = {
+		id = xerath
+		x = 3
+		y = -120
+		cost = 5
+		prerequisite = {
+			focus = power
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus xerath"
+			set_politics = {
+				ruling_party = mages
+				elections_allowed = no
+			}
+			set_political_party = {
+				ideology = mages
+				popularity = 70
+			}
+			retire_ideology_leader = SHU_azir
+			start_civil_war = {
+				ideology = absolutists
+				ruling_party = shurimanEmperor
+				size = 0.6
+				keep_unit_leaders = {}
+			}
+			recruit_character = SHU_xerath
+			activate_advisor = SHU_xerath
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_NORDIC_com_army
+		mutually_exclusive = {
+			focus = the_shuriman_accord1
+			focus = azir
+		}
+	}
+	focus = {
+		id = the_shuriman_accord1
+		x = 7
+		y = -120
+		cost = 5
+		prerequisite = {
+			focus = power
+		}
+		completion_reward = {
+			recruit_character = SHU_xerath
+		}
+		ai_will_do = {
+			base = 10
+		}
+		icon = GFX_focus_ETH_restore_the_empire_of_axum
+		mutually_exclusive = {
+			focus = xerath
+			focus = azir
+		}
+	}
+	focus = {
+		id = shared_prosperity
+		x = -28
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord_2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus shared_prosperity"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = rebuilding_the_empire
+		x = -26
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord_2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus rebuilding_the_empire"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = unified_command
+		x = -24
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord_2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus unified_command"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = military_cooperation
+		x = -22
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord_2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus military_cooperation"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = economic_reforms
+		x = -19
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = nasus
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus economic_reforms"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = restoring_the_trade_routes
+		x = -17
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = nasus
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus restoring_the_trade_routes"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = legions_of_knowledge
+		x = -15
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = nasus
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus legions_of_knowledge"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = military_logistics
+		x = -13
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = nasus
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus military_logistics"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = war_economy
+		x = -10
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = renekton
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus war_economy"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = arms_production
+		x = -8
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = renekton
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus arms_production"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_art_of_conquest
+		x = -6
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = renekton
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_art_of_conquest"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = warrior_recruitment
+		x = -4
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = renekton
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus warrior_recruitment"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = reforms
+		x = 0
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = azir
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reforms"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = no_more_slaves
+		x = 4
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = xerath
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus no_more_slaves"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_shuriman_accord
+		x = 6
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_shuriman_accord"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = reconcility
+		x = 8
+		y = -118
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reconcility"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = rebuilding_the_empire_2
+		x = -27
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = shared_prosperity
+		}
+		prerequisite = {
+			focus = rebuilding_the_empire
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus rebuilding_the_empire_2"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_united_legions
+		x = -23
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = unified_command
+		}
+		prerequisite = {
+			focus = military_cooperation
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_united_legions"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = rebuilding_shurima
+		x = -18
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = economic_reforms
+		}
+		prerequisite = {
+			focus = restoring_the_trade_routes
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus rebuilding_shurima"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_art_of_war
+		x = -14
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = military_logistics
+		}
+		prerequisite = {
+			focus = legions_of_knowledge
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_art_of_war"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = industrial_mobilization
+		x = -9
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = war_economy
+		}
+		prerequisite = {
+			focus = arms_production
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus industrial_mobilization"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_ascendant_legions
+		x = -5
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = the_art_of_conquest
+		}
+		prerequisite = {
+			focus = warrior_recruitment
+		}
+		completion_reward = {
+			division_template = {
+				name = "Legion of Renekton"
+				is_locked = yes
+				force_allow_recruiting = yes
+				division_cap = 15
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 0
+						y = 3
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 2
+					}
+					infantry = {
+						x = 3
+						y = 1
+					}
+					infantry = {
+						x = 3
+						y = 2
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = new_focus_020_2
+		x = 0
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = reforms
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus new_focus_020_2"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_new_empire
+		x = 4
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = no_more_slaves
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_new_empire"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = a_new_dawn
+		x = 7
+		y = -116
+		cost = 5
+		prerequisite = {
+			focus = the_shuriman_accord
+		}
+		prerequisite = {
+			focus = reconcility
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_new_dawn"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = a_new_dawn_2
+		x = -25
+		y = -114
+		cost = 5
+		prerequisite = {
+			focus = rebuilding_the_empire_2
+		}
+		prerequisite = {
+			focus = the_united_legions
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_new_dawn_2"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_prosperity_of_the_empire
+		x = -16
+		y = -114
+		cost = 5
+		prerequisite = {
+			focus = rebuilding_shurima
+		}
+		prerequisite = {
+			focus = the_art_of_war
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_prosperity_of_the_empire"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = the_empire_of_conquest
+		x = -7
+		y = -113
+		cost = 5
+		prerequisite = {
+			focus = industrial_mobilization
+		}
+		prerequisite = {
+			focus = the_ascendant_legions
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_empire_of_conquest"
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+}

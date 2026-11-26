@@ -1,0 +1,43 @@
+
+state={
+	id=34
+	name="STATE_34"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 4
+ #rubber = 8
+ #steel = 3
+ #coal = 5
+ chromium = 3
+ #aluminium = 4
+ }
+ history = {
+ owner = IXT
+ add_core_of = IXT
+ victory_points = {
+ 5700 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   dockyard = 0
+   1517 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		263 298 1005 1284 1407 1517 1615 1681 1730 2158 2185 2247 2281 2535 2922 3134 3243 3296 3396 3692 3957 4079 4314 4382 4499 5140 5658 5700 8382 8392 8421 8428 8434 8435 8468 8469 8474 8516 8522 8532 8549 8550 8565 8570 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1281922
+        state_category = town
+}

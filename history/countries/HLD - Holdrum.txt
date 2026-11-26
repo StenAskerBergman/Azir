@@ -1,0 +1,84 @@
+capital = 159
+
+oob = "HLD"
+
+set_research_slots = 3
+set_stability = 0.85
+set_war_support = 0.55
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+set_politics = {
+	ruling_party = oligarchy
+	last_election = "988.11.11"
+	election_frequency = 96
+	elections_allowed = yes
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 0
+	oligarchy = 89
+	absolutists = 0
+	chiefdom = 11
+	mages = 0
+	royalist = 0
+}
+
+set_convoys = 200
+
+create_country_leader = {
+	name = "Brannin of Sea"
+	desc = "POLITICS_BRANNIN_DESC"
+	picture = "gfx/leaders/Holdrum/holdrumleader.dds"
+	#expire = ""
+	ideology = piltovanCouncil
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Brannin of Sea"
+	desc = "POLITICS_BRANNIN_DESC"
+	picture = "gfx/leaders/Holdrum/holdrumleader.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Brannin of Sea"
+	desc = "POLITICS_BRANNIN_DESC"
+	picture = "gfx/leaders/Holdrum/holdrumleader.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Brannin of Sea"
+	desc = "POLITICS_BRANNIN_DESC"
+	picture = "gfx/leaders/Holdrum/holdrumleader.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		#exemplar
+	}
+}

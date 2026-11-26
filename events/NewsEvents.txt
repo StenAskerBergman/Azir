@@ -1,0 +1,109 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = rnews
+
+#Kayle
+news_event = {
+	id = rnews.3
+	title = rnews.3.t
+	desc = rnews.3.d
+	picture = GFX_news_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	#trigger = {
+		#original_tag = DEM
+		#date > 990.1.10
+	#}
+
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+	
+	option = {
+		name = rnews.3.a
+	}
+}
+
+#Demacia at war
+news_event = {
+	id = rnews.2
+	title = rnews.2.t
+	desc = rnews.2.d
+	picture = GFX_news_event_002
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	#trigger = {
+		#original_tag = DEM
+		#date > 990.1.10
+	#}
+
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+	
+	option = {
+		name = rnews.2.a
+	}
+}
+
+
+
+# Test News Event
+news_event = {
+	id = rnews.1
+	title = rnews.1.t
+	desc = rnews.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = DEM
+		date > 990.1.10
+	}
+
+	mean_time_to_happen = {
+		days = 10
+		modifier = {
+			factor = 1.0
+		}
+	}
+	
+	option = {
+		name = rnews.1.a
+	}
+
+	#option = {
+	#	name = rnews.1.a
+	#	trigger = {
+	#		NOT = {
+	#			TAG = JAP
+	#			TAG = CHI
+	#		}
+	#	}
+	#}
+	#option = {
+	#	name = rnews.1.b
+	#	trigger = { TAG = JAP }
+	#}
+}
+
+
+
+

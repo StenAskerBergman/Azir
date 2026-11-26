@@ -1,0 +1,85 @@
+capital = 35
+
+oob = "IXT"
+set_economy_law = undisturbed_isolation
+set_research_slots = 3
+set_stability = 0.80
+set_war_support = 0.35
+set_technology = {
+    ixtal_elemental_complex_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+add_ideas = {
+undisturbed_isolation
+closed_economy
+}
+set_politics = {
+	ruling_party = mages
+	last_election = "985.1.10"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 0
+	oligarchy = 0
+	absolutists = 0
+	chiefdom = 0
+	mages = 61
+	royalist = 39
+}
+
+set_convoys = 200
+
+create_country_leader = {
+	name = "Princess Qiyanna"
+	desc = "POLITICS_QIYANNA_DESC"
+	picture = "GFX_animated_IXT_qiayana"
+	#expire = ""
+	ideology = axiomata
+	traits = {
+		empresselements
+	}
+}
+create_country_leader = {
+	name = "Princess Qiyanna"
+	desc = "POLITICS_QIYANNA_DESC"
+	picture = "GFX_animated_IXT_qiayana"
+	#expire = ""
+	ideology = royalty
+	traits = {
+		empresselements
+	}
+}
+create_country_leader = {
+	name = "Princess Qiyanna"
+	desc = "POLITICS_QIYANNA_DESC"
+	picture = "GFX_animated_IXT_qiayana"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		empresselements
+	}
+}
+create_country_leader = {
+	name = "Princess Qiyanna"
+	desc = "POLITICS_QIYANNA_DESC"
+	picture = "GFX_animated_IXT_qiayana"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		empresselements
+	}
+}

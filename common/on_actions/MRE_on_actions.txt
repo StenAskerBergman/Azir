@@ -1,0 +1,135 @@
+on_actions = {
+	on_weekly_MRE = {
+		effect = {
+			if = {
+				limit = {
+					MRE = {
+						surrender_progress > 0.5
+						NOT = { has_idea = foreign_benefactors }
+					}
+				}
+				country_event = {
+						id = magerebellion.1
+						days = 0
+					}
+			}
+			if = {
+				limit = {
+					MRE = {
+						has_country_flag = found_demons
+					}
+				}
+				random_list = {
+						65 = {
+						}
+						13 = {
+							country_event = {
+							id = magerebellion.6
+							days = 1
+							}
+						}
+						10 = {
+							country_event = {
+							id = magerebellion.7
+							days = 1
+							}
+						}
+						8 = {
+							country_event = {
+							id = magerebellion.8
+							days = 1
+							}
+						}
+						4 = {
+							country_event = {
+							id = magerebellion.9
+							days = 1
+							}
+						}
+				}
+			}
+		}
+	}
+	on_peace = {
+		effect = {
+			if = {
+            limit = {
+                tag = MRE
+            }
+            remove_ideas = onTheClock
+        }
+		if = {
+            limit = {
+                tag = MRE
+				DEM = {
+					is_puppet = yes
+				}
+            }
+            annex_country = {
+				target = DEM
+				transfer_troops = no
+			}
+        }
+		}
+	}
+	on_daily_MRE = {
+	effect = {
+		if = {
+				limit = {
+					MRE = {
+						is_ai = yes
+						surrender_progress > 0.59
+						NOT = { has_country_flag = aiHelp }
+					}
+				}
+				MRE = {
+				add_war_support = 0.70
+					set_country_flag = aiHelp
+					load_oob = "MRE_Reinforce"
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 20
+				}	
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 200
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 500
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 10000
+				}
+				add_manpower = 100000
+				}
+			}
+		}
+	}
+	on_monthly_MRE = {
+		effect = {
+		random = {
+		chance = 8	
+			if = {
+				limit = {
+					MRE = {
+						NOT = { has_country_flag = demons }
+						NOT = { has_country_flag = demonsGone }
+						NOT = { has_country_flag = noDemons } 
+					}
+				}
+				MRE = {
+					set_country_flag = demons
+					
+							country_event = {
+							id = magerebellion.2
+							days = 45
+							}
+				}
+					
+			}
+		}
+		}
+	}
+}

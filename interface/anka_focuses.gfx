@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_PLT_focus_21"
+		texturefile = "gfx/interface/goals/PLT_focus_21.dds"
+	}
+}

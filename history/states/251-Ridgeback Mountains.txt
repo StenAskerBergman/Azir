@@ -1,0 +1,42 @@
+
+state={
+	id=251
+	name="STATE_251"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 4
+ rubber = 7
+ #steel = 6
+ #coal = 8
+ #chromium = 2
+ #aluminium = 6
+ }
+ history = {
+ owner = WIN
+ add_core_of = WIN
+ #victory_points = {
+ #6186 10
+ #}
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   #dockyard = 0
+   #5323 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		181 478 551 1160 1301 1434 1578 1759 1781 1974 2166 2426 2579 2806 2815 2916 2999 3325 3668 3929 4949 5147 5388 6293 6312 6363 6392 6434 6437 6456 6474 6532 6580 6586 6602 6606 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=998122
+        state_category = town
+}

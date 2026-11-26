@@ -1,0 +1,42 @@
+
+state={
+	id=162
+	name="STATE_162"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 7
+ rubber = 8
+ #steel = 5
+ #coal = 6
+ #chromium = 2
+ #aluminium = 5
+ }
+ history = {
+ owner = NOX
+ add_core_of = NOX
+ victory_points = {
+ 8022 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   dockyard = 0
+   3370 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		203 481 796 2670 2765 3154 3188 3370 3453 3841 4062 4099 4103 4395 4696 5208 7957 7998 8005 8022 8047 8053 8077 8095 8118 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1129382
+        state_category = town
+}

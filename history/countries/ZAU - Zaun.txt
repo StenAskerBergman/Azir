@@ -1,0 +1,67 @@
+capital = 49
+oob = "ZAU"
+set_research_slots = 3
+set_stability = 0.40
+set_war_support = 0.25
+set_technology = {
+    zaun_chemical_workshop_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+set_politics = {
+	ruling_party = oligarchy
+	last_election = "984.2.22"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	theocracy = 4
+	oligarchy = 95
+	absolutists = 0
+	chiefdom = 0
+	desolation = 1
+	mages = 0
+	royalist = 0
+}
+set_convoys = 225
+create_country_leader = {
+	name = "Vander"
+	desc = "POLITICS_VANDER_DESC"
+	picture = "gfx/leaders/Zaun/vander.dds"
+	ideology = chemBarons
+	traits = { houndunderground }
+}
+create_country_leader = {
+	name = "Vander"
+	desc = "POLITICS_VANDER_DESC"
+	picture = "gfx/leaders/Zaun/vander.dds"
+	ideology = conservatism
+	traits = { houndunderground }
+}
+create_country_leader = {
+	name = "Vander"
+	desc = "POLITICS_VANDER_DESC"
+	picture = "gfx/leaders/Zaun/vander.dds"
+	ideology = centrism
+	traits = { houndunderground }
+}
+create_country_leader = {
+	name = "Vander"
+	desc = "POLITICS_VANDER_DESC"
+	picture = "gfx/leaders/Zaun/vander.dds"
+	ideology = rexism
+	traits = { houndunderground }
+}
+
+set_power_balance = { id = ZAU_revolution }

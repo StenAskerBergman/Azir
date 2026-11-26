@@ -1,0 +1,69 @@
+division_template = {
+ name = "Gray Claw Hunter"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Tribal Hunter"
+  location = 3505
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Tribal Hunter"
+  location = 28
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Tribal Hunter"
+  location = 7520
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Tribal Hunter"
+  location = 2323
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Tribal Hunter"
+  location = 4145
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Tribal Hunter"
+  location = 7334
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Tribal Hunter"
+  location = 1723
+  division_template = "Gray Claw Hunter"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+}

@@ -1,0 +1,45 @@
+
+state={
+	id=219
+	name="STATE_219"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 10
+ rubber = 9
+ #steel = 10
+ #coal = 4
+ #chromium = 18
+ #aluminium = 10
+ }
+ history = {
+ owner = DEM
+ add_core_of = MRE
+ set_compliance = 0
+ set_resistance = 0
+ victory_points = {
+ 5701 0
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   #dockyard = 1
+   #143 = {
+   #naval_base = 3
+   #}
+  }
+ }
+	provinces={
+		83 116 592 1849 2309 3234 3299 3435 3836 4320 4349 4356 4598 5603 5701 7329 7349 7365 7383 7434 7480 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1012933
+        state_category = town
+}

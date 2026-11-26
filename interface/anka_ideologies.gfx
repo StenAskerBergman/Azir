@@ -1,0 +1,62 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_ideology_theocracy_group"
+		texturefile = "gfx/interface/ideologies/theocracy_group.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_shurimanEmperor"
+		texturefile = "gfx/interface/ideologies/shurimanEmperor.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_axiomata"
+		texturefile = "gfx/interface/ideologies/axiomata.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_noxianTrifarix"
+		texturefile = "gfx/interface/ideologies/noxianTrifarix.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_piltovanCouncil"
+		texturefile = "gfx/interface/ideologies/piltovanCouncil.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_chemBarons"
+		texturefile = "gfx/interface/ideologies/chemBarons.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_oblivion"
+		texturefile = "gfx/interface/ideologies/oblivion.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_royalty"
+		texturefile = "gfx/interface/ideologies/royalty.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_avarosa"
+		texturefile = "gfx/interface/ideologies/avarosa.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_sympathizers"
+		texturefile = "gfx/interface/ideologies/sympathizers.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_undeadWastes"
+		texturefile = "gfx/interface/ideologies/undeadWastes.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_cultOfVoli"
+		texturefile = "gfx/interface/ideologies/cultOfVoli.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_frostguardCult"
+		texturefile = "gfx/interface/ideologies/frostguardCult.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_wintersclaw"
+		texturefile = "gfx/interface/ideologies/wintersclaw.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_chiefdom_group"
+		texturefile = "gfx/interface/ideologies/chiefdom_group.dds"
+	}
+}

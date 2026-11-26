@@ -1,0 +1,272 @@
+division_template = {
+ name = "Unorganized Mages"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+ }
+	
+}
+
+units = {
+division = {
+  name = "Mage Battalion"
+  location = 802
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+division = {
+  name = "Mage Battalion"
+  location = 7
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+division = {
+  name = "Mage Battalion"
+  location = 116
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+division = {
+  name = "Mage Battalion"
+  location = 450
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+division = {
+  name = "Mage Battalion"
+  location = 3147
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+division = {
+  name = "Mage Battalion"
+  location = 5276
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+division = {
+  name = "Mage Battalion"
+  location = 717
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7611
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 658
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1577
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7461
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7451
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 361
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7561
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 3179
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1141
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 3563
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7636
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 5542
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1946
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 872
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 872
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7522
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 3399
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 3390
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 134
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1792
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 5276
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 4690
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1577
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 7591
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 152
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1018
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 2101
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 1139
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+ division = {
+  name = "Mage Battalion"
+  location = 3435
+  division_template = "Unorganized Mages"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.9
+ }
+}

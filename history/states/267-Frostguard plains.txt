@@ -1,0 +1,42 @@
+
+state={
+	id=267
+	name="STATE_267"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 5
+ #rubber = 5
+ steel = 5
+ #coal = 5
+ #chromium = 2
+ #aluminium = 4
+ }
+ history = {
+ owner = FRO
+ add_core_of = FRO
+ victory_points = {
+ 5931 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5153 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		42 1469 1826 2371 3358 3612 3860 4256 4833 5643 5897 5922 5931 5994 5997 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=891278
+        state_category = town
+}

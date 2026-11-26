@@ -1,0 +1,107 @@
+capital = 51
+
+oob = "PLT"
+
+set_research_slots = 3
+set_stability = 0.67
+set_war_support = 0.34
+set_variable = { PLT_council_support = 3 }
+set_variable = { current_council_icon_frame = 9 }
+add_ideas = { PLT_council_3 }
+set_technology = {
+        piltover_hextech_institute_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+
+
+set_politics = {
+	ruling_party = oligarchy
+	last_election = "987.4.02"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 2
+	oligarchy = 98
+	absolutists = 0
+	chiefdom = 0
+	mages = 0
+	royalist = 0
+}
+
+recruit_character = PLT_jayce_talis
+recruit_character = PLT_viktor
+recruit_character = PLT_mel_medarda
+recruit_character = PLT_caitlyn_kiramman
+recruit_character = PLT_heimerdinger
+recruit_character = PLT_cassandra_kiramman
+recruit_character = PLT_shoola
+recruit_character = PLT_salo
+recruit_character = PLT_hoskel
+recruit_character = PLT_bolbok
+recruit_character = PLT_loris
+set_convoys = 300
+
+create_country_leader = {
+	name = "The Council"
+	desc = "POLITICS_THECOUNCIL_DESC"
+	picture = "gfx/leaders/Piltover/thecouncil.dds"
+	#expire = ""
+	ideology = piltovanCouncil
+	traits = {
+		outdatedBureau
+	}
+}
+create_country_leader = {
+	name = "The Council"
+	desc = "POLITICS_THECOUNCIL_DESC"
+	picture = "gfx/leaders/Piltover/thecouncil.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		outdatedBureau
+	}
+}
+create_country_leader = {
+	name = "The Council"
+	desc = "POLITICS_THECOUNCIL_DESC"
+	picture = "gfx/leaders/Piltover/thecouncil.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		outdatedBureau
+	}
+}
+create_country_leader = {
+	name = "The Council"
+	desc = "POLITICS_THECOUNCIL_DESC"
+	picture = "gfx/leaders/Piltover/thecouncil.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		outdatedBureau
+	}
+
+}
+puppet = ZAU
+
+set_power_balance = { id = PLT_zaun_tension }
+
+

@@ -1,0 +1,73 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_join_button(123x34)"
+		texturefile = "gfx//interface//multiplayer//join_button(123x34).dds"
+	}
+
+	spriteType = {
+		name = "GFX_connect_button(148x34)"
+		texturefile = "gfx//interface//multiplayer//connect_button(148x34).dds"
+	}
+
+	spriteType = {
+		name = "GFX_multiplayerview_edittextbox"
+		texturefile = "gfx//interface//multiplayer//multiplayerview_edittextbox.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hosting_bg"
+		texturefile = "gfx//interface//multiplayer//hosting_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_host(148x34)"
+		texturefile = "gfx//interface//multiplayer//button_host(148x34).dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_close(148x34)"
+		texturefile = "gfx//interface//multiplayer//button_close(148x34).dds"
+	}
+
+	spriteType = {
+		name = "GFX_popup_win"
+		texturefile = "gfx//interface//multiplayer//popup_win.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sort_button_83x29"
+		texturefile = "gfx//interface//multiplayer//sort_button_83x29.dds"
+	}
+	spriteType = {
+		name = "GFX_background_connect"
+		texturefile = "gfx//interface//multiplayer//background_connect.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplo_popup_hdeader_bg"
+		texturefile = "gfx//interface//multiplayer//diplo_popup_headder_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_multiplayerview_edittextbox_connect"
+		texturefile = "gfx//interface//multiplayer//multiplayerview_edittextbox_connect.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplo_popup_bottom"
+		texturefile = "gfx//interface//multiplayer//diplo_popup_bottom.dds"
+	}
+
+    spriteType = {
+		name = "GFX_join_button(123x34)"
+		texturefile = "gfx//interface//multiplayer//join_button(123x34).dds"
+	}
+
+    spriteType = {
+		name = "GFX_close_button(123x34)"
+		texturefile = "gfx//interface//multiplayer//close_button(123x34).dds"
+	}
+
+
+}

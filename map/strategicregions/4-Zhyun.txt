@@ -1,0 +1,178 @@
+strategic_region={
+	id=4
+	name="STRATEGICREGION_4"
+	provinces={
+		53 77 193 354 366 407 493 696 730 775 779 822 952 978 993 1035 1049 1057 1105 1171 1342 1346 1397 1511 1538 1645 1817 1896 1910 1920 1949 2014 2053 2143 2199 2208 2223 2358 2391 2408 2427 2472 2518 2561 2607 2647 2678 2680 2770 2818 2913 2914 3041 3070 3072 3111 3114 3124 3139 3216 3227 3231 3233 3236 3242 3291 3328 3364 3461 3476 3519 3570 3594 3602 3613 3647 3661 3774 3859 3969 4031 4043 4074 4113 4230 4260 4338 4408 4422 4429 4643 4796 4799 4812 4900 4926 4935 5030 5039 5068 5121 5177 5184 5198 5284 5305 5361 5375 5404 5405 5416 5445 5484 5562 5584 5615 5633 5660 5749 5759 6813 6824 6848 6861 6866 6877 6881 6890 6898 6902 6920 6929 6930 6942 6957 6969 6970 6975 6980 6981 6994 7013 7016 7025 7027 7032 7042 7046 7047 7059 7060 7072 7076 7081 7084 7085 7091 7100 7104 7109 7124 7125 7135 7139 7143 7144 7145 7149 7158 7164 7165 7170 7172 7175 7187 7206 7210 7214 7221 7233 7239 7240 7243 7250 7253 7268 7271 7273 7274 7285 7288 7291 7297 7302 7305 7307 7312 7320 7325 7327 7335 7340 7354 7364 7378 7389 7394 7397 7410 7414 7420 7427 7457 7463 7482 7484 7498 7509 7511 7526 7536 7558 7570 7605 7615 7619 7648 7655 7671 7680 7703 7716 7756 
+	}
+	# Weather configuration with warm, rainy, and lush temperate conditions
+    weather={
+        # January: Mild, frequent rain
+        period={
+            between={ 0.0 30.0 } # January
+            temperature={ 8.0 18.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # February: Mild, consistent rainfall
+        period={
+            between={ 0.1 27.1 } # February
+            temperature={ 8.0 18.0 }
+            no_phenomenon=0.50
+            rain_light=0.35
+            rain_heavy=0.15
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # March: Warming, frequent rain
+        period={
+            between={ 0.2 30.2 } # March
+            temperature={ 10.0 20.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # April: Warm, peak rainy season
+        period={
+            between={ 0.3 29.3 } # April
+            temperature={ 12.0 22.0 }
+            no_phenomenon=0.40
+            rain_light=0.40
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # May: Warm, frequent rain
+        period={
+            between={ 0.4 30.4 } # May
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # June: Warm, calmer conditions
+        period={
+            between={ 0.5 29.5 } # June
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.50
+            rain_light=0.30
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.03
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # July: Warmest, clearer skies
+        period={
+            between={ 0.6 30.6 } # July
+            temperature={ 18.0 30.0 }
+            no_phenomenon=0.55
+            rain_light=0.25
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.03
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # August: Warm, occasional rain
+        period={
+            between={ 0.7 30.7 } # August
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.50
+            rain_light=0.30
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.03
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # September: Cooling, increasing rain
+        period={
+            between={ 0.8 29.8 } # September
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # October: Cooler, peak rainy season
+        period={
+            between={ 0.9 30.9 } # October
+            temperature={ 12.0 22.0 }
+            no_phenomenon=0.40
+            rain_light=0.40
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # November: Cooling, frequent rain
+        period={
+            between={ 0.10 29.10 } # November
+            temperature={ 10.0 20.0 }
+            no_phenomenon=0.40
+            rain_light=0.40
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # December: Mild, consistent rain
+        period={
+            between={ 0.11 30.11 } # December
+            temperature={ 8.0 18.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+    }
+}

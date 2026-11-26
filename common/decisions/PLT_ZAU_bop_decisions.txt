@@ -1,0 +1,77 @@
+PLT_zaun_bop_decisions = {
+    PLT_expand_exploitation = {
+        icon = generic_construct_civ_factory
+        visible = { power_balance_value = { id = PLT_zaun_tension value < -0.50 } }
+        cost = 25
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = PLT_zaun_tension value = -0.10 } }
+    }
+    PLT_force_control = {
+        icon = generic_prepare_civil_war
+        visible = {
+            NOT = { power_balance_value = { id = PLT_zaun_tension value < -0.50 } }
+            power_balance_value = { id = PLT_zaun_tension value > -0.80 }
+        }
+        cost = 75
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = PLT_zaun_tension value = -0.10 } }
+    }
+    PLT_offer_concessions = {
+        icon = generic_political_reform
+        visible = { power_balance_value = { id = PLT_zaun_tension value < 0.50 } }
+        cost = 50
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = PLT_zaun_tension value = 0.10 } }
+    }
+    PLT_extend_zaun_autonomy = {
+        icon = generic_political_reform
+        visible = {
+            NOT = { power_balance_value = { id = PLT_zaun_tension value < 0.50 } }
+            power_balance_value = { id = PLT_zaun_tension value < 0.80 }
+        }
+        cost = 100
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = PLT_zaun_tension value = 0.10 } }
+    }
+}
+
+ZAU_revolution_bop_decisions = {
+    ZAU_preserve_fragile_peace = {
+        icon = generic_neutrality
+        visible = { power_balance_value = { id = ZAU_revolution value > -0.50 } }
+        cost = 25
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = ZAU_revolution value = -0.10 } }
+    }
+    ZAU_force_order = {
+        icon = generic_neutrality
+        visible = {
+            NOT = { power_balance_value = { id = ZAU_revolution value > -0.50 } }
+            power_balance_value = { id = ZAU_revolution value < -0.80 }
+        }
+        cost = 75
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = ZAU_revolution value = -0.10 } }
+    }
+    ZAU_organize_revolt = {
+        icon = generic_prepare_civil_war
+        visible = { power_balance_value = { id = ZAU_revolution value < 0.50 } }
+        cost = 50
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = ZAU_revolution value = 0.10 } }
+    }
+    ZAU_escalate_revolt = {
+        icon = generic_prepare_civil_war
+        visible = {
+            NOT = { power_balance_value = { id = ZAU_revolution value < 0.50 } }
+            power_balance_value = { id = ZAU_revolution value < 0.80 }
+        }
+        cost = 100
+        days_remove = 30
+        complete_effect = { add_power_balance_value = { id = ZAU_revolution value = 0.10 } }
+    }
+}
+
+
+
+

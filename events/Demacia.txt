@@ -1,0 +1,1609 @@
+﻿###########################
+# Demacian Events
+###########################
+
+add_namespace = demacia
+
+#Resolve Breaking
+country_event = {
+	id = demacia.40
+	title = demacia.40.t
+	desc = demacia.40.d
+	
+	is_triggered_only = yes
+	
+	option = { #We must hold out
+		name = demacia.40.a
+		ai_chance = { factor = 100 }
+		add_war_support = -0.20
+	}
+}
+
+#Jarvan Spared
+country_event = {
+	id = demacia.39
+	title = demacia.39.t
+	desc = demacia.39.d
+	picture = GFX_report_event_fightJarvan
+	
+	is_triggered_only = yes
+	
+	option = { #How could this happen
+		name = demacia.39.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		add_political_power = -25
+	}
+}
+
+#Jarvan Bested/Killed
+country_event = {
+	id = demacia.38
+	title = demacia.38.t
+	desc = demacia.38.d
+	picture = GFX_report_event_fightJarvan
+	
+	is_triggered_only = yes
+	
+	option = { #Not the new king...
+		name = demacia.38.a
+		ai_chance = { factor = 0 }
+		add_stability = -0.15
+		add_political_power = -100
+		retire_character = j4
+		promote_character = eldred
+	}
+	
+	option = { #Call For The Dragon
+		name = demacia.38.b
+		trigger = {
+            has_country_flag = dragonsHelp
+        }
+		ai_chance = { factor = 100 }
+		add_war_support = 0.05
+		DEM = {
+			load_oob = "DEM_Shyvana"
+		}
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 150
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_rocket_equipment
+			amount = 300
+		}
+		set_country_flag = shyvanaActive
+		country_event = {
+			id = magerebellion.20
+			days = 0
+		}
+	}
+}
+
+#State Revolts
+country_event = {
+	id = demacia.37
+	title = demacia.37.t
+	desc = demacia.37.d
+	
+	is_triggered_only = yes
+	
+	option = { #Insolence!
+		name = demacia.37.a
+		ai_chance = { factor = 100 }
+		add_political_power = -25
+		MRE = {
+			load_oob = "MRE_4Mages"
+		}
+		226 = { transfer_state_to = MRE }	
+	}
+}
+
+#Garen Spared
+country_event = {
+	id = demacia.36
+	title = demacia.36.t
+	desc = demacia.36.d
+	picture = GFX_report_event_fightGaren
+	
+	is_triggered_only = yes
+	
+	option = { #How could this happen
+		name = demacia.36.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		add_political_power = -25
+	}
+}
+
+#Garen Bested/Killed
+country_event = {
+	id = demacia.35
+	title = demacia.35.t
+	desc = demacia.35.d
+	picture = GFX_report_event_fightGaren
+	
+	is_triggered_only = yes
+	
+	option = { #How could this happen
+		name = demacia.35.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.1
+		add_political_power = -50
+		retire_character = garen
+	}
+}
+
+#Kayle
+country_event = {
+	id = demacia.34
+	title = demacia.34.t
+	desc = demacia.34.d
+	picture = GFX_report_event_kayleRuins
+	is_triggered_only = yes
+	
+	option = { #Oh well
+		name = demacia.34.a
+		ai_chance = { factor = 100 }
+		news_event = { id = rnews.3 days = 1}
+		add_war_support = 0.5
+		launch_nuke = {
+			province = 134
+		}
+		launch_nuke = {
+			province = 3390
+		}
+		launch_nuke = {
+			province = 5701
+		}
+		launch_nuke = {
+			province = 5276
+		}
+		launch_nuke = {
+			province = 4690
+		}
+		launch_nuke = {
+			province = 1577
+		}
+		launch_nuke = {
+			province = 7591
+		}
+		launch_nuke = {
+			province = 1792
+		}
+		launch_nuke = {
+			province = 2875
+		}
+		launch_nuke = {
+			province = 7600
+		}
+		launch_nuke = {
+			province = 7632
+		}
+		launch_nuke = {
+			province = 143
+		}
+		launch_nuke = {
+			province = 7767
+		}
+		launch_nuke = {
+			province = 561
+		}
+		launch_nuke = {
+			province = 3399
+		}
+		launch_nuke = {
+			province = 7522
+		}
+		launch_nuke = {
+			province = 872
+		}
+		launch_nuke = {
+			province = 7434
+		}
+		launch_nuke = {
+			province = 83
+		}
+		launch_nuke = {
+			province = 7383
+		}
+		launch_nuke = {
+			province = 3234
+		}
+		launch_nuke = {
+			province = 2309
+		}
+	}
+}
+
+#The mageseekers...
+country_event = {
+	id = demacia.33
+	title = demacia.33.t
+	desc = demacia.33.d
+	picture = GFX_report_event_mage_hunts
+	is_triggered_only = yes
+	
+	option = { #IncreaseInf
+		name = demacia.33.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = DEM_addMageInf10
+		add_to_variable = { mageseeker_influence = 10 }
+		add_war_support = 0.05
+		add_manpower = 25000
+	}
+	option = { #DecreaseInf
+		name = demacia.33.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DEM_subMageInf10
+		add_to_variable = { mageseeker_influence = -10 }
+		add_stability = 0.05
+		add_political_power = 100
+	}
+}
+
+#Katarina killed J3
+country_event = {
+	id = demacia.32
+	title = demacia.32.t
+	desc = demacia.32.d
+	picture = GFX_report_event_katarina
+	is_triggered_only = yes
+	
+	option = { #Hate Noxus
+		name = demacia.32.a
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DEM_revengeNoxus
+		add_war_support = -0.05
+		set_country_flag = revengeNoxus
+	}
+	option = { #Hate Mages
+		name = demacia.32.b
+		ai_chance = { factor = 100 }
+		add_war_support = 0.10
+		MRE = {
+			country_event = {
+			id = magerebellion.15
+			days = 0
+		}
+		}
+	}
+}
+
+#J3 Killed
+country_event = {
+	id = demacia.31
+	title = demacia.31.t
+	desc = demacia.31.d
+	picture = GFX_report_event_j3_dead
+	is_triggered_only = yes
+	
+	option = { #Bad
+		name = demacia.31.a
+		ai_chance = { factor = 100 }
+		trigger = {
+            has_country_flag = preparedPrince 
+        }
+		custom_effect_tooltip = DEM_Prepare
+		custom_effect_tooltip = DEM_addMageInf5
+		add_to_variable = { mageseeker_influence = 5 }
+		set_country_flag = assassinationAttempt
+		promote_character = eldred
+		add_stability = -0.10
+		add_political_power = -50
+		swap_ideas = {
+			remove_idea = turmoil_nation
+			add_idea = turmoil_nation2
+		}
+		country_event = {
+			id = demacia.32
+			days = 145
+		}
+	}
+	option = { #Worse
+		name = demacia.31.b
+		ai_chance = { factor = 0 }
+		trigger = {
+            NOT = { has_country_flag = preparedPrince }
+        }
+		custom_effect_tooltip = DEM_noPrepare
+		custom_effect_tooltip = DEM_addMageInf10
+		add_to_variable = { mageseeker_influence = 10 }
+		set_country_flag = assassinationAttempt
+		promote_character = eldred
+		add_stability = -0.15
+		add_political_power = -75
+		swap_ideas = {
+			remove_idea = turmoil_nation
+			add_idea = turmoil_nation3
+		}
+		country_event = {
+			id = demacia.32
+			days = 145
+		}
+	}
+}
+
+#Recruit Poppy
+country_event = {
+	id = demacia.30
+	title = demacia.30.t
+	desc = demacia.30.d
+	picture = GFX_report_event_recruit_poppy
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = demacia.30.a
+		ai_chance = { factor = 100 }
+		add_political_power = -25
+		add_war_support = 0.03
+		recruit_character = poppy
+	}
+	option = { #Cant
+		name = demacia.30.b
+		ai_chance = { factor = 0 }
+		add_political_power = 25
+	}
+}
+
+#Lowered Compliance
+country_event = {
+	id = demacia.29
+	title = demacia.29.t
+	desc = demacia.29.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = demacia.29.a
+		ai_chance = { factor = 100 }
+		#random_scope_in_array = {
+			#array = global.rebelStates
+    		#add_compliance = -10
+		#}
+		MRE = {
+			random_core_state = {
+				add_compliance = -10
+			}
+		}
+	}
+	option = { #Wonderful
+		name = demacia.29.b
+		ai_chance = { factor = 0 }
+		add_political_power = -25
+		add_stability = -0.03
+		MRE = {
+			random_core_state = {
+				add_compliance = -5
+			}
+		}
+	}
+}
+
+#Lowered Resistance
+country_event = {
+	id = demacia.28
+	title = demacia.28.t
+	desc = demacia.28.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = demacia.28.a
+		ai_chance = { factor = 100 }
+		MRE = {
+			random_core_state = {
+				add_resistance = -10
+			}
+		}
+	}
+	option = { #Wonderful
+		name = demacia.28.b
+		ai_chance = { factor = 0 }
+		add_political_power = 25
+		add_stability = 0.03
+	}
+}
+
+#Increase Compliance
+country_event = {
+	id = demacia.27
+	title = demacia.27.t
+	desc = demacia.27.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = demacia.27.a
+		ai_chance = { factor = 100 }
+		MRE = {
+			random_core_state = {
+				add_compliance = 10
+			}
+		}
+	}
+	option = { #Wonderful
+		name = demacia.27.b
+		ai_chance = { factor = 0 }
+		add_political_power = 25
+		add_stability = 0.03
+	}
+}
+
+#Increase Resistance
+country_event = {
+	id = demacia.26
+	title = demacia.26.t
+	desc = demacia.26.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = demacia.26.a
+		ai_chance = { factor = 100 }
+		MRE = {
+			random_core_state = {
+				add_resistance = 15
+			}
+		}
+	}
+	option = { #Wonderful
+		name = demacia.26.b
+		ai_chance = { factor = 0 }
+		add_political_power = -25
+		add_stability = -0.03
+		MRE = {
+			random_core_state = {
+				add_resistance = 5
+			}
+		}
+	}
+}
+
+#Peaceful Resolution
+country_event = {
+	id = demacia.25
+	title = demacia.25.t
+	desc = demacia.25.d
+	picture = GFX_report_event_peaceful_end
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = demacia.25.a
+		ai_chance = { factor = 100 }
+		unlock_national_focus = DEM_mending_the_rift
+		add_political_power = 50
+	}
+}
+
+#Rebellion Without Sylas
+country_event = {
+	id = demacia.22
+	title = demacia.22.t
+	desc = demacia.22.d
+	picture = GFX_report_event_mage_without_sylas
+	
+	is_triggered_only = yes
+	
+	option = { #We must stay vigilant...
+		name = demacia.22.a
+		ai_chance = { factor = 100 }
+		#Attempt to peacefully do this
+		MRE = {
+			add_ideas = dangerous_wildlife
+			kill_ideology_leader = mages
+		}
+		DEM = {
+			add_ideas = turmoil_nation
+			set_country_flag = noFighting
+			remove_ideas = growing_mage_support
+			remove_ideas = growing_mage_support2
+			remove_ideas = growing_mage_support3
+			set_political_party = {
+			ideology = mages
+			popularity = 5
+			}
+			country_event = {
+			id = demacia.31
+			days = 100
+			}
+		}
+		
+		custom_effect_tooltip = DEM_tryPeace
+		
+			
+		for_each_loop = {
+			array = global.rebelStates
+			value = v
+				if = {
+					limit = {
+						check_variable = { v < 4 }
+					}
+						for_each_scope_loop = {
+							array = global.rebelStates
+							remove_core_of = MRE
+							add_core_of = DEM
+						}
+			
+			country_event = {
+				id = demacia.25
+				days = 2
+			}
+			
+		}
+		else = {
+			country_event = {
+				id = demacia.24
+				days = 10
+		}
+		
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 transfer_state_to = MRE
+			 cancel_resistance = yes
+		}
+		unlock_national_focus = DEM_fordemacia
+		MRE = {
+		set_country_flag = noFighting
+		set_country_flag = noNewDemons
+		inherit_technology = DEM
+		country_event = {
+			id = magerebellion.13
+			days = 156
+		}
+		load_oob = "MRE"
+		}
+		if = {
+			limit = {
+			DEM = {
+				has_country_flag = experiencedMagesArmy
+				}
+			}
+			MRE = {
+			load_oob = "MRE_Local_Support"
+			}
+		}
+		
+		MRE = {
+			country_event = {
+				id = demacia.23
+				days = 2
+			}
+			set_rule = {
+				#desc = TAG_my_rule_description
+				can_not_declare_war = yes
+			}	
+				create_wargoal = {
+					type = annex_everything
+					target = DEM
+				}	
+				every_core_state = {
+					add_claim_by = DEM
+				}
+				unlock_national_focus = MRE_forallmages
+		}
+		DEM = {
+			every_core_state = {
+					add_claim_by = MRE
+				}
+		}
+		news_event = { id = rnews.2 days = 5}
+		}
+					
+				}
+			}
+			
+		
+	option = { #We must stay vigilant...
+		name = demacia.22.b
+		ai_chance = { factor = 0 }
+		#One last stand for the mages!
+		MRE = {
+			add_ideas = dangerous_wildlife
+			kill_ideology_leader = mages
+		}
+		country_event = {
+				id = demacia.24
+				days = 10
+		}
+		
+		DEM = {
+			add_ideas = turmoil_nation
+			set_country_flag = noFighting
+			remove_ideas = growing_mage_support
+			remove_ideas = growing_mage_support2
+			remove_ideas = growing_mage_support3
+			load_oob = "DEM_BonusTroops"
+			set_political_party = {
+			ideology = mages
+			popularity = 5
+			}
+						country_event = {
+			id = demacia.31
+			days = 100
+			}
+		}
+		
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "States Joining The Mage Rebellion: "
+			 transfer_state_to = MRE
+			 cancel_resistance = yes
+		}
+		unlock_national_focus = DEM_fordemacia
+		MRE = {
+		
+		set_country_flag = noFighting
+		set_country_flag = noNewDemons
+		inherit_technology = DEM
+		country_event = {
+			id = magerebellion.13
+			days = 156
+		}
+		load_oob = "MRE"
+		}
+		if = {
+			limit = {
+				has_country_flag = experiencedMagesArmy
+			}
+			MRE = {
+			load_oob = "MRE_Local_Support"
+			}
+		}
+		
+		MRE = {
+		change_tag_from = DEM
+		}
+		MRE = {
+			country_event = {
+				id = demacia.23
+				days = 2
+			}
+			set_rule = {
+				#desc = TAG_my_rule_description
+				can_not_declare_war = yes
+			}	
+			create_wargoal = {
+					type = annex_everything
+					target = DEM
+				}
+				every_core_state = {
+					add_claim_by = DEM
+				}
+				unlock_national_focus = MRE_forallmages
+		}
+		DEM = {
+			every_core_state = {
+					add_claim_by = MRE
+				}
+		}
+		news_event = { id = rnews.2 days = 5}
+	}
+}
+
+#Hidden War Event
+country_event = {
+	id = demacia.24
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = { 
+		MRE = {
+			set_rule = {
+				#desc = TAG_my_rule_description
+				can_not_declare_war = no
+			}	
+			remove_wargoal = {
+					type = annex_everything
+					target = DEM
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 20
+				}	
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 200
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 500
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 10000
+				}
+		}
+		declare_war_on = {
+			target = MRE
+			type = annex_everything
+		}
+		MRE = {
+		clr_country_flag = noFighting
+		}
+		DEM = {
+		clr_country_flag = noFighting
+		}
+	}
+}
+
+#WarIsImminent
+country_event = {
+	id = demacia.23
+	title = demacia.23.t
+	desc = demacia.23.d
+	picture = GFX_report_event_war_imminent
+	
+	is_triggered_only = yes
+	
+	option = { #We must stay vigilant...
+		name = demacia.23.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#SylasRebellion
+country_event = {
+	id = demacia.21
+	title = demacia.21.t
+	desc = demacia.21.d
+	picture = GFX_report_event_sylas_rebellion
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds good
+		name = demacia.21.a
+		ai_chance = { factor = 100 }
+		#Stay Demacia
+		
+		country_event = {
+				id = demacia.24
+				days = 10
+		}
+		
+		DEM = {
+			add_ideas = turmoil_nation
+			set_country_flag = noFighting
+			remove_ideas = growing_mage_support
+			remove_ideas = growing_mage_support2
+			remove_ideas = growing_mage_support3
+			set_political_party = {
+			ideology = mages
+			popularity = 5
+			}
+						country_event = {
+			id = demacia.31
+			days = 100
+			}
+		}
+		
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "States Joining The Mage Rebellion: "
+			 transfer_state_to = MRE
+			 cancel_resistance = yes
+		}
+		unlock_national_focus = DEM_fordemacia
+		MRE = {
+		add_ideas = dangerous_wildlife
+		set_country_flag = noFighting
+		set_country_flag = noNewDemons
+			
+		inherit_technology = DEM
+		country_event = {
+			id = magerebellion.13
+			days = 156
+		}
+		load_oob = "MRE"
+		}
+		if = {
+			limit = {
+				has_country_flag = experiencedMagesArmy
+			}
+			MRE = {
+			load_oob = "MRE_Local_Support"
+			}
+		}
+		
+		MRE = {
+			set_rule = {
+				#desc = TAG_my_rule_description
+				can_not_declare_war = yes
+			}	
+			create_wargoal = {
+					type = annex_everything
+					target = DEM
+				}	
+				every_core_state = {
+					add_claim_by = DEM
+				}
+				unlock_national_focus = MRE_forallmages
+		}
+		DEM = {
+			every_core_state = {
+					add_claim_by = MRE
+				}
+		}
+			country_event = {
+				id = demacia.23
+				days = 2
+			}
+			news_event = { id = rnews.2 days = 5}
+		
+	}
+	option = { # Sounds good
+		name = demacia.21.b
+		ai_chance = { factor = 100 }
+		#Join The Mages
+		
+		country_event = {
+				id = demacia.24
+				days = 10
+		}
+		
+		DEM = {
+			add_ideas = turmoil_nation
+			set_country_flag = noFighting
+			remove_ideas = growing_mage_support
+			remove_ideas = growing_mage_support2
+			remove_ideas = growing_mage_support3
+			load_oob = "DEM_BonusTroops"
+			set_political_party = {
+			ideology = mages
+			popularity = 5
+			}
+						country_event = {
+			id = demacia.31
+			days = 100
+			}
+		}
+		
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "States Joining The Mage Rebellion: "
+			  transfer_state_to = MRE
+			  cancel_resistance = yes
+		}
+		unlock_national_focus = DEM_fordemacia
+		MRE = {
+		add_ideas = dangerous_wildlife
+		set_country_flag = noFighting
+		set_country_flag = noNewDemons
+		
+		inherit_technology = DEM
+		country_event = {
+			id = magerebellion.13
+			days = 156
+		}
+		load_oob = "MRE"
+		}
+		if = {
+			limit = {
+				has_country_flag = experiencedMagesArmy
+			}
+			MRE = {
+			load_oob = "MRE_Local_Support"
+			}
+		}
+		
+		MRE = {
+		change_tag_from = DEM
+		}
+		MRE = {
+			country_event = {
+				id = demacia.23
+				days = 2
+			}
+			set_rule = {
+				#desc = TAG_my_rule_description
+				can_not_declare_war = yes
+			}
+				create_wargoal = {
+					type = annex_everything
+					target = DEM
+				}
+				every_core_state = {
+					add_claim_by = DEM
+				}
+				unlock_national_focus = MRE_forallmages
+		}
+		DEM = {
+			every_core_state = {
+					add_claim_by = MRE
+				}
+		}
+		news_event = { id = rnews.2 days = 5}
+	}
+}
+
+#QuestionOfSylas
+country_event = {
+	id = demacia.20
+	title = demacia.20.t
+	desc = demacia.20.d
+	picture = GFX_report_event_question_of_sylas
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds good
+		name = demacia.20.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				NOT = { has_global_flag = luxJailed }
+       			NOT = { has_global_flag = luxDead }
+			}
+			#Sylas Breaks Free
+			country_event = {
+				id = demacia.21
+				days = 1
+			}
+			clr_country_flag = preWarFlag
+		}
+		else = {
+			#Sylas Executed
+			country_event = {
+				id = demacia.22
+				days = 1
+			}
+			clr_country_flag = preWarFlag
+		}
+	}
+}
+
+#IdeasOfFreedom
+country_event = {
+	id = demacia.19
+	title = demacia.19.t
+	desc = demacia.19.d
+	picture = GFX_report_event_ideas_of_freedom
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds good
+		name = demacia.19.a
+		ai_chance = { factor = 100 }
+		trigger = {
+            NOT = { has_country_flag = eventFired }
+        }
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "All Rebellious States Above 40 Compliance Will Be Cored: "
+			 if = {
+			 limit = {
+			 compliance > 40
+			 }
+    		 remove_core_of = MRE
+			 add_core_of = DEM
+			 }
+		}
+		clear_array = global.rebelStates
+		MRE = {
+			every_core_state = {
+				add_to_array = {
+					array = global.rebelStates
+					value = THIS
+				}
+			}
+		}
+	clr_country_flag = eventFired
+	}
+	option = { # Sounds Good!
+		name = demacia.19.b
+		ai_chance = { factor = 0 }
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "All Rebellious States Above 60 Resistance Will Be Buffed: "
+			 if = {
+			 limit = {
+			 resistance > 60
+			 }
+			 add_dynamic_modifier = { 
+				modifier = rebel_buffed
+			}
+			}
+		}
+		clr_country_flag = eventFired
+	}
+}
+
+#InvestigateLux
+country_event = {
+	id = demacia.18
+	title = demacia.18.t
+	desc = demacia.18.d
+	picture = GFX_report_event_investigate_lux
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds good
+		name = demacia.18.a
+		ai_chance = { factor = 100 }
+		add_political_power = -100
+		custom_effect_tooltip = DEM_subMageInf5
+		custom_effect_tooltip = DEM_luxFree
+		add_to_variable = { mageseeker_influence = -5 }
+		add_stability = 0.05
+	}
+	option = { # Sounds Good!
+		name = demacia.18.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.10
+		set_global_flag = luxJailed
+		custom_effect_tooltip = DEM_addMageInf5
+		custom_effect_tooltip = DEM_luxJailed
+		add_to_variable = { mageseeker_influence = 5 }
+	}
+	option = { # Sounds Good!
+		name = demacia.18.c
+		ai_chance = { factor = 0 }
+		add_stability = -0.30
+		add_war_support = -0.15
+		custom_effect_tooltip = DEM_addMageInf15
+		custom_effect_tooltip = DEM_luxDead
+		add_to_variable = { mageseeker_influence = 15 }
+		set_political_party = {
+		ideology = mages
+		popularity = 0
+		}
+		set_global_flag = luxDead
+	}
+}
+
+#CrowdedDungeons
+country_event = {
+	id = demacia.17
+	title = demacia.17.t
+	desc = demacia.17.d
+	picture = GFX_report_event_crowded_dungeons
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds good
+		name = demacia.17.a
+		ai_chance = { factor = 100 }
+		trigger = {
+            NOT = { has_country_flag = eventFired }
+        }
+		custom_effect_tooltip = DEM_addMageInf5
+		add_to_variable = { mageseeker_influence = 5 }
+		add_stability = 0.05
+		add_manpower = -50000
+		clr_country_flag = eventFired
+	}
+	option = { # Sounds Good!
+		name = demacia.17.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DEM_subMageInf5
+		add_to_variable = { mageseeker_influence = -5 }
+		add_stability = -0.05
+		add_manpower = 50000
+		clr_country_flag = eventFired
+	}
+}
+
+#ShadowsEmerge
+country_event = {
+	id = demacia.16
+	title = demacia.16.t
+	desc = demacia.16.d
+	picture = GFX_report_event_shadows_emerge
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds good
+		name = demacia.16.a
+		ai_chance = { factor = 100 }
+		trigger = {
+            NOT = { has_country_flag = eventFired }
+        }
+		custom_effect_tooltip = DEM_addMageInf5
+		add_to_variable = { mageseeker_influence = 5 }
+		swap_ideas = {
+			remove_idea = growing_mage_support
+			add_idea = growing_mage_support3
+		}
+		clr_country_flag = eventFired
+	}
+	option = { # Sounds Good!
+		name = demacia.16.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DEM_subMageInf5
+		add_to_variable = { mageseeker_influence = -5 }
+		swap_ideas = {
+			remove_idea = growing_mage_support
+			add_idea = growing_mage_support2
+		}
+		clr_country_flag = eventFired
+	}
+}
+
+#IlluminatorsSupport
+country_event = {
+	id = demacia.15
+	title = demacia.15.t
+	desc = demacia.15.d
+	picture = GFX_report_event_promote_illuminators
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds Good!
+		name = demacia.15.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		add_popularity = {
+			ideology = mages
+			popularity = +0.05
+		}
+	}
+	option = { # Sounds Good!
+		name = demacia.15.b
+		ai_chance = { factor = 0 }
+		add_stability = 0.05
+		add_popularity = {
+			ideology = mages
+			popularity = +0.10
+		}
+	}
+}
+
+# Mage hunts
+country_event = {
+	id = demacia.14
+	title = demacia.14.t
+	desc = demacia.14.d
+	picture = GFX_report_event_mage_hunts
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds Good!
+		name = demacia.14.a
+		trigger = {
+            NOT = { has_country_flag = eventFired }
+        }
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = DEM_addMageInf5
+		add_to_variable = { mageseeker_influence = 5 }
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "All Rebellious States: "
+    			add_resistance = -10
+		}
+		clr_country_flag = eventFired
+		
+	}
+	option = { # Sounds Good!
+		name = demacia.14.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DEM_subMageInf5
+		add_to_variable = { mageseeker_influence = -5 }
+		for_each_scope_loop = {
+   			 array = global.rebelStates
+			 tooltip = "All Rebellious States: "
+   			 add_compliance = 5
+			}
+		clr_country_flag = eventFired
+	}
+}
+
+# Demacian Start Game Event
+country_event = {
+	id = demacia.1
+	title = demacia.1.t
+	desc = demacia.1.d
+	picture = GFX_report_event_generic_strike
+	
+	is_triggered_only = yes
+	
+	option = { # Sounds Good!
+		name = demacia.1.a
+		ai_chance = { factor = 100 }
+		
+	}
+	#option = { # Make more concessions
+	#	name = china.1.b
+	#	ai_chance = { factor = 10 } #first option would be 90 so it would be out of 100
+	#	add_stability = 0.5
+	#}
+}
+#Demacia Mage Political Party Warning Event
+country_event = {
+	id = demacia.2
+	title = demacia.2.t
+	desc = demacia.2.d
+	picture = GFX_report_event_growing_resistance
+	
+	is_triggered_only = yes
+	
+	option = { # Got It!
+		name = demacia.2.a
+		ai_chance = { factor = 100 }
+		
+	}
+}
+#Demacia Demons Events
+country_event = {
+	id = demacia.3
+	title = demacia.3.t
+	desc = demacia.3.d
+	
+	is_triggered_only = yes
+	
+	option = { #We must stay vigilant...
+		name = demacia.3.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.01
+	}
+}
+#demon gone event
+country_event = {
+	id = demacia.8
+	title = demacia.8.t
+	desc = demacia.8.d
+	picture = GFX_report_event_demons_gone
+
+	is_triggered_only = yes
+	
+	option = { #Good riddance...
+		name = demacia.8.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_country_flag = evelynn
+			}
+			remove_ideas = evelynnidea
+		}else_if = {
+			limit = {
+				has_country_flag = fiddle
+			}
+			remove_ideas = fiddleidea
+		}else_if = {
+			limit = {
+				has_country_flag = nocturne
+			}
+			remove_ideas = nocturneidea
+		}else = {
+
+		}
+		add_stability = 0.1
+		clr_country_flag = evelynn
+		clr_country_flag = fiddle
+		clr_country_flag = nocturne
+		clr_country_flag = demons
+		clr_country_flag = found_demons
+		set_country_flag = demonsGone
+	}
+}
+#Demon Weekly Bad Events
+country_event = {
+	id = demacia.10
+	title = demacia.10.t
+	desc = demacia.10.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		random_controlled_state = {
+			limit = {
+				NOT = { has_dynamic_modifier = {
+    					modifier = demon_attack
+				} }
+			}
+            			add_dynamic_modifier = { 
+					modifier = demon_attack 
+				}
+       		 }
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = demacia.11
+	title = demacia.11.t
+	desc = demacia.11.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonAddDays
+		if = {
+					limit = {
+						has_country_flag = evelynn
+					}
+					add_days_mission_timeout  = {
+   				 	mission = evelynnFound
+   				 	days = 30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = fiddle
+					}
+					add_days_mission_timeout  = {
+   				 	mission = fiddleFound
+   				 	days = 30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = nocturne
+					}
+					add_days_mission_timeout  = {
+   				 	mission = nocturneFound
+   				 	days = 30
+					}
+				}else = {
+
+				}
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = demacia.12
+	title = demacia.12.t
+	desc = demacia.12.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonManpowerAtt
+			every_controlled_state = {
+				limit = {
+				has_dynamic_modifier = {
+    					modifier = demon_attack
+				}
+				}
+				add_manpower = -20000	
+			}
+
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = demacia.13
+	title = demacia.13.t
+	desc = demacia.13.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonInfraAtt
+		every_controlled_state = {
+			limit = {
+			has_dynamic_modifier = {
+    				modifier = demon_attack
+			}
+			}
+			damage_building = {
+   			 type = infrastructure
+    			damage = 0.15
+			}
+			damage_building = {
+   			 type = arms_factory
+    			damage = 0.15
+			}
+			damage_building = {
+   			 type = industrial_complex
+    			damage = 0.15
+			}
+		}
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+#Hidden Demon Events
+country_event = {
+	id = demacia.9
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = { 
+		clr_country_flag = demonsGone
+	}
+}
+country_event = {
+	id = demacia.7
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = { 
+		if = {
+			limit = {
+			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+			 NOT = { has_country_flag = demonsGone }
+			}
+			random_list = {
+						33 = {
+							country_event = {
+							id = demacia.4
+							days = 1
+							}
+						}
+						33 = {
+							country_event = {
+							id = demacia.5
+							days = 1
+							}
+						}
+						34 = {
+							country_event = {
+							id = demacia.6
+							days = 1
+							}
+						}
+					}
+		}
+	}
+}
+#These will all be named like Demons Found!
+country_event = {
+	id = demacia.4
+	title = demacia.4.t
+	desc = demacia.4.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = demacia.4.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }
+		add_ideas = evelynnidea
+		set_country_flag = evelynn
+		activate_mission = evelynnFound
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = evelynnFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}
+
+country_event = {
+	id = demacia.5
+	title = demacia.5.t
+	desc = demacia.5.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = demacia.5.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }
+		add_ideas = fiddleidea
+		set_country_flag = fiddle
+		activate_mission = fiddleFound
+			 
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = fiddleFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}
+country_event = {
+	id = demacia.6
+	title = demacia.6.t
+	desc = demacia.6.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = demacia.6.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }		
+		
+		add_ideas = nocturneidea
+		set_country_flag = nocturne
+		activate_mission = nocturneFound
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = nocturneFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}

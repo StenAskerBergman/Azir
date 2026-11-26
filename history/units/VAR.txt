@@ -1,0 +1,69 @@
+division_template = {
+ name = "Varju Climber"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Mountain Guide"
+  location = 1666
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Mountain Guide"
+  location = 7951
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Mountain Guide"
+  location = 2825
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Mountain Guide"
+  location = 4204
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Mountain Guide"
+  location = 7742
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Mountain Guide"
+  location = 5157
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Mountain Guide"
+  location = 3028
+  division_template = "Varju Climber"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+}

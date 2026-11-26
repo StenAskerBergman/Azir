@@ -1,0 +1,55 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_DEM_mageseeker_bg"
+		textureFile = "/gfx/interface/decision_cats/DEM_mageseeker_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_bg"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_1people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_1people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_3people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_3people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_5people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_5people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_8people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_8people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_10people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_10people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_13people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_13people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_15people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_15people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_18people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_18people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_20people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_20people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_23people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_23people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOX_trifarix_25people"
+		textureFile = "/gfx/interface/decision_cats/NOX_trifarix_25people.dds"
+	}
+}

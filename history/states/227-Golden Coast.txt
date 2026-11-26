@@ -1,0 +1,43 @@
+
+state={
+	id=227
+	name="STATE_227"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 10
+ rubber = 12
+ #steel = 8
+ oil = 8
+ #chromium = 18
+ #aluminium = 4
+ }
+ history = {
+ owner = DEM
+ add_core_of = DEM
+ victory_points = {
+ 3793 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   dockyard = 1
+   3974 = {
+   naval_base = 1
+   }
+  }
+ }
+	provinces={
+		331 430 455 480 584 867 988 2772 3067 3074 3122 3280 3669 3793 3903 3953 3974 4657 5017 5192 5324 7920 7948 7965 7982 7986 7996 8001 8041 8042 8078 8083 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=972932
+        state_category = town
+}

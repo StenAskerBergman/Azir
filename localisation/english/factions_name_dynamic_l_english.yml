@@ -1,0 +1,13 @@
+﻿l_english:
+  dynamic_factions_names_1:0 "[ROOT.GetAdjective] Alliance"
+  dynamic_factions_names_2:0 "[ROOT.GetAdjective] League"
+  dynamic_factions_names_mages_1:0 "The Mage Collective"
+  dynamic_factions_names_mages_2:0 "United Arcane States"
+  dynamic_factions_names_royalist_1:0 "Greater [ROOT.GetAdjective] Alliance"
+  dynamic_factions_names_royalist_2:0 "Great [ROOT.GetAdjective] League"
+  dynamic_factions_names_desolation_1:0 "Anarchic States"
+  dynamic_factions_names_chiefdom_1:0 "United Tribes"
+  dynamic_factions_names_absolutists_1:0 "Great Runeterra League"
+  dynamic_factions_names_oligarchy_1:0 "Greater [ROOT.GetAdjective] Councils"
+  dynamic_factions_names_oligarchy_2:0 "[ROOT.GetAdjective] Collective"
+  dynamic_factions_names_theocracy_1:0 "Cults Of The Unwavering"

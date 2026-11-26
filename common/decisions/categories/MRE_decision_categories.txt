@@ -1,0 +1,24 @@
+MRE_peace = {
+	icon = generic_prepare_civil_war
+	picture = GFX_decision_cat_picture_MRE_peace
+	priority = 10
+
+	allowed = {
+		tag = MRE
+	}
+
+	#This will pop up once peace is enevitable	
+
+}
+MRE_demons = {
+	icon = DEM_demons
+	picture = GFX_decision_cat_picture_DEM_demons
+	priority = 9
+
+	allowed = {
+		tag = MRE
+	}
+
+	#This will pop up once demons appear	
+
+}

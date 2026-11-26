@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_DEM_mageseeker_text_icon"
+		texturefile = "gfx/texticons/DEM_mageseeker_text_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOX_guile_text_icon"
+		texturefile = "gfx/texticons/NOX_guile_text_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOX_strength_text_icon"
+		texturefile = "gfx/texticons/NOX_strength_text_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOX_vision_text_icon"
+		texturefile = "gfx/texticons/NOX_vision_text_icon.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=290
+	name="STATE_290"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 6
+ #rubber = 10
+ #steel = 8
+ #coal = 5
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = NOC
+ add_core_of = NOC
+ victory_points = {
+ 4622 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		41 118 236 431 777 1232 1313 1430 1582 1734 1851 2039 3170 3852 4234 4253 4321 4342 4527 4622 4629 4664 5016 5110 5466 5589 7417 7491 7496 7539 7593 7597 7603 7641 7645 7673 7704 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1129382
+        state_category = town
+}

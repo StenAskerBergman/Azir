@@ -1,0 +1,44 @@
+
+state={
+	id=2
+	name="STATE_2"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 12
+ rubber = 10
+ steel = 12
+ #coal = 60
+ #chromium = 18
+ #aluminium = 6
+ }
+ history = {
+ owner = SHI
+ add_core_of = SHI
+  add_core_of = BLI
+ victory_points = {
+ 5381 30
+ }
+  buildings = {
+   infrastructure = 4
+   arms_factory = 1
+   industrial_complex = 2
+   dockyard = 1
+   5381 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		4065 5381 9215 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1922912
+        state_category = large_town
+}

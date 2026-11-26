@@ -1,0 +1,92 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "nox_trifarix_system_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 250 }
+
+		#BACKGROUND
+		iconType = {
+			name ="trifarix_main_bg"
+			spriteType = "GFX_NOX_trifarix_bg"
+			position = { x=0	 y=0 }
+		}
+		
+		#PeopleThing
+		iconType = {
+			name ="trifarix_might_people"
+			spriteType = "GFX_NOX_trifarix_8people"
+			position = { x= 90	 y= 170 }
+		}
+		
+		iconType = {
+			name ="trifarix_vision_people"
+			spriteType = "GFX_NOX_trifarix_8people"
+			position = { x= 220	 y= 170 }
+		}
+		
+		iconType = {
+			name ="trifarix_guile_people"
+			spriteType = "GFX_NOX_trifarix_8people"
+			position = { x= 355	 y= 170 }
+		}
+
+		#Influence percentages
+		instantTextBoxType = {
+			name ="strength_text"
+			position = { x = -80 y = 220 }
+			font = "hoi_18mbs"
+			text = "NOX_strength_value"
+			format = center
+			maxWidth = 400
+		}
+		instantTextBoxType = {
+			name ="vision_text"
+			position = { x = 50 y = 220 }
+			font = "hoi_18mbs"
+			text = "NOX_vision_value"
+			format = center
+			maxWidth = 400
+		}
+		instantTextBoxType = {
+			name ="guile_text"
+			position = { x = 180 y = 220 }
+			font = "hoi_18mbs"
+			text = "NOX_guile_value"
+			format = center
+			maxWidth = 400
+		}
+		
+		#UPDATE THIS LOL
+		
+		instantTextBoxType = {
+			name ="winner_text"
+			position = { x = 60 y = 80 }
+			font = "hoi_18mbs"
+			text = "NOX_winner_value"
+			format = center
+			maxWidth = 400
+		}
+		
+		instantTextBoxType = {
+			name ="trifarix_text_description"
+			position = { x = 30 y = -10 }
+			font = "hoi_18mbs"
+			text = "NOX_trifarix_descr"
+			format = center
+			maxWidth = 450
+		}
+
+		###############
+		### PHOTOS ####
+		###############
+
+		#GENERIC PHOTO
+		iconType = {
+			name ="paranoia_photo_1"
+			spriteType = "GFX_paranoia_photo"
+			position = { x=410	 y=90 }
+		}
+	}
+
+}

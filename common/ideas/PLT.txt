@@ -1,0 +1,181 @@
+ideas = {
+	country = {
+		# Ideias dos focos de Piltover
+		Plt_Reforms = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARG_public_works_investment
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.02
+			}
+		}
+		Plt_Modernized_Institutions_1 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARG_public_works_investment
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		Plt_Modernized_Institutions_2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARG_public_works_investment
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.10
+				consumer_goods_factor = -0.10
+			}
+		}
+		Plt_Modernized_Institutions_3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARG_rapid_militarization
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+		Plt_Industrial_Expansion_1 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NOR_elkem
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		Plt_Industrial_Expansion_2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NOR_elkem
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		Plt_Industrial_Expansion_3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NOR_elkem
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		Plt_Technical_Society_1 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PAR_president_carlos_antonio_lopez_railways
+			modifier = {
+				research_speed_factor = 0.05
+				monthly_population = 0.05
+				global_building_slots = 1
+			}
+		}
+		Plt_Technical_Society_2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PAR_president_carlos_antonio_lopez_railways
+			modifier = {
+				research_speed_factor = 0.10
+				monthly_population = 0.10
+				global_building_slots = 2
+			}
+		}
+		Plt_Technical_Society_3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PAR_president_carlos_antonio_lopez_railways
+			modifier = {
+				research_speed_factor = 0.15
+				monthly_population = 0.15
+				global_building_slots = 3
+			}
+		}
+		Plt_A_New_Piltover = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARG_argentine_metropole
+			modifier = {
+				cic_construction_boost = 0.25
+				research_speed_factor = 0.25
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+			}
+		}
+	
+		# Ideias do Conselho de Piltover
+		PLT_council_0 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.10
+			}
+		}
+		PLT_council_1 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
+		PLT_council_3 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+		}
+		PLT_council_5 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+		PLT_council_7 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.10
+			}
+		}
+	
+	}
+}

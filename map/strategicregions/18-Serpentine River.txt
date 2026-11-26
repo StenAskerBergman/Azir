@@ -1,0 +1,178 @@
+strategic_region={
+	id=18
+	name="STRATEGICREGION_18"
+	provinces={
+		5 59 130 226 283 467 544 809 849 891 947 953 1092 1179 1194 1205 1236 1254 1381 1395 1505 1542 1550 1560 1574 1809 1814 1954 2119 2140 2144 2191 2197 2329 2405 2482 2559 2574 2585 2643 2723 2776 2803 2816 2817 2820 2832 2919 2966 3037 3048 3190 3191 3204 3238 3298 3377 3398 3426 3642 3649 3664 3689 3794 3822 3846 3855 3862 3877 3882 3899 3904 3910 3954 3997 4005 4040 4102 4114 4131 4139 4190 4353 4413 4425 4455 4475 4490 4500 4553 4568 4634 4695 4736 4792 4828 4855 4864 4869 4872 4931 4968 5000 5035 5064 5114 5201 5250 5289 5308 5467 5480 5513 5516 5547 5717 5736 5767 8343 8350 8355 8361 8363 8369 8386 8390 8391 8414 8416 8423 8429 8445 8447 8448 8477 8479 8483 8489 8495 8505 8510 8519 8520 8523 8530 8541 8546 8556 8558 8563 8573 8574 8577 8580 8589 8592 8596 8601 8606 8607 8608 8610 8620 8623 8624 8627 8635 8641 8645 8647 8652 8654 8656 8671 8681 8684 8687 8690 8697 8706 8707 8708 8716 8717 8722 8723 8727 8728 8737 8740 8745 8752 8754 8764 8767 8782 8790 8793 8801 8804 8805 8807 8810 8811 8816 8818 8820 8823 8824 8837 9819 
+	}
+	# Weather configuration with hot, humid, and rainy jungle conditions
+    weather={
+        # January: Warm, frequent heavy rain
+        period={
+            between={ 0.0 30.0 } # January
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.35
+            rain_light=0.35
+            rain_heavy=0.25
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.25
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # February: Warm, consistent rainfall
+        period={
+            between={ 0.1 27.1 } # February
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.35
+            rain_light=0.35
+            rain_heavy=0.25
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.25
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # March: Warm, peak wet season
+        period={
+            between={ 0.2 30.2 } # March
+            temperature={ 21.0 31.0 }
+            no_phenomenon=0.30
+            rain_light=0.35
+            rain_heavy=0.30
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.30
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # April: Warm, heavy rain continues
+        period={
+            between={ 0.3 29.3 } # April
+            temperature={ 22.0 32.0 }
+            no_phenomenon=0.30
+            rain_light=0.35
+            rain_heavy=0.30
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.30
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # May: Hot, slightly drier but still rainy
+        period={
+            between={ 0.4 30.4 } # May
+            temperature={ 22.0 33.0 }
+            no_phenomenon=0.40
+            rain_light=0.30
+            rain_heavy=0.25
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.25
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # June: Hot, start of drier season
+        period={
+            between={ 0.5 29.5 } # June
+            temperature={ 23.0 34.0 }
+            no_phenomenon=0.45
+            rain_light=0.30
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.20
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # July: Hottest, relatively drier
+        period={
+            between={ 0.6 30.6 } # July
+            temperature={ 23.0 35.0 }
+            no_phenomenon=0.50
+            rain_light=0.25
+            rain_heavy=0.15
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.15
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # August: Hot, increasing rain
+        period={
+            between={ 0.7 30.7 } # August
+            temperature={ 23.0 34.0 }
+            no_phenomenon=0.45
+            rain_light=0.30
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.20
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # September: Warm, wet season resumes
+        period={
+            between={ 0.8 29.8 } # September
+            temperature={ 22.0 33.0 }
+            no_phenomenon=0.35
+            rain_light=0.35
+            rain_heavy=0.25
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.25
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # October: Warm, heavy rainfall
+        period={
+            between={ 0.9 30.9 } # October
+            temperature={ 22.0 32.0 }
+            no_phenomenon=0.30
+            rain_light=0.35
+            rain_heavy=0.30
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.30
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # November: Warm, frequent rain
+        period={
+            between={ 0.10 29.10 } # November
+            temperature={ 21.0 31.0 }
+            no_phenomenon=0.30
+            rain_light=0.35
+            rain_heavy=0.30
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.30
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # December: Warm, consistent rainfall
+        period={
+            between={ 0.11 30.11 } # December
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.35
+            rain_light=0.35
+            rain_heavy=0.25
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.25
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+    }
+}

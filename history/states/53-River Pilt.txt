@@ -1,0 +1,43 @@
+
+state={
+	id=53
+	name="STATE_53"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 9
+ #rubber = 12
+ #steel = 12
+ #coal = 12
+ chromium = 2
+ #aluminium = 4
+ }
+ history = {
+ owner = PLT
+ add_core_of = PLT
+ victory_points = {
+ 2692 10
+ }
+  buildings = {
+   infrastructure = 3
+   arms_factory = 1
+   industrial_complex = 2
+   dockyard = 0
+   8161 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		1417 1619 2692 5355 8139 8148 8158 8161 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1928122
+        state_category = town
+}

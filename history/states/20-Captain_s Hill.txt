@@ -1,0 +1,42 @@
+
+state={
+	id=20
+	name="STATE_20"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 4
+ #rubber = 3
+ steel = 4
+ coal = 6
+ #chromium = 18
+ #aluminium = 6
+ }
+ history = {
+ owner = BLG
+ add_core_of = BLG
+ victory_points = {
+ 8296 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   dockyard = 1
+   8296 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		427 465 2037 8276 8279 8282 8287 8294 8296 8298 8307 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1187845
+        state_category = town
+}

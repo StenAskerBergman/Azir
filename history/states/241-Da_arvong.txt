@@ -1,0 +1,42 @@
+
+state={
+	id=241
+	name="STATE_241"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 4
+ #rubber = 3
+ #steel = 5
+ oil = 5
+ #chromium = 2
+ #aluminium = 4
+ }
+ history = {
+ owner = AVA
+ add_core_of = AVA
+ victory_points = {
+ 4301 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   dockyard = 0
+   4301 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		177 189 220 883 1186 1490 1657 1850 1890 2266 2344 2673 2762 2850 3207 3468 3551 3823 4123 4301 4592 4678 5640 5706 6223 6283 6289 6320 6336 6361 6406 6414 6423 6454 6463 6471 6473 6483 6491 6503 6524 6555 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1193182
+        state_category = town
+}

@@ -1,0 +1,95 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_settings_bg"
+		texturefile = "gfx//interface//settings//settings_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_settings_popup_bg"
+		texturefile = "gfx//interface//settings//settings_popup_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_game"
+		texturefile = "gfx//interface//settings//icon_game.dds"
+	}
+	spriteType = {
+		name = "GFX_button_game(109x31)"
+		texturefile = "gfx//interface//settings//button_game(109x31).dds"
+	}
+	spriteType = {
+		name = "GFX_icon_video"
+		texturefile = "gfx//interface//settings//icon_video.dds"
+	}
+	spriteType = {
+		name = "GFX_button_sound(109x31)"
+		texturefile = "gfx//interface//settings//button_sound(109x31).dds"
+	}
+	spriteType = {
+		name = "GFX_icon_sound"
+		texturefile = "gfx//interface//settings//icon_sound.dds"
+	}
+	spriteType = {
+		name = "GFX_button_video(109x31)"
+		texturefile = "gfx//interface//settings//button_video(109x31).dds"
+	}
+	spriteType = {
+		name = "GFX_icon_comands"
+		texturefile = "gfx//interface//settings//icon_comands.dds"
+	}
+	spriteType = {
+		name = "GFX_button_comands(109x31)"
+		texturefile = "gfx//interface//settings//button_comands(109x31).dds"
+	}
+	spriteType = {
+		name = "yearslider_leftbutton"
+		texturefile = "gfx//interface//settings//scrollbar_leftbutton.tga"
+		noOfFrames = 4
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "yearslider_rightbutton"
+		texturefile = "gfx//interface//settings//scrollbar_rightbutton.tga"
+		noOfFrames = 4
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "yearslider_slider"
+		texturefile = "gfx//interface//settings//scrollbar_slider.tga"
+		noOfFrames = 4
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "yearslider_slider2"
+		texturefile = "gfx//interface//settings//scrollbar_slider_2.tga"
+		noOfFrames = 4
+	}
+	
+	corneredTileSpriteType = {
+		name = "yearslider_background"
+		size= {x =320 y = 16 }
+		texturefile = "gfx//interface//settings//scrollbar_sliderbackground.tga"
+		borderSize = { x=4 y=4 }
+	}
+
+	spriteType = {
+		name = "GFX_back_button(123x34)"
+		texturefile = "gfx//interface//settings//back_button(123x34).dds"
+	}
+
+	spriteType = {
+		name = "GFX_apply_button(123x34)"
+		texturefile = "gfx//interface//settings//apply_button(123x34).dds"
+	}
+	
+	spriteType = {
+		name = "GFX_background_option_in_settings"
+		texturefile = "gfx//interface//settings//background_option_in_settings.dds"
+	}	
+	spriteType = {
+		name = "GFX_button_radio(261x34)"
+		texturefile = "gfx//interface//settings//button_radio(261x34).dds"
+	}	
+}

@@ -1,0 +1,220 @@
+division_template = {
+ name = "Dauntless Vanguard"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+division_template = {
+ name = "Demacian Cavalry"
+
+ regiments = {
+  cavalry = { x = 0 y = 0 }
+  cavalry = { x = 0 y = 1 }
+  cavalry = { x = 0 y = 2 }
+  cavalry = { x = 1 y = 0 }
+  cavalry = { x = 1 y = 1 }
+  cavalry = { x = 1 y = 2 }
+  cavalry = { x = 2 y = 0 }
+  cavalry = { x = 2 y = 1 }
+  cavalry = { x = 2 y = 2 }
+
+ }
+}
+division_template = {
+ name = "Elites"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  artillery_brigade = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  artillery_brigade = { x = 1 y = 3 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+  infantry = { x = 2 y = 3 }
+
+ }
+support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+ division = {
+  name = "City Guard"
+  location = 2875
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 2875
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 2310
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 7632
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 143
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 7600
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 5426
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 5590
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 3399
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 3366
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 1182
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 3074
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Cavalry"
+  location = 561
+  division_template = "Demacian Cavalry"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Elite Guard"
+  location = 5182
+  division_template = "Elites"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Elite Guard"
+  location = 7591
+  division_template = "Elites"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Elite Guard"
+  location = 4690
+  division_template = "Elites"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Elite Guard"
+  location = 7522
+  division_template = "Elites"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Elite Guard"
+  location = 1237
+  division_template = "Elites"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Elite Guard"
+  location = 1338
+  division_template = "Elites"
+  start_experience_factor = 0.3
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Demacian Warrior"
+  location = 2804
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Demacian Warrior"
+  location = 134
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Demacian Warrior"
+  location = 7708
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Demacian Warrior"
+  location = 1531
+  division_template = "Dauntless Vanguard"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+}

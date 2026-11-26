@@ -1,0 +1,138 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_portrait_SHU_Renekton"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Renekton.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Renekton_army"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Renekton_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Renekton_navy"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Renekton_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Renekton_small"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Renekton_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Renekton_army_small"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Renekton_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Nasus"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Nasus.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Nasus_small"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Nasus_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Nasus_army_small"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Nasus_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_Nasus_army"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_Nasus_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_caitlyn_kiramman"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_caitlyn_kiramman.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_caitlyn_kiramman_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_caitlyn_kiramman_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_heimerdinger_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_heimerdinger_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_caitlyn_kiramman_army_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_caitlyn_kiramman_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_xerath_small"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_xerath_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_xerath"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_xerath.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SHU_xerath_army_small"
+		texturefile = "gfx/leaders/SHU/portrait_SHU_xerath_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_cassandra_kiramman_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_cassandra_kiramman_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_cassandra_kiramman"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_cassandra_kiramman.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_hoskel_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_hoskel_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_hoskel"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_hoskel.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_jayce_talis_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_jayce_talis_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_jayce_talis"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_jayce_talis.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_loris_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_loris_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_loris"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_loris.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_mel_medarda_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_mel_medarda_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_mel_medarda"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_mel_medarda.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_salo_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_salo_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_salo"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_salo.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_shoola_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_shoola_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_shoola"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_shoola.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_viktor_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_viktor_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_viktor"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_viktor.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_bolbok_small"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_bolbok_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_PLT_bolbok"
+		texturefile = "gfx/leaders/PLT/portrait_PLT_bolbok.dds"
+	}
+}

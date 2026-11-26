@@ -1,0 +1,562 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					DEM = { is_ai = no }
+				}
+				DEM = {
+					set_variable = { mageseeker_influence = 50 }
+					country_event = {
+						id = demacia.1
+						days = 1
+					}
+					country_event = {
+						id = demacia.2
+						days = 10
+					}
+					set_country_flag = {
+						flag = noEvents
+						days = 150
+					}
+					set_variable = { eventNumber = 0 }
+					
+				}
+					
+			}
+			
+			#news_event = { id = rnews.1 days = 10}
+		}
+	}
+	on_peace = {
+		effect = {
+			if = {
+            limit = {
+                tag = DEM
+				MRE = {
+					is_puppet = yes
+				}
+            }
+            annex_country = {
+				target = MRE
+				transfer_troops = no
+			}
+        }
+		}
+	}
+	on_monthly_DEM = {
+		effect = {
+		random = {
+		chance = 8	
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_country_flag = demons }
+						NOT = { has_country_flag = demonsGone }
+					}
+				}
+				DEM = {
+					set_country_flag = demons
+					
+							country_event = {
+							id = demacia.7
+							days = 45
+							}
+				}
+					
+			}
+		}
+		random = {
+		chance = 5	
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_character = poppy }
+					}
+				}
+				DEM = {
+					
+							country_event = {
+							id = demacia.30
+							days = 2
+							}
+				}
+					
+			}
+		}
+		}
+	}
+	on_weekly_DEM = {
+		effect = {
+		
+			#Random Rebellion Events
+			
+			if = {
+				limit = {
+					DEM = {
+						has_country_flag = preWarFlag
+						has_idea = low_mageseeker_inf
+					}
+				}
+				random_list = {
+						76 = {
+						}
+						9 = {
+							#Increase Resist
+							country_event = {
+								id = demacia.26
+								days = 0
+							}
+						}
+						9 = {
+							#Increase Compliance
+							country_event = {
+								id = demacia.27
+								days = 0
+							}
+						}
+						3 = {
+							#Decrease Resist
+							country_event = {
+								id = demacia.28
+								days = 0
+							}
+						}
+						3 = {
+							#Decrease Compliance
+							country_event = {
+								id = demacia.29
+								days = 0
+							}
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						has_country_flag = preWarFlag
+						has_idea = med_mageseeker_inf
+					}
+				}
+				random_list = {
+						76 = {
+						}
+						6 = {
+							#Increase Resist
+							country_event = {
+								id = demacia.26
+								days = 0
+							}
+						}
+						6 = {
+							#Increase Compliance
+							country_event = {
+								id = demacia.27
+								days = 0
+							}
+						}
+						6 = {
+							#Decrease Resist
+							country_event = {
+								id = demacia.28
+								days = 0
+							}
+						}
+						6 = {
+							#Decrease Compliance
+							country_event = {
+								id = demacia.29
+								days = 0
+							}
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						has_country_flag = preWarFlag
+						has_idea = high_mageseeker_inf
+					}
+				}
+				random_list = {
+						76 = {
+						}
+						3 = {
+							#Increase Resist
+							country_event = {
+								id = demacia.26
+								days = 0
+							}
+						}
+						3 = {
+							#Increase Compliance
+							country_event = {
+								id = demacia.27
+								days = 0
+							}
+						}
+						9 = {
+							#Decrease Resist
+							country_event = {
+								id = demacia.28
+								days = 0
+							}
+						}
+						9 = {
+							#Decrease Compliance
+							country_event = {
+								id = demacia.29
+								days = 0
+							}
+						}
+				}
+			}
+			#End of Random Rebellion Events
+		
+			if = {
+				limit = {
+					DEM = {
+						has_country_flag = found_demons
+					}
+				}
+				random_list = {
+						65 = {
+						}
+						13 = {
+							country_event = {
+							id = demacia.10
+							days = 1
+							}
+						}
+						10 = {
+							country_event = {
+							id = demacia.11
+							days = 1
+							}
+						}
+						8 = {
+							country_event = {
+							id = demacia.12
+							days = 1
+							}
+						}
+						4 = {
+							country_event = {
+							id = demacia.13
+							days = 1
+							}
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						hesbeth = { is_political_advisor = yes }
+					}
+				}
+				DEM = {
+					add_to_variable = { mageseeker_influence = 1 }
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						has_idea = virtuoso
+					}
+				}
+				DEM = {
+					add_to_variable = { mageseeker_influence = -1 }
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						has_idea = mageseeker_eldred
+					}
+				}
+				DEM = {
+					add_to_variable = { mageseeker_influence = 1 }
+				}
+			}
+		}
+	}
+	on_daily_DEM = {
+		effect = {
+
+			if = {
+				limit = {
+					DEM = {
+						check_variable = { mageseeker_influence < 0 }
+					}
+				}
+				DEM = {
+					set_variable = { mageseeker_influence = 0 }
+				}
+			}
+			
+			if = {
+				limit = {
+					DEM = {
+						check_variable = { mageseeker_influence > 100 }
+					}
+				}
+				DEM = {
+					set_variable = { mageseeker_influence = 100 }
+				}
+			}
+			
+			if = {
+				limit = {
+					DEM = {
+						has_country_flag = MageInfStab
+					}
+				}
+				DEM = {
+					set_stability = mageseeker_influence
+				}
+			}
+			
+			#Mage Rebellion Events
+		
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_country_flag = noEvents }
+						core_resistance = {
+							occupied_country_tag = MRE
+							value > 29
+						}
+						check_variable = { eventNumber = 0 }
+					}
+				}
+				random_list = {
+						99 = {
+						}
+						1 = {
+							set_country_flag = eventFired
+							country_event = {
+								id = demacia.14
+								days = 0
+							}
+							add_to_variable = {
+								var = eventNumber
+								value = 1
+							}
+							set_country_flag = {
+								flag = noEvents
+								days = 50
+							}	
+							unlock_national_focus = DEM_mage_hunts
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_country_flag = noEvents }
+						core_resistance = {
+							occupied_country_tag = MRE
+							value > 38
+						}
+						check_variable = { eventNumber = 1 }
+					}
+				}
+				random_list = {
+						98 = {
+						}
+						2 = {
+							set_country_flag = eventFired
+							country_event = {
+								id = demacia.16
+								days = 0
+							}
+							add_to_variable = {
+								var = eventNumber
+								value = 1
+							}
+							set_country_flag = {
+								flag = noEvents
+								days = 50
+							}
+							unlock_national_focus = DEM_shadows_emerge
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_country_flag = noEvents }
+						core_resistance = {
+							occupied_country_tag = MRE
+							value > 47
+						}
+						check_variable = { eventNumber = 2 }
+					}
+				}
+				random_list = {
+						98 = {
+						}
+						2 = {
+							set_country_flag = eventFired
+							country_event = {
+								id = demacia.17
+								days = 0
+							}
+							add_to_variable = {
+								var = eventNumber
+								value = 1
+							}
+							set_country_flag = {
+								flag = noEvents
+								days = 50
+							}
+							unlock_national_focus = DEM_crowded_dungeons
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_country_flag = noEvents }
+						core_resistance = {
+							occupied_country_tag = MRE
+							value > 56
+						}
+						check_variable = { eventNumber = 3 }
+					}
+				}
+				random_list = {
+						98 = {
+						}
+						2 = {
+							set_country_flag = eventFired
+							country_event = {
+								id = demacia.19
+								days = 0
+							}
+							add_to_variable = {
+								var = eventNumber
+								value = 1
+							}
+							set_country_flag = {
+								flag = noEvents
+								days = 50
+							}
+							unlock_national_focus = DEM_ideas_of_freedom
+						}
+				}
+			}
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_country_flag = noEvents }
+						core_resistance = {
+							occupied_country_tag = MRE
+							value > 65
+						}
+						check_variable = { eventNumber = 4 }
+					}
+				}
+				random_list = {
+						98 = {
+						}
+						2 = {
+							country_event = {
+								id = demacia.20
+								days = 0
+							}
+							add_to_variable = {
+								var = eventNumber
+								value = 1
+							}
+							set_country_flag = {
+								flag = noEvents
+								days = 50
+							}
+							unlock_national_focus = DEM_the_question_of_sylas
+						}
+				}
+			}
+			#End of Mage Rebellion Events
+			
+			if = {
+				limit = {
+					DEM = {
+						is_ai = yes
+						surrender_progress > 0.59
+						NOT = { has_country_flag = aiHelp }
+					}
+				}
+				DEM = {
+				add_war_support = 0.70
+					set_country_flag = aiHelp
+					load_oob = "DEM_Reinforce"
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 20
+				}	
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 200
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 500
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 10000
+				}
+				add_manpower = 100000
+				}
+			}
+			
+			#End of ai bonus events
+			
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_idea = low_mageseeker_inf }
+						check_variable = { mageseeker_influence < 34 }
+					}
+				}
+				DEM = {
+					remove_ideas = high_mageseeker_inf
+					remove_ideas = med_mageseeker_inf
+					add_ideas = low_mageseeker_inf
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_idea = med_mageseeker_inf }
+						check_variable = { mageseeker_influence > 33 }
+						check_variable = { mageseeker_influence < 67 }
+					}
+				}
+				DEM = {
+					remove_ideas = high_mageseeker_inf
+					add_ideas = med_mageseeker_inf
+					remove_ideas = low_mageseeker_inf
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					DEM = {
+						NOT = { has_idea = high_mageseeker_inf }
+						check_variable = { mageseeker_influence > 66 }
+					}
+				}
+				DEM = {
+					add_ideas = high_mageseeker_inf
+					remove_ideas = med_mageseeker_inf
+					remove_ideas = low_mageseeker_inf
+				}
+			}
+		}
+	}
+}

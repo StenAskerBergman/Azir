@@ -1,0 +1,92 @@
+#background sprite is in frontendmainviewbg.gfx
+
+spriteTypes = {
+	textSpriteType = {
+		name = "GFX_main_lobby_button"
+		textureFile = "gfx/interface/frontendmenu/main_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+    ### MAIN MENU PANEL ###
+
+	spriteType = {
+		name = "GFX_game_logo"
+		texturefile = "gfx/interface/frontendmenu/logo_game.dds"
+	}
+    spriteType = {
+		name = "GFX_menu_bg"
+		texturefile = "gfx/interface/frontendmenu/main_menu.dds"
+	}
+	   spriteType = {
+		name = "GFX_backgroound_main_menu"
+		texturefile = "gfx/interface/frontendmenu/backgroound_main_menu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_paradox_logo"
+		texturefile = "gfx/interface/frontendmenu/paradox_logo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_single_player_button"
+		texturefile = "gfx/interface/frontendmenu/single_player_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_multiplayer_button"
+		texturefile = "gfx/interface/frontendmenu/multiplayer_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_settings_button"
+		texturefile = "gfx/interface/frontendmenu/settings_button.dds"
+	}
+	spriteType = {
+		name = "GFX_credits_button"
+		texturefile = "gfx/interface/frontendmenu/credits_button.dds"
+	}
+	spriteType = {
+		name = "GFX_exit_button"
+		texturefile = "gfx/interface/frontendmenu/exit_button.dds"
+	}
+	### SINGLE PLAYER MENU ###
+
+	spriteType = {
+		name = "GFX_continue_button"
+		texturefile = "gfx/interface/frontendmenu/continue_button.dds"
+	}
+	spriteType = {
+		name = "GFX_new_game_button"
+		texturefile = "gfx/interface/frontendmenu/new_game_button.dds"
+	}
+	spriteType = {
+		name = "GFX_load_button"
+		texturefile = "gfx/interface/frontendmenu/load_button.dds"
+	}
+	spriteType = {
+		name = "GFX_tutorial_button"
+		texturefile = "gfx/interface/frontendmenu/tutorial_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_back_button_main_menu"
+		texturefile = "gfx/interface/frontendmenu/back_button_main_menu.dds"
+	}
+
+    ### MAIN MENU SOCIAL (bottom) ###
+
+    spriteType = {
+		name = "GFX_logo_youtube"
+		texturefile = "gfx/interface/frontendmenu/logo_youtube.dds"
+	}
+
+	spriteType = {
+		name = "GFX_logo_discord"
+		texturefile = "gfx/interface/frontendmenu/logo_discord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_logo_instagram"
+		texturefile = "gfx/interface/frontendmenu/logo_insta.dds"
+	}
+}

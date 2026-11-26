@@ -1,0 +1,11 @@
+﻿l_english:
+ PLT_council_0:0 "Council in Open Opposition"
+ PLT_council_0_desc:0 "None of the seven Council seats supports the government. Political authority and public confidence suffer."
+ PLT_council_1:0 "A Divided Council"
+ PLT_council_1_desc:0 "Only one or two Council seats support the government, weakening its ability to govern."
+ PLT_council_3:0 "A Split Council"
+ PLT_council_3_desc:0 "Three or four of the seven Council seats support the government. The Council remains divided."
+ PLT_council_5:0 "Council Majority"
+ PLT_council_5_desc:0 "Five or six Council seats support the government, helping it govern with greater confidence."
+ PLT_council_7:0 "United Council"
+ PLT_council_7_desc:0 "All seven Council seats support the government, strengthening political authority and public confidence."

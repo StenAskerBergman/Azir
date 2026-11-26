@@ -1,0 +1,363 @@
+division_template = {
+ name = "Trifarian Legion"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Trifarian Warrior"
+  location = 7220
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 4851
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 6932
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 7019
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3218
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 6974
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2848
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1269
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8491
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 4390
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 582
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 5393
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1495
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2846
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8501
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8121
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 4465
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8128
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2139
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8090
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2617
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 5273
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8060
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 4454
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1655
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3370
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2123
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3474
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 4187
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 8114
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 7894
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2340
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3756
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1916
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3351
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 617
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3565
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 7318
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 7337
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3195
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3809
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1797
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 64
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1956
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 3484
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 6667
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 1175
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 2273
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Trifarian Warrior"
+  location = 6242
+  division_template = "Trifarian Legion"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+}

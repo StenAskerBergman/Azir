@@ -1,0 +1,23 @@
+equipments = {
+	SHU_spear_equipment = {
+		year = 972
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+	}
+	SHU_spear_equipment_1 = {
+		year = 972
+		archetype = SHU_spear_equipment
+		is_buildable = yes
+		priority = 1
+		visual_level = 0
+		soft_attack = 2
+		hard_attack = 0
+		defense = 1
+		breakthrough = 1
+		reliability = 0.85
+		build_cost_ic = 0.5
+	}
+}

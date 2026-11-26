@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "citadel_mesh"
+		file = "gfx/models/citadel/citadel.mesh"
+		scale = 8.0
+	}
+}

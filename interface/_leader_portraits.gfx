@@ -1,0 +1,151 @@
+spriteTypes = {
+
+	#Noxus
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Darius"
+        texturefile = "gfx/leaders/Noxus/portrait_NOX_darius.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Farron"
+        texturefile = "gfx/leaders/Noxus/portrait_NOX_farron.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Kalrix"
+        texturefile = "gfx/leaders/Noxus/portrait_NOX_kalrix.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Kled"
+        texturefile = "gfx/leaders/Noxus/portrait_NOX_kled.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Swain"
+        texturefile = "gfx/leaders/Noxus/portrait_NOX_swain.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Kato"
+        texturefile = "gfx/leaders/Noxus/portrait_NOX_kato.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_portrait_NOX_Swainn"
+        texturefile = "gfx/leaders/Noxus/swain.dds"
+    }
+
+	#Demacia/MageRebellion and Ksante?
+
+	spriteType = {
+        name = "GFX_portrait_NAZ_Ksante"
+        texturefile = "gfx/leaders/Nazumah/ksante.dds"
+    }
+	spriteType = {
+		name = "GFX_portrait_DEM_jarvin4"
+		texturefile = "gfx/leaders/Demacia/jarvin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_luxx"
+		texturefile = "gfx/leaders/Demacia/lux.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_eldred"
+		texturefile = "gfx/leaders/Demacia/eldred.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_poppy"
+		texturefile = "gfx/leaders/Demacia/portrait_DEM_poppy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MRE_leilaneleader"
+		texturefile = "gfx/leaders/Mage Rebellion/leilaneleader.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_jarvin3"
+		texturefile = "gfx/leaders/Demacia/jarvin3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_cithria"
+		texturefile = "gfx/leaders/Demacia/portrait_DEM_cithria.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MRE_sylas"
+		texturefile = "gfx/leaders/Mage Rebellion/sylas.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MRE_sirius"
+		texturefile = "gfx/leaders/Mage Rebellion/portrait_MRE_siriusrowill.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_Garen"
+		texturefile = "gfx/leaders/Demacia/portrait_DEM_Garen.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_Quinn"
+		texturefile = "gfx/leaders/Demacia/portrait_DEM_Quinn.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DEM_Anden"
+		texturefile = "gfx/leaders/Demacia/portrait_DEM_AndenYessani.dds"
+	}
+
+#Shurima
+	frameAnimatedSpriteType = {
+	name = "GFX_animated_SHU_Azir"
+	texturefile = "gfx/leaders/Shurima/animated_azir.dds"
+	noOfFrames = 30
+	animation_rate_fps = 8
+	looping = yes
+	play_on_show = yes
+}
+#Ixtal
+	frameAnimatedSpriteType = {
+	name = "GFX_animated_IXT_qiayana"
+	texturefile = "gfx/leaders/Ixtal/animated_qiayana.dds"
+	noOfFrames = 75
+	animation_rate_fps = 8
+	looping = yes
+	play_on_show = yes
+}
+
+#Targon
+	frameAnimatedSpriteType = {
+	name = "GFX_animated_TAR_animated_leona"
+	texturefile = "gfx/leaders/Targon/animated_leona.dds"
+	noOfFrames = 96
+	animation_rate_fps = 20
+	looping = yes
+	play_on_show = yes
+}
+#Void
+frameAnimatedSpriteType = {
+	name = "GFX_animated_VOI_animated_bel"
+	texturefile = "gfx/leaders/Void/animated_bel.dds"
+	noOfFrames = 24
+	animation_rate_fps = 8
+	looping = yes
+	play_on_show = yes
+}
+
+#Noxus
+frameAnimatedSpriteType = {
+	name = "GFX_animated_NOX_animated_trifarix"
+	texturefile = "gfx/leaders/Noxus/animated_trifarix.dds"
+	noOfFrames = 60
+	animation_rate_fps = 8
+	looping = yes
+	play_on_show = yes
+}
+
+#Island Shadows
+frameAnimatedSpriteType = {
+    name = "GFX_animated_Shadow_Isles_viego"
+    texturefile = "gfx/leaders/Shadow Isles/animated_viego.dds"
+    noOfFrames = 76
+    animation_rate_fps = 12
+    looping = yes
+    play_on_show = yes
+}

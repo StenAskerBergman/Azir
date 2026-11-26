@@ -1,0 +1,55 @@
+division_template = {
+ name = "Palclyff Guard"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Fortress Guard"
+  location = 2801
+  division_template = "Palclyff Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Fortress Guard"
+  location = 3976
+  division_template = "Palclyff Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Fortress Guard"
+  location = 2901
+  division_template = "Palclyff Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Fortress Guard"
+  location = 8004
+  division_template = "Palclyff Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Fortress Guard"
+  location = 5536
+  division_template = "Palclyff Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+}

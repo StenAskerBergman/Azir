@@ -1,0 +1,1461 @@
+ideas = {
+
+	# ======================================================
+	# LEI DA MAGIA (slot industry_law)
+	# ======================================================
+	industry_law = {
+		law = yes
+		use_list_view = yes
+
+		magic_law_regulated = {
+			picture = civilian_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 100
+			removal_cost = -1
+			default = yes
+
+			modifier = {
+				research_speed_factor = 0.03
+				stability_factor = 0.03
+			}
+		}
+
+		magic_law_forbidden = {
+			picture = closed_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = royalist
+					has_government = theocracy
+					has_government = chiefdom
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.08
+				army_morale_factor = 0.05
+				army_defence_factor = 0.03
+				research_speed_factor = -0.13
+			}
+		}
+
+		magic_law_free = {
+			picture = free_trade
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = mages
+					has_government = oligarchy
+				}
+			}
+
+			modifier = {
+				research_speed_factor = 0.15
+				production_factory_max_efficiency_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.15
+				stability_factor = -0.08
+				war_support_factor = -0.04
+			}
+		}
+
+		magic_law_dread_arts = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = desolation
+					has_government = absolutists
+				}
+			}
+
+			modifier = {
+				army_attack_factor = 0.08
+				army_morale_factor = 0.12
+				non_core_manpower = 0.39
+				stability_factor = -0.1
+				research_speed_factor = -0.06
+			}
+		}
+
+		magic_law_divine_light = {
+			picture = partial_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = theocracy
+			}
+
+			modifier = {
+				stability_factor = 0.07
+				recover_org_factor = 0.13
+				army_morale_factor = 0.09
+				political_power_gain = 0.2
+				research_speed_factor = -0.11
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		magic_law_arcane_commerce = {
+			picture = free_trade
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = oligarchy
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.11
+				production_speed_buildings_factor = 0.19
+				consumer_goods_factor = -0.08
+				conversion_cost_civ_to_mil_factor = -0.14
+				stability_factor = -0.1
+				war_support_factor = -0.07
+				army_morale_factor = -0.07
+			}
+		}
+
+		magic_law_imperial_arcana = {
+			picture = tot_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = absolutists
+			}
+
+			modifier = {
+				political_power_factor = 0.09
+				army_defence_factor = 0.09
+				command_power_gain_mult = 0.14
+				stability_factor = 0.05
+				research_speed_factor = -0.11
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.11
+			}
+		}
+
+		magic_law_primal_rites = {
+			picture = export_focus
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = chiefdom
+			}
+
+			modifier = {
+				supply_consumption_factor = -0.15
+				attrition = -0.15
+				dig_in_speed_factor = 0.2
+				army_speed_factor = 0.1
+				industrial_capacity_factory = -0.07
+				research_speed_factor = -0.08
+			}
+		}
+
+		magic_law_wasting_blight = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = desolation
+			}
+
+			modifier = {
+				army_defence_factor = 0.1
+				supply_consumption_factor = -0.2
+				army_morale_factor = 0.12
+				attrition = -0.1
+				stability_factor = -0.08
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = 0.03
+				research_speed_factor = -0.04
+			}
+		}
+
+		magic_law_arcane_mastery = {
+			picture = partial_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = mages
+			}
+
+			modifier = {
+				research_speed_factor = 0.2
+				land_equipment_upgrade_xp_cost = -0.3
+				army_org_factor = 0.07
+				stability_factor = -0.06
+				conscription_factor = -0.1
+			}
+		}
+
+		magic_law_royal_wardens = {
+			picture = closed_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = royalist
+			}
+
+			modifier = {
+				army_defence_factor = 0.07
+				army_org_factor = 0.07
+				stability_factor = 0.05
+				war_support_factor = 0.03
+				research_speed_factor = -0.08
+				conscription_factor = -0.06
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		# ---------- LEIS ESPECIFICAS DE PAIS ----------
+
+		dem_magic_petricite = {
+			picture = closed_economy
+			allowed = { original_tag = DEM }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.1
+				stability_factor = 0.08
+				army_org_factor = 0.07
+				research_speed_factor = -0.11
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		shi_magic_black_mist = {
+			picture = war_economy
+			allowed = { original_tag = SHI }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				attrition = -0.15
+				supply_consumption_factor = -0.2
+				army_defence_factor = 0.09
+				recover_org_factor = 0.11
+				stability_factor = -0.08
+				research_speed_factor = -0.06
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		blg_magic_contraband = {
+			picture = free_trade
+			allowed = { original_tag = BLG }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.18
+				conversion_cost_civ_to_mil_factor = -0.12
+				stability_factor = -0.1
+				research_speed_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		ixt_magic_elemental = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = IXT }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.14
+				supply_consumption_factor = -0.1
+				army_defence_factor = 0.06
+				dig_in_speed_factor = 0.14
+				industrial_capacity_factory = -0.06
+				conscription_factor = -0.1
+			}
+		}
+
+		zau_magic_shimmer = {
+			picture = war_economy
+			allowed = { original_tag = ZAU }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.18
+				recover_org_factor = 0.15
+				stability_factor = -0.05
+				conscription_factor = -0.06
+				research_speed_factor = -0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		plt_magic_hextech = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = PLT }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				land_equipment_upgrade_xp_cost = -0.24
+				stability_factor = -0.06
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.09
+			}
+		}
+
+		ion_magic_spirit = {
+			picture = export_focus
+			allowed = { original_tag = ION }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				recover_org_factor = 0.12
+				supply_consumption_factor = -0.1
+				research_speed_factor = 0.08
+				industrial_capacity_factory = -0.04
+				conscription_factor = -0.07
+				war_support_factor = -0.04
+			}
+		}
+
+		voi_magic_corruption = {
+			picture = war_economy
+			allowed = { original_tag = VOI }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				recover_org_factor = 0.15
+				attrition = -0.15
+				army_morale_factor = 0.16
+				research_speed_factor = -0.09
+				stability_factor = -0.09
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		shu_magic_sun_disc = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = SHU }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.08
+				army_defence_factor = 0.06
+				stability_factor = 0.05
+				army_morale_factor = 0.06
+				industrial_capacity_factory = -0.03
+				conscription_factor = -0.06
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		tar_magic_celestial = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = TAR }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.08
+				army_morale_factor = 0.1
+				research_speed_factor = 0.08
+				stability_factor = 0.04
+				industrial_capacity_factory = -0.03
+				conscription_factor = -0.08
+				consumer_goods_factor = 0.03
+				war_support_factor = -0.02
+			}
+		}
+
+		nox_magic_crimson = {
+			picture = war_economy
+			allowed = { original_tag = NOX }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.13
+				non_core_manpower = 0.4
+				recover_org_factor = 0.11
+				stability_factor = -0.09
+				research_speed_factor = -0.07
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		fro_magic_frostwards = {
+			picture = closed_economy
+			allowed = { original_tag = FRO }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.08
+				attrition = -0.14
+				dig_in_speed_factor = 0.14
+				supply_consumption_factor = -0.1
+				industrial_capacity_factory = -0.05
+				research_speed_factor = -0.08
+				army_speed_factor = -0.05
+			}
+		}
+
+		ava_magic_phoenix = {
+			picture = export_focus
+			allowed = { original_tag = AVA }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				recover_org_factor = 0.15
+				army_morale_factor = 0.11
+				stability_factor = 0.06
+				research_speed_factor = 0.06
+				industrial_capacity_factory = -0.04
+				conscription_factor = -0.07
+				war_support_factor = -0.03
+			}
+		}
+
+		win_magic_rime = {
+			picture = war_economy
+			allowed = { original_tag = WIN }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.12
+				dig_in_speed_factor = 0.14
+				attrition = -0.12
+				industrial_capacity_factory = -0.04
+				research_speed_factor = -0.07
+				stability_factor = -0.03
+				consumer_goods_factor = 0.04
+			}
+		}
+
+	}
+
+	# ======================================================
+	# DOUTRINA DE PODER (slot security_law)
+	# ======================================================
+	security_law = {
+		law = yes
+		use_list_view = yes
+
+		power_law_custom = {
+			picture = limited_exports
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 100
+			removal_cost = -1
+			default = yes
+
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.03
+			}
+		}
+
+		power_law_lineage = {
+			picture = export_focus
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = royalist
+					has_government = absolutists
+					has_government = theocracy
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.07
+				political_power_factor = 0.07
+				command_power_gain_mult = 0.09
+				conscription_factor = -0.13
+				research_speed_factor = -0.04
+			}
+		}
+
+		power_law_might = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = oligarchy
+					has_government = chiefdom
+					has_government = desolation
+				}
+			}
+
+			modifier = {
+				army_attack_factor = 0.05
+				training_time_factor = -0.12
+				conscription_factor = 0.14
+				justify_war_goal_time = -0.12
+				stability_factor = -0.07
+				research_speed_factor = -0.04
+			}
+		}
+
+		power_law_merchant = {
+			picture = free_trade
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = oligarchy
+					has_government = mages
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.13
+				conversion_cost_civ_to_mil_factor = -0.13
+				consumer_goods_factor = -0.06
+				war_support_factor = -0.1
+				conscription_factor = -0.21
+			}
+		}
+
+		power_law_hierarchy = {
+			picture = closed_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = theocracy
+			}
+
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.5
+				war_support_factor = 0.07
+				conscription_factor = -0.11
+				industrial_capacity_factory = -0.06
+				research_speed_factor = -0.09
+			}
+		}
+
+		power_law_cartel = {
+			picture = free_trade
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = oligarchy
+			}
+
+			modifier = {
+				political_power_factor = 0.2
+				industrial_capacity_factory = 0.13
+				production_factory_efficiency_gain_factor = 0.24
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				army_morale_factor = -0.07
+			}
+		}
+
+		power_law_decree = {
+			picture = tot_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = absolutists
+			}
+
+			modifier = {
+				political_power_factor = 0.17
+				stability_factor = 0.08
+				command_power_gain_mult = 0.13
+				conscription_factor = 0.08
+				research_speed_factor = -0.12
+				industrial_capacity_factory = -0.06
+				consumer_goods_factor = 0.06
+			}
+		}
+
+		power_law_moot = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = chiefdom
+			}
+
+			modifier = {
+				conscription_factor = 0.29
+				army_speed_factor = 0.1
+				dig_in_speed_factor = 0.17
+				army_morale_factor = 0.12
+				industrial_capacity_factory = -0.08
+				research_speed_factor = -0.08
+				political_power_factor = -0.08
+			}
+		}
+
+		power_law_shadow_dominion = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = desolation
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				surrender_limit = 0.15
+				non_core_manpower = 0.32
+				army_morale_factor = 0.11
+				stability_factor = -0.1
+				political_power_factor = -0.07
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		power_law_conclave = {
+			picture = partial_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = mages
+			}
+
+			modifier = {
+				research_speed_factor = 0.17
+				political_power_factor = 0.11
+				command_power_gain_mult = 0.17
+				stability_factor = -0.05
+				conscription_factor = -0.1
+				war_support_factor = -0.03
+			}
+		}
+
+		power_law_crown_court = {
+			picture = export_focus
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = royalist
+			}
+
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.09
+				army_org_factor = 0.07
+				political_power_factor = 0.05
+				consumer_goods_factor = 0.08
+				industrial_capacity_factory = -0.05
+				research_speed_factor = -0.05
+			}
+		}
+
+		# ---------- LEIS ESPECIFICAS DE PAIS ----------
+
+		dem_power_vanguard = {
+			picture = export_focus
+			allowed = { original_tag = DEM }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.09
+				army_defence_factor = 0.07
+				training_time_factor = -0.18
+				war_support_factor = 0.05
+				conscription_factor = -0.16
+				consumer_goods_factor = 0.06
+			}
+		}
+
+		shi_power_harrowing = {
+			picture = war_economy
+			allowed = { original_tag = SHI }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				surrender_limit = 0.15
+				army_morale_factor = 0.13
+				non_core_manpower = 0.44
+				stability_factor = -0.09
+				political_power_factor = -0.09
+				industrial_capacity_factory = -0.04
+			}
+		}
+
+		blg_power_pirate_code = {
+			picture = export_focus
+			allowed = { original_tag = BLG }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.18
+				army_morale_factor = 0.1
+				conscription_factor = 0.18
+				justify_war_goal_time = -0.24
+				political_power_factor = -0.08
+				stability_factor = -0.07
+				army_org_factor = -0.04
+			}
+		}
+
+		ixt_power_isolation = {
+			picture = closed_economy
+			allowed = { original_tag = IXT }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.09
+				dig_in_speed_factor = 0.18
+				attrition = -0.09
+				justify_war_goal_time = 0.14
+				war_support_factor = -0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+
+		zau_power_syndicates = {
+			picture = free_trade
+			allowed = { original_tag = ZAU }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.09
+				production_factory_efficiency_gain_factor = 0.24
+				political_power_factor = 0.09
+				stability_factor = -0.05
+				war_support_factor = -0.04
+				army_org_factor = -0.03
+			}
+		}
+
+		plt_power_council = {
+			picture = free_trade
+			allowed = { original_tag = PLT }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.12
+				industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor = -0.14
+				production_speed_buildings_factor = 0.14
+				war_support_factor = -0.1
+				conscription_factor = -0.17
+				army_morale_factor = -0.04
+			}
+		}
+
+		ion_power_wuju = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = ION }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.1
+				army_defence_factor = 0.09
+				dig_in_speed_factor = 0.14
+				training_time_factor = -0.17
+				conscription_factor = -0.15
+				industrial_capacity_factory = -0.03
+				war_support_factor = -0.05
+			}
+		}
+
+		voi_power_hive = {
+			picture = war_economy
+			allowed = { original_tag = VOI }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.1
+				command_power_gain_mult = 0.25
+				army_defence_factor = 0.1
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.03
+				conscription_factor = -0.05
+			}
+		}
+
+		shu_power_dynasty = {
+			picture = tot_economic_mobilization
+			allowed = { original_tag = SHU }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.11
+				stability_factor = 0.06
+				command_power_gain_mult = 0.11
+				army_org_factor = 0.04
+				research_speed_factor = -0.06
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+
+		tar_power_sanctum = {
+			picture = closed_economy
+			allowed = { original_tag = TAR }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.09
+				dig_in_speed_factor = 0.18
+				attrition = -0.09
+				supply_consumption_factor = -0.09
+				industrial_capacity_factory = -0.06
+				army_speed_factor = -0.06
+				justify_war_goal_time = 0.16
+			}
+		}
+
+		nox_power_trifarix = {
+			picture = war_economy
+			allowed = { original_tag = NOX }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = -0.14
+				army_attack_factor = 0.05
+				conscription_factor = 0.14
+				command_power_gain_mult = 0.07
+				justify_war_goal_time = -0.14
+				stability_factor = -0.06
+				political_power_factor = -0.06
+			}
+		}
+
+		fro_power_vigil = {
+			picture = export_focus
+			allowed = { original_tag = FRO }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.06
+				army_org_factor = 0.08
+				army_defence_factor = 0.06
+				conscription_factor = 0.09
+				political_power_factor = -0.05
+				industrial_capacity_factory = -0.03
+				consumer_goods_factor = 0.03
+				war_support_factor = -0.03
+			}
+		}
+
+		ava_power_unity = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = AVA }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.29
+				political_power_factor = 0.15
+				army_speed_factor = 0.1
+				army_org_factor = 0.09
+				industrial_capacity_factory = -0.09
+				consumer_goods_factor = 0.06
+				research_speed_factor = -0.09
+			}
+		}
+
+		win_power_warband = {
+			picture = war_economy
+			allowed = { original_tag = WIN }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.24
+				army_attack_factor = 0.08
+				training_time_factor = -0.19
+				justify_war_goal_time = -0.19
+				stability_factor = -0.07
+				political_power_factor = -0.07
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+	}
+
+	# ======================================================
+	# FE E ESPIRITO (slot education_law)
+	# ======================================================
+	education_law = {
+		law = yes
+		use_list_view = yes
+
+		faith_law_secular = {
+			picture = partial_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 100
+			removal_cost = -1
+			default = yes
+
+			modifier = {
+				research_speed_factor = 0.06
+				stability_factor = 0.01
+			}
+		}
+
+		faith_law_state_cult = {
+			picture = tot_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = theocracy
+					has_government = absolutists
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.07
+				war_support_factor = 0.07
+				army_morale_factor = 0.04
+				research_speed_factor = -0.15
+			}
+		}
+
+		faith_law_spiritual = {
+			picture = export_focus
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_government = mages
+					has_government = chiefdom
+					has_government = theocracy
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.3
+				supply_consumption_factor = -0.06
+				attrition = -0.06
+				industrial_capacity_factory = -0.06
+				war_support_factor = -0.06
+			}
+		}
+
+		faith_law_holy_crusade = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = theocracy
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				army_attack_factor = 0.08
+				conscription_factor = 0.19
+				army_morale_factor = 0.09
+				stability_factor = -0.09
+				research_speed_factor = -0.09
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		faith_law_gospel_progress = {
+			picture = free_trade
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = oligarchy
+			}
+
+			modifier = {
+				research_speed_factor = 0.16
+				industrial_capacity_factory = 0.09
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = -0.06
+				war_support_factor = -0.06
+				conscription_factor = -0.07
+			}
+		}
+
+		faith_law_ascension = {
+			picture = tot_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = absolutists
+			}
+
+			modifier = {
+				stability_factor = 0.06
+				army_defence_factor = 0.04
+				war_support_factor = 0.06
+				political_power_gain = 0.15
+				research_speed_factor = -0.12
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		faith_law_ancestors = {
+			picture = closed_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = chiefdom
+			}
+
+			modifier = {
+				army_morale_factor = 0.18
+				army_defence_factor = 0.06
+				supply_consumption_factor = -0.12
+				conscription_factor = 0.12
+				recover_org_factor = 0.12
+				research_speed_factor = -0.14
+				industrial_capacity_factory = -0.06
+				political_power_factor = -0.06
+			}
+		}
+
+		faith_law_void = {
+			picture = war_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = desolation
+			}
+
+			modifier = {
+				weekly_manpower = 1250
+				conscription_factor = -1
+				army_morale_factor = 0.21
+				supply_consumption_factor = -0.17
+				stability_factor = -0.1
+				research_speed_factor = -0.11
+			}
+		}
+
+		faith_law_enlightenment = {
+			picture = partial_economic_mobilization
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = mages
+			}
+
+			modifier = {
+				research_speed_factor = 0.14
+				political_power_gain = 0.45
+				stability_factor = 0.05
+				war_support_factor = -0.1
+				conscription_factor = -0.15
+			}
+		}
+
+		faith_law_crown_oath = {
+			picture = closed_economy
+			allowed = { always = yes }
+			allowed_to_remove = { always = yes }
+			cost = 200
+			removal_cost = -1
+
+			available = {
+				has_government = royalist
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.08
+				army_morale_factor = 0.17
+				army_org_factor = 0.07
+				research_speed_factor = -0.15
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.08
+			}
+		}
+
+		# ---------- LEIS ESPECIFICAS DE PAIS ----------
+
+		dem_faith_justice = {
+			picture = tot_economic_mobilization
+			allowed = { original_tag = DEM }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.1
+				army_morale_factor = 0.15
+				research_speed_factor = -0.11
+				industrial_capacity_factory = -0.04
+				political_power_factor = -0.05
+			}
+		}
+
+		shi_faith_procession = {
+			picture = war_economy
+			allowed = { original_tag = SHI }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1050
+				conscription_factor = -0.12
+				army_morale_factor = 0.2
+				supply_consumption_factor = -0.13
+				stability_factor = -0.04
+				research_speed_factor = -0.05
+			}
+		}
+
+		blg_faith_tides = {
+			picture = limited_exports
+			allowed = { original_tag = BLG }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.45
+				army_morale_factor = 0.15
+				supply_consumption_factor = -0.15
+				stability_factor = -0.05
+				research_speed_factor = -0.07
+				war_support_factor = -0.03
+			}
+		}
+
+		ixt_faith_orders = {
+			picture = export_focus
+			allowed = { original_tag = IXT }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.4
+				research_speed_factor = 0.1
+				conscription_factor = -0.16
+				war_support_factor = -0.08
+			}
+		}
+
+		zau_faith_chemtech = {
+			picture = partial_economic_mobilization
+			allowed = { original_tag = ZAU }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.17
+				production_factory_max_efficiency_factor = 0.09
+				conversion_cost_civ_to_mil_factor = -0.12
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		plt_faith_academy = {
+			picture = tot_economic_mobilization
+			allowed = { original_tag = PLT }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.12
+				land_equipment_upgrade_xp_cost = -0.16
+				political_power_gain = 0.3
+				stability_factor = 0.04
+				war_support_factor = -0.08
+				industrial_capacity_factory = -0.04
+			}
+		}
+
+		ion_faith_balance = {
+			picture = limited_exports
+			allowed = { original_tag = ION }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.5
+				war_support_factor = -0.06
+				army_attack_factor = -0.03
+				conscription_factor = -0.06
+			}
+		}
+
+		voi_faith_swarm = {
+			picture = war_economy
+			allowed = { original_tag = VOI }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1250
+				army_morale_factor = 0.15
+				supply_consumption_factor = -0.19
+				conscription_factor = -0.12
+				stability_factor = -0.05
+				research_speed_factor = -0.06
+			}
+		}
+
+		shu_faith_rebirth = {
+			picture = closed_economy
+			allowed = { original_tag = SHU }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 750
+				army_morale_factor = 0.15
+				recover_org_factor = 0.15
+				war_support_factor = 0.08
+				stability_factor = -0.05
+				research_speed_factor = -0.09
+				conscription_factor = -0.09
+			}
+		}
+
+		tar_faith_ascent = {
+			picture = tot_economic_mobilization
+			allowed = { original_tag = TAR }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.09
+				army_morale_factor = 0.11
+				political_power_gain = 0.25
+				research_speed_factor = -0.11
+				conscription_factor = -0.14
+				consumer_goods_factor = 0.06
+			}
+		}
+
+		nox_faith_glory = {
+			picture = tot_economic_mobilization
+			allowed = { original_tag = NOX }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.09
+				army_morale_factor = 0.09
+				conscription_factor = 0.13
+				surrender_limit = 0.09
+				stability_factor = -0.04
+				research_speed_factor = -0.06
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		fro_faith_winter = {
+			picture = war_economy
+			allowed = { original_tag = FRO }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				army_morale_factor = 0.19
+				supply_consumption_factor = -0.19
+				attrition = -0.15
+				research_speed_factor = -0.15
+				industrial_capacity_factory = -0.06
+				conscription_factor = -0.12
+			}
+		}
+
+		ava_faith_vow = {
+			picture = limited_exports
+			allowed = { original_tag = AVA }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.1
+				army_morale_factor = 0.12
+				political_power_gain = 0.45
+				research_speed_factor = -0.14
+				industrial_capacity_factory = -0.08
+				consumer_goods_factor = 0.08
+			}
+		}
+
+		win_faith_boar = {
+			picture = closed_economy
+			allowed = { original_tag = WIN }
+			allowed_to_remove = { always = yes }
+			cost = 250
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.15
+				army_attack_factor = 0.06
+				war_support_factor = 0.1
+				army_speed_factor = 0.08
+				stability_factor = -0.05
+				research_speed_factor = -0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+
+	}
+
+}

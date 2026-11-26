@@ -1,11 +1,10 @@
 capital = 144
 oob = "SHU"
-
-set_research_slots = 0
-set_stability = 0.65
-set_war_support = 0.15
-
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.45
 set_technology = {
+    shurima_sun_disc_monument_tech = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -20,48 +19,14 @@ set_technology = {
 	early_heavy_cruiser = 1
 	transport = 1
 }
-
-# First person in the list is the leader at the start!
-recruit_character = SHU_azir
-recruit_character = SHU_nasus
-recruit_character = SHU_sivir
-recruit_character = SHU_taliyah
-
-# Marai
-recruit_character = SHU_nami
-
-# TODO: Tons of Stuff To add!
-
-# recruit_character = SHU_rammus
-# recruit_character = SHU_amumu
-# recruit_character = SHU_fizz
-
-# Nazumah
-# recruit_character = SHU_ksante
-# recruit_character = SHU_tope
-
-# Icathia
-# recruit_character = SHU_jax
-# recruit_character = SHU_kassadin
-# recruit_character = SHU_kaisa
-
-# Targon
-# recruit_character = SHU_pantheon
-# recruit_character = SHU_leona
-# recruit_character = SHU_diana
-
-# Other
-# recruit_character = SHU_ezreal
-# recruit_character = SHU_milio
-# recruit_character = SHU_akshan
-# recruit_character = SHU_gragas
-# recruit_character = SHU_renekton
-# recruit_character = SHU_xerath
-
-# XER_shadow_pact
-# XER_Renekton_Conquest
-
-set_convoys = 0
+add_ideas = {
+	SHU_fragmented_authority
+	SHU_legacy_of_ascension
+	limited_conscription
+	SHU_disorganized_army_3
+	SHU_political_instability_3
+	SHU_slavery_3
+}
 set_politics = {
 	ruling_party = absolutists
 	last_election = "989.9.07"
@@ -69,60 +34,52 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	desolation = 0
-	theocracy = 4
-	oligarchy = 5
-	absolutists = 86
+	theocracy = 5
+	oligarchy = 0
+	absolutists = 67
 	chiefdom = 0
-	mages = 0
+	desolation = 5
+	mages = 18
 	royalist = 5
-
 }
-add_ideas = {
+recruit_character = SHU_azir
+recruit_character = SHU_Renekton
+recruit_character = SHU_Nasus
+recruit_character = SHU_xerath
 
-	# National Spirits
-	Lawless_slavery
-	The_great_fall
-	Shuriman_shame
-	Shurima_broken
-
-	# Economy Law
-	empty_desert # abandonment
-	#al_rashid_dynasty
-}
-
+set_convoys = 200
 create_country_leader = {
-	name = "Remnants of the Shuriman Elite"
-	desc = "Cult of the Ascended"
-	picture = "gfx/leaders/SHU/portrait_shu_throne_large.dds"
-	#expire = ""
-	ideology = royalty
-	traits = {
-		unsureLeader
-	}
+	name = "Azir"
+	desc = "POLITICS_AZIR_DESC"
+	picture = "GFX_animated_SHU_Azir"
+	ideology = shurimanEmperor
+	traits = { emperorsands }
 }
-
-XER = {
-	declare_war_on = {
-		target = SHU
-		type = civil_war
-	}
-	add_civil_war_target = SHU
+create_country_leader = {
+	name = "Azir"
+	desc = "POLITICS_AZIR_DESC"
+	picture = "GFX_animated_SHU_Azir"
+	ideology = conservatism
+	traits = { emperorsands }
 }
-
-create_wargoal = {
-	target = XER
-	type = civil_war
+create_country_leader = {
+	name = "Azir"
+	desc = "POLITICS_AZIR_DESC"
+	picture = "gfx/leaders/Shurima/azir.png"
+	ideology = centrism
+	traits = { emperorsands }
 }
-add_civil_war_target = XER
-
-set_province_controller = 9442
-set_province_controller = 9470
-set_province_controller = 9453
-set_province_controller = 1093
-set_province_controller = 1721
-set_province_controller = 5579
-
-XER = {
-	set_province_controller = 9266
+create_country_leader = {
+	name = "Azir"
+	desc = "POLITICS_AZIR_DESC"
+	picture = "gfx/leaders/Shurima/azir.png"
+	ideology = rexism
+	traits = { emperorsands }
+}
+create_country_leader = {
+	name = "Xerath"
+	desc = "POLITICS_XERATH_DESC"
+	picture = "GFX_animated_SHU_Xerath"
+	ideology = axiomata
+	traits = {}
 }

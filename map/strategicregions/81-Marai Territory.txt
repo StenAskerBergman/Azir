@@ -1,0 +1,178 @@
+strategic_region={
+	id=81
+	name="STRATEGICREGION_81"
+	provinces={
+		9933 9980 10030 10054 10188 10281 10362 10521 10551 10591 10618 10630 10681 10715 10728 10740 10791 10908 10928 10997 11122 11207 11262 11294 11305 11394 11397 11430 11451 11514 11684 11832 11867 11874 11902 11909 11940 11985 11993 12159 12182 12205 12280 12305 12371 12375 12403 12416 12425 12435 12452 12460 12835 12842 12844 12845 12846 12849 12853 12855 12861 12873 12883 12890 
+	}
+	# Weather configuration with hot, semi-arid coastal conditions
+    weather={
+        # January: Mild, occasional coastal rain
+        period={
+            between={ 0.0 30.0 } # January
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.65
+            rain_light=0.15
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # February: Mild, rare rain
+        period={
+            between={ 0.1 27.1 } # February
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.70
+            rain_light=0.15
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # March: Warming, occasional storms
+        period={
+            between={ 0.2 30.2 } # March
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.65
+            rain_light=0.15
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # April: Warm, increasing sandstorms
+        period={
+            between={ 0.3 29.3 } # April
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.60
+            rain_light=0.15
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # May: Hot, frequent sandstorms
+        period={
+            between={ 0.4 30.4 } # May
+            temperature={ 22.0 34.0 }
+            no_phenomenon=0.55
+            rain_light=0.10
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # June: Very hot, peak sandstorm season
+        period={
+            between={ 0.5 29.5 } # June
+            temperature={ 25.0 38.0 }
+            no_phenomenon=0.50
+            rain_light=0.10
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # July: Hottest period, intense sandstorms
+        period={
+            between={ 0.6 30.6 } # July
+            temperature={ 25.0 38.0 }
+            no_phenomenon=0.50
+            rain_light=0.10
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # August: Hot, sandstorms persist
+        period={
+            between={ 0.7 30.7 } # August
+            temperature={ 25.0 38.0 }
+            no_phenomenon=0.50
+            rain_light=0.10
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # September: Cooling slightly, occasional storms
+        period={
+            between={ 0.8 29.8 } # September
+            temperature={ 22.0 34.0 }
+            no_phenomenon=0.55
+            rain_light=0.15
+            rain_heavy=0.10
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # October: Cooler, increased coastal rain
+        period={
+            between={ 0.9 30.9 } # October
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.55
+            rain_light=0.20
+            rain_heavy=0.10
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # November: Cooling, occasional rain
+        period={
+            between={ 0.10 29.10 } # November
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.60
+            rain_light=0.15
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # December: Mild, occasional coastal rain
+        period={
+            between={ 0.11 30.11 } # December
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.65
+            rain_light=0.15
+            rain_heavy=0.05
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+    }
+}

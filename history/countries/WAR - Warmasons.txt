@@ -1,0 +1,84 @@
+capital = 307
+
+oob = "WAR"
+
+set_research_slots = 3
+set_stability = 0.79
+set_war_support = 0.40
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+set_politics = {
+	ruling_party = oligarchy
+	last_election = "985.10.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 41
+	oligarchy = 59
+	absolutists = 0
+	chiefdom = 0
+	mages = 0
+	royalist = 0
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Tamara Colette"
+	desc = "POLITICS_TAMARA_DESC"
+	picture = "gfx/leaders/Warmasons/warmasonsleader.dds"
+	#expire = ""
+	ideology = noxianTrifarix
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Tamara Colette"
+	desc = "POLITICS_TAMARA_DESC"
+	picture = "gfx/leaders/Warmasons/warmasonsleader.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Tamara Colette"
+	desc = "POLITICS_TAMARA_DESC"
+	picture = "gfx/leaders/Warmasons/warmasonsleader.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Tamara Colette"
+	desc = "POLITICS_TAMARA_DESC"
+	picture = "gfx/leaders/Warmasons/warmasonsleader.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		#exemplar
+	}
+}

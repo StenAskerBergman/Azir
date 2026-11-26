@@ -1,0 +1,55 @@
+division_template = {
+ name = "Delverhold Guard"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Delverhold Miner"
+  location = 6459
+  division_template = "Delverhold Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Delverhold Miner"
+  location = 188
+  division_template = "Delverhold Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Delverhold Miner"
+  location = 2792
+  division_template = "Delverhold Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Delverhold Miner"
+  location = 504
+  division_template = "Delverhold Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Delverhold Miner"
+  location = 6237
+  division_template = "Delverhold Guard"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+}

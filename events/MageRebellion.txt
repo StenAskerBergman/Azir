@@ -1,0 +1,591 @@
+###########################
+# Mage Rebellion Events
+###########################
+
+add_namespace = magerebellion
+
+#Kill attempt failed
+country_event = {
+	id = magerebellion.20
+	title = magerebellion.20.t
+	desc = magerebellion.20.d
+	picture = GFX_report_event_shyvana
+	
+	is_triggered_only = yes
+	
+	option = { #A dragon??
+		name = magerebellion.20.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#Jarvan Fight
+country_event = {
+	id = magerebellion.19
+	title = magerebellion.19.t
+	desc = magerebellion.19.d
+	picture = GFX_report_event_fightJarvan
+	
+	is_triggered_only = yes
+	
+	option = { #Spare
+		name = magerebellion.19.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = MRE_spareJarvan
+		DEM = {
+		country_event = {
+			id = demacia.39
+			days = 0
+		}
+		}
+	}
+	option = { #Kill
+		name = magerebellion.19.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = MRE_killJarvan
+		DEM = {
+		country_event = {
+			id = demacia.38
+			days = 0
+		}
+		}
+	}
+}
+
+#Garen Fight
+country_event = {
+	id = magerebellion.18
+	title = magerebellion.18.t
+	desc = magerebellion.18.d
+	picture = GFX_report_event_fightGaren
+	
+	is_triggered_only = yes
+	
+	option = { #Spare
+		name = magerebellion.18.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = MRE_spareGaren
+		DEM = {
+		add_war_support = -0.1
+		country_event = {
+			id = demacia.36
+			days = 0
+		}
+		}
+	}
+	option = { #Kill
+		name = magerebellion.18.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = MRE_killGaren
+		remove_ideas = luxMaintainTunnels
+		remove_ideas = luxAidEscape
+		remove_ideas = noDemons
+		clr_country_flag = noDemons
+		set_country_flag = garenDead
+		DEM = {
+		add_war_support = 0.1
+		country_event = {
+			id = demacia.35
+			days = 0
+		}
+		}
+	}
+}
+
+#Maintain Tunnels
+country_event = {
+	id = magerebellion.17
+	title = magerebellion.17.t
+	desc = magerebellion.17.d
+	picture = GFX_report_event_maintainTunnels
+	
+	is_triggered_only = yes
+	
+	option = { #No lux
+		name = magerebellion.17.a
+		ai_chance = { factor = 0 }
+		add_ideas = maintainTunnels
+	}
+	option = { #Lux
+		name = magerebellion.17.b
+		ai_chance = { factor = 100 }
+		trigger = {
+            DEM = { NOT = { has_country_flag = luxDead } }
+            DEM = { NOT = { has_country_flag = luxReconciled } }
+        }
+		add_political_power = -25
+		add_ideas = luxMaintainTunnels
+	}
+}
+
+#Aid The Escape
+country_event = {
+	id = magerebellion.16
+	title = magerebellion.16.t
+	desc = magerebellion.16.d
+	picture = GFX_report_event_aidEscape
+	
+	is_triggered_only = yes
+	
+	option = { #No lux
+		name = magerebellion.16.a
+		ai_chance = { factor = 0 }
+		add_ideas = aidEscape
+	}
+	option = { #Lux
+		name = magerebellion.16.b
+		ai_chance = { factor = 100 }
+		trigger = {
+			DEM = { NOT = { has_country_flag = luxDead } }
+            DEM = { NOT = { has_country_flag = luxReconciled } }
+        }
+		add_political_power = -25
+		add_ideas = luxAidEscape
+	}
+}
+
+#Demacians blame us
+country_event = {
+	id = magerebellion.15
+	title = magerebellion.15.t
+	desc = magerebellion.15.d
+	picture = GFX_report_event_blameUs
+	
+	is_triggered_only = yes
+	
+	option = { #We didnt kill the king though!
+		name = magerebellion.15.a
+		ai_chance = { factor = 100 }
+		add_war_support = -0.05
+	}
+}
+
+#Black Rose Helps
+country_event = {
+	id = magerebellion.1
+	title = magerebellion.1.t
+	desc = magerebellion.1.d
+	is_triggered_only = yes
+	
+	option = { #Ok?
+		name = magerebellion.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = -20
+		add_manpower = 50000
+		add_ideas = foreign_benefactor
+	}
+}
+country_event = {
+	id = magerebellion.2
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = { 
+		if = {
+			limit = {
+			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+			 NOT = { has_country_flag = demonsGone }
+			}
+			random_list = {
+						33 = {
+							country_event = {
+							id = magerebellion.3
+							days = 1
+							}
+						}
+						33 = {
+							country_event = {
+							id = magerebellion.4
+							days = 1
+							}
+						}
+						34 = {
+							country_event = {
+							id = magerebellion.5
+							days = 1
+							}
+						}
+					}
+		}
+	}
+}
+#These will all be named like Demons Found!
+country_event = {
+	id = magerebellion.3
+	title = magerebellion.3.t
+	desc = magerebellion.3.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = magerebellion.3.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }
+		add_ideas = MREevelynnidea
+		set_country_flag = evelynn
+		activate_mission = MREevelynnFound
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = MREevelynnFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}
+
+country_event = {
+	id = magerebellion.4
+	title = magerebellion.4.t
+	desc = magerebellion.4.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = magerebellion.4.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }
+		add_ideas = MREfiddleidea
+		set_country_flag = fiddle
+		activate_mission = MREfiddleFound
+			 
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = MREfiddleFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}
+country_event = {
+	id = magerebellion.5
+	title = magerebellion.5.t
+	desc = magerebellion.5.d
+	picture = GFX_report_event_demons
+	
+	is_triggered_only = yes
+	
+	option = { #We must beat back this evil!
+		name = magerebellion.5.a
+		ai_chance = { factor = 100 }
+		if = {
+		limit = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+		}
+		random_owned_state = {
+            		add_dynamic_modifier = { 
+				modifier = demon_attack 
+			}
+       		 }		
+		
+		add_ideas = MREnocturneidea
+		set_country_flag = nocturne
+		activate_mission = MREnocturneFound
+		if = {
+			limit = {
+				has_country_flag = found_demons
+			}
+			add_stability = -0.05
+			add_political_power = 25
+			add_days_mission_timeout  = {
+   				 mission = MREnocturneFound
+   				 days = -90
+			}
+		}else = {
+			add_stability = -0.15
+			add_war_support = -0.10
+			add_political_power = -75
+			
+		}
+		set_country_flag = found_demons
+		}
+	}
+}
+#Demon Weekly Bad Events
+country_event = {
+	id = magerebellion.6
+	title = magerebellion.6.t
+	desc = magerebellion.6.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		random_controlled_state = {
+			limit = {
+				NOT = { has_dynamic_modifier = {
+    					modifier = demon_attack
+				} }
+			}
+            			add_dynamic_modifier = { 
+					modifier = demon_attack 
+				}
+       		 }
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = magerebellion.7
+	title = magerebellion.7.t
+	desc = magerebellion.7.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonAddDays
+		if = {
+					limit = {
+						has_country_flag = evelynn
+					}
+					add_days_mission_timeout  = {
+   				 	mission = evelynnFound
+   				 	days = 30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = fiddle
+					}
+					add_days_mission_timeout  = {
+   				 	mission = fiddleFound
+   				 	days = 30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = nocturne
+					}
+					add_days_mission_timeout  = {
+   				 	mission = nocturneFound
+   				 	days = 30
+					}
+				}else = {
+
+				}
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = magerebellion.8
+	title = magerebellion.8.t
+	desc = magerebellion.8.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonManpowerAtt
+			every_controlled_state = {
+				limit = {
+				has_dynamic_modifier = {
+    					modifier = demon_attack
+				}
+				}
+				add_manpower = -20000	
+			}
+
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+country_event = {
+	id = magerebellion.9
+	title = magerebellion.9.t
+	desc = magerebellion.9.d
+	picture = GFX_report_event_demons_attack
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The Horror!"
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = DEM_demonInfraAtt
+		every_controlled_state = {
+			limit = {
+			has_dynamic_modifier = {
+    				modifier = demon_attack
+			}
+			}
+			damage_building = {
+   			 type = infrastructure
+    			damage = 0.15
+			}
+			damage_building = {
+   			 type = arms_factory
+    			damage = 0.15
+			}
+			damage_building = {
+   			 type = industrial_complex
+    			damage = 0.15
+			}
+		}
+	}
+	option = { 
+		name = "We Must Counter This Evil!"
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+	}
+}
+#Demacia Demons Events
+country_event = {
+	id = magerebellion.10
+	title = magerebellion.10.t
+	desc = magerebellion.10.d
+	
+	is_triggered_only = yes
+	
+	option = { #We must stay vigilant...
+		name = magerebellion.10.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.01
+	}
+}
+#demon gone event
+country_event = {
+	id = magerebellion.11
+	title = magerebellion.11.t
+	desc = magerebellion.11.d
+	picture = GFX_report_event_demons_gone
+
+	is_triggered_only = yes
+	
+	option = { #Good riddance...
+		name = magerebellion.11.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_country_flag = evelynn
+			}
+			remove_ideas = evelynnidea
+		}else_if = {
+			limit = {
+				has_country_flag = fiddle
+			}
+			remove_ideas = fiddleidea
+		}else_if = {
+			limit = {
+				has_country_flag = nocturne
+			}
+			remove_ideas = nocturneidea
+		}else = {
+
+		}
+		add_stability = 0.1
+		clr_country_flag = evelynn
+		clr_country_flag = fiddle
+		clr_country_flag = nocturne
+		clr_country_flag = demons
+		clr_country_flag = found_demons
+		set_country_flag = demonsGone
+	}
+}
+#Hidden Demon Events
+country_event = {
+	id = magerebellion.12
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = { 
+		clr_country_flag = demonsGone
+	}
+}
+#Hidden Demon Events
+country_event = {
+	id = magerebellion.13
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = { 
+		clr_country_flag = noNewDemons
+		country_event = {
+			id = magerebellion.5
+			days = 1
+		}
+	}
+}
+#Fire To Countryside
+country_event = {
+	id = magerebellion.14
+	title = magerebellion.14.t
+	desc = magerebellion.14.d
+	
+	is_triggered_only = yes
+	
+	option = { #Those Savages
+		name = magerebellion.14.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.10
+		add_war_support = -0.10
+	}
+}

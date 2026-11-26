@@ -1,0 +1,43 @@
+
+state={
+	id=164
+	name="STATE_164"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 8
+ rubber = 12
+ steel = 6
+ #coal = 12
+ #chromium = 12
+ #aluminium = 8
+ }
+ history = {
+ owner = STO
+ add_core_of = STO
+ victory_points = {
+ 3911 30
+ }
+  buildings = {
+   infrastructure = 4
+   arms_factory = 2
+   industrial_complex = 1
+   dockyard = 1
+   3911 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		591 878 2285 2473 2751 3603 3911 4583 4800 5234 5808 8198 8219 8220 8245 8251 8262 8263 8264 8268 8284 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2019219
+        state_category = large_town
+}

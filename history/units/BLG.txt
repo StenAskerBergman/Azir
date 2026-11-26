@@ -1,0 +1,111 @@
+division_template = {
+ name = "Pirate"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Deck Swabbie"
+  location = 8415
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Deck Swabbie"
+  location = 1039
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Deck Swabbie"
+  location = 8349
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Treasure Hoarder"
+  location = 2982
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Treasure Hoarder"
+  location = 8395
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Treasure Hoarder"
+  location = 8364
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Old God Disciple"
+  location = 8440
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Old God Disciple"
+  location = 8449
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Deck Swabbie"
+  location = 3228
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Deck Swabbie"
+  location = 8296
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Treasure Hoarder"
+  location = 8273
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Scout"
+  location = 8248
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Scout"
+  location = 8215
+  division_template = "Pirate"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.90
+ }
+}

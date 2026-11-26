@@ -1,0 +1,178 @@
+strategic_region={
+	id=11
+	name="STRATEGICREGION_11"
+	provinces={
+		56 568 711 713 757 846 873 983 1030 1063 1326 1361 1448 1460 1488 1525 1572 1601 1761 1823 1830 1926 1929 2134 2147 2179 2383 2401 2402 2417 2421 2529 2576 2628 2700 2870 2882 2958 2983 3063 3084 3098 3255 3422 3425 3427 3512 3550 3714 3827 3926 3949 3988 4161 4207 4295 4317 4505 4546 4590 4595 4757 4832 5012 5117 5205 5210 5254 5400 5501 5638 5684 5770 9479 9495 9504 9509 9511 9520 9526 9545 9549 9552 9554 9562 9566 9572 9576 9578 9582 9585 9588 9590 9602 9606 9607 9610 9612 9613 9615 9616 9621 9622 9629 9630 9635 9639 9648 9658 9662 9666 9667 9673 9680 9681 9685 9688 9695 9696 9703 9708 9720 9724 
+	}
+	# Weather configuration with hot, desolate, and Void-corrupted conditions
+    weather={
+        # January: Mild, frequent dust storms
+        period={
+            between={ 0.0 30.0 } # January
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.65
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.30
+            min_snow_level=0.00
+        }
+        # February: Mild, occasional Void disturbances
+        period={
+            between={ 0.1 27.1 } # February
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.70
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.25
+            min_snow_level=0.00
+        }
+        # March: Warming, increasing dust storms
+        period={
+            between={ 0.2 30.2 } # March
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.60
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.35
+            min_snow_level=0.00
+        }
+        # April: Warm, frequent Void storms
+        period={
+            between={ 0.3 29.3 } # April
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.55
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.40
+            min_snow_level=0.00
+        }
+        # May: Hot, intense dust and Void disturbances
+        period={
+            between={ 0.4 30.4 } # May
+            temperature={ 25.0 35.0 }
+            no_phenomenon=0.50
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.45
+            min_snow_level=0.00
+        }
+        # June: Very hot, peak Void storm season
+        period={
+            between={ 0.5 29.5 } # June
+            temperature={ 28.0 40.0 }
+            no_phenomenon=0.45
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.50
+            min_snow_level=0.00
+        }
+        # July: Hottest period, intense Void disturbances
+        period={
+            between={ 0.6 30.6 } # July
+            temperature={ 28.0 42.0 }
+            no_phenomenon=0.45
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.50
+            min_snow_level=0.00
+        }
+        # August: Hot, persistent dust storms
+        period={
+            between={ 0.7 30.7 } # August
+            temperature={ 28.0 40.0 }
+            no_phenomenon=0.45
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.50
+            min_snow_level=0.00
+        }
+        # September: Cooling slightly, frequent storms
+        period={
+            between={ 0.8 29.8 } # September
+            temperature={ 25.0 35.0 }
+            no_phenomenon=0.50
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.45
+            min_snow_level=0.00
+        }
+        # October: Cooler, occasional Void disturbances
+        period={
+            between={ 0.9 30.9 } # October
+            temperature={ 20.0 30.0 }
+            no_phenomenon=0.55
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.40
+            min_snow_level=0.00
+        }
+        # November: Cooling, reduced storms
+        period={
+            between={ 0.10 29.10 } # November
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.60
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.35
+            min_snow_level=0.00
+        }
+        # December: Mild, occasional dust storms
+        period={
+            between={ 0.11 30.11 } # December
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.65
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.30
+            min_snow_level=0.00
+        }
+    }
+}

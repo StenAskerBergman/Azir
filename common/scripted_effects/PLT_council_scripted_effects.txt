@@ -1,0 +1,54 @@
+PLT_update_council = {
+    remove_ideas = { PLT_council_0 PLT_council_1 PLT_council_3 PLT_council_5 PLT_council_7 }
+    if = {
+        limit = { check_variable = { PLT_council_support < 1 } }
+        add_ideas = PLT_council_0
+    }
+    if = {
+        limit = {
+            check_variable = { PLT_council_support > 0 }
+            check_variable = { PLT_council_support < 3 }
+        }
+        add_ideas = PLT_council_1
+    }
+    if = {
+        limit = {
+            check_variable = { PLT_council_support > 2 }
+            check_variable = { PLT_council_support < 5 }
+        }
+        add_ideas = PLT_council_3
+    }
+    if = {
+        limit = {
+            check_variable = { PLT_council_support > 4 }
+            check_variable = { PLT_council_support < 7 }
+        }
+        add_ideas = PLT_council_5
+    }
+    if = {
+        limit = { check_variable = { PLT_council_support > 6 } }
+        add_ideas = PLT_council_7
+    }
+
+    set_temp_variable = { council_support_frame = PLT_council_support }
+    divide_temp_variable = { council_support_frame = 7 }
+    multiply_temp_variable = { council_support_frame = 21 }
+    if = {
+        limit = { check_variable = { council_support_frame > 0 } }
+        clamp_temp_variable = {
+            var = council_support_frame
+            min = 1
+            max = 21
+        }
+    }
+    else = {
+        set_temp_variable = { council_support_frame = 1 }
+    }
+    set_variable = { current_council_icon_frame = council_support_frame }
+}
+
+PLT_council_lobby_effect = {
+    add_to_variable = { PLT_council_support = 1 }
+    PLT_update_council = yes
+    set_country_flag = { flag = PLT_council_lobby_cooldown days = 15 }
+}

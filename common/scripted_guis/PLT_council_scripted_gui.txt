@@ -1,0 +1,11 @@
+scripted_gui = {
+    plt_council_decision_ui = {
+        context_type = decision_category
+        window_name = "plt_council_decision_ui_window"
+        properties = {
+            council_icon = {
+                frame = current_council_icon_frame
+            }
+        }
+    }
+}

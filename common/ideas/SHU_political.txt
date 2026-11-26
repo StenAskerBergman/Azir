@@ -1,0 +1,183 @@
+ideas = {
+	country = {
+
+		# Autoridade fragmentada
+		SHU_fragmented_authority = {
+			picture = ENG_winston_churchill
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+			}
+		}
+
+		# Legado da Ascensão
+		SHU_legacy_of_ascension = {
+			picture = chi_warlord_integration4
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		# Autonomia regional
+		SHU_regional_autonomy = {
+			picture = ARG_argentine_metropole
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		# Restauração imperial
+		SHU_imperial_restoration = {
+			picture = ARG_astarsa
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.10
+			}
+		}
+
+		# Escravidão - Nível I
+		SHU_slavery_1 = {
+			picture = generic_forced_labor
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		# Escravidão - Nível II
+		SHU_slavery_2 = {
+			picture = generic_forced_labor
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.10
+				political_power_gain = -0.05
+			}
+		}
+
+		# Escravidão - Nível III
+		SHU_slavery_3 = {
+			picture = generic_forced_labor
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.10
+			}
+		}
+
+		# Exército desorganizado - Nível I
+		SHU_disorganized_army_1 = {
+			picture = generic_army_reform
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				division_recovery_rate = -0.05
+			}
+		}
+
+		# Exército desorganizado - Nível II
+		SHU_disorganized_army_2 = {
+			picture = generic_army_reform
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.10
+				army_morale_factor = -0.10
+				division_recovery_rate = -0.10
+				army_attack_factor = -0.05
+			}
+		}
+
+		# Exército desorganizado - Nível III
+		SHU_disorganized_army_3 = {
+			picture = generic_army_reform
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+				division_recovery_rate = -0.15
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+			}
+		}
+
+		# Instabilidade política - Nível I
+		SHU_political_instability_1 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		# Instabilidade política - Nível II
+		SHU_political_instability_2 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+				war_support_factor = -0.05
+			}
+		}
+
+		# Instabilidade política - Nível III
+		SHU_political_instability_3 = {
+			picture = generic_political_reform
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.15
+				war_support_factor = -0.10
+			}
+		}
+	}
+}

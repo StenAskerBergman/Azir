@@ -1,0 +1,59 @@
+state = {
+	id = 132
+	name = "STATE_132"
+	resources = {
+		rubber = 4
+	}
+	history = {
+		owner = SHU
+		add_core_of = SHU
+		victory_points = { 3119 10 }
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+	provinces = {
+		24
+		172
+		287
+		530
+		659
+		795
+		912
+		1362
+		1548
+		1663
+		1763
+		2106
+		2227
+		2326
+		2740
+		3119
+		3168
+		3307
+		3348
+		3805
+		4357
+		4479
+		4522
+		4638
+		4688
+		4886
+		9002
+		9009
+		9011
+		9154
+		9192
+		9221
+		9242
+		9381
+		9512
+		9537
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+	manpower = 981273
+	state_category = town
+}

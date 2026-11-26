@@ -1,0 +1,86 @@
+capital = 219
+
+oob = "MRE"
+
+set_research_slots = 3
+set_stability = 0.19
+set_war_support = 0.70
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+set_politics = {
+	ruling_party = mages 
+	last_election = "987.2.01"
+	election_frequency = 96
+	elections_allowed = no
+}
+set_popularities = {
+	royalist = 2
+	mages = 98
+}
+
+swap_ideas = {
+    remove_idea = civilian_economy
+    add_idea = war_economy
+}
+swap_ideas = {
+    remove_idea = volunteer_only
+    add_idea = extensive_conscription
+}
+
+recruit_character = sylas2
+recruit_character = sirius
+recruit_character = nara
+recruit_character = leilane
+recruit_character = geraint
+recruit_character = cordelia
+recruit_character = ronan2
+recruit_character = finn2
+recruit_character = blair2
+recruit_character = kara
+recruit_character = piala
+recruit_character = coordAdmiralty2
+recruit_character = amphibAssaulter2
+recruit_character = elevTrainers2
+recruit_character = elusiveRap2
+recruit_character = haco
+recruit_character = rukko
+recruit_character = sylasAdv
+recruit_character = auryn
+recruit_character = donnelly
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Sylas Of Dregbourne"
+	desc = "POLITICS_SYLAS_DESC"
+	picture = GFX_portrait_MRE_sylas
+	#expire = ""
+	ideology = sympathizers
+	traits = {
+		the_unshackled
+	}
+}
+
+create_country_leader = {
+	name = "Sylas Of Dregbourne"
+	desc = "POLITICS_SYLAS_DESC"
+	picture = GFX_portrait_MRE_sylas
+	#expire = ""
+	ideology = illuminators
+	traits = {
+		the_unshackled
+	}
+}

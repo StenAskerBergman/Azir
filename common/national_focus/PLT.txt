@@ -1,0 +1,407 @@
+focus_tree = {
+	id = PLT
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PLT
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	focus = {
+		id = PLT_focus_1
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = PLT_focus_2
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_1
+		}
+	}
+	focus = {
+		id = PLT_focus_3
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_2
+		}
+	}
+	focus = {
+		id = PLT_focus_4
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 3
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_3
+		}
+		mutually_exclusive = {
+			focus = PLT_focus_5
+		}
+	}
+	focus = {
+		id = PLT_focus_5
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		x = -3
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_3
+		}
+		mutually_exclusive = {
+			focus = PLT_focus_4
+		}
+	}
+	focus = {
+		id = PLT_focus_6
+		icon = GFX_focus_NORDIC_com_capstone_research
+		x = 0
+		y = 6
+		cost = 5
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_3
+		}
+	}
+	focus = {
+		id = PLT_focus_7
+		icon = GFX_focus_ARG_strengthening_the_concordancia
+		x = 12
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_ideas = { Plt_Reforms }
+			add_to_variable = {
+				PLT_council_support = -2
+			}
+			PLT_update_council = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_8
+		icon = GFX_focus_generic_improve_the_administration
+		x = 10
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_ideas = { Plt_Modernized_Institutions_1 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_7
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_9
+		icon = GFX_focus_DEN_no_regulations
+		x = 12
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_ideas = { Plt_Industrial_Expansion_1 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_7
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_10
+		icon = GFX_focus_generic_energy
+		x = 10
+		y = 4
+		cost = 2
+		completion_reward = {
+			remove_ideas = { Plt_Modernized_Institutions_1 }
+			add_ideas = { Plt_Modernized_Institutions_2 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_8
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_11
+		icon = GFX_focus_generic_modernize_industry
+		x = 10
+		y = 6
+		cost = 2
+		completion_reward = {
+			remove_ideas = { Plt_Modernized_Institutions_2 }
+			add_ideas = { Plt_Modernized_Institutions_3 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_12
+		icon = GFX_focus_generic_industry_3
+		x = 12
+		y = 4
+		cost = 2
+		completion_reward = {
+			remove_ideas = { Plt_Industrial_Expansion_1 }
+			add_ideas = { Plt_Industrial_Expansion_2 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_9
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_13
+		icon = GFX_focus_CHL_la_corporacion_araucania
+		x = 12
+		y = 6
+		cost = 2
+		completion_reward = {
+			remove_ideas = { Plt_Industrial_Expansion_2 }
+			add_ideas = { Plt_Industrial_Expansion_3 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_12
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_14
+		icon = GFX_focus_NORDIC_dem_selector_civilian
+		x = 14
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_ideas = { Plt_Technical_Society_1 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_7
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_15
+		icon = GFX_focus_NORDIC_dem_capstone_research
+		x = 14
+		y = 4
+		cost = 2
+		completion_reward = {
+			remove_ideas = { Plt_Technical_Society_1 }
+			add_ideas = { Plt_Technical_Society_2 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_14
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_16
+		icon = GFX_focus_FIN_a_new_course_for_kokoomus
+		x = 14
+		y = 6
+		cost = 2
+		completion_reward = {
+			remove_ideas = { Plt_Technical_Society_2 }
+			add_ideas = { Plt_Technical_Society_3 }
+			add_to_variable = {
+				PLT_council_support = -1
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_15
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_7_council_requirement
+				check_variable = {
+					PLT_council_support > 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLT_focus_17
+		icon = GFX_focus_NORDIC_mon_selector_airforce
+		x = 12
+		y = 8
+		cost = 10
+		completion_reward = {
+			add_ideas = { Plt_A_New_Piltover }
+			add_to_variable = {
+				PLT_council_support = -6
+			}
+			PLT_update_council = yes
+		}
+		prerequisite = {
+			focus = PLT_focus_11
+		}
+		prerequisite = {
+			focus = PLT_focus_13
+		}
+		prerequisite = {
+			focus = PLT_focus_16
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLT_focus_17_council_requirement
+				check_variable = {
+					PLT_council_support > 6
+				}
+			}
+		}
+	}
+	continuous_focus_position = {
+		x = 2000
+		y = 100
+	}
+	focus = {
+		id = PLT_focus_19
+		icon = GFX_focus_NORDIC_com_selector_research
+		x = -1
+		y = 8
+		cost = 2
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_6
+		}
+	}
+	focus = {
+		id = PLT_focus_20
+		icon = GFX_focus_NORDIC_com_capstone_materiel
+		x = 1
+		y = 8
+		cost = 2
+		completion_reward = {
+			deactivate_advisor = PLT_heimerdinger
+		}
+		prerequisite = {
+			focus = PLT_focus_6
+		}
+	}
+	focus = {
+		id = PLT_focus_21
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		x = 0
+		y = 10
+		cost = 5
+		completion_reward = {}
+		prerequisite = {
+			focus = PLT_focus_20
+		}
+		prerequisite = {
+			focus = PLT_focus_19
+		}
+	}
+}

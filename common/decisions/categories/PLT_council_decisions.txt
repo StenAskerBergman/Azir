@@ -1,0 +1,6 @@
+PLT_council_decisions = {
+    icon = usa_congress
+    allowed = { original_tag = PLT }
+    scripted_gui = plt_council_decision_ui
+    priority = 80
+}

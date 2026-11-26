@@ -1,0 +1,43 @@
+
+state={
+	id=50
+	name="STATE_50"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 4
+ #rubber = 12
+ steel = 6
+ oil = 12
+ chromium = 7
+ #aluminium = 4
+ }
+ history = {
+ owner = ZAU
+ add_core_of = ZAU
+ victory_points = {
+ 8189 10
+ }
+  buildings = {
+   infrastructure = 3
+   arms_factory = 1
+   industrial_complex = 2
+   dockyard = 1
+   3406 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		3406 8187 8188 8189 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2982712
+        state_category = city
+}

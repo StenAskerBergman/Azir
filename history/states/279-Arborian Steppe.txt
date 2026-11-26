@@ -1,0 +1,42 @@
+
+state={
+	id=279
+	name="STATE_279"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 8
+ rubber = 8
+ steel = 7
+ #coal = 3
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = ARB
+ add_core_of = ARB
+ victory_points = {
+ 2632 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		86 554 570 1126 1392 2339 2632 2702 2873 3407 4064 4630 5165 7279 7289 7324 7366 7395 7400 7445 7470 7476 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1129322
+        state_category = town
+}

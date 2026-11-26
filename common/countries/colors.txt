@@ -1,244 +1,140 @@
 MRE = {
-	color = rgb { 77 139 235 }
-	color_ui = rgb { 77 139 235 }
+	color = rgb { 45 95 180 }
+	color_ui = rgb { 70 130 220 }
 }
-
 TRB = {
-	color = rgb { 109 130 163 }
-	color_ui = rgb { 109 130 163 }
+	color = rgb { 80 100 130 }
+	color_ui = rgb { 110 135 170 }
 }
-
 TST = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 40 85 190 }
+	color_ui = rgb { 65 120 230 }
 }
-
 DEM = {
-	color = rgb { 227 227 227 }
-	color_ui = rgb { 227 227 227 }
+	color = rgb { 180 185 200 }		# Demacia - cinza-azulado (não branco)
+	color_ui = rgb { 210 215 230 }
 }
-
 SHI = {
-	color = rgb { 68 150 131 }
-	color_ui = rgb { 68 150 131 }
+	color = rgb { 40 110 95 }
+	color_ui = rgb { 60 145 125 }
 }
-
 BLG = {
-	color = rgb { 148 112 80 }
-	color_ui = rgb { 148 112 80 }
+	color = rgb { 130 90 55 }		# Bilgewater - marrom dourado
+	color_ui = rgb { 165 120 70 }
 }
-
 IXT = {
-	color = rgb { 29 150 49 }
-	color_ui = rgb { 29 150 49 }
+	color = rgb { 20 95 40 }		# Ixtal - verde mais fechado
+	color_ui = rgb { 35 130 55 }
 }
-
 KUM = {
-	color = rgb { 53 240 84 }
-	color_ui = rgb { 53 240 84 }
+	color = rgb { 25 160 55 }
+	color_ui = rgb { 45 200 75 }
 }
-
 ZAU = {
-	color = rgb { 209 146 38 }
-	color_ui = rgb { 209 146 38 }
+	color = rgb { 175 115 25 }
+	color_ui = rgb { 210 150 40 }
 }
-
 PLT = {
-	color = rgb { 245 169 39 }
-	color_ui = rgb { 245 169 39 }
+	color = rgb { 190 125 20 }
+	color_ui = rgb { 225 160 40 }
 }
-
 ION = {
-	color = rgb { 245 140 238 }
-	color_ui = rgb { 245 140 238 }
+	color = rgb { 180 70 170 }		# Ionia - rosa/roxo mais fechado
+	color_ui = rgb { 220 110 210 }
 }
-
 VOI = {
-	color = rgb { 125 18 196 }
-	color_ui = rgb { 125 18 196 }
+	color = rgb { 90 15 140 }		# Void - roxo bem escuro
+	color_ui = rgb { 130 35 190 }
 }
-
 AUR = {
-	color = rgb { 240 193 98 }
-	color_ui = rgb { 240 193 98 }
+	color = rgb { 190 145 60 }
+	color_ui = rgb { 230 180 80 }
 }
-
 CQI = {
-	color = rgb { 12 121 237 }
-	color_ui = rgb { 12 121 237 }
+	color = rgb { 20 90 190 }
+	color_ui = rgb { 40 125 230 }
 }
-
 SHU = {
-	color = rgb { 255 230 109 }
-	color_ui = rgb { 255 230 109 } # rgb { 255 230 109 } - Op Color
+	color = rgb { 168 125 35 }		# Shurima - já está bom
+	color_ui = rgb { 210 165 50 }
 }
-
 TAR = {
-	color = rgb { 70 0 209 }
-	color_ui = rgb { 70 0 209 }
+	color = rgb { 55 20 150 }		# Targon - roxo mais profundo
+	color_ui = rgb { 90 40 200 }
 }
-
 HLD = {
-	color = rgb { 163 152 95 }
-	color_ui = rgb { 163 152 95 }
+	color = rgb { 130 120 70 }
+	color_ui = rgb { 165 155 95 }
 }
-
 STO = {
-	color = rgb { 117 117 117 }
-	color_ui = rgb { 117 117 117 }
+	color = rgb { 90 90 90 }
+	color_ui = rgb { 120 120 120 }
 }
-
 PLY = {
-	color = rgb { 199 191 191 }
-	color_ui = rgb { 199 191 191 }
+	color = rgb { 160 155 155 }
+	color_ui = rgb { 190 185 185 }
 }
-
 DEL = {
-	color = rgb { 189 53 53 }
-	color_ui = rgb { 189 53 53 }
+	color = rgb { 150 35 35 }
+	color_ui = rgb { 190 55 55 }
 }
-
 NOX = {
-	color = rgb { 173 16 16 }
-	color_ui = rgb { 173 16 16 }
+	color = rgb { 130 20 25 }		# Noxus - vermelho sangue mais escuro
+	color_ui = rgb { 170 35 40 }
 }
-
 URS = {
-	color = rgb { 44 92 76 }
-	color_ui = rgb { 44 92 76 }
+	color = rgb { 30 70 55 }
+	color_ui = rgb { 50 100 80 }
 }
-
 AVA = {
-	color = rgb { 69 227 245 }
-	color_ui = rgb { 69 227 245 }
+	color = rgb { 40 160 180 }		# Freljord-ish
+	color_ui = rgb { 60 200 220 }
 }
-
 WIN = {
-	color = rgb { 41 170 240 }
-	color_ui = rgb { 41 170 240 }
+	color = rgb { 30 120 180 }		# Winter's Claw
+	color_ui = rgb { 50 160 220 }
 }
-
 FRO = {
-	color = rgb { 12 141 240 }
-	color_ui = rgb { 12 141 240 }
+	color = rgb { 25 110 190 }
+	color_ui = rgb { 45 150 230 }
 }
-
 ARB = {
-	color = rgb { 166 159 159 }
-	color_ui = rgb { 166 159 159 }
+	color = rgb { 130 125 125 }
+	color_ui = rgb { 160 155 155 }
 }
-
 RIJ = {
-	color = rgb { 49 60 122 }
-	color_ui = rgb { 49 60 122 }
+	color = rgb { 40 50 100 }
+	color_ui = rgb { 65 80 140 }
 }
-
 SKA = {
-	color = rgb { 84 54 135 }
-	color_ui = rgb { 84 54 135 }
+	color = rgb { 65 40 110 }
+	color_ui = rgb { 95 65 150 }
 }
-
 NOC = {
-	color = rgb { 98 152 240 }
-	color_ui = rgb { 98 152 240 }
+	color = rgb { 60 110 190 }
+	color_ui = rgb { 90 145 230 }
 }
-
 KLS = {
-	color = rgb { 120 106 91 }
-	color_ui = rgb { 120 106 91 }
+	color = rgb { 95 80 65 }
+	color_ui = rgb { 130 110 90 }
 }
-
 BLH = {
-	color = rgb { 168 117 111 }
-	color_ui = rgb { 168 117 111 }
+	color = rgb { 140 90 85 }
+	color_ui = rgb { 175 120 110 }
 }
-
 TOK = {
-	color = rgb { 27 102 12 }
-	color_ui = rgb { 27 102 12 }
+	color = rgb { 25 80 20 }
+	color_ui = rgb { 45 115 40 }
 }
-
 VAR = {
-	color = rgb { 130 99 100 }
-	color_ui = rgb { 130 99 100 }
+	color = rgb { 110 80 80 }
+	color_ui = rgb { 145 110 110 }
 }
-
 TGC = {
-	color = rgb { 140 140 140 }
-	color_ui = rgb { 140 140 140 }
+	color = rgb { 110 110 110 }
+	color_ui = rgb { 145 145 145 }
 }
-
 WAR = {
-	color = rgb { 217 50 50 }
-	color_ui = rgb { 217 50 50 }
+	color = rgb { 170 35 35 }
+	color_ui = rgb { 210 55 55 }
 }
-
-NAZ = {
-	color = rgb { 234 143 118 }
-	color_ui = rgb { 234 143 118 } # Yellow Brown-ish / Pink-ish
-}
-
-XER = {
-	color = rgb { 61 61 150 }
-	color_ui = rgb { 61 61 150 } # Dark Blue
-}
-
-SHK = {
-	color = rgb { 255 255 103 }
-	color_ui = rgb { 255 255 103 } # Sand-ish
-}
-
-KAL = {
-	color = rgb { 255 255 103 }
-	color_ui = rgb { 225 225 103 } # Yellow-ish?
-}
-GSD = {
-	color = rgb { 255 255 103 }
-	color_ui = rgb { 255 255 103 } # Yellow
-}
-
-GWS = {
-	color = rgb { 74 240 74 }
-	color_ui = rgb { 74 240 74 } # Green
-}
-
-GES = {
-	color = rgb { 70 200 70 }
-	color_ui = rgb { 70 200 70 } # Green
-}
-
-JGL = {
-	color = rgb { 90 170 90 }
-	color_ui = rgb { 90 170 90 }
-}
-
-WRL = {
-	color = rgb { 255 103 103 }
-	color_ui = rgb { 255 103 103 }
-}
-
-MAR = {
-	color = rgb { 61  61  150 }
-	color_ui = rgb { 61  61  150 }
-}
-
-RAI = {
-	color = rgb { 240 100 74 }
-	color_ui = rgb { 240 100 74 }
-}
-
-NAS = {
-	color = rgb { 200 193 100 }
-	color_ui = rgb { 200 193 100 }
-}
-
-CRY = {
-	color = rgb { 80 113 229 }
-	color_ui = rgb { 80 113 229 }
-}
-
-# Ref. Colors
-# Aurma Yellow { 80  113  229 }
-# Weak Yellow rgb { 226 240 34 } 
-# bright yell rgb { 255 255 103 }
-# Opaf Yellow rgb { 255 230 109 }

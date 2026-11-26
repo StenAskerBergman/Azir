@@ -1,0 +1,42 @@
+
+state={
+	id=170
+	name="STATE_170"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 7
+ rubber = 5
+ steel = 9
+ #coal = 6
+ #chromium = 2
+ #aluminium = 5
+ }
+ history = {
+ owner = PLY
+ add_core_of = PLY
+ victory_points = {
+ 2261 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #3056 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		422 776 1262 1273 1848 2261 2807 2863 2901 3677 3815 3920 4105 8004 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1872142
+        state_category = town
+}

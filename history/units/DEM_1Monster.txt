@@ -1,0 +1,31 @@
+division_template = {
+ name = "Demacian Monster"
+
+ regiments = {
+  light_sp_artillery_brigade = { x = 0 y = 0 }
+  light_sp_artillery_brigade = { x = 0 y = 1 }
+  light_sp_artillery_brigade = { x = 0 y = 2 }
+  light_sp_artillery_brigade = { x = 0 y = 3 }
+  light_sp_artillery_brigade = { x = 0 y = 4 }
+  motorized = { x = 1 y = 0 }
+  motorized = { x = 1 y = 1 }
+  motorized = { x = 1 y = 2 }
+  motorized = { x = 1 y = 3 }
+ }
+support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+	
+}
+
+units = {
+division = {
+  name = "Lab Horror"
+  location = 7632
+  division_template = "Demacian Monster"
+  start_experience_factor = 0.4
+  start_equipment_factor = 0.10
+ }
+}

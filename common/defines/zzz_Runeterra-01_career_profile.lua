@@ -1,0 +1,2 @@
+NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "Runeterra" -- Can be set by mods to collect statistics in a separate data set for the mod. Will also be used as the display name if MOD_STATISTICS_GROUP_NAME is not set.
+NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "Runeterra" -- Can be set by mods as a display name for the mod's statistics data set. It can be a localized.

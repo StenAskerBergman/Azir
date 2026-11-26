@@ -1,0 +1,227 @@
+spriteTypes = {
+	##Noxus
+	
+	spriteType = {
+        name = GFX_VladimirP4
+        texturefile = gfx/characters/NOX/VladimirP4.dds
+    }
+	
+	spriteType = {
+        name = GFX_VessiCh1
+        texturefile = gfx/characters/NOX/VessiCh1.dds
+    }
+	
+	spriteType = {
+        name = GFX_UnkN2
+        texturefile = gfx/characters/NOX/UnkN2.dds
+    }
+	
+	spriteType = {
+        name = GFX_UnkN1
+        texturefile = gfx/characters/NOX/UnkN1.dds
+    }
+	
+	spriteType = {
+        name = GFX_UnkAi1
+        texturefile = gfx/characters/NOX/UnkAi1.dds
+    }
+	
+	spriteType = {
+        name = GFX_TelsiP2
+        texturefile = gfx/characters/NOX/TelsiP2.dds
+    }
+	
+	spriteType = {
+        name = GFX_SwainCh2
+        texturefile = gfx/characters/NOX/SwainCh2.dds
+    }
+	
+	spriteType = {
+        name = GFX_NoradiTh2
+        texturefile = gfx/characters/NOX/NoradiTh2.dds
+    }
+	
+	spriteType = {
+        name = GFX_LeBlancP5
+        texturefile = gfx/characters/NOX/LeBlancP5.dds
+    }
+	
+	spriteType = {
+        name = GFX_KyeA1
+        texturefile = gfx/characters/NOX/KyeA1.dds
+    }
+	
+	spriteType = {
+        name = GFX_KarlA5
+        texturefile = gfx/characters/NOX/KarlA5.dds
+    }
+	
+	spriteType = {
+        name = GFX_FarisA2
+        texturefile = gfx/characters/NOX/FarisA2.dds
+    }
+	
+	spriteType = {
+        name = GFX_ErathTh1
+        texturefile = gfx/characters/NOX/ErathTh1.dds
+    }
+	
+	spriteType = {
+        name = GFX_DrEsslangerTh3
+        texturefile = gfx/characters/NOX/DrEsslangerTh3.dds
+    }
+	
+	spriteType = {
+        name = GFX_DravenP1
+        texturefile = gfx/characters/NOX/DravenP1.dds
+    }
+	
+	spriteType = {
+        name = GFX_BroadmaneP3
+        texturefile = gfx/characters/NOX/BroadmaneP3.dds
+    }
+	
+	spriteType = {
+        name = GFX_BerynA3
+        texturefile = gfx/characters/NOX/BerynA3.dds
+    }
+	
+	spriteType = {
+        name = GFX_AurokA4
+        texturefile = gfx/characters/NOX/AurokA4.dds
+    }
+	
+	spriteType = {
+        name = GFX_AelanaCh3
+        texturefile = gfx/characters/NOX/AelanaCh3.dds
+    }
+
+	##Demacia
+    spriteType = {
+        name = GFX_wisteria
+        texturefile = gfx/characters/DEM/wisteria.dds
+    }
+    spriteType = {
+        name = GFX_xinzhao
+        texturefile = gfx/characters/DEM/xinzhao.dds
+    }
+    spriteType = {
+        name = GFX_hesbeth
+        texturefile = gfx/characters/DEM/hesbeth.dds
+    }
+    spriteType = {
+        name = GFX_jananP1
+        texturefile = gfx/characters/DEM/jananP1.dds
+    }
+	spriteType = {
+        name = GFX_gregemP2
+        texturefile = gfx/characters/DEM/gregemP2.dds
+    }
+	spriteType = {
+        name = GFX_tiannaP3
+        texturefile = gfx/characters/DEM/tiannaP3.dds
+    }
+	spriteType = {
+        name = GFX_ronanT1
+        texturefile = gfx/characters/DEM/ronanT1.dds
+    }
+	spriteType = {
+        name = GFX_finnT2
+        texturefile = gfx/characters/DEM/FinnT2.dds
+    }
+	spriteType = {
+        name = GFX_BlairT3
+        texturefile = gfx/characters/DEM/BlairT3.dds
+    }
+	spriteType = {
+        name = GFX_unkA1
+        texturefile = gfx/characters/DEM/unkA1.dds
+    }
+	spriteType = {
+        name = GFX_unkA2
+        texturefile = gfx/characters/DEM/unkA2.dds
+    }
+	spriteType = {
+        name = GFX_unkN1
+        texturefile = gfx/characters/DEM/unkN1.dds
+    }
+	spriteType = {
+        name = GFX_unkN2
+        texturefile = gfx/characters/DEM/unkN2.dds
+    }
+	spriteType = {
+        name = GFX_unkAi1
+        texturefile = gfx/characters/DEM/unkAi1.dds
+    }
+	spriteType = {
+        name = GFX_unkAi2
+        texturefile = gfx/characters/DEM/unkAi2.dds
+    }
+	spriteType = {
+        name = GFX_fioraM1
+        texturefile = gfx/characters/DEM/fioraM1.dds
+    }
+	spriteType = {
+        name = GFX_bressiM2
+        texturefile = gfx/characters/DEM/bressiM2.dds
+    }
+	spriteType = {
+        name = GFX_aineM3
+        texturefile = gfx/characters/DEM/AineM3.dds
+    }
+	spriteType = {
+        name = GFX_kaneM4
+        texturefile = gfx/characters/DEM/KaneM4.dds
+    }
+	spriteType = {
+        name = GFX_royM5
+        texturefile = gfx/characters/DEM/RoyM5.dds
+    }
+	
+	###Mage Rebellion
+	
+	spriteType = {
+        name = GFX_naraP1
+        texturefile = gfx/characters/MRE/NaraP1.dds
+    }
+	spriteType = {
+        name = GFX_leilaneP2
+        texturefile = gfx/characters/MRE/LeilaneP2.dds
+    }
+	spriteType = {
+        name = GFX_geraintP3
+        texturefile = gfx/characters/MRE/GeraintP3.dds
+    }
+	spriteType = {
+        name = GFX_cordeliaP4
+        texturefile = gfx/characters/MRE/CordeliaP4.dds
+    }
+	spriteType = {
+        name = GFX_karaA1
+        texturefile = gfx/characters/MRE/KaraA1.dds
+    }
+	spriteType = {
+        name = GFX_pialaA2
+        texturefile = gfx/characters/MRE/PialaA2.dds
+    }
+	spriteType = {
+        name = GFX_hacoM1
+        texturefile = gfx/characters/MRE/HacoM1.dds
+    }
+	spriteType = {
+        name = GFX_rukkoM2
+        texturefile = gfx/characters/MRE/RukkoM2.dds
+    }
+	spriteType = {
+        name = GFX_sylasM3
+        texturefile = gfx/characters/MRE/SylasM3.dds
+    }
+	spriteType = {
+        name = GFX_aurynM4
+        texturefile = gfx/characters/MRE/AurynM4.dds
+    }
+	spriteType = {
+        name = GFX_donnellyM5
+        texturefile = gfx/characters/MRE/DonnellyM5.dds
+    }
+}

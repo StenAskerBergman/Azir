@@ -1,0 +1,227 @@
+technologies = {
+    noxus_military_academy_tech = {
+        allow = { tag = NOX }
+        allow_branch = { tag = NOX }
+        enable_building = {
+            building = noxus_military_academy
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 0 y = 1 }
+        }
+    }
+    demacia_knights_academy_tech = {
+        allow = { tag = DEM }
+        allow_branch = { tag = DEM }
+        enable_building = {
+            building = demacia_knights_academy
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 1 y = 1 }
+        }
+    }
+    piltover_hextech_institute_tech = {
+        allow = { tag = PLT }
+        allow_branch = { tag = PLT }
+        enable_building = {
+            building = piltover_hextech_institute
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 5 y = 1 }
+        }
+    }
+    zaun_chemical_workshop_tech = {
+        allow = { tag = ZAU }
+        allow_branch = { tag = ZAU }
+        enable_building = {
+            building = zaun_chemical_workshop
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 6 y = 1 }
+        }
+    }
+    ionia_spirit_sanctuary_tech = {
+        allow = { tag = ION }
+        allow_branch = { tag = ION }
+        enable_building = {
+            building = ionia_spirit_sanctuary
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 2 y = 1 }
+        }
+    }
+    shurima_sun_disc_monument_tech = {
+        allow = { tag = SHU }
+        allow_branch = { tag = SHU }
+        enable_building = {
+            building = shurima_sun_disc_monument
+            level = 5
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 3 y = 1 }
+        }
+    }
+    avarosa_gathering_hall_tech = {
+        allow = { tag = AVA }
+        allow_branch = { tag = AVA }
+        enable_building = {
+            building = avarosa_gathering_hall
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 4 y = 1 }
+        }
+    }
+    winter_claw_war_camp_tech = {
+        allow = { tag = WIN }
+        allow_branch = { tag = WIN }
+        enable_building = {
+            building = winter_claw_war_camp
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 0 y = 3 }
+        }
+    }
+    frostguard_ice_forge_tech = {
+        allow = { tag = FRO }
+        allow_branch = { tag = FRO }
+        enable_building = {
+            building = frostguard_ice_forge
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 1 y = 3 }
+        }
+    }
+    ursine_storm_shrine_tech = {
+        allow = { tag = URS }
+        allow_branch = { tag = URS }
+        enable_building = {
+            building = ursine_storm_shrine
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 2 y = 3 }
+        }
+    }
+    bilgewater_commercial_port_tech = {
+        allow = { tag = BLG }
+        allow_branch = { tag = BLG }
+        enable_building = {
+            building = bilgewater_commercial_port
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 3 y = 3 }
+        }
+    }
+    targon_celestial_observatory_tech = {
+        allow = { tag = TAR }
+        allow_branch = { tag = TAR }
+        enable_building = {
+            building = targon_celestial_observatory
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 4 y = 3 }
+        }
+    }
+    ixtal_elemental_complex_tech = {
+        allow = { tag = IXT }
+        allow_branch = { tag = IXT }
+        enable_building = {
+            building = ixtal_elemental_complex
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 5 y = 3 }
+        }
+    }
+    shadow_isles_imperial_fortress_tech = {
+        allow = { tag = SHI }
+        allow_branch = { tag = SHI }
+        enable_building = {
+            building = shadow_isles_imperial_fortress
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 6 y = 3 }
+        }
+    }
+    void_hive_tech = {
+        allow = { tag = VOI }
+        allow_branch = { tag = VOI }
+        enable_building = {
+            building = void_hive
+            level = 1
+        }
+        research_cost = 1
+        start_year = 990
+        categories = { industry }
+        folder = {
+            name = industry_folder
+            position = { x = 0 y = 5 }
+        }
+    }
+}

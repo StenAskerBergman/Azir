@@ -1,0 +1,43 @@
+
+state={
+	id=31
+	name="STATE_31"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 8
+ #rubber = 6
+ steel = 8
+ #coal = 10
+ chromium = 4
+ #aluminium = 18
+ }
+ history = {
+ owner = KUM
+ add_core_of = KUM
+ victory_points = {
+ 8241 30
+ }
+  buildings = {
+   infrastructure = 4
+   arms_factory = 1
+   industrial_complex = 2
+   dockyard = 1
+   8241 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		32 974 1768 3360 3430 4167 4548 5251 5560 8228 8231 8237 8241 8247 8256 8257 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1782198
+        state_category = large_town
+}

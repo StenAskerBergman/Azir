@@ -1,0 +1,151 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_shyvana"
+		texturefile = "gfx/event_pictures/report_event_shyvana.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fightJarvan"
+		texturefile = "gfx/event_pictures/report_event_fightJarvan.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fightGaren"
+		texturefile = "gfx/event_pictures/report_event_fightGaren.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kayleRuins"
+		texturefile = "gfx/event_pictures/report_event_kayleRuins.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_maintainTunnels"
+		texturefile = "gfx/event_pictures/report_event_maintainTunnels.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_aidEscape"
+		texturefile = "gfx/event_pictures/report_event_aidEscape.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blameUs"
+		texturefile = "gfx/event_pictures/report_event_blameUs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_katarina"
+		texturefile = "gfx/event_pictures/report_event_katarina.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_j3_dead"
+		texturefile = "gfx/event_pictures/report_event_j3_dead.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_recruit_poppy"
+		texturefile = "gfx/event_pictures/report_event_recruit_poppy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_peaceful_end"
+		texturefile = "gfx/event_pictures/report_event_peaceful_end.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_mage_hunts"
+		texturefile = "gfx/event_pictures/report_event_mage_hunts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ideas_of_freedom"
+		texturefile = "gfx/event_pictures/report_event_ideas_of_freedom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_sylas_rebellion"
+		texturefile = "gfx/event_pictures/report_event_sylas_rebellion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_question_of_sylas"
+		texturefile = "gfx/event_pictures/report_event_question_of_sylas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_mage_without_sylas"
+		texturefile = "gfx/event_pictures/report_event_mage_without_sylas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_investigate_lux"
+		texturefile = "gfx/event_pictures/report_event_investigate_lux.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_USEABLE_GRAYMARK"
+		texturefile = "gfx/event_pictures/report_event_greymark_in_home.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_shadows_emerge"
+		texturefile = "gfx/event_pictures/report_event_shadows_emerge.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_crowded_dungeons"
+		texturefile = "gfx/event_pictures/report_event_crowded_dungeons.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_promote_illuminators"
+		texturefile = "gfx/event_pictures/report_event_promote_illuminators.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_war_imminent"
+		texturefile = "gfx/event_pictures/report_event_offer_local_aid.dds"
+	}
+	
+	##
+	
+	spriteType = {
+		name = "GFX_report_event_generic_strike"
+		texturefile = "gfx/event_pictures/report_event_generic_strike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_growing_resistance"
+		texturefile = "gfx/event_pictures/report_event_growing_resistance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_demons"
+		texturefile = "gfx/event_pictures/report_event_demons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_demons_attack"
+		texturefile = "gfx/event_pictures/report_event_demons_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_demons_gone"
+		texturefile = "gfx/event_pictures/report_event_demons_gone.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_003"
+		texturefile = "gfx/event_pictures/news_event_003.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_002"
+		texturefile = "gfx/event_pictures/news_event_002.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_001"
+		texturefile = "gfx/event_pictures/news_event_001.dds"
+	}
+	
+} 

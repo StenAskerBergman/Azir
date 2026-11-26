@@ -1,0 +1,346 @@
+MRE_peace = {
+	peaceTreaty = { 
+
+		##Peace
+
+		days_mission_timeout = 365
+		icon = generic_construction 
+		fire_only_once = no
+		allowed = { always = no }	
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			MRE = {
+				white_peace = DEM
+			}
+			
+		}
+	}
+}
+
+MRE_demons = {
+	
+	MREevelynnFound = { 
+
+		##Evelynn
+
+		days_mission_timeout = 180
+		icon = evelynn_icon
+		fire_only_once = no
+		allowed = { always = no }	
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			every_controlled_state = {
+				remove_dynamic_modifier = { modifier = demon_attack }
+			}
+				country_event = {
+					id = magerebellion.11
+					days = 1
+				}
+				country_event = {
+					id = magerebellion.12
+					days = 40
+				}
+			
+		}
+	}
+	MREfiddleFound = { 
+
+		##Fiddlesticks
+
+		days_mission_timeout = 180
+		icon = fiddle_icon
+		fire_only_once = no
+		allowed = { always = no }	
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			every_controlled_state = {
+				remove_dynamic_modifier = { modifier = demon_attack }
+			}
+				country_event = {
+					id = magerebellion.11
+					days = 1
+				}
+				country_event = {
+					id = magerebellion.12
+					days = 40
+				}
+			
+		}
+	}
+	MREnocturneFound = { 
+
+		##Nocturne
+
+		days_mission_timeout = 180
+		icon = nocturne_icon
+		fire_only_once = no
+		allowed = { always = no }
+
+		available = {
+       		 always = no
+    		}
+
+		timeout_effect = {
+			
+			every_controlled_state = {
+				remove_dynamic_modifier = { modifier = demon_attack }
+			}
+			
+				country_event = {
+					id = magerebellion.11
+					days = 1
+				}
+				country_event = {
+					id = magerebellion.12
+					days = 40
+				}
+			
+		}
+	}
+	MREinvestigate_demons = { 
+			available = {
+       			 NOT = { has_country_flag = evelynn }
+       			 NOT = { has_country_flag = nocturne }
+       			 NOT = { has_country_flag = fiddle }
+				 NOT = { has_country_flag = found_demons }
+    			}
+	
+			days_remove = 5
+			fire_only_once = no
+
+			cost = 10
+
+			remove_effect = {
+				if = {
+					limit = {
+						has_country_flag = demons
+					}
+					set_country_flag = found_demons
+					random_list = {
+						33 = {
+							country_event = {
+							id = magerebellion.3
+							days = 1
+							}
+						}
+						33 = {
+							country_event = {
+							id = magerebellion.4
+							days = 1
+							}
+						}
+						34 = {
+							country_event = {
+							id = magerebellion.5
+							days = 1
+							}
+						}
+					}
+				}else = {
+					country_event = {
+						id = magerebellion.10
+						days = 1
+					}
+				}
+			}
+	}
+	MREmartial_law = { 
+			available = {
+			has_country_flag = found_demons
+			 	any_controlled_state = {
+					has_dynamic_modifier = {
+    						modifier = demon_attack
+					}
+					#FIX THIS ASAP
+					has_ROOT_at_least_1_div_in_current_state_scope = yes	
+				}
+    			}
+			icon = generic_prepare_civil_war
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 0
+
+			complete_effect = {
+				add_manpower = -10000
+				if = {
+					limit = {
+						has_country_flag = evelynn
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREevelynnFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = fiddle
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREfiddleFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = nocturne
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREnocturneFound
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+	MREprepare_a_defense = { 
+			available = {
+			has_country_flag = found_demons
+				has_equipment = {
+   				 infantry_equipment_1 > 499
+				}
+    			}
+			icon = generic_industry
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 25
+
+			complete_effect = {
+					add_equipment_to_stockpile = {
+    						type = infantry_equipment
+   						 amount = -500
+   						 producer = MRE
+					}
+				if = {
+					limit = {
+						has_country_flag = evelynn
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREevelynnFound
+   				 	days = -30
+					}
+
+				}else_if = {
+					limit = {
+						has_country_flag = fiddle
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREfiddleFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = nocturne
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREnocturneFound
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+	MRErelocate_resources = { 
+			available = {
+			has_country_flag = found_demons
+				
+    			}
+	
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 50
+
+			complete_effect = {
+				if = {
+					limit = {
+						has_country_flag = evelynn
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREevelynnFound
+   				 	days = -30
+					}
+
+				}else_if = {
+					limit = {
+						has_country_flag = fiddle
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREfiddleFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = nocturne
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREnocturneFound
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+	MRErequest_night_hunter = { 
+			visible = {
+			has_country_flag = vayne	
+			}
+			available = {
+			has_country_flag = found_demons	
+    			}
+	
+			days_remove = 30
+			fire_only_once = no
+
+			cost = 0
+
+			complete_effect = {
+				if = {
+					limit = {
+						has_country_flag = evelynn
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREevelynnFound
+   				 	days = -30
+					}
+
+				}else_if = {
+					limit = {
+						has_country_flag = fiddle
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREfiddleFound
+   				 	days = -30
+					}
+				}else_if = {
+					limit = {
+						has_country_flag = nocturne
+					}
+					add_days_mission_timeout  = {
+   				 	mission = MREnocturneFound
+   				 	days = -30
+					}
+				}else = {
+
+				}
+			}
+	}
+}
+

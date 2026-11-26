@@ -1,0 +1,120 @@
+type={
+	type="frame_border_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="frame_border_entity_top"
+		position={
+			0 0 2190 
+		}
+		rotation={
+			0 0 0 
+		}
+	}
+}
+type={
+	type="sundisc_entity"
+	use_animation=no
+	scale=0.300000
+	always_visible=yes
+	object={
+		name="sundisc_entity"
+		position={
+			2555.83008 13.3 535.28996 
+		}
+		rotation={
+			0 350 0 
+		}
+	}
+}
+type={
+	type="bastion_entity"
+	use_animation=no
+	scale=6.000000
+	always_visible=yes
+	object={
+		name="immortal_bastion_entity"
+		position={
+			2590.13984 12.5 1458.58 
+		}
+		rotation={
+			0 0 0 
+		}
+	}
+}
+type={
+	type="demaciacity_entity"
+	use_animation=no
+	scale=4.000000
+	always_visible=yes
+	object={
+		name="demaciacity_entity"
+		position={
+			1601.92 15.5 1322.21 
+		}
+		rotation={
+			0 230 0 
+		}
+	}
+}
+type={
+	type="frostguard_entity"
+	use_animation=no
+	scale=2.500000
+	always_visible=yes
+	object={
+		name="frostguard_entity"
+		position={
+			2104.62016 18.1 2002.68992 
+		}
+		rotation={
+			0 360 0 
+		}
+	}
+}
+type={
+	type="frame_border_bottom_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="frame_border_bottom_entity_bottom"
+		position={
+			0 0 -140 
+		}
+		rotation={
+			0 0 0 
+		}
+	}
+}
+type={
+	type="frame_border_logo_entity"
+	use_animation=no
+	scale=300.000000
+	always_visible=yes
+	object={
+		name="frame_border_logo_entity_top"
+		position={
+			3000 0 2130 
+		}
+		rotation={
+			0 0 0 
+		}
+	}
+}
+type={
+	type="citadel_entity"
+	use_animation=no
+	scale=3.000000
+	always_visible=yes
+	object={
+		name="citadel_entity"
+		position={
+			3214.84 14 541.25 
+		}
+		rotation={
+			0 0 0 
+		}
+	}
+}

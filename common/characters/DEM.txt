@@ -1,0 +1,520 @@
+characters = {
+
+     jarvin3 = {
+	name = "King Jarvan III"
+	portraits = {
+   	 civilian = {
+         large = GFX_portrait_DEM_jarvin3
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_JARVIN3_DESC"
+			ideology = sympathizers
+			traits = { influenceableKing }
+			#expire = "1943.1.1.1"
+		}
+    }
+
+
+	luxx = {
+	name = "Luxanna Crownguard"
+	portraits = {
+   	 civilian = {
+         large = GFX_portrait_DEM_luxx
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_LUX_DESC"
+			ideology = illuminators
+			#traits = { influenceableKing }
+			#expire = "1943.1.1.1"
+		}
+	}
+
+	eldred = {
+	name = "Mageseeker Eldred"
+	portraits = {
+   	 civilian = {
+         large = GFX_portrait_DEM_eldred
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_ELDRED_DESC"
+			ideology = sympathizers
+			traits = { politicalPuppeteer }
+			#expire = "1943.1.1.1"
+		}
+    }
+	jarvin4 = {
+	name = "King Jarvan IV"
+	portraits = {
+   	 civilian = {
+         large = GFX_portrait_DEM_jarvin4
+         }
+	}
+	country_leader = {
+			desc = "POLITICS_JARVIN4_DESC"
+			ideology = sympathizers
+			traits = { exemplar }
+			#expire = "1943.1.1.1"
+		}
+    }
+
+
+    hesbeth = {
+	name = "Mageseeker Hesbeth"
+	portraits = {
+   	 civilian = {
+         small = GFX_hesbeth
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = Mhesbeth
+		can_be_fired = no
+    	ledger = civilian
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { mageseeker_influencer }
+	}
+    }
+	
+	janan = {
+	name = "Janan"
+	portraits = {
+   	 civilian = {
+         small = GFX_jananP1
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = JananP1
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { devoted_propagandist }
+	}
+    }
+	
+	gregem = {
+	name = "Gregem"
+	portraits = {
+   	 civilian = {
+         small = GFX_gregemP2
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = GregemP2
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { antagonizer }
+	}
+    }
+	
+	tianna = {
+	name = "Tianna Crownguard"
+	portraits = {
+   	 civilian = {
+         small = GFX_tiannaP3
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = TiannaP3
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { staunch_traditionalist }
+	}
+    }
+	
+	ronan = {
+	name = "Ronan"
+	portraits = {
+   	 civilian = {
+         small = GFX_ronanT1
+         }
+	}
+	advisor = {
+   		slot = theorist
+    	idea_token = RonanT1
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { defensive_focused }
+	}
+    }
+	
+	finn = {
+	name = "Finn"
+	portraits = {
+   	 civilian = {
+         small = GFX_finnT2
+         }
+	}
+	advisor = {
+   		slot = theorist
+    	idea_token = FinnT2
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { well_rounded }
+	}
+    }
+	
+	blair = {
+	name = "Blair"
+	portraits = {
+   	 civilian = {
+         small = GFX_BlairT3
+         }
+	}
+	advisor = {
+   		slot = theorist
+    	idea_token = BlairT3
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { offensive_focused }
+	}
+    }
+	
+	cohesiveGen = {
+	name = "Cohesive General"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkA1
+         }
+	}
+	advisor = {
+   		slot = army_chief
+    	idea_token = cohesiveGen
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { cohesive_general }
+	}
+    }
+	
+	drillSerg = {
+	name = "Drill Sergeant"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkA2
+         }
+	}
+	advisor = {
+   		slot = army_chief
+    	idea_token = drillSerg
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { drill_sergeant }
+	}
+    }
+	
+	coordAdmiralty = {
+	name = "Coordinated Admiralty"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkN1
+         }
+	}
+	advisor = {
+   		slot = navy_chief
+    	idea_token = coordAdmiralty
+		can_be_fired = yes
+    	ledger = navy
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { coordinated_admiralty }
+	}
+    }
+	
+	amphibAssaulter = {
+	name = "Amphibious Assaulter"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkN2
+         }
+	}
+	advisor = {
+   		slot = navy_chief
+    	idea_token = amphibAssaulter
+		can_be_fired = yes
+    	ledger = navy
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { amphibious_assaulter }
+	}
+    }
+	
+	elevTrainers = {
+	name = "Elevated Trainers"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkAi1
+         }
+	}
+	advisor = {
+   		slot = air_chief
+    	idea_token = elevTrainers
+		can_be_fired = yes
+    	ledger = air
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { elevated_trainers }
+	}
+    }
+	
+	elusiveRap = {
+	name = "Elusive Raptors"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkAi2
+         }
+	}
+	advisor = {
+   		slot = air_chief
+    	idea_token = elusiveRap
+		can_be_fired = yes
+    	ledger = air
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { elusive_raptors }
+	}
+    }
+	
+	wisteria = {
+	name = "Wisteria"
+	portraits = {
+   	 civilian = {
+         small = GFX_wisteria
+         }
+	}
+	advisor = {
+   	slot = high_command
+    	idea_token = wisteria
+	can_be_fired = yes
+    	ledger = military
+		cost = 50
+   		traits = { reformedMage }
+	}
+    }
+	
+	xinzhao = {
+	name = "Xin Zhao"
+	portraits = {
+   	 civilian = {
+         small = GFX_xinzhao
+         }
+	}
+	advisor = {
+   	slot = high_command
+    	idea_token = xinzhao 
+	can_be_fired = yes
+    	ledger = military
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { seneschal }
+	}
+    }
+
+	fiora = {
+	name = "Fiora Laurent"
+	portraits = {
+   	 civilian = {
+         small = GFX_fioraM1
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = fioraM1
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { duelist }
+	}
+    }
+	
+	bressi = {
+	name = "Bressi"
+	portraits = {
+   	 civilian = {
+         small = GFX_bressiM2
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = bressiM2
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { combat_cook }
+	}
+    }
+	
+	aine = {
+	name = "Aine"
+	portraits = {
+   	 civilian = {
+         small = GFX_aineM3
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = aineM3
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { relentless_attacker }
+	}
+    }
+	
+	kane = {
+	name = "Kane"
+	portraits = {
+   	 civilian = {
+         small = GFX_kaneM4
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = kaneM4
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { devout_defender }
+	}
+    }
+	
+	roy = {
+	name = "Roy"
+	portraits = {
+   	 civilian = {
+         small = GFX_royM5
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = royM5
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+		allowed = { original_tag = DEM }
+   		traits = { brothers_in_arms }
+	}
+    }
+	
+	## Generals
+	j4={
+		name= "General Jarvin IV"
+		portraits={
+			army={
+				large=GFX_portrait_DEM_jarvin4
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer politically_connected }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	cithria={
+		name= "Lady Cithria"
+		portraits={
+			army={
+				large=GFX_portrait_DEM_cithria
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	poppy={
+		name= "Poppy"
+		portraits={
+			army={
+				large=GFX_portrait_DEM_poppy
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=5
+			attack_skill=2
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	garen={
+		name= "Garen Crownguard"
+		portraits={
+			army={
+				large=GFX_portrait_DEM_Garen
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer politically_connected }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	quinn={
+		name= "Quinn of Uwendale"
+		portraits={
+			army={
+				large=GFX_portrait_DEM_Quinn
+			}
+		}
+		corps_commander={
+			traits={ career_officer cavalry_officer }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	anden={
+		name= "Anden Yessani"
+		portraits={
+			army={
+				large=GFX_portrait_DEM_Anden
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+}

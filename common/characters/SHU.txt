@@ -1,0 +1,145 @@
+characters = {
+	SHU_azir = {
+		name = "Azir"
+		portraits = {
+			civilian = {
+				large = GFX_animated_SHU_Azir
+			}
+			army = {
+				large = GFX_animated_SHU_Azir
+			}
+		}
+		country_leader = {
+			ideology = shurimanEmperor
+			traits = { emperorsands }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { offensive_doctrine }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SHU_azir
+			can_be_fired = no
+			ledger = civilian
+			cost = 0
+			traits = { natural_leader }
+		}
+	}
+	SHU_xerath = {
+		name = SHU_xerath
+		
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SHU_xerath
+				small = GFX_portrait_SHU_xerath_small
+			}
+			army = {
+				small = GFX_portrait_SHU_xerath_army_small
+			}
+		}
+		country_leader = {
+			ideology = axiomata
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
+		}
+		advisor = {
+			available = {
+				has_completed_focus = the_shuriman_accord1
+			}
+			slot = political_advisor
+			idea_token = SHU_xerath
+			cost = 150
+			traits = { empresselements }
+		}
+		corps_commander = {
+			visible = {
+				OR = {
+					has_completed_focus = the_shuriman_accord1
+					has_completed_focus = xerath
+				}
+			}
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 6
+		}
+		
+	}
+	SHU_Renekton = {
+		name = SHU_Renekton
+		 available = {
+        has_completed_focus = renekton
+    }
+
+		advisor = {
+			slot = high_command
+			idea_token = SHU_Renekton1
+			cost = 250
+			traits = { disciplined }
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SHU_Renekton
+				small = GFX_portrait_SHU_Renekton_small
+			}
+			army = {
+				large = GFX_portrait_SHU_Renekton_army
+				small = GFX_portrait_SHU_Renekton_army_small
+			}
+			navy = {
+				large = GFX_portrait_SHU_Renekton_navy
+			}
+		}
+		corps_commander = {
+			traits = { invader_ii war_hero }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SHU_Nasus = {
+		name = SHU_Nasus
+	 available = {
+        has_completed_focus = nasus
+    }
+
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SHU_Nasus
+				small = GFX_portrait_SHU_Nasus_small
+			}
+			army = {
+				small = GFX_portrait_SHU_Nasus_army_small
+				large = GFX_portrait_SHU_Nasus_army
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Nasus
+			cost = 250
+			traits = { breaker_of_tradition }
+		}
+		corps_commander = {
+			traits = { hunter_killer }
+			skill = 6
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+}

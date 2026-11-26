@@ -1,0 +1,42 @@
+
+state={
+	id=160
+	name="STATE_160"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 7
+ #rubber = 14
+ steel = 7
+ coal = 6
+ #chromium = 3
+ #aluminium = 5
+ }
+ history = {
+ owner = HLD
+ add_core_of = HLD
+ victory_points = {
+ 8152 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 2
+   dockyard = 0
+   8168 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		2941 3437 4047 4298 5155 8129 8133 8134 8137 8142 8146 8152 8155 8168 8169 8176 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1429923
+        state_category = town
+}

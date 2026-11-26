@@ -1,0 +1,49 @@
+state = {
+	id = 166
+	name = "STATE_166"
+	resources = {
+		rubber = 9
+		steel = 8
+	}
+	history = {
+		owner = STO
+		add_core_of = STO
+		victory_points = { 8067 10 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 0
+			3724 = {
+				naval_base = 2
+			}
+		}
+		controller = STO
+	}
+	provinces = {
+		324
+		811
+		877
+		1964
+		2212
+		2572
+		3210
+		3254
+		3724
+		3738
+		4945
+		5263
+		5529
+		5753
+		8067
+		8079
+		8081
+		8126
+		8144
+		8184
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+	manpower = 1912832
+	state_category = town
+}

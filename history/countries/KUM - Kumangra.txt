@@ -1,0 +1,84 @@
+capital = 31
+
+oob = "KUM"
+
+set_research_slots = 3
+set_stability = 0.67
+set_war_support = 0.55
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+set_politics = {
+	ruling_party = mages
+	last_election = "988.7.07"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 0
+	oligarchy = 19
+	absolutists = 0
+	chiefdom = 0
+	mages = 81
+	royalist = 0
+}
+
+set_convoys = 200
+
+create_country_leader = {
+	name = "Tonnika Cazworth"
+	desc = "POLITICS_TONNIKA_DESC"
+	picture = "gfx/leaders/Kumangra/kumangraleader.dds"
+	#expire = ""
+	ideology = axiomata
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Tonnika Cazworth"
+	desc = "POLITICS_TONNIKA_DESC"
+	picture = "gfx/leaders/Kumangra/kumangraleader.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Tonnika Cazworth"
+	desc = "POLITICS_TONNIKA_DESC"
+	picture = "gfx/leaders/Kumangra/kumangraleader.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		#exemplar
+	}
+}
+create_country_leader = {
+	name = "Tonnika Cazworth"
+	desc = "POLITICS_TONNIKA_DESC"
+	picture = "gfx/leaders/Kumangra/kumangraleader.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		#exemplar
+	}
+}

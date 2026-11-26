@@ -1,0 +1,42 @@
+
+state={
+	id=291
+	name="STATE_291"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 10
+ #rubber = 10
+ #steel = 8
+ #coal = 5
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = KLS
+ add_core_of = KLS
+ victory_points = {
+ 656 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		124 656 1285 1722 2195 2236 2249 2355 2645 3055 3591 3643 3725 3752 4770 4860 5056 5084 5144 5371 5554 5634 7840 7853 7857 7871 7902 7925 7929 7934 7963 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1391284
+        state_category = town
+}

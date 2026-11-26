@@ -1,0 +1,42 @@
+
+state={
+	id=284
+	name="STATE_284"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 6
+ #rubber = 8
+ #steel = 8
+ #coal = 3
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = SKA
+ add_core_of = SKA
+ victory_points = {
+ 3818 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		192 1290 1456 1911 1937 2183 2578 2636 2805 2970 3365 3439 3676 3718 3818 3894 4421 4570 5540 7186 7200 7238 7336 7356 7396 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1129342
+        state_category = town
+}

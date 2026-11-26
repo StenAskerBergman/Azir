@@ -1,0 +1,359 @@
+characters = {
+
+
+	coordAdmiralty2 = {
+	name = "Coordinated Admiralty"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkN1
+         }
+	}
+	advisor = {
+   		slot = navy_chief
+    	idea_token = coordAdmiralty2
+		can_be_fired = yes
+    	ledger = navy
+		cost = 150
+   		traits = { coordinated_admiralty }
+	}
+    }
+	
+	amphibAssaulter2 = {
+	name = "Amphibious Assaulter"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkN2
+         }
+	}
+	advisor = {
+   		slot = navy_chief
+    	idea_token = amphibAssaulter2
+		can_be_fired = yes
+    	ledger = navy
+		cost = 150
+   		traits = { amphibious_assaulter }
+	}
+    }
+	
+	elevTrainers2 = {
+	name = "Elevated Trainers"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkAi1
+         }
+	}
+	advisor = {
+   		slot = air_chief
+    	idea_token = elevTrainers2
+		can_be_fired = yes
+    	ledger = air
+		cost = 150
+   		traits = { elevated_trainers }
+	}
+    }
+	
+	elusiveRap2 = {
+	name = "Elusive Raptors"
+	portraits = {
+   	 civilian = {
+         small = GFX_unkAi2
+         }
+	}
+	advisor = {
+   		slot = air_chief
+    	idea_token = elusiveRap2
+		can_be_fired = yes
+    	ledger = air
+		cost = 150
+   		traits = { elusive_raptors }
+	}
+    }
+
+	ronan2 = {
+	name = "Ronan"
+	portraits = {
+   	 civilian = {
+         small = GFX_ronanT1
+         }
+	}
+	advisor = {
+   		slot = theorist
+    	idea_token = 2RonanT1
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+   		traits = { defensive_focused }
+	}
+    }
+	
+	finn2 = {
+	name = "Finn"
+	portraits = {
+   	 civilian = {
+         small = GFX_finnT2
+         }
+	}
+	advisor = {
+   		slot = theorist
+    	idea_token = 2FinnT2
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+   		traits = { well_rounded }
+	}
+    }
+	
+	blair2 = {
+	name = "Blair"
+	portraits = {
+   	 civilian = {
+         small = GFX_BlairT3
+         }
+	}
+	advisor = {
+   		slot = theorist
+    	idea_token = 2BlairT3
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+   		traits = { offensive_focused }
+	}
+    }
+
+	nara = {
+	name = "Nara"
+	portraits = {
+   	 civilian = {
+         small = GFX_naraP1
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = naraP1
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+   		traits = { breaker_of_tradition }
+	}
+    }
+	
+	leilane = {
+	name = "Leilane"
+	portraits = {
+   	 civilian = {
+         small = GFX_leilaneP2
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = leilaneP2
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+   		traits = { natural_leader }
+	}
+    }
+	
+	geraint = {
+	name = "Geraint"
+	portraits = {
+   	 civilian = {
+         small = GFX_geraintP3
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = geraintP3
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+   		traits = { outspoken_motivator }
+	}
+    }
+	
+	cordelia = {
+	name = "Cordelia"
+	portraits = {
+   	 civilian = {
+         small = GFX_cordeliaP4
+         }
+	}
+	advisor = {
+   		slot = political_advisor
+    	idea_token = cordeliaP4
+		can_be_fired = yes
+    	ledger = civilian
+		cost = 150
+   		traits = { mage_supremacist }
+	}
+    }
+	
+	kara = {
+	name = "Kara"
+	portraits = {
+   	 civilian = {
+         small = GFX_karaA1
+         }
+	}
+	advisor = {
+   		slot = army_chief
+    	idea_token = karaA1
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+   		traits = { training_reformist }
+	}
+    }
+	
+	piala = {
+	name = "Piala"
+	portraits = {
+   	 civilian = {
+         small = GFX_pialaA2
+         }
+	}
+	advisor = {
+   		slot = army_chief
+    	idea_token = pialaA2
+		can_be_fired = yes
+    	ledger = army
+		cost = 150
+   		traits = { combat_seeker }
+	}
+    }
+	
+	haco = {
+	name = "Haco"
+	portraits = {
+   	 civilian = {
+         small = GFX_hacoM1
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = hacoM1
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+   		traits = { defensive_turtler }
+	}
+    }
+	
+	rukko = {
+	name = "Rukko"
+	portraits = {
+   	 civilian = {
+         small = GFX_rukkoM2
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = rukkoM2
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+   		traits = { untrained_fighter }
+	}
+    }
+	
+	sylasAdv = {
+	name = "Sylas"
+	portraits = {
+   	 civilian = {
+         small = GFX_sylasM3
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = sylasM3
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+   		traits = { revenge_seeker }
+	}
+    }
+	
+	auryn = {
+	name = "Auryn"
+	portraits = {
+   	 civilian = {
+         small = GFX_aurynM4
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = aurynM4
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+   		traits = { magic_focused }
+	}
+    }
+	
+	donnelly = {
+	name = "Donnelly"
+	portraits = {
+   	 civilian = {
+         small = GFX_donnellyM5
+         }
+	}
+	advisor = {
+   		slot = high_command
+    	idea_token = donnellyM5
+		can_be_fired = yes
+    	ledger = military
+		cost = 150
+   		traits = { guerilla_fighter }
+	}
+    }
+
+	##Generals
+
+	leilaneleader ={
+		name= "Leilane"
+		portraits={
+			army={
+				large=GFX_portrait_MRE_leilaneleader
+			}
+		}
+		country_leader = {
+			ideology = illuminators
+			traits = {
+				unsureLeader
+			}
+		}
+	}
+
+	sylas2 ={
+		name= "Sylas"
+		portraits={
+			army={
+				large=GFX_portrait_MRE_sylas
+			}
+		}
+		corps_commander={
+			traits={ reckless }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	sirius ={
+		name= "Sirius Rowill"
+		portraits={
+			army={
+				large=GFX_portrait_MRE_sirius
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist cautious }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+}

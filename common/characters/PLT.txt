@@ -1,0 +1,188 @@
+characters = {
+	PLT_jayce_talis = {
+		name = PLT_jayce_talis
+		advisor = {
+			slot = theorist
+			idea_token = PLT_jayce_talis
+			cost = 150
+			traits = { plt_jayce_researcher }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_jayce_talis_small
+				large = GFX_portrait_PLT_jayce_talis
+			}
+		}
+
+	}
+	PLT_viktor = {
+		name = PLT_viktor
+		advisor = {
+			slot = theorist
+			idea_token = PLT_viktor
+			cost = 150
+			traits = { plt_viktor_theorist }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_viktor_small
+				large = GFX_portrait_PLT_viktor
+			}
+		}
+	}
+	PLT_mel_medarda = {
+		name = PLT_mel_medarda
+		advisor = {
+			slot = political_advisor
+			idea_token = PLT_mel_medarda
+			cost = 150
+			traits = { plt_mel_diplomat }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_mel_medarda_small
+				large = GFX_portrait_PLT_mel_medarda
+			}
+		}
+	}
+	PLT_caitlyn_kiramman = {
+		name = "Caitlyn kiramman"
+		advisor = {
+			slot = high_command
+			idea_token = PLT_caitlyn_kiramman
+			cost = 150
+			traits = { plt_caitlyn_advisor }
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PLT_caitlyn_kiramman
+				small = GFX_portrait_PLT_caitlyn_kiramman_small
+			}
+			army = {
+				small = GFX_portrait_PLT_caitlyn_kiramman_army_small
+			}
+		}
+		field_marshal = {
+			traits = { plt_caitlyn_marshal }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	PLT_heimerdinger = {
+		name = "Heimerdinger"
+		advisor = {
+			slot = theorist
+			idea_token = PLT_heimerdinger
+			cost = 150
+			traits = { plt_heimerdinger_theorist }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_heimerdinger_small
+			}
+		}
+	}
+	PLT_cassandra_kiramman = {
+		name = PLT_cassandra_kiramman
+		advisor = {
+			slot = political_advisor
+			idea_token = PLT_cassandra_kiramman
+			cost = 150
+			traits = { plt_cassandra_matriarch }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_cassandra_kiramman_small
+				large = GFX_portrait_PLT_cassandra_kiramman
+			}
+		}
+	}
+	PLT_shoola = {
+		name = PLT_shoola
+		advisor = {
+			slot = political_advisor
+			idea_token = PLT_shoola
+			cost = 150
+			traits = { plt_shoola_councilor }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_shoola_small
+				large = GFX_portrait_PLT_shoola
+			}
+		}
+	}
+	PLT_salo = {
+		name = PLT_salo
+		advisor = {
+			slot = political_advisor
+			idea_token = PLT_salo
+			cost = 150
+			traits = { plt_salo_operator }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_salo_small
+				large = GFX_portrait_PLT_salo
+			}
+		}
+	}
+	PLT_hoskel = {
+		name = PLT_hoskel
+		advisor = {
+			slot = political_advisor
+			idea_token = PLT_hoskel
+			cost = 150
+			traits = { plt_hoskel_magnate }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_hoskel_small
+				large = GFX_portrait_PLT_hoskel
+			}
+		}
+	}
+	PLT_bolbok = {
+		name = PLT_bolbok
+		advisor = {
+			slot = political_advisor
+			idea_token = PLT_bolbok
+			cost = 150
+			traits = { plt_bolbok_technocrat }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_bolbok_small
+				large = GFX_portrait_PLT_bolbok
+			}
+		}
+	}
+	PLT_loris = {
+		name = PLT_loris
+		advisor = {
+			slot = army_chief
+			idea_token = PLT_loris_chief
+			can_be_fired = yes
+			ledger = army
+			cost = 150
+			traits = { plt_loris_army_chief }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PLT_loris_small
+				large = GFX_portrait_PLT_loris
+			}
+		}
+		corps_commander = {
+			traits = { plt_loris_veteran }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

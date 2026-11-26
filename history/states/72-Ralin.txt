@@ -1,0 +1,42 @@
+
+state={
+	id=72
+	name="STATE_72"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 6
+ #rubber = 3
+ #steel = 4
+ #coal = 7
+ #chromium = 2
+ aluminium = 5
+ }
+ history = {
+ owner = ION
+ add_core_of = ION
+ victory_points = {
+ 5999 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   dockyard = 0
+   3513 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		169 685 832 1754 2069 2248 2866 3085 3513 3843 3861 4092 4129 4229 4383 4879 5344 5438 5489 5878 5885 5887 5889 5891 5895 5900 5903 5907 5916 5918 5919 5938 5939 5959 5967 5984 5999 6002 6030 6034 6048 6050 6078 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1527122
+        state_category = town
+}

@@ -1,0 +1,165 @@
+strategic_region={
+	id=62
+	name="STRATEGICREGION_62"
+	provinces={
+		135 323 753 898 928 1048 1348 1383 1439 1453 1519 1531 1658 1740 1813 1947 2203 2232 2271 2523 2694 2785 2884 2959 2996 3117 3224 3225 3301 3342 3658 3670 3832 4272 4303 4358 4506 4609 4686 4726 4740 4964 5139 5218 5312 5365 5386 5442 5494 5776 6891 6938 6971 6991 6995 7008 7028 7052 7061 7067 7105 7155 7207 7211 7260 7269 7277 7293 7309 7313 7341 7343 7372 7373 7377 7379 7380 7390 7391 7401 7415 7418 7429 7432 7458 7487 7499 7681 7707 7750 7775 7848 7859 
+	}
+	weather={
+        period={
+            between={ 0.0 30.0 } # January
+            temperature={ -30.0 -10.0 }
+            no_phenomenon=0.15
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.40
+            blizzard=0.30
+            arctic_water=0.80
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.90
+        }
+        period={
+            between={ 0.1 27.1 } # February
+            temperature={ -30.0 -10.0 }
+            no_phenomenon=0.20
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.40
+            blizzard=0.25
+            arctic_water=0.80
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.90
+        }
+        period={
+            between={ 0.2 30.2 } # March
+            temperature={ -25.0 -5.0 }
+            no_phenomenon=0.25
+            rain_light=0.10
+            rain_heavy=0.05
+            snow=0.35
+            blizzard=0.20
+            arctic_water=0.75
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.85
+        }
+        period={
+            between={ 0.3 29.3 } # April
+            temperature={ -15.0 0.0 }
+            no_phenomenon=0.30
+            rain_light=0.15
+            rain_heavy=0.10
+            snow=0.30
+            blizzard=0.10
+            arctic_water=0.60
+            mud=0.10
+            sandstorm=0.00
+            min_snow_level=0.75
+        }
+        period={
+            between={ 0.4 30.4 } # May
+            temperature={ -5.0 5.0 }
+            no_phenomenon=0.35
+            rain_light=0.20
+            rain_heavy=0.15
+            snow=0.20
+            blizzard=0.05
+            arctic_water=0.40
+            mud=0.15
+            sandstorm=0.00
+            min_snow_level=0.60
+        }
+        period={
+            between={ 0.5 29.5 } # June
+            temperature={ 0.0 8.0 }
+            no_phenomenon=0.40
+            rain_light=0.25
+            rain_heavy=0.20
+            snow=0.10
+            blizzard=0.00
+            arctic_water=0.20
+            mud=0.20
+            sandstorm=0.00
+            min_snow_level=0.40
+        }
+        period={
+            between={ 0.6 30.6 } # July
+            temperature={ 2.0 10.0 }
+            no_phenomenon=0.45
+            rain_light=0.30
+            rain_heavy=0.20
+            snow=0.05
+            blizzard=0.00
+            arctic_water=0.10
+            mud=0.25
+            sandstorm=0.00
+            min_snow_level=0.30
+        }
+        period={
+            between={ 0.7 30.7 } # August
+            temperature={ 0.0 8.0 }
+            no_phenomenon=0.40
+            rain_light=0.25
+            rain_heavy=0.20
+            snow=0.10
+            blizzard=0.00
+            arctic_water=0.20
+            mud=0.20
+            sandstorm=0.00
+            min_snow_level=0.40
+        }
+        period={
+            between={ 0.8 29.8 } # September
+            temperature={ -5.0 5.0 }
+            no_phenomenon=0.35
+            rain_light=0.20
+            rain_heavy=0.15
+            snow=0.20
+            blizzard=0.05
+            arctic_water=0.40
+            mud=0.15
+            sandstorm=0.00
+            min_snow_level=0.60
+        }
+        period={
+            between={ 0.9 30.9 } # October
+            temperature={ -15.0 0.0 }
+            no_phenomenon=0.30
+            rain_light=0.15
+            rain_heavy=0.10
+            snow=0.30
+            blizzard=0.10
+            arctic_water=0.60
+            mud=0.10
+            sandstorm=0.00
+            min_snow_level=0.75
+        }
+        period={
+            between={ 0.10 29.10 } # November
+            temperature={ -25.0 -5.0 }
+            no_phenomenon=0.25
+            rain_light=0.10
+            rain_heavy=0.05
+            snow=0.35
+            blizzard=0.20
+            arctic_water=0.75
+            mud=0.05
+            sandstorm=0.00
+            min_snow_level=0.85
+        }
+        period={
+            between={ 0.11 30.11 } # December
+            temperature={ -30.0 -10.0 }
+            no_phenomenon=0.15
+            rain_light=0.05
+            rain_heavy=0.00
+            snow=0.40
+            blizzard=0.30
+            arctic_water=0.80
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.90
+        }
+    }
+}

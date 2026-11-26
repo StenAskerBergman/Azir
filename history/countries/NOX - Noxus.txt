@@ -1,0 +1,116 @@
+capital = 190
+
+oob = "NOX"
+
+set_research_slots = 3
+set_stability = 0.68
+set_war_support = 0.70
+set_technology = {
+    noxus_military_academy_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+
+puppet = WAR
+puppet = DEL
+
+recruit_character = swainn
+recruit_character = darius
+recruit_character = kled
+recruit_character = farron
+recruit_character = kalrix
+recruit_character = kato
+
+recruit_character = draven
+recruit_character = telsi
+recruit_character = broadmane
+recruit_character = vladimir
+recruit_character = leblanc
+recruit_character = erath
+recruit_character = noradi
+recruit_character = dresslanger
+recruit_character = vessi
+recruit_character = swainch
+recruit_character = aelana
+recruit_character = effectiveScreener
+recruit_character = steelAdmiralty
+recruit_character = draconicTrainer
+recruit_character = kye
+recruit_character = faris
+recruit_character = beryn
+recruit_character = aurok
+recruit_character = karl
+
+set_politics = {
+	ruling_party = oligarchy
+	last_election = "985.1.07"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 0
+	oligarchy = 93
+	absolutists = 7
+	chiefdom = 0
+	mages = 0
+	royalist = 0
+}
+
+set_convoys = 200
+
+create_country_leader = {
+	name = "Trifarix"
+	desc = "POLITICS_TRIFARIX_DESC"
+	picture = "GFX_animated_NOX_animated_trifarix"
+	#expire = ""
+	ideology = noxianTrifarix
+	traits = {
+		noxgeneral
+	}
+}
+create_country_leader = {
+	name = "Swain"
+	desc = "POLITICS_SWAIN_DESC"
+	picture = "gfx/leaders/Noxus/portrait_NOX_swain.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		noxgeneral
+	}
+}
+create_country_leader = {
+	name = "Swain"
+	desc = "POLITICS_SWAIN_DESC"
+	picture = "gfx/leaders/Noxus/portrait_NOX_swain.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		noxgeneral
+	}
+}
+create_country_leader = {
+	name = "Swain"
+	desc = "POLITICS_SWAIN_DESC"
+	picture = "gfx/leaders/Noxus/portrait_NOX_swain.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		noxgeneral
+	}
+}

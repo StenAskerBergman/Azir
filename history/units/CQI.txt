@@ -1,0 +1,55 @@
+division_template = {
+ name = "Explorer"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Lost Explorer"
+  location = 8808
+  division_template = "Explorer"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Lost Explorer"
+  location = 3851
+  division_template = "Explorer"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Lost Explorer"
+  location = 3313
+  division_template = "Explorer"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Lost Explorer"
+  location = 5727
+  division_template = "Explorer"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Lost Explorer"
+  location = 2851
+  division_template = "Explorer"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+}

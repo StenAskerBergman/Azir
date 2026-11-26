@@ -1,0 +1,85 @@
+capital = 2
+
+oob = "SHI"
+
+set_research_slots = 3
+set_stability = 0.78
+set_war_support = 0.75
+set_technology = {
+    shadow_isles_imperial_fortress_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+set_politics = {
+	ruling_party = desolation
+	last_election = "985.4.14"
+	election_frequency = 96
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 92
+	theocracy = 0
+	oligarchy = 0
+	absolutists = 5
+	chiefdom = 0
+	mages = 3
+	royalist = 0
+}
+
+set_convoys = 225
+
+create_country_leader = {
+	name = "Viego"
+	desc = "POLITICS_THRESH_DESC"
+	picture = "GFX_animated_Shadow_Isles_viego"
+	#expire = ""
+	ideology = undeadWastes
+	traits = {
+		chainwarden
+	}
+}
+create_country_leader = {
+	name = "Thresh"
+	desc = "POLITICS_THRESH_DESC"
+	picture = "gfx/leaders/Shadow Isles/thresh.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		chainwarden
+	}
+}
+create_country_leader = {
+	name = "Thresh"
+	desc = "POLITICS_THRESH_DESC"
+	picture = "gfx/leaders/Shadow Isles/thresh.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		chainwarden
+	}
+}
+create_country_leader = {
+	name = "Thresh"
+	desc = "POLITICS_THRESH_DESC"
+	picture = "gfx/leaders/Shadow Isles/thresh.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		chainwarden
+	}
+}

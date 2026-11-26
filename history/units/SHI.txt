@@ -1,0 +1,104 @@
+division_template = {
+ name = "Risen Soul"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Undead Guard"
+  location = 5381
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 4815
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 9480
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 9169
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 5183
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 1902
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 8899
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 5695
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 9032
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 4808
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 2930
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Undead Guard"
+  location = 4894
+  division_template = "Risen Soul"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+}

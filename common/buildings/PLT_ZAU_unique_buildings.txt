@@ -1,0 +1,257 @@
+buildings = {
+    noxus_military_academy = {
+        base_cost = 650
+        value = 10
+        icon_frame = 1
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { NOX }
+            show_modifier = yes
+            modifiers = {
+                army_attack_factor = 0.01
+                training_time_army_factor = -0.01
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    demacia_knights_academy = {
+        base_cost = 650
+        value = 10
+        icon_frame = 4
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { DEM }
+            show_modifier = yes
+            modifiers = {
+                army_defence_factor = 0.01
+                army_org_regain = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    piltover_hextech_institute = {
+        base_cost = 650
+        value = 10
+        icon_frame = 8
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { PLT }
+            show_modifier = yes
+            modifiers = {
+                research_speed_factor = 0.01
+                production_speed_buildings_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    zaun_chemical_workshop = {
+        base_cost = 650
+        value = 10
+        icon_frame = 9
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { ZAU }
+            show_modifier = yes
+            modifiers = {
+                industrial_capacity_factory = 0.01
+                production_factory_efficiency_gain_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    ionia_spirit_sanctuary = {
+        base_cost = 650
+        value = 10
+        icon_frame = 13
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { ION }
+            show_modifier = yes
+            modifiers = {
+                army_org_regain = 0.01
+                army_speed_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    shurima_sun_disc_monument = {
+        base_cost = 650
+        value = 10
+        icon_frame = 14
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { SHU }
+            show_modifier = yes
+            modifiers = {
+                local_resources_factor = 0.01
+                recruitable_population_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 5
+        }
+    }
+    avarosa_gathering_hall = {
+        base_cost = 650
+        value = 10
+        icon_frame = 6
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { AVA }
+            show_modifier = yes
+            modifiers = {
+                army_org_regain = 0.01
+                recruitable_population_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    winter_claw_war_camp = {
+        base_cost = 650
+        value = 10
+        icon_frame = 10
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { WIN }
+            show_modifier = yes
+            modifiers = {
+                army_attack_factor = 0.01
+                army_speed_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    frostguard_ice_forge = {
+        base_cost = 650
+        value = 10
+        icon_frame = 11
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { FRO }
+            show_modifier = yes
+            modifiers = {
+                industrial_capacity_factory = 0.01
+                army_core_defence_factor = 0.01
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    ursine_storm_shrine = {
+        base_cost = 650
+        value = 10
+        icon_frame = 12
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { URS }
+            show_modifier = yes
+            modifiers = {
+                army_core_attack_factor = 0.01
+                army_org_regain = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    bilgewater_commercial_port = {
+        base_cost = 650
+        value = 10
+        icon_frame = 3
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { BLG }
+            show_modifier = yes
+            modifiers = {
+                production_speed_dockyard_factor = 0.01
+                convoy_escort_efficiency = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    targon_celestial_observatory = {
+        base_cost = 650
+        value = 10
+        icon_frame = 7
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { TAR }
+            show_modifier = yes
+            modifiers = {
+                planning_speed = 0.01
+                air_detection = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    ixtal_elemental_complex = {
+        base_cost = 650
+        value = 10
+        icon_frame = 15
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { IXT }
+            show_modifier = yes
+            modifiers = {
+                production_speed_buildings_factor = 0.01
+                local_resources_factor = 0.005
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    shadow_isles_imperial_fortress = {
+        base_cost = 650
+        value = 10
+        icon_frame = 5
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { SHI }
+            show_modifier = yes
+            modifiers = {
+                army_attack_factor = 0.01
+                army_defence_factor = 0.01
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+    void_hive = {
+        base_cost = 650
+        value = 10
+        icon_frame = 2
+        hide_if_missing_tech = yes
+        country_modifiers = {
+            enable_for_controllers = { VOI }
+            show_modifier = yes
+            modifiers = {
+                army_core_attack_factor = 0.01
+                army_core_defence_factor = 0.01
+            }
+        }
+        level_cap = {
+            state_max = 1
+        }
+    }
+}

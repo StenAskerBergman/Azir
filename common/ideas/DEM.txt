@@ -1,0 +1,374 @@
+ideas = {
+	country = {
+		freezeFrontsDEM = {
+			picture = freezeFronts
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.5
+			}
+		}
+		systemBroken = {
+			picture = systemBroken
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+		infiltrators = {
+			picture = infiltrators
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				out_of_supply_factor = 0.25
+				no_supply_grace = 240
+			}
+		}
+		better_state = {
+			picture = better_state
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+			}
+		}
+		turmoil_nation = {
+			picture = turmoil_nation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.005
+				political_power_gain = -0.2
+				research_speed_factor = -0.1
+			}
+		}
+		turmoil_nation2 = {
+			picture = turmoil_nation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = -0.2
+				surrender_limit = -0.05
+				research_speed_factor = -0.1
+			}
+		}
+		turmoil_nation3 = {
+			picture = turmoil_nation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = -0.3
+				surrender_limit = -0.10
+				research_speed_factor = -0.1
+			}
+		}
+		growing_mage_support3 = {
+			picture = growing_mage_support
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				mages_drift = 0.10
+				stability_weekly = -0.005
+				resistance_target = 0.85
+				required_garrison_factor = -0.5
+				resistance_growth = -0.20
+			}
+		}
+		growing_mage_support2 = {
+			picture = growing_mage_support
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				mages_drift = 0.10
+				stability_weekly = -0.005
+				resistance_target = 0.75
+				required_garrison_factor = -0.6
+				resistance_activity = -0.50
+			}
+		}
+		aNewDemacia = {
+			picture = aNewDemacia
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.25
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				army_leader_start_level = 2
+			}
+		}
+		mageseeker_eldred = {
+			picture = eldred
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				resistance_target = -0.25
+				mageseeker_influence_gain = 0.01
+			}
+		}
+		virtuoso = {
+			picture = sona
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.05
+				mageseeker_influence_gain = -0.01
+			}
+		}
+		additional_training = {
+			picture = additional_training
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				training_time_factor = 0.1
+			}
+		}
+		honored_trainers1 = {
+			picture = Honored_Trainers
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.25
+			}
+		}
+		honored_trainers2 = {
+			picture = Honored_Trainers
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.25
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
+			}
+		}
+		tried_tested = {
+			picture = triedtested
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.1
+				experience_gain_navy = 0.1
+				experience_gain_air = 0.1
+				land_doctrine_cost_factor = -0.15
+				air_doctrine_cost_factor = -0.15
+				naval_doctrine_cost_factor = -0.15
+			}
+		}
+		advanced_quotas1 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		advanced_quotas2 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.12
+				consumer_goods_factor = -0.03
+			}
+		}
+		advanced_quotas3 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				consumer_goods_factor = -0.03
+			}
+		}
+		advanced_quotas4 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.08
+			}
+		}
+		advanced_quotas5 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		advanced_quotas6 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				consumer_goods_factor = -0.03
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		advanced_quotas7 = {
+			picture = advanced_quotas
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		low_mageseeker_inf = {
+			picture = lowMageseekerInfluence
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.10
+				resistance_growth = 0.10
+				stability_weekly = +0.005
+				war_support_weekly = -0.005
+			}
+		}
+		med_mageseeker_inf = {
+			picture = medMageseekerInfluence
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				resistance_growth = -0.15
+			}
+		}
+		high_mageseeker_inf = {
+			picture = highMageseekerInfluence
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = -0.10
+				resistance_growth = -0.35
+				stability_weekly = -0.005
+				war_support_weekly = +0.005
+			}
+		}
+		petricite_kingdom = {
+			picture = petricite_kingdom
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.20
+				army_core_defence_factor = 0.1
+				coordination_bonus = 0.20
+			}
+		}
+		growing_mage_support = {
+			picture = growing_mage_support
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				mages_drift = 0.05
+				stability_weekly = -0.005
+				resistance_target = 0.75
+				required_garrison_factor = -0.5
+				resistance_activity = -0.25
+			}
+		}
+		evelynnidea = {
+			picture = evelynnicon
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -750
+			}
+		}
+		fiddleidea = {
+			picture = fiddleicon
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -750
+			}
+		}
+		nocturneidea = {
+			picture = nocturneicon
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -750
+			}
+		}
+
+
+	}
+}

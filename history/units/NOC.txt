@@ -1,0 +1,55 @@
+division_template = {
+ name = "Nockmirchian Warrior"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "City Guard"
+  location = 7638
+  division_template = "Nockmirchian Warrior"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 7768
+  division_template = "Nockmirchian Warrior"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 7876
+  division_template = "Nockmirchian Warrior"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 7769
+  division_template = "Nockmirchian Warrior"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "City Guard"
+  location = 777
+  division_template = "Nockmirchian Warrior"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+}

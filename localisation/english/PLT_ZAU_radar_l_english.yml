@@ -1,0 +1,13 @@
+﻿l_english:
+ radio_detection:0 "Radio Detection"
+ radio_detection_desc:0 "Basic radio detection technology that enables the construction of radar stations."
+ decimetric_radar:0 "Decimetric Radar"
+ decimetric_radar_desc:0 "Improved radar technology that extends detection capabilities."
+ improved_decimetric_radar:0 "Improved Decimetric Radar"
+ improved_decimetric_radar_desc:0 "More capable decimetric radar equipment and systems."
+ centimetric_radar:0 "Centimetric Radar"
+ centimetric_radar_desc:0 "Higher frequency radar technology for improved detection."
+ improved_centimetric_radar:0 "Improved Centimetric Radar"
+ improved_centimetric_radar_desc:0 "Further advances in centimetric radar technology."
+ advanced_centimetric_radar:0 "Advanced Centimetric Radar"
+ advanced_centimetric_radar_desc:0 "The most advanced radar systems currently available."

@@ -1,0 +1,85 @@
+capital = 11
+
+oob = "BLG"
+
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.35
+set_technology = {
+    bilgewater_commercial_port_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+#add_ideas = {
+	#valor_of_LT
+	#al_rashid_dynasty
+#}
+set_politics = {
+	ruling_party = oligarchy
+	last_election = "987.5.27"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	desolation = 0
+	theocracy = 17
+	oligarchy = 83
+	absolutists = 0
+	chiefdom = 0
+	mages = 0
+	royalist = 0
+}
+
+set_convoys = 250
+
+create_country_leader = {
+	name = "Captain Fortune"
+	desc = "POLITICS_MISSFORTUNE_DESC"
+	picture = "gfx/leaders/Bilgewater/mfortune.dds"
+	#expire = ""
+	ideology = gangSyndicate
+	traits = {
+		bountyhunter
+	}
+}
+create_country_leader = {
+	name = "Captain Fortune"
+	desc = "POLITICS_MISSFORTUNE_DESC"
+	picture = "gfx/leaders/Bilgewater/mfortune.dds"
+	#expire = ""
+	ideology = conservatism
+	traits = {
+		bountyhunter
+	}
+}
+create_country_leader = {
+	name = "Captain Fortune"
+	desc = "POLITICS_MISSFORTUNE_DESC"
+	picture = "gfx/leaders/Bilgewater/mfortune.dds"
+	#expire = ""
+	ideology = centrism
+	traits = {
+		bountyhunter
+	}
+}
+create_country_leader = {
+	name = "Captain Fortune"
+	desc = "POLITICS_MISSFORTUNE_DESC"
+	picture = "gfx/leaders/Bilgewater/mfortune.dds"
+	#expire = ""
+	ideology = rexism
+	traits = {
+		bountyhunter
+	}
+}

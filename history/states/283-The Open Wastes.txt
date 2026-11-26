@@ -1,0 +1,42 @@
+
+state={
+	id=283
+	name="STATE_283"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 5
+ #rubber = 8
+ #steel = 8
+ #coal = 3
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = RIJ
+ add_core_of = RIJ
+ victory_points = {
+ 4391 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 0
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		495 1616 2170 3128 4258 4391 4785 4891 5418 5635 5685 7733 7734 7764 7776 7777 7780 7807 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1391283
+        state_category = town
+}

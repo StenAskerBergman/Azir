@@ -1,0 +1,139 @@
+division_template = {
+ name = "Draklorn"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Frostguard Keeper"
+  location = 5854
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 5854
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 5872
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 5473
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 345
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 5469
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 6049
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 5553
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 2078
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Cultist"
+  location = 4061
+  division_template = "Draklorn"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 1854
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 1317
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 5936
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 5436
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 3358
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 1765
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Frostguard Keeper"
+  location = 5825
+  division_template = "Draklorn"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+}

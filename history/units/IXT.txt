@@ -1,0 +1,230 @@
+division_template = {
+ name = "Ixaocan Warrior"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Ixtali Warrior"
+  location = 4753
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 4015
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9067
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8889
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 5289
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9279
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9083
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8893
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 4599
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9078
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9309
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9429
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 4591
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 9013
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 2575
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8974
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8806
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8771
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8676
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 3759
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 2247
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 3957
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 3585
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 1592
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 3944
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 4931
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 5
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 3882
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 4413
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+ division = {
+  name = "Ixtali Warrior"
+  location = 8556
+  division_template = "Ixaocan Warrior"
+  start_experience_factor = 0.2
+  start_equipment_factor = 0.90
+ }
+}

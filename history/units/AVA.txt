@@ -1,0 +1,167 @@
+division_template = {
+ name = "Avarosan Tribesmen"
+
+ regiments = {
+  infantry = { x = 0 y = 0 }
+  infantry = { x = 0 y = 1 }
+  infantry = { x = 0 y = 2 }
+  infantry = { x = 0 y = 3 }
+  infantry = { x = 1 y = 0 }
+  infantry = { x = 1 y = 1 }
+  infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 }
+  infantry = { x = 2 y = 1 }
+  infantry = { x = 2 y = 2 }
+
+ }
+}
+
+units = {
+ division = {
+  name = "Avarosan Warrior"
+  location = 4854
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 2272
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 2
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 7068
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 3622
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 7247
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 6958
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 898
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 5442
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 7028
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 1404
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 3166
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 5622
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 2466
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 7055
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 3466
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 4301
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 2673
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 406
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 6753
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+ division = {
+  name = "Avarosan Warrior"
+  location = 6704
+  division_template = "Avarosan Tribesmen"
+  start_experience_factor = 0.1
+  start_equipment_factor = 0.95
+ }
+}

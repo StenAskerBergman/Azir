@@ -1,0 +1,42 @@
+
+state={
+	id=299
+	name="STATE_299"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 9
+ rubber = 6
+ steel = 5
+ #coal = 5
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = TOK
+ add_core_of = TOK
+ victory_points = {
+ 1864 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		760 962 1059 1119 1168 1259 1294 1360 1567 1738 1864 2169 2540 2908 3244 3973 4086 4246 4434 5271 5373 6947 7035 7070 7093 7142 7148 7168 7169 7205 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1203189
+        state_category = town
+}

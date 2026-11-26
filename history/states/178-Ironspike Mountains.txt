@@ -1,0 +1,43 @@
+
+state={
+	id=178
+	name="STATE_178"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 4
+ rubber = 6
+ steel = 8
+ coal = 14
+ #chromium = 12
+ #aluminium = 8
+ }
+ history = {
+ owner = DEL
+ add_core_of = DEL
+ victory_points = {
+ 6459 30
+ }
+  buildings = {
+   infrastructure = 4
+   arms_factory = 1
+   industrial_complex = 3
+   #dockyard = 1
+   #6459 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		131 188 1604 1664 1815 1840 1940 4447 6402 6419 6459 6484 6582 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1961202
+        state_category = large_town
+}

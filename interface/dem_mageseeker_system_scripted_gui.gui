@@ -1,0 +1,46 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "dem_mageseeker_system_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 230 }
+
+		#PARANOIAMETER
+		iconType = {
+			name ="mageseeker_main_bg"
+			spriteType = "GFX_DEM_mageseeker_bg"
+			position = { x=10	 y=35 }
+		}
+
+		#PARANOIA TEXT
+		instantTextBoxType = {
+			name ="mageseeker_text"
+			position = { x = 165 y = 130 }
+			font = "hoi_18mbs"
+			text = "DEM_mageseeker_value_test"
+			format = center
+			maxWidth = 400
+		}
+		
+		instantTextBoxType = {
+			name ="mageseeker_text_description"
+			position = { x = 50 y = -10 }
+			font = "hoi_18mbs"
+			text = "The Mageseekers have grown in influence as the anti-mage sentiment spreads in the higher ups of Demacia. How can we shape their power?"
+			format = center
+			maxWidth = 400
+		}
+
+		###############
+		### PHOTOS ####
+		###############
+
+		#GENERIC PHOTO
+		iconType = {
+			name ="paranoia_photo_1"
+			spriteType = "GFX_paranoia_photo"
+			position = { x=410	 y=90 }
+		}
+	}
+
+}

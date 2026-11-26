@@ -1,0 +1,1937 @@
+focus_tree = {
+	id = mre
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MRE
+		}
+	}
+
+	#A Demacian Military
+	focus = {
+		id = MRE_a_demacian_military
+		icon = GFX_DEM_a_demacian_military-537825
+		x = 3
+		y = 0
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+			
+			
+		}
+	}
+
+	#Growth Of The Old City
+	focus = {
+		id = MRE_growth_of_the_old_city
+		icon = GFX_DEM_growth_of_the_old_city-537829
+		x = 11
+		y = 0
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			
+			
+		}
+	}
+
+	#Quality over Quantity
+	focus = {
+		id = MRE_quality_over_quantity
+		icon = GFX_focus_generic_military_academy
+		x = 1
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MRE_a_demacian_military  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = infantry_weapons
+			}
+			
+			
+			
+		}
+	}
+
+	#Petricite On The Seas
+	focus = {
+		id = MRE_petricite_on_the_seas
+		icon = GFX_DEM_petricite_on_the_seas-404
+		x = 3
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_a_demacian_military  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = dockyard
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = dockyard
+			level = 3
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			
+			
+		}
+	}
+
+	#Advanced Quotas
+	focus = {
+		id = MRE_advanced_quotas
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 10
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_growth_of_the_old_city  }
+		completion_reward = {
+			add_ideas = {
+			    advanced_quotas1
+			}
+		}
+	}
+
+	#Focus On The Center
+	focus = {
+		id = MRE_focus_on_the_center
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 13
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_growth_of_the_old_city  }
+		completion_reward = {
+			212 = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+			}
+			}
+			213 = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+			}
+			}
+			214 = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+			}
+			}
+			215 = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+			}
+			}
+			229 = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Expand The Quota System
+	focus = {
+		id = MRE_expand_the_quota_system
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 9
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_advanced_quotas  }
+		mutually_exclusive = { focus = MRE_efficient_allocation  }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = advanced_quotas1
+			    add_idea = advanced_quotas2
+			}
+		}
+	}
+
+	#Motivated Workers
+	focus = {
+		id = MRE_motivated_workers
+		icon = GFX_goal_generic_construction2
+		x = 9
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_expand_the_quota_system  }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = advanced_quotas2
+			    add_idea = advanced_quotas3
+			}
+		}
+	}
+
+	#Efficient Allocation
+	focus = {
+		id = MRE_efficient_allocation
+		icon = GFX_goal_generic_construction
+		x = 11
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_advanced_quotas  }
+		mutually_exclusive = { focus = MRE_expand_the_quota_system  }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = advanced_quotas1
+			    add_idea = advanced_quotas4
+			}
+		}
+	}
+
+	#Economic Revitalization
+	focus = {
+		id = MRE_economic_revitalization
+		icon = GFX_focus_generic_industry_3
+		x = 12
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_demacian_arms_growth  } prerequisite = { focus = MRE_motivated_workers  focus = MRE_construction_boom  }
+		completion_reward = {
+			add_political_power = 75
+			swap_ideas = {
+			    remove_idea = advanced_quotas3
+			    add_idea = advanced_quotas6
+			}
+			swap_ideas = {
+			    remove_idea = advanced_quotas5
+			    add_idea = advanced_quotas7
+			}
+			
+		}
+	}
+
+	#Industrial Expansion
+	focus = {
+		id = MRE_industrial_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_focus_on_the_center  }
+		completion_reward = {
+			214 = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 2
+			    instant_build = yes
+			}
+			}
+			215 = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 2
+			    instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Demacian Arms Growth
+	focus = {
+		id = MRE_demacian_arms_growth
+		icon = GFX_goal_generic_fortify_city
+		x = 13
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_industrial_expansion  }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = arms_factory
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = arms_factory
+			level = 3
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			
+			
+		}
+	}
+
+	#Construction Boom
+	focus = {
+		id = MRE_construction_boom
+		icon = GFX_goal_generic_construct_civilian
+		x = 11
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_efficient_allocation  }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = advanced_quotas4
+			    add_idea = advanced_quotas5
+			}
+		}
+	}
+
+	#Additional Training
+	focus = {
+		id = MRE_additional_training
+		icon = GFX_goal_continuous_reduce_training_time
+		x = 1
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MRE_military_formations  }
+		completion_reward = {
+			recruit_character = cithria
+			add_ideas = {
+			     additional_training
+			}
+		}
+	}
+
+	#Military Formations
+	focus = {
+		id = MRE_military_formations
+		icon = GFX_focus_chi_army_reform
+		x = 1
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MRE_quality_over_quantity  }
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			
+			
+		}
+	}
+
+	#Naval Modernization
+	focus = {
+		id = MRE_naval_modernization
+		icon = GFX_goal_continuous_naval_production
+		x = 3
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MRE_petricite_on_the_seas  }
+		completion_reward = {
+			navy_experience = 25
+			
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = dd_tech
+			}add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = cl_tech
+			}
+			
+			
+			
+		}
+	}
+
+	#Forward Operating Bases
+	focus = {
+		id = MRE_forward_operating_bases
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 3
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_naval_modernization  }
+		completion_reward = {
+			navy_experience = 25
+			211 = {
+			add_building_construction = {
+			    type = naval_base
+			    level = 2
+			    instant_build = yes
+			    province = 7681
+			}
+			}
+			210 = {
+			add_building_construction = {
+			    type = naval_base
+			    level = 2
+			    instant_build = yes
+			    province = 7640
+			}
+			}
+			227 = {
+			add_building_construction = {
+			    type = naval_base
+			    level = 2
+			    instant_build = yes
+			    province = 2772
+			}
+			}
+			
+		}
+	}
+
+	#Secure Rijenland
+	focus = {
+		id = MRE_secure_rijenland
+		icon = GFX_goal_generic_attack_allies
+		x = 3
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = MRE_develop_a_stockpile  focus = MRE_develop_an_advantage  focus = MRE_expand_the_guard  focus = MRE_expand_the_factories  focus = MRE_forward_operating_bases  }
+		completion_reward = {
+			army_experience = 25
+			
+			navy_experience = 25
+			
+			air_experience = 25
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = RIJ
+			}
+			
+			
+			
+		}
+	}
+
+	#Tried and Tested
+	focus = {
+		id = MRE_tried_and_tested
+		icon = GFX_DEM_tried_and_tested-262024
+		x = 3
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_secure_rijenland  }
+		completion_reward = {
+			add_ideas = {
+			     tried_tested
+			}
+		}
+	}
+
+	#Silverwing Bonding
+	focus = {
+		id = MRE_silverwing_bonding
+		icon = GFX_focus_eng_special_air_service
+		x = 5
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MRE_raptor_training  }
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			
+		}
+	}
+
+	#Expand The Guard
+	focus = {
+		id = MRE_expand_the_guard
+		icon = GFX_DEM_expand_the_guard-262028
+		x = 0
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = MRE_additional_training  }
+		mutually_exclusive = { focus = MRE_expand_the_factories  }
+		completion_reward = {
+			MRE = {
+			load_oob = "DEM_Expand_Guard"
+			}
+		}
+	}
+
+	#Expand The Factories
+	focus = {
+		id = MRE_expand_the_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MRE_additional_training  }
+		mutually_exclusive = { focus = MRE_expand_the_guard  }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = arms_factory
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = arms_factory
+			level = 3
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			
+			
+		}
+	}
+
+	#Honor The Trainers
+	focus = {
+		id = MRE_honor_the_trainers
+		icon = GFX_DEM_honor_the_trainers-262093
+		x = 5
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = MRE_silverwing_bonding  }
+		completion_reward = {
+			add_ideas = {
+			     honored_trainers1
+			}
+			add_ace = {
+						name = "Lady"
+						surname = "Cithria"
+						callsign = "Cloudfield"
+						type = fighter_genius
+						is_female = yes
+					}
+		}
+	}
+
+	#Develop A Stockpile
+	focus = {
+		id = MRE_develop_a_stockpile
+		icon = GFX_focus_usa_escort_fighters
+		x = 4
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = MRE_honor_the_trainers  }
+		mutually_exclusive = { focus = MRE_develop_an_advantage  }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			    type = fighter_equipment_0
+			    amount = +50
+			    producer = MRE
+			}
+		}
+	}
+
+	#Develop An Advantage
+	focus = {
+		id = MRE_develop_an_advantage
+		icon = GFX_focus_generic_air_defense
+		x = 6
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = MRE_honor_the_trainers  }
+		mutually_exclusive = { focus = MRE_develop_a_stockpile  }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = honored_trainers1
+			    add_idea = honored_trainers2
+			}
+		}
+	}
+
+	#For All Mages!
+	focus = {
+		id = MRE_forallmages
+		icon = GFX_DEM_forallmages-537836
+		x = 19
+		y = 0
+		cost = 0
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#An Old Friend
+	focus = {
+		id = MRE_an_old_friend
+		icon = GFX_DEM_an_old_friend-537843
+		x = 21
+		y = 6
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		ai_will_do = { factor = 4 }
+		prerequisite = { focus = MRE_breaking_the_system  }
+		available = {
+			DEM = { NOT = { has_country_flag = solidifiedWisteria } }
+		}
+		completion_reward = {
+			set_country_flag = solidifiedWisteria
+			recruit_character = wisteria
+			add_political_power = 50
+			
+			
+		}
+	}
+
+	#Aid The Escape
+	focus = {
+		id = MRE_aid_the_escape
+		icon = GFX_focus_prc_infiltration
+		x = 18
+		y = 1
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_forallmages  }
+		available = {
+			NOT = { has_country_flag = garenDead }
+		}
+		completion_reward = {
+			MRE = {
+			hidden_effect = {	
+			load_oob = "MRE_2Mages"
+			}
+			custom_effect_tooltip = MRE_2Mages
+			
+			country_event = {
+										id = magerebellion.16
+										days = 0
+										}
+			}
+			custom_effect_tooltip = DEM_luxNotice
+		}
+	}
+
+	#Bring The Fight To Garen
+	focus = {
+		id = MRE_bring_the_fight_to_garen
+		icon = GFX_DEM_bring_the_fight_to_garen-537852
+		x = 19
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_seek_the_boon_of_the_veiled_lady  }
+		available = {
+			DEM = {
+			casualties > 75000
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			MRE = {
+			country_event = {
+				id = magerebellion.18
+				days = 0
+			}
+			}
+		}
+	}
+
+	#Establish An Operating Base
+	focus = {
+		id = MRE_establish_an_operating_base
+		icon = GFX_DEM_establish_an_operating_base-262037
+		x = 20
+		y = 1
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_forallmages  }
+		completion_reward = {
+			add_political_power = 100
+			219 = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+			}
+			}
+			219 = {
+						add_building_construction = {
+							type = supply_node
+							level = 5
+							province = 5701
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 5701
+							instant_build = yes
+						}
+			                        add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2309
+							instant_build = yes
+						}
+			                        add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7434
+							instant_build = yes
+						}
+			                        add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4320
+							instant_build = yes
+						}
+			                        add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7383
+							instant_build = yes
+						}
+			}
+		}
+	}
+
+	#Maintain Permanent Tunnels
+	focus = {
+		id = MRE_maintain_permanent_tunnels
+		icon = GFX_goal_generic_fortify_city
+		x = 17
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_aid_the_escape  }
+		available = {
+			NOT = { has_country_flag = garenDead }
+		}
+		completion_reward = {
+			MRE = {
+			country_event = {
+										id = magerebellion.17
+										days = 0
+										}
+			}
+			custom_effect_tooltip = DEM_luxNotice
+		}
+	}
+
+	#Seek The Boon Of The Veiled Lady
+	focus = {
+		id = MRE_seek_the_boon_of_the_veiled_lady
+		icon = GFX_DEM_seek_the_boon_of_the_veiled_lady-537837
+		x = 19
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_forallmages  }
+		available = {
+			DEM = {
+			casualties > 25000
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			add_ideas = boonOfVeiledLady
+			every_army_leader = {
+			add_logistics = 1
+			add_planning = 1
+			add_defense = 1
+			add_attack = 1
+			 }
+			
+		}
+	}
+
+	#Wrestle Control Over The Wildlife
+	focus = {
+		id = MRE_wrestle_control_over_the_wildlife
+		icon = GFX_goal_generic_wolf_pack
+		x = 21
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_establish_an_operating_base  }
+		completion_reward = {
+			add_manpower = -25000
+			remove_ideas = dangerous_wildlife
+			
+		}
+	}
+
+	#Confront The Prince
+	focus = {
+		id = MRE_confront_the_prince
+		icon = GFX_DEM_confront_the_prince-537842
+		x = 19
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_bring_the_fight_to_garen  }
+		available = {
+			DEM = {
+			casualties > 125000
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			MRE = {
+			country_event = {
+				id = magerebellion.19
+				days = 0
+			}
+			}
+		}
+	}
+
+	#Breaking The System
+	focus = {
+		id = MRE_breaking_the_system
+		icon = GFX_focus_generic_support_the_left_right
+		x = 20
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_bring_the_fight_to_garen  }
+		completion_reward = {
+			add_war_support = 0.1
+			DEM = {
+			add_ideas = systemBroken
+			}
+			
+		}
+	}
+
+	#Negotiating The Means To An End
+	focus = {
+		id = MRE_negotiating_the_means_to_an_end
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 16
+		y = 8
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		ai_will_do = { factor = 4 }
+		prerequisite = { focus = MRE_confront_the_prince  }
+		mutually_exclusive = { focus = MRE_itsnotovertillitsover  }
+		available = {
+			DEM = {
+			surrender_progress > 0.5
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			activate_mission = peaceTreaty
+			custom_effect_tooltip = MRE_peaceTreaty
+		}
+	}
+
+	#It's Not Over Till It's Over
+	focus = {
+		id = MRE_itsnotovertillitsover
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 22
+		y = 8
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_confront_the_prince  }
+		mutually_exclusive = { focus = MRE_negotiating_the_means_to_an_end  }
+		available = {
+			DEM = {
+			surrender_progress > 0.5
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			add_ideas = onTheClock
+		}
+	}
+
+	#Free Captured Mages
+	focus = {
+		id = MRE_free_captured_mages
+		icon = GFX_focus_mex_arrest_general_cedillo
+		x = 18
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_seek_the_boon_of_the_veiled_lady  }
+		completion_reward = {
+			hidden_effect = {
+				MRE = {
+				load_oob = "MRE_6Mages"
+				}
+			}
+			custom_effect_tooltip = MRE_6Mages
+			add_stability = 0.1
+		}
+	}
+
+	#The Laboratory Horrors
+	focus = {
+		id = MRE_the_laboratory_horrors
+		icon = GFX_focus_research
+		x = 17
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_free_captured_mages  }
+		available = {
+			DEM = {
+			 surrender_progress > 0.15
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
+			DEM = {
+			set_country_flag = noExperiments
+			}
+			custom_effect_tooltip = MRE_noExperiments
+			
+		}
+	}
+
+	#Rising Up
+	focus = {
+		id = MRE_rising_up
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 18
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_bring_the_fight_to_garen  }
+		completion_reward = {
+			add_manpower = 50000
+			add_ideas = risingUp
+			DEM = {
+			random_controlled_state = {
+						damage_building = {
+			   			 type = infrastructure
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = arms_factory
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = industrial_complex
+			    			damage = 0.15
+						}
+					}
+			random_controlled_state = {
+						damage_building = {
+			   			 type = infrastructure
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = arms_factory
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = industrial_complex
+			    			damage = 0.15
+						}
+					}
+			random_controlled_state = {
+						damage_building = {
+			   			 type = infrastructure
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = arms_factory
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = industrial_complex
+			    			damage = 0.15
+						}
+					}
+			}
+		}
+	}
+
+	#Calls Of The Nation
+	focus = {
+		id = MRE_calls_of_the_nation
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 17
+		y = 6
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_rising_up  }
+		completion_reward = {
+			MRE = {
+			country_event = {
+						id = demacia.37
+						days = 0
+					}
+			}
+		}
+	}
+
+	#Feeding Off Our Fear
+	focus = {
+		id = MRE_feeding_off_our_fear
+		icon = GFX_DEM_feeding_off_our_fear-262065
+		x = 20
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 4 }
+		prerequisite = { focus = MRE_seek_the_boon_of_the_veiled_lady  }
+		available = {
+			has_country_flag = found_demons
+		}
+		completion_reward = {
+		custom_effect_tooltip = MRE_ridDemon
+		hidden_effect = {
+			if = {
+								limit = {
+									has_country_flag = evelynn
+								}
+								add_days_mission_timeout  = {
+			   				 	mission = MREevelynnFound
+			   				 	days = -180
+								}
+							}else_if = {
+								limit = {
+									has_country_flag = fiddle
+								}
+								add_days_mission_timeout  = {
+			   				 	mission = MREfiddleFound
+			   				 	days = -180
+								}
+							}else_if = {
+								limit = {
+									has_country_flag = nocturne
+								}
+								add_days_mission_timeout  = {
+			   				 	mission = MREnocturneFound
+			   				 	days = -180
+								}
+							}else = {
+			
+							}
+							}
+		}
+	}
+
+	#Illuminating The Nation
+	focus = {
+		id = MRE_illuminating_the_nation
+		icon = GFX_focus_TUR_the_sun_language_theory
+		x = 21
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 4 }
+		prerequisite = { focus = MRE_feeding_off_our_fear  }
+		available = {
+			DEM = { NOT = { has_country_flag = luxDead } }
+			DEM = { NOT = { has_country_flag = luxReconciled } }
+			NOT = { has_country_flag = garenDead }
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.1
+			set_country_flag = noDemons
+			add_ideas = noDemons
+		}
+	}
+
+	#Demilitarize The Conflict
+	focus = {
+		id = MRE_demilitarize_the_conflict
+		icon = GFX_DEM_demilitarize_the_conflict-262050
+		x = 18
+		y = 9
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_negotiating_the_means_to_an_end  }
+		completion_reward = {
+			hidden_effect = {
+			add_days_mission_timeout  = {
+			   				 mission = peaceTreaty
+			   				 days = 50
+						}
+						}
+			custom_effect_tooltip = MRE_add50Days
+			DEM = {
+			delete_units = {
+			    division_template = "Mageseeker Followers"
+			}
+			}
+			MRE = {
+			delete_units = {
+			    division_template = "Local Mages"
+			}
+			}
+		}
+	}
+
+	#Freeze The Fronts
+	focus = {
+		id = MRE_freeze_the_fronts
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 17
+		y = 10
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_demilitarize_the_conflict  }
+		completion_reward = {
+		hidden_effect = {
+			add_days_mission_timeout  = {
+			   				 mission = peaceTreaty
+			   				 days = 50
+						}
+						}
+			custom_effect_tooltip = MRE_add50Days
+			add_ideas = freezeFrontsMRE
+			DEM = {
+			add_ideas = freezeFrontsDEM
+			}
+		}
+	}
+
+	#Ensure Future Mage Rights
+	focus = {
+		id = MRE_ensure_future_mage_rights
+		icon = GFX_goal_generic_improve_relations
+		x = 14
+		y = 9
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_negotiating_the_means_to_an_end  }
+		completion_reward = {
+		hidden_effect = {
+			add_days_mission_timeout  = {
+			   				 mission = peaceTreaty
+			   				 days = -50
+						}
+						}
+			custom_effect_tooltip = MRE_lower50Days
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+
+	#Create A Friendly Mage State
+	focus = {
+		id = MRE_create_a_friendly_mage_state
+		icon = GFX_focus_generic_self_management
+		x = 15
+		y = 10
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_ensure_future_mage_rights  }
+		completion_reward = {
+		hidden_effect = {
+			add_days_mission_timeout  = {
+			   				 mission = peaceTreaty
+			   				 days = -50
+						}
+						}
+			custom_effect_tooltip = MRE_lower50Days
+			add_stability = 0.1
+			custom_effect_tooltip = DEM_terbisa
+			set_country_flag = terbisa
+			
+		}
+	}
+
+	#We Stand United
+	focus = {
+		id = MRE_we_stand_united
+		icon = GFX_focus_hol_united_netherlands
+		x = 16
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_create_a_friendly_mage_state  } prerequisite = { focus = MRE_freeze_the_fronts  }
+		available = {
+			has_war = no
+			NOT = { has_active_mission = peaceTreaty }
+		}
+		completion_reward = {
+		
+			annex_country = {
+			    target = DEM
+			    transfer_troops = no
+			}
+			add_state_core = 215
+			add_state_core = 229
+			add_state_core = 214
+			add_state_core = 213
+			add_state_core = 212
+			add_state_core = 231
+			add_state_core = 225
+			add_state_core = 228
+			add_state_core = 224
+			add_state_core = 223
+			add_state_core = 227
+			add_state_core = 210
+			add_state_core = 211
+			add_state_core = 221
+			add_state_core = 230
+			#JarvinBecomesLeader
+			add_political_power = 100
+			add_stability = 0.1
+			remove_ideas = freezeFrontsMRE
+			DEM = {
+			remove_ideas = freezeFrontsDEM
+			}
+			if = {
+				limit = { 
+			DEM = { NOT ={ has_country_flag = freeEffects } }
+			 }
+			add_ideas = mageseekersLoom
+			}
+			if = {
+				limit = { has_country_flag = terbisa }
+			226 = { transfer_state_to = TRB }
+			TRB = {
+			add_state_core = 226
+			}
+			MRE = {
+			puppet = TRB
+			}
+			}
+		}
+	}
+
+	#A New Demacia
+	focus = {
+		id = MRE_a_new_demacia
+		icon = GFX_DEM_a_new_demacia-537848
+		x = 19
+		y = 12
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_we_stand_united  focus = MRE_total_victory }
+		available = {
+			
+			if = {
+				limit = {
+					NOT = { has_war = yes }
+					      }
+			}
+			
+			
+		}
+		completion_reward = {
+			add_ideas = {
+			    aNewDemacia
+			}
+			set_capital = {state = 215}
+		}
+	}
+	
+	#Striking the freljord
+	focus = {
+		id = MRE_strike_freljord
+		icon = GFX_DEM_attack_freljord
+		x = 16
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = DEM_a_new_demacia }
+		available = {
+			
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = AVA
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = WIN
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = FRO
+			}
+		}
+	}
+	
+	#Striking the beaches
+	focus = {
+		id = MRE_strike_beaches
+		icon = GFX_DEM_attack_beaches
+		x = 18
+		y = 14
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = DEM_a_new_demacia }
+		available = {
+			
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = CQI
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = AUR
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = STO
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = PLY
+			}
+		}
+	}
+	
+	#Striking the center
+	focus = {
+		id = MRE_strike_center
+		icon = GFX_DEM_attack_center
+		x = 20
+		y = 14
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = DEM_a_new_demacia }
+		available = {
+			
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = SKA
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = NOC
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = BLH
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = ARB
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = RIJ
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = KLS
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = VAR
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = TGC
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = TOK
+			}
+		}
+	}
+	
+	#Striking noxus
+	focus = {
+		id = MRE_strike_noxus
+		icon = GFX_DEM_attack_noxus
+		x = 22
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = { factor = 0 }
+		prerequisite = { focus = DEM_a_new_demacia }
+		available = {
+			
+		}
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = NOX
+			}
+		}
+	}
+
+	#Cutting Off The Snake's Head
+	focus = {
+		id = MRE_cuttingoffthesnakeshead
+		icon = GFX_DEM_cuttingoffthesnakeshead-537851
+		x = 20
+		y = 9
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_itsnotovertillitsover  }
+		available = {
+			controls_province = 2875
+		}
+		completion_reward = {
+			DEM = {
+			add_stability = -0.1
+			custom_effect_tooltip = DEM_subMageInf50
+					subtract_from_variable = { mageseeker_influence = 50 }
+			eldred = {
+			remove_trait = {
+			    ideology = sympathizers
+			    trait = politicalPuppeteer
+			}
+			add_trait = {
+			    ideology = sympathizers
+			    trait = unsureLeader
+			}
+			}
+			}
+		}
+	}
+
+	#Doom The Order
+	focus = {
+		id = MRE_doom_the_order
+		icon = GFX_focus_rom_parties_end
+		x = 16
+		y = 9
+		cost = 14
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_negotiating_the_means_to_an_end  }
+		completion_reward = {
+		hidden_effect = {
+			add_days_mission_timeout  = {
+			   				 mission = peaceTreaty
+			   				 days = 150
+						}
+						}
+			custom_effect_tooltip = MRE_add150Days
+			add_political_power = -100
+			custom_effect_tooltip = DEM_freeEffects
+			DEM = {
+			set_country_flag = freeEffects
+			}
+		}
+	}
+
+	#A Future Of Safety
+	focus = {
+		id = MRE_a_future_of_safety
+		icon = GFX_goal_generic_neutrality_focus
+		x = 20
+		y = 10
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 2 }
+		prerequisite = { focus = MRE_cuttingoffthesnakeshead  }
+		completion_reward = {
+			DEM = {
+			country_event = {
+						id = demacia.40
+						days = 0
+					}
+			}
+			custom_effect_tooltip = DEM_freeEffects
+			DEM = {
+			set_country_flag = freeEffects
+			}
+		}
+	}
+
+	#A Bloody Path
+	focus = {
+		id = MRE_a_bloody_path
+		icon = GFX_DEM_a_bloody_path-537850
+		x = 22
+		y = 9
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = { factor = 4 }
+		prerequisite = { focus = MRE_itsnotovertillitsover  }
+		available = {
+			DEM = {
+			surrender_progress > 0.7
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			DEM = {
+			every_controlled_state = { 
+			add_manpower = -150000
+			                        damage_building = {
+			   			 type = infrastructure
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = arms_factory
+			    			damage = 0.15
+						}
+						damage_building = {
+			   			 type = industrial_complex
+			    			damage = 0.15
+						}
+			 }
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+
+	#Breaking Tradition
+	focus = {
+		id = MRE_breaking_tradition
+		icon = GFX_DEM_breaking_tradition-270
+		x = 22
+		y = 10
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 4 }
+		prerequisite = { focus = MRE_a_bloody_path  }
+		completion_reward = {
+			DEM = {
+			country_event = {
+						id = demacia.40
+						days = 0
+					}
+			}
+			every_controlled_state = {
+			add_manpower = 50000
+			add_resource = {
+			    type = aluminium
+			    amount = 8
+			}
+			 }
+		}
+	}
+
+	#Drain their resources
+	focus = {
+		id = MRE_drain_their_resources
+		icon = GFX_focus_NZL_bob_semple_tank
+		x = 24
+		y = 9
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_itsnotovertillitsover  }
+		available = {
+			DEM = {
+			casualties > 150000
+			}
+		}
+		bypass = {
+		hidden_trigger = {
+			NOT = {
+			has_war_with = DEM
+			}
+			is_puppet = no
+			NOT = { has_country_flag = noFighting }
+			}
+		}
+		completion_reward = {
+			DEM = {
+			delete_units = {
+			    division_template = "Mageseeker Followers"
+			}
+			}
+			add_stability = 0.05
+		}
+	}
+
+	#Invite The Prosecuted Back
+	focus = {
+		id = MRE_invite_the_prosecuted_back
+		icon = GFX_DEM_invite_the_prosecuted_back-262107
+		x = 24
+		y = 10
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 3 }
+		prerequisite = { focus = MRE_drain_their_resources  }
+		completion_reward = {
+			DEM = {
+			country_event = {
+						id = demacia.40
+						days = 0
+					}
+			}
+			add_war_support = 0.1
+			add_manpower = 100000
+		}
+	}
+
+	#Total Victory
+	focus = {
+		id = MRE_total_victory
+		icon = GFX_DEM_total_victory-537849
+		x = 22
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = { factor = 5 }
+		prerequisite = { focus = MRE_a_future_of_safety  focus = MRE_breaking_tradition  focus = MRE_invite_the_prosecuted_back  }
+		available = {
+			has_war = no
+			
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_state_core = 215
+			add_state_core = 229
+			add_state_core = 214
+			add_state_core = 213
+			add_state_core = 212
+			add_state_core = 231
+			add_state_core = 226
+			add_state_core = 225
+			add_state_core = 228
+			add_state_core = 224
+			add_state_core = 223
+			add_state_core = 227
+			add_state_core = 210
+			add_state_core = 211
+			add_state_core = 221
+			add_state_core = 230
+			every_controlled_state = { 
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+			}
+			 }
+		}
+	}
+
+	#Raptor Training
+	focus = {
+		id = MRE_raptor_training
+		icon = GFX_goal_generic_build_airforce
+		x = 5
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MRE_a_demacian_military  }
+		completion_reward = {
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 1
+			    category = light_fighter
+			}
+			
+			
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = air_base
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = air_base
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = air_base
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = air_base
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			
+			
+		}
+	}
+
+}

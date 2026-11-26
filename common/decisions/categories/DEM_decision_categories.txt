@@ -1,0 +1,24 @@
+DEM_mageseeker_influence = {
+	icon = DEM_mageseekericon
+	priority = 100
+	visible = {
+			has_country_flag = hasMageInfluence
+	}
+	allowed = {
+		original_tag = DEM
+	}
+
+	scripted_gui = dem_mageseeker_system_ui
+}
+DEM_demons = {
+	icon = DEM_demons
+	picture = GFX_decision_cat_picture_DEM_demons
+	priority = 9
+	
+	allowed = {
+		original_tag = DEM
+	}
+
+	#This will pop up once demons appear	
+
+}

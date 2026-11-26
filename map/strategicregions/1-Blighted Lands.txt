@@ -1,0 +1,178 @@
+strategic_region={
+	id=1
+	name="STRATEGICREGION_1"
+	provinces={
+		473 526 616 680 829 979 1004 1051 1052 1281 1325 1339 1364 1491 1610 1679 1820 1821 1902 1957 2029 2184 2251 2259 2509 2536 2554 2580 2618 2663 2709 2871 2894 2904 2930 3031 3053 3107 3140 3156 3162 3194 3257 3285 3312 3549 3568 3614 3703 3730 3775 3864 3885 3887 3901 3914 3935 3965 3986 4065 4071 4163 4206 4214 4263 4276 4293 4306 4308 4337 4372 4587 4594 4687 4708 4714 4734 4735 4746 4759 4763 4778 4782 4808 4815 4823 4881 4894 4920 4942 4943 4946 4956 4985 4996 5046 5183 5252 5353 5381 5398 5444 5465 5472 5481 5493 5524 5665 5672 5680 5695 5711 5798 8830 8836 8840 8843 8854 8860 8861 8875 8878 8880 8886 8890 8894 8896 8899 8909 8911 8912 8922 8923 8925 8927 8936 8940 8942 8943 8945 8948 8953 8962 8963 8964 8969 8975 8979 8984 8985 8988 8989 8990 8995 8998 8999 9004 9006 9007 9015 9019 9020 9021 9025 9030 9031 9032 9037 9038 9039 9051 9053 9054 9062 9063 9064 9065 9068 9072 9084 9087 9088 9092 9094 9095 9098 9099 9100 9107 9109 9118 9121 9122 9124 9126 9127 9128 9131 9136 9137 9143 9146 9147 9150 9157 9158 9162 9167 9169 9172 9181 9182 9187 9188 9191 9195 9196 9198 9200 9201 9203 9208 9209 9213 9214 9215 9216 9222 9224 9227 9236 9237 9238 9241 9245 9248 9249 9250 9254 9258 9259 9260 9263 9268 9269 9270 9272 9273 9277 9280 9284 9285 9288 9289 9290 9292 9295 9296 9303 9304 9305 9306 9307 9310 9311 9312 9315 9316 9321 9322 9334 9335 9342 9343 9344 9350 9361 9372 9373 9378 9385 9386 9394 9400 9401 9422 9433 9435 9438 9455 9456 9458 9460 9461 9472 9473 9477 9478 9480 9483 9484 9487 9490 9496 9497 9501 
+	}
+	# Weather configuration with misty, stormy conditions
+    weather={
+        # January: Cool, misty, and stormy
+        period={
+            between={ 0.0 30.0 } # January
+            temperature={ 10.0 20.0 }
+            no_phenomenon=0.40
+            rain_light=0.40
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # February: Slightly warmer, persistent mist and rain
+        period={
+            between={ 0.1 27.1 } # February
+            temperature={ 10.0 20.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # March: Warming up, frequent rains
+        period={
+            between={ 0.2 30.2 } # March
+            temperature={ 12.0 22.0 }
+            no_phenomenon=0.40
+            rain_light=0.40
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # April: Mild, rainy with misty conditions
+        period={
+            between={ 0.3 29.3 } # April
+            temperature={ 13.0 23.0 }
+            no_phenomenon=0.45
+            rain_light=0.35
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # May: Warmer, with occasional storms
+        period={
+            between={ 0.4 30.4 } # May
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.50
+            rain_light=0.30
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # June: Warm, calmer but still humid
+        period={
+            between={ 0.5 29.5 } # June
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.55
+            rain_light=0.30
+            rain_heavy=0.15
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # July: Warmest period, fewer storms
+        period={
+            between={ 0.6 30.6 } # July
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.60
+            rain_light=0.25
+            rain_heavy=0.15
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # August: Warm, with increasing storm activity
+        period={
+            between={ 0.7 30.7 } # August
+            temperature={ 18.0 28.0 }
+            no_phenomenon=0.55
+            rain_light=0.30
+            rain_heavy=0.15
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # September: Start of the Harrowing season, heavy storms
+        period={
+            between={ 0.8 29.8 } # September
+            temperature={ 16.0 26.0 }
+            no_phenomenon=0.40
+            rain_light=0.35
+            rain_heavy=0.25
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # October: Peak of the Harrowing, intense storms
+        period={
+            between={ 0.9 30.9 } # October
+            temperature={ 15.0 25.0 }
+            no_phenomenon=0.35
+            rain_light=0.35
+            rain_heavy=0.30
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # November: Harrowing continues, stormy and misty
+        period={
+            between={ 0.10 29.10 } # November
+            temperature={ 13.0 23.0 }
+            no_phenomenon=0.35
+            rain_light=0.35
+            rain_heavy=0.30
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+        # December: Cooling, persistent rain and mist
+        period={
+            between={ 0.11 30.11 } # December
+            temperature={ 10.0 20.0 }
+            no_phenomenon=0.40
+            rain_light=0.40
+            rain_heavy=0.20
+            snow=0.00
+            blizzard=0.00
+            arctic_water=0.00
+            mud=0.00
+            sandstorm=0.00
+            min_snow_level=0.00
+        }
+    }
+}

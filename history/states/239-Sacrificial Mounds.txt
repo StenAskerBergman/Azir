@@ -1,0 +1,42 @@
+
+state={
+	id=239
+	name="STATE_239"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 6
+ rubber = 5
+ #steel = 5
+ #coal = 6
+ #chromium = 2
+ aluminium = 4
+ }
+ history = {
+ owner = URS
+ add_core_of = URS
+ victory_points = {
+ 5982 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   dockyard = 0
+   2104 = {
+   naval_base = 2
+   }
+  }
+ }
+	provinces={
+		133 166 239 385 398 457 529 1027 1031 1244 1261 1501 1527 1724 2017 2104 2141 2469 2826 3200 3473 4239 4654 5241 5924 5942 5961 5982 6022 6029 6067 6079 6110 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1092183
+        state_category = town
+}

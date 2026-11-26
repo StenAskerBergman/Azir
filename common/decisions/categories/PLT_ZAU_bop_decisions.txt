@@ -1,0 +1,11 @@
+PLT_zaun_bop_decisions = {
+    icon = generic_political_reform
+    priority = 80
+    allowed = { original_tag = PLT }
+}
+
+ZAU_revolution_bop_decisions = {
+    icon = generic_prepare_civil_war
+    priority = 80
+    allowed = { original_tag = ZAU }
+}

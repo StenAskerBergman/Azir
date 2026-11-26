@@ -1,0 +1,238 @@
+ideas = {
+ country = {
+ 	mageseekersLoom = {
+      	    picture = mageseekersLoom
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.25
+				research_speed_factor = -0.1
+				consumer_goods_factor = 0.05
+            }
+      }
+	freezeFrontsMRE = {
+      	    picture = freezeFronts
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				army_attack_factor = -0.5
+            }
+      }
+	onTheClock = {
+      	    picture = onTheClock
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				war_support_weekly = -0.03
+				
+            }
+			targeted_modifier = {
+					tag = DEM
+					defense_bonus_against = 0.15
+					attack_bonus_against = 0.15
+				}
+      }
+	risingUp = {
+      	    picture = risingUp
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				out_of_supply_factor = 0.3
+				no_supply_grace = 200
+            }
+      }
+	noDemons = {
+      	    picture = noDemons
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				custom_modifier_tooltip = DEM_noDemonsD
+            }
+      }
+ boonOfVeiledLady = {
+      	    picture = boonOfVeiledLady
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				
+            }
+			targeted_modifier = {
+					tag = DEM
+					defense_bonus_against = 0.1
+					attack_bonus_against = 0.1
+				}
+      }
+	enemy_infiltrated = {
+      	    picture = enemyInf
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				war_support_weekly = -0.01
+            }
+      }
+	maintainTunnels = {
+      	    picture = maintainTun
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				fortification_damage = 0.5
+            }
+			targeted_modifier = {
+					tag = DEM
+					attack_bonus_against = 0.05
+				}
+      }
+	  luxMaintainTunnels = {
+      	    picture = maintainTun
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				fortification_collateral_chance = 0.5
+				fortification_damage = 0.5
+            }
+			targeted_modifier = {
+					tag = DEM
+					attack_bonus_against = 0.075
+				}
+      }
+	aidEscape = {
+      	    picture = aidEscape
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				weekly_manpower = 1000 
+				equipment_capture_factor = 0.1 
+            }
+      }
+	  luxAidEscape = {
+      	    picture = aidEscape
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				weekly_manpower = 1500 
+				equipment_capture_factor = 0.15 
+            }
+      }
+	dangerous_wildlife = {
+      	    picture = dangerous_wildlife
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+        	army_speed_factor = -0.15
+		attrition = 0.25
+		monthly_population = -0.20
+            }
+      } 
+	  big_push = {
+      	    picture = big_push
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+        	army_attack_factor = 0.25
+			army_defence_factor = 0.25
+			attrition = 0.25
+            }
+      } 
+	  foreign_benefactors = {
+      	    picture = foreign_benefactors
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.10
+            }
+      } 
+	 MREevelynnidea = {
+      	    picture = evelynnicon
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                weekly_manpower = -750
+            }
+      } 
+	MREfiddleidea = {
+      	    picture = fiddleicon
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                weekly_manpower = -750
+            }
+      } 
+	MREnocturneidea = {
+      	    picture = nocturneicon
+      
+	    allowed = {
+         	 always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                weekly_manpower = -750
+            }
+      }
+}
+}

@@ -1,0 +1,349 @@
+ideologies = {
+
+	theocracy = {
+		types = {
+			# Targon — Solari
+			solari = {
+				color = { 255 205 70 }
+			}
+			# Freljord — Cult of Volibear
+			cultOfVoli = {
+				color = { 105 125 155 }
+			}
+			# Freljord — Frostguard
+			frostguardCult = {
+				color = { 145 205 255 }
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_theocracy_1
+		}
+		color = { 235 195 157 }
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+		ai_communist = yes
+		ai_ideology_wanted_units_factor = 1.50
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			stability_factor = 0.10
+			war_support_factor = 0.10
+			army_morale_factor = 0.10
+			political_power_factor = 0.10
+			research_speed_factor = -0.10
+			consumer_goods_factor = 0.10
+			civilian_intel_to_others = 1.0
+			army_intel_to_others = 2.5
+			navy_intel_to_others = 2.5
+			airforce_intel_to_others = 2.5
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_threshold_factor = 0.25
+		}
+		faction_modifiers = {
+		}
+	}
+
+	oligarchy = {
+		types = {
+			# Noxus — Trifarix
+			noxianTrifarix = {
+				color = { 125 20 25 }
+			}
+			# Bilgewater — Gang Syndicates
+			gangSyndicate = {
+				color = { 95 55 40 }
+			}
+			# Piltover — Council
+			piltovanCouncil = {
+				color = { 210 175 70 }
+			}
+			# Zaun — Chem-Barons
+			chemBarons = {
+				color = { 80 170 145 }
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_oligarchy_1
+		}
+		color = { 173 71 81 }
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+		ai_communist = yes
+		ai_ideology_wanted_units_factor = 1.20
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			stability_factor = -0.08
+			war_support_factor = -0.05
+			political_power_factor = 0.20
+			consumer_goods_factor = -0.05
+			research_speed_factor = -0.03
+			production_factory_max_efficiency_factor = 0.10
+			production_speed_buildings_factor = 0.05
+			civilian_intel_to_others = 2.5
+			army_intel_to_others = 2.5
+			navy_intel_to_others = 2.5
+			airforce_intel_to_others = 2.5
+			hidden_modifier = { join_faction_tension = 0.10 }
+			embargo_threshold_factor = 0.6
+		}
+		faction_modifiers = {
+		}
+	}
+
+	absolutists = {
+		types = {
+			# Mordekaiser — Iron Revenant
+			mordekaisersRealm = {
+				color = { 70 70 80 }
+			}
+			# Shurima — God-Emperor
+			shurimanEmperor = {
+				color = { 220 175 45 }
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_absolutists_1
+		}
+		color = { 201 185 40 }
+		war_impact_on_world_tension = 1.25
+		faction_impact_on_world_tension = 0.75
+		ai_fascist = yes
+		ai_ideology_wanted_units_factor = 1.20
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			stability_factor = 0.10
+			war_support_factor = 0.06
+			political_power_factor = 0.25
+			army_org_factor = 0.12
+			army_morale_factor = 0.08
+			army_attack_factor = 0.05
+			research_speed_factor = -0.07
+			consumer_goods_factor = 0.10
+			civilian_intel_to_others = -5.0
+			army_intel_to_others = -5.0
+			navy_intel_to_others = -5.0
+			airforce_intel_to_others = -2.5
+			hidden_modifier = { join_faction_tension = 0.10 }
+			embargo_threshold_factor = 0.25
+		}
+		faction_modifiers = {
+		}
+	}
+
+	chiefdom = {
+		types = {
+			# Freljord — Avarosa
+			avarosa = {
+				color = { 105 175 225 }
+			}
+			# Freljord — Winter's Claw
+			wintersclaw = {
+				color = { 70 100 125 }
+			}
+			# Freljord — Independent Tribes
+			tribes = {
+				color = { 120 145 110 }
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_chiefdom_1
+		}
+		color = { 4 199 179 }
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+		ai_democratic = yes
+		ai_ideology_wanted_units_factor = 1.20
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			stability_factor = -0.08
+			war_support_factor = 0.10
+			political_power_factor = -0.15
+			conscription_factor = 0.15
+			army_morale_factor = 0.15
+			army_org_factor = -0.08
+			army_attack_factor = 0.05
+			research_speed_factor = -0.18
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.12
+			industrial_capacity_factory = -0.12
+			civilian_intel_to_others = -7.5
+			army_intel_to_others = -7.5
+		}
+		faction_modifiers = {
+		}
+	}
+
+	desolation = {
+		types = {
+			# The Void
+			oblivion = {
+				color = { 65 20 100 }
+			}
+			# Shadow Isles
+			undeadWastes = {
+				color = { 80 150 125 }
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_desolation_1
+		}
+		color = { 109 110 109 }
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.5
+		ai_communist = no
+		ai_ideology_wanted_units_factor = 1.20
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			stability_factor = -0.15
+			war_support_factor = 0.20
+			political_power_factor = 0.10
+			army_attack_factor = 0.10
+			army_breakthrough_factor = 0.08
+			army_morale_factor = 0.15
+			army_org_factor = -0.12
+			conscription_factor = 0.08
+			research_speed_factor = -0.05
+			consumer_goods_factor = 0.10
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = -0.15
+			local_resources_factor = -0.10
+			production_speed_arms_factory_factor = 0.25
+			civilian_intel_to_others = -10.0
+			army_intel_to_others = -10.0
+			navy_intel_to_others = -5.0
+			airforce_intel_to_others = -5.0
+		}
+		faction_modifiers = {
+		}
+	}
+
+	mages = {
+		types = {
+			# Demacia — The Illuminators
+			illuminators = {
+				color = { 245 215 110 }
+			}
+			# Freljord/Demacia — The Unshackled
+			unshackled = {
+				color = { 150 40 180 }
+			}
+			# Ixtal — Axiomata
+			axiomata = {
+				color = { 70 155 210 }
+			}
+			# Ionia — Spiritual Guidance
+			spiritualGuidance = {
+				color = { 100 180 145 }
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_mages_1
+		}
+		color = { 80 50 180 }
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+		ai_communist = yes
+		ai_ideology_wanted_units_factor = 1.20
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			stability_factor = -0.05
+			war_support_factor = 0.08
+			political_power_factor = 0.12
+			research_speed_factor = 0.13
+			army_attack_factor = 0.06
+			army_breakthrough_factor = 0.05
+			army_morale_factor = 0.06
+			army_org_factor = -0.05
+			conscription_factor = 0.03
+			consumer_goods_factor = 0.03
+			civilian_intel_to_others = -2.5
+			army_intel_to_others = -2.5
+			navy_intel_to_others = 0.0
+			airforce_intel_to_others = 0.0
+		}
+		faction_modifiers = {
+		}
+	}
+
+	royalist = {
+		types = {
+			# Demacian Crown Sympathizers
+			sympathizers = {
+			}
+			# Other Royalists
+			royalty = {
+			}
+			# More subideologies in the future
+		}
+		dynamic_faction_names = {
+			dynamic_factions_names_royalist_1
+			dynamic_factions_names_royalist_2
+		}
+		color = { 219 219 219 }
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+			stability_factor = 0.12
+			war_support_factor = 0.08
+			political_power_factor = 0.10
+			army_org_factor = 0.08
+			army_morale_factor = 0.08
+			research_speed_factor = -0.07
+			consumer_goods_factor = 0.02
+			civilian_intel_to_others = -2.5
+			army_intel_to_others = -2.5
+			navy_intel_to_others = 0.0
+			airforce_intel_to_others = 0.0
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_democratic = yes
+		ai_ideology_wanted_units_factor = 1.0
+	}
+}

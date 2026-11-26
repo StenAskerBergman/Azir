@@ -1,0 +1,42 @@
+
+state={
+	id=306
+	name="STATE_306"
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ #tungsten = 4
+ #rubber = 5
+ steel = 5
+ #coal = 5
+ #chromium = 2
+ #aluminium = 3
+ }
+ history = {
+ owner = TGC
+ add_core_of = TGC
+ victory_points = {
+ 3977 10
+ }
+  buildings = {
+   infrastructure = 2
+   arms_factory = 1
+   industrial_complex = 1
+   #dockyard = 0
+   #5723 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		28 54 318 769 1019 1163 2357 2442 2517 2531 2537 3554 3821 3977 4027 4177 4194 4574 4655 5065 5750 7331 7367 7368 7406 7437 7460 7472 7481 7493 7507 7520 7525 7541 7549 7562 7577 7620 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=1191822
+        state_category = town
+}

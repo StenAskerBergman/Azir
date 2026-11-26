@@ -1,0 +1,43 @@
+
+state={
+	id=287
+	name="STATE_287"
+
+#tungsten is wood
+#rubber is stone
+#steel is iron
+
+#chromium is hexite crystal
+#aluminium is runes
+resources={
+ tungsten = 4
+ #rubber = 12
+ steel = 8
+ #coal = 14
+ #chromium = 12
+ #aluminium = 4
+ }
+ history = {
+ owner = NOC
+ add_core_of = NOC
+ victory_points = {
+ 7638 30
+ }
+  buildings = {
+   infrastructure = 3
+   arms_factory = 1
+   industrial_complex = 2
+   #dockyard = 1
+   #6142 = {
+   #naval_base = 2
+   #}
+  }
+ }
+	provinces={
+		84 109 639 1125 1191 1419 1639 1687 2902 3480 3819 3830 4033 4428 5213 5693 7592 7617 7633 7638 7656 7658 7717 7768 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+        manpower=2001292
+        state_category = large_town
+}
