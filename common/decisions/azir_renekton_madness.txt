@@ -1,0 +1,179 @@
+XER_renekton_madness_category = {
+    XER_hear_the_tomb = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            NOT = { has_country_flag = XER_renekton_madness_unveiled }
+            any_controlled_state = { NOT = { is_core_of = ROOT } }
+        }
+
+        complete_effect = {
+            set_country_flag = XER_renekton_madness_unveiled
+            set_country_flag = XER_renekton_madness_active
+            set_variable = { XER_renekton_tainted_states = 0 }
+            activate_mission = XER_renekton_last_days
+            mark_focus_tree_layout_dirty = yes
+            country_event = { id = azir_renekton.1 }
+        }
+
+        # The hidden route can end the ruler's life. Leave the initial choice to the player.
+        ai_will_do = { factor = 0 }
+    }
+
+    XER_renekton_last_days = {
+        icon = generic_prepare_civil_war
+        days_mission_timeout = 120
+        is_good = no
+        fire_only_once = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = { NOT = { XER_renekton_crisis_active = yes } }
+        cancel_effect = { clr_country_flag = XER_renekton_madness_active }
+
+        timeout_effect = {
+            if = {
+                limit = { XER_renekton_crisis_active = yes }
+                clr_country_flag = XER_renekton_madness_active
+                set_country_flag = XER_renekton_died_in_crisis
+                kill_country_leader = yes
+                country_event = { id = azir_renekton.6 }
+                if = {
+                    limit = { SHU = { has_character = SHU_nasus } }
+                    SHU = { country_event = { id = azir_renekton.6 } }
+                }
+            }
+        }
+    }
+
+    XER_spread_renekton_madness = {
+        icon = generic_prepare_civil_war
+        cost = 25
+        state_target = yes
+        target_array = controlled_states
+        target_root_trigger = { XER_renekton_can_spread_madness = yes }
+        target_trigger = {
+            FROM = {
+                is_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { has_state_flag = XER_renekton_state_tainted }
+            }
+        }
+        on_map_mode = map_and_decisions_view
+
+        complete_effect = {
+            FROM = {
+                set_state_flag = XER_renekton_state_tainted
+                add_dynamic_modifier = { modifier = XER_renekton_tainted_land }
+            }
+            hidden_effect = { add_to_variable = { XER_renekton_tainted_states = 1 } }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    XER_answer_the_vigil = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+        visible = {
+            XER_renekton_crisis_active = yes
+            SHU = {
+                SHU_renekton_treatment_active = yes
+                check_variable = { SHU_nasus_vigils > 2 }
+            }
+        }
+        complete_effect = {
+            hidden_effect = {
+                SHU = {
+                    set_country_flag = SHU_nasus_corrupted
+                    remove_mission = SHU_renekton_treatment
+                    SHU_nasus = {
+                        set_portraits = {
+                            civilian = {
+                                large = "GFX_portrait_SHU_nasus_corrupted_large"
+                                small = "GFX_portrait_SHU_nasus_corrupted_small"
+                            }
+                        }
+                    }
+                    add_ideas = SHU_nasus_fractured
+                    country_event = { id = azir_renekton.7 }
+                }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}
+
+SHU_renekton_recovery_category = {
+    SHU_offer_renekton_treatment = {
+        icon = generic_prepare_civil_war
+        cost = 25
+        fire_only_once = yes
+        complete_effect = {
+            XER = { country_event = { id = azir_renekton.2 } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    SHU_renekton_treatment = {
+        icon = generic_prepare_civil_war
+        days_mission_timeout = 75
+        is_good = yes
+        fire_only_once = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = {
+            OR = {
+                NOT = { has_character = SHU_nasus }
+                has_country_flag = SHU_nasus_corrupted
+                NOT = { XER = { XER_renekton_crisis_active = yes } }
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    has_character = SHU_nasus
+                    NOT = { has_country_flag = SHU_nasus_corrupted }
+                    XER = { XER_renekton_crisis_active = yes }
+                }
+                XER = {
+                    clr_country_flag = XER_renekton_madness_active
+                    set_country_flag = XER_renekton_cured
+                    country_event = { id = azir_renekton.5 }
+                }
+                country_event = { id = azir_renekton.5 }
+            }
+        }
+    }
+
+    SHU_hold_a_vigil = {
+        icon = generic_prepare_civil_war
+        cost = 15
+        days_re_enable = 7
+        visible = {
+            SHU_renekton_treatment_active = yes
+            check_variable = { SHU_nasus_vigils < 3 }
+        }
+        complete_effect = {
+            hidden_effect = { add_to_variable = { SHU_nasus_vigils = 1 } }
+            add_days_mission_timeout = { mission = SHU_renekton_treatment days = -10 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    SHU_ask_zilean_to_help = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+        visible = {
+            SHU_renekton_treatment_active = yes
+            VOI = { VOI_can_aid_nasus = yes }
+        }
+        complete_effect = {
+            VOI = { country_event = { id = azir_renekton.3 } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

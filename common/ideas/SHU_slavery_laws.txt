@@ -1,0 +1,62 @@
+ideas = {
+    country = {
+        SHU_child_protection_law = {
+            picture = GFX_goal_generic_ruler
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = -0.03
+                stability_factor = 0.02
+            }
+        }
+
+        SHU_slave_rights_law = {
+            picture = GFX_goal_generic_ruler
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.04
+                stability_factor = 0.04
+            }
+        }
+
+        SHU_slaver_licensing_law = {
+            picture = GFX_goal_generic_ruler
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.06
+                stability_factor = -0.05
+            }
+        }
+
+        SHU_sun_service_programme = {
+            picture = GFX_goal_generic_ruler
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                production_speed_infrastructure_factor = 0.10
+                consumer_goods_factor = 0.04
+            }
+        }
+
+        SHU_emancipation_law = {
+            picture = GFX_goal_generic_ruler
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.06
+                recruitable_population_factor = 0.04
+            }
+        }
+
+        SHU_emancipation_transition = {
+            picture = GFX_goal_generic_ruler
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = -0.07
+            }
+        }
+    }
+}

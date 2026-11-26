@@ -26,6 +26,8 @@ recruit_character = SHU_azir
 recruit_character = SHU_nasus
 recruit_character = SHU_sivir
 recruit_character = SHU_taliyah
+recruit_character = SHU_imperial_engineers
+recruit_character = SHU_provincial_delegates
 
 # Marai
 recruit_character = SHU_nami

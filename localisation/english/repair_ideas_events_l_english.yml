@@ -5,9 +5,9 @@
  SHU_cultural_renaissance_desc: "A renewed place for scholarship will support faster research. The cultural revival will also encourage a larger share of the population to enter service."
  SHU_military_glory_desc: "The army will draw on the realm's martial traditions to strengthen its fighting methods. Greater effectiveness in attack and defense will give those traditions practical force."
  TAR_rakkor_tenacity: "Rakkor Tenacity"
- TAR_rakkor_tenacity_desc: "Rakkor discipline extends to the workshops supporting Targon. Sustained effort raises military-factory output and reduces consumer-goods demands."
+ TAR_rakkor_tenacity_desc: "The Rakkor tribes know what it takes to keep a mountain settlement alive. Their workshops turn that discipline to supplying Targon, raising military-factory output and easing consumer-goods demands."
  TAR_celestial_pilgrimage: "Celestial Pilgrimage"
- TAR_celestial_pilgrimage_desc: "Pilgrimage renews public confidence in the mountain's spiritual life. The shared undertaking strengthens stability and gives the governing authorities greater political support."
+ TAR_celestial_pilgrimage_desc: "Solari and Lunari pilgrims travel the mountain openly under the same protection. Each shrine can keep its own rites, and the sight of both faiths keeping the peace builds public confidence in the settlement."
  TAR_summit_harvest_idea: "Harvests of the High Valleys"
  TAR_summit_harvest_idea_desc: "Intensive mountain harvesting raises resource output at a cost. Slower population growth and greater military attrition reflect the strain of the effort."
  icathia.5.t: "Resistance in the Ruins"
@@ -17,11 +17,11 @@
 
  TAR_activate_rakkor_tenacity: "Rally Rakkor Tenacity"
 
- TAR_activate_rakkor_tenacity_desc: "Rakkor discipline will be directed toward the work that sustains Targon. For a time, greater military-factory output and lower consumer-goods demands will support that effort."
+ TAR_activate_rakkor_tenacity_desc: "Ask Rakkor smiths and craftspeople to put their workshops to work for the mountain communities they serve. For a time, military-factory output will rise and consumer-goods demands will ease."
 
- TAR_activate_celestial_pilgrimage: "Encourage Celestial Pilgrimage"
+ TAR_activate_celestial_pilgrimage: "Open the Pilgrim Roads"
 
- TAR_activate_celestial_pilgrimage_desc: "Pilgrimage will renew public confidence in Targon's spiritual life. For a time, it will strengthen stability and the government's political authority."
+ TAR_activate_celestial_pilgrimage_desc: "Former rivals now have a place in Targon's governing order. Open the roads to pilgrims of both faiths and protect their passage to the shrines. For a time, the pilgrimage will strengthen stability and political power gain."
 
  SHU_azir_speech: "Address the Imperial Question"
 
@@ -178,10 +178,10 @@
  targon.102.a:0 "Rally the Solari faithful."
  xerath.2.a:0 "Follow Xerath's path."
  xerath.2.b:0 "Back Renekton's course."
- xerath.1.t:0 "The Final Struggle"
- xerath.1.d:0 "Shurima must be remade beneath our power. We proclaim a new order and prepare to confront those who would deny it."
- xerath.1.tt:0 "Signals the struggle for Shurima. A war report follows if our realm declares war on Shurima."
- xerath.1.a:0 "Let our resolve be known."
+ xerath.1.t:0 "An Uneasy Alliance"
+ xerath.1.d:0 "Azir has returned to Shurima's capital. Here in Nerimazeth, Xerath's mages and Renekton's warriors stand together against him. Xerath wants the empire's power for himself. Renekton wants vengeance on Nasus. For now, they need each other's forces. When the time comes to march, only one of them will give the orders."
+ xerath.1.tt:0 "Start with §YTemporary Alliance§!. Then §YPower Play§! lets you choose who leads."
+ xerath.1.a:0 "Hold the alliance together."
  xerath.4.t:0 "A Claim to the Throne"
  xerath.4.d:0 "We seek to supplant Azir's authority over Shurima. Choose how to pursue our claim, knowing that ambition alone cannot secure the throne."
  xerath.4.tt:0 "Begins the usurpation campaign; this event does not transfer the throne."
@@ -204,6 +204,6 @@
  VOI_grand_wizard_council_idea:0 "Icathian Grand Wizard Council"
  VOI_grand_wizard_council_idea_desc:0 "The revived council brings Icathia's scholars into the work of governing and military preparation. Their coordination supports planning, practical experience, and the study of doctrine."
  TAR_peaceful_reforms_desc:0 "Reform offers the mountain's people a steadier place within the governing order. Greater stability, manpower participation, and military organization accompany a reduced appetite for war."
- TAR_solari_supremacy_desc:0 "Solari authority demands obedience to its vision of the mountain's future. Political resolve and stronger attacks come with greater support for war and a less stable peace."
+ TAR_solari_supremacy_desc:0 "The Solari priesthood teaches that the sun keeps Targon safe from darkness. Under its sole rule, that conviction gives the government resolve and rallies warriors for battle, while those it excludes grow less willing to accept the peace."
  Zileans_Zeal_desc:0 "Zilean's determination to preserve Icathia gives its scholars a purpose beyond mere survival. Their focused study helps research advance more quickly."
  big_sun_desc:0 "Shurima has declared its support for restoring Solari rule on the mountain. The declaration expresses a political intention; the struggle over Targon's future remains unsettled."

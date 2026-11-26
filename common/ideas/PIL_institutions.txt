@@ -1,0 +1,26 @@
+ideas = {
+    country = {
+        PIL_public_licensing_policy = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+        }
+
+        PIL_exclusive_procurement_policy = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.10 }
+        }
+
+        PIL_inspection_regime = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+                industrial_capacity_factory = -0.02
+            }
+        }
+    }
+}

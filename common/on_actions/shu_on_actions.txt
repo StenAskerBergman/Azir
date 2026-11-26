@@ -13,6 +13,48 @@ on_actions = {
 		}
 	}
 
+	# Repair older XER saves and grant training for focuses completed before the unlocks.
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					tag = SHU
+					has_country_flag = SHU_awaiting_moonstone_answer
+					OR = {
+						NOT = { country_exists = TAR }
+						TAR = { NOT = { has_character = TAR_diana } }
+					}
+				}
+				country_event = { id = shurima_moonstone.7 }
+			}
+			if = {
+				limit = { tag = XER }
+				if = {
+					limit = {
+						has_cosmetic_tag = XER_renekon
+						has_character = XER_renekton
+						NOT = { has_country_flag = XER_renekton_handoff_applied }
+					}
+					XER_install_renekton = yes
+				}
+				if = {
+					limit = {
+						has_completed_focus = XER_baccai_ritual
+						NOT = { has_tech = azir_xer_baccai_training }
+					}
+					set_technology = { azir_xer_baccai_training = 1 popup = no }
+				}
+				if = {
+					limit = {
+						has_completed_focus = XER_Blood_Pact
+						NOT = { has_tech = azir_xer_warband_training }
+					}
+					set_technology = { azir_xer_warband_training = 1 popup = no }
+				}
+			}
+		}
+	}
+
 	on_declare_war = {
 		effect = {
 			if = {

@@ -1,0 +1,272 @@
+add_namespace = PIL_events
+
+country_event = {
+    id = PIL_events.1
+    title = PIL_events.1.t
+    desc = PIL_events.1.d
+    picture = GFX_PIL_ZAU_progress
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.1.a
+        ai_chance = { factor = 2 }
+        set_country_flag = PIL_priority
+        set_country_flag = PIL_charter
+        add_political_power = 30
+    }
+    option = {
+        name = PIL_events.1.b
+        ai_chance = { factor = 1 }
+        set_country_flag = PIL_charter
+        add_political_power = -15
+    }
+}
+
+country_event = {
+    id = PIL_events.2
+    title = PIL_events.2.t
+    desc = PIL_events.2.d
+    picture = GFX_PIL_ZAU_paper
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.2.a
+        ai_chance = { factor = 2 }
+        country_event = { id = PIL_events.23 days = 21 }
+    }
+    option = {
+        name = PIL_events.2.b
+        ai_chance = { factor = 1 }
+        random_list = {
+            65 = { country_event = { id = PIL_events.3 days = 7 } }
+            35 = { country_event = { id = PIL_events.24 days = 7 } }
+        }
+    }
+}
+
+country_event = {
+    id = PIL_events.3
+    title = PIL_events.3.t
+    desc = { trigger = { has_country_flag = PIL_priority } text = PIL_events.3.d0 }
+    desc = { trigger = { NOT = { has_country_flag = PIL_priority } } text = PIL_events.3.d }
+    picture = GFX_PIL_ZAU_light
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.3.a
+        ai_chance = { factor = 1 }
+        set_country_flag = PIL_hexgate_open
+    }
+}
+
+country_event = {
+    id = PIL_events.4
+    title = PIL_events.4.t
+    desc = { trigger = { has_country_flag = PIL_priority } text = PIL_events.4.d0 }
+    desc = { trigger = { NOT = { has_country_flag = PIL_priority } } text = PIL_events.4.d }
+    picture = GFX_PIL_ZAU_ledger
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.4.a
+        ai_chance = { factor = 2 }
+        add_political_power = -20
+        53 = { if = { limit = { is_owned_and_controlled_by = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } } }
+    }
+    option = {
+        name = PIL_events.4.b
+        ai_chance = { factor = 1 }
+        add_political_power = 15
+    }
+}
+
+country_event = {
+    id = PIL_events.5
+    title = PIL_events.5.t
+    desc = PIL_events.5.d
+    picture = GFX_PIL_ZAU_licenses
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.5.a
+        trigger = { has_completed_focus = PIL_open_patents }
+        ai_chance = { factor = 2 }
+        add_tech_bonus = { name = PIL_ZAU_hextech_bonus bonus = 0.50 uses = 1 category = electronics }
+    }
+    option = {
+        name = PIL_events.5.b
+        trigger = { has_completed_focus = PIL_ferros }
+        ai_chance = { factor = 1 }
+        51 = { if = { limit = { is_owned_and_controlled_by = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    }
+}
+
+country_event = {
+    id = PIL_events.6
+    title = PIL_events.6.t
+    desc = PIL_events.6.d
+    picture = GFX_PIL_ZAU_academy
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.6.a
+        ai_chance = { factor = 2 }
+        add_political_power = -15
+        51 = { if = { limit = { is_owned_and_controlled_by = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    }
+    option = {
+        name = PIL_events.6.b
+        ai_chance = { factor = 1 }
+        add_tech_bonus = { name = PIL_ZAU_hextech_bonus bonus = 0.50 uses = 1 category = electronics }
+    }
+}
+
+country_event = {
+    id = PIL_events.7
+    title = PIL_events.7.t
+    desc = PIL_events.7.d
+    picture = GFX_PIL_ZAU_fog
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.7.a
+        ai_chance = { factor = 2 }
+        add_stability = 0.01
+    }
+    option = {
+        name = PIL_events.7.b
+        ai_chance = { factor = 1 }
+        add_political_power = 15
+    }
+}
+
+country_event = {
+    id = PIL_events.8
+    title = PIL_events.8.t
+    desc = PIL_events.8.d
+    picture = GFX_PIL_ZAU_roofs
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.8.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = PIL_events.9
+    title = PIL_events.9.t
+    desc = PIL_events.9.d
+    picture = GFX_PIL_ZAU_departures
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.9.a
+        ai_chance = { factor = 1 }
+        add_equipment_to_stockpile = { type = convoy amount = 25 producer = PLT }
+    }
+}
+
+country_event = {
+    id = PIL_events.16
+    title = PIL_events.16.t
+    desc = PIL_events.16.d
+    picture = GFX_PIL_ZAU_glasc_offer
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.16.a
+        trigger = { PIL_ZAU_both_present = yes }
+        ai_chance = { factor = 1 }
+        add_political_power = -20
+        add_timed_idea = { idea = PIL_ZAU_glasc_supply_contract days = 120 }
+        ZAU = { add_timed_idea = { idea = PIL_ZAU_glasc_supply_contract days = 120 } }
+    }
+    option = {
+        name = PIL_events.16.b
+        trigger = { PIL_ZAU_both_present = yes }
+        ai_chance = { factor = 2 }
+    }
+    option = {
+        name = PIL_events.16.c
+        trigger = { NOT = { PIL_ZAU_both_present = yes } }
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = PIL_events.23
+    title = PIL_events.23.t
+    desc = PIL_events.23.d
+    picture = GFX_PIL_ZAU_calibration
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.23.a
+        ai_chance = { factor = 1 }
+        country_event = { id = PIL_events.3 }
+    }
+}
+
+country_event = {
+    id = PIL_events.24
+    title = PIL_events.24.t
+    desc = PIL_events.24.d
+    picture = GFX_PIL_ZAU_suspended
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_events.24.a
+        ai_chance = { factor = 1 }
+        set_country_flag = PIL_retest
+        add_political_power = -15
+    }
+}
+
+
+country_event = {
+    id = PIL_events.30
+    title = PIL_events.30.t
+    desc = PIL_events.30.d
+    picture = GFX_PIL_ZAU_paper
+    is_triggered_only = yes
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_audit_findings_pending }
+
+    option = {
+        name = PIL_events.30.b
+        ai_chance = {
+            factor = 1
+            modifier = { factor = 6 PIL_exclusive_procurement_enacted = yes }
+        }
+        clr_country_flag = PIL_audit_findings_pending
+        set_country_flag = PIL_audit_concluded
+    }
+    option = {
+        name = PIL_events.30.a
+        trigger = { has_character = PLT_caitlyn has_country_flag = PIL_audit_findings_pending }
+        ai_chance = {
+            factor = 4
+            modifier = { factor = 0 NOT = { has_character = PLT_caitlyn } }
+        }
+        if = {
+            limit = { has_character = PLT_caitlyn has_country_flag = PIL_audit_findings_pending }
+            clr_country_flag = PIL_audit_findings_pending
+            set_country_flag = PIL_audit_concluded
+            PIL_end_exclusive_procurement = yes
+            add_ideas = PIL_inspection_regime
+        }
+    }
+}
+
+country_event = {
+    id = PIL_events.31
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { PIL_requisition_operating = yes }
+    immediate = {
+        if = {
+            limit = { PIL_requisition_operating = yes }
+            set_country_flag = PIL_requisition_draw_ready
+        }
+    }
+}

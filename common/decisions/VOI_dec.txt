@@ -392,6 +392,26 @@ VOI_resistance_category = {
         ai_will_do = { factor = 1 }
     }
 
+    # Older saves recorded the reunion announcement but never recorded which
+    # human option was chosen. Let the player confirm a historical refusal.
+    VOI_refer_kaisa_after_old_reunion = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+        allowed = { tag = VOI }
+        visible = {
+            has_country_flag = resisted_the_void
+            has_country_flag = { flag = VOI_kaisa_return_announced days > 13 }
+            NOT = { has_country_flag = VOI_kaisa_return_has_foreign_offers }
+            NOT = { has_country_flag = VOI_hybrid_path }
+            NOT = { has_global_flag = azir_kaisa_foreign_offers_started }
+            VOI_Kaisa = { is_character = VOI_Kaisa }
+            NOT = { any_country = { has_character = VOI_Kaisa } }
+        }
+        complete_effect = { azir_kaisa_open_foreign_offers = yes }
+        ai_will_do = { factor = 0 }
+    }
+
     # VOI_void_resistance_decision = {
     #     picture = GFX_idea_generic_defence_construction
     #

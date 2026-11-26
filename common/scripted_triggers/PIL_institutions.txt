@@ -1,0 +1,101 @@
+PIL_is_piltover = {
+    tag = PLT
+    original_tag = PLT
+}
+
+PIL_ix_survey_valid = {
+    country_exists = PLT
+    country_exists = IXT
+    PLT = { PIL_is_piltover = yes NOT = { has_war_with = IXT } }
+    27 = { is_owned_and_controlled_by = IXT }
+}
+
+PIL_scar_registry_valid = {
+    country_exists = PLT
+    country_exists = CRY
+    PLT = { PIL_is_piltover = yes NOT = { has_war_with = CRY } }
+    118 = { is_owned_and_controlled_by = CRY }
+}
+
+PIL_ix_survey_live = {
+    PIL_ix_survey_valid = yes
+    PLT = { has_country_flag = PIL_ix_survey_agreement }
+}
+
+PIL_scar_registry_live = {
+    PIL_scar_registry_valid = yes
+    PLT = { has_country_flag = PIL_scar_registry_agreement }
+}
+
+PIL_academy_range = {
+    has_power_balance = { id = PIL_bop }
+    power_balance_value = { id = PIL_bop value < -0.20 }
+}
+
+PIL_ferros_range = {
+    has_power_balance = { id = PIL_bop }
+    power_balance_value = { id = PIL_bop value > 0.20 }
+}
+
+PIL_public_licensing_enacted = {
+    PIL_is_piltover = yes
+    has_completed_focus = PIL_warrants
+    has_idea = PIL_public_licensing_policy
+}
+
+PIL_exclusive_procurement_enacted = {
+    PIL_is_piltover = yes
+    has_completed_focus = PIL_charter_board
+    has_idea = PIL_exclusive_procurement_policy
+    NOT = { has_idea = PIL_inspection_regime }
+}
+
+PIL_accord_operating = {
+    has_idea = PIL_joint_freight
+    PIL_ZAU_bridge_live = yes
+    PIL_ZAU_joint_freight_operating = yes
+}
+
+PIL_detour_operating = {
+    has_completed_focus = PIL_detour
+    has_idea = PIL_fallback_freight_idea
+    53 = { is_owned_and_controlled_by = PLT }
+}
+
+PIL_research_network_operating = {
+    OR = {
+        AND = {
+            PIL_accord_operating = yes
+            OR = { PIL_ix_survey_live = yes PIL_scar_registry_live = yes }
+        }
+        AND = {
+            PIL_detour_operating = yes
+            PIL_ix_survey_live = yes
+            PIL_scar_registry_live = yes
+        }
+    }
+}
+
+PIL_public_study_available = {
+    PIL_public_licensing_enacted = yes
+    has_completed_focus = PIL_public_warrant_council
+    PIL_research_network_operating = yes
+}
+
+PIL_procurement_works_available = {
+    PIL_exclusive_procurement_enacted = yes
+    53 = { is_owned_and_controlled_by = PLT }
+}
+
+PIL_requisition_operating = {
+    PIL_procurement_works_available = yes
+    has_country_flag = PIL_river_pilt_works_complete
+    num_of_military_factories > 0
+    OR = { PIL_accord_operating = yes PIL_detour_operating = yes }
+}
+
+PIL_inspectorate_case_available = {
+    PIL_is_piltover = yes
+    has_character = PLT_caitlyn
+    OR = { has_country_flag = PIL_ix_survey_refused has_country_flag = PIL_betrayed }
+}

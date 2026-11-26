@@ -761,6 +761,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			custom_effect_tooltip = NAZ_unlock_steel_lions_desert_armour_tt
 			IF = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -2334,4 +2335,76 @@ focus_tree = {
 	# 	}
 	# }
 
+    focus = {
+        id = NAZ_council_defense_hearings
+        icon = GFX_azir_focus_oasis
+        x = 40
+        y = 0
+        cost = 5
+        available = { NAZ_oasis_sovereign = yes has_character = NAZ_Tribal_Elder_Council }
+        ai_will_do = { factor = 4 }
+        completion_reward = {
+            set_power_balance = { id = NAZ_bop set_value = 0 }
+        }
+    }
+
+    focus = {
+        id = NAZ_oasis_water_reserves
+        icon = GFX_azir_focus_oasis
+        x = 38
+        y = 1
+        cost = 5
+        prerequisite = { focus = NAZ_council_defense_hearings }
+        available = { NAZ_oasis_sovereign = yes }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            133 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = NAZ_train_oasis_reserves
+        icon = GFX_azir_focus_oasis
+        x = 38
+        y = 2
+        cost = 5
+        prerequisite = { focus = NAZ_oasis_water_reserves }
+        available = { NAZ_oasis_sovereign = yes has_character = NAZ_ksante }
+        ai_will_do = { factor = 2 modifier = { factor = 2 NAZ_frontier_emergency = yes } }
+        completion_reward = {
+            add_manpower = 750
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 150 producer = NAZ }
+        }
+    }
+
+    focus = {
+        id = NAZ_company_drills
+        icon = GFX_azir_focus_oasis
+        x = 42
+        y = 1
+        cost = 5
+        prerequisite = { focus = NAZ_council_defense_hearings }
+        available = { NAZ_oasis_sovereign = yes has_character = NAZ_tope }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            army_experience = 10
+        }
+    }
+
+    focus = {
+        id = NAZ_process_monster_materials
+        icon = GFX_azir_focus_oasis
+        x = 42
+        y = 2
+        cost = 5
+        prerequisite = { focus = NAZ_company_drills }
+        available = { NAZ_oasis_sovereign = yes has_idea = NAZ_Exotic_materials }
+        ai_will_do = { factor = 2 modifier = { factor = 2 NAZ_live_defense_compact = yes } }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = NAZ }
+        }
+    }
 }

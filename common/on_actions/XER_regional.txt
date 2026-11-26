@@ -1,0 +1,23 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = { limit = { country_exists = XER } XER = { XER_update_regional_authority = yes } }
+        }
+    }
+    on_weekly_XER = {
+        effect = { XER_update_regional_authority = yes }
+    }
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    tag = XER
+                    FROM = { tag = SHU }
+                    FROM.FROM = { state = 144 }
+                    has_war_with = SHU
+                }
+                set_country_flag = XER_disc_taken_from_shu
+            }
+        }
+    }
+}

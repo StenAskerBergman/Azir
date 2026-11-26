@@ -1,0 +1,17 @@
+spriteTypes = {
+    # Xerath, LoR 05SH014, SIXMOREVODKA.
+    spriteType = {
+        name = "GFX_report_event_xerath_uneasy_alliance"
+        texturefile = "gfx/event_pictures/report_event_xerath_uneasy_alliance.dds"
+    }
+    # Restored Devout, LoR 05SH011T1, Chris Kintner.
+    spriteType = {
+        name = "GFX_report_event_xerath_restored_devout"
+        texturefile = "gfx/event_pictures/report_event_xerath_restored_devout.dds"
+    }
+    # Dami'yin the Unbound, LoR 05SH012T1, Michael Ivan.
+    spriteType = {
+        name = "GFX_decision_cat_picture_XER_rival_disc"
+        texturefile = "gfx/interface/decisions/decision_cat_picture_XER_rival_disc.dds"
+    }
+}

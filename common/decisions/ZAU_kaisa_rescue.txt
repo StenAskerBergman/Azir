@@ -1,0 +1,85 @@
+ZAU_kaisa_missing_shift = {
+    ZAU_kaisa_restart_pumps = {
+        icon = GFX_portrait_voi_kaisa_small
+        cost = 0
+        fire_only_once = yes
+        visible = { has_country_flag = ZAU_kaisa_provisional }
+        days_remove = 14
+        custom_cost_trigger = { num_of_civilian_factories_available_for_projects > 0 }
+        custom_cost_text = decision_cost_civ_factory_1
+        modifier = { civilian_factory_use = 1 }
+        remove_effect = { set_country_flag = ZAU_kaisa_gallery_located }
+        ai_will_do = { factor = 1 }
+    }
+
+    ZAU_kaisa_lower_winches = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = yes
+        visible = {
+            has_country_flag = ZAU_kaisa_provisional
+            has_country_flag = ZAU_kaisa_gallery_located
+            NOT = { has_country_flag = ZAU_kaisa_draining_exit }
+        }
+        available = { has_equipment = { support_equipment > 24 } }
+        complete_effect = {
+            add_equipment_to_stockpile = { type = support_equipment amount = -25 }
+            clr_country_flag = ZAU_kaisa_gallery_located
+            set_country_flag = ZAU_kaisa_crew_rescued
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    ZAU_kaisa_drain_exit = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = yes
+        visible = {
+            has_country_flag = ZAU_kaisa_provisional
+            has_country_flag = ZAU_kaisa_gallery_located
+        }
+        days_remove = 7
+        custom_cost_trigger = { num_of_civilian_factories_available_for_projects > 0 }
+        custom_cost_text = decision_cost_civ_factory_1
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = ZAU_kaisa_draining_exit }
+        remove_effect = {
+            clr_country_flag = ZAU_kaisa_draining_exit
+            clr_country_flag = ZAU_kaisa_gallery_located
+            set_country_flag = ZAU_kaisa_crew_rescued
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    ZAU_kaisa_commission_rescue_crew = {
+        icon = GFX_portrait_voi_kaisa_small
+        cost = 0
+        visible = {
+            has_country_flag = ZAU_kaisa_provisional
+            has_country_flag = ZAU_kaisa_crew_rescued
+        }
+        complete_effect = {
+            azir_kaisa_grant_command = yes
+            if = {
+                limit = { has_character = VOI_Kaisa }
+                VOI_Kaisa = {
+                    set_portraits = {
+                        army = {
+                            large = GFX_portrait_ZAU_Kaisa_Husk
+                            small = GFX_portrait_ZAU_Kaisa_Husk_small
+                        }
+                        civilian = {
+                            large = GFX_portrait_ZAU_Kaisa_Husk
+                            small = GFX_portrait_ZAU_Kaisa_Husk_small
+                        }
+                    }
+                }
+                remove_dynamic_modifier = { modifier = azir_kaisa_public_backlash }
+                clear_variable = azir_kaisa_stability_backlash
+                clr_country_flag = ZAU_kaisa_crew_rescued
+                clr_country_flag = ZAU_kaisa_provisional
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

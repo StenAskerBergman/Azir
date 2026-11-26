@@ -1,0 +1,67 @@
+add_namespace = azir_kaisa_hiring
+
+country_event = {
+    id = azir_kaisa_hiring.1
+    is_triggered_only = yes
+    title = azir_kaisa_hiring.1.t
+    picture = GFX_news_event_azir_kaisa_returns
+    desc = {
+        trigger = { tag = SHU }
+        text = azir_kaisa_hiring.1.d_shu
+    }
+    desc = {
+        trigger = { tag = NAZ }
+        text = azir_kaisa_hiring.1.d_naz
+    }
+    desc = {
+        trigger = { tag = ZAU }
+        text = azir_kaisa_hiring.1.d_zau
+    }
+    trigger = { has_country_flag = azir_kaisa_offer_pending }
+
+    option = {
+        name = azir_kaisa_hiring.1.hire
+        trigger = {
+            NOT = { tag = ZAU }
+            azir_kaisa_sponsorship_affordable = yes
+        }
+        ai_chance = { factor = 1 }
+        custom_effect_tooltip = azir_kaisa_hiring_command_tt
+        hidden_effect = { azir_kaisa_accept_offer = yes }
+    }
+    option = {
+        name = azir_kaisa_hiring.1.trial
+        trigger = { tag = ZAU }
+        ai_chance = { factor = 3 }
+        custom_effect_tooltip = azir_kaisa_hiring_trial_tt
+        hidden_effect = { azir_kaisa_accept_offer = yes }
+    }
+    option = {
+        name = azir_kaisa_hiring.1.decline
+        ai_chance = { factor = 1 }
+        hidden_effect = { azir_kaisa_decline_offer = yes }
+    }
+}
+
+# Only Shurima or Nazumah queues this event, once per anniversary of hiring.
+country_event = {
+    id = azir_kaisa_hiring.2
+    is_triggered_only = yes
+    hidden = yes
+    trigger = {
+        OR = { tag = SHU tag = NAZ }
+        has_dynamic_modifier = { modifier = azir_kaisa_public_backlash }
+    }
+    immediate = {
+        add_to_variable = { azir_kaisa_stability_backlash = 0.01 }
+        if = {
+            limit = { check_variable = { azir_kaisa_stability_backlash < 0 } }
+            force_update_dynamic_modifier = yes
+            country_event = { id = azir_kaisa_hiring.2 days = 365 }
+        }
+        else = {
+            remove_dynamic_modifier = { modifier = azir_kaisa_public_backlash }
+            clear_variable = azir_kaisa_stability_backlash
+        }
+    }
+}

@@ -1,0 +1,83 @@
+ideas = {
+    country = {
+        ZAU_ward_resilience = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            cancel = { OR = { ZAU_wards_secure = no ZAU_freight_operating = no } }
+            modifier = {
+                stability_factor = 0.04
+                repair_speed_factor = 0.10
+            }
+        }
+
+        ZAU_local_purchasing = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+                production_speed_arms_factory_factor = -0.05
+            }
+        }
+
+        ZAU_ward_repair_crews = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            cancel = { ZAU_wards_secure = no }
+            modifier = { repair_speed_factor = 0.20 }
+        }
+
+        ZAU_exclusive_purchasing = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+        }
+
+        ZAU_contract_industrial_credit = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            cancel = { ZAU_industrial_credit_eligible = no }
+            modifier = {
+                production_speed_arms_factory_factor = 0.10
+                consumer_goods_factor = 0.07
+            }
+        }
+
+        ZAU_firelight_mandate_idea = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            cancel = { ZAU_wards_secure = no }
+            modifier = { repair_speed_factor = 0.05 }
+        }
+
+        ZAU_ixt_filtration_service = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = { country_exists = ZAU }
+                    ZAU = { ZAU_ixt_filters_live = no }
+                }
+            }
+            modifier = { repair_speed_factor = 0.05 }
+        }
+
+        ZAU_cry_filtration_service = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = { country_exists = ZAU }
+                    ZAU = { ZAU_cry_filters_live = no }
+                }
+            }
+            modifier = { repair_speed_factor = 0.05 }
+        }
+    }
+}

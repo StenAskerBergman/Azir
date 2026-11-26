@@ -1,0 +1,43 @@
+XER_update_regional_authority = {
+    if = {
+        limit = { NOT = { has_power_balance = { id = XER_bop } } }
+        set_power_balance = { id = XER_bop set_value = 0 }
+    }
+    if = {
+        limit = {
+            has_country_flag = XER_central_requisition
+            has_country_flag = XER_siege_crews
+            NOT = { has_country_flag = XER_command_break }
+            has_country_leader = { character = XER_xerath }
+            NOT = { has_idea = XER_siege_disruption }
+            XER_regional_workshops_ready = yes
+            XER_regional_battery_fielded = yes
+        }
+        if = { limit = { NOT = { has_idea = XER_arcane_readiness } } add_ideas = XER_arcane_readiness }
+    }
+    else_if = {
+        limit = { has_idea = XER_arcane_readiness }
+        remove_ideas = XER_arcane_readiness
+    }
+    if = {
+        limit = {
+            has_country_flag = XER_frontier_mandates
+            NOT = { has_country_flag = XER_command_break }
+            NOT = { XER_regional_frontier_ready = yes }
+        }
+        clr_country_flag = XER_frontier_probation
+        set_country_flag = { flag = XER_frontier_probation days = 60 value = 1 }
+    }
+    if = {
+        limit = {
+            has_country_flag = XER_frontier_mandates
+            NOT = { has_idea = XER_garrison_disruption }
+            XER_regional_frontier_ready = yes
+        }
+        if = { limit = { NOT = { has_idea = XER_frontier_readiness } } add_ideas = XER_frontier_readiness }
+    }
+    else_if = {
+        limit = { has_idea = XER_frontier_readiness }
+        remove_ideas = XER_frontier_readiness
+    }
+}

@@ -1,0 +1,15 @@
+ZAU_review_ward_service_budget_eligible = {
+    ZAU_ward_recovery_eligible = yes
+    ZAU_wards_secure = yes
+    ZAU_freight_operating = yes
+}
+
+ZAU_review_glasc_contract_eligible = {
+    ZAU_industrial_credit_eligible = yes
+}
+
+ZAU_confirm_federation_oversight_eligible = {
+    has_country_flag = ZAU_federation_ratified
+    ZAU_wards_secure = yes
+    ZAU_active_detour = yes
+}

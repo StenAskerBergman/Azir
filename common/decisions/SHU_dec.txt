@@ -1,4 +1,64 @@
 SHU_main_cat = {
+    SHU_muster_azir_guard = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = SHU_emperor
+            has_country_leader = { character = SHU_azir }
+            NOT = { has_template = "Azir's Imperial Guard" }
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = SHU_muster_azir_guard_tt
+            hidden_effect = {
+                division_template = {
+                    name = "Azir's Imperial Guard"
+                    override_model = SHU_azir_champion_entity
+                    division_cap = 1
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 2 y = 1 }
+                        infantry = { x = 2 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+	SHU_muster_lion_riders = {
+		icon = generic_prepare_civil_war
+		cost = 25
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = SHU_lion_riders
+			NOT = { has_tech = azir_shu_lion_rider_training }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = SHU_muster_lion_riders_tt
+			hidden_effect = {
+				set_technology = {
+					azir_shu_lion_rider_training = 1
+					popup = no
+				}
+			}
+		}
+
+		# The AI has no template that uses this company.
+		ai_will_do = { factor = 0 }
+	}
 
 	# In Xerath War
 
@@ -136,324 +196,319 @@ SHU_nasus_category = {
 
 SHU_void_cat = {
 
-    # Xer'Sai
+    DuneBreakerFound = {
+        icon = DuneBreaker_icon
+        activation = { always = no }
+        available = { always = no }
+        days_mission_timeout = 180
+        fire_only_once = no
+        timeout_effect = { country_event = shurima.38 }
+    }
 
-	DuneBreakerFound = {
+    DuneSwallowerFound = {
+        icon = DuneSwallower_icon
+        activation = { always = no }
+        available = { always = no }
+        days_mission_timeout = 180
+        fire_only_once = no
+        timeout_effect = { country_event = shurima.38 }
+    }
 
-		##DuneBreaker - Evelynn
+    XersaiCaller = {
+        icon = XersaiCallers_icon
+        activation = { always = no }
+        available = { always = no }
+        days_mission_timeout = 180
+        fire_only_once = no
+        timeout_effect = { country_event = shurima.38 }
+    }
 
-		days_mission_timeout = 180
-		icon = DuneBreaker_icon
-		fire_only_once = no
-		allowed = { always = no }
+    investigate_void = {
+        available = {
+            has_country_flag = void
+            NOT = { has_country_flag = DuneBreaker }
+            NOT = { has_country_flag = DuneSwallower }
+            NOT = { has_country_flag = XersaiCaller }
+            NOT = { has_country_flag = found_void }
+            NOT = { has_country_flag = xersaiGone }
+        }
+        days_remove = 5
+        fire_only_once = no
+        cost = 10
+        remove_effect = {
+            if = {
+                limit = { any_controlled_state = { always = yes } }
+                country_event = shurima_void.7
+            }
+            else = { country_event = { id = shurima.33 days = 1 } }
+        }
+    }
 
-		available = {
-       		 always = no
-    		}
+    SHU_void_martial_law = {
+        icon = generic_prepare_civil_war
+        available = {
+            has_manpower > 9999
+            any_controlled_state = {
+                has_state_flag = SHU_xersai_incursion
+                has_dynamic_modifier = { modifier = void_attack }
+                has_ROOT_at_least_1_div_in_current_state_scope = yes
+            }
+            OR = {
+                has_active_mission = DuneBreakerFound
+                has_active_mission = DuneSwallowerFound
+                has_active_mission = XersaiCaller
+            }
+        }
+        days_remove = 30
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            add_manpower = -10000
+            SHU_shorten_xersai_mission = yes
+        }
+    }
 
-		timeout_effect = {
+    SHU_void_prepare_a_defense = {
+        icon = generic_industry
+        available = {
+            has_equipment = { infantry_equipment > 499 }
+            OR = {
+                has_active_mission = DuneBreakerFound
+                has_active_mission = DuneSwallowerFound
+                has_active_mission = XersaiCaller
+            }
+        }
+        days_remove = 30
+        fire_only_once = no
+        cost = 25
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -500
+            }
+            SHU_shorten_xersai_mission = yes
+        }
+    }
 
-			every_controlled_state = {
-				remove_dynamic_modifier = { modifier = void_attack }
-			}
-				country_event = {
-					id = shurima.38
-					days = 1
-				}
-				country_event = {
-					id = shurima.310 # Demacia.9 is suppose to be here, btw
-					days = 40
-				}
+    SHU_void_relocate_resources = {
+        available = {
+            OR = {
+                has_active_mission = DuneBreakerFound
+                has_active_mission = DuneSwallowerFound
+                has_active_mission = XersaiCaller
+            }
+        }
+        days_remove = 30
+        fire_only_once = no
+        cost = 50
+        complete_effect = {
+            SHU_shorten_xersai_mission = yes
+        }
+    }
 
-		}
-	}
-	DuneSwallowerFound = {
+    SHU_void_request_night_hunter = {
+        visible = { has_country_flag = vayne }
+        available = {
+            OR = {
+                has_active_mission = DuneBreakerFound
+                has_active_mission = DuneSwallowerFound
+                has_active_mission = XersaiCaller
+            }
+        }
+        days_remove = 30
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            SHU_shorten_xersai_mission = yes
+        }
+    }
+}
 
-		##DuneSwallower - Fiddle (sometimes noctrune I fked up)
+SHU_bop_decisions = {
+    SHU_restore_royal_administration = {
+        icon = generic_construction
+        visible = { has_completed_focus = SHU_imperial_state NOT = { has_country_flag = SHU_restore_royal_administration_completed } }
+        available = { SHU_disc_secure = yes }
+        cost = 45
+        complete_effect = {
+            set_country_flag = SHU_restore_royal_administration_completed
+            add_manpower = 1500
+            army_experience = 5
+            add_power_balance_value = { id = SHU_bop value = 0.15 }
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-		days_mission_timeout = 180
-		icon = XersaiCaller_icon
-		fire_only_once = no
-		allowed = { always = no }
+    SHU_build_royal_supply_road = {
+        icon = generic_construction
+        visible = { has_completed_focus = SHU_imperial_state NOT = { has_country_flag = SHU_build_royal_supply_road_completed } }
+        available = { SHU_imperial_supply_secure = yes has_country_flag = SHU_restore_royal_administration_completed }
+        cost = 60
+        complete_effect = {
+            set_country_flag = SHU_build_royal_supply_road_completed
+            141 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            add_power_balance_value = { id = SHU_bop value = 0.2 }
+            SHU_update_regional_doctrine = yes
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-		available = {
-       		 always = no
-    		}
+    SHU_charter_assemblies = {
+        icon = generic_construction
+        visible = { has_completed_focus = SHU_republican_future NOT = { has_country_flag = SHU_charter_assemblies_completed } }
+        available = { has_completed_focus = SHU_tribe_council }
+        cost = 35
+        complete_effect = {
+            set_country_flag = SHU_charter_assemblies_completed
+            add_stability = 0.02
+            add_power_balance_value = { id = SHU_bop value = -0.1 }
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-		timeout_effect = {
+    SHU_charter_waterworks = {
+        icon = generic_construction
+        visible = { has_completed_focus = SHU_republican_future NOT = { has_country_flag = SHU_charter_waterworks_completed } }
+        available = { has_completed_focus = SHU_tribal_recognition owns_state = 145 controls_state = 145 }
+        cost = 35
+        complete_effect = {
+            set_country_flag = SHU_charter_waterworks_completed
+            145 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            add_power_balance_value = { id = SHU_bop value = -0.1 }
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-			every_controlled_state = {
-				remove_dynamic_modifier = { modifier = void_attack }
-			}
-				country_event = {
-					id = shurima.38
-					days = 1
-				}
-				country_event = {
-					id = shurima.39
-					days = 40
-				}
+    SHU_charter_garrisons = {
+        icon = generic_construction
+        visible = { has_completed_focus = SHU_republican_future NOT = { has_country_flag = SHU_charter_garrisons_completed } }
+        available = { has_completed_focus = SHU_tribe_unity }
+        cost = 35
+        complete_effect = {
+            set_country_flag = SHU_charter_garrisons_completed
+            add_manpower = 2000
+            add_power_balance_value = { id = SHU_bop value = -0.1 }
+            SHU_update_regional_doctrine = yes
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-		}
-	}
-	XersaiCaller = {
+    SHU_enact_crown_levy = {
+        icon = generic_construction
+        visible = { power_balance_value = { id = SHU_bop value > 0.50 } NOT = { has_country_flag = SHU_crown_levy_enacted } }
+        available = { SHU_imperial_supply_secure = yes NOT = { has_idea = SHU_muster_transition } }
+        cost = 35
+        complete_effect = {
+            set_country_flag = SHU_crown_levy_enacted
+            add_ideas = SHU_crown_levy
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-		##DuneSwallower - XersaiCaller (sometimes DuneSwallower - I fked up)
+    SHU_enact_local_muster = {
+        icon = generic_construction
+        visible = { power_balance_value = { id = SHU_bop value < -0.50 } NOT = { has_idea = SHU_local_muster } }
+        available = { NOT = { has_idea = SHU_levy_transition } }
+        cost = 35
+        complete_effect = {
+            add_ideas = SHU_local_muster
+        }
+        ai_will_do = { factor = 1 }
+    }
 
-		days_mission_timeout = 180
-		icon = DuneSwallower_icon
-		fire_only_once = no
-		allowed = { always = no }
+    SHU_repeal_crown_levy = {
+        icon = generic_construction
+        visible = { has_country_flag = SHU_crown_levy_enacted }
+        available = { NOT = { has_idea = SHU_levy_transition } }
+        cost = 70
+        complete_effect = {
+            clr_country_flag = SHU_crown_levy_enacted
+            remove_ideas = SHU_crown_levy
+            remove_ideas = SHU_imperial_engineers
+            set_power_balance = { id = SHU_bop set_value = -0.65 }
+            add_timed_idea = { idea = SHU_levy_transition days = 90 }
+            SHU_update_regional_doctrine = yes
+        }
+        ai_will_do = { factor = 0 }
+    }
 
-		available = {
-       		 always = no
-    		}
+    SHU_renegotiate_provincial_charters = {
+        icon = generic_construction
+        visible = { has_idea = SHU_local_muster }
+        available = { NOT = { has_idea = SHU_muster_transition } }
+        cost = 70
+        complete_effect = {
+            remove_ideas = SHU_local_muster
+            remove_ideas = SHU_provincial_delegates
+            remove_ideas = SHU_provincial_compact
+            set_power_balance = { id = SHU_bop set_value = 0.65 }
+            add_timed_idea = { idea = SHU_muster_transition days = 90 }
+            SHU_update_regional_doctrine = yes
+        }
+        ai_will_do = { factor = 0 }
+    }
 
-		timeout_effect = {
+    SHU_offer_nazumah_defense_compact = {
+        icon = generic_construction
+        visible = { has_completed_focus = SHU_republican_future has_completed_focus = SHU_nazumah_alliance NOT = { has_country_flag = SHU_nazumah_defense_compact_accepted } }
+        available = {
+            country_exists = NAZ
+            is_subject = no
+            NOT = { has_war_with = NAZ }
+            NOT = { has_country_flag = SHU_offer_nazumah_defense_compact_cooldown }
+            NOT = { has_country_flag = SHU_nazumah_defense_compact_pending }
+            NAZ = { is_subject = no NOT = { has_country_flag = SHU_nazumah_defense_compact_accepted } }
+        }
+        cost = 35
+        days_re_enable = 120
+        complete_effect = {
+            set_country_flag = { flag = SHU_nazumah_defense_compact_pending days = 30 value = 1 }
+            NAZ = { country_event = NAZ_regional.1 }
+        }
+        ai_will_do = { factor = 2 }
+    }
+}
 
-			every_controlled_state = {
-				remove_dynamic_modifier = { modifier = void_attack }
-			}
+SHU_custody_category = {
+    SHU_public_charter_vote = {
+        icon = generic_construction
+        visible = { NOT = { has_country_flag = SHU_custody_vote_held } }
+        available = { SHU_disc_secure = yes has_country_flag = SHU_custody_active }
+        cost = 25
+        complete_effect = {
+            set_country_flag = SHU_custody_vote_held
+            set_country_flag = SHU_custody_charter_approved
+            add_stability = 0.02
+        }
+        ai_will_do = { factor = 5 }
+    }
 
-				country_event = {
-					id = shurima.38
-					days = 1
-				}
-				country_event = {
-					id = shurima.39
-					days = 40
-				}
+    SHU_request_custody_handover = {
+        icon = generic_construction
+        visible = { has_country_flag = SHU_custody_charter_approved NOT = { has_country_flag = SHU_custody_handover_pending } }
+        available = { SHU_disc_secure = yes has_country_flag = SHU_custody_active has_character = SHU_nasus }
+        cost = 15
+        complete_effect = {
+            set_country_flag = SHU_custody_handover_pending
+            country_event = SHU_regional.4
+        }
+        ai_will_do = { factor = 5 }
+    }
 
-		}
-	}
-	investigate_void = {
-			available = {
-       			 NOT = { has_country_flag = DuneBreaker }
-       			 NOT = { has_country_flag = DuneSwallower }
-       			 NOT = { has_country_flag = XersaiCaller }
-				 NOT = { has_country_flag = found_void }
-    			}
-
-			days_remove = 5
-			fire_only_once = no
-
-			cost = 10
-
-			remove_effect = {
-				if = {
-					limit = {
-						has_country_flag = void
-					}
-					set_country_flag = found_void
-					random_list = {
-						33 = {
-							country_event = {
-							id = shurima.34
-							days = 1
-							}
-						}
-						33 = {
-							country_event = {
-							id = shurima.35
-							days = 1
-							}
-						}
-						34 = {
-							country_event = {
-							id = shurima.36
-							days = 1
-							}
-						}
-					}
-				}else = {
-					country_event = {
-						id = shurima.33
-						days = 1
-					}
-				}
-			}
-	}
-	SHU_void_martial_law = {
-			available = {
-			has_country_flag = found_void
-			 	any_controlled_state = {
-					has_dynamic_modifier = {
-    						modifier = void_attack
-					}
-					#FIX THIS ASAP
-					has_ROOT_at_least_1_div_in_current_state_scope = yes
-				}
-    			}
-			icon = generic_prepare_civil_war
-			days_remove = 30
-			fire_only_once = no
-
-			cost = 0
-
-			complete_effect = {
-				add_manpower = -10000
-				if = {
-					limit = {
-						has_country_flag = DuneBreaker
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneBreakerFound
-   				 	days = -30
-					}
-				}else_if = {
-					limit = {
-						has_country_flag = XersaiCaller
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneSwallowerFound
-   				 	days = -30
-					}
-				}else_if = {
-					limit = {
-						has_country_flag = DuneSwallower
-					}
-					add_days_mission_timeout  = {
-   				 	mission = XersaiCaller
-   				 	days = -30
-					}
-				}else = {
-
-				}
-			}
-	}
-	SHU_void_prepare_a_defense = {
-			available = {
-			has_country_flag = found_void
-				has_equipment = {
-   				 infantry_equipment_1 > 499
-				}
-    			}
-			icon = generic_industry
-			days_remove = 30
-			fire_only_once = no
-
-			cost = 25
-
-			complete_effect = {
-					add_equipment_to_stockpile = {
-    						type = infantry_equipment
-   						 amount = -500
-   						 producer = SHU
-					}
-				if = {
-					limit = {
-						has_country_flag = DuneBreaker
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneBreakerFound
-   				 	days = -30
-					}
-
-				}else_if = {
-					limit = {
-						has_country_flag = XersaiCaller
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneSwallowerFound
-   				 	days = -30
-					}
-				}else_if = {
-					limit = {
-						has_country_flag = DuneSwallower
-					}
-					add_days_mission_timeout  = {
-   				 	mission = XersaiCaller
-   				 	days = -30
-					}
-				}else = {
-
-				}
-			}
-	}
-	SHU_void_relocate_resources = {
-			available = {
-			has_country_flag = found_void
-
-    			}
-
-			days_remove = 30
-			fire_only_once = no
-
-			cost = 50
-
-			complete_effect = {
-				if = {
-					limit = {
-						has_country_flag = DuneBreaker
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneBreakerFound
-   				 	days = -30
-					}
-
-				}else_if = {
-					limit = {
-						has_country_flag = XersaiCaller
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneSwallowerFound
-   				 	days = -30
-					}
-				}else_if = {
-					limit = {
-						has_country_flag = DuneSwallower
-					}
-					add_days_mission_timeout  = {
-   				 	mission = XersaiCaller
-   				 	days = -30
-					}
-				}else = {
-
-				}
-			}
-	}
-	SHU_void_request_night_hunter = {
-			visible = {
-			has_country_flag = vayne
-			}
-			available = {
-			has_country_flag = found_void
-    			}
-
-			days_remove = 30
-			fire_only_once = no
-
-			cost = 0
-
-			complete_effect = {
-				if = {
-					limit = {
-						has_country_flag = DuneBreaker
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneBreakerFound
-   				 	days = -30
-					}
-
-				}else_if = {
-					limit = {
-						has_country_flag = XersaiCaller
-					}
-					add_days_mission_timeout  = {
-   				 	mission = DuneSwallowerFound
-   				 	days = -30
-					}
-				}else_if = {
-					limit = {
-						has_country_flag = DuneSwallower
-					}
-					add_days_mission_timeout  = {
-   				 	mission = XersaiCaller
-   				 	days = -30
-					}
-				}else = {
-
-				}
-			}
-	}
+    SHU_custody_deadline = {
+        icon = generic_construction
+        activation = { always = no }
+        days_mission_timeout = 120
+        available = { always = no }
+        cancel_trigger = { has_country_flag = SHU_custody_resolved }
+        timeout_effect = {
+            if = {
+                limit = { has_country_flag = SHU_custody_active }
+                SHU_end_custody = yes
+                add_political_power = -100
+                add_stability = -0.10
+                country_event = SHU_regional.5
+            }
+        }
+    }
 }

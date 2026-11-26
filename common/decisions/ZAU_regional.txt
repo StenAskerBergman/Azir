@@ -1,0 +1,147 @@
+ZAU_regional_agreements = {
+    ZAU_offer_kumungu_filtration = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        visible = { tag = ZAU has_completed_focus = ZAU_engineers }
+        available = {
+            tag = ZAU
+            ZAU_regional_offers_open = yes
+            ZAU_ixt_site_secure = yes
+            NOT = { has_country_flag = ZAU_ixt_offer_pending }
+            NOT = { has_country_flag = ZAU_ixt_agreement }
+            NOT = { has_active_mission = ZAU_ixt_delivery }
+        }
+        cost = 20
+        # Wait until the old counterpart popup has timed out before allowing a resend.
+        days_re_enable = 35
+        complete_effect = {
+            if = {
+                limit = {
+                    ZAU_regional_offers_open = yes
+                    ZAU_ixt_site_secure = yes
+                    NOT = { has_country_flag = ZAU_ixt_offer_pending }
+                    NOT = { has_country_flag = ZAU_ixt_agreement }
+                    NOT = { has_active_mission = ZAU_ixt_delivery }
+                }
+                clr_country_flag = ZAU_ixt_reply_accepted
+                set_country_flag = { flag = ZAU_ixt_offer_pending days = 30 }
+                IXT = { country_event = { id = ZAU_regional.1 } }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 ZAU_ixt_site_secure = no }
+            modifier = { factor = 0 ZAU_freight_operating = no }
+            modifier = { factor = 4 has_completed_focus = ZAU_glasc_directorate }
+            modifier = { factor = 0.2 has_country_flag = ZAU_betrayed ZAU_active_detour = no }
+        }
+    }
+
+    ZAU_ixt_delivery = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        days_mission_timeout = 90
+        is_good = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = { ZAU_ixt_delivery_valid = no }
+        cancel_effect = { ZAU_clear_ixt_agreement = yes }
+        timeout_effect = {
+            if = {
+                limit = { ZAU_ixt_delivery_valid = yes }
+                set_country_flag = ZAU_ixt_delivery_complete
+                IXT = { add_ideas = ZAU_ixt_filtration_service }
+                ZAU_refresh_directorate_credit = yes
+            }
+            else = { ZAU_clear_ixt_agreement = yes }
+        }
+    }
+
+    ZAU_ixt_cancel_filtration = {
+        icon = generic_construction
+        allowed = { tag = IXT original_tag = IXT }
+        visible = { tag = IXT country_exists = ZAU ZAU = { has_country_flag = ZAU_ixt_agreement } }
+        available = { tag = IXT country_exists = ZAU ZAU = { has_country_flag = ZAU_ixt_agreement } }
+        cost = 0
+        complete_effect = {
+            if = { limit = { country_exists = ZAU } ZAU = { ZAU_clear_ixt_agreement = yes } }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 ZAU_ixt_site_secure = yes }
+        }
+    }
+
+    ZAU_offer_scar_reclamation = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        visible = { tag = ZAU has_completed_focus = ZAU_engineers }
+        available = {
+            tag = ZAU
+            ZAU_regional_offers_open = yes
+            ZAU_cry_site_secure = yes
+            NOT = { has_country_flag = ZAU_cry_offer_pending }
+            NOT = { has_country_flag = ZAU_cry_agreement }
+            NOT = { has_active_mission = ZAU_cry_delivery }
+        }
+        cost = 20
+        # Wait until the old counterpart popup has timed out before allowing a resend.
+        days_re_enable = 35
+        complete_effect = {
+            if = {
+                limit = {
+                    ZAU_regional_offers_open = yes
+                    ZAU_cry_site_secure = yes
+                    NOT = { has_country_flag = ZAU_cry_offer_pending }
+                    NOT = { has_country_flag = ZAU_cry_agreement }
+                    NOT = { has_active_mission = ZAU_cry_delivery }
+                }
+                clr_country_flag = ZAU_cry_reply_accepted
+                set_country_flag = { flag = ZAU_cry_offer_pending days = 30 }
+                CRY = { country_event = { id = ZAU_regional.3 } }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 ZAU_cry_site_secure = no }
+            modifier = { factor = 0 ZAU_freight_operating = no }
+            modifier = { factor = 4 has_completed_focus = ZAU_glasc_directorate }
+            modifier = { factor = 0.2 has_country_flag = ZAU_betrayed ZAU_active_detour = no }
+        }
+    }
+
+    ZAU_cry_delivery = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        days_mission_timeout = 90
+        is_good = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = { ZAU_cry_delivery_valid = no }
+        cancel_effect = { ZAU_clear_cry_agreement = yes }
+        timeout_effect = {
+            if = {
+                limit = { ZAU_cry_delivery_valid = yes }
+                set_country_flag = ZAU_cry_delivery_complete
+                CRY = { add_ideas = ZAU_cry_filtration_service }
+                ZAU_refresh_directorate_credit = yes
+            }
+            else = { ZAU_clear_cry_agreement = yes }
+        }
+    }
+
+    ZAU_cry_cancel_reclamation = {
+        icon = generic_construction
+        allowed = { tag = CRY original_tag = CRY }
+        visible = { tag = CRY country_exists = ZAU ZAU = { has_country_flag = ZAU_cry_agreement } }
+        available = { tag = CRY country_exists = ZAU ZAU = { has_country_flag = ZAU_cry_agreement } }
+        cost = 0
+        complete_effect = {
+            if = { limit = { country_exists = ZAU } ZAU = { ZAU_clear_cry_agreement = yes } }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 ZAU_cry_site_secure = yes }
+        }
+    }
+}

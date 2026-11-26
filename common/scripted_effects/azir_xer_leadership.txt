@@ -1,0 +1,22 @@
+XER_install_renekton = {
+    # An older save may still have Renekton's original leader role.
+    if = {
+        limit = { XER_renekton = { NOT = { has_ideology = tribes } } }
+        add_country_leader_role = {
+            character = XER_renekton
+            country_leader = {
+                ideology = tribes
+                desc = "POLITICS_RENEKTON_DESC"
+                traits = { dictator }
+            }
+        }
+    }
+    if = {
+        limit = { has_country_leader = { character = XER_xerath } }
+        retire_country_leader = yes
+    }
+    promote_character = { character = XER_renekton ideology = tribes }
+    set_politics = { ruling_party = chiefdom }
+    set_cosmetic_tag = XER_renekon
+    set_country_flag = XER_renekton_handoff_applied
+}

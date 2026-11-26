@@ -1,0 +1,238 @@
+ZAU_bop_decisions = {
+    ZAU_cooperative_charter = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { has_global_flag = PIL_ZAU_inspection_answered NOT = { has_country_flag = ZAU_bridge_committed } }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            has_global_flag = PIL_ZAU_inspection_answered
+            NOT = { has_country_flag = ZAU_bridge_committed }
+            PIL_ZAU_bridge_unresolved = yes
+            has_completed_focus = ZAU_engineers
+        }
+        cost = 25
+        complete_effect = {
+            set_country_flag = ZAU_bridge_committed
+            ZAU_set_cooperative = yes
+            set_country_flag = ZAU_crossing_concession
+            add_ideas = ZAU_reserved_capacity
+            PIL_ZAU_announce_accord = yes
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 3 has_completed_focus = ZAU_ward_compact }
+            modifier = { factor = 0.5 has_completed_focus = ZAU_glasc }
+            modifier = { factor = 2 PLT = { PIL_bridge_cooperative = yes } }
+            modifier = { factor = 0.2 PLT = { PIL_bridge_coercive = yes } }
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_compact }
+        }
+    }
+
+    ZAU_exclusive_charter = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { has_global_flag = PIL_ZAU_inspection_answered NOT = { has_country_flag = ZAU_bridge_committed } }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            has_global_flag = PIL_ZAU_inspection_answered
+            NOT = { has_country_flag = ZAU_bridge_committed }
+            PIL_ZAU_bridge_unresolved = yes
+            has_completed_focus = ZAU_engineers
+        }
+        cost = 25
+        complete_effect = {
+            set_country_flag = ZAU_bridge_committed
+            ZAU_set_coercive = yes
+            PIL_ZAU_lock_hardening = yes
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 3 has_completed_focus = ZAU_glasc }
+            modifier = { factor = 0.5 has_completed_focus = ZAU_ward_compact }
+            modifier = { factor = 0.7 PLT = { PIL_bridge_cooperative = yes } }
+            modifier = { factor = 4 PLT = { PIL_bridge_coercive = yes } }
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_control }
+        }
+    }
+
+    ZAU_exploit_concession = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { ZAU_bridge_coercive = yes PIL_ZAU_bridge_unresolved = yes }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            PIL_ZAU_bridge_unresolved = yes
+            ZAU_bridge_coercive = yes
+            PLT = { PIL_bridge_cooperative = yes has_country_flag = PIL_crossing_concession has_idea = PIL_reserved_capacity }
+        }
+        cost = 30
+        complete_effect = {
+            set_global_flag = PIL_ZAU_betrayal
+            add_timed_idea = { idea = ZAU_priority_freight days = 120 }
+            PLT = {
+                set_country_flag = PIL_betrayed
+                add_ideas = PIL_freight_disruption
+                country_event = { id = PIL_bridge.1 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 8 has_completed_focus = ZAU_glasc }
+            modifier = { factor = 4 has_country_flag = ZAU_ai_prefers_control }
+        }
+    }
+
+    ZAU_answer_breach = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { has_country_flag = ZAU_betrayed NOT = { has_country_flag = ZAU_breach_answered } }
+        available = {
+            has_country_flag = ZAU_betrayed
+            NOT = { has_country_flag = ZAU_breach_answered }
+        }
+        cost = 20
+        complete_effect = {
+            set_country_flag = ZAU_breach_answered
+            clr_country_flag = ZAU_crossing_concession
+            remove_ideas = ZAU_reserved_capacity
+            remove_ideas = ZAU_freight_disruption
+            PLT = { remove_ideas = PIL_priority_freight }
+            ZAU_set_coercive = yes
+            add_timed_idea = { idea = ZAU_emergency_freight days = 90 }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 25 has_country_flag = ZAU_betrayed }
+        }
+    }
+
+    ZAU_fallback_freight = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { OR = { has_country_flag = ZAU_breach_answered PIL_ZAU_mutual_hardening = yes } NOT = { has_idea = ZAU_fallback_freight_idea } }
+        available = {
+            OR = { has_country_flag = ZAU_breach_answered PIL_ZAU_mutual_hardening = yes }
+            55 = { is_owned_and_controlled_by = ROOT }
+            has_completed_focus = ZAU_detour
+            NOT = { has_idea = ZAU_fallback_freight_idea }
+        }
+        cost = 65
+        complete_effect = {
+            add_ideas = ZAU_fallback_freight_idea
+            55 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            remove_ideas = ZAU_freight_disruption
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 4 has_war = yes }
+            modifier = { factor = 3 has_country_flag = ZAU_breach_answered }
+            modifier = { factor = 2 PIL_ZAU_mutual_hardening = yes }
+        }
+    }
+
+    ZAU_fortify_crossing = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { PIL_ZAU_mutual_hardening = yes NOT = { has_country_flag = ZAU_crossing_fortified } }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            PIL_ZAU_mutual_hardening = yes
+            50 = { is_owned_and_controlled_by = ROOT }
+            NOT = { has_country_flag = ZAU_crossing_fortified }
+        }
+        cost = 45
+        complete_effect = {
+            set_country_flag = ZAU_crossing_fortified
+            50 = { add_building_construction = { type = bunker level = 1 instant_build = yes province = 8189 } }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 2 has_completed_focus = ZAU_glasc }
+        }
+    }
+
+    ZAU_enact_local_purchasing = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 25
+        fire_only_once = yes
+        visible = { has_completed_focus = ZAU_ward_services_charter }
+        available = {
+            ZAU_wards_secure = yes
+            power_balance_value = { id = ZAU_bop value < -0.50 }
+        }
+        complete_effect = {
+            add_ideas = ZAU_local_purchasing
+            recruit_character = ZAU_ward_engineer_delegation
+            if = {
+                limit = { ZAU_freight_operating = yes }
+                set_country_flag = ZAU_ward_freight_was_operating
+            }
+            else = { set_country_flag = ZAU_ward_recovery_due }
+            custom_effect_tooltip = ZAU_ward_purchasing_effect_tt
+        }
+        ai_will_do = { factor = 3 }
+    }
+
+    ZAU_renegotiate_ward_purchasing = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 50
+        days_remove = 60
+        visible = { has_idea = ZAU_local_purchasing }
+        available = { has_idea = ZAU_local_purchasing }
+        remove_effect = {
+            remove_ideas = ZAU_local_purchasing
+            remove_ideas = ZAU_ward_engineer_delegation
+            clr_country_flag = ZAU_ward_recovery_due
+            clr_country_flag = ZAU_ward_freight_was_operating
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    ZAU_enact_exclusive_purchasing = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 25
+        fire_only_once = yes
+        visible = { has_completed_focus = ZAU_contract_directorate }
+        available = {
+            has_country_leader = { character = ZAU_renata ruling_only = yes }
+            power_balance_value = { id = ZAU_bop value > 0.50 }
+            ZAU_regional_filters_live = yes
+        }
+        complete_effect = {
+            add_ideas = ZAU_exclusive_purchasing
+            recruit_character = ZAU_glasc_purchasing_office
+            ZAU_refresh_directorate_credit = yes
+            custom_effect_tooltip = ZAU_glasc_purchasing_effect_tt
+        }
+        ai_will_do = { factor = 3 }
+    }
+
+    ZAU_wind_down_directorate_purchasing = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 50
+        days_remove = 60
+        visible = { has_idea = ZAU_exclusive_purchasing }
+        available = { has_idea = ZAU_exclusive_purchasing }
+        complete_effect = {
+            set_country_flag = ZAU_directorate_wind_down_started
+            clr_country_flag = ZAU_ixt_offer_pending
+            clr_country_flag = ZAU_cry_offer_pending
+            if = {
+                limit = { has_decision = ZAU_order_directorate_equipment }
+                remove_decision = ZAU_order_directorate_equipment
+            }
+            ZAU_refresh_directorate_credit = yes
+        }
+        remove_effect = {
+            set_country_flag = ZAU_directorate_purchasing_ended
+            clr_country_flag = ZAU_directorate_wind_down_started
+            remove_ideas = ZAU_exclusive_purchasing
+            remove_ideas = ZAU_glasc_purchasing_office
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

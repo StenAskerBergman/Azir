@@ -205,43 +205,44 @@ country_event = {
 		clr_country_flag = xersaiGone
 	}
 }
+# Rift Rapture sends the first reports directly to Shurima.
 country_event = {
-	id = shurima_void.7
-	
-	is_triggered_only = yes
-	hidden = yes
-	
-	immediate = { 
-		if = {
-			limit = {
-			 NOT = { has_country_flag = DuneBreaker }
-       			 NOT = { has_country_flag = XersaiCaller }
-       			 NOT = { has_country_flag = DuneSwallower }
-			 NOT = { has_country_flag = xersaiGone }
-			}
-			random_list = {
-						33 = {
-							country_event = {
-							id = shurima_void.4
-							days = 1
-							}
-						}
-						33 = {
-							country_event = {
-							id = shurima.5
-							days = 1
-							}
-						}
-						34 = {
-							country_event = {
-							id = shurima.6
-							days = 1
-							}
-						}
-					}
-		}
-	}
+    id = shurima_void.1
+    title = shurima_void.1.t
+    desc = shurima_void.1.d
+    is_triggered_only = yes
+    trigger = {
+        tag = SHU
+        NOT = { has_country_flag = SHU_xersai_first_reports_received }
+    }
+    immediate = {
+        set_country_flag = SHU_xersai_first_reports_received
+        set_country_flag = void
+    }
+    option = { name = shurima_void.1.a }
 }
+
+# Called when Investigate Xer'sai finishes. Reserve the encounter before dispatch.
+country_event = {
+    id = shurima_void.7
+    hidden = yes
+    is_triggered_only = yes
+    trigger = {
+        tag = SHU
+        has_country_flag = void
+        NOT = { has_country_flag = found_void }
+        NOT = { has_country_flag = xersaiGone }
+    }
+    immediate = {
+        set_country_flag = found_void
+        random_list = {
+            33 = { country_event = { id = shurima.34 days = 1 } }
+            33 = { country_event = { id = shurima.35 days = 1 } }
+            34 = { country_event = { id = shurima.36 days = 1 } }
+        }
+    }
+}
+
 #These will all be named like Demons Found!
 country_event = {
 	id = shurima_void.4

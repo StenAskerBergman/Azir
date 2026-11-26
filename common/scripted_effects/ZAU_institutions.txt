@@ -1,0 +1,36 @@
+ZAU_clear_ixt_agreement = {
+    clr_country_flag = ZAU_ixt_agreement
+    clr_country_flag = ZAU_ixt_delivery_complete
+    if = {
+        limit = { country_exists = IXT }
+        IXT = { remove_ideas = ZAU_ixt_filtration_service }
+    }
+    ZAU_refresh_directorate_credit = yes
+}
+
+ZAU_clear_cry_agreement = {
+    clr_country_flag = ZAU_cry_agreement
+    clr_country_flag = ZAU_cry_delivery_complete
+    if = {
+        limit = { country_exists = CRY }
+        CRY = { remove_ideas = ZAU_cry_filtration_service }
+    }
+    ZAU_refresh_directorate_credit = yes
+}
+
+ZAU_refresh_directorate_credit = {
+    if = {
+        limit = {
+            has_idea = ZAU_contract_industrial_credit
+            ZAU_industrial_credit_eligible = no
+        }
+        remove_ideas = ZAU_contract_industrial_credit
+    }
+    else_if = {
+        limit = {
+            ZAU_industrial_credit_eligible = yes
+            NOT = { has_idea = ZAU_contract_industrial_credit }
+        }
+        add_ideas = ZAU_contract_industrial_credit
+    }
+}

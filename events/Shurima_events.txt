@@ -37,6 +37,7 @@ country_event = {
 			factor = 5
 		}
 		retire_character = SHU_azir
+		set_country_flag = SHU_custody_crisis
 	}
 
 	option = {
@@ -53,7 +54,7 @@ country_event = {
 			factor = 25
 		}
 		random_list = {
-			5 = { retire_character = SHU_azir }
+			5 = { retire_character = SHU_azir set_country_flag = SHU_custody_crisis }
 			95 = { add_stability = -0.1 }
 		}
 	}
@@ -330,6 +331,78 @@ country_event = {
 }
 }
 
+country_event = {
+    id = shurima.34
+    title = shurima.34.t
+    desc = shurima.34.d
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { any_controlled_state = { always = yes } }
+            SHU_mark_xersai_incursion = yes
+            set_country_flag = DuneBreaker
+            activate_mission = DuneBreakerFound
+        }
+        else = { clr_country_flag = found_void }
+    }
+    option = { name = shurima.34.a }
+}
+
+country_event = {
+    id = shurima.35
+    title = shurima.35.t
+    desc = shurima.35.d
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { any_controlled_state = { always = yes } }
+            SHU_mark_xersai_incursion = yes
+            set_country_flag = DuneSwallower
+            activate_mission = DuneSwallowerFound
+        }
+        else = { clr_country_flag = found_void }
+    }
+    option = { name = shurima.35.a }
+}
+
+country_event = {
+    id = shurima.36
+    title = shurima.36.t
+    desc = shurima.36.d
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { any_controlled_state = { always = yes } }
+            SHU_mark_xersai_incursion = yes
+            set_country_flag = XersaiCaller
+            activate_mission = XersaiCaller
+        }
+        else = { clr_country_flag = found_void }
+    }
+    option = { name = shurima.36.a }
+}
+
+country_event = {
+    id = shurima.38
+    title = shurima.38.t
+    desc = shurima.38.d
+    is_triggered_only = yes
+    immediate = {
+        every_state = {
+            limit = { has_state_flag = SHU_xersai_incursion }
+            remove_dynamic_modifier = { modifier = void_attack }
+            clr_state_flag = SHU_xersai_incursion
+        }
+        clr_country_flag = found_void
+        clr_country_flag = DuneBreaker
+        clr_country_flag = DuneSwallower
+        clr_country_flag = XersaiCaller
+        set_country_flag = xersaiGone
+        country_event = { id = shurima.9 days = 40 }
+    }
+    option = { name = shurima.38.a }
+}
+
 add_namespace = shurima
 
 # Nazumah and Shurima Closer Ties Event
@@ -340,28 +413,22 @@ country_event = {
     picture = GFX_report_event_soviet_invasion_map
 
     is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = SHU country_exists = NAZ }
 
     option = {
         name = shurima.55.a
         ai_chance = { factor = 90 }
-        trigger = { TAG = SHU }
-
-        ROOT = {
+        if = {
+            limit = { country_exists = NAZ }
             add_ideas = tribal_ties
-        }
-
-        FROM = {
-            country_event = {
-                id = shurima.56
-                days = 1
-            }
+            NAZ = { country_event = { id = shurima.56 days = 1 } }
         }
     }
 
     option = {
         name = shurima.55.g
         ai_chance = { factor = 10 }
-        trigger = { TAG = SHU }
     }
 }
 
@@ -372,25 +439,19 @@ country_event = {
     picture = GFX_report_event_soviet_invasion_map
 
     is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = NAZ country_exists = SHU }
 
     option = {
         name = shurima.56.a
         ai_chance = { factor = 90 }
-        trigger = { TAG = NAZ }
-
-        ROOT = {
+        if = {
+            limit = { country_exists = SHU }
             add_ideas = tribal_family
-        }
-
-        FROM = {
-            add_ideas = tribal_family
-            remove_ideas = tribal_ties
-        }
-
-        SHU = {
-            country_event = {
-                id = shurima.57
-                days = 1
+            SHU = {
+                add_ideas = tribal_family
+                remove_ideas = tribal_ties
+                country_event = { id = shurima.57 days = 1 }
             }
         }
     }
@@ -398,7 +459,6 @@ country_event = {
     option = {
         name = shurima.56.c
         ai_chance = { factor = 10 }
-        trigger = { TAG = NAZ }
     }
 }
 
@@ -409,6 +469,8 @@ country_event = {
     picture = GFX_report_event_soviet_invasion_map
 
     is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = SHU }
 
     option = {
         name = shurima.57.a
@@ -419,9 +481,12 @@ country_event = {
             add_war_support = 0.10
         }
 
-        FROM = {
-            add_stability = 0.10
-            add_war_support = 0.10
+        if = {
+            limit = { country_exists = NAZ }
+            NAZ = {
+                add_stability = 0.10
+                add_war_support = 0.10
+            }
         }
     }
 }
@@ -544,9 +609,12 @@ country_event = {
     id = shurima.565
     title = shurima.565.ts # "SHU_we_remember_shurima"
     desc = shurima.565.d # "SHU_we_remember_shurima_desc"
-    picture = GFX_evt_sun_disc # Placeholder for an appropriate image
+    picture = GFX_report_event_empty_throne
 
     is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = { original_tag = SHU }
 
     option = {
         name = "SHU_opt_revive_traditions" # Option 1: Revive Ancient Traditions
@@ -561,6 +629,7 @@ country_event = {
 			popularity = 0.10
 		}
 		add_stability = 0.05
+        country_event = { id = SHU_opening.1 }
     }
 
     option = {
@@ -577,6 +646,7 @@ country_event = {
 		}
 		add_stability = 0.05
 		add_timed_idea = { idea = SHU_infrastructure_bonus days = 365 }
+        country_event = { id = SHU_opening.1 }
     }
 
     option = {
@@ -590,6 +660,7 @@ country_event = {
 		add_stability = 0.05
 		add_political_power = 50
 		add_timed_idea = { idea = SHU_cultural_renaissance days = 365 }
+        country_event = { id = SHU_opening.1 }
     }
 
     option = {
@@ -603,6 +674,7 @@ country_event = {
 		army_experience = 50
 		add_war_support = 0.10
 		add_timed_idea = { idea = SHU_military_glory days = 365 }
+        country_event = { id = SHU_opening.1 }
     }
 }
 

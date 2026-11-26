@@ -47,6 +47,7 @@ focus_tree = {
             # Pre-990 Setup
             # Historical event setting the Rakkor foundations with 3 choices
             country_event = { id = targon.1 }
+            unlock_decision_tooltip = TAR_activate_rakkor_tenacity
         }
     }
 
@@ -85,6 +86,7 @@ focus_tree = {
 			}
 			OR = {
 				has_character = TAR_leona
+				has_character = TAR_diana
 				has_character = TAR_rahvun
 				has_character = TAR_pantheon
 				has_character = TAR_taric
@@ -121,7 +123,10 @@ focus_tree = {
 	focus = { # ------------------- Reform --------------------------
 		id = TAR_reform
 		icon = GFX_goal_generic_improve_relations
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+            factor = 8
+            modifier = { factor = 0 has_country_flag = TAR_diana_mandate }
+        }
 		relative_position_id = TAR_our_leader
 		x = 0
 		y = 1
@@ -174,14 +179,28 @@ focus_tree = {
     }
 
 
-    focus = { # Reform Path - Victory Speech
+    focus = { # Shared rebuilding focus
         id = TAR_victory_speech
 		icon = GFX_goal_generic_propaganda
         ai_will_do = { factor = 1 }
         relative_position_id = TAR_reform
         x = 0
-        y = 1
-        prerequisite = { focus = TAR_reform }
+        y = 2
+        prerequisite = {
+            focus = TAR_reform
+            focus = TAR_remember_summit
+            focus = TAR_remember_us
+        }
+        available = {
+            NOT = { has_country_flag = TAR_remembrance_underway }
+            OR = {
+                has_civil_war = no
+                NOR = {
+                    has_country_flag = TAR_eclipse_solari_side
+                    has_country_flag = TAR_eclipse_lunari_side
+                }
+            }
+        }
 
         completion_reward = {
             add_stability = 0.10
@@ -191,20 +210,26 @@ focus_tree = {
         cost = 1 #1
     }
 
-    focus = { # Help the Opposition
+    focus = { # Inclusive settlement
         id = TAR_integrate_opposition
 		icon = GFX_goal_generic_national_unity
         ai_will_do = { factor = 1 }
         relative_position_id = TAR_victory_speech
         x = 0
         y = 1
-        prerequisite = {
-            focus = TAR_victory_speech
+        prerequisite = { focus = TAR_victory_speech }
+        mutually_exclusive = {
+            focus = TAR_purge_opposition
+            focus = TAR_lunari_settlement
+            focus = TAR_rakkor_settlement
         }
 		cost = 1
 		completion_reward = {
+			remove_ideas = TAR_solari_supremacy
+			remove_ideas = TAR_zealous_crusader
 			add_ideas = TAR_celestial_unity
 			add_stability = 0.05
+			unlock_decision_tooltip = TAR_activate_celestial_pilgrimage
 		}
     }
 #           ...                           ..                             .
@@ -225,7 +250,11 @@ focus_tree = {
 	focus = { ##---------------- purity --------------------------
 		id = TAR_purity
 		icon = GFX_goal_generic_political_pressure
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+            factor = 8
+            modifier = { factor = 0 has_country_flag = TAR_diana_mandate }
+            modifier = { factor = 0 has_country_flag = TAR_atreus_mandate }
+        }
 		relative_position_id = TAR_our_leader
 		x = -4
 		y = 1
@@ -269,6 +298,7 @@ focus_tree = {
         cost = 1 #1
         completion_reward = {
             add_war_support = 0.1
+            unlock_decision_tooltip = TAR_influence_solari
             add_political_power = 100
         }
     }
@@ -348,7 +378,7 @@ focus_tree = {
 	focus = { ##---------------- Rejectors --------------------------
 		id = TAR_rejectors
 		icon = GFX_goal_generic_demand_territory
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 8 modifier = { factor = 0.25 NOT = { has_country_flag = TAR_diana_mandate } } }
 		relative_position_id = TAR_our_leader
         x = 4
         y = 1
@@ -356,15 +386,20 @@ focus_tree = {
 		prerequisite = { focus = TAR_our_leader }
 
         available = {
-            has_country_flag = PuristPathFalse
-            NOR = {
-                has_country_flag = PuristPathTrue
-                has_country_flag = TAR_purge_success
-                has_country_leader = { character = TAR_rahvun ruling_only = yes }
-            }
             OR = {
-                NOT = { has_country_flag = TAR_opening_uses_leader_policy }
-                has_country_flag = TAR_neutral_path
+                has_country_flag = TAR_diana_mandate
+                AND = {
+                    has_country_flag = PuristPathFalse
+                    NOR = {
+                        has_country_flag = PuristPathTrue
+                        has_country_flag = TAR_purge_success
+                        has_country_leader = { character = TAR_rahvun ruling_only = yes }
+                    }
+                    OR = {
+                        NOT = { has_country_flag = TAR_opening_uses_leader_policy }
+                        has_country_flag = TAR_neutral_path
+                    }
+                }
             }
         }
 		cost = 1
@@ -385,11 +420,13 @@ focus_tree = {
         y = 1
         prerequisite = { focus = TAR_rejectors }
         cost = 1 #1
-        available = { has_government = theocracy }
         completion_reward = {
             add_political_power = 100
             add_stability = 0.05
             add_ideas = TAR_lunari_endurance
+            unlock_decision_tooltip = TAR_influence_lunari
+            unlock_decision_tooltip = TAR_eclipse_decision
+            TAR_start_remembrance = yes
         }
     }
 
@@ -414,20 +451,126 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         relative_position_id = TAR_remember_summit
         x = 0
-        y = 1
-        prerequisite = {
-            focus = TAR_remember_summit
-        }
-
+        y = 2
+        prerequisite = { focus = TAR_remember_summit focus = TAR_remember_us }
+        prerequisite = { focus = TAR_victory_speech }
         available = {
-
+            OR = {
+                has_completed_focus = TAR_remember_summit
+                has_country_flag = TAR_eclipse_solari_victory
+            }
         }
+        mutually_exclusive = { focus = TAR_integrate_opposition }
         cost = 1 #60
         completion_reward = {
 			add_ideas = TAR_solari_supremacy
+			add_ideas = TAR_solar_ascendancy
 			add_war_support = 0.10
 			add_stability = -0.05
 			set_country_flag = TAR_purge_success
+        }
+    }
+
+    focus = {
+        id = TAR_rakkor_settlement
+        icon = GFX_focus_Targon_Rakkor_Crest
+        ai_will_do = { factor = 1 }
+        relative_position_id = TAR_victory_speech
+        x = -2
+        y = 1
+        cost = 1
+        prerequisite = { focus = TAR_victory_speech }
+        prerequisite = { focus = TAR_reform }
+        mutually_exclusive = { focus = TAR_integrate_opposition }
+        completion_reward = {
+            add_ideas = TAR_blessing_of_the_mountain
+        }
+    }
+
+    focus = {
+        id = TAR_lunari_settlement
+        icon = GFX_goal_lunari
+        ai_will_do = { factor = 1 }
+        relative_position_id = TAR_victory_speech
+        x = 4
+        y = 1
+        cost = 1
+        prerequisite = { focus = TAR_victory_speech }
+        prerequisite = { focus = TAR_remember_us }
+        available = { NOT = { has_country_flag = TAR_eclipse_solari_victory } }
+        mutually_exclusive = { focus = TAR_integrate_opposition }
+        completion_reward = {
+            add_ideas = TAR_lunar_dominion
+        }
+    }
+
+    focus = {
+        id = TAR_solari_doctrine
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = TAR_victory_speech
+        x = -4
+        y = 2
+        cost = 5
+        prerequisite = { focus = TAR_remember_summit focus = TAR_remember_us }
+        prerequisite = { focus = TAR_victory_speech }
+        available = {
+            OR = {
+                has_completed_focus = TAR_remember_summit
+                has_country_flag = TAR_eclipse_solari_victory
+            }
+            has_power_balance = { id = TAR_balance_of_power }
+            # Temporary VS Code preview fix: inserted "value" before "< -0.65" so the parser has a field name.
+            power_balance_value = { id = TAR_balance_of_power value < -0.65 }
+        }
+        ai_will_do = { factor = 15 }
+        completion_reward = {
+            unlock_decision_tooltip = TAR_solari_law
+            unlock_decision_tooltip = TAR_solari_overture
+        }
+    }
+
+    focus = {
+        id = TAR_lunari_doctrine
+        icon = GFX_goal_lunari
+        relative_position_id = TAR_victory_speech
+        x = 4
+        y = 2
+        cost = 5
+        prerequisite = { focus = TAR_remember_us }
+        prerequisite = { focus = TAR_victory_speech }
+        available = {
+            NOT = { has_country_flag = TAR_eclipse_solari_victory }
+            has_power_balance = { id = TAR_balance_of_power }
+            # Temporary VS Code preview fix: inserted "value" before "> 0.65" so the parser has a field name.
+            power_balance_value = { id = TAR_balance_of_power value > 0.65 }
+        }
+        ai_will_do = { factor = 15 }
+        completion_reward = {
+            unlock_decision_tooltip = TAR_lunari_law
+            unlock_decision_tooltip = TAR_lunari_overture
+        }
+    }
+
+    focus = {
+        id = TAR_rakkor_doctrine
+        icon = GFX_focus_Targon_Rakkor_Crest
+        relative_position_id = TAR_victory_speech
+        x = 0
+        y = 2
+        cost = 5
+        prerequisite = { focus = TAR_reform }
+        prerequisite = { focus = TAR_victory_speech }
+        available = {
+            has_power_balance = { id = TAR_balance_of_power }
+            # Temporary VS Code preview fix: inserted "value" before "> -0.10" so the parser has a field name.
+            power_balance_value = { id = TAR_balance_of_power value > -0.10 }
+            # Temporary VS Code preview fix: inserted "value" before "< 0.10" so the parser has a field name.
+            power_balance_value = { id = TAR_balance_of_power value < 0.10 }
+        }
+        ai_will_do = { factor = 15 }
+        completion_reward = {
+            unlock_decision_tooltip = TAR_rakkor_law
+            unlock_decision_tooltip = TAR_rakkor_overture
         }
     }
 }

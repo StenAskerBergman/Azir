@@ -1,0 +1,695 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_hire_yuntal_exils"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_hire_yuntal_exils.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_hire_yuntal_exils_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_hire_yuntal_exils.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_hire_yuntal_exils.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_ixtal"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_ixtal.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_ixtal_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_ixtal.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_ixtal.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ba_targon"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_targon.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ba_targon_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_targon.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_targon.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ca_targon"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_targon.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ca_targon_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_targon.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_targon.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_shuriman_argreement_targon"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_shuriman_argreement_targon.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_shuriman_argreement_targon_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_shuriman_argreement_targon.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_shuriman_argreement_targon.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_targon"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_targon.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_targon_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_targon.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_targon.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_approach_zaun"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_approach_zaun.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_approach_zaun_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_approach_zaun.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_approach_zaun.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_futher_funding"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_futher_funding.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_futher_funding_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_futher_funding.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_futher_funding.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_shadow_plan"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_shadow_plan.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_shadow_plan_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_shadow_plan.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_shadow_plan.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_overseer_taliyah"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_overseer_taliyah.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_overseer_taliyah_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_overseer_taliyah.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_overseer_taliyah.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_taliyahs_supervision"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_taliyahs_supervision.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_taliyahs_supervision_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_taliyahs_supervision.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_taliyahs_supervision.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_brain_gain"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_brain_gain.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_brain_gain_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_brain_gain.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_brain_gain.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_new_management_piltover"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_new_management_piltover.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_new_management_piltover_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_new_management_piltover.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_new_management_piltover.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_noxian_start"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_noxian_start.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_noxian_start_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_noxian_start.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_noxian_start.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_aa_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_aa_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_aa_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_aa_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_aa_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ab_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ab_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ab_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ab_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ab_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ac_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ac_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ac_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ac_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ac_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ba_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ba_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bb_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bb_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bb_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bb_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bb_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bc_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bc_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bc_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bc_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bc_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ca_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ca_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cc_noxian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cc_noxian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cc_noxian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cc_noxian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cc_noxian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ionian_start"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ionian_start.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ionian_start_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ionian_start.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ionian_start.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_aa_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_aa_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_aa_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_aa_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_aa_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ab_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ab_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ab_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ab_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ab_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ac_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ac_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ac_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ac_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ac_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ba_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ba_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ba_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bb_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bb_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bb_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bb_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bb_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bc_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bc_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_bc_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bc_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_bc_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ca_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_ca_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_ca_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cb_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cb_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cc_ionian"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cc_ionian.dds"
+    }
+    spriteType = {
+        name = "GFX_foreign_focus_SHU_example_cc_ionian_shine"
+        texturefile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cc_ionian.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SHU/foreign_policy/SHU_example_cc_ionian.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 45
+            animationlooping = no
+            animationtime = 0.8
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+}

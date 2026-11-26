@@ -1,0 +1,2 @@
+# The inherited WWII AI theater templates use Earth strategic region IDs.
+# Runeterra theater templates can be registered in their own files.

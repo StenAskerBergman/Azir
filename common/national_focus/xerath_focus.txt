@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = XER_xerath_conquest
 		icon = GFX_focus_XER_power_hungry
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = XER_power_play
 		mutually_exclusive = {
@@ -115,7 +115,7 @@ focus_tree = {
 		id = XER_power_pact # XER_Colonial_Liberty
 		icon = GFX_goal_generic_territory_or_war
 
-		x = 3
+		x = 2
 		y = 1
 
 		relative_position_id = XER_xerath_conquest
@@ -167,6 +167,11 @@ focus_tree = {
             army_experience = 15
             add_war_support = 0.05
             add_stability = -0.05
+            custom_effect_tooltip = XER_unlock_baccai_company_tt
+            hidden_effect = {
+                set_technology = { azir_xer_baccai_training = 1 popup = no }
+                country_event = { id = xerath.7 }
+            }
         }
 
 		ai_will_do = {
@@ -225,15 +230,120 @@ focus_tree = {
 	}
 
 
+	# Direct Conflict:
+		# In a brutal campaign to reclaim Shurima, Renekton turns
+		# on Xerath mid-war, no longer a pawn but a beast driven
+		# by vengeance and bloodlust.
+
+	# Renekton's Conquest
+	focus = {
+		id = XER_renekton_conquest
+		icon = GFX_focus_XER_blood_hunger
+		x = -2
+		y = 1
+		relative_position_id = XER_power_play
+		mutually_exclusive = {
+			focus = XER_xerath_conquest
+		}
+		prerequisite ={
+			focus = XER_power_play
+			# focus = XER_Power_Struggle
+		}
+		cost = 10
+		available = {
+			has_country_leader = { character = XER_renekton }
+		}
+		completion_reward = {
+            set_country_flag = XER_renekton_path
+            army_experience = 15
+            add_war_support = 0.05
+        }
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+# Blood Pact
+    # DESC
+	focus = {
+		id = XER_Blood_Pact # XER_Colonial_Liberty
+		icon = GFX_goal_generic_territory_or_war
+
+		x = -2
+		y = 1
+
+		relative_position_id = XER_renekton_conquest
+		mutually_exclusive = {
+			focus = XER_brutal_slavery
+		}
+		prerequisite = {
+			focus = XER_renekton_conquest
+			#focus = XER_Xerath_Conquest
+			#focus = XER_shadow_pact
+		}
+		cost = 10
+	        completion_reward = {
+            set_country_flag = XER_blood_pact
+            add_political_power = 50
+            army_experience = 10
+            custom_effect_tooltip = XER_unlock_renekton_warband_tt
+            hidden_effect = {
+                set_technology = { azir_xer_warband_training = 1 popup = no }
+            }
+        }
+
+        ai_will_do = { factor = 5 }
+}
+
+# Foreign Interference
+	# Sacrifice various rights, and claims to Shurima in return for foreign firepower
+	focus = {
+		id = XER_foreign_interference
+		icon = GFX_goal_imperial_machine
+		relative_position_id = XER_power_play
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = XER_internal_support }
+
+		available = {}
+
+		completion_reward = {
+            add_political_power = 50
+            army_experience = 10
+        }
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+# Power Struggle
+    # DESC
+    focus = {
+        id = XER_power_struggle
+        icon = GFX_focus_XER_power_struggle
+        relative_position_id = XER_foreign_interference
+        x = 0
+        y = 1
+        prerequisite ={
+            focus = XER_foreign_interference
+		}
+        completion_reward = {
+            add_political_power = 100
+            add_stability = -0.05
+        }
+    }
+
 	# Collective Punishment
 	focus = {
 		id = XER_collective_punishment
 		icon = GFX_goal_death_tracks
 
-		x = 3
+		x = -2
 		y = 1
 
-		relative_position_id = XER_remove_the_savages
+		relative_position_id = XER_foreign_interference
 
 		prerequisite = {
 			focus = XER_foreign_interference
@@ -256,110 +366,13 @@ focus_tree = {
 		}
 	}
 
-	# Direct Conflict:
-		# In a brutal campaign to reclaim Shurima, Renekton turns
-		# on Xerath mid-war, no longer a pawn but a beast driven
-		# by vengeance and bloodlust.
-
-	# Renekton's Conquest
-	focus = {
-		id = XER_renekton_conquest
-		icon = GFX_focus_XER_blood_hunger
-		x = -3
-		y = 1
-		relative_position_id = XER_power_play
-		mutually_exclusive = {
-			focus = XER_xerath_conquest
-		}
-		prerequisite ={
-			focus = XER_power_play
-			# focus = XER_Power_Struggle
-		}
-		cost = 10
-		completion_reward = {
-            set_country_flag = XER_renekton_path
-            army_experience = 15
-            add_war_support = 0.05
-        }
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-# Blood Pact
-    # DESC
-	focus = {
-		id = XER_Blood_Pact # XER_Colonial_Liberty
-		icon = GFX_goal_generic_territory_or_war
-
-		x = -3
-		y = 1
-
-		relative_position_id = XER_renekton_conquest
-		mutually_exclusive = {
-			focus = XER_brutal_slavery
-		}
-		prerequisite = {
-			focus = XER_renekton_conquest
-			#focus = XER_Xerath_Conquest
-			#focus = XER_shadow_pact
-		}
-		cost = 10
-	        completion_reward = {
-            set_country_flag = XER_blood_pact
-            add_political_power = 50
-            army_experience = 10
-        }
-
-}
-
-# Power Struggle
-    # DESC
-    focus = {
-        id = XER_power_struggle
-        icon = GFX_focus_XER_power_struggle
-        relative_position_id = XER_Blood_Pact
-        x=9
-        y=1
-        prerequisite ={
-            focus = XER_foreign_interference
-		}
-        completion_reward = {
-            add_political_power = 100
-            add_stability = -0.05
-        }
-    }
-
-# Foreign Interference
-	# Sacrifice various rights, and claims to Shurima in return for foreign firepower
-	focus = {
-		id = XER_foreign_interference
-		icon = GFX_goal_imperial_machine
-        relative_position_id = XER_Blood_Pact
-		x = 18
-		y = 0
-		cost = 10
-		prerequisite = { focus = XER_internal_support }
-
-		available = {}
-
-		completion_reward = {
-            add_political_power = 50
-            army_experience = 10
-        }
-
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
 	# Noxian Coalition
 	focus = {
 		id = XER_noxian_coalition
 		icon = GFX_goal_noxian_pact # GFX_focus_generic_diplomatic_treaty
-		x = -12
-		y = 2
-		relative_position_id = XER_foreign_interference
+		x = 0
+		y = 4
+		relative_position_id = XER_power_play
 
 		prerequisite ={
 			focus = XER_colonial_pact
@@ -440,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = XER_path_of_domination
 		icon = GFX_focus_XER_path_of_domination
-		x = -12
+		x = -8
 		y = 0
 		relative_position_id = XER_power_play
 
@@ -465,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = XER_loyal_legionaries
 		icon = GFX_goal_soldiers
-        x = 3
+        x = 2
         y = 1
         relative_position_id = XER_path_of_domination
 		prerequisite = {
@@ -508,6 +521,13 @@ focus_tree = {
             add_stability = -0.08
         }
 
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { has_completed_focus = XER_xerath_conquest }
+            }
+        }
 }
 
 # Raider
@@ -629,6 +649,41 @@ focus_tree = {
         }
     }
 
+    focus = {
+        id = XER_renekton_final_form
+        icon = GFX_focus_XER_blood_hunger
+        relative_position_id = XER_brutal_dominance
+        x = 2
+        y = 1
+        cost = 1
+        prerequisite = { focus = XER_brutal_dominance }
+        allow_branch = { has_country_flag = XER_renekton_madness_unveiled }
+        available = {
+            XER_renekton_crisis_active = yes
+            custom_trigger_tooltip = {
+                tooltip = XER_renekton_three_states_tt
+                check_variable = { XER_renekton_tainted_states > 2 }
+            }
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        completion_reward = {
+            if = {
+                limit = { XER_renekton_crisis_active = yes }
+                clr_country_flag = XER_renekton_madness_active
+                set_country_flag = XER_renekton_corrupted
+                XER_renekton = {
+                    set_portraits = {
+                        civilian = { large = "GFX_portrait_XER_renekton_corrupted_large" }
+                    }
+                }
+                add_ideas = XER_renekton_final_form_idea
+                country_event = { id = azir_renekton.4 }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+
 
 # Endless Rage
     # DESC
@@ -670,7 +725,7 @@ focus_tree = {
     focus = {
 		id = XER_path_of_ascension
 		icon = GFX_focus_XER_power_hungry
-		x = 12
+		x = 8
 		y = 0
 		relative_position_id = XER_power_play
 
@@ -712,7 +767,7 @@ focus_tree = {
 	focus = {
 		id = XER_loyal_henchmen
 		icon = GFX_focus_xerath_peoples_support
-		x = -3
+		x = -2
 		y = 1
 		cost = 10
         relative_position_id = XER_path_of_ascension
@@ -750,7 +805,7 @@ focus_tree = {
 		id = XER_identity_fusion # XER_identity_fusion
 		icon = GFX_goal_tax_slave
 
-		x = 3
+		x = 2
 		y = 1
 
 		relative_position_id = XER_colonial_investments
@@ -785,7 +840,7 @@ focus_tree = {
 		id = XER_colonial_identity # XER_Identity_Fusion
 		icon = GFX_goal_tax_slave
 
-		x = -3
+		x = -2
 		y = 2
 
 		relative_position_id = XER_noxian_coalition
@@ -955,5 +1010,110 @@ focus_tree = {
     # Shuriman Resurrection:
         # An event where Shurima’s ancient powers awaken, presenting opportunities or
         # threats to Noxian and allied forces.
+
+
+    focus = {
+        id = XER_regional_arcane_registry
+        icon = GFX_focus_XER_power_hungry
+        x = 30
+        y = 2
+        cost = 5
+        prerequisite = { focus = XER_xerath_conquest }
+        available = {
+            has_country_leader = { character = XER_xerath }
+        }
+        cancel_if_invalid = yes
+        completion_reward = {
+            if = {
+                limit = {
+                    NOR = {
+                        has_country_flag = XER_central_requisition
+                        has_country_flag = XER_frontier_mandates
+                    }
+                }
+                add_power_balance_value = { id = XER_bop value = -0.35 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+
+    focus = {
+        id = XER_regional_frontier_charters
+        icon = GFX_goal_generic_military_deal
+        x = 34
+        y = 2
+        cost = 5
+        prerequisite = { focus = XER_temporary_alliance }
+        available = {
+            has_character = XER_renekton
+            controls_state = 139
+        }
+        cancel_if_invalid = yes
+        completion_reward = {
+            if = {
+                limit = {
+                    NOR = {
+                        has_country_flag = XER_central_requisition
+                        has_country_flag = XER_frontier_mandates
+                    }
+                }
+                add_power_balance_value = { id = XER_bop value = 0.35 }
+            }
+        }
+        ai_will_do = { factor = 4 }
+    }
+
+
+    focus = {
+        id = XER_regional_disc_victory
+        icon = GFX_goal_generic_demand_territory
+        x = 30
+        y = 4
+        cost = 5
+        prerequisite = { focus = XER_regional_arcane_registry }
+        available = {
+            has_country_leader = { character = XER_xerath }
+            is_power_balance_in_range = { id = XER_bop range = XER_bop_magus_mandate }
+            has_country_flag = XER_central_requisition
+            has_country_flag = XER_siege_crews
+            has_country_flag = XER_disc_taken_from_shu
+            has_global_flag = azir_shurima_capital_fell
+            controls_state = 144
+            XER_regional_workshops_ready = yes
+            XER_regional_battery_fielded = yes
+        }
+        cancel_if_invalid = yes
+        completion_reward = {
+            add_stability = 0.08
+            add_political_power = 75
+        }
+        ai_will_do = { factor = 4 }
+    }
+
+
+    focus = {
+        id = XER_regional_protectorate_victory
+        icon = GFX_goal_generic_military_deal
+        x = 34
+        y = 4
+        cost = 5
+        prerequisite = { focus = XER_regional_frontier_charters }
+        available = {
+            is_power_balance_in_range = { id = XER_bop range = XER_bop_governor_mandate }
+            has_country_flag = XER_frontier_mandates
+            XER_regional_frontier_ready = yes
+            OR = {
+                AND = { has_country_flag = XER_shurima_armistice NOT = { has_war_with = SHU } }
+                AND = { has_country_flag = XER_nazumah_armistice NOT = { has_war_with = NAZ } }
+            }
+        }
+        cancel_if_invalid = yes
+        completion_reward = {
+            add_stability = 0.08
+            add_political_power = 75
+        }
+        ai_will_do = { factor = 4 }
+    }
 
 }

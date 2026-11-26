@@ -1,0 +1,414 @@
+# Runeterra uses its own focus trees, decisions and game rules. Unavailable WWII prerequisites evaluate to false.
+#scripted trigger for Austria
+
+AUS_anschluss_risk_low = { 
+	custom_trigger_tooltip = {
+		tooltip = AUS_anschluss_risk_low_tt 
+		
+		GER = {
+			fighting_army_strength_ratio = {
+				tag = AUS
+				ratio < global.medium_anschluss_risk
+			}
+	
+			always = no
+			NOT = {
+				always = no
+				always = no
+			}
+		}	
+	}
+}
+
+AUS_anschluss_risk_medium = { 
+	
+	custom_trigger_tooltip = {
+		tooltip = AUS_anschluss_risk_medium_tt 
+		
+		GER = {
+			OR = {
+				AND = {
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio > global.medium_anschluss_risk
+					}
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio < global.high_anschluss_risk
+					}
+					NOT = {
+						always = no
+						always = no
+					}	
+				}
+				AND = {
+					OR = {
+						always = no
+						always = no
+					}
+					
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio < global.medium_anschluss_risk
+					}
+				}
+			}
+			
+			
+			always = no
+		}
+	}
+}
+
+AUS_anschluss_risk_high = { 
+	custom_trigger_tooltip = {
+		tooltip = AUS_anschluss_risk_high_tt 
+		
+		GER = {
+			OR = {
+				AND = {
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio < global.deployed_manpower_ratio_needed_for_anschluss 
+					}
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio > global.high_anschluss_risk
+					}
+					NOT = {
+						always = no
+						always = no
+					}
+				}
+
+				AND = {
+					OR = {
+						always = no
+						always = no
+					}
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio > global.medium_anschluss_risk
+					}
+
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio < global.high_anschluss_risk
+					}
+				}
+			}
+			
+			
+			
+			always = no
+		}
+	}	
+}
+
+AUS_anschluss_risk_critical = { 
+
+	custom_trigger_tooltip = {
+		tooltip = AUS_anschluss_risk_critical_tt 
+		GER = {
+			OR = {
+				AND = {
+					OR = {
+						always = no
+						always = no
+					}
+					fighting_army_strength_ratio = {
+						tag = AUS
+						ratio > global.high_anschluss_risk
+					}
+				}
+
+				fighting_army_strength_ratio = {
+					tag = AUS
+					ratio > global.deployed_manpower_ratio_needed_for_anschluss 
+				}
+			}
+			
+		}
+	}
+}
+
+AUS_danubian_communism_bypass = {
+	custom_trigger_tooltip = {
+		tooltip = AUS_danubian_communism_bypass_tt
+
+		AND = {
+			
+			IF = {
+				limit = { HUN = { exists = yes } }
+
+				HUN = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { CZE = { exists = yes } }
+
+				CZE = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { YUG = { exists = yes } }
+
+				YUG = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { ROM = { exists = yes } }
+
+				ROM = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { BUL = { exists = yes } }
+
+				BUL = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { SLO = { exists = yes } }
+
+				SLO = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { TRA = { exists = yes } }
+
+				TRA = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { CRO = { exists = yes } }
+
+				CRO = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { LBV = { exists = yes } }
+
+				LBV = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { SIL = { exists = yes } }
+
+				SIL = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { MNT = { exists = yes } }
+
+				MNT = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { BOS = { exists = yes } }
+
+				BOS = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { SLV = { exists = yes } }
+
+				SLV = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { FRA = { exists = yes } }
+
+				FRA = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { TUR = { exists = yes } }
+
+				TUR = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { GRE = { exists = yes } }
+
+				GRE = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { HOL = { exists = yes } }
+
+				HOL = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { LUX = { exists = yes } }
+
+				LUX = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { BEL = { exists = yes } }
+
+				BEL = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+
+			IF = {
+				limit = { MAC = { exists = yes } }
+
+				MAC = { 
+					OR = {
+					
+						has_government = communism
+							
+						has_country_flag = AUS_this_country_refused_communism_flag
+					}
+				}
+			}
+		}
+	}
+}
+
+AUS_is_historical_ai = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			always = no
+		}
+		has_country_flag = AUS_AI_RANDOM_HISTORICAL
+		always = no
+	}
+}
+

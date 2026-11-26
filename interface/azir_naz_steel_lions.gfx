@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_azir_naz_steel_lions_desert_armour_medium"
+        texturefile = "gfx/interface/goals/generic/GFX_goal_generic_army_tanks2.dds"
+    }
+}

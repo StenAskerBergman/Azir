@@ -1,0 +1,39 @@
+PIL_domestic_agenda = {
+    PIL_tower_retest = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { NOT = { has_country_flag = PIL_tower_retest } }
+        available = { has_country_flag = PIL_retest }
+        cost = 15
+        complete_effect = {
+            set_country_flag = PIL_tower_retest
+            country_event = { id = PIL_events.23 }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    PIL_beacons = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { NOT = { has_country_flag = PIL_beacons } }
+        available = { has_country_flag = PIL_hexgate_open }
+        cost = 10
+        complete_effect = {
+            set_country_flag = PIL_beacons
+            country_event = { id = PIL_events.7 }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    PIL_roof_report = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { NOT = { has_country_flag = PIL_roof_report } }
+        cost = 0
+        complete_effect = {
+            set_country_flag = PIL_roof_report
+            country_event = { id = PIL_events.8 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

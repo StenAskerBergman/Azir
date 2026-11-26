@@ -1,0 +1,78 @@
+NAZ_oasis_sovereign = {
+    tag = NAZ
+    is_subject = no
+    has_capitulated = no
+    controls_state = 133
+}
+
+NAZ_frontier_emergency = {
+    OR = {
+        has_war_with = SHU
+        has_war_with = XER
+        has_war_with = VOI
+    }
+}
+
+NAZ_guard_in_office = { has_idea = NAZ_guard_levy }
+NAZ_hunters_in_office = { has_idea = NAZ_contract_muster }
+
+NAZ_live_defense_compact = {
+    has_country_flag = SHU_nazumah_defense_compact_accepted
+    country_exists = SHU
+    NOT = { has_war_with = SHU }
+    SHU = { is_subject = no has_country_flag = SHU_nazumah_defense_compact_accepted }
+}
+
+NAZ_XER_armistice_eligible = {
+    NAZ_oasis_sovereign = yes
+    XER = {
+        XER_regional_nazumah_war = yes
+        has_country_flag = XER_nazumah_offer_pending
+        has_country_flag = XER_frontier_mandates
+        NOR = {
+            has_country_flag = XER_command_break
+            has_country_flag = XER_offer_nazumah_armistice_cooldown
+        }
+    }
+}
+
+NAZ_joint_staff_available = {
+    has_character = NAZ_ksante
+    has_character = NAZ_tope
+    has_character = NAZ_Tribal_Elder_Council
+}
+
+NAZ_SHU_compact_eligible = {
+    tag = NAZ
+    is_subject = no
+    NOT = { has_war_with = SHU }
+    SHU = {
+        is_subject = no
+        has_completed_focus = SHU_nazumah_alliance
+        has_country_flag = SHU_nazumah_defense_compact_pending
+        NOR = {
+            has_country_flag = SHU_nazumah_defense_compact_accepted
+            has_country_flag = SHU_offer_nazumah_defense_compact_cooldown
+        }
+    }
+    NOT = { has_country_flag = SHU_nazumah_defense_compact_accepted }
+}
+
+NAZ_can_extend_joint_command = {
+    NAZ_oasis_sovereign = yes
+    NAZ_frontier_emergency = yes
+    NAZ_joint_staff_available = yes
+    has_country_flag = NAZ_joint_command_active
+    NOT = { has_country_flag = NAZ_joint_command_extended }
+}
+
+NAZ_can_enact_defense_charter = {
+    NAZ_oasis_sovereign = yes
+    NOR = {
+        NAZ_guard_in_office = yes
+        NAZ_hunters_in_office = yes
+        has_country_flag = NAZ_joint_command_active
+        has_idea = NAZ_guard_stood_down
+        has_idea = NAZ_companies_recalled
+    }
+}

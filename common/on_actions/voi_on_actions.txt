@@ -40,6 +40,19 @@ on_actions = {
 					country_event = { id = icathia.6 days = 120 }
 				}
 			}
+
+			# Existing campaigns may have completed Rift Rapture before it sent reports.
+			if = {
+				limit = {
+					country_exists = SHU
+					SHU = { NOT = { has_country_flag = SHU_xersai_first_reports_received } }
+					OR = {
+						has_global_flag = void_gate_first_rift_fired
+						VOI = { has_completed_focus = VOI_Rift_Rapture }
+					}
+				}
+				SHU = { country_event = shurima_void.1 }
+			}
 		}
 	}
 

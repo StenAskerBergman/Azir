@@ -1,0 +1,25 @@
+ZAU_domestic_agenda = {
+    ZAU_test_sumpworks_recovery = {
+        icon = ZAU_sumpworks_recovery
+        allowed = { tag = ZAU original_tag = ZAU }
+        visible = {
+            has_tech = ZAU_sumpworks_recovery_design
+            NOR = {
+                has_country_flag = ZAU_sumpworks_trial_pending
+                has_country_flag = ZAU_sumpworks_trial_complete
+            }
+        }
+        available = { ZAU_sumpworks_test_ready = yes }
+        cost = 20
+        days_remove = 35
+        cancel_trigger = { ZAU_sumpworks_test_ready = no }
+        remove_effect = {
+            if = {
+                limit = { ZAU_sumpworks_test_ready = yes }
+                set_country_flag = { flag = ZAU_sumpworks_trial_pending days = 14 }
+                country_event = { id = ZAU_sumpworks_recovery.1 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

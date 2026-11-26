@@ -1,0 +1,29 @@
+equipments = {
+    azir_voi_xersai_seismic_kit = {
+        year = 990
+        is_archetype = yes
+        is_buildable = no
+        can_license = no
+        can_be_produced = {
+            original_tag = VOI
+            has_country_flag = embraced_the_void
+            controls_province = 2883
+        }
+        picture = archetype_support_equipment
+        type = { infantry motorized support }
+        group_by = archetype
+        interface_category = interface_category_land
+
+        reliability = 0.85
+        lend_lease_cost = 1
+        build_cost_ic = 4
+        resources = { steel = 2 }
+    }
+
+    azir_voi_xersai_seismic_kit_1 = {
+        year = 990
+        archetype = azir_voi_xersai_seismic_kit
+        active = no
+        priority = 20
+    }
+}

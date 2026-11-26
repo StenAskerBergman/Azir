@@ -1,0 +1,12 @@
+ideas = {
+    country = {
+        XER_mana_surge = {
+            picture = azir_xer_mana_surge
+            allowed = { original_tag = XER }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.05
+            }
+        }
+    }
+}

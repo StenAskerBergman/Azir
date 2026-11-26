@@ -1,0 +1,98 @@
+on_actions = {
+    on_daily_ZAU = {
+        effect = {
+            if = {
+                limit = { has_idea = ZAU_local_purchasing }
+                # Record one recovery opportunity per interruption after service is established.
+                if = {
+                    limit = {
+                        ZAU_freight_operating = yes
+                        NOT = { has_country_flag = ZAU_ward_freight_was_operating }
+                    }
+                    set_country_flag = ZAU_ward_freight_was_operating
+                }
+                else_if = {
+                    limit = {
+                        ZAU_freight_operating = no
+                        has_country_flag = ZAU_ward_freight_was_operating
+                    }
+                    clr_country_flag = ZAU_ward_freight_was_operating
+                    set_country_flag = ZAU_ward_recovery_due
+                }
+                if = {
+                    limit = { has_idea = ZAU_ward_engineer_delegation ZAU_ward_advisors_available = no }
+                    remove_ideas = ZAU_ward_engineer_delegation
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = ZAU_ixt_agreement
+                    NOT = { has_country_flag = ZAU_ixt_delivery_complete }
+                    NOT = { has_active_mission = ZAU_ixt_delivery }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            ZAU_ixt_site_secure = no
+                            has_country_flag = ZAU_directorate_wind_down_started
+                        }
+                    }
+                    ZAU_clear_ixt_agreement = yes
+                }
+                else_if = {
+                    limit = { ZAU_ixt_delivery_valid = yes }
+                    activate_mission = ZAU_ixt_delivery
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = ZAU_cry_agreement
+                    NOT = { has_country_flag = ZAU_cry_delivery_complete }
+                    NOT = { has_active_mission = ZAU_cry_delivery }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            ZAU_cry_site_secure = no
+                            has_country_flag = ZAU_directorate_wind_down_started
+                        }
+                    }
+                    ZAU_clear_cry_agreement = yes
+                }
+                else_if = {
+                    limit = { ZAU_cry_delivery_valid = yes }
+                    activate_mission = ZAU_cry_delivery
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = ZAU_ixt_delivery_complete
+                    ZAU_ixt_filters_live = yes
+                    IXT = { NOT = { has_idea = ZAU_ixt_filtration_service } }
+                }
+                IXT = { add_ideas = ZAU_ixt_filtration_service }
+            }
+            if = {
+                limit = {
+                    has_country_flag = ZAU_cry_delivery_complete
+                    ZAU_cry_filters_live = yes
+                    CRY = { NOT = { has_idea = ZAU_cry_filtration_service } }
+                }
+                CRY = { add_ideas = ZAU_cry_filtration_service }
+            }
+            if = {
+                limit = { has_idea = ZAU_glasc_purchasing_office ZAU_glasc_advisors_available = no }
+                remove_ideas = ZAU_glasc_purchasing_office
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_idea = ZAU_exclusive_purchasing
+                        has_idea = ZAU_contract_industrial_credit
+                    }
+                }
+                ZAU_refresh_directorate_credit = yes
+            }
+        }
+    }
+}

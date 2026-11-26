@@ -1,0 +1,13 @@
+azir_kaisa_sponsorship_affordable = {
+    OR = {
+        tag = ZAU
+        AND = {
+            has_global_flag = azir_kaisa_invasion_price
+            NOT = { has_political_power < 250 }
+        }
+        AND = {
+            NOT = { has_global_flag = azir_kaisa_invasion_price }
+            NOT = { has_political_power < 125 }
+        }
+    }
+}

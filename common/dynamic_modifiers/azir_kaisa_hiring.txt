@@ -1,0 +1,4 @@
+azir_kaisa_public_backlash = {
+    enable = { always = yes }
+    stability_factor = azir_kaisa_stability_backlash
+}

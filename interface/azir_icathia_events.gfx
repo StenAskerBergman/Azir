@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_report_event_azir_icathia_remnants"
+        texturefile = "gfx/event_pictures/report_event_azir_icathia_remnants.dds"
+    }
+}

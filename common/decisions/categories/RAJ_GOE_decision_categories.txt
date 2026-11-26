@@ -1,0 +1,330 @@
+################
+#### RAJ ####
+################
+
+
+
+RAJ_GOE_independence_movement = {
+
+	priority = 101
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	allowed = {
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		OR = {
+			has_dynamic_modifier = { modifier = idea_RAJ_independence_movement }
+
+			always = no	
+			always = no
+		}
+	}
+
+	visible_when_empty = no
+}
+
+RAJ_GOE_tea_exports_cat = {
+	icon = GFX_decision_category_gre_investment_decisions
+
+	allowed = {
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		always = no
+	}
+}
+
+RAJ_GOE_sikh_recruitment_cat = {
+	icon = GFX_decision_category_army_reform
+
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		OR = {
+			always = no
+			always = no
+		}
+	}
+}
+
+RAJ_GOE_famine_cat = {
+	priority = 101
+	icon = GFX_decision_category_army_reform
+	scripted_gui = RAJ_famine_scripted_ui
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		NOT = { has_country_flag = famine_is_over }
+	}
+}
+
+
+RAJ_GOE_into_hiding_cat = {
+	icon = GFX_decision_category_army_reform
+	priority = 100
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		always = no
+	}
+}
+
+
+RAJ_GOE_india_indivisible_cat = {
+	icon = GFX_decision_category_army_reform
+	priority = 100
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		OR = {
+			always = no
+			always = no
+			always = no
+			always = no
+		}
+	}
+}
+
+
+
+RAJ_military_matters = {
+	icon = GFX_decision_category_army_reform
+	priority = 50
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		always = no
+	}	
+}
+
+RAJ_GOE_partition_cat = {
+	icon = GFX_decision_category_generic_monarchism
+	priority = 50
+	scripted_gui = RAJ_GOE_partition_scripted_ui
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		has_global_flag = RAJ_GOE_partition_has_happened
+	}		
+}
+
+RAJ_akhand_bharat_cat = {
+	icon = GFX_decision_category_jap_intervene_in_china
+	priority = 50
+	allowed = {
+
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		always = no
+	}	
+}
+
+
+RAJ_GOE_eic_cat = {
+	icon = GFX_decision_category_jap_intervene_in_china
+	priority = 50
+	scripted_gui = RAJ_tax_fraud_scripted_ui
+	allowed = {
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		has_dynamic_modifier = {
+			modifier = idea_RAJ_eic_taxes
+		}
+	}	
+		
+}
+
+RAJ_GOE_eic_hostile_takeover_cat = {
+	icon = GFX_decision_category_jap_intervene_in_china
+	allowed = {
+		is_raj_or_raj_inheritor = yes
+		has_dlc = "Graveyard of Empires"
+	}
+
+	visible = {
+		always = no
+	}		
+}
+
+RAJ_GOE_mughal_independence_category = {
+	#SECURE WESTERN INDIA
+	on_map_area = {
+		targets = { 443 989 }
+		name = RAJ_GOE_secure_western_india
+		zoom = 150
+	}
+
+	#SECURE CENTRAL WESTERN INDIA
+	on_map_area = {
+		targets = {  433 428 437 }
+		name = RAJ_GOE_secure_western_central_india
+		zoom = 150
+	}
+
+	#SOUTHERN INDIA
+	on_map_area = {
+		targets = { 429 427 424 425 423 982 983 }
+		name = RAJ_GOE_secure_southern_india
+		zoom = 150
+	}
+	#CENTRAL INDIA
+	on_map_area = {
+		targets = { 436 984 426 438 435 }
+		name = RAJ_GOE_secure_central_india
+		zoom = 150
+	}
+
+	#EASTERN INDIA
+	on_map_area = {
+		targets = { 431 985 430 432 990 434 }
+		name = RAJ_GOE_secure_eastern_india
+		zoom = 150
+	}
+
+	#NORTHERN INDIA
+	on_map_area = {
+		targets = { 441 787 }
+		name = RAJ_GOE_secure_northern_india
+		zoom = 150
+	}
+
+	#NORTHERN CENTRAL INDIA
+	on_map_area = {
+		targets = { 440 986 439  }
+		name = RAJ_GOE_secure_northern_central_india
+		zoom = 150
+	}
+
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	priority = 100
+	allowed = {
+		has_dlc = "Graveyard of Empires"
+		OR = {
+			is_raj_or_raj_inheritor = yes
+			tag = ENG
+		}
+	}	
+}
+
+RAJ_GOE_communism_infiltration_cat = {
+	icon = GFX_decision_category_jap_intervene_in_china
+	priority = 100
+	allowed = {
+		has_dlc = "Graveyard of Empires"
+		OR = {
+			is_raj_or_raj_inheritor = yes
+			tag = RAJ
+		}
+	}
+
+	visible = {
+		NOT = {
+			has_country_flag = RAJ_hide_communist_infiltration
+		}
+	}		
+}
+
+RAJ_GOE_communism_border_clashes_cat ={
+	icon = GFX_decision_category_generic_communism
+	priority = 100
+	allowed = {
+		has_dlc = "Graveyard of Empires"
+		OR = {
+			is_raj_or_raj_inheritor = yes
+			tag = RAJ
+		}
+	}
+
+	visible = {
+		OR = {
+			always = no
+			always = no
+			always = no
+			
+		}
+	}		
+}
+
+RAJ_peasant_uprisings_cat = {
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	priority = 100
+	allowed = {
+		has_dlc = "Graveyard of Empires"
+		OR = {
+			is_raj_or_raj_inheritor = yes
+			tag = RAJ
+		}
+	}
+
+	visible = {
+		always = no	
+	}		
+}
+
+### LOYALIST BRANCH
+RAJ_work_with_local_leaders_cat = {
+	icon = GFX_decision_category_generic_industry
+	priority = 110
+	allowed = {
+		has_dlc = "Graveyard of Empires"
+		original_tag = RAJ
+	}
+
+	visible = {
+		always = no	
+	}
+
+	scripted_gui = raj_local_leaders_investments_decision_ui
+}
+
+RAJ_concessions_to_the_congress_cat = {
+	icon = eng_concessions_to_the_trade_unions
+	picture = GFX_decision_cat_picture_concessions_to_the_trade_unions
+	priority = 105
+
+	allowed = {
+		has_dlc = "Graveyard of Empires"
+		original_tag = RAJ
+	}
+
+	visible = {
+		always = no
+		has_capitulated = no
+	}
+}

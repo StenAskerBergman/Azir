@@ -39,4 +39,29 @@ XER_rival_sun_disc_category = {
 
         ai_will_do = { factor = 1 }
     }
+
+    XER_channel_mana_surge = {
+        icon = generic_prepare_civil_war
+        cost = 35
+        days_re_enable = 90
+
+        visible = { has_country_flag = XER_rival_sun_disc_raised }
+
+        available = {
+            controls_state = 139
+            NOT = { has_idea = XER_mana_surge }
+        }
+
+        complete_effect = {
+            add_timed_idea = { idea = XER_mana_surge days = 30 }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                has_war = no
+            }
+        }
+    }
 }

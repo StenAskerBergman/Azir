@@ -1,0 +1,234 @@
+sub_units = {
+    azir_voi_belveth_battalion = {
+        abbreviation = "BEL"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_army
+        }
+
+        combat_width = 4
+        manpower = 650
+        max_strength = 24
+        max_organisation = 40
+        default_morale = 0.3
+        training_time = 150
+        weight = 0.8
+        supply_consumption = 0.23
+        can_be_parachuted = no
+        essential = { infantry_equipment support_equipment }
+        need = {
+            infantry_equipment = 85
+            support_equipment = 20
+        }
+
+        maximum_speed = 0.35
+        soft_attack = 13
+        breakthrough = 13
+    }
+
+    azir_voi_remora_battalion = {
+        abbreviation = "REM"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_army
+        }
+
+        combat_width = 2
+        manpower = 450
+        max_strength = 17
+        max_organisation = 45
+        default_morale = 0.3
+        training_time = 90
+        weight = 0.4
+        supply_consumption = 0.08
+        can_be_parachuted = no
+        essential = { infantry_equipment }
+        need = {
+            infantry_equipment = 50
+        }
+
+        maximum_speed = 0.20
+        soft_attack = 2
+    }
+
+    azir_voi_kogmaw_battalion = {
+        abbreviation = "KOG"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_army
+        }
+
+        combat_width = 3
+        manpower = 450
+        max_strength = 14
+        max_organisation = 25
+        default_morale = 0.25
+        training_time = 120
+        weight = 0.6
+        supply_consumption = 0.15
+        can_be_parachuted = no
+        essential = { infantry_equipment support_equipment }
+        need = {
+            infantry_equipment = 65
+            support_equipment = 15
+        }
+
+        soft_attack = 12
+        hard_attack = 4
+        defense = 2
+    }
+
+    azir_voi_chogath_battalion = {
+        abbreviation = "CHO"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_army
+        }
+
+        combat_width = 4
+        manpower = 700
+        max_strength = 32
+        max_organisation = 30
+        default_morale = 0.25
+        training_time = 150
+        weight = 1
+        supply_consumption = 0.22
+        can_be_parachuted = no
+        essential = { infantry_equipment support_equipment }
+        need = {
+            infantry_equipment = 100
+            support_equipment = 20
+        }
+
+        maximum_speed = -0.15
+        soft_attack = 9
+        breakthrough = 15
+    }
+
+    azir_voi_kaisa_battalion = {
+        abbreviation = "KAI"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_army
+        }
+
+        combat_width = 3
+        manpower = 500
+        max_strength = 18
+        max_organisation = 40
+        default_morale = 0.3
+        training_time = 120
+        weight = 0.5
+        supply_consumption = 0.12
+        can_be_parachuted = no
+        essential = { infantry_equipment support_equipment }
+        need = {
+            infantry_equipment = 70
+            support_equipment = 10
+        }
+
+        maximum_speed = 0.50
+        recon = 1
+        breakthrough = 5
+    }
+
+    azir_voi_jax_battalion = {
+        abbreviation = "JAX"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_army
+        }
+
+        combat_width = 3
+        manpower = 600
+        max_strength = 25
+        max_organisation = 45
+        default_morale = 0.32
+        training_time = 120
+        weight = 0.6
+        supply_consumption = 0.13
+        can_be_parachuted = no
+        essential = { infantry_equipment support_equipment }
+        need = {
+            infantry_equipment = 80
+            support_equipment = 10
+        }
+
+        defense = 9
+        breakthrough = 6
+        entrenchment = 2
+    }
+
+    azir_voi_zilean_battalion = {
+        abbreviation = "ZIL"
+        sprite = infantry
+        map_icon_category = infantry
+        active = no
+        affects_speed = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_army
+        }
+
+        combat_width = 3
+        manpower = 550
+        max_strength = 20
+        max_organisation = 52
+        default_morale = 0.45
+        training_time = 120
+        weight = 0.5
+        supply_consumption = 0.13
+        can_be_parachuted = no
+        essential = { infantry_equipment support_equipment }
+        need = {
+            infantry_equipment = 70
+            support_equipment = 15
+        }
+
+        defense = 6
+    }
+}

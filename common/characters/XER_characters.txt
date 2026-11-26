@@ -51,8 +51,8 @@ characters={
 	}
 	country_leader = {
 			desc = "POLITICS_RENEKTON_DESC"
-			ideology = fascism_ideology # conservatism fascist 
-			traits = { Fascist_Militarist Dictator }
+			ideology = tribes # chiefdom
+			traits = { dictator }
 			#expire = "1943.1.1.1"
 	}
 	corps_commander={

@@ -1,0 +1,67 @@
+PIL_excavator_agenda = {
+    ZAU_take_over_excavator_works = {
+        icon = GFX_decision_PIL_hextech_excavator
+        allowed = { original_tag = ZAU }
+        visible = {
+            tag = ZAU
+            NOT = { has_country_flag = ZAU_excavator_works_transferred }
+            51 = { is_owned_by = ZAU }
+            OR = {
+                has_country_flag = ZAU_excavator_archive_secured
+                PLT = { has_tech = PIL_bramble_crawler_design }
+            }
+        }
+        available = {
+            51 = { is_owned_and_controlled_by = ZAU }
+            num_of_military_factories > 0
+        }
+        cost = 25
+        complete_effect = {
+            set_country_flag = ZAU_excavator_works_transferred
+            set_technology = { PIL_bramble_crawler_design = 1 popup = no }
+            ZAU_excavator_register_column = yes
+            country_event = { id = PIL_tikras.6 }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    PIL_send_tikras_expedition = {
+        icon = GFX_decision_PIL_hextech_excavator
+        allowed = { OR = { PIL_is_piltover = yes original_tag = ZAU } }
+        visible = {
+            PIL_tikras_ready = yes
+            NOT = { has_country_flag = PIL_tikras_pending }
+        }
+        available = {
+            PIL_tikras_prospecting = yes
+            has_equipment = { azir_plt_bramble_crawler_1 > 11 }
+        }
+        cost = 20
+        complete_effect = {
+            add_equipment_to_stockpile = { type = azir_plt_bramble_crawler_1 amount = -1 }
+            PIL_tikras_begin = yes
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    PIL_report_tikras_deployment = {
+        icon = GFX_decision_PIL_hextech_excavator
+        allowed = { OR = { PIL_is_piltover = yes original_tag = ZAU } }
+        visible = {
+            PIL_tikras_ready = yes
+            has_war_with = IXT
+            NOT = { has_country_flag = PIL_tikras_pending }
+        }
+        available = { PIL_tikras_field_company = yes }
+        cost = 0
+        complete_effect = {
+            set_country_flag = PIL_tikras_wartime
+            if = {
+                limit = { NOT = { 27 = { PIL_tikras_crawler_in_state = yes } } }
+                set_country_flag = PIL_tikras_coastal_approach
+            }
+            PIL_tikras_begin = yes
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

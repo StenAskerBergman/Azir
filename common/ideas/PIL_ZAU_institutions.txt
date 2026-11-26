@@ -1,0 +1,95 @@
+ideas = {
+    country = {
+        PIL_open_patents_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.04
+            }
+        }
+
+        PIL_ferros_concession_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.07
+                stability_factor = -0.02
+            }
+        }
+
+        PIL_public_warrants_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.04
+            }
+        }
+
+        PIL_clan_board_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_speed_arms_factory_factor = 0.08
+                political_power_factor = -0.05
+            }
+        }
+
+        ZAU_ward_compact_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.04
+            }
+        }
+
+        ZAU_ward_workshops_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+
+        ZAU_glasc_credit_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.08
+                consumer_goods_factor = 0.05
+            }
+        }
+
+        ZAU_glasc_receivership_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.08
+                stability_factor = -0.04
+            }
+        }
+
+        PIL_ZAU_glasc_supply_contract = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.03
+            }
+        }
+
+        ZAU_ward_clinics_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+            }
+        }
+
+        ZAU_lift_repairs_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_speed_infrastructure_factor = 0.10
+            }
+        }
+    }
+}

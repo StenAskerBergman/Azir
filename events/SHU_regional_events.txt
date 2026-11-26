@@ -1,0 +1,107 @@
+add_namespace = SHU_regional
+
+country_event = {
+    id = SHU_regional.2
+    title = SHU_regional.2.t
+    desc = SHU_regional.2.d
+    picture = GFX_report_event_xerath_uneasy_alliance
+    is_triggered_only = yes
+    trigger = {
+        tag = SHU
+        FROM = {
+            tag = XER
+            has_country_flag = XER_shurima_offer_pending
+            XER_regional_shurima_war = yes
+        }
+    }
+
+    option = {
+        name = SHU_regional.2.a
+        trigger = { FROM = { XER_regional_shurima_war = yes } }
+        ai_chance = {
+            factor = 30
+            modifier = { factor = 2 has_completed_focus = SHU_republican_future }
+        }
+        if = {
+            limit = { FROM = { tag = XER has_country_flag = XER_shurima_offer_pending XER_regional_shurima_war = yes } }
+            clr_country_flag = SHU_XER_armistice_refuse
+            set_country_flag = { flag = SHU_XER_armistice_accept days = 30 value = 1 }
+            FROM = { country_event = XER_regional.1 }
+        }
+    }
+    option = {
+        name = SHU_regional.2.b
+        ai_chance = { factor = 70 }
+        if = {
+            limit = { FROM = { tag = XER has_country_flag = XER_shurima_offer_pending } }
+            clr_country_flag = SHU_XER_armistice_accept
+            set_country_flag = { flag = SHU_XER_armistice_refuse days = 30 value = 1 }
+            FROM = { country_event = XER_regional.1 }
+        }
+    }
+}
+
+country_event = {
+    id = SHU_regional.3
+    title = SHU_regional.3.t
+    desc = SHU_regional.3.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+
+    option = {
+        name = SHU_regional.3.a
+        trigger = { SHU_custody_eligible = yes }
+        ai_chance = { factor = 90 }
+        if = {
+            limit = { SHU_custody_eligible = yes }
+            SHU_sivir = { promote_character = { ideology = shurimanEmperor } }
+            set_country_flag = SHU_custody_active
+            add_ideas = SHU_custodianship
+            activate_mission = SHU_custody_deadline
+        }
+    }
+    option = {
+        name = SHU_regional.3.b
+        ai_chance = { factor = 10 }
+        if = {
+            limit = { SHU_custody_eligible = yes }
+            set_country_flag = SHU_custody_resolved
+        }
+        else = { clr_country_flag = SHU_custody_invited }
+    }
+}
+
+country_event = {
+    id = SHU_regional.4
+    title = SHU_regional.4.t
+    desc = SHU_regional.4.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+
+    option = {
+        name = SHU_regional.4.a
+        trigger = { has_country_flag = SHU_custody_active SHU_disc_secure = yes has_character = SHU_nasus }
+        ai_chance = { factor = 100 }
+        if = {
+            limit = { has_country_flag = SHU_custody_active SHU_disc_secure = yes has_character = SHU_nasus }
+            SHU_end_custody = yes
+            add_political_power = 50
+        }
+        clr_country_flag = SHU_custody_handover_pending
+    }
+    option = {
+        name = SHU_regional.4.b
+        ai_chance = { factor = 0 }
+        clr_country_flag = SHU_custody_handover_pending
+    }
+}
+
+country_event = {
+    id = SHU_regional.5
+    title = SHU_regional.5.t
+    desc = SHU_regional.5.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+
+    option = { name = SHU_regional.5.a }
+}

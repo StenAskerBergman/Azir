@@ -1,0 +1,28 @@
+PIL_ZAU_crossings = {
+    icon = GFX_decision_category_generic_industry
+    picture = GFX_PIL_ZAU_banner
+    allowed = { OR = { tag = PLT tag = ZAU } }
+    visible = { OR = { tag = PLT tag = ZAU } }
+}
+PIL_bop_decisions = {
+    allowed = { tag = PLT }
+    visible = { has_power_balance = { id = PIL_bop } }
+}
+ZAU_bop_decisions = {
+    allowed = { tag = ZAU }
+    visible = { has_power_balance = { id = ZAU_bop } }
+}
+
+PIL_domestic_agenda = {
+    icon = GFX_decision_category_generic_industry
+    picture = GFX_PIL_domestic_agenda
+    allowed = { tag = PLT }
+    visible = { tag = PLT }
+}
+
+ZAU_domestic_agenda = {
+    icon = GFX_decision_category_generic_industry
+    picture = GFX_ZAU_domestic_agenda
+    allowed = { tag = ZAU }
+    visible = { tag = ZAU }
+}

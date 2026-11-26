@@ -26,7 +26,7 @@ country_event = {
 		# unlock_national_focus = XER_Xerath_Conquest #
 		complete_national_focus = XER_xerath_conquest
 		add_popularity = {
-			ideology = fascism
+			ideology = chiefdom
 			popularity = -0.15
 		}
 		ai_chance = {
@@ -41,22 +41,22 @@ country_event = {
 	# Renekton Option
 	option = {
 		name = xerath.2.b
-		retire_country_leader = yes
-		set_politics = { ruling_party = fascism }
-		unlock_national_focus = XER_renekton_conquest
-		# complete_national_focus = XER_Renekton_Conquest
+		XER_install_renekton = yes
 		add_popularity = {
-			ideology = fascism
+			ideology = chiefdom
 			popularity = 0.25
 		}
 
 		ai_chance = {
 			base = 5
+			modifier = {
+				factor = 0
+				has_completed_focus = XER_brutal_slavery
+			}
 		}
 		trigger = {
 			has_character = XER_renekton
 		}
-		set_cosmetic_tag = XER_renekon
 	}
 }
 # Event - Specific
@@ -66,7 +66,7 @@ country_event = {
 	id = xerath.1
 	title = xerath.1.t # shurima.azir.1.t
 	desc = xerath.1.d # shurima.azir.1.d
-	picture = GFX_report_event_empty_throne
+	picture = GFX_report_event_xerath_uneasy_alliance
 	trigger = { NOT = { has_country_flag = xer_at_war_with_shu } }
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -190,6 +190,17 @@ news_event = {
 	option = { name = xerath.6.a }
 }
 
+country_event = {
+	id = xerath.7
+	title = xerath.7.t
+	desc = xerath.7.d
+	picture = GFX_report_event_xerath_restored_devout
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { name = xerath.7.a }
+}
+
 # Other - Random
 
 # S: Sure, add anything else you think fits here :ThumbsUp:
@@ -197,3 +208,133 @@ news_event = {
 # Q: Can I change fonts on events? or txt color?
 # Q: What does +/n+ Do? And What '' `` ¨¨¨ sign looks best ingame?
 # "We will Begin Our Final" +/n+"'Liberation' of Shurima "+/n+" ¨Liberation¨ of Shurima"
+
+
+# SHU proposal uses sender flags. NAZ writes the response in XER scope.
+# XER consumes that flag immediately and owns the peace operation.
+add_namespace = XER_regional
+
+country_event = {
+    id = XER_regional.1
+    hidden = yes
+    is_triggered_only = yes
+    trigger = {
+        tag = XER
+        OR = {
+            AND = {
+                has_country_flag = XER_shurima_offer_pending
+                FROM = {
+                    tag = SHU
+                    OR = { has_country_flag = SHU_XER_armistice_accept has_country_flag = SHU_XER_armistice_refuse }
+                }
+            }
+            AND = {
+                has_country_flag = XER_nazumah_offer_pending
+                FROM = { tag = NAZ }
+                OR = { has_country_flag = XER_NAZ_armistice_accepted has_country_flag = XER_NAZ_armistice_refused }
+            }
+        }
+    }
+    immediate = {
+        if = {
+            limit = { FROM = { tag = SHU } }
+            clr_country_flag = XER_shurima_offer_pending
+            if = {
+                limit = {
+                    FROM = {
+                        has_country_flag = SHU_XER_armistice_accept
+                        NOT = { has_country_flag = SHU_XER_armistice_refuse }
+                    }
+                    XER_regional_shurima_war = yes
+                    has_country_flag = XER_frontier_mandates
+                }
+                white_peace = { tag = SHU }
+                if = {
+                    limit = { NOT = { has_war_with = SHU } }
+                    set_country_flag = XER_shurima_armistice
+                    if = {
+                        limit = { has_country_flag = XER_command_break }
+                        set_truce = { target = SHU days = 90 }
+                    }
+                    country_event = { id = XER_regional.3 }
+                }
+                else = { country_event = { id = XER_regional.5 } }
+            }
+            else_if = {
+                limit = { FROM = { has_country_flag = SHU_XER_armistice_refuse } }
+                set_country_flag = { flag = XER_shurima_offer_cooldown days = 90 value = 1 }
+                country_event = { id = XER_regional.4 }
+            }
+            else = { country_event = { id = XER_regional.5 } }
+            FROM = {
+                clr_country_flag = SHU_XER_armistice_accept
+                clr_country_flag = SHU_XER_armistice_refuse
+            }
+        }
+        else_if = {
+            limit = { FROM = { tag = NAZ } }
+            clr_country_flag = XER_nazumah_offer_pending
+            if = {
+                limit = {
+                    has_country_flag = XER_NAZ_armistice_accepted
+                    NOT = { has_country_flag = XER_NAZ_armistice_refused }
+                    XER_regional_nazumah_war = yes
+                    has_country_flag = XER_frontier_mandates
+                    NOT = { has_country_flag = XER_command_break }
+                }
+                white_peace = { tag = NAZ }
+                if = {
+                    limit = { NOT = { has_war_with = NAZ } }
+                    set_country_flag = XER_nazumah_armistice
+                    NAZ = { set_country_flag = NAZ_XER_armistice_confirmed }
+                    country_event = { id = XER_regional.3 }
+                }
+                else = { country_event = { id = XER_regional.5 } }
+            }
+            else_if = {
+                limit = { has_country_flag = XER_NAZ_armistice_refused }
+                set_country_flag = { flag = XER_offer_nazumah_armistice_cooldown days = 120 value = 1 }
+                country_event = { id = XER_regional.4 }
+            }
+            else = { country_event = { id = XER_regional.5 } }
+            clr_country_flag = XER_NAZ_armistice_accepted
+            clr_country_flag = XER_NAZ_armistice_refused
+        }
+    }
+}
+
+country_event = {
+    id = XER_regional.2
+    title = XER_regional.2.t
+    desc = XER_regional.2.d
+    picture = GFX_report_event_xerath_uneasy_alliance
+    is_triggered_only = yes
+    option = { name = XER_regional.2.a }
+}
+
+country_event = {
+    id = XER_regional.3
+    title = XER_regional.3.t
+    desc = XER_regional.3.d
+    picture = GFX_report_event_xerath_uneasy_alliance
+    is_triggered_only = yes
+    option = { name = XER_regional.3.a }
+}
+
+country_event = {
+    id = XER_regional.4
+    title = XER_regional.4.t
+    desc = XER_regional.4.d
+    picture = GFX_report_event_xerath_uneasy_alliance
+    is_triggered_only = yes
+    option = { name = XER_regional.4.a }
+}
+
+country_event = {
+    id = XER_regional.5
+    title = XER_regional.5.t
+    desc = XER_regional.5.d
+    picture = GFX_report_event_xerath_uneasy_alliance
+    is_triggered_only = yes
+    option = { name = XER_regional.5.a }
+}

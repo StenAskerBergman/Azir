@@ -1,0 +1,13 @@
+SHU_bop_decisions = {
+    icon = GFX_shurima_red_icon_category
+    priority = 97
+    allowed = { original_tag = SHU }
+    visible = { tag = SHU has_power_balance = { id = SHU_bop } }
+}
+
+SHU_custody_category = {
+    icon = GFX_shurima_red_icon_category
+    priority = 99
+    allowed = { original_tag = SHU }
+    visible = { tag = SHU has_country_flag = SHU_custody_active }
+}

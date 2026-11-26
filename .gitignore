@@ -1,6 +1,10 @@
 /.vscode
 /folder-alias.json
-/gfx
+/gfx/*
+!/gfx/entities/
+/gfx/entities/*
+!/gfx/entities/infantry.gfx
+!/gfx/entities/units_infantry.asset
 /NOTES and USEFUL CODE LINES.txt
 /_info
 *.code-workspace

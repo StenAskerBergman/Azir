@@ -2,3 +2,10 @@
 VOI_char_cw_desolate = { # Any Desolate -> Void
 	has_government = desolation
 }
+
+VOI_can_choose_opening_side = {
+    tag = VOI
+    NOT = { has_global_flag = icathian_civil_war }
+    NOT = { has_completed_focus = VOI_Resist_the_Void }
+    NOT = { has_completed_focus = VOI_Embrace_the_Void }
+}

@@ -11,6 +11,7 @@ azir_campaign_settings = {
 }
 
 azir_void_espionage_category = {
+    scripted_gui = azir_icathian_threat_divider_ui
     priority = 90
     icon = GFX_void_purple_icon_category
     allowed = {

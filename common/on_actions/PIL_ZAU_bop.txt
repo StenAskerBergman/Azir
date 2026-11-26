@@ -1,0 +1,20 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = { limit = { country_exists = PLT } PLT = { PIL_initialize_bop = yes } }
+            if = { limit = { country_exists = ZAU } ZAU = { ZAU_initialize_bop = yes } }
+        }
+    }
+    on_weekly_PLT = {
+        effect = {
+            PIL_initialize_bop = yes
+            PIL_update_joint_freight = yes
+        }
+    }
+    on_weekly_ZAU = {
+        effect = {
+            ZAU_initialize_bop = yes
+            ZAU_update_joint_freight = yes
+        }
+    }
+}

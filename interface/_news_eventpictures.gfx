@@ -23,6 +23,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_shurima_broken.dds"
 	}
 
+    spriteType = {
+        name = "GFX_report_event_demons_gone"
+        texturefile = "gfx/event_pictures/report_event_demons_gone.dds"
+    }
+
     # Sun Disc Risen Event Picture
     spriteType = {
         name = "GFX_news_event_sundisc_risen"

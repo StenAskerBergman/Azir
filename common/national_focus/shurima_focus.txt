@@ -459,6 +459,19 @@ focus_tree = {
 	}
 
 
+	# Temporary display focus for comparison with Shuriman Legions.
+	focus = {
+		id = SHU_shuriman_legions_art_comparison
+		icon = GFX_focus_SHU_shuriman_legions_art_comparison
+		relative_position_id = SHU_shuriman_legions
+		x = 2
+		y = 0
+		cost = 5
+		available = { always = no }
+		ai_will_do = { factor = 0 }
+		completion_reward = { custom_effect_tooltip = SHU_shuriman_legions_art_comparison_tt }
+	}
+
 	# Shuriman Navy
 
 	# Rebuilding Our Dockyards - SHU_rebuilding_our_dockyards
@@ -1473,7 +1486,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_ba_targon
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ba_targon
 		x=0
 		y=1
 		relative_position_id = SHU_annex_targon
@@ -1489,7 +1502,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_ca_targon
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ca_targon
 		x=0
 		y=1
 		relative_position_id = SHU_example_ba_targon
@@ -1579,7 +1592,7 @@ completion_reward = {
 	# Shuriman Agreement
 	focus = {
 		id = SHU_shuriman_argreement_targon
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_shuriman_argreement_targon
 		x=0
 		y=1
 		relative_position_id = SHU_puppet_or_ally_targon
@@ -1596,7 +1609,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_cb_targon
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_cb_targon
 		x=0
 		y=1
 		relative_position_id = SHU_shuriman_argreement_targon
@@ -1735,7 +1748,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_hire_yuntal_exils
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_hire_yuntal_exils
 		x=0
 		y=1
 		relative_position_id = SHU_annex_ixtal
@@ -1857,7 +1870,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_cb_ixtal
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_cb_ixtal
 		x=0
 		y=1
 		relative_position_id = SHU_shuriman_pact_ixtal
@@ -1890,7 +1903,7 @@ completion_reward = {
 	# Noxian Start
 	focus = {
 		id = SHU_example_noxian_start
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_noxian_start
 		x = 14
 		y = 26
 		cost = 3
@@ -1913,7 +1926,7 @@ completion_reward = {
 	# Noxian AA Line
 	focus = {
 		id = SHU_example_aa_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_aa_noxian
 		x=-2
 		y=1
 		relative_position_id = SHU_example_noxian_start
@@ -1932,7 +1945,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_ba_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ba_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_aa_noxian
@@ -1948,7 +1961,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_ca_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ca_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_ba_noxian
@@ -1965,7 +1978,7 @@ completion_reward = {
 	# Noxian AB Line
 	focus = {
 		id = SHU_example_ab_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ab_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_noxian_start
@@ -1985,7 +1998,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_bb_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_bb_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_ab_noxian
@@ -2004,7 +2017,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_cb_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_cb_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_bb_noxian
@@ -2022,7 +2035,7 @@ completion_reward = {
 	# Noxian AC Line
 	focus = {
 		id = SHU_example_ac_noxian #
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ac_noxian
 		x=2
 		y=1
 		relative_position_id = SHU_example_noxian_start
@@ -2040,7 +2053,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_bc_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_bc_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_ac_noxian
@@ -2056,7 +2069,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_cc_noxian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_cc_noxian
 		x=0
 		y=1
 		relative_position_id = SHU_example_bc_noxian
@@ -2082,7 +2095,7 @@ completion_reward = {
 	# ionia Starter Line
 	focus = {
 		id = SHU_example_ionian_start
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ionian_start
 		x=6
 		y=0
 		cost = 3
@@ -2107,7 +2120,7 @@ completion_reward = {
 	# ionia AA Line: Subjugate
 	focus = {
 		id = SHU_example_aa_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_aa_ionian
 		x=-2
 		y=1
 		relative_position_id =  SHU_example_ionian_start
@@ -2127,7 +2140,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_ba_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ba_ionian
 		x=0
 		y=1
 		relative_position_id = SHU_example_aa_ionian
@@ -2143,7 +2156,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_ca_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ca_ionian
 		x=0
 		y=1
 		relative_position_id = SHU_example_ba_ionian
@@ -2160,7 +2173,7 @@ completion_reward = {
 	# ionia AB Line: Annex
 	focus = {
 		id = SHU_example_ab_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ab_ionian
 		x=0
 		y=1
 		relative_position_id =  SHU_example_ionian_start
@@ -2180,7 +2193,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_bb_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_bb_ionian
 		x=0
 		y=1
 		relative_position_id = SHU_example_ab_ionian
@@ -2201,7 +2214,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_cb_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_cb_ionian
 		x=0
 		y=1
 		relative_position_id = SHU_example_bb_ionian
@@ -2218,7 +2231,7 @@ completion_reward = {
 	# ionia Ac Line: Ally
 	focus = {
 		id = SHU_example_ac_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_ac_ionian
 		x=2
 		y=1
 		relative_position_id =  SHU_example_ionian_start
@@ -2244,7 +2257,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_bc_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_bc_ionian
 		x=0
 		y=1
 		relative_position_id = SHU_example_ac_ionian
@@ -2260,7 +2273,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_example_cc_ionian
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_example_cc_ionian
 		x=0
 		y=1
 		relative_position_id = SHU_example_bc_ionian
@@ -3005,7 +3018,7 @@ completion_reward = {
 	# crystal_scar A Line
 	focus = {
 		id = SHU_overseer_taliyah
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_overseer_taliyah
 		x=0
 		y=1
 		relative_position_id = SHU_fate_of_brackern #crystal_scar
@@ -3024,7 +3037,7 @@ completion_reward = {
 	# crystal_scar A Line
 	focus = {
 		id = SHU_taliyahs_supervision
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_taliyahs_supervision
 		x=0
 		y=1
 		relative_position_id = SHU_overseer_taliyah
@@ -3221,7 +3234,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_brain_gain
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_brain_gain
 		x=0
 		y=1
 		relative_position_id = SHU_annex_piltover
@@ -3242,7 +3255,7 @@ completion_reward = {
 
 	focus = {
 		id = SHU_new_management_piltover
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_new_management_piltover
 		x=0
 		y=1
 		relative_position_id = SHU_brain_gain
@@ -3274,7 +3287,7 @@ completion_reward = {
 	# Zaun Starter Line
 	focus = {
 		id = SHU_approach_zaun
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_approach_zaun
 		x=-6
 		y=0
 		cost = 3
@@ -3335,7 +3348,7 @@ completion_reward = {
 	# Further Funding
 	focus = {
 		id = SHU_futher_funding
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_futher_funding
 		x=0
 		y=1
 		relative_position_id = SHU_silco_plan
@@ -3355,7 +3368,7 @@ completion_reward = {
 	# Shadow Plan
 	focus = {
 		id = SHU_shadow_plan
-		icon = GFX_goal_unknown
+		icon = GFX_foreign_focus_SHU_shadow_plan
 		x=0
 		y=1
 		relative_position_id = SHU_futher_funding
@@ -4571,7 +4584,7 @@ completion_reward = {
 		cost = 5
 		# relative_position_id = SHU_we_remember_shurima
 		completion_reward = {
-			country_event = { id = shurima.56 days = 1 }
+			country_event = { id = shurima.565 days = 1 }
 		}
 	}
 
@@ -4632,7 +4645,7 @@ completion_reward = {
 	focus = {
 		id = SHU_tribe_law
 		icon = GFX_goal_generic_political_pressure
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = SHU_tribe_council
 		cost = 5
@@ -4651,7 +4664,7 @@ completion_reward = {
 	focus = {
 		id = SHU_tribal_recognition
 		icon = GFX_goal_generic_political_pressure
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SHU_tribe_council
 		cost = 5
@@ -4670,7 +4683,7 @@ completion_reward = {
 	focus = {
 		id = SHU_tribal_respect
 		icon = GFX_goal_generic_political_pressure
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SHU_tribe_law
 		cost = 5
@@ -4705,15 +4718,11 @@ completion_reward = {
 		completion_reward = {
 			add_ideas = tribal_family
 
-			# Play Event for Shurima -> adds tribal_ties idea to shurima
-			ROOT = { country_event = { id = shurima.55 days = 100 } }
-
-			NAZ = {
-				add_ideas = tribal_family
+			if = {
+				limit = { country_exists = NAZ }
+				NAZ = { add_ideas = tribal_family }
+				country_event = { id = shurima.55 days = 100 }
 			}
-
-			# Just Play Event for Nazumah
-			FROM = { country_event = { id = shurima.55 days = 100 } }
 		}
 	}
 
@@ -4819,7 +4828,7 @@ completion_reward = {
 	focus = {
 		id = SHU_imperial_efforts #SHU_imperial_efforts #SHU_military_court
 		icon = GFX_goal_generic_political_pressure
-		x = 11
+		x = 10
 		y = 5
 		cost = 5
 		search_filters = {
@@ -4861,7 +4870,7 @@ completion_reward = {
 	focus = {
 		id = SHU_military_law
 		icon = GFX_goal_generic_axis_build_infantry # Focus_generic_improve_the_administration
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SHU_ascended_god_warriors_council
 		cost = 5
@@ -5479,7 +5488,7 @@ completion_reward = {
 		cost = 5
 		prerequisite = {focus = SHU_shuriman_legions}
 		completion_reward = {
-			add_ideas = RAJ_lions_of_the_great_war
+			custom_effect_tooltip = SHU_unlock_lion_rider_muster_tt
 		}
 	}
 	# # Army Expansion
@@ -5495,4 +5504,51 @@ completion_reward = {
 
 	# 	}
 	# }
+
+    focus = {
+        id = SHU_codify_imperial_restoration
+        icon = GFX_goal_generic_stable_government
+        relative_position_id = SHU_imperial_state
+        x = -3
+        y = 1
+        cost = 5
+        prerequisite = { focus = SHU_imperial_state }
+        available = {
+            SHU_contest_ended = yes
+            SHU_imperial_supply_secure = yes
+            has_country_flag = SHU_restore_royal_administration_completed
+            has_country_flag = SHU_build_royal_supply_road_completed
+            power_balance_value = { id = SHU_bop value > 0.50 }
+        }
+        cancel_if_invalid = yes
+        completion_reward = {
+            set_country_flag = SHU_imperial_settled
+            SHU_update_regional_doctrine = yes
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    focus = {
+        id = SHU_ratify_provincial_compact
+        icon = GFX_goal_generic_stable_government
+        relative_position_id = SHU_republican_future
+        x = 3
+        y = 1
+        cost = 5
+        prerequisite = { focus = SHU_republican_future }
+        available = {
+            SHU_contest_ended = yes
+            has_country_flag = SHU_charter_assemblies_completed
+            has_country_flag = SHU_charter_waterworks_completed
+            has_country_flag = SHU_charter_garrisons_completed
+            SHU_nazumah_compact_in_force = yes
+            power_balance_value = { id = SHU_bop value < -0.50 }
+        }
+        cancel_if_invalid = yes
+        completion_reward = {
+            set_country_flag = SHU_provincial_compact_ratified
+            SHU_update_regional_doctrine = yes
+        }
+        ai_will_do = { factor = 2 }
+    }
 }

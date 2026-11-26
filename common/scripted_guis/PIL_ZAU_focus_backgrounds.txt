@@ -1,0 +1,16 @@
+scripted_gui = {
+    # HOI4 1.20 renders these windows over the map even with the focus-tree parent set.
+    PIL_focus_background = {
+        context_type = national_focus_context
+        parent_window_name = "PIL_ZAU_focus_backdrop_slot_instance"
+        window_name = "PIL_focus_background_window"
+        visible = { always = no }
+    }
+
+    ZAU_focus_background = {
+        context_type = national_focus_context
+        parent_window_name = "PIL_ZAU_focus_backdrop_slot_instance"
+        window_name = "ZAU_focus_background_window"
+        visible = { always = no }
+    }
+}

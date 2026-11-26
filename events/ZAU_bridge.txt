@@ -1,0 +1,11 @@
+add_namespace = ZAU_bridge
+
+country_event = {
+    id = ZAU_bridge.1
+    title = ZAU_bridge.1.t
+    desc = ZAU_bridge.1.d
+    picture = GFX_PIL_ZAU_rift
+    is_triggered_only = yes
+    trigger = { tag = ZAU has_country_flag = ZAU_betrayed }
+    option = { name = ZAU_bridge.1.a }
+}

@@ -1,0 +1,176 @@
+technologies = {
+
+    # From azir_naz_steel_lions.txt
+    azir_naz_steel_lions_desert_armour = {
+        allow_branch = { original_tag = NAZ }
+        allow = { has_completed_focus = NAZ_the_steel_lions }
+
+        on_research_complete = {
+            add_equipment_bonus = {
+                name = azir_naz_steel_lions_desert_armour
+                bonus = {
+                    light_tank_chassis = {
+                        instant = yes
+                        reliability = 0.10
+                    }
+                }
+            }
+        }
+
+        research_cost = 1
+        start_year = 990
+
+        folder = {
+            name = armour_folder
+            position = { x = -4 y = 0 }
+        }
+        folder = {
+            name = nsb_armour_folder
+            position = { x = -1 y = 0 }
+        }
+
+        categories = { armor cat_light_armor }
+        ai_will_do = { factor = 1 }
+    }
+
+    # From PIL_bramble_crawler.txt
+    PIL_bramble_crawler_design = {
+        start_year = 990
+        research_cost = 1.5
+        allow_branch = { PIL_excavator_workshop_owner = yes }
+        allow = { tag = PLT original_tag = PLT has_completed_focus = PIL_design_bramble_crawler }
+        enable_equipments = { azir_plt_bramble_crawler_1 }
+        enable_subunits = { azir_plt_bramble_crawler_battalion }
+        show_equipment_icon = yes
+        folder = { name = support_folder position = { x = -2 y = 2 } }
+        categories = { support_tech engineers_tech }
+        ai_will_do = { factor = 1 }
+    }
+
+    # From azir_shu_lion_riders.txt
+    # The muster decision grants this directly.
+    azir_shu_lion_rider_training = {
+        start_year = 990
+        enable_subunits = { azir_shu_lion_rider_company }
+    }
+
+    # From improved_dozer_blade.txt
+	improved_dozer_blade_tech = {
+		enable_equipment_modules = {
+			improved_dozer_blade
+		}
+
+		dependencies = {
+			tech_engineers2 = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 4 }
+		}
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+    # From azir_voi_herald_siege_training.txt
+    azir_voi_herald_siege_training = {
+        start_year = 990
+        enable_subunits = { azir_voi_herald_siege }
+    }
+
+    # From azir_voi_roster_training.txt
+    azir_voi_belveth_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_belveth_battalion }
+    }
+
+    azir_voi_remora_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_remora_battalion }
+    }
+
+    azir_voi_kogmaw_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_kogmaw_battalion }
+    }
+
+    azir_voi_chogath_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_chogath_battalion }
+    }
+
+    azir_voi_kaisa_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_kaisa_battalion }
+    }
+
+    azir_voi_jax_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_jax_battalion }
+    }
+
+    azir_voi_zilean_muster = {
+        start_year = 990
+        enable_subunits = { azir_voi_zilean_battalion }
+    }
+
+    # From azir_voi_rupture_wardens.txt
+    # Granted by the Resistance decision. Omit a research folder so the
+    # technology has no selectable entry in the research tree.
+    azir_voi_rupture_wardens_training = {
+        start_year = 990
+        enable_subunits = { azir_voi_rupture_warden_company }
+        enable_equipments = { azir_voi_containment_kit_1 }
+    }
+
+    # From azir_voi_xersai_training.txt
+    azir_voi_xersai_training = {
+        start_year = 990
+        enable_subunits = { azir_voi_xersai_assault }
+    }
+
+    # The Embrace decision grants this technology directly.
+    azir_voi_xersai_burrower_training = {
+        start_year = 990
+        enable_subunits = { azir_voi_xersai_burrower_company }
+    }
+
+    azir_voi_xersai_riftbound_training = {
+        start_year = 990
+        enable_subunits = { azir_voi_xersai_riftbound_company }
+        enable_equipments = { azir_voi_xersai_seismic_kit_1 }
+    }
+
+    # From azir_xer_training.txt
+    # The conquest focuses grant these directly.
+    azir_xer_baccai_training = {
+        start_year = 990
+        enable_subunits = { azir_xer_baccai_assault_company }
+    }
+
+    azir_xer_warband_training = {
+        start_year = 990
+        enable_subunits = { azir_xer_renekton_warband }
+    }
+
+    # From ZAU_sumpworks_recovery.txt
+    ZAU_sumpworks_recovery_design = {
+        start_year = 990
+        research_cost = 1.25
+        allow_branch = { original_tag = ZAU }
+        allow = { tag = ZAU original_tag = ZAU has_completed_focus = ZAU_design_sumpworks_recovery }
+        enable_equipments = { azir_zau_sumpworks_rig_1 }
+        enable_subunits = { azir_zau_sumpworks_recovery_company }
+        show_equipment_icon = yes
+        folder = { name = support_folder position = { x = -2 y = 2 } }
+        categories = { support_tech engineers_tech }
+        ai_will_do = { factor = 1 }
+    }
+}

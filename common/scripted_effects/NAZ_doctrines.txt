@@ -1,0 +1,6 @@
+NAZ_end_joint_command = {
+    remove_ideas = NAZ_joint_mobilization
+    clr_country_flag = NAZ_joint_command_active
+    clr_country_flag = NAZ_joint_command_extended
+    set_country_flag = { flag = NAZ_joint_command_cooldown days = 180 value = 1 }
+}

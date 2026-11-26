@@ -2,9 +2,11 @@ announce_kaisa_return = {
     if = {
         limit = {
             tag = VOI
+            NOT = { has_global_flag = azir_kaisa_foreign_offers_started }
             NOT = { has_country_flag = VOI_kaisa_return_announced }
         }
         set_country_flag = VOI_kaisa_return_announced
+        set_country_flag = VOI_kaisa_return_has_foreign_offers
         if = {
             limit = { has_country_flag = VOI_hybrid_path }
             recruit_returned_kaisa = yes
@@ -17,8 +19,9 @@ recruit_returned_kaisa = {
     if = {
         limit = {
             tag = VOI
+            NOT = { has_global_flag = azir_kaisa_foreign_offers_started }
             NOT = { has_character = VOI_Kaisa }
         }
-        recruit_character = VOI_Kaisa
+        azir_kaisa_grant_command = yes
     }
 }

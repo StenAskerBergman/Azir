@@ -1,0 +1,18 @@
+ZAU_commission_sumpworks_trial = {
+    clr_country_flag = ZAU_sumpworks_trial_pending
+    set_country_flag = ZAU_sumpworks_trial_complete
+    add_equipment_to_stockpile = { type = azir_zau_sumpworks_rig_1 amount = 8 producer = ZAU }
+    division_template = {
+        name = "Sumpworks Relief Column"
+        override_model = ZAU_sumpworks_recovery_entity
+        regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+            infantry = { x = 0 y = 3 }
+        }
+        support = {
+            azir_zau_sumpworks_recovery_company = { x = 0 y = 0 }
+        }
+    }
+}

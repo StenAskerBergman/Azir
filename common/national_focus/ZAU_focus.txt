@@ -1,0 +1,315 @@
+focus_tree = {
+    id = ZAU_focus
+    country = {
+        factor = 0
+        modifier = { add = 100 original_tag = ZAU }
+    }
+    default = no
+    reset_on_civilwar = no
+    initial_show_position = { focus = ZAU_last_drop }
+
+    focus = {
+        id = ZAU_last_drop
+        icon = GFX_goal_generic_political_pressure
+        x = 5
+        y = 0
+        cost = 5
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_last_drop } } set_country_flag = ZAU_last_drop country_event = { id = ZAU_events.10 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_air
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 2
+        y = 1
+        cost = 7
+        ai_will_do = { factor = 5 }
+        prerequisite = { focus = ZAU_last_drop }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_ventilation } } set_country_flag = ZAU_ventilation country_event = { id = ZAU_events.13 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_lift
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 2
+        y = 2
+        cost = 7
+        ai_will_do = { factor = 5 }
+        prerequisite = { focus = ZAU_air }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_freight_lift } } set_country_flag = ZAU_freight_lift country_event = { id = ZAU_events.27 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_foundries
+        icon = GFX_goal_generic_production
+        x = 5
+        y = 1
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ZAU_last_drop }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_foundry_contracts } } set_country_flag = ZAU_foundry_contracts country_event = { id = ZAU_events.14 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_ward_compact
+        icon = GFX_goal_generic_political_pressure
+        x = 4
+        y = 2
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_compact }
+            modifier = { factor = 2 PLT = { PIL_bridge_cooperative = yes } }
+            modifier = { factor = 2 ZAU_bridge_cooperative = yes }
+        }
+        prerequisite = { focus = ZAU_foundries }
+        mutually_exclusive = { focus = ZAU_glasc }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_power_balance = { id = ZAU_bop }
+                    NOT = { has_country_flag = ZAU_bridge_committed }
+                }
+                add_power_balance_value = { id = ZAU_bop value = -0.15 }
+            }
+            add_ideas = ZAU_ward_compact_idea
+            if = { limit = { NOT = { has_country_flag = ZAU_firelight_clinics } } set_country_flag = ZAU_firelight_clinics country_event = { id = ZAU_events.12 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_markets
+        icon = GFX_goal_generic_construction2
+        x = 4
+        y = 3
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_compact }
+            modifier = { factor = 2 PLT = { PIL_bridge_cooperative = yes } }
+            modifier = { factor = 2 ZAU_bridge_cooperative = yes }
+        }
+        prerequisite = { focus = ZAU_ward_compact }
+        completion_reward = {
+            add_ideas = ZAU_ward_workshops_idea
+        }
+    }
+
+    focus = {
+        id = ZAU_glasc
+        icon = GFX_goal_generic_trade
+        x = 6
+        y = 2
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_control }
+            modifier = { factor = 2 PLT = { PIL_bridge_coercive = yes } }
+            modifier = { factor = 2 ZAU_bridge_coercive = yes }
+        }
+        prerequisite = { focus = ZAU_foundries }
+        mutually_exclusive = { focus = ZAU_ward_compact }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_power_balance = { id = ZAU_bop }
+                    NOT = { has_country_flag = ZAU_bridge_committed }
+                }
+                add_power_balance_value = { id = ZAU_bop value = 0.15 }
+            }
+            if = { limit = { NOT = { has_country_flag = ZAU_glasc_industries } } set_country_flag = ZAU_glasc_industries country_event = { id = ZAU_events.11 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_consolidation
+        icon = GFX_goal_generic_production
+        x = 6
+        y = 3
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ZAU_glasc }
+        available = { has_country_flag = ZAU_glasc }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_glasc_consolidation } } set_country_flag = ZAU_glasc_consolidation country_event = { id = ZAU_events.30 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_singed
+        icon = GFX_goal_generic_construction2
+        x = 7
+        y = 4
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ZAU_foundries }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_singed_grant } } set_country_flag = ZAU_singed_grant country_event = { id = ZAU_events.15 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_audit
+        icon = GFX_goal_generic_political_pressure
+        x = 7
+        y = 5
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ZAU_singed }
+        available = { has_country_flag = ZAU_singed }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = ZAU_singed_ledger } } set_country_flag = ZAU_singed_ledger country_event = { id = ZAU_events.29 } }
+        }
+    }
+
+    focus = {
+        id = ZAU_engineers
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 2
+        y = 3
+        cost = 5
+        ai_will_do = { factor = 5 }
+        prerequisite = { focus = ZAU_lift }
+        completion_reward = {
+            custom_effect_tooltip = PIL_ZAU_engineers_tt
+        }
+    }
+
+    focus = {
+        id = ZAU_glasc_directorate
+        icon = GFX_goal_generic_political_pressure
+        x = 6
+        y = 4
+        cost = 7
+        prerequisite = { focus = ZAU_consolidation }
+        available = {
+            has_idea = ZAU_glasc_receivership_idea
+            has_government = oligarchy
+        }
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_control }
+            modifier = { factor = 2 PLT = { PIL_bridge_coercive = yes } }
+            modifier = { factor = 2 ZAU_bridge_coercive = yes }
+        }
+        completion_reward = {
+            recruit_character = ZAU_renata
+            promote_character = ZAU_renata
+        }
+    }
+
+    focus = {
+        id = ZAU_bridge_works
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 2
+        y = 4
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_compact }
+            modifier = { factor = 2 PLT = { PIL_bridge_cooperative = yes } }
+            modifier = { factor = 2 ZAU_bridge_cooperative = yes }
+        }
+        prerequisite = { focus = ZAU_engineers }
+        available = { PIL_ZAU_mutual_cooperation = yes }
+        completion_reward = {
+            custom_effect_tooltip = PIL_ZAU_reopen_tt
+        }
+    }
+
+    focus = {
+        id = ZAU_detour
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 4
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = ZAU_ai_prefers_control }
+            modifier = { factor = 2 PLT = { PIL_bridge_coercive = yes } }
+            modifier = { factor = 2 ZAU_bridge_coercive = yes }
+        }
+        prerequisite = { focus = ZAU_engineers }
+        available = { OR = { PIL_ZAU_mutual_hardening = yes has_country_flag = ZAU_breach_answered } }
+        completion_reward = {
+            custom_effect_tooltip = ZAU_detour_tt
+        }
+    }
+
+    focus = {
+        id = ZAU_ward_services_charter
+        icon = GFX_goal_generic_construction2
+        x = 4
+        y = 5
+        cost = 4
+        prerequisite = { focus = ZAU_markets }
+        available = {
+            has_country_flag = ZAU_ward_services_proven
+            ZAU_wards_secure = yes
+        }
+        ai_will_do = { factor = 4 }
+        completion_reward = {
+            custom_effect_tooltip = ZAU_ward_purchasing_unlock_tt
+        }
+    }
+
+    focus = {
+        id = ZAU_contract_directorate
+        icon = GFX_goal_generic_trade
+        x = 6
+        y = 6
+        cost = 4
+        prerequisite = { focus = ZAU_glasc_directorate }
+        available = {
+            has_country_flag = ZAU_freight_works_complete
+            ZAU_regional_filters_live = yes
+        }
+        ai_will_do = { factor = 4 }
+        completion_reward = {
+            custom_effect_tooltip = ZAU_glasc_purchasing_unlock_tt
+        }
+    }
+
+    focus = {
+        id = ZAU_firelight_emergency_federation
+        icon = GFX_goal_generic_political_pressure
+        x = 3
+        y = 4
+        cost = 4
+        prerequisite = { focus = ZAU_ward_compact }
+        available = {
+            ZAU_ward_crisis = yes
+            ZAU_wards_secure = yes
+        }
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 ZAU_active_detour = yes }
+        }
+        completion_reward = {
+            custom_effect_tooltip = ZAU_firelight_mandate_unlock_tt
+        }
+    }
+
+    focus = {
+        id = ZAU_design_sumpworks_recovery
+        icon = GFX_goal_ZAU_sumpworks_recovery
+        relative_position_id = ZAU_lift
+        x = -2
+        y = 1
+        cost = 5
+        prerequisite = { focus = ZAU_lift }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            custom_effect_tooltip = ZAU_design_sumpworks_recovery_tt
+        }
+    }
+}

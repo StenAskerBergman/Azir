@@ -1,0 +1,112 @@
+add_namespace = ZAU_route_review
+
+country_event = {
+    id = ZAU_route_review.1
+    title = ZAU_route_review.1.t
+    desc = ZAU_route_review.1.d
+    picture = GFX_PIL_ZAU_promenade
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_review_ward_service_budget_pending }
+
+    option = {
+        name = PIL_ZAU_route_review_defer
+        ai_chance = { factor = 0 }
+        clr_country_flag = ZAU_review_ward_service_budget_pending
+    }
+
+    option = {
+        name = ZAU_route_review.1.a
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { ZAU_review_ward_service_budget_eligible = yes has_country_flag = ZAU_review_ward_service_budget_pending }
+            add_stability = 0.02
+            set_country_flag = ZAU_review_ward_service_budget_resolved
+        }
+        clr_country_flag = ZAU_review_ward_service_budget_pending
+    }
+    option = {
+        name = ZAU_route_review.1.b
+        ai_chance = { factor = 1 }
+        if = {
+            limit = { ZAU_review_ward_service_budget_eligible = yes has_country_flag = ZAU_review_ward_service_budget_pending }
+            add_timed_idea = { idea = ZAU_ward_repair_crews days = 90 }
+            set_country_flag = ZAU_review_ward_service_budget_resolved
+        }
+        clr_country_flag = ZAU_review_ward_service_budget_pending
+    }
+}
+
+country_event = {
+    id = ZAU_route_review.2
+    title = ZAU_route_review.2.t
+    desc = ZAU_route_review.2.d
+    picture = GFX_PIL_ZAU_glasc_offer
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_review_glasc_contract_pending }
+
+    option = {
+        name = PIL_ZAU_route_review_defer
+        ai_chance = { factor = 0 }
+        clr_country_flag = ZAU_review_glasc_contract_pending
+    }
+
+    option = {
+        name = ZAU_route_review.2.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = { ZAU_review_glasc_contract_eligible = yes has_country_flag = ZAU_review_glasc_contract_pending }
+            add_stability = 0.02
+            set_country_flag = ZAU_review_glasc_contract_resolved
+        }
+        clr_country_flag = ZAU_review_glasc_contract_pending
+    }
+    option = {
+        name = ZAU_route_review.2.b
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { ZAU_review_glasc_contract_eligible = yes has_country_flag = ZAU_review_glasc_contract_pending }
+            add_timed_idea = { idea = ZAU_glasc_delivery_shifts days = 90 }
+            set_country_flag = ZAU_review_glasc_contract_resolved
+        }
+        clr_country_flag = ZAU_review_glasc_contract_pending
+    }
+}
+
+country_event = {
+    id = ZAU_route_review.3
+    title = ZAU_route_review.3.t
+    desc = ZAU_route_review.3.d
+    picture = GFX_PIL_ZAU_firelights
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_confirm_federation_oversight_pending }
+
+    option = {
+        name = PIL_ZAU_route_review_defer
+        ai_chance = { factor = 0 }
+        clr_country_flag = ZAU_confirm_federation_oversight_pending
+    }
+
+    option = {
+        name = ZAU_route_review.3.a
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { ZAU_confirm_federation_oversight_eligible = yes has_country_flag = ZAU_confirm_federation_oversight_pending }
+            add_timed_idea = { idea = ZAU_ward_repair_crews days = 90 }
+            set_country_flag = ZAU_confirm_federation_oversight_resolved
+        }
+        clr_country_flag = ZAU_confirm_federation_oversight_pending
+    }
+    option = {
+        name = ZAU_route_review.3.b
+        ai_chance = { factor = 1 }
+        if = {
+            limit = { ZAU_confirm_federation_oversight_eligible = yes has_country_flag = ZAU_confirm_federation_oversight_pending }
+            add_stability = 0.02
+            set_country_flag = ZAU_confirm_federation_oversight_resolved
+        }
+        clr_country_flag = ZAU_confirm_federation_oversight_pending
+    }
+}

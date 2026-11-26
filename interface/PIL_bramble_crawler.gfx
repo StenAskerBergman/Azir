@@ -1,0 +1,23 @@
+spriteTypes = {
+    spriteType = { name = "GFX_goal_PIL_bramble_crawler" texturefile = "gfx/interface/goals/PIL_bramble_crawler.dds" }
+    spriteType = { name = "GFX_archetype_pil_bramble_crawler_medium" texturefile = "gfx/interface/equipmentdesigner/PIL_hextech_excavator.dds" }
+    spriteType = { name = "GFX_azir_plt_bramble_crawler_1_medium" texturefile = "gfx/interface/equipmentdesigner/PIL_hextech_excavator.dds" }
+    spriteType = { name = "GFX_PIL_bramble_crawler_design_medium" texturefile = "gfx/interface/equipmentdesigner/PIL_hextech_excavator.dds" }
+    spriteType = { name = "GFX_PIL_bramble_crawler_trials" texturefile = "gfx/event_pictures/PIL_ZAU/PIL_bramble_trials.dds" }
+    spriteType = {
+        name = "GFX_unit_azir_plt_bramble_crawler_battalion_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_plt_bramble_crawler_battalion_icon_medium_white"
+        texturefile = "gfx/interface/counters/divisions_small/onmap_unit_engineer_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_plt_bramble_crawler_battalion_icon_small"
+        texturefile = "gfx/texticons/support_engineer_small.dds"
+        noOfFrames = 2
+        legacy_lazy_load = no
+    }
+}

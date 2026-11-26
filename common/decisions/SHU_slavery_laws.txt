@@ -1,0 +1,107 @@
+SHU_labor_law_category = {
+    SHU_pass_child_enslavement_bill = {
+        icon = generic_political_discourse
+        cost = 50
+        days_remove = 45
+        fire_only_once = yes
+
+        available = {
+            has_idea = Lawless_slavery
+        }
+
+        remove_effect = {
+            add_ideas = SHU_child_protection_law
+        }
+
+        ai_will_do = { factor = 3 }
+    }
+
+    SHU_pass_slave_rights_act = {
+        icon = generic_political_discourse
+        cost = 75
+        days_remove = 60
+        fire_only_once = yes
+
+        available = {
+            has_idea = Lawless_slavery
+            has_idea = SHU_child_protection_law
+            NOT = { has_decision = SHU_pass_slaver_rights_act }
+        }
+
+        remove_effect = {
+            remove_ideas = SHU_slaver_licensing_law
+            add_ideas = SHU_slave_rights_law
+        }
+
+        ai_will_do = {
+            factor = 3
+            modifier = { factor = 0.5 has_war = yes }
+        }
+    }
+
+    SHU_pass_slaver_rights_act = {
+        icon = generic_political_discourse
+        cost = 65
+        days_remove = 60
+        fire_only_once = yes
+
+        available = {
+            has_idea = Lawless_slavery
+            has_idea = SHU_child_protection_law
+            NOT = { has_idea = SHU_slave_rights_law }
+            NOT = { has_decision = SHU_pass_slave_rights_act }
+        }
+
+        remove_effect = {
+            add_ideas = SHU_slaver_licensing_law
+        }
+
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 0 has_war = no }
+        }
+    }
+
+    SHU_establish_sun_service = {
+        icon = generic_political_discourse
+        cost = 85
+        days_remove = 60
+        fire_only_once = yes
+
+        available = {
+            has_idea = Lawless_slavery
+            has_idea = SHU_slave_rights_law
+        }
+
+        remove_effect = {
+            add_ideas = SHU_sun_service_programme
+        }
+
+        ai_will_do = { factor = 3 }
+    }
+
+    SHU_enforce_emancipation = {
+        icon = generic_political_discourse
+        cost = 105
+        days_remove = 90
+        fire_only_once = yes
+
+        available = {
+            has_idea = Lawless_slavery
+            has_idea = SHU_slave_rights_law
+            has_idea = SHU_sun_service_programme
+        }
+
+        remove_effect = {
+            set_country_flag = SHU_emancipation_enforced
+            remove_ideas = Lawless_slavery
+            remove_ideas = SHU_child_protection_law
+            remove_ideas = SHU_slave_rights_law
+            remove_ideas = SHU_sun_service_programme
+            add_ideas = SHU_emancipation_law
+            add_timed_idea = { idea = SHU_emancipation_transition days = 120 }
+        }
+
+        ai_will_do = { factor = 3 }
+    }
+}

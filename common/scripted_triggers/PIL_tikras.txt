@@ -1,0 +1,67 @@
+PIL_excavator_workshop_owner = {
+    OR = {
+        PIL_is_piltover = yes
+        AND = {
+            tag = ZAU
+            original_tag = ZAU
+            has_country_flag = ZAU_excavator_works_transferred
+        }
+    }
+}
+
+PIL_tikras_ready = {
+    PIL_excavator_workshop_owner = yes
+    has_tech = PIL_bramble_crawler_design
+    country_exists = IXT
+    NOT = { has_global_flag = PIL_tikras_destroyed }
+    NOT = { has_country_flag = PIL_tikras_resolved }
+}
+
+PIL_tikras_field_company = {
+    has_war_with = IXT
+    OR = {
+        27 = { PIL_tikras_crawler_in_state = yes }
+        28 = { PIL_tikras_crawler_in_state = yes }
+    }
+}
+
+PIL_tikras_crawler_in_state = {
+    is_owned_by = IXT
+    is_controlled_by = ROOT
+    any_state_division = {
+        owner = { tag = ROOT }
+        division_has_battalion_in_template = azir_plt_bramble_crawler_battalion
+        unit_strength > 0.75
+    }
+}
+
+PIL_tikras_prospecting = {
+    NOT = { has_war_with = IXT }
+    27 = { is_owned_and_controlled_by = IXT }
+    28 = { is_owned_and_controlled_by = IXT }
+}
+
+PIL_tikras_scene_live = {
+    PIL_tikras_ready = yes
+    has_country_flag = PIL_tikras_pending
+    OR = {
+        AND = {
+            has_country_flag = PIL_tikras_wartime
+            has_war_with = IXT
+            OR = {
+                AND = {
+                    has_country_flag = PIL_tikras_coastal_approach
+                    28 = { PIL_tikras_crawler_in_state = yes }
+                }
+                AND = {
+                    NOT = { has_country_flag = PIL_tikras_coastal_approach }
+                    27 = { PIL_tikras_crawler_in_state = yes }
+                }
+            }
+        }
+        AND = {
+            NOT = { has_country_flag = PIL_tikras_wartime }
+            PIL_tikras_prospecting = yes
+        }
+    }
+}

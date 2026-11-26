@@ -1,0 +1,11 @@
+defined_text = {
+    name = GetAzirKaisaSponsorship
+    text = {
+        trigger = { has_global_flag = azir_kaisa_invasion_price }
+        localization_key = azir_kaisa_hiring_invasion_price
+    }
+    text = {
+        trigger = { NOT = { has_global_flag = azir_kaisa_invasion_price } }
+        localization_key = azir_kaisa_hiring_resistance_price
+    }
+}

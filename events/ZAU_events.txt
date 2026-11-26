@@ -1,0 +1,198 @@
+add_namespace = ZAU_events
+
+country_event = {
+    id = ZAU_events.10
+    title = ZAU_events.10.t
+    desc = ZAU_events.10.d
+    picture = GFX_ZAU_last_drop
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.10.a
+        ai_chance = { factor = 2 }
+        set_country_flag = ZAU_delegates
+        set_country_flag = ZAU_ward_delegates
+    }
+    option = {
+        name = ZAU_events.10.b
+        ai_chance = { factor = 1 }
+        set_country_flag = ZAU_delegates
+        set_country_flag = ZAU_yard_delegates
+    }
+}
+
+country_event = {
+    id = ZAU_events.11
+    title = ZAU_events.11.t
+    desc = ZAU_events.11.d
+    picture = GFX_PIL_ZAU_promenade
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.11.a
+        ai_chance = { factor = 2 }
+        set_country_flag = ZAU_glasc
+        add_ideas = ZAU_glasc_credit_idea
+        50 = { if = { limit = { is_owned_and_controlled_by = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+        if = { limit = { PIL_ZAU_both_present = yes } PLT = { country_event = { id = PIL_events.16 } } }
+    }
+    option = {
+        name = ZAU_events.11.b
+        ai_chance = { factor = 1 }
+        add_timed_idea = { idea = ZAU_lift_repairs_idea days = 120 }
+    }
+}
+
+country_event = {
+    id = ZAU_events.12
+    title = ZAU_events.12.t
+    desc = ZAU_events.12.d
+    picture = GFX_PIL_ZAU_firelights
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.12.a
+        ai_chance = { factor = 2 }
+        add_political_power = -15
+        add_timed_idea = { idea = ZAU_ward_clinics_idea days = 180 }
+    }
+    option = {
+        name = ZAU_events.12.b
+        ai_chance = { factor = 1 }
+        add_timed_idea = { idea = ZAU_ward_clinics_idea days = 90 }
+    }
+}
+
+country_event = {
+    id = ZAU_events.13
+    title = ZAU_events.13.t
+    desc = ZAU_events.13.d
+    picture = GFX_PIL_ZAU_air
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.13.a
+        ai_chance = { factor = 2 }
+        add_political_power = -15
+        add_timed_idea = { idea = ZAU_lift_repairs_idea days = 120 }
+    }
+    option = {
+        name = ZAU_events.13.b
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = ZAU_events.14
+    title = ZAU_events.14.t
+    desc = ZAU_events.14.d
+    picture = GFX_PIL_ZAU_yards
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.14.a
+        ai_chance = { factor = 2 }
+        add_timed_idea = { idea = ZAU_lift_repairs_idea days = 120 }
+    }
+    option = {
+        name = ZAU_events.14.b
+        ai_chance = { factor = 1 }
+        49 = { if = { limit = { is_owned_and_controlled_by = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    }
+}
+
+country_event = {
+    id = ZAU_events.15
+    title = ZAU_events.15.t
+    desc = ZAU_events.15.d
+    picture = GFX_ZAU_singed
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.15.a
+        ai_chance = { factor = 2 }
+        set_country_flag = ZAU_singed
+        add_tech_bonus = { name = PIL_ZAU_hextech_bonus bonus = 0.5 uses = 1 category = electronics }
+    }
+    option = {
+        name = ZAU_events.15.b
+        ai_chance = { factor = 1 }
+        add_stability = 0.01
+    }
+}
+
+country_event = {
+    id = ZAU_events.27
+    title = ZAU_events.27.t
+    desc = ZAU_events.27.d
+    picture = GFX_PIL_ZAU_lift
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.27.a
+        ai_chance = { factor = 2 }
+        50 = { if = { limit = { is_owned_and_controlled_by = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    }
+    option = {
+        name = ZAU_events.27.b
+        ai_chance = { factor = 1 }
+        add_timed_idea = { idea = ZAU_lift_repairs_idea days = 120 }
+    }
+}
+
+country_event = {
+    id = ZAU_events.28
+    title = ZAU_events.28.t
+    desc = ZAU_events.28.d
+    picture = GFX_PIL_ZAU_night_shift
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.28.a
+        ai_chance = { factor = 2 }
+        add_stability = 0.01
+    }
+    option = {
+        name = ZAU_events.28.b
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = ZAU_events.29
+    title = ZAU_events.29.t
+    desc = ZAU_events.29.d
+    picture = GFX_PIL_ZAU_singed_host
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.29.a
+        ai_chance = { factor = 2 }
+        add_tech_bonus = { name = PIL_ZAU_hextech_bonus bonus = 0.5 uses = 1 category = electronics }
+    }
+    option = {
+        name = ZAU_events.29.b
+        ai_chance = { factor = 1 }
+        add_political_power = 15
+    }
+}
+
+country_event = {
+    id = ZAU_events.30
+    title = ZAU_events.30.t
+    desc = ZAU_events.30.d
+    picture = GFX_PIL_ZAU_takeover
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = ZAU_events.30.a
+        ai_chance = { factor = 1 }
+        add_ideas = ZAU_glasc_receivership_idea
+    }
+    option = {
+        name = ZAU_events.30.b
+        ai_chance = { factor = 2 }
+        remove_ideas = ZAU_glasc_credit_idea
+        add_political_power = -25
+    }
+}

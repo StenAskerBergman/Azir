@@ -1,0 +1,10 @@
+XER_renekton_tainted_land = {
+    enable = {
+        is_controlled_by = XER
+        XER = { XER_renekton_can_spread_madness = yes }
+    }
+    remove_trigger = {
+        XER = { NOT = { XER_renekton_can_spread_madness = yes } }
+    }
+    local_resources_factor = -0.15
+}

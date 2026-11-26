@@ -1,0 +1,11 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_azir_icathian_threat_divider"
+        texturefile = "gfx/interface/decisions/azir_icathian_threat_divider.dds"
+    }
+
+    spriteType = {
+        name = "GFX_azir_icathian_resistance_divider"
+        texturefile = "gfx/interface/decisions/azir_icathian_resistance_divider.dds"
+    }
+}

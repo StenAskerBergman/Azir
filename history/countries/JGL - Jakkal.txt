@@ -1,5 +1,4 @@
-capital = 139
-oob = "JGL"
+capital = 108
 
 set_research_slots = 4
 set_stability = 0.65

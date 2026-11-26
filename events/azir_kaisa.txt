@@ -31,5 +31,6 @@ news_event = {
         name = azir_kaisa.1.c
         trigger = { NOT = { has_country_flag = VOI_hybrid_path } }
         ai_chance = { factor = 0 }
+        azir_kaisa_open_foreign_offers = yes
     }
 }

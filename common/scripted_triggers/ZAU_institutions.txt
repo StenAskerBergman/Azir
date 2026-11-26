@@ -1,0 +1,138 @@
+# These triggers are used in Zaun scope unless they name both parties explicitly.
+ZAU_wards_secure = {
+    49 = { is_owned_and_controlled_by = ZAU }
+    50 = { is_owned_and_controlled_by = ZAU }
+}
+
+ZAU_active_detour = {
+    has_idea = ZAU_fallback_freight_idea
+    55 = { is_owned_and_controlled_by = ZAU }
+}
+
+ZAU_freight_operating = {
+    OR = {
+        AND = {
+            has_idea = ZAU_joint_freight
+            PIL_ZAU_joint_freight_operating = yes
+        }
+        ZAU_active_detour = yes
+    }
+}
+
+ZAU_ward_crisis = {
+    OR = {
+        AND = {
+            has_global_flag = PIL_ZAU_betrayal
+            has_country_flag = ZAU_betrayed
+        }
+        has_global_flag = PIL_ZAU_hardened
+    }
+}
+
+ZAU_ward_advisors_available = {
+    has_idea = ZAU_local_purchasing
+    ZAU_wards_secure = yes
+    power_balance_value = { id = ZAU_bop value < -0.50 }
+}
+
+ZAU_glasc_advisors_available = {
+    has_idea = ZAU_exclusive_purchasing
+    has_country_leader = { character = ZAU_renata ruling_only = yes }
+    power_balance_value = { id = ZAU_bop value > 0.50 }
+    NOT = { has_country_flag = ZAU_directorate_wind_down_started }
+}
+
+ZAU_service_cycle_ready = {
+    has_completed_focus = ZAU_markets
+    has_country_flag = ZAU_sump_clinic_funded
+    has_country_flag = ZAU_promenade_workshop_funded
+    ZAU_wards_secure = yes
+    ZAU_freight_operating = yes
+}
+
+ZAU_regional_offers_open = {
+    has_completed_focus = ZAU_engineers
+    NOT = { has_country_flag = ZAU_federation_ratified }
+    NOT = { has_country_flag = ZAU_directorate_wind_down_started }
+    NOT = { has_country_flag = ZAU_directorate_purchasing_ended }
+}
+
+# Safe from either party's scope, including the reply popup.
+ZAU_ixt_site_secure = {
+    country_exists = ZAU
+    country_exists = IXT
+    ZAU = { NOT = { has_war_with = IXT } }
+    55 = { is_owned_and_controlled_by = ZAU }
+    28 = { is_owned_and_controlled_by = IXT }
+}
+
+ZAU_ixt_offer_valid = {
+    ZAU_ixt_site_secure = yes
+    ZAU = {
+        has_country_flag = ZAU_ixt_offer_pending
+        ZAU_regional_offers_open = yes
+    }
+}
+
+ZAU_ixt_delivery_valid = {
+    ZAU_ixt_site_secure = yes
+    has_country_flag = ZAU_ixt_agreement
+    ZAU_freight_operating = yes
+    NOT = { has_country_flag = ZAU_directorate_wind_down_started }
+}
+
+ZAU_ixt_filters_live = {
+    ZAU_ixt_site_secure = yes
+    has_country_flag = ZAU_ixt_agreement
+    has_country_flag = ZAU_ixt_delivery_complete
+    ZAU_freight_operating = yes
+}
+
+# Safe from either party's scope, including the reply popup.
+ZAU_cry_site_secure = {
+    country_exists = ZAU
+    country_exists = CRY
+    ZAU = { NOT = { has_war_with = CRY } }
+    55 = { is_owned_and_controlled_by = ZAU }
+    118 = { is_owned_and_controlled_by = CRY }
+}
+
+ZAU_cry_offer_valid = {
+    ZAU_cry_site_secure = yes
+    ZAU = {
+        has_country_flag = ZAU_cry_offer_pending
+        ZAU_regional_offers_open = yes
+    }
+}
+
+ZAU_cry_delivery_valid = {
+    ZAU_cry_site_secure = yes
+    has_country_flag = ZAU_cry_agreement
+    ZAU_freight_operating = yes
+    NOT = { has_country_flag = ZAU_directorate_wind_down_started }
+}
+
+ZAU_cry_filters_live = {
+    ZAU_cry_site_secure = yes
+    has_country_flag = ZAU_cry_agreement
+    has_country_flag = ZAU_cry_delivery_complete
+    ZAU_freight_operating = yes
+}
+
+ZAU_regional_filters_live = {
+    OR = {
+        ZAU_ixt_filters_live = yes
+        ZAU_cry_filters_live = yes
+    }
+}
+
+ZAU_industrial_credit_eligible = {
+    ZAU_glasc_advisors_available = yes
+    ZAU_regional_filters_live = yes
+}
+
+ZAU_ward_recovery_eligible = {
+    has_idea = ZAU_local_purchasing
+    has_country_flag = ZAU_ward_services_proven
+    ZAU_wards_secure = yes
+}

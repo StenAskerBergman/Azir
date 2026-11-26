@@ -4,6 +4,7 @@ tags={
 	"Events"
 	"Alternative History"
 }
+replace_path="gfx/loadingscreens"
 dependencies={
 	"Runeterra"
 	"Runeterra - Quarior patch"

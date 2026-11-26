@@ -1,0 +1,30 @@
+ideas = {
+    country = {
+        TAR_solari_law_spirit = {
+            removal_cost = -1
+            modifier = {
+                power_balance_daily = -0.001
+                theocracy_drift = 0.02
+                production_factory_efficiency_gain_factor = 0.08
+                production_speed_industrial_complex_factor = -0.08
+            }
+        }
+        TAR_lunari_law_spirit = {
+            removal_cost = -1
+            modifier = {
+                power_balance_daily = 0.001
+                oligarchy_drift = 0.02
+                research_speed_factor = 0.05
+                planning_speed = -0.10
+            }
+        }
+        TAR_rakkor_law_spirit = {
+            removal_cost = -1
+            modifier = {
+                absolutists_drift = 0.02
+                supply_consumption_factor = -0.10
+                max_planning_factor = -0.08
+            }
+        }
+    }
+}

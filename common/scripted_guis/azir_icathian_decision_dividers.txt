@@ -1,0 +1,19 @@
+scripted_gui = {
+    azir_icathian_threat_divider_ui = {
+        context_type = decision_category
+        window_name = "azir_icathian_threat_divider_window"
+        visible = {
+            has_country_flag = embraced_the_void
+            NOT = { has_country_flag = resisted_the_void }
+        }
+    }
+
+    azir_icathian_resistance_divider_ui = {
+        context_type = decision_category
+        window_name = "azir_icathian_resistance_divider_window"
+        visible = {
+            has_country_flag = embraced_the_void
+            NOT = { has_country_flag = resisted_the_void }
+        }
+    }
+}

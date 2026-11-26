@@ -1,0 +1,75 @@
+ideas = {
+    country = {
+        PIL_reserved_capacity = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = -0.03 }
+        }
+
+        PIL_priority_freight = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.10 }
+        }
+
+        PIL_freight_disruption = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = -0.08 }
+        }
+
+        PIL_emergency_freight = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.04 industrial_capacity_factory = -0.02 }
+        }
+
+        PIL_fallback_freight_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.08 industrial_capacity_factory = 0.025 }
+        }
+
+        PIL_joint_freight = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.06 research_speed_factor = 0.04 consumer_goods_factor = -0.03 }
+        }
+
+        ZAU_reserved_capacity = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = -0.03 }
+        }
+
+        ZAU_priority_freight = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.10 }
+        }
+
+        ZAU_freight_disruption = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = -0.08 }
+        }
+
+        ZAU_emergency_freight = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.04 industrial_capacity_factory = -0.02 }
+        }
+
+        ZAU_fallback_freight_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.08 industrial_capacity_factory = 0.025 }
+        }
+
+        ZAU_joint_freight = {
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.06 research_speed_factor = 0.04 consumer_goods_factor = -0.03 }
+        }
+    }
+}

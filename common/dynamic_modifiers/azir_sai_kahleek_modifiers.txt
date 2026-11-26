@@ -1,0 +1,4 @@
+azir_sai_kahleek_road_closed = {
+    enable = { always = yes }
+    local_supplies = -0.25
+}

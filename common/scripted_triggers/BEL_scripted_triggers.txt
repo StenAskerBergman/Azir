@@ -1,0 +1,54 @@
+# Runeterra uses its own focus trees, decisions and game rules. Unavailable WWII prerequisites evaluate to false.
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+# 
+
+BEL_historical_ai = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			always = no
+		}
+		has_country_flag = BEL_AI_RANDOM_HISTORICAL
+		always = no
+	}
+}
+
+BEL_nationalist_fascist_ai = {
+	OR = {
+		has_country_flag = BEL_AI_RANDOM_NATIONALIST_FASCIST
+		always = no
+	}
+}
+
+BEL_expansionist_fascist_ai = {
+	OR = {
+		has_country_flag = BEL_AI_RANDOM_EXPANSIONIST_FASCIST
+		always = no
+	}
+}
+
+BEL_defensive_democrat_ai = {
+	OR = {
+		has_country_flag = BEL_AI_RANDOM_DEFENSIVE_DEMOCRAT
+		always = no
+	}
+}
+
+BEL_communist_ai = {
+	OR = {
+		has_country_flag = BEL_AI_RANDOM_COMMUNIST
+		always = no
+	}
+}

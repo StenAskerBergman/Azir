@@ -1,0 +1,19 @@
+XER_bop = {
+    initial_value = 0
+    left_side = XER_bop_magus
+    right_side = XER_bop_governors
+    decision_category = XER_bop_decisions
+    range = { id = XER_bop_unsettled min = -0.25 max = 0.25 }
+    side = {
+        id = XER_bop_magus
+        icon = GFX_bop_SWI_centralization_council_side
+        range = { id = XER_bop_magus_influence min = -0.65 max = -0.25 }
+        range = { id = XER_bop_magus_mandate min = -1 max = -0.65 }
+    }
+    side = {
+        id = XER_bop_governors
+        icon = GFX_bop_SWI_centralization_canton_side
+        range = { id = XER_bop_governor_influence min = 0.25 max = 0.65 }
+        range = { id = XER_bop_governor_mandate min = 0.65 max = 1 }
+    }
+}

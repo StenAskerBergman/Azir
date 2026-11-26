@@ -1,0 +1,31 @@
+add_namespace = SHU_opening
+
+country_event = {
+    id = SHU_opening.1
+    title = SHU_opening.1.t
+    desc = SHU_opening.1.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = { original_tag = SHU }
+
+    # Shurima chooses its own policy. Nazumah keeps control of its diplomatic responses.
+    option = {
+        name = SHU_opening.1.a
+        ai_chance = { factor = 60 }
+        if = {
+            limit = { country_exists = NAZ }
+            add_opinion_modifier = { target = NAZ modifier = SHU_nazumah_respect_autonomy }
+        }
+    }
+
+    option = {
+        name = SHU_opening.1.b
+        ai_chance = { factor = 40 }
+        if = {
+            limit = { country_exists = NAZ }
+            add_opinion_modifier = { target = NAZ modifier = SHU_nazumah_contest_autonomy }
+        }
+    }
+}

@@ -373,3 +373,125 @@ country_event = {
         ai_chance = { base = 1 }
     }
 }
+
+# Regional agreements are separate from the authored subject exchange.
+add_namespace = NAZ_regional
+
+country_event = {
+    id = NAZ_regional.1
+    title = NAZ_regional.1.t
+    desc = NAZ_regional.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { FROM = { tag = SHU } NAZ_SHU_compact_eligible = yes }
+
+    option = {
+        name = NAZ_regional.1.a
+        ai_chance = {
+            base = 70
+            modifier = { factor = 2 NAZ_hunters_in_office = yes }
+        }
+        if = {
+            limit = { FROM = { tag = SHU } NAZ_SHU_compact_eligible = yes }
+            set_country_flag = SHU_nazumah_defense_compact_accepted
+            FROM = {
+                clr_country_flag = SHU_nazumah_defense_compact_pending
+                set_country_flag = SHU_nazumah_defense_compact_accepted
+            }
+        }
+    }
+    option = {
+        name = NAZ_regional.1.b
+        ai_chance = { base = 30 }
+        if = {
+            limit = { FROM = { tag = SHU } NAZ_SHU_compact_eligible = yes }
+            FROM = {
+                clr_country_flag = SHU_nazumah_defense_compact_pending
+                set_country_flag = { flag = SHU_offer_nazumah_defense_compact_cooldown days = 120 value = 1 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = NAZ_regional.2
+    title = NAZ_regional.2.t
+    desc = NAZ_regional.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { FROM = { tag = XER } NAZ_XER_armistice_eligible = yes }
+
+    option = {
+        name = NAZ_regional.2.a
+        ai_chance = {
+            base = 65
+            modifier = { factor = 2 NAZ_hunters_in_office = yes }
+        }
+        if = {
+            limit = { FROM = { tag = XER } NAZ_XER_armistice_eligible = yes }
+            FROM = {
+                clr_country_flag = XER_NAZ_armistice_refused
+                set_country_flag = { flag = XER_NAZ_armistice_accepted days = 30 value = 1 }
+                country_event = { id = XER_regional.1 }
+            }
+        }
+    }
+    option = {
+        name = NAZ_regional.2.b
+        ai_chance = { base = 35 }
+        if = {
+            limit = { FROM = { tag = XER } NAZ_XER_armistice_eligible = yes }
+            FROM = {
+                clr_country_flag = XER_NAZ_armistice_accepted
+                set_country_flag = { flag = XER_NAZ_armistice_refused days = 30 value = 1 }
+                country_event = { id = XER_regional.1 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = NAZ_regional.3
+    title = NAZ_regional.3.t
+    desc = NAZ_regional.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { tag = NAZ has_country_flag = NAZ_joint_command_active }
+
+    option = {
+        name = NAZ_regional.3.a
+        ai_chance = { base = 80 }
+        NAZ_end_joint_command = yes
+    }
+    option = {
+        name = NAZ_regional.3.b
+        trigger = { NAZ_can_extend_joint_command = yes }
+        ai_chance = { base = 20 }
+        if = {
+            limit = { NAZ_can_extend_joint_command = yes }
+            add_stability = -0.05
+            set_country_flag = NAZ_joint_command_extended
+            add_timed_idea = { idea = NAZ_joint_mobilization days = 120 }
+            activate_mission = NAZ_joint_mandate_term
+        }
+        else = { NAZ_end_joint_command = yes }
+    }
+}
+
+country_event = {
+    id = NAZ_regional.4
+    title = NAZ_regional.4.t
+    desc = NAZ_regional.4.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = NAZ_regional.4.a ai_chance = { base = 1 } add_war_support = 0.05 }
+}
+
+country_event = {
+    id = NAZ_regional.5
+    title = NAZ_regional.5.t
+    desc = NAZ_regional.5.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = NAZ_regional.5.a ai_chance = { base = 1 } add_stability = 0.05 }
+}

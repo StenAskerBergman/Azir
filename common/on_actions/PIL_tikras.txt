@@ -1,0 +1,50 @@
+on_actions = {
+    on_annex = {
+        effect = {
+            if = {
+                limit = {
+                    tag = ZAU
+                    original_tag = ZAU
+                    FROM = {
+                        original_tag = PLT
+                        has_tech = PIL_bramble_crawler_design
+                    }
+                }
+                set_country_flag = ZAU_excavator_archive_secured
+            }
+        }
+    }
+
+    # ROOT is the new controller. FROM.FROM is the state.
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    tag = ZAU
+                    original_tag = ZAU
+                    FROM.FROM = { state = 51 }
+                    PLT = { has_tech = PIL_bramble_crawler_design }
+                }
+                set_country_flag = ZAU_excavator_archive_secured
+            }
+            if = {
+                limit = {
+                    PIL_tikras_ready = yes
+                    NOT = { has_country_flag = PIL_tikras_pending }
+                    has_war_with = IXT
+                    FROM = { tag = IXT }
+                    FROM.FROM = {
+                        OR = { state = 27 state = 28 }
+                        PIL_tikras_crawler_in_state = yes
+                    }
+                }
+                set_country_flag = PIL_tikras_wartime
+                if = {
+                    limit = { FROM.FROM = { state = 28 } }
+                    set_country_flag = PIL_tikras_coastal_approach
+                }
+                PIL_tikras_begin = yes
+            }
+        }
+    }
+}

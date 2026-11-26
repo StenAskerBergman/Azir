@@ -1,0 +1,44 @@
+PIL_tikras_begin = {
+    set_country_flag = PIL_tikras_pending
+    country_event = { id = PIL_tikras.1 }
+}
+
+PIL_tikras_close = {
+    clr_country_flag = PIL_tikras_pending
+    clr_country_flag = PIL_tikras_wartime
+    clr_country_flag = PIL_tikras_coastal_approach
+    set_country_flag = PIL_tikras_resolved
+}
+
+PIL_tikras_destroy = {
+    set_global_flag = PIL_tikras_destroyed
+    if = {
+        limit = { has_country_flag = PIL_tikras_coastal_approach }
+        28 = { damage_building = { type = infrastructure damage = 1 } }
+    }
+    else = {
+        27 = { damage_building = { type = infrastructure damage = 1 } }
+    }
+    PIL_tikras_close = yes
+    IXT = {
+        add_stability = -0.03
+        add_opinion_modifier = { target = ROOT modifier = PIL_tikras_grievance }
+        country_event = { id = PIL_tikras.5 }
+    }
+    country_event = { id = PIL_tikras.4 }
+}
+
+ZAU_excavator_register_column = {
+    division_template = {
+        name = "River Pilt Reclamation Column"
+        override_model = ZAU_bramble_crawler_entity
+        regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+            infantry = { x = 0 y = 3 }
+            azir_plt_bramble_crawler_battalion = { x = 1 y = 0 }
+            azir_plt_bramble_crawler_battalion = { x = 1 y = 1 }
+        }
+    }
+}

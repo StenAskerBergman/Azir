@@ -1,4 +1,4 @@
-capital = 133
+capital = 125
 oob = "SHK"
 
 set_research_slots = 2

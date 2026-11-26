@@ -1,0 +1,54 @@
+ideas = {
+    country = {
+        NAZ_guard_levy = {
+            picture = generic_research_bonus
+            allowed = { original_tag = NAZ }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = 0.10
+                dig_in_speed_factor = 0.15
+                supply_consumption_factor = 0.10
+            }
+        }
+
+        NAZ_contract_muster = {
+            picture = generic_research_bonus
+            allowed = { original_tag = NAZ }
+            removal_cost = -1
+            modifier = {
+                army_speed_factor = 0.05
+                supply_consumption_factor = -0.10
+                dig_in_speed_factor = -0.15
+            }
+        }
+
+        NAZ_guard_stood_down = {
+            picture = generic_research_bonus
+            allowed = { original_tag = NAZ }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = -0.08
+            }
+        }
+
+        NAZ_companies_recalled = {
+            picture = generic_research_bonus
+            allowed = { original_tag = NAZ }
+            removal_cost = -1
+            modifier = {
+                army_speed_factor = -0.08
+            }
+        }
+
+        NAZ_joint_mobilization = {
+            picture = generic_research_bonus
+            allowed = { original_tag = NAZ }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = 0.08
+                army_speed_factor = 0.05
+                supply_consumption_factor = 0.25
+            }
+        }
+    }
+}

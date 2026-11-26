@@ -1,0 +1,12 @@
+PIL_regional_diplomacy = {
+    icon = GFX_decision_category_generic_industry
+    picture = GFX_PIL_domestic_agenda
+    allowed = { OR = { PIL_is_piltover = yes tag = IXT tag = CRY } }
+    visible = {
+        OR = {
+            AND = { PIL_is_piltover = yes has_completed_focus = PIL_negotiators }
+            AND = { tag = IXT PLT = { has_country_flag = PIL_ix_survey_agreement } }
+            AND = { tag = CRY PLT = { has_country_flag = PIL_scar_registry_agreement } }
+        }
+    }
+}

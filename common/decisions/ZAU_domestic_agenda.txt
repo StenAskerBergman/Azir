@@ -1,0 +1,237 @@
+ZAU_domestic_agenda = {
+    ZAU_meal_vouchers = {
+        icon = generic_construction
+        allowed = { tag = ZAU }
+        visible = { NOT = { has_country_flag = ZAU_meal_vouchers } }
+        cost = 10
+        complete_effect = {
+            set_country_flag = ZAU_meal_vouchers
+            country_event = { id = ZAU_events.28 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    ZAU_fund_sump_clinic = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 25
+        days_remove = 30
+        visible = {
+            has_completed_focus = ZAU_ward_compact
+            NOT = { has_country_flag = ZAU_sump_clinic_funded }
+        }
+        available = { 49 = { is_owned_and_controlled_by = ZAU } }
+        cancel_trigger = { NOT = { 49 = { is_owned_and_controlled_by = ZAU } } }
+        remove_effect = {
+            if = {
+                limit = { 49 = { is_owned_and_controlled_by = ZAU } }
+                set_country_flag = ZAU_sump_clinic_funded
+            }
+        }
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 ZAU_ward_crisis = yes }
+        }
+    }
+
+    ZAU_fund_promenade_workshop = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 25
+        days_remove = 30
+        visible = {
+            has_completed_focus = ZAU_markets
+            NOT = { has_country_flag = ZAU_promenade_workshop_funded }
+        }
+        available = { 50 = { is_owned_and_controlled_by = ZAU } }
+        cancel_trigger = { NOT = { 50 = { is_owned_and_controlled_by = ZAU } } }
+        remove_effect = {
+            if = {
+                limit = { 50 = { is_owned_and_controlled_by = ZAU } }
+                set_country_flag = ZAU_promenade_workshop_funded
+            }
+        }
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 ZAU_ward_crisis = yes }
+        }
+    }
+
+    ZAU_begin_ward_service_cycle = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 20
+        visible = { has_completed_focus = ZAU_markets }
+        available = {
+            ZAU_service_cycle_ready = yes
+            NOT = { has_active_mission = ZAU_ward_service_cycle }
+            NOT = { has_idea = ZAU_ward_resilience }
+        }
+        complete_effect = {
+            if = {
+                limit = {
+                    ZAU_service_cycle_ready = yes
+                    NOT = { has_active_mission = ZAU_ward_service_cycle }
+                }
+                activate_mission = ZAU_ward_service_cycle
+                if = {
+                    limit = { ZAU_regional_filters_live = yes }
+                    add_days_mission_timeout = { mission = ZAU_ward_service_cycle days = -30 }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 3
+            modifier = { factor = 3 ZAU_ward_crisis = yes }
+        }
+    }
+
+    ZAU_ward_service_cycle = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        days_mission_timeout = 90
+        is_good = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = { ZAU_service_cycle_ready = no }
+        timeout_effect = {
+            if = {
+                limit = { ZAU_service_cycle_ready = yes }
+                set_country_flag = ZAU_ward_services_proven
+                add_timed_idea = { idea = ZAU_ward_resilience days = 180 }
+                country_event = { id = ZAU_events.31 }
+            }
+        }
+    }
+
+    ZAU_dispatch_ward_recovery = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 20
+        days_remove = 30
+        days_re_enable = 90
+        visible = {
+            has_idea = ZAU_local_purchasing
+            has_country_flag = ZAU_ward_recovery_due
+        }
+        available = { ZAU_ward_recovery_eligible = yes has_country_flag = ZAU_ward_recovery_due }
+        complete_effect = { clr_country_flag = ZAU_ward_recovery_due }
+        cancel_trigger = { ZAU_ward_recovery_eligible = no }
+        cancel_effect = {
+            if = {
+                limit = { has_idea = ZAU_local_purchasing }
+                set_country_flag = ZAU_ward_recovery_due
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = { ZAU_ward_recovery_eligible = yes }
+                add_timed_idea = { idea = ZAU_ward_repair_crews days = 60 }
+            }
+        }
+        ai_will_do = { factor = 12 }
+    }
+
+    ZAU_build_lower_landing_freight_works = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 35
+        days_remove = 60
+        visible = {
+            has_completed_focus = ZAU_consolidation
+            NOT = { has_country_flag = ZAU_freight_works_complete }
+        }
+        available = { 55 = { is_owned_and_controlled_by = ZAU } }
+        cancel_trigger = { NOT = { 55 = { is_owned_and_controlled_by = ZAU } } }
+        remove_effect = {
+            if = {
+                limit = { 55 = { is_owned_and_controlled_by = ZAU } }
+                set_country_flag = ZAU_freight_works_complete
+                55 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            }
+        }
+        ai_will_do = {
+            factor = 3
+            modifier = { factor = 0.2 has_country_flag = ZAU_betrayed ZAU_active_detour = no }
+        }
+    }
+
+    ZAU_order_directorate_equipment = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 35
+        days_remove = 45
+        days_re_enable = 90
+        visible = { has_idea = ZAU_exclusive_purchasing }
+        available = {
+            has_idea = ZAU_contract_industrial_credit
+            ZAU_industrial_credit_eligible = yes
+        }
+        cancel_trigger = { ZAU_industrial_credit_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { ZAU_industrial_credit_eligible = yes }
+                add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = ZAU }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    ZAU_invoke_firelight_mandate = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 25
+        days_remove = 60
+        days_re_enable = 35
+        visible = {
+            has_completed_focus = ZAU_firelight_emergency_federation
+            NOT = { has_country_flag = ZAU_federation_ratified }
+        }
+        available = {
+            ZAU_wards_secure = yes
+            ZAU_ward_crisis = yes
+            NOT = { has_country_flag = ZAU_federation_vote_pending }
+        }
+        complete_effect = {
+            add_ideas = ZAU_firelight_mandate_idea
+            country_event = { id = ZAU_events.32 }
+        }
+        cancel_trigger = { ZAU_wards_secure = no }
+        cancel_effect = {
+            remove_ideas = ZAU_firelight_mandate_idea
+            country_event = { id = ZAU_events.34 }
+        }
+        remove_effect = {
+            remove_ideas = ZAU_firelight_mandate_idea
+            if = {
+                limit = { ZAU_wards_secure = yes ZAU_active_detour = yes }
+                set_country_flag = { flag = ZAU_federation_vote_pending days = 30 }
+                country_event = { id = ZAU_events.33 }
+            }
+            else = { country_event = { id = ZAU_events.34 } }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 ZAU_active_detour = no }
+            modifier = { factor = 5 ZAU_active_detour = yes }
+        }
+    }
+
+    ZAU_federation_emergency_repairs = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        cost = 20
+        days_remove = 30
+        days_re_enable = 90
+        visible = { has_country_flag = ZAU_federation_ratified }
+        available = { ZAU_wards_secure = yes ZAU_active_detour = yes }
+        cancel_trigger = { OR = { ZAU_wards_secure = no ZAU_active_detour = no } }
+        remove_effect = {
+            if = {
+                limit = { ZAU_wards_secure = yes ZAU_active_detour = yes }
+                add_timed_idea = { idea = ZAU_ward_repair_crews days = 60 }
+            }
+        }
+        ai_will_do = { factor = 4 }
+    }
+}

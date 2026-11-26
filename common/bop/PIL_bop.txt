@@ -1,0 +1,19 @@
+PIL_bop = {
+    initial_value = 0
+    left_side = PIL_bop_cooperative
+    right_side = PIL_bop_coercive
+    decision_category = PIL_bop_decisions
+    range = { id = PIL_bop_status_quo min = -0.20 max = 0.20 }
+    side = {
+        id = PIL_bop_cooperative
+        icon = GFX_bop_SWI_centralization_council_side
+        range = { id = PIL_bop_opening min = -0.50 max = -0.20 }
+        range = { id = PIL_bop_charter min = -1 max = -0.50 }
+    }
+    side = {
+        id = PIL_bop_coercive
+        icon = GFX_bop_SWI_centralization_canton_side
+        range = { id = PIL_bop_control min = 0.20 max = 0.50 }
+        range = { id = PIL_bop_prerogative min = 0.50 max = 1 }
+    }
+}

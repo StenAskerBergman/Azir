@@ -1,0 +1,27 @@
+azir_sp_xer_arcane_siege_battery = {
+    specialization = specialization_land
+    allowed = {
+        original_tag = XER
+        has_dlc = "Gotterdammerung"
+    }
+
+    visible = {
+        FROM = {
+            has_completed_focus = XER_xerath_conquest
+            has_country_leader = { character = XER_xerath }
+            controls_state = 139
+        }
+    }
+
+    icon = GFX_focus_XER_power_hungry
+    breakthrough_cost = { specialization_land = 1 }
+    prototype_time = 28
+    complexity = sp_complexity.small
+
+    # The AI has no division template that uses the battery.
+    ai_will_do = { base = 0 }
+
+    project_output = {
+        enable_subunits = { azir_xer_arcane_siege_battery }
+    }
+}

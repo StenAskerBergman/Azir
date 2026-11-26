@@ -7,7 +7,8 @@ param(
     [string]$Save,
     [switch]$GameDebug,
     [switch]$Preview,
-    [string]$GameDirectory = 'E:/SteamLibrary/steamapps/common/Hearts of Iron IV'
+    [string]$GameDirectory = 'E:/SteamLibrary/steamapps/common/Hearts of Iron IV',
+    [string]$CandidateDirectory
 )
 
 $ErrorActionPreference = 'Stop'
@@ -43,6 +44,29 @@ if ($selected) {
     Write-Host 'Open the main menu'
 }
 Write-Host "Arguments: $($launchArguments -join ' ')"
+if ($CandidateDirectory) {
+    $candidate = Get-Item -LiteralPath $CandidateDirectory
+    $bundle = Join-Path $candidate.FullName 'RuneterraSprint'
+    if (-not (Test-Path -LiteralPath (Join-Path $candidate.FullName 'build-receipt.json') -PathType Leaf) -or
+        -not (Test-Path -LiteralPath (Join-Path $bundle 'descriptor.mod') -PathType Leaf)) {
+        throw "Expected a frozen sprint candidate in $CandidateDirectory."
+    }
+
+    $settings = Get-Content -LiteralPath (Join-Path $userDirectory 'dlc_load.json') -Raw | ConvertFrom-Json
+    $enabled = @($settings.enabled_mods | Where-Object { $_ })
+    if ($enabled.Count -ne 1) {
+        throw "Select only $($candidate.Name) in the launcher. Saved playset contains $($enabled.Count) enabled mods: $($enabled -join ', ')."
+    }
+    $descriptor = Join-Path $userDirectory $enabled[0]
+    $target = @(Select-String -LiteralPath $descriptor -Pattern '^\s*path\s*=\s*"([^"]+)"\s*$')
+    if ($target.Count -ne 1) { throw "Expected one package path in $descriptor." }
+    $selectedPath = $target[0].Matches[0].Groups[1].Value
+    $resolvedTarget = [IO.Path]::GetFullPath($selectedPath, $userDirectory)
+    if ($resolvedTarget.TrimEnd('\', '/') -ne $bundle) {
+        throw "Saved playset selects $resolvedTarget. Select only $bundle to test $($candidate.Name)."
+    }
+    Write-Host "Saved playset selects $($candidate.Name) only ($($enabled[0]))."
+}
 if ($Preview) { return }
 if (Get-Process hoi4 -ErrorAction SilentlyContinue) {
     throw 'HOI4 is already running. Exit it before launching a different test session.'

@@ -1,0 +1,25 @@
+PIL_domestic_agenda = {
+    PIL_test_bramble_crawlers = {
+        icon = GFX_decision_PIL_hextech_excavator
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_tech = PIL_bramble_crawler_design
+            NOR = {
+                has_country_flag = PIL_bramble_trials_pending
+                has_country_flag = PIL_bramble_trials_finished
+            }
+        }
+        available = { PIL_bramble_test_site_ready = yes }
+        cancel_trigger = { PIL_bramble_test_site_ready = no }
+        cost = 25
+        days_remove = 45
+        remove_effect = {
+            if = {
+                limit = { PIL_bramble_test_site_ready = yes }
+                set_country_flag = { flag = PIL_bramble_trials_pending days = 14 }
+                country_event = { id = PIL_bramble_crawler.1 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

@@ -1,0 +1,49 @@
+PIL_ZAU_crossings = {
+    PIL_ZAU_bridge_survey = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = {
+            has_completed_focus = PIL_survey
+            NOT = { has_global_flag = PIL_ZAU_inspected_bridge }
+        }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            has_completed_focus = PIL_survey
+            ZAU = { has_completed_focus = ZAU_engineers }
+            NOT = { has_global_flag = PIL_ZAU_inspected_bridge }
+            NOT = { has_country_flag = PIL_survey_pending }
+        }
+        cost = 20
+        complete_effect = {
+            set_country_flag = PIL_survey_pending
+            country_event = { id = PIL_ZAU_events.17 }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    PIL_ZAU_bridge_reopen = {
+        icon = generic_construction
+        allowed = { OR = { tag = PLT tag = ZAU } }
+        visible = { PIL_ZAU_mutual_cooperation = yes }
+        available = { PIL_ZAU_mutual_cooperation = yes PLT = { has_completed_focus = PIL_bridge_works } ZAU = { has_completed_focus = ZAU_bridge_works } 52 = { is_owned_and_controlled_by = PLT } 50 = { is_owned_and_controlled_by = ZAU } }
+        cost = 15
+        complete_effect = {
+            set_global_flag = PIL_ZAU_crossing_reopened
+            52 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            50 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            PLT = {
+                clr_country_flag = PIL_crossing_concession
+                remove_ideas = PIL_reserved_capacity
+                add_ideas = PIL_joint_freight
+                country_event = { id = PIL_ZAU_events.25 }
+            }
+            ZAU = {
+                clr_country_flag = ZAU_crossing_concession
+                remove_ideas = ZAU_reserved_capacity
+                add_ideas = ZAU_joint_freight
+                country_event = { id = PIL_ZAU_events.25 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

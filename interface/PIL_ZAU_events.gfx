@@ -1,0 +1,35 @@
+spriteTypes = {
+    spriteType = { name = "GFX_portrait_ZAU_renata" texturefile = "gfx/leaders/Zaun/ZAU_renata.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_progress" texturefile = "gfx/event_pictures/PIL_ZAU/progress.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_paper" texturefile = "gfx/event_pictures/PIL_ZAU/paper.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_light" texturefile = "gfx/event_pictures/PIL_ZAU/light.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_ledger" texturefile = "gfx/event_pictures/PIL_ZAU/ledger.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_licenses" texturefile = "gfx/event_pictures/PIL_ZAU/licenses.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_academy" texturefile = "gfx/event_pictures/PIL_ZAU/academy.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_fog" texturefile = "gfx/event_pictures/PIL_ZAU/fog.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_roofs" texturefile = "gfx/event_pictures/PIL_ZAU/roofs.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_departures" texturefile = "gfx/event_pictures/PIL_ZAU/departures.dds" }
+    spriteType = { name = "GFX_ZAU_last_drop" texturefile = "gfx/event_pictures/PIL_ZAU/last_drop.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_promenade" texturefile = "gfx/event_pictures/PIL_ZAU/promenade.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_firelights" texturefile = "gfx/event_pictures/PIL_ZAU/firelights.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_air" texturefile = "gfx/event_pictures/PIL_ZAU/air.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_yards" texturefile = "gfx/event_pictures/PIL_ZAU/yards.dds" }
+    spriteType = { name = "GFX_ZAU_singed" texturefile = "gfx/event_pictures/PIL_ZAU/singed.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_glasc_offer" texturefile = "gfx/event_pictures/PIL_ZAU/glasc_offer.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_survey" texturefile = "gfx/event_pictures/PIL_ZAU/survey.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_inspection" texturefile = "gfx/event_pictures/PIL_ZAU/inspection.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_accord" texturefile = "gfx/event_pictures/PIL_ZAU/accord.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_rift" texturefile = "gfx/event_pictures/PIL_ZAU/rift.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_calibration" texturefile = "gfx/event_pictures/PIL_ZAU/calibration.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_suspended" texturefile = "gfx/event_pictures/PIL_ZAU/suspended.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_reopened" texturefile = "gfx/event_pictures/PIL_ZAU/reopened.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_bridge_relief" texturefile = "gfx/event_pictures/PIL_ZAU/bridge_relief.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_lift" texturefile = "gfx/event_pictures/PIL_ZAU/lift.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_night_shift" texturefile = "gfx/event_pictures/PIL_ZAU/night_shift.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_singed_host" texturefile = "gfx/event_pictures/PIL_ZAU/singed_host.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_takeover" texturefile = "gfx/event_pictures/PIL_ZAU/takeover.dds" }
+    spriteType = { name = "GFX_PIL_ZAU_banner" texturefile = "gfx/interface/bop/PIL_ZAU/banner.dds" }
+    spriteType = { name = "GFX_PIL_domestic_agenda" texturefile = "gfx/interface/bop/PIL_ZAU/PIL_agenda.dds" }
+    spriteType = { name = "GFX_ZAU_domestic_agenda" texturefile = "gfx/interface/bop/PIL_ZAU/ZAU_agenda.dds" }
+    spriteType = { name = "GFX_PIL_hardened" texturefile = "gfx/event_pictures/PIL_ZAU/PIL_hardened.dds" }
+}

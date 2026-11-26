@@ -1,0 +1,21 @@
+spriteTypes = {
+    # Base UI widgets still request these sprites with the Runeterra interface loaded.
+    spriteType = {
+        name = "GFX_portrait_GER_oswald_lutz"
+        texturefile = "gfx/leaders/GER/portrait_GER_oswald_lutz.dds"
+    }
+    spriteType = {
+        name = "GFX_advisor_category_filter_button"
+        texturefile = "gfx/interface/buttons/advisor_category_filter_button.dds"
+        noOfFrames = 2
+    }
+}
+
+# The Quarior super-event description uses the base newsfeed font in-game.
+bitmapfonts = {
+    bitmapfont = {
+        name = "newsfeed_body"
+        path = "gfx/fonts/newsfeed_body"
+        color = 0xffffffff
+    }
+}

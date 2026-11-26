@@ -1,0 +1,65 @@
+PIL_domestic_agenda = {
+
+    PIL_review_licensed_designs = {
+        icon = generic_research
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            PIL_public_licensing_enacted = yes has_completed_focus = PIL_public_warrant_council
+            NOR = { has_country_flag = PIL_review_licensed_designs_pending has_country_flag = PIL_review_licensed_designs_resolved }
+        }
+        available = { PIL_review_licensed_designs_eligible = yes }
+        cost = 15
+        days_remove = 30
+        cancel_trigger = { PIL_review_licensed_designs_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { PIL_review_licensed_designs_eligible = yes }
+                set_country_flag = { flag = PIL_review_licensed_designs_pending days = 14 }
+                country_event = { id = PIL_route_review.1 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    PIL_review_ferros_reserve = {
+        icon = generic_industry
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            PIL_exclusive_procurement_enacted = yes has_completed_focus = PIL_council_prerogative
+            NOR = { has_country_flag = PIL_review_ferros_reserve_pending has_country_flag = PIL_review_ferros_reserve_resolved }
+        }
+        available = { PIL_review_ferros_reserve_eligible = yes }
+        cost = 15
+        days_remove = 30
+        cancel_trigger = { PIL_review_ferros_reserve_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { PIL_review_ferros_reserve_eligible = yes }
+                set_country_flag = { flag = PIL_review_ferros_reserve_pending days = 14 }
+                country_event = { id = PIL_route_review.2 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    PIL_check_inspected_tenders = {
+        icon = generic_political_discourse
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_idea = PIL_inspection_regime
+            NOR = { has_country_flag = PIL_check_inspected_tenders_pending has_country_flag = PIL_check_inspected_tenders_resolved }
+        }
+        available = { PIL_check_inspected_tenders_eligible = yes }
+        cost = 15
+        days_remove = 30
+        cancel_trigger = { PIL_check_inspected_tenders_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { PIL_check_inspected_tenders_eligible = yes }
+                set_country_flag = { flag = PIL_check_inspected_tenders_pending days = 14 }
+                country_event = { id = PIL_route_review.3 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+}

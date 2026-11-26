@@ -1,0 +1,6 @@
+ZAU_kaisa_missing_shift = {
+    icon = GFX_decision_category_generic_industry
+    picture = GFX_news_event_azir_kaisa_returns
+    allowed = { original_tag = ZAU }
+    visible = { has_country_flag = ZAU_kaisa_provisional }
+}

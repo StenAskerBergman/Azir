@@ -1,0 +1,32 @@
+sub_units = {
+    azir_plt_bramble_crawler_battalion = {
+        abbreviation = "BRAM"
+        sprite = bramble_crawler
+        map_icon_category = armored
+        priority = 1800
+        ai_priority = 0
+        active = no
+        affects_speed = yes
+        type = { armor }
+        group = armor
+        categories = { category_front_line category_all_armor category_army }
+        combat_width = 2
+        manpower = 360
+        max_strength = 10
+        max_organisation = 12
+        default_morale = 0.20
+        training_time = 150
+        weight = 1.5
+        supply_consumption = 0.32
+        can_be_parachuted = no
+        essential = { azir_plt_bramble_crawler }
+        need = { azir_plt_bramble_crawler = 12 }
+
+        jungle = { movement = 2.10 attack = 0.08 }
+        forest = { movement = 0.15 }
+        marsh = { movement = -0.30 }
+        mountain = { movement = -0.25 }
+        river = { movement = -0.20 }
+        amphibious = { attack = -0.50 }
+    }
+}

@@ -1,0 +1,237 @@
+VOI_void_influence_category = {
+    VOI_muster_belveth = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_our_queen
+        }
+
+        available = {
+            has_character = VOI_Belveth
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_belveth_tt
+            hidden_effect = {
+                set_technology = { azir_voi_belveth_muster = 1 popup = no }
+                division_template = {
+                    name = "Bel'Veth's Royal Host"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_belveth_roster_entity
+                    regiments = {
+                        azir_voi_belveth_battalion = { x = 0 y = 0 }
+                        azir_voi_belveth_battalion = { x = 0 y = 1 }
+                        azir_voi_belveth_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_muster_remora = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_remora_reborn
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_remora_tt
+            hidden_effect = {
+                set_technology = { azir_voi_remora_muster = 1 popup = no }
+                division_template = {
+                    name = "Lavender Sea Remora"
+                    override_model = VOI_remora_roster_entity
+                    regiments = {
+                        azir_voi_remora_battalion = { x = 0 y = 0 }
+                        azir_voi_remora_battalion = { x = 0 y = 1 }
+                        azir_voi_remora_battalion = { x = 0 y = 2 }
+                        azir_voi_remora_battalion = { x = 0 y = 3 }
+                        azir_voi_remora_battalion = { x = 1 y = 0 }
+                        azir_voi_remora_battalion = { x = 1 y = 1 }
+                        azir_voi_remora_battalion = { x = 1 y = 2 }
+                        azir_voi_remora_battalion = { x = 1 y = 3 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_muster_kogmaw = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_Voidborn_Soldiers
+            has_character = VOI_Kogmaw
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_kogmaw_tt
+            hidden_effect = {
+                set_technology = { azir_voi_kogmaw_muster = 1 popup = no }
+                division_template = {
+                    name = "Kog'Maw's Acid Battery"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_kogmaw_roster_entity
+                    regiments = {
+                        azir_voi_kogmaw_battalion = { x = 0 y = 0 }
+                        azir_voi_kogmaw_battalion = { x = 0 y = 1 }
+                        azir_voi_kogmaw_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_muster_chogath = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_Open_Void_Gate
+            has_character = VOI_Chogath
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_chogath_tt
+            hidden_effect = {
+                set_technology = { azir_voi_chogath_muster = 1 popup = no }
+                division_template = {
+                    name = "Cho'Gath's Devouring Host"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_chogath_roster_entity
+                    regiments = {
+                        azir_voi_chogath_battalion = { x = 0 y = 0 }
+                        azir_voi_chogath_battalion = { x = 0 y = 1 }
+                        azir_voi_chogath_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}
+
+VOI_resistance_category = {
+    VOI_muster_kaisa = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = resisted_the_void
+            has_character = VOI_Kaisa
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_kaisa_tt
+            hidden_effect = {
+                set_technology = { azir_voi_kaisa_muster = 1 popup = no }
+                division_template = {
+                    name = "Kai'Sa's Rift Hunters"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_kaisa_roster_entity
+                    regiments = {
+                        azir_voi_kaisa_battalion = { x = 0 y = 0 }
+                        azir_voi_kaisa_battalion = { x = 0 y = 1 }
+                        azir_voi_kaisa_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_muster_jax = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = resisted_the_void
+            has_completed_focus = VOI_The_Man_Without_a_Weapon
+            has_character = VOI_Jax
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_jax_tt
+            hidden_effect = {
+                set_technology = { azir_voi_jax_muster = 1 popup = no }
+                division_template = {
+                    name = "Jax's Vanguard"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_jax_roster_entity
+                    regiments = {
+                        azir_voi_jax_battalion = { x = 0 y = 0 }
+                        azir_voi_jax_battalion = { x = 0 y = 1 }
+                        azir_voi_jax_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_muster_zilean = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = resisted_the_void
+            has_completed_focus = VOI_law_university
+            has_character = VOI_Zilean
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_zilean_tt
+            hidden_effect = {
+                set_technology = { azir_voi_zilean_muster = 1 popup = no }
+                division_template = {
+                    name = "Zilean's Chronoguard"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_zilean_roster_entity
+                    regiments = {
+                        azir_voi_zilean_battalion = { x = 0 y = 0 }
+                        azir_voi_zilean_battalion = { x = 0 y = 1 }
+                        azir_voi_zilean_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

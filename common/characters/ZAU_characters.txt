@@ -1,0 +1,11 @@
+characters = {
+    ZAU_renata = {
+        name = ZAU_renata
+        portraits = {
+            civilian = { large = GFX_portrait_ZAU_renata }
+        }
+        country_leader = {
+            ideology = chemBarons
+        }
+    }
+}

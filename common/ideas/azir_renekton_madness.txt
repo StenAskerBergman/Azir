@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+        XER_renekton_final_form_idea = {
+            picture = generic_aggression
+            allowed = { original_tag = XER }
+            cancel = { NOT = { has_country_leader = { character = XER_renekton } } }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.10
+                stability_factor = -0.10
+            }
+        }
+        SHU_nasus_fractured = {
+            picture = generic_stability_bonus
+            allowed = { original_tag = SHU }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.05
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+# Older campaigns serialize this retired ID. Keep its original equipment and modifiers for loading saves.
+ROM_malaxa_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_ROM_malaxa
+
+	allowed = { always = no }
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+}

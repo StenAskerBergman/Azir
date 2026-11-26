@@ -1,0 +1,59 @@
+PIL_ZAU_both_present = {
+    country_exists = PLT
+    country_exists = ZAU
+    PLT = { NOT = { has_war_with = ZAU } }
+}
+PIL_ZAU_bridge_live = {
+    PIL_ZAU_both_present = yes
+    PLT = { has_power_balance = { id = PIL_bop } }
+    ZAU = { has_power_balance = { id = ZAU_bop } }
+}
+PIL_ZAU_bridge_unresolved = {
+    NOT = { has_global_flag = PIL_ZAU_crossing_reopened }
+    NOT = { has_global_flag = PIL_ZAU_betrayal }
+    NOT = { has_global_flag = PIL_ZAU_hardened }
+}
+PIL_bridge_cooperative = {
+    tag = PLT
+    has_country_flag = PIL_bridge_committed
+    has_power_balance = { id = PIL_bop }
+    power_balance_value = { id = PIL_bop value < -0.50 }
+}
+
+PIL_bridge_coercive = {
+    tag = PLT
+    has_country_flag = PIL_bridge_committed
+    has_power_balance = { id = PIL_bop }
+    power_balance_value = { id = PIL_bop value > 0.50 }
+}
+ZAU_bridge_cooperative = {
+    tag = ZAU
+    has_country_flag = ZAU_bridge_committed
+    has_power_balance = { id = ZAU_bop }
+    power_balance_value = { id = ZAU_bop value < -0.50 }
+}
+
+ZAU_bridge_coercive = {
+    tag = ZAU
+    has_country_flag = ZAU_bridge_committed
+    has_power_balance = { id = ZAU_bop }
+    power_balance_value = { id = ZAU_bop value > 0.50 }
+}
+PIL_ZAU_mutual_cooperation = {
+    PIL_ZAU_bridge_live = yes
+    PIL_ZAU_bridge_unresolved = yes
+    PLT = { PIL_bridge_cooperative = yes has_country_flag = PIL_crossing_concession has_idea = PIL_reserved_capacity }
+    ZAU = { ZAU_bridge_cooperative = yes has_country_flag = ZAU_crossing_concession has_idea = ZAU_reserved_capacity }
+}
+PIL_ZAU_mutual_hardening = {
+    has_global_flag = PIL_ZAU_hardened
+    PLT = { PIL_bridge_coercive = yes }
+    ZAU = { ZAU_bridge_coercive = yes }
+}
+
+PIL_ZAU_joint_freight_operating = {
+    has_global_flag = PIL_ZAU_crossing_reopened
+    PIL_ZAU_both_present = yes
+    52 = { is_owned_and_controlled_by = PLT }
+    50 = { is_owned_and_controlled_by = ZAU }
+}

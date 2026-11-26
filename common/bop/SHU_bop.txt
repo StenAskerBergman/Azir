@@ -1,0 +1,19 @@
+SHU_bop = {
+    initial_value = 0
+    left_side = SHU_bop_compact
+    right_side = SHU_bop_court
+    decision_category = SHU_bop_decisions
+    range = { id = SHU_bop_neutral min = -0.20 max = 0.20 }
+    side = {
+        id = SHU_bop_compact
+        icon = GFX_bop_SWI_centralization_council_side
+        range = { id = SHU_bop_assemblies min = -0.50 max = -0.20 }
+        range = { id = SHU_bop_entrenched_compact min = -1.0 max = -0.50 }
+    }
+    side = {
+        id = SHU_bop_court
+        icon = GFX_bop_SWI_centralization_canton_side
+        range = { id = SHU_bop_administration min = 0.20 max = 0.50 }
+        range = { id = SHU_bop_entrenched_court min = 0.50 max = 1.0 }
+    }
+}

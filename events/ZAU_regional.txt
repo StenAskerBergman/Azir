@@ -1,0 +1,155 @@
+add_namespace = ZAU_regional
+
+country_event = {
+    id = ZAU_regional.1
+    title = ZAU_regional.1.t
+    desc = ZAU_regional.1.d
+    picture = GFX_PIL_ZAU_air
+    is_triggered_only = yes
+    # The Zaun-side pending flag expires on day 30, before this popup closes.
+    timeout_days = 31
+    trigger = { tag = IXT original_tag = IXT ZAU_ixt_offer_valid = yes }
+
+    option = {
+        name = ZAU_regional.1.decline
+        ai_chance = {
+            factor = 2
+            modifier = { factor = 8 ZAU = { has_idea = ZAU_priority_freight } }
+        }
+        if = {
+            limit = { country_exists = ZAU ZAU = { has_country_flag = ZAU_ixt_offer_pending } }
+            ZAU = { country_event = { id = ZAU_regional.2 } }
+        }
+    }
+
+    option = {
+        name = ZAU_regional.1.accept
+        trigger = { ZAU_ixt_offer_valid = yes }
+        ai_chance = {
+            factor = 2
+            modifier = { factor = 3 ZAU = { has_completed_focus = ZAU_ward_compact } }
+            modifier = { factor = 0 ZAU_ixt_offer_valid = no }
+        }
+        if = {
+            limit = { ZAU_ixt_offer_valid = yes }
+            ZAU = {
+                set_country_flag = ZAU_ixt_reply_accepted
+                country_event = { id = ZAU_regional.2 }
+            }
+        }
+        else_if = {
+            limit = { country_exists = ZAU ZAU = { has_country_flag = ZAU_ixt_offer_pending } }
+            ZAU = { country_event = { id = ZAU_regional.2 } }
+        }
+    }
+}
+
+country_event = {
+    id = ZAU_regional.2
+    title = ZAU_regional.2.t
+    desc = {
+        text = ZAU_regional.2.accepted
+        trigger = { has_country_flag = ZAU_ixt_reply_accepted }
+    }
+    desc = {
+        text = ZAU_regional.2.closed
+        trigger = { NOT = { has_country_flag = ZAU_ixt_reply_accepted } }
+    }
+    picture = GFX_PIL_ZAU_air
+    is_triggered_only = yes
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_ixt_offer_pending }
+    immediate = {
+        if = {
+            limit = {
+                has_country_flag = ZAU_ixt_reply_accepted
+                ZAU_ixt_offer_valid = yes
+                NOT = { has_active_mission = ZAU_ixt_delivery }
+            }
+            set_country_flag = ZAU_ixt_agreement
+            if = {
+                limit = { ZAU_freight_operating = yes }
+                activate_mission = ZAU_ixt_delivery
+            }
+        }
+        else = { clr_country_flag = ZAU_ixt_reply_accepted }
+        clr_country_flag = ZAU_ixt_offer_pending
+    }
+    option = { name = ZAU_regional.2.a }
+}
+
+country_event = {
+    id = ZAU_regional.3
+    title = ZAU_regional.3.t
+    desc = ZAU_regional.3.d
+    picture = GFX_PIL_ZAU_yards
+    is_triggered_only = yes
+    # The Zaun-side pending flag expires on day 30, before this popup closes.
+    timeout_days = 31
+    trigger = { tag = CRY original_tag = CRY ZAU_cry_offer_valid = yes }
+
+    option = {
+        name = ZAU_regional.3.decline
+        ai_chance = {
+            factor = 2
+            modifier = { factor = 8 ZAU = { has_idea = ZAU_priority_freight } }
+        }
+        if = {
+            limit = { country_exists = ZAU ZAU = { has_country_flag = ZAU_cry_offer_pending } }
+            ZAU = { country_event = { id = ZAU_regional.4 } }
+        }
+    }
+
+    option = {
+        name = ZAU_regional.3.accept
+        trigger = { ZAU_cry_offer_valid = yes }
+        ai_chance = {
+            factor = 2
+            modifier = { factor = 2 118 = { is_owned_and_controlled_by = CRY } }
+            modifier = { factor = 0 ZAU_cry_offer_valid = no }
+        }
+        if = {
+            limit = { ZAU_cry_offer_valid = yes }
+            ZAU = {
+                set_country_flag = ZAU_cry_reply_accepted
+                country_event = { id = ZAU_regional.4 }
+            }
+        }
+        else_if = {
+            limit = { country_exists = ZAU ZAU = { has_country_flag = ZAU_cry_offer_pending } }
+            ZAU = { country_event = { id = ZAU_regional.4 } }
+        }
+    }
+}
+
+country_event = {
+    id = ZAU_regional.4
+    title = ZAU_regional.4.t
+    desc = {
+        text = ZAU_regional.4.accepted
+        trigger = { has_country_flag = ZAU_cry_reply_accepted }
+    }
+    desc = {
+        text = ZAU_regional.4.closed
+        trigger = { NOT = { has_country_flag = ZAU_cry_reply_accepted } }
+    }
+    picture = GFX_PIL_ZAU_yards
+    is_triggered_only = yes
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_cry_offer_pending }
+    immediate = {
+        if = {
+            limit = {
+                has_country_flag = ZAU_cry_reply_accepted
+                ZAU_cry_offer_valid = yes
+                NOT = { has_active_mission = ZAU_cry_delivery }
+            }
+            set_country_flag = ZAU_cry_agreement
+            if = {
+                limit = { ZAU_freight_operating = yes }
+                activate_mission = ZAU_cry_delivery
+            }
+        }
+        else = { clr_country_flag = ZAU_cry_reply_accepted }
+        clr_country_flag = ZAU_cry_offer_pending
+    }
+    option = { name = ZAU_regional.4.a }
+}

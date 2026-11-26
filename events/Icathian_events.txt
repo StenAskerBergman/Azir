@@ -32,27 +32,28 @@ country_event = {
     id = icathia.2
     title = icathia.2.t
     desc = icathia.2.desc
-    picture = GFX_report_event_soviet_invasion_map # Placeholder for the appropriate graphic
+    picture = GFX_report_event_azir_icathia_remnants
 
     is_triggered_only = yes
 
-    trigger = {
-        tag = VOI
-        NOT = { has_global_flag = icathian_civil_war }
-        NOT = { has_completed_focus = VOI_Resist_the_Void }
-        NOT = { has_completed_focus = VOI_Embrace_the_Void }
-    }
+    trigger = { VOI_can_choose_opening_side = yes }
+
+    # A queued popup can outlast the opening choice.
 
     option = {
         name = icathia.2.a
-        trigger = { NOT = { has_completed_focus = VOI_Embrace_the_Void } }
-        complete_national_focus = VOI_Resist_the_Void
+        if = {
+            limit = { VOI_can_choose_opening_side = yes }
+            complete_national_focus = VOI_Resist_the_Void
+        }
     }
 
     option = {
         name = icathia.2.b
-        trigger = { NOT = { has_completed_focus = VOI_Resist_the_Void } }
-        complete_national_focus = VOI_Embrace_the_Void
+        if = {
+            limit = { VOI_can_choose_opening_side = yes }
+            complete_national_focus = VOI_Embrace_the_Void
+        }
     }
 }
 

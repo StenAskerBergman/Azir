@@ -1,0 +1,120 @@
+# Runeterra uses its own focus trees, decisions and game rules. Unavailable WWII prerequisites evaluate to false.
+PHI_historical_ai = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			always = no
+		}
+		has_country_flag = PHI_AI_RANDOM_HISTORICAL
+		always = no
+	}
+}
+
+PHI_flexible_ai = {
+	OR = {
+		has_country_flag = PHI_AI_RANDOM_FLEXIBLE
+		always = no
+	}
+}
+
+PHI_fascist_ai = {
+	OR = {
+		has_country_flag = PHI_AI_RANDOM_FASCIST
+		always = no
+	}
+}
+
+PHI_communist_ai = {
+	OR = {
+		has_country_flag = PHI_AI_RANDOM_COMMUNIST
+		always = no
+	}
+}
+
+PHI_macarthur_ai = {
+	OR = {
+		has_country_flag = PHI_AI_RANDOM_MACARTHUR
+		always = no
+	}
+}
+
+PHI_central_focuses_done_T1_4 = { 
+		custom_trigger_tooltip = {
+			tooltip = PHI_central_focuses_done_5_tt
+			check_variable = { PHI_amount_of_focuses_done_T1 > 4 }
+		}
+}
+
+PHI_central_focuses_done_T2_4 = { 
+		custom_trigger_tooltip = {
+			tooltip = PHI_central_focuses_done_5_tt
+			check_variable = { PHI_amount_of_focuses_done_T2 > 4 }
+		}
+}
+
+PHI_central_focuses_done_T3_4 = { 
+		custom_trigger_tooltip = {
+			tooltip = PHI_central_focuses_done_4_tt
+			check_variable = { PHI_amount_of_focuses_done_T3 > 3 }
+		}
+}
+
+PHI_usa_focus_done_T1 = {
+	if = {
+		limit = {
+			always = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = PHI_usa_focus_done_T1_alt_tt
+			check_variable = { PHI_amount_of_usa_focus_done > 0 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = PHI_usa_focus_done_T1_tt
+			check_variable = { PHI_amount_of_usa_focus_done > 0 }
+		}
+	}
+}
+
+PHI_usa_focus_done_T2 = { 
+	if = {
+		limit = {
+			always = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = PHI_usa_focus_done_T2_alt_tt
+			check_variable = { PHI_amount_of_usa_focus_done > 1 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = PHI_usa_focus_done_T2_tt
+			check_variable = { PHI_amount_of_usa_focus_done > 1 }
+		}
+	}
+}
+
+PHI_usa_focus_done_T3 = { 
+	if = {
+		limit = {
+			always = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = PHI_usa_focus_done_T3_alt_tt
+			check_variable = { PHI_amount_of_usa_focus_done > 2 }
+		}
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = PHI_usa_focus_done_T3_tt
+			check_variable = { PHI_amount_of_usa_focus_done > 2 }
+		}
+	}
+}
+
+PHI_SEA = { # Trigger to check if playing as Philippines while having SEA
+	original_tag = PHI
+	has_dlc = "No Compromise, No Surrender"
+}
+

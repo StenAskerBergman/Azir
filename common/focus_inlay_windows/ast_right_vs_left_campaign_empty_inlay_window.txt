@@ -1,0 +1,19 @@
+ast_right_vs_left_campaign_empty_inlay_window = {
+
+    window_name = ast_right_vs_left_campaign_empty_ui_window
+
+    internal = yes
+    visible = {
+        OR = { 
+            NOT = { always = no }
+            NOT = { has_government = democratic }
+        }
+        AND = {
+            has_game_rule = {
+                rule = obsolete_focus_branches_visibility
+                option = HIDE
+            }
+            NOT = { always = no }
+            NOT = { always = no }
+        }
+    }

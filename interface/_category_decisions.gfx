@@ -11,7 +11,7 @@ spriteTypes = {
     # Dune Swallower
     spriteType = {
 		name = "GFX_decision_DuneSwallower_icon"
-		texturefile = "gfx/interface/decisions/decision_DuneSwallower.dds"
+		texturefile = "gfx/interface/decisions/decision_DuneSwaller.dds"
 	}
 
     # Dune Breaker
@@ -29,14 +29,14 @@ spriteTypes = {
     # modifier resistance buffed
 	spriteType = {
         name = "GFX_modifier_rebel_buffed"
-		texturefile = "gfx/interface/modifiers/modifier_resistance_buffed.dds"
+		texturefile = "gfx/interface/modifers/modifier_resistance_buffed.dds"
 	}
     
     # Special 
     # modifier void attack
 	spriteType = {
 		name = "GFX_modifier_demons_attack"
-		texturefile = "gfx/interface/modifiers/modifier_void_attack.dds"
+		texturefile = "gfx/interface/modifers/modifier_void_attack.dds"
 	}
 
     # Generic 

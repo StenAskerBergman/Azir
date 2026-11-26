@@ -1,0 +1,22 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_XER_renekton_corrupted_large"
+        texturefile = "gfx/leaders/XER/portrait_xer_renekton_corrupted_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_SHU_nasus_corrupted_large"
+        texturefile = "gfx/leaders/SHU/portrait_shu_nasus_corrupted_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_SHU_nasus_corrupted_small"
+        texturefile = "gfx/characters/SHU/portrait_nasus_corrupted_small.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_renekton_corrupted"
+        texturefile = "gfx/event_pictures/report_event_renekton_corrupted.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_nasus_corrupted"
+        texturefile = "gfx/event_pictures/report_event_nasus_corrupted.dds"
+    }
+}

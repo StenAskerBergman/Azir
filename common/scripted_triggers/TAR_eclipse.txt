@@ -1,0 +1,30 @@
+TAR_can_start_remembrance = {
+    tag = TAR
+    NOT = { has_country_flag = TAR_remembrance_started }
+    NOT = { has_completed_focus = TAR_victory_speech }
+    NOT = { focus_progress = { focus = TAR_victory_speech progress > 0 } }
+    NOT = { has_global_flag = TAR_eclipse_started }
+    NOT = { has_country_flag = TAR_eclipse_council_open }
+    NOT = { has_country_flag = TAR_eclipse_rally_underway }
+}
+
+TAR_can_begin_eclipse = {
+    tag = TAR
+    NOT = { has_country_flag = TAR_remembrance_underway }
+    has_completed_focus = TAR_remember_us
+    NOT = { has_completed_focus = TAR_victory_speech }
+    NOT = { focus_progress = { focus = TAR_victory_speech progress > 0 } }
+    NOT = { has_global_flag = TAR_eclipse_started }
+    NOT = { has_country_flag = TAR_eclipse_rally_underway }
+    has_war = no
+    has_civil_war = no
+    is_subject = no
+    has_character = TAR_diana
+    has_character = TAR_rahvun
+    capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT }
+    any_owned_state = {
+        is_controlled_by = ROOT
+        is_core_of = ROOT
+        is_capital = no
+    }
+}

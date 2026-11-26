@@ -42,12 +42,11 @@ set_politics = {
 }
 set_popularities = {
 	mages = 70
-	fascism = 30
 	desolation = 0
 	theocracy = 0
 	oligarchy = 0
 	absolutists = 0
-	chiefdom = 0
+	chiefdom = 30
 	royalist = 0
 
 

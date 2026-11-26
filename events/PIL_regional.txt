@@ -1,0 +1,157 @@
+add_namespace = PIL_regional
+
+# The first option is the timeout default. Silence leaves the dated pending flag to expire.
+# A 35-day request cooldown outlasts the recipient window and prevents stale answers.
+
+country_event = {
+    id = PIL_regional.1
+    title = PIL_regional.1.t
+    desc = PIL_regional.1.d
+    picture = GFX_PIL_ZAU_paper
+    is_triggered_only = yes
+    timeout_days = 30
+    trigger = { tag = IXT PIL_ix_survey_valid = yes PLT = { has_country_flag = PIL_ix_survey_pending } }
+
+    option = {
+        name = PIL_regional_wait
+        ai_chance = { factor = 0 }
+    }
+
+    option = {
+        name = PIL_regional.1.b
+        trigger = { PIL_ix_survey_valid = yes PLT = { has_country_flag = PIL_ix_survey_pending } }
+        ai_chance = {
+            factor = 2
+            modifier = { factor = 5 PLT = { PIL_bridge_coercive = yes } }
+        }
+        if = {
+            limit = { PIL_ix_survey_valid = yes PLT = { has_country_flag = PIL_ix_survey_pending } }
+            PLT = { country_event = { id = PIL_regional.2 } }
+        }
+    }
+
+    option = {
+        name = PIL_regional.1.a
+        trigger = { PIL_ix_survey_valid = yes PLT = { has_country_flag = PIL_ix_survey_pending } }
+        ai_chance = {
+            factor = 3
+            modifier = { factor = 0 PIL_ix_survey_valid = no }
+            modifier = { factor = 0 PLT = { NOT = { has_country_flag = PIL_ix_survey_pending } } }
+            modifier = { factor = 3 PLT = { has_completed_focus = PIL_warrants } }
+            modifier = { factor = 0.2 PLT = { PIL_bridge_coercive = yes } }
+        }
+        if = {
+            limit = { PIL_ix_survey_valid = yes PLT = { has_country_flag = PIL_ix_survey_pending } }
+            PLT = {
+                set_country_flag = PIL_ix_survey_accepted
+                country_event = { id = PIL_regional.2 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = PIL_regional.2
+    title = PIL_regional.2.t
+    desc = { trigger = { has_country_flag = PIL_ix_survey_accepted } text = PIL_regional.2.a }
+    desc = { trigger = { NOT = { has_country_flag = PIL_ix_survey_accepted } } text = PIL_regional.2.b }
+    picture = GFX_PIL_ZAU_paper
+    is_triggered_only = yes
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_ix_survey_pending }
+
+    immediate = {
+        if = {
+            limit = {
+                has_country_flag = PIL_ix_survey_pending
+                NOT = { has_country_flag = PIL_ix_survey_accepted }
+                PIL_ix_survey_valid = yes
+            }
+            set_country_flag = PIL_ix_survey_refused
+        }
+        if = {
+            limit = {
+                has_country_flag = PIL_ix_survey_pending
+                has_country_flag = PIL_ix_survey_accepted
+                PIL_ix_survey_valid = yes
+            }
+            set_country_flag = PIL_ix_survey_agreement
+        }
+        else = { clr_country_flag = PIL_ix_survey_accepted }
+        clr_country_flag = PIL_ix_survey_pending
+    }
+
+    option = { name = PIL_regional_acknowledge }
+}
+
+country_event = {
+    id = PIL_regional.3
+    title = PIL_regional.3.t
+    desc = PIL_regional.3.d
+    picture = GFX_PIL_ZAU_ledger
+    is_triggered_only = yes
+    timeout_days = 30
+    trigger = { tag = CRY PIL_scar_registry_valid = yes PLT = { has_country_flag = PIL_scar_registry_pending } }
+
+    option = {
+        name = PIL_regional_wait
+        ai_chance = { factor = 0 }
+    }
+
+    option = {
+        name = PIL_regional.3.b
+        trigger = { PIL_scar_registry_valid = yes PLT = { has_country_flag = PIL_scar_registry_pending } }
+        ai_chance = {
+            factor = 2
+            modifier = { factor = 5 PLT = { PIL_bridge_coercive = yes } }
+        }
+        if = {
+            limit = { PIL_scar_registry_valid = yes PLT = { has_country_flag = PIL_scar_registry_pending } }
+            PLT = { country_event = { id = PIL_regional.4 } }
+        }
+    }
+
+    option = {
+        name = PIL_regional.3.a
+        trigger = { PIL_scar_registry_valid = yes PLT = { has_country_flag = PIL_scar_registry_pending } }
+        ai_chance = {
+            factor = 3
+            modifier = { factor = 0 PIL_scar_registry_valid = no }
+            modifier = { factor = 0 PLT = { NOT = { has_country_flag = PIL_scar_registry_pending } } }
+            modifier = { factor = 3 PLT = { has_country_flag = PIL_scar_registry_custody_terms } }
+            modifier = { factor = 0.2 PLT = { PIL_bridge_coercive = yes } }
+        }
+        if = {
+            limit = { PIL_scar_registry_valid = yes PLT = { has_country_flag = PIL_scar_registry_pending } }
+            PLT = {
+                set_country_flag = PIL_scar_registry_accepted
+                country_event = { id = PIL_regional.4 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = PIL_regional.4
+    title = PIL_regional.4.t
+    desc = { trigger = { has_country_flag = PIL_scar_registry_accepted } text = PIL_regional.4.a }
+    desc = { trigger = { NOT = { has_country_flag = PIL_scar_registry_accepted } } text = PIL_regional.4.b }
+    picture = GFX_PIL_ZAU_ledger
+    is_triggered_only = yes
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_scar_registry_pending }
+
+    immediate = {
+        if = {
+            limit = {
+                has_country_flag = PIL_scar_registry_pending
+                has_country_flag = PIL_scar_registry_accepted
+                PIL_scar_registry_valid = yes
+            }
+            set_country_flag = PIL_scar_registry_agreement
+        }
+        else = { clr_country_flag = PIL_scar_registry_accepted }
+        clr_country_flag = PIL_scar_registry_pending
+        clr_country_flag = PIL_scar_registry_custody_terms
+    }
+
+    option = { name = PIL_regional_acknowledge }
+}

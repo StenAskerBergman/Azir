@@ -1,0 +1,355 @@
+# Quarior supplies an older 00_traits.txt. These installed game traits are still used by manufacturer ideas.
+leader_traits = {
+	light_aircraft_manufacturer_3 = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.2 maximum_speed = 0.1 reliability = 0.05
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.2 maximum_speed = 0.1 reliability = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	fast_tank_manufacturer_2 = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.10
+				soft_attack = 0.05
+				reliability = 0.15
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	infantry_tank_manufacturer_2 = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.10
+				armor_value = 0.10
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tank_destroyer_manufacturer = {
+		random = no
+		equipment_bonus = {
+			light_tank_destroyer_chassis = {
+				hard_attack = 0.05
+				ap_attack = 0.05
+				armor_value = 0.05
+				reliability = 0.05
+			}
+			medium_tank_destroyer_chassis = {
+				hard_attack = 0.05
+				ap_attack = 0.05
+				armor_value = 0.05
+				reliability = 0.05
+			}
+			heavy_tank_destroyer_chassis = {
+				hard_attack = 0.05
+				ap_attack = 0.05
+				armor_value = 0.05
+				reliability = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	automatic_weapons_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	train_equipment_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	helicopter_equipment_manufacturer = { #Needs to be tied to a GOT owned check on concern
+		random = no
+		sp_tag_helicopter_speed_factor = 0.25
+
+		equipment_bonus = {
+			helicopter_equipment = {
+				build_cost_ic = -0.10
+				reliability = 0.10
+				defense = 0.1
+				maximum_speed = 0.1
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	desert_motor_transport_company = {
+		random = no
+
+		supply_combat_penalties_on_core_factor = -0.15
+		supply_node_range = 0.15
+		supply_consumption_factor = -0.05
+
+		equipment_bonus = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	infrastructure_group = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	brewery = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	food_distributor = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	electricity_focused_state_bank = {
+		random = no
+
+		factory_energy_consumption = -0.1
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	industrial_investment_bank = {
+		random = no
+
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	energy_supply_company_zse = {
+		random = no
+
+		consumer_goods_factor = -0.05
+		production_speed_energy_infrastructure_factor = 0.10
+		production_speed_industrial_infrastructure_factor = 0.10
+		out_of_power_impact_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	consumer_goods_conglomerate = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	industrial_focused_central_bank = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	construction_company_shell = { #Blank ver. of construction_company
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	engine_manufacturing_concern = {
+		random = no
+
+		equipment_conversion_speed = 0.25
+
+		equipment_bonus = {
+			small_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+		}
+
+		equipment_bonus = {
+			motorized_equipment = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	commercial_bank = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		consumer_goods_factor = -0.15
+		trade_opinion_factor = 0.15
+	}
+
+	AST_denim_factory = {
+
+		random = no
+
+		stability_factor = 0.05
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_denim_factory_upgraded = {
+		random = no
+
+		stability_factor = 0.05
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_the_big_australian = {
+
+		random = no
+
+		local_resources_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_steelworks_and_shipyard = {
+
+		random = no
+
+		country_resource_steel = 10
+		industrial_capacity_dockyard = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_the_big_australian_upgraded = {
+
+		random = no
+
+		local_resources_factor = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_steelworks_and_shipyard_upgraded = {
+
+		random = no
+
+		country_resource_steel = 20
+		industrial_capacity_dockyard = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_mount_isa = {
+		random = no
+
+		production_lack_of_resource_penalty_factor = -0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AST_mount_isa_upgraded = {
+		random = no
+
+		production_lack_of_resource_penalty_factor = -0.25
+		local_resources_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

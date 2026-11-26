@@ -68,14 +68,14 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_azir_focus_sun_disc"
-        texturefile = "gfx/interface/goals/azir_country_themes/sun_disc.dds"
+        texturefile = "gfx/interface/goals/SHU/focus_SHU_sun_disc_restoration.dds"
     }
     spriteType = {
         name = "GFX_azir_focus_sun_disc_shine"
-        texturefile = "gfx/interface/goals/azir_country_themes/sun_disc.dds"
+        texturefile = "gfx/interface/goals/SHU/focus_SHU_sun_disc_restoration.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/azir_country_themes/sun_disc.dds"
+            animationmaskfile = "gfx/interface/goals/SHU/focus_SHU_sun_disc_restoration.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 45
             animationlooping = no
@@ -89,14 +89,14 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_azir_focus_legions"
-        texturefile = "gfx/interface/goals/azir_country_themes/legions.dds"
+        texturefile = "gfx/interface/goals/SHU/focus_SHU_shuriman_legions.dds"
     }
     spriteType = {
         name = "GFX_azir_focus_legions_shine"
-        texturefile = "gfx/interface/goals/azir_country_themes/legions.dds"
+        texturefile = "gfx/interface/goals/SHU/focus_SHU_shuriman_legions.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/azir_country_themes/legions.dds"
+            animationmaskfile = "gfx/interface/goals/SHU/focus_SHU_shuriman_legions.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 45
             animationlooping = no

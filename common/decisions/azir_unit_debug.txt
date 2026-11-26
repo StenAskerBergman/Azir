@@ -1,0 +1,958 @@
+azir_unit_debug_category = {
+    # VOI
+    azir_debug_spawn_voidling = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Voidling Brood" } }
+                division_template = {
+                    name = "[Debug] Voidling Brood"
+                    override_model = VOI_voidling_infantry_entity
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 2 y = 1 }
+                        infantry = { x = 2 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Voidling Brood\" division_template = \"[Debug] Voidling Brood\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_reksai = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_xersai_training = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Rek'Sai's Burrowers" } }
+                division_template = {
+                    name = "[Debug] Rek'Sai's Burrowers"
+                    override_model = VOI_reksai_assault_entity
+                    regiments = {
+                        azir_voi_xersai_assault = { x = 0 y = 0 }
+                        azir_voi_xersai_assault = { x = 0 y = 1 }
+                        azir_voi_xersai_assault = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Rek'Sai's Burrowers\" division_template = \"[Debug] Rek'Sai's Burrowers\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_rift_herald = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_herald_siege_training = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Rift Herald Siege Host" } }
+                division_template = {
+                    name = "[Debug] Rift Herald Siege Host"
+                    override_model = VOI_rift_herald_siege_entity
+                    regiments = {
+                        azir_voi_herald_siege = { x = 0 y = 0 }
+                        azir_voi_herald_siege = { x = 0 y = 1 }
+                        azir_voi_herald_siege = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Rift Herald Siege Host\" division_template = \"[Debug] Rift Herald Siege Host\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_belveth = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_belveth_muster = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Bel'Veth's Royal Host" } }
+                division_template = {
+                    name = "[Debug] Bel'Veth's Royal Host"
+                    override_model = VOI_belveth_roster_entity
+                    regiments = {
+                        azir_voi_belveth_battalion = { x = 0 y = 0 }
+                        azir_voi_belveth_battalion = { x = 0 y = 1 }
+                        azir_voi_belveth_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Bel'Veth's Royal Host\" division_template = \"[Debug] Bel'Veth's Royal Host\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_remora = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_remora_muster = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Lavender Sea Remora" } }
+                division_template = {
+                    name = "[Debug] Lavender Sea Remora"
+                    override_model = VOI_remora_roster_entity
+                    regiments = {
+                        azir_voi_remora_battalion = { x = 0 y = 0 }
+                        azir_voi_remora_battalion = { x = 0 y = 1 }
+                        azir_voi_remora_battalion = { x = 0 y = 2 }
+                        azir_voi_remora_battalion = { x = 0 y = 3 }
+                        azir_voi_remora_battalion = { x = 1 y = 0 }
+                        azir_voi_remora_battalion = { x = 1 y = 1 }
+                        azir_voi_remora_battalion = { x = 1 y = 2 }
+                        azir_voi_remora_battalion = { x = 1 y = 3 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Lavender Sea Remora\" division_template = \"[Debug] Lavender Sea Remora\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_kogmaw = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_kogmaw_muster = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Kog'Maw's Acid Battery" } }
+                division_template = {
+                    name = "[Debug] Kog'Maw's Acid Battery"
+                    override_model = VOI_kogmaw_roster_entity
+                    regiments = {
+                        azir_voi_kogmaw_battalion = { x = 0 y = 0 }
+                        azir_voi_kogmaw_battalion = { x = 0 y = 1 }
+                        azir_voi_kogmaw_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Kog'Maw's Acid Battery\" division_template = \"[Debug] Kog'Maw's Acid Battery\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_chogath = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_chogath_muster = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Cho'Gath's Devouring Host" } }
+                division_template = {
+                    name = "[Debug] Cho'Gath's Devouring Host"
+                    override_model = VOI_chogath_roster_entity
+                    regiments = {
+                        azir_voi_chogath_battalion = { x = 0 y = 0 }
+                        azir_voi_chogath_battalion = { x = 0 y = 1 }
+                        azir_voi_chogath_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Cho'Gath's Devouring Host\" division_template = \"[Debug] Cho'Gath's Devouring Host\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_kaisa = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_kaisa_muster = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Kai'Sa's Rift Hunters" } }
+                division_template = {
+                    name = "[Debug] Kai'Sa's Rift Hunters"
+                    override_model = VOI_kaisa_roster_entity
+                    regiments = {
+                        azir_voi_kaisa_battalion = { x = 0 y = 0 }
+                        azir_voi_kaisa_battalion = { x = 0 y = 1 }
+                        azir_voi_kaisa_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Kai'Sa's Rift Hunters\" division_template = \"[Debug] Kai'Sa's Rift Hunters\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_jax = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_jax_muster = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Jax's Vanguard" } }
+                division_template = {
+                    name = "[Debug] Jax's Vanguard"
+                    override_model = VOI_jax_roster_entity
+                    regiments = {
+                        azir_voi_jax_battalion = { x = 0 y = 0 }
+                        azir_voi_jax_battalion = { x = 0 y = 1 }
+                        azir_voi_jax_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Jax's Vanguard\" division_template = \"[Debug] Jax's Vanguard\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_zilean = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_zilean_muster = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Zilean's Chronoguard" } }
+                division_template = {
+                    name = "[Debug] Zilean's Chronoguard"
+                    override_model = VOI_zilean_roster_entity
+                    regiments = {
+                        azir_voi_zilean_battalion = { x = 0 y = 0 }
+                        azir_voi_zilean_battalion = { x = 0 y = 1 }
+                        azir_voi_zilean_battalion = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Zilean's Chronoguard\" division_template = \"[Debug] Zilean's Chronoguard\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_rupture_wardens = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_rupture_wardens_training = 1 popup = no }
+            add_equipment_to_stockpile = { type = azir_voi_containment_kit_1 amount = 20 producer = ROOT }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Rupture Wardens" } }
+                division_template = {
+                    name = "[Debug] Rupture Wardens"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_voi_rupture_warden_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Rupture Wardens\" division_template = \"[Debug] Rupture Wardens\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_xersai_burrowers = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_xersai_burrower_training = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Xer'Sai Burrower Company" } }
+                division_template = {
+                    name = "[Debug] Xer'Sai Burrower Company"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_voi_xersai_burrower_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Xer'Sai Burrower Company\" division_template = \"[Debug] Xer'Sai Burrower Company\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_riftbound = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = VOI }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_voi_xersai_riftbound_training = 1 popup = no }
+            add_equipment_to_stockpile = { type = azir_voi_xersai_seismic_kit_1 amount = 10 producer = ROOT }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Xer'Sai Riftbound Company" } }
+                division_template = {
+                    name = "[Debug] Xer'Sai Riftbound Company"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_voi_xersai_riftbound_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Xer'Sai Riftbound Company\" division_template = \"[Debug] Xer'Sai Riftbound Company\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # SHU
+    azir_debug_spawn_azir = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = SHU }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Azir's Imperial Guard" } }
+                division_template = {
+                    name = "[Debug] Azir's Imperial Guard"
+                    override_model = SHU_azir_champion_entity
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 2 y = 1 }
+                        infantry = { x = 2 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Azir's Imperial Guard\" division_template = \"[Debug] Azir's Imperial Guard\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_sand_soldier = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = SHU }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Sand Soldier" } }
+                division_template = {
+                    name = "[Debug] Sand Soldier"
+                    override_model = SHU_infantry_entity
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 2 y = 1 }
+                        infantry = { x = 2 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Sand Soldier\" division_template = \"[Debug] Sand Soldier\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_lion_riders = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = SHU }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_shu_lion_rider_training = 1 tech_support = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Lion Rider Company" } }
+                division_template = {
+                    name = "[Debug] Lion Rider Company"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_shu_lion_rider_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Lion Rider Company\" division_template = \"[Debug] Lion Rider Company\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # XER
+    azir_debug_spawn_baccai = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = XER }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_xer_baccai_training = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Baccai Assault Company" } }
+                division_template = {
+                    name = "[Debug] Baccai Assault Company"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_xer_baccai_assault_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Baccai Assault Company\" division_template = \"[Debug] Baccai Assault Company\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_renekton = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = XER }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { azir_xer_warband_training = 1 popup = no }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Renekton's Warband" } }
+                division_template = {
+                    name = "[Debug] Renekton's Warband"
+                    regiments = {
+                        azir_xer_renekton_warband = { x = 0 y = 0 }
+                        azir_xer_renekton_warband = { x = 0 y = 1 }
+                        azir_xer_renekton_warband = { x = 0 y = 2 }
+                        azir_xer_renekton_warband = { x = 0 y = 3 }
+                        azir_xer_renekton_warband = { x = 1 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Renekton's Warband\" division_template = \"[Debug] Renekton's Warband\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    azir_debug_spawn_arcane_siege = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = XER }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+            has_dlc = "Gotterdammerung"
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            set_technology = { gw_artillery = 1 popup = no }
+            if = {
+                limit = { NOT = { is_special_project_completed = sp:azir_sp_xer_arcane_siege_battery } }
+                complete_special_project = sp:azir_sp_xer_arcane_siege_battery
+            }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Arcane Siege Battery" } }
+                division_template = {
+                    name = "[Debug] Arcane Siege Battery"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        azir_xer_arcane_siege_battery = { x = 1 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Arcane Siege Battery\" division_template = \"[Debug] Arcane Siege Battery\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # NAZ
+    azir_debug_spawn_steel_lions = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = NAZ }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+        }
+
+        complete_effect = {
+            if = {
+                limit = { has_dlc = "No Step Back" }
+                set_technology = { gwtank_chassis = 1 popup = no }
+                create_equipment_variant = {
+                    name = "Steel Lions Test Tank"
+                    type = light_tank_chassis_0
+                    parent_version = 0
+                    modules = {
+                        main_armament_slot = tank_heavy_machine_gun
+                        turret_type_slot = tank_light_one_man_tank_turret
+                        suspension_type_slot = tank_bogie_suspension
+                        armor_type_slot = tank_riveted_armor
+                        engine_type_slot = tank_gasoline_engine
+                    }
+                }
+                add_equipment_to_stockpile = {
+                    type = light_tank_chassis_0
+                    variant_name = "Steel Lions Test Tank"
+                    amount = 180
+                    producer = ROOT
+                }
+            }
+            else = {
+                set_technology = { gwtank = 1 popup = no }
+                add_equipment_to_stockpile = { type = gw_tank_equipment amount = 180 producer = ROOT }
+            }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Steel Lions" } }
+                division_template = {
+                    name = "[Debug] Steel Lions"
+                    regiments = {
+                        light_armor = { x = 0 y = 0 }
+                        light_armor = { x = 0 y = 1 }
+                        light_armor = { x = 0 y = 2 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Steel Lions\" division_template = \"[Debug] Steel Lions\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # PLT
+    azir_debug_spawn_caliver_wardens = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = PLT }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+            has_dlc = "Gotterdammerung"
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            if = {
+                limit = { NOT = { is_special_project_completed = sp:azir_sp_plt_hexlyene_caliver } }
+                complete_special_project = sp:azir_sp_plt_hexlyene_caliver
+            }
+            add_equipment_to_stockpile = { type = azir_plt_caliver_equipment_1 amount = 24 producer = ROOT }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Warden Caliver Company" } }
+                division_template = {
+                    name = "[Debug] Warden Caliver Company"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_plt_warden_caliver_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Warden Caliver Company\" division_template = \"[Debug] Warden Caliver Company\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # ZAU
+    azir_debug_spawn_sump_raiders = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = { original_tag = ZAU }
+        available = {
+            is_debug = yes
+            is_ai = no
+            capital_scope = { is_controlled_by = ROOT }
+            has_dlc = "Gotterdammerung"
+        }
+
+        complete_effect = {
+            set_technology = { infantry_weapons = 1 popup = no }
+            if = {
+                limit = { NOT = { is_special_project_completed = sp:azir_sp_zau_hex_carbine } }
+                complete_special_project = sp:azir_sp_zau_hex_carbine
+            }
+            add_equipment_to_stockpile = { type = azir_zau_carbine_equipment_1 amount = 30 producer = ROOT }
+            if = {
+                limit = { NOT = { has_template = "[Debug] Sump Raider Company" } }
+                division_template = {
+                    name = "[Debug] Sump Raider Company"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                        infantry = { x = 1 y = 0 }
+                    }
+                    support = {
+                        azir_zau_sump_raider_company = { x = 0 y = 0 }
+                    }
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"[Debug] Sump Raider Company\" division_template = \"[Debug] Sump Raider Company\" start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = ROOT
+                    count = 1
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

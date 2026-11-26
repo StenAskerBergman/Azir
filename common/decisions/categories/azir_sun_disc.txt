@@ -1,5 +1,6 @@
 XER_rival_sun_disc_category = {
     icon = GFX_decision_category_generic_industry
+    picture = GFX_decision_cat_picture_XER_rival_disc
     allowed = { tag = XER }
     visible = {
         has_completed_focus = XER_xerath_conquest

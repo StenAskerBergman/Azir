@@ -1,0 +1,33 @@
+on_actions = {
+    # An unanswered offer passes on if its recipient disappears.
+    on_annex = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        OR = { tag = SHU tag = NAZ tag = ZAU }
+                        has_country_flag = azir_kaisa_offer_pending
+                    }
+                }
+                FROM = { azir_kaisa_decline_offer = yes }
+            }
+        }
+    }
+
+    # Saves made before these offers were introduced already recorded Embrace.
+    # The normal focus reward starts the chain immediately in new campaigns.
+    on_weekly_VOI = {
+        effect = {
+            if = {
+                limit = {
+                    NOT = { has_global_flag = azir_kaisa_foreign_offers_started }
+                    NOT = { has_country_flag = VOI_kaisa_legacy_embrace_checked }
+                    has_completed_focus = VOI_Embrace_the_Void
+                    has_global_flag = VOI_Embrace_the_Void
+                }
+                set_country_flag = VOI_kaisa_legacy_embrace_checked
+                azir_kaisa_open_foreign_offers = yes
+            }
+        }
+    }
+}

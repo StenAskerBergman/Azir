@@ -1,0 +1,74 @@
+XER_regional_battery_fielded = {
+    is_special_project_completed = sp:azir_sp_xer_arcane_siege_battery
+    any_country_division = {
+        tooltip = XER_regional_battery_tt
+        division_has_battalion_in_template = azir_xer_arcane_siege_battery
+        unit_strength > 0.79
+    }
+}
+
+XER_regional_workshops_ready = {
+    owns_state = 139
+    controls_state = 139
+    owns_state = 140
+    controls_state = 140
+    has_equipment = { artillery_equipment > 11 }
+}
+
+XER_regional_frontier_ready = {
+    owns_state = 139
+    controls_state = 139
+    owns_state = 134
+    controls_state = 134
+    owns_state = 140
+    controls_state = 140
+    has_country_flag = XER_frontier_provisions
+    divisions_in_state = { state = 134 size > 0 }
+    divisions_in_state = { state = 140 size > 0 }
+}
+
+XER_regional_shurima_war = {
+    is_subject = no
+    has_capitulated = no
+    has_country_flag = xer_at_war_with_shu
+    has_war_with = SHU
+    SHU = {
+        is_subject = no
+        has_capitulated = no
+        controls_state = 144
+    }
+    # A separate war or a cobelligerent on either side rules out a bilateral settlement.
+    NOT = {
+        any_other_country = {
+            NOT = { tag = SHU }
+            OR = {
+                has_war_with = XER
+                has_war_together_with = XER
+                has_war_with = SHU
+                has_war_together_with = SHU
+            }
+        }
+    }
+}
+
+XER_regional_nazumah_war = {
+    is_subject = no
+    has_capitulated = no
+    has_war_with = NAZ
+    NAZ = {
+        is_subject = no
+        has_capitulated = no
+        controls_state = 133
+    }
+    NOT = {
+        any_other_country = {
+            NOT = { tag = NAZ }
+            OR = {
+                has_war_with = XER
+                has_war_together_with = XER
+                has_war_with = NAZ
+                has_war_together_with = NAZ
+            }
+        }
+    }
+}

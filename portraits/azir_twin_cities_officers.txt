@@ -1,0 +1,47 @@
+PLT = {
+    army = {
+        male = {
+            "GFX_portrait_azir_plt_officer_m01"
+            "GFX_portrait_azir_plt_officer_m02"
+        }
+        female = {
+            "GFX_portrait_azir_plt_officer_f01"
+            "GFX_portrait_azir_plt_officer_f02"
+        }
+    }
+
+    navy = {
+        male = {
+            "GFX_portrait_azir_plt_naval_officer_m01"
+            "GFX_portrait_azir_plt_naval_officer_m02"
+        }
+        female = {
+            "GFX_portrait_azir_plt_naval_officer_f01"
+            "GFX_portrait_azir_plt_naval_officer_f02"
+        }
+    }
+}
+
+ZAU = {
+    army = {
+        male = {
+            "GFX_portrait_azir_zau_officer_m01"
+            "GFX_portrait_azir_zau_officer_m02"
+        }
+        female = {
+            "GFX_portrait_azir_zau_officer_f01"
+            "GFX_portrait_azir_zau_officer_f02"
+        }
+    }
+
+    navy = {
+        male = {
+            "GFX_portrait_azir_zau_naval_officer_m01"
+            "GFX_portrait_azir_zau_naval_officer_m02"
+        }
+        female = {
+            "GFX_portrait_azir_zau_naval_officer_f01"
+            "GFX_portrait_azir_zau_naval_officer_f02"
+        }
+    }
+}

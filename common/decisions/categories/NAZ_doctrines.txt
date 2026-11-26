@@ -1,0 +1,5 @@
+NAZ_bop_decisions = {
+    icon = GFX_decision_category_generic_industry
+    allowed = { tag = NAZ }
+    visible = { has_power_balance = { id = NAZ_bop } }
+}

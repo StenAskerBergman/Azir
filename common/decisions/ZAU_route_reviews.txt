@@ -1,0 +1,65 @@
+ZAU_domestic_agenda = {
+
+    ZAU_review_ward_service_budget = {
+        icon = generic_construction
+        allowed = { tag = ZAU original_tag = ZAU }
+        visible = {
+            has_idea = ZAU_local_purchasing
+            NOR = { has_country_flag = ZAU_review_ward_service_budget_pending has_country_flag = ZAU_review_ward_service_budget_resolved }
+        }
+        available = { ZAU_review_ward_service_budget_eligible = yes }
+        cost = 15
+        days_remove = 30
+        cancel_trigger = { ZAU_review_ward_service_budget_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { ZAU_review_ward_service_budget_eligible = yes }
+                set_country_flag = { flag = ZAU_review_ward_service_budget_pending days = 14 }
+                country_event = { id = ZAU_route_review.1 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    ZAU_review_glasc_contract = {
+        icon = generic_industry
+        allowed = { tag = ZAU original_tag = ZAU }
+        visible = {
+            has_idea = ZAU_exclusive_purchasing
+            NOR = { has_country_flag = ZAU_review_glasc_contract_pending has_country_flag = ZAU_review_glasc_contract_resolved }
+        }
+        available = { ZAU_review_glasc_contract_eligible = yes }
+        cost = 15
+        days_remove = 30
+        cancel_trigger = { ZAU_review_glasc_contract_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { ZAU_review_glasc_contract_eligible = yes }
+                set_country_flag = { flag = ZAU_review_glasc_contract_pending days = 14 }
+                country_event = { id = ZAU_route_review.2 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    ZAU_confirm_federation_oversight = {
+        icon = generic_political_discourse
+        allowed = { tag = ZAU original_tag = ZAU }
+        visible = {
+            has_country_flag = ZAU_federation_ratified
+            NOR = { has_country_flag = ZAU_confirm_federation_oversight_pending has_country_flag = ZAU_confirm_federation_oversight_resolved }
+        }
+        available = { ZAU_confirm_federation_oversight_eligible = yes }
+        cost = 15
+        days_remove = 30
+        cancel_trigger = { ZAU_confirm_federation_oversight_eligible = no }
+        remove_effect = {
+            if = {
+                limit = { ZAU_confirm_federation_oversight_eligible = yes }
+                set_country_flag = { flag = ZAU_confirm_federation_oversight_pending days = 14 }
+                country_event = { id = ZAU_route_review.3 }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+}

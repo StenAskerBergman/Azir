@@ -258,10 +258,7 @@ ideas = {
         }
         TAR_solar_ascendancy = {
             picture = generic_religious_zeal
-            allowed = {
-                has_government = theocracy
-                original_tag = TAR
-            }
+            allowed = { original_tag = TAR }
             removal_cost = -1
             modifier = {
                 recruitable_population_factor = 0.05
@@ -396,6 +393,13 @@ ideas = {
 			picture = generic_stability_bonus
 			allowed = { original_tag = TAR }
 			removal_cost = -1
+			cancel = {
+				OR = {
+					has_completed_focus = TAR_purity
+					has_completed_focus = TAR_reform
+					has_completed_focus = TAR_rejectors
+				}
+			}
 			modifier = {
 				stability_factor = 0.05
 				resistance_growth_on_our_occupied_states = -0.05
@@ -406,6 +410,13 @@ ideas = {
 			picture = generic_religious_zeal
 			allowed = { original_tag = TAR }
 			removal_cost = -1
+			cancel = {
+				OR = {
+					has_completed_focus = TAR_purity
+					has_completed_focus = TAR_reform
+					has_completed_focus = TAR_rejectors
+				}
+			}
 			modifier = {
 				war_support_factor = 0.10
 				stability_factor = -0.05

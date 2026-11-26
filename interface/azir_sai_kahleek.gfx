@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_report_event_azir_sai_kahleek_reksai"
+        texturefile = "gfx/event_pictures/report_event_azir_sai_kahleek_reksai.dds"
+    }
+}

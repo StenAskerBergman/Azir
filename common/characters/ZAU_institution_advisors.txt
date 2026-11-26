@@ -1,0 +1,31 @@
+characters = {
+    ZAU_ward_engineer_delegation = {
+        name = ZAU_ward_engineer_delegation
+        portraits = { civilian = { small = GFX_idea_generic_political_advisor_arab_1 } }
+        advisor = {
+            slot = political_advisor
+            idea_token = ZAU_ward_engineer_delegation
+            cost = 75
+            allowed = { tag = ZAU original_tag = ZAU }
+            visible = { ZAU_ward_advisors_available = yes }
+            available = { ZAU_ward_advisors_available = yes }
+            traits = { captain_of_industry }
+            ai_will_do = { factor = 1 }
+        }
+    }
+
+    ZAU_glasc_purchasing_office = {
+        name = ZAU_glasc_purchasing_office
+        portraits = { civilian = { small = GFX_idea_generic_political_advisor_arab_3 } }
+        advisor = {
+            slot = political_advisor
+            idea_token = ZAU_glasc_purchasing_office
+            cost = 75
+            allowed = { tag = ZAU original_tag = ZAU }
+            visible = { ZAU_glasc_advisors_available = yes }
+            available = { ZAU_glasc_advisors_available = yes }
+            traits = { war_industrialist }
+            ai_will_do = { factor = 1 }
+        }
+    }
+}

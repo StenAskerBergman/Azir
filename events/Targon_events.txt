@@ -6,6 +6,8 @@ add_namespace = targon.solari
 add_namespace = targon.rakkor
 add_namespace = targon
 add_namespace = TAR_reformers
+add_namespace = TAR_doctrines
+add_namespace = TAR_eclipse
 ###########################
 # Targon Events Checklist #
 ###########################
@@ -38,7 +40,7 @@ country_event = {
         add_political_power = 50
 
         # Add trait to leader
-        add_country_leader_trait = tar_purist
+        add_country_leader_trait = TAR_purists
 
     }
 
@@ -112,9 +114,11 @@ country_event = {
 
     option = {
         name = targon.9.a
+        ai_chance = { factor = 100 }
         custom_effect_tooltip = targon.9.a.tt
         # Choose Solari Purist path
         set_country_flag = TAR_purity_path
+        add_power_balance_value = { id = TAR_balance_of_power value = -0.05 tooltip_side = TAR_solari_side }
         add_ideas = TAR_solari_supremacy # Adds purist traits
         add_stability = -0.05
         add_war_support = 0.10
@@ -122,6 +126,7 @@ country_event = {
 
     option = {
         name = targon.9.b
+        ai_chance = { factor = 0 }
         trigger = {
             NOT = { has_country_leader = { character = TAR_rahvun ruling_only = yes } }
         }
@@ -135,6 +140,7 @@ country_event = {
 
     option = {
         name = targon.9.c
+        ai_chance = { factor = 0 }
         trigger = {
             NOT = { has_country_leader = { character = TAR_rahvun ruling_only = yes } }
         }
@@ -210,7 +216,20 @@ country_event = {
         }
         country_event = { id = targon.9 }
 
-        ai_chance = { factor = 50 }
+        ai_chance = { factor = 45 }
+    }
+
+    option = {
+        name = TAR_DIANA_NAME
+        trigger = { has_character = TAR_diana }
+        set_country_flag = TAR_diana_mandate
+        remove_ideas = purist_policy
+        remove_ideas = TAR_zealous_crusader
+        set_politics = { ruling_party = oligarchy elections_allowed = no }
+        add_popularity = { ideology = oligarchy popularity = 0.15 }
+        promote_character = TAR_diana
+        add_power_balance_value = { id = TAR_balance_of_power value = 0.25 tooltip_side = TAR_lunari_side }
+        ai_chance = { factor = 40 }
     }
 
     # Rahvun Leader Path
@@ -242,7 +261,7 @@ country_event = {
         promote_character = TAR_rahvun
         set_cosmetic_tag = TAR_solari
         ai_chance = {
-            base = 5
+            factor = 5
         }
 
         country_event = { id = targon.9 }
@@ -250,6 +269,7 @@ country_event = {
 
     option = {
         name = TAR_PANTHEON_NAME
+        ai_chance = { factor = 35 }
         trigger = {
             has_character = TAR_pantheon
         }
@@ -262,12 +282,14 @@ country_event = {
             elections_allowed = no
         }
         promote_character = TAR_pantheon
+        set_country_flag = TAR_atreus_mandate
         set_country_flag = TAR_reformation_path
         country_event = { id = TAR_reformers.1 }
     }
 
     option = {
         name = TAR_TARIC_NAME
+        ai_chance = { factor = 5 }
         trigger = {
             has_character = TAR_taric
         }
@@ -490,33 +512,50 @@ country_event = {
     }
 }
 
-country_event = { # 16 - In the Shadow of the Sun
-id = targon.16
-title = lunari.16.t
-desc = lunari.16.d
-picture = GFX_event_TAR_dark
-
-fire_only_once = yes
-is_triggered_only = no
-trigger = {
-    # tag = TAR_LUN
-    # country_exists = TAR_SOL
-    # NOT = {
-    # 	is_ai = yes
-    # 	has_country_flag = TAR_solari_alert
-    # }
+country_event = {
+    id = targon.16
+    title = lunari.16.t
+    desc = lunari.16.d
+    is_triggered_only = yes
+    trigger = { tag = TAR has_country_flag = TAR_remembrance_underway }
+    option = {
+        name = lunari.16.a
+        country_event = { id = targon.17 days = 1 }
+    }
 }
-mean_time_to_happen = { days = 10 }
 
-option = {#Better be careful
-# name = lunari.16.a
-# custom_effect_tooltip = lunari.16.a.tt
-# set_country_flag = TAR_solari_alert
-# set_country_flag = TAR_lunari_can_hide_activities
-# set_country_flag = TAR_lunari_can_prepare_uprising
-# set_temp_variable = { suspicion_change_var = 10 }
-# hidden_effect = { change_suspicion = yes }
+country_event = {
+    id = targon.17
+    title = lunari.17.t
+    desc = lunari.17.d
+    is_triggered_only = yes
+    trigger = { tag = TAR has_country_flag = TAR_remembrance_underway }
+    option = {
+        name = lunari.17.a
+        country_event = { id = targon.18 days = 1 }
+    }
 }
+
+country_event = {
+    id = targon.18
+    title = lunari.18.t
+    desc = lunari.18.d
+    is_triggered_only = yes
+    trigger = { tag = TAR has_country_flag = TAR_remembrance_underway }
+    option = {
+        name = lunari.18.shelter
+        set_country_flag = TAR_solari_defectors_sheltered
+        clr_country_flag = TAR_remembrance_underway
+        army_experience = 5
+        ai_chance = { factor = 1 }
+    }
+    option = {
+        name = lunari.18.exile
+        set_country_flag = TAR_solari_defectors_exiled
+        clr_country_flag = TAR_remembrance_underway
+        add_stability = 0.02
+        ai_chance = { factor = 1 }
+    }
 }
 
 ################################################################################################################################
@@ -600,3 +639,154 @@ option = {#Better be careful
 #         add_political_power = 50
 #     }
 # }
+
+country_event = {
+    id = TAR_doctrines.1
+    title = TAR_doctrines.1.t
+    desc = TAR_doctrines.1.d
+    is_triggered_only = yes
+    trigger = {
+        OR = { tag = SHU tag = NAZ tag = XER }
+        FROM = { original_tag = TAR }
+    }
+    option = {
+        name = TAR_doctrines.1.a
+        trigger = {
+            is_neighbor_of = FROM
+            NOT = { has_war_with = FROM }
+            FROM = { has_idea = TAR_solari_law_spirit }
+        }
+        add_stability = 0.02
+        FROM = {
+            add_manpower = -160
+            add_war_support = 0.04
+        }
+        ai_chance = { factor = 75 }
+    }
+    option = {
+        name = TAR_doctrines.1.b
+        ai_chance = { factor = 25 }
+    }
+}
+
+country_event = {
+    id = TAR_doctrines.2
+    title = TAR_doctrines.2.t
+    desc = TAR_doctrines.2.d
+    is_triggered_only = yes
+    trigger = {
+        OR = { tag = SHU tag = NAZ tag = XER }
+        FROM = { original_tag = TAR }
+    }
+    option = {
+        name = TAR_doctrines.2.a
+        trigger = {
+            is_neighbor_of = FROM
+            NOT = { has_war_with = FROM }
+            FROM = { has_idea = TAR_lunari_law_spirit }
+        }
+        add_stability = 0.02
+        FROM = {
+            add_political_power = -25
+            add_stability = 0.05
+        }
+        ai_chance = { factor = 75 }
+    }
+    option = {
+        name = TAR_doctrines.2.b
+        ai_chance = { factor = 25 }
+    }
+}
+
+country_event = {
+    id = TAR_doctrines.3
+    title = TAR_doctrines.3.t
+    desc = TAR_doctrines.3.d
+    is_triggered_only = yes
+    trigger = {
+        OR = { tag = SHU tag = NAZ tag = XER }
+        FROM = { original_tag = TAR }
+    }
+    option = {
+        name = TAR_doctrines.3.a
+        trigger = {
+            is_neighbor_of = FROM
+            NOT = { has_war_with = FROM }
+            FROM = { has_idea = TAR_rakkor_law_spirit }
+        }
+        army_experience = 8
+        FROM = {
+            add_manpower = -100
+            army_experience = 15
+        }
+        ai_chance = { factor = 75 }
+    }
+    option = {
+        name = TAR_doctrines.3.b
+        ai_chance = { factor = 25 }
+    }
+}
+
+country_event = {
+    id = TAR_eclipse.1
+    title = TAR_eclipse.1.t
+    desc = TAR_eclipse.1.d
+    is_triggered_only = yes
+
+    option = {
+        name = TAR_eclipse.1.rally
+        trigger = {
+            TAR_can_begin_eclipse = yes
+            NOT = { has_country_flag = TAR_eclipse_rakkor_support }
+        }
+        custom_effect_tooltip = TAR_eclipse_rally_tt
+        clr_country_flag = TAR_eclipse_council_open
+        set_country_flag = TAR_eclipse_rakkor_support
+        set_country_flag = { flag = TAR_eclipse_rally_underway days = 30 value = 1 }
+        ai_chance = { factor = 0 }
+    }
+    option = {
+        name = TAR_eclipse.1.lunari
+        trigger = { TAR_can_begin_eclipse = yes }
+        custom_effect_tooltip = TAR_eclipse_lunari_tt
+        clr_country_flag = TAR_eclipse_council_open
+        hidden_effect = {
+            set_temp_variable = { TAR_eclipse_keep_solari = 0 }
+            set_temp_variable = { TAR_eclipse_rebel_share = 0.65 }
+            TAR_begin_eclipse = yes
+        }
+        ai_chance = { factor = 0 }
+    }
+    option = {
+        name = TAR_eclipse.1.solari
+        trigger = { TAR_can_begin_eclipse = yes }
+        custom_effect_tooltip = TAR_eclipse_solari_tt
+        clr_country_flag = TAR_eclipse_council_open
+        hidden_effect = {
+            set_temp_variable = { TAR_eclipse_keep_solari = 1 }
+            set_temp_variable = { TAR_eclipse_rebel_share = 0.35 }
+            TAR_begin_eclipse = yes
+        }
+        ai_chance = { factor = 0 }
+    }
+    option = {
+        name = TAR_eclipse.1.leave
+        clr_country_flag = TAR_eclipse_council_open
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = TAR_eclipse.2
+    title = TAR_eclipse.2.t
+    desc = {
+        trigger = { has_country_flag = TAR_eclipse_solari_victory }
+        text = TAR_eclipse.2.solari
+    }
+    desc = {
+        trigger = { has_country_flag = TAR_eclipse_lunari_victory }
+        text = TAR_eclipse.2.lunari
+    }
+    is_triggered_only = yes
+    option = { name = TAR_eclipse.2.a }
+}

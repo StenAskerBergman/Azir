@@ -1,0 +1,21 @@
+SHU_mark_xersai_incursion = {
+    random_controlled_state = {
+        set_state_flag = SHU_xersai_incursion
+        add_dynamic_modifier = { modifier = void_attack }
+    }
+}
+
+SHU_shorten_xersai_mission = {
+    if = {
+        limit = { has_active_mission = DuneBreakerFound }
+        add_days_mission_timeout = { mission = DuneBreakerFound days = -30 }
+    }
+    else_if = {
+        limit = { has_active_mission = DuneSwallowerFound }
+        add_days_mission_timeout = { mission = DuneSwallowerFound days = -30 }
+    }
+    else_if = {
+        limit = { has_active_mission = XersaiCaller }
+        add_days_mission_timeout = { mission = XersaiCaller days = -30 }
+    }
+}

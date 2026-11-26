@@ -1,0 +1,35 @@
+characters = {
+    PIL_academy_delegation = {
+        name = PIL_academy_delegation
+        portraits = { civilian = { small = GFX_portrait_generic_sami_political_1 } }
+        advisor = {
+            slot = political_advisor
+            idea_token = PIL_academy_advisor
+            ledger = civilian
+            cost = 100
+            can_be_fired = yes
+            allowed = { original_tag = PLT }
+            visible = { PIL_public_licensing_enacted = yes }
+            available = { PIL_public_licensing_enacted = yes }
+            traits = { captain_of_industry }
+            ai_will_do = { factor = 1 }
+        }
+    }
+
+    PIL_ferros_delegation = {
+        name = PIL_ferros_delegation
+        portraits = { civilian = { small = GFX_portrait_generic_sami_political_2 } }
+        advisor = {
+            slot = political_advisor
+            idea_token = PIL_ferros_advisor
+            ledger = civilian
+            cost = 100
+            can_be_fired = yes
+            allowed = { original_tag = PLT }
+            visible = { PIL_exclusive_procurement_enacted = yes }
+            available = { PIL_exclusive_procurement_enacted = yes }
+            traits = { war_industrialist }
+            ai_will_do = { factor = 1 }
+        }
+    }
+}

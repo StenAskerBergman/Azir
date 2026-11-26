@@ -1,0 +1,37 @@
+VOI_void_influence_category = {
+    VOI_muster_rift_herald = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_Open_Void_Gate
+        }
+
+        available = {
+            controls_province = 2883
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_rift_herald_tt
+            hidden_effect = {
+                set_technology = { azir_voi_herald_siege_training = 1 popup = no }
+                division_template = {
+                    name = "Rift Herald Siege Host"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_rift_herald_siege_entity
+                    regiments = {
+                        azir_voi_herald_siege = { x = 0 y = 0 }
+                        azir_voi_herald_siege = { x = 0 y = 1 }
+                        azir_voi_herald_siege = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

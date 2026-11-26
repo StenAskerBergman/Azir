@@ -1,0 +1,13 @@
+guiTypes = {
+    containerWindowType = {
+        name = "PIL_ZAU_bop_art"
+        size = { width = 540 height = 160 }
+
+        iconType = {
+            name = "city_panorama"
+            spriteType = "GFX_PIL_ZAU_banner"
+            position = { x = 0 y = 0 }
+            alwaystransparent = yes
+        }
+    }
+}

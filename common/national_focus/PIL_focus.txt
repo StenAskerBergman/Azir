@@ -1,0 +1,309 @@
+focus_tree = {
+    id = PIL_focus
+    country = {
+        factor = 0
+        modifier = { add = 100 original_tag = PLT }
+    }
+    default = no
+    reset_on_civilwar = no
+    initial_show_position = { focus = PIL_city }
+
+    focus = {
+        id = PIL_city
+        icon = GFX_goal_generic_trade
+        x = 5
+        y = 0
+        cost = 5
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_political_power = 30
+        }
+    }
+
+    focus = {
+        id = PIL_progress
+        icon = GFX_goal_generic_trade
+        x = 2
+        y = 1
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = PIL_city }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = PIL_progress_day } } set_country_flag = PIL_progress_day country_event = { id = PIL_events.1 } }
+        }
+    }
+
+    focus = {
+        id = PIL_hextech
+        icon = GFX_goal_generic_production
+        x = 2
+        y = 2
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = PIL_progress }
+        available = { has_country_flag = PIL_charter }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = PIL_tower_plans } } set_country_flag = PIL_tower_plans country_event = { id = PIL_events.2 } }
+        }
+    }
+
+    focus = {
+        id = PIL_timetable
+        icon = GFX_goal_generic_trade
+        x = 1
+        y = 3
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = PIL_hextech }
+        available = { has_country_flag = PIL_hexgate_open }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = PIL_regular_departures } } set_country_flag = PIL_regular_departures country_event = { id = PIL_events.9 } }
+        }
+    }
+
+    focus = {
+        id = PIL_ledger
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 3
+        y = 3
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = PIL_hextech }
+        available = { has_country_flag = PIL_hexgate_open }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = PIL_sun_gates_ledger } } set_country_flag = PIL_sun_gates_ledger country_event = { id = PIL_events.4 } }
+        }
+    }
+
+    focus = {
+        id = PIL_academy
+        icon = GFX_goal_generic_construction2
+        x = 5
+        y = 1
+        cost = 7
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = PIL_city }
+        completion_reward = {
+            if = { limit = { NOT = { has_country_flag = PIL_academy_prize } } set_country_flag = PIL_academy_prize country_event = { id = PIL_events.6 } }
+        }
+    }
+
+    focus = {
+        id = PIL_open_patents
+        icon = GFX_goal_generic_production2
+        x = 4
+        y = 2
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_compact }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_cooperative = yes } }
+            modifier = { factor = 2 PIL_bridge_cooperative = yes }
+        }
+        prerequisite = { focus = PIL_academy }
+        mutually_exclusive = { focus = PIL_ferros }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_power_balance = { id = PIL_bop }
+                    NOT = { has_country_flag = PIL_bridge_committed }
+                }
+                add_power_balance_value = { id = PIL_bop value = -0.15 }
+            }
+            add_ideas = PIL_open_patents_idea
+            if = { limit = { NOT = { has_country_flag = PIL_patent_licenses } } set_country_flag = PIL_patent_licenses country_event = { id = PIL_events.5 } }
+        }
+    }
+
+    focus = {
+        id = PIL_ferros
+        icon = GFX_goal_generic_production
+        x = 6
+        y = 2
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_control }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_coercive = yes } }
+            modifier = { factor = 2 PIL_bridge_coercive = yes }
+        }
+        prerequisite = { focus = PIL_academy }
+        mutually_exclusive = { focus = PIL_open_patents }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_power_balance = { id = PIL_bop }
+                    NOT = { has_country_flag = PIL_bridge_committed }
+                }
+                add_power_balance_value = { id = PIL_bop value = 0.15 }
+            }
+            add_ideas = PIL_ferros_concession_idea
+            if = { limit = { NOT = { has_country_flag = PIL_patent_licenses } } set_country_flag = PIL_patent_licenses country_event = { id = PIL_events.5 } }
+        }
+    }
+
+    focus = {
+        id = PIL_warrants
+        icon = GFX_goal_generic_political_pressure
+        x = 4
+        y = 3
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_compact }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_cooperative = yes } }
+            modifier = { factor = 2 PIL_bridge_cooperative = yes }
+        }
+        prerequisite = { focus = PIL_open_patents }
+        completion_reward = {
+            add_ideas = PIL_public_warrants_idea
+        }
+    }
+
+    focus = {
+        id = PIL_charter_board
+        icon = GFX_goal_generic_political_pressure
+        x = 6
+        y = 3
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_control }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_coercive = yes } }
+            modifier = { factor = 2 PIL_bridge_coercive = yes }
+        }
+        prerequisite = { focus = PIL_ferros }
+        completion_reward = {
+            add_ideas = PIL_clan_board_idea
+        }
+    }
+
+    focus = {
+        id = PIL_survey
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 8
+        y = 1
+        cost = 5
+        ai_will_do = { factor = 5 }
+        prerequisite = { focus = PIL_city }
+        completion_reward = {
+            custom_effect_tooltip = PIL_ZAU_survey_tt
+        }
+    }
+
+    focus = {
+        id = PIL_negotiators
+        icon = GFX_goal_generic_trade
+        x = 8
+        y = 2
+        cost = 5
+        ai_will_do = { factor = 5 }
+        prerequisite = { focus = PIL_survey }
+        completion_reward = {
+            custom_effect_tooltip = PIL_ZAU_terms_tt
+        }
+    }
+
+    focus = {
+        id = PIL_bridge_works
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 8
+        y = 3
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_compact }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_cooperative = yes } }
+            modifier = { factor = 2 PIL_bridge_cooperative = yes }
+        }
+        prerequisite = { focus = PIL_negotiators }
+        available = { PIL_ZAU_mutual_cooperation = yes }
+        completion_reward = {
+            custom_effect_tooltip = PIL_ZAU_reopen_tt
+        }
+    }
+
+    focus = {
+        id = PIL_detour
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 10
+        y = 3
+        cost = 7
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_control }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_coercive = yes } }
+            modifier = { factor = 2 PIL_bridge_coercive = yes }
+        }
+        prerequisite = { focus = PIL_negotiators }
+        available = { OR = { PIL_ZAU_mutual_hardening = yes has_country_flag = PIL_breach_answered } }
+        completion_reward = {
+            custom_effect_tooltip = PIL_detour_tt
+        }
+    }
+
+    focus = {
+        id = PIL_public_warrant_council
+        icon = GFX_goal_generic_production2
+        relative_position_id = PIL_warrants
+        cancel_if_invalid = yes
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { focus = PIL_warrants }
+        available = {
+            PIL_public_licensing_enacted = yes
+            PIL_research_network_operating = yes
+        }
+        ai_will_do = { factor = 5 }
+        completion_reward = { custom_effect_tooltip = PIL_public_warrant_council_tt }
+    }
+
+    focus = {
+        id = PIL_council_prerogative
+        icon = GFX_goal_generic_production
+        relative_position_id = PIL_charter_board
+        cancel_if_invalid = yes
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { focus = PIL_charter_board }
+        available = {
+            PIL_requisition_operating = yes
+            has_country_flag = PIL_requisition_draw_ready
+        }
+        ai_will_do = { factor = 5 }
+        completion_reward = { custom_effect_tooltip = PIL_council_prerogative_tt }
+    }
+
+    focus = {
+        id = PIL_independent_inspectorate
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = PIL_negotiators
+        cancel_if_invalid = yes
+        x = 4
+        y = 1
+        cost = 5
+        prerequisite = { focus = PIL_negotiators }
+        available = { PIL_inspectorate_case_available = yes }
+        ai_will_do = {
+            factor = 2
+            modifier = { factor = 0.3 PIL_exclusive_procurement_enacted = yes }
+        }
+        completion_reward = { custom_effect_tooltip = PIL_independent_inspectorate_tt }
+    }
+
+    focus = {
+        id = PIL_design_bramble_crawler
+        icon = GFX_goal_PIL_bramble_crawler
+        relative_position_id = PIL_negotiators
+        x = 4
+        y = 2
+        cost = 5
+        prerequisite = { focus = PIL_negotiators }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            custom_effect_tooltip = PIL_design_bramble_crawler_tt
+        }
+    }
+}

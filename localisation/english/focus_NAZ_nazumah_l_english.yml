@@ -77,7 +77,10 @@
  NAZ_develop_indigenous_models_desc: "A weapon should suit the hands and needs of those who carry it. Support the study of locally developed infantry arms rather than relying on every foreign design."
 
  NAZ_the_steel_lions: "The Steel Lions"
- NAZ_the_steel_lions_desc: "Give our armored ambitions a formation of their own. Establish the Steel Lions and raise a light-armored brigade in the capital, with the basic tank knowledge it needs."
+ NAZ_the_steel_lions_desc: "Give our armored ambitions a formation of their own. Establish the Steel Lions and raise a light-armored brigade in the capital, with the basic tank knowledge it needs. Their crews will help our workshops develop tanks that can withstand desert service."
+ NAZ_unlock_steel_lions_desert_armour_tt: "Unlocks research for §YSteel Lions Desert Adaptation§! in the Armor tab."
+ azir_naz_steel_lions_desert_armour: "Steel Lions Desert Adaptation"
+ azir_naz_steel_lions_desert_armour_desc: "The Steel Lions have shown our workshops where sand and heat wear down their machines. Better seals, air filters, and cooling improve the reliability of Nazumah’s light tanks."
 
  NAZ_warfare_from_afar: "Warfare from Afar"
  NAZ_warfare_from_afar_desc: "Artillery offers our hunters another way to bring force against an enemy. We will plan artillery support and additional gun battalions for the Eastern Hunters formation, without assuming that guns and crews are already available."

@@ -1,0 +1,11 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_PIL_focus_background"
+        texturefile = "gfx/interface/focus_backgrounds/PIL_focus_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_ZAU_focus_background"
+        texturefile = "gfx/interface/focus_backgrounds/ZAU_focus_bg.dds"
+    }
+}

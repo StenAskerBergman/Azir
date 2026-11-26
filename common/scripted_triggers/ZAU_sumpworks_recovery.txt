@@ -1,0 +1,12 @@
+ZAU_sumpworks_test_ready = {
+    tag = ZAU
+    original_tag = ZAU
+    has_tech = ZAU_sumpworks_recovery_design
+    ZAU_wards_secure = yes
+    num_of_military_factories > 0
+}
+
+ZAU_sumpworks_trial_open = {
+    ZAU_sumpworks_test_ready = yes
+    has_country_flag = ZAU_sumpworks_trial_pending
+}

@@ -1,0 +1,28 @@
+characters = {
+    SHU_imperial_engineers = {
+        name = SHU_imperial_engineers
+        portraits = { civilian = { small = GFX_portrait_shu_azir_small } }
+        advisor = {
+            slot = political_advisor
+            idea_token = SHU_imperial_engineers
+            cost = 100
+            allowed = { original_tag = SHU }
+            available = { power_balance_value = { id = SHU_bop value > 0.50 } }
+            traits = { captain_of_industry }
+            ai_will_do = { factor = 1 }
+        }
+    }
+    SHU_provincial_delegates = {
+        name = SHU_provincial_delegates
+        portraits = { civilian = { small = GFX_portrait_shu_taliyah_small } }
+        advisor = {
+            slot = political_advisor
+            idea_token = SHU_provincial_delegates
+            cost = 100
+            allowed = { original_tag = SHU }
+            available = { power_balance_value = { id = SHU_bop value < -0.50 } }
+            traits = { popular_figurehead }
+            ai_will_do = { factor = 1 }
+        }
+    }
+}

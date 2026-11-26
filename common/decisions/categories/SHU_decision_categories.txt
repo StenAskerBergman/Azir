@@ -58,6 +58,8 @@ SHU_void_cat = {
 		original_tag = SHU
 	}
 
-	# This will pop up once void appear
+	visible = {
+		has_country_flag = void
+	}
 
 }

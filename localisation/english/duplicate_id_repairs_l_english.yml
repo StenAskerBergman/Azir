@@ -25,25 +25,25 @@
  TAR_bop_influence_solari: "Influence the Solari"
  TAR_bop_influence_lunari: "Influence the Lunari"
 
- TAR_bop_influence_solari_desc: "Supporters of the Solari will press their claim to authority within Targon. This campaign will shift the balance toward their side."
+ TAR_bop_influence_solari_desc: "Moves the balance 5 percentage points toward the Solari immediately and raises support for their theocracy."
 
- TAR_bop_influence_lunari_desc: "Supporters of the Lunari will press for greater influence within Targon. This campaign will shift the balance toward their side."
+ TAR_bop_influence_lunari_desc: "Moves the balance 5 percentage points toward the Lunari immediately and raises support for their oligarchy."
 
  TAR_daily_influence_solari: "Sustain Solari Influence"
 
- TAR_daily_influence_solari_desc: "Solari supporters will maintain a campaign for religious authority. While active, their efforts will move the balance toward the Solari and encourage support for theocracy."
+ TAR_daily_influence_solari_desc: "For 60 days, moves the balance 0.5 percentage points per day toward the Solari and adds daily support for their theocracy."
 
  TAR_daily_influence_lunari: "Sustain Lunari Influence"
 
- TAR_daily_influence_lunari_desc: "Lunari supporters will maintain a campaign for a stronger place in government. While active, their efforts will move the balance toward the Lunari and encourage support for oligarchy."
+ TAR_daily_influence_lunari_desc: "For 60 days, moves the balance 0.5 percentage points per day toward the Lunari and adds daily support for their oligarchy."
 
  TAR_influence_solari: "Strengthen the Solari Position"
 
- TAR_influence_solari_desc: "Solari supporters will press for greater authority in Targon's councils. Their campaign will shift the balance toward the Solari."
+ TAR_influence_solari_desc: "The Solari call on Targon to remember those who died defending the summit. Their appeal for the priesthood to guard the mountain's future shifts the balance toward the Solari."
 
  TAR_influence_lunari: "Strengthen the Lunari Position"
 
- TAR_influence_lunari_desc: "Lunari supporters will press for greater influence in Targon's councils. Their campaign will shift the balance toward the Lunari."
+ TAR_influence_lunari_desc: "The Lunari ask the mountain's councils to hear the people who kept the faith alive in hiding. Their appeal for a public place in Targon shifts the balance toward the Lunari."
 
  SHU_demon_response_accept: "We must endure the danger."
 

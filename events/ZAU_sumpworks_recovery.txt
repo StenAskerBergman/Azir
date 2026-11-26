@@ -1,0 +1,48 @@
+add_namespace = ZAU_sumpworks_recovery
+
+country_event = {
+    id = ZAU_sumpworks_recovery.1
+    title = ZAU_sumpworks_recovery.1.t
+    desc = ZAU_sumpworks_recovery.1.d
+    picture = GFX_ZAU_sumpworks_trial
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_sumpworks_trial_pending }
+
+    option = {
+        name = ZAU_sumpworks_recovery.1.a
+        ai_chance = { factor = 3 }
+        if = {
+            limit = { ZAU_sumpworks_trial_open = yes }
+            ZAU_commission_sumpworks_trial = yes
+            add_stability = 0.02
+        }
+        clr_country_flag = ZAU_sumpworks_trial_pending
+    }
+    option = {
+        name = ZAU_sumpworks_recovery.1.b
+        trigger = { ZAU_industrial_credit_eligible = yes }
+        ai_chance = { factor = 5 }
+        if = {
+            limit = { ZAU_sumpworks_trial_open = yes ZAU_industrial_credit_eligible = yes }
+            ZAU_commission_sumpworks_trial = yes
+            add_timed_idea = { idea = ZAU_glasc_delivery_shifts days = 60 }
+        }
+        clr_country_flag = ZAU_sumpworks_trial_pending
+    }
+    option = {
+        name = ZAU_sumpworks_recovery.1.c
+        trigger = { has_country_flag = ZAU_federation_ratified ZAU_active_detour = yes }
+        ai_chance = { factor = 5 }
+        if = {
+            limit = {
+                ZAU_sumpworks_trial_open = yes
+                has_country_flag = ZAU_federation_ratified
+                ZAU_active_detour = yes
+            }
+            ZAU_commission_sumpworks_trial = yes
+            add_timed_idea = { idea = ZAU_ward_repair_crews days = 60 }
+        }
+        clr_country_flag = ZAU_sumpworks_trial_pending
+    }
+}

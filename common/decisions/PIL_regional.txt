@@ -1,0 +1,154 @@
+PIL_regional_diplomacy = {
+
+    PIL_request_kumungu_survey = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_completed_focus = PIL_negotiators
+            NOT = { has_country_flag = PIL_ix_survey_agreement }
+        }
+        available = {
+            PIL_ix_survey_valid = yes
+            NOT = { has_country_flag = PIL_ix_survey_pending }
+        }
+        cost = 15
+        days_re_enable = 35
+        complete_effect = {
+            if = {
+                limit = {
+                    has_completed_focus = PIL_negotiators
+                    PIL_ix_survey_valid = yes
+                    NOR = {
+                        has_country_flag = PIL_ix_survey_pending
+                        has_country_flag = PIL_ix_survey_agreement
+                    }
+                }
+                clr_country_flag = PIL_ix_survey_accepted
+                set_country_flag = { flag = PIL_ix_survey_pending days = 30 value = 1 }
+                IXT = { country_event = { id = PIL_regional.1 } }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 2 has_completed_focus = PIL_open_patents }
+            modifier = { factor = 0.25 PIL_bridge_coercive = yes }
+            modifier = { factor = 0 has_country_flag = PIL_ix_survey_refused }
+        }
+    }
+
+    PIL_study_kumungu_designs = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_country_flag = PIL_ix_survey_agreement
+            NOT = { has_country_flag = PIL_ix_survey_studied }
+        }
+        available = { PIL_ix_survey_live = yes }
+        cancel_trigger = { PIL_ix_survey_live = no }
+        cost = 20
+        days_remove = 45
+        remove_effect = {
+            if = {
+                limit = { PIL_ix_survey_live = yes }
+                set_country_flag = PIL_ix_survey_studied
+                add_tech_bonus = { name = PIL_study_kumungu_designs bonus = 0.30 uses = 1 category = industry }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    PIL_ix_revoke_survey = {
+        icon = generic_construction
+        allowed = { tag = IXT }
+        visible = { PLT = { has_country_flag = PIL_ix_survey_agreement } }
+        available = { country_exists = PLT PLT = { has_country_flag = PIL_ix_survey_agreement } }
+        cost = 0
+        complete_effect = {
+            PLT = {
+                clr_country_flag = PIL_ix_survey_agreement
+                if = {
+                    limit = { has_decision = PIL_study_kumungu_designs }
+                    remove_decision = PIL_study_kumungu_designs
+                }
+                PIL_cancel_disconnected_public_study = yes
+            }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    PIL_request_scar_registry = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_completed_focus = PIL_negotiators
+            NOT = { has_country_flag = PIL_scar_registry_agreement }
+        }
+        available = {
+            PIL_scar_registry_valid = yes
+            NOT = { has_country_flag = PIL_scar_registry_pending }
+        }
+        cost = 15
+        days_re_enable = 35
+        complete_effect = {
+            if = {
+                limit = {
+                    has_completed_focus = PIL_negotiators
+                    PIL_scar_registry_valid = yes
+                    NOR = {
+                        has_country_flag = PIL_scar_registry_pending
+                        has_country_flag = PIL_scar_registry_agreement
+                    }
+                }
+                clr_country_flag = PIL_scar_registry_accepted
+                set_country_flag = { flag = PIL_scar_registry_pending days = 30 value = 1 }
+                set_country_flag = { flag = PIL_scar_registry_custody_terms days = 30 value = 1 }
+                CRY = { country_event = { id = PIL_regional.3 } }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 2 has_completed_focus = PIL_open_patents }
+            modifier = { factor = 0.25 PIL_bridge_coercive = yes }
+        }
+    }
+
+    PIL_study_scar_registry = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_country_flag = PIL_scar_registry_agreement
+            NOT = { has_country_flag = PIL_scar_registry_studied }
+        }
+        available = { PIL_scar_registry_live = yes }
+        cancel_trigger = { PIL_scar_registry_live = no }
+        cost = 20
+        days_remove = 45
+        remove_effect = {
+            if = {
+                limit = { PIL_scar_registry_live = yes }
+                set_country_flag = PIL_scar_registry_studied
+                add_tech_bonus = { name = PIL_study_scar_registry bonus = 0.30 uses = 1 category = electronics }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    PIL_cry_revoke_registry = {
+        icon = generic_construction
+        allowed = { tag = CRY }
+        visible = { PLT = { has_country_flag = PIL_scar_registry_agreement } }
+        available = { country_exists = PLT PLT = { has_country_flag = PIL_scar_registry_agreement } }
+        cost = 0
+        complete_effect = {
+            PLT = {
+                clr_country_flag = PIL_scar_registry_agreement
+                if = {
+                    limit = { has_decision = PIL_study_scar_registry }
+                    remove_decision = PIL_study_scar_registry
+                }
+                PIL_cancel_disconnected_public_study = yes
+            }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

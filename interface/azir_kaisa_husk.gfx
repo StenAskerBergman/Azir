@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_ZAU_Kaisa_Husk"
+        texturefile = "gfx/leaders/ZAU/portrait_zau_kaisa_husk_large.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_ZAU_Kaisa_Husk_small"
+        texturefile = "gfx/characters/ZAU/portrait_zau_kaisa_husk_small.dds"
+    }
+}

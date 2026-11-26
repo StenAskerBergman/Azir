@@ -1,0 +1,172 @@
+NAZ_bop_decisions = {
+    NAZ_enact_oasis_levy = {
+        icon = generic_construction
+        cost = 45
+        visible = { has_completed_focus = NAZ_train_oasis_reserves NAZ_guard_in_office = no }
+        available = { NAZ_can_enact_defense_charter = yes has_character = NAZ_ksante has_character = NAZ_Tribal_Elder_Council }
+        complete_effect = {
+            add_ideas = NAZ_guard_levy
+            set_power_balance = { id = NAZ_bop set_value = -0.75 }
+        }
+        ai_will_do = { factor = 1 modifier = { factor = 3 NAZ_frontier_emergency = yes } }
+    }
+
+    NAZ_enact_hunter_muster = {
+        icon = generic_construction
+        cost = 45
+        visible = { has_completed_focus = NAZ_process_monster_materials NAZ_hunters_in_office = no }
+        available = { NAZ_can_enact_defense_charter = yes has_character = NAZ_tope has_character = NAZ_Tribal_Elder_Council }
+        complete_effect = {
+            add_ideas = NAZ_contract_muster
+            set_power_balance = { id = NAZ_bop set_value = 0.75 }
+        }
+        ai_will_do = { factor = 1 modifier = { factor = 3 NAZ_live_defense_compact = yes } }
+    }
+
+    NAZ_release_levy = {
+        icon = generic_construction
+        cost = 60
+        visible = { NAZ_guard_in_office = yes }
+        available = { NAZ_oasis_sovereign = yes NAZ_guard_in_office = yes NOT = { has_country_flag = NAZ_joint_command_active } }
+        complete_effect = {
+            remove_ideas = NAZ_guard_levy
+            add_timed_idea = { idea = NAZ_guard_stood_down days = 90 }
+            set_power_balance = { id = NAZ_bop set_value = 0 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    NAZ_buy_out_companies = {
+        icon = generic_construction
+        cost = 60
+        visible = { NAZ_hunters_in_office = yes }
+        available = { NAZ_oasis_sovereign = yes NAZ_hunters_in_office = yes NOT = { has_country_flag = NAZ_joint_command_active } }
+        complete_effect = {
+            remove_ideas = NAZ_contract_muster
+            add_timed_idea = { idea = NAZ_companies_recalled days = 90 }
+            set_power_balance = { id = NAZ_bop set_value = 0 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    NAZ_begin_readiness_trial = {
+        icon = generic_construction
+        cost = 0
+        visible = { NAZ_guard_in_office = yes NOT = { has_country_flag = NAZ_oasis_guard_victory } }
+        available = { NAZ_oasis_sovereign = yes NAZ_guard_in_office = yes NOT = { has_active_mission = NAZ_oasis_readiness_trial } }
+        complete_effect = {
+            activate_mission = NAZ_oasis_readiness_trial
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    NAZ_oasis_readiness_trial = {
+        icon = generic_construction
+        days_mission_timeout = 180
+        is_good = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = {
+            OR = { NAZ_oasis_sovereign = no NAZ_guard_in_office = no }
+        }
+        timeout_effect = {
+            if = {
+                limit = { NAZ_oasis_sovereign = yes NAZ_guard_in_office = yes }
+                set_country_flag = NAZ_oasis_guard_victory
+                country_event = { id = NAZ_regional.4 }
+            }
+        }
+    }
+
+    NAZ_contract_oasis_routes = {
+        icon = generic_construction
+        cost = 25
+        days_remove = 45
+        visible = { NAZ_hunters_in_office = yes NOT = { has_country_flag = NAZ_route_contract_fulfilled } }
+        available = { NAZ_oasis_sovereign = yes NAZ_hunters_in_office = yes }
+        cancel_trigger = { OR = { NAZ_oasis_sovereign = no NAZ_hunters_in_office = no } }
+        remove_effect = {
+            if = {
+                limit = { NAZ_oasis_sovereign = yes NAZ_hunters_in_office = yes }
+                set_country_flag = NAZ_route_contract_fulfilled
+                add_equipment_to_stockpile = { type = support_equipment_1 amount = 35 producer = NAZ }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    NAZ_contract_frontier_patrols = {
+        icon = generic_construction
+        cost = 25
+        days_remove = 60
+        visible = { NAZ_hunters_in_office = yes NOT = { has_country_flag = NAZ_frontier_contract_fulfilled } }
+        available = { NAZ_oasis_sovereign = yes NAZ_hunters_in_office = yes has_country_flag = NAZ_route_contract_fulfilled }
+        cancel_trigger = { OR = { NAZ_oasis_sovereign = no NAZ_hunters_in_office = no } }
+        remove_effect = {
+            if = {
+                limit = { NAZ_oasis_sovereign = yes NAZ_hunters_in_office = yes }
+                set_country_flag = NAZ_frontier_contract_fulfilled
+                army_experience = 15
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    NAZ_ratify_hunter_network = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = yes
+        visible = { NAZ_hunters_in_office = yes }
+        available = {
+            NAZ_oasis_sovereign = yes
+            NAZ_hunters_in_office = yes
+            has_country_flag = NAZ_route_contract_fulfilled
+            has_country_flag = NAZ_frontier_contract_fulfilled
+            OR = {
+                NAZ_live_defense_compact = yes
+                AND = {
+                    has_country_flag = NAZ_XER_armistice_confirmed
+                    country_exists = XER
+                    NOT = { has_war_with = XER }
+                }
+            }
+        }
+        complete_effect = {
+            set_country_flag = NAZ_hunter_compacts_victory
+            country_event = { id = NAZ_regional.5 }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    NAZ_joint_emergency_command = {
+        icon = generic_construction
+        cost = 50
+        visible = { has_completed_focus = NAZ_council_defense_hearings }
+        available = {
+            NAZ_oasis_sovereign = yes
+            NAZ_frontier_emergency = yes
+            NAZ_joint_staff_available = yes
+            NOR = {
+                has_country_flag = NAZ_joint_command_active
+                has_country_flag = NAZ_joint_command_cooldown
+            }
+        }
+        complete_effect = {
+            set_country_flag = NAZ_joint_command_active
+            add_timed_idea = { idea = NAZ_joint_mobilization days = 120 }
+            activate_mission = NAZ_joint_mandate_term
+        }
+        ai_will_do = { factor = 1 modifier = { factor = 0 NOT = { has_war_with = VOI } } }
+    }
+
+    NAZ_joint_mandate_term = {
+        icon = generic_construction
+        days_mission_timeout = 120
+        is_good = yes
+        activation = { always = no }
+        available = { always = no }
+        cancel_trigger = { OR = { NAZ_oasis_sovereign = no NAZ_joint_staff_available = no } }
+        cancel_effect = { NAZ_end_joint_command = yes }
+        timeout_effect = { country_event = { id = NAZ_regional.3 } }
+    }
+}

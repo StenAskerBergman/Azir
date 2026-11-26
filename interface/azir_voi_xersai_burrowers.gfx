@@ -1,0 +1,34 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_unit_azir_voi_xersai_burrower_company_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_xersai_burrower_company_icon_medium_white"
+        texturefile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_xersai_burrower_company_icon_small"
+        texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+        noOfFrames = 2
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_xersai_riftbound_company_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_recon_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_xersai_riftbound_company_icon_medium_white"
+        texturefile = "gfx/interface/counters/divisions_small/onmap_unit_recon_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_azir_voi_xersai_riftbound_company_icon_small"
+        texturefile = "gfx/texticons/unit_recon_icon_small.dds"
+        noOfFrames = 2
+        legacy_lazy_load = no
+    }
+}

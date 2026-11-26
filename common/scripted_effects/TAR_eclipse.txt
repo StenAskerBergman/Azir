@@ -1,0 +1,104 @@
+TAR_start_remembrance = {
+    if = {
+        limit = { TAR_can_start_remembrance = yes }
+        set_country_flag = TAR_remembrance_started
+        set_country_flag = TAR_remembrance_underway
+        country_event = { id = targon.16 }
+    }
+}
+
+TAR_seat_eclipse_leader = {
+    if = {
+        limit = { has_country_flag = TAR_eclipse_solari_side }
+        if = {
+            limit = { has_character = TAR_rahvun }
+            promote_character = TAR_rahvun
+        }
+        set_cosmetic_tag = TAR_solari
+    }
+    else = {
+        if = {
+            limit = { has_character = TAR_diana }
+            promote_character = TAR_diana
+        }
+        if = {
+            limit = { has_cosmetic_tag = TAR_solari }
+            drop_cosmetic_tag = yes
+        }
+    }
+}
+
+# start_civil_war runs this effect in the newly created country. TAR stays with the player.
+TAR_establish_eclipse_rebels = {
+    set_global_flag = TAR_eclipse_started
+    load_focus_tree = { tree = targon_focus copy_completed_from = TAR }
+    if = {
+        limit = { has_country_flag = TAR_eclipse_lunari_side }
+        if = {
+            limit = { has_character = TAR_rahvun }
+            set_nationality = { character = TAR_rahvun target_country = TAR }
+        }
+        TAR = {
+            set_country_flag = TAR_eclipse_solari_side
+            if = {
+                limit = { has_character = TAR_diana }
+                set_nationality = { character = TAR_diana target_country = PREV }
+            }
+        }
+    }
+    else = {
+        if = {
+            limit = { has_character = TAR_diana }
+            set_nationality = { character = TAR_diana target_country = TAR }
+        }
+        TAR = {
+            set_country_flag = TAR_eclipse_lunari_side
+            if = {
+                limit = { has_character = TAR_rahvun }
+                set_nationality = { character = TAR_rahvun target_country = PREV }
+            }
+        }
+    }
+    TAR_seat_eclipse_leader = yes
+}
+
+# The council records which faction stays under player control for this effect only.
+TAR_begin_eclipse = {
+    if = {
+        limit = { TAR_can_begin_eclipse = yes }
+        random_owned_controlled_state = {
+            limit = { is_core_of = ROOT is_capital = no }
+            set_variable = { ROOT.TAR_eclipse_rebel_capital = THIS.id }
+        }
+        if = {
+            limit = { has_country_flag = TAR_eclipse_rakkor_support }
+            set_temp_variable = { TAR_eclipse_rebel_share = 0.50 }
+        }
+        if = {
+            limit = { check_variable = { TAR_eclipse_keep_solari = 1 } }
+            start_civil_war = {
+                ruling_party = theocracy
+                ideology = oligarchy
+                capital = var:ROOT.TAR_eclipse_rebel_capital
+                size = var:TAR_eclipse_rebel_share
+                set_country_flag = TAR_eclipse_lunari_side
+                TAR_establish_eclipse_rebels = yes
+            }
+        }
+        else = {
+            start_civil_war = {
+                ruling_party = oligarchy
+                ideology = theocracy
+                capital = var:ROOT.TAR_eclipse_rebel_capital
+                size = var:TAR_eclipse_rebel_share
+                set_country_flag = TAR_eclipse_solari_side
+                TAR_establish_eclipse_rebels = yes
+            }
+        }
+        clear_variable = TAR_eclipse_rebel_capital
+        if = {
+            limit = { has_global_flag = TAR_eclipse_started }
+            TAR_seat_eclipse_leader = yes
+        }
+    }
+}

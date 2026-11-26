@@ -1,0 +1,25 @@
+azir_xer_assault = {
+    available_for = { XER }
+    role = azir_xer_assault
+    upgrade_prio = { factor = 3 }
+
+    azir_xer_baccai_assault = {
+        enable = { has_tech = azir_xer_baccai_training }
+        upgrade_prio = { factor = 1 }
+        target_template = {
+            regiments = { infantry = 10 }
+            support = { azir_xer_baccai_assault_company = 1 }
+        }
+    }
+
+    azir_xer_warband_assault = {
+        enable = { has_tech = azir_xer_warband_training }
+        upgrade_prio = { factor = 1 }
+        target_template = {
+            regiments = {
+                infantry = 8
+                azir_xer_renekton_warband = 2
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+add_namespace = azir_renekton
+
+country_event = {
+    id = azir_renekton.1
+    title = azir_renekton.1.t
+    desc = azir_renekton.1.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+    option = { name = azir_renekton.1.a }
+}
+
+country_event = {
+    id = azir_renekton.2
+    title = azir_renekton.2.t
+    desc = azir_renekton.2.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+    trigger = {
+        XER_renekton_crisis_active = yes
+        SHU = { has_character = SHU_nasus }
+    }
+    option = {
+        name = azir_renekton.2.a
+        trigger = {
+            XER_renekton_crisis_active = yes
+            SHU = { has_character = SHU_nasus }
+        }
+        ai_chance = { factor = 3 }
+        SHU = {
+            set_variable = { SHU_nasus_vigils = 0 }
+            activate_mission = SHU_renekton_treatment
+        }
+    }
+    option = {
+        name = azir_renekton.2.b
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = azir_renekton.3
+    title = azir_renekton.3.t
+    desc = azir_renekton.3.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+    trigger = {
+        VOI_can_aid_nasus = yes
+        SHU = { SHU_renekton_treatment_active = yes }
+    }
+    option = {
+        name = azir_renekton.3.a
+        trigger = {
+            VOI_can_aid_nasus = yes
+            SHU = { SHU_renekton_treatment_active = yes }
+        }
+        ai_chance = { factor = 3 }
+        SHU = { add_days_mission_timeout = { mission = SHU_renekton_treatment days = -30 } }
+    }
+    option = {
+        name = azir_renekton.3.b
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = azir_renekton.4
+    title = azir_renekton.4.t
+    desc = azir_renekton.4.d
+    picture = GFX_report_event_renekton_corrupted
+    is_triggered_only = yes
+    option = { name = azir_renekton.4.a }
+}
+
+country_event = {
+    id = azir_renekton.5
+    title = azir_renekton.5.t
+    desc = azir_renekton.5.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+    option = { name = azir_renekton.5.a }
+}
+
+country_event = {
+    id = azir_renekton.6
+    title = azir_renekton.6.t
+    desc = azir_renekton.6.d
+    picture = GFX_report_event_empty_throne
+    is_triggered_only = yes
+    option = { name = azir_renekton.6.a }
+}
+
+country_event = {
+    id = azir_renekton.7
+    title = azir_renekton.7.t
+    desc = azir_renekton.7.d
+    picture = GFX_report_event_nasus_corrupted
+    is_triggered_only = yes
+    option = { name = azir_renekton.7.a }
+}

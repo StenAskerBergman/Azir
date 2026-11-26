@@ -27,6 +27,10 @@ fire_first_void_rift = {
         place_void_gate_first_rift = yes
         news_event = { id = void_gate.11 }
         news_event = { id = void_gate.12 days = 3 }
+        if = {
+            limit = { country_exists = SHU }
+            SHU = { country_event = shurima_void.1 }
+        }
     }
 }
 

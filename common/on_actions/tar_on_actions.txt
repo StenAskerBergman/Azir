@@ -1,4 +1,38 @@
 on_actions = {
+    # ROOT won. FROM still exists, so verify both sides before the engine annexes it.
+    on_civil_war_end_before_annexation = {
+        effect = {
+            if = {
+                limit = {
+                    original_tag = TAR
+                    FROM = { original_tag = TAR }
+                    has_global_flag = TAR_eclipse_started
+                    OR = {
+                        AND = {
+                            has_country_flag = TAR_eclipse_lunari_side
+                            FROM = { has_country_flag = TAR_eclipse_solari_side }
+                        }
+                        AND = {
+                            has_country_flag = TAR_eclipse_solari_side
+                            FROM = { has_country_flag = TAR_eclipse_lunari_side }
+                        }
+                    }
+                }
+                if = {
+                    limit = { has_country_flag = TAR_eclipse_lunari_side }
+                    set_country_flag = TAR_eclipse_lunari_victory
+                }
+                else = { set_country_flag = TAR_eclipse_solari_victory }
+                clr_country_flag = TAR_eclipse_lunari_side
+                clr_country_flag = TAR_eclipse_solari_side
+                FROM = {
+                    clr_country_flag = TAR_eclipse_lunari_side
+                    clr_country_flag = TAR_eclipse_solari_side
+                }
+                country_event = { id = TAR_eclipse.2 }
+            }
+        }
+    }
 	# Apply on ROOT
 	on_weekly = {
 		effect = {
@@ -9,6 +43,13 @@ on_actions = {
 					OR = {
 						has_government = theocracy
 						has_government = oligarchy
+						AND = {
+							has_government = absolutists
+							OR = {
+								has_country_flag = TAR_atreus_mandate
+								has_completed_focus = TAR_reform
+							}
+						}
 					}
 					NOT = {
 						has_power_balance = {
@@ -24,9 +65,16 @@ on_actions = {
 			else_if = {
 				limit = {
 					original_tag = TAR
-					NOT = {
+					NOR = {
 						has_government = theocracy
 						has_government = oligarchy
+						AND = {
+							has_government = absolutists
+							OR = {
+								has_country_flag = TAR_atreus_mandate
+								has_completed_focus = TAR_reform
+							}
+						}
 					}
 					has_power_balance = {
 						id = TAR_balance_of_power

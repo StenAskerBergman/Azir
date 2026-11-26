@@ -1,5 +1,4 @@
 capital = 106
-oob = "GSD"
 
 #TODO - set_cosmetic_tag = GSD
 

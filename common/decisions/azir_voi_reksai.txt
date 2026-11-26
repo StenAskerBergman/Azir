@@ -1,0 +1,106 @@
+VOI_void_influence_category = {
+    VOI_form_xersai_burrower_company = {
+        icon = generic_prepare_civil_war
+        cost = 25
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            NOT = { has_tech = azir_voi_xersai_burrower_training }
+        }
+
+        available = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_voidborne_acoustics
+            has_completed_focus = VOI_shifting_sands
+            custom_trigger_tooltip = {
+                tooltip = VOI_xersai_controls_rupture_tt
+                controls_province = 2883
+            }
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_form_xersai_burrower_company_tt
+            hidden_effect = {
+                set_technology = {
+                    azir_voi_xersai_burrower_training = 1
+                    popup = no
+                }
+            }
+        }
+
+        # The AI has no template plan for this company yet.
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_equip_riftbound_burrowers = {
+        icon = generic_construction
+        cost = 25
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_tech = azir_voi_xersai_burrower_training
+            NOT = { has_tech = azir_voi_xersai_riftbound_training }
+        }
+
+        available = {
+            has_country_flag = embraced_the_void
+            has_tech = azir_voi_xersai_burrower_training
+            has_completed_focus = VOI_Open_Void_Gate
+            custom_trigger_tooltip = {
+                tooltip = VOI_xersai_controls_rupture_tt
+                controls_province = 2883
+            }
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_equip_riftbound_burrowers_tt
+            hidden_effect = {
+                set_technology = {
+                    azir_voi_xersai_riftbound_training = 1
+                    popup = no
+                }
+            }
+        }
+
+        # The AI has no template or kit production plan for this company yet.
+        ai_will_do = { factor = 0 }
+    }
+
+    VOI_muster_reksai = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        fire_only_once = yes
+
+        visible = {
+            has_country_flag = embraced_the_void
+            has_completed_focus = VOI_shifting_sands
+        }
+
+        available = {
+            has_character = VOI_Reksai
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = VOI_muster_reksai_tt
+            hidden_effect = {
+                set_technology = { azir_voi_xersai_training = 1 popup = no }
+                division_template = {
+                    name = "Rek'Sai's Burrowers"
+                    is_locked = yes
+                    force_allow_recruiting = yes
+                    division_cap = 1
+                    override_model = VOI_reksai_assault_entity
+                    regiments = {
+                        azir_voi_xersai_assault = { x = 0 y = 0 }
+                        azir_voi_xersai_assault = { x = 0 y = 1 }
+                        azir_voi_xersai_assault = { x = 0 y = 2 }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

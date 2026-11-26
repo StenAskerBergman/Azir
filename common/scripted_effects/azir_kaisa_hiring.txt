@@ -1,0 +1,100 @@
+# Called only from Icathia. The invasion price follows the opening that sent her
+# abroad, even if the government in Icathia subsequently changes.
+azir_kaisa_open_foreign_offers = {
+    custom_effect_tooltip = azir_kaisa_open_foreign_offers_tt
+    hidden_effect = {
+        if = {
+            limit = {
+                tag = VOI
+                NOT = { has_global_flag = azir_kaisa_foreign_offers_started }
+                VOI_Kaisa = { is_character = VOI_Kaisa }
+                NOT = { any_country = { has_character = VOI_Kaisa } }
+            }
+            set_global_flag = azir_kaisa_foreign_offers_started
+            if = {
+                limit = { has_global_flag = VOI_Embrace_the_Void }
+                set_global_flag = azir_kaisa_invasion_price
+            }
+            azir_kaisa_offer_next = yes
+        }
+    }
+}
+
+# The caller's tag is the last stop on her journey. A missing country is
+# skipped here, so a later release cannot move the offer backwards.
+azir_kaisa_offer_next = {
+    if = {
+        limit = { tag = VOI country_exists = SHU }
+        SHU = { azir_kaisa_receive_offer = yes }
+    }
+    else_if = {
+        limit = { OR = { tag = VOI tag = SHU } country_exists = NAZ }
+        NAZ = { azir_kaisa_receive_offer = yes }
+    }
+    else_if = {
+        limit = { NOT = { tag = ZAU } country_exists = ZAU }
+        ZAU = { azir_kaisa_receive_offer = yes }
+    }
+}
+
+azir_kaisa_receive_offer = {
+    set_country_flag = azir_kaisa_offer_pending
+    country_event = { id = azir_kaisa_hiring.1 }
+}
+
+azir_kaisa_decline_offer = {
+    if = {
+        limit = { has_country_flag = azir_kaisa_offer_pending }
+        clr_country_flag = azir_kaisa_offer_pending
+        azir_kaisa_offer_next = yes
+    }
+}
+
+azir_kaisa_accept_offer = {
+    if = {
+        limit = { has_country_flag = azir_kaisa_offer_pending }
+        if = {
+            limit = { NOT = { tag = ZAU } azir_kaisa_sponsorship_affordable = yes }
+            azir_kaisa_grant_command = yes
+        }
+        if = {
+            limit = {
+                OR = {
+                    tag = ZAU
+                    AND = { has_character = VOI_Kaisa azir_kaisa_sponsorship_affordable = yes }
+                }
+            }
+            clr_country_flag = azir_kaisa_offer_pending
+            set_variable = { azir_kaisa_stability_backlash = -0.10 }
+            add_dynamic_modifier = { modifier = azir_kaisa_public_backlash }
+            if = {
+                limit = { tag = ZAU }
+                set_country_flag = ZAU_kaisa_provisional
+            }
+            else = {
+                if = {
+                    limit = { has_global_flag = azir_kaisa_invasion_price }
+                    add_political_power = -250
+                }
+                else = { add_political_power = -125 }
+                country_event = { id = azir_kaisa_hiring.2 days = 365 }
+            }
+        }
+        # PP may have been spent after the event appeared.
+        else = { azir_kaisa_decline_offer = yes }
+    }
+}
+
+# Retired named characters remain addressable in their last country; restoring
+# nationality brings their original advisor and commander roles back together.
+azir_kaisa_grant_command = {
+    if = {
+        limit = { NOT = { any_country = { has_character = VOI_Kaisa } } }
+        VOI = {
+            set_nationality = {
+                character = VOI_Kaisa
+                target_country = PREV
+            }
+        }
+    }
+}

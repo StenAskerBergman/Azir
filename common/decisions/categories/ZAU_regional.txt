@@ -1,0 +1,12 @@
+ZAU_regional_agreements = {
+    icon = GFX_decision_category_generic_industry
+    picture = GFX_ZAU_domestic_agenda
+    allowed = { OR = { original_tag = ZAU original_tag = IXT original_tag = CRY } }
+    visible = {
+        OR = {
+            AND = { tag = ZAU has_completed_focus = ZAU_engineers }
+            AND = { tag = IXT ZAU = { has_country_flag = ZAU_ixt_agreement } }
+            AND = { tag = CRY ZAU = { has_country_flag = ZAU_cry_agreement } }
+        }
+    }
+}

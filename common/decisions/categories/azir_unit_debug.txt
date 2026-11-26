@@ -1,0 +1,20 @@
+azir_unit_debug_category = {
+    icon = generic_research
+    priority = 200
+
+    allowed = {
+        OR = {
+            original_tag = VOI
+            original_tag = SHU
+            original_tag = XER
+            original_tag = NAZ
+            original_tag = PLT
+            original_tag = ZAU
+        }
+    }
+
+    visible = {
+        is_debug = yes
+        is_ai = no
+    }
+}

@@ -1,0 +1,193 @@
+XER_bop_decisions = {
+    XER_centralize_requisition = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        visible = {
+            has_completed_focus = XER_regional_arcane_registry
+        }
+        available = {
+            NOT = { has_country_flag = XER_central_requisition }
+            NOT = { has_country_flag = XER_frontier_mandates }
+            NOT = { has_country_flag = XER_command_break }
+            has_country_leader = { character = XER_xerath }
+            is_special_project_completed = sp:azir_sp_xer_arcane_siege_battery
+            XER_regional_workshops_ready = yes
+        }
+        complete_effect = {
+            set_power_balance = { id = XER_bop set_value = -0.75 }
+            set_country_flag = XER_central_requisition
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    XER_delegate_frontier = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        visible = {
+            has_completed_focus = XER_regional_frontier_charters
+        }
+        available = {
+            NOT = { has_country_flag = XER_central_requisition }
+            NOT = { has_country_flag = XER_frontier_mandates }
+            NOT = { has_country_flag = XER_command_break }
+            has_character = XER_renekton
+            XER_regional_frontier_ready = yes
+        }
+        complete_effect = {
+            set_power_balance = { id = XER_bop set_value = 0.75 }
+            set_country_flag = XER_frontier_mandates
+            set_country_flag = { flag = XER_frontier_probation days = 60 value = 1 }
+        }
+        ai_will_do = { factor = 3 }
+    }
+
+    XER_prepare_arcane_crews = {
+        icon = generic_prepare_civil_war
+        cost = 35
+        visible = {
+            has_country_flag = XER_central_requisition
+            NOT = { has_country_flag = XER_command_break }
+        }
+        available = {
+            has_country_leader = { character = XER_xerath }
+            is_special_project_completed = sp:azir_sp_xer_arcane_siege_battery
+            NOT = { has_country_flag = XER_siege_crews }
+            XER_regional_workshops_ready = yes
+            has_equipment = { artillery_equipment > 47 }
+        }
+        complete_effect = {
+            add_equipment_to_stockpile = { type = artillery_equipment amount = -36 }
+            set_country_flag = XER_siege_crews
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    XER_provision_frontier = {
+        icon = generic_prepare_civil_war
+        cost = 25
+        days_re_enable = 105
+        visible = {
+            has_completed_focus = XER_regional_frontier_charters
+        }
+        available = {
+            owns_state = 134
+            controls_state = 134
+            owns_state = 140
+            controls_state = 140
+            divisions_in_state = { state = 134 size > 0 }
+            divisions_in_state = { state = 140 size > 0 }
+            has_equipment = { infantry_equipment > 99 }
+        }
+        complete_effect = {
+            add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+            clr_country_flag = XER_frontier_provisions
+            set_country_flag = { flag = XER_frontier_provisions days = 120 value = 1 }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    XER_repeal_requisition = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        visible = {
+            has_country_flag = XER_central_requisition
+        }
+        available = {
+            always = yes
+        }
+        complete_effect = {
+            clr_country_flag = XER_central_requisition
+            clr_country_flag = XER_siege_crews
+            remove_ideas = XER_arcane_readiness
+            add_timed_idea = { idea = XER_siege_disruption days = 60 }
+            set_power_balance = { id = XER_bop set_value = 0 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    XER_revoke_frontier_mandates = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        visible = {
+            has_country_flag = XER_frontier_mandates
+        }
+        available = {
+            NOT = { has_country_flag = XER_command_break }
+        }
+        complete_effect = {
+            clr_country_flag = XER_frontier_mandates
+            clr_country_flag = XER_frontier_provisions
+            remove_ideas = XER_frontier_readiness
+            add_timed_idea = { idea = XER_garrison_disruption days = 60 }
+            set_power_balance = { id = XER_bop set_value = 0 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    XER_break_with_magus = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        visible = {
+            has_country_flag = XER_frontier_mandates
+            has_country_flag = XER_renekton_madness_unveiled
+            NOT = { has_country_flag = XER_command_break }
+        }
+        available = {
+            has_character = XER_renekton
+            has_country_leader = { character = XER_renekton }
+            is_power_balance_in_range = { id = XER_bop range = XER_bop_governor_mandate }
+            NOT = { has_country_flag = XER_frontier_probation }
+            OR = { XER_renekton_crisis_active = yes has_country_flag = XER_renekton_cured }
+            XER_regional_frontier_ready = yes
+        }
+        complete_effect = {
+            set_country_flag = XER_command_break
+            clr_country_flag = XER_siege_crews
+            remove_ideas = XER_arcane_readiness
+            add_timed_idea = { idea = XER_command_succession days = 60 }
+            country_event = { id = XER_regional.2 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    XER_offer_shurima_armistice = {
+        icon = generic_prepare_civil_war
+        cost = 25
+        visible = {
+            has_country_flag = XER_frontier_mandates
+            has_war_with = SHU
+        }
+        available = {
+            XER_regional_shurima_war = yes
+            NOT = { has_country_flag = XER_shurima_offer_pending }
+            NOT = { has_country_flag = XER_shurima_offer_cooldown }
+        }
+        complete_effect = {
+            set_country_flag = { flag = XER_shurima_offer_pending days = 30 value = 1 }
+            SHU = { country_event = { id = SHU_regional.2 } }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    XER_offer_nazumah_armistice = {
+        icon = generic_prepare_civil_war
+        cost = 25
+        visible = {
+            has_country_flag = XER_frontier_mandates
+            has_war_with = NAZ
+        }
+        available = {
+            XER_regional_nazumah_war = yes
+            NOT = { has_country_flag = XER_nazumah_offer_pending }
+            NOT = { has_country_flag = XER_offer_nazumah_armistice_cooldown }
+            NOT = { has_country_flag = XER_command_break }
+        }
+        complete_effect = {
+            clr_country_flag = XER_NAZ_armistice_accepted
+            clr_country_flag = XER_NAZ_armistice_refused
+            set_country_flag = { flag = XER_nazumah_offer_pending days = 30 value = 1 }
+            NAZ = { country_event = { id = NAZ_regional.2 } }
+        }
+        ai_will_do = { factor = 2 }
+    }
+}

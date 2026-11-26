@@ -1,0 +1,17 @@
+PIL_commission_bramble_trial_batch = {
+    clr_country_flag = PIL_bramble_trials_pending
+    set_country_flag = PIL_bramble_trials_finished
+    add_equipment_to_stockpile = { type = azir_plt_bramble_crawler_1 amount = 24 producer = PLT }
+    division_template = {
+        name = "Bramble Crawler Works Column"
+        override_model = PLT_bramble_crawler_entity
+        regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+            infantry = { x = 0 y = 3 }
+            azir_plt_bramble_crawler_battalion = { x = 1 y = 0 }
+            azir_plt_bramble_crawler_battalion = { x = 1 y = 1 }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+# Runeterra uses its own focus trees, decisions and game rules. Unavailable WWII prerequisites evaluate to false.
+#	Example:
+#
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+AFG_is_on_historical_plan_trigger = {
+	has_dlc = "Graveyard of Empires"
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			always = no
+		}
+		has_country_flag = AFG_AI_RANDOM_HISTORICAL
+		always = no
+	}
+}

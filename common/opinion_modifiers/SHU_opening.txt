@@ -1,0 +1,4 @@
+opinion_modifiers = {
+    SHU_nazumah_respect_autonomy = { value = 20 }
+    SHU_nazumah_contest_autonomy = { value = -20 }
+}

@@ -1,0 +1,43 @@
+# Piltover's research economy in 990
+
+**Finding.** Piltover can commission a first batch of excavators, deploy them, and still face a replacement problem. This is a working design reference for three different player actions: obtain a design, obtain equipment, and keep a formation supplied. The separate Hextech program has an authored progression from foundations to industrial use to the Hexcore. Record these as distinct programs in the research interface.
+
+## What the player inherits
+
+| Area | Source evidence and consequence for the design |
+| --- | --- |
+| Armory and formations | The inherited Enforcer template has ten infantry battalions. The starting order of battle places Academy Enforcers at 95% starting equipment. This establishes organized foot troops. It does not identify their weapon pattern as a hextech rifle. |
+| Field engineering and siege | Country history grants engineers and artillery. The later excavator has a specific workshop, design and unit. Keep that later unlock separate from starting engineer knowledge. |
+| Supply and transport | Country history specifies 300 convoys. River Pilt has infrastructure and a naval base. The canal and commercial Hexgate are distinct authored routes. The decision to commission the gate belongs to the event chain. |
+| Industry and civil works | The Academy state defines three civilian factories. River Pilt defines two civilian factories and one military factory. These are selected state inputs. The Crawler trial checks nationwide military factory availability and control of its test site. |
+| Maritime warfare | Country history grants early submarine, destroyer, heavy cruiser, and transport technologies. Treat those IDs as migration dependencies. Test domestic hulls, yards, designs and deployed ships separately when defining the future naval roster. |
+| Air and aerial defense | Early fighter, carrier fighter and interwar AA are inherited grants. A grant alone cannot establish a fighter wing, a carrier, available pilots, or domestic series production. Aerial commerce and armed interception need independent evidence. |
+| Information and command | Starting recon is explicit. The authored procurement branches also use contracts, inspections and common specifications. Those are administrative institutions with existing political outcomes. |
+| Arcane crafts | The author places low-cost Hextech foundations in ordinary research at the 990 start. Industrial use follows Tier 1. Exact industrial benefit remains open. The Hexcore requires research plus a national milestone. The Core opens a separate Portal project. Tier 4 requires the completed Portal as well as the Core. Preserve the late reveal. |
+
+Starting evidence comes from Quarior’s `history/countries/PLT - Piltover.txt`, `history/states/51-The Academy.txt` and `53-River Pilt.txt`, and Runeterra’s `history/units/PLT.txt`. The city route and 25 November author decisions specify the split between adopted design, open choices and live code. [Institutions and Crawler](../Twin%20Cities%20Institutions%20and%20Bramble%20Crawler.md) · [Signature research and open questions](../Twin%20Cities%20Signature%20Research.md)
+
+## Follow one machine from the workshop to Ixtal
+
+| Stage | What the player does | What changes |
+| --- | --- | --- |
+| Commission | Follow the survey and negotiators path to `PIL_design_bramble_crawler`. | The completed focus satisfies the research condition. The design still consumes research time. [Piltover focuses](../../common/national_focus/PIL_focus.txt) |
+| Develop | Research `PIL_bramble_crawler_design` at cost 1.5. | Unlock the equipment and battalion. A production line can now make machines. The equipment definition lists cost 8 and inputs under the `steel` and `rubber` resource IDs. Check their Runeterra display names when presenting costs. [Technology](../../common/technologies/azir_runeterra_theme_replacements.txt) · [Equipment](../../common/units/equipment/PIL_bramble_crawler.txt) |
+| Trial | Hold and control state 53, have a military factory, and spend 25 political power on the 45-day trial. The completion choice rechecks eligibility. | Either valid trial outcome grants 24 machines and the Works Column template. One option also gives an industry research bonus, the other gives army experience. The player must still raise the column. [Trial decision](../../common/decisions/PIL_bramble_crawler.txt) · [Outcome](../../events/PIL_bramble_crawler.txt) · [Batch and template](../../common/scripted_effects/PIL_bramble_crawler.txt) |
+| Field and sustain | Fill four infantry battalions and two Crawler battalions. Each Crawler battalion needs 12 machines and 360 personnel, uses 0.32 supply and occupies two width. | A fully equipped pair consumes the entire trial batch. Equipment lists 3.2 speed, 25% hardness and fuel consumption. Additional construction or a reserve is necessary for losses. These are component values. Check the resulting division stats in-game. [Battalion](../../common/units/PIL_bramble_crawler.txt) |
+| Choose a use | At peace, an eligible workshop owner with 12 spare machines can spend 20 political power and one machine to begin the expedition when Ixtal owns and controls both target states. In war a qualifying formation must actually enter a target state, control it while Ixtal owns it, and exceed 75% strength. | Both routes can lead to Tikras. A destructive outcome damages infrastructure and costs Ixtal stability. Production and supply now have a consequence for another player. [Decisions](../../common/decisions/PIL_tikras.txt) · [Conditions](../../common/scripted_triggers/PIL_tikras.txt) · [Effects](../../common/scripted_effects/PIL_tikras.txt) |
+| Transfer | Zaun owns and controls state 51, has a military factory, and has secured the archive or Piltover already knows the design. Spend 25 political power once. | Zaun gains the technology and its own column template. The transfer effect supplies no batch of machines. The archive can be secured through the annexation or state-control hooks. Crawler equipment disables licensing and lend-lease. No separate repair-knowledge unlock appears in this chain. [Workshop takeover](../../common/decisions/PIL_tikras.txt) · [Archive hooks](../../common/on_actions/PIL_tikras.txt) |
+
+**Design implication.** A batch of 24 lets the player fill one template, or keep a stock of machines for expeditions and replacements. A decision that purchases finished goods should change stock. A transfer of plans should enable reproduction only at the point the relevant workshop and inputs are available. Ownership of one imported machine establishes neither a domestic design nor a working supply chain.
+
+## Arcane crafts and exclusive projects
+
+*Arcane* depicts the Atlas gauntlets as tools intended for miners, then shows an individual using them in combat. That establishes a civilian application and personal possession. The mod’s recorded 990 starting and progression decisions govern when players can develop the city's program. The earlier gemstone-to-gauntlet mockup is an illustration candidate only. [Season one account](https://www.netflix.com/tudum/articles/arcane-season-1-recap) · [Author's tier decisions](../Twin%20Cities%20Signature%20Research.md)
+
+| program | Owning mechanism | What to preserve |
+| --- | --- | --- |
+| Hextech foundations and industrial use | Approved direction for ordinary research. Later Core and Portal delivery is design work. | The industrial payoff, exact later cargo, defenders and some route choices are open in the owning document. Don’t add the same payoff to a shared industry node. |
+| Commercial Hexgate | Existing charter, commissioning and follow-up focus events | The commissioning flag opens timetable and port-ledger content. The proposed late Portal has separate gameplay. [Commissioning](../../events/PIL_events.txt) |
+| Hexlyene Caliver and cube battery | Existing Land Warfare facility projects, gated by Piltover and Götterdämmerung | Engineers precede the Caliver. The project grants equipment and the Warden company. The battery project requires its parent. The company needs 24 weapons and 300 personnel. Both projects currently disable AI selection. Avoid introducing a second unlock or promising an AI-raised company. [Projects](../../common/special_projects/projects/azir_twin_cities.txt) · [Support unit](../../common/units/azir_twin_cities_support.txt) |
+
+**Verification status.** Script conditions, resource IDs, quantities and consumers were inspected. The peaceful expedition has zero AI decision weight and the battalion has zero AI priority. Production, native template selection, replacement throughput, saved-game continuity and multiplayer behavior remain unverified.

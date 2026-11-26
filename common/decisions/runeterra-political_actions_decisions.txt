@@ -1,0 +1,1485 @@
+political_actions = {
+	# Race for the bomb
+	targeted_race_for_the_bomb = {
+
+		icon = generic_research
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			#Target is FROM
+			has_tech = atomic_research
+			NOT = { has_global_flag = first_nuke_dropped }
+			NOT = { has_idea = race_for_the_bomb }
+		}
+
+		target_root_trigger = {
+            has_tech = atomic_research
+            NOT = { has_global_flag = first_nuke_dropped }
+            NOT = { has_idea = race_for_the_bomb }
+		}
+
+		#If this trigger matches a country.
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+        		NOT = { is_in_faction_with = ROOT }
+				is_special_project_completed = sp:sp_nuclear_reactor
+				any_owned_state = {
+					nuclear_reactor > 0
+				}
+			}
+		}
+
+		visible = {
+            #Target is FROM
+            has_tech = atomic_research
+            NOT = { has_global_flag = first_nuke_dropped }
+            NOT = { has_idea = race_for_the_bomb }
+            FROM = {
+        		NOT = { is_in_faction_with = ROOT }
+				is_special_project_completed = sp:sp_nuclear_reactor
+				any_owned_state = {
+					nuclear_reactor > 0
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = racing_for_the_bomb
+			add_ideas = race_for_the_bomb
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				any_other_country = { is_special_project_completed = sp:sp_nuclear_bomb }
+			}
+		}
+	}
+	
+	# Improve worker conditions
+	improved_worker_conditions = {
+
+		icon = generic_industry
+		priority = 10
+		available = {
+			has_stability < 1.0
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			consumer_goods_factor = 0.10
+			industrial_capacity_factory = -0.1
+		}
+
+		days_remove = 180
+		days_re_enable = 540
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155 #Spend on other things first
+			}
+			modifier = {
+				factor = 0
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+			modifier = {
+				factor = 0 
+				tag = ICE
+				always = no
+				NOT = { always = no }
+			}
+			modifier = {
+				factor = 0 
+				tag = GER
+				always = no
+				NOT = { 
+					OR = {
+						always = no 
+						always = no 
+					}
+				}
+			}
+			modifier = {
+				add = 1000
+				has_stability < 0.76
+				original_tag = SWE
+				has_idea = SWE_hungershield
+			}
+		}
+	}
+	
+	# Press censorship
+	institute_press_censorship_fascist_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = fascism
+		}
+		
+		modifier = {
+			fascism_drift = 0.03
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_absolutists_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = absolutists
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = 0.03
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_desolation_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = desolation
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = 0.03
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	institute_press_censorship_democratic_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = democratic
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = 0.03
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_royalist_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = royalist
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = 0.03
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_chiefdom_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = chiefdom
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = 0.03
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	institute_press_censorship_communism_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = communism
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = 0.03
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_oligarchy_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = oligarchy
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = 0.03
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_theocracy_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = theocracy
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = 0.03
+			mages_drift = -0.01
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	institute_press_censorship_mages_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = mages
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = 0.03
+			neutrality_drift = -0.01
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	institute_press_censorship_neutrality_state = {
+		
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = {
+				has_idea = SPR_political_violence
+			}
+		}
+		
+		visible = {
+			has_government = neutrality
+		}
+		
+		modifier = {
+			fascism_drift = -0.01
+			absolutists_drift = -0.01
+			desolation_drift = -0.01
+			democratic_drift = -0.01
+			royalist_drift = -0.01
+			chiefdom_drift = -0.01
+			communism_drift = -0.01
+			oligarchy_drift = -0.01
+			theocracy_drift = -0.01
+			mages_drift = -0.01
+			neutrality_drift = 0.03
+		}
+		
+		days_remove = 360
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# Anti Ideologies
+	anti_fascist_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = fascism }
+		}
+		
+		available = {
+			fascism > 0.1
+		}
+		
+		modifier = {
+			fascism_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	anti_absolutists_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = absolutists }
+		}
+		
+		available = {
+			absolutists > 0.1
+		}
+		
+		modifier = {
+			absolutists_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	anti_desolation_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = desolation }
+		}
+		
+		available = {
+			desolation > 0.1
+		}
+		
+		modifier = {
+			desolation_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	anti_democratic_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = democratic }
+		}
+		
+		available = {
+			democratic > 0.1
+		}
+		
+		modifier = {
+			democratic_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	anti_royalist_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = royalist }
+		}
+		
+		available = {
+			royalist > 0.1
+		}
+		
+		modifier = {
+			royalist_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	anti_chiefdom_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = chiefdom }
+		}
+		
+		available = {
+			chiefdom > 0.1
+		}
+		
+		modifier = {
+			chiefdom_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	anti_communist_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = communism }
+		}
+		
+		available = {
+			communism > 0.1
+		}
+		
+		modifier = {
+			communism_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	anti_oligarchy_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = oligarchy }
+		}
+		
+		available = {
+			oligarchy > 0.1
+		}
+		
+		modifier = {
+			oligarchy_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	anti_theocracy_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = theocracy }
+		}
+		
+		available = {
+			theocracy > 0.1
+		}
+		
+		modifier = {
+			theocracy_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	anti_mages_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = mages }
+		}
+		
+		available = {
+			mages > 0.1
+		}
+		
+		modifier = {
+			mages_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	anti_neutrality_raids = {
+		
+		icon = generic_civil_support
+		
+		visible = {
+			NOT = { has_government = neutrality }
+		}
+		
+		available = {
+			neutrality > 0.1
+		}
+		
+		modifier = {
+			neutrality_drift = -0.05
+			stability_weekly = 0.007
+		}
+		
+		days_remove = 120
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# Ban Ideologies
+	ban_fascist_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			fascism < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = fascism }
+			fascism > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = fascism
+			}
+		}
+		
+		modifier = {
+			fascism_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@fascism
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_fascism_flag
+			}
+			remove_fascist_spirits_effect = yes
+			custom_effect_tooltip = ban_fascist_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_absolutists_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			absolutists < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = absolutists }
+			absolutists > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = absolutists
+			}
+		}
+		
+		modifier = {
+			absolutists_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@absolutists
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = absolutists
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_absolutists_flag
+			}
+			remove_absolutists_spirits_effect = yes
+			custom_effect_tooltip = ban_absolutists_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_desolation_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			desolation < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = desolation }
+			desolation > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = desolation
+			}
+		}
+		
+		modifier = {
+			desolation_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@desolation
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = desolation
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_desolation_flag
+			}
+			remove_desolation_spirits_effect = yes
+			custom_effect_tooltip = ban_desolation_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ban_democratic_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			democratic < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = democratic }
+			democratic > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = democratic
+			}
+		}
+		
+		modifier = {
+			democratic_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@democratic
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_democratic_flag				
+			}
+			remove_democratic_spirits_effect = yes 
+			custom_effect_tooltip = ban_democratic_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_royalist_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			royalist < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = royalist }
+			royalist > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = royalist
+			}
+		}
+		
+		modifier = {
+			royalist_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@royalist
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = royalist
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_royalist_flag				
+			}
+			remove_royalist_spirits_effect = yes 
+			custom_effect_tooltip = ban_royalist_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_chiefdom_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			chiefdom < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = chiefdom }
+			chiefdom > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = chiefdom
+			}
+		}
+		
+		modifier = {
+			chiefdom_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@chiefdom
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = chiefdom
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_chiefdom_flag				
+			}
+			remove_chiefdom_spirits_effect = yes 
+			custom_effect_tooltip = ban_chiefdom_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ban_communist_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			communism < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = communism }
+			communism > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			communism_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@communism
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_communism_flag
+			}
+			remove_communist_spirits_effect = yes
+			custom_effect_tooltip = ban_communist_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_oligarchy_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			oligarchy < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = oligarchy }
+			oligarchy > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = oligarchy
+			}
+		}
+		
+		modifier = {
+			oligarchy_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@oligarchy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = oligarchy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_oligarchy_flag
+			}
+			remove_oligarchy_spirits_effect = yes
+			custom_effect_tooltip = ban_oligarchy_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_theocracy_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			theocracy < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = theocracy }
+			theocracy > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = theocracy
+			}
+		}
+		
+		modifier = {
+			theocracy_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@theocracy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = theocracy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_theocracy_flag
+			}
+			remove_theocracy_spirits_effect = yes
+			custom_effect_tooltip = ban_theocracy_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_mages_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			mages < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = mages }
+			mages > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = mages
+			}
+		}
+		
+		modifier = {
+			mages_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@mages
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = mages
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_mages_flag
+			}
+			remove_mages_spirits_effect = yes
+			custom_effect_tooltip = ban_mages_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ban_neutrality_party = {
+		
+		icon = generic_civil_support
+		
+		available = {
+			neutrality < 0.2
+		}
+		
+		visible = {
+			NOT = { has_government = neutrality }
+			neutrality > 0
+		}
+		
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = neutrality
+			}
+		}
+		
+		modifier = {
+			neutrality_drift = -0.05
+		}
+		
+		days_remove = -1
+		cost = 100
+		
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@neutrality
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+				set_country_flag = banned_neutrality_flag
+			}
+			remove_neutrality_spirits_effect = yes
+			custom_effect_tooltip = ban_neutrality_party_tt
+			add_stability = ban_ideology_var
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

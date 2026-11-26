@@ -1,0 +1,154 @@
+add_namespace = PIL_tikras
+
+country_event = {
+    id = PIL_tikras.1
+    title = PIL_tikras.1.t
+    desc = {
+        trigger = { tag = PLT has_country_flag = PIL_tikras_wartime }
+        text = PIL_tikras.1.war
+    }
+    desc = {
+        trigger = { tag = ZAU has_country_flag = PIL_tikras_wartime }
+        text = PIL_tikras.1.zau_war
+    }
+    desc = {
+        trigger = { tag = ZAU NOT = { has_country_flag = PIL_tikras_wartime } }
+        text = PIL_tikras.1.zau
+    }
+    desc = {
+        trigger = { tag = PLT NOT = { has_country_flag = PIL_tikras_wartime } }
+        text = PIL_tikras.1.pil
+    }
+    picture = GFX_PIL_tikras_jungle
+    is_triggered_only = yes
+
+    option = {
+        name = PIL_tikras.1.a
+        trigger = { PIL_tikras_scene_live = yes }
+        country_event = { id = PIL_tikras.2 days = 2 }
+        ai_chance = { factor = 60 }
+    }
+    option = {
+        name = PIL_tikras.1.b
+        PIL_tikras_close = yes
+        ai_chance = { factor = 40 }
+    }
+}
+
+country_event = {
+    id = PIL_tikras.2
+    title = PIL_tikras.2.t
+    desc = { trigger = { NOT = { has_country_flag = PIL_tikras_wartime } } text = PIL_tikras.2.d }
+    desc = { trigger = { has_country_flag = PIL_tikras_wartime } text = PIL_tikras.2.war }
+    picture = GFX_PIL_tikras_jungle
+    is_triggered_only = yes
+
+    option = {
+        name = PIL_tikras.2.a
+        trigger = { PIL_tikras_scene_live = yes }
+        country_event = { id = PIL_tikras.3 days = 1 }
+        ai_chance = { factor = 45 }
+    }
+    option = {
+        name = PIL_tikras.2.b
+        trigger = {
+            PIL_tikras_scene_live = yes
+            PIL_tikras_prospecting = yes
+            NOT = { has_country_flag = PIL_tikras_wartime }
+        }
+        add_political_power = -15
+        IXT = { add_opinion_modifier = { target = ROOT modifier = PIL_tikras_compensation } }
+        PIL_tikras_close = yes
+        ai_chance = { factor = 35 }
+    }
+    option = {
+        name = PIL_tikras.2.c
+        PIL_tikras_close = yes
+        ai_chance = { factor = 20 }
+    }
+}
+
+country_event = {
+    id = PIL_tikras.3
+    title = PIL_tikras.3.t
+    desc = { trigger = { NOT = { has_country_flag = PIL_tikras_wartime } } text = PIL_tikras.3.d }
+    desc = { trigger = { has_country_flag = PIL_tikras_wartime } text = PIL_tikras.3.war }
+    picture = GFX_PIL_tikras_jungle
+    is_triggered_only = yes
+
+    # The first option is selected when the player lets this event expire.
+    option = {
+        name = PIL_tikras.3.c
+        PIL_tikras_close = yes
+        ai_chance = { factor = 55 }
+    }
+
+    option = {
+        name = PIL_tikras.3.a
+        trigger = { PIL_tikras_scene_live = yes }
+        PIL_tikras_destroy = yes
+        ai_chance = { factor = 20 }
+    }
+    option = {
+        name = PIL_tikras.3.b
+        trigger = { PIL_tikras_scene_live = yes has_country_flag = PIL_tikras_wartime }
+        army_experience = 5
+        PIL_tikras_close = yes
+        ai_chance = { factor = 45 }
+    }
+}
+
+country_event = {
+    id = PIL_tikras.4
+    title = PIL_tikras.4.t
+    desc = { trigger = { tag = PLT } text = PIL_tikras.4.pil }
+    desc = { trigger = { tag = ZAU } text = PIL_tikras.4.zau }
+    picture = GFX_PIL_tikras_jungle
+    is_triggered_only = yes
+
+    option = {
+        name = PIL_tikras.4.a
+        add_political_power = -20
+        if = {
+            limit = { country_exists = IXT }
+            IXT = { add_opinion_modifier = { target = ROOT modifier = PIL_tikras_compensation } }
+        }
+        ai_chance = { factor = 65 }
+    }
+    option = {
+        name = PIL_tikras.4.b
+        add_stability = -0.02
+        ai_chance = { factor = 35 }
+    }
+}
+
+country_event = {
+    id = PIL_tikras.5
+    title = PIL_tikras.5.t
+    desc = PIL_tikras.5.d
+    picture = GFX_PIL_tikras_jungle
+    is_triggered_only = yes
+    option = {
+        name = PIL_tikras.5.a
+        add_war_support = 0.02
+        ai_chance = { factor = 1 }
+    }
+    option = {
+        name = PIL_tikras.5.b
+        add_manpower = 150
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = PIL_tikras.6
+    title = PIL_tikras.6.t
+    desc = PIL_tikras.6.d
+    picture = GFX_ZAU_excavator_works
+    is_triggered_only = yes
+    option = {
+        name = PIL_tikras.6.a
+        custom_effect_tooltip = ZAU_excavator_works_transferred_tt
+        ai_chance = { factor = 1 }
+    }
+}

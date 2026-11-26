@@ -1,0 +1,34 @@
+sub_units = {
+    azir_zau_sumpworks_recovery_company = {
+        abbreviation = "SREC"
+        sprite = ZAU_sumpworks_recovery
+        map_icon_category = infantry
+        active = no
+        ai_priority = 0
+        affects_speed = no
+        type = { infantry support }
+        group = support
+        categories = {
+            category_front_line
+            category_support_battalions
+            category_divisional_support_battalions
+            category_army
+        }
+        regimental = no
+        combat_width = 0
+        manpower = 260
+        max_strength = 1
+        max_organisation = 10
+        default_morale = 0.20
+        training_time = 120
+        weight = 0.28
+        supply_consumption = 0.10
+        can_be_parachuted = no
+        essential = { azir_zau_sumpworks_rig }
+        need = { azir_zau_sumpworks_rig = 8 }
+        same_support_type = engineer
+
+        urban = { attack = 0.12 movement = 0.20 }
+        marsh = { attack = 0.08 movement = 0.30 }
+    }
+}

@@ -54,6 +54,7 @@ country_event = {
 	trigger = {
 		tag = TAR
 		has_character = TAR_diana
+		FROM = { has_country_flag = SHU_awaiting_moonstone_answer }
 	}
 
 	option = {
@@ -64,9 +65,18 @@ country_event = {
 			modifier = { factor = 0.25 has_country_flag = TAR_diana_rejector }
 			modifier = { factor = 0.25 has_country_flag = TAR_purity_path }
 		}
-		add_political_power = 25
-		add_opinion_modifier = { target = FROM modifier = SHU_moonstone_cooperation }
-		FROM = { country_event = { id = shurima_moonstone.4 days = 1 } }
+		if = {
+			limit = {
+				has_character = TAR_diana
+				FROM = { has_country_flag = SHU_awaiting_moonstone_answer }
+			}
+			add_political_power = 25
+			add_opinion_modifier = { target = FROM modifier = SHU_moonstone_cooperation }
+			FROM = {
+				clr_country_flag = SHU_awaiting_moonstone_answer
+				country_event = { id = shurima_moonstone.4 days = 1 }
+			}
+		}
 	}
 
 	option = {
@@ -77,9 +87,18 @@ country_event = {
 			modifier = { factor = 2 has_country_flag = TAR_diana_rejector }
 			modifier = { factor = 2 has_country_flag = TAR_purity_path }
 		}
-		add_war_support = 0.02
-		add_opinion_modifier = { target = FROM modifier = SHU_moonstone_refused }
-		FROM = { country_event = { id = shurima_moonstone.5 days = 1 } }
+		if = {
+			limit = {
+				has_character = TAR_diana
+				FROM = { has_country_flag = SHU_awaiting_moonstone_answer }
+			}
+			add_war_support = 0.02
+			add_opinion_modifier = { target = FROM modifier = SHU_moonstone_refused }
+			FROM = {
+				clr_country_flag = SHU_awaiting_moonstone_answer
+				country_event = { id = shurima_moonstone.5 days = 1 }
+			}
+		}
 	}
 }
 
@@ -148,4 +167,22 @@ country_event = {
 		add_stability = 0.03
 		navy_experience = 10
 	}
+}
+
+# An invalidated petition opens the existing exile route without a diplomatic refusal.
+country_event = {
+	id = shurima_moonstone.7
+	title = shurima_moonstone.7.t
+	desc = shurima_moonstone.7.d
+	picture = GFX_report_event_generic_naval_treaty
+	is_triggered_only = yes
+	trigger = { has_country_flag = SHU_awaiting_moonstone_answer }
+
+	immediate = {
+		clr_country_flag = SHU_awaiting_moonstone_answer
+		set_country_flag = SHU_moonstone_search_available
+		add_ideas = SHU_moonstone_quest_unresolved
+	}
+
+	option = { name = shurima_moonstone.7.a }
 }

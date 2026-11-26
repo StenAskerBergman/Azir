@@ -1,0 +1,68 @@
+add_namespace = ZAU_events
+
+country_event = {
+    id = ZAU_events.31
+    title = ZAU_events.31.t
+    desc = ZAU_events.31.d
+    picture = GFX_PIL_ZAU_promenade
+    is_triggered_only = yes
+    trigger = { tag = ZAU original_tag = ZAU }
+    option = { name = ZAU_events.31.a }
+}
+
+country_event = {
+    id = ZAU_events.32
+    title = ZAU_events.32.t
+    desc = ZAU_events.32.d
+    picture = GFX_PIL_ZAU_firelights
+    is_triggered_only = yes
+    trigger = { tag = ZAU original_tag = ZAU }
+    option = { name = ZAU_events.32.a }
+}
+
+country_event = {
+    id = ZAU_events.33
+    title = ZAU_events.33.t
+    desc = ZAU_events.33.d
+    picture = GFX_PIL_ZAU_firelights
+    is_triggered_only = yes
+    timeout_days = 31
+    trigger = { tag = ZAU original_tag = ZAU has_country_flag = ZAU_federation_vote_pending }
+
+    option = {
+        name = ZAU_events.33.restore
+        ai_chance = { factor = 1 }
+        clr_country_flag = ZAU_federation_vote_pending
+    }
+    option = {
+        name = ZAU_events.33.ratify
+        trigger = {
+            has_country_flag = ZAU_federation_vote_pending
+            ZAU_wards_secure = yes
+            ZAU_active_detour = yes
+        }
+        ai_chance = { factor = 5 }
+        if = {
+            limit = {
+                has_country_flag = ZAU_federation_vote_pending
+                ZAU_wards_secure = yes
+                ZAU_active_detour = yes
+            }
+            set_country_flag = ZAU_federation_ratified
+            clr_country_flag = ZAU_ixt_offer_pending
+            clr_country_flag = ZAU_cry_offer_pending
+            custom_effect_tooltip = ZAU_federation_ratified_tt
+        }
+        clr_country_flag = ZAU_federation_vote_pending
+    }
+}
+
+country_event = {
+    id = ZAU_events.34
+    title = ZAU_events.34.t
+    desc = ZAU_events.34.d
+    picture = GFX_PIL_ZAU_lift
+    is_triggered_only = yes
+    trigger = { tag = ZAU original_tag = ZAU }
+    option = { name = ZAU_events.34.a }
+}

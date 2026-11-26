@@ -1,0 +1,10 @@
+ideas = {
+    country = {
+        ZAU_glasc_delivery_shifts = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.08 consumer_goods_factor = 0.04 }
+        }
+    }
+}

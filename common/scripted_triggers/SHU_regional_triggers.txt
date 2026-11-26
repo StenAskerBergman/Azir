@@ -1,0 +1,46 @@
+SHU_disc_secure = {
+    controls_state = 144
+    owns_state = 144
+    144 = { is_demilitarized_zone = no }
+}
+
+SHU_imperial_supply_secure = {
+    SHU_disc_secure = yes
+    controls_state = 141
+    owns_state = 141
+}
+
+SHU_contest_ended = {
+    SHU_disc_secure = yes
+    OR = {
+        NOT = { country_exists = XER }
+        AND = {
+            NOT = { has_war_with = XER }
+            OR = {
+                NOT = { has_global_flag = SHU_XER_civil_war_trigger }
+                has_country_flag = SHU_xer_war_observed
+                XER = { has_country_flag = XER_shurima_armistice }
+                XER = { is_subject_of = SHU }
+                NOT = { XER = { has_country_flag = xer_at_war_with_shu } }
+            }
+        }
+    }
+}
+
+SHU_custody_eligible = {
+    tag = SHU
+    has_country_flag = SHU_custody_crisis
+    SHU_disc_secure = yes
+    has_character = SHU_sivir
+    has_character = SHU_nasus
+    NOT = { has_character = SHU_azir }
+    NOT = { has_country_flag = SHU_custody_resolved }
+}
+
+SHU_nazumah_compact_in_force = {
+    has_country_flag = SHU_nazumah_defense_compact_accepted
+    country_exists = NAZ
+    is_subject = no
+    NOT = { has_war_with = NAZ }
+    NAZ = { is_subject = no has_country_flag = SHU_nazumah_defense_compact_accepted }
+}

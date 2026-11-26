@@ -1,0 +1,26 @@
+add_namespace = azir_sai_kahleek
+
+country_event = {
+    id = azir_sai_kahleek.1
+    title = azir_sai_kahleek.1.t
+    desc = azir_sai_kahleek.1.d
+    picture = GFX_report_event_azir_sai_kahleek_reksai
+    is_triggered_only = yes
+
+    trigger = { owns_state = 130 }
+
+    option = {
+        name = azir_sai_kahleek.1.a
+        trigger = { has_equipment = { support_equipment > 24 } }
+        add_equipment_to_stockpile = { type = support_equipment amount = -25 }
+        ai_chance = { factor = 2 }
+    }
+
+    option = {
+        name = azir_sai_kahleek.1.b
+        130 = {
+            add_dynamic_modifier = { modifier = azir_sai_kahleek_road_closed days = 30 }
+        }
+        ai_chance = { factor = 1 }
+    }
+}

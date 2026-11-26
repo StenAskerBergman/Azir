@@ -1,0 +1,35 @@
+add_namespace = PIL_bramble_crawler
+
+country_event = {
+    id = PIL_bramble_crawler.1
+    title = PIL_bramble_crawler.1.t
+    desc = PIL_bramble_crawler.1.d
+    picture = GFX_PIL_bramble_crawler_trials
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_bramble_trials_pending }
+
+    option = {
+        name = PIL_bramble_crawler.1.a
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { PIL_bramble_test_site_ready = yes has_country_flag = PIL_bramble_trials_pending }
+            PIL_commission_bramble_trial_batch = yes
+            add_tech_bonus = { name = PIL_bramble_crawler_design bonus = 0.30 uses = 1 category = industry }
+        }
+        clr_country_flag = PIL_bramble_trials_pending
+    }
+    option = {
+        name = PIL_bramble_crawler.1.b
+        ai_chance = {
+            factor = 1
+            modifier = { factor = 4 has_war = yes }
+        }
+        if = {
+            limit = { PIL_bramble_test_site_ready = yes has_country_flag = PIL_bramble_trials_pending }
+            PIL_commission_bramble_trial_batch = yes
+            army_experience = 12
+        }
+        clr_country_flag = PIL_bramble_trials_pending
+    }
+}

@@ -1,5 +1,4 @@
-capital = 133
-oob = "GES"
+capital = 104
 
 set_research_slots = 2
 set_stability = 0.65

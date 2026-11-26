@@ -1,0 +1,19 @@
+ZAU_bop = {
+    initial_value = 0
+    left_side = ZAU_bop_cooperative
+    right_side = ZAU_bop_coercive
+    decision_category = ZAU_bop_decisions
+    range = { id = ZAU_bop_status_quo min = -0.20 max = 0.20 }
+    side = {
+        id = ZAU_bop_cooperative
+        icon = GFX_bop_SWI_centralization_council_side
+        range = { id = ZAU_bop_opening min = -0.50 max = -0.20 }
+        range = { id = ZAU_bop_charter min = -1 max = -0.50 }
+    }
+    side = {
+        id = ZAU_bop_coercive
+        icon = GFX_bop_SWI_centralization_canton_side
+        range = { id = ZAU_bop_control min = 0.20 max = 0.50 }
+        range = { id = ZAU_bop_prerogative min = 0.50 max = 1 }
+    }
+}

@@ -7,6 +7,14 @@
  TAR_lunari_side: "Lunari Influence"
  TAR_solari_side: "Solari Power"
 
+ TAR_solari_strong_influence: "Solari Dominance"
+ TAR_solari_medium_influence: "Established Solari Influence"
+ TAR_solari_weak_influence: "Limited Solari Influence"
+ TAR_neutral_range: "Sun and Moon in Balance"
+ TAR_lunari_weak_influence: "Limited Lunari Influence"
+ TAR_lunari_medium_influence: "Established Lunari Influence"
+ TAR_lunari_strong_influence: "Lunari Dominance"
+
 
  TAR_990_DESC: "Amidst the towering peaks of Mount Targon, the ancient conflict between the Solari and the Lunari reaches a breaking point. As the celestial bodies shift and the mountain stirs, the factions within Targon must choose between unity or destruction. The Solari, led by Leona and her zealous followers, seek to purge the Lunari and restore their dominance. Meanwhile, the Lunari, driven underground for years, rise under the leadership of Diana, challenging the Solari’s rule in the name of balance. As the Rakkor warriors are torn between faith and survival, the fate of Targon lies in the hands of those who can command the mountain’s power or be consumed by it."
 
@@ -90,7 +98,7 @@
  purist_policy: "Purist Crusade Against the Lunari"
 
  TAR_lunari_endurance: "Lunari Endurance"
- TAR_lunari_endurance_desc: "Despite decades of suppression, the Lunari have endured. This spirit of resilience honors the memory of those lost to Solari oppression and fuels the fire to reclaim their rightful place."
+ TAR_lunari_endurance_desc: "The Lunari kept their rites alive in hidden sanctuaries and carried the names of their dead from refuge to refuge. They can gather openly again, and the networks that preserved their faith help Targon endure even where its own lands fall under occupation."
 
  TAR_lunari_revolution: "Lunari Revolution"
  TAR_lunari_revolution_desc: "The Lunari have risen, no longer content to hide in the shadows. Their revolution is fueled by generations of oppression, as they vow to overthrow the Solari regime and reclaim Targon."
@@ -168,9 +176,17 @@
 
  TAR_lunari_harvest: "Lunari Harvest"
  lunari.16.t: "In the Shadow of the Sun"
- lunari.16.d: "We dwell on the very edges of Solari control, a persecuted people surviving in secrecy. We cannot deny that the Solari would crush us if they learned of our true strength. For now, the sun remains blind to our cause, distracted by its own zealous pursuits and internal divisions. With careful actions, we can grow and prepare under their gaze, gathering strength until the time comes to reveal ourselves. But we cannot remain hidden forever; with each day, the risk of discovery rises, and with it, the certainty of conflict."
- lunari.16.a: "Our time will come soon."
- lunari.16.a.tt: "Unlocks the §YHide Activities from Solari§! decision.\nThis allows you to spend £pol_power §YPolitical Power§! to keep the Solari from mobilizing against you.\nThe cost of this decision will increase by 10 £pol_power §YPolitical Power§! with each use!"
+ lunari.16.d: "For years the potter's family believed theirs was the last Lunari household in the valley. Tonight Aphelios knocks at their back door. He holds out a little clay lamp, its base stamped with the mark of a kiln the Solari closed before he was born. The potter puts on her coat.\n\nAlune guides her brother from beyond the veil. By moonrise, six households crowd into the empty kiln. The potter begins naming the dead. When she falters over her aunt's name, a woman across the hearth finishes it for her. They had lived three streets apart for forty years."
+ lunari.16.a: "Leave a place by the hearth for the next family."
+ lunari.17.t: "Diana's Call"
+ lunari.17.d: "At the kiln, a girl asks who told Diana where to find them. Pantheon sets down his bowl. He remembers meeting Diana at a fork above the snow line. Below them, a lamp shone through a shutter. Then another. He knew the families on that slope and what it cost them to leave a light showing.\n\nHe offered to walk her down. At the first door he stepped aside so the woman who opened it could see Diana for herself. The girl looks to Diana for the rest. ‘She made us wipe our boots,’ Diana says. The potter laughs. It was her mother's house."
+ lunari.17.a: "Let the people who lit those lamps speak at council."
+ lunari.18.t: "The Defectors at the Door"
+ lunari.18.d: "Three Solari soldiers leave their spears outside the kiln. Their captain hands the potter a patrol book. Halfway down the page she finds her own name, with her daughter's written underneath. She passes the book to Aphelios. Someone has to reach those houses before dawn.\n\nThe captain offers to teach your sentries the signals her patrol uses. She asks if her soldiers can stay. The potter looks to you for an answer.\n\nThe Solari defectors have warned you which houses will be searched tomorrow. Now they want your protection. If you let them stay, what do you promise the Lunari family that found its own name on that list?"
+ lunari.18.shelter: "Your family comes first. They can stay and teach our sentries."
+ lunari.18.exile: "Take their spears. They leave the valley tonight."
+ TAR_hear_remembrance: "Hear the Witnesses of Remember Us"
+ TAR_hear_remembrance_desc: "Lunari families are ready to give their names and tell the mountain how they survived. Gather them before Targon settles its future."
 
 
 
@@ -204,7 +220,7 @@
  TAR_help_our_allies: "Aid the Moon's Faithful"
  TAR_help_our_allies_desc: "Our commitments need people ready to uphold them. Rally fresh recruits and draw on our fighters' experience, strengthening confidence in the support we can offer."
  TAR_integrate_opposition: "Reconcile Sun and Moon"
- TAR_integrate_opposition_desc: "Those who once opposed us should have a place in the peace we seek to build. Encourage cooperation and steadier acceptance of our authority without pretending every disagreement has vanished."
+ TAR_integrate_opposition_desc: "Give Solari, Lunari, and Rakkor a voice in rebuilding Targon. End the state's backing for religious supremacy and open the pilgrim roads to both faiths, even as the mountain remembers what divided it."
  TAR_rejectors: "Return of the Lunari"
  TAR_rejectors_desc: "The moon's faithful will no longer survive only in whispers. By restoring a public place for Lunari worship, we can give our scattered communities the confidence to endure together."
  TAR_purge_opposition: "Purge the Lunari"

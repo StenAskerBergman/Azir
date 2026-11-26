@@ -1,0 +1,42 @@
+ideas = {
+    country = {
+        XER_arcane_readiness = {
+            allowed = { original_tag = XER }
+            removal_cost = -1
+            modifier = {
+                max_planning = 0.10
+                breakthrough_factor = 0.05
+            }
+        }
+        XER_frontier_readiness = {
+            allowed = { original_tag = XER }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = 0.08
+                planning_speed = -0.10
+            }
+        }
+        XER_siege_disruption = {
+            allowed = { original_tag = XER }
+            removal_cost = -1
+            modifier = {
+                planning_speed = -0.20
+            }
+        }
+        XER_garrison_disruption = {
+            allowed = { original_tag = XER }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = -0.08
+            }
+        }
+        XER_command_succession = {
+            allowed = { original_tag = XER }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.10
+                planning_speed = -0.15
+            }
+        }
+    }
+}

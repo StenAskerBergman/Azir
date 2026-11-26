@@ -1,0 +1,379 @@
+PIL_bop_decisions = {
+    PIL_cooperative_charter = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { has_global_flag = PIL_ZAU_inspection_answered NOT = { has_country_flag = PIL_bridge_committed } }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            has_global_flag = PIL_ZAU_inspection_answered
+            NOT = { has_country_flag = PIL_bridge_committed }
+            PIL_ZAU_bridge_unresolved = yes
+            has_completed_focus = PIL_negotiators
+        }
+        cost = 25
+        complete_effect = {
+            set_country_flag = PIL_bridge_committed
+            PIL_set_cooperative = yes
+            set_country_flag = PIL_crossing_concession
+            add_ideas = PIL_reserved_capacity
+            PIL_ZAU_announce_accord = yes
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 3 has_completed_focus = PIL_open_patents }
+            modifier = { factor = 0.5 has_completed_focus = PIL_ferros }
+            modifier = { factor = 2 ZAU = { ZAU_bridge_cooperative = yes } }
+            modifier = { factor = 0.2 ZAU = { ZAU_bridge_coercive = yes } }
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_compact }
+        }
+    }
+
+    PIL_exclusive_charter = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { has_global_flag = PIL_ZAU_inspection_answered NOT = { has_country_flag = PIL_bridge_committed } }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            has_global_flag = PIL_ZAU_inspection_answered
+            NOT = { has_country_flag = PIL_bridge_committed }
+            PIL_ZAU_bridge_unresolved = yes
+            has_completed_focus = PIL_negotiators
+        }
+        cost = 25
+        complete_effect = {
+            set_country_flag = PIL_bridge_committed
+            PIL_set_coercive = yes
+            PIL_ZAU_lock_hardening = yes
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 3 has_completed_focus = PIL_ferros }
+            modifier = { factor = 0.5 has_completed_focus = PIL_open_patents }
+            modifier = { factor = 0.7 ZAU = { ZAU_bridge_cooperative = yes } }
+            modifier = { factor = 4 ZAU = { ZAU_bridge_coercive = yes } }
+            modifier = { factor = 3 has_country_flag = PIL_ai_prefers_control }
+        }
+    }
+
+    PIL_exploit_concession = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { PIL_bridge_coercive = yes PIL_ZAU_bridge_unresolved = yes }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            PIL_ZAU_bridge_unresolved = yes
+            PIL_bridge_coercive = yes
+            ZAU = { ZAU_bridge_cooperative = yes has_country_flag = ZAU_crossing_concession has_idea = ZAU_reserved_capacity }
+        }
+        cost = 30
+        complete_effect = {
+            set_global_flag = PIL_ZAU_betrayal
+            add_timed_idea = { idea = PIL_priority_freight days = 120 }
+            ZAU = {
+                set_country_flag = ZAU_betrayed
+                add_ideas = ZAU_freight_disruption
+                country_event = { id = ZAU_bridge.1 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 8 has_completed_focus = PIL_ferros }
+            modifier = { factor = 4 has_country_flag = PIL_ai_prefers_control }
+        }
+    }
+
+    PIL_answer_breach = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { has_country_flag = PIL_betrayed NOT = { has_country_flag = PIL_breach_answered } }
+        available = {
+            has_country_flag = PIL_betrayed
+            NOT = { has_country_flag = PIL_breach_answered }
+        }
+        cost = 20
+        complete_effect = {
+            set_country_flag = PIL_breach_answered
+            clr_country_flag = PIL_crossing_concession
+            remove_ideas = PIL_reserved_capacity
+            remove_ideas = PIL_freight_disruption
+            ZAU = { remove_ideas = ZAU_priority_freight }
+            PIL_set_coercive = yes
+            add_timed_idea = { idea = PIL_emergency_freight days = 90 }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 25 has_country_flag = PIL_betrayed }
+        }
+    }
+
+    PIL_fallback_freight = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { OR = { has_country_flag = PIL_breach_answered PIL_ZAU_mutual_hardening = yes } NOT = { has_idea = PIL_fallback_freight_idea } }
+        available = {
+            OR = { has_country_flag = PIL_breach_answered PIL_ZAU_mutual_hardening = yes }
+            53 = { is_owned_and_controlled_by = ROOT }
+            has_completed_focus = PIL_detour
+            NOT = { has_idea = PIL_fallback_freight_idea }
+        }
+        cost = 65
+        complete_effect = {
+            add_ideas = PIL_fallback_freight_idea
+            53 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            remove_ideas = PIL_freight_disruption
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 4 has_war = yes }
+            modifier = { factor = 3 has_country_flag = PIL_breach_answered }
+            modifier = { factor = 2 PIL_ZAU_mutual_hardening = yes }
+        }
+    }
+
+    PIL_fortify_crossing = {
+        icon = generic_construction
+        allowed = { tag = PLT }
+        visible = { PIL_ZAU_mutual_hardening = yes NOT = { has_country_flag = PIL_crossing_fortified } }
+        available = {
+            PIL_ZAU_bridge_live = yes
+            PIL_ZAU_mutual_hardening = yes
+            52 = { is_owned_and_controlled_by = ROOT }
+            NOT = { has_country_flag = PIL_crossing_fortified }
+        }
+        cost = 45
+        complete_effect = {
+            set_country_flag = PIL_crossing_fortified
+            52 = { add_building_construction = { type = bunker level = 1 instant_build = yes province = 4310 } }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 2 has_completed_focus = PIL_ferros }
+        }
+    }
+
+    PIL_hear_industrial_delegates = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            NOT = { has_country_flag = PIL_bridge_committed }
+            OR = {
+                AND = { has_completed_focus = PIL_warrants PIL_academy_range = no }
+                AND = {
+                    has_completed_focus = PIL_charter_board
+                    PIL_ferros_range = no
+                    NOT = { has_idea = PIL_inspection_regime }
+                }
+            }
+        }
+        available = { has_power_balance = { id = PIL_bop } }
+        cost = 0
+        complete_effect = {
+            if = {
+                limit = { has_completed_focus = PIL_warrants }
+                set_power_balance = { id = PIL_bop set_value = -0.25 }
+            }
+            else = {
+                set_power_balance = { id = PIL_bop set_value = 0.25 }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+
+    PIL_enact_public_licensing = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = { has_completed_focus = PIL_warrants NOT = { has_idea = PIL_public_licensing_policy } }
+        available = {
+            has_completed_focus = PIL_open_patents
+            PIL_academy_range = yes
+            NOT = { has_idea = PIL_exclusive_procurement_policy }
+        }
+        cost = 25
+        complete_effect = {
+            add_ideas = PIL_public_licensing_policy
+            if = {
+                limit = { NOT = { has_character = PIL_academy_delegation } }
+                recruit_character = PIL_academy_delegation
+            }
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    PIL_repeal_public_licensing = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = { PIL_public_licensing_enacted = yes }
+        available = { PIL_public_licensing_enacted = yes }
+        cost = 50
+        days_remove = 60
+        remove_effect = {
+            if = {
+                limit = { has_decision = PIL_claim_civilian_study }
+                remove_decision = PIL_claim_civilian_study
+            }
+            remove_ideas = { PIL_public_licensing_policy PIL_academy_advisor }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    PIL_claim_civilian_study = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = { has_completed_focus = PIL_public_warrant_council }
+        available = {
+            PIL_public_study_available = yes
+            NOT = { has_decision = PIL_repeal_public_licensing }
+        }
+        cancel_trigger = { PIL_public_study_available = no }
+        cost = 25
+        days_remove = 45
+        days_re_enable = 120
+        remove_effect = {
+            if = {
+                limit = { PIL_public_study_available = yes }
+                add_tech_bonus = { name = PIL_claim_civilian_study bonus = 0.50 uses = 1 category = industry }
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+
+    PIL_enact_exclusive_procurement = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_completed_focus = PIL_charter_board
+            NOT = { has_idea = PIL_exclusive_procurement_policy }
+        }
+        available = {
+            has_completed_focus = PIL_ferros
+            PIL_ferros_range = yes
+            NOT = {
+                OR = { has_idea = PIL_inspection_regime has_idea = PIL_public_licensing_policy }
+            }
+        }
+        cost = 25
+        complete_effect = {
+            add_ideas = PIL_exclusive_procurement_policy
+            if = {
+                limit = { NOT = { has_character = PIL_ferros_delegation } }
+                recruit_character = PIL_ferros_delegation
+            }
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    PIL_settle_ferros_concession = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = { PIL_exclusive_procurement_enacted = yes }
+        available = { PIL_exclusive_procurement_enacted = yes }
+        cancel_trigger = { PIL_exclusive_procurement_enacted = no }
+        cost = 50
+        days_remove = 60
+        remove_effect = { PIL_end_exclusive_procurement = yes }
+        ai_will_do = { factor = 0 }
+    }
+
+    PIL_river_pilt_procurement_works = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            PIL_exclusive_procurement_enacted = yes
+            NOT = { has_country_flag = PIL_river_pilt_works_complete }
+        }
+        available = {
+            PIL_procurement_works_available = yes
+            NOT = { has_decision = PIL_settle_ferros_concession }
+        }
+        cancel_trigger = { PIL_procurement_works_available = no }
+        cost = 35
+        days_remove = 60
+        remove_effect = {
+            if = {
+                limit = { PIL_procurement_works_available = yes }
+                53 = {
+                    if = {
+                        limit = { free_building_slots = { building = infrastructure size > 0 } }
+                        add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                    }
+                }
+                set_country_flag = PIL_river_pilt_works_complete
+            }
+        }
+        ai_will_do = { factor = 3 }
+    }
+
+    PIL_run_requisition_cycle = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            PIL_exclusive_procurement_enacted = yes
+            has_country_flag = PIL_river_pilt_works_complete
+        }
+        available = {
+            PIL_requisition_operating = yes
+            NOT = {
+                OR = {
+                    has_country_flag = PIL_requisition_draw_ready
+                    has_decision = PIL_settle_ferros_concession
+                }
+            }
+        }
+        cancel_trigger = { PIL_requisition_operating = no }
+        cost = 30
+        days_remove = 90
+        remove_effect = {
+            if = {
+                limit = { PIL_requisition_operating = yes }
+                country_event = { id = PIL_events.31 }
+            }
+        }
+        ai_will_do = { factor = 3 }
+    }
+
+    PIL_draw_emergency_equipment = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_completed_focus = PIL_council_prerogative
+            has_country_flag = PIL_requisition_draw_ready
+        }
+        available = {
+            PIL_requisition_operating = yes
+            NOT = { has_decision = PIL_settle_ferros_concession }
+        }
+        cost = 0
+        complete_effect = {
+            if = {
+                limit = { PIL_requisition_operating = yes has_country_flag = PIL_requisition_draw_ready }
+                clr_country_flag = PIL_requisition_draw_ready
+                add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 400 producer = PLT }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+
+    PIL_conduct_public_audit = {
+        icon = generic_construction
+        allowed = { PIL_is_piltover = yes }
+        visible = {
+            has_completed_focus = PIL_independent_inspectorate
+            NOT = {
+                OR = { has_country_flag = PIL_audit_findings_pending has_country_flag = PIL_audit_concluded }
+            }
+        }
+        available = { PIL_inspectorate_case_available = yes }
+        cancel_trigger = { PIL_inspectorate_case_available = no }
+        cost = 25
+        days_remove = 60
+        modifier = { industrial_capacity_factory = -0.10 }
+        remove_effect = {
+            if = {
+                limit = { PIL_inspectorate_case_available = yes }
+                set_country_flag = PIL_audit_findings_pending
+                country_event = { id = PIL_events.30 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

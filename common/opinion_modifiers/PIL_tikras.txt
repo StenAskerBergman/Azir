@@ -1,0 +1,4 @@
+opinion_modifiers = {
+    PIL_tikras_compensation = { value = 15 decay = 2 }
+    PIL_tikras_grievance = { value = -60 decay = 2 }
+}

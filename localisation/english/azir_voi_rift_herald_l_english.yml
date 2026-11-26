@@ -1,0 +1,9 @@
+﻿l_english:
+ VOI_muster_rift_herald: "Muster the Rift Herald"
+ VOI_muster_rift_herald_desc: "The gate is open. Assemble a siege host to follow the Herald and exploit the breaches it tears in enemy defenses."
+ VOI_muster_rift_herald_tt: "Unlocks the §YRift Herald Siege Host§! template, limited to one division. Its siege battalions are slow and have extra breakthrough and bonuses when attacking forts and cities."
+ VOI_unlock_rift_herald_muster_tt: "Unlocks the §YMuster the Rift Herald§! decision while we control the Void Rupture."
+ azir_voi_herald_siege_training: "Rift Herald Siege Muster"
+ azir_voi_herald_siege_training_desc: "Train troops to follow the Rift Herald into breaches in enemy defenses."
+ azir_voi_herald_siege: "Herald Siege Brood"
+ azir_voi_herald_siege_desc: "Heavy assault battalion that follows the Rift Herald into fortified positions."

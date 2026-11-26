@@ -1,9 +1,11 @@
-SHU_moonstone_cooperation = {
-	value = 40
-	decay = 1
-}
+opinion_modifiers = {
+	SHU_moonstone_cooperation = {
+		value = 40
+		decay = 1
+	}
 
-SHU_moonstone_refused = {
-	value = -25
-	decay = 1
+	SHU_moonstone_refused = {
+		value = -25
+		decay = 1
+	}
 }

@@ -1,0 +1,35 @@
+equipments = {
+    azir_plt_bramble_crawler = {
+        year = 990
+        is_archetype = yes
+        is_buildable = no
+        can_license = no
+        can_be_produced = { always = yes }
+        can_be_lend_leased = { always = no }
+        picture = archetype_pil_bramble_crawler
+        type = armor
+        group_by = archetype
+        interface_category = interface_category_land
+
+        maximum_speed = 3.2
+        fuel_consumption = 7.2
+        reliability = 0.70
+        hardness = 0.25
+        defense = 4
+        breakthrough = 3
+        soft_attack = 1
+        lend_lease_cost = 5
+        build_cost_ic = 8
+        resources = { steel = 2 rubber = 1 }
+    }
+
+    azir_plt_bramble_crawler_1 = {
+        year = 990
+        archetype = azir_plt_bramble_crawler
+        can_license = no
+        can_be_produced = { always = yes }
+        can_be_lend_leased = { always = no }
+        priority = 85
+        visual_level = 0
+    }
+}

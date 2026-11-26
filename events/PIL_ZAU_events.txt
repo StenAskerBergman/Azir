@@ -1,0 +1,99 @@
+add_namespace = PIL_ZAU_events
+
+country_event = {
+    id = PIL_ZAU_events.17
+    title = PIL_ZAU_events.17.t
+    desc = PIL_ZAU_events.17.d
+    picture = GFX_PIL_ZAU_survey
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_ZAU_events.17.a
+        trigger = { PIL_ZAU_both_present = yes }
+        ai_chance = { factor = 1 }
+        clr_country_flag = PIL_survey_pending
+        PIL_ZAU_publish_survey = yes
+    }
+    option = {
+        name = PIL_ZAU_events.17.b
+        trigger = { NOT = { PIL_ZAU_both_present = yes } }
+        ai_chance = { factor = 1 }
+        clr_country_flag = PIL_survey_pending
+    }
+}
+
+country_event = {
+    id = PIL_ZAU_events.18
+    title = PIL_ZAU_events.18.t
+    desc = PIL_ZAU_events.18.d
+    picture = GFX_PIL_ZAU_inspection
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = PIL_ZAU_events.18.a
+        ai_chance = { factor = 2 }
+        set_global_flag = PIL_ZAU_inspection_answered
+        set_country_flag = ZAU_ward_engineers
+        add_political_power = -15
+    }
+    option = {
+        name = PIL_ZAU_events.18.b
+        ai_chance = { factor = 1 }
+        set_global_flag = PIL_ZAU_inspection_answered
+    }
+}
+
+country_event = {
+    id = PIL_ZAU_events.21
+    title = PIL_ZAU_events.21.t
+    desc = PIL_ZAU_events.21.d
+    picture = GFX_PIL_ZAU_accord
+    is_triggered_only = yes
+    trigger = { OR = { tag = PLT tag = ZAU } }
+    option = {
+        name = PIL_ZAU_events.21.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = PIL_ZAU_events.22
+    title = PIL_ZAU_events.22.t
+    desc = PIL_ZAU_events.22.d
+    picture = GFX_PIL_ZAU_rift
+    is_triggered_only = yes
+    trigger = { tag = ZAU }
+    option = {
+        name = PIL_ZAU_events.22.a
+        ai_chance = { factor = 1 }
+
+    }
+}
+
+country_event = {
+    id = PIL_ZAU_events.25
+    title = PIL_ZAU_events.25.t
+    desc = PIL_ZAU_events.25.d
+    picture = GFX_PIL_ZAU_reopened
+    is_triggered_only = yes
+    trigger = { OR = { tag = PLT tag = ZAU } }
+    option = {
+        name = PIL_ZAU_events.25.a
+        ai_chance = { factor = 1 }
+
+    }
+}
+
+country_event = {
+    id = PIL_ZAU_events.26
+    title = PIL_ZAU_events.26.t
+    desc = PIL_ZAU_events.26.d
+    picture = GFX_PIL_hardened
+    is_triggered_only = yes
+    trigger = { tag = PLT }
+    option = {
+        name = PIL_ZAU_events.26.a
+        ai_chance = { factor = 1 }
+
+    }
+}

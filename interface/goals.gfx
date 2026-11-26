@@ -5133,4 +5133,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_NOR_vote_of_no_confidence.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_BRA_reach_out_to_military_dem"
+		texturefile = "gfx/interface/goals/focus_BRA_reach_out_to_military_dem.dds"
+	}
+
 }

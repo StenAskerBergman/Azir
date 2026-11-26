@@ -1,0 +1,22 @@
+PIL_end_exclusive_procurement = {
+    clr_country_flag = PIL_requisition_draw_ready
+    if = {
+        limit = { has_decision = PIL_river_pilt_procurement_works }
+        remove_decision = PIL_river_pilt_procurement_works
+    }
+    if = {
+        limit = { has_decision = PIL_run_requisition_cycle }
+        remove_decision = PIL_run_requisition_cycle
+    }
+    remove_ideas = { PIL_exclusive_procurement_policy PIL_ferros_advisor }
+}
+
+PIL_cancel_disconnected_public_study = {
+    if = {
+        limit = {
+            has_decision = PIL_claim_civilian_study
+            PIL_public_study_available = no
+        }
+        remove_decision = PIL_claim_civilian_study
+    }
+}

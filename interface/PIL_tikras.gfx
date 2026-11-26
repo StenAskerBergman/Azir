@@ -1,0 +1,5 @@
+spriteTypes = {
+    spriteType = { name = "GFX_decision_PIL_hextech_excavator" texturefile = "gfx/interface/decisions/PIL_hextech_excavator.dds" }
+    spriteType = { name = "GFX_PIL_tikras_jungle" texturefile = "gfx/event_pictures/PIL_ZAU/PIL_tikras_jungle.dds" }
+    spriteType = { name = "GFX_ZAU_excavator_works" texturefile = "gfx/event_pictures/PIL_ZAU/ZAU_excavator_works.dds" }
+}

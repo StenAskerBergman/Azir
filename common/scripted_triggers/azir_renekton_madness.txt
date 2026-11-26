@@ -1,0 +1,24 @@
+XER_renekton_crisis_active = {
+    has_country_flag = XER_renekton_madness_active
+    has_country_leader = { character = XER_renekton }
+}
+
+XER_renekton_can_spread_madness = {
+    has_country_leader = { character = XER_renekton }
+    OR = {
+        has_country_flag = XER_renekton_madness_active
+        has_country_flag = XER_renekton_corrupted
+    }
+}
+
+SHU_renekton_treatment_active = {
+    has_character = SHU_nasus
+    has_active_mission = SHU_renekton_treatment
+    NOT = { has_country_flag = SHU_nasus_corrupted }
+    XER = { XER_renekton_crisis_active = yes }
+}
+
+VOI_can_aid_nasus = {
+    has_character = VOI_Zilean
+    NOT = { has_country_flag = VOI_zilean_imprisoned }
+}

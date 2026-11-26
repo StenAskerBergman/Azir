@@ -1,0 +1,81 @@
+SHU_update_regional_doctrine = {
+    if = {
+        limit = { has_war_with = XER NOT = { has_country_flag = SHU_xer_war_observed } }
+        set_country_flag = SHU_xer_war_observed
+    }
+    if = {
+        limit = {
+            NOT = { has_power_balance = { id = SHU_bop } }
+            OR = {
+                has_completed_focus = SHU_imperial_state
+                has_completed_focus = SHU_republican_future
+            }
+        }
+        if = {
+            limit = { has_completed_focus = SHU_imperial_state }
+            set_power_balance = { id = SHU_bop set_value = 0.30 }
+        }
+        else = {
+            set_power_balance = { id = SHU_bop set_value = -0.30 }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = SHU_provincial_compact_ratified
+            power_balance_value = { id = SHU_bop value < -0.50 }
+            NOT = { has_idea = SHU_provincial_compact }
+        }
+        add_ideas = SHU_provincial_compact
+    }
+    if = {
+        limit = {
+            has_country_flag = SHU_crown_levy_enacted
+            SHU_imperial_supply_secure = yes
+            NOT = { has_idea = SHU_crown_levy }
+        }
+        add_ideas = SHU_crown_levy
+    }
+    else_if = {
+        limit = { has_idea = SHU_crown_levy NOT = { SHU_imperial_supply_secure = yes } }
+        remove_ideas = SHU_crown_levy
+    }
+    if = {
+        limit = {
+            has_country_flag = SHU_imperial_settled
+            SHU_imperial_supply_secure = yes
+            power_balance_value = { id = SHU_bop value > 0.50 }
+            NOT = { has_idea = SHU_imperial_restoration }
+        }
+        add_ideas = SHU_imperial_restoration
+    }
+    else_if = {
+        limit = {
+            has_idea = SHU_imperial_restoration
+            NOT = {
+                AND = {
+                    SHU_imperial_supply_secure = yes
+                    power_balance_value = { id = SHU_bop value > 0.50 }
+                }
+            }
+        }
+        remove_ideas = SHU_imperial_restoration
+    }
+    if = {
+        limit = { SHU_custody_eligible = yes NOT = { has_country_flag = SHU_custody_invited } }
+        set_country_flag = SHU_custody_invited
+        country_event = SHU_regional.3
+    }
+}
+
+SHU_end_custody = {
+    clr_country_flag = SHU_custody_active
+    set_country_flag = SHU_custody_resolved
+    remove_ideas = SHU_custodianship
+    if = {
+        limit = {
+            has_character = SHU_nasus
+            has_country_leader = { ruling_only = yes character = SHU_sivir }
+        }
+        SHU_nasus = { promote_character = { ideology = shurimanEmperor } }
+    }
+}

@@ -1,0 +1,9 @@
+scripted_gui = {
+    PIL_ZAU_bop_backdrop = {
+        context_type = player_context
+        window_name = "PIL_ZAU_bop_art"
+        ai_enabled = { always = no }
+        # The unsupported parent left this decorative window floating over the top bar.
+        visible = { always = no }
+    }
+}

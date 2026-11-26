@@ -330,7 +330,7 @@ characters = {
             traits = { military_theorist really_good_boss Ambusher }      # Unspecified cost defaults to 150.
         }
         corps_commander = {
-        traits={ adaptable engineer_officer Ambusher }
+        traits={ adaptable engineer_officer ambusher }
         skill=5
         attack_skill=5
         defense_skill=5
@@ -382,6 +382,10 @@ characters = {
         gender = female
         portraits = {
             civilian = {
+                large = "GFX_portrait_voi_kaisa_large"
+                small = "GFX_portrait_voi_kaisa_small"
+            }
+            army = {
                 large = "GFX_portrait_voi_kaisa_large"
                 small = "GFX_portrait_voi_kaisa_small"
             }

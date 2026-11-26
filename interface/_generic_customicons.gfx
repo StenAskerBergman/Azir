@@ -203,5 +203,3 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/generic/GFX_goal_Battleship_Investments.dds"
     }
 }
-
-}

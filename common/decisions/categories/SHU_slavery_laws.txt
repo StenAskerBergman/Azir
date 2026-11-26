@@ -1,0 +1,12 @@
+SHU_labor_law_category = {
+    icon = GFX_shurima_red_icon_category
+    priority = 86
+    allowed = { original_tag = SHU }
+    visible = {
+        OR = {
+            has_country_flag = SHU_slavery_debate_opened
+            has_completed_focus = SHU_question_of_slavery
+        }
+        NOT = { has_country_flag = SHU_emancipation_enforced }
+    }
+}

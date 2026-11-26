@@ -68,6 +68,11 @@ recruit_character = VOI_Jax
 
 recruit_character = VOI_Kassadin
 
+# Register Kai'Sa's unique character for later set_nationality transfers.
+# Until a government actually commissions her she holds no roles in Icathia.
+recruit_character = VOI_Kaisa
+retire_character = VOI_Kaisa
+
 
 set_convoys = 3
 

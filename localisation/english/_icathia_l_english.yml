@@ -230,7 +230,7 @@
  VOI_Void_Empowerment_desc: "Our leaders will invoke the Void's promise to demand greater discipline from their followers. The cult will consolidate its authority and prepare its commanders for the campaigns to come."
 
  VOI_Rift_Rapture: "Rift Rapture"
- VOI_Rift_Rapture_desc: "While we hold the rift's foothold, the faithful will rally around the promise of the Void. Greater resolve, faster planning, and swifter armies will prepare them for the struggle ahead."
+ VOI_Rift_Rapture_desc: "While we hold the rift's foothold, the faithful will rally around the promise of the Void. Greater resolve, faster planning, and swifter armies will prepare them for the struggle ahead. When the first rift opens, Shuriman caravans will report Xer'Sai activity along their routes."
 
  VOI_Her_Arrival: "Her Arrival"
  VOI_Her_Arrival_desc: "Belveth our Queen will soon arrive... Our army must match her expectations"
@@ -278,11 +278,11 @@
 
 
  icathia.2.t: "The Remnants of a Void World"
- icathia.2.desc: "The Void has left Icathia in ruins. Malzahar's followers gather around the Rupture while those who resist rally around the old city. War between them is now inevitable. Choose which side to lead when the country breaks apart. Those who seek containment and a place for the Void's survivors will fight with the Icathians, whose traditionalists and reformists must still settle their differences."
+ icathia.2.desc: "Once, Icathia called on the Void to save itself. Now watchfires burn in its broken walls, and two sides claim what remains.\n\nThe Resistance rallies around the old city to protect its survivors. At the §0Rupture§!, Malzahar gathers those who believe the Void is their salvation.\n\n§RCivil war is coming.§! Choose which side you will lead."
 
- icathia.2.a: "Resist the Void's Corruption"
+ icathia.2.a: "§HResist§! the Void's Corruption"
 
- icathia.2.b: "Succumb to the Void's Influence"
+ icathia.2.b: "§1Succumb§! to the Void's Influence"
  icathia.7.t: "The Unfinished Settlement"
  icathia.7.desc: "The Void Followers have been defeated, but the alliance that stood against them is already fraying. Traditionalists demand the return of the old order. Reformists insist that victory must bring a different government. We have 180 days to restore public confidence or revive the Grand Wizard Council before either side takes up arms."
  icathia.7.a: "We must settle this while we still can."

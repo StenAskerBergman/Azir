@@ -1,0 +1,11 @@
+add_namespace = PIL_bridge
+
+country_event = {
+    id = PIL_bridge.1
+    title = PIL_bridge.1.t
+    desc = PIL_bridge.1.d
+    picture = GFX_PIL_ZAU_bridge_relief
+    is_triggered_only = yes
+    trigger = { tag = PLT has_country_flag = PIL_betrayed }
+    option = { name = PIL_bridge.1.a }
+}

@@ -1,0 +1,8 @@
+﻿l_english:
+ azir_sai_kahleek.1.t: "The Road Through Sai Kahleek"
+ azir_sai_kahleek.1.d: "The first trader reached the wells of Kahleeki Village on foot. She said the lead camel had stopped so abruptly that the next wagon struck it from behind. Then the road opened. A dark fin cut through the sand beside the wagons, turned, and came back for the people who were running.\n\nBy morning, the village guides had pulled their markers from the southern road. They will still take caravans along the river, but the detour adds days to a journey the wells can barely support. Two families have asked for an escort back to look for their own. The guides say they will go as far as the last well."
+ azir_sai_kahleek.1.a: "Send an escort as far as the wells."
+ azir_sai_kahleek.1.b: "Close the southern road."
+ azir_sai_kahleek_road_closed: "The Southern Road Is Closed"
+ azir_sai_kahleek_road_closed_desc: "Caravans are taking the longer river route after Rek'Sai attacked the road through Sai Kahleek."
+ azir_sai_kahleek_attack_tt: "The current owner of §YSai Kahleek§! receives §YThe Road Through Sai Kahleek§!."

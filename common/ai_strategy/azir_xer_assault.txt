@@ -1,0 +1,17 @@
+azir_xer_recruit_assault_divisions = {
+    allowed = { original_tag = XER }
+    enable = {
+        OR = {
+            has_tech = azir_xer_baccai_training
+            has_tech = azir_xer_warband_training
+        }
+    }
+    abort_when_not_enabled = yes
+
+    # Give the specialist role a share of recruitment alongside regular infantry.
+    ai_strategy = {
+        type = role_ratio
+        id = azir_xer_assault
+        value = 20
+    }
+}

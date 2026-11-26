@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_focus_SHU_shuriman_legions_art_comparison"
+        texturefile = "gfx/interface/goals/SHU/focus_SHU_shuriman_legions_art_comparison.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_SHU_shuriman_legions_art_comparison_shine"
+        texturefile = "gfx/interface/goals/SHU/focus_SHU_shuriman_legions_art_comparison.dds"
+    }
+}

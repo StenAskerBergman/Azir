@@ -1,0 +1,25 @@
+guiTypes = {
+    containerWindowType = {
+        name = "azir_icathian_threat_divider_window"
+        size = { width = 100% height = 46 }
+        iconType = {
+            name = "azir_icathian_threat_divider_art"
+            spriteType = "GFX_azir_icathian_threat_divider"
+            alwaystransparent = yes
+            orientation = center_up
+            position = { x = -200 y = 0 }
+        }
+    }
+
+    containerWindowType = {
+        name = "azir_icathian_resistance_divider_window"
+        size = { width = 100% height = 55 }
+        iconType = {
+            name = "azir_icathian_resistance_divider_art"
+            spriteType = "GFX_azir_icathian_resistance_divider"
+            alwaystransparent = yes
+            orientation = center_up
+            position = { x = -200 y = 0 }
+        }
+    }
+}

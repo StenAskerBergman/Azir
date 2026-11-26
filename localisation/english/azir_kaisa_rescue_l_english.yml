@@ -1,0 +1,11 @@
+﻿l_english:
+ ZAU_kaisa_missing_shift:0 "The Missing Shift"
+ ZAU_kaisa_missing_shift_desc:0 "A maintenance shift went below to clear the intake and never clocked out. Kai’Sa heard someone striking a pipe beyond the flooded pumps. The families at the station have agreed to let her look. For now she serves with the search crew.\n\nZaun bears a §R10 percentage point§! stability penalty while her appointment is provisional. Bring the shift home and commission Kai’Sa to lead a permanent crew to lift it."
+ ZAU_kaisa_restart_pumps:0 "Reopen the Pump Station"
+ ZAU_kaisa_restart_pumps_desc:0 "Put one civilian factory at the pump crews’ disposal for fourteen days. As the water falls, Kai’Sa can follow the knocking to the gallery where the workers have taken shelter."
+ ZAU_kaisa_lower_winches:0 "Lower Respirators and Winches"
+ ZAU_kaisa_lower_winches_desc:0 "The missing workers are alive on a ledge beneath the service shaft. Draw 25 units of support equipment for breathing gear and winches. Kai’Sa can stay below until the last worker is brought up today."
+ ZAU_kaisa_drain_exit:0 "Drain the Service Passage"
+ ZAU_kaisa_drain_exit_desc:0 "Keep one civilian factory running the pumps for seven more days. Once the water drops below the passage rail, Kai’Sa can guide everyone out on foot."
+ ZAU_kaisa_commission_rescue_crew:0 "Give Kai’Sa a Permanent Crew"
+ ZAU_kaisa_commission_rescue_crew_desc:0 "The shift has returned. At the handover, its foreman puts a Zaunite rescue mantle on the table and asks who will take the next call. Give Kai’Sa the commission. She gains field command and her Husk-inspired Zaunite portrait, and the full stability penalty from her provisional appointment ends."

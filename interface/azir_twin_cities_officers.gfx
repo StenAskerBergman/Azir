@@ -1,0 +1,161 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_m01"
+        texturefile = "gfx/leaders/Piltover/azir_officer_m01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_m01_small"
+        texturefile = "gfx/leaders/Piltover/azir_officer_m01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_m02"
+        texturefile = "gfx/leaders/Piltover/azir_officer_m02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_m02_small"
+        texturefile = "gfx/leaders/Piltover/azir_officer_m02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_f01"
+        texturefile = "gfx/leaders/Piltover/azir_officer_f01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_f01_small"
+        texturefile = "gfx/leaders/Piltover/azir_officer_f01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_f02"
+        texturefile = "gfx/leaders/Piltover/azir_officer_f02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_officer_f02_small"
+        texturefile = "gfx/leaders/Piltover/azir_officer_f02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_m01"
+        texturefile = "gfx/leaders/Zaun/azir_officer_m01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_m01_small"
+        texturefile = "gfx/leaders/Zaun/azir_officer_m01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_m02"
+        texturefile = "gfx/leaders/Zaun/azir_officer_m02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_m02_small"
+        texturefile = "gfx/leaders/Zaun/azir_officer_m02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_f01"
+        texturefile = "gfx/leaders/Zaun/azir_officer_f01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_f01_small"
+        texturefile = "gfx/leaders/Zaun/azir_officer_f01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_f02"
+        texturefile = "gfx/leaders/Zaun/azir_officer_f02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_officer_f02_small"
+        texturefile = "gfx/leaders/Zaun/azir_officer_f02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_m01"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_m01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_m01_small"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_m01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_m02"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_m02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_m02_small"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_m02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_f01"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_f01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_f01_small"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_f01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_f02"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_f02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_plt_naval_officer_f02_small"
+        texturefile = "gfx/leaders/Piltover/azir_naval_officer_f02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_m01"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_m01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_m01_small"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_m01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_m02"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_m02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_m02_small"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_m02_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_f01"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_f01.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_f01_small"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_f01_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_f02"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_f02.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_azir_zau_naval_officer_f02_small"
+        texturefile = "gfx/leaders/Zaun/azir_naval_officer_f02_small.dds"
+    }
+}

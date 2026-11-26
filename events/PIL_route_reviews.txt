@@ -1,0 +1,112 @@
+add_namespace = PIL_route_review
+
+country_event = {
+    id = PIL_route_review.1
+    title = PIL_route_review.1.t
+    desc = PIL_route_review.1.d
+    picture = GFX_PIL_ZAU_licenses
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_review_licensed_designs_pending }
+
+    option = {
+        name = PIL_ZAU_route_review_defer
+        ai_chance = { factor = 0 }
+        clr_country_flag = PIL_review_licensed_designs_pending
+    }
+
+    option = {
+        name = PIL_route_review.1.a
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { PIL_review_licensed_designs_eligible = yes has_country_flag = PIL_review_licensed_designs_pending }
+            add_tech_bonus = { name = PIL_review_licensed_designs bonus = 0.30 uses = 1 category = industry }
+            set_country_flag = PIL_review_licensed_designs_resolved
+        }
+        clr_country_flag = PIL_review_licensed_designs_pending
+    }
+    option = {
+        name = PIL_route_review.1.b
+        ai_chance = { factor = 1 }
+        if = {
+            limit = { PIL_review_licensed_designs_eligible = yes has_country_flag = PIL_review_licensed_designs_pending }
+            add_stability = 0.02
+            set_country_flag = PIL_review_licensed_designs_resolved
+        }
+        clr_country_flag = PIL_review_licensed_designs_pending
+    }
+}
+
+country_event = {
+    id = PIL_route_review.2
+    title = PIL_route_review.2.t
+    desc = PIL_route_review.2.d
+    picture = GFX_PIL_ZAU_ledger
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_review_ferros_reserve_pending }
+
+    option = {
+        name = PIL_ZAU_route_review_defer
+        ai_chance = { factor = 0 }
+        clr_country_flag = PIL_review_ferros_reserve_pending
+    }
+
+    option = {
+        name = PIL_route_review.2.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = { PIL_review_ferros_reserve_eligible = yes has_country_flag = PIL_review_ferros_reserve_pending }
+            add_timed_idea = { idea = PIL_ferros_reserve_shifts days = 90 }
+            set_country_flag = PIL_review_ferros_reserve_resolved
+        }
+        clr_country_flag = PIL_review_ferros_reserve_pending
+    }
+    option = {
+        name = PIL_route_review.2.b
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { PIL_review_ferros_reserve_eligible = yes has_country_flag = PIL_review_ferros_reserve_pending }
+            army_experience = 12
+            set_country_flag = PIL_review_ferros_reserve_resolved
+        }
+        clr_country_flag = PIL_review_ferros_reserve_pending
+    }
+}
+
+country_event = {
+    id = PIL_route_review.3
+    title = PIL_route_review.3.t
+    desc = PIL_route_review.3.d
+    picture = GFX_PIL_ZAU_paper
+    is_triggered_only = yes
+    timeout_days = 13
+    trigger = { PIL_is_piltover = yes has_country_flag = PIL_check_inspected_tenders_pending }
+
+    option = {
+        name = PIL_ZAU_route_review_defer
+        ai_chance = { factor = 0 }
+        clr_country_flag = PIL_check_inspected_tenders_pending
+    }
+
+    option = {
+        name = PIL_route_review.3.a
+        ai_chance = { factor = 2 }
+        if = {
+            limit = { PIL_check_inspected_tenders_eligible = yes has_country_flag = PIL_check_inspected_tenders_pending }
+            add_stability = 0.02
+            set_country_flag = PIL_check_inspected_tenders_resolved
+        }
+        clr_country_flag = PIL_check_inspected_tenders_pending
+    }
+    option = {
+        name = PIL_route_review.3.b
+        ai_chance = { factor = 1 }
+        if = {
+            limit = { PIL_check_inspected_tenders_eligible = yes has_country_flag = PIL_check_inspected_tenders_pending }
+            add_tech_bonus = { name = PIL_check_inspected_tenders bonus = 0.30 uses = 1 category = electronics }
+            set_country_flag = PIL_check_inspected_tenders_resolved
+        }
+        clr_country_flag = PIL_check_inspected_tenders_pending
+    }
+}

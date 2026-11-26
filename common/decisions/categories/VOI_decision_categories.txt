@@ -1,4 +1,5 @@
 VOI_void_threat_category = { # VOI_improve_the_void_influence # VOI_improve_the_void_spirit
+	scripted_gui = azir_icathian_threat_divider_ui
 	priority = 90
 	icon = GFX_void_purple_icon_category
 
@@ -10,6 +11,7 @@ VOI_void_threat_category = { # VOI_improve_the_void_influence # VOI_improve_the_
 }
 
 VOI_WAR_category = {
+	scripted_gui = azir_icathian_threat_divider_ui
 	priority = 100
 	icon = GFX_decision_category_ICE_the_viking_spirit
 	picture = GFX_decision_cat_picture_SWI_absolute_neutrality
@@ -28,6 +30,7 @@ VOI_WAR_category = {
 }
 
 VOI_void_influence_category = { # VOI_improve_the_void_influence # VOI_improve_the_void_spirit
+	scripted_gui = azir_icathian_resistance_divider_ui
 	priority = 90
 	icon = GFX_decision_category_ICE_the_viking_spirit
 	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality
@@ -65,6 +68,7 @@ VOI_icathian_subjugation_category = {
 }
 
 VOI_weaponizing_xersai = {
+	scripted_gui = azir_icathian_threat_divider_ui
 	priority = 50
 	icon = GFX_decision_category_ICE_the_viking_spirit
 	#picture = GFX_decision_cat_picture_SWI_absolute_neutrality

@@ -1,0 +1,206 @@
+# Runeterra uses its own focus trees, decisions and game rules. Unavailable WWII prerequisites evaluate to false.
+INS_is_volksaad_active_AVAILABLE = {
+	OR = {
+		has_idea = idea_INS_volksraad
+		always = no
+	}
+}
+
+INS_is_volksaad_active_VISIBLE = {
+	#is_subject_of = HOL
+	NOT = {
+		always = no
+	}
+}
+
+INS_character_republic_founded_check_VISIBLE = {
+	#NOT = {
+	#	is_subject_of = HOL
+	#}
+	#has_country_flag = INS_republic_founded
+	always = no
+}
+
+INS_dutch_army_chief_check_VISIBLE = {
+	OR = {
+		is_subject_of = HOL
+		always = no
+		has_cosmetic_tag = INS_UNION
+	}
+}
+
+INS_only_militia_states_if_possible_and_needed = {
+	if = {
+		limit = {
+			ROOT = {
+				NOT = { has_country_flag = INS_revolution_has_started }
+				always = no
+				any_controlled_state = {
+					check_variable = {
+						var = influence_point_count
+						value = 3
+						compare = greater_than_or_equals
+					}
+				}
+			}
+		}
+		check_variable = {
+			var = influence_point_count
+			value = 3
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+INS_has_nationalized = {
+	OR = {
+		always = no
+		always = no
+	}
+}
+
+INS_check_plan_revolution_communist = {
+	INS = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_REVOLUTION_COMMUNIST
+			always = no
+		}
+	}
+	NOT = {
+		HOL = {
+			always = no
+		}
+	}
+}
+
+INS_check_plan_revolution_democratic = {
+	INS = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_REVOLUTION_DEMOCRATIC
+			always = no
+		}
+	}
+	NOT = {
+		HOL = {
+			always = no
+		}
+	}
+}
+
+INS_check_plan_revolution_unaligned = {
+	INS = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_REVOLUTION_UNALIGNED
+			always = no
+		}
+	}
+	NOT = {
+		HOL = {
+			always = no
+		}
+	}
+}
+
+INS_check_plan_loyalist = {
+	OR = {
+		HOL = {
+			always = no
+		}
+		INS = {
+			OR = {
+				has_country_flag = INS_AI_RANDOM_LOYALIST
+				always = no
+			}
+		}
+	}
+}
+
+INS_check_plan_true_historical = {
+	INS = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				always = no
+			}
+			has_country_flag = INS_AI_RANDOM_TRUE_HISTORICAL
+			always = no
+		}
+	}
+	NOT = {
+		HOL = {
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_historical = {
+	HOL = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				always = no
+			}
+			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_HISTORICAL
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_colonial_alternate_democratic = {
+	HOL = {
+		OR = {
+			always = no
+			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_ALTERNATE_1
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_continental_alternate_democratic = {
+	HOL = {
+		OR = {
+			always = no
+			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_ALTERNATE_2
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_lead_the_minor_democracies = {
+	HOL = {
+		OR = {
+			always = no
+			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_ALTERNATE_3
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_alternate_communist = {
+	HOL = {
+		OR = {
+			always = no
+			has_country_flag = HOL_AI_RANDOM_COMMUNIST
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_alternate_fascist = {
+	HOL = {
+		OR = {
+			always = no
+			has_country_flag = HOL_AI_RANDOM_FASCIST
+			always = no
+		}
+	}
+}
+
+HOL_check_plan_alternate_monarchist = {
+	HOL = {
+		OR = {
+			always = no
+			always = no
+		}
+	}
+}

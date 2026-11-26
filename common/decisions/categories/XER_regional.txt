@@ -1,0 +1,4 @@
+XER_bop_decisions = {
+    allowed = { original_tag = XER }
+    visible = { has_power_balance = { id = XER_bop } }
+}
